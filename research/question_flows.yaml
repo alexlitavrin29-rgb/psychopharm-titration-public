@@ -1,0 +1,2457 @@
+active_snapshot: remediation_round3/final_manifest.json
+scope: Research graphs, no implemented dialogue
+clinical_clearance_claimed: false
+calculator_implemented: false
+question_count_policy:
+  unasked_is_normal: false
+  universal_risk_confirmation_checkbox_allowed: false
+  target: 10
+  preferred_ordinary_maximum: 15
+  ordinary_maximum: null
+  acceptance_version: 3
+  necessity_still_required: true
+flows:
+- rule_id: ago-depression-start
+  graph_ref: remediation_round3/question_graphs.yaml#ago-depression-start
+  input_contract_ref: remediation_round3/input_contracts.yaml
+  result_contract_ref: remediation_round3/result_contracts.yaml#rules/ago-depression-start
+  paths_ref: remediation_round3/actual_question_paths.json
+  required_inputs:
+  - age
+  - form
+  - hepatic
+  - pregnancy
+  - lactation
+  - medicines
+  - allergy
+  - ALT_ratio
+  - AST_ratio
+  - elderly_population
+  - galactose_intolerance
+  - complete_lactase_deficiency
+  - glucose_galactose_malabsorption
+  - overweight_obesity
+  - fatty_liver
+  - diabetes
+  - alcohol_abuse
+  input_requirements:
+    age:
+      kind: always
+    form:
+      kind: always
+    hepatic:
+      kind: always
+    pregnancy:
+      kind: always
+    lactation:
+      kind: always
+    medicines:
+      kind: always
+    allergy:
+      kind: always
+    ALT_ratio:
+      kind: always
+    AST_ratio:
+      kind: always
+    renal_state:
+      kind: reported_context
+    elderly_population:
+      kind: always
+    dementia:
+      kind: field_true
+      field: elderly_population
+    galactose_intolerance:
+      kind: always
+    complete_lactase_deficiency:
+      kind: always
+    glucose_galactose_malabsorption:
+      kind: always
+    liver_injury_signs:
+      kind: ongoing_selected_drug
+    transaminases_rising:
+      kind: ongoing_selected_drug
+    overweight_obesity:
+      kind: always
+    fatty_liver:
+      kind: always
+    diabetes:
+      kind: always
+    alcohol_abuse:
+      kind: always
+    alcohol_use:
+      kind: reported_context
+    mania:
+      kind: reported_context
+    mania_symptoms:
+      kind: ongoing_selected_drug
+    suicide_risk:
+      kind: reported_context
+    ect:
+      kind: reported_context
+- rule_id: ago-gad-start
+  graph_ref: remediation_round3/question_graphs.yaml#ago-gad-start
+  input_contract_ref: remediation_round3/input_contracts.yaml
+  result_contract_ref: remediation_round3/result_contracts.yaml#rules/ago-gad-start
+  paths_ref: remediation_round3/actual_question_paths.json
+  required_inputs:
+  - age
+  - form
+  - hepatic
+  - pregnancy
+  - lactation
+  - medicines
+  - allergy
+  - ALT_ratio
+  - AST_ratio
+  - elderly_population
+  - galactose_intolerance
+  - complete_lactase_deficiency
+  - glucose_galactose_malabsorption
+  - overweight_obesity
+  - fatty_liver
+  - diabetes
+  - alcohol_abuse
+  input_requirements:
+    age:
+      kind: always
+    form:
+      kind: always
+    hepatic:
+      kind: always
+    pregnancy:
+      kind: always
+    lactation:
+      kind: always
+    medicines:
+      kind: always
+    allergy:
+      kind: always
+    ALT_ratio:
+      kind: always
+    AST_ratio:
+      kind: always
+    renal_state:
+      kind: reported_context
+    elderly_population:
+      kind: always
+    dementia:
+      kind: field_true
+      field: elderly_population
+    galactose_intolerance:
+      kind: always
+    complete_lactase_deficiency:
+      kind: always
+    glucose_galactose_malabsorption:
+      kind: always
+    liver_injury_signs:
+      kind: ongoing_selected_drug
+    transaminases_rising:
+      kind: ongoing_selected_drug
+    overweight_obesity:
+      kind: always
+    fatty_liver:
+      kind: always
+    diabetes:
+      kind: always
+    alcohol_abuse:
+      kind: always
+    alcohol_use:
+      kind: reported_context
+    mania:
+      kind: reported_context
+    mania_symptoms:
+      kind: ongoing_selected_drug
+    suicide_risk:
+      kind: reported_context
+    ect:
+      kind: reported_context
+- rule_id: ago-stop
+  graph_ref: remediation_round3/question_graphs.yaml#ago-stop
+  input_contract_ref: remediation_round3/input_contracts.yaml
+  result_contract_ref: remediation_round3/result_contracts.yaml#rules/ago-stop
+  paths_ref: remediation_round3/actual_question_paths.json
+  required_inputs:
+  - clinician_action
+  input_requirements:
+    current_dose:
+      kind: reported_context
+    clinician_action:
+      kind: always
+- rule_id: dulox-depression-start
+  graph_ref: remediation_round3/question_graphs.yaml#dulox-depression-start
+  input_contract_ref: remediation_round3/input_contracts.yaml
+  result_contract_ref: remediation_round3/result_contracts.yaml#rules/dulox-depression-start
+  paths_ref: remediation_round3/actual_question_paths.json
+  required_inputs:
+  - age
+  - form
+  - hepatic
+  - pregnancy
+  - lactation
+  - medicines
+  - allergy
+  - renal_metric
+  - uncontrolled_hypertension
+  - closed_angle_glaucoma
+  - fructose_intolerance
+  - glucose_galactose_malabsorption
+  - sucrase_isomaltase_deficiency
+  input_requirements:
+    age:
+      kind: always
+    form:
+      kind: always
+    hepatic:
+      kind: always
+    pregnancy:
+      kind: always
+    lactation:
+      kind: always
+    medicines:
+      kind: always
+    allergy:
+      kind: always
+    renal_metric:
+      kind: always
+    uncontrolled_hypertension:
+      kind: always
+    closed_angle_glaucoma:
+      kind: always
+    maoi_type:
+      kind: maoi_record
+    maoi_stopped_at:
+      kind: stopped_maoi_record
+    fructose_intolerance:
+      kind: always
+    glucose_galactose_malabsorption:
+      kind: always
+    sucrase_isomaltase_deficiency:
+      kind: always
+    akathisia:
+      kind: reported_context
+    mania:
+      kind: reported_context
+    suicide_risk:
+      kind: reported_context
+    bleeding_risk:
+      kind: reported_context
+    hyponatremia_risk:
+      kind: reported_context
+    diabetes:
+      kind: reported_context
+    seizure_state:
+      kind: reported_context
+    persistent_BP_increase:
+      kind: reported_current_event
+- rule_id: dulox-gad-adjust
+  graph_ref: remediation_round3/question_graphs.yaml#dulox-gad-adjust
+  input_contract_ref: remediation_round3/input_contracts.yaml
+  result_contract_ref: remediation_round3/result_contracts.yaml#rules/dulox-gad-adjust
+  paths_ref: remediation_round3/actual_question_paths.json
+  required_inputs:
+  - age
+  - form
+  - hepatic
+  - pregnancy
+  - lactation
+  - medicines
+  - allergy
+  - renal_metric
+  - comorbid_depression
+  - elderly_population
+  - uncontrolled_hypertension
+  - closed_angle_glaucoma
+  - current_dose
+  - response
+  - tolerability
+  - fructose_intolerance
+  - glucose_galactose_malabsorption
+  - sucrase_isomaltase_deficiency
+  - akathisia
+  input_requirements:
+    age:
+      kind: always
+    form:
+      kind: always
+    hepatic:
+      kind: always
+    pregnancy:
+      kind: always
+    lactation:
+      kind: always
+    medicines:
+      kind: always
+    allergy:
+      kind: always
+    renal_metric:
+      kind: always
+    comorbid_depression:
+      kind: always
+    elderly_population:
+      kind: always
+    uncontrolled_hypertension:
+      kind: always
+    closed_angle_glaucoma:
+      kind: always
+    current_dose:
+      kind: always
+    response:
+      kind: always
+    tolerability:
+      kind: always
+    maoi_type:
+      kind: maoi_record
+    maoi_stopped_at:
+      kind: stopped_maoi_record
+    fructose_intolerance:
+      kind: always
+    glucose_galactose_malabsorption:
+      kind: always
+    sucrase_isomaltase_deficiency:
+      kind: always
+    akathisia:
+      kind: always
+    mania:
+      kind: reported_context
+    suicide_risk:
+      kind: reported_context
+    bleeding_risk:
+      kind: reported_context
+    hyponatremia_risk:
+      kind: reported_context
+    diabetes:
+      kind: reported_context
+    seizure_state:
+      kind: reported_context
+    persistent_BP_increase:
+      kind: reported_current_event
+- rule_id: dulox-gad-start
+  graph_ref: remediation_round3/question_graphs.yaml#dulox-gad-start
+  input_contract_ref: remediation_round3/input_contracts.yaml
+  result_contract_ref: remediation_round3/result_contracts.yaml#rules/dulox-gad-start
+  paths_ref: remediation_round3/actual_question_paths.json
+  required_inputs:
+  - age
+  - form
+  - hepatic
+  - pregnancy
+  - lactation
+  - medicines
+  - allergy
+  - renal_metric
+  - comorbid_depression
+  - elderly_population
+  - uncontrolled_hypertension
+  - closed_angle_glaucoma
+  - fructose_intolerance
+  - glucose_galactose_malabsorption
+  - sucrase_isomaltase_deficiency
+  input_requirements:
+    age:
+      kind: always
+    form:
+      kind: always
+    hepatic:
+      kind: always
+    pregnancy:
+      kind: always
+    lactation:
+      kind: always
+    medicines:
+      kind: always
+    allergy:
+      kind: always
+    renal_metric:
+      kind: always
+    comorbid_depression:
+      kind: always
+    elderly_population:
+      kind: always
+    uncontrolled_hypertension:
+      kind: always
+    closed_angle_glaucoma:
+      kind: always
+    maoi_type:
+      kind: maoi_record
+    maoi_stopped_at:
+      kind: stopped_maoi_record
+    fructose_intolerance:
+      kind: always
+    glucose_galactose_malabsorption:
+      kind: always
+    sucrase_isomaltase_deficiency:
+      kind: always
+    akathisia:
+      kind: reported_context
+    mania:
+      kind: reported_context
+    suicide_risk:
+      kind: reported_context
+    bleeding_risk:
+      kind: reported_context
+    hyponatremia_risk:
+      kind: reported_context
+    diabetes:
+      kind: reported_context
+    seizure_state:
+      kind: reported_context
+    persistent_BP_increase:
+      kind: reported_current_event
+- rule_id: dulox-taper-limit
+  graph_ref: remediation_round3/question_graphs.yaml#dulox-taper-limit
+  input_contract_ref: remediation_round3/input_contracts.yaml
+  result_contract_ref: remediation_round3/result_contracts.yaml#rules/dulox-taper-limit
+  paths_ref: remediation_round3/actual_question_paths.json
+  required_inputs:
+  - form
+  input_requirements:
+    age:
+      kind: reported_source_information
+    form:
+      kind: always
+    current_dose:
+      kind: reported_context
+    duration:
+      kind: reported_context
+    withdrawal_severity:
+      kind: reported_current_event
+    past_withdrawal:
+      kind: reported_context
+    persistent_BP_increase:
+      kind: reported_current_event
+    medicines:
+      kind: reported_source_information
+- rule_id: esc-adult-adjust
+  graph_ref: remediation_round3/question_graphs.yaml#esc-adult-adjust
+  input_contract_ref: remediation_round3/input_contracts.yaml
+  result_contract_ref: remediation_round3/result_contracts.yaml#rules/esc-adult-adjust
+  paths_ref: remediation_round3/actual_question_paths.json
+  required_inputs:
+  - age
+  - form
+  - pregnancy
+  - lactation
+  - medicines
+  - allergy
+  - hepatic
+  - seizure_state
+  - renal
+  - current_dose
+  - response
+  - tolerability
+  - akathisia
+  - mania_symptoms
+  - arrhythmia_signs
+  - serotonin_syndrome_signs
+  input_requirements:
+    age:
+      kind: always
+    form:
+      kind: always
+    pregnancy:
+      kind: always
+    lactation:
+      kind: always
+    medicines:
+      kind: always
+    allergy:
+      kind: always
+    hepatic:
+      kind: always
+    mania:
+      kind: reported_context
+    seizure_state:
+      kind: always
+    known_cyp2c19:
+      kind: reported_context
+    renal:
+      kind: always
+    current_dose:
+      kind: always
+    time_at_dose:
+      kind: reported_context
+    response:
+      kind: always
+    tolerability:
+      kind: always
+    adherence:
+      kind: reported_context
+    qt_risk:
+      kind: reported_context
+    bleeding_risk:
+      kind: reported_context
+    hyponatremia_risk:
+      kind: reported_context
+    suicide_risk:
+      kind: reported_context
+    akathisia:
+      kind: always
+    diabetes:
+      kind: reported_context
+    glaucoma:
+      kind: reported_context
+    mania_symptoms:
+      kind: always
+    arrhythmia_signs:
+      kind: always
+    serotonin_syndrome_signs:
+      kind: always
+    maoi_type:
+      kind: maoi_record
+    maoi_stopped_at:
+      kind: stopped_maoi_record
+- rule_id: esc-cyp2c19-start
+  graph_ref: remediation_round3/question_graphs.yaml#esc-cyp2c19-start
+  input_contract_ref: remediation_round3/input_contracts.yaml
+  result_contract_ref: remediation_round3/result_contracts.yaml#rules/esc-cyp2c19-start
+  paths_ref: remediation_round3/actual_question_paths.json
+  required_inputs:
+  - age
+  - form
+  - pregnancy
+  - lactation
+  - medicines
+  - allergy
+  - hepatic
+  - seizure_state
+  - known_cyp2c19
+  - renal
+  - coronary_disease
+  - electrolyte_disturbance
+  input_requirements:
+    age:
+      kind: always
+    form:
+      kind: always
+    pregnancy:
+      kind: always
+    lactation:
+      kind: always
+    medicines:
+      kind: always
+    allergy:
+      kind: always
+    hepatic:
+      kind: always
+    mania:
+      kind: reported_context
+    seizure_state:
+      kind: always
+    known_cyp2c19:
+      kind: always
+    renal:
+      kind: always
+    qt_risk:
+      kind: reported_context
+    bleeding_risk:
+      kind: reported_context
+    hyponatremia_risk:
+      kind: reported_context
+    suicide_risk:
+      kind: reported_context
+    diabetes:
+      kind: reported_context
+    glaucoma:
+      kind: reported_context
+    mania_symptoms:
+      kind: ongoing_selected_drug
+    arrhythmia_signs:
+      kind: ongoing_selected_drug
+    serotonin_syndrome_signs:
+      kind: ongoing_selected_drug
+    coronary_disease:
+      kind: always
+    electrolyte_disturbance:
+      kind: always
+    ecg_done:
+      kind: ecg_if_cad
+    electrolytes_corrected:
+      kind: correction_if_electrolytes
+    maoi_type:
+      kind: maoi_record
+    maoi_stopped_at:
+      kind: stopped_maoi_record
+- rule_id: esc-elderly-start
+  graph_ref: remediation_round3/question_graphs.yaml#esc-elderly-start
+  input_contract_ref: remediation_round3/input_contracts.yaml
+  result_contract_ref: remediation_round3/result_contracts.yaml#rules/esc-elderly-start
+  paths_ref: remediation_round3/actual_question_paths.json
+  required_inputs:
+  - age
+  - form
+  - pregnancy
+  - lactation
+  - medicines
+  - allergy
+  - hepatic
+  - seizure_state
+  - renal
+  - coronary_disease
+  - electrolyte_disturbance
+  input_requirements:
+    age:
+      kind: always
+    form:
+      kind: always
+    pregnancy:
+      kind: always
+    lactation:
+      kind: always
+    medicines:
+      kind: always
+    allergy:
+      kind: always
+    hepatic:
+      kind: always
+    mania:
+      kind: reported_context
+    seizure_state:
+      kind: always
+    known_cyp2c19:
+      kind: reported_context
+    renal:
+      kind: always
+    qt_risk:
+      kind: reported_context
+    bleeding_risk:
+      kind: reported_context
+    hyponatremia_risk:
+      kind: reported_context
+    suicide_risk:
+      kind: reported_context
+    diabetes:
+      kind: reported_context
+    glaucoma:
+      kind: reported_context
+    mania_symptoms:
+      kind: ongoing_selected_drug
+    arrhythmia_signs:
+      kind: ongoing_selected_drug
+    serotonin_syndrome_signs:
+      kind: ongoing_selected_drug
+    coronary_disease:
+      kind: always
+    electrolyte_disturbance:
+      kind: always
+    ecg_done:
+      kind: ecg_if_cad
+    electrolytes_corrected:
+      kind: correction_if_electrolytes
+    maoi_type:
+      kind: maoi_record
+    maoi_stopped_at:
+      kind: stopped_maoi_record
+- rule_id: esc-gad-start
+  graph_ref: remediation_round3/question_graphs.yaml#esc-gad-start
+  input_contract_ref: remediation_round3/input_contracts.yaml
+  result_contract_ref: remediation_round3/result_contracts.yaml#rules/esc-gad-start
+  paths_ref: remediation_round3/actual_question_paths.json
+  required_inputs:
+  - age
+  - form
+  - pregnancy
+  - lactation
+  - medicines
+  - allergy
+  - hepatic
+  - seizure_state
+  - renal
+  - coronary_disease
+  - electrolyte_disturbance
+  input_requirements:
+    age:
+      kind: always
+    form:
+      kind: always
+    pregnancy:
+      kind: always
+    lactation:
+      kind: always
+    medicines:
+      kind: always
+    allergy:
+      kind: always
+    hepatic:
+      kind: always
+    mania:
+      kind: reported_context
+    seizure_state:
+      kind: always
+    known_cyp2c19:
+      kind: reported_context
+    renal:
+      kind: always
+    qt_risk:
+      kind: reported_context
+    bleeding_risk:
+      kind: reported_context
+    hyponatremia_risk:
+      kind: reported_context
+    suicide_risk:
+      kind: reported_context
+    diabetes:
+      kind: reported_context
+    glaucoma:
+      kind: reported_context
+    mania_symptoms:
+      kind: ongoing_selected_drug
+    arrhythmia_signs:
+      kind: ongoing_selected_drug
+    serotonin_syndrome_signs:
+      kind: ongoing_selected_drug
+    coronary_disease:
+      kind: always
+    electrolyte_disturbance:
+      kind: always
+    ecg_done:
+      kind: ecg_if_cad
+    electrolytes_corrected:
+      kind: correction_if_electrolytes
+    maoi_type:
+      kind: maoi_record
+    maoi_stopped_at:
+      kind: stopped_maoi_record
+- rule_id: esc-hepatic-start
+  graph_ref: remediation_round3/question_graphs.yaml#esc-hepatic-start
+  input_contract_ref: remediation_round3/input_contracts.yaml
+  result_contract_ref: remediation_round3/result_contracts.yaml#rules/esc-hepatic-start
+  paths_ref: remediation_round3/actual_question_paths.json
+  required_inputs:
+  - age
+  - form
+  - pregnancy
+  - lactation
+  - medicines
+  - allergy
+  - hepatic
+  - seizure_state
+  - renal
+  - coronary_disease
+  - electrolyte_disturbance
+  input_requirements:
+    age:
+      kind: always
+    form:
+      kind: always
+    pregnancy:
+      kind: always
+    lactation:
+      kind: always
+    medicines:
+      kind: always
+    allergy:
+      kind: always
+    hepatic:
+      kind: always
+    mania:
+      kind: reported_context
+    seizure_state:
+      kind: always
+    known_cyp2c19:
+      kind: reported_context
+    renal:
+      kind: always
+    qt_risk:
+      kind: reported_context
+    bleeding_risk:
+      kind: reported_context
+    hyponatremia_risk:
+      kind: reported_context
+    suicide_risk:
+      kind: reported_context
+    diabetes:
+      kind: reported_context
+    glaucoma:
+      kind: reported_context
+    mania_symptoms:
+      kind: ongoing_selected_drug
+    arrhythmia_signs:
+      kind: ongoing_selected_drug
+    serotonin_syndrome_signs:
+      kind: ongoing_selected_drug
+    coronary_disease:
+      kind: always
+    electrolyte_disturbance:
+      kind: always
+    ecg_done:
+      kind: ecg_if_cad
+    electrolytes_corrected:
+      kind: correction_if_electrolytes
+    maoi_type:
+      kind: maoi_record
+    maoi_stopped_at:
+      kind: stopped_maoi_record
+- rule_id: esc-panic-start
+  graph_ref: remediation_round3/question_graphs.yaml#esc-panic-start
+  input_contract_ref: remediation_round3/input_contracts.yaml
+  result_contract_ref: remediation_round3/result_contracts.yaml#rules/esc-panic-start
+  paths_ref: remediation_round3/actual_question_paths.json
+  required_inputs:
+  - age
+  - form
+  - pregnancy
+  - lactation
+  - medicines
+  - allergy
+  - hepatic
+  - seizure_state
+  - renal
+  - coronary_disease
+  - electrolyte_disturbance
+  input_requirements:
+    age:
+      kind: always
+    form:
+      kind: always
+    pregnancy:
+      kind: always
+    lactation:
+      kind: always
+    medicines:
+      kind: always
+    allergy:
+      kind: always
+    hepatic:
+      kind: always
+    mania:
+      kind: reported_context
+    seizure_state:
+      kind: always
+    known_cyp2c19:
+      kind: reported_context
+    renal:
+      kind: always
+    qt_risk:
+      kind: reported_context
+    bleeding_risk:
+      kind: reported_context
+    hyponatremia_risk:
+      kind: reported_context
+    suicide_risk:
+      kind: reported_context
+    diabetes:
+      kind: reported_context
+    glaucoma:
+      kind: reported_context
+    mania_symptoms:
+      kind: ongoing_selected_drug
+    arrhythmia_signs:
+      kind: ongoing_selected_drug
+    serotonin_syndrome_signs:
+      kind: ongoing_selected_drug
+    coronary_disease:
+      kind: always
+    electrolyte_disturbance:
+      kind: always
+    ecg_done:
+      kind: ecg_if_cad
+    electrolytes_corrected:
+      kind: correction_if_electrolytes
+    maoi_type:
+      kind: maoi_record
+    maoi_stopped_at:
+      kind: stopped_maoi_record
+- rule_id: esc-social-start
+  graph_ref: remediation_round3/question_graphs.yaml#esc-social-start
+  input_contract_ref: remediation_round3/input_contracts.yaml
+  result_contract_ref: remediation_round3/result_contracts.yaml#rules/esc-social-start
+  paths_ref: remediation_round3/actual_question_paths.json
+  required_inputs:
+  - age
+  - form
+  - pregnancy
+  - lactation
+  - medicines
+  - allergy
+  - hepatic
+  - seizure_state
+  - renal
+  - coronary_disease
+  - electrolyte_disturbance
+  input_requirements:
+    age:
+      kind: always
+    form:
+      kind: always
+    pregnancy:
+      kind: always
+    lactation:
+      kind: always
+    medicines:
+      kind: always
+    allergy:
+      kind: always
+    hepatic:
+      kind: always
+    mania:
+      kind: reported_context
+    seizure_state:
+      kind: always
+    known_cyp2c19:
+      kind: reported_context
+    renal:
+      kind: always
+    qt_risk:
+      kind: reported_context
+    bleeding_risk:
+      kind: reported_context
+    hyponatremia_risk:
+      kind: reported_context
+    suicide_risk:
+      kind: reported_context
+    diabetes:
+      kind: reported_context
+    glaucoma:
+      kind: reported_context
+    mania_symptoms:
+      kind: ongoing_selected_drug
+    arrhythmia_signs:
+      kind: ongoing_selected_drug
+    serotonin_syndrome_signs:
+      kind: ongoing_selected_drug
+    coronary_disease:
+      kind: always
+    electrolyte_disturbance:
+      kind: always
+    ecg_done:
+      kind: ecg_if_cad
+    electrolytes_corrected:
+      kind: correction_if_electrolytes
+    maoi_type:
+      kind: maoi_record
+    maoi_stopped_at:
+      kind: stopped_maoi_record
+- rule_id: esc-taper-limit
+  graph_ref: remediation_round3/question_graphs.yaml#esc-taper-limit
+  input_contract_ref: remediation_round3/input_contracts.yaml
+  result_contract_ref: remediation_round3/result_contracts.yaml#rules/esc-taper-limit
+  paths_ref: remediation_round3/actual_question_paths.json
+  required_inputs:
+  - form
+  input_requirements:
+    age:
+      kind: reported_source_information
+    form:
+      kind: always
+    pregnancy:
+      kind: outside_cessation_scope
+    lactation:
+      kind: outside_cessation_scope
+    medicines:
+      kind: reported_source_information
+    allergy:
+      kind: outside_cessation_scope
+    hepatic:
+      kind: outside_cessation_scope
+    mania:
+      kind: outside_cessation_scope
+    seizure_state:
+      kind: reported_current_event
+    known_cyp2c19:
+      kind: outside_cessation_scope
+    renal:
+      kind: outside_cessation_scope
+    current_dose:
+      kind: reported_context
+    duration_of_use:
+      kind: reported_context
+    prior_withdrawal:
+      kind: reported_context
+    current_withdrawal:
+      kind: reported_current_event
+    qt_risk:
+      kind: outside_cessation_scope
+    bleeding_risk:
+      kind: outside_cessation_scope
+    hyponatremia_risk:
+      kind: outside_cessation_scope
+    suicide_risk:
+      kind: outside_cessation_scope
+    diabetes:
+      kind: outside_cessation_scope
+    glaucoma:
+      kind: outside_cessation_scope
+    mania_symptoms:
+      kind: reported_current_event
+    arrhythmia_signs:
+      kind: reported_current_event
+    serotonin_syndrome_signs:
+      kind: reported_current_event
+- rule_id: fluvox-depression-start
+  graph_ref: remediation_round3/question_graphs.yaml#fluvox-depression-start
+  input_contract_ref: remediation_round3/input_contracts.yaml
+  result_contract_ref: remediation_round3/result_contracts.yaml#rules/fluvox-depression-start
+  paths_ref: remediation_round3/actual_question_paths.json
+  required_inputs:
+  - age
+  - form
+  - hepatic
+  - pregnancy
+  - lactation
+  - medicines
+  - allergy
+  - renal_metric
+  - source_start_choice
+  - seizure_state
+  input_requirements:
+    age:
+      kind: always
+    form:
+      kind: always
+    hepatic:
+      kind: always
+    pregnancy:
+      kind: always
+    lactation:
+      kind: always
+    medicines:
+      kind: always
+    allergy:
+      kind: always
+    renal_metric:
+      kind: always
+    source_start_choice:
+      kind: always
+    maoi_type:
+      kind: maoi_record
+    maoi_stopped_at:
+      kind: stopped_maoi_record
+    mania:
+      kind: reported_context
+    mania_symptoms:
+      kind: ongoing_selected_drug
+    akathisia:
+      kind: reported_context
+    bleeding_risk:
+      kind: reported_context
+    suicide_risk:
+      kind: reported_context
+    diabetes:
+      kind: reported_context
+    glaucoma:
+      kind: reported_context
+    ect:
+      kind: reported_context
+    liver_injury_signs:
+      kind: ongoing_selected_drug
+    seizure_state:
+      kind: always
+    serotonin_syndrome_signs:
+      kind: ongoing_selected_drug
+    new_or_increased_seizures:
+      kind: ongoing_selected_drug
+- rule_id: fluvox-taper-limit
+  graph_ref: remediation_round3/question_graphs.yaml#fluvox-taper-limit
+  input_contract_ref: remediation_round3/input_contracts.yaml
+  result_contract_ref: remediation_round3/result_contracts.yaml#rules/fluvox-taper-limit
+  paths_ref: remediation_round3/actual_question_paths.json
+  required_inputs:
+  - form
+  input_requirements:
+    age:
+      kind: reported_source_information
+    form:
+      kind: always
+    current_dose:
+      kind: reported_context
+    duration:
+      kind: reported_context
+    withdrawal_severity:
+      kind: reported_current_event
+    past_withdrawal:
+      kind: reported_context
+    serotonin_syndrome_signs:
+      kind: reported_current_event
+    new_or_increased_seizures:
+      kind: reported_current_event
+    liver_injury_signs:
+      kind: reported_current_event
+    mania_symptoms:
+      kind: reported_current_event
+    medicines:
+      kind: reported_source_information
+- rule_id: parox-panic-kr
+  graph_ref: remediation_round3/question_graphs.yaml#parox-panic-kr
+  input_contract_ref: remediation_round3/input_contracts.yaml
+  result_contract_ref: remediation_round3/result_contracts.yaml#rules/parox-panic-kr
+  paths_ref: remediation_round3/actual_question_paths.json
+  required_inputs:
+  - age
+  - form
+  - hepatic
+  - renal
+  - pregnancy
+  - lactation
+  - medicines
+  - allergy
+  - elderly_population
+  - seizure_state
+  - bipolar_risk_screening
+  input_requirements:
+    age:
+      kind: always
+    form:
+      kind: always
+    hepatic:
+      kind: always
+    renal:
+      kind: always
+    pregnancy:
+      kind: always
+    lactation:
+      kind: always
+    medicines:
+      kind: always
+    allergy:
+      kind: always
+    response:
+      kind: reported_context
+    tolerability:
+      kind: reported_context
+    current_dose:
+      kind: reported_context
+    time_at_dose:
+      kind: reported_context
+    maoi_type:
+      kind: maoi_record
+    maoi_stopped_at:
+      kind: stopped_maoi_record
+    elderly_population:
+      kind: always
+    mania:
+      kind: reported_context
+    suicide_risk:
+      kind: reported_context
+    akathisia:
+      kind: reported_context
+    diabetes:
+      kind: reported_context
+    glaucoma:
+      kind: reported_context
+    bleeding_risk:
+      kind: reported_context
+    qt_risk:
+      kind: reported_context
+    ect:
+      kind: reported_context
+    seizure_state:
+      kind: always
+    serotonin_syndrome_signs:
+      kind: ongoing_selected_drug
+    bipolar_risk_screening:
+      kind: always
+- rule_id: parox-taper-example
+  graph_ref: remediation_round3/question_graphs.yaml#parox-taper-example
+  input_contract_ref: remediation_round3/input_contracts.yaml
+  result_contract_ref: remediation_round3/result_contracts.yaml#rules/parox-taper-example
+  paths_ref: remediation_round3/actual_question_paths.json
+  required_inputs:
+  - age
+  - form
+  - withdrawal_severity
+  - example_selected
+  - serotonin_syndrome_signs
+  - new_seizures
+  input_requirements:
+    age:
+      kind: always
+    form:
+      kind: always
+    current_dose:
+      kind: field_true
+      field: example_selected
+    duration:
+      kind: all_equals
+      values:
+        example_selected: true
+        current_dose: 40
+    past_withdrawal:
+      kind: all_equals
+      values:
+        example_selected: true
+        current_dose: 40
+    withdrawal_severity:
+      kind: always
+    example_selected:
+      kind: always
+    serotonin_syndrome_signs:
+      kind: always
+    new_seizures:
+      kind: always
+- rule_id: phen-taper-limit
+  graph_ref: remediation_round3/question_graphs.yaml#phen-taper-limit
+  input_contract_ref: remediation_round3/input_contracts.yaml
+  result_contract_ref: remediation_round3/result_contracts.yaml#rules/phen-taper-limit
+  paths_ref: remediation_round3/actual_question_paths.json
+  required_inputs: []
+  input_requirements:
+    age:
+      kind: reported_source_information
+    form:
+      kind: reported_source_information
+    current_dose:
+      kind: reported_context
+    duration:
+      kind: reported_context
+    withdrawal_severity:
+      kind: reported_source_information
+    past_withdrawal:
+      kind: reported_context
+    unusual_reactions:
+      kind: reported_current_event
+    medicines:
+      kind: reported_source_information
+- rule_id: preg-gad-adjust
+  graph_ref: remediation_round3/question_graphs.yaml#preg-gad-adjust
+  input_contract_ref: remediation_round3/input_contracts.yaml
+  result_contract_ref: remediation_round3/result_contracts.yaml#rules/preg-gad-adjust
+  paths_ref: remediation_round3/actual_question_paths.json
+  required_inputs:
+  - age
+  - form
+  - pregnancy
+  - lactation
+  - medicines
+  - allergy
+  - clcr
+  - dialysis
+  - respiratory
+  - frequency
+  - current_dose
+  - time_at_dose
+  - response
+  - tolerability
+  - adherence
+  - angioedema
+  - severe_skin_reaction
+  - galactose_intolerance
+  - complete_lactase_deficiency
+  - glucose_galactose_malabsorption
+  - misuse_risk_assessment
+  - reproductive_population
+  input_requirements:
+    age:
+      kind: always
+    form:
+      kind: always
+    pregnancy:
+      kind: always
+    lactation:
+      kind: always
+    medicines:
+      kind: always
+    allergy:
+      kind: always
+    clcr:
+      kind: always
+    dialysis:
+      kind: always
+    substance_use:
+      kind: reported_context
+    respiratory:
+      kind: always
+    frequency:
+      kind: always
+    current_dose:
+      kind: always
+    time_at_dose:
+      kind: always
+    response:
+      kind: always
+    tolerability:
+      kind: always
+    adherence:
+      kind: always
+    angioedema:
+      kind: always
+    severe_skin_reaction:
+      kind: always
+    galactose_intolerance:
+      kind: always
+    complete_lactase_deficiency:
+      kind: always
+    glucose_galactose_malabsorption:
+      kind: always
+    suicide_risk:
+      kind: reported_context
+    heart_failure:
+      kind: reported_context
+    diabetes_weight_gain:
+      kind: reported_context
+    misuse_risk_assessment:
+      kind: always
+    reproductive_population:
+      kind: always
+    effective_contraception:
+      kind: field_true
+      field: reproductive_population
+    current_suicidal_thoughts_or_behavior:
+      kind: reported_current_event
+- rule_id: preg-gad-start
+  graph_ref: remediation_round3/question_graphs.yaml#preg-gad-start
+  input_contract_ref: remediation_round3/input_contracts.yaml
+  result_contract_ref: remediation_round3/result_contracts.yaml#rules/preg-gad-start
+  paths_ref: remediation_round3/actual_question_paths.json
+  required_inputs:
+  - age
+  - form
+  - pregnancy
+  - lactation
+  - medicines
+  - allergy
+  - clcr
+  - dialysis
+  - respiratory
+  - frequency
+  - galactose_intolerance
+  - complete_lactase_deficiency
+  - glucose_galactose_malabsorption
+  - misuse_risk_assessment
+  - reproductive_population
+  input_requirements:
+    age:
+      kind: always
+    form:
+      kind: always
+    pregnancy:
+      kind: always
+    lactation:
+      kind: always
+    medicines:
+      kind: always
+    allergy:
+      kind: always
+    clcr:
+      kind: always
+    dialysis:
+      kind: always
+    substance_use:
+      kind: reported_context
+    respiratory:
+      kind: always
+    frequency:
+      kind: always
+    angioedema:
+      kind: ongoing_selected_drug
+    severe_skin_reaction:
+      kind: ongoing_selected_drug
+    galactose_intolerance:
+      kind: always
+    complete_lactase_deficiency:
+      kind: always
+    glucose_galactose_malabsorption:
+      kind: always
+    suicide_risk:
+      kind: reported_context
+    heart_failure:
+      kind: reported_context
+    diabetes_weight_gain:
+      kind: reported_context
+    misuse_risk_assessment:
+      kind: always
+    reproductive_population:
+      kind: always
+    effective_contraception:
+      kind: field_true
+      field: reproductive_population
+    current_suicidal_thoughts_or_behavior:
+      kind: reported_current_event
+- rule_id: preg-renal-start
+  graph_ref: remediation_round3/question_graphs.yaml#preg-renal-start
+  input_contract_ref: remediation_round3/input_contracts.yaml
+  result_contract_ref: remediation_round3/result_contracts.yaml#rules/preg-renal-start
+  paths_ref: remediation_round3/actual_question_paths.json
+  required_inputs:
+  - age
+  - form
+  - pregnancy
+  - lactation
+  - medicines
+  - allergy
+  - clcr
+  - dialysis
+  - respiratory
+  - galactose_intolerance
+  - complete_lactase_deficiency
+  - glucose_galactose_malabsorption
+  - misuse_risk_assessment
+  - reproductive_population
+  input_requirements:
+    age:
+      kind: always
+    form:
+      kind: always
+    pregnancy:
+      kind: always
+    lactation:
+      kind: always
+    medicines:
+      kind: always
+    allergy:
+      kind: always
+    clcr:
+      kind: always
+    dialysis:
+      kind: always
+    substance_use:
+      kind: reported_context
+    respiratory:
+      kind: always
+    angioedema:
+      kind: ongoing_selected_drug
+    severe_skin_reaction:
+      kind: ongoing_selected_drug
+    galactose_intolerance:
+      kind: always
+    complete_lactase_deficiency:
+      kind: always
+    glucose_galactose_malabsorption:
+      kind: always
+    suicide_risk:
+      kind: reported_context
+    heart_failure:
+      kind: reported_context
+    diabetes_weight_gain:
+      kind: reported_context
+    misuse_risk_assessment:
+      kind: always
+    reproductive_population:
+      kind: always
+    effective_contraception:
+      kind: field_true
+      field: reproductive_population
+    current_suicidal_thoughts_or_behavior:
+      kind: reported_current_event
+- rule_id: preg-taper-limit
+  graph_ref: remediation_round3/question_graphs.yaml#preg-taper-limit
+  input_contract_ref: remediation_round3/input_contracts.yaml
+  result_contract_ref: remediation_round3/result_contracts.yaml#rules/preg-taper-limit
+  paths_ref: remediation_round3/actual_question_paths.json
+  required_inputs: []
+  input_requirements:
+    age:
+      kind: reported_source_information
+    form:
+      kind: reported_source_information
+    pregnancy:
+      kind: outside_cessation_scope
+    lactation:
+      kind: outside_cessation_scope
+    medicines:
+      kind: reported_source_information
+    allergy:
+      kind: outside_cessation_scope
+    clcr:
+      kind: outside_cessation_scope
+    dialysis:
+      kind: outside_cessation_scope
+    substance_use:
+      kind: outside_cessation_scope
+    respiratory:
+      kind: outside_cessation_scope
+    current_dose:
+      kind: reported_context
+    duration_of_use:
+      kind: reported_context
+    prior_withdrawal:
+      kind: reported_context
+    current_withdrawal:
+      kind: reported_source_information
+    angioedema:
+      kind: reported_current_event
+    severe_skin_reaction:
+      kind: reported_current_event
+    galactose_intolerance:
+      kind: outside_cessation_scope
+    complete_lactase_deficiency:
+      kind: outside_cessation_scope
+    glucose_galactose_malabsorption:
+      kind: outside_cessation_scope
+    suicide_risk:
+      kind: outside_cessation_scope
+    heart_failure:
+      kind: outside_cessation_scope
+    diabetes_weight_gain:
+      kind: outside_cessation_scope
+    current_suicidal_thoughts_or_behavior:
+      kind: reported_current_event
+- rule_id: ser-adult-adjust
+  graph_ref: remediation_round3/question_graphs.yaml#ser-adult-adjust
+  input_contract_ref: remediation_round3/input_contracts.yaml
+  result_contract_ref: remediation_round3/result_contracts.yaml#rules/ser-adult-adjust
+  paths_ref: remediation_round3/actual_question_paths.json
+  required_inputs:
+  - age
+  - form
+  - pregnancy
+  - lactation
+  - medicines
+  - allergy
+  - hepatic
+  - seizure_state
+  - current_dose
+  - clinician_action
+  - mania_symptoms
+  input_requirements:
+    age:
+      kind: always
+    form:
+      kind: always
+    pregnancy:
+      kind: always
+    lactation:
+      kind: always
+    medicines:
+      kind: always
+    allergy:
+      kind: always
+    hepatic:
+      kind: always
+    mania:
+      kind: reported_context
+    seizure_state:
+      kind: always
+    current_dose:
+      kind: always
+    time_at_dose:
+      kind: increase
+      actions:
+      - increase
+      - not_chosen
+    response:
+      kind: action_choice
+      actions:
+      - not_chosen
+      - unknown
+      - not_assessed
+    tolerability:
+      kind: action_choice
+      actions:
+      - not_chosen
+      - unknown
+      - not_assessed
+    adherence:
+      kind: indication_action_choice
+      diagnoses:
+      - F41.0
+      actions:
+      - not_chosen
+      - unknown
+      - not_assessed
+    qt_risk:
+      kind: reported_context
+    bleeding_risk:
+      kind: reported_context
+    hyponatremia_risk:
+      kind: reported_context
+    suicide_risk:
+      kind: reported_context
+    akathisia:
+      kind: increase
+      actions:
+      - increase
+      - not_chosen
+    clinician_action:
+      kind: always
+    maoi_type:
+      kind: maoi_record
+    maoi_stopped_at:
+      kind: stopped_maoi_record
+    mania_symptoms:
+      kind: always
+    symptomatic_hyponatremia:
+      kind: reported_current_event
+- rule_id: ser-panic-start
+  graph_ref: remediation_round3/question_graphs.yaml#ser-panic-start
+  input_contract_ref: remediation_round3/input_contracts.yaml
+  result_contract_ref: remediation_round3/result_contracts.yaml#rules/ser-panic-start
+  paths_ref: remediation_round3/actual_question_paths.json
+  required_inputs:
+  - age
+  - form
+  - pregnancy
+  - lactation
+  - medicines
+  - allergy
+  - hepatic
+  - seizure_state
+  input_requirements:
+    age:
+      kind: always
+    form:
+      kind: always
+    pregnancy:
+      kind: always
+    lactation:
+      kind: always
+    medicines:
+      kind: always
+    allergy:
+      kind: always
+    hepatic:
+      kind: always
+    mania:
+      kind: reported_context
+    seizure_state:
+      kind: always
+    qt_risk:
+      kind: reported_context
+    bleeding_risk:
+      kind: reported_context
+    hyponatremia_risk:
+      kind: reported_context
+    suicide_risk:
+      kind: reported_context
+    maoi_type:
+      kind: maoi_record
+    maoi_stopped_at:
+      kind: stopped_maoi_record
+    akathisia:
+      kind: reported_context
+    mania_symptoms:
+      kind: ongoing_selected_drug
+    symptomatic_hyponatremia:
+      kind: reported_current_event
+- rule_id: ser-social-start
+  graph_ref: remediation_round3/question_graphs.yaml#ser-social-start
+  input_contract_ref: remediation_round3/input_contracts.yaml
+  result_contract_ref: remediation_round3/result_contracts.yaml#rules/ser-social-start
+  paths_ref: remediation_round3/actual_question_paths.json
+  required_inputs:
+  - age
+  - form
+  - pregnancy
+  - lactation
+  - medicines
+  - allergy
+  - hepatic
+  - seizure_state
+  input_requirements:
+    age:
+      kind: always
+    form:
+      kind: always
+    pregnancy:
+      kind: always
+    lactation:
+      kind: always
+    medicines:
+      kind: always
+    allergy:
+      kind: always
+    hepatic:
+      kind: always
+    mania:
+      kind: reported_context
+    seizure_state:
+      kind: always
+    qt_risk:
+      kind: reported_context
+    bleeding_risk:
+      kind: reported_context
+    hyponatremia_risk:
+      kind: reported_context
+    suicide_risk:
+      kind: reported_context
+    maoi_type:
+      kind: maoi_record
+    maoi_stopped_at:
+      kind: stopped_maoi_record
+    akathisia:
+      kind: reported_context
+    mania_symptoms:
+      kind: ongoing_selected_drug
+    symptomatic_hyponatremia:
+      kind: reported_current_event
+- rule_id: ser-taper-limit
+  graph_ref: remediation_round3/question_graphs.yaml#ser-taper-limit
+  input_contract_ref: remediation_round3/input_contracts.yaml
+  result_contract_ref: remediation_round3/result_contracts.yaml#rules/ser-taper-limit
+  paths_ref: remediation_round3/actual_question_paths.json
+  required_inputs:
+  - form
+  input_requirements:
+    age:
+      kind: reported_source_information
+    form:
+      kind: always
+    pregnancy:
+      kind: outside_cessation_scope
+    lactation:
+      kind: outside_cessation_scope
+    medicines:
+      kind: reported_source_information
+    allergy:
+      kind: outside_cessation_scope
+    hepatic:
+      kind: outside_cessation_scope
+    mania:
+      kind: outside_cessation_scope
+    seizure_state:
+      kind: reported_current_event
+    current_dose:
+      kind: reported_context
+    duration_of_use:
+      kind: reported_context
+    prior_withdrawal:
+      kind: reported_context
+    current_withdrawal:
+      kind: reported_current_event
+    qt_risk:
+      kind: outside_cessation_scope
+    bleeding_risk:
+      kind: outside_cessation_scope
+    hyponatremia_risk:
+      kind: outside_cessation_scope
+    suicide_risk:
+      kind: outside_cessation_scope
+    mania_symptoms:
+      kind: reported_current_event
+    symptomatic_hyponatremia:
+      kind: reported_current_event
+- rule_id: switch-esc-ago
+  graph_ref: remediation_round3/question_graphs.yaml#switch-esc-ago
+  input_contract_ref: remediation_round3/input_contracts.yaml
+  result_contract_ref: remediation_round3/result_contracts.yaml#rules/switch-esc-ago
+  paths_ref: remediation_round3/actual_question_paths.json
+  required_inputs:
+  - from_form
+  - to_form
+  input_requirements:
+    from_form:
+      kind: always
+    to_form:
+      kind: always
+    age:
+      kind: reported_source_information
+    current_dose:
+      kind: reported_source_information
+    from_taper_plan:
+      kind: reported_source_information
+    hepatic:
+      kind: reported_source_information
+    alt_ratio_uln:
+      kind: reported_source_information
+    ast_ratio_uln:
+      kind: reported_source_information
+    medicines:
+      kind: reported_source_information
+    allergy:
+      kind: reported_source_information
+    pregnancy:
+      kind: reported_source_information
+    lactation:
+      kind: reported_source_information
+    withdrawal_severity:
+      kind: reported_source_information
+    elderly_population:
+      kind: reported_source_information
+    dementia:
+      kind: reported_source_information
+    galactose_intolerance:
+      kind: reported_source_information
+    complete_lactase_deficiency:
+      kind: reported_source_information
+    glucose_galactose_malabsorption:
+      kind: reported_source_information
+    liver_injury_signs:
+      kind: reported_current_event
+    transaminases_rising:
+      kind: reported_source_information
+    overweight_obesity:
+      kind: reported_source_information
+    fatty_liver:
+      kind: reported_source_information
+    diabetes:
+      kind: reported_source_information
+    alcohol_abuse:
+      kind: reported_source_information
+    alcohol_use:
+      kind: reported_context
+    mania:
+      kind: reported_context
+    mania_symptoms:
+      kind: reported_current_event
+    suicide_risk:
+      kind: reported_context
+    ect:
+      kind: reported_source_information
+    renal_state:
+      kind: reported_context
+    from_hepatic:
+      kind: reported_source_information
+    arrhythmia_signs:
+      kind: reported_current_event
+    serotonin_syndrome_signs:
+      kind: reported_current_event
+    seizure_state:
+      kind: reported_current_event
+- rule_id: switch-esc-ser
+  graph_ref: remediation_round3/question_graphs.yaml#switch-esc-ser
+  input_contract_ref: remediation_round3/input_contracts.yaml
+  result_contract_ref: remediation_round3/result_contracts.yaml#rules/switch-esc-ser
+  paths_ref: remediation_round3/actual_question_paths.json
+  required_inputs:
+  - from_form
+  - to_form
+  input_requirements:
+    from_form:
+      kind: always
+    to_form:
+      kind: always
+    current_dose:
+      kind: reported_context
+    duration:
+      kind: reported_context
+    last_dose_time:
+      kind: reported_context
+    withdrawal_symptoms:
+      kind: reported_context
+    medicines:
+      kind: reported_source_information
+    target_applicability:
+      kind: reported_context
+    maoi_type:
+      kind: maoi_record
+    maoi_stopped_at:
+      kind: stopped_maoi_record
+    mania_symptoms:
+      kind: reported_current_event
+    arrhythmia_signs:
+      kind: reported_current_event
+    serotonin_syndrome_signs:
+      kind: reported_current_event
+    seizure_state:
+      kind: reported_current_event
+    target_new_seizures:
+      kind: reported_current_event
+    target_symptomatic_hyponatremia:
+      kind: reported_current_event
+- rule_id: switch-parox-ago-selected-example
+  graph_ref: remediation_round3/question_graphs.yaml#switch-parox-ago-selected-example
+  input_contract_ref: remediation_round3/input_contracts.yaml
+  result_contract_ref: remediation_round3/result_contracts.yaml#rules/switch-parox-ago-selected-example
+  paths_ref: remediation_round3/actual_question_paths.json
+  required_inputs:
+  - from_form
+  - to_form
+  - age
+  - current_dose
+  - hepatic
+  - alt_ratio_uln
+  - ast_ratio_uln
+  - medicines
+  - allergy
+  - pregnancy
+  - lactation
+  - withdrawal_severity
+  - duration
+  - past_withdrawal
+  - example_selected
+  - elderly_population
+  - galactose_intolerance
+  - complete_lactase_deficiency
+  - glucose_galactose_malabsorption
+  - overweight_obesity
+  - fatty_liver
+  - diabetes
+  - alcohol_abuse
+  - from_renal
+  - from_hepatic
+  - seizure_state
+  - serotonin_syndrome_signs
+  input_requirements:
+    from_form:
+      kind: always
+    to_form:
+      kind: always
+    age:
+      kind: always
+    current_dose:
+      kind: always
+    hepatic:
+      kind: always
+    alt_ratio_uln:
+      kind: always
+    ast_ratio_uln:
+      kind: always
+    medicines:
+      kind: always
+    allergy:
+      kind: always
+    pregnancy:
+      kind: always
+    lactation:
+      kind: always
+    withdrawal_severity:
+      kind: always
+    duration:
+      kind: always
+    past_withdrawal:
+      kind: always
+    example_selected:
+      kind: always
+    renal_state:
+      kind: reported_context
+    maoi_type:
+      kind: maoi_record
+    maoi_stopped_at:
+      kind: stopped_maoi_record
+    elderly_population:
+      kind: always
+    dementia:
+      kind: field_true
+      field: elderly_population
+    galactose_intolerance:
+      kind: always
+    complete_lactase_deficiency:
+      kind: always
+    glucose_galactose_malabsorption:
+      kind: always
+    liver_injury_signs:
+      kind: target_ongoing
+    transaminases_rising:
+      kind: target_ongoing
+    overweight_obesity:
+      kind: always
+    fatty_liver:
+      kind: always
+    diabetes:
+      kind: always
+    alcohol_abuse:
+      kind: always
+    alcohol_use:
+      kind: reported_context
+    mania:
+      kind: reported_context
+    mania_symptoms:
+      kind: target_ongoing
+    suicide_risk:
+      kind: reported_context
+    ect:
+      kind: reported_context
+    from_renal:
+      kind: always
+    from_hepatic:
+      kind: always
+    akathisia:
+      kind: reported_context
+    glaucoma:
+      kind: reported_context
+    bleeding_risk:
+      kind: reported_context
+    qt_risk:
+      kind: reported_context
+    seizure_state:
+      kind: always
+    serotonin_syndrome_signs:
+      kind: always
+- rule_id: switch-parox-ago
+  graph_ref: remediation_round3/question_graphs.yaml#switch-parox-ago
+  input_contract_ref: remediation_round3/input_contracts.yaml
+  result_contract_ref: remediation_round3/result_contracts.yaml#rules/switch-parox-ago
+  paths_ref: remediation_round3/actual_question_paths.json
+  required_inputs:
+  - from_form
+  - to_form
+  input_requirements:
+    from_form:
+      kind: always
+    to_form:
+      kind: always
+    age:
+      kind: reported_source_information
+    current_dose:
+      kind: reported_source_information
+    from_taper_plan:
+      kind: reported_source_information
+    hepatic:
+      kind: reported_source_information
+    alt_ratio_uln:
+      kind: reported_source_information
+    ast_ratio_uln:
+      kind: reported_source_information
+    medicines:
+      kind: reported_source_information
+    allergy:
+      kind: reported_source_information
+    pregnancy:
+      kind: reported_source_information
+    lactation:
+      kind: reported_source_information
+    withdrawal_severity:
+      kind: reported_source_information
+    maoi_type:
+      kind: maoi_record
+    maoi_stopped_at:
+      kind: stopped_maoi_record
+    elderly_population:
+      kind: reported_source_information
+    dementia:
+      kind: reported_source_information
+    galactose_intolerance:
+      kind: reported_source_information
+    complete_lactase_deficiency:
+      kind: reported_source_information
+    glucose_galactose_malabsorption:
+      kind: reported_source_information
+    liver_injury_signs:
+      kind: reported_current_event
+    transaminases_rising:
+      kind: reported_source_information
+    overweight_obesity:
+      kind: reported_source_information
+    fatty_liver:
+      kind: reported_source_information
+    diabetes:
+      kind: reported_source_information
+    alcohol_abuse:
+      kind: reported_source_information
+    alcohol_use:
+      kind: reported_context
+    mania:
+      kind: reported_context
+    mania_symptoms:
+      kind: reported_current_event
+    suicide_risk:
+      kind: reported_context
+    ect:
+      kind: reported_source_information
+    renal_state:
+      kind: reported_context
+    from_hepatic:
+      kind: reported_source_information
+    from_renal:
+      kind: reported_source_information
+    akathisia:
+      kind: reported_source_information
+    glaucoma:
+      kind: reported_source_information
+    bleeding_risk:
+      kind: reported_context
+    qt_risk:
+      kind: reported_source_information
+    seizure_state:
+      kind: reported_current_event
+    serotonin_syndrome_signs:
+      kind: reported_current_event
+- rule_id: switch-ser-ago
+  graph_ref: remediation_round3/question_graphs.yaml#switch-ser-ago
+  input_contract_ref: remediation_round3/input_contracts.yaml
+  result_contract_ref: remediation_round3/result_contracts.yaml#rules/switch-ser-ago
+  paths_ref: remediation_round3/actual_question_paths.json
+  required_inputs:
+  - from_form
+  - to_form
+  input_requirements:
+    from_form:
+      kind: always
+    to_form:
+      kind: always
+    age:
+      kind: reported_source_information
+    current_dose:
+      kind: reported_source_information
+    from_taper_plan:
+      kind: reported_source_information
+    hepatic:
+      kind: reported_source_information
+    alt_ratio_uln:
+      kind: reported_source_information
+    ast_ratio_uln:
+      kind: reported_source_information
+    medicines:
+      kind: reported_source_information
+    allergy:
+      kind: reported_source_information
+    pregnancy:
+      kind: reported_source_information
+    lactation:
+      kind: reported_source_information
+    withdrawal_severity:
+      kind: reported_source_information
+    maoi_type:
+      kind: maoi_record
+    maoi_stopped_at:
+      kind: stopped_maoi_record
+    elderly_population:
+      kind: reported_source_information
+    dementia:
+      kind: reported_source_information
+    galactose_intolerance:
+      kind: reported_source_information
+    complete_lactase_deficiency:
+      kind: reported_source_information
+    glucose_galactose_malabsorption:
+      kind: reported_source_information
+    liver_injury_signs:
+      kind: reported_current_event
+    transaminases_rising:
+      kind: reported_source_information
+    overweight_obesity:
+      kind: reported_source_information
+    fatty_liver:
+      kind: reported_source_information
+    diabetes:
+      kind: reported_source_information
+    alcohol_abuse:
+      kind: reported_source_information
+    alcohol_use:
+      kind: reported_context
+    mania:
+      kind: reported_context
+    mania_symptoms:
+      kind: reported_current_event
+    suicide_risk:
+      kind: reported_context
+    ect:
+      kind: reported_source_information
+    renal_state:
+      kind: reported_context
+    from_hepatic:
+      kind: reported_source_information
+    akathisia:
+      kind: reported_source_information
+    qt_risk:
+      kind: reported_source_information
+    bleeding_risk:
+      kind: reported_context
+    hyponatremia_risk:
+      kind: reported_context
+    seizure_state:
+      kind: reported_current_event
+    symptomatic_hyponatremia:
+      kind: reported_current_event
+- rule_id: switch-ser-esc
+  graph_ref: remediation_round3/question_graphs.yaml#switch-ser-esc
+  input_contract_ref: remediation_round3/input_contracts.yaml
+  result_contract_ref: remediation_round3/result_contracts.yaml#rules/switch-ser-esc
+  paths_ref: remediation_round3/actual_question_paths.json
+  required_inputs:
+  - from_form
+  - to_form
+  input_requirements:
+    from_form:
+      kind: always
+    to_form:
+      kind: always
+    current_dose:
+      kind: reported_context
+    duration:
+      kind: reported_context
+    last_dose_time:
+      kind: reported_context
+    withdrawal_symptoms:
+      kind: reported_context
+    medicines:
+      kind: reported_source_information
+    target_applicability:
+      kind: reported_context
+    maoi_type:
+      kind: maoi_record
+    maoi_stopped_at:
+      kind: stopped_maoi_record
+    mania_symptoms:
+      kind: reported_current_event
+    target_arrhythmia_signs:
+      kind: reported_current_event
+    target_serotonin_syndrome_signs:
+      kind: reported_current_event
+    target_seizure_state:
+      kind: reported_current_event
+    new_seizures:
+      kind: reported_current_event
+    symptomatic_hyponatremia:
+      kind: reported_current_event
+- rule_id: venla-xr-gad-start
+  graph_ref: remediation_round3/question_graphs.yaml#venla-xr-gad-start
+  input_contract_ref: remediation_round3/input_contracts.yaml
+  result_contract_ref: remediation_round3/result_contracts.yaml#rules/venla-xr-gad-start
+  paths_ref: remediation_round3/actual_question_paths.json
+  required_inputs:
+  - age
+  - form
+  - hepatic
+  - pregnancy
+  - lactation
+  - medicines
+  - allergy
+  - renal_metric
+  - qt_risk
+  - pregnancy_suspected
+  input_requirements:
+    age:
+      kind: always
+    form:
+      kind: always
+    hepatic:
+      kind: always
+    pregnancy:
+      kind: always
+    lactation:
+      kind: always
+    medicines:
+      kind: always
+    allergy:
+      kind: always
+    renal_metric:
+      kind: always
+    maoi_type:
+      kind: maoi_record
+    maoi_stopped_at:
+      kind: stopped_maoi_record
+    recent_infarction:
+      kind: reported_context
+    unstable_angina:
+      kind: reported_context
+    heart_failure:
+      kind: reported_context
+    coronary_disease:
+      kind: reported_context
+    ecg_change:
+      kind: reported_context
+    qt_risk:
+      kind: always
+    electrolyte_imbalance:
+      kind: reported_context
+    hypertension:
+      kind: reported_context
+    tachycardia:
+      kind: reported_context
+    seizure_history:
+      kind: reported_context
+    glaucoma:
+      kind: reported_context
+    mania:
+      kind: reported_context
+    bleeding_risk:
+      kind: reported_context
+    low_body_mass:
+      kind: reported_context
+    urinary_impairment:
+      kind: reported_context
+    low_blood_pressure:
+      kind: reported_context
+    diabetes:
+      kind: reported_context
+    recent_stroke:
+      kind: reported_context
+    hyponatremia_risk:
+      kind: reported_context
+    ect:
+      kind: reported_context
+    hypercholesterolemia:
+      kind: reported_context
+    alcohol_use:
+      kind: reported_context
+    suicide_risk:
+      kind: reported_context
+    pregnancy_suspected:
+      kind: always
+    diastolic_BP:
+      kind: ongoing_selected_drug
+    current_allergic_reaction:
+      kind: ongoing_selected_drug
+    suspected_serotonin_syndrome:
+      kind: reported_current_event
+- rule_id: venla-xr-panic-form-limit
+  graph_ref: remediation_round3/question_graphs.yaml#venla-xr-panic-form-limit
+  input_contract_ref: remediation_round3/input_contracts.yaml
+  result_contract_ref: remediation_round3/result_contracts.yaml#rules/venla-xr-panic-form-limit
+  paths_ref: remediation_round3/actual_question_paths.json
+  required_inputs:
+  - form
+  input_requirements:
+    age:
+      kind: reported_source_information
+    form:
+      kind: always
+    hepatic:
+      kind: reported_source_information
+    pregnancy:
+      kind: reported_source_information
+    lactation:
+      kind: reported_source_information
+    medicines:
+      kind: reported_source_information
+    allergy:
+      kind: reported_source_information
+    renal_metric:
+      kind: reported_source_information
+    maoi_type:
+      kind: maoi_record
+    maoi_stopped_at:
+      kind: stopped_maoi_record
+    recent_infarction:
+      kind: reported_context
+    unstable_angina:
+      kind: reported_context
+    heart_failure:
+      kind: reported_context
+    coronary_disease:
+      kind: reported_context
+    ecg_change:
+      kind: reported_context
+    qt_risk:
+      kind: reported_source_information
+    electrolyte_imbalance:
+      kind: reported_context
+    hypertension:
+      kind: reported_context
+    tachycardia:
+      kind: reported_context
+    seizure_history:
+      kind: reported_context
+    glaucoma:
+      kind: reported_context
+    mania:
+      kind: reported_context
+    bleeding_risk:
+      kind: reported_context
+    low_body_mass:
+      kind: reported_context
+    urinary_impairment:
+      kind: reported_context
+    low_blood_pressure:
+      kind: reported_context
+    diabetes:
+      kind: reported_context
+    recent_stroke:
+      kind: reported_context
+    hyponatremia_risk:
+      kind: reported_context
+    ect:
+      kind: reported_context
+    hypercholesterolemia:
+      kind: reported_context
+    alcohol_use:
+      kind: reported_context
+    suicide_risk:
+      kind: reported_context
+    pregnancy_suspected:
+      kind: reported_source_information
+    diastolic_BP:
+      kind: reported_current_event
+    current_allergic_reaction:
+      kind: reported_current_event
+    suspected_serotonin_syndrome:
+      kind: reported_current_event
+- rule_id: venla-xr-social-start
+  graph_ref: remediation_round3/question_graphs.yaml#venla-xr-social-start
+  input_contract_ref: remediation_round3/input_contracts.yaml
+  result_contract_ref: remediation_round3/result_contracts.yaml#rules/venla-xr-social-start
+  paths_ref: remediation_round3/actual_question_paths.json
+  required_inputs:
+  - age
+  - form
+  - hepatic
+  - pregnancy
+  - lactation
+  - medicines
+  - allergy
+  - renal_metric
+  - qt_risk
+  - pregnancy_suspected
+  input_requirements:
+    age:
+      kind: always
+    form:
+      kind: always
+    hepatic:
+      kind: always
+    pregnancy:
+      kind: always
+    lactation:
+      kind: always
+    medicines:
+      kind: always
+    allergy:
+      kind: always
+    renal_metric:
+      kind: always
+    maoi_type:
+      kind: maoi_record
+    maoi_stopped_at:
+      kind: stopped_maoi_record
+    recent_infarction:
+      kind: reported_context
+    unstable_angina:
+      kind: reported_context
+    heart_failure:
+      kind: reported_context
+    coronary_disease:
+      kind: reported_context
+    ecg_change:
+      kind: reported_context
+    qt_risk:
+      kind: always
+    electrolyte_imbalance:
+      kind: reported_context
+    hypertension:
+      kind: reported_context
+    tachycardia:
+      kind: reported_context
+    seizure_history:
+      kind: reported_context
+    glaucoma:
+      kind: reported_context
+    mania:
+      kind: reported_context
+    bleeding_risk:
+      kind: reported_context
+    low_body_mass:
+      kind: reported_context
+    urinary_impairment:
+      kind: reported_context
+    low_blood_pressure:
+      kind: reported_context
+    diabetes:
+      kind: reported_context
+    recent_stroke:
+      kind: reported_context
+    hyponatremia_risk:
+      kind: reported_context
+    ect:
+      kind: reported_context
+    hypercholesterolemia:
+      kind: reported_context
+    alcohol_use:
+      kind: reported_context
+    suicide_risk:
+      kind: reported_context
+    pregnancy_suspected:
+      kind: always
+    diastolic_BP:
+      kind: ongoing_selected_drug
+    current_allergic_reaction:
+      kind: ongoing_selected_drug
+    suspected_serotonin_syndrome:
+      kind: reported_current_event
+- rule_id: venla-xr-taper-limit
+  graph_ref: remediation_round3/question_graphs.yaml#venla-xr-taper-limit
+  input_contract_ref: remediation_round3/input_contracts.yaml
+  result_contract_ref: remediation_round3/result_contracts.yaml#rules/venla-xr-taper-limit
+  paths_ref: remediation_round3/actual_question_paths.json
+  required_inputs:
+  - form
+  input_requirements:
+    age:
+      kind: reported_source_information
+    form:
+      kind: always
+    current_dose:
+      kind: reported_context
+    duration:
+      kind: reported_context
+    withdrawal_severity:
+      kind: reported_current_event
+    past_withdrawal:
+      kind: reported_context
+    diastolic_BP:
+      kind: reported_current_event
+    current_allergic_reaction:
+      kind: reported_current_event
+    suspected_serotonin_syndrome:
+      kind: reported_current_event
+    medicines:
+      kind: reported_source_information

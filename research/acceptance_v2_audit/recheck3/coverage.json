@@ -1,0 +1,706 @@
+{
+  "snapshot": "ac33f61373c22b1c160de40057815b16c27bc67e4beb870a56057992f0b06148",
+  "cards": 38,
+  "parameter_rows": 211,
+  "input_rows": 906,
+  "always_inputs": 505,
+  "prepared_cases": 5430,
+  "selected_paths": 737,
+  "ledger_rows": 2230,
+  "necessity_decisions": "see necessity_decisions.json",
+  "source_contract_records": 215,
+  "safe_author_negative_properties_reexecuted": 61,
+  "own_old_properties": 12,
+  "own_phase_counterexamples": 7,
+  "primary_numeric_assertions": 14,
+  "population_primary_expected_checks": 8,
+  "par_qualitative_primary_expected_checks": 4,
+  "new_primary_physical_pages": {
+    "RU_PAROX": [
+      3,
+      4,
+      9,
+      10
+    ],
+    "RU_PREG": [
+      4,
+      5,
+      6,
+      9
+    ],
+    "RU_PHEN": [
+      2,
+      3,
+      4
+    ],
+    "RU_GAD": [
+      77,
+      78
+    ]
+  },
+  "visual_review": "Earlier seen primary tables/formulas/footnotes retained only after SHA equality; no new numerical table change in recheck3. No new visual pages claimed.",
+  "ordinary_maxima": [
+    {
+      "rule_id": "ago-depression-start",
+      "counts": [
+        20
+      ],
+      "maximum": 20,
+      "path_count": 1
+    },
+    {
+      "rule_id": "ago-gad-start",
+      "counts": [
+        20
+      ],
+      "maximum": 20,
+      "path_count": 1
+    },
+    {
+      "rule_id": "ago-stop",
+      "counts": [],
+      "maximum": null,
+      "path_count": 0
+    },
+    {
+      "rule_id": "dulox-depression-start",
+      "counts": [
+        15
+      ],
+      "maximum": 15,
+      "path_count": 1
+    },
+    {
+      "rule_id": "dulox-gad-adjust",
+      "counts": [],
+      "maximum": null,
+      "path_count": 0
+    },
+    {
+      "rule_id": "dulox-gad-start",
+      "counts": [
+        17
+      ],
+      "maximum": 17,
+      "path_count": 3
+    },
+    {
+      "rule_id": "dulox-taper-limit",
+      "counts": [],
+      "maximum": null,
+      "path_count": 0
+    },
+    {
+      "rule_id": "esc-adult-adjust",
+      "counts": [],
+      "maximum": null,
+      "path_count": 0
+    },
+    {
+      "rule_id": "esc-cyp2c19-start",
+      "counts": [
+        14
+      ],
+      "maximum": 14,
+      "path_count": 1
+    },
+    {
+      "rule_id": "esc-elderly-start",
+      "counts": [
+        13
+      ],
+      "maximum": 13,
+      "path_count": 1
+    },
+    {
+      "rule_id": "esc-gad-start",
+      "counts": [
+        13
+      ],
+      "maximum": 13,
+      "path_count": 1
+    },
+    {
+      "rule_id": "esc-hepatic-start",
+      "counts": [
+        13
+      ],
+      "maximum": 13,
+      "path_count": 1
+    },
+    {
+      "rule_id": "esc-panic-start",
+      "counts": [
+        13
+      ],
+      "maximum": 13,
+      "path_count": 1
+    },
+    {
+      "rule_id": "esc-social-start",
+      "counts": [
+        13
+      ],
+      "maximum": 13,
+      "path_count": 1
+    },
+    {
+      "rule_id": "esc-taper-limit",
+      "counts": [],
+      "maximum": null,
+      "path_count": 0
+    },
+    {
+      "rule_id": "fluvox-depression-start",
+      "counts": [
+        12
+      ],
+      "maximum": 12,
+      "path_count": 2
+    },
+    {
+      "rule_id": "fluvox-taper-limit",
+      "counts": [],
+      "maximum": null,
+      "path_count": 0
+    },
+    {
+      "rule_id": "parox-panic-kr",
+      "counts": [
+        13
+      ],
+      "maximum": 13,
+      "path_count": 3
+    },
+    {
+      "rule_id": "parox-taper-example",
+      "counts": [
+        11
+      ],
+      "maximum": 11,
+      "path_count": 3
+    },
+    {
+      "rule_id": "phen-taper-limit",
+      "counts": [],
+      "maximum": null,
+      "path_count": 0
+    },
+    {
+      "rule_id": "preg-gad-adjust",
+      "counts": [],
+      "maximum": null,
+      "path_count": 0
+    },
+    {
+      "rule_id": "preg-gad-start",
+      "counts": [
+        17,
+        18
+      ],
+      "maximum": 18,
+      "path_count": 5
+    },
+    {
+      "rule_id": "preg-renal-start",
+      "counts": [],
+      "maximum": null,
+      "path_count": 0
+    },
+    {
+      "rule_id": "preg-taper-limit",
+      "counts": [],
+      "maximum": null,
+      "path_count": 0
+    },
+    {
+      "rule_id": "ser-adult-adjust",
+      "counts": [
+        13,
+        15,
+        16
+      ],
+      "maximum": 16,
+      "path_count": 11
+    },
+    {
+      "rule_id": "ser-panic-start",
+      "counts": [
+        10
+      ],
+      "maximum": 10,
+      "path_count": 1
+    },
+    {
+      "rule_id": "ser-social-start",
+      "counts": [
+        10
+      ],
+      "maximum": 10,
+      "path_count": 1
+    },
+    {
+      "rule_id": "ser-taper-limit",
+      "counts": [],
+      "maximum": null,
+      "path_count": 0
+    },
+    {
+      "rule_id": "switch-esc-ago",
+      "counts": [],
+      "maximum": null,
+      "path_count": 0
+    },
+    {
+      "rule_id": "switch-esc-ser",
+      "counts": [],
+      "maximum": null,
+      "path_count": 0
+    },
+    {
+      "rule_id": "switch-parox-ago-selected-example",
+      "counts": [],
+      "maximum": null,
+      "path_count": 0
+    },
+    {
+      "rule_id": "switch-parox-ago",
+      "counts": [],
+      "maximum": null,
+      "path_count": 0
+    },
+    {
+      "rule_id": "switch-ser-ago",
+      "counts": [],
+      "maximum": null,
+      "path_count": 0
+    },
+    {
+      "rule_id": "switch-ser-esc",
+      "counts": [],
+      "maximum": null,
+      "path_count": 0
+    },
+    {
+      "rule_id": "venla-xr-gad-start",
+      "counts": [
+        12
+      ],
+      "maximum": 12,
+      "path_count": 1
+    },
+    {
+      "rule_id": "venla-xr-panic-form-limit",
+      "counts": [],
+      "maximum": null,
+      "path_count": 0
+    },
+    {
+      "rule_id": "venla-xr-social-start",
+      "counts": [
+        12
+      ],
+      "maximum": 12,
+      "path_count": 1
+    },
+    {
+      "rule_id": "venla-xr-taper-limit",
+      "counts": [],
+      "maximum": null,
+      "path_count": 0
+    }
+  ],
+  "source_original_hash_changes": [],
+  "not_completed": [
+    "Independent exhaustive verification of every unique primary medical condition and all5430full expected; unreviewed label/PIL sections and clinical text deltas remain listed in inherited source coverage.",
+    "Proof of result-specific necessity of every remaining mandatory field; agreement of ledger flags is not proof.",
+    "Global minimum/complete ordinary≤15 model; broad alternative combinations and every INN→source-class mapping.",
+    "Execution of an app/medical calculator and clinical validation; neither is performed or required to count this research stage."
+  ],
+  "card_coverage": [
+    {
+      "rule_id": "ago-depression-start",
+      "parameter_rows": 8,
+      "input_rows": 26,
+      "sources": [
+        "RU-AGO",
+        "RU-DEP"
+      ],
+      "primary_depth": "Actual reading and numeric/condition families in source_verification; exhaustive all-condition/necessity review not claimed"
+    },
+    {
+      "rule_id": "ago-gad-start",
+      "parameter_rows": 8,
+      "input_rows": 26,
+      "sources": [
+        "RU-AGO",
+        "RU-GAD"
+      ],
+      "primary_depth": "Actual reading and numeric/condition families in source_verification; exhaustive all-condition/necessity review not claimed"
+    },
+    {
+      "rule_id": "ago-stop",
+      "parameter_rows": 0,
+      "input_rows": 2,
+      "sources": [
+        "RU-AGO",
+        "RU-GAD"
+      ],
+      "primary_depth": "Actual reading and numeric/condition families in source_verification; exhaustive all-condition/necessity review not claimed"
+    },
+    {
+      "rule_id": "dulox-depression-start",
+      "parameter_rows": 2,
+      "input_rows": 23,
+      "sources": [
+        "RU-DULOX",
+        "RU-DEP"
+      ],
+      "primary_depth": "Actual reading and numeric/condition families in source_verification; exhaustive all-condition/necessity review not claimed"
+    },
+    {
+      "rule_id": "dulox-gad-adjust",
+      "parameter_rows": 3,
+      "input_rows": 28,
+      "sources": [
+        "RU-DULOX",
+        "RU-GAD"
+      ],
+      "primary_depth": "Actual reading and numeric/condition families in source_verification; exhaustive all-condition/necessity review not claimed"
+    },
+    {
+      "rule_id": "dulox-gad-start",
+      "parameter_rows": 5,
+      "input_rows": 25,
+      "sources": [
+        "RU-DULOX",
+        "RU-GAD"
+      ],
+      "primary_depth": "Actual reading and numeric/condition families in source_verification; exhaustive all-condition/necessity review not claimed"
+    },
+    {
+      "rule_id": "dulox-taper-limit",
+      "parameter_rows": 2,
+      "input_rows": 8,
+      "sources": [
+        "RU-DULOX",
+        "RU-GAD"
+      ],
+      "primary_depth": "Actual reading and numeric/condition families in source_verification; exhaustive all-condition/necessity review not claimed"
+    },
+    {
+      "rule_id": "esc-adult-adjust",
+      "parameter_rows": 5,
+      "input_rows": 28,
+      "sources": [
+        "RU-GAD",
+        "RU-PANIC",
+        "RU-ESC"
+      ],
+      "primary_depth": "Actual reading and numeric/condition families in source_verification; exhaustive all-condition/necessity review not claimed"
+    },
+    {
+      "rule_id": "esc-cyp2c19-start",
+      "parameter_rows": 7,
+      "input_rows": 26,
+      "sources": [
+        "RU-ESC"
+      ],
+      "primary_depth": "Actual reading and numeric/condition families in source_verification; exhaustive all-condition/necessity review not claimed"
+    },
+    {
+      "rule_id": "esc-elderly-start",
+      "parameter_rows": 7,
+      "input_rows": 26,
+      "sources": [
+        "RU-ESC"
+      ],
+      "primary_depth": "Actual reading and numeric/condition families in source_verification; exhaustive all-condition/necessity review not claimed"
+    },
+    {
+      "rule_id": "esc-gad-start",
+      "parameter_rows": 7,
+      "input_rows": 26,
+      "sources": [
+        "RU-ESC"
+      ],
+      "primary_depth": "Actual reading and numeric/condition families in source_verification; exhaustive all-condition/necessity review not claimed"
+    },
+    {
+      "rule_id": "esc-hepatic-start",
+      "parameter_rows": 7,
+      "input_rows": 26,
+      "sources": [
+        "RU-ESC"
+      ],
+      "primary_depth": "Actual reading and numeric/condition families in source_verification; exhaustive all-condition/necessity review not claimed"
+    },
+    {
+      "rule_id": "esc-panic-start",
+      "parameter_rows": 9,
+      "input_rows": 26,
+      "sources": [
+        "RU-ESC"
+      ],
+      "primary_depth": "Actual reading and numeric/condition families in source_verification; exhaustive all-condition/necessity review not claimed"
+    },
+    {
+      "rule_id": "esc-social-start",
+      "parameter_rows": 7,
+      "input_rows": 26,
+      "sources": [
+        "RU-ESC"
+      ],
+      "primary_depth": "Actual reading and numeric/condition families in source_verification; exhaustive all-condition/necessity review not claimed"
+    },
+    {
+      "rule_id": "esc-taper-limit",
+      "parameter_rows": 4,
+      "input_rows": 24,
+      "sources": [
+        "RU-GAD",
+        "RU-ESC",
+        "RU-PANIC"
+      ],
+      "primary_depth": "Actual reading and numeric/condition families in source_verification; exhaustive all-condition/necessity review not claimed"
+    },
+    {
+      "rule_id": "fluvox-depression-start",
+      "parameter_rows": 7,
+      "input_rows": 23,
+      "sources": [
+        "RU-FLUVOX",
+        "RU-DEP"
+      ],
+      "primary_depth": "Actual reading and numeric/condition families in source_verification; exhaustive all-condition/necessity review not claimed"
+    },
+    {
+      "rule_id": "fluvox-taper-limit",
+      "parameter_rows": 1,
+      "input_rows": 11,
+      "sources": [
+        "RU-FLUVOX",
+        "RU-DEP"
+      ],
+      "primary_depth": "Actual reading and numeric/condition families in source_verification; exhaustive all-condition/necessity review not claimed"
+    },
+    {
+      "rule_id": "parox-panic-kr",
+      "parameter_rows": 10,
+      "input_rows": 26,
+      "sources": [
+        "RU-PANIC",
+        "RU-PAROX"
+      ],
+      "primary_depth": "Actual reading and numeric/condition families in source_verification; exhaustive all-condition/necessity review not claimed"
+    },
+    {
+      "rule_id": "parox-taper-example",
+      "parameter_rows": 4,
+      "input_rows": 9,
+      "sources": [
+        "RU-DEP",
+        "RU-PAROX",
+        "RU-PANIC"
+      ],
+      "primary_depth": "Actual reading and numeric/condition families in source_verification; exhaustive all-condition/necessity review not claimed"
+    },
+    {
+      "rule_id": "phen-taper-limit",
+      "parameter_rows": 0,
+      "input_rows": 8,
+      "sources": [
+        "RU-PHEN",
+        "RU-PANIC"
+      ],
+      "primary_depth": "Actual reading and numeric/condition families in source_verification; exhaustive all-condition/necessity review not claimed"
+    },
+    {
+      "rule_id": "preg-gad-adjust",
+      "parameter_rows": 9,
+      "input_rows": 28,
+      "sources": [
+        "RU-GAD",
+        "RU-PANIC",
+        "RU-PREG"
+      ],
+      "primary_depth": "Actual reading and numeric/condition families in source_verification; exhaustive all-condition/necessity review not claimed"
+    },
+    {
+      "rule_id": "preg-gad-start",
+      "parameter_rows": 9,
+      "input_rows": 23,
+      "sources": [
+        "RU-GAD",
+        "RU-PREG"
+      ],
+      "primary_depth": "Actual reading and numeric/condition families in source_verification; exhaustive all-condition/necessity review not claimed"
+    },
+    {
+      "rule_id": "preg-renal-start",
+      "parameter_rows": 14,
+      "input_rows": 22,
+      "sources": [
+        "RU-GAD",
+        "RU-PREG"
+      ],
+      "primary_depth": "Actual reading and numeric/condition families in source_verification; exhaustive all-condition/necessity review not claimed"
+    },
+    {
+      "rule_id": "preg-taper-limit",
+      "parameter_rows": 3,
+      "input_rows": 23,
+      "sources": [
+        "RU-GAD",
+        "RU-PREG"
+      ],
+      "primary_depth": "Actual reading and numeric/condition families in source_verification; exhaustive all-condition/necessity review not claimed"
+    },
+    {
+      "rule_id": "ser-adult-adjust",
+      "parameter_rows": 7,
+      "input_rows": 24,
+      "sources": [
+        "RU-GAD",
+        "RU-PANIC",
+        "RU-SER"
+      ],
+      "primary_depth": "Actual reading and numeric/condition families in source_verification; exhaustive all-condition/necessity review not claimed"
+    },
+    {
+      "rule_id": "ser-panic-start",
+      "parameter_rows": 7,
+      "input_rows": 18,
+      "sources": [
+        "RU-SER"
+      ],
+      "primary_depth": "Actual reading and numeric/condition families in source_verification; exhaustive all-condition/necessity review not claimed"
+    },
+    {
+      "rule_id": "ser-social-start",
+      "parameter_rows": 7,
+      "input_rows": 18,
+      "sources": [
+        "RU-SER"
+      ],
+      "primary_depth": "Actual reading and numeric/condition families in source_verification; exhaustive all-condition/necessity review not claimed"
+    },
+    {
+      "rule_id": "ser-taper-limit",
+      "parameter_rows": 3,
+      "input_rows": 19,
+      "sources": [
+        "RU-PANIC",
+        "RU-SER"
+      ],
+      "primary_depth": "Actual reading and numeric/condition families in source_verification; exhaustive all-condition/necessity review not claimed"
+    },
+    {
+      "rule_id": "switch-esc-ago",
+      "parameter_rows": 7,
+      "input_rows": 34,
+      "sources": [
+        "RU-DEP",
+        "RU-ESC",
+        "RU-AGO"
+      ],
+      "primary_depth": "Actual reading and numeric/condition families in source_verification; exhaustive all-condition/necessity review not claimed"
+    },
+    {
+      "rule_id": "switch-esc-ser",
+      "parameter_rows": 1,
+      "input_rows": 16,
+      "sources": [
+        "RU-DEP",
+        "RU-SER",
+        "RU-ESC"
+      ],
+      "primary_depth": "Actual reading and numeric/condition families in source_verification; exhaustive all-condition/necessity review not claimed"
+    },
+    {
+      "rule_id": "switch-parox-ago-selected-example",
+      "parameter_rows": 11,
+      "input_rows": 42,
+      "sources": [
+        "RU-DEP",
+        "RU-PAROX",
+        "RU-AGO"
+      ],
+      "primary_depth": "Actual reading and numeric/condition families in source_verification; exhaustive all-condition/necessity review not claimed"
+    },
+    {
+      "rule_id": "switch-parox-ago",
+      "parameter_rows": 7,
+      "input_rows": 40,
+      "sources": [
+        "RU-DEP",
+        "RU-PAROX",
+        "RU-AGO"
+      ],
+      "primary_depth": "Actual reading and numeric/condition families in source_verification; exhaustive all-condition/necessity review not claimed"
+    },
+    {
+      "rule_id": "switch-ser-ago",
+      "parameter_rows": 7,
+      "input_rows": 39,
+      "sources": [
+        "RU-DEP",
+        "RU-SER",
+        "RU-AGO"
+      ],
+      "primary_depth": "Actual reading and numeric/condition families in source_verification; exhaustive all-condition/necessity review not claimed"
+    },
+    {
+      "rule_id": "switch-ser-esc",
+      "parameter_rows": 1,
+      "input_rows": 16,
+      "sources": [
+        "RU-DEP",
+        "RU-SER",
+        "RU-ESC"
+      ],
+      "primary_depth": "Actual reading and numeric/condition families in source_verification; exhaustive all-condition/necessity review not claimed"
+    },
+    {
+      "rule_id": "venla-xr-gad-start",
+      "parameter_rows": 5,
+      "input_rows": 37,
+      "sources": [
+        "RU-VENLA-XR",
+        "RU-GAD"
+      ],
+      "primary_depth": "Actual reading and numeric/condition families in source_verification; exhaustive all-condition/necessity review not claimed"
+    },
+    {
+      "rule_id": "venla-xr-panic-form-limit",
+      "parameter_rows": 4,
+      "input_rows": 37,
+      "sources": [
+        "RU-VENLA-XR",
+        "RU-PANIC",
+        "RU-VENLA-IR"
+      ],
+      "primary_depth": "Actual reading and numeric/condition families in source_verification; exhaustive all-condition/necessity review not claimed"
+    },
+    {
+      "rule_id": "venla-xr-social-start",
+      "parameter_rows": 5,
+      "input_rows": 37,
+      "sources": [
+        "RU-VENLA-XR",
+        "RU-PHOB"
+      ],
+      "primary_depth": "Actual reading and numeric/condition families in source_verification; exhaustive all-condition/necessity review not claimed"
+    },
+    {
+      "rule_id": "venla-xr-taper-limit",
+      "parameter_rows": 1,
+      "input_rows": 10,
+      "sources": [
+        "RU-VENLA-XR",
+        "RU-GAD"
+      ],
+      "primary_depth": "Actual reading and numeric/condition families in source_verification; exhaustive all-condition/necessity review not claimed"
+    }
+  ]
+}

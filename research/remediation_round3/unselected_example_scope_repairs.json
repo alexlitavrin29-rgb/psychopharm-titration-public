@@ -1,0 +1,11 @@
+{
+  "cases": [
+    "switch-parox-ago-selected-example--branch-not_selected"
+  ],
+  "new_cases": [
+    "switch-parox-ago-selected-example--audit-final-unselected-example-false",
+    "switch-parox-ago-selected-example--audit-final-unselected-example-true"
+  ],
+  "scope": "False choice or known non40 dose; unknown selection never treated as false",
+  "medical_parameters_changed": false
+}

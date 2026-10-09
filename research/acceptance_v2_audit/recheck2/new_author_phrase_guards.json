@@ -1,0 +1,82 @@
+[
+  {
+    "source_id": "RU-SER",
+    "physical_page": 6,
+    "phrases": [
+      "симптоматической гипонатриемией",
+      "медицинскую помощь"
+    ],
+    "pass": true,
+    "scope": "Authored phrase detector independently rerun; interpretation and prepared properties separately reviewed."
+  },
+  {
+    "source_id": "RU-PREG",
+    "physical_page": 8,
+    "phrases": [
+      "рассмотреть вопрос о прекращении",
+      "медицинской помощью"
+    ],
+    "pass": true,
+    "scope": "Authored phrase detector independently rerun; interpretation and prepared properties separately reviewed."
+  },
+  {
+    "source_id": "RU-PREG",
+    "physical_page": 6,
+    "phrases": [
+      "немедленно отменить",
+      "альтернативное лечение"
+    ],
+    "pass": true,
+    "scope": "Authored phrase detector independently rerun; interpretation and prepared properties separately reviewed."
+  },
+  {
+    "source_id": "RU-DULOX",
+    "physical_page": 4,
+    "phrases": [
+      "стойком повышении АД",
+      "постепенной отмены"
+    ],
+    "pass": true,
+    "scope": "Authored phrase detector independently rerun; interpretation and prepared properties separately reviewed."
+  },
+  {
+    "source_id": "RU-DULOX",
+    "physical_page": 7,
+    "phrases": [
+      "избегать одновременного",
+      "препаратов, содержащих дулоксетин"
+    ],
+    "pass": true,
+    "scope": "Authored phrase detector independently rerun; interpretation and prepared properties separately reviewed."
+  },
+  {
+    "source_id": "RU-VENLA-XR",
+    "physical_page": 8,
+    "phrases": [
+      "тяжести симптомов",
+      "снижения дозы"
+    ],
+    "pass": true,
+    "scope": "Authored phrase detector independently rerun; interpretation and prepared properties separately reviewed."
+  },
+  {
+    "source_id": "RU-VENLA-XR",
+    "physical_page": 16,
+    "phrases": [
+      "ингибитора CYP3A4",
+      "активность изофермента CYP2D6"
+    ],
+    "pass": true,
+    "scope": "Authored phrase detector independently rerun; interpretation and prepared properties separately reviewed."
+  },
+  {
+    "source_id": "RU-VENLA-XR",
+    "physical_page": 17,
+    "phrases": [
+      "венлафаксина и метопролола",
+      "осторожность"
+    ],
+    "pass": true,
+    "scope": "Authored phrase detector independently rerun; interpretation and prepared properties separately reviewed."
+  }
+]

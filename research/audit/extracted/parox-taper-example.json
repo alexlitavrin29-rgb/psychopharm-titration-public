@@ -1,0 +1,396 @@
+{
+  "schema_version": "1.0",
+  "rule_id": "parox-taper-example",
+  "development_status": "extracted_research_not_executable",
+  "language": "ru",
+  "identity": {
+    "title": "Пароксетин: российский взрослый исследовательский пример отмены",
+    "mode": "taper",
+    "drug_inn": "пароксетин",
+    "from_drug_inn": null,
+    "to_drug_inn": null,
+    "formulation": "Рексетин, таблетки 20 мг; разрешена половина 10 мг",
+    "route": "oral",
+    "diagnosis_label_ru": "Депрессивный эпизод/рекуррентная депрессия у взрослых",
+    "classification_system": "МКБ-10",
+    "diagnosis_code": "F32/F33",
+    "jurisdiction": "RU_versioned_sources"
+  },
+  "applicability": {
+    "population_description": "Взрослые от 18 лет, паническое расстройство; пожилой/органный контекст разбирается отдельно.",
+    "age_constraints": [
+      {
+        "minimum": 18,
+        "inclusive": true,
+        "unit": "year",
+        "source_ref": "RU-PAROX",
+        "source_locator": "§4.1, PDF с.14"
+      }
+    ],
+    "pregnancy": "Отдельная оценка применимости; дозовые коэффициенты не извлечены.",
+    "lactation": "Отдельная оценка применимости; дозовые коэффициенты не извлечены.",
+    "renal_constraints": [],
+    "hepatic_constraints": [],
+    "comorbidity_constraints": [],
+    "interacting_drugs": [
+      "Проверять текущие сочетания по ОХЛП; отмена не разрешает неподтверждённый переход на ИМАО."
+    ],
+    "other_conditions": [
+      "Воспроизведение взрослого примера §4.2; не универсальный обязательный протокол.",
+      "Пример завершает снижение на 20 мг, держит 1 неделю и отменяет. Для исходной дозы ниже 20 мг полного расписания в этом примере нет."
+    ],
+    "exclusions": [
+      "Возраст менее 18 лет; гиперчувствительность; противопоказанное сочетание по §4.3."
+    ],
+    "indication_status_in_russia": "RU_indication_present_in_original_registry_currency_separate",
+    "source_refs": [
+      "RU-PAROX",
+      "RU-DEP"
+    ]
+  },
+  "inputs": [
+    {
+      "input_id": "age",
+      "question_ru": "Возраст, полных лет?",
+      "data_type": "integer",
+      "unit": "year",
+      "allowed_values": [],
+      "required_when": "для этой ветки",
+      "show_when": "для этой ветки",
+      "why_needed": "Только взрослая популяция примера.",
+      "changes": [
+        "dose_or_action"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Назвать отсутствующее поле; не подставлять норму и не выдавать безусловную индивидуальную схему.",
+      "source_refs": [
+        "RU-PAROX",
+        "RU-DEP"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "form",
+      "question_ru": "Какая форма используется?",
+      "data_type": "structured_form",
+      "unit": null,
+      "allowed_values": [],
+      "required_when": "для этой ветки",
+      "show_when": "для этой ветки",
+      "why_needed": "Исполнимость ступеней; деление 20 мг на 10 разрешено.",
+      "changes": [
+        "applicability"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Назвать отсутствующее поле; не подставлять норму и не выдавать безусловную индивидуальную схему.",
+      "source_refs": [
+        "RU-PAROX",
+        "RU-DEP"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "current_dose",
+      "question_ru": "Текущая суточная доза?",
+      "data_type": "number",
+      "unit": "mg/day",
+      "allowed_values": [],
+      "required_when": "для этой ветки",
+      "show_when": "для этой ветки",
+      "why_needed": "Начальная точка примера; ниже 20 мг нет последней ступени.",
+      "changes": [
+        "dose_or_action"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Назвать отсутствующее поле; не подставлять норму и не выдавать безусловную индивидуальную схему.",
+      "source_refs": [
+        "RU-PAROX",
+        "RU-DEP"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "duration",
+      "question_ru": "Как долго принимается препарат?",
+      "data_type": "number",
+      "unit": "week",
+      "allowed_values": [],
+      "required_when": "для этой ветки",
+      "show_when": "для этой ветки",
+      "why_needed": "Фактор риска отмены КР Б5, не числовой коэффициент.",
+      "changes": [
+        "dose_or_action"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Назвать отсутствующее поле; не подставлять норму и не выдавать безусловную индивидуальную схему.",
+      "source_refs": [
+        "RU-PAROX",
+        "RU-DEP"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "past_withdrawal",
+      "question_ru": "Были трудности при пропусках/снижении?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [],
+      "required_when": "для этой ветки",
+      "show_when": "для этой ветки",
+      "why_needed": "КР Б5: высокий риск требует более медленного плана.",
+      "changes": [
+        "applicability"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Назвать отсутствующее поле; не подставлять норму и не выдавать безусловную индивидуальную схему.",
+      "source_refs": [
+        "RU-PAROX",
+        "RU-DEP"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "withdrawal_severity",
+      "question_ru": "Как врач оценивает текущие симптомы отмены?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [],
+      "required_when": "для этой ветки",
+      "show_when": "для этой ветки",
+      "why_needed": "Изменение темпа/возврат предыдущей дозы, §4.2 и КР Б5.",
+      "changes": [
+        "applicability"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Назвать отсутствующее поле; не подставлять норму и не выдавать безусловную индивидуальную схему.",
+      "source_refs": [
+        "RU-PAROX",
+        "RU-DEP"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "example_selected",
+      "question_ru": "Врач выбрал опубликованный пример для этого случая?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [],
+      "required_when": "для этой ветки",
+      "show_when": "для этой ветки",
+      "why_needed": "Без выбора пример не становится назначением.",
+      "changes": [
+        "applicability",
+        "dose_or_action"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Назвать отсутствующее поле; не подставлять норму и не выдавать безусловную индивидуальную схему.",
+      "source_refs": [
+        "RU-PAROX",
+        "RU-DEP"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    }
+  ],
+  "clinical_parameters": [
+    {
+      "parameter_id": "weekly_decrement",
+      "meaning": "weekly_decrement",
+      "value": 10,
+      "lower": null,
+      "upper": null,
+      "lower_inclusive": null,
+      "upper_inclusive": null,
+      "unit": "mg/day",
+      "source_ref": "RU-PAROX",
+      "source_locator": "§4.2, PDF с.16",
+      "source_meaning": "пример",
+      "derivation": null
+    },
+    {
+      "parameter_id": "decrement_interval",
+      "meaning": "decrement_interval",
+      "value": 1,
+      "lower": null,
+      "upper": null,
+      "lower_inclusive": null,
+      "upper_inclusive": null,
+      "unit": "week",
+      "source_ref": "RU-PAROX",
+      "source_locator": "§4.2, PDF с.16",
+      "source_meaning": "пример",
+      "derivation": null
+    },
+    {
+      "parameter_id": "last_source_dose",
+      "meaning": "last_source_dose",
+      "value": 20,
+      "lower": null,
+      "upper": null,
+      "lower_inclusive": null,
+      "upper_inclusive": null,
+      "unit": "mg/day",
+      "source_ref": "RU-PAROX",
+      "source_locator": "§4.2, PDF с.17",
+      "source_meaning": "пример",
+      "derivation": null
+    },
+    {
+      "parameter_id": "last_hold",
+      "meaning": "last_hold",
+      "value": 1,
+      "lower": null,
+      "upper": null,
+      "lower_inclusive": null,
+      "upper_inclusive": null,
+      "unit": "week",
+      "source_ref": "RU-PAROX",
+      "source_locator": "§4.2, PDF с.17",
+      "source_meaning": "пример",
+      "derivation": null
+    }
+  ],
+  "logic": {
+    "representation": "source_example",
+    "conditions": [
+      "Показание/препарат выбраны врачом; взрослая применимость и форма подтверждены."
+    ],
+    "actions": [
+      "Если врач выбрал пример, снижать суточную дозу на 10 мг через неделю до 20 мг; после 1 недели на 20 мг отменить.",
+      "При симптомах во время снижения/после отмены возможно возобновление прежней дозы и последующее более медленное снижение; точный более медленный шаг источник не задаёт.",
+      "Исходная доза <20, недостижимые формы, высокий риск/тяжелая отмена: пример не достраивать автоматически."
+    ],
+    "parameter_refs": [
+      "weekly_decrement",
+      "decrement_interval",
+      "last_source_dose",
+      "last_hold"
+    ],
+    "source_refs": [
+      "RU-PAROX",
+      "RU-DEP"
+    ],
+    "clinician_choices": [
+      "Выбор применимости примера; необходимость более медленного снижения; прежняя переносимая доза при симптомах."
+    ],
+    "missing_data_behaviour": "Назвать обязательные неизвестные поля; результат insufficient_data. Справочные этапы можно показать как условные, без безусловной дозы пациенту.",
+    "unsupported_case_behaviour": "not_applicable для этой карточки; указать конкретную отсутствующую ветку, не запретить всё лечение.",
+    "contraindicated_case_behaviour": "Не выдавать дозовую схему противопоказанного сочетания; отобразить источник и причину.",
+    "conflicts": [],
+    "composite_rule_dependencies": [],
+    "combination_justification": "КР Б5 определяет риск/ведение отмены, ОХЛП задаёт отдельно маркированный взрослый пример. Детский пример §4.8 не используется."
+  },
+  "output": {
+    "result_type": "clinician_choice",
+    "medication_inn": "пароксетин",
+    "dose_per_administration": null,
+    "administrations_per_day": 1,
+    "total_daily_dose": null,
+    "unit": "mg",
+    "formulation": "Рексетин, таблетки 20 мг; разрешена половина 10 мг",
+    "schedule": [],
+    "warnings": [
+      "Пример исследования, не обязательный протокол для всех.",
+      "Взрослая последняя доза источника 20 мг. Не подменять иностранными/детскими 10 мг.",
+      "Числовой вывод относится к указанным дозовым условиям. Неоценённые модулем клинические обстоятельства не считаются отсутствующими; полный клинический допуск врач оценивает отдельно."
+    ],
+    "mandatory_checks": [],
+    "clinician_decisions_remaining": [
+      "Выбор применимости примера; необходимость более медленного снижения; прежняя переносимая доза при симптомах."
+    ],
+    "rounding_or_formulation_rule": "Не округлять медицинскую дозу; использовать только разрешённую форму/деление. При невозможности дозы формой — явно сообщить.",
+    "source_refs": [
+      "RU-PAROX",
+      "RU-DEP"
+    ]
+  },
+  "verification": {
+    "primary_source_checked": true,
+    "all_clinical_parameters_have_sources": true,
+    "population_and_indication_checked": true,
+    "russian_applicability_checked": false,
+    "formulation_feasibility_checked": true,
+    "combined_rules_justified": false,
+    "source_transfer_check": "extraction_checked; calculator_not_implemented",
+    "clinical_review": "not_performed",
+    "product_clinical_validation": "not_performed",
+    "ready_for_technical_implementation": false,
+    "unresolved_items": [
+      "Пример не задаёт полный план для исходных доз <20 мг или более медленных индивидуальных ступеней.",
+      "Регистрационная актуальность и клиническая проверка отдельно."
+    ]
+  },
+  "test_cases": [
+    {
+      "case_id": "parox-taper-example__selected-40-example",
+      "synthetic": true,
+      "given": {
+        "age": 40,
+        "current_dose": 40,
+        "form": "Рексетин 20 мг",
+        "example_selected": true,
+        "withdrawal_severity": "нет",
+        "past_withdrawal": "нет"
+      },
+      "expected": {
+        "source_example_doses_mg_per_day": [
+          30,
+          20,
+          0
+        ],
+        "holds_before_next_days": [
+          7,
+          7
+        ],
+        "last_source_dose_mg_per_day": 20,
+        "mandatory_for_all": false
+      },
+      "source_refs": [
+        "RU-PAROX",
+        "RU-DEP"
+      ],
+      "note": "Ожидание переноса источника; калькулятор не реализован, клиническая валидация не выполнена."
+    },
+    {
+      "case_id": "parox-taper-example__below-20",
+      "synthetic": true,
+      "given": {
+        "current_dose": 10,
+        "example_selected": true
+      },
+      "expected": {
+        "result_type": "clinician_choice",
+        "complete_schedule": null,
+        "invented_last_step": false
+      },
+      "source_refs": [
+        "RU-PAROX",
+        "RU-DEP"
+      ],
+      "note": "Ожидание переноса источника; калькулятор не реализован, клиническая валидация не выполнена."
+    },
+    {
+      "case_id": "parox-taper-example__symptoms",
+      "synthetic": true,
+      "given": {
+        "current_dose": 20,
+        "withdrawal_severity": "непереносимые"
+      },
+      "expected": {
+        "automatic_stop": false,
+        "option": "рассмотреть прежнюю переносимую дозу и более медленное снижение",
+        "fixed_slower_step": null
+      },
+      "source_refs": [
+        "RU-PAROX",
+        "RU-DEP"
+      ],
+      "note": "Ожидание переноса источника; калькулятор не реализован, клиническая валидация не выполнена."
+    }
+  ],
+  "profile": {
+    "country": "RU",
+    "selection_status": "RU_profile_research",
+    "foreign_fallback_allowed": false
+  },
+  "card_type": "partial_source_constraint"
+}

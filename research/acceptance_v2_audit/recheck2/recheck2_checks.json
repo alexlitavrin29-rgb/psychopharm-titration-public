@@ -1,0 +1,1486 @@
+{
+  "independent_primary_result_checks": [
+    {
+      "name": "dulox-depression-start/persistent_BP_increase/positive source actions",
+      "pass_": true,
+      "source": "RU-DULOX",
+      "locator": "§4.4 physical4",
+      "cases": [
+        "dulox-depression-start--audit-recheck-persistent_BP_increase-positive"
+      ]
+    },
+    {
+      "name": "dulox-depression-start/persistent_BP_increase/negative",
+      "pass_": true,
+      "source": "RU-DULOX",
+      "locator": "§4.4 physical4",
+      "cases": [
+        "dulox-depression-start--audit-recheck-persistent_BP_increase-negative"
+      ]
+    },
+    {
+      "name": "dulox-depression-start/persistent_BP_increase/unknown",
+      "pass_": true,
+      "source": "RU-DULOX",
+      "locator": "§4.4 physical4",
+      "cases": [
+        "dulox-depression-start--audit-recheck-persistent_BP_increase-unknown"
+      ]
+    },
+    {
+      "name": "dulox-depression-start/persistent_BP_increase/omitted",
+      "pass_": true,
+      "source": "RU-DULOX",
+      "locator": "§4.4 physical4",
+      "cases": [
+        "dulox-depression-start--audit-recheck-persistent_BP_increase-omitted"
+      ]
+    },
+    {
+      "name": "dulox-depression-start/persistent_BP_increase/phase-not_started",
+      "pass_": true,
+      "source": "RU-DULOX",
+      "locator": "§4.4 physical4",
+      "cases": [
+        "dulox-depression-start--audit-recheck-persistent_BP_increase-phase-not_started"
+      ]
+    },
+    {
+      "name": "dulox-depression-start/persistent_BP_increase/phase-unknown",
+      "pass_": true,
+      "source": "RU-DULOX",
+      "locator": "§4.4 physical4",
+      "cases": [
+        "dulox-depression-start--audit-recheck-persistent_BP_increase-phase-unknown"
+      ]
+    },
+    {
+      "name": "dulox-gad-adjust/persistent_BP_increase/positive source actions",
+      "pass_": true,
+      "source": "RU-DULOX",
+      "locator": "§4.4 physical4",
+      "cases": [
+        "dulox-gad-adjust--audit-recheck-persistent_BP_increase-positive"
+      ]
+    },
+    {
+      "name": "dulox-gad-adjust/persistent_BP_increase/negative",
+      "pass_": true,
+      "source": "RU-DULOX",
+      "locator": "§4.4 physical4",
+      "cases": [
+        "dulox-gad-adjust--audit-recheck-persistent_BP_increase-negative"
+      ]
+    },
+    {
+      "name": "dulox-gad-adjust/persistent_BP_increase/unknown",
+      "pass_": true,
+      "source": "RU-DULOX",
+      "locator": "§4.4 physical4",
+      "cases": [
+        "dulox-gad-adjust--audit-recheck-persistent_BP_increase-unknown"
+      ]
+    },
+    {
+      "name": "dulox-gad-adjust/persistent_BP_increase/omitted",
+      "pass_": true,
+      "source": "RU-DULOX",
+      "locator": "§4.4 physical4",
+      "cases": [
+        "dulox-gad-adjust--audit-recheck-persistent_BP_increase-omitted"
+      ]
+    },
+    {
+      "name": "dulox-gad-start/persistent_BP_increase/positive source actions",
+      "pass_": true,
+      "source": "RU-DULOX",
+      "locator": "§4.4 physical4",
+      "cases": [
+        "dulox-gad-start--audit-recheck-persistent_BP_increase-positive"
+      ]
+    },
+    {
+      "name": "dulox-gad-start/persistent_BP_increase/negative",
+      "pass_": true,
+      "source": "RU-DULOX",
+      "locator": "§4.4 physical4",
+      "cases": [
+        "dulox-gad-start--audit-recheck-persistent_BP_increase-negative"
+      ]
+    },
+    {
+      "name": "dulox-gad-start/persistent_BP_increase/unknown",
+      "pass_": true,
+      "source": "RU-DULOX",
+      "locator": "§4.4 physical4",
+      "cases": [
+        "dulox-gad-start--audit-recheck-persistent_BP_increase-unknown"
+      ]
+    },
+    {
+      "name": "dulox-gad-start/persistent_BP_increase/omitted",
+      "pass_": true,
+      "source": "RU-DULOX",
+      "locator": "§4.4 physical4",
+      "cases": [
+        "dulox-gad-start--audit-recheck-persistent_BP_increase-omitted"
+      ]
+    },
+    {
+      "name": "dulox-gad-start/persistent_BP_increase/phase-not_started",
+      "pass_": true,
+      "source": "RU-DULOX",
+      "locator": "§4.4 physical4",
+      "cases": [
+        "dulox-gad-start--audit-recheck-persistent_BP_increase-phase-not_started"
+      ]
+    },
+    {
+      "name": "dulox-gad-start/persistent_BP_increase/phase-unknown",
+      "pass_": true,
+      "source": "RU-DULOX",
+      "locator": "§4.4 physical4",
+      "cases": [
+        "dulox-gad-start--audit-recheck-persistent_BP_increase-phase-unknown"
+      ]
+    },
+    {
+      "name": "dulox-taper-limit/persistent_BP_increase/positive source actions",
+      "pass_": true,
+      "source": "RU-DULOX",
+      "locator": "§4.4 physical4",
+      "cases": [
+        "dulox-taper-limit--audit-recheck-persistent_BP_increase-positive"
+      ]
+    },
+    {
+      "name": "dulox-taper-limit/persistent_BP_increase/negative",
+      "pass_": true,
+      "source": "RU-DULOX",
+      "locator": "§4.4 physical4",
+      "cases": [
+        "dulox-taper-limit--audit-recheck-persistent_BP_increase-negative"
+      ]
+    },
+    {
+      "name": "dulox-taper-limit/persistent_BP_increase/unknown",
+      "pass_": true,
+      "source": "RU-DULOX",
+      "locator": "§4.4 physical4",
+      "cases": [
+        "dulox-taper-limit--audit-recheck-persistent_BP_increase-unknown"
+      ]
+    },
+    {
+      "name": "dulox-taper-limit/persistent_BP_increase/omitted",
+      "pass_": true,
+      "source": "RU-DULOX",
+      "locator": "§4.4 physical4",
+      "cases": [
+        "dulox-taper-limit--audit-recheck-persistent_BP_increase-omitted"
+      ]
+    },
+    {
+      "name": "preg-gad-adjust/current_suicidal_thoughts_or_behavior/positive source actions",
+      "pass_": true,
+      "source": "RU-PREG",
+      "locator": "§4.4 physical8",
+      "cases": [
+        "preg-gad-adjust--audit-recheck-current_suicidal_thoughts_or_behavior-positive"
+      ]
+    },
+    {
+      "name": "preg-gad-adjust/current_suicidal_thoughts_or_behavior/negative",
+      "pass_": true,
+      "source": "RU-PREG",
+      "locator": "§4.4 physical8",
+      "cases": [
+        "preg-gad-adjust--audit-recheck-current_suicidal_thoughts_or_behavior-negative"
+      ]
+    },
+    {
+      "name": "preg-gad-adjust/current_suicidal_thoughts_or_behavior/unknown",
+      "pass_": true,
+      "source": "RU-PREG",
+      "locator": "§4.4 physical8",
+      "cases": [
+        "preg-gad-adjust--audit-recheck-current_suicidal_thoughts_or_behavior-unknown"
+      ]
+    },
+    {
+      "name": "preg-gad-adjust/current_suicidal_thoughts_or_behavior/omitted",
+      "pass_": true,
+      "source": "RU-PREG",
+      "locator": "§4.4 physical8",
+      "cases": [
+        "preg-gad-adjust--audit-recheck-current_suicidal_thoughts_or_behavior-omitted"
+      ]
+    },
+    {
+      "name": "preg-gad-start/current_suicidal_thoughts_or_behavior/positive source actions",
+      "pass_": true,
+      "source": "RU-PREG",
+      "locator": "§4.4 physical8",
+      "cases": [
+        "preg-gad-start--audit-recheck-current_suicidal_thoughts_or_behavior-positive"
+      ]
+    },
+    {
+      "name": "preg-gad-start/current_suicidal_thoughts_or_behavior/negative",
+      "pass_": true,
+      "source": "RU-PREG",
+      "locator": "§4.4 physical8",
+      "cases": [
+        "preg-gad-start--audit-recheck-current_suicidal_thoughts_or_behavior-negative"
+      ]
+    },
+    {
+      "name": "preg-gad-start/current_suicidal_thoughts_or_behavior/unknown",
+      "pass_": true,
+      "source": "RU-PREG",
+      "locator": "§4.4 physical8",
+      "cases": [
+        "preg-gad-start--audit-recheck-current_suicidal_thoughts_or_behavior-unknown"
+      ]
+    },
+    {
+      "name": "preg-gad-start/current_suicidal_thoughts_or_behavior/omitted",
+      "pass_": true,
+      "source": "RU-PREG",
+      "locator": "§4.4 physical8",
+      "cases": [
+        "preg-gad-start--audit-recheck-current_suicidal_thoughts_or_behavior-omitted"
+      ]
+    },
+    {
+      "name": "preg-gad-start/current_suicidal_thoughts_or_behavior/phase-not_started",
+      "pass_": true,
+      "source": "RU-PREG",
+      "locator": "§4.4 physical8",
+      "cases": [
+        "preg-gad-start--audit-recheck-current_suicidal_thoughts_or_behavior-phase-not_started"
+      ]
+    },
+    {
+      "name": "preg-gad-start/current_suicidal_thoughts_or_behavior/phase-unknown",
+      "pass_": true,
+      "source": "RU-PREG",
+      "locator": "§4.4 physical8",
+      "cases": [
+        "preg-gad-start--audit-recheck-current_suicidal_thoughts_or_behavior-phase-unknown"
+      ]
+    },
+    {
+      "name": "preg-renal-start/current_suicidal_thoughts_or_behavior/positive source actions",
+      "pass_": true,
+      "source": "RU-PREG",
+      "locator": "§4.4 physical8",
+      "cases": [
+        "preg-renal-start--audit-recheck-current_suicidal_thoughts_or_behavior-positive"
+      ]
+    },
+    {
+      "name": "preg-renal-start/current_suicidal_thoughts_or_behavior/negative",
+      "pass_": true,
+      "source": "RU-PREG",
+      "locator": "§4.4 physical8",
+      "cases": [
+        "preg-renal-start--audit-recheck-current_suicidal_thoughts_or_behavior-negative"
+      ]
+    },
+    {
+      "name": "preg-renal-start/current_suicidal_thoughts_or_behavior/unknown",
+      "pass_": true,
+      "source": "RU-PREG",
+      "locator": "§4.4 physical8",
+      "cases": [
+        "preg-renal-start--audit-recheck-current_suicidal_thoughts_or_behavior-unknown"
+      ]
+    },
+    {
+      "name": "preg-renal-start/current_suicidal_thoughts_or_behavior/omitted",
+      "pass_": true,
+      "source": "RU-PREG",
+      "locator": "§4.4 physical8",
+      "cases": [
+        "preg-renal-start--audit-recheck-current_suicidal_thoughts_or_behavior-omitted"
+      ]
+    },
+    {
+      "name": "preg-renal-start/current_suicidal_thoughts_or_behavior/phase-not_started",
+      "pass_": true,
+      "source": "RU-PREG",
+      "locator": "§4.4 physical8",
+      "cases": [
+        "preg-renal-start--audit-recheck-current_suicidal_thoughts_or_behavior-phase-not_started"
+      ]
+    },
+    {
+      "name": "preg-renal-start/current_suicidal_thoughts_or_behavior/phase-unknown",
+      "pass_": true,
+      "source": "RU-PREG",
+      "locator": "§4.4 physical8",
+      "cases": [
+        "preg-renal-start--audit-recheck-current_suicidal_thoughts_or_behavior-phase-unknown"
+      ]
+    },
+    {
+      "name": "preg-taper-limit/current_suicidal_thoughts_or_behavior/positive source actions",
+      "pass_": true,
+      "source": "RU-PREG",
+      "locator": "§4.4 physical8",
+      "cases": [
+        "preg-taper-limit--audit-recheck-current_suicidal_thoughts_or_behavior-positive"
+      ]
+    },
+    {
+      "name": "preg-taper-limit/current_suicidal_thoughts_or_behavior/negative",
+      "pass_": true,
+      "source": "RU-PREG",
+      "locator": "§4.4 physical8",
+      "cases": [
+        "preg-taper-limit--audit-recheck-current_suicidal_thoughts_or_behavior-negative"
+      ]
+    },
+    {
+      "name": "preg-taper-limit/current_suicidal_thoughts_or_behavior/unknown",
+      "pass_": true,
+      "source": "RU-PREG",
+      "locator": "§4.4 physical8",
+      "cases": [
+        "preg-taper-limit--audit-recheck-current_suicidal_thoughts_or_behavior-unknown"
+      ]
+    },
+    {
+      "name": "preg-taper-limit/current_suicidal_thoughts_or_behavior/omitted",
+      "pass_": true,
+      "source": "RU-PREG",
+      "locator": "§4.4 physical8",
+      "cases": [
+        "preg-taper-limit--audit-recheck-current_suicidal_thoughts_or_behavior-omitted"
+      ]
+    },
+    {
+      "name": "ser-adult-adjust/symptomatic_hyponatremia/positive source actions",
+      "pass_": true,
+      "source": "RU-SER",
+      "locator": "§4.4 physical6",
+      "cases": [
+        "ser-adult-adjust--audit-recheck-symptomatic_hyponatremia-positive"
+      ]
+    },
+    {
+      "name": "ser-adult-adjust/symptomatic_hyponatremia/negative",
+      "pass_": true,
+      "source": "RU-SER",
+      "locator": "§4.4 physical6",
+      "cases": [
+        "ser-adult-adjust--audit-recheck-symptomatic_hyponatremia-negative"
+      ]
+    },
+    {
+      "name": "ser-adult-adjust/symptomatic_hyponatremia/unknown",
+      "pass_": true,
+      "source": "RU-SER",
+      "locator": "§4.4 physical6",
+      "cases": [
+        "ser-adult-adjust--audit-recheck-symptomatic_hyponatremia-unknown"
+      ]
+    },
+    {
+      "name": "ser-adult-adjust/symptomatic_hyponatremia/omitted",
+      "pass_": true,
+      "source": "RU-SER",
+      "locator": "§4.4 physical6",
+      "cases": [
+        "ser-adult-adjust--audit-recheck-symptomatic_hyponatremia-omitted"
+      ]
+    },
+    {
+      "name": "ser-panic-start/symptomatic_hyponatremia/positive source actions",
+      "pass_": true,
+      "source": "RU-SER",
+      "locator": "§4.4 physical6",
+      "cases": [
+        "ser-panic-start--audit-recheck-symptomatic_hyponatremia-positive"
+      ]
+    },
+    {
+      "name": "ser-panic-start/symptomatic_hyponatremia/negative",
+      "pass_": true,
+      "source": "RU-SER",
+      "locator": "§4.4 physical6",
+      "cases": [
+        "ser-panic-start--audit-recheck-symptomatic_hyponatremia-negative"
+      ]
+    },
+    {
+      "name": "ser-panic-start/symptomatic_hyponatremia/unknown",
+      "pass_": true,
+      "source": "RU-SER",
+      "locator": "§4.4 physical6",
+      "cases": [
+        "ser-panic-start--audit-recheck-symptomatic_hyponatremia-unknown"
+      ]
+    },
+    {
+      "name": "ser-panic-start/symptomatic_hyponatremia/omitted",
+      "pass_": true,
+      "source": "RU-SER",
+      "locator": "§4.4 physical6",
+      "cases": [
+        "ser-panic-start--audit-recheck-symptomatic_hyponatremia-omitted"
+      ]
+    },
+    {
+      "name": "ser-panic-start/symptomatic_hyponatremia/phase-not_started",
+      "pass_": true,
+      "source": "RU-SER",
+      "locator": "§4.4 physical6",
+      "cases": [
+        "ser-panic-start--audit-recheck-symptomatic_hyponatremia-phase-not_started"
+      ]
+    },
+    {
+      "name": "ser-panic-start/symptomatic_hyponatremia/phase-unknown",
+      "pass_": true,
+      "source": "RU-SER",
+      "locator": "§4.4 physical6",
+      "cases": [
+        "ser-panic-start--audit-recheck-symptomatic_hyponatremia-phase-unknown"
+      ]
+    },
+    {
+      "name": "ser-social-start/symptomatic_hyponatremia/positive source actions",
+      "pass_": true,
+      "source": "RU-SER",
+      "locator": "§4.4 physical6",
+      "cases": [
+        "ser-social-start--audit-recheck-symptomatic_hyponatremia-positive"
+      ]
+    },
+    {
+      "name": "ser-social-start/symptomatic_hyponatremia/negative",
+      "pass_": true,
+      "source": "RU-SER",
+      "locator": "§4.4 physical6",
+      "cases": [
+        "ser-social-start--audit-recheck-symptomatic_hyponatremia-negative"
+      ]
+    },
+    {
+      "name": "ser-social-start/symptomatic_hyponatremia/unknown",
+      "pass_": true,
+      "source": "RU-SER",
+      "locator": "§4.4 physical6",
+      "cases": [
+        "ser-social-start--audit-recheck-symptomatic_hyponatremia-unknown"
+      ]
+    },
+    {
+      "name": "ser-social-start/symptomatic_hyponatremia/omitted",
+      "pass_": true,
+      "source": "RU-SER",
+      "locator": "§4.4 physical6",
+      "cases": [
+        "ser-social-start--audit-recheck-symptomatic_hyponatremia-omitted"
+      ]
+    },
+    {
+      "name": "ser-social-start/symptomatic_hyponatremia/phase-not_started",
+      "pass_": true,
+      "source": "RU-SER",
+      "locator": "§4.4 physical6",
+      "cases": [
+        "ser-social-start--audit-recheck-symptomatic_hyponatremia-phase-not_started"
+      ]
+    },
+    {
+      "name": "ser-social-start/symptomatic_hyponatremia/phase-unknown",
+      "pass_": true,
+      "source": "RU-SER",
+      "locator": "§4.4 physical6",
+      "cases": [
+        "ser-social-start--audit-recheck-symptomatic_hyponatremia-phase-unknown"
+      ]
+    },
+    {
+      "name": "ser-taper-limit/symptomatic_hyponatremia/positive source actions",
+      "pass_": true,
+      "source": "RU-SER",
+      "locator": "§4.4 physical6",
+      "cases": [
+        "ser-taper-limit--audit-recheck-symptomatic_hyponatremia-positive"
+      ]
+    },
+    {
+      "name": "ser-taper-limit/symptomatic_hyponatremia/negative",
+      "pass_": true,
+      "source": "RU-SER",
+      "locator": "§4.4 physical6",
+      "cases": [
+        "ser-taper-limit--audit-recheck-symptomatic_hyponatremia-negative"
+      ]
+    },
+    {
+      "name": "ser-taper-limit/symptomatic_hyponatremia/unknown",
+      "pass_": true,
+      "source": "RU-SER",
+      "locator": "§4.4 physical6",
+      "cases": [
+        "ser-taper-limit--audit-recheck-symptomatic_hyponatremia-unknown"
+      ]
+    },
+    {
+      "name": "ser-taper-limit/symptomatic_hyponatremia/omitted",
+      "pass_": true,
+      "source": "RU-SER",
+      "locator": "§4.4 physical6",
+      "cases": [
+        "ser-taper-limit--audit-recheck-symptomatic_hyponatremia-omitted"
+      ]
+    },
+    {
+      "name": "switch-esc-ser/target_symptomatic_hyponatremia/positive source actions",
+      "pass_": true,
+      "source": "RU-SER",
+      "locator": "§4.4 physical6",
+      "cases": [
+        "switch-esc-ser--audit-recheck-target_symptomatic_hyponatremia-positive"
+      ]
+    },
+    {
+      "name": "switch-esc-ser/target_symptomatic_hyponatremia/negative",
+      "pass_": true,
+      "source": "RU-SER",
+      "locator": "§4.4 physical6",
+      "cases": [
+        "switch-esc-ser--audit-recheck-target_symptomatic_hyponatremia-negative"
+      ]
+    },
+    {
+      "name": "switch-esc-ser/target_symptomatic_hyponatremia/unknown",
+      "pass_": true,
+      "source": "RU-SER",
+      "locator": "§4.4 physical6",
+      "cases": [
+        "switch-esc-ser--audit-recheck-target_symptomatic_hyponatremia-unknown"
+      ]
+    },
+    {
+      "name": "switch-esc-ser/target_symptomatic_hyponatremia/omitted",
+      "pass_": true,
+      "source": "RU-SER",
+      "locator": "§4.4 physical6",
+      "cases": [
+        "switch-esc-ser--audit-recheck-target_symptomatic_hyponatremia-omitted"
+      ]
+    },
+    {
+      "name": "switch-esc-ser/target_symptomatic_hyponatremia/phase-not_started",
+      "pass_": true,
+      "source": "RU-SER",
+      "locator": "§4.4 physical6",
+      "cases": [
+        "switch-esc-ser--audit-recheck-target_symptomatic_hyponatremia-phase-not_started"
+      ]
+    },
+    {
+      "name": "switch-esc-ser/target_symptomatic_hyponatremia/phase-unknown",
+      "pass_": true,
+      "source": "RU-SER",
+      "locator": "§4.4 physical6",
+      "cases": [
+        "switch-esc-ser--audit-recheck-target_symptomatic_hyponatremia-phase-unknown"
+      ]
+    },
+    {
+      "name": "switch-ser-ago/symptomatic_hyponatremia/positive source actions",
+      "pass_": true,
+      "source": "RU-SER",
+      "locator": "§4.4 physical6",
+      "cases": [
+        "switch-ser-ago--audit-recheck-symptomatic_hyponatremia-positive"
+      ]
+    },
+    {
+      "name": "switch-ser-ago/symptomatic_hyponatremia/negative",
+      "pass_": true,
+      "source": "RU-SER",
+      "locator": "§4.4 physical6",
+      "cases": [
+        "switch-ser-ago--audit-recheck-symptomatic_hyponatremia-negative"
+      ]
+    },
+    {
+      "name": "switch-ser-ago/symptomatic_hyponatremia/unknown",
+      "pass_": true,
+      "source": "RU-SER",
+      "locator": "§4.4 physical6",
+      "cases": [
+        "switch-ser-ago--audit-recheck-symptomatic_hyponatremia-unknown"
+      ]
+    },
+    {
+      "name": "switch-ser-ago/symptomatic_hyponatremia/omitted",
+      "pass_": true,
+      "source": "RU-SER",
+      "locator": "§4.4 physical6",
+      "cases": [
+        "switch-ser-ago--audit-recheck-symptomatic_hyponatremia-omitted"
+      ]
+    },
+    {
+      "name": "switch-ser-esc/symptomatic_hyponatremia/positive source actions",
+      "pass_": true,
+      "source": "RU-SER",
+      "locator": "§4.4 physical6",
+      "cases": [
+        "switch-ser-esc--audit-recheck-symptomatic_hyponatremia-positive"
+      ]
+    },
+    {
+      "name": "switch-ser-esc/symptomatic_hyponatremia/negative",
+      "pass_": true,
+      "source": "RU-SER",
+      "locator": "§4.4 physical6",
+      "cases": [
+        "switch-ser-esc--audit-recheck-symptomatic_hyponatremia-negative"
+      ]
+    },
+    {
+      "name": "switch-ser-esc/symptomatic_hyponatremia/unknown",
+      "pass_": true,
+      "source": "RU-SER",
+      "locator": "§4.4 physical6",
+      "cases": [
+        "switch-ser-esc--audit-recheck-symptomatic_hyponatremia-unknown"
+      ]
+    },
+    {
+      "name": "switch-ser-esc/symptomatic_hyponatremia/omitted",
+      "pass_": true,
+      "source": "RU-SER",
+      "locator": "§4.4 physical6",
+      "cases": [
+        "switch-ser-esc--audit-recheck-symptomatic_hyponatremia-omitted"
+      ]
+    },
+    {
+      "name": "venla-xr-gad-start/suspected_serotonin_syndrome/positive source actions",
+      "pass_": true,
+      "source": "RU-VENLA-XR",
+      "locator": "§4.4 physical8",
+      "cases": [
+        "venla-xr-gad-start--audit-recheck-suspected_serotonin_syndrome-positive"
+      ]
+    },
+    {
+      "name": "venla-xr-gad-start/suspected_serotonin_syndrome/negative",
+      "pass_": true,
+      "source": "RU-VENLA-XR",
+      "locator": "§4.4 physical8",
+      "cases": [
+        "venla-xr-gad-start--audit-recheck-suspected_serotonin_syndrome-negative"
+      ]
+    },
+    {
+      "name": "venla-xr-gad-start/suspected_serotonin_syndrome/unknown",
+      "pass_": true,
+      "source": "RU-VENLA-XR",
+      "locator": "§4.4 physical8",
+      "cases": [
+        "venla-xr-gad-start--audit-recheck-suspected_serotonin_syndrome-unknown"
+      ]
+    },
+    {
+      "name": "venla-xr-gad-start/suspected_serotonin_syndrome/omitted",
+      "pass_": true,
+      "source": "RU-VENLA-XR",
+      "locator": "§4.4 physical8",
+      "cases": [
+        "venla-xr-gad-start--audit-recheck-suspected_serotonin_syndrome-omitted"
+      ]
+    },
+    {
+      "name": "venla-xr-gad-start/suspected_serotonin_syndrome/phase-not_started",
+      "pass_": true,
+      "source": "RU-VENLA-XR",
+      "locator": "§4.4 physical8",
+      "cases": [
+        "venla-xr-gad-start--audit-recheck-suspected_serotonin_syndrome-phase-not_started"
+      ]
+    },
+    {
+      "name": "venla-xr-gad-start/suspected_serotonin_syndrome/phase-unknown",
+      "pass_": true,
+      "source": "RU-VENLA-XR",
+      "locator": "§4.4 physical8",
+      "cases": [
+        "venla-xr-gad-start--audit-recheck-suspected_serotonin_syndrome-phase-unknown"
+      ]
+    },
+    {
+      "name": "venla-xr-panic-form-limit/suspected_serotonin_syndrome/positive source actions",
+      "pass_": true,
+      "source": "RU-VENLA-XR",
+      "locator": "§4.4 physical8",
+      "cases": [
+        "venla-xr-panic-form-limit--audit-recheck-suspected_serotonin_syndrome-positive"
+      ]
+    },
+    {
+      "name": "venla-xr-panic-form-limit/suspected_serotonin_syndrome/negative",
+      "pass_": true,
+      "source": "RU-VENLA-XR",
+      "locator": "§4.4 physical8",
+      "cases": [
+        "venla-xr-panic-form-limit--audit-recheck-suspected_serotonin_syndrome-negative"
+      ]
+    },
+    {
+      "name": "venla-xr-panic-form-limit/suspected_serotonin_syndrome/unknown",
+      "pass_": true,
+      "source": "RU-VENLA-XR",
+      "locator": "§4.4 physical8",
+      "cases": [
+        "venla-xr-panic-form-limit--audit-recheck-suspected_serotonin_syndrome-unknown"
+      ]
+    },
+    {
+      "name": "venla-xr-panic-form-limit/suspected_serotonin_syndrome/omitted",
+      "pass_": true,
+      "source": "RU-VENLA-XR",
+      "locator": "§4.4 physical8",
+      "cases": [
+        "venla-xr-panic-form-limit--audit-recheck-suspected_serotonin_syndrome-omitted"
+      ]
+    },
+    {
+      "name": "venla-xr-panic-form-limit/suspected_serotonin_syndrome/phase-not_started",
+      "pass_": true,
+      "source": "RU-VENLA-XR",
+      "locator": "§4.4 physical8",
+      "cases": [
+        "venla-xr-panic-form-limit--audit-recheck-suspected_serotonin_syndrome-phase-not_started"
+      ]
+    },
+    {
+      "name": "venla-xr-panic-form-limit/suspected_serotonin_syndrome/phase-unknown",
+      "pass_": true,
+      "source": "RU-VENLA-XR",
+      "locator": "§4.4 physical8",
+      "cases": [
+        "venla-xr-panic-form-limit--audit-recheck-suspected_serotonin_syndrome-phase-unknown"
+      ]
+    },
+    {
+      "name": "venla-xr-social-start/suspected_serotonin_syndrome/positive source actions",
+      "pass_": true,
+      "source": "RU-VENLA-XR",
+      "locator": "§4.4 physical8",
+      "cases": [
+        "venla-xr-social-start--audit-recheck-suspected_serotonin_syndrome-positive"
+      ]
+    },
+    {
+      "name": "venla-xr-social-start/suspected_serotonin_syndrome/negative",
+      "pass_": true,
+      "source": "RU-VENLA-XR",
+      "locator": "§4.4 physical8",
+      "cases": [
+        "venla-xr-social-start--audit-recheck-suspected_serotonin_syndrome-negative"
+      ]
+    },
+    {
+      "name": "venla-xr-social-start/suspected_serotonin_syndrome/unknown",
+      "pass_": true,
+      "source": "RU-VENLA-XR",
+      "locator": "§4.4 physical8",
+      "cases": [
+        "venla-xr-social-start--audit-recheck-suspected_serotonin_syndrome-unknown"
+      ]
+    },
+    {
+      "name": "venla-xr-social-start/suspected_serotonin_syndrome/omitted",
+      "pass_": true,
+      "source": "RU-VENLA-XR",
+      "locator": "§4.4 physical8",
+      "cases": [
+        "venla-xr-social-start--audit-recheck-suspected_serotonin_syndrome-omitted"
+      ]
+    },
+    {
+      "name": "venla-xr-social-start/suspected_serotonin_syndrome/phase-not_started",
+      "pass_": true,
+      "source": "RU-VENLA-XR",
+      "locator": "§4.4 physical8",
+      "cases": [
+        "venla-xr-social-start--audit-recheck-suspected_serotonin_syndrome-phase-not_started"
+      ]
+    },
+    {
+      "name": "venla-xr-social-start/suspected_serotonin_syndrome/phase-unknown",
+      "pass_": true,
+      "source": "RU-VENLA-XR",
+      "locator": "§4.4 physical8",
+      "cases": [
+        "venla-xr-social-start--audit-recheck-suspected_serotonin_syndrome-phase-unknown"
+      ]
+    },
+    {
+      "name": "venla-xr-taper-limit/suspected_serotonin_syndrome/positive source actions",
+      "pass_": true,
+      "source": "RU-VENLA-XR",
+      "locator": "§4.4 physical8",
+      "cases": [
+        "venla-xr-taper-limit--audit-recheck-suspected_serotonin_syndrome-positive"
+      ]
+    },
+    {
+      "name": "venla-xr-taper-limit/suspected_serotonin_syndrome/negative",
+      "pass_": true,
+      "source": "RU-VENLA-XR",
+      "locator": "§4.4 physical8",
+      "cases": [
+        "venla-xr-taper-limit--audit-recheck-suspected_serotonin_syndrome-negative"
+      ]
+    },
+    {
+      "name": "venla-xr-taper-limit/suspected_serotonin_syndrome/unknown",
+      "pass_": true,
+      "source": "RU-VENLA-XR",
+      "locator": "§4.4 physical8",
+      "cases": [
+        "venla-xr-taper-limit--audit-recheck-suspected_serotonin_syndrome-unknown"
+      ]
+    },
+    {
+      "name": "venla-xr-taper-limit/suspected_serotonin_syndrome/omitted",
+      "pass_": true,
+      "source": "RU-VENLA-XR",
+      "locator": "§4.4 physical8",
+      "cases": [
+        "venla-xr-taper-limit--audit-recheck-suspected_serotonin_syndrome-omitted"
+      ]
+    },
+    {
+      "name": "preg-gad-start/SCAR immediate+alternative",
+      "pass_": true,
+      "source": "RU-PREG",
+      "locator": "§4.4 physical6",
+      "cases": [
+        "preg-gad-start--stop-RU-PREG-severe_skin_reaction"
+      ]
+    },
+    {
+      "name": "preg-gad-adjust/SCAR immediate+alternative",
+      "pass_": true,
+      "source": "RU-PREG",
+      "locator": "§4.4 physical6",
+      "cases": [
+        "preg-gad-adjust--stop-RU-PREG-severe_skin_reaction"
+      ]
+    },
+    {
+      "name": "preg-renal-start/SCAR immediate+alternative",
+      "pass_": true,
+      "source": "RU-PREG",
+      "locator": "§4.4 physical6",
+      "cases": [
+        "preg-renal-start--stop-RU-PREG-severe_skin_reaction"
+      ]
+    },
+    {
+      "name": "preg-taper-limit/SCAR immediate+alternative",
+      "pass_": true,
+      "source": "RU-PREG",
+      "locator": "§4.4 physical6",
+      "cases": [
+        "preg-taper-limit--stop-RU-PREG-severe_skin_reaction"
+      ]
+    },
+    {
+      "name": "switch-ser-esc/SER own avoidance",
+      "pass_": true,
+      "source": "RU-SER",
+      "locator": "§4.5 physical10",
+      "cases": []
+    },
+    {
+      "name": "switch-esc-ser/SER own avoidance",
+      "pass_": true,
+      "source": "RU-SER",
+      "locator": "§4.5 physical10",
+      "cases": []
+    },
+    {
+      "name": "venla-xr-gad-start--audit-recheck-interaction-CYP2D6_inhibitor",
+      "pass_": true,
+      "source": "RU-VENLA-XR",
+      "locator": "§4.5 physical16",
+      "cases": [
+        "venla-xr-gad-start--audit-recheck-interaction-CYP2D6_inhibitor"
+      ]
+    },
+    {
+      "name": "venla-xr-gad-start--audit-recheck-interaction-CYP3A4_inhibitor",
+      "pass_": true,
+      "source": "RU-VENLA-XR",
+      "locator": "§4.5 physical16",
+      "cases": [
+        "venla-xr-gad-start--audit-recheck-interaction-CYP3A4_inhibitor"
+      ]
+    },
+    {
+      "name": "venla-xr-gad-start--audit-recheck-interaction-QT_prolonging",
+      "pass_": true,
+      "source": "RU-VENLA-XR",
+      "locator": "§4.5 physical15–16",
+      "cases": [
+        "venla-xr-gad-start--audit-recheck-interaction-QT_prolonging"
+      ]
+    },
+    {
+      "name": "venla-xr-gad-start--audit-recheck-interaction-CNS_active",
+      "pass_": true,
+      "source": "RU-VENLA-XR",
+      "locator": "§4.5 physical15",
+      "cases": [
+        "venla-xr-gad-start--audit-recheck-interaction-CNS_active"
+      ]
+    },
+    {
+      "name": "venla-xr-gad-start--audit-recheck-interaction-metoprolol",
+      "pass_": true,
+      "source": "RU-VENLA-XR",
+      "locator": "§4.5 physical17",
+      "cases": [
+        "venla-xr-gad-start--audit-recheck-interaction-metoprolol"
+      ]
+    },
+    {
+      "name": "venla-xr-gad-start--audit-recheck-interaction-serotonin_precursor",
+      "pass_": true,
+      "source": "RU-VENLA-XR",
+      "locator": "§4.4 physical8;§4.5 physical15",
+      "cases": [
+        "venla-xr-gad-start--audit-recheck-interaction-serotonin_precursor"
+      ]
+    },
+    {
+      "name": "venla-xr-gad-start--audit-recheck-interaction-weight_loss_agent",
+      "pass_": true,
+      "source": "RU-VENLA-XR",
+      "locator": "§4.4 physical10",
+      "cases": [
+        "venla-xr-gad-start--audit-recheck-interaction-weight_loss_agent"
+      ]
+    },
+    {
+      "name": "venla-xr-panic-form-limit--audit-recheck-interaction-CYP2D6_inhibitor",
+      "pass_": true,
+      "source": "RU-VENLA-XR",
+      "locator": "§4.5 physical16",
+      "cases": [
+        "venla-xr-panic-form-limit--audit-recheck-interaction-CYP2D6_inhibitor"
+      ]
+    },
+    {
+      "name": "venla-xr-panic-form-limit--audit-recheck-interaction-CYP3A4_inhibitor",
+      "pass_": true,
+      "source": "RU-VENLA-XR",
+      "locator": "§4.5 physical16",
+      "cases": [
+        "venla-xr-panic-form-limit--audit-recheck-interaction-CYP3A4_inhibitor"
+      ]
+    },
+    {
+      "name": "venla-xr-panic-form-limit--audit-recheck-interaction-QT_prolonging",
+      "pass_": true,
+      "source": "RU-VENLA-XR",
+      "locator": "§4.5 physical15–16",
+      "cases": [
+        "venla-xr-panic-form-limit--audit-recheck-interaction-QT_prolonging"
+      ]
+    },
+    {
+      "name": "venla-xr-panic-form-limit--audit-recheck-interaction-CNS_active",
+      "pass_": true,
+      "source": "RU-VENLA-XR",
+      "locator": "§4.5 physical15",
+      "cases": [
+        "venla-xr-panic-form-limit--audit-recheck-interaction-CNS_active"
+      ]
+    },
+    {
+      "name": "venla-xr-panic-form-limit--audit-recheck-interaction-metoprolol",
+      "pass_": true,
+      "source": "RU-VENLA-XR",
+      "locator": "§4.5 physical17",
+      "cases": [
+        "venla-xr-panic-form-limit--audit-recheck-interaction-metoprolol"
+      ]
+    },
+    {
+      "name": "venla-xr-panic-form-limit--audit-recheck-interaction-serotonin_precursor",
+      "pass_": true,
+      "source": "RU-VENLA-XR",
+      "locator": "§4.4 physical8;§4.5 physical15",
+      "cases": [
+        "venla-xr-panic-form-limit--audit-recheck-interaction-serotonin_precursor"
+      ]
+    },
+    {
+      "name": "venla-xr-panic-form-limit--audit-recheck-interaction-weight_loss_agent",
+      "pass_": true,
+      "source": "RU-VENLA-XR",
+      "locator": "§4.4 physical10",
+      "cases": [
+        "venla-xr-panic-form-limit--audit-recheck-interaction-weight_loss_agent"
+      ]
+    },
+    {
+      "name": "venla-xr-social-start--audit-recheck-interaction-CYP2D6_inhibitor",
+      "pass_": true,
+      "source": "RU-VENLA-XR",
+      "locator": "§4.5 physical16",
+      "cases": [
+        "venla-xr-social-start--audit-recheck-interaction-CYP2D6_inhibitor"
+      ]
+    },
+    {
+      "name": "venla-xr-social-start--audit-recheck-interaction-CYP3A4_inhibitor",
+      "pass_": true,
+      "source": "RU-VENLA-XR",
+      "locator": "§4.5 physical16",
+      "cases": [
+        "venla-xr-social-start--audit-recheck-interaction-CYP3A4_inhibitor"
+      ]
+    },
+    {
+      "name": "venla-xr-social-start--audit-recheck-interaction-QT_prolonging",
+      "pass_": true,
+      "source": "RU-VENLA-XR",
+      "locator": "§4.5 physical15–16",
+      "cases": [
+        "venla-xr-social-start--audit-recheck-interaction-QT_prolonging"
+      ]
+    },
+    {
+      "name": "venla-xr-social-start--audit-recheck-interaction-CNS_active",
+      "pass_": true,
+      "source": "RU-VENLA-XR",
+      "locator": "§4.5 physical15",
+      "cases": [
+        "venla-xr-social-start--audit-recheck-interaction-CNS_active"
+      ]
+    },
+    {
+      "name": "venla-xr-social-start--audit-recheck-interaction-metoprolol",
+      "pass_": true,
+      "source": "RU-VENLA-XR",
+      "locator": "§4.5 physical17",
+      "cases": [
+        "venla-xr-social-start--audit-recheck-interaction-metoprolol"
+      ]
+    },
+    {
+      "name": "venla-xr-social-start--audit-recheck-interaction-serotonin_precursor",
+      "pass_": true,
+      "source": "RU-VENLA-XR",
+      "locator": "§4.4 physical8;§4.5 physical15",
+      "cases": [
+        "venla-xr-social-start--audit-recheck-interaction-serotonin_precursor"
+      ]
+    },
+    {
+      "name": "venla-xr-social-start--audit-recheck-interaction-weight_loss_agent",
+      "pass_": true,
+      "source": "RU-VENLA-XR",
+      "locator": "§4.4 physical10",
+      "cases": [
+        "venla-xr-social-start--audit-recheck-interaction-weight_loss_agent"
+      ]
+    },
+    {
+      "name": "venla-xr-taper-limit--audit-recheck-interaction-CYP2D6_inhibitor",
+      "pass_": true,
+      "source": "RU-VENLA-XR",
+      "locator": "§4.5 physical16",
+      "cases": [
+        "venla-xr-taper-limit--audit-recheck-interaction-CYP2D6_inhibitor"
+      ]
+    },
+    {
+      "name": "venla-xr-taper-limit--audit-recheck-interaction-CYP3A4_inhibitor",
+      "pass_": true,
+      "source": "RU-VENLA-XR",
+      "locator": "§4.5 physical16",
+      "cases": [
+        "venla-xr-taper-limit--audit-recheck-interaction-CYP3A4_inhibitor"
+      ]
+    },
+    {
+      "name": "venla-xr-taper-limit--audit-recheck-interaction-QT_prolonging",
+      "pass_": true,
+      "source": "RU-VENLA-XR",
+      "locator": "§4.5 physical15–16",
+      "cases": [
+        "venla-xr-taper-limit--audit-recheck-interaction-QT_prolonging"
+      ]
+    },
+    {
+      "name": "venla-xr-taper-limit--audit-recheck-interaction-CNS_active",
+      "pass_": true,
+      "source": "RU-VENLA-XR",
+      "locator": "§4.5 physical15",
+      "cases": [
+        "venla-xr-taper-limit--audit-recheck-interaction-CNS_active"
+      ]
+    },
+    {
+      "name": "venla-xr-taper-limit--audit-recheck-interaction-metoprolol",
+      "pass_": true,
+      "source": "RU-VENLA-XR",
+      "locator": "§4.5 physical17",
+      "cases": [
+        "venla-xr-taper-limit--audit-recheck-interaction-metoprolol"
+      ]
+    },
+    {
+      "name": "venla-xr-taper-limit--audit-recheck-interaction-serotonin_precursor",
+      "pass_": true,
+      "source": "RU-VENLA-XR",
+      "locator": "§4.4 physical8;§4.5 physical15",
+      "cases": [
+        "venla-xr-taper-limit--audit-recheck-interaction-serotonin_precursor"
+      ]
+    },
+    {
+      "name": "venla-xr-taper-limit--audit-recheck-interaction-weight_loss_agent",
+      "pass_": true,
+      "source": "RU-VENLA-XR",
+      "locator": "§4.4 physical10",
+      "cases": [
+        "venla-xr-taper-limit--audit-recheck-interaction-weight_loss_agent"
+      ]
+    },
+    {
+      "name": "dulox-depression-start--audit-recheck-duplicate-duloxetine-positive",
+      "pass_": true,
+      "source": "RU-DULOX",
+      "locator": "§4.4 physical7",
+      "cases": [
+        "dulox-depression-start--audit-recheck-duplicate-duloxetine-positive"
+      ]
+    },
+    {
+      "name": "dulox-depression-start--audit-recheck-duplicate-duloxetine-selected_product_only",
+      "pass_": true,
+      "source": "RU-DULOX",
+      "locator": "§4.4 physical7",
+      "cases": [
+        "dulox-depression-start--audit-recheck-duplicate-duloxetine-selected_product_only"
+      ]
+    },
+    {
+      "name": "dulox-depression-start--audit-recheck-duplicate-duloxetine-unknown_additional_product",
+      "pass_": true,
+      "source": "RU-DULOX",
+      "locator": "§4.4 physical7",
+      "cases": [
+        "dulox-depression-start--audit-recheck-duplicate-duloxetine-unknown_additional_product"
+      ]
+    },
+    {
+      "name": "dulox-gad-adjust--audit-recheck-duplicate-duloxetine-positive",
+      "pass_": true,
+      "source": "RU-DULOX",
+      "locator": "§4.4 physical7",
+      "cases": [
+        "dulox-gad-adjust--audit-recheck-duplicate-duloxetine-positive"
+      ]
+    },
+    {
+      "name": "dulox-gad-adjust--audit-recheck-duplicate-duloxetine-selected_product_only",
+      "pass_": true,
+      "source": "RU-DULOX",
+      "locator": "§4.4 physical7",
+      "cases": [
+        "dulox-gad-adjust--audit-recheck-duplicate-duloxetine-selected_product_only"
+      ]
+    },
+    {
+      "name": "dulox-gad-adjust--audit-recheck-duplicate-duloxetine-unknown_additional_product",
+      "pass_": true,
+      "source": "RU-DULOX",
+      "locator": "§4.4 physical7",
+      "cases": [
+        "dulox-gad-adjust--audit-recheck-duplicate-duloxetine-unknown_additional_product"
+      ]
+    },
+    {
+      "name": "dulox-gad-start--audit-recheck-duplicate-duloxetine-positive",
+      "pass_": true,
+      "source": "RU-DULOX",
+      "locator": "§4.4 physical7",
+      "cases": [
+        "dulox-gad-start--audit-recheck-duplicate-duloxetine-positive"
+      ]
+    },
+    {
+      "name": "dulox-gad-start--audit-recheck-duplicate-duloxetine-selected_product_only",
+      "pass_": true,
+      "source": "RU-DULOX",
+      "locator": "§4.4 physical7",
+      "cases": [
+        "dulox-gad-start--audit-recheck-duplicate-duloxetine-selected_product_only"
+      ]
+    },
+    {
+      "name": "dulox-gad-start--audit-recheck-duplicate-duloxetine-unknown_additional_product",
+      "pass_": true,
+      "source": "RU-DULOX",
+      "locator": "§4.4 physical7",
+      "cases": [
+        "dulox-gad-start--audit-recheck-duplicate-duloxetine-unknown_additional_product"
+      ]
+    },
+    {
+      "name": "dulox-taper-limit--audit-recheck-duplicate-duloxetine-positive",
+      "pass_": true,
+      "source": "RU-DULOX",
+      "locator": "§4.4 physical7",
+      "cases": [
+        "dulox-taper-limit--audit-recheck-duplicate-duloxetine-positive"
+      ]
+    },
+    {
+      "name": "dulox-taper-limit--audit-recheck-duplicate-duloxetine-selected_product_only",
+      "pass_": true,
+      "source": "RU-DULOX",
+      "locator": "§4.4 physical7",
+      "cases": [
+        "dulox-taper-limit--audit-recheck-duplicate-duloxetine-selected_product_only"
+      ]
+    },
+    {
+      "name": "dulox-taper-limit--audit-recheck-duplicate-duloxetine-unknown_additional_product",
+      "pass_": true,
+      "source": "RU-DULOX",
+      "locator": "§4.4 physical7",
+      "cases": [
+        "dulox-taper-limit--audit-recheck-duplicate-duloxetine-unknown_additional_product"
+      ]
+    },
+    {
+      "name": "preg-taper-limit/resumption gap",
+      "pass_": true,
+      "source": "RU-PREG",
+      "locator": "§4.2/4.4 actual selected product: no prior-dose permission",
+      "cases": []
+    },
+    {
+      "name": "phen-taper-limit/resumption gap",
+      "pass_": true,
+      "source": "RU-PHEN",
+      "locator": "§4.2/4.4 actual selected product: no prior-dose permission",
+      "cases": []
+    }
+  ],
+  "author_recheck_baseline_errors": [],
+  "author_recheck_mutations": [
+    {
+      "name": "event_auto_stop",
+      "rejected": true
+    },
+    {
+      "name": "missing_help",
+      "rejected": true
+    },
+    {
+      "name": "missing_SER_pair_gate",
+      "rejected": true
+    },
+    {
+      "name": "missing_XR_CYP3A4",
+      "rejected": true
+    },
+    {
+      "name": "false_duplicate",
+      "rejected": true
+    },
+    {
+      "name": "missing_SCAR_alternative",
+      "rejected": true
+    },
+    {
+      "name": "hidden_projection_reason",
+      "rejected": true
+    }
+  ],
+  "author_primary_phrase_guards": [
+    {
+      "source_id": "RU-SER",
+      "page": 6,
+      "phrases": [
+        "симптоматической гипонатриемией",
+        "медицинскую помощь"
+      ],
+      "pass_": true
+    },
+    {
+      "source_id": "RU-PREG",
+      "page": 8,
+      "phrases": [
+        "рассмотреть вопрос о прекращении",
+        "медицинской помощью"
+      ],
+      "pass_": true
+    },
+    {
+      "source_id": "RU-PREG",
+      "page": 6,
+      "phrases": [
+        "немедленно отменить",
+        "альтернативное лечение"
+      ],
+      "pass_": true
+    },
+    {
+      "source_id": "RU-DULOX",
+      "page": 4,
+      "phrases": [
+        "стойком повышении АД",
+        "постепенной отмены"
+      ],
+      "pass_": true
+    },
+    {
+      "source_id": "RU-DULOX",
+      "page": 7,
+      "phrases": [
+        "избегать одновременного",
+        "препаратов, содержащих дулоксетин"
+      ],
+      "pass_": true
+    },
+    {
+      "source_id": "RU-VENLA-XR",
+      "page": 8,
+      "phrases": [
+        "тяжести симптомов",
+        "снижения дозы"
+      ],
+      "pass_": true
+    },
+    {
+      "source_id": "RU-VENLA-XR",
+      "page": 16,
+      "phrases": [
+        "ингибитора CYP3A4",
+        "активность изофермента CYP2D6"
+      ],
+      "pass_": true
+    },
+    {
+      "source_id": "RU-VENLA-XR",
+      "page": 17,
+      "phrases": [
+        "венлафаксина и метопролола",
+        "осторожность"
+      ],
+      "pass_": true
+    }
+  ],
+  "author_primary_phrase_guards_status": "authored report read; independent primary paragraphs used for own checks; author phrase guards not rerun in this script",
+  "A_phase_domain": [
+    "ongoing",
+    "selected_mode"
+  ],
+  "undeclared_A_phase_cases": [
+    {
+      "case_id": "ser-panic-start--audit-recheck-symptomatic_hyponatremia-phase-not_started",
+      "value": "not_started"
+    },
+    {
+      "case_id": "ser-panic-start--audit-recheck-symptomatic_hyponatremia-phase-unknown",
+      "value": "unknown"
+    },
+    {
+      "case_id": "ser-social-start--audit-recheck-symptomatic_hyponatremia-phase-not_started",
+      "value": "not_started"
+    },
+    {
+      "case_id": "ser-social-start--audit-recheck-symptomatic_hyponatremia-phase-unknown",
+      "value": "unknown"
+    },
+    {
+      "case_id": "preg-gad-start--audit-recheck-current_suicidal_thoughts_or_behavior-phase-not_started",
+      "value": "not_started"
+    },
+    {
+      "case_id": "preg-gad-start--audit-recheck-current_suicidal_thoughts_or_behavior-phase-unknown",
+      "value": "unknown"
+    },
+    {
+      "case_id": "preg-renal-start--audit-recheck-current_suicidal_thoughts_or_behavior-phase-not_started",
+      "value": "not_started"
+    },
+    {
+      "case_id": "preg-renal-start--audit-recheck-current_suicidal_thoughts_or_behavior-phase-unknown",
+      "value": "unknown"
+    },
+    {
+      "case_id": "dulox-depression-start--audit-recheck-persistent_BP_increase-phase-not_started",
+      "value": "not_started"
+    },
+    {
+      "case_id": "dulox-depression-start--audit-recheck-persistent_BP_increase-phase-unknown",
+      "value": "unknown"
+    },
+    {
+      "case_id": "dulox-gad-start--audit-recheck-persistent_BP_increase-phase-not_started",
+      "value": "not_started"
+    },
+    {
+      "case_id": "dulox-gad-start--audit-recheck-persistent_BP_increase-phase-unknown",
+      "value": "unknown"
+    },
+    {
+      "case_id": "venla-xr-gad-start--audit-recheck-suspected_serotonin_syndrome-phase-not_started",
+      "value": "not_started"
+    },
+    {
+      "case_id": "venla-xr-gad-start--audit-recheck-suspected_serotonin_syndrome-phase-unknown",
+      "value": "unknown"
+    },
+    {
+      "case_id": "venla-xr-panic-form-limit--audit-recheck-suspected_serotonin_syndrome-phase-not_started",
+      "value": "not_started"
+    },
+    {
+      "case_id": "venla-xr-panic-form-limit--audit-recheck-suspected_serotonin_syndrome-phase-unknown",
+      "value": "unknown"
+    },
+    {
+      "case_id": "venla-xr-social-start--audit-recheck-suspected_serotonin_syndrome-phase-not_started",
+      "value": "not_started"
+    },
+    {
+      "case_id": "venla-xr-social-start--audit-recheck-suspected_serotonin_syndrome-phase-unknown",
+      "value": "unknown"
+    }
+  ],
+  "A_phase_negative_mutation": {
+    "name": "undeclared_A_phase",
+    "own_domain_detector_rejects": true,
+    "author_validator_rejects": false,
+    "author_errors": []
+  },
+  "limits": [
+    "Source facts and selected expected reconstructed independently; each mutation tests the detector property named.",
+    "No clinical calculator executed. No exhaustive classifier or global minimum proof."
+  ]
+}

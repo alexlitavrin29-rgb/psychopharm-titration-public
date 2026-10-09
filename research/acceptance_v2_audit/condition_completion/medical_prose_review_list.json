@@ -1,0 +1,5552 @@
+[
+  {
+    "text": "Рекомендуется избегать назначения во время беременности; §4.6 PDF с.6. Числовой поправки нет.",
+    "occurrences": [
+      {
+        "id": "C00039",
+        "rid": "ago-depression-start",
+        "path": "rules/ago-depression-start.yaml/applicability/pregnancy"
+      },
+      {
+        "id": "C00211",
+        "rid": "ago-gad-start",
+        "path": "rules/ago-gad-start.yaml/applicability/pregnancy"
+      },
+      {
+        "id": "C00351",
+        "rid": "ago-stop",
+        "path": "rules/ago-stop.yaml/applicability/pregnancy"
+      }
+    ]
+  },
+  {
+    "text": "Риск для ребёнка не исключён; врач выбирает прекращение грудного вскармливания либо приёма препарата, §4.6 с.6. Не числовой коэффициент.",
+    "occurrences": [
+      {
+        "id": "C00040",
+        "rid": "ago-depression-start",
+        "path": "rules/ago-depression-start.yaml/applicability/lactation"
+      },
+      {
+        "id": "C00212",
+        "rid": "ago-gad-start",
+        "path": "rules/ago-gad-start.yaml/applicability/lactation"
+      },
+      {
+        "id": "C00352",
+        "rid": "ago-stop",
+        "path": "rules/ago-stop.yaml/applicability/lactation"
+      }
+    ]
+  },
+  {
+    "text": "При средней/тяжёлой почечной недостаточности опыт ограничен, соблюдать осторожность; §4.2 Вальдоксан с.2. Точной числовой поправки нет.",
+    "occurrences": [
+      {
+        "id": "C00041",
+        "rid": "ago-depression-start",
+        "path": "rules/ago-depression-start.yaml/applicability/renal_constraints/0"
+      },
+      {
+        "id": "C00213",
+        "rid": "ago-gad-start",
+        "path": "rules/ago-gad-start.yaml/applicability/renal_constraints/0"
+      },
+      {
+        "id": "C03433",
+        "rid": "switch-parox-ago-selected-example",
+        "path": "rules/switch-parox-ago-selected-example.yaml/applicability/renal_constraints/0"
+      }
+    ]
+  },
+  {
+    "text": "Печёночная недостаточность/активная болезнь; АЛТ или АСТ >3 ВГН — противопоказание. При 1–3 ВГН осторожность, не считать нормой.",
+    "occurrences": [
+      {
+        "id": "C00042",
+        "rid": "ago-depression-start",
+        "path": "rules/ago-depression-start.yaml/applicability/hepatic_constraints/0"
+      },
+      {
+        "id": "C00214",
+        "rid": "ago-gad-start",
+        "path": "rules/ago-gad-start.yaml/applicability/hepatic_constraints/0"
+      }
+    ]
+  },
+  {
+    "text": "Мания/гипомания, суицидальный риск и факторы повреждения печени требуют отдельной клинической оценки/наблюдения; §4.4 с.3–5. Не числовые множители.",
+    "occurrences": [
+      {
+        "id": "C00043",
+        "rid": "ago-depression-start",
+        "path": "rules/ago-depression-start.yaml/applicability/comorbidity_constraints/0"
+      },
+      {
+        "id": "C00215",
+        "rid": "ago-gad-start",
+        "path": "rules/ago-gad-start.yaml/applicability/comorbidity_constraints/0"
+      },
+      {
+        "id": "C03435",
+        "rid": "switch-parox-ago-selected-example",
+        "path": "rules/switch-parox-ago-selected-example.yaml/applicability/comorbidity_constraints/0"
+      }
+    ]
+  },
+  {
+    "text": "Флувоксамин/ципрофлоксацин — сильные CYP1A2, противопоказаны.",
+    "occurrences": [
+      {
+        "id": "C00044",
+        "rid": "ago-depression-start",
+        "path": "rules/ago-depression-start.yaml/applicability/interacting_drugs/0"
+      },
+      {
+        "id": "C00216",
+        "rid": "ago-gad-start",
+        "path": "rules/ago-gad-start.yaml/applicability/interacting_drugs/0"
+      }
+    ]
+  },
+  {
+    "text": "Печёночные пробы всем до начала; контроль приблизительно 3/6/12/24 недели и после повышения. Это лабораторный мониторинг, не календарь визитов.",
+    "occurrences": [
+      {
+        "id": "C00045",
+        "rid": "ago-depression-start",
+        "path": "rules/ago-depression-start.yaml/applicability/other_conditions/0"
+      },
+      {
+        "id": "C00217",
+        "rid": "ago-gad-start",
+        "path": "rules/ago-gad-start.yaml/applicability/other_conditions/0"
+      }
+    ]
+  },
+  {
+    "text": "Редкие наследственные непереносимость галактозы, полная лактазная недостаточность, глюкозо-галактозная мальабсорбция (§4.3 с.3).",
+    "occurrences": [
+      {
+        "id": "C00046",
+        "rid": "ago-depression-start",
+        "path": "rules/ago-depression-start.yaml/applicability/exclusions/0"
+      },
+      {
+        "id": "C00218",
+        "rid": "ago-gad-start",
+        "path": "rules/ago-gad-start.yaml/applicability/exclusions/0"
+      },
+      {
+        "id": "C03114",
+        "rid": "switch-esc-ago",
+        "path": "rules/switch-esc-ago.yaml/applicability/exclusions/1"
+      },
+      {
+        "id": "C03440",
+        "rid": "switch-parox-ago-selected-example",
+        "path": "rules/switch-parox-ago-selected-example.yaml/applicability/exclusions/1"
+      },
+      {
+        "id": "C03718",
+        "rid": "switch-parox-ago",
+        "path": "rules/switch-parox-ago.yaml/applicability/exclusions/1"
+      },
+      {
+        "id": "C03944",
+        "rid": "switch-ser-ago",
+        "path": "rules/switch-ser-ago.yaml/applicability/exclusions/1"
+      }
+    ]
+  },
+  {
+    "text": "Пожилые с деменцией: не назначать (§4.4 с.4); не выводить категорию пожилых из самостоятельно выбранного возраста.",
+    "occurrences": [
+      {
+        "id": "C00047",
+        "rid": "ago-depression-start",
+        "path": "rules/ago-depression-start.yaml/applicability/exclusions/1"
+      },
+      {
+        "id": "C00219",
+        "rid": "ago-gad-start",
+        "path": "rules/ago-gad-start.yaml/applicability/exclusions/1"
+      },
+      {
+        "id": "C03115",
+        "rid": "switch-esc-ago",
+        "path": "rules/switch-esc-ago.yaml/applicability/exclusions/2"
+      },
+      {
+        "id": "C03441",
+        "rid": "switch-parox-ago-selected-example",
+        "path": "rules/switch-parox-ago-selected-example.yaml/applicability/exclusions/2"
+      },
+      {
+        "id": "C03719",
+        "rid": "switch-parox-ago",
+        "path": "rules/switch-parox-ago.yaml/applicability/exclusions/2"
+      },
+      {
+        "id": "C03945",
+        "rid": "switch-ser-ago",
+        "path": "rules/switch-ser-ago.yaml/applicability/exclusions/2"
+      }
+    ]
+  },
+  {
+    "text": "RU_indication_in_read_original_latest_registry_text_separate",
+    "occurrences": [
+      {
+        "id": "C00048",
+        "rid": "ago-depression-start",
+        "path": "rules/ago-depression-start.yaml/applicability/indication_status_in_russia"
+      },
+      {
+        "id": "C00220",
+        "rid": "ago-gad-start",
+        "path": "rules/ago-gad-start.yaml/applicability/indication_status_in_russia"
+      },
+      {
+        "id": "C00353",
+        "rid": "ago-stop",
+        "path": "rules/ago-stop.yaml/applicability/indication_status_in_russia"
+      },
+      {
+        "id": "C00417",
+        "rid": "dulox-depression-start",
+        "path": "rules/dulox-depression-start.yaml/applicability/indication_status_in_russia"
+      },
+      {
+        "id": "C00529",
+        "rid": "dulox-gad-adjust",
+        "path": "rules/dulox-gad-adjust.yaml/applicability/indication_status_in_russia"
+      },
+      {
+        "id": "C00643",
+        "rid": "dulox-gad-start",
+        "path": "rules/dulox-gad-start.yaml/applicability/indication_status_in_russia"
+      },
+      {
+        "id": "C00735",
+        "rid": "dulox-taper-limit",
+        "path": "rules/dulox-taper-limit.yaml/applicability/indication_status_in_russia"
+      },
+      {
+        "id": "C01765",
+        "rid": "fluvox-depression-start",
+        "path": "rules/fluvox-depression-start.yaml/applicability/indication_status_in_russia"
+      },
+      {
+        "id": "C01860",
+        "rid": "fluvox-taper-limit",
+        "path": "rules/fluvox-taper-limit.yaml/applicability/indication_status_in_russia"
+      },
+      {
+        "id": "C02098",
+        "rid": "phen-taper-limit",
+        "path": "rules/phen-taper-limit.yaml/applicability/indication_status_in_russia"
+      },
+      {
+        "id": "C04285",
+        "rid": "venla-xr-gad-start",
+        "path": "rules/venla-xr-gad-start.yaml/applicability/indication_status_in_russia"
+      },
+      {
+        "id": "C04424",
+        "rid": "venla-xr-panic-form-limit",
+        "path": "rules/venla-xr-panic-form-limit.yaml/applicability/indication_status_in_russia"
+      },
+      {
+        "id": "C04559",
+        "rid": "venla-xr-social-start",
+        "path": "rules/venla-xr-social-start.yaml/applicability/indication_status_in_russia"
+      },
+      {
+        "id": "C04665",
+        "rid": "venla-xr-taper-limit",
+        "path": "rules/venla-xr-taper-limit.yaml/applicability/indication_status_in_russia"
+      }
+    ]
+  },
+  {
+    "text": "25 мг один раз перед сном. При отсутствии положительной динамики через 2 недели возможно 50 мг; решение врача по пользе/риску и строгий контроль печёночных проб.",
+    "occurrences": [
+      {
+        "id": "C00051",
+        "rid": "ago-depression-start",
+        "path": "rules/ago-depression-start.yaml/logic/actions/0"
+      }
+    ]
+  },
+  {
+    "text": "Возрастная граница: ГТР строго старше 65; БДР 75 и старше — не применять. Эти условия не взаимозаменяемы.",
+    "occurrences": [
+      {
+        "id": "C00052",
+        "rid": "ago-depression-start",
+        "path": "rules/ago-depression-start.yaml/logic/actions/1"
+      },
+      {
+        "id": "C00224",
+        "rid": "ago-gad-start",
+        "path": "rules/ago-gad-start.yaml/logic/actions/1"
+      }
+    ]
+  },
+  {
+    "text": "Перед стартом проверяются АЛТ и АСТ отдельно. >3 ВГН хотя бы одной пробы исключает начало; ровно 3 требует осторожности, не разрешение без прочих условий.",
+    "occurrences": [
+      {
+        "id": "C00053",
+        "rid": "ago-depression-start",
+        "path": "rules/ago-depression-start.yaml/logic/actions/2"
+      },
+      {
+        "id": "C00225",
+        "rid": "ago-gad-start",
+        "path": "rules/ago-gad-start.yaml/logic/actions/2"
+      }
+    ]
+  },
+  {
+    "text": "Сообщённая средняя/тяжёлая почечная недостаточность раскрывает отдельную ветку осторожности; не рассчитывать неизвестную числовую поправку и не считать неоценённое состояние нормой.",
+    "occurrences": [
+      {
+        "id": "C00054",
+        "rid": "ago-depression-start",
+        "path": "rules/ago-depression-start.yaml/logic/actions/3"
+      },
+      {
+        "id": "C00226",
+        "rid": "ago-gad-start",
+        "path": "rules/ago-gad-start.yaml/logic/actions/3"
+      },
+      {
+        "id": "C03451",
+        "rid": "switch-parox-ago-selected-example",
+        "path": "rules/switch-parox-ago-selected-example.yaml/logic/actions/4"
+      }
+    ]
+  },
+  {
+    "text": "Каждый применимый agomelatine_conditions; АЛТ/АСТ независимо; форма B; неизвестный обязательный ответ не норма.",
+    "occurrences": [
+      {
+        "id": "C00132",
+        "rid": "ago-depression-start",
+        "path": "rules/ago-depression-start.yaml/output/mandatory_checks/0"
+      },
+      {
+        "id": "C00304",
+        "rid": "ago-gad-start",
+        "path": "rules/ago-gad-start.yaml/output/mandatory_checks/0"
+      },
+      {
+        "id": "C03211",
+        "rid": "switch-esc-ago",
+        "path": "rules/switch-esc-ago.yaml/output/mandatory_checks/0"
+      },
+      {
+        "id": "C03592",
+        "rid": "switch-parox-ago-selected-example",
+        "path": "rules/switch-parox-ago-selected-example.yaml/output/mandatory_checks/0"
+      },
+      {
+        "id": "C03821",
+        "rid": "switch-parox-ago",
+        "path": "rules/switch-parox-ago.yaml/output/mandatory_checks/0"
+      },
+      {
+        "id": "C04058",
+        "rid": "switch-ser-ago",
+        "path": "rules/switch-ser-ago.yaml/output/mandatory_checks/0"
+      }
+    ]
+  },
+  {
+    "text": "ALT and AST separately >3 exclude start; (1,3] caution; liver insufficiency/cirrhosis/active disease exclude; elderly+dementia exclude; GAD >65, BDR >=75 exclude; <18 exclude; moderate/severe renal caution; rising transaminases repeat within 48 hours",
+    "occurrences": [
+      {
+        "id": "C00163",
+        "rid": "ago-depression-start",
+        "path": "result_contracts.yaml/rules/ago-depression-start/source_gates/0/other"
+      },
+      {
+        "id": "C00335",
+        "rid": "ago-gad-start",
+        "path": "result_contracts.yaml/rules/ago-gad-start/source_gates/0/other"
+      },
+      {
+        "id": "C03251",
+        "rid": "switch-esc-ago",
+        "path": "result_contracts.yaml/rules/switch-esc-ago/source_gates/1/other"
+      },
+      {
+        "id": "C03625",
+        "rid": "switch-parox-ago-selected-example",
+        "path": "result_contracts.yaml/rules/switch-parox-ago-selected-example/source_gates/0/other"
+      },
+      {
+        "id": "C03854",
+        "rid": "switch-parox-ago",
+        "path": "result_contracts.yaml/rules/switch-parox-ago/source_gates/0/other"
+      },
+      {
+        "id": "C04091",
+        "rid": "switch-ser-ago",
+        "path": "result_contracts.yaml/rules/switch-ser-ago/source_gates/0/other"
+      }
+    ]
+  },
+  {
+    "text": "25 мг один раз перед сном. При отсутствии положительной динамики через 4 недели возможно 50 мг; решение врача по пользе/риску и строгий контроль печёночных проб.",
+    "occurrences": [
+      {
+        "id": "C00223",
+        "rid": "ago-gad-start",
+        "path": "rules/ago-gad-start.yaml/logic/actions/0"
+      }
+    ]
+  },
+  {
+    "text": "Это не разрешение следующего антидепрессанта в тот же день и не правило отмены других препаратов.",
+    "occurrences": [
+      {
+        "id": "C00357",
+        "rid": "ago-stop",
+        "path": "rules/ago-stop.yaml/logic/actions/1"
+      }
+    ]
+  },
+  {
+    "text": "Условие не задано как нулевая длительность washout; интервал до B проверять отдельно.",
+    "occurrences": [
+      {
+        "id": "C00371",
+        "rid": "ago-stop",
+        "path": "rules/ago-stop.yaml/output/warnings/3"
+      }
+    ]
+  },
+  {
+    "text": "No mandatory taper of agomelatine; no next-drug start time derived",
+    "occurrences": [
+      {
+        "id": "C00378",
+        "rid": "ago-stop",
+        "path": "result_contracts.yaml/rules/ago-stop/source_gates/0/other"
+      }
+    ]
+  },
+  {
+    "text": "Назначать только если потенциальная польза для матери значительно превышает риск для плода; §4.6 с.12. Автоматической дозовой поправки нет.",
+    "occurrences": [
+      {
+        "id": "C00410",
+        "rid": "dulox-depression-start",
+        "path": "rules/dulox-depression-start.yaml/applicability/pregnancy"
+      },
+      {
+        "id": "C00522",
+        "rid": "dulox-gad-adjust",
+        "path": "rules/dulox-gad-adjust.yaml/applicability/pregnancy"
+      },
+      {
+        "id": "C00636",
+        "rid": "dulox-gad-start",
+        "path": "rules/dulox-gad-start.yaml/applicability/pregnancy"
+      },
+      {
+        "id": "C00733",
+        "rid": "dulox-taper-limit",
+        "path": "rules/dulox-taper-limit.yaml/applicability/pregnancy"
+      }
+    ]
+  },
+  {
+    "text": "Не рекомендуется кормление грудью во время терапии; §4.6 с.13. Отдельное решение врача, не коэффициент.",
+    "occurrences": [
+      {
+        "id": "C00411",
+        "rid": "dulox-depression-start",
+        "path": "rules/dulox-depression-start.yaml/applicability/lactation"
+      },
+      {
+        "id": "C00523",
+        "rid": "dulox-gad-adjust",
+        "path": "rules/dulox-gad-adjust.yaml/applicability/lactation"
+      },
+      {
+        "id": "C00637",
+        "rid": "dulox-gad-start",
+        "path": "rules/dulox-gad-start.yaml/applicability/lactation"
+      },
+      {
+        "id": "C00734",
+        "rid": "dulox-taper-limit",
+        "path": "rules/dulox-taper-limit.yaml/applicability/lactation"
+      }
+    ]
+  },
+  {
+    "text": "КК 30–80 мл/мин: без поправки; <30 противопоказано, §4.2–4.3 с.3–4.",
+    "occurrences": [
+      {
+        "id": "C00412",
+        "rid": "dulox-depression-start",
+        "path": "rules/dulox-depression-start.yaml/applicability/renal_constraints/0"
+      },
+      {
+        "id": "C00524",
+        "rid": "dulox-gad-adjust",
+        "path": "rules/dulox-gad-adjust.yaml/applicability/renal_constraints/0"
+      },
+      {
+        "id": "C00638",
+        "rid": "dulox-gad-start",
+        "path": "rules/dulox-gad-start.yaml/applicability/renal_constraints/0"
+      }
+    ]
+  },
+  {
+    "text": "Заболевание печени с недостаточностью: не назначать §4.2–4.3.",
+    "occurrences": [
+      {
+        "id": "C00413",
+        "rid": "dulox-depression-start",
+        "path": "rules/dulox-depression-start.yaml/applicability/hepatic_constraints/0"
+      },
+      {
+        "id": "C00525",
+        "rid": "dulox-gad-adjust",
+        "path": "rules/dulox-gad-adjust.yaml/applicability/hepatic_constraints/0"
+      },
+      {
+        "id": "C00639",
+        "rid": "dulox-gad-start",
+        "path": "rules/dulox-gad-start.yaml/applicability/hepatic_constraints/0"
+      }
+    ]
+  },
+  {
+    "text": "Неконтролируемая АГ, некомпенсированная закрытоугольная глаукома §4.3.",
+    "occurrences": [
+      {
+        "id": "C00414",
+        "rid": "dulox-depression-start",
+        "path": "rules/dulox-depression-start.yaml/applicability/comorbidity_constraints/0"
+      },
+      {
+        "id": "C00526",
+        "rid": "dulox-gad-adjust",
+        "path": "rules/dulox-gad-adjust.yaml/applicability/comorbidity_constraints/0"
+      },
+      {
+        "id": "C00640",
+        "rid": "dulox-gad-start",
+        "path": "rules/dulox-gad-start.yaml/applicability/comorbidity_constraints/0"
+      }
+    ]
+  },
+  {
+    "text": "ИМАО; сильные CYP1A2 флувоксамин/ципрофлоксацин/эноксацин §4.3–4.5.",
+    "occurrences": [
+      {
+        "id": "C00415",
+        "rid": "dulox-depression-start",
+        "path": "rules/dulox-depression-start.yaml/applicability/interacting_drugs/0"
+      },
+      {
+        "id": "C00527",
+        "rid": "dulox-gad-adjust",
+        "path": "rules/dulox-gad-adjust.yaml/applicability/interacting_drugs/0"
+      },
+      {
+        "id": "C00641",
+        "rid": "dulox-gad-start",
+        "path": "rules/dulox-gad-start.yaml/applicability/interacting_drugs/0"
+      }
+    ]
+  },
+  {
+    "text": "Сахароза: редкие наследственные непереносимость фруктозы, глюкозо-галактозная мальабсорбция, дефицит сахаразы-изомальтазы; §4.4 с.9.",
+    "occurrences": [
+      {
+        "id": "C00416",
+        "rid": "dulox-depression-start",
+        "path": "rules/dulox-depression-start.yaml/applicability/exclusions/0"
+      },
+      {
+        "id": "C00528",
+        "rid": "dulox-gad-adjust",
+        "path": "rules/dulox-gad-adjust.yaml/applicability/exclusions/0"
+      },
+      {
+        "id": "C00642",
+        "rid": "dulox-gad-start",
+        "path": "rules/dulox-gad-start.yaml/applicability/exclusions/0"
+      }
+    ]
+  },
+  {
+    "text": "Начальная и рекомендуемая поддерживающая доза 60 мг один раз в сутки. Исследованная безопасность 120 не является основанием автоматического повышения при отсутствии ответа.",
+    "occurrences": [
+      {
+        "id": "C00420",
+        "rid": "dulox-depression-start",
+        "path": "rules/dulox-depression-start.yaml/logic/actions/0"
+      }
+    ]
+  },
+  {
+    "text": "Указанные наследственные состояния исключают приём Дулоксенты. При акатизии повышение может нанести вред: не выдавать автоматическое повышение (§4.4 с.9).",
+    "occurrences": [
+      {
+        "id": "C00421",
+        "rid": "dulox-depression-start",
+        "path": "rules/dulox-depression-start.yaml/logic/actions/1"
+      },
+      {
+        "id": "C00534",
+        "rid": "dulox-gad-adjust",
+        "path": "rules/dulox-gad-adjust.yaml/logic/actions/2"
+      },
+      {
+        "id": "C00650",
+        "rid": "dulox-gad-start",
+        "path": "rules/dulox-gad-start.yaml/logic/actions/4"
+      }
+    ]
+  },
+  {
+    "text": "not_applicable for standard branch; no numeric start",
+    "occurrences": [
+      {
+        "id": "C00437",
+        "rid": "dulox-depression-start",
+        "path": "rules/dulox-depression-start.yaml/logic/maoi_history_contract/current_maoi"
+      },
+      {
+        "id": "C00550",
+        "rid": "dulox-gad-adjust",
+        "path": "rules/dulox-gad-adjust.yaml/logic/maoi_history_contract/current_maoi"
+      },
+      {
+        "id": "C00666",
+        "rid": "dulox-gad-start",
+        "path": "rules/dulox-gad-start.yaml/logic/maoi_history_contract/current_maoi"
+      },
+      {
+        "id": "C01791",
+        "rid": "fluvox-depression-start",
+        "path": "rules/fluvox-depression-start.yaml/logic/maoi_history_contract/current_maoi"
+      },
+      {
+        "id": "C01967",
+        "rid": "parox-panic-kr",
+        "path": "rules/parox-panic-kr.yaml/logic/maoi_history_contract/current_maoi"
+      },
+      {
+        "id": "C02665",
+        "rid": "ser-adult-adjust",
+        "path": "rules/ser-adult-adjust.yaml/logic/maoi_history_contract/current_maoi"
+      },
+      {
+        "id": "C02786",
+        "rid": "ser-panic-start",
+        "path": "rules/ser-panic-start.yaml/logic/maoi_history_contract/current_maoi"
+      },
+      {
+        "id": "C02911",
+        "rid": "ser-social-start",
+        "path": "rules/ser-social-start.yaml/logic/maoi_history_contract/current_maoi"
+      },
+      {
+        "id": "C03314",
+        "rid": "switch-esc-ser",
+        "path": "rules/switch-esc-ser.yaml/logic/maoi_history_contract/current_maoi"
+      },
+      {
+        "id": "C03470",
+        "rid": "switch-parox-ago-selected-example",
+        "path": "rules/switch-parox-ago-selected-example.yaml/logic/maoi_history_contract/current_maoi"
+      },
+      {
+        "id": "C03744",
+        "rid": "switch-parox-ago",
+        "path": "rules/switch-parox-ago.yaml/logic/maoi_history_contract/current_maoi"
+      },
+      {
+        "id": "C03971",
+        "rid": "switch-ser-ago",
+        "path": "rules/switch-ser-ago.yaml/logic/maoi_history_contract/current_maoi"
+      },
+      {
+        "id": "C04174",
+        "rid": "switch-ser-esc",
+        "path": "rules/switch-ser-esc.yaml/logic/maoi_history_contract/current_maoi"
+      },
+      {
+        "id": "C04307",
+        "rid": "venla-xr-gad-start",
+        "path": "rules/venla-xr-gad-start.yaml/logic/maoi_history_contract/current_maoi"
+      },
+      {
+        "id": "C04444",
+        "rid": "venla-xr-panic-form-limit",
+        "path": "rules/venla-xr-panic-form-limit.yaml/logic/maoi_history_contract/current_maoi"
+      },
+      {
+        "id": "C04581",
+        "rid": "venla-xr-social-start",
+        "path": "rules/venla-xr-social-start.yaml/logic/maoi_history_contract/current_maoi"
+      }
+    ]
+  },
+  {
+    "text": "all applicable direction gates must be satisfied; no single last record shortcut",
+    "occurrences": [
+      {
+        "id": "C00438",
+        "rid": "dulox-depression-start",
+        "path": "rules/dulox-depression-start.yaml/logic/maoi_history_contract/multiple_records"
+      },
+      {
+        "id": "C00551",
+        "rid": "dulox-gad-adjust",
+        "path": "rules/dulox-gad-adjust.yaml/logic/maoi_history_contract/multiple_records"
+      },
+      {
+        "id": "C00667",
+        "rid": "dulox-gad-start",
+        "path": "rules/dulox-gad-start.yaml/logic/maoi_history_contract/multiple_records"
+      },
+      {
+        "id": "C01792",
+        "rid": "fluvox-depression-start",
+        "path": "rules/fluvox-depression-start.yaml/logic/maoi_history_contract/multiple_records"
+      },
+      {
+        "id": "C01968",
+        "rid": "parox-panic-kr",
+        "path": "rules/parox-panic-kr.yaml/logic/maoi_history_contract/multiple_records"
+      },
+      {
+        "id": "C02666",
+        "rid": "ser-adult-adjust",
+        "path": "rules/ser-adult-adjust.yaml/logic/maoi_history_contract/multiple_records"
+      },
+      {
+        "id": "C02787",
+        "rid": "ser-panic-start",
+        "path": "rules/ser-panic-start.yaml/logic/maoi_history_contract/multiple_records"
+      },
+      {
+        "id": "C02912",
+        "rid": "ser-social-start",
+        "path": "rules/ser-social-start.yaml/logic/maoi_history_contract/multiple_records"
+      },
+      {
+        "id": "C03315",
+        "rid": "switch-esc-ser",
+        "path": "rules/switch-esc-ser.yaml/logic/maoi_history_contract/multiple_records"
+      },
+      {
+        "id": "C03471",
+        "rid": "switch-parox-ago-selected-example",
+        "path": "rules/switch-parox-ago-selected-example.yaml/logic/maoi_history_contract/multiple_records"
+      },
+      {
+        "id": "C03745",
+        "rid": "switch-parox-ago",
+        "path": "rules/switch-parox-ago.yaml/logic/maoi_history_contract/multiple_records"
+      },
+      {
+        "id": "C03972",
+        "rid": "switch-ser-ago",
+        "path": "rules/switch-ser-ago.yaml/logic/maoi_history_contract/multiple_records"
+      },
+      {
+        "id": "C04175",
+        "rid": "switch-ser-esc",
+        "path": "rules/switch-ser-esc.yaml/logic/maoi_history_contract/multiple_records"
+      },
+      {
+        "id": "C04308",
+        "rid": "venla-xr-gad-start",
+        "path": "rules/venla-xr-gad-start.yaml/logic/maoi_history_contract/multiple_records"
+      },
+      {
+        "id": "C04445",
+        "rid": "venla-xr-panic-form-limit",
+        "path": "rules/venla-xr-panic-form-limit.yaml/logic/maoi_history_contract/multiple_records"
+      },
+      {
+        "id": "C04582",
+        "rid": "venla-xr-social-start",
+        "path": "rules/venla-xr-social-start.yaml/logic/maoi_history_contract/multiple_records"
+      }
+    ]
+  },
+  {
+    "text": "next calendar date; not elapsed 24 hours unless that specific source says 24 hours",
+    "occurrences": [
+      {
+        "id": "C00439",
+        "rid": "dulox-depression-start",
+        "path": "rules/dulox-depression-start.yaml/logic/maoi_history_contract/calendar_day"
+      },
+      {
+        "id": "C00552",
+        "rid": "dulox-gad-adjust",
+        "path": "rules/dulox-gad-adjust.yaml/logic/maoi_history_contract/calendar_day"
+      },
+      {
+        "id": "C00668",
+        "rid": "dulox-gad-start",
+        "path": "rules/dulox-gad-start.yaml/logic/maoi_history_contract/calendar_day"
+      },
+      {
+        "id": "C01793",
+        "rid": "fluvox-depression-start",
+        "path": "rules/fluvox-depression-start.yaml/logic/maoi_history_contract/calendar_day"
+      },
+      {
+        "id": "C01969",
+        "rid": "parox-panic-kr",
+        "path": "rules/parox-panic-kr.yaml/logic/maoi_history_contract/calendar_day"
+      },
+      {
+        "id": "C02667",
+        "rid": "ser-adult-adjust",
+        "path": "rules/ser-adult-adjust.yaml/logic/maoi_history_contract/calendar_day"
+      },
+      {
+        "id": "C02788",
+        "rid": "ser-panic-start",
+        "path": "rules/ser-panic-start.yaml/logic/maoi_history_contract/calendar_day"
+      },
+      {
+        "id": "C02913",
+        "rid": "ser-social-start",
+        "path": "rules/ser-social-start.yaml/logic/maoi_history_contract/calendar_day"
+      },
+      {
+        "id": "C03316",
+        "rid": "switch-esc-ser",
+        "path": "rules/switch-esc-ser.yaml/logic/maoi_history_contract/calendar_day"
+      },
+      {
+        "id": "C03472",
+        "rid": "switch-parox-ago-selected-example",
+        "path": "rules/switch-parox-ago-selected-example.yaml/logic/maoi_history_contract/calendar_day"
+      },
+      {
+        "id": "C03746",
+        "rid": "switch-parox-ago",
+        "path": "rules/switch-parox-ago.yaml/logic/maoi_history_contract/calendar_day"
+      },
+      {
+        "id": "C03973",
+        "rid": "switch-ser-ago",
+        "path": "rules/switch-ser-ago.yaml/logic/maoi_history_contract/calendar_day"
+      },
+      {
+        "id": "C04176",
+        "rid": "switch-ser-esc",
+        "path": "rules/switch-ser-esc.yaml/logic/maoi_history_contract/calendar_day"
+      },
+      {
+        "id": "C04309",
+        "rid": "venla-xr-gad-start",
+        "path": "rules/venla-xr-gad-start.yaml/logic/maoi_history_contract/calendar_day"
+      },
+      {
+        "id": "C04446",
+        "rid": "venla-xr-panic-form-limit",
+        "path": "rules/venla-xr-panic-form-limit.yaml/logic/maoi_history_contract/calendar_day"
+      },
+      {
+        "id": "C04583",
+        "rid": "venla-xr-social-start",
+        "path": "rules/venla-xr-social-start.yaml/logic/maoi_history_contract/calendar_day"
+      }
+    ]
+  },
+  {
+    "text": "<18 exclude; CLcr <30 exclude; hepatic disease with insufficiency exclude; akathisia increase harmful; no joint elderly+depression dose",
+    "occurrences": [
+      {
+        "id": "C00477",
+        "rid": "dulox-depression-start",
+        "path": "result_contracts.yaml/rules/dulox-depression-start/source_gates/0/other"
+      },
+      {
+        "id": "C00590",
+        "rid": "dulox-gad-adjust",
+        "path": "result_contracts.yaml/rules/dulox-gad-adjust/source_gates/0/other"
+      },
+      {
+        "id": "C00706",
+        "rid": "dulox-gad-start",
+        "path": "result_contracts.yaml/rules/dulox-gad-start/source_gates/0/other"
+      }
+    ]
+  },
+  {
+    "text": "При недостаточном ответе на 30 возможно 60; при недостаточном ответе на 60 врач рассматривает 90 или 120 по ответу/переносимости.",
+    "occurrences": [
+      {
+        "id": "C00532",
+        "rid": "dulox-gad-adjust",
+        "path": "rules/dulox-gad-adjust.yaml/logic/actions/0"
+      }
+    ]
+  },
+  {
+    "text": "Интервал и обязательная последовательность 60→90→120 не опубликованы; не назначать недельный календарь.",
+    "occurrences": [
+      {
+        "id": "C00533",
+        "rid": "dulox-gad-adjust",
+        "path": "rules/dulox-gad-adjust.yaml/logic/actions/1"
+      }
+    ]
+  },
+  {
+    "text": "ГТР без сопутствующей депрессии: 30 мг/сут; при недостаточном ответе возможно 60 мг/сут, фиксированный день повышения не опубликован.",
+    "occurrences": [
+      {
+        "id": "C00646",
+        "rid": "dulox-gad-start",
+        "path": "rules/dulox-gad-start.yaml/logic/actions/0"
+      }
+    ]
+  },
+  {
+    "text": "ГТР с самостоятельной депрессией: начало/поддержание 60 мг/сут.",
+    "occurrences": [
+      {
+        "id": "C00647",
+        "rid": "dulox-gad-start",
+        "path": "rules/dulox-gad-start.yaml/logic/actions/1"
+      }
+    ]
+  },
+  {
+    "text": "Пожилой ГТР: 30 мг/сут 2 недели до 60. Совпадение пожилой ветки и коморбидной депрессии не решать автоматически.",
+    "occurrences": [
+      {
+        "id": "C00648",
+        "rid": "dulox-gad-start",
+        "path": "rules/dulox-gad-start.yaml/logic/actions/2"
+      }
+    ]
+  },
+  {
+    "text": "Капсулы целые; при старте 30 одна целая капсула 30 в сутки, арифметика формы. Не переносить недельный режим болевого показания.",
+    "occurrences": [
+      {
+        "id": "C00649",
+        "rid": "dulox-gad-start",
+        "path": "rules/dulox-gad-start.yaml/logic/actions/3"
+      }
+    ]
+  },
+  {
+    "text": "Дулоксента, кишечнорастворимые капсулы 30/60 мг",
+    "occurrences": [
+      {
+        "id": "C00673",
+        "rid": "dulox-gad-start",
+        "path": "rules/dulox-gad-start.yaml/output/formulation"
+      }
+    ]
+  },
+  {
+    "text": "Постепенное снижение в течение 1–2 недель в §4.2; это не гарантированная общая продолжительность для любого пациента.",
+    "occurrences": [
+      {
+        "id": "C00738",
+        "rid": "dulox-taper-limit",
+        "path": "rules/dulox-taper-limit.yaml/logic/actions/0"
+      }
+    ]
+  },
+  {
+    "text": "При выраженных симптомах рассмотреть прежнюю дозу, затем более постепенное снижение; точные ступени/последняя доза не заданы.",
+    "occurrences": [
+      {
+        "id": "C00739",
+        "rid": "dulox-taper-limit",
+        "path": "rules/dulox-taper-limit.yaml/logic/actions/1"
+      }
+    ]
+  },
+  {
+    "text": "Ни source_options_weeks, ни номинальный срок не ограничивают максимальную длительность; конкретный темп/пауза и возврат к прежней дозе остаются решениями врача по симптомам.",
+    "occurrences": [
+      {
+        "id": "C00740",
+        "rid": "dulox-taper-limit",
+        "path": "rules/dulox-taper-limit.yaml/logic/actions/2"
+      },
+      {
+        "id": "C01865",
+        "rid": "fluvox-taper-limit",
+        "path": "rules/fluvox-taper-limit.yaml/logic/actions/2"
+      },
+      {
+        "id": "C03015",
+        "rid": "ser-taper-limit",
+        "path": "rules/ser-taper-limit.yaml/logic/actions/3"
+      },
+      {
+        "id": "C04670",
+        "rid": "venla-xr-taper-limit",
+        "path": "rules/venla-xr-taper-limit.yaml/logic/actions/2"
+      }
+    ]
+  },
+  {
+    "text": "Обычная ветка не разрешает план менее 2 недель; точный темп и календарь не заданы, верхней границы нет.",
+    "occurrences": [
+      {
+        "id": "C00749",
+        "rid": "dulox-taper-limit",
+        "path": "rules/dulox-taper-limit.yaml/logic/current_taper_texts/resolution"
+      }
+    ]
+  },
+  {
+    "text": "Source-specific withdrawal guidance; exact taper not inferred. Published immediate cessation conditions take precedence if treatment ongoing.",
+    "occurrences": [
+      {
+        "id": "C00771",
+        "rid": "dulox-taper-limit",
+        "path": "result_contracts.yaml/rules/dulox-taper-limit/source_gates/0/other"
+      },
+      {
+        "id": "C01888",
+        "rid": "fluvox-taper-limit",
+        "path": "result_contracts.yaml/rules/fluvox-taper-limit/source_gates/0/other"
+      },
+      {
+        "id": "C02074",
+        "rid": "parox-taper-example",
+        "path": "result_contracts.yaml/rules/parox-taper-example/source_gates/0/other"
+      },
+      {
+        "id": "C02123",
+        "rid": "phen-taper-limit",
+        "path": "result_contracts.yaml/rules/phen-taper-limit/source_gates/0/other"
+      },
+      {
+        "id": "C02586",
+        "rid": "preg-taper-limit",
+        "path": "result_contracts.yaml/rules/preg-taper-limit/source_gates/0/other"
+      },
+      {
+        "id": "C03048",
+        "rid": "ser-taper-limit",
+        "path": "result_contracts.yaml/rules/ser-taper-limit/source_gates/0/other"
+      },
+      {
+        "id": "C04697",
+        "rid": "venla-xr-taper-limit",
+        "path": "result_contracts.yaml/rules/venla-xr-taper-limit/source_gates/0/other"
+      }
+    ]
+  },
+  {
+    "text": "Взрослые. Только подтверждённые условия этой карточки; другие популяции не получают масштабированную взрослую дозу.",
+    "occurrences": [
+      {
+        "id": "C00813",
+        "rid": "esc-adult-adjust",
+        "path": "rules/esc-adult-adjust.yaml/applicability/population_description"
+      },
+      {
+        "id": "C00930",
+        "rid": "esc-cyp2c19-start",
+        "path": "rules/esc-cyp2c19-start.yaml/applicability/population_description"
+      },
+      {
+        "id": "C01052",
+        "rid": "esc-elderly-start",
+        "path": "rules/esc-elderly-start.yaml/applicability/population_description"
+      },
+      {
+        "id": "C01174",
+        "rid": "esc-gad-start",
+        "path": "rules/esc-gad-start.yaml/applicability/population_description"
+      },
+      {
+        "id": "C01297",
+        "rid": "esc-hepatic-start",
+        "path": "rules/esc-hepatic-start.yaml/applicability/population_description"
+      },
+      {
+        "id": "C01421",
+        "rid": "esc-panic-start",
+        "path": "rules/esc-panic-start.yaml/applicability/population_description"
+      },
+      {
+        "id": "C01544",
+        "rid": "esc-social-start",
+        "path": "rules/esc-social-start.yaml/applicability/population_description"
+      },
+      {
+        "id": "C01662",
+        "rid": "esc-taper-limit",
+        "path": "rules/esc-taper-limit.yaml/applicability/population_description"
+      },
+      {
+        "id": "C02170",
+        "rid": "preg-gad-adjust",
+        "path": "rules/preg-gad-adjust.yaml/applicability/population_description"
+      },
+      {
+        "id": "C02304",
+        "rid": "preg-gad-start",
+        "path": "rules/preg-gad-start.yaml/applicability/population_description"
+      },
+      {
+        "id": "C02448",
+        "rid": "preg-renal-start",
+        "path": "rules/preg-renal-start.yaml/applicability/population_description"
+      },
+      {
+        "id": "C02547",
+        "rid": "preg-taper-limit",
+        "path": "rules/preg-taper-limit.yaml/applicability/population_description"
+      },
+      {
+        "id": "C02626",
+        "rid": "ser-adult-adjust",
+        "path": "rules/ser-adult-adjust.yaml/applicability/population_description"
+      },
+      {
+        "id": "C02751",
+        "rid": "ser-panic-start",
+        "path": "rules/ser-panic-start.yaml/applicability/population_description"
+      },
+      {
+        "id": "C02876",
+        "rid": "ser-social-start",
+        "path": "rules/ser-social-start.yaml/applicability/population_description"
+      },
+      {
+        "id": "C02998",
+        "rid": "ser-taper-limit",
+        "path": "rules/ser-taper-limit.yaml/applicability/population_description"
+      }
+    ]
+  },
+  {
+    "text": "Решение по применимости/пользе и риску отдельно; без опубликованной числовой поправки. Стандартная карточка не выдаёт автоматическую дозу при беременности.",
+    "occurrences": [
+      {
+        "id": "C00817",
+        "rid": "esc-adult-adjust",
+        "path": "rules/esc-adult-adjust.yaml/applicability/pregnancy"
+      },
+      {
+        "id": "C00934",
+        "rid": "esc-cyp2c19-start",
+        "path": "rules/esc-cyp2c19-start.yaml/applicability/pregnancy"
+      },
+      {
+        "id": "C01056",
+        "rid": "esc-elderly-start",
+        "path": "rules/esc-elderly-start.yaml/applicability/pregnancy"
+      },
+      {
+        "id": "C01181",
+        "rid": "esc-gad-start",
+        "path": "rules/esc-gad-start.yaml/applicability/pregnancy"
+      },
+      {
+        "id": "C01301",
+        "rid": "esc-hepatic-start",
+        "path": "rules/esc-hepatic-start.yaml/applicability/pregnancy"
+      },
+      {
+        "id": "C01428",
+        "rid": "esc-panic-start",
+        "path": "rules/esc-panic-start.yaml/applicability/pregnancy"
+      },
+      {
+        "id": "C01551",
+        "rid": "esc-social-start",
+        "path": "rules/esc-social-start.yaml/applicability/pregnancy"
+      },
+      {
+        "id": "C01666",
+        "rid": "esc-taper-limit",
+        "path": "rules/esc-taper-limit.yaml/applicability/pregnancy"
+      },
+      {
+        "id": "C02174",
+        "rid": "preg-gad-adjust",
+        "path": "rules/preg-gad-adjust.yaml/applicability/pregnancy"
+      },
+      {
+        "id": "C02308",
+        "rid": "preg-gad-start",
+        "path": "rules/preg-gad-start.yaml/applicability/pregnancy"
+      },
+      {
+        "id": "C02452",
+        "rid": "preg-renal-start",
+        "path": "rules/preg-renal-start.yaml/applicability/pregnancy"
+      },
+      {
+        "id": "C02551",
+        "rid": "preg-taper-limit",
+        "path": "rules/preg-taper-limit.yaml/applicability/pregnancy"
+      },
+      {
+        "id": "C02630",
+        "rid": "ser-adult-adjust",
+        "path": "rules/ser-adult-adjust.yaml/applicability/pregnancy"
+      },
+      {
+        "id": "C02755",
+        "rid": "ser-panic-start",
+        "path": "rules/ser-panic-start.yaml/applicability/pregnancy"
+      },
+      {
+        "id": "C02880",
+        "rid": "ser-social-start",
+        "path": "rules/ser-social-start.yaml/applicability/pregnancy"
+      },
+      {
+        "id": "C03002",
+        "rid": "ser-taper-limit",
+        "path": "rules/ser-taper-limit.yaml/applicability/pregnancy"
+      }
+    ]
+  },
+  {
+    "text": "Проверять отдельные ограничения источника. Стандартная карточка не выдаёт автоматическую дозу при кормлении.",
+    "occurrences": [
+      {
+        "id": "C00818",
+        "rid": "esc-adult-adjust",
+        "path": "rules/esc-adult-adjust.yaml/applicability/lactation"
+      },
+      {
+        "id": "C00935",
+        "rid": "esc-cyp2c19-start",
+        "path": "rules/esc-cyp2c19-start.yaml/applicability/lactation"
+      },
+      {
+        "id": "C01057",
+        "rid": "esc-elderly-start",
+        "path": "rules/esc-elderly-start.yaml/applicability/lactation"
+      },
+      {
+        "id": "C01182",
+        "rid": "esc-gad-start",
+        "path": "rules/esc-gad-start.yaml/applicability/lactation"
+      },
+      {
+        "id": "C01302",
+        "rid": "esc-hepatic-start",
+        "path": "rules/esc-hepatic-start.yaml/applicability/lactation"
+      },
+      {
+        "id": "C01429",
+        "rid": "esc-panic-start",
+        "path": "rules/esc-panic-start.yaml/applicability/lactation"
+      },
+      {
+        "id": "C01552",
+        "rid": "esc-social-start",
+        "path": "rules/esc-social-start.yaml/applicability/lactation"
+      },
+      {
+        "id": "C01667",
+        "rid": "esc-taper-limit",
+        "path": "rules/esc-taper-limit.yaml/applicability/lactation"
+      },
+      {
+        "id": "C02175",
+        "rid": "preg-gad-adjust",
+        "path": "rules/preg-gad-adjust.yaml/applicability/lactation"
+      },
+      {
+        "id": "C02309",
+        "rid": "preg-gad-start",
+        "path": "rules/preg-gad-start.yaml/applicability/lactation"
+      },
+      {
+        "id": "C02453",
+        "rid": "preg-renal-start",
+        "path": "rules/preg-renal-start.yaml/applicability/lactation"
+      },
+      {
+        "id": "C02552",
+        "rid": "preg-taper-limit",
+        "path": "rules/preg-taper-limit.yaml/applicability/lactation"
+      },
+      {
+        "id": "C02631",
+        "rid": "ser-adult-adjust",
+        "path": "rules/ser-adult-adjust.yaml/applicability/lactation"
+      },
+      {
+        "id": "C02756",
+        "rid": "ser-panic-start",
+        "path": "rules/ser-panic-start.yaml/applicability/lactation"
+      },
+      {
+        "id": "C02881",
+        "rid": "ser-social-start",
+        "path": "rules/ser-social-start.yaml/applicability/lactation"
+      },
+      {
+        "id": "C03003",
+        "rid": "ser-taper-limit",
+        "path": "rules/ser-taper-limit.yaml/applicability/lactation"
+      }
+    ]
+  },
+  {
+    "text": "CLcr >30: no adjustment; CLcr <30: caution; exactly 30: source gap, physician decision (§4.2 с.3)",
+    "occurrences": [
+      {
+        "id": "C00819",
+        "rid": "esc-adult-adjust",
+        "path": "rules/esc-adult-adjust.yaml/applicability/renal_constraints/0"
+      },
+      {
+        "id": "C00936",
+        "rid": "esc-cyp2c19-start",
+        "path": "rules/esc-cyp2c19-start.yaml/applicability/renal_constraints/0"
+      },
+      {
+        "id": "C01058",
+        "rid": "esc-elderly-start",
+        "path": "rules/esc-elderly-start.yaml/applicability/renal_constraints/0"
+      },
+      {
+        "id": "C01183",
+        "rid": "esc-gad-start",
+        "path": "rules/esc-gad-start.yaml/applicability/renal_constraints/0"
+      },
+      {
+        "id": "C01303",
+        "rid": "esc-hepatic-start",
+        "path": "rules/esc-hepatic-start.yaml/applicability/renal_constraints/0"
+      },
+      {
+        "id": "C01430",
+        "rid": "esc-panic-start",
+        "path": "rules/esc-panic-start.yaml/applicability/renal_constraints/0"
+      },
+      {
+        "id": "C01553",
+        "rid": "esc-social-start",
+        "path": "rules/esc-social-start.yaml/applicability/renal_constraints/0"
+      },
+      {
+        "id": "C01668",
+        "rid": "esc-taper-limit",
+        "path": "rules/esc-taper-limit.yaml/applicability/renal_constraints/0"
+      }
+    ]
+  },
+  {
+    "text": "Child–Pugh A/B: initial 5 mg/day for first two weeks, then possible 10 by response; C: close physician supervision, no automatic numeric correction (§4.2 с.3)",
+    "occurrences": [
+      {
+        "id": "C00820",
+        "rid": "esc-adult-adjust",
+        "path": "rules/esc-adult-adjust.yaml/applicability/hepatic_constraints/0"
+      },
+      {
+        "id": "C00937",
+        "rid": "esc-cyp2c19-start",
+        "path": "rules/esc-cyp2c19-start.yaml/applicability/hepatic_constraints/0"
+      },
+      {
+        "id": "C01059",
+        "rid": "esc-elderly-start",
+        "path": "rules/esc-elderly-start.yaml/applicability/hepatic_constraints/0"
+      },
+      {
+        "id": "C01184",
+        "rid": "esc-gad-start",
+        "path": "rules/esc-gad-start.yaml/applicability/hepatic_constraints/0"
+      },
+      {
+        "id": "C01304",
+        "rid": "esc-hepatic-start",
+        "path": "rules/esc-hepatic-start.yaml/applicability/hepatic_constraints/0"
+      },
+      {
+        "id": "C01431",
+        "rid": "esc-panic-start",
+        "path": "rules/esc-panic-start.yaml/applicability/hepatic_constraints/0"
+      },
+      {
+        "id": "C01554",
+        "rid": "esc-social-start",
+        "path": "rules/esc-social-start.yaml/applicability/hepatic_constraints/0"
+      },
+      {
+        "id": "C01669",
+        "rid": "esc-taper-limit",
+        "path": "rules/esc-taper-limit.yaml/applicability/hepatic_constraints/0"
+      }
+    ]
+  },
+  {
+    "text": "Мания/гипомания, судороги/неконтролируемая эпилепсия, суицидальный риск, акатизия, риск кровотечения, гипонатремии и удлинения QT: ограничения/наблюдение по инструкции; числовых множителей для них нет. Для эсциталопрама дополнительно диабет и закрытоугольная глаукома.",
+    "occurrences": [
+      {
+        "id": "C00821",
+        "rid": "esc-adult-adjust",
+        "path": "rules/esc-adult-adjust.yaml/applicability/comorbidity_constraints/0"
+      },
+      {
+        "id": "C00938",
+        "rid": "esc-cyp2c19-start",
+        "path": "rules/esc-cyp2c19-start.yaml/applicability/comorbidity_constraints/0"
+      },
+      {
+        "id": "C01060",
+        "rid": "esc-elderly-start",
+        "path": "rules/esc-elderly-start.yaml/applicability/comorbidity_constraints/0"
+      },
+      {
+        "id": "C01185",
+        "rid": "esc-gad-start",
+        "path": "rules/esc-gad-start.yaml/applicability/comorbidity_constraints/0"
+      },
+      {
+        "id": "C01305",
+        "rid": "esc-hepatic-start",
+        "path": "rules/esc-hepatic-start.yaml/applicability/comorbidity_constraints/0"
+      },
+      {
+        "id": "C01432",
+        "rid": "esc-panic-start",
+        "path": "rules/esc-panic-start.yaml/applicability/comorbidity_constraints/0"
+      },
+      {
+        "id": "C01555",
+        "rid": "esc-social-start",
+        "path": "rules/esc-social-start.yaml/applicability/comorbidity_constraints/0"
+      },
+      {
+        "id": "C01670",
+        "rid": "esc-taper-limit",
+        "path": "rules/esc-taper-limit.yaml/applicability/comorbidity_constraints/0"
+      }
+    ]
+  },
+  {
+    "text": "Непроверенные противопоказания/взаимодействия не считать отсутствующими",
+    "occurrences": [
+      {
+        "id": "C00823",
+        "rid": "esc-adult-adjust",
+        "path": "rules/esc-adult-adjust.yaml/applicability/exclusions/1"
+      },
+      {
+        "id": "C00940",
+        "rid": "esc-cyp2c19-start",
+        "path": "rules/esc-cyp2c19-start.yaml/applicability/exclusions/1"
+      },
+      {
+        "id": "C01062",
+        "rid": "esc-elderly-start",
+        "path": "rules/esc-elderly-start.yaml/applicability/exclusions/1"
+      },
+      {
+        "id": "C01187",
+        "rid": "esc-gad-start",
+        "path": "rules/esc-gad-start.yaml/applicability/exclusions/1"
+      },
+      {
+        "id": "C01307",
+        "rid": "esc-hepatic-start",
+        "path": "rules/esc-hepatic-start.yaml/applicability/exclusions/1"
+      },
+      {
+        "id": "C01434",
+        "rid": "esc-panic-start",
+        "path": "rules/esc-panic-start.yaml/applicability/exclusions/1"
+      },
+      {
+        "id": "C01557",
+        "rid": "esc-social-start",
+        "path": "rules/esc-social-start.yaml/applicability/exclusions/1"
+      },
+      {
+        "id": "C01672",
+        "rid": "esc-taper-limit",
+        "path": "rules/esc-taper-limit.yaml/applicability/exclusions/1"
+      },
+      {
+        "id": "C02181",
+        "rid": "preg-gad-adjust",
+        "path": "rules/preg-gad-adjust.yaml/applicability/exclusions/1"
+      },
+      {
+        "id": "C02315",
+        "rid": "preg-gad-start",
+        "path": "rules/preg-gad-start.yaml/applicability/exclusions/1"
+      },
+      {
+        "id": "C02455",
+        "rid": "preg-renal-start",
+        "path": "rules/preg-renal-start.yaml/applicability/exclusions/1"
+      },
+      {
+        "id": "C02554",
+        "rid": "preg-taper-limit",
+        "path": "rules/preg-taper-limit.yaml/applicability/exclusions/1"
+      },
+      {
+        "id": "C02636",
+        "rid": "ser-adult-adjust",
+        "path": "rules/ser-adult-adjust.yaml/applicability/exclusions/1"
+      },
+      {
+        "id": "C02762",
+        "rid": "ser-panic-start",
+        "path": "rules/ser-panic-start.yaml/applicability/exclusions/1"
+      },
+      {
+        "id": "C02887",
+        "rid": "ser-social-start",
+        "path": "rules/ser-social-start.yaml/applicability/exclusions/1"
+      },
+      {
+        "id": "C03008",
+        "rid": "ser-taper-limit",
+        "path": "rules/ser-taper-limit.yaml/applicability/exclusions/1"
+      }
+    ]
+  },
+  {
+    "text": "Диагноз, препарат и режим выбрал врач. Соответствие популяции/форме и ограничения источника подтверждены.",
+    "occurrences": [
+      {
+        "id": "C00826",
+        "rid": "esc-adult-adjust",
+        "path": "rules/esc-adult-adjust.yaml/logic/conditions/0"
+      },
+      {
+        "id": "C00943",
+        "rid": "esc-cyp2c19-start",
+        "path": "rules/esc-cyp2c19-start.yaml/logic/conditions/0"
+      },
+      {
+        "id": "C01065",
+        "rid": "esc-elderly-start",
+        "path": "rules/esc-elderly-start.yaml/logic/conditions/0"
+      },
+      {
+        "id": "C01190",
+        "rid": "esc-gad-start",
+        "path": "rules/esc-gad-start.yaml/logic/conditions/0"
+      },
+      {
+        "id": "C01310",
+        "rid": "esc-hepatic-start",
+        "path": "rules/esc-hepatic-start.yaml/logic/conditions/0"
+      },
+      {
+        "id": "C01437",
+        "rid": "esc-panic-start",
+        "path": "rules/esc-panic-start.yaml/logic/conditions/0"
+      },
+      {
+        "id": "C01560",
+        "rid": "esc-social-start",
+        "path": "rules/esc-social-start.yaml/logic/conditions/0"
+      },
+      {
+        "id": "C01675",
+        "rid": "esc-taper-limit",
+        "path": "rules/esc-taper-limit.yaml/logic/conditions/0"
+      },
+      {
+        "id": "C02184",
+        "rid": "preg-gad-adjust",
+        "path": "rules/preg-gad-adjust.yaml/logic/conditions/0"
+      },
+      {
+        "id": "C02318",
+        "rid": "preg-gad-start",
+        "path": "rules/preg-gad-start.yaml/logic/conditions/0"
+      },
+      {
+        "id": "C02459",
+        "rid": "preg-renal-start",
+        "path": "rules/preg-renal-start.yaml/logic/conditions/0"
+      },
+      {
+        "id": "C02557",
+        "rid": "preg-taper-limit",
+        "path": "rules/preg-taper-limit.yaml/logic/conditions/0"
+      },
+      {
+        "id": "C02765",
+        "rid": "ser-panic-start",
+        "path": "rules/ser-panic-start.yaml/logic/conditions/0"
+      },
+      {
+        "id": "C02890",
+        "rid": "ser-social-start",
+        "path": "rules/ser-social-start.yaml/logic/conditions/0"
+      },
+      {
+        "id": "C03011",
+        "rid": "ser-taper-limit",
+        "path": "rules/ser-taper-limit.yaml/logic/conditions/0"
+      }
+    ]
+  },
+  {
+    "text": "При недостаточном ответе врач может увеличить дозу до maximum; величина следующего шага и срок этим правилом не определены. Не вычислять их из GAD-7/PHQ-9.",
+    "occurrences": [
+      {
+        "id": "C00827",
+        "rid": "esc-adult-adjust",
+        "path": "rules/esc-adult-adjust.yaml/logic/actions/0"
+      }
+    ]
+  },
+  {
+    "text": "Для пожилых/печени/CYP использовать отдельную применимую ветку; этот максимум не переносить туда автоматически.",
+    "occurrences": [
+      {
+        "id": "C00828",
+        "rid": "esc-adult-adjust",
+        "path": "rules/esc-adult-adjust.yaml/logic/actions/1"
+      }
+    ]
+  },
+  {
+    "text": "Применимость при особых состояниях и взаимодействиях",
+    "occurrences": [
+      {
+        "id": "C00829",
+        "rid": "esc-adult-adjust",
+        "path": "rules/esc-adult-adjust.yaml/logic/clinician_choices/0"
+      },
+      {
+        "id": "C00947",
+        "rid": "esc-cyp2c19-start",
+        "path": "rules/esc-cyp2c19-start.yaml/logic/clinician_choices/0"
+      },
+      {
+        "id": "C01069",
+        "rid": "esc-elderly-start",
+        "path": "rules/esc-elderly-start.yaml/logic/clinician_choices/0"
+      },
+      {
+        "id": "C01193",
+        "rid": "esc-gad-start",
+        "path": "rules/esc-gad-start.yaml/logic/clinician_choices/0"
+      },
+      {
+        "id": "C01314",
+        "rid": "esc-hepatic-start",
+        "path": "rules/esc-hepatic-start.yaml/logic/clinician_choices/0"
+      },
+      {
+        "id": "C01440",
+        "rid": "esc-panic-start",
+        "path": "rules/esc-panic-start.yaml/logic/clinician_choices/0"
+      },
+      {
+        "id": "C01563",
+        "rid": "esc-social-start",
+        "path": "rules/esc-social-start.yaml/logic/clinician_choices/0"
+      },
+      {
+        "id": "C01678",
+        "rid": "esc-taper-limit",
+        "path": "rules/esc-taper-limit.yaml/logic/clinician_choices/0"
+      },
+      {
+        "id": "C02187",
+        "rid": "preg-gad-adjust",
+        "path": "rules/preg-gad-adjust.yaml/logic/clinician_choices/0"
+      },
+      {
+        "id": "C02321",
+        "rid": "preg-gad-start",
+        "path": "rules/preg-gad-start.yaml/logic/clinician_choices/0"
+      },
+      {
+        "id": "C02560",
+        "rid": "preg-taper-limit",
+        "path": "rules/preg-taper-limit.yaml/logic/clinician_choices/0"
+      },
+      {
+        "id": "C02646",
+        "rid": "ser-adult-adjust",
+        "path": "rules/ser-adult-adjust.yaml/logic/clinician_choices/0"
+      },
+      {
+        "id": "C02767",
+        "rid": "ser-panic-start",
+        "path": "rules/ser-panic-start.yaml/logic/clinician_choices/0"
+      },
+      {
+        "id": "C02892",
+        "rid": "ser-social-start",
+        "path": "rules/ser-social-start.yaml/logic/clinician_choices/0"
+      },
+      {
+        "id": "C03016",
+        "rid": "ser-taper-limit",
+        "path": "rules/ser-taper-limit.yaml/logic/clinician_choices/0"
+      }
+    ]
+  },
+  {
+    "text": "Назвать обязательные неизвестные поля; результат insufficient_data. Справочные этапы можно показать как условные, без безусловной дозы пациенту.",
+    "occurrences": [
+      {
+        "id": "C00831",
+        "rid": "esc-adult-adjust",
+        "path": "rules/esc-adult-adjust.yaml/logic/missing_data_behaviour"
+      },
+      {
+        "id": "C00949",
+        "rid": "esc-cyp2c19-start",
+        "path": "rules/esc-cyp2c19-start.yaml/logic/missing_data_behaviour"
+      },
+      {
+        "id": "C01071",
+        "rid": "esc-elderly-start",
+        "path": "rules/esc-elderly-start.yaml/logic/missing_data_behaviour"
+      },
+      {
+        "id": "C01195",
+        "rid": "esc-gad-start",
+        "path": "rules/esc-gad-start.yaml/logic/missing_data_behaviour"
+      },
+      {
+        "id": "C01316",
+        "rid": "esc-hepatic-start",
+        "path": "rules/esc-hepatic-start.yaml/logic/missing_data_behaviour"
+      },
+      {
+        "id": "C01442",
+        "rid": "esc-panic-start",
+        "path": "rules/esc-panic-start.yaml/logic/missing_data_behaviour"
+      },
+      {
+        "id": "C01565",
+        "rid": "esc-social-start",
+        "path": "rules/esc-social-start.yaml/logic/missing_data_behaviour"
+      },
+      {
+        "id": "C01680",
+        "rid": "esc-taper-limit",
+        "path": "rules/esc-taper-limit.yaml/logic/missing_data_behaviour"
+      },
+      {
+        "id": "C01951",
+        "rid": "parox-panic-kr",
+        "path": "rules/parox-panic-kr.yaml/logic/missing_data_behaviour"
+      },
+      {
+        "id": "C02050",
+        "rid": "parox-taper-example",
+        "path": "rules/parox-taper-example.yaml/logic/missing_data_behaviour"
+      },
+      {
+        "id": "C02189",
+        "rid": "preg-gad-adjust",
+        "path": "rules/preg-gad-adjust.yaml/logic/missing_data_behaviour"
+      },
+      {
+        "id": "C02323",
+        "rid": "preg-gad-start",
+        "path": "rules/preg-gad-start.yaml/logic/missing_data_behaviour"
+      },
+      {
+        "id": "C02476",
+        "rid": "preg-renal-start",
+        "path": "rules/preg-renal-start.yaml/logic/missing_data_behaviour"
+      },
+      {
+        "id": "C02562",
+        "rid": "preg-taper-limit",
+        "path": "rules/preg-taper-limit.yaml/logic/missing_data_behaviour"
+      },
+      {
+        "id": "C02648",
+        "rid": "ser-adult-adjust",
+        "path": "rules/ser-adult-adjust.yaml/logic/missing_data_behaviour"
+      },
+      {
+        "id": "C02769",
+        "rid": "ser-panic-start",
+        "path": "rules/ser-panic-start.yaml/logic/missing_data_behaviour"
+      },
+      {
+        "id": "C02894",
+        "rid": "ser-social-start",
+        "path": "rules/ser-social-start.yaml/logic/missing_data_behaviour"
+      },
+      {
+        "id": "C03018",
+        "rid": "ser-taper-limit",
+        "path": "rules/ser-taper-limit.yaml/logic/missing_data_behaviour"
+      },
+      {
+        "id": "C03124",
+        "rid": "switch-esc-ago",
+        "path": "rules/switch-esc-ago.yaml/logic/missing_data_behaviour"
+      },
+      {
+        "id": "C03296",
+        "rid": "switch-esc-ser",
+        "path": "rules/switch-esc-ser.yaml/logic/missing_data_behaviour"
+      },
+      {
+        "id": "C03454",
+        "rid": "switch-parox-ago-selected-example",
+        "path": "rules/switch-parox-ago-selected-example.yaml/logic/missing_data_behaviour"
+      },
+      {
+        "id": "C03728",
+        "rid": "switch-parox-ago",
+        "path": "rules/switch-parox-ago.yaml/logic/missing_data_behaviour"
+      },
+      {
+        "id": "C03954",
+        "rid": "switch-ser-ago",
+        "path": "rules/switch-ser-ago.yaml/logic/missing_data_behaviour"
+      },
+      {
+        "id": "C04156",
+        "rid": "switch-ser-esc",
+        "path": "rules/switch-ser-esc.yaml/logic/missing_data_behaviour"
+      }
+    ]
+  },
+  {
+    "text": "not_applicable для этой карточки; указать конкретную отсутствующую ветку, не запретить всё лечение.",
+    "occurrences": [
+      {
+        "id": "C00832",
+        "rid": "esc-adult-adjust",
+        "path": "rules/esc-adult-adjust.yaml/logic/unsupported_case_behaviour"
+      },
+      {
+        "id": "C00950",
+        "rid": "esc-cyp2c19-start",
+        "path": "rules/esc-cyp2c19-start.yaml/logic/unsupported_case_behaviour"
+      },
+      {
+        "id": "C01072",
+        "rid": "esc-elderly-start",
+        "path": "rules/esc-elderly-start.yaml/logic/unsupported_case_behaviour"
+      },
+      {
+        "id": "C01196",
+        "rid": "esc-gad-start",
+        "path": "rules/esc-gad-start.yaml/logic/unsupported_case_behaviour"
+      },
+      {
+        "id": "C01317",
+        "rid": "esc-hepatic-start",
+        "path": "rules/esc-hepatic-start.yaml/logic/unsupported_case_behaviour"
+      },
+      {
+        "id": "C01443",
+        "rid": "esc-panic-start",
+        "path": "rules/esc-panic-start.yaml/logic/unsupported_case_behaviour"
+      },
+      {
+        "id": "C01566",
+        "rid": "esc-social-start",
+        "path": "rules/esc-social-start.yaml/logic/unsupported_case_behaviour"
+      },
+      {
+        "id": "C01681",
+        "rid": "esc-taper-limit",
+        "path": "rules/esc-taper-limit.yaml/logic/unsupported_case_behaviour"
+      },
+      {
+        "id": "C01952",
+        "rid": "parox-panic-kr",
+        "path": "rules/parox-panic-kr.yaml/logic/unsupported_case_behaviour"
+      },
+      {
+        "id": "C02051",
+        "rid": "parox-taper-example",
+        "path": "rules/parox-taper-example.yaml/logic/unsupported_case_behaviour"
+      },
+      {
+        "id": "C02190",
+        "rid": "preg-gad-adjust",
+        "path": "rules/preg-gad-adjust.yaml/logic/unsupported_case_behaviour"
+      },
+      {
+        "id": "C02324",
+        "rid": "preg-gad-start",
+        "path": "rules/preg-gad-start.yaml/logic/unsupported_case_behaviour"
+      },
+      {
+        "id": "C02477",
+        "rid": "preg-renal-start",
+        "path": "rules/preg-renal-start.yaml/logic/unsupported_case_behaviour"
+      },
+      {
+        "id": "C02563",
+        "rid": "preg-taper-limit",
+        "path": "rules/preg-taper-limit.yaml/logic/unsupported_case_behaviour"
+      },
+      {
+        "id": "C02649",
+        "rid": "ser-adult-adjust",
+        "path": "rules/ser-adult-adjust.yaml/logic/unsupported_case_behaviour"
+      },
+      {
+        "id": "C02770",
+        "rid": "ser-panic-start",
+        "path": "rules/ser-panic-start.yaml/logic/unsupported_case_behaviour"
+      },
+      {
+        "id": "C02895",
+        "rid": "ser-social-start",
+        "path": "rules/ser-social-start.yaml/logic/unsupported_case_behaviour"
+      },
+      {
+        "id": "C03019",
+        "rid": "ser-taper-limit",
+        "path": "rules/ser-taper-limit.yaml/logic/unsupported_case_behaviour"
+      },
+      {
+        "id": "C03125",
+        "rid": "switch-esc-ago",
+        "path": "rules/switch-esc-ago.yaml/logic/unsupported_case_behaviour"
+      },
+      {
+        "id": "C03297",
+        "rid": "switch-esc-ser",
+        "path": "rules/switch-esc-ser.yaml/logic/unsupported_case_behaviour"
+      },
+      {
+        "id": "C03455",
+        "rid": "switch-parox-ago-selected-example",
+        "path": "rules/switch-parox-ago-selected-example.yaml/logic/unsupported_case_behaviour"
+      },
+      {
+        "id": "C03729",
+        "rid": "switch-parox-ago",
+        "path": "rules/switch-parox-ago.yaml/logic/unsupported_case_behaviour"
+      },
+      {
+        "id": "C03955",
+        "rid": "switch-ser-ago",
+        "path": "rules/switch-ser-ago.yaml/logic/unsupported_case_behaviour"
+      },
+      {
+        "id": "C04157",
+        "rid": "switch-ser-esc",
+        "path": "rules/switch-ser-esc.yaml/logic/unsupported_case_behaviour"
+      }
+    ]
+  },
+  {
+    "text": "Самостоятельные поправки не перемножаются. Совпадение числа не подтверждает применимость их сочетания.",
+    "occurrences": [
+      {
+        "id": "C00834",
+        "rid": "esc-adult-adjust",
+        "path": "rules/esc-adult-adjust.yaml/logic/combination_justification"
+      },
+      {
+        "id": "C00953",
+        "rid": "esc-cyp2c19-start",
+        "path": "rules/esc-cyp2c19-start.yaml/logic/combination_justification"
+      },
+      {
+        "id": "C01075",
+        "rid": "esc-elderly-start",
+        "path": "rules/esc-elderly-start.yaml/logic/combination_justification"
+      },
+      {
+        "id": "C01198",
+        "rid": "esc-gad-start",
+        "path": "rules/esc-gad-start.yaml/logic/combination_justification"
+      },
+      {
+        "id": "C01320",
+        "rid": "esc-hepatic-start",
+        "path": "rules/esc-hepatic-start.yaml/logic/combination_justification"
+      },
+      {
+        "id": "C01445",
+        "rid": "esc-panic-start",
+        "path": "rules/esc-panic-start.yaml/logic/combination_justification"
+      },
+      {
+        "id": "C01568",
+        "rid": "esc-social-start",
+        "path": "rules/esc-social-start.yaml/logic/combination_justification"
+      },
+      {
+        "id": "C01683",
+        "rid": "esc-taper-limit",
+        "path": "rules/esc-taper-limit.yaml/logic/combination_justification"
+      },
+      {
+        "id": "C02192",
+        "rid": "preg-gad-adjust",
+        "path": "rules/preg-gad-adjust.yaml/logic/combination_justification"
+      },
+      {
+        "id": "C02326",
+        "rid": "preg-gad-start",
+        "path": "rules/preg-gad-start.yaml/logic/combination_justification"
+      },
+      {
+        "id": "C02480",
+        "rid": "preg-renal-start",
+        "path": "rules/preg-renal-start.yaml/logic/combination_justification"
+      },
+      {
+        "id": "C02565",
+        "rid": "preg-taper-limit",
+        "path": "rules/preg-taper-limit.yaml/logic/combination_justification"
+      },
+      {
+        "id": "C02651",
+        "rid": "ser-adult-adjust",
+        "path": "rules/ser-adult-adjust.yaml/logic/combination_justification"
+      },
+      {
+        "id": "C02772",
+        "rid": "ser-panic-start",
+        "path": "rules/ser-panic-start.yaml/logic/combination_justification"
+      },
+      {
+        "id": "C02897",
+        "rid": "ser-social-start",
+        "path": "rules/ser-social-start.yaml/logic/combination_justification"
+      },
+      {
+        "id": "C03021",
+        "rid": "ser-taper-limit",
+        "path": "rules/ser-taper-limit.yaml/logic/combination_justification"
+      }
+    ]
+  },
+  {
+    "text": "Moclobemide: at least one day; does not license all reversible MAOIs",
+    "occurrences": [
+      {
+        "id": "C00838",
+        "rid": "esc-adult-adjust",
+        "path": "rules/esc-adult-adjust.yaml/logic/maoi_history_contract/reversible"
+      },
+      {
+        "id": "C00957",
+        "rid": "esc-cyp2c19-start",
+        "path": "rules/esc-cyp2c19-start.yaml/logic/maoi_history_contract/reversible"
+      },
+      {
+        "id": "C01079",
+        "rid": "esc-elderly-start",
+        "path": "rules/esc-elderly-start.yaml/logic/maoi_history_contract/reversible"
+      },
+      {
+        "id": "C01202",
+        "rid": "esc-gad-start",
+        "path": "rules/esc-gad-start.yaml/logic/maoi_history_contract/reversible"
+      },
+      {
+        "id": "C01324",
+        "rid": "esc-hepatic-start",
+        "path": "rules/esc-hepatic-start.yaml/logic/maoi_history_contract/reversible"
+      },
+      {
+        "id": "C01449",
+        "rid": "esc-panic-start",
+        "path": "rules/esc-panic-start.yaml/logic/maoi_history_contract/reversible"
+      },
+      {
+        "id": "C01572",
+        "rid": "esc-social-start",
+        "path": "rules/esc-social-start.yaml/logic/maoi_history_contract/reversible"
+      }
+    ]
+  },
+  {
+    "text": "not_applicable standard branch; exceptional combinations remain physician decisions",
+    "occurrences": [
+      {
+        "id": "C00843",
+        "rid": "esc-adult-adjust",
+        "path": "rules/esc-adult-adjust.yaml/logic/maoi_history_contract/current_maoi"
+      },
+      {
+        "id": "C00962",
+        "rid": "esc-cyp2c19-start",
+        "path": "rules/esc-cyp2c19-start.yaml/logic/maoi_history_contract/current_maoi"
+      },
+      {
+        "id": "C01084",
+        "rid": "esc-elderly-start",
+        "path": "rules/esc-elderly-start.yaml/logic/maoi_history_contract/current_maoi"
+      },
+      {
+        "id": "C01207",
+        "rid": "esc-gad-start",
+        "path": "rules/esc-gad-start.yaml/logic/maoi_history_contract/current_maoi"
+      },
+      {
+        "id": "C01329",
+        "rid": "esc-hepatic-start",
+        "path": "rules/esc-hepatic-start.yaml/logic/maoi_history_contract/current_maoi"
+      },
+      {
+        "id": "C01454",
+        "rid": "esc-panic-start",
+        "path": "rules/esc-panic-start.yaml/logic/maoi_history_contract/current_maoi"
+      },
+      {
+        "id": "C01577",
+        "rid": "esc-social-start",
+        "path": "rules/esc-social-start.yaml/logic/maoi_history_contract/current_maoi"
+      }
+    ]
+  },
+  {
+    "text": "ESC medication history, not a washout between the two SSRIs",
+    "occurrences": [
+      {
+        "id": "C00844",
+        "rid": "esc-adult-adjust",
+        "path": "rules/esc-adult-adjust.yaml/logic/maoi_history_contract/scope"
+      },
+      {
+        "id": "C00963",
+        "rid": "esc-cyp2c19-start",
+        "path": "rules/esc-cyp2c19-start.yaml/logic/maoi_history_contract/scope"
+      },
+      {
+        "id": "C01085",
+        "rid": "esc-elderly-start",
+        "path": "rules/esc-elderly-start.yaml/logic/maoi_history_contract/scope"
+      },
+      {
+        "id": "C01208",
+        "rid": "esc-gad-start",
+        "path": "rules/esc-gad-start.yaml/logic/maoi_history_contract/scope"
+      },
+      {
+        "id": "C01330",
+        "rid": "esc-hepatic-start",
+        "path": "rules/esc-hepatic-start.yaml/logic/maoi_history_contract/scope"
+      },
+      {
+        "id": "C01455",
+        "rid": "esc-panic-start",
+        "path": "rules/esc-panic-start.yaml/logic/maoi_history_contract/scope"
+      },
+      {
+        "id": "C01578",
+        "rid": "esc-social-start",
+        "path": "rules/esc-social-start.yaml/logic/maoi_history_contract/scope"
+      }
+    ]
+  },
+  {
+    "text": "immediately_discontinue_SSRI_and_current_serotonergic_drugs",
+    "occurrences": [
+      {
+        "id": "C00853",
+        "rid": "esc-adult-adjust",
+        "path": "rules/esc-adult-adjust.yaml/logic/urgent_source_actions/1/actions/0/action"
+      },
+      {
+        "id": "C00972",
+        "rid": "esc-cyp2c19-start",
+        "path": "rules/esc-cyp2c19-start.yaml/logic/urgent_source_actions/1/actions/0/action"
+      },
+      {
+        "id": "C01094",
+        "rid": "esc-elderly-start",
+        "path": "rules/esc-elderly-start.yaml/logic/urgent_source_actions/1/actions/0/action"
+      },
+      {
+        "id": "C01217",
+        "rid": "esc-gad-start",
+        "path": "rules/esc-gad-start.yaml/logic/urgent_source_actions/1/actions/0/action"
+      },
+      {
+        "id": "C01339",
+        "rid": "esc-hepatic-start",
+        "path": "rules/esc-hepatic-start.yaml/logic/urgent_source_actions/1/actions/0/action"
+      },
+      {
+        "id": "C01464",
+        "rid": "esc-panic-start",
+        "path": "rules/esc-panic-start.yaml/logic/urgent_source_actions/1/actions/0/action"
+      },
+      {
+        "id": "C01587",
+        "rid": "esc-social-start",
+        "path": "rules/esc-social-start.yaml/logic/urgent_source_actions/1/actions/0/action"
+      },
+      {
+        "id": "C01698",
+        "rid": "esc-taper-limit",
+        "path": "rules/esc-taper-limit.yaml/logic/urgent_source_actions/1/actions/0/action"
+      }
+    ]
+  },
+  {
+    "text": "Селектра: таблетки, покрытые плёночной оболочкой; 5/10/15/20 мг; 10/15/20 делятся на равные дозы (§3 с.1–2)",
+    "occurrences": [
+      {
+        "id": "C00862",
+        "rid": "esc-adult-adjust",
+        "path": "rules/esc-adult-adjust.yaml/output/formulation"
+      },
+      {
+        "id": "C00981",
+        "rid": "esc-cyp2c19-start",
+        "path": "rules/esc-cyp2c19-start.yaml/output/formulation"
+      },
+      {
+        "id": "C01103",
+        "rid": "esc-elderly-start",
+        "path": "rules/esc-elderly-start.yaml/output/formulation"
+      },
+      {
+        "id": "C01226",
+        "rid": "esc-gad-start",
+        "path": "rules/esc-gad-start.yaml/output/formulation"
+      },
+      {
+        "id": "C01348",
+        "rid": "esc-hepatic-start",
+        "path": "rules/esc-hepatic-start.yaml/output/formulation"
+      },
+      {
+        "id": "C01473",
+        "rid": "esc-panic-start",
+        "path": "rules/esc-panic-start.yaml/output/formulation"
+      },
+      {
+        "id": "C01596",
+        "rid": "esc-social-start",
+        "path": "rules/esc-social-start.yaml/output/formulation"
+      },
+      {
+        "id": "C01707",
+        "rid": "esc-taper-limit",
+        "path": "rules/esc-taper-limit.yaml/output/formulation"
+      }
+    ]
+  },
+  {
+    "text": "Условная схема источника, не автономное назначение. Максимум не является целью.",
+    "occurrences": [
+      {
+        "id": "C00863",
+        "rid": "esc-adult-adjust",
+        "path": "rules/esc-adult-adjust.yaml/output/warnings/0"
+      },
+      {
+        "id": "C00982",
+        "rid": "esc-cyp2c19-start",
+        "path": "rules/esc-cyp2c19-start.yaml/output/warnings/0"
+      },
+      {
+        "id": "C01104",
+        "rid": "esc-elderly-start",
+        "path": "rules/esc-elderly-start.yaml/output/warnings/0"
+      },
+      {
+        "id": "C01227",
+        "rid": "esc-gad-start",
+        "path": "rules/esc-gad-start.yaml/output/warnings/0"
+      },
+      {
+        "id": "C01349",
+        "rid": "esc-hepatic-start",
+        "path": "rules/esc-hepatic-start.yaml/output/warnings/0"
+      },
+      {
+        "id": "C01474",
+        "rid": "esc-panic-start",
+        "path": "rules/esc-panic-start.yaml/output/warnings/0"
+      },
+      {
+        "id": "C01597",
+        "rid": "esc-social-start",
+        "path": "rules/esc-social-start.yaml/output/warnings/0"
+      },
+      {
+        "id": "C01708",
+        "rid": "esc-taper-limit",
+        "path": "rules/esc-taper-limit.yaml/output/warnings/0"
+      },
+      {
+        "id": "C02234",
+        "rid": "preg-gad-adjust",
+        "path": "rules/preg-gad-adjust.yaml/output/warnings/0"
+      },
+      {
+        "id": "C02379",
+        "rid": "preg-gad-start",
+        "path": "rules/preg-gad-start.yaml/output/warnings/0"
+      },
+      {
+        "id": "C02486",
+        "rid": "preg-renal-start",
+        "path": "rules/preg-renal-start.yaml/output/warnings/0"
+      },
+      {
+        "id": "C02571",
+        "rid": "preg-taper-limit",
+        "path": "rules/preg-taper-limit.yaml/output/warnings/0"
+      },
+      {
+        "id": "C02673",
+        "rid": "ser-adult-adjust",
+        "path": "rules/ser-adult-adjust.yaml/output/warnings/0"
+      },
+      {
+        "id": "C02813",
+        "rid": "ser-panic-start",
+        "path": "rules/ser-panic-start.yaml/output/warnings/0"
+      },
+      {
+        "id": "C02938",
+        "rid": "ser-social-start",
+        "path": "rules/ser-social-start.yaml/output/warnings/0"
+      },
+      {
+        "id": "C03032",
+        "rid": "ser-taper-limit",
+        "path": "rules/ser-taper-limit.yaml/output/warnings/0"
+      }
+    ]
+  },
+  {
+    "text": "Подтвердить противопоказания и взаимодействия исходной инструкции.",
+    "occurrences": [
+      {
+        "id": "C00864",
+        "rid": "esc-adult-adjust",
+        "path": "rules/esc-adult-adjust.yaml/output/warnings/1"
+      },
+      {
+        "id": "C00983",
+        "rid": "esc-cyp2c19-start",
+        "path": "rules/esc-cyp2c19-start.yaml/output/warnings/1"
+      },
+      {
+        "id": "C01105",
+        "rid": "esc-elderly-start",
+        "path": "rules/esc-elderly-start.yaml/output/warnings/1"
+      },
+      {
+        "id": "C01228",
+        "rid": "esc-gad-start",
+        "path": "rules/esc-gad-start.yaml/output/warnings/1"
+      },
+      {
+        "id": "C01350",
+        "rid": "esc-hepatic-start",
+        "path": "rules/esc-hepatic-start.yaml/output/warnings/1"
+      },
+      {
+        "id": "C01475",
+        "rid": "esc-panic-start",
+        "path": "rules/esc-panic-start.yaml/output/warnings/1"
+      },
+      {
+        "id": "C01598",
+        "rid": "esc-social-start",
+        "path": "rules/esc-social-start.yaml/output/warnings/1"
+      },
+      {
+        "id": "C01709",
+        "rid": "esc-taper-limit",
+        "path": "rules/esc-taper-limit.yaml/output/warnings/1"
+      },
+      {
+        "id": "C02235",
+        "rid": "preg-gad-adjust",
+        "path": "rules/preg-gad-adjust.yaml/output/warnings/1"
+      },
+      {
+        "id": "C02380",
+        "rid": "preg-gad-start",
+        "path": "rules/preg-gad-start.yaml/output/warnings/1"
+      },
+      {
+        "id": "C02487",
+        "rid": "preg-renal-start",
+        "path": "rules/preg-renal-start.yaml/output/warnings/1"
+      },
+      {
+        "id": "C02572",
+        "rid": "preg-taper-limit",
+        "path": "rules/preg-taper-limit.yaml/output/warnings/1"
+      },
+      {
+        "id": "C02674",
+        "rid": "ser-adult-adjust",
+        "path": "rules/ser-adult-adjust.yaml/output/warnings/1"
+      },
+      {
+        "id": "C02814",
+        "rid": "ser-panic-start",
+        "path": "rules/ser-panic-start.yaml/output/warnings/1"
+      },
+      {
+        "id": "C02939",
+        "rid": "ser-social-start",
+        "path": "rules/ser-social-start.yaml/output/warnings/1"
+      },
+      {
+        "id": "C03033",
+        "rid": "ser-taper-limit",
+        "path": "rules/ser-taper-limit.yaml/output/warnings/1"
+      }
+    ]
+  },
+  {
+    "text": "Числовой вывод относится к указанным дозовым условиям. Неоценённые модулем клинические обстоятельства не считаются отсутствующими; полный клинический допуск врач оценивает отдельно.",
+    "occurrences": [
+      {
+        "id": "C00865",
+        "rid": "esc-adult-adjust",
+        "path": "rules/esc-adult-adjust.yaml/output/warnings/2"
+      },
+      {
+        "id": "C00984",
+        "rid": "esc-cyp2c19-start",
+        "path": "rules/esc-cyp2c19-start.yaml/output/warnings/2"
+      },
+      {
+        "id": "C01106",
+        "rid": "esc-elderly-start",
+        "path": "rules/esc-elderly-start.yaml/output/warnings/2"
+      },
+      {
+        "id": "C01229",
+        "rid": "esc-gad-start",
+        "path": "rules/esc-gad-start.yaml/output/warnings/2"
+      },
+      {
+        "id": "C01351",
+        "rid": "esc-hepatic-start",
+        "path": "rules/esc-hepatic-start.yaml/output/warnings/2"
+      },
+      {
+        "id": "C01476",
+        "rid": "esc-panic-start",
+        "path": "rules/esc-panic-start.yaml/output/warnings/2"
+      },
+      {
+        "id": "C01599",
+        "rid": "esc-social-start",
+        "path": "rules/esc-social-start.yaml/output/warnings/2"
+      },
+      {
+        "id": "C01711",
+        "rid": "esc-taper-limit",
+        "path": "rules/esc-taper-limit.yaml/output/warnings/3"
+      },
+      {
+        "id": "C01984",
+        "rid": "parox-panic-kr",
+        "path": "rules/parox-panic-kr.yaml/output/warnings/2"
+      },
+      {
+        "id": "C02066",
+        "rid": "parox-taper-example",
+        "path": "rules/parox-taper-example.yaml/output/warnings/2"
+      },
+      {
+        "id": "C02236",
+        "rid": "preg-gad-adjust",
+        "path": "rules/preg-gad-adjust.yaml/output/warnings/2"
+      },
+      {
+        "id": "C02381",
+        "rid": "preg-gad-start",
+        "path": "rules/preg-gad-start.yaml/output/warnings/2"
+      },
+      {
+        "id": "C02488",
+        "rid": "preg-renal-start",
+        "path": "rules/preg-renal-start.yaml/output/warnings/2"
+      },
+      {
+        "id": "C02573",
+        "rid": "preg-taper-limit",
+        "path": "rules/preg-taper-limit.yaml/output/warnings/2"
+      },
+      {
+        "id": "C02675",
+        "rid": "ser-adult-adjust",
+        "path": "rules/ser-adult-adjust.yaml/output/warnings/2"
+      },
+      {
+        "id": "C02815",
+        "rid": "ser-panic-start",
+        "path": "rules/ser-panic-start.yaml/output/warnings/2"
+      },
+      {
+        "id": "C02940",
+        "rid": "ser-social-start",
+        "path": "rules/ser-social-start.yaml/output/warnings/2"
+      },
+      {
+        "id": "C03034",
+        "rid": "ser-taper-limit",
+        "path": "rules/ser-taper-limit.yaml/output/warnings/2"
+      },
+      {
+        "id": "C03210",
+        "rid": "switch-esc-ago",
+        "path": "rules/switch-esc-ago.yaml/output/warnings/2"
+      },
+      {
+        "id": "C03340",
+        "rid": "switch-esc-ser",
+        "path": "rules/switch-esc-ser.yaml/output/warnings/1"
+      },
+      {
+        "id": "C03591",
+        "rid": "switch-parox-ago-selected-example",
+        "path": "rules/switch-parox-ago-selected-example.yaml/output/warnings/2"
+      },
+      {
+        "id": "C03820",
+        "rid": "switch-parox-ago",
+        "path": "rules/switch-parox-ago.yaml/output/warnings/2"
+      },
+      {
+        "id": "C04057",
+        "rid": "switch-ser-ago",
+        "path": "rules/switch-ser-ago.yaml/output/warnings/2"
+      },
+      {
+        "id": "C04200",
+        "rid": "switch-ser-esc",
+        "path": "rules/switch-ser-esc.yaml/output/warnings/1"
+      }
+    ]
+  },
+  {
+    "text": "Проверить соответствие источнику, указанное в applicability и inputs.",
+    "occurrences": [
+      {
+        "id": "C00866",
+        "rid": "esc-adult-adjust",
+        "path": "rules/esc-adult-adjust.yaml/output/mandatory_checks/0"
+      },
+      {
+        "id": "C00985",
+        "rid": "esc-cyp2c19-start",
+        "path": "rules/esc-cyp2c19-start.yaml/output/mandatory_checks/0"
+      },
+      {
+        "id": "C01107",
+        "rid": "esc-elderly-start",
+        "path": "rules/esc-elderly-start.yaml/output/mandatory_checks/0"
+      },
+      {
+        "id": "C01230",
+        "rid": "esc-gad-start",
+        "path": "rules/esc-gad-start.yaml/output/mandatory_checks/0"
+      },
+      {
+        "id": "C01352",
+        "rid": "esc-hepatic-start",
+        "path": "rules/esc-hepatic-start.yaml/output/mandatory_checks/0"
+      },
+      {
+        "id": "C01477",
+        "rid": "esc-panic-start",
+        "path": "rules/esc-panic-start.yaml/output/mandatory_checks/0"
+      },
+      {
+        "id": "C01600",
+        "rid": "esc-social-start",
+        "path": "rules/esc-social-start.yaml/output/mandatory_checks/0"
+      },
+      {
+        "id": "C01712",
+        "rid": "esc-taper-limit",
+        "path": "rules/esc-taper-limit.yaml/output/mandatory_checks/0"
+      },
+      {
+        "id": "C02237",
+        "rid": "preg-gad-adjust",
+        "path": "rules/preg-gad-adjust.yaml/output/mandatory_checks/0"
+      },
+      {
+        "id": "C02382",
+        "rid": "preg-gad-start",
+        "path": "rules/preg-gad-start.yaml/output/mandatory_checks/0"
+      },
+      {
+        "id": "C02489",
+        "rid": "preg-renal-start",
+        "path": "rules/preg-renal-start.yaml/output/mandatory_checks/0"
+      },
+      {
+        "id": "C02574",
+        "rid": "preg-taper-limit",
+        "path": "rules/preg-taper-limit.yaml/output/mandatory_checks/0"
+      },
+      {
+        "id": "C02676",
+        "rid": "ser-adult-adjust",
+        "path": "rules/ser-adult-adjust.yaml/output/mandatory_checks/0"
+      },
+      {
+        "id": "C02816",
+        "rid": "ser-panic-start",
+        "path": "rules/ser-panic-start.yaml/output/mandatory_checks/0"
+      },
+      {
+        "id": "C02941",
+        "rid": "ser-social-start",
+        "path": "rules/ser-social-start.yaml/output/mandatory_checks/0"
+      },
+      {
+        "id": "C03035",
+        "rid": "ser-taper-limit",
+        "path": "rules/ser-taper-limit.yaml/output/mandatory_checks/0"
+      }
+    ]
+  },
+  {
+    "text": "CLcr=30 gap; Child–Pugh C supervision; no combined factors; QT electrolyte/ECG obligations; full pair switch calendar absent",
+    "occurrences": [
+      {
+        "id": "C00891",
+        "rid": "esc-adult-adjust",
+        "path": "result_contracts.yaml/rules/esc-adult-adjust/source_gates/0/other"
+      },
+      {
+        "id": "C01011",
+        "rid": "esc-cyp2c19-start",
+        "path": "result_contracts.yaml/rules/esc-cyp2c19-start/source_gates/0/other"
+      },
+      {
+        "id": "C01133",
+        "rid": "esc-elderly-start",
+        "path": "result_contracts.yaml/rules/esc-elderly-start/source_gates/0/other"
+      },
+      {
+        "id": "C01256",
+        "rid": "esc-gad-start",
+        "path": "result_contracts.yaml/rules/esc-gad-start/source_gates/0/other"
+      },
+      {
+        "id": "C01378",
+        "rid": "esc-hepatic-start",
+        "path": "result_contracts.yaml/rules/esc-hepatic-start/source_gates/0/other"
+      },
+      {
+        "id": "C01503",
+        "rid": "esc-panic-start",
+        "path": "result_contracts.yaml/rules/esc-panic-start/source_gates/0/other"
+      },
+      {
+        "id": "C01626",
+        "rid": "esc-social-start",
+        "path": "result_contracts.yaml/rules/esc-social-start/source_gates/0/other"
+      },
+      {
+        "id": "C01720",
+        "rid": "esc-taper-limit",
+        "path": "result_contracts.yaml/rules/esc-taper-limit/source_gates/0/other"
+      },
+      {
+        "id": "C03231",
+        "rid": "switch-esc-ago",
+        "path": "result_contracts.yaml/rules/switch-esc-ago/source_gates/0/other"
+      },
+      {
+        "id": "C03355",
+        "rid": "switch-esc-ser",
+        "path": "result_contracts.yaml/rules/switch-esc-ser/source_gates/0/other"
+      },
+      {
+        "id": "C04215",
+        "rid": "switch-ser-esc",
+        "path": "result_contracts.yaml/rules/switch-ser-esc/source_gates/0/other"
+      }
+    ]
+  },
+  {
+    "text": "Использовать только одну подтверждённую специальную ветку. Если совпали пожилой возраст, снижение печени и/или известный CYP2C19 — отдельное решение врача, без 5×0,5 и без автоматического выбора меньшей дозы.",
+    "occurrences": [
+      {
+        "id": "C00945",
+        "rid": "esc-cyp2c19-start",
+        "path": "rules/esc-cyp2c19-start.yaml/logic/actions/0"
+      },
+      {
+        "id": "C01067",
+        "rid": "esc-elderly-start",
+        "path": "rules/esc-elderly-start.yaml/logic/actions/0"
+      },
+      {
+        "id": "C01312",
+        "rid": "esc-hepatic-start",
+        "path": "rules/esc-hepatic-start.yaml/logic/actions/0"
+      }
+    ]
+  },
+  {
+    "text": "Старт start один раз/сут; первые interval недели, затем возможно after по ответу; источник не задаёт дальнейшего повышения выше этой ветки.",
+    "occurrences": [
+      {
+        "id": "C00946",
+        "rid": "esc-cyp2c19-start",
+        "path": "rules/esc-cyp2c19-start.yaml/logic/actions/1"
+      },
+      {
+        "id": "C01313",
+        "rid": "esc-hepatic-start",
+        "path": "rules/esc-hepatic-start.yaml/logic/actions/1"
+      }
+    ]
+  },
+  {
+    "text": "Не опубликована явная схема для одновременных специальных условий.",
+    "occurrences": [
+      {
+        "id": "C00952",
+        "rid": "esc-cyp2c19-start",
+        "path": "rules/esc-cyp2c19-start.yaml/logic/conflicts/0"
+      },
+      {
+        "id": "C01074",
+        "rid": "esc-elderly-start",
+        "path": "rules/esc-elderly-start.yaml/logic/conflicts/0"
+      },
+      {
+        "id": "C01319",
+        "rid": "esc-hepatic-start",
+        "path": "rules/esc-hepatic-start.yaml/logic/conflicts/0"
+      }
+    ]
+  },
+  {
+    "text": "Для elderly нет опубликованного дня повышения; для hepatic/CYP не подставлять обычный максимум 20 как подтверждённый предел специальной схемы.",
+    "occurrences": [
+      {
+        "id": "C00988",
+        "rid": "esc-cyp2c19-start",
+        "path": "rules/esc-cyp2c19-start.yaml/output/clinician_decisions_remaining/2"
+      },
+      {
+        "id": "C01110",
+        "rid": "esc-elderly-start",
+        "path": "rules/esc-elderly-start.yaml/output/clinician_decisions_remaining/2"
+      },
+      {
+        "id": "C01355",
+        "rid": "esc-hepatic-start",
+        "path": "rules/esc-hepatic-start.yaml/output/clinician_decisions_remaining/2"
+      }
+    ]
+  },
+  {
+    "text": "Старт start один раз/сут; до after по ответу, фиксированный срок повышения не указан.",
+    "occurrences": [
+      {
+        "id": "C01068",
+        "rid": "esc-elderly-start",
+        "path": "rules/esc-elderly-start.yaml/logic/actions/1"
+      }
+    ]
+  },
+  {
+    "text": "Старт по указанному показанию. Для известной слабой активности CYP2C19 — отдельная esc-cyp2c19-start. Из «не исследовано» не выводить нормальный фенотип.",
+    "occurrences": [
+      {
+        "id": "C01191",
+        "rid": "esc-gad-start",
+        "path": "rules/esc-gad-start.yaml/logic/actions/0"
+      },
+      {
+        "id": "C01438",
+        "rid": "esc-panic-start",
+        "path": "rules/esc-panic-start.yaml/logic/actions/0"
+      },
+      {
+        "id": "C01561",
+        "rid": "esc-social-start",
+        "path": "rules/esc-social-start.yaml/logic/actions/0"
+      }
+    ]
+  },
+  {
+    "text": "Врач может затем увеличить до maximum по индивидуальному ответу. Точный дальнейший шаг и срок источник не задаёт: не придумывать автоматическую неделю/шаг.",
+    "occurrences": [
+      {
+        "id": "C01192",
+        "rid": "esc-gad-start",
+        "path": "rules/esc-gad-start.yaml/logic/actions/1"
+      },
+      {
+        "id": "C01439",
+        "rid": "esc-panic-start",
+        "path": "rules/esc-panic-start.yaml/logic/actions/1"
+      },
+      {
+        "id": "C01562",
+        "rid": "esc-social-start",
+        "path": "rules/esc-social-start.yaml/logic/actions/1"
+      }
+    ]
+  },
+  {
+    "text": "Повышение до предела по ответу; опубликованного календаря дальнейшей титрации нет.",
+    "occurrences": [
+      {
+        "id": "C01233",
+        "rid": "esc-gad-start",
+        "path": "rules/esc-gad-start.yaml/output/clinician_decisions_remaining/2"
+      },
+      {
+        "id": "C01480",
+        "rid": "esc-panic-start",
+        "path": "rules/esc-panic-start.yaml/output/clinician_decisions_remaining/2"
+      },
+      {
+        "id": "C01603",
+        "rid": "esc-social-start",
+        "path": "rules/esc-social-start.yaml/output/clinician_decisions_remaining/2"
+      }
+    ]
+  },
+  {
+    "text": "Постепенная отмена. Сохранить формулировку срока источника; точных ступеней до нуля нет.",
+    "occurrences": [
+      {
+        "id": "C01676",
+        "rid": "esc-taper-limit",
+        "path": "rules/esc-taper-limit.yaml/logic/actions/0"
+      },
+      {
+        "id": "C03012",
+        "rid": "ser-taper-limit",
+        "path": "rules/ser-taper-limit.yaml/logic/actions/0"
+      }
+    ]
+  },
+  {
+    "text": "Не создавать расписание −25/−50 мг или процент только из срока. Для длительного приёма/высокого риска КР предусматривает более медленную индивидуальную отмену без единого темпа.",
+    "occurrences": [
+      {
+        "id": "C01677",
+        "rid": "esc-taper-limit",
+        "path": "rules/esc-taper-limit.yaml/logic/actions/1"
+      },
+      {
+        "id": "C03013",
+        "rid": "ser-taper-limit",
+        "path": "rules/ser-taper-limit.yaml/logic/actions/1"
+      }
+    ]
+  },
+  {
+    "text": "профилактика рецидива; сохранять достигнутую эффективную дозу",
+    "occurrences": [
+      {
+        "id": "C01686",
+        "rid": "esc-taper-limit",
+        "path": "rules/esc-taper-limit.yaml/logic/panic_discontinuation_context/course/meaning"
+      },
+      {
+        "id": "C02056",
+        "rid": "parox-taper-example",
+        "path": "rules/parox-taper-example.yaml/logic/panic_discontinuation_context/course/meaning"
+      },
+      {
+        "id": "C03024",
+        "rid": "ser-taper-limit",
+        "path": "rules/ser-taper-limit.yaml/logic/panic_discontinuation_context/course/meaning"
+      }
+    ]
+  },
+  {
+    "text": "Фраза относится к постепенному снижению с тщательным контролем; источник не разделяет их длительности. Не строить собственный точный календарь.",
+    "occurrences": [
+      {
+        "id": "C01687",
+        "rid": "esc-taper-limit",
+        "path": "rules/esc-taper-limit.yaml/logic/panic_discontinuation_context/discontinuation/interpretation"
+      },
+      {
+        "id": "C02057",
+        "rid": "parox-taper-example",
+        "path": "rules/parox-taper-example.yaml/logic/panic_discontinuation_context/discontinuation/interpretation"
+      },
+      {
+        "id": "C03025",
+        "rid": "ser-taper-limit",
+        "path": "rules/ser-taper-limit.yaml/logic/panic_discontinuation_context/discontinuation/interpretation"
+      }
+    ]
+  },
+  {
+    "text": "Б4: профилактика/ведение СОПА; не график универсальных доз",
+    "occurrences": [
+      {
+        "id": "C01688",
+        "rid": "esc-taper-limit",
+        "path": "rules/esc-taper-limit.yaml/logic/panic_discontinuation_context/guideline_algorithm"
+      },
+      {
+        "id": "C02058",
+        "rid": "parox-taper-example",
+        "path": "rules/parox-taper-example.yaml/logic/panic_discontinuation_context/guideline_algorithm"
+      },
+      {
+        "id": "C03026",
+        "rid": "ser-taper-limit",
+        "path": "rules/ser-taper-limit.yaml/logic/panic_discontinuation_context/guideline_algorithm"
+      }
+    ]
+  },
+  {
+    "text": "Доза/условия последнего этапа; источник не даёт числового ответа",
+    "occurrences": [
+      {
+        "id": "C01715",
+        "rid": "esc-taper-limit",
+        "path": "rules/esc-taper-limit.yaml/output/clinician_decisions_remaining/2"
+      },
+      {
+        "id": "C02577",
+        "rid": "preg-taper-limit",
+        "path": "rules/preg-taper-limit.yaml/output/clinician_decisions_remaining/2"
+      },
+      {
+        "id": "C03038",
+        "rid": "ser-taper-limit",
+        "path": "rules/ser-taper-limit.yaml/output/clinician_decisions_remaining/2"
+      }
+    ]
+  },
+  {
+    "text": "Не рекомендуется при беременности, кроме клинической необходимости по решению врача; §4.6 с.10. Числовой поправки нет.",
+    "occurrences": [
+      {
+        "id": "C01760",
+        "rid": "fluvox-depression-start",
+        "path": "rules/fluvox-depression-start.yaml/applicability/pregnancy"
+      },
+      {
+        "id": "C01856",
+        "rid": "fluvox-taper-limit",
+        "path": "rules/fluvox-taper-limit.yaml/applicability/pregnancy"
+      }
+    ]
+  },
+  {
+    "text": "Не должен применяться в период грудного вскармливания; §4.6 с.10. Стандартный старт не выдаётся автоматически.",
+    "occurrences": [
+      {
+        "id": "C01761",
+        "rid": "fluvox-depression-start",
+        "path": "rules/fluvox-depression-start.yaml/applicability/lactation"
+      },
+      {
+        "id": "C01857",
+        "rid": "fluvox-taper-limit",
+        "path": "rules/fluvox-taper-limit.yaml/applicability/lactation"
+      }
+    ]
+  },
+  {
+    "text": "При почечной недостаточности начинать с низких доз под строгим врачебным контролем; §4.2 с.3. Точный коэффициент/число не задан.",
+    "occurrences": [
+      {
+        "id": "C01762",
+        "rid": "fluvox-depression-start",
+        "path": "rules/fluvox-depression-start.yaml/applicability/renal_constraints/0"
+      },
+      {
+        "id": "C01858",
+        "rid": "fluvox-taper-limit",
+        "path": "rules/fluvox-taper-limit.yaml/applicability/renal_constraints/0"
+      }
+    ]
+  },
+  {
+    "text": "При печёночной недостаточности начинать с низких доз под строгим врачебным контролем; §4.2 с.3. Не предвыбирать 50 как доказанную органную поправку.",
+    "occurrences": [
+      {
+        "id": "C01763",
+        "rid": "fluvox-depression-start",
+        "path": "rules/fluvox-depression-start.yaml/applicability/hepatic_constraints/0"
+      },
+      {
+        "id": "C01859",
+        "rid": "fluvox-taper-limit",
+        "path": "rules/fluvox-taper-limit.yaml/applicability/hepatic_constraints/0"
+      }
+    ]
+  },
+  {
+    "text": "ИМАО, тизанидин, пимозид, рамелтеон §4.3; терфенадин/астемизол/цизаприд §4.4–4.5; агомелатин противопоказан по его ОХЛП.",
+    "occurrences": [
+      {
+        "id": "C01764",
+        "rid": "fluvox-depression-start",
+        "path": "rules/fluvox-depression-start.yaml/applicability/interacting_drugs/0"
+      }
+    ]
+  },
+  {
+    "text": "Старт 50 или 100 мг однократно вечером, по выбору врача. Через 3–4 недели пересмотр по клиническому опыту; опубликованного фиксированного следующего шага нет.",
+    "occurrences": [
+      {
+        "id": "C01768",
+        "rid": "fluvox-depression-start",
+        "path": "rules/fluvox-depression-start.yaml/logic/actions/0"
+      }
+    ]
+  },
+  {
+    "text": "Дозы свыше 150 мг делят на 2 или 3 приёма; распределение не выбирать автоматически.",
+    "occurrences": [
+      {
+        "id": "C01769",
+        "rid": "fluvox-depression-start",
+        "path": "rules/fluvox-depression-start.yaml/logic/actions/1"
+      }
+    ]
+  },
+  {
+    "text": "При почечной/печёночной недостаточности низкий старт под строгим контролем, конкретный коэффициент не задан. Детский ОКР не переносится на детскую тревогу/депрессию.",
+    "occurrences": [
+      {
+        "id": "C01770",
+        "rid": "fluvox-depression-start",
+        "path": "rules/fluvox-depression-start.yaml/logic/actions/2"
+      }
+    ]
+  },
+  {
+    "text": "ИМАО одновременно противопоказаны. Начало флувоксамина: через 2 недели после необратимого ИМАО либо на следующий день после обратимого; перед любым ИМАО после флувоксамина не менее 1 недели (§4.3 с.3). Это проверка интервала одного препарата, не полноценная парная схема с дозой/российской регистрацией второго.",
+    "occurrences": [
+      {
+        "id": "C01771",
+        "rid": "fluvox-depression-start",
+        "path": "rules/fluvox-depression-start.yaml/logic/actions/3"
+      }
+    ]
+  },
+  {
+    "text": "При грудном вскармливании стандартный старт Феварина не выдаётся (§4.6 с.10); беременность требует исключительного отдельного решения. Низкий органный старт не выбирается автоматически из 50/100.",
+    "occurrences": [
+      {
+        "id": "C01772",
+        "rid": "fluvox-depression-start",
+        "path": "rules/fluvox-depression-start.yaml/logic/actions/4"
+      }
+    ]
+  },
+  {
+    "text": "Феварин, таблетки 50/100 мг; две равные части разрешены",
+    "occurrences": [
+      {
+        "id": "C01798",
+        "rid": "fluvox-depression-start",
+        "path": "rules/fluvox-depression-start.yaml/output/formulation"
+      }
+    ]
+  },
+  {
+    "text": "<18 depression no; renal/hepatic insufficiency low dose not numerically specified; uncontrolled epilepsy avoid; new seizures stop; >150 divided into 2 or 3 administrations by choice; next calendar day after reversible MAOI",
+    "occurrences": [
+      {
+        "id": "C01830",
+        "rid": "fluvox-depression-start",
+        "path": "result_contracts.yaml/rules/fluvox-depression-start/source_gates/0/other"
+      }
+    ]
+  },
+  {
+    "text": "Постепенное снижение минимум 1–2 недели. При непереносимых симптомах возможно возобновление прежней дозы, затем медленнее.",
+    "occurrences": [
+      {
+        "id": "C01863",
+        "rid": "fluvox-taper-limit",
+        "path": "rules/fluvox-taper-limit.yaml/logic/actions/0"
+      }
+    ]
+  },
+  {
+    "text": "Нет точного универсального процента, шагов и последней дозы.",
+    "occurrences": [
+      {
+        "id": "C01864",
+        "rid": "fluvox-taper-limit",
+        "path": "rules/fluvox-taper-limit.yaml/logic/actions/1"
+      }
+    ]
+  },
+  {
+    "text": "Феварин, таблетки 50/100 мг, разрешённые половины",
+    "occurrences": [
+      {
+        "id": "C01875",
+        "rid": "fluvox-taper-limit",
+        "path": "rules/fluvox-taper-limit.yaml/output/formulation"
+      }
+    ]
+  },
+  {
+    "text": "Отдельная оценка применимости; дозовые коэффициенты не извлечены.",
+    "occurrences": [
+      {
+        "id": "C01936",
+        "rid": "parox-panic-kr",
+        "path": "rules/parox-panic-kr.yaml/applicability/pregnancy"
+      },
+      {
+        "id": "C01937",
+        "rid": "parox-panic-kr",
+        "path": "rules/parox-panic-kr.yaml/applicability/lactation"
+      },
+      {
+        "id": "C02037",
+        "rid": "parox-taper-example",
+        "path": "rules/parox-taper-example.yaml/applicability/pregnancy"
+      },
+      {
+        "id": "C02038",
+        "rid": "parox-taper-example",
+        "path": "rules/parox-taper-example.yaml/applicability/lactation"
+      },
+      {
+        "id": "C03283",
+        "rid": "switch-esc-ser",
+        "path": "rules/switch-esc-ser.yaml/applicability/pregnancy"
+      },
+      {
+        "id": "C03284",
+        "rid": "switch-esc-ser",
+        "path": "rules/switch-esc-ser.yaml/applicability/lactation"
+      },
+      {
+        "id": "C04143",
+        "rid": "switch-ser-esc",
+        "path": "rules/switch-ser-esc.yaml/applicability/pregnancy"
+      },
+      {
+        "id": "C04144",
+        "rid": "switch-ser-esc",
+        "path": "rules/switch-ser-esc.yaml/applicability/lactation"
+      }
+    ]
+  },
+  {
+    "text": "При CLcr <30 мл/мин нижний край диапазона (§4.2 с.17); не делать автоматический коэффициент.",
+    "occurrences": [
+      {
+        "id": "C01938",
+        "rid": "parox-panic-kr",
+        "path": "rules/parox-panic-kr.yaml/applicability/renal_constraints/0"
+      }
+    ]
+  },
+  {
+    "text": "При нарушении функции печени нижний край терапевтического диапазона; точная самостоятельная новая поправка не задана (§4.2 с.17).",
+    "occurrences": [
+      {
+        "id": "C01939",
+        "rid": "parox-panic-kr",
+        "path": "rules/parox-panic-kr.yaml/applicability/hepatic_constraints/0"
+      }
+    ]
+  },
+  {
+    "text": "КР задаёт диапазон 40–60; инструкция отдельно выделяет рекомендуемые 40 и максимум 60 после недостаточного ответа через несколько недель на 40. Максимум не является целью.",
+    "occurrences": [
+      {
+        "id": "C01941",
+        "rid": "parox-panic-kr",
+        "path": "rules/parox-panic-kr.yaml/applicability/other_conditions/0"
+      }
+    ]
+  },
+  {
+    "text": "Возраст менее 18 лет; гиперчувствительность; противопоказанное сочетание по §4.3.",
+    "occurrences": [
+      {
+        "id": "C01942",
+        "rid": "parox-panic-kr",
+        "path": "rules/parox-panic-kr.yaml/applicability/exclusions/0"
+      },
+      {
+        "id": "C02042",
+        "rid": "parox-taper-example",
+        "path": "rules/parox-taper-example.yaml/applicability/exclusions/0"
+      }
+    ]
+  },
+  {
+    "text": "RU_indication_present_in_original_registry_currency_separate",
+    "occurrences": [
+      {
+        "id": "C01943",
+        "rid": "parox-panic-kr",
+        "path": "rules/parox-panic-kr.yaml/applicability/indication_status_in_russia"
+      },
+      {
+        "id": "C02043",
+        "rid": "parox-taper-example",
+        "path": "rules/parox-taper-example.yaml/applicability/indication_status_in_russia"
+      },
+      {
+        "id": "C03442",
+        "rid": "switch-parox-ago-selected-example",
+        "path": "rules/switch-parox-ago-selected-example.yaml/applicability/indication_status_in_russia"
+      },
+      {
+        "id": "C03720",
+        "rid": "switch-parox-ago",
+        "path": "rules/switch-parox-ago.yaml/applicability/indication_status_in_russia"
+      },
+      {
+        "id": "C03946",
+        "rid": "switch-ser-ago",
+        "path": "rules/switch-ser-ago.yaml/applicability/indication_status_in_russia"
+      }
+    ]
+  },
+  {
+    "text": "Показание/препарат выбраны врачом; взрослая применимость и форма подтверждены.",
+    "occurrences": [
+      {
+        "id": "C01945",
+        "rid": "parox-panic-kr",
+        "path": "rules/parox-panic-kr.yaml/logic/conditions/0"
+      },
+      {
+        "id": "C02045",
+        "rid": "parox-taper-example",
+        "path": "rules/parox-taper-example.yaml/logic/conditions/0"
+      },
+      {
+        "id": "C03118",
+        "rid": "switch-esc-ago",
+        "path": "rules/switch-esc-ago.yaml/logic/conditions/0"
+      },
+      {
+        "id": "C03722",
+        "rid": "switch-parox-ago",
+        "path": "rules/switch-parox-ago.yaml/logic/conditions/0"
+      },
+      {
+        "id": "C03948",
+        "rid": "switch-ser-ago",
+        "path": "rules/switch-ser-ago.yaml/logic/conditions/0"
+      }
+    ]
+  },
+  {
+    "text": "Начало 10 мг один раз утром во время еды. По клиническому ответу повышение на 10 мг/сут не чаще одного раза в неделю до рекомендуемых 40 мг/сут.",
+    "occurrences": [
+      {
+        "id": "C01946",
+        "rid": "parox-panic-kr",
+        "path": "rules/parox-panic-kr.yaml/logic/actions/0"
+      }
+    ]
+  },
+  {
+    "text": "Повышения выше 40 возможны при недостаточном ответе после нескольких недель на рекомендуемой дозе, до 60 мг/сут; термин «несколько недель» не заменять точным произвольным сроком.",
+    "occurrences": [
+      {
+        "id": "C01947",
+        "rid": "parox-panic-kr",
+        "path": "rules/parox-panic-kr.yaml/logic/actions/1"
+      }
+    ]
+  },
+  {
+    "text": "У пожилых максимум 40 мг/сут; при тяжелой почечной/печеночной ветке не достраивать коэффициент.",
+    "occurrences": [
+      {
+        "id": "C01948",
+        "rid": "parox-panic-kr",
+        "path": "rules/parox-panic-kr.yaml/logic/actions/2"
+      }
+    ]
+  },
+  {
+    "text": "Необходимость каждого повышения по ответу/переносимости; несколько недель не превращать в фиксированное число.",
+    "occurrences": [
+      {
+        "id": "C01949",
+        "rid": "parox-panic-kr",
+        "path": "rules/parox-panic-kr.yaml/logic/clinician_choices/0"
+      },
+      {
+        "id": "C01985",
+        "rid": "parox-panic-kr",
+        "path": "rules/parox-panic-kr.yaml/output/clinician_decisions_remaining/0"
+      }
+    ]
+  },
+  {
+    "text": "Применимость особых популяций и взаимодействий.",
+    "occurrences": [
+      {
+        "id": "C01950",
+        "rid": "parox-panic-kr",
+        "path": "rules/parox-panic-kr.yaml/logic/clinician_choices/1"
+      },
+      {
+        "id": "C01986",
+        "rid": "parox-panic-kr",
+        "path": "rules/parox-panic-kr.yaml/output/clinician_decisions_remaining/1"
+      }
+    ]
+  },
+  {
+    "text": "Дозовые этапы КР сверены с конкретной российской ОХЛП: старт/шаг совпадают; дополнительное условие инструкции для >40 сохраняется.",
+    "occurrences": [
+      {
+        "id": "C01954",
+        "rid": "parox-panic-kr",
+        "path": "rules/parox-panic-kr.yaml/logic/combination_justification"
+      }
+    ]
+  },
+  {
+    "text": "Линезолид только исключительная клиническая ветка при отсутствии альтернатив, доступном наблюдении и оценке пользы/риска; обычный старт не разрешается.",
+    "occurrences": [
+      {
+        "id": "C01961",
+        "rid": "parox-panic-kr",
+        "path": "rules/parox-panic-kr.yaml/logic/maoi_history_contract/exception"
+      },
+      {
+        "id": "C03464",
+        "rid": "switch-parox-ago-selected-example",
+        "path": "rules/switch-parox-ago-selected-example.yaml/logic/maoi_history_contract/exception"
+      },
+      {
+        "id": "C03738",
+        "rid": "switch-parox-ago",
+        "path": "rules/switch-parox-ago.yaml/logic/maoi_history_contract/exception"
+      }
+    ]
+  },
+  {
+    "text": "Рексетин, таблетки 20 мг, покрытые пленочной оболочкой; деление пополам на 10 мг",
+    "occurrences": [
+      {
+        "id": "C01974",
+        "rid": "parox-panic-kr",
+        "path": "rules/parox-panic-kr.yaml/output/formulation"
+      }
+    ]
+  },
+  {
+    "text": "Противопоказание или неизвестные обязательные значения",
+    "occurrences": [
+      {
+        "id": "C01981",
+        "rid": "parox-panic-kr",
+        "path": "rules/parox-panic-kr.yaml/output/schedule/0/condition_to_hold"
+      }
+    ]
+  },
+  {
+    "text": "Все будущие повышения условны; 60 мг не автоматическая цель.",
+    "occurrences": [
+      {
+        "id": "C01982",
+        "rid": "parox-panic-kr",
+        "path": "rules/parox-panic-kr.yaml/output/warnings/0"
+      }
+    ]
+  },
+  {
+    "text": "Версия оригинала зафиксирована; новая регистрационная редакция отдельно проверяется.",
+    "occurrences": [
+      {
+        "id": "C01983",
+        "rid": "parox-panic-kr",
+        "path": "rules/parox-panic-kr.yaml/output/warnings/1"
+      }
+    ]
+  },
+  {
+    "text": "<18 no adult scheme; elderly maximum 40 without invented age threshold; severe CLcr <30 or hepatic insufficiency low therapeutic range unspecified; no general taper tail; standard MAOI branch excludes exceptional linezolid use",
+    "occurrences": [
+      {
+        "id": "C02010",
+        "rid": "parox-panic-kr",
+        "path": "result_contracts.yaml/rules/parox-panic-kr/source_gates/0/other"
+      },
+      {
+        "id": "C03643",
+        "rid": "switch-parox-ago-selected-example",
+        "path": "result_contracts.yaml/rules/switch-parox-ago-selected-example/source_gates/1/other"
+      },
+      {
+        "id": "C03872",
+        "rid": "switch-parox-ago",
+        "path": "result_contracts.yaml/rules/switch-parox-ago/source_gates/1/other"
+      }
+    ]
+  },
+  {
+    "text": "Проверять текущие сочетания по ОХЛП; отмена не разрешает неподтверждённый переход на ИМАО.",
+    "occurrences": [
+      {
+        "id": "C02039",
+        "rid": "parox-taper-example",
+        "path": "rules/parox-taper-example.yaml/applicability/interacting_drugs/0"
+      }
+    ]
+  },
+  {
+    "text": "Воспроизведение взрослого примера §4.2; не универсальный обязательный протокол.",
+    "occurrences": [
+      {
+        "id": "C02040",
+        "rid": "parox-taper-example",
+        "path": "rules/parox-taper-example.yaml/applicability/other_conditions/0"
+      }
+    ]
+  },
+  {
+    "text": "Пример завершает снижение на 20 мг, держит 1 неделю и отменяет. Для исходной дозы ниже 20 мг полного расписания в этом примере нет.",
+    "occurrences": [
+      {
+        "id": "C02041",
+        "rid": "parox-taper-example",
+        "path": "rules/parox-taper-example.yaml/applicability/other_conditions/1"
+      }
+    ]
+  },
+  {
+    "text": "Если врач выбрал пример, снижать суточную дозу на 10 мг через неделю до 20 мг; после 1 недели на 20 мг отменить.",
+    "occurrences": [
+      {
+        "id": "C02046",
+        "rid": "parox-taper-example",
+        "path": "rules/parox-taper-example.yaml/logic/actions/0"
+      }
+    ]
+  },
+  {
+    "text": "При симптомах во время снижения/после отмены возможно возобновление прежней дозы и последующее более медленное снижение; точный более медленный шаг источник не задаёт.",
+    "occurrences": [
+      {
+        "id": "C02047",
+        "rid": "parox-taper-example",
+        "path": "rules/parox-taper-example.yaml/logic/actions/1"
+      }
+    ]
+  },
+  {
+    "text": "Исходная доза <20, недостижимые формы, высокий риск/тяжелая отмена: пример не достраивать автоматически.",
+    "occurrences": [
+      {
+        "id": "C02048",
+        "rid": "parox-taper-example",
+        "path": "rules/parox-taper-example.yaml/logic/actions/2"
+      }
+    ]
+  },
+  {
+    "text": "Выбор применимости примера; необходимость более медленного снижения; прежняя переносимая доза при симптомах.",
+    "occurrences": [
+      {
+        "id": "C02049",
+        "rid": "parox-taper-example",
+        "path": "rules/parox-taper-example.yaml/logic/clinician_choices/0"
+      },
+      {
+        "id": "C02067",
+        "rid": "parox-taper-example",
+        "path": "rules/parox-taper-example.yaml/output/clinician_decisions_remaining/0"
+      }
+    ]
+  },
+  {
+    "text": "КР Б5 определяет риск/ведение отмены, ОХЛП задаёт отдельно маркированный взрослый пример. Детский пример §4.8 не используется.",
+    "occurrences": [
+      {
+        "id": "C02053",
+        "rid": "parox-taper-example",
+        "path": "rules/parox-taper-example.yaml/logic/combination_justification"
+      }
+    ]
+  },
+  {
+    "text": "Рексетин, таблетки 20 мг; разрешена половина 10 мг",
+    "occurrences": [
+      {
+        "id": "C02063",
+        "rid": "parox-taper-example",
+        "path": "rules/parox-taper-example.yaml/output/formulation"
+      }
+    ]
+  },
+  {
+    "text": "Пример исследования, не обязательный протокол для всех.",
+    "occurrences": [
+      {
+        "id": "C02064",
+        "rid": "parox-taper-example",
+        "path": "rules/parox-taper-example.yaml/output/warnings/0"
+      }
+    ]
+  },
+  {
+    "text": "Взрослая последняя доза источника 20 мг. Не подменять иностранными/детскими 10 мг.",
+    "occurrences": [
+      {
+        "id": "C02065",
+        "rid": "parox-taper-example",
+        "path": "rules/parox-taper-example.yaml/output/warnings/1"
+      }
+    ]
+  },
+  {
+    "text": "Применение при беременности противопоказано; инструкция с.2–3. Это не разрешение резкой отмены уже принимаемого препарата.",
+    "occurrences": [
+      {
+        "id": "C02092",
+        "rid": "phen-taper-limit",
+        "path": "rules/phen-taper-limit.yaml/applicability/pregnancy"
+      }
+    ]
+  },
+  {
+    "text": "Период грудного вскармливания — противопоказание; с.2–3. Прекращение/снижение требует отдельного решения врача.",
+    "occurrences": [
+      {
+        "id": "C02093",
+        "rid": "phen-taper-limit",
+        "path": "rules/phen-taper-limit.yaml/applicability/lactation"
+      }
+    ]
+  },
+  {
+    "text": "При недостаточности функции почек — осторожность; при длительной терапии контроль, с.2/4. Числовой коэффициент не задан.",
+    "occurrences": [
+      {
+        "id": "C02094",
+        "rid": "phen-taper-limit",
+        "path": "rules/phen-taper-limit.yaml/applicability/renal_constraints/0"
+      }
+    ]
+  },
+  {
+    "text": "При печёночной недостаточности — осторожность; при длительной терапии контроль печёночных ферментов/крови, с.2/4. Числовой коэффициент не задан.",
+    "occurrences": [
+      {
+        "id": "C02095",
+        "rid": "phen-taper-limit",
+        "path": "rules/phen-taper-limit.yaml/applicability/hepatic_constraints/0"
+      }
+    ]
+  },
+  {
+    "text": "Противопоказания включают миастению, острую дыхательную недостаточность, тяжёлую ХОБЛ, тяжёлую депрессию и острые отравления перечисленными веществами; с.2. Это не автоматический календарь отмены.",
+    "occurrences": [
+      {
+        "id": "C02096",
+        "rid": "phen-taper-limit",
+        "path": "rules/phen-taper-limit.yaml/applicability/comorbidity_constraints/0"
+      }
+    ]
+  },
+  {
+    "text": "Взаимное усиление действия с другими средствами, угнетающими ЦНС, и этанолом; клозапин может усиливать угнетение дыхания; с.4. Требуется клинический разбор без выдуманной процентной поправки.",
+    "occurrences": [
+      {
+        "id": "C02097",
+        "rid": "phen-taper-limit",
+        "path": "rules/phen-taper-limit.yaml/applicability/interacting_drugs/0"
+      }
+    ]
+  },
+  {
+    "text": "Дозу при отмене уменьшают постепенно (§4.2 PDF с.2). Источник не задаёт числовой шаг/процент/период отмены.",
+    "occurrences": [
+      {
+        "id": "C02101",
+        "rid": "phen-taper-limit",
+        "path": "rules/phen-taper-limit.yaml/logic/actions/0"
+      }
+    ]
+  },
+  {
+    "text": "Длительность курса 2 недели, иногда до 2 месяцев — не длительность снижения и не обязательный календарь.",
+    "occurrences": [
+      {
+        "id": "C02102",
+        "rid": "phen-taper-limit",
+        "path": "rules/phen-taper-limit.yaml/logic/actions/1"
+      }
+    ]
+  },
+  {
+    "text": "При внезапной отмене возможен синдром отмены; зависимость/сложный случай требует отдельной клинической стратегии. ASAM остаётся сравнением.",
+    "occurrences": [
+      {
+        "id": "C02103",
+        "rid": "phen-taper-limit",
+        "path": "rules/phen-taper-limit.yaml/logic/actions/2"
+      }
+    ]
+  },
+  {
+    "text": "Феназепам, таблетки диспергируемые 0,25/0,5/1 мг",
+    "occurrences": [
+      {
+        "id": "C02113",
+        "rid": "phen-taper-limit",
+        "path": "rules/phen-taper-limit.yaml/output/formulation"
+      }
+    ]
+  },
+  {
+    "text": "Для этой схемы CLcr ≥60 мл/мин и нет гемодиализа; иначе preg-renal-start. eGFR не эквивалент входа CLcr.",
+    "occurrences": [
+      {
+        "id": "C02176",
+        "rid": "preg-gad-adjust",
+        "path": "rules/preg-gad-adjust.yaml/applicability/renal_constraints/0"
+      },
+      {
+        "id": "C02310",
+        "rid": "preg-gad-start",
+        "path": "rules/preg-gad-start.yaml/applicability/renal_constraints/0"
+      }
+    ]
+  },
+  {
+    "text": "Коррекция при нарушении печени не требуется (§4.2 с.5).",
+    "occurrences": [
+      {
+        "id": "C02177",
+        "rid": "preg-gad-adjust",
+        "path": "rules/preg-gad-adjust.yaml/applicability/hepatic_constraints/0"
+      },
+      {
+        "id": "C02311",
+        "rid": "preg-gad-start",
+        "path": "rules/preg-gad-start.yaml/applicability/hepatic_constraints/0"
+      }
+    ]
+  },
+  {
+    "text": "КР ГТР ограничивает применение при зависимости/склонности к злоупотреблению (§3.2 с.24–25).",
+    "occurrences": [
+      {
+        "id": "C02178",
+        "rid": "preg-gad-adjust",
+        "path": "rules/preg-gad-adjust.yaml/applicability/comorbidity_constraints/0"
+      },
+      {
+        "id": "C02312",
+        "rid": "preg-gad-start",
+        "path": "rules/preg-gad-start.yaml/applicability/comorbidity_constraints/0"
+      }
+    ]
+  },
+  {
+    "text": "Риск угнетения дыхания при дыхательных нарушениях, снижении функции почек, пожилом возрасте и депрессантах ЦНС (§4.4). Числовой множитель не опубликован.",
+    "occurrences": [
+      {
+        "id": "C02179",
+        "rid": "preg-gad-adjust",
+        "path": "rules/preg-gad-adjust.yaml/applicability/comorbidity_constraints/1"
+      },
+      {
+        "id": "C02313",
+        "rid": "preg-gad-start",
+        "path": "rules/preg-gad-start.yaml/applicability/comorbidity_constraints/1"
+      }
+    ]
+  },
+  {
+    "text": "RU_indication_in_read_copy_registry_row_observed_latest_text_identity_not_asserted",
+    "occurrences": [
+      {
+        "id": "C02182",
+        "rid": "preg-gad-adjust",
+        "path": "rules/preg-gad-adjust.yaml/applicability/indication_status_in_russia"
+      },
+      {
+        "id": "C02316",
+        "rid": "preg-gad-start",
+        "path": "rules/preg-gad-start.yaml/applicability/indication_status_in_russia"
+      },
+      {
+        "id": "C02457",
+        "rid": "preg-renal-start",
+        "path": "rules/preg-renal-start.yaml/applicability/indication_status_in_russia"
+      },
+      {
+        "id": "C02555",
+        "rid": "preg-taper-limit",
+        "path": "rules/preg-taper-limit.yaml/applicability/indication_status_in_russia"
+      },
+      {
+        "id": "C02637",
+        "rid": "ser-adult-adjust",
+        "path": "rules/ser-adult-adjust.yaml/applicability/indication_status_in_russia"
+      },
+      {
+        "id": "C02763",
+        "rid": "ser-panic-start",
+        "path": "rules/ser-panic-start.yaml/applicability/indication_status_in_russia"
+      },
+      {
+        "id": "C02888",
+        "rid": "ser-social-start",
+        "path": "rules/ser-social-start.yaml/applicability/indication_status_in_russia"
+      },
+      {
+        "id": "C03009",
+        "rid": "ser-taper-limit",
+        "path": "rules/ser-taper-limit.yaml/applicability/indication_status_in_russia"
+      }
+    ]
+  },
+  {
+    "text": "При CLcr ≥60 и без гемодиализа, если текущая доза соответствует одному из опубликованных этапов, после как минимум interval на ней и при недостаточном ответе/достаточной переносимости врач может выбрать следующий опубликованный этап.",
+    "occurrences": [
+      {
+        "id": "C02185",
+        "rid": "preg-gad-adjust",
+        "path": "rules/preg-gad-adjust.yaml/logic/actions/0"
+      }
+    ]
+  },
+  {
+    "text": "Для иных текущих доз и почечных категорий точный следующий шаг не выводится. Не воспроизводить старт заново и не уменьшать дозу этим правилом.",
+    "occurrences": [
+      {
+        "id": "C02186",
+        "rid": "preg-gad-adjust",
+        "path": "rules/preg-gad-adjust.yaml/logic/actions/1"
+      }
+    ]
+  },
+  {
+    "text": "Только ближайший следующий этап после подтверждённой текущей дозы, не повторный старт",
+    "occurrences": [
+      {
+        "id": "C02199",
+        "rid": "preg-gad-adjust",
+        "path": "rules/preg-gad-adjust.yaml/output/schedule/0/time_description"
+      },
+      {
+        "id": "C02211",
+        "rid": "preg-gad-adjust",
+        "path": "rules/preg-gad-adjust.yaml/output/schedule/1/time_description"
+      },
+      {
+        "id": "C02223",
+        "rid": "preg-gad-adjust",
+        "path": "rules/preg-gad-adjust.yaml/output/schedule/2/time_description"
+      }
+    ]
+  },
+  {
+    "text": "current_dose соответствует d150; interval выдержан; недостаточный ответ, достаточная переносимость и приём подтверждены; врач выбрал увеличение",
+    "occurrences": [
+      {
+        "id": "C02208",
+        "rid": "preg-gad-adjust",
+        "path": "rules/preg-gad-adjust.yaml/output/schedule/0/condition_to_proceed"
+      }
+    ]
+  },
+  {
+    "text": "Достаточный эффект, непереносимость, противопоказание, неизвестные обязательные данные или врач не выбрал увеличение",
+    "occurrences": [
+      {
+        "id": "C02209",
+        "rid": "preg-gad-adjust",
+        "path": "rules/preg-gad-adjust.yaml/output/schedule/0/condition_to_hold"
+      },
+      {
+        "id": "C02221",
+        "rid": "preg-gad-adjust",
+        "path": "rules/preg-gad-adjust.yaml/output/schedule/1/condition_to_hold"
+      },
+      {
+        "id": "C02233",
+        "rid": "preg-gad-adjust",
+        "path": "rules/preg-gad-adjust.yaml/output/schedule/2/condition_to_hold"
+      },
+      {
+        "id": "C02342",
+        "rid": "preg-gad-start",
+        "path": "rules/preg-gad-start.yaml/output/schedule/0/condition_to_hold"
+      },
+      {
+        "id": "C02354",
+        "rid": "preg-gad-start",
+        "path": "rules/preg-gad-start.yaml/output/schedule/1/condition_to_hold"
+      },
+      {
+        "id": "C02366",
+        "rid": "preg-gad-start",
+        "path": "rules/preg-gad-start.yaml/output/schedule/2/condition_to_hold"
+      },
+      {
+        "id": "C02378",
+        "rid": "preg-gad-start",
+        "path": "rules/preg-gad-start.yaml/output/schedule/3/condition_to_hold"
+      },
+      {
+        "id": "C02802",
+        "rid": "ser-panic-start",
+        "path": "rules/ser-panic-start.yaml/output/schedule/0/condition_to_hold"
+      },
+      {
+        "id": "C02812",
+        "rid": "ser-panic-start",
+        "path": "rules/ser-panic-start.yaml/output/schedule/1/condition_to_hold"
+      },
+      {
+        "id": "C02927",
+        "rid": "ser-social-start",
+        "path": "rules/ser-social-start.yaml/output/schedule/0/condition_to_hold"
+      },
+      {
+        "id": "C02937",
+        "rid": "ser-social-start",
+        "path": "rules/ser-social-start.yaml/output/schedule/1/condition_to_hold"
+      }
+    ]
+  },
+  {
+    "text": "current_dose соответствует d300; interval выдержан; недостаточный ответ, достаточная переносимость и приём подтверждены; врач выбрал увеличение",
+    "occurrences": [
+      {
+        "id": "C02220",
+        "rid": "preg-gad-adjust",
+        "path": "rules/preg-gad-adjust.yaml/output/schedule/1/condition_to_proceed"
+      }
+    ]
+  },
+  {
+    "text": "current_dose соответствует d450; interval выдержан; недостаточный ответ, достаточная переносимость и приём подтверждены; врач выбрал увеличение",
+    "occurrences": [
+      {
+        "id": "C02232",
+        "rid": "preg-gad-adjust",
+        "path": "rules/preg-gad-adjust.yaml/output/schedule/2/condition_to_proceed"
+      }
+    ]
+  },
+  {
+    "text": "Разовая доза = суточная / выбранная кратность. Например, 150/2=75 мг или 150/3=50 мг. Оба исполнимы капсулами; не делить содержимое капсул. Врач выбирает кратность.",
+    "occurrences": [
+      {
+        "id": "C02240",
+        "rid": "preg-gad-adjust",
+        "path": "rules/preg-gad-adjust.yaml/output/rounding_or_formulation_rule"
+      },
+      {
+        "id": "C02385",
+        "rid": "preg-gad-start",
+        "path": "rules/preg-gad-start.yaml/output/rounding_or_formulation_rule"
+      }
+    ]
+  },
+  {
+    "text": "<18 exclude; CLcr source table; haemodialysis separate no complete scheme; hepatic no adjustment; no splitting/opening capsules; diabetes weight gain requires separate hypoglycaemic review",
+    "occurrences": [
+      {
+        "id": "C02261",
+        "rid": "preg-gad-adjust",
+        "path": "result_contracts.yaml/rules/preg-gad-adjust/source_gates/0/other"
+      },
+      {
+        "id": "C02406",
+        "rid": "preg-gad-start",
+        "path": "result_contracts.yaml/rules/preg-gad-start/source_gates/0/other"
+      },
+      {
+        "id": "C02513",
+        "rid": "preg-renal-start",
+        "path": "result_contracts.yaml/rules/preg-renal-start/source_gates/0/other"
+      }
+    ]
+  },
+  {
+    "text": "Начать с d150, разделённой на выбранную frequency. После каждого interval при необходимости и переносимости допускаются последовательно d300, d450, d600.",
+    "occurrences": [
+      {
+        "id": "C02319",
+        "rid": "preg-gad-start",
+        "path": "rules/preg-gad-start.yaml/logic/actions/0"
+      }
+    ]
+  },
+  {
+    "text": "Достаточный эффект → не повышать автоматически; максимальная доза не цель. Для коррекции уже принимаемой нормальной схемы нужен текущий этап, срок на нём, ответ и переносимость. Снижение при непереносимости этим расписанием не задано.",
+    "occurrences": [
+      {
+        "id": "C02320",
+        "rid": "preg-gad-start",
+        "path": "rules/preg-gad-start.yaml/logic/actions/1"
+      }
+    ]
+  },
+  {
+    "text": "При необходимости, достаточной переносимости и решении врача",
+    "occurrences": [
+      {
+        "id": "C02341",
+        "rid": "preg-gad-start",
+        "path": "rules/preg-gad-start.yaml/output/schedule/0/condition_to_proceed"
+      },
+      {
+        "id": "C02353",
+        "rid": "preg-gad-start",
+        "path": "rules/preg-gad-start.yaml/output/schedule/1/condition_to_proceed"
+      },
+      {
+        "id": "C02365",
+        "rid": "preg-gad-start",
+        "path": "rules/preg-gad-start.yaml/output/schedule/2/condition_to_proceed"
+      },
+      {
+        "id": "C02377",
+        "rid": "preg-gad-start",
+        "path": "rules/preg-gad-start.yaml/output/schedule/3/condition_to_proceed"
+      }
+    ]
+  },
+  {
+    "text": "Не ранее указанного интервала после предыдущего этапа; не дата визита",
+    "occurrences": [
+      {
+        "id": "C02344",
+        "rid": "preg-gad-start",
+        "path": "rules/preg-gad-start.yaml/output/schedule/1/time_description"
+      },
+      {
+        "id": "C02356",
+        "rid": "preg-gad-start",
+        "path": "rules/preg-gad-start.yaml/output/schedule/2/time_description"
+      },
+      {
+        "id": "C02368",
+        "rid": "preg-gad-start",
+        "path": "rules/preg-gad-start.yaml/output/schedule/3/time_description"
+      },
+      {
+        "id": "C02804",
+        "rid": "ser-panic-start",
+        "path": "rules/ser-panic-start.yaml/output/schedule/1/time_description"
+      },
+      {
+        "id": "C02929",
+        "rid": "ser-social-start",
+        "path": "rules/ser-social-start.yaml/output/schedule/1/time_description"
+      }
+    ]
+  },
+  {
+    "text": "Гемодиализ: отдельная дополнительная доза и сложная ветка; полной индивидуальной схемы не извлечено.",
+    "occurrences": [
+      {
+        "id": "C02456",
+        "rid": "preg-renal-start",
+        "path": "rules/preg-renal-start.yaml/applicability/exclusions/2"
+      }
+    ]
+  },
+  {
+    "text": "CLcr ≥0, числовой, подтверждён врачом; нет гемодиализа. Отрицательные значения/ошибки единиц не клиническая строка таблицы.",
+    "occurrences": [
+      {
+        "id": "C02460",
+        "rid": "preg-renal-start",
+        "path": "rules/preg-renal-start.yaml/logic/conditions/1"
+      }
+    ]
+  },
+  {
+    "text": "Старт внутри опубликованного диапазона, если он дан",
+    "occurrences": [
+      {
+        "id": "C02473",
+        "rid": "preg-renal-start",
+        "path": "rules/preg-renal-start.yaml/logic/clinician_choices/0"
+      }
+    ]
+  },
+  {
+    "text": "Способ набора/перехода между начальной и максимальной дозой при нарушенной функции почек; точных недельных ступеней таблица не задаёт",
+    "occurrences": [
+      {
+        "id": "C02475",
+        "rid": "preg-renal-start",
+        "path": "rules/preg-renal-start.yaml/logic/clinician_choices/2"
+      }
+    ]
+  },
+  {
+    "text": "Российская формула с.4 содержит единицы, отличные от EMA. Использовать готовый подтверждённый CLcr; встроенный расчёт по этой формуле исключён.",
+    "occurrences": [
+      {
+        "id": "C02479",
+        "rid": "preg-renal-start",
+        "path": "rules/preg-renal-start.yaml/logic/conflicts/0"
+      }
+    ]
+  },
+  {
+    "text": "Старт 75 мг/сут делить на 3 приёма по 25 мг можно; равные 2 приёма по 37,5 мг этими капсулами не исполнимы. Для 25–50 мг/сут и кратности 1/2 показать диапазон и проверить выбранный вариант; не подменять диапазон автоматически 25 мг. Не открывать/делить капсулу для округления.",
+    "occurrences": [
+      {
+        "id": "C02492",
+        "rid": "preg-renal-start",
+        "path": "rules/preg-renal-start.yaml/output/rounding_or_formulation_rule"
+      }
+    ]
+  },
+  {
+    "text": "Постепенная отмена. Прегабалин: минимум reported_duration; точных дозовых ступеней нет.",
+    "occurrences": [
+      {
+        "id": "C02558",
+        "rid": "preg-taper-limit",
+        "path": "rules/preg-taper-limit.yaml/logic/actions/0"
+      }
+    ]
+  },
+  {
+    "text": "Не создавать расписание −25/−50 мг или процент только из срока. При длительном приёме/высоком риске требуется отдельный план врача. RU-PREG §4.4 с.9 описывает риск синдрома отмены; точные дополнительные ступени/сроки не опубликованы. Приложение Б2 КР ГТР с.77–78 относится к антидепрессантам и не задаёт более медленный протокол прегабалина.",
+    "occurrences": [
+      {
+        "id": "C02559",
+        "rid": "preg-taper-limit",
+        "path": "rules/preg-taper-limit.yaml/logic/actions/1"
+      }
+    ]
+  },
+  {
+    "text": "Коррекция при почечной недостаточности не требуется (§4.2, PDF с.2); CLcr не обязательный ввод.",
+    "occurrences": [
+      {
+        "id": "C02632",
+        "rid": "ser-adult-adjust",
+        "path": "rules/ser-adult-adjust.yaml/applicability/renal_constraints/0"
+      },
+      {
+        "id": "C02757",
+        "rid": "ser-panic-start",
+        "path": "rules/ser-panic-start.yaml/applicability/renal_constraints/0"
+      },
+      {
+        "id": "C02882",
+        "rid": "ser-social-start",
+        "path": "rules/ser-social-start.yaml/applicability/renal_constraints/0"
+      },
+      {
+        "id": "C03004",
+        "rid": "ser-taper-limit",
+        "path": "rules/ser-taper-limit.yaml/applicability/renal_constraints/0"
+      }
+    ]
+  },
+  {
+    "text": "Нужна меньшая доза/кратность без точного числа; стандартная числовая ветка не применяется. При тяжёлом нарушении не применять (§4.2 с.2).",
+    "occurrences": [
+      {
+        "id": "C02633",
+        "rid": "ser-adult-adjust",
+        "path": "rules/ser-adult-adjust.yaml/applicability/hepatic_constraints/0"
+      },
+      {
+        "id": "C02758",
+        "rid": "ser-panic-start",
+        "path": "rules/ser-panic-start.yaml/applicability/hepatic_constraints/0"
+      },
+      {
+        "id": "C02883",
+        "rid": "ser-social-start",
+        "path": "rules/ser-social-start.yaml/applicability/hepatic_constraints/0"
+      },
+      {
+        "id": "C03005",
+        "rid": "ser-taper-limit",
+        "path": "rules/ser-taper-limit.yaml/applicability/hepatic_constraints/0"
+      }
+    ]
+  },
+  {
+    "text": "Мания/гипомания, судороги/неконтролируемая эпилепсия, суицидальный риск, акатизия, риск кровотечения, гипонатремии и удлинения QT: ограничения/наблюдение по инструкции; числовых множителей для них нет.",
+    "occurrences": [
+      {
+        "id": "C02634",
+        "rid": "ser-adult-adjust",
+        "path": "rules/ser-adult-adjust.yaml/applicability/comorbidity_constraints/0"
+      },
+      {
+        "id": "C02759",
+        "rid": "ser-panic-start",
+        "path": "rules/ser-panic-start.yaml/applicability/comorbidity_constraints/0"
+      },
+      {
+        "id": "C02884",
+        "rid": "ser-social-start",
+        "path": "rules/ser-social-start.yaml/applicability/comorbidity_constraints/0"
+      },
+      {
+        "id": "C03006",
+        "rid": "ser-taper-limit",
+        "path": "rules/ser-taper-limit.yaml/applicability/comorbidity_constraints/0"
+      }
+    ]
+  },
+  {
+    "text": "Врач выбрал диагноз, препарат, режим и конкретное действие; числовые условия проверяются по возрасту, форме, печени, текущей дозе и сроку. Это не универсальное подтверждение клинического допуска.",
+    "occurrences": [
+      {
+        "id": "C02639",
+        "rid": "ser-adult-adjust",
+        "path": "rules/ser-adult-adjust.yaml/logic/conditions/0"
+      }
+    ]
+  },
+  {
+    "text": "Начальный этап 25 мг не обрабатывается как обычный шаг +50; использовать соответствующую start-карточку.",
+    "occurrences": [
+      {
+        "id": "C02640",
+        "rid": "ser-adult-adjust",
+        "path": "rules/ser-adult-adjust.yaml/logic/conditions/1"
+      }
+    ]
+  },
+  {
+    "text": "Если врач выбрал повышение, вычислить только опубликованный шаг/интервал/предел. Если действие не выбрано, ответ/переносимость/приём разбираются отдельными полями; неизвестность не разрешает повышение.",
+    "occurrences": [
+      {
+        "id": "C02641",
+        "rid": "ser-adult-adjust",
+        "path": "rules/ser-adult-adjust.yaml/logic/conditions/2"
+      }
+    ]
+  },
+  {
+    "text": "clinician_action=keep: сохранить current_dose; increase: проверить опубликованный шаг/минимальный срок/предел; decrease: точного меньшего шага здесь нет, clinician_choice; unknown/not_chosen: без автоматического изменения.",
+    "occurrences": [
+      {
+        "id": "C02642",
+        "rid": "ser-adult-adjust",
+        "path": "rules/ser-adult-adjust.yaml/logic/actions/0"
+      }
+    ]
+  },
+  {
+    "text": "При выполнении условий допустимый следующий вариант = current_dose + step, только если не превышает maximum и выдержан interval. Если вариант превышает maximum, не округлять до maximum как новой произвольной ступени. Врач решает дальнейшую тактику.",
+    "occurrences": [
+      {
+        "id": "C02643",
+        "rid": "ser-adult-adjust",
+        "path": "rules/ser-adult-adjust.yaml/logic/actions/1"
+      }
+    ]
+  },
+  {
+    "text": "При достаточном эффекте повышение не требуется; при неприемлемой переносимости точная меньшая доза здесь не задана.",
+    "occurrences": [
+      {
+        "id": "C02644",
+        "rid": "ser-adult-adjust",
+        "path": "rules/ser-adult-adjust.yaml/logic/actions/2"
+      }
+    ]
+  },
+  {
+    "text": "Если врач указал дозовое действие напрямую, проверить опубликованные дозу/интервал/предел; не превращать этот выбор в отметку отсутствия всех рисков. При отсутствии выбранного действия использовать отдельные ответ/переносимость/фактический приём.",
+    "occurrences": [
+      {
+        "id": "C02645",
+        "rid": "ser-adult-adjust",
+        "path": "rules/ser-adult-adjust.yaml/logic/actions/3"
+      }
+    ]
+  },
+  {
+    "text": "Источник допускает короче 14 дней, но не задаёт точный срок: clinician_choice без разрешения старта по числу.",
+    "occurrences": [
+      {
+        "id": "C02655",
+        "rid": "ser-adult-adjust",
+        "path": "rules/ser-adult-adjust.yaml/logic/maoi_history_contract/reversible"
+      },
+      {
+        "id": "C02776",
+        "rid": "ser-panic-start",
+        "path": "rules/ser-panic-start.yaml/logic/maoi_history_contract/reversible"
+      },
+      {
+        "id": "C02901",
+        "rid": "ser-social-start",
+        "path": "rules/ser-social-start.yaml/logic/maoi_history_contract/reversible"
+      },
+      {
+        "id": "C03304",
+        "rid": "switch-esc-ser",
+        "path": "rules/switch-esc-ser.yaml/logic/maoi_history_contract/reversible"
+      },
+      {
+        "id": "C03961",
+        "rid": "switch-ser-ago",
+        "path": "rules/switch-ser-ago.yaml/logic/maoi_history_contract/reversible"
+      },
+      {
+        "id": "C04164",
+        "rid": "switch-ser-esc",
+        "path": "rules/switch-ser-esc.yaml/logic/maoi_history_contract/reversible"
+      }
+    ]
+  },
+  {
+    "text": "Золофт: таблетки, покрытые плёночной оболочкой; 50/100 мг",
+    "occurrences": [
+      {
+        "id": "C02672",
+        "rid": "ser-adult-adjust",
+        "path": "rules/ser-adult-adjust.yaml/output/formulation"
+      },
+      {
+        "id": "C02793",
+        "rid": "ser-panic-start",
+        "path": "rules/ser-panic-start.yaml/output/formulation"
+      },
+      {
+        "id": "C02918",
+        "rid": "ser-social-start",
+        "path": "rules/ser-social-start.yaml/output/formulation"
+      },
+      {
+        "id": "C03031",
+        "rid": "ser-taper-limit",
+        "path": "rules/ser-taper-limit.yaml/output/formulation"
+      }
+    ]
+  },
+  {
+    "text": "<18 not adult anxiety/BDR; severe hepatic no; other hepatic lower dose/frequency unspecified; unstable epilepsy avoid; seizures/current mania stop; renal no adjustment; alcohol/grapefruit avoid; akathisia no automatic increase",
+    "occurrences": [
+      {
+        "id": "C02699",
+        "rid": "ser-adult-adjust",
+        "path": "result_contracts.yaml/rules/ser-adult-adjust/source_gates/0/other"
+      },
+      {
+        "id": "C02839",
+        "rid": "ser-panic-start",
+        "path": "result_contracts.yaml/rules/ser-panic-start/source_gates/0/other"
+      },
+      {
+        "id": "C02964",
+        "rid": "ser-social-start",
+        "path": "result_contracts.yaml/rules/ser-social-start/source_gates/0/other"
+      },
+      {
+        "id": "C03361",
+        "rid": "switch-esc-ser",
+        "path": "result_contracts.yaml/rules/switch-esc-ser/source_gates/1/other"
+      },
+      {
+        "id": "C04106",
+        "rid": "switch-ser-ago",
+        "path": "result_contracts.yaml/rules/switch-ser-ago/source_gates/1/other"
+      },
+      {
+        "id": "C04221",
+        "rid": "switch-ser-esc",
+        "path": "result_contracts.yaml/rules/switch-ser-esc/source_gates/1/other"
+      }
+    ]
+  },
+  {
+    "text": "ИМАО и пимозид: противопоказания/интервалы §4.3–4.5; прочие серотонинергические, влияющие на QT/кровотечения — отдельная проверка.",
+    "occurrences": [
+      {
+        "id": "C02760",
+        "rid": "ser-panic-start",
+        "path": "rules/ser-panic-start.yaml/applicability/interacting_drugs/0"
+      },
+      {
+        "id": "C02885",
+        "rid": "ser-social-start",
+        "path": "rules/ser-social-start.yaml/applicability/interacting_drugs/0"
+      }
+    ]
+  },
+  {
+    "text": "Старт start один раз/сут; после interval — after_week. Последующие повышения только по ser-adult-adjust.",
+    "occurrences": [
+      {
+        "id": "C02766",
+        "rid": "ser-panic-start",
+        "path": "rules/ser-panic-start.yaml/logic/actions/0"
+      },
+      {
+        "id": "C02891",
+        "rid": "ser-social-start",
+        "path": "rules/ser-social-start.yaml/logic/actions/0"
+      }
+    ]
+  },
+  {
+    "text": "После первой недели по инструкции; при непереносимости шаг не выполнять автоматически",
+    "occurrences": [
+      {
+        "id": "C02811",
+        "rid": "ser-panic-start",
+        "path": "rules/ser-panic-start.yaml/output/schedule/1/condition_to_proceed"
+      },
+      {
+        "id": "C02936",
+        "rid": "ser-social-start",
+        "path": "rules/ser-social-start.yaml/output/schedule/1/condition_to_proceed"
+      }
+    ]
+  },
+  {
+    "text": "25 мг = равная половина таблетки Золофт 50 мг; разрешено §4.2 с.2. Не переносить делимость на любой дженерик.",
+    "occurrences": [
+      {
+        "id": "C02819",
+        "rid": "ser-panic-start",
+        "path": "rules/ser-panic-start.yaml/output/rounding_or_formulation_rule"
+      },
+      {
+        "id": "C02944",
+        "rid": "ser-social-start",
+        "path": "rules/ser-social-start.yaml/output/rounding_or_formulation_rule"
+      }
+    ]
+  },
+  {
+    "text": "При непереносимых симптомах после уменьшения или прекращения можно рассмотреть возобновление ранее назначенной дозы и последующее более медленное снижение (§4.2). Это решение врача, не обязательное действие.",
+    "occurrences": [
+      {
+        "id": "C03014",
+        "rid": "ser-taper-limit",
+        "path": "rules/ser-taper-limit.yaml/logic/actions/2"
+      }
+    ]
+  },
+  {
+    "text": "Взрослые с самостоятельным депрессивным расстройством; B не применять от 75 лет по ОХЛП.",
+    "occurrences": [
+      {
+        "id": "C03102",
+        "rid": "switch-esc-ago",
+        "path": "rules/switch-esc-ago.yaml/applicability/population_description"
+      },
+      {
+        "id": "C03427",
+        "rid": "switch-parox-ago-selected-example",
+        "path": "rules/switch-parox-ago-selected-example.yaml/applicability/population_description"
+      },
+      {
+        "id": "C03706",
+        "rid": "switch-parox-ago",
+        "path": "rules/switch-parox-ago.yaml/applicability/population_description"
+      },
+      {
+        "id": "C03932",
+        "rid": "switch-ser-ago",
+        "path": "rules/switch-ser-ago.yaml/applicability/population_description"
+      }
+    ]
+  },
+  {
+    "text": "ОХЛП B рекомендует избегать назначения при беременности (§4.6 с.6); отдельное решение врача по A/B, без коэффициента.",
+    "occurrences": [
+      {
+        "id": "C03106",
+        "rid": "switch-esc-ago",
+        "path": "rules/switch-esc-ago.yaml/applicability/pregnancy"
+      },
+      {
+        "id": "C03431",
+        "rid": "switch-parox-ago-selected-example",
+        "path": "rules/switch-parox-ago-selected-example.yaml/applicability/pregnancy"
+      },
+      {
+        "id": "C03710",
+        "rid": "switch-parox-ago",
+        "path": "rules/switch-parox-ago.yaml/applicability/pregnancy"
+      },
+      {
+        "id": "C03936",
+        "rid": "switch-ser-ago",
+        "path": "rules/switch-ser-ago.yaml/applicability/pregnancy"
+      }
+    ]
+  },
+  {
+    "text": "ОХЛП B требует решения прекратить вскармливание или терапию (§4.6 с.6); без коэффициента.",
+    "occurrences": [
+      {
+        "id": "C03107",
+        "rid": "switch-esc-ago",
+        "path": "rules/switch-esc-ago.yaml/applicability/lactation"
+      },
+      {
+        "id": "C03432",
+        "rid": "switch-parox-ago-selected-example",
+        "path": "rules/switch-parox-ago-selected-example.yaml/applicability/lactation"
+      },
+      {
+        "id": "C03711",
+        "rid": "switch-parox-ago",
+        "path": "rules/switch-parox-ago.yaml/applicability/lactation"
+      },
+      {
+        "id": "C03937",
+        "rid": "switch-ser-ago",
+        "path": "rules/switch-ser-ago.yaml/applicability/lactation"
+      }
+    ]
+  },
+  {
+    "text": "RU-ESC §4.2 с.3: CLcr >30 no correction; <30 caution; exactly30 unassigned. Other drug conditions remain separate.",
+    "occurrences": [
+      {
+        "id": "C03108",
+        "rid": "switch-esc-ago",
+        "path": "rules/switch-esc-ago.yaml/applicability/renal_constraints/0"
+      },
+      {
+        "id": "C03285",
+        "rid": "switch-esc-ser",
+        "path": "rules/switch-esc-ser.yaml/applicability/renal_constraints/0"
+      },
+      {
+        "id": "C04145",
+        "rid": "switch-ser-esc",
+        "path": "rules/switch-ser-esc.yaml/applicability/renal_constraints/0"
+      }
+    ]
+  },
+  {
+    "text": "B противопоказан при печеночной недостаточности и АЛТ/АСТ >3 ВГН. До начала печёночные пробы обязательны всем.",
+    "occurrences": [
+      {
+        "id": "C03109",
+        "rid": "switch-esc-ago",
+        "path": "rules/switch-esc-ago.yaml/applicability/hepatic_constraints/0"
+      },
+      {
+        "id": "C03434",
+        "rid": "switch-parox-ago-selected-example",
+        "path": "rules/switch-parox-ago-selected-example.yaml/applicability/hepatic_constraints/0"
+      },
+      {
+        "id": "C03713",
+        "rid": "switch-parox-ago",
+        "path": "rules/switch-parox-ago.yaml/applicability/hepatic_constraints/0"
+      },
+      {
+        "id": "C03939",
+        "rid": "switch-ser-ago",
+        "path": "rules/switch-ser-ago.yaml/applicability/hepatic_constraints/0"
+      }
+    ]
+  },
+  {
+    "text": "B противопоказан с флувоксамином/ципрофлоксацином (сильные CYP1A2-ингибиторы); проверять оба препарата, §4.3–4.5.",
+    "occurrences": [
+      {
+        "id": "C03110",
+        "rid": "switch-esc-ago",
+        "path": "rules/switch-esc-ago.yaml/applicability/interacting_drugs/0"
+      },
+      {
+        "id": "C03436",
+        "rid": "switch-parox-ago-selected-example",
+        "path": "rules/switch-parox-ago-selected-example.yaml/applicability/interacting_drugs/0"
+      },
+      {
+        "id": "C03714",
+        "rid": "switch-parox-ago",
+        "path": "rules/switch-parox-ago.yaml/applicability/interacting_drugs/0"
+      },
+      {
+        "id": "C03940",
+        "rid": "switch-ser-ago",
+        "path": "rules/switch-ser-ago.yaml/applicability/interacting_drugs/0"
+      }
+    ]
+  },
+  {
+    "text": "ОХЛП B прямо разрешает начало с 1-го дня постепенного снижения СИОЗС/СИОЗСН. Это классовое разрешение, применённое к явно указанному СИОЗС A; не исследование каждой пары.",
+    "occurrences": [
+      {
+        "id": "C03111",
+        "rid": "switch-esc-ago",
+        "path": "rules/switch-esc-ago.yaml/applicability/other_conditions/0"
+      },
+      {
+        "id": "C03437",
+        "rid": "switch-parox-ago-selected-example",
+        "path": "rules/switch-parox-ago-selected-example.yaml/applicability/other_conditions/0"
+      },
+      {
+        "id": "C03715",
+        "rid": "switch-parox-ago",
+        "path": "rules/switch-parox-ago.yaml/applicability/other_conditions/0"
+      },
+      {
+        "id": "C03941",
+        "rid": "switch-ser-ago",
+        "path": "rules/switch-ser-ago.yaml/applicability/other_conditions/0"
+      }
+    ]
+  },
+  {
+    "text": "Нет полного обязательного календаря доз A. Нужен выбор темпа врачом, а для пароксетина доступен отдельно маркированный взрослый пример.",
+    "occurrences": [
+      {
+        "id": "C03112",
+        "rid": "switch-esc-ago",
+        "path": "rules/switch-esc-ago.yaml/applicability/other_conditions/1"
+      },
+      {
+        "id": "C03438",
+        "rid": "switch-parox-ago-selected-example",
+        "path": "rules/switch-parox-ago-selected-example.yaml/applicability/other_conditions/1"
+      },
+      {
+        "id": "C03716",
+        "rid": "switch-parox-ago",
+        "path": "rules/switch-parox-ago.yaml/applicability/other_conditions/1"
+      },
+      {
+        "id": "C03942",
+        "rid": "switch-ser-ago",
+        "path": "rules/switch-ser-ago.yaml/applicability/other_conditions/1"
+      }
+    ]
+  },
+  {
+    "text": "Печеночная недостаточность B; АЛТ или АСТ >3 ВГН; противопоказанный ингибитор CYP1A2; возрастная неприменимость; гиперчувствительность.",
+    "occurrences": [
+      {
+        "id": "C03113",
+        "rid": "switch-esc-ago",
+        "path": "rules/switch-esc-ago.yaml/applicability/exclusions/0"
+      },
+      {
+        "id": "C03439",
+        "rid": "switch-parox-ago-selected-example",
+        "path": "rules/switch-parox-ago-selected-example.yaml/applicability/exclusions/0"
+      },
+      {
+        "id": "C03717",
+        "rid": "switch-parox-ago",
+        "path": "rules/switch-parox-ago.yaml/applicability/exclusions/0"
+      },
+      {
+        "id": "C03943",
+        "rid": "switch-ser-ago",
+        "path": "rules/switch-ser-ago.yaml/applicability/exclusions/0"
+      }
+    ]
+  },
+  {
+    "text": "A постепенно снижать по собственной инструкции и выбранному врачом плану.",
+    "occurrences": [
+      {
+        "id": "C03119",
+        "rid": "switch-esc-ago",
+        "path": "rules/switch-esc-ago.yaml/logic/actions/0"
+      },
+      {
+        "id": "C03723",
+        "rid": "switch-parox-ago",
+        "path": "rules/switch-parox-ago.yaml/logic/actions/0"
+      },
+      {
+        "id": "C03949",
+        "rid": "switch-ser-ago",
+        "path": "rules/switch-ser-ago.yaml/logic/actions/0"
+      }
+    ]
+  },
+  {
+    "text": "B можно начать с первого дня снижения A: 25 мг однократно перед сном. Опубликовано разрешение перекрытия; ожидание последней дозы A не требуется этим способом перехода.",
+    "occurrences": [
+      {
+        "id": "C03120",
+        "rid": "switch-esc-ago",
+        "path": "rules/switch-esc-ago.yaml/logic/actions/1"
+      },
+      {
+        "id": "C03724",
+        "rid": "switch-parox-ago",
+        "path": "rules/switch-parox-ago.yaml/logic/actions/1"
+      },
+      {
+        "id": "C03950",
+        "rid": "switch-ser-ago",
+        "path": "rules/switch-ser-ago.yaml/logic/actions/1"
+      }
+    ]
+  },
+  {
+    "text": "Не вычислять универсальный washout из полувыведения. Не применять разрешение к флувоксамину: его сочетание с B противопоказано.",
+    "occurrences": [
+      {
+        "id": "C03121",
+        "rid": "switch-esc-ago",
+        "path": "rules/switch-esc-ago.yaml/logic/actions/2"
+      },
+      {
+        "id": "C03725",
+        "rid": "switch-parox-ago",
+        "path": "rules/switch-parox-ago.yaml/logic/actions/2"
+      },
+      {
+        "id": "C03951",
+        "rid": "switch-ser-ago",
+        "path": "rules/switch-ser-ago.yaml/logic/actions/2"
+      }
+    ]
+  },
+  {
+    "text": "Индивидуальные ступени снижения A, оценка риска отмены и решение о начале B.",
+    "occurrences": [
+      {
+        "id": "C03122",
+        "rid": "switch-esc-ago",
+        "path": "rules/switch-esc-ago.yaml/logic/clinician_choices/0"
+      },
+      {
+        "id": "C03212",
+        "rid": "switch-esc-ago",
+        "path": "rules/switch-esc-ago.yaml/output/clinician_decisions_remaining/0"
+      },
+      {
+        "id": "C03452",
+        "rid": "switch-parox-ago-selected-example",
+        "path": "rules/switch-parox-ago-selected-example.yaml/logic/clinician_choices/0"
+      },
+      {
+        "id": "C03593",
+        "rid": "switch-parox-ago-selected-example",
+        "path": "rules/switch-parox-ago-selected-example.yaml/output/clinician_decisions_remaining/0"
+      },
+      {
+        "id": "C03726",
+        "rid": "switch-parox-ago",
+        "path": "rules/switch-parox-ago.yaml/logic/clinician_choices/0"
+      },
+      {
+        "id": "C03822",
+        "rid": "switch-parox-ago",
+        "path": "rules/switch-parox-ago.yaml/output/clinician_decisions_remaining/0"
+      },
+      {
+        "id": "C03952",
+        "rid": "switch-ser-ago",
+        "path": "rules/switch-ser-ago.yaml/logic/clinician_choices/0"
+      },
+      {
+        "id": "C04059",
+        "rid": "switch-ser-ago",
+        "path": "rules/switch-ser-ago.yaml/output/clinician_decisions_remaining/0"
+      }
+    ]
+  },
+  {
+    "text": "Применимость B и обязательный контроль печёночных проб.",
+    "occurrences": [
+      {
+        "id": "C03123",
+        "rid": "switch-esc-ago",
+        "path": "rules/switch-esc-ago.yaml/logic/clinician_choices/1"
+      },
+      {
+        "id": "C03213",
+        "rid": "switch-esc-ago",
+        "path": "rules/switch-esc-ago.yaml/output/clinician_decisions_remaining/1"
+      },
+      {
+        "id": "C03453",
+        "rid": "switch-parox-ago-selected-example",
+        "path": "rules/switch-parox-ago-selected-example.yaml/logic/clinician_choices/1"
+      },
+      {
+        "id": "C03594",
+        "rid": "switch-parox-ago-selected-example",
+        "path": "rules/switch-parox-ago-selected-example.yaml/output/clinician_decisions_remaining/1"
+      },
+      {
+        "id": "C03727",
+        "rid": "switch-parox-ago",
+        "path": "rules/switch-parox-ago.yaml/logic/clinician_choices/1"
+      },
+      {
+        "id": "C03823",
+        "rid": "switch-parox-ago",
+        "path": "rules/switch-parox-ago.yaml/output/clinician_decisions_remaining/1"
+      },
+      {
+        "id": "C03953",
+        "rid": "switch-ser-ago",
+        "path": "rules/switch-ser-ago.yaml/logic/clinician_choices/1"
+      },
+      {
+        "id": "C04060",
+        "rid": "switch-ser-ago",
+        "path": "rules/switch-ser-ago.yaml/output/clinician_decisions_remaining/1"
+      }
+    ]
+  },
+  {
+    "text": "Опубликованное правило B прямо отсылает к инструкции A. Классовое разрешение СИОЗС применяется к конкретной названной паре; точные дозы/темп A не выводятся из этого разрешения.",
+    "occurrences": [
+      {
+        "id": "C03127",
+        "rid": "switch-esc-ago",
+        "path": "rules/switch-esc-ago.yaml/logic/combination_justification"
+      },
+      {
+        "id": "C03731",
+        "rid": "switch-parox-ago",
+        "path": "rules/switch-parox-ago.yaml/logic/combination_justification"
+      },
+      {
+        "id": "C03957",
+        "rid": "switch-ser-ago",
+        "path": "rules/switch-ser-ago.yaml/logic/combination_justification"
+      }
+    ]
+  },
+  {
+    "text": "Селектра, таблетки 5/10/15/20 мг; зарегистрированная версия 05.11.2025",
+    "occurrences": [
+      {
+        "id": "C03206",
+        "rid": "switch-esc-ago",
+        "path": "rules/switch-esc-ago.yaml/output/formulation/from"
+      }
+    ]
+  },
+  {
+    "text": "Вальдоксан, таблетки 25 мг, покрытые пленочной оболочкой",
+    "occurrences": [
+      {
+        "id": "C03207",
+        "rid": "switch-esc-ago",
+        "path": "rules/switch-esc-ago.yaml/output/formulation/to"
+      },
+      {
+        "id": "C03546",
+        "rid": "switch-parox-ago-selected-example",
+        "path": "rules/switch-parox-ago-selected-example.yaml/output/formulation/to"
+      },
+      {
+        "id": "C03817",
+        "rid": "switch-parox-ago",
+        "path": "rules/switch-parox-ago.yaml/output/formulation/to"
+      },
+      {
+        "id": "C04054",
+        "rid": "switch-ser-ago",
+        "path": "rules/switch-ser-ago.yaml/output/formulation/to"
+      }
+    ]
+  },
+  {
+    "text": "Переход требует расширенной ветки; 5–10 вопросов не обещаны.",
+    "occurrences": [
+      {
+        "id": "C03208",
+        "rid": "switch-esc-ago",
+        "path": "rules/switch-esc-ago.yaml/output/warnings/0"
+      },
+      {
+        "id": "C03589",
+        "rid": "switch-parox-ago-selected-example",
+        "path": "rules/switch-parox-ago-selected-example.yaml/output/warnings/0"
+      },
+      {
+        "id": "C03818",
+        "rid": "switch-parox-ago",
+        "path": "rules/switch-parox-ago.yaml/output/warnings/0"
+      },
+      {
+        "id": "C04055",
+        "rid": "switch-ser-ago",
+        "path": "rules/switch-ser-ago.yaml/output/warnings/0"
+      }
+    ]
+  },
+  {
+    "text": "25 мг B — опубликованный старт, индивидуальный выход только после обязательных данных и плана A.",
+    "occurrences": [
+      {
+        "id": "C03209",
+        "rid": "switch-esc-ago",
+        "path": "rules/switch-esc-ago.yaml/output/warnings/1"
+      },
+      {
+        "id": "C03590",
+        "rid": "switch-parox-ago-selected-example",
+        "path": "rules/switch-parox-ago-selected-example.yaml/output/warnings/1"
+      },
+      {
+        "id": "C03819",
+        "rid": "switch-parox-ago",
+        "path": "rules/switch-parox-ago.yaml/output/warnings/1"
+      },
+      {
+        "id": "C04056",
+        "rid": "switch-ser-ago",
+        "path": "rules/switch-ser-ago.yaml/output/warnings/1"
+      }
+    ]
+  },
+  {
+    "text": "Взрослые; только показание и контекст указанных российских источников.",
+    "occurrences": [
+      {
+        "id": "C03282",
+        "rid": "switch-esc-ser",
+        "path": "rules/switch-esc-ser.yaml/applicability/population_description"
+      },
+      {
+        "id": "C04142",
+        "rid": "switch-ser-esc",
+        "path": "rules/switch-ser-esc.yaml/applicability/population_description"
+      }
+    ]
+  },
+  {
+    "text": "Проверять оба препарата и недавние отмены; ограничения ИМАО по ОХЛП сертралина §4.3/4.5, с.3/7–8.",
+    "occurrences": [
+      {
+        "id": "C03286",
+        "rid": "switch-esc-ser",
+        "path": "rules/switch-esc-ser.yaml/applicability/interacting_drugs/0"
+      },
+      {
+        "id": "C04146",
+        "rid": "switch-ser-esc",
+        "path": "rules/switch-ser-esc.yaml/applicability/interacting_drugs/0"
+      }
+    ]
+  },
+  {
+    "text": "Показание и стратегию выбрал врач; ограничения источника проверяются отдельно.",
+    "occurrences": [
+      {
+        "id": "C03289",
+        "rid": "switch-esc-ser",
+        "path": "rules/switch-esc-ser.yaml/logic/conditions/0"
+      },
+      {
+        "id": "C04149",
+        "rid": "switch-ser-esc",
+        "path": "rules/switch-ser-esc.yaml/logic/conditions/0"
+      }
+    ]
+  },
+  {
+    "text": "Учитывать постепенное прекращение A по российским источникам; точные ступени исходной дозы источник не задаёт.",
+    "occurrences": [
+      {
+        "id": "C03290",
+        "rid": "switch-esc-ser",
+        "path": "rules/switch-esc-ser.yaml/logic/actions/0"
+      },
+      {
+        "id": "C04150",
+        "rid": "switch-ser-esc",
+        "path": "rules/switch-ser-esc.yaml/logic/actions/0"
+      }
+    ]
+  },
+  {
+    "text": "Время начала B и возможность перекрытия не выводить из срока отмены A. Если точного российского правила нет, результат clinician_choice без календаря.",
+    "occurrences": [
+      {
+        "id": "C03291",
+        "rid": "switch-esc-ser",
+        "path": "rules/switch-esc-ser.yaml/logic/actions/1"
+      },
+      {
+        "id": "C04151",
+        "rid": "switch-ser-esc",
+        "path": "rules/switch-ser-esc.yaml/logic/actions/1"
+      }
+    ]
+  },
+  {
+    "text": "Зарубежный direct switch на следующий день исключён из профиля РФ. Российская начальная доза B сама по себе не определяет время перехода.",
+    "occurrences": [
+      {
+        "id": "C03292",
+        "rid": "switch-esc-ser",
+        "path": "rules/switch-esc-ser.yaml/logic/actions/2"
+      },
+      {
+        "id": "C04152",
+        "rid": "switch-ser-esc",
+        "path": "rules/switch-ser-esc.yaml/logic/actions/2"
+      }
+    ]
+  },
+  {
+    "text": "Условия старта и доза B по его применимой инструкции",
+    "occurrences": [
+      {
+        "id": "C03294",
+        "rid": "switch-esc-ser",
+        "path": "rules/switch-esc-ser.yaml/logic/clinician_choices/1"
+      },
+      {
+        "id": "C03342",
+        "rid": "switch-esc-ser",
+        "path": "rules/switch-esc-ser.yaml/output/clinician_decisions_remaining/1"
+      },
+      {
+        "id": "C04154",
+        "rid": "switch-ser-esc",
+        "path": "rules/switch-ser-esc.yaml/logic/clinician_choices/1"
+      },
+      {
+        "id": "C04202",
+        "rid": "switch-ser-esc",
+        "path": "rules/switch-ser-esc.yaml/output/clinician_decisions_remaining/1"
+      }
+    ]
+  },
+  {
+    "text": "Время начала B; точная парная стратегия не завершена",
+    "occurrences": [
+      {
+        "id": "C03295",
+        "rid": "switch-esc-ser",
+        "path": "rules/switch-esc-ser.yaml/logic/clinician_choices/2"
+      },
+      {
+        "id": "C03343",
+        "rid": "switch-esc-ser",
+        "path": "rules/switch-esc-ser.yaml/output/clinician_decisions_remaining/2"
+      },
+      {
+        "id": "C04155",
+        "rid": "switch-ser-esc",
+        "path": "rules/switch-ser-esc.yaml/logic/clinician_choices/2"
+      },
+      {
+        "id": "C04203",
+        "rid": "switch-ser-esc",
+        "path": "rules/switch-ser-esc.yaml/output/clinician_decisions_remaining/2"
+      }
+    ]
+  },
+  {
+    "text": "Приоритет источника решён в пользу РФ; недостающий календарь остаётся пробелом, а не конфликтом выбора юрисдикции.",
+    "occurrences": [
+      {
+        "id": "C03299",
+        "rid": "switch-esc-ser",
+        "path": "rules/switch-esc-ser.yaml/logic/conflicts/0"
+      },
+      {
+        "id": "C04159",
+        "rid": "switch-ser-esc",
+        "path": "rules/switch-ser-esc.yaml/logic/conflicts/0"
+      }
+    ]
+  },
+  {
+    "text": "Независимые правила не образуют автоматически полный клинический календарь.",
+    "occurrences": [
+      {
+        "id": "C03300",
+        "rid": "switch-esc-ser",
+        "path": "rules/switch-esc-ser.yaml/logic/combination_justification"
+      },
+      {
+        "id": "C04160",
+        "rid": "switch-ser-esc",
+        "path": "rules/switch-ser-esc.yaml/logic/combination_justification"
+      }
+    ]
+  },
+  {
+    "text": "Shared patient MAOI history; RU-SER is B and its own §4.3/4.5 interval applies only to SER. RU-ESC is A and has separate §4.5 intervals. No history interval licenses an SSRI→SSRI calendar or overlap.",
+    "occurrences": [
+      {
+        "id": "C03317",
+        "rid": "switch-esc-ser",
+        "path": "rules/switch-esc-ser.yaml/logic/maoi_history_contract/scope"
+      }
+    ]
+  },
+  {
+    "text": "ESC-specific history; not a pair switch washout",
+    "occurrences": [
+      {
+        "id": "C03333",
+        "rid": "switch-esc-ser",
+        "path": "rules/switch-esc-ser.yaml/logic/additional_maoi_history_basis/scope"
+      },
+      {
+        "id": "C04193",
+        "rid": "switch-ser-esc",
+        "path": "rules/switch-ser-esc.yaml/logic/additional_maoi_history_basis/scope"
+      }
+    ]
+  },
+  {
+    "text": "Селектра, таблетки 5/10/15/20 мг, ОХЛП 05.11.2025",
+    "occurrences": [
+      {
+        "id": "C03337",
+        "rid": "switch-esc-ser",
+        "path": "rules/switch-esc-ser.yaml/output/formulation/from"
+      },
+      {
+        "id": "C04198",
+        "rid": "switch-ser-esc",
+        "path": "rules/switch-ser-esc.yaml/output/formulation/to"
+      }
+    ]
+  },
+  {
+    "text": "Частичное опубликованное правило; не индивидуальное назначение.",
+    "occurrences": [
+      {
+        "id": "C03339",
+        "rid": "switch-esc-ser",
+        "path": "rules/switch-esc-ser.yaml/output/warnings/0"
+      },
+      {
+        "id": "C04199",
+        "rid": "switch-ser-esc",
+        "path": "rules/switch-ser-esc.yaml/output/warnings/0"
+      }
+    ]
+  },
+  {
+    "text": "Врач выбрал опубликованный взрослый пример отмены; исходная доза пароксетина именно 40 мг/сут, разрешённая форма подтверждена.",
+    "occurrences": [
+      {
+        "id": "C03444",
+        "rid": "switch-parox-ago-selected-example",
+        "path": "rules/switch-parox-ago-selected-example.yaml/logic/conditions/0"
+      }
+    ]
+  },
+  {
+    "text": "Показание БДР F32/F33, применимость агомелатина проверена отдельно, включая АЛТ и АСТ.",
+    "occurrences": [
+      {
+        "id": "C03445",
+        "rid": "switch-parox-ago-selected-example",
+        "path": "rules/switch-parox-ago-selected-example.yaml/logic/conditions/1"
+      }
+    ]
+  },
+  {
+    "text": "Нет тяжёлых симптомов/индивидуального основания замедлить этот пример; в противном случае календарь прекращает быть воспроизводимым этим модулем.",
+    "occurrences": [
+      {
+        "id": "C03446",
+        "rid": "switch-parox-ago-selected-example",
+        "path": "rules/switch-parox-ago-selected-example.yaml/logic/conditions/2"
+      }
+    ]
+  },
+  {
+    "text": "День 1: пароксетин 30 мг/сут и агомелатин 25 мг перед сном.",
+    "occurrences": [
+      {
+        "id": "C03447",
+        "rid": "switch-parox-ago-selected-example",
+        "path": "rules/switch-parox-ago-selected-example.yaml/logic/actions/0"
+      }
+    ]
+  },
+  {
+    "text": "После недели на 30, день 8: пароксетин 20 мг/сут; агомелатин 25 мг перед сном.",
+    "occurrences": [
+      {
+        "id": "C03448",
+        "rid": "switch-parox-ago-selected-example",
+        "path": "rules/switch-parox-ago-selected-example.yaml/logic/actions/1"
+      }
+    ]
+  },
+  {
+    "text": "После недели на 20, день 15: прекратить пароксетин; агомелатин остаётся 25 мг до отдельного решения врача.",
+    "occurrences": [
+      {
+        "id": "C03449",
+        "rid": "switch-parox-ago-selected-example",
+        "path": "rules/switch-parox-ago-selected-example.yaml/logic/actions/2"
+      }
+    ]
+  },
+  {
+    "text": "Повышение B до 50 через 2 недели не автоматический этап этого примера. Симптомы отмены/неприменимость прекращают автоматический дальнейший календарь.",
+    "occurrences": [
+      {
+        "id": "C03450",
+        "rid": "switch-parox-ago-selected-example",
+        "path": "rules/switch-parox-ago-selected-example.yaml/logic/actions/3"
+      }
+    ]
+  },
+  {
+    "text": "RU-AGO §4.2 с.2 прямо разрешает начало в первый день постепенного снижения СИОЗС/СИОЗСН и отсылает к инструкции A. RU-PAROX §4.2 с.3–4 даёт выбранный пример отмены. Это источниковая композиция, не испытанный парный протокол; opt-in только выбирает пример.",
+    "occurrences": [
+      {
+        "id": "C03457",
+        "rid": "switch-parox-ago-selected-example",
+        "path": "rules/switch-parox-ago-selected-example.yaml/logic/combination_justification"
+      }
+    ]
+  },
+  {
+    "text": "Medication-history applicability of the identified A source; not an A→AGO washout. B overlap is independently bound to RU-AGO §4.2.",
+    "occurrences": [
+      {
+        "id": "C03473",
+        "rid": "switch-parox-ago-selected-example",
+        "path": "rules/switch-parox-ago-selected-example.yaml/logic/maoi_history_contract/scope"
+      },
+      {
+        "id": "C03747",
+        "rid": "switch-parox-ago",
+        "path": "rules/switch-parox-ago.yaml/logic/maoi_history_contract/scope"
+      },
+      {
+        "id": "C03974",
+        "rid": "switch-ser-ago",
+        "path": "rules/switch-ser-ago.yaml/logic/maoi_history_contract/scope"
+      }
+    ]
+  },
+  {
+    "text": "ago-depression-start; all agomelatine_conditions mandatory",
+    "occurrences": [
+      {
+        "id": "C03539",
+        "rid": "switch-parox-ago-selected-example",
+        "path": "rules/switch-parox-ago-selected-example.yaml/logic/component_constraints/B"
+      }
+    ]
+  },
+  {
+    "text": "current_dose=40 mg/day; Reksetin 20 mg; normal assessed hepatic/renal categories; no current interacting contraindicated medicine",
+    "occurrences": [
+      {
+        "id": "C03540",
+        "rid": "switch-parox-ago-selected-example",
+        "path": "rules/switch-parox-ago-selected-example.yaml/logic/component_constraints/baseline_scope"
+      }
+    ]
+  },
+  {
+    "text": "Врач сохранил выбранный пример и подтвердил применимость; нет основания замедлить/остановить.",
+    "occurrences": [
+      {
+        "id": "C03556",
+        "rid": "switch-parox-ago-selected-example",
+        "path": "rules/switch-parox-ago-selected-example.yaml/output/schedule/0/condition_to_proceed"
+      },
+      {
+        "id": "C03570",
+        "rid": "switch-parox-ago-selected-example",
+        "path": "rules/switch-parox-ago-selected-example.yaml/output/schedule/1/condition_to_proceed"
+      },
+      {
+        "id": "C03584",
+        "rid": "switch-parox-ago-selected-example",
+        "path": "rules/switch-parox-ago-selected-example.yaml/output/schedule/2/condition_to_proceed"
+      }
+    ]
+  },
+  {
+    "text": "Симптомы отмены A -> врач оценивает возврат прежней дозы и более медленное снижение; неподтвержденные входы -> не выполнять следующий этап.",
+    "occurrences": [
+      {
+        "id": "C03557",
+        "rid": "switch-parox-ago-selected-example",
+        "path": "rules/switch-parox-ago-selected-example.yaml/output/schedule/0/condition_to_hold"
+      },
+      {
+        "id": "C03571",
+        "rid": "switch-parox-ago-selected-example",
+        "path": "rules/switch-parox-ago-selected-example.yaml/output/schedule/1/condition_to_hold"
+      },
+      {
+        "id": "C03585",
+        "rid": "switch-parox-ago-selected-example",
+        "path": "rules/switch-parox-ago-selected-example.yaml/output/schedule/2/condition_to_hold"
+      }
+    ]
+  },
+  {
+    "text": "Признаки поражения печени B, АЛТ/АСТ >3 ВГН или новая мания -> немедленно прекратить B по RU-AGO §4.4 с.4; календарь A пересматривает врач.",
+    "occurrences": [
+      {
+        "id": "C03558",
+        "rid": "switch-parox-ago-selected-example",
+        "path": "rules/switch-parox-ago-selected-example.yaml/output/schedule/0/condition_to_stop"
+      },
+      {
+        "id": "C03572",
+        "rid": "switch-parox-ago-selected-example",
+        "path": "rules/switch-parox-ago-selected-example.yaml/output/schedule/1/condition_to_stop"
+      },
+      {
+        "id": "C03586",
+        "rid": "switch-parox-ago-selected-example",
+        "path": "rules/switch-parox-ago-selected-example.yaml/output/schedule/2/condition_to_stop"
+      }
+    ]
+  },
+  {
+    "text": "Средняя/тяжёлая почечная недостаточность B требует осторожности, без отдельного числа.",
+    "occurrences": [
+      {
+        "id": "C03712",
+        "rid": "switch-parox-ago",
+        "path": "rules/switch-parox-ago.yaml/applicability/renal_constraints/0"
+      },
+      {
+        "id": "C03938",
+        "rid": "switch-ser-ago",
+        "path": "rules/switch-ser-ago.yaml/applicability/renal_constraints/0"
+      }
+    ]
+  },
+  {
+    "text": "Золофт, таблетки 50/100 мг; 50 мг делится на равные дозы",
+    "occurrences": [
+      {
+        "id": "C04053",
+        "rid": "switch-ser-ago",
+        "path": "rules/switch-ser-ago.yaml/output/formulation/from"
+      }
+    ]
+  },
+  {
+    "text": "Shared patient MAOI history; RU-SER is A and its own §4.3/4.5 interval applies only to SER. RU-ESC is B and has separate §4.5 intervals. No history interval licenses an SSRI→SSRI calendar or overlap.",
+    "occurrences": [
+      {
+        "id": "C04177",
+        "rid": "switch-ser-esc",
+        "path": "rules/switch-ser-esc.yaml/logic/maoi_history_contract/scope"
+      }
+    ]
+  },
+  {
+    "text": "Беременность/предполагаемая беременность противопоказаны, §4.3.",
+    "occurrences": [
+      {
+        "id": "C04280",
+        "rid": "venla-xr-gad-start",
+        "path": "rules/venla-xr-gad-start.yaml/applicability/pregnancy"
+      },
+      {
+        "id": "C04419",
+        "rid": "venla-xr-panic-form-limit",
+        "path": "rules/venla-xr-panic-form-limit.yaml/applicability/pregnancy"
+      },
+      {
+        "id": "C04554",
+        "rid": "venla-xr-social-start",
+        "path": "rules/venla-xr-social-start.yaml/applicability/pregnancy"
+      }
+    ]
+  },
+  {
+    "text": "Источник XR: абсолютная СКФ >30 мл/мин без коррекции; 10–30 снижение на 50%; <10 не рекомендуется/противопоказание. Нормированную eGFR не подставлять.",
+    "occurrences": [
+      {
+        "id": "C04282",
+        "rid": "venla-xr-gad-start",
+        "path": "rules/venla-xr-gad-start.yaml/applicability/renal_constraints/0"
+      },
+      {
+        "id": "C04421",
+        "rid": "venla-xr-panic-form-limit",
+        "path": "rules/venla-xr-panic-form-limit.yaml/applicability/renal_constraints/0"
+      },
+      {
+        "id": "C04556",
+        "rid": "venla-xr-social-start",
+        "path": "rules/venla-xr-social-start.yaml/applicability/renal_constraints/0"
+      }
+    ]
+  },
+  {
+    "text": "Лёгкая/умеренная: рассмотреть -50%; тяжёлая не рекомендуется; §4.3 ПВ >18 с. Не выводить категорию из одного анализа.",
+    "occurrences": [
+      {
+        "id": "C04283",
+        "rid": "venla-xr-gad-start",
+        "path": "rules/venla-xr-gad-start.yaml/applicability/hepatic_constraints/0"
+      },
+      {
+        "id": "C04422",
+        "rid": "venla-xr-panic-form-limit",
+        "path": "rules/venla-xr-panic-form-limit.yaml/applicability/hepatic_constraints/0"
+      },
+      {
+        "id": "C04557",
+        "rid": "venla-xr-social-start",
+        "path": "rules/venla-xr-social-start.yaml/applicability/hepatic_constraints/0"
+      }
+    ]
+  },
+  {
+    "text": "ИМАО §4.3–4.5; список и даты отмены при необходимости отдельно.",
+    "occurrences": [
+      {
+        "id": "C04284",
+        "rid": "venla-xr-gad-start",
+        "path": "rules/venla-xr-gad-start.yaml/applicability/interacting_drugs/0"
+      },
+      {
+        "id": "C04423",
+        "rid": "venla-xr-panic-form-limit",
+        "path": "rules/venla-xr-panic-form-limit.yaml/applicability/interacting_drugs/0"
+      },
+      {
+        "id": "C04558",
+        "rid": "venla-xr-social-start",
+        "path": "rules/venla-xr-social-start.yaml/applicability/interacting_drugs/0"
+      }
+    ]
+  },
+  {
+    "text": "75 мг один раз в сутки с пищей, целая капсула.",
+    "occurrences": [
+      {
+        "id": "C04288",
+        "rid": "venla-xr-gad-start",
+        "path": "rules/venla-xr-gad-start.yaml/logic/actions/0"
+      },
+      {
+        "id": "C04562",
+        "rid": "venla-xr-social-start",
+        "path": "rules/venla-xr-social-start.yaml/logic/actions/0"
+      }
+    ]
+  },
+  {
+    "text": "При недостаточном ответе врач может повысить до 225; между повышениями не менее 2 недель. Фиксированного шага +75 при этих показаниях здесь нет.",
+    "occurrences": [
+      {
+        "id": "C04289",
+        "rid": "venla-xr-gad-start",
+        "path": "rules/venla-xr-gad-start.yaml/logic/actions/1"
+      },
+      {
+        "id": "C04563",
+        "rid": "venla-xr-social-start",
+        "path": "rules/venla-xr-social-start.yaml/logic/actions/1"
+      }
+    ]
+  },
+  {
+    "text": "При социальной тревоге не доказана дополнительная польза более высокой дозы; рассматривать индивидуально.",
+    "occurrences": [
+      {
+        "id": "C04290",
+        "rid": "venla-xr-gad-start",
+        "path": "rules/venla-xr-gad-start.yaml/logic/actions/2"
+      },
+      {
+        "id": "C04564",
+        "rid": "venla-xr-social-start",
+        "path": "rules/venla-xr-social-start.yaml/logic/actions/2"
+      }
+    ]
+  },
+  {
+    "text": "Органную поправку не умножать на другую; 37,5 мг XR этой формой не обеспечиваются.",
+    "occurrences": [
+      {
+        "id": "C04291",
+        "rid": "venla-xr-gad-start",
+        "path": "rules/venla-xr-gad-start.yaml/logic/actions/3"
+      },
+      {
+        "id": "C04565",
+        "rid": "venla-xr-social-start",
+        "path": "rules/venla-xr-social-start.yaml/logic/actions/3"
+      }
+    ]
+  },
+  {
+    "text": "Период может быть короче 14 дней, точный не извлечён: clinician_choice.",
+    "occurrences": [
+      {
+        "id": "C04300",
+        "rid": "venla-xr-gad-start",
+        "path": "rules/venla-xr-gad-start.yaml/logic/maoi_history_contract/reversible"
+      },
+      {
+        "id": "C04437",
+        "rid": "venla-xr-panic-form-limit",
+        "path": "rules/venla-xr-panic-form-limit.yaml/logic/maoi_history_contract/reversible"
+      },
+      {
+        "id": "C04574",
+        "rid": "venla-xr-social-start",
+        "path": "rules/venla-xr-social-start.yaml/logic/maoi_history_contract/reversible"
+      }
+    ]
+  },
+  {
+    "text": "Велаксин, капсулы пролонгированного высвобождения 75/150 мг",
+    "occurrences": [
+      {
+        "id": "C04314",
+        "rid": "venla-xr-gad-start",
+        "path": "rules/venla-xr-gad-start.yaml/output/formulation"
+      },
+      {
+        "id": "C04588",
+        "rid": "venla-xr-social-start",
+        "path": "rules/venla-xr-social-start.yaml/output/formulation"
+      }
+    ]
+  },
+  {
+    "text": "<18 exclude; absolute GFR <10 contraindicated; 10..30 reduced by 50%; >30 unchanged; hepatic mild/moderate consider 50%; severe contraindicated; simultaneous modifiers no product; haemodialysis separate; XR 75/150 cannot realize 37.5; whole capsule with food",
+    "occurrences": [
+      {
+        "id": "C04359",
+        "rid": "venla-xr-gad-start",
+        "path": "result_contracts.yaml/rules/venla-xr-gad-start/source_gates/0/other"
+      },
+      {
+        "id": "C04496",
+        "rid": "venla-xr-panic-form-limit",
+        "path": "result_contracts.yaml/rules/venla-xr-panic-form-limit/source_gates/0/other"
+      },
+      {
+        "id": "C04633",
+        "rid": "venla-xr-social-start",
+        "path": "result_contracts.yaml/rules/venla-xr-social-start/source_gates/0/other"
+      }
+    ]
+  },
+  {
+    "text": "Опубликовано 37,5 мг/сут 7 дней, затем 75 мг/сут.",
+    "occurrences": [
+      {
+        "id": "C04427",
+        "rid": "venla-xr-panic-form-limit",
+        "path": "rules/venla-xr-panic-form-limit.yaml/logic/actions/0"
+      }
+    ]
+  },
+  {
+    "text": "Проверенный продукт имеет только XR 75/150 и запрещает делить капсулу. Нужна другая подтверждённая форма XR 37,5; IR 37,5 не подставляется.",
+    "occurrences": [
+      {
+        "id": "C04428",
+        "rid": "venla-xr-panic-form-limit",
+        "path": "rules/venla-xr-panic-form-limit.yaml/logic/actions/1"
+      }
+    ]
+  },
+  {
+    "text": "Велаксин, XR 75/150 мг; 37,5 мг XR в этой форме отсутствует",
+    "occurrences": [
+      {
+        "id": "C04451",
+        "rid": "venla-xr-panic-form-limit",
+        "path": "rules/venla-xr-panic-form-limit.yaml/output/formulation"
+      }
+    ]
+  },
+  {
+    "text": "Отдельная применимость по §4.6, без числового коэффициента.",
+    "occurrences": [
+      {
+        "id": "C04663",
+        "rid": "venla-xr-taper-limit",
+        "path": "rules/venla-xr-taper-limit.yaml/applicability/pregnancy"
+      },
+      {
+        "id": "C04664",
+        "rid": "venla-xr-taper-limit",
+        "path": "rules/venla-xr-taper-limit.yaml/applicability/lactation"
+      }
+    ]
+  },
+  {
+    "text": "Снижать постепенно не менее 1–2 недель; некоторым нужны месяцы и более, по дозе/длительности/чувствительности.",
+    "occurrences": [
+      {
+        "id": "C04668",
+        "rid": "venla-xr-taper-limit",
+        "path": "rules/venla-xr-taper-limit.yaml/logic/actions/0"
+      }
+    ]
+  },
+  {
+    "text": "Выраженные симптомы: рассмотреть прежнюю дозу, затем медленнее. Точные ступени не опубликованы. Не применять срок отмены IR к XR автоматически.",
+    "occurrences": [
+      {
+        "id": "C04669",
+        "rid": "venla-xr-taper-limit",
+        "path": "rules/venla-xr-taper-limit.yaml/logic/actions/1"
+      }
+    ]
+  }
+]

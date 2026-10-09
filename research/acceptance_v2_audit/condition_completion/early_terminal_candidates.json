@@ -1,0 +1,2799 @@
+[
+  {
+    "rule_id": "ago-depression-start",
+    "case_id": "ago-depression-start--ALT_ratio-ongoing-above3",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "input": "ALT_ratio",
+      "operator": ">",
+      "value": 3,
+      "source_ref": "RU-AGO",
+      "source_locator": "§4.4 с.4, прекращение лечения при АЛТ или АСТ >3 ВГН; регулярные пробы до нормы"
+    },
+    "reason_ids": null,
+    "decisive_fact_candidate": "ALT_ratio",
+    "asked_after_candidate": [
+      "AST_ratio",
+      "renal_state",
+      "elderly_population",
+      "galactose_intolerance",
+      "complete_lactase_deficiency",
+      "glucose_galactose_malabsorption",
+      "liver_injury_signs",
+      "transaminases_rising",
+      "overweight_obesity",
+      "fatty_liver",
+      "diabetes",
+      "alcohol_abuse",
+      "mania_symptoms"
+    ],
+    "source_actions": null,
+    "context": {
+      "diagnosis": "F32",
+      "drug": "агомелатин",
+      "mode": "start",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "ongoing"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "explicit_treatment_phase",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "ago-depression-start",
+    "case_id": "ago-depression-start--AST_ratio-ongoing-above3",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "input": "AST_ratio",
+      "operator": ">",
+      "value": 3,
+      "source_ref": "RU-AGO",
+      "source_locator": "§4.4 с.4, прекращение лечения при АЛТ или АСТ >3 ВГН; регулярные пробы до нормы"
+    },
+    "reason_ids": null,
+    "decisive_fact_candidate": "AST_ratio",
+    "asked_after_candidate": [
+      "renal_state",
+      "elderly_population",
+      "galactose_intolerance",
+      "complete_lactase_deficiency",
+      "glucose_galactose_malabsorption",
+      "liver_injury_signs",
+      "transaminases_rising",
+      "overweight_obesity",
+      "fatty_liver",
+      "diabetes",
+      "alcohol_abuse",
+      "mania_symptoms"
+    ],
+    "source_actions": null,
+    "context": {
+      "diagnosis": "F32",
+      "drug": "агомелатин",
+      "mode": "start",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "ongoing"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "explicit_treatment_phase",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "ago-gad-start",
+    "case_id": "ago-gad-start--ALT_ratio-ongoing-above3",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "input": "ALT_ratio",
+      "operator": ">",
+      "value": 3,
+      "source_ref": "RU-AGO",
+      "source_locator": "§4.4 с.4, прекращение лечения при АЛТ или АСТ >3 ВГН; регулярные пробы до нормы"
+    },
+    "reason_ids": null,
+    "decisive_fact_candidate": "ALT_ratio",
+    "asked_after_candidate": [
+      "AST_ratio",
+      "renal_state",
+      "elderly_population",
+      "galactose_intolerance",
+      "complete_lactase_deficiency",
+      "glucose_galactose_malabsorption",
+      "liver_injury_signs",
+      "transaminases_rising",
+      "overweight_obesity",
+      "fatty_liver",
+      "diabetes",
+      "alcohol_abuse",
+      "mania_symptoms"
+    ],
+    "source_actions": null,
+    "context": {
+      "diagnosis": "F41.1",
+      "drug": "агомелатин",
+      "mode": "start",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "ongoing"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "explicit_treatment_phase",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "ago-gad-start",
+    "case_id": "ago-gad-start--AST_ratio-ongoing-above3",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "input": "AST_ratio",
+      "operator": ">",
+      "value": 3,
+      "source_ref": "RU-AGO",
+      "source_locator": "§4.4 с.4, прекращение лечения при АЛТ или АСТ >3 ВГН; регулярные пробы до нормы"
+    },
+    "reason_ids": null,
+    "decisive_fact_candidate": "AST_ratio",
+    "asked_after_candidate": [
+      "renal_state",
+      "elderly_population",
+      "galactose_intolerance",
+      "complete_lactase_deficiency",
+      "glucose_galactose_malabsorption",
+      "liver_injury_signs",
+      "transaminases_rising",
+      "overweight_obesity",
+      "fatty_liver",
+      "diabetes",
+      "alcohol_abuse",
+      "mania_symptoms"
+    ],
+    "source_actions": null,
+    "context": {
+      "diagnosis": "F41.1",
+      "drug": "агомелатин",
+      "mode": "start",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "ongoing"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "explicit_treatment_phase",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "esc-adult-adjust",
+    "case_id": "esc-adult-adjust--current-mania_symptoms-stop",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "source_ref": "RU-ESC",
+      "source_locator": "§4.4 с.4–6",
+      "input": "mania_symptoms"
+    },
+    "reason_ids": null,
+    "decisive_fact_candidate": "mania_symptoms",
+    "asked_after_candidate": [
+      "arrhythmia_signs",
+      "serotonin_syndrome_signs"
+    ],
+    "source_actions": null,
+    "context": {
+      "diagnosis": "F41.1",
+      "drug": "эсциталопрам",
+      "mode": "adjust",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "ongoing"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "explicit_treatment_phase",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "esc-adult-adjust",
+    "case_id": "esc-adult-adjust--current-arrhythmia_signs-stop",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "source_ref": "RU-ESC",
+      "source_locator": "§4.4 с.4–6",
+      "input": "arrhythmia_signs"
+    },
+    "reason_ids": null,
+    "decisive_fact_candidate": "arrhythmia_signs",
+    "asked_after_candidate": [
+      "serotonin_syndrome_signs"
+    ],
+    "source_actions": [
+      {
+        "action": "discontinue_ESC",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.6"
+      },
+      {
+        "action": "obtain_ECG",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.6"
+      }
+    ],
+    "context": {
+      "diagnosis": "F41.1",
+      "drug": "эсциталопрам",
+      "mode": "adjust",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "ongoing"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "explicit_treatment_phase",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "esc-cyp2c19-start",
+    "case_id": "esc-cyp2c19-start--current-mania_symptoms-stop",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "source_ref": "RU-ESC",
+      "source_locator": "§4.4 с.4–6",
+      "input": "mania_symptoms"
+    },
+    "reason_ids": null,
+    "decisive_fact_candidate": "mania_symptoms",
+    "asked_after_candidate": [
+      "arrhythmia_signs",
+      "serotonin_syndrome_signs",
+      "coronary_disease",
+      "electrolyte_disturbance"
+    ],
+    "source_actions": null,
+    "context": {
+      "diagnosis": "F41.1",
+      "drug": "эсциталопрам",
+      "mode": "start",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "ongoing"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "explicit_treatment_phase",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "esc-cyp2c19-start",
+    "case_id": "esc-cyp2c19-start--current-arrhythmia_signs-stop",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "source_ref": "RU-ESC",
+      "source_locator": "§4.4 с.4–6",
+      "input": "arrhythmia_signs"
+    },
+    "reason_ids": null,
+    "decisive_fact_candidate": "arrhythmia_signs",
+    "asked_after_candidate": [
+      "serotonin_syndrome_signs",
+      "coronary_disease",
+      "electrolyte_disturbance"
+    ],
+    "source_actions": [
+      {
+        "action": "discontinue_ESC",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.6"
+      },
+      {
+        "action": "obtain_ECG",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.6"
+      }
+    ],
+    "context": {
+      "diagnosis": "F41.1",
+      "drug": "эсциталопрам",
+      "mode": "start",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "ongoing"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "explicit_treatment_phase",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "esc-cyp2c19-start",
+    "case_id": "esc-cyp2c19-start--current-serotonin_syndrome_signs-stop",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "source_ref": "RU-ESC",
+      "source_locator": "§4.4 с.4–6",
+      "input": "serotonin_syndrome_signs"
+    },
+    "reason_ids": null,
+    "decisive_fact_candidate": "serotonin_syndrome_signs",
+    "asked_after_candidate": [
+      "coronary_disease",
+      "electrolyte_disturbance"
+    ],
+    "source_actions": [
+      {
+        "action": "immediately_discontinue_SSRI_and_current_serotonergic_drugs",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.6"
+      },
+      {
+        "action": "start_symptomatic_treatment_by_clinician",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.6",
+        "automatic_medication_or_dose": null
+      }
+    ],
+    "context": {
+      "diagnosis": "F41.1",
+      "drug": "эсциталопрам",
+      "mode": "start",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "ongoing"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "explicit_treatment_phase",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "esc-elderly-start",
+    "case_id": "esc-elderly-start--current-mania_symptoms-stop",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "source_ref": "RU-ESC",
+      "source_locator": "§4.4 с.4–6",
+      "input": "mania_symptoms"
+    },
+    "reason_ids": null,
+    "decisive_fact_candidate": "mania_symptoms",
+    "asked_after_candidate": [
+      "arrhythmia_signs",
+      "serotonin_syndrome_signs",
+      "coronary_disease",
+      "electrolyte_disturbance"
+    ],
+    "source_actions": null,
+    "context": {
+      "diagnosis": "F41.1",
+      "drug": "эсциталопрам",
+      "mode": "start",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "ongoing"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "explicit_treatment_phase",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "esc-elderly-start",
+    "case_id": "esc-elderly-start--current-arrhythmia_signs-stop",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "source_ref": "RU-ESC",
+      "source_locator": "§4.4 с.4–6",
+      "input": "arrhythmia_signs"
+    },
+    "reason_ids": null,
+    "decisive_fact_candidate": "arrhythmia_signs",
+    "asked_after_candidate": [
+      "serotonin_syndrome_signs",
+      "coronary_disease",
+      "electrolyte_disturbance"
+    ],
+    "source_actions": [
+      {
+        "action": "discontinue_ESC",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.6"
+      },
+      {
+        "action": "obtain_ECG",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.6"
+      }
+    ],
+    "context": {
+      "diagnosis": "F41.1",
+      "drug": "эсциталопрам",
+      "mode": "start",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "ongoing"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "explicit_treatment_phase",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "esc-elderly-start",
+    "case_id": "esc-elderly-start--current-serotonin_syndrome_signs-stop",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "source_ref": "RU-ESC",
+      "source_locator": "§4.4 с.4–6",
+      "input": "serotonin_syndrome_signs"
+    },
+    "reason_ids": null,
+    "decisive_fact_candidate": "serotonin_syndrome_signs",
+    "asked_after_candidate": [
+      "coronary_disease",
+      "electrolyte_disturbance"
+    ],
+    "source_actions": [
+      {
+        "action": "immediately_discontinue_SSRI_and_current_serotonergic_drugs",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.6"
+      },
+      {
+        "action": "start_symptomatic_treatment_by_clinician",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.6",
+        "automatic_medication_or_dose": null
+      }
+    ],
+    "context": {
+      "diagnosis": "F41.1",
+      "drug": "эсциталопрам",
+      "mode": "start",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "ongoing"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "explicit_treatment_phase",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "esc-gad-start",
+    "case_id": "esc-gad-start--current-mania_symptoms-stop",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "source_ref": "RU-ESC",
+      "source_locator": "§4.4 с.4–6",
+      "input": "mania_symptoms"
+    },
+    "reason_ids": null,
+    "decisive_fact_candidate": "mania_symptoms",
+    "asked_after_candidate": [
+      "arrhythmia_signs",
+      "serotonin_syndrome_signs",
+      "coronary_disease",
+      "electrolyte_disturbance"
+    ],
+    "source_actions": null,
+    "context": {
+      "diagnosis": "F41.1",
+      "drug": "эсциталопрам",
+      "mode": "start",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "ongoing"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "explicit_treatment_phase",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "esc-gad-start",
+    "case_id": "esc-gad-start--current-arrhythmia_signs-stop",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "source_ref": "RU-ESC",
+      "source_locator": "§4.4 с.4–6",
+      "input": "arrhythmia_signs"
+    },
+    "reason_ids": null,
+    "decisive_fact_candidate": "arrhythmia_signs",
+    "asked_after_candidate": [
+      "serotonin_syndrome_signs",
+      "coronary_disease",
+      "electrolyte_disturbance"
+    ],
+    "source_actions": [
+      {
+        "action": "discontinue_ESC",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.6"
+      },
+      {
+        "action": "obtain_ECG",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.6"
+      }
+    ],
+    "context": {
+      "diagnosis": "F41.1",
+      "drug": "эсциталопрам",
+      "mode": "start",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "ongoing"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "explicit_treatment_phase",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "esc-gad-start",
+    "case_id": "esc-gad-start--current-serotonin_syndrome_signs-stop",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "source_ref": "RU-ESC",
+      "source_locator": "§4.4 с.4–6",
+      "input": "serotonin_syndrome_signs"
+    },
+    "reason_ids": null,
+    "decisive_fact_candidate": "serotonin_syndrome_signs",
+    "asked_after_candidate": [
+      "coronary_disease",
+      "electrolyte_disturbance"
+    ],
+    "source_actions": [
+      {
+        "action": "immediately_discontinue_SSRI_and_current_serotonergic_drugs",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.6"
+      },
+      {
+        "action": "start_symptomatic_treatment_by_clinician",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.6",
+        "automatic_medication_or_dose": null
+      }
+    ],
+    "context": {
+      "diagnosis": "F41.1",
+      "drug": "эсциталопрам",
+      "mode": "start",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "ongoing"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "explicit_treatment_phase",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "esc-hepatic-start",
+    "case_id": "esc-hepatic-start--current-mania_symptoms-stop",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "source_ref": "RU-ESC",
+      "source_locator": "§4.4 с.4–6",
+      "input": "mania_symptoms"
+    },
+    "reason_ids": null,
+    "decisive_fact_candidate": "mania_symptoms",
+    "asked_after_candidate": [
+      "arrhythmia_signs",
+      "serotonin_syndrome_signs",
+      "coronary_disease",
+      "electrolyte_disturbance"
+    ],
+    "source_actions": null,
+    "context": {
+      "diagnosis": "F41.1",
+      "drug": "эсциталопрам",
+      "mode": "start",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "ongoing"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "explicit_treatment_phase",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "esc-hepatic-start",
+    "case_id": "esc-hepatic-start--current-arrhythmia_signs-stop",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "source_ref": "RU-ESC",
+      "source_locator": "§4.4 с.4–6",
+      "input": "arrhythmia_signs"
+    },
+    "reason_ids": null,
+    "decisive_fact_candidate": "arrhythmia_signs",
+    "asked_after_candidate": [
+      "serotonin_syndrome_signs",
+      "coronary_disease",
+      "electrolyte_disturbance"
+    ],
+    "source_actions": [
+      {
+        "action": "discontinue_ESC",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.6"
+      },
+      {
+        "action": "obtain_ECG",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.6"
+      }
+    ],
+    "context": {
+      "diagnosis": "F41.1",
+      "drug": "эсциталопрам",
+      "mode": "start",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "ongoing"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "explicit_treatment_phase",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "esc-hepatic-start",
+    "case_id": "esc-hepatic-start--current-serotonin_syndrome_signs-stop",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "source_ref": "RU-ESC",
+      "source_locator": "§4.4 с.4–6",
+      "input": "serotonin_syndrome_signs"
+    },
+    "reason_ids": null,
+    "decisive_fact_candidate": "serotonin_syndrome_signs",
+    "asked_after_candidate": [
+      "coronary_disease",
+      "electrolyte_disturbance"
+    ],
+    "source_actions": [
+      {
+        "action": "immediately_discontinue_SSRI_and_current_serotonergic_drugs",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.6"
+      },
+      {
+        "action": "start_symptomatic_treatment_by_clinician",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.6",
+        "automatic_medication_or_dose": null
+      }
+    ],
+    "context": {
+      "diagnosis": "F41.1",
+      "drug": "эсциталопрам",
+      "mode": "start",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "ongoing"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "explicit_treatment_phase",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "esc-panic-start",
+    "case_id": "esc-panic-start--current-mania_symptoms-stop",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "source_ref": "RU-ESC",
+      "source_locator": "§4.4 с.4–6",
+      "input": "mania_symptoms"
+    },
+    "reason_ids": null,
+    "decisive_fact_candidate": "mania_symptoms",
+    "asked_after_candidate": [
+      "arrhythmia_signs",
+      "serotonin_syndrome_signs",
+      "coronary_disease",
+      "electrolyte_disturbance"
+    ],
+    "source_actions": null,
+    "context": {
+      "diagnosis": "F41.0",
+      "drug": "эсциталопрам",
+      "mode": "start",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "ongoing"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "explicit_treatment_phase",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "esc-panic-start",
+    "case_id": "esc-panic-start--current-arrhythmia_signs-stop",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "source_ref": "RU-ESC",
+      "source_locator": "§4.4 с.4–6",
+      "input": "arrhythmia_signs"
+    },
+    "reason_ids": null,
+    "decisive_fact_candidate": "arrhythmia_signs",
+    "asked_after_candidate": [
+      "serotonin_syndrome_signs",
+      "coronary_disease",
+      "electrolyte_disturbance"
+    ],
+    "source_actions": [
+      {
+        "action": "discontinue_ESC",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.6"
+      },
+      {
+        "action": "obtain_ECG",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.6"
+      }
+    ],
+    "context": {
+      "diagnosis": "F41.0",
+      "drug": "эсциталопрам",
+      "mode": "start",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "ongoing"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "explicit_treatment_phase",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "esc-panic-start",
+    "case_id": "esc-panic-start--current-serotonin_syndrome_signs-stop",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "source_ref": "RU-ESC",
+      "source_locator": "§4.4 с.4–6",
+      "input": "serotonin_syndrome_signs"
+    },
+    "reason_ids": null,
+    "decisive_fact_candidate": "serotonin_syndrome_signs",
+    "asked_after_candidate": [
+      "coronary_disease",
+      "electrolyte_disturbance"
+    ],
+    "source_actions": [
+      {
+        "action": "immediately_discontinue_SSRI_and_current_serotonergic_drugs",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.6"
+      },
+      {
+        "action": "start_symptomatic_treatment_by_clinician",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.6",
+        "automatic_medication_or_dose": null
+      }
+    ],
+    "context": {
+      "diagnosis": "F41.0",
+      "drug": "эсциталопрам",
+      "mode": "start",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "ongoing"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "explicit_treatment_phase",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "esc-social-start",
+    "case_id": "esc-social-start--current-mania_symptoms-stop",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "source_ref": "RU-ESC",
+      "source_locator": "§4.4 с.4–6",
+      "input": "mania_symptoms"
+    },
+    "reason_ids": null,
+    "decisive_fact_candidate": "mania_symptoms",
+    "asked_after_candidate": [
+      "arrhythmia_signs",
+      "serotonin_syndrome_signs",
+      "coronary_disease",
+      "electrolyte_disturbance"
+    ],
+    "source_actions": null,
+    "context": {
+      "diagnosis": "F40.1",
+      "drug": "эсциталопрам",
+      "mode": "start",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "ongoing"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "explicit_treatment_phase",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "esc-social-start",
+    "case_id": "esc-social-start--current-arrhythmia_signs-stop",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "source_ref": "RU-ESC",
+      "source_locator": "§4.4 с.4–6",
+      "input": "arrhythmia_signs"
+    },
+    "reason_ids": null,
+    "decisive_fact_candidate": "arrhythmia_signs",
+    "asked_after_candidate": [
+      "serotonin_syndrome_signs",
+      "coronary_disease",
+      "electrolyte_disturbance"
+    ],
+    "source_actions": [
+      {
+        "action": "discontinue_ESC",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.6"
+      },
+      {
+        "action": "obtain_ECG",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.6"
+      }
+    ],
+    "context": {
+      "diagnosis": "F40.1",
+      "drug": "эсциталопрам",
+      "mode": "start",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "ongoing"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "explicit_treatment_phase",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "esc-social-start",
+    "case_id": "esc-social-start--current-serotonin_syndrome_signs-stop",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "source_ref": "RU-ESC",
+      "source_locator": "§4.4 с.4–6",
+      "input": "serotonin_syndrome_signs"
+    },
+    "reason_ids": null,
+    "decisive_fact_candidate": "serotonin_syndrome_signs",
+    "asked_after_candidate": [
+      "coronary_disease",
+      "electrolyte_disturbance"
+    ],
+    "source_actions": [
+      {
+        "action": "immediately_discontinue_SSRI_and_current_serotonergic_drugs",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.6"
+      },
+      {
+        "action": "start_symptomatic_treatment_by_clinician",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.6",
+        "automatic_medication_or_dose": null
+      }
+    ],
+    "context": {
+      "diagnosis": "F40.1",
+      "drug": "эсциталопрам",
+      "mode": "start",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "ongoing"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "explicit_treatment_phase",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "esc-taper-limit",
+    "case_id": "esc-taper-limit--current-mania_symptoms-stop",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "source_ref": "RU-ESC",
+      "source_locator": "§4.4 с.4–6",
+      "input": "mania_symptoms"
+    },
+    "reason_ids": null,
+    "decisive_fact_candidate": "mania_symptoms",
+    "asked_after_candidate": [
+      "arrhythmia_signs",
+      "serotonin_syndrome_signs"
+    ],
+    "source_actions": null,
+    "context": {
+      "diagnosis": "F41.1",
+      "drug": "эсциталопрам",
+      "mode": "taper",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "ongoing"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "explicit_treatment_phase",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "esc-taper-limit",
+    "case_id": "esc-taper-limit--current-arrhythmia_signs-stop",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "source_ref": "RU-ESC",
+      "source_locator": "§4.4 с.4–6",
+      "input": "arrhythmia_signs"
+    },
+    "reason_ids": null,
+    "decisive_fact_candidate": "arrhythmia_signs",
+    "asked_after_candidate": [
+      "serotonin_syndrome_signs"
+    ],
+    "source_actions": [
+      {
+        "action": "discontinue_ESC",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.6"
+      },
+      {
+        "action": "obtain_ECG",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.6"
+      }
+    ],
+    "context": {
+      "diagnosis": "F41.1",
+      "drug": "эсциталопрам",
+      "mode": "taper",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "ongoing"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "explicit_treatment_phase",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "fluvox-depression-start",
+    "case_id": "fluvox-depression-start--condition-seizure_state-новые приступы",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "input": "seizure_state",
+      "operator": "equals",
+      "value": "новые приступы",
+      "action": "stop ongoing source medication",
+      "source_ref": "RU-FLUVOX",
+      "source_locator": "§4.4 с.5"
+    },
+    "reason_ids": [
+      "seizure_state",
+      "новые приступы"
+    ],
+    "decisive_fact_candidate": "seizure_state",
+    "asked_after_candidate": [
+      "serotonin_syndrome_signs",
+      "new_or_increased_seizures"
+    ],
+    "source_actions": null,
+    "context": {
+      "diagnosis": "F32",
+      "drug": "флувоксамин",
+      "mode": "start",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "ongoing"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "explicit_treatment_phase",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "fluvox-depression-start",
+    "case_id": "fluvox-depression-start--condition-seizure_state-новые приступы",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "input": "seizure_state",
+      "operator": "equals",
+      "value": "новые приступы",
+      "action": "stop ongoing source medication",
+      "source_ref": "RU-FLUVOX",
+      "source_locator": "§4.4 с.5"
+    },
+    "reason_ids": [
+      "seizure_state",
+      "новые приступы"
+    ],
+    "decisive_fact_candidate": "seizure_state",
+    "asked_after_candidate": [
+      "serotonin_syndrome_signs",
+      "new_or_increased_seizures"
+    ],
+    "source_actions": null,
+    "context": {
+      "diagnosis": "F32",
+      "drug": "флувоксамин",
+      "mode": "start",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "ongoing"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "explicit_treatment_phase",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "fluvox-depression-start",
+    "case_id": "fluvox-depression-start--r3-serotonin_syndrome_signs-positive",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "input": "serotonin_syndrome_signs",
+      "source_ref": "RU-FLUVOX",
+      "source_locator": "§4.4 с.5"
+    },
+    "reason_ids": null,
+    "decisive_fact_candidate": "serotonin_syndrome_signs",
+    "asked_after_candidate": [
+      "new_or_increased_seizures"
+    ],
+    "source_actions": [
+      {
+        "action": "discontinue_selected_medication",
+        "source_ref": "RU-FLUVOX",
+        "source_locator": "§4.4 с.5"
+      },
+      {
+        "action": "start_symptomatic_treatment_by_clinician",
+        "source_ref": "RU-FLUVOX",
+        "source_locator": "§4.4 с.5"
+      }
+    ],
+    "context": {
+      "diagnosis": "F32",
+      "drug": "флувоксамин",
+      "mode": "start",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "ongoing"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "explicit_treatment_phase",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "fluvox-taper-limit",
+    "case_id": "fluvox-taper-limit--audit-v2-serotonin_syndrome_signs-positive",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "input": "serotonin_syndrome_signs",
+      "source_ref": "RU-FLUVOX",
+      "source_locator": "§4.4 с.5"
+    },
+    "reason_ids": null,
+    "decisive_fact_candidate": "serotonin_syndrome_signs",
+    "asked_after_candidate": [
+      "new_or_increased_seizures",
+      "liver_injury_signs",
+      "mania_symptoms"
+    ],
+    "source_actions": [
+      {
+        "action": "discontinue_selected_medication",
+        "source_ref": "RU-FLUVOX",
+        "source_locator": "§4.4 с.5"
+      },
+      {
+        "action": "start_symptomatic_treatment_by_clinician",
+        "source_ref": "RU-FLUVOX",
+        "source_locator": "§4.4 с.5"
+      }
+    ],
+    "context": {
+      "diagnosis": "F32",
+      "drug": "флувоксамин",
+      "mode": "taper",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "ongoing"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "explicit_treatment_phase",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "fluvox-taper-limit",
+    "case_id": "fluvox-taper-limit--audit-v2-new_or_increased_seizures-positive",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "input": "new_or_increased_seizures",
+      "source_ref": "RU-FLUVOX",
+      "source_locator": "§4.4 с.5"
+    },
+    "reason_ids": null,
+    "decisive_fact_candidate": "new_or_increased_seizures",
+    "asked_after_candidate": [
+      "liver_injury_signs",
+      "mania_symptoms"
+    ],
+    "source_actions": [
+      {
+        "action": "discontinue_selected_medication",
+        "source_ref": "RU-FLUVOX",
+        "source_locator": "§4.4 с.5"
+      }
+    ],
+    "context": {
+      "diagnosis": "F32",
+      "drug": "флувоксамин",
+      "mode": "taper",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "ongoing"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "explicit_treatment_phase",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "fluvox-taper-limit",
+    "case_id": "fluvox-taper-limit--audit-v2-liver_injury_signs-positive",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "input": "liver_injury_signs",
+      "source_ref": "RU-FLUVOX",
+      "source_locator": "§4.4 с.5"
+    },
+    "reason_ids": null,
+    "decisive_fact_candidate": "liver_injury_signs",
+    "asked_after_candidate": [
+      "mania_symptoms"
+    ],
+    "source_actions": [
+      {
+        "action": "discontinue_selected_medication",
+        "source_ref": "RU-FLUVOX",
+        "source_locator": "§4.4 с.5"
+      }
+    ],
+    "context": {
+      "diagnosis": "F32",
+      "drug": "флувоксамин",
+      "mode": "taper",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "ongoing"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "explicit_treatment_phase",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "case_id": "parox-panic-kr--condition-seizure_state-новые приступы",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "input": "seizure_state",
+      "operator": "equals",
+      "value": "новые приступы",
+      "action": "stop ongoing source medication",
+      "source_ref": "RU-PAROX",
+      "source_locator": "§4.4 с.9"
+    },
+    "reason_ids": [
+      "seizure_state",
+      "новые приступы"
+    ],
+    "decisive_fact_candidate": "seizure_state",
+    "asked_after_candidate": [
+      "serotonin_syndrome_signs",
+      "bipolar_risk_screening"
+    ],
+    "source_actions": null,
+    "context": {
+      "diagnosis": "F41.0",
+      "drug": "пароксетин",
+      "mode": "start",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "ongoing"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "explicit_treatment_phase",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "case_id": "parox-panic-kr--condition-seizure_state-новые приступы",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "input": "seizure_state",
+      "operator": "equals",
+      "value": "новые приступы",
+      "action": "stop ongoing source medication",
+      "source_ref": "RU-PAROX",
+      "source_locator": "§4.4 с.9"
+    },
+    "reason_ids": [
+      "seizure_state",
+      "новые приступы"
+    ],
+    "decisive_fact_candidate": "seizure_state",
+    "asked_after_candidate": [
+      "serotonin_syndrome_signs",
+      "bipolar_risk_screening"
+    ],
+    "source_actions": null,
+    "context": {
+      "diagnosis": "F41.0",
+      "drug": "пароксетин",
+      "mode": "start",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "ongoing"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "explicit_treatment_phase",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "case_id": "parox-panic-kr--audit-v2-serotonin_syndrome_signs-positive",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "input": "serotonin_syndrome_signs",
+      "source_ref": "RU-PAROX",
+      "source_locator": "§4.4 с.7"
+    },
+    "reason_ids": null,
+    "decisive_fact_candidate": "serotonin_syndrome_signs",
+    "asked_after_candidate": [
+      "bipolar_risk_screening"
+    ],
+    "source_actions": [
+      {
+        "action": "discontinue_selected_medication",
+        "source_ref": "RU-PAROX",
+        "source_locator": "§4.4 с.7"
+      },
+      {
+        "action": "start_supportive_symptomatic_treatment_by_clinician",
+        "source_ref": "RU-PAROX",
+        "source_locator": "§4.4 с.7"
+      }
+    ],
+    "context": {
+      "diagnosis": "F41.0",
+      "drug": "пароксетин",
+      "mode": "start",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "ongoing"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "explicit_treatment_phase",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "parox-taper-example",
+    "case_id": "parox-taper-example--audit-v2-serotonin_syndrome_signs-positive",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "input": "serotonin_syndrome_signs",
+      "source_ref": "RU-PAROX",
+      "source_locator": "§4.4 с.7"
+    },
+    "reason_ids": null,
+    "decisive_fact_candidate": "serotonin_syndrome_signs",
+    "asked_after_candidate": [
+      "new_seizures"
+    ],
+    "source_actions": [
+      {
+        "action": "discontinue_selected_medication",
+        "source_ref": "RU-PAROX",
+        "source_locator": "§4.4 с.7"
+      },
+      {
+        "action": "start_supportive_symptomatic_treatment_by_clinician",
+        "source_ref": "RU-PAROX",
+        "source_locator": "§4.4 с.7"
+      }
+    ],
+    "context": {
+      "diagnosis": "F32",
+      "drug": "пароксетин",
+      "mode": "taper",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "selected_mode"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "consumed_actual_current_dose",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "ser-adult-adjust",
+    "case_id": "ser-adult-adjust--condition-seizure_state-новые приступы",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "input": "seizure_state",
+      "operator": "equals",
+      "value": "новые приступы",
+      "action": "stop ongoing source medication",
+      "source_ref": "RU-SER",
+      "source_locator": "§4.4 с.4, судороги: прекращение при развитии приступов"
+    },
+    "reason_ids": [
+      "seizure_state",
+      "новые приступы"
+    ],
+    "decisive_fact_candidate": "seizure_state",
+    "asked_after_candidate": [
+      "current_dose",
+      "clinician_action",
+      "time_at_dose",
+      "akathisia",
+      "mania_symptoms"
+    ],
+    "source_actions": null,
+    "context": {
+      "diagnosis": "F41.0",
+      "drug": "сертралин",
+      "mode": "adjust",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "ongoing"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "explicit_treatment_phase",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "ser-adult-adjust",
+    "case_id": "ser-adult-adjust--condition-seizure_state-новые приступы",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "input": "seizure_state",
+      "operator": "equals",
+      "value": "новые приступы",
+      "action": "stop ongoing source medication",
+      "source_ref": "RU-SER",
+      "source_locator": "§4.4 с.4, судороги: прекращение при развитии приступов"
+    },
+    "reason_ids": [
+      "seizure_state",
+      "новые приступы"
+    ],
+    "decisive_fact_candidate": "seizure_state",
+    "asked_after_candidate": [
+      "current_dose",
+      "clinician_action",
+      "time_at_dose",
+      "akathisia",
+      "mania_symptoms"
+    ],
+    "source_actions": null,
+    "context": {
+      "diagnosis": "F41.0",
+      "drug": "сертралин",
+      "mode": "adjust",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "ongoing"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "explicit_treatment_phase",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "ser-panic-start",
+    "case_id": "ser-panic-start--condition-seizure_state-новые приступы",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "input": "seizure_state",
+      "operator": "equals",
+      "value": "новые приступы",
+      "action": "stop ongoing source medication",
+      "source_ref": "RU-SER",
+      "source_locator": "§4.4 с.4, судороги: прекращение при развитии приступов"
+    },
+    "reason_ids": [
+      "seizure_state",
+      "новые приступы"
+    ],
+    "decisive_fact_candidate": "seizure_state",
+    "asked_after_candidate": [
+      "mania_symptoms"
+    ],
+    "source_actions": null,
+    "context": {
+      "diagnosis": "F41.0",
+      "drug": "сертралин",
+      "mode": "start",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "ongoing"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "explicit_treatment_phase",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "ser-panic-start",
+    "case_id": "ser-panic-start--condition-seizure_state-новые приступы",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "input": "seizure_state",
+      "operator": "equals",
+      "value": "новые приступы",
+      "action": "stop ongoing source medication",
+      "source_ref": "RU-SER",
+      "source_locator": "§4.4 с.4, судороги: прекращение при развитии приступов"
+    },
+    "reason_ids": [
+      "seizure_state",
+      "новые приступы"
+    ],
+    "decisive_fact_candidate": "seizure_state",
+    "asked_after_candidate": [
+      "mania_symptoms"
+    ],
+    "source_actions": null,
+    "context": {
+      "diagnosis": "F41.0",
+      "drug": "сертралин",
+      "mode": "start",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "ongoing"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "explicit_treatment_phase",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "ser-social-start",
+    "case_id": "ser-social-start--condition-seizure_state-новые приступы",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "input": "seizure_state",
+      "operator": "equals",
+      "value": "новые приступы",
+      "action": "stop ongoing source medication",
+      "source_ref": "RU-SER",
+      "source_locator": "§4.4 с.4, судороги: прекращение при развитии приступов"
+    },
+    "reason_ids": [
+      "seizure_state",
+      "новые приступы"
+    ],
+    "decisive_fact_candidate": "seizure_state",
+    "asked_after_candidate": [
+      "mania_symptoms"
+    ],
+    "source_actions": null,
+    "context": {
+      "diagnosis": "F40.1",
+      "drug": "сертралин",
+      "mode": "start",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "ongoing"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "explicit_treatment_phase",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "ser-social-start",
+    "case_id": "ser-social-start--condition-seizure_state-новые приступы",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "input": "seizure_state",
+      "operator": "equals",
+      "value": "новые приступы",
+      "action": "stop ongoing source medication",
+      "source_ref": "RU-SER",
+      "source_locator": "§4.4 с.4, судороги: прекращение при развитии приступов"
+    },
+    "reason_ids": [
+      "seizure_state",
+      "новые приступы"
+    ],
+    "decisive_fact_candidate": "seizure_state",
+    "asked_after_candidate": [
+      "mania_symptoms"
+    ],
+    "source_actions": null,
+    "context": {
+      "diagnosis": "F40.1",
+      "drug": "сертралин",
+      "mode": "start",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "ongoing"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "explicit_treatment_phase",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "switch-esc-ago",
+    "case_id": "switch-esc-ago--current-mania_symptoms-stop",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "input": "mania_symptoms",
+      "equals": true,
+      "action": "source_stop_action",
+      "source_ref": "RU-ESC",
+      "source_locator": "RU-ESC §4.4 с.4",
+      "scope": "stop currently administered A; no automatic B start"
+    },
+    "reason_ids": null,
+    "decisive_fact_candidate": "mania_symptoms",
+    "asked_after_candidate": [
+      "suicide_risk",
+      "ect",
+      "renal_state",
+      "from_hepatic",
+      "arrhythmia_signs",
+      "serotonin_syndrome_signs",
+      "seizure_state"
+    ],
+    "source_actions": [
+      {
+        "action": "discontinue_current_A",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.4"
+      },
+      {
+        "action": "discontinue_B_only_if_already_administered_otherwise_do_not_start",
+        "source_ref": "RU-AGO",
+        "source_locator": "§4.4 с.4",
+        "condition": "target_treatment_phase=ongoing for stop; otherwise no automatic start"
+      }
+    ],
+    "context": {
+      "diagnosis": "F32",
+      "drug": null,
+      "mode": "switch",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "ongoing",
+      "from_drug": "эсциталопрам",
+      "to_drug": "агомелатин",
+      "target_treatment_phase": "not_started"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "explicit_treatment_phase",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "switch-esc-ago",
+    "case_id": "switch-esc-ago--round2-A-active-mania-True",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "input": "mania_symptoms",
+      "equals": true,
+      "action": "source_stop_action",
+      "source_ref": "RU-ESC",
+      "source_locator": "RU-ESC §4.4 с.4",
+      "scope": "stop currently administered A; no automatic B start"
+    },
+    "reason_ids": null,
+    "decisive_fact_candidate": "mania_symptoms",
+    "asked_after_candidate": [
+      "suicide_risk",
+      "ect",
+      "renal_state",
+      "from_hepatic",
+      "arrhythmia_signs",
+      "serotonin_syndrome_signs",
+      "seizure_state"
+    ],
+    "source_actions": [
+      {
+        "action": "discontinue_current_A",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.4"
+      },
+      {
+        "action": "discontinue_B_only_if_already_administered_otherwise_do_not_start",
+        "source_ref": "RU-AGO",
+        "source_locator": "§4.4 с.4",
+        "condition": "target_treatment_phase=ongoing for stop; otherwise no automatic start"
+      }
+    ],
+    "context": {
+      "diagnosis": "F32",
+      "drug": null,
+      "mode": "switch",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "ongoing",
+      "from_drug": "эсциталопрам",
+      "to_drug": "агомелатин",
+      "target_treatment_phase": "not_started"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "explicit_treatment_phase",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "switch-esc-ago",
+    "case_id": "switch-esc-ago--audit-v2-arrhythmia_signs-positive",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "input": "arrhythmia_signs",
+      "source_ref": "RU-ESC",
+      "source_locator": "§4.4 с.6"
+    },
+    "reason_ids": null,
+    "decisive_fact_candidate": "arrhythmia_signs",
+    "asked_after_candidate": [
+      "serotonin_syndrome_signs",
+      "seizure_state"
+    ],
+    "source_actions": [
+      {
+        "action": "discontinue_selected_medication",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.6"
+      },
+      {
+        "action": "obtain_ECG",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.6"
+      }
+    ],
+    "context": {
+      "diagnosis": "F32",
+      "drug": null,
+      "mode": "switch",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "selected_mode",
+      "from_drug": "эсциталопрам",
+      "to_drug": "агомелатин",
+      "target_treatment_phase": "not_started"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "consumed_actual_current_dose",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "switch-esc-ago",
+    "case_id": "switch-esc-ago--audit-v2-serotonin_syndrome_signs-positive",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "input": "serotonin_syndrome_signs",
+      "source_ref": "RU-ESC",
+      "source_locator": "§4.4 с.5–6"
+    },
+    "reason_ids": null,
+    "decisive_fact_candidate": "serotonin_syndrome_signs",
+    "asked_after_candidate": [
+      "seizure_state"
+    ],
+    "source_actions": [
+      {
+        "action": "immediately_discontinue_SSRI_and_current_serotonergic_drugs",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.5–6"
+      },
+      {
+        "action": "start_symptomatic_treatment_by_clinician",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.5–6"
+      }
+    ],
+    "context": {
+      "diagnosis": "F32",
+      "drug": null,
+      "mode": "switch",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "selected_mode",
+      "from_drug": "эсциталопрам",
+      "to_drug": "агомелатин",
+      "target_treatment_phase": "not_started"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "consumed_actual_current_dose",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "switch-esc-ser",
+    "case_id": "switch-esc-ser--round2-A-active-mania-True",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "input": "mania_symptoms",
+      "equals": true,
+      "action": "source_stop_action",
+      "source_ref": "RU-ESC",
+      "source_locator": "RU-ESC §4.4 с.4",
+      "scope": "stop currently administered A; no automatic B start"
+    },
+    "reason_ids": null,
+    "decisive_fact_candidate": "mania_symptoms",
+    "asked_after_candidate": [
+      "arrhythmia_signs",
+      "serotonin_syndrome_signs",
+      "seizure_state"
+    ],
+    "source_actions": null,
+    "context": {
+      "diagnosis": "F32",
+      "drug": null,
+      "mode": "switch",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "ongoing",
+      "from_drug": "эсциталопрам",
+      "to_drug": "сертралин",
+      "target_treatment_phase": "not_started"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "explicit_treatment_phase",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "switch-esc-ser",
+    "case_id": "switch-esc-ser--audit-v2-arrhythmia_signs-positive",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "input": "arrhythmia_signs",
+      "source_ref": "RU-ESC",
+      "source_locator": "§4.4 с.6"
+    },
+    "reason_ids": null,
+    "decisive_fact_candidate": "arrhythmia_signs",
+    "asked_after_candidate": [
+      "serotonin_syndrome_signs",
+      "seizure_state"
+    ],
+    "source_actions": [
+      {
+        "action": "discontinue_selected_medication",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.6"
+      },
+      {
+        "action": "obtain_ECG",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.6"
+      }
+    ],
+    "context": {
+      "diagnosis": "F32",
+      "drug": null,
+      "mode": "switch",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "selected_mode",
+      "from_drug": "эсциталопрам",
+      "to_drug": "сертралин",
+      "target_treatment_phase": "not_started"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "consumed_actual_current_dose",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "switch-esc-ser",
+    "case_id": "switch-esc-ser--audit-v2-serotonin_syndrome_signs-positive",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "input": "serotonin_syndrome_signs",
+      "source_ref": "RU-ESC",
+      "source_locator": "§4.4 с.5–6"
+    },
+    "reason_ids": null,
+    "decisive_fact_candidate": "serotonin_syndrome_signs",
+    "asked_after_candidate": [
+      "seizure_state"
+    ],
+    "source_actions": [
+      {
+        "action": "immediately_discontinue_SSRI_and_current_serotonergic_drugs",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.5–6"
+      },
+      {
+        "action": "start_symptomatic_treatment_by_clinician",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.5–6"
+      }
+    ],
+    "context": {
+      "diagnosis": "F32",
+      "drug": null,
+      "mode": "switch",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "selected_mode",
+      "from_drug": "эсциталопрам",
+      "to_drug": "сертралин",
+      "target_treatment_phase": "not_started"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "consumed_actual_current_dose",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "switch-parox-ago",
+    "case_id": "switch-parox-ago--condition-seizure_state-новые приступы",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "input": "seizure_state",
+      "operator": "equals",
+      "value": "новые приступы",
+      "action": "stop ongoing source medication",
+      "source_ref": "RU-PAROX",
+      "source_locator": "§4.4 с.9"
+    },
+    "reason_ids": [
+      "seizure_state",
+      "новые приступы"
+    ],
+    "decisive_fact_candidate": "seizure_state",
+    "asked_after_candidate": [
+      "serotonin_syndrome_signs"
+    ],
+    "source_actions": null,
+    "context": {
+      "diagnosis": "F32",
+      "drug": null,
+      "mode": "switch",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "ongoing",
+      "from_drug": "пароксетин",
+      "to_drug": "агомелатин",
+      "target_treatment_phase": "not_started"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "explicit_treatment_phase",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "switch-parox-ago",
+    "case_id": "switch-parox-ago--condition-seizure_state-новые приступы",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "input": "seizure_state",
+      "operator": "equals",
+      "value": "новые приступы",
+      "action": "stop ongoing source medication",
+      "source_ref": "RU-PAROX",
+      "source_locator": "§4.4 с.9"
+    },
+    "reason_ids": [
+      "seizure_state",
+      "новые приступы"
+    ],
+    "decisive_fact_candidate": "seizure_state",
+    "asked_after_candidate": [
+      "serotonin_syndrome_signs"
+    ],
+    "source_actions": null,
+    "context": {
+      "diagnosis": "F32",
+      "drug": null,
+      "mode": "switch",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "ongoing",
+      "from_drug": "пароксетин",
+      "to_drug": "агомелатин",
+      "target_treatment_phase": "not_started"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "explicit_treatment_phase",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "switch-parox-ago",
+    "case_id": "switch-parox-ago--alt_ratio_uln-ongoing-above3",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "input": "alt_ratio_uln",
+      "operator": ">",
+      "value": 3,
+      "source_ref": "RU-AGO",
+      "source_locator": "§4.4 с.4, прекращение лечения при АЛТ или АСТ >3 ВГН; регулярные пробы до нормы"
+    },
+    "reason_ids": null,
+    "decisive_fact_candidate": "alt_ratio_uln",
+    "asked_after_candidate": [
+      "ast_ratio_uln",
+      "medicines",
+      "allergy",
+      "pregnancy",
+      "lactation",
+      "withdrawal_severity",
+      "elderly_population",
+      "dementia",
+      "galactose_intolerance",
+      "complete_lactase_deficiency",
+      "glucose_galactose_malabsorption",
+      "liver_injury_signs",
+      "transaminases_rising",
+      "overweight_obesity",
+      "fatty_liver",
+      "diabetes",
+      "alcohol_abuse",
+      "alcohol_use",
+      "mania",
+      "mania_symptoms",
+      "suicide_risk",
+      "ect",
+      "renal_state",
+      "from_hepatic",
+      "from_renal",
+      "akathisia",
+      "glaucoma",
+      "bleeding_risk",
+      "qt_risk",
+      "seizure_state",
+      "serotonin_syndrome_signs"
+    ],
+    "source_actions": null,
+    "context": {
+      "diagnosis": "F32",
+      "drug": null,
+      "mode": "switch",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "ongoing",
+      "from_drug": "пароксетин",
+      "to_drug": "агомелатин",
+      "target_treatment_phase": "ongoing"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "explicit_treatment_phase",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "switch-parox-ago",
+    "case_id": "switch-parox-ago--ast_ratio_uln-ongoing-above3",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "input": "ast_ratio_uln",
+      "operator": ">",
+      "value": 3,
+      "source_ref": "RU-AGO",
+      "source_locator": "§4.4 с.4, прекращение лечения при АЛТ или АСТ >3 ВГН; регулярные пробы до нормы"
+    },
+    "reason_ids": null,
+    "decisive_fact_candidate": "ast_ratio_uln",
+    "asked_after_candidate": [
+      "medicines",
+      "allergy",
+      "pregnancy",
+      "lactation",
+      "withdrawal_severity",
+      "elderly_population",
+      "dementia",
+      "galactose_intolerance",
+      "complete_lactase_deficiency",
+      "glucose_galactose_malabsorption",
+      "liver_injury_signs",
+      "transaminases_rising",
+      "overweight_obesity",
+      "fatty_liver",
+      "diabetes",
+      "alcohol_abuse",
+      "alcohol_use",
+      "mania",
+      "mania_symptoms",
+      "suicide_risk",
+      "ect",
+      "renal_state",
+      "from_hepatic",
+      "from_renal",
+      "akathisia",
+      "glaucoma",
+      "bleeding_risk",
+      "qt_risk",
+      "seizure_state",
+      "serotonin_syndrome_signs"
+    ],
+    "source_actions": null,
+    "context": {
+      "diagnosis": "F32",
+      "drug": null,
+      "mode": "switch",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "ongoing",
+      "from_drug": "пароксетин",
+      "to_drug": "агомелатин",
+      "target_treatment_phase": "ongoing"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "explicit_treatment_phase",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "switch-parox-ago-selected-example",
+    "case_id": "switch-parox-ago-selected-example--condition-seizure_state-новые приступы",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "input": "seizure_state",
+      "operator": "equals",
+      "value": "новые приступы",
+      "action": "stop ongoing source medication",
+      "source_ref": "RU-PAROX",
+      "source_locator": "§4.4 с.9"
+    },
+    "reason_ids": [
+      "seizure_state",
+      "новые приступы"
+    ],
+    "decisive_fact_candidate": "seizure_state",
+    "asked_after_candidate": [
+      "serotonin_syndrome_signs"
+    ],
+    "source_actions": null,
+    "context": {
+      "diagnosis": "F32",
+      "drug": null,
+      "mode": "switch",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "ongoing",
+      "from_drug": "пароксетин",
+      "to_drug": "агомелатин",
+      "target_treatment_phase": "not_started"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "explicit_treatment_phase",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "switch-parox-ago-selected-example",
+    "case_id": "switch-parox-ago-selected-example--condition-seizure_state-новые приступы",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "input": "seizure_state",
+      "operator": "equals",
+      "value": "новые приступы",
+      "action": "stop ongoing source medication",
+      "source_ref": "RU-PAROX",
+      "source_locator": "§4.4 с.9"
+    },
+    "reason_ids": [
+      "seizure_state",
+      "новые приступы"
+    ],
+    "decisive_fact_candidate": "seizure_state",
+    "asked_after_candidate": [
+      "serotonin_syndrome_signs"
+    ],
+    "source_actions": null,
+    "context": {
+      "diagnosis": "F32",
+      "drug": null,
+      "mode": "switch",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "ongoing",
+      "from_drug": "пароксетин",
+      "to_drug": "агомелатин",
+      "target_treatment_phase": "not_started"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "explicit_treatment_phase",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "switch-parox-ago-selected-example",
+    "case_id": "switch-parox-ago-selected-example--alt_ratio_uln-ongoing-above3",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "input": "alt_ratio_uln",
+      "operator": ">",
+      "value": 3,
+      "source_ref": "RU-AGO",
+      "source_locator": "§4.4 с.4, прекращение лечения при АЛТ или АСТ >3 ВГН; регулярные пробы до нормы"
+    },
+    "reason_ids": null,
+    "decisive_fact_candidate": "alt_ratio_uln",
+    "asked_after_candidate": [
+      "ast_ratio_uln",
+      "medicines",
+      "allergy",
+      "pregnancy",
+      "lactation",
+      "withdrawal_severity",
+      "duration",
+      "past_withdrawal",
+      "example_selected",
+      "renal_state",
+      "elderly_population",
+      "dementia",
+      "galactose_intolerance",
+      "complete_lactase_deficiency",
+      "glucose_galactose_malabsorption",
+      "liver_injury_signs",
+      "transaminases_rising",
+      "overweight_obesity",
+      "fatty_liver",
+      "diabetes",
+      "alcohol_abuse",
+      "alcohol_use",
+      "mania",
+      "mania_symptoms",
+      "suicide_risk",
+      "ect",
+      "from_renal",
+      "from_hepatic",
+      "akathisia",
+      "glaucoma",
+      "bleeding_risk",
+      "qt_risk",
+      "seizure_state",
+      "serotonin_syndrome_signs"
+    ],
+    "source_actions": null,
+    "context": {
+      "diagnosis": "F32",
+      "drug": null,
+      "mode": "switch",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "ongoing",
+      "from_drug": "пароксетин",
+      "to_drug": "агомелатин",
+      "target_treatment_phase": "ongoing"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "explicit_treatment_phase",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "switch-parox-ago-selected-example",
+    "case_id": "switch-parox-ago-selected-example--ast_ratio_uln-ongoing-above3",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "input": "ast_ratio_uln",
+      "operator": ">",
+      "value": 3,
+      "source_ref": "RU-AGO",
+      "source_locator": "§4.4 с.4, прекращение лечения при АЛТ или АСТ >3 ВГН; регулярные пробы до нормы"
+    },
+    "reason_ids": null,
+    "decisive_fact_candidate": "ast_ratio_uln",
+    "asked_after_candidate": [
+      "medicines",
+      "allergy",
+      "pregnancy",
+      "lactation",
+      "withdrawal_severity",
+      "duration",
+      "past_withdrawal",
+      "example_selected",
+      "renal_state",
+      "elderly_population",
+      "dementia",
+      "galactose_intolerance",
+      "complete_lactase_deficiency",
+      "glucose_galactose_malabsorption",
+      "liver_injury_signs",
+      "transaminases_rising",
+      "overweight_obesity",
+      "fatty_liver",
+      "diabetes",
+      "alcohol_abuse",
+      "alcohol_use",
+      "mania",
+      "mania_symptoms",
+      "suicide_risk",
+      "ect",
+      "from_renal",
+      "from_hepatic",
+      "akathisia",
+      "glaucoma",
+      "bleeding_risk",
+      "qt_risk",
+      "seizure_state",
+      "serotonin_syndrome_signs"
+    ],
+    "source_actions": null,
+    "context": {
+      "diagnosis": "F32",
+      "drug": null,
+      "mode": "switch",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "ongoing",
+      "from_drug": "пароксетин",
+      "to_drug": "агомелатин",
+      "target_treatment_phase": "ongoing"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "explicit_treatment_phase",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "switch-ser-ago",
+    "case_id": "switch-ser-ago--stop-RU-AGO-mania_symptoms",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "input": "mania_symptoms",
+      "equals": true,
+      "action": "source_stop_action",
+      "source_ref": "RU-SER",
+      "source_locator": "RU-SER §4.4 с.4",
+      "scope": "stop currently administered A; no automatic B start"
+    },
+    "reason_ids": null,
+    "decisive_fact_candidate": "mania_symptoms",
+    "asked_after_candidate": [
+      "suicide_risk",
+      "ect",
+      "renal_state",
+      "from_hepatic",
+      "akathisia",
+      "qt_risk",
+      "bleeding_risk",
+      "hyponatremia_risk",
+      "seizure_state"
+    ],
+    "source_actions": [
+      {
+        "action": "discontinue_current_A",
+        "source_ref": "RU-SER",
+        "source_locator": "§4.4 с.4"
+      },
+      {
+        "action": "discontinue_B_only_if_already_administered_otherwise_do_not_start",
+        "source_ref": "RU-AGO",
+        "source_locator": "§4.4 с.4",
+        "condition": "target_treatment_phase=ongoing for stop; otherwise no automatic start"
+      }
+    ],
+    "context": {
+      "diagnosis": "F32",
+      "drug": null,
+      "mode": "switch",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "ongoing",
+      "from_drug": "сертралин",
+      "to_drug": "агомелатин",
+      "target_treatment_phase": "ongoing"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "explicit_treatment_phase",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "switch-ser-ago",
+    "case_id": "switch-ser-ago--alt_ratio_uln-ongoing-above3",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "input": "alt_ratio_uln",
+      "operator": ">",
+      "value": 3,
+      "source_ref": "RU-AGO",
+      "source_locator": "§4.4 с.4, прекращение лечения при АЛТ или АСТ >3 ВГН; регулярные пробы до нормы"
+    },
+    "reason_ids": null,
+    "decisive_fact_candidate": "alt_ratio_uln",
+    "asked_after_candidate": [
+      "ast_ratio_uln",
+      "medicines",
+      "allergy",
+      "pregnancy",
+      "lactation",
+      "withdrawal_severity",
+      "elderly_population",
+      "dementia",
+      "galactose_intolerance",
+      "complete_lactase_deficiency",
+      "glucose_galactose_malabsorption",
+      "liver_injury_signs",
+      "transaminases_rising",
+      "overweight_obesity",
+      "fatty_liver",
+      "diabetes",
+      "alcohol_abuse",
+      "alcohol_use",
+      "mania",
+      "mania_symptoms",
+      "suicide_risk",
+      "ect",
+      "renal_state",
+      "from_hepatic",
+      "akathisia",
+      "qt_risk",
+      "bleeding_risk",
+      "hyponatremia_risk",
+      "seizure_state"
+    ],
+    "source_actions": null,
+    "context": {
+      "diagnosis": "F32",
+      "drug": null,
+      "mode": "switch",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "ongoing",
+      "from_drug": "сертралин",
+      "to_drug": "агомелатин",
+      "target_treatment_phase": "ongoing"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "explicit_treatment_phase",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "switch-ser-ago",
+    "case_id": "switch-ser-ago--ast_ratio_uln-ongoing-above3",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "input": "ast_ratio_uln",
+      "operator": ">",
+      "value": 3,
+      "source_ref": "RU-AGO",
+      "source_locator": "§4.4 с.4, прекращение лечения при АЛТ или АСТ >3 ВГН; регулярные пробы до нормы"
+    },
+    "reason_ids": null,
+    "decisive_fact_candidate": "ast_ratio_uln",
+    "asked_after_candidate": [
+      "medicines",
+      "allergy",
+      "pregnancy",
+      "lactation",
+      "withdrawal_severity",
+      "elderly_population",
+      "dementia",
+      "galactose_intolerance",
+      "complete_lactase_deficiency",
+      "glucose_galactose_malabsorption",
+      "liver_injury_signs",
+      "transaminases_rising",
+      "overweight_obesity",
+      "fatty_liver",
+      "diabetes",
+      "alcohol_abuse",
+      "alcohol_use",
+      "mania",
+      "mania_symptoms",
+      "suicide_risk",
+      "ect",
+      "renal_state",
+      "from_hepatic",
+      "akathisia",
+      "qt_risk",
+      "bleeding_risk",
+      "hyponatremia_risk",
+      "seizure_state"
+    ],
+    "source_actions": null,
+    "context": {
+      "diagnosis": "F32",
+      "drug": null,
+      "mode": "switch",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "ongoing",
+      "from_drug": "сертралин",
+      "to_drug": "агомелатин",
+      "target_treatment_phase": "ongoing"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "explicit_treatment_phase",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "switch-ser-ago",
+    "case_id": "switch-ser-ago--round2-A-active-mania-True",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "input": "mania_symptoms",
+      "equals": true,
+      "action": "source_stop_action",
+      "source_ref": "RU-SER",
+      "source_locator": "RU-SER §4.4 с.4",
+      "scope": "stop currently administered A; no automatic B start"
+    },
+    "reason_ids": null,
+    "decisive_fact_candidate": "mania_symptoms",
+    "asked_after_candidate": [
+      "suicide_risk",
+      "ect",
+      "renal_state",
+      "from_hepatic",
+      "akathisia",
+      "qt_risk",
+      "bleeding_risk",
+      "hyponatremia_risk",
+      "seizure_state"
+    ],
+    "source_actions": [
+      {
+        "action": "discontinue_current_A",
+        "source_ref": "RU-SER",
+        "source_locator": "§4.4 с.4"
+      },
+      {
+        "action": "discontinue_B_only_if_already_administered_otherwise_do_not_start",
+        "source_ref": "RU-AGO",
+        "source_locator": "§4.4 с.4",
+        "condition": "target_treatment_phase=ongoing for stop; otherwise no automatic start"
+      }
+    ],
+    "context": {
+      "diagnosis": "F32",
+      "drug": null,
+      "mode": "switch",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "ongoing",
+      "from_drug": "сертралин",
+      "to_drug": "агомелатин",
+      "target_treatment_phase": "not_started"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "explicit_treatment_phase",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "switch-ser-esc",
+    "case_id": "switch-ser-esc--round2-A-active-mania-True",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "input": "mania_symptoms",
+      "equals": true,
+      "action": "source_stop_action",
+      "source_ref": "RU-SER",
+      "source_locator": "RU-SER §4.4 с.4",
+      "scope": "stop currently administered A; no automatic B start"
+    },
+    "reason_ids": null,
+    "decisive_fact_candidate": "mania_symptoms",
+    "asked_after_candidate": [
+      "new_seizures"
+    ],
+    "source_actions": null,
+    "context": {
+      "diagnosis": "F32",
+      "drug": null,
+      "mode": "switch",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "ongoing",
+      "from_drug": "сертралин",
+      "to_drug": "эсциталопрам",
+      "target_treatment_phase": "not_started"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "explicit_treatment_phase",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "switch-ser-esc",
+    "case_id": "switch-ser-esc--audit-v2-target_arrhythmia_signs-positive",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "input": "target_arrhythmia_signs",
+      "source_ref": "RU-ESC",
+      "source_locator": "§4.4 с.6"
+    },
+    "reason_ids": null,
+    "decisive_fact_candidate": "target_arrhythmia_signs",
+    "asked_after_candidate": [
+      "target_serotonin_syndrome_signs",
+      "target_seizure_state",
+      "new_seizures"
+    ],
+    "source_actions": [
+      {
+        "action": "discontinue_selected_medication",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.6"
+      },
+      {
+        "action": "obtain_ECG",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.6"
+      }
+    ],
+    "context": {
+      "diagnosis": "F32",
+      "drug": null,
+      "mode": "switch",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "selected_mode",
+      "from_drug": "сертралин",
+      "to_drug": "эсциталопрам",
+      "target_treatment_phase": "ongoing"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "consumed_actual_current_dose",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "switch-ser-esc",
+    "case_id": "switch-ser-esc--audit-v2-target_serotonin_syndrome_signs-positive",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "input": "target_serotonin_syndrome_signs",
+      "source_ref": "RU-ESC",
+      "source_locator": "§4.4 с.5–6"
+    },
+    "reason_ids": null,
+    "decisive_fact_candidate": "target_serotonin_syndrome_signs",
+    "asked_after_candidate": [
+      "target_seizure_state",
+      "new_seizures"
+    ],
+    "source_actions": [
+      {
+        "action": "immediately_discontinue_SSRI_and_current_serotonergic_drugs",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.5–6"
+      },
+      {
+        "action": "start_symptomatic_treatment_by_clinician",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.5–6"
+      }
+    ],
+    "context": {
+      "diagnosis": "F32",
+      "drug": null,
+      "mode": "switch",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "selected_mode",
+      "from_drug": "сертралин",
+      "to_drug": "эсциталопрам",
+      "target_treatment_phase": "ongoing"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "consumed_actual_current_dose",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "switch-ser-esc",
+    "case_id": "switch-ser-esc--audit-v2-target_seizure_state-positive",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "input": "target_seizure_state",
+      "source_ref": "RU-ESC",
+      "source_locator": "§4.4 с.4"
+    },
+    "reason_ids": null,
+    "decisive_fact_candidate": "target_seizure_state",
+    "asked_after_candidate": [
+      "new_seizures"
+    ],
+    "source_actions": [
+      {
+        "action": "discontinue_selected_medication",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.4"
+      }
+    ],
+    "context": {
+      "diagnosis": "F32",
+      "drug": null,
+      "mode": "switch",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "selected_mode",
+      "from_drug": "сертралин",
+      "to_drug": "эсциталопрам",
+      "target_treatment_phase": "ongoing"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "consumed_actual_current_dose",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "venla-xr-gad-start",
+    "case_id": "venla-xr-gad-start--diastolic-BP-100.01",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "input": "diastolic_BP",
+      "source_ref": "RU-VENLA-XR",
+      "source_locator": "§4.4 с.9"
+    },
+    "reason_ids": [
+      "source_diastolic_BP_above100_stop"
+    ],
+    "decisive_fact_candidate": "diastolic_BP",
+    "asked_after_candidate": [
+      "current_allergic_reaction"
+    ],
+    "source_actions": [
+      {
+        "action": "discontinue_selected_medication",
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.4 с.9"
+      }
+    ],
+    "context": {
+      "diagnosis": "F41.1",
+      "drug": "венлафаксин",
+      "mode": "start",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "ongoing"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "explicit_treatment_phase",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "venla-xr-gad-start",
+    "case_id": "venla-xr-gad-start--audit-v2-diastolic_BP-positive",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "input": "diastolic_BP",
+      "source_ref": "RU-VENLA-XR",
+      "source_locator": "§4.4 с.9"
+    },
+    "reason_ids": null,
+    "decisive_fact_candidate": "diastolic_BP",
+    "asked_after_candidate": [
+      "current_allergic_reaction"
+    ],
+    "source_actions": [
+      {
+        "action": "discontinue_selected_medication",
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.4 с.9"
+      }
+    ],
+    "context": {
+      "diagnosis": "F41.1",
+      "drug": "венлафаксин",
+      "mode": "start",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "ongoing"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "explicit_treatment_phase",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "venla-xr-panic-form-limit",
+    "case_id": "venla-xr-panic-form-limit--audit-v2-diastolic_BP-positive",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "input": "diastolic_BP",
+      "source_ref": "RU-VENLA-XR",
+      "source_locator": "§4.4 с.9"
+    },
+    "reason_ids": null,
+    "decisive_fact_candidate": "diastolic_BP",
+    "asked_after_candidate": [
+      "current_allergic_reaction"
+    ],
+    "source_actions": [
+      {
+        "action": "discontinue_selected_medication",
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.4 с.9"
+      }
+    ],
+    "context": {
+      "diagnosis": "F41.0",
+      "drug": "венлафаксин",
+      "mode": "start",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "ongoing"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "explicit_treatment_phase",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "venla-xr-social-start",
+    "case_id": "venla-xr-social-start--diastolic-BP-100.01",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "input": "diastolic_BP",
+      "source_ref": "RU-VENLA-XR",
+      "source_locator": "§4.4 с.9"
+    },
+    "reason_ids": [
+      "source_diastolic_BP_above100_stop"
+    ],
+    "decisive_fact_candidate": "diastolic_BP",
+    "asked_after_candidate": [
+      "current_allergic_reaction"
+    ],
+    "source_actions": [
+      {
+        "action": "discontinue_selected_medication",
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.4 с.9"
+      }
+    ],
+    "context": {
+      "diagnosis": "F40.1",
+      "drug": "венлафаксин",
+      "mode": "start",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "ongoing"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "explicit_treatment_phase",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "venla-xr-social-start",
+    "case_id": "venla-xr-social-start--audit-v2-diastolic_BP-positive",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "input": "diastolic_BP",
+      "source_ref": "RU-VENLA-XR",
+      "source_locator": "§4.4 с.9"
+    },
+    "reason_ids": null,
+    "decisive_fact_candidate": "diastolic_BP",
+    "asked_after_candidate": [
+      "current_allergic_reaction"
+    ],
+    "source_actions": [
+      {
+        "action": "discontinue_selected_medication",
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.4 с.9"
+      }
+    ],
+    "context": {
+      "diagnosis": "F40.1",
+      "drug": "венлафаксин",
+      "mode": "start",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "ongoing"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "explicit_treatment_phase",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  },
+  {
+    "rule_id": "venla-xr-taper-limit",
+    "case_id": "venla-xr-taper-limit--audit-v2-diastolic_BP-positive",
+    "result_type": "source_stop_action",
+    "source_condition": {
+      "input": "diastolic_BP",
+      "source_ref": "RU-VENLA-XR",
+      "source_locator": "§4.4 с.9"
+    },
+    "reason_ids": null,
+    "decisive_fact_candidate": "diastolic_BP",
+    "asked_after_candidate": [
+      "current_allergic_reaction"
+    ],
+    "source_actions": [
+      {
+        "action": "discontinue_selected_medication",
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.4 с.9"
+      }
+    ],
+    "context": {
+      "diagnosis": "F41.1",
+      "drug": "венлафаксин",
+      "mode": "taper",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "ongoing"
+    },
+    "resolved_selected_phase": "ongoing",
+    "phase_provenance": "explicit_treatment_phase",
+    "review_status": "NEEDS_TERMINAL_SPECIFIC_NECESSITY_OR_EARLY_ROUTE",
+    "limit": "These are candidates for a sufficient cause, not automatic permission to erase facts. Preserve source identity, A/B phase, current urgent actions and any facts needed for those named actions. They do not prove every later fact redundant for a broader full-dose result."
+  }
+]

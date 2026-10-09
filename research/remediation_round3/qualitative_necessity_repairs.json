@@ -1,0 +1,43 @@
+{
+  "scope": "Specific non-numerical results only; does not certify every remaining input minimal or satisfy the ordinary numerical limit",
+  "changes": {
+    "ago-stop": [
+      "current_dose"
+    ],
+    "dulox-taper-limit": [
+      "current_dose",
+      "duration",
+      "past_withdrawal"
+    ],
+    "fluvox-taper-limit": [
+      "current_dose",
+      "duration",
+      "past_withdrawal"
+    ],
+    "venla-xr-taper-limit": [
+      "current_dose",
+      "duration",
+      "past_withdrawal"
+    ],
+    "phen-taper-limit": [
+      "current_dose",
+      "duration",
+      "past_withdrawal"
+    ],
+    "ser-taper-limit": [
+      "current_dose",
+      "duration_of_use",
+      "prior_withdrawal"
+    ],
+    "esc-taper-limit": [
+      "current_dose",
+      "duration_of_use",
+      "prior_withdrawal"
+    ],
+    "preg-taper-limit": [
+      "current_dose",
+      "duration_of_use",
+      "prior_withdrawal"
+    ]
+  }
+}

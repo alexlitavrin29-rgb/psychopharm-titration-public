@@ -1,0 +1,20 @@
+{
+  "selected_ordinary_paths": 40,
+  "within15": 29,
+  "above15": 11,
+  "counts": {
+    "10": 2,
+    "11": 3,
+    "12": 4,
+    "13": 12,
+    "14": 1,
+    "15": 7,
+    "16": 1,
+    "17": 7,
+    "18": 1,
+    "20": 2
+  },
+  "classification_errors": [],
+  "lower_bound_ordinary": 0,
+  "scope": "All selected prepared paths, not exhaustive clinical combinations or proof of global minimum"
+}

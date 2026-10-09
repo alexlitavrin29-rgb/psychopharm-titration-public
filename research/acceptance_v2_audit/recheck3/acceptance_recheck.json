@@ -1,0 +1,504 @@
+{
+  "snapshot": "ac33f61373c22b1c160de40057815b16c27bc67e4beb870a56057992f0b06148",
+  "canonical": "psychopharm_codex_pack/ACCEPTANCE_V2.md",
+  "criteria": [
+    {
+      "number": 1,
+      "literal_criterion": "Основной пользователь — психиатр, диагноз вводит врач; нет повторной диагностики и анкеты уверенности в диагнозе.",
+      "status": "выполнено",
+      "evidence": "Диагноз/режим выбирает психиатр; PAR bipolar screen — узкая источниковая оценка, без повторной диагностики.",
+      "files": [
+        "research/remediation_round3/rules/",
+        "research/remediation_round3/result_contracts.yaml",
+        "research/remediation_round3/full_scenarios.json",
+        "research/acceptance_v2_audit/recheck3/source_verification.json",
+        "research/acceptance_v2_audit/recheck3/independent_paths.json",
+        "research/acceptance_v2_audit/recheck3/recheck3_checks.json"
+      ],
+      "finding_ids": [],
+      "limits": "Status is the stated research-contract scope, not clinical clearance. Actual primary reading/reuse and unverified source conditions/necessity are listed in coverage/source_verification; no exhaustive medical or app execution claim."
+    },
+    {
+      "number": 2,
+      "literal_criterion": "Фокус остался на тревожных/тревожно-депрессивных состояниях и применимости в РФ.",
+      "status": "выполнено",
+      "evidence": "RF/EAEU labels и RU-GAD/PANIC/PHOB/DEP определяют область; иностранное сравнение не закрывает РФ пробел.",
+      "files": [
+        "research/remediation_round3/rules/",
+        "research/remediation_round3/result_contracts.yaml",
+        "research/remediation_round3/full_scenarios.json",
+        "research/acceptance_v2_audit/recheck3/source_verification.json",
+        "research/acceptance_v2_audit/recheck3/independent_paths.json",
+        "research/acceptance_v2_audit/recheck3/recheck3_checks.json"
+      ],
+      "finding_ids": [],
+      "limits": "Status is the stated research-contract scope, not clinical clearance. Actual primary reading/reuse and unverified source conditions/necessity are listed in coverage/source_verification; no exhaustive medical or app execution claim."
+    },
+    {
+      "number": 3,
+      "literal_criterion": "Основной сценарий — выбранный препарат → дозовая схема, не только выбор лекарства или прогноз концентрации.",
+      "status": "выполнено",
+      "evidence": "38 cards содержат выбранный препарат/форму и дозовые либо ограниченные qualitative результаты, а не только рейтинг лекарств.",
+      "files": [
+        "research/remediation_round3/rules/",
+        "research/remediation_round3/result_contracts.yaml",
+        "research/remediation_round3/full_scenarios.json",
+        "research/acceptance_v2_audit/recheck3/source_verification.json",
+        "research/acceptance_v2_audit/recheck3/independent_paths.json",
+        "research/acceptance_v2_audit/recheck3/recheck3_checks.json"
+      ],
+      "finding_ids": [],
+      "limits": "Status is the stated research-contract scope, not clinical clearance. Actual primary reading/reuse and unverified source conditions/necessity are listed in coverage/source_verification; no exhaustive medical or app execution claim."
+    },
+    {
+      "number": 4,
+      "literal_criterion": "Исследованы старт, титрование/коррекция, отмена и переключение. Непокрытые режимы явно обозначены, не удалены молча.",
+      "status": "выполнено",
+      "evidence": "Старт/коррекция/отмена/6направлений switch представлены; отсутствующие точные pair calendars явно clinician_choice/gap.",
+      "files": [
+        "research/remediation_round3/rules/",
+        "research/remediation_round3/result_contracts.yaml",
+        "research/remediation_round3/full_scenarios.json",
+        "research/acceptance_v2_audit/recheck3/source_verification.json",
+        "research/acceptance_v2_audit/recheck3/independent_paths.json",
+        "research/acceptance_v2_audit/recheck3/recheck3_checks.json"
+      ],
+      "finding_ids": [],
+      "limits": "Status is the stated research-contract scope, not clinical clearance. Actual primary reading/reuse and unverified source conditions/necessity are listed in coverage/source_verification; no exhaustive medical or app execution claim."
+    },
+    {
+      "number": 5,
+      "literal_criterion": "Дополнительный топ-3 опирается на КР; не создана собственная шкала индивидуального превосходства.",
+      "status": "выполнено",
+      "evidence": "Топ-3 как варианты линий RU КР; индивидуальная шкала превосходства не придумана.",
+      "files": [
+        "research/remediation_round3/rules/",
+        "research/remediation_round3/result_contracts.yaml",
+        "research/remediation_round3/full_scenarios.json",
+        "research/acceptance_v2_audit/recheck3/source_verification.json",
+        "research/acceptance_v2_audit/recheck3/independent_paths.json",
+        "research/acceptance_v2_audit/recheck3/recheck3_checks.json"
+      ],
+      "finding_ids": [],
+      "limits": "Status is the stated research-contract scope, not clinical clearance. Actual primary reading/reuse and unverified source conditions/necessity are listed in coverage/source_verification; no exhaustive medical or app execution claim."
+    },
+    {
+      "number": 6,
+      "literal_criterion": "Дети, пожилые, беременность и лактация присутствуют в карте покрытия; нет автоматического переноса взрослых доз.",
+      "status": "выполнено",
+      "evidence": "Карта детей/пожилых/беременности/лактации есть; известные детские и формовые ограничения не дают взрослую числовую схему.",
+      "files": [
+        "research/remediation_round3/rules/",
+        "research/remediation_round3/result_contracts.yaml",
+        "research/remediation_round3/full_scenarios.json",
+        "research/acceptance_v2_audit/recheck3/source_verification.json",
+        "research/acceptance_v2_audit/recheck3/independent_paths.json",
+        "research/acceptance_v2_audit/recheck3/recheck3_checks.json"
+      ],
+      "finding_ids": [],
+      "limits": "Status is the stated research-contract scope, not clinical clearance. Actual primary reading/reuse and unverified source conditions/necessity are listed in coverage/source_verification; no exhaustive medical or app execution claim."
+    },
+    {
+      "number": 7,
+      "literal_criterion": "Нет обязательной генетики, ML, истории пациентов, стоимости, профилей предпочтений и календаря визитов.",
+      "status": "выполнено",
+      "evidence": "Обязательных генетики/ML/истории/стоимости/профилей/визитов нет; laboratory monitoring не является календарём посещений.",
+      "files": [
+        "research/remediation_round3/rules/",
+        "research/remediation_round3/result_contracts.yaml",
+        "research/remediation_round3/full_scenarios.json",
+        "research/acceptance_v2_audit/recheck3/source_verification.json",
+        "research/acceptance_v2_audit/recheck3/independent_paths.json",
+        "research/acceptance_v2_audit/recheck3/recheck3_checks.json"
+      ],
+      "finding_ids": [],
+      "limits": "Status is the stated research-contract scope, not clinical clearance. Actual primary reading/reuse and unverified source conditions/necessity are listed in coverage/source_verification; no exhaustive medical or app execution claim."
+    },
+    {
+      "number": 8,
+      "literal_criterion": "Есть точные МНН, показание, код/классификация, форма, популяция и режим.",
+      "status": "выполнено",
+      "evidence": "INN/diagnosis/mode/population/identified product form present; current registration/form provenance reviewed.",
+      "files": [
+        "research/remediation_round3/rules/",
+        "research/remediation_round3/result_contracts.yaml",
+        "research/remediation_round3/full_scenarios.json",
+        "research/acceptance_v2_audit/recheck3/source_verification.json",
+        "research/acceptance_v2_audit/recheck3/independent_paths.json",
+        "research/acceptance_v2_audit/recheck3/recheck3_checks.json"
+      ],
+      "finding_ids": [],
+      "limits": "Status is the stated research-contract scope, not clinical clearance. Actual primary reading/reuse and unverified source conditions/necessity are listed in coverage/source_verification; no exhaustive medical or app execution claim."
+    },
+    {
+      "number": 9,
+      "literal_criterion": "Есть конкретный источник, версия и локатор, а не только ссылка на главную страницу реестра.",
+      "status": "выполнено",
+      "evidence": "Current source owners/versions/SHA remain bound. PHEN physical2/4 locator and source-attribution residual corrected;11801 nested source bases match owner/version/SHA. Source provenance and current registry copy identity remain separately described.",
+      "files": [
+        "research/remediation_round3/rules/",
+        "research/remediation_round3/result_contracts.yaml",
+        "research/remediation_round3/full_scenarios.json",
+        "research/acceptance_v2_audit/recheck3/source_verification.json",
+        "research/acceptance_v2_audit/recheck3/independent_paths.json",
+        "research/acceptance_v2_audit/recheck3/recheck3_checks.json"
+      ],
+      "finding_ids": [],
+      "limits": "Status is the stated research-contract scope, not clinical clearance. Actual primary reading/reuse and unverified source conditions/necessity are listed in coverage/source_verification; no exhaustive medical or app execution claim."
+    },
+    {
+      "number": 10,
+      "literal_criterion": "Каждая медицинская доза, граница, поправка, срок и условие имеют источник.",
+      "status": "частично",
+      "evidence": "All211 parameter objects unchanged from recheck2 and104distinct groups covered by actual primary reading. New population/source-scope results checked independently; exhaustive every-condition→expected medical verification not completed (R3-LIMIT-01).",
+      "files": [
+        "research/remediation_round3/rules/",
+        "research/remediation_round3/result_contracts.yaml",
+        "research/remediation_round3/full_scenarios.json",
+        "research/acceptance_v2_audit/recheck3/source_verification.json",
+        "research/acceptance_v2_audit/recheck3/independent_paths.json",
+        "research/acceptance_v2_audit/recheck3/recheck3_checks.json"
+      ],
+      "finding_ids": [
+        "R3-LIMIT-01"
+      ],
+      "limits": "Status is the stated research-contract scope, not clinical clearance. Actual primary reading/reuse and unverified source conditions/necessity are listed in coverage/source_verification; no exhaustive medical or app execution claim."
+    },
+    {
+      "number": 11,
+      "literal_criterion": "Опубликованный диапазон не заменён произвольно выбранным числом; пример не превращён в обязательный протокол.",
+      "status": "выполнено",
+      "evidence": "Source alternatives/ranges preserved: FLUV50or100, PREG25–50 and frequency alternatives; PAR taper an optional selected example.",
+      "files": [
+        "research/remediation_round3/rules/",
+        "research/remediation_round3/result_contracts.yaml",
+        "research/remediation_round3/full_scenarios.json",
+        "research/acceptance_v2_audit/recheck3/source_verification.json",
+        "research/acceptance_v2_audit/recheck3/independent_paths.json",
+        "research/acceptance_v2_audit/recheck3/recheck3_checks.json"
+      ],
+      "finding_ids": [],
+      "limits": "Status is the stated research-contract scope, not clinical clearance. Actual primary reading/reuse and unverified source conditions/necessity are listed in coverage/source_verification; no exhaustive medical or app execution claim."
+    },
+    {
+      "number": 12,
+      "literal_criterion": "Различаются разовая/суточная доза, единицы, кратность и лекарственные формы.",
+      "status": "выполнено",
+      "evidence": "Daily/per-administration/frequency arithmetic consistent; CLcr/absoluteGFR/indexed units distinguished; form split/release bound to identified label.",
+      "files": [
+        "research/remediation_round3/rules/",
+        "research/remediation_round3/result_contracts.yaml",
+        "research/remediation_round3/full_scenarios.json",
+        "research/acceptance_v2_audit/recheck3/source_verification.json",
+        "research/acceptance_v2_audit/recheck3/independent_paths.json",
+        "research/acceptance_v2_audit/recheck3/recheck3_checks.json"
+      ],
+      "finding_ids": [],
+      "limits": "Status is the stated research-contract scope, not clinical clearance. Actual primary reading/reuse and unverified source conditions/necessity are listed in coverage/source_verification; no exhaustive medical or app execution claim."
+    },
+    {
+      "number": 13,
+      "literal_criterion": "Не перемножены самостоятельные поправки и не усреднены несовместимые источники.",
+      "status": "выполнено",
+      "evidence": "Independent renal/hepatic/CYP changes not multiplied; DULOX overlap and XR combination stay clinician_choice.",
+      "files": [
+        "research/remediation_round3/rules/",
+        "research/remediation_round3/result_contracts.yaml",
+        "research/remediation_round3/full_scenarios.json",
+        "research/acceptance_v2_audit/recheck3/source_verification.json",
+        "research/acceptance_v2_audit/recheck3/independent_paths.json",
+        "research/acceptance_v2_audit/recheck3/recheck3_checks.json"
+      ],
+      "finding_ids": [],
+      "limits": "Status is the stated research-contract scope, not clinical clearance. Actual primary reading/reuse and unverified source conditions/necessity are listed in coverage/source_verification; no exhaustive medical or app execution claim."
+    },
+    {
+      "number": 14,
+      "literal_criterion": "Для переключения проверено направление, оба препарата, допустимость перекрытия и необходимый интервал.",
+      "status": "выполнено",
+      "evidence": "Explicit A/B source roles and phase gates reviewed: current A may derive ongoing only from consumed active actual positive dose; unknown/not_started overrides, B separate. Russian pair calendar gaps remain explicit; no silent overlap or wait invented.",
+      "files": [
+        "research/remediation_round3/rules/",
+        "research/remediation_round3/result_contracts.yaml",
+        "research/remediation_round3/full_scenarios.json",
+        "research/acceptance_v2_audit/recheck3/source_verification.json",
+        "research/acceptance_v2_audit/recheck3/independent_paths.json",
+        "research/acceptance_v2_audit/recheck3/recheck3_checks.json"
+      ],
+      "finding_ids": [],
+      "limits": "Status is the stated research-contract scope, not clinical clearance. Actual primary reading/reuse and unverified source conditions/necessity are listed in coverage/source_verification; no exhaustive medical or app execution claim."
+    },
+    {
+      "number": 15,
+      "literal_criterion": "Для отмены сохранены условия изменения темпа; нет единого придуманного процента/срока для всех.",
+      "status": "выполнено",
+      "evidence": "PREG/PHEN resumption/hold/slower permission no longer borrowed; published gradual restriction/source gaps and urgent conditions retained. Conditional adult reference does not assign pediatric/unknown individual duration. Other source taper families remain as previously independently reviewed on identical originals.",
+      "files": [
+        "research/remediation_round3/rules/",
+        "research/remediation_round3/result_contracts.yaml",
+        "research/remediation_round3/full_scenarios.json",
+        "research/acceptance_v2_audit/recheck3/source_verification.json",
+        "research/acceptance_v2_audit/recheck3/independent_paths.json",
+        "research/acceptance_v2_audit/recheck3/recheck3_checks.json"
+      ],
+      "finding_ids": [],
+      "limits": "Status is the stated research-contract scope, not clinical clearance. Actual primary reading/reuse and unverified source conditions/necessity are listed in coverage/source_verification; no exhaustive medical or app execution claim."
+    },
+    {
+      "number": 16,
+      "literal_criterion": "Баллы шкалы влияют на дозовое действие только там, где это действительно задано найденным правилом.",
+      "status": "выполнено",
+      "evidence": "Scales provide monitoring where KR says so; no source-free dose coefficient or proprietary scoring.",
+      "files": [
+        "research/remediation_round3/rules/",
+        "research/remediation_round3/result_contracts.yaml",
+        "research/remediation_round3/full_scenarios.json",
+        "research/acceptance_v2_audit/recheck3/source_verification.json",
+        "research/acceptance_v2_audit/recheck3/independent_paths.json",
+        "research/acceptance_v2_audit/recheck3/recheck3_checks.json"
+      ],
+      "finding_ids": [],
+      "limits": "Status is the stated research-contract scope, not clinical clearance. Actual primary reading/reuse and unverified source conditions/necessity are listed in coverage/source_verification; no exhaustive medical or app execution claim."
+    },
+    {
+      "number": 17,
+      "literal_criterion": "Для каждого вопроса показано, какое правило использует ответ и почему его нельзя убрать.",
+      "status": "частично",
+      "evidence": "Causal order and concrete qualitative counterexamples fixed; all737 fact sets/counts independently agree. Full necessity of the remaining mandatory fields across271 decisions is not proved (R3-LIMIT-02).",
+      "files": [
+        "research/remediation_round3/rules/",
+        "research/remediation_round3/result_contracts.yaml",
+        "research/remediation_round3/full_scenarios.json",
+        "research/acceptance_v2_audit/recheck3/source_verification.json",
+        "research/acceptance_v2_audit/recheck3/independent_paths.json",
+        "research/acceptance_v2_audit/recheck3/recheck3_checks.json"
+      ],
+      "finding_ids": [
+        "R3-LIMIT-02"
+      ],
+      "limits": "Status is the stated research-contract scope, not clinical clearance. Actual primary reading/reuse and unverified source conditions/necessity are listed in coverage/source_verification; no exhaustive medical or app execution claim."
+    },
+    {
+      "number": 18,
+      "literal_criterion": "Для обычного индивидуального дозового расчёта 5–10 содержательных вопросов — целевой диапазон; допустимо до 15 включительно при обоснованной необходимости каждого вопроса. Начальные выборы и независимые сведения считаются отдельно; нагрузка не скрыта в подпунктах или предварительной анкете, необходимые ограничения не удалены ради лимита.",
+      "status": "частично",
+      "evidence": "Ordinary AGO20,DULOX-GAD17,PREG17/18,SER increase15 plus separately reported negative event16 independently confirmed; no complete≤15 alternative/global minimum proved.",
+      "files": [
+        "research/remediation_round3/rules/",
+        "research/remediation_round3/result_contracts.yaml",
+        "research/remediation_round3/full_scenarios.json",
+        "research/acceptance_v2_audit/recheck3/source_verification.json",
+        "research/acceptance_v2_audit/recheck3/independent_paths.json",
+        "research/acceptance_v2_audit/recheck3/recheck3_checks.json"
+      ],
+      "finding_ids": [
+        "R2-05"
+      ],
+      "limits": "Status is the stated research-contract scope, not clinical clearance. Actual primary reading/reuse and unverified source conditions/necessity are listed in coverage/source_verification; no exhaustive medical or app execution claim."
+    },
+    {
+      "number": 19,
+      "literal_criterion": "Для сложных веток зафиксирован предел короткого расчёта, а не удалены обязательные сведения.",
+      "status": "выполнено",
+      "evidence": "Actual ESC CAD/electrolyte, organ/MAOI/switch source triggers explicit; complexity not assigned just from count. Aplan stages/day/dose/frequency and A/B facts separate.",
+      "files": [
+        "research/remediation_round3/rules/",
+        "research/remediation_round3/result_contracts.yaml",
+        "research/remediation_round3/full_scenarios.json",
+        "research/acceptance_v2_audit/recheck3/source_verification.json",
+        "research/acceptance_v2_audit/recheck3/independent_paths.json",
+        "research/acceptance_v2_audit/recheck3/recheck3_checks.json"
+      ],
+      "finding_ids": [],
+      "limits": "Status is the stated research-contract scope, not clinical clearance. Actual primary reading/reuse and unverified source conditions/necessity are listed in coverage/source_verification; no exhaustive medical or app execution claim."
+    },
+    {
+      "number": 20,
+      "literal_criterion": "«Неизвестно/не исследовано/не помню» не интерпретируются как норма/нет.",
+      "status": "выполнено",
+      "evidence": "All531projections zero fabricated absent negatives / overlap; reported unknown/omitted no clinical clearance. A phase enum integration mismatch R2-01 does not turn unknown into normal.",
+      "files": [
+        "research/remediation_round3/rules/",
+        "research/remediation_round3/result_contracts.yaml",
+        "research/remediation_round3/full_scenarios.json",
+        "research/acceptance_v2_audit/recheck3/source_verification.json",
+        "research/acceptance_v2_audit/recheck3/independent_paths.json",
+        "research/acceptance_v2_audit/recheck3/recheck3_checks.json"
+      ],
+      "finding_ids": [],
+      "limits": "Status is the stated research-contract scope, not clinical clearance. Actual primary reading/reuse and unverified source conditions/necessity are listed in coverage/source_verification; no exhaustive medical or app execution claim."
+    },
+    {
+      "number": 21,
+      "literal_criterion": "Недостаток обязательного значения даёт конкретный запрос данных без безусловной дозы.",
+      "status": "выполнено",
+      "evidence": "Missing/unknown required operands request concrete fields without unconditional dose; A phase enum now includes actual fixture states and invalid enum/domain mutations reject. Explicit unknown/not_started source action variants do not automatically stop or start a medication.",
+      "files": [
+        "research/remediation_round3/rules/",
+        "research/remediation_round3/result_contracts.yaml",
+        "research/remediation_round3/full_scenarios.json",
+        "research/acceptance_v2_audit/recheck3/source_verification.json",
+        "research/acceptance_v2_audit/recheck3/independent_paths.json",
+        "research/acceptance_v2_audit/recheck3/recheck3_checks.json"
+      ],
+      "finding_ids": [],
+      "limits": "Status is the stated research-contract scope, not clinical clearance. Actual primary reading/reuse and unverified source conditions/necessity are listed in coverage/source_verification; no exhaustive medical or app execution claim."
+    },
+    {
+      "number": 22,
+      "literal_criterion": "Схема может быть выдана заранее, но последующие условные шаги не показаны как обязательные.",
+      "status": "выполнено",
+      "evidence": "Future stages are conditional; no guaranteed calendar or source-free taper percentages.",
+      "files": [
+        "research/remediation_round3/rules/",
+        "research/remediation_round3/result_contracts.yaml",
+        "research/remediation_round3/full_scenarios.json",
+        "research/acceptance_v2_audit/recheck3/source_verification.json",
+        "research/acceptance_v2_audit/recheck3/independent_paths.json",
+        "research/acceptance_v2_audit/recheck3/recheck3_checks.json"
+      ],
+      "finding_ids": [],
+      "limits": "Status is the stated research-contract scope, not clinical clearance. Actual primary reading/reuse and unverified source conditions/necessity are listed in coverage/source_verification; no exhaustive medical or app execution claim."
+    },
+    {
+      "number": 23,
+      "literal_criterion": "Минимальные интервалы изменения дозы не перепутаны с датами назначаемых врачом визитов.",
+      "status": "выполнено",
+      "evidence": "Dose minima/monitoring intervals separate from clinician visit timing; AGO approximate laboratory weeks remain approximate.",
+      "files": [
+        "research/remediation_round3/rules/",
+        "research/remediation_round3/result_contracts.yaml",
+        "research/remediation_round3/full_scenarios.json",
+        "research/acceptance_v2_audit/recheck3/source_verification.json",
+        "research/acceptance_v2_audit/recheck3/independent_paths.json",
+        "research/acceptance_v2_audit/recheck3/recheck3_checks.json"
+      ],
+      "finding_ids": [],
+      "limits": "Status is the stated research-contract scope, not clinical clearance. Actual primary reading/reuse and unverified source conditions/necessity are listed in coverage/source_verification; no exhaustive medical or app execution claim."
+    },
+    {
+      "number": 24,
+      "literal_criterion": "Доступность первоисточника проверена; сниппет/абстракт/перепечатка не названы прочитанным оригиналом.",
+      "status": "выполнено",
+      "evidence": "Actually accessible local official originals read; provided human registry download/stamp evidence distinct from own online click/download. Same prior PDF bytes verified before reuse; full PIL reading not claimed.",
+      "files": [
+        "research/remediation_round3/rules/",
+        "research/remediation_round3/result_contracts.yaml",
+        "research/remediation_round3/full_scenarios.json",
+        "research/acceptance_v2_audit/recheck3/source_verification.json",
+        "research/acceptance_v2_audit/recheck3/independent_paths.json",
+        "research/acceptance_v2_audit/recheck3/recheck3_checks.json"
+      ],
+      "finding_ids": [],
+      "limits": "Status is the stated research-contract scope, not clinical clearance. Actual primary reading/reuse and unverified source conditions/necessity are listed in coverage/source_verification; no exhaustive medical or app execution claim."
+    },
+    {
+      "number": 25,
+      "literal_criterion": "Российская регистрационная применимость не выведена из иностранного руководства.",
+      "status": "выполнено",
+      "evidence": "Russian registered forms/labels bind rules; foreign examples not registration evidence.",
+      "files": [
+        "research/remediation_round3/rules/",
+        "research/remediation_round3/result_contracts.yaml",
+        "research/remediation_round3/full_scenarios.json",
+        "research/acceptance_v2_audit/recheck3/source_verification.json",
+        "research/acceptance_v2_audit/recheck3/independent_paths.json",
+        "research/acceptance_v2_audit/recheck3/recheck3_checks.json"
+      ],
+      "finding_ids": [],
+      "limits": "Status is the stated research-contract scope, not clinical clearance. Actual primary reading/reuse and unverified source conditions/necessity are listed in coverage/source_verification; no exhaustive medical or app execution claim."
+    },
+    {
+      "number": 26,
+      "literal_criterion": "Источник/КР/экспертный протокол/исследованная модель имеют разные, точно описанные статусы.",
+      "status": "выполнено",
+      "evidence": "KR/label/expert interpretation/protocol/effectiveness study have different declared statuses.",
+      "files": [
+        "research/remediation_round3/rules/",
+        "research/remediation_round3/result_contracts.yaml",
+        "research/remediation_round3/full_scenarios.json",
+        "research/acceptance_v2_audit/recheck3/source_verification.json",
+        "research/acceptance_v2_audit/recheck3/independent_paths.json",
+        "research/acceptance_v2_audit/recheck3/recheck3_checks.json"
+      ],
+      "finding_ids": [],
+      "limits": "Status is the stated research-contract scope, not clinical clearance. Actual primary reading/reuse and unverified source conditions/necessity are listed in coverage/source_verification; no exhaustive medical or app execution claim."
+    },
+    {
+      "number": 27,
+      "literal_criterion": "Эффективность препарата не объявлена доказательством любой алгоритмической дозировки.",
+      "status": "выполнено",
+      "evidence": "Drug efficacy/PK percentage not proof of any algorithmic dose; current DULOX glycemia evidence not dose factor.",
+      "files": [
+        "research/remediation_round3/rules/",
+        "research/remediation_round3/result_contracts.yaml",
+        "research/remediation_round3/full_scenarios.json",
+        "research/acceptance_v2_audit/recheck3/source_verification.json",
+        "research/acceptance_v2_audit/recheck3/independent_paths.json",
+        "research/acceptance_v2_audit/recheck3/recheck3_checks.json"
+      ],
+      "finding_ids": [],
+      "limits": "Status is the stated research-contract scope, not clinical clearance. Actual primary reading/reuse and unverified source conditions/necessity are listed in coverage/source_verification; no exhaustive medical or app execution claim."
+    },
+    {
+      "number": 28,
+      "literal_criterion": "Технический перенос не объявлен клинической валидацией нового продукта.",
+      "status": "выполнено",
+      "evidence": "Static/graphs/prepared expected not executed app or clinical trial; clinical validation not performed.",
+      "files": [
+        "research/remediation_round3/rules/",
+        "research/remediation_round3/result_contracts.yaml",
+        "research/remediation_round3/full_scenarios.json",
+        "research/acceptance_v2_audit/recheck3/source_verification.json",
+        "research/acceptance_v2_audit/recheck3/independent_paths.json",
+        "research/acceptance_v2_audit/recheck3/recheck3_checks.json"
+      ],
+      "finding_ids": [],
+      "limits": "Status is the stated research-contract scope, not clinical clearance. Actual primary reading/reuse and unverified source conditions/necessity are listed in coverage/source_verification; no exhaustive medical or app execution claim."
+    },
+    {
+      "number": 29,
+      "literal_criterion": "Готовность к реализации не перепутана с готовностью к клиническому применению.",
+      "status": "выполнено",
+      "evidence": "Allowed technical transfer restricted to checked contracts/facts/gaps; no claim of clinical deployment readiness.",
+      "files": [
+        "research/remediation_round3/rules/",
+        "research/remediation_round3/result_contracts.yaml",
+        "research/remediation_round3/full_scenarios.json",
+        "research/acceptance_v2_audit/recheck3/source_verification.json",
+        "research/acceptance_v2_audit/recheck3/independent_paths.json",
+        "research/acceptance_v2_audit/recheck3/recheck3_checks.json"
+      ],
+      "finding_ids": [],
+      "limits": "Status is the stated research-contract scope, not clinical clearance. Actual primary reading/reuse and unverified source conditions/necessity are listed in coverage/source_verification; no exhaustive medical or app execution claim."
+    },
+    {
+      "number": 30,
+      "literal_criterion": "Все пробелы и конфликты перечислены; отсутствие найденного аналога не названо доказательством его отсутствия.",
+      "status": "выполнено",
+      "evidence": "Known conflicts, long ordinary paths, unproved necessity and independent coverage limits are explicit; indices distinguish pending snapshot review from current completed audit. No assertion that an unfound analogue cannot exist.",
+      "files": [
+        "research/remediation_round3/rules/",
+        "research/remediation_round3/result_contracts.yaml",
+        "research/remediation_round3/full_scenarios.json",
+        "research/acceptance_v2_audit/recheck3/source_verification.json",
+        "research/acceptance_v2_audit/recheck3/independent_paths.json",
+        "research/acceptance_v2_audit/recheck3/recheck3_checks.json"
+      ],
+      "finding_ids": [],
+      "limits": "Status is the stated research-contract scope, not clinical clearance. Actual primary reading/reuse and unverified source conditions/necessity are listed in coverage/source_verification; no exhaustive medical or app execution claim."
+    }
+  ],
+  "statuses": {
+    "выполнено": 27,
+    "частично": 3
+  },
+  "changed_criterion_only": 18,
+  "decision": "Partial research acceptance; full V2 not achieved; cap6",
+  "previous_recheck2": {
+    "met": 23,
+    "partial": 7,
+    "final": "6.0"
+  },
+  "scope": "Finite recheck of R2-01..04 plus full static/path set, reused source-bound parameter/condition reading at identical SHA; not exhaustive all-condition medical acceptance"
+}

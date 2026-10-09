@@ -1,0 +1,364 @@
+schema_version: '1.0'
+rule_id: diazepam-asam-initial-taper
+development_status: extracted_research_not_executable
+language: ru
+identity:
+  title: 'Диазепам: диапазон начального снижения по ASAM'
+  mode: taper
+  drug_inn: диазепам
+  from_drug_inn: null
+  to_drug_inn: null
+  formulation: Форма требует отдельной проверки
+  route: oral
+  diagnosis_label_ru: Показание установлено врачом; отмена регулярного диазепама при риске физической зависимости.
+    Источник не привязывает режим к одному коду диагноза.
+  classification_system: МКБ-10
+  diagnosis_code: null
+  jurisdiction: foreign_research
+applicability:
+  population_description: Взрослые. Только подтверждённые условия этой карточки; другие популяции не получают масштабированную
+    взрослую дозу.
+  age_constraints: []
+  pregnancy: Решение по применимости/пользе и риску отдельно; без опубликованной числовой поправки. Стандартная
+    карточка не выдаёт автоматическую дозу при беременности.
+  lactation: Проверять отдельные ограничения источника. Стандартная карточка не выдаёт автоматическую дозу при кормлении.
+  renal_constraints: []
+  hepatic_constraints: []
+  comorbidity_constraints: []
+  interacting_drugs: []
+  other_conditions: []
+  exclusions:
+  - Гиперчувствительность
+  - Непроверенные противопоказания/взаимодействия не считать отсутствующими
+  indication_status_in_russia: foreign_only_not_verified
+  source_refs:
+  - US-ASAM
+inputs:
+- input_id: age
+  question_ru: Возраст?
+  data_type: integer
+  unit: year
+  allowed_values: []
+  required_when: для индивидуального результата
+  show_when: при выборе этой карточки
+  why_needed: Дети вне охвата.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать
+    условно.
+  source_refs:
+  - US-ASAM
+- input_id: regular_use
+  question_ru: Диазепам принимается регулярно?
+  data_type: enum
+  unit: null
+  allowed_values:
+  - да
+  - нет
+  - неизвестно
+  required_when: для индивидуального результата
+  show_when: при выборе этой карточки
+  why_needed: Нерегулярный приём вне охвата.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать
+    условно.
+  source_refs:
+  - US-ASAM
+- input_id: current_dose
+  question_ru: Текущая суточная доза диазепама?
+  data_type: number
+  unit: mg/day
+  allowed_values: []
+  required_when: для индивидуального результата
+  show_when: при выборе этой карточки
+  why_needed: База для первого процентного снижения.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать
+    условно.
+  source_refs:
+  - US-ASAM
+- input_id: frequency
+  question_ru: Фактическая кратность приёма?
+  data_type: structured_frequency
+  unit: null
+  allowed_values: []
+  required_when: для индивидуального результата
+  show_when: при выборе этой карточки
+  why_needed: Какой приём снижать — отдельное решение врача.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать
+    условно.
+  source_refs:
+  - US-ASAM
+- input_id: duration_of_use
+  question_ru: Продолжительность регулярного приёма?
+  data_type: duration
+  unit: null
+  allowed_values: []
+  required_when: для индивидуального результата
+  show_when: при выборе этой карточки
+  why_needed: Сильная зависимость/краткий приём меняют применимость начального темпа.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать
+    условно.
+  source_refs:
+  - US-ASAM
+- input_id: withdrawal_history
+  question_ru: Предыдущие тяжёлые симптомы отмены, включая судороги/делирий?
+  data_type: enum
+  unit: null
+  allowed_values:
+  - да
+  - нет
+  - неизвестно
+  required_when: для индивидуального результата
+  show_when: при выборе этой карточки
+  why_needed: Выбор условий лечения и темпа.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать
+    условно.
+  source_refs:
+  - US-ASAM
+- input_id: medicines
+  question_ru: Другие препараты, включая опиоиды/депрессанты ЦНС?
+  data_type: medication_list
+  unit: null
+  allowed_values: []
+  required_when: для индивидуального результата
+  show_when: при выборе этой карточки
+  why_needed: Риск передозировки и взаимодействия.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать
+    условно.
+  source_refs:
+  - US-ASAM
+- input_id: form
+  question_ru: Форма допускает точную выбранную дозу?
+  data_type: enum
+  unit: null
+  allowed_values:
+  - да
+  - нет
+  - неизвестно
+  required_when: для индивидуального результата
+  show_when: при выборе этой карточки
+  why_needed: Процент нельзя округлять до произвольной таблетки.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать
+    условно.
+  source_refs:
+  - US-ASAM
+- input_id: clinical_setting
+  question_ru: Врач подтвердил возможность амбулаторной отмены?
+  data_type: enum
+  unit: null
+  allowed_values:
+  - да
+  - нет
+  - неизвестно
+  required_when: для индивидуального результата
+  show_when: при выборе этой карточки
+  why_needed: Тяжёлая/осложнённая отмена требует отдельной ветки.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать
+    условно.
+  source_refs:
+  - US-ASAM
+clinical_parameters:
+- parameter_id: initial_reduction
+  meaning: Обычный диапазон первоначального снижения
+  value: null
+  lower: 5
+  upper: 10
+  lower_inclusive: true
+  upper_inclusive: true
+  unit: percent
+  source_ref: US-ASAM
+  source_locator: с.10,45
+  source_meaning: диапазон
+  derivation: null
+- parameter_id: initial_interval
+  meaning: Обычный начальный темп
+  value: null
+  lower: 2
+  upper: 4
+  lower_inclusive: true
+  upper_inclusive: true
+  unit: week
+  source_ref: US-ASAM
+  source_locator: с.10
+  source_meaning: диапазон
+  derivation: null
+- parameter_id: usual_rate_ceiling
+  meaning: Как правило не превышать
+  value: 25
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: percent_per_2_weeks
+  source_ref: US-ASAM
+  source_locator: с.10,45
+  source_meaning: предписание
+  derivation: null
+- parameter_id: adult_boundary
+  meaning: Дети младше этой границы вне охвата
+  value: 18
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: year
+  source_ref: US-ASAM
+  source_locator: Scope с.15
+  source_meaning: предписание
+  derivation: null
+logic:
+  representation: decision_table
+  conditions:
+  - Диагноз, препарат и режим выбрал врач. Соответствие популяции/форме и ограничения источника подтверждены.
+  actions:
+  - Информационный диапазон первого снижения = current_dose × (1 − initial_reduction/100); врачу оставляется выбор
+    процента и интервала внутри опубликованных ориентиров.
+  - 'Последующие шаги не фиксировать: повторно оценивать симптомы, при необходимости замедлить/приостановить. Сильная
+    физическая зависимость и особые популяции требуют отдельного разбора implementation considerations с.46 и соответствующих
+    разделов.'
+  - Дозовая эквивалентность разных БЗД не вычисляется этой карточкой.
+  parameter_refs:
+  - initial_reduction
+  - initial_interval
+  - usual_rate_ceiling
+  - adult_boundary
+  source_refs:
+  - US-ASAM
+  clinician_choices:
+  - Применимость при особых состояниях и взаимодействиях
+  - Необходимость следующего условного шага
+  missing_data_behaviour: Назвать обязательные неизвестные поля; результат insufficient_data. Справочные этапы можно
+    показать как условные, без безусловной дозы пациенту.
+  unsupported_case_behaviour: not_applicable для этой карточки; указать конкретную отсутствующую ветку, не запретить
+    всё лечение.
+  contraindicated_case_behaviour: Не выдавать дозовую схему противопоказанного сочетания; отобразить источник и
+    причину.
+  conflicts: []
+  composite_rule_dependencies: []
+  combination_justification: Самостоятельные поправки не перемножаются. Совпадение числа не подтверждает применимость
+    их сочетания.
+output:
+  result_type: range
+  medication_inn: диазепам
+  dose_per_administration: null
+  administrations_per_day: null
+  total_daily_dose: null
+  unit: mg
+  formulation: Форма требует отдельной проверки
+  schedule: []
+  warnings:
+  - Условная схема источника, не автономное назначение. Максимум не является целью.
+  - Подтвердить противопоказания и взаимодействия исходной инструкции.
+  mandatory_checks:
+  - Проверить соответствие источнику, указанное в applicability и inputs.
+  clinician_decisions_remaining:
+  - Выбор процента/интервала
+  - Выбор снижаемого приёма
+  - Форма и достижимая точная доза
+  - Условия лечения, контроль симптомов
+  rounding_or_formulation_rule: Не округлять медицинскую дозу; использовать только разрешённую форму/деление. При
+    невозможности дозы формой — явно сообщить.
+  source_refs:
+  - US-ASAM
+sources:
+- source_id: US-ASAM
+  title: Joint Clinical Practice Guideline on Benzodiazepine Tapering
+  organization_or_authors: ASAM и совместная группа профессиональных обществ
+  url: https://downloads.asam.org/sitefinity-production-blobs/docs/default-source/guidelines/benzodiazepine-tapering-2025/bzd-tapering-document---final-approved-version-for-distribution-02-28-25.pdf?sfvrsn=5bdf9c81_1
+  doi_or_registry_id: null
+  publication_date: null
+  version_or_update_date: Final approved version 28.02.2025
+  accessed_on: '2026-10-08'
+  source_type: guideline
+  jurisdiction: US
+  access_status: full
+  exact_locator: Scope PDF с.15; key takeaways с.10; recommendations 6–9 с.45; implementation considerations с.46;
+    level of care с.42–45
+  evidence_status: Клиническая рекомендация; не валидация калькулятора
+  what_was_tested: Не исследовался создаваемый продукт. Содержание и ограничения описаны в evidence_limitations.
+  evidence_limitations: Регулярный приём БЗД взрослыми с риском физической зависимости. Процент/темп — clinical
+    consensus, strong recommendation. Не схема для нерегулярного/краткого приёма, детей, Z-препаратов или для всех
+    тяжёлых случаев.
+  reuse_license_or_restriction: Открытый доступ не означает разрешение перераспространять полный документ. Сохранены
+    собственное извлечение фактических правил, локаторы и ссылки; код и большие цитаты не копируются.
+  document_fingerprint:
+    url: https://downloads.asam.org/sitefinity-production-blobs/docs/default-source/guidelines/benzodiazepine-tapering-2025/bzd-tapering-document---final-approved-version-for-distribution-02-28-25.pdf?sfvrsn=5bdf9c81_1
+    sha256: a9937c249d7a08658eb10c5b7805fce9bb6e975e4f4d5ac11507434708c4b5ec
+    pages: 234
+    accessed_on: '2026-10-08'
+  local_file: audit/retrieved/US-ASAM.pdf
+  document_copies:
+  - source_id: US-ASAM
+    local_file: audit/retrieved/US-ASAM.pdf
+    sha256: a9937c249d7a08658eb10c5b7805fce9bb6e975e4f4d5ac11507434708c4b5ec
+    version: Final approved version 28.02.2025
+    url: https://downloads.asam.org/sitefinity-production-blobs/docs/default-source/guidelines/benzodiazepine-tapering-2025/bzd-tapering-document---final-approved-version-for-distribution-02-28-25.pdf?sfvrsn=5bdf9c81_1
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: false
+  dates:
+    registration: null
+    revision: null
+    publication: null
+    download: '2026-10-08'
+  latest_registration_revision_confirmed: false
+verification:
+  primary_source_checked: true
+  all_clinical_parameters_have_sources: true
+  population_and_indication_checked: true
+  russian_applicability_checked: false
+  formulation_feasibility_checked: false
+  combined_rules_justified: false
+  source_transfer_check: extraction_checked; calculator_not_implemented
+  clinical_review: not_performed
+  product_clinical_validation: not_performed
+  ready_for_technical_implementation: false
+  unresolved_items:
+  - Иностранная рекомендация; применимость конкретного препарата/формы РФ не подтверждена.
+test_cases:
+- case_id: diazepam-asam-initial-taper__diazepam-initial-range
+  synthetic: true
+  given:
+    current_dose: 10
+    regular_use: true
+    clinical_setting: амбулаторная применимость подтверждена
+  expected:
+    information_next_total_daily_range_mg:
+    - 9
+    - 9.5
+    initial_interval_range_weeks:
+    - 2
+    - 4
+    exact_prescription: null
+  source_refs:
+  - US-ASAM
+  note: 9–9,5 = 10 × (1−10%..1−5%); форма РФ для этих доз не проверена, поэтому это информационный диапазон.
+profile:
+  country: RU
+  selection_status: foreign_reference_only
+  auto_select_allowed: false
+  reason: Зарубежная стратегия сохранена для сравнения; исключена из основного профиля РФ.

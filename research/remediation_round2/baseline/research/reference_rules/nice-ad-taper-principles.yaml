@@ -1,0 +1,260 @@
+schema_version: '1.0'
+rule_id: nice-ad-taper-principles
+development_status: extracted_research_not_executable
+language: ru
+identity:
+  title: 'Антидепрессанты при взрослой депрессии: принципы отмены NICE'
+  mode: taper
+  drug_inn: null
+  from_drug_inn: null
+  to_drug_inn: null
+  formulation: Форма требует отдельной проверки
+  route: oral
+  diagnosis_label_ru: Депрессивный эпизод / рекуррентное депрессивное расстройство
+  classification_system: МКБ-10
+  diagnosis_code: F32/F33
+  jurisdiction: foreign_research
+applicability:
+  population_description: Взрослые. Только подтверждённые условия этой карточки; другие популяции не получают масштабированную
+    взрослую дозу.
+  age_constraints: []
+  pregnancy: Решение по применимости/пользе и риску отдельно; без опубликованной числовой поправки. Стандартная
+    карточка не выдаёт автоматическую дозу при беременности.
+  lactation: Проверять отдельные ограничения источника. Стандартная карточка не выдаёт автоматическую дозу при кормлении.
+  renal_constraints: []
+  hepatic_constraints: []
+  comorbidity_constraints: []
+  interacting_drugs: []
+  other_conditions: []
+  exclusions:
+  - Гиперчувствительность
+  - Непроверенные противопоказания/взаимодействия не считать отсутствующими
+  indication_status_in_russia: foreign_only_not_verified
+  source_refs:
+  - UK-NICE222
+inputs:
+- input_id: drug_form
+  question_ru: Какой препарат и форма выбраны врачом?
+  data_type: drug_form
+  unit: null
+  allowed_values: []
+  required_when: для индивидуального результата
+  show_when: при выборе этой карточки
+  why_needed: Период полувыведения/формы ограничивают отмену.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать
+    условно.
+  source_refs:
+  - UK-NICE222
+- input_id: current_dose
+  question_ru: Текущая суточная доза?
+  data_type: number
+  unit: mg/day
+  allowed_values: []
+  required_when: для индивидуального результата
+  show_when: при выборе этой карточки
+  why_needed: Пропорциональное снижение связано с предыдущей дозой, но процент не задан всем.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать
+    условно.
+  source_refs:
+  - UK-NICE222
+- input_id: duration_of_use
+  question_ru: Продолжительность лечения?
+  data_type: duration
+  unit: null
+  allowed_values: []
+  required_when: для индивидуального результата
+  show_when: при выборе этой карточки
+  why_needed: Определение индивидуального темпа.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать
+    условно.
+  source_refs:
+  - UK-NICE222
+- input_id: withdrawal
+  question_ru: Симптомы отмены исчезли или переносимы?
+  data_type: enum
+  unit: null
+  allowed_values:
+  - да
+  - нет
+  - неизвестно
+  required_when: для индивидуального результата
+  show_when: при выборе этой карточки
+  why_needed: Условие следующего снижения.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать
+    условно.
+  source_refs:
+  - UK-NICE222
+- input_id: prior_withdrawal
+  question_ru: Предшествующая отмена/пропуски с симптомами?
+  data_type: enum
+  unit: null
+  allowed_values:
+  - да
+  - нет
+  - неизвестно
+  required_when: для индивидуального результата
+  show_when: при выборе этой карточки
+  why_needed: Потребность в поддержке и медленном темпе.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать
+    условно.
+  source_refs:
+  - UK-NICE222
+clinical_parameters:
+- parameter_id: example_fraction
+  meaning: Пример уменьшения предыдущей дозы; не предписанный всем процент
+  value: 50
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: percent
+  source_ref: UK-NICE222
+  source_locator: §1.4.16 с.20
+  source_meaning: пример
+  derivation: null
+- parameter_id: example_smaller
+  meaning: Пример меньших снижений при низких дозах
+  value: 25
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: percent
+  source_ref: UK-NICE222
+  source_locator: §1.4.16 с.20
+  source_meaning: пример
+  derivation: null
+logic:
+  representation: narrative_only
+  conditions:
+  - Диагноз, препарат и режим выбрал врач. Соответствие популяции/форме и ограничения источника подтверждены.
+  actions:
+  - Снижать ступенчато в долях предыдущей дозы; меньшие шаги при малых дозах. Примеры example_fraction/example_smaller
+    не выбираются калькулятором автоматически.
+  - Следующая ступень только после исчезновения или достаточной переносимости симптомов отмены; срок может занимать
+    недели/месяцы.
+  - Жидкая форма — только если она действительно доступна и дозирование проверено. Не предполагать наличие её в
+    РФ.
+  parameter_refs:
+  - example_fraction
+  - example_smaller
+  source_refs:
+  - UK-NICE222
+  clinician_choices:
+  - Применимость при особых состояниях и взаимодействиях
+  - Необходимость следующего условного шага
+  missing_data_behaviour: Назвать обязательные неизвестные поля; результат insufficient_data. Справочные этапы можно
+    показать как условные, без безусловной дозы пациенту.
+  unsupported_case_behaviour: not_applicable для этой карточки; указать конкретную отсутствующую ветку, не запретить
+    всё лечение.
+  contraindicated_case_behaviour: Не выдавать дозовую схему противопоказанного сочетания; отобразить источник и
+    причину.
+  conflicts: []
+  composite_rule_dependencies: []
+  combination_justification: Самостоятельные поправки не перемножаются. Совпадение числа не подтверждает применимость
+    их сочетания.
+output:
+  result_type: clinician_choice
+  medication_inn: null
+  dose_per_administration: null
+  administrations_per_day: null
+  total_daily_dose: null
+  unit: mg
+  formulation: Форма требует отдельной проверки
+  schedule: []
+  warnings:
+  - Условная схема источника, не автономное назначение. Максимум не является целью.
+  - Подтвердить противопоказания и взаимодействия исходной инструкции.
+  mandatory_checks:
+  - Проверить соответствие источнику, указанное в applicability и inputs.
+  clinician_decisions_remaining:
+  - Подтверждение применимости
+  - Решение о переходе к следующему этапу
+  rounding_or_formulation_rule: Не округлять медицинскую дозу; использовать только разрешённую форму/деление. При
+    невозможности дозы формой — явно сообщить.
+  source_refs:
+  - UK-NICE222
+sources:
+- source_id: UK-NICE222
+  title: 'Depression in adults: treatment and management, NG222'
+  organization_or_authors: NICE
+  url: https://www.nice.org.uk/guidance/ng222/resources/depression-in-adults-treatment-and-management-pdf-66143832307909
+  doi_or_registry_id: null
+  publication_date: '2022-06-29'
+  version_or_update_date: Опубликовано 29.06.2022; официальный PDF ©2026, получен 08.10.2026
+  accessed_on: '2026-10-08'
+  source_type: guideline
+  jurisdiction: UK
+  access_status: full
+  exact_locator: §1.4.12–1.4.21, PDF с.18–22; особенно §1.4.16 с.20
+  evidence_status: Клиническая рекомендация; не валидация калькулятора
+  what_was_tested: Не исследовался создаваемый продукт. Содержание и ограничения описаны в evidence_limitations.
+  evidence_limitations: Взрослая депрессия. 50% и 25% — примеры пропорционального снижения, а не единый протокол;
+    длительность индивидуальна.
+  reuse_license_or_restriction: Открытый доступ не означает разрешение перераспространять полный документ. Сохранены
+    собственное извлечение фактических правил, локаторы и ссылки; код и большие цитаты не копируются.
+  document_fingerprint:
+    url: https://www.nice.org.uk/guidance/ng222/resources/depression-in-adults-treatment-and-management-pdf-66143832307909
+    sha256: 4f59bf752b49734b81244d1251d94a8fc2e984aac34577e295be243582a957de
+    pages: 111
+    accessed_on: '2026-10-08'
+  local_file: audit/retrieved/UK-NICE222.pdf
+  document_copies:
+  - source_id: UK-NICE222
+    local_file: audit/retrieved/UK-NICE222.pdf
+    sha256: 4f59bf752b49734b81244d1251d94a8fc2e984aac34577e295be243582a957de
+    version: Опубликовано 29.06.2022; официальный PDF ©2026, получен 08.10.2026
+    url: https://www.nice.org.uk/guidance/ng222/resources/depression-in-adults-treatment-and-management-pdf-66143832307909
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: false
+  dates:
+    registration: null
+    revision: null
+    publication: '2022-06-29'
+    download: '2026-10-08'
+  latest_registration_revision_confirmed: false
+verification:
+  primary_source_checked: true
+  all_clinical_parameters_have_sources: true
+  population_and_indication_checked: true
+  russian_applicability_checked: false
+  formulation_feasibility_checked: true
+  combined_rules_justified: false
+  source_transfer_check: extraction_checked; calculator_not_implemented
+  clinical_review: not_performed
+  product_clinical_validation: not_performed
+  ready_for_technical_implementation: false
+  unresolved_items:
+  - Иностранная рекомендация; применимость конкретного препарата/формы РФ не подтверждена.
+test_cases:
+- case_id: nice-ad-taper-principles__nice-examples-not-protocol
+  synthetic: true
+  given:
+    current_dose: 20
+  expected:
+    automatic_percent: null
+    fixed_full_schedule: null
+  source_refs:
+  - UK-NICE222
+  note: Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены.
+profile:
+  country: RU
+  selection_status: foreign_reference_only
+  auto_select_allowed: false
+  reason: Зарубежная стратегия сохранена для сравнения; исключена из основного профиля РФ.

@@ -1,0 +1,3563 @@
+[
+  {
+    "rule_id": "ago-depression-start",
+    "section": "typed_source_conditions",
+    "input": "hepatic",
+    "operator": "category_equals",
+    "value": "hepatic_insufficiency",
+    "action": "not_applicable_standard_numeric_branch",
+    "source_ref": "RU-AGO",
+    "source_locator": "§4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16"
+  },
+  {
+    "rule_id": "ago-depression-start",
+    "section": "typed_source_conditions",
+    "input": "hepatic",
+    "operator": "category_equals",
+    "value": "cirrhosis",
+    "action": "not_applicable_standard_numeric_branch",
+    "source_ref": "RU-AGO",
+    "source_locator": "§4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16"
+  },
+  {
+    "rule_id": "ago-depression-start",
+    "section": "typed_source_conditions",
+    "input": "hepatic",
+    "operator": "category_equals",
+    "value": "active_liver_disease",
+    "action": "not_applicable_standard_numeric_branch",
+    "source_ref": "RU-AGO",
+    "source_locator": "§4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16"
+  },
+  {
+    "rule_id": "ago-depression-start",
+    "section": "source_gates",
+    "source_ref": "RU-AGO",
+    "version": "Официальная ОХЛП реестра: штамп регистрации 2024-12-28; экспертный отчёт 2024-12-23 №28427/0018; получена 08.10.2026",
+    "locator": "§4.1–4.4 с.1–5; §4.5–4.6 с.5–6",
+    "exclusions": [
+      "allergy",
+      "galactose_intolerance",
+      "complete_lactase_deficiency",
+      "glucose_galactose_malabsorption"
+    ],
+    "cautions": [
+      "pregnancy",
+      "lactation",
+      "mania",
+      "suicide_risk",
+      "overweight_obesity",
+      "fatty_liver",
+      "diabetes",
+      "alcohol_abuse",
+      "alcohol_use",
+      "ect"
+    ],
+    "current_medicines_excluded": [
+      "strong_CYP1A2"
+    ],
+    "current_medicines_caution": [
+      "moderate_CYP1A2",
+      "hepatotoxic"
+    ],
+    "stop": [
+      "liver_injury_signs",
+      "mania_symptoms"
+    ],
+    "other": "ALT and AST separately >3 exclude start; (1,3] caution; liver insufficiency/cirrhosis/active disease exclude; elderly+dementia exclude; GAD >65, BDR >=75 exclude; <18 exclude; moderate/severe renal caution; rising transaminases repeat within 48 hours"
+  },
+  {
+    "rule_id": "ago-gad-start",
+    "section": "typed_source_conditions",
+    "input": "hepatic",
+    "operator": "category_equals",
+    "value": "hepatic_insufficiency",
+    "action": "not_applicable_standard_numeric_branch",
+    "source_ref": "RU-AGO",
+    "source_locator": "§4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16"
+  },
+  {
+    "rule_id": "ago-gad-start",
+    "section": "typed_source_conditions",
+    "input": "hepatic",
+    "operator": "category_equals",
+    "value": "cirrhosis",
+    "action": "not_applicable_standard_numeric_branch",
+    "source_ref": "RU-AGO",
+    "source_locator": "§4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16"
+  },
+  {
+    "rule_id": "ago-gad-start",
+    "section": "typed_source_conditions",
+    "input": "hepatic",
+    "operator": "category_equals",
+    "value": "active_liver_disease",
+    "action": "not_applicable_standard_numeric_branch",
+    "source_ref": "RU-AGO",
+    "source_locator": "§4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16"
+  },
+  {
+    "rule_id": "ago-gad-start",
+    "section": "source_gates",
+    "source_ref": "RU-AGO",
+    "version": "Официальная ОХЛП реестра: штамп регистрации 2024-12-28; экспертный отчёт 2024-12-23 №28427/0018; получена 08.10.2026",
+    "locator": "§4.1–4.4 с.1–5; §4.5–4.6 с.5–6",
+    "exclusions": [
+      "allergy",
+      "galactose_intolerance",
+      "complete_lactase_deficiency",
+      "glucose_galactose_malabsorption"
+    ],
+    "cautions": [
+      "pregnancy",
+      "lactation",
+      "mania",
+      "suicide_risk",
+      "overweight_obesity",
+      "fatty_liver",
+      "diabetes",
+      "alcohol_abuse",
+      "alcohol_use",
+      "ect"
+    ],
+    "current_medicines_excluded": [
+      "strong_CYP1A2"
+    ],
+    "current_medicines_caution": [
+      "moderate_CYP1A2",
+      "hepatotoxic"
+    ],
+    "stop": [
+      "liver_injury_signs",
+      "mania_symptoms"
+    ],
+    "other": "ALT and AST separately >3 exclude start; (1,3] caution; liver insufficiency/cirrhosis/active disease exclude; elderly+dementia exclude; GAD >65, BDR >=75 exclude; <18 exclude; moderate/severe renal caution; rising transaminases repeat within 48 hours"
+  },
+  {
+    "rule_id": "ago-stop",
+    "section": "source_gates",
+    "source_ref": "RU-AGO",
+    "version": "Официальная ОХЛП реестра: штамп регистрации 2024-12-28; экспертный отчёт 2024-12-23 №28427/0018; получена 08.10.2026",
+    "locator": "§4.2 с.2, Прекращение лечения",
+    "exclusions": [],
+    "cautions": [],
+    "current_medicines_excluded": [],
+    "current_medicines_caution": [],
+    "other": "No mandatory taper of agomelatine; no next-drug start time derived",
+    "interaction_scope": "Source interaction information only for this limited qualitative result; no patient-specific interaction clearance or dose is granted without a separate medicines contract."
+  },
+  {
+    "rule_id": "dulox-depression-start",
+    "section": "typed_source_conditions",
+    "input": "hepatic",
+    "operator": "category_equals",
+    "value": "liver_disease_with_insufficiency",
+    "action": "not_applicable_standard_numeric_branch",
+    "source_ref": "RU-DULOX",
+    "source_locator": "§4.1–4.3 с.1–4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.9–10"
+  },
+  {
+    "rule_id": "dulox-depression-start",
+    "section": "typed_source_conditions",
+    "input": "seizure_state",
+    "operator": "equals",
+    "value": "контролируемые",
+    "action": "clinician_choice",
+    "source_ref": "RU-DULOX",
+    "source_locator": "§4.1–4.3 с.1–4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.9–10"
+  },
+  {
+    "rule_id": "dulox-depression-start",
+    "section": "typed_source_conditions",
+    "input": "seizure_state",
+    "operator": "equals",
+    "value": "неконтролируемые",
+    "action": "clinician_choice",
+    "source_ref": "RU-DULOX",
+    "source_locator": "§4.1–4.3 с.1–4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.9–10"
+  },
+  {
+    "rule_id": "dulox-depression-start",
+    "section": "typed_source_conditions",
+    "input": "persistent_BP_increase",
+    "operator": "equals",
+    "value": true,
+    "action": "clinician_choice",
+    "source_ref": "RU-DULOX",
+    "source_locator": "§4.4 с.4",
+    "requirement_predicate": {
+      "kind": "reported_current_event"
+    },
+    "source_phase": "ongoing",
+    "medication_role": "selected_or_A",
+    "source_actions": [
+      "consider_dose_adjustment_or_gradual_discontinuation"
+    ]
+  },
+  {
+    "rule_id": "dulox-depression-start",
+    "section": "source_gates",
+    "source_ref": "RU-DULOX",
+    "version": "Официальная ОХЛП реестра: штамп регистрации 2026-03-24; экспертный отчёт 2026-03-20 №5759/0015; получена 08.10.2026",
+    "locator": "§4.1–4.3 с.1–4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.9–10",
+    "exclusions": [
+      "allergy",
+      "uncontrolled_hypertension",
+      "closed_angle_glaucoma",
+      "fructose_intolerance",
+      "glucose_galactose_malabsorption",
+      "sucrase_isomaltase_deficiency"
+    ],
+    "cautions": [
+      "pregnancy",
+      "lactation",
+      "akathisia",
+      "mania",
+      "suicide_risk",
+      "bleeding_risk",
+      "hyponatremia_risk",
+      "diabetes"
+    ],
+    "current_medicines_excluded": [
+      "maoi",
+      "strong_CYP1A2"
+    ],
+    "current_medicines_caution": [
+      "serotonergic",
+      "bleeding",
+      "CYP2D6_inhibitor",
+      "CNS_depressant",
+      "CYP1A2_inhibitor",
+      "CYP2D6_substrate",
+      "hepatotoxic"
+    ],
+    "other": "<18 exclude; CLcr <30 exclude; hepatic disease with insufficiency exclude; akathisia increase harmful; no joint elderly+depression dose",
+    "interaction_class_locators": {
+      "CNS_depressant": "§4.5 с.8",
+      "CYP1A2_inhibitor": "§4.5 с.7–8",
+      "CYP2D6_substrate": "§4.5 с.8",
+      "hepatotoxic": "§4.4 с.7",
+      "duplicate_duloxetine_product": "§4.4 с.7"
+    },
+    "context_field_locators": {
+      "diabetes": "§4.8 с.11,14; adverse reaction context, no psychiatric dose coefficient"
+    },
+    "current_medicines_avoid_standard_combination": [
+      "duplicate_duloxetine_product"
+    ],
+    "duplicate_product_requirement": "An additional current duloxetine product is explicitly confirmed; do not infer duplication from one current record of the selected product itself."
+  },
+  {
+    "rule_id": "dulox-gad-adjust",
+    "section": "typed_source_conditions",
+    "input": "hepatic",
+    "operator": "category_equals",
+    "value": "liver_disease_with_insufficiency",
+    "action": "not_applicable_standard_numeric_branch",
+    "source_ref": "RU-DULOX",
+    "source_locator": "§4.1–4.3 с.1–4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.9–10"
+  },
+  {
+    "rule_id": "dulox-gad-adjust",
+    "section": "typed_source_conditions",
+    "input": "seizure_state",
+    "operator": "equals",
+    "value": "контролируемые",
+    "action": "clinician_choice",
+    "source_ref": "RU-DULOX",
+    "source_locator": "§4.1–4.3 с.1–4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.9–10"
+  },
+  {
+    "rule_id": "dulox-gad-adjust",
+    "section": "typed_source_conditions",
+    "input": "seizure_state",
+    "operator": "equals",
+    "value": "неконтролируемые",
+    "action": "clinician_choice",
+    "source_ref": "RU-DULOX",
+    "source_locator": "§4.1–4.3 с.1–4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.9–10"
+  },
+  {
+    "rule_id": "dulox-gad-adjust",
+    "section": "typed_source_conditions",
+    "input": "persistent_BP_increase",
+    "operator": "equals",
+    "value": true,
+    "action": "clinician_choice",
+    "source_ref": "RU-DULOX",
+    "source_locator": "§4.4 с.4",
+    "requirement_predicate": {
+      "kind": "reported_current_event"
+    },
+    "source_phase": "ongoing",
+    "medication_role": "selected_or_A",
+    "source_actions": [
+      "consider_dose_adjustment_or_gradual_discontinuation"
+    ]
+  },
+  {
+    "rule_id": "dulox-gad-adjust",
+    "section": "source_gates",
+    "source_ref": "RU-DULOX",
+    "version": "Официальная ОХЛП реестра: штамп регистрации 2026-03-24; экспертный отчёт 2026-03-20 №5759/0015; получена 08.10.2026",
+    "locator": "§4.1–4.3 с.1–4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.9–10",
+    "exclusions": [
+      "allergy",
+      "uncontrolled_hypertension",
+      "closed_angle_glaucoma",
+      "fructose_intolerance",
+      "glucose_galactose_malabsorption",
+      "sucrase_isomaltase_deficiency"
+    ],
+    "cautions": [
+      "pregnancy",
+      "lactation",
+      "akathisia",
+      "mania",
+      "suicide_risk",
+      "bleeding_risk",
+      "hyponatremia_risk",
+      "diabetes"
+    ],
+    "current_medicines_excluded": [
+      "maoi",
+      "strong_CYP1A2"
+    ],
+    "current_medicines_caution": [
+      "serotonergic",
+      "bleeding",
+      "CYP2D6_inhibitor",
+      "CNS_depressant",
+      "CYP1A2_inhibitor",
+      "CYP2D6_substrate",
+      "hepatotoxic"
+    ],
+    "other": "<18 exclude; CLcr <30 exclude; hepatic disease with insufficiency exclude; akathisia increase harmful; no joint elderly+depression dose",
+    "interaction_class_locators": {
+      "CNS_depressant": "§4.5 с.8",
+      "CYP1A2_inhibitor": "§4.5 с.7–8",
+      "CYP2D6_substrate": "§4.5 с.8",
+      "hepatotoxic": "§4.4 с.7",
+      "duplicate_duloxetine_product": "§4.4 с.7"
+    },
+    "context_field_locators": {
+      "diabetes": "§4.8 с.11,14; adverse reaction context, no psychiatric dose coefficient"
+    },
+    "current_medicines_avoid_standard_combination": [
+      "duplicate_duloxetine_product"
+    ],
+    "duplicate_product_requirement": "An additional current duloxetine product is explicitly confirmed; do not infer duplication from one current record of the selected product itself."
+  },
+  {
+    "rule_id": "dulox-gad-start",
+    "section": "typed_source_conditions",
+    "input": "hepatic",
+    "operator": "category_equals",
+    "value": "liver_disease_with_insufficiency",
+    "action": "not_applicable_standard_numeric_branch",
+    "source_ref": "RU-DULOX",
+    "source_locator": "§4.1–4.3 с.1–4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.9–10"
+  },
+  {
+    "rule_id": "dulox-gad-start",
+    "section": "typed_source_conditions",
+    "input": "seizure_state",
+    "operator": "equals",
+    "value": "контролируемые",
+    "action": "clinician_choice",
+    "source_ref": "RU-DULOX",
+    "source_locator": "§4.1–4.3 с.1–4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.9–10"
+  },
+  {
+    "rule_id": "dulox-gad-start",
+    "section": "typed_source_conditions",
+    "input": "seizure_state",
+    "operator": "equals",
+    "value": "неконтролируемые",
+    "action": "clinician_choice",
+    "source_ref": "RU-DULOX",
+    "source_locator": "§4.1–4.3 с.1–4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.9–10"
+  },
+  {
+    "rule_id": "dulox-gad-start",
+    "section": "typed_source_conditions",
+    "input": "persistent_BP_increase",
+    "operator": "equals",
+    "value": true,
+    "action": "clinician_choice",
+    "source_ref": "RU-DULOX",
+    "source_locator": "§4.4 с.4",
+    "requirement_predicate": {
+      "kind": "reported_current_event"
+    },
+    "source_phase": "ongoing",
+    "medication_role": "selected_or_A",
+    "source_actions": [
+      "consider_dose_adjustment_or_gradual_discontinuation"
+    ]
+  },
+  {
+    "rule_id": "dulox-gad-start",
+    "section": "source_gates",
+    "source_ref": "RU-DULOX",
+    "version": "Официальная ОХЛП реестра: штамп регистрации 2026-03-24; экспертный отчёт 2026-03-20 №5759/0015; получена 08.10.2026",
+    "locator": "§4.1–4.3 с.1–4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.9–10",
+    "exclusions": [
+      "allergy",
+      "uncontrolled_hypertension",
+      "closed_angle_glaucoma",
+      "fructose_intolerance",
+      "glucose_galactose_malabsorption",
+      "sucrase_isomaltase_deficiency"
+    ],
+    "cautions": [
+      "pregnancy",
+      "lactation",
+      "akathisia",
+      "mania",
+      "suicide_risk",
+      "bleeding_risk",
+      "hyponatremia_risk",
+      "diabetes"
+    ],
+    "current_medicines_excluded": [
+      "maoi",
+      "strong_CYP1A2"
+    ],
+    "current_medicines_caution": [
+      "serotonergic",
+      "bleeding",
+      "CYP2D6_inhibitor",
+      "CNS_depressant",
+      "CYP1A2_inhibitor",
+      "CYP2D6_substrate",
+      "hepatotoxic"
+    ],
+    "other": "<18 exclude; CLcr <30 exclude; hepatic disease with insufficiency exclude; akathisia increase harmful; no joint elderly+depression dose",
+    "interaction_class_locators": {
+      "CNS_depressant": "§4.5 с.8",
+      "CYP1A2_inhibitor": "§4.5 с.7–8",
+      "CYP2D6_substrate": "§4.5 с.8",
+      "hepatotoxic": "§4.4 с.7",
+      "duplicate_duloxetine_product": "§4.4 с.7"
+    },
+    "context_field_locators": {
+      "diabetes": "§4.8 с.11,14; adverse reaction context, no psychiatric dose coefficient"
+    },
+    "current_medicines_avoid_standard_combination": [
+      "duplicate_duloxetine_product"
+    ],
+    "duplicate_product_requirement": "An additional current duloxetine product is explicitly confirmed; do not infer duplication from one current record of the selected product itself."
+  },
+  {
+    "rule_id": "dulox-taper-limit",
+    "section": "typed_source_conditions",
+    "input": "persistent_BP_increase",
+    "operator": "equals",
+    "value": true,
+    "action": "clinician_choice",
+    "source_ref": "RU-DULOX",
+    "source_locator": "§4.4 с.4",
+    "requirement_predicate": {
+      "kind": "reported_current_event"
+    },
+    "source_phase": "ongoing",
+    "medication_role": "selected_or_A",
+    "source_actions": [
+      "consider_dose_adjustment_or_gradual_discontinuation"
+    ]
+  },
+  {
+    "rule_id": "dulox-taper-limit",
+    "section": "source_gates",
+    "source_ref": "RU-DULOX",
+    "version": "Официальная ОХЛП реестра: штамп регистрации 2026-03-24; экспертный отчёт 2026-03-20 №5759/0015; получена 08.10.2026",
+    "locator": "§4.1–4.3 с.1–4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.9–10",
+    "exclusions": [],
+    "cautions": [],
+    "current_medicines_excluded": [],
+    "current_medicines_caution": [
+      "CNS_depressant",
+      "CYP1A2_inhibitor",
+      "CYP2D6_substrate",
+      "hepatotoxic"
+    ],
+    "stop": [],
+    "other": "Source-specific withdrawal guidance; exact taper not inferred. Published immediate cessation conditions take precedence if treatment ongoing.",
+    "interaction_class_locators": {
+      "CNS_depressant": "§4.5 с.8",
+      "CYP1A2_inhibitor": "§4.5 с.7–8",
+      "CYP2D6_substrate": "§4.5 с.8",
+      "hepatotoxic": "§4.4 с.7",
+      "duplicate_duloxetine_product": "§4.4 с.7"
+    },
+    "interaction_scope": "Source interaction information only for this limited qualitative result; no patient-specific interaction clearance or dose is granted without a separate medicines contract.",
+    "context_field_locators": {
+      "diabetes": "§4.8 с.11,14; adverse reaction context, no psychiatric dose coefficient"
+    },
+    "current_medicines_avoid_standard_combination": [
+      "duplicate_duloxetine_product"
+    ],
+    "duplicate_product_requirement": "An additional current duloxetine product is explicitly confirmed; do not infer duplication from one current record of the selected product itself."
+  },
+  {
+    "rule_id": "esc-adult-adjust",
+    "section": "typed_source_conditions",
+    "input": "seizure_state",
+    "operator": "equals",
+    "value": "неконтролируемые",
+    "action": "not_applicable standard branch",
+    "source_ref": "RU-ESC",
+    "source_locator": "§4.4 с.4"
+  },
+  {
+    "rule_id": "esc-adult-adjust",
+    "section": "typed_source_conditions",
+    "input": "seizure_state",
+    "operator": "equals",
+    "value": "первичные/участившиеся приступы",
+    "action": "stop ESC",
+    "source_ref": "RU-ESC",
+    "source_locator": "§4.4 с.4"
+  },
+  {
+    "rule_id": "esc-adult-adjust",
+    "section": "source_gates",
+    "source_ref": "RU-ESC",
+    "version": "РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; экспертный отчёт 31.10.2025 №27320, последовательность 0002; текущая опубликованная ОХЛП реестра получена 08.10.2026",
+    "locator": "§4.3–4.6 с.4–10",
+    "exclusions": [
+      "allergy"
+    ],
+    "cautions": [
+      "mania",
+      "qt_risk",
+      "bleeding_risk",
+      "hyponatremia_risk",
+      "suicide_risk",
+      "diabetes",
+      "glaucoma"
+    ],
+    "stop": [
+      "mania_symptoms",
+      "arrhythmia_signs",
+      "serotonin_syndrome_signs"
+    ],
+    "current_medicines_excluded": [
+      "irreversible_maoi",
+      "pimozide",
+      "QT_prolonging"
+    ],
+    "current_medicines_caution": [
+      "reversible_MAO_A",
+      "linezolid",
+      "selective_MAO_B",
+      "serotonergic",
+      "CYP2C19_inhibitor",
+      "cimetidine",
+      "bleeding"
+    ],
+    "other": "CLcr=30 gap; Child–Pugh C supervision; no combined factors; QT electrolyte/ECG obligations; full pair switch calendar absent"
+  },
+  {
+    "rule_id": "esc-cyp2c19-start",
+    "section": "typed_source_conditions",
+    "input": "seizure_state",
+    "operator": "equals",
+    "value": "неконтролируемые",
+    "action": "not_applicable standard branch",
+    "source_ref": "RU-ESC",
+    "source_locator": "§4.4 с.4"
+  },
+  {
+    "rule_id": "esc-cyp2c19-start",
+    "section": "typed_source_conditions",
+    "input": "seizure_state",
+    "operator": "equals",
+    "value": "первичные/участившиеся приступы",
+    "action": "stop ESC",
+    "source_ref": "RU-ESC",
+    "source_locator": "§4.4 с.4"
+  },
+  {
+    "rule_id": "esc-cyp2c19-start",
+    "section": "source_gates",
+    "source_ref": "RU-ESC",
+    "version": "РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; экспертный отчёт 31.10.2025 №27320, последовательность 0002; текущая опубликованная ОХЛП реестра получена 08.10.2026",
+    "locator": "§4.3–4.6 с.4–10",
+    "exclusions": [
+      "allergy"
+    ],
+    "cautions": [
+      "mania",
+      "qt_risk",
+      "bleeding_risk",
+      "hyponatremia_risk",
+      "suicide_risk",
+      "diabetes",
+      "glaucoma"
+    ],
+    "stop": [
+      "mania_symptoms",
+      "arrhythmia_signs",
+      "serotonin_syndrome_signs"
+    ],
+    "current_medicines_excluded": [
+      "irreversible_maoi",
+      "pimozide",
+      "QT_prolonging"
+    ],
+    "current_medicines_caution": [
+      "reversible_MAO_A",
+      "linezolid",
+      "selective_MAO_B",
+      "serotonergic",
+      "CYP2C19_inhibitor",
+      "cimetidine",
+      "bleeding"
+    ],
+    "other": "CLcr=30 gap; Child–Pugh C supervision; no combined factors; QT electrolyte/ECG obligations; full pair switch calendar absent"
+  },
+  {
+    "rule_id": "esc-elderly-start",
+    "section": "typed_source_conditions",
+    "input": "seizure_state",
+    "operator": "equals",
+    "value": "неконтролируемые",
+    "action": "not_applicable standard branch",
+    "source_ref": "RU-ESC",
+    "source_locator": "§4.4 с.4"
+  },
+  {
+    "rule_id": "esc-elderly-start",
+    "section": "typed_source_conditions",
+    "input": "seizure_state",
+    "operator": "equals",
+    "value": "первичные/участившиеся приступы",
+    "action": "stop ESC",
+    "source_ref": "RU-ESC",
+    "source_locator": "§4.4 с.4"
+  },
+  {
+    "rule_id": "esc-elderly-start",
+    "section": "source_gates",
+    "source_ref": "RU-ESC",
+    "version": "РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; экспертный отчёт 31.10.2025 №27320, последовательность 0002; текущая опубликованная ОХЛП реестра получена 08.10.2026",
+    "locator": "§4.3–4.6 с.4–10",
+    "exclusions": [
+      "allergy"
+    ],
+    "cautions": [
+      "mania",
+      "qt_risk",
+      "bleeding_risk",
+      "hyponatremia_risk",
+      "suicide_risk",
+      "diabetes",
+      "glaucoma"
+    ],
+    "stop": [
+      "mania_symptoms",
+      "arrhythmia_signs",
+      "serotonin_syndrome_signs"
+    ],
+    "current_medicines_excluded": [
+      "irreversible_maoi",
+      "pimozide",
+      "QT_prolonging"
+    ],
+    "current_medicines_caution": [
+      "reversible_MAO_A",
+      "linezolid",
+      "selective_MAO_B",
+      "serotonergic",
+      "CYP2C19_inhibitor",
+      "cimetidine",
+      "bleeding"
+    ],
+    "other": "CLcr=30 gap; Child–Pugh C supervision; no combined factors; QT electrolyte/ECG obligations; full pair switch calendar absent"
+  },
+  {
+    "rule_id": "esc-gad-start",
+    "section": "typed_source_conditions",
+    "input": "seizure_state",
+    "operator": "equals",
+    "value": "неконтролируемые",
+    "action": "not_applicable standard branch",
+    "source_ref": "RU-ESC",
+    "source_locator": "§4.4 с.4"
+  },
+  {
+    "rule_id": "esc-gad-start",
+    "section": "typed_source_conditions",
+    "input": "seizure_state",
+    "operator": "equals",
+    "value": "первичные/участившиеся приступы",
+    "action": "stop ESC",
+    "source_ref": "RU-ESC",
+    "source_locator": "§4.4 с.4"
+  },
+  {
+    "rule_id": "esc-gad-start",
+    "section": "source_gates",
+    "source_ref": "RU-ESC",
+    "version": "РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; экспертный отчёт 31.10.2025 №27320, последовательность 0002; текущая опубликованная ОХЛП реестра получена 08.10.2026",
+    "locator": "§4.3–4.6 с.4–10",
+    "exclusions": [
+      "allergy"
+    ],
+    "cautions": [
+      "mania",
+      "qt_risk",
+      "bleeding_risk",
+      "hyponatremia_risk",
+      "suicide_risk",
+      "diabetes",
+      "glaucoma"
+    ],
+    "stop": [
+      "mania_symptoms",
+      "arrhythmia_signs",
+      "serotonin_syndrome_signs"
+    ],
+    "current_medicines_excluded": [
+      "irreversible_maoi",
+      "pimozide",
+      "QT_prolonging"
+    ],
+    "current_medicines_caution": [
+      "reversible_MAO_A",
+      "linezolid",
+      "selective_MAO_B",
+      "serotonergic",
+      "CYP2C19_inhibitor",
+      "cimetidine",
+      "bleeding"
+    ],
+    "other": "CLcr=30 gap; Child–Pugh C supervision; no combined factors; QT electrolyte/ECG obligations; full pair switch calendar absent"
+  },
+  {
+    "rule_id": "esc-hepatic-start",
+    "section": "typed_source_conditions",
+    "input": "seizure_state",
+    "operator": "equals",
+    "value": "неконтролируемые",
+    "action": "not_applicable standard branch",
+    "source_ref": "RU-ESC",
+    "source_locator": "§4.4 с.4"
+  },
+  {
+    "rule_id": "esc-hepatic-start",
+    "section": "typed_source_conditions",
+    "input": "seizure_state",
+    "operator": "equals",
+    "value": "первичные/участившиеся приступы",
+    "action": "stop ESC",
+    "source_ref": "RU-ESC",
+    "source_locator": "§4.4 с.4"
+  },
+  {
+    "rule_id": "esc-hepatic-start",
+    "section": "source_gates",
+    "source_ref": "RU-ESC",
+    "version": "РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; экспертный отчёт 31.10.2025 №27320, последовательность 0002; текущая опубликованная ОХЛП реестра получена 08.10.2026",
+    "locator": "§4.3–4.6 с.4–10",
+    "exclusions": [
+      "allergy"
+    ],
+    "cautions": [
+      "mania",
+      "qt_risk",
+      "bleeding_risk",
+      "hyponatremia_risk",
+      "suicide_risk",
+      "diabetes",
+      "glaucoma"
+    ],
+    "stop": [
+      "mania_symptoms",
+      "arrhythmia_signs",
+      "serotonin_syndrome_signs"
+    ],
+    "current_medicines_excluded": [
+      "irreversible_maoi",
+      "pimozide",
+      "QT_prolonging"
+    ],
+    "current_medicines_caution": [
+      "reversible_MAO_A",
+      "linezolid",
+      "selective_MAO_B",
+      "serotonergic",
+      "CYP2C19_inhibitor",
+      "cimetidine",
+      "bleeding"
+    ],
+    "other": "CLcr=30 gap; Child–Pugh C supervision; no combined factors; QT electrolyte/ECG obligations; full pair switch calendar absent"
+  },
+  {
+    "rule_id": "esc-panic-start",
+    "section": "typed_source_conditions",
+    "input": "seizure_state",
+    "operator": "equals",
+    "value": "неконтролируемые",
+    "action": "not_applicable standard branch",
+    "source_ref": "RU-ESC",
+    "source_locator": "§4.4 с.4"
+  },
+  {
+    "rule_id": "esc-panic-start",
+    "section": "typed_source_conditions",
+    "input": "seizure_state",
+    "operator": "equals",
+    "value": "первичные/участившиеся приступы",
+    "action": "stop ESC",
+    "source_ref": "RU-ESC",
+    "source_locator": "§4.4 с.4"
+  },
+  {
+    "rule_id": "esc-panic-start",
+    "section": "source_gates",
+    "source_ref": "RU-ESC",
+    "version": "РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; экспертный отчёт 31.10.2025 №27320, последовательность 0002; текущая опубликованная ОХЛП реестра получена 08.10.2026",
+    "locator": "§4.3–4.6 с.4–10",
+    "exclusions": [
+      "allergy"
+    ],
+    "cautions": [
+      "mania",
+      "qt_risk",
+      "bleeding_risk",
+      "hyponatremia_risk",
+      "suicide_risk",
+      "diabetes",
+      "glaucoma"
+    ],
+    "stop": [
+      "mania_symptoms",
+      "arrhythmia_signs",
+      "serotonin_syndrome_signs"
+    ],
+    "current_medicines_excluded": [
+      "irreversible_maoi",
+      "pimozide",
+      "QT_prolonging"
+    ],
+    "current_medicines_caution": [
+      "reversible_MAO_A",
+      "linezolid",
+      "selective_MAO_B",
+      "serotonergic",
+      "CYP2C19_inhibitor",
+      "cimetidine",
+      "bleeding"
+    ],
+    "other": "CLcr=30 gap; Child–Pugh C supervision; no combined factors; QT electrolyte/ECG obligations; full pair switch calendar absent"
+  },
+  {
+    "rule_id": "esc-social-start",
+    "section": "typed_source_conditions",
+    "input": "seizure_state",
+    "operator": "equals",
+    "value": "неконтролируемые",
+    "action": "not_applicable standard branch",
+    "source_ref": "RU-ESC",
+    "source_locator": "§4.4 с.4"
+  },
+  {
+    "rule_id": "esc-social-start",
+    "section": "typed_source_conditions",
+    "input": "seizure_state",
+    "operator": "equals",
+    "value": "первичные/участившиеся приступы",
+    "action": "stop ESC",
+    "source_ref": "RU-ESC",
+    "source_locator": "§4.4 с.4"
+  },
+  {
+    "rule_id": "esc-social-start",
+    "section": "source_gates",
+    "source_ref": "RU-ESC",
+    "version": "РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; экспертный отчёт 31.10.2025 №27320, последовательность 0002; текущая опубликованная ОХЛП реестра получена 08.10.2026",
+    "locator": "§4.3–4.6 с.4–10",
+    "exclusions": [
+      "allergy"
+    ],
+    "cautions": [
+      "mania",
+      "qt_risk",
+      "bleeding_risk",
+      "hyponatremia_risk",
+      "suicide_risk",
+      "diabetes",
+      "glaucoma"
+    ],
+    "stop": [
+      "mania_symptoms",
+      "arrhythmia_signs",
+      "serotonin_syndrome_signs"
+    ],
+    "current_medicines_excluded": [
+      "irreversible_maoi",
+      "pimozide",
+      "QT_prolonging"
+    ],
+    "current_medicines_caution": [
+      "reversible_MAO_A",
+      "linezolid",
+      "selective_MAO_B",
+      "serotonergic",
+      "CYP2C19_inhibitor",
+      "cimetidine",
+      "bleeding"
+    ],
+    "other": "CLcr=30 gap; Child–Pugh C supervision; no combined factors; QT electrolyte/ECG obligations; full pair switch calendar absent"
+  },
+  {
+    "rule_id": "esc-taper-limit",
+    "section": "typed_source_conditions",
+    "input": "seizure_state",
+    "operator": "equals",
+    "value": "неконтролируемые",
+    "action": "not_applicable standard branch",
+    "source_ref": "RU-ESC",
+    "source_locator": "§4.4 с.4"
+  },
+  {
+    "rule_id": "esc-taper-limit",
+    "section": "typed_source_conditions",
+    "input": "seizure_state",
+    "operator": "equals",
+    "value": "первичные/участившиеся приступы",
+    "action": "stop ESC",
+    "source_ref": "RU-ESC",
+    "source_locator": "§4.4 с.4"
+  },
+  {
+    "rule_id": "esc-taper-limit",
+    "section": "source_gates",
+    "source_ref": "RU-ESC",
+    "version": "РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; экспертный отчёт 31.10.2025 №27320, последовательность 0002; текущая опубликованная ОХЛП реестра получена 08.10.2026",
+    "locator": "§4.3–4.6 с.4–10",
+    "exclusions": [],
+    "cautions": [],
+    "stop": [
+      "mania_symptoms",
+      "arrhythmia_signs",
+      "serotonin_syndrome_signs"
+    ],
+    "current_medicines_excluded": [],
+    "current_medicines_caution": [],
+    "other": "CLcr=30 gap; Child–Pugh C supervision; no combined factors; QT electrolyte/ECG obligations; full pair switch calendar absent"
+  },
+  {
+    "rule_id": "fluvox-depression-start",
+    "section": "typed_source_conditions",
+    "input": "hepatic",
+    "operator": "category_equals",
+    "value": "hepatic_impairment",
+    "action": "clinician_choice",
+    "source_ref": "RU-FLUVOX",
+    "source_locator": "§4.1–4.3 PDF с.1–3; §4.4–4.6 с.4–11; §8–10 с.19"
+  },
+  {
+    "rule_id": "fluvox-depression-start",
+    "section": "typed_source_conditions",
+    "input": "seizure_state",
+    "operator": "equals",
+    "value": "контролируемые",
+    "action": "clinician_choice",
+    "source_ref": "RU-FLUVOX",
+    "source_locator": "§4.4 с.5"
+  },
+  {
+    "rule_id": "fluvox-depression-start",
+    "section": "typed_source_conditions",
+    "input": "seizure_state",
+    "operator": "equals",
+    "value": "неконтролируемые",
+    "action": "not_applicable_standard_branch; avoid unstable epilepsy",
+    "source_ref": "RU-FLUVOX",
+    "source_locator": "§4.4 с.5"
+  },
+  {
+    "rule_id": "fluvox-depression-start",
+    "section": "typed_source_conditions",
+    "input": "seizure_state",
+    "operator": "equals",
+    "value": "новые приступы",
+    "action": "stop ongoing source medication",
+    "source_ref": "RU-FLUVOX",
+    "source_locator": "§4.4 с.5"
+  },
+  {
+    "rule_id": "fluvox-depression-start",
+    "section": "urgent_stop_predicates",
+    "input": "serotonin_syndrome_signs",
+    "operator": "equals",
+    "value": true,
+    "action": "source_stop_action",
+    "source_ref": "RU-FLUVOX",
+    "source_locator": "§4.4 с.5",
+    "stop_medication": "RU-FLUVOX",
+    "treatment_phase": "ongoing",
+    "additional_action": "start_symptomatic_treatment_by_clinician"
+  },
+  {
+    "rule_id": "fluvox-depression-start",
+    "section": "urgent_stop_predicates",
+    "input": "new_or_increased_seizures",
+    "operator": "equals",
+    "value": true,
+    "action": "source_stop_action",
+    "source_ref": "RU-FLUVOX",
+    "source_locator": "§4.4 с.5",
+    "requirement_predicate": {
+      "kind": "ongoing_selected_drug"
+    },
+    "treatment_phase": "ongoing"
+  },
+  {
+    "rule_id": "fluvox-depression-start",
+    "section": "source_gates",
+    "source_ref": "RU-FLUVOX",
+    "version": "Официальная ОХЛП реестра: штамп регистрации 2026-08-19; экспертный отчёт 2026-08-14 №16133/0004; получена 08.10.2026",
+    "locator": "§4.1–4.3 с.1–3; §4.4–4.6 с.4–11",
+    "exclusions": [
+      "allergy",
+      "lactation"
+    ],
+    "cautions": [
+      "pregnancy",
+      "mania",
+      "akathisia",
+      "bleeding_risk",
+      "suicide_risk",
+      "diabetes",
+      "glaucoma",
+      "ect"
+    ],
+    "current_medicines_excluded": [
+      "maoi",
+      "tizanidine",
+      "pimozide",
+      "ramelteon",
+      "terfenadine",
+      "astemizole",
+      "cisapride"
+    ],
+    "current_medicines_caution": [
+      "serotonergic",
+      "bleeding",
+      "CYP_substrate"
+    ],
+    "stop": [
+      "mania_symptoms",
+      "liver_injury_signs"
+    ],
+    "other": "<18 depression no; renal/hepatic insufficiency low dose not numerically specified; uncontrolled epilepsy avoid; new seizures stop; >150 divided into 2 or 3 administrations by choice; next calendar day after reversible MAOI"
+  },
+  {
+    "rule_id": "fluvox-taper-limit",
+    "section": "urgent_stop_predicates",
+    "input": "serotonin_syndrome_signs",
+    "operator": "equals",
+    "value": true,
+    "action": "source_stop_action",
+    "source_ref": "RU-FLUVOX",
+    "source_locator": "§4.4 с.5",
+    "requirement_predicate": {
+      "kind": "always"
+    }
+  },
+  {
+    "rule_id": "fluvox-taper-limit",
+    "section": "urgent_stop_predicates",
+    "input": "new_or_increased_seizures",
+    "operator": "equals",
+    "value": true,
+    "action": "source_stop_action",
+    "source_ref": "RU-FLUVOX",
+    "source_locator": "§4.4 с.5",
+    "requirement_predicate": {
+      "kind": "always"
+    }
+  },
+  {
+    "rule_id": "fluvox-taper-limit",
+    "section": "urgent_stop_predicates",
+    "input": "liver_injury_signs",
+    "operator": "equals",
+    "value": true,
+    "action": "source_stop_action",
+    "source_ref": "RU-FLUVOX",
+    "source_locator": "§4.4 с.5",
+    "requirement_predicate": {
+      "kind": "always"
+    }
+  },
+  {
+    "rule_id": "fluvox-taper-limit",
+    "section": "urgent_stop_predicates",
+    "input": "mania_symptoms",
+    "operator": "equals",
+    "value": true,
+    "action": "source_stop_action",
+    "source_ref": "RU-FLUVOX",
+    "source_locator": "§4.4 с.7",
+    "requirement_predicate": {
+      "kind": "always"
+    }
+  },
+  {
+    "rule_id": "fluvox-taper-limit",
+    "section": "source_gates",
+    "source_ref": "RU-FLUVOX",
+    "version": "Официальная ОХЛП реестра: штамп регистрации 2026-08-19; экспертный отчёт 2026-08-14 №16133/0004; получена 08.10.2026",
+    "locator": "§4.1–4.3 с.1–3; §4.4–4.6 с.4–11",
+    "exclusions": [],
+    "cautions": [],
+    "current_medicines_excluded": [],
+    "current_medicines_caution": [],
+    "stop": [],
+    "other": "Source-specific withdrawal guidance; exact taper not inferred. Published immediate cessation conditions take precedence if treatment ongoing.",
+    "interaction_scope": "Source interaction information only for this limited qualitative result; no patient-specific interaction clearance or dose is granted without a separate medicines contract."
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "section": "typed_source_conditions",
+    "input": "hepatic",
+    "operator": "category_equals",
+    "value": "hepatic_impairment",
+    "action": "clinician_choice",
+    "source_ref": "RU-PAROX",
+    "source_locator": "§4.2 с.4"
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "section": "typed_source_conditions",
+    "input": "seizure_state",
+    "operator": "equals",
+    "value": "контролируемые",
+    "action": "clinician_choice",
+    "source_ref": "RU-PAROX",
+    "source_locator": "§4.4 с.8"
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "section": "typed_source_conditions",
+    "input": "seizure_state",
+    "operator": "equals",
+    "value": "неконтролируемые",
+    "action": "clinician_choice",
+    "source_ref": "RU-PAROX",
+    "source_locator": "§4.4 с.8"
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "section": "typed_source_conditions",
+    "input": "seizure_state",
+    "operator": "equals",
+    "value": "новые приступы",
+    "action": "stop ongoing source medication",
+    "source_ref": "RU-PAROX",
+    "source_locator": "§4.4 с.9"
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "section": "typed_source_conditions",
+    "input": "bipolar_risk_screening",
+    "operator": "equals",
+    "value": "требуется отдельное решение врача",
+    "action": "clinician_choice",
+    "source_ref": "RU-PAROX",
+    "source_locator": "§4.4 с.7–8",
+    "requirement_predicate": {
+      "kind": "always"
+    }
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "section": "urgent_stop_predicates",
+    "input": "serotonin_syndrome_signs",
+    "operator": "equals",
+    "value": true,
+    "action": "source_stop_action",
+    "source_ref": "RU-PAROX",
+    "source_locator": "§4.4 с.7",
+    "requirement_predicate": {
+      "kind": "ongoing_selected_drug"
+    },
+    "treatment_phase": "ongoing"
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "section": "source_gates",
+    "source_ref": "RU-PAROX",
+    "version": "Официальная ОХЛП реестра: штамп регистрации 2025-02-14; экспертный отчёт 2025-02-12 №3370/0003; получена 08.10.2026",
+    "locator": "§4.2–4.3 с.3–5; §4.4–4.6 с.5–15",
+    "exclusions": [
+      "allergy"
+    ],
+    "cautions": [
+      "pregnancy",
+      "lactation",
+      "mania",
+      "suicide_risk",
+      "akathisia",
+      "diabetes",
+      "glaucoma",
+      "bleeding_risk",
+      "qt_risk",
+      "ect"
+    ],
+    "current_medicines_excluded": [
+      "maoi",
+      "pimozide",
+      "thioridazine"
+    ],
+    "current_medicines_caution": [
+      "serotonergic",
+      "bleeding",
+      "CYP2D6_substrate"
+    ],
+    "other": "<18 no adult scheme; elderly maximum 40 without invented age threshold; severe CLcr <30 or hepatic insufficiency low therapeutic range unspecified; no general taper tail; standard MAOI branch excludes exceptional linezolid use"
+  },
+  {
+    "rule_id": "parox-taper-example",
+    "section": "urgent_stop_predicates",
+    "input": "serotonin_syndrome_signs",
+    "operator": "equals",
+    "value": true,
+    "action": "source_stop_action",
+    "source_ref": "RU-PAROX",
+    "source_locator": "§4.4 с.7",
+    "requirement_predicate": {
+      "kind": "always"
+    }
+  },
+  {
+    "rule_id": "parox-taper-example",
+    "section": "urgent_stop_predicates",
+    "input": "new_seizures",
+    "operator": "equals",
+    "value": true,
+    "action": "source_stop_action",
+    "source_ref": "RU-PAROX",
+    "source_locator": "§4.4 с.9",
+    "requirement_predicate": {
+      "kind": "always"
+    }
+  },
+  {
+    "rule_id": "parox-taper-example",
+    "section": "source_gates",
+    "source_ref": "RU-PAROX",
+    "version": "Официальная ОХЛП реестра: штамп регистрации 2025-02-14; экспертный отчёт 2025-02-12 №3370/0003; получена 08.10.2026",
+    "locator": "§4.2–4.3 с.3–5; §4.4–4.6 с.5–15",
+    "exclusions": [],
+    "cautions": [],
+    "current_medicines_excluded": [],
+    "current_medicines_caution": [],
+    "stop": [],
+    "other": "Source-specific withdrawal guidance; exact taper not inferred. Published immediate cessation conditions take precedence if treatment ongoing.",
+    "interaction_scope": "Source interaction information only for this limited qualitative result; no patient-specific interaction clearance or dose is granted without a separate medicines contract."
+  },
+  {
+    "rule_id": "phen-taper-limit",
+    "section": "urgent_stop_predicates",
+    "input": "unusual_reactions",
+    "operator": "equals",
+    "value": true,
+    "action": "source_stop_action",
+    "source_ref": "RU-PHEN",
+    "source_locator": "§4.4 с.4",
+    "stop_medication": "RU-PHEN",
+    "treatment_phase": "current_cessation"
+  },
+  {
+    "rule_id": "phen-taper-limit",
+    "section": "source_gates",
+    "source_ref": "RU-PHEN",
+    "version": "Официальная ОХЛП реестра: штамп регистрации 2026-05-07; экспертный отчёт 2026-05-05 №9041/0004; получена 08.10.2026",
+    "locator": "§1–3 с.1; §4.1–4.2 с.1–3; §4.3–4.4 с.3–4; §4.5–4.6 с.4–5",
+    "exclusions": [],
+    "cautions": [],
+    "current_medicines_excluded": [],
+    "current_medicines_caution": [],
+    "stop": [],
+    "other": "Source-specific withdrawal guidance; exact taper not inferred. Published immediate cessation conditions take precedence if treatment ongoing.",
+    "interaction_scope": "Source interaction information only for this limited qualitative result; no patient-specific interaction clearance or dose is granted without a separate medicines contract."
+  },
+  {
+    "rule_id": "preg-gad-adjust",
+    "section": "typed_source_conditions",
+    "input": "misuse_risk_assessment",
+    "operator": "equals",
+    "value": "требуется отдельное решение врача",
+    "action": "clinician_choice_no_standard_dose",
+    "source_ref": "RU-PREG",
+    "source_locator": "§4.4 с.8–9",
+    "requirement_predicate": {
+      "kind": "always"
+    }
+  },
+  {
+    "rule_id": "preg-gad-adjust",
+    "section": "typed_source_conditions",
+    "input": "effective_contraception",
+    "operator": "equals",
+    "value": false,
+    "action": "clinician_choice_no_standard_dose",
+    "source_ref": "RU-PREG",
+    "source_locator": "§4.6 с.12",
+    "requirement_predicate": {
+      "kind": "field_true",
+      "field": "reproductive_population"
+    }
+  },
+  {
+    "rule_id": "preg-gad-adjust",
+    "section": "typed_source_conditions",
+    "input": "current_suicidal_thoughts_or_behavior",
+    "operator": "equals",
+    "value": true,
+    "action": "clinician_choice",
+    "source_ref": "RU-PREG",
+    "source_locator": "§4.4 с.8",
+    "requirement_predicate": {
+      "kind": "reported_current_event"
+    },
+    "source_phase": "ongoing",
+    "medication_role": "selected_or_A",
+    "source_actions": [
+      "consider_discontinuation_of_pregabalin",
+      "consider_appropriate_treatment_and_seek_medical_care"
+    ]
+  },
+  {
+    "rule_id": "preg-gad-adjust",
+    "section": "source_gates",
+    "source_ref": "RU-PREG",
+    "version": "Официальная ОХЛП реестра: штамп регистрации 2025-08-13; экспертный отчёт 2024-01-26 №1319/0011; получена 08.10.2026",
+    "locator": "§4.1–4.3 с.3–6; §4.4–4.6 с.6–12",
+    "exclusions": [
+      "allergy",
+      "galactose_intolerance",
+      "complete_lactase_deficiency",
+      "glucose_galactose_malabsorption"
+    ],
+    "cautions": [
+      "pregnancy",
+      "lactation",
+      "substance_use",
+      "respiratory",
+      "suicide_risk",
+      "heart_failure",
+      "diabetes_weight_gain"
+    ],
+    "current_medicines_excluded": [],
+    "current_medicines_caution": [
+      "CNS_depressant",
+      "opioid"
+    ],
+    "stop": [
+      "angioedema",
+      "severe_skin_reaction"
+    ],
+    "other": "<18 exclude; CLcr source table; haemodialysis separate no complete scheme; hepatic no adjustment; no splitting/opening capsules; diabetes weight gain requires separate hypoglycaemic review"
+  },
+  {
+    "rule_id": "preg-gad-start",
+    "section": "typed_source_conditions",
+    "input": "misuse_risk_assessment",
+    "operator": "equals",
+    "value": "требуется отдельное решение врача",
+    "action": "clinician_choice_no_standard_dose",
+    "source_ref": "RU-PREG",
+    "source_locator": "§4.4 с.8–9",
+    "requirement_predicate": {
+      "kind": "always"
+    }
+  },
+  {
+    "rule_id": "preg-gad-start",
+    "section": "typed_source_conditions",
+    "input": "effective_contraception",
+    "operator": "equals",
+    "value": false,
+    "action": "clinician_choice_no_standard_dose",
+    "source_ref": "RU-PREG",
+    "source_locator": "§4.6 с.12",
+    "requirement_predicate": {
+      "kind": "field_true",
+      "field": "reproductive_population"
+    }
+  },
+  {
+    "rule_id": "preg-gad-start",
+    "section": "typed_source_conditions",
+    "input": "current_suicidal_thoughts_or_behavior",
+    "operator": "equals",
+    "value": true,
+    "action": "clinician_choice",
+    "source_ref": "RU-PREG",
+    "source_locator": "§4.4 с.8",
+    "requirement_predicate": {
+      "kind": "reported_current_event"
+    },
+    "source_phase": "ongoing",
+    "medication_role": "selected_or_A",
+    "source_actions": [
+      "consider_discontinuation_of_pregabalin",
+      "consider_appropriate_treatment_and_seek_medical_care"
+    ]
+  },
+  {
+    "rule_id": "preg-gad-start",
+    "section": "source_gates",
+    "source_ref": "RU-PREG",
+    "version": "Официальная ОХЛП реестра: штамп регистрации 2025-08-13; экспертный отчёт 2024-01-26 №1319/0011; получена 08.10.2026",
+    "locator": "§4.1–4.3 с.3–6; §4.4–4.6 с.6–12",
+    "exclusions": [
+      "allergy",
+      "galactose_intolerance",
+      "complete_lactase_deficiency",
+      "glucose_galactose_malabsorption"
+    ],
+    "cautions": [
+      "pregnancy",
+      "lactation",
+      "substance_use",
+      "respiratory",
+      "suicide_risk",
+      "heart_failure",
+      "diabetes_weight_gain"
+    ],
+    "current_medicines_excluded": [],
+    "current_medicines_caution": [
+      "CNS_depressant",
+      "opioid"
+    ],
+    "stop": [
+      "angioedema",
+      "severe_skin_reaction"
+    ],
+    "other": "<18 exclude; CLcr source table; haemodialysis separate no complete scheme; hepatic no adjustment; no splitting/opening capsules; diabetes weight gain requires separate hypoglycaemic review"
+  },
+  {
+    "rule_id": "preg-renal-start",
+    "section": "typed_source_conditions",
+    "input": "misuse_risk_assessment",
+    "operator": "equals",
+    "value": "требуется отдельное решение врача",
+    "action": "clinician_choice_no_standard_dose",
+    "source_ref": "RU-PREG",
+    "source_locator": "§4.4 с.8–9",
+    "requirement_predicate": {
+      "kind": "always"
+    }
+  },
+  {
+    "rule_id": "preg-renal-start",
+    "section": "typed_source_conditions",
+    "input": "effective_contraception",
+    "operator": "equals",
+    "value": false,
+    "action": "clinician_choice_no_standard_dose",
+    "source_ref": "RU-PREG",
+    "source_locator": "§4.6 с.12",
+    "requirement_predicate": {
+      "kind": "field_true",
+      "field": "reproductive_population"
+    }
+  },
+  {
+    "rule_id": "preg-renal-start",
+    "section": "typed_source_conditions",
+    "input": "current_suicidal_thoughts_or_behavior",
+    "operator": "equals",
+    "value": true,
+    "action": "clinician_choice",
+    "source_ref": "RU-PREG",
+    "source_locator": "§4.4 с.8",
+    "requirement_predicate": {
+      "kind": "reported_current_event"
+    },
+    "source_phase": "ongoing",
+    "medication_role": "selected_or_A",
+    "source_actions": [
+      "consider_discontinuation_of_pregabalin",
+      "consider_appropriate_treatment_and_seek_medical_care"
+    ]
+  },
+  {
+    "rule_id": "preg-renal-start",
+    "section": "source_gates",
+    "source_ref": "RU-PREG",
+    "version": "Официальная ОХЛП реестра: штамп регистрации 2025-08-13; экспертный отчёт 2024-01-26 №1319/0011; получена 08.10.2026",
+    "locator": "§4.1–4.3 с.3–6; §4.4–4.6 с.6–12",
+    "exclusions": [
+      "allergy",
+      "galactose_intolerance",
+      "complete_lactase_deficiency",
+      "glucose_galactose_malabsorption"
+    ],
+    "cautions": [
+      "pregnancy",
+      "lactation",
+      "substance_use",
+      "respiratory",
+      "suicide_risk",
+      "heart_failure",
+      "diabetes_weight_gain"
+    ],
+    "current_medicines_excluded": [],
+    "current_medicines_caution": [
+      "CNS_depressant",
+      "opioid"
+    ],
+    "stop": [
+      "angioedema",
+      "severe_skin_reaction"
+    ],
+    "other": "<18 exclude; CLcr source table; haemodialysis separate no complete scheme; hepatic no adjustment; no splitting/opening capsules; diabetes weight gain requires separate hypoglycaemic review"
+  },
+  {
+    "rule_id": "preg-taper-limit",
+    "section": "typed_source_conditions",
+    "input": "current_suicidal_thoughts_or_behavior",
+    "operator": "equals",
+    "value": true,
+    "action": "clinician_choice",
+    "source_ref": "RU-PREG",
+    "source_locator": "§4.4 с.8",
+    "requirement_predicate": {
+      "kind": "reported_current_event"
+    },
+    "source_phase": "ongoing",
+    "medication_role": "selected_or_A",
+    "source_actions": [
+      "consider_discontinuation_of_pregabalin",
+      "consider_appropriate_treatment_and_seek_medical_care"
+    ]
+  },
+  {
+    "rule_id": "preg-taper-limit",
+    "section": "source_gates",
+    "source_ref": "RU-PREG",
+    "version": "Официальная ОХЛП реестра: штамп регистрации 2025-08-13; экспертный отчёт 2024-01-26 №1319/0011; получена 08.10.2026",
+    "locator": "§4.1–4.3 с.3–6; §4.4–4.6 с.6–12",
+    "exclusions": [],
+    "cautions": [],
+    "current_medicines_excluded": [],
+    "current_medicines_caution": [],
+    "stop": [
+      "angioedema",
+      "severe_skin_reaction"
+    ],
+    "other": "Source-specific withdrawal guidance; exact taper not inferred. Published immediate cessation conditions take precedence if treatment ongoing."
+  },
+  {
+    "rule_id": "ser-adult-adjust",
+    "section": "typed_source_conditions",
+    "input": "hepatic",
+    "operator": "category_equals",
+    "value": "hepatic_impairment",
+    "action": "clinician_choice",
+    "source_ref": "RU-SER",
+    "source_locator": "§4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22"
+  },
+  {
+    "rule_id": "ser-adult-adjust",
+    "section": "typed_source_conditions",
+    "input": "hepatic",
+    "operator": "category_equals",
+    "value": "severe_hepatic_impairment",
+    "action": "not_applicable_standard_numeric_branch",
+    "source_ref": "RU-SER",
+    "source_locator": "§4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22"
+  },
+  {
+    "rule_id": "ser-adult-adjust",
+    "section": "typed_source_conditions",
+    "input": "seizure_state",
+    "operator": "equals",
+    "value": "контролируемые",
+    "action": "clinician_choice",
+    "source_ref": "RU-SER",
+    "source_locator": "§4.4 с.4, судороги: прекращение при развитии приступов"
+  },
+  {
+    "rule_id": "ser-adult-adjust",
+    "section": "typed_source_conditions",
+    "input": "seizure_state",
+    "operator": "equals",
+    "value": "неконтролируемые",
+    "action": "not_applicable_standard_branch; avoid unstable epilepsy",
+    "source_ref": "RU-SER",
+    "source_locator": "§4.4 с.4, судороги: прекращение при развитии приступов"
+  },
+  {
+    "rule_id": "ser-adult-adjust",
+    "section": "typed_source_conditions",
+    "input": "seizure_state",
+    "operator": "equals",
+    "value": "новые приступы",
+    "action": "stop ongoing source medication",
+    "source_ref": "RU-SER",
+    "source_locator": "§4.4 с.4, судороги: прекращение при развитии приступов"
+  },
+  {
+    "rule_id": "ser-adult-adjust",
+    "section": "typed_source_conditions",
+    "input": "symptomatic_hyponatremia",
+    "operator": "equals",
+    "value": true,
+    "action": "clinician_choice",
+    "source_ref": "RU-SER",
+    "source_locator": "§4.4 с.6",
+    "requirement_predicate": {
+      "kind": "reported_current_event"
+    },
+    "source_phase": "ongoing",
+    "medication_role": "selected_or_A",
+    "source_actions": [
+      "consider_discontinuation_of_sertraline",
+      "provide_appropriate_medical_care"
+    ]
+  },
+  {
+    "rule_id": "ser-adult-adjust",
+    "section": "urgent_stop_predicates",
+    "input": "mania_symptoms",
+    "operator": "equals",
+    "value": true,
+    "action": "source_stop_action",
+    "stop_medication": "RU-SER",
+    "source_ref": "RU-SER",
+    "source_locator": "§4.4 с.4"
+  },
+  {
+    "rule_id": "ser-adult-adjust",
+    "section": "source_gates",
+    "source_ref": "RU-SER",
+    "version": "Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является датой содержания",
+    "locator": "§4.1–4.4 с.1–7; §4.5–4.6 с.7–11",
+    "exclusions": [
+      "allergy"
+    ],
+    "cautions": [
+      "pregnancy",
+      "lactation",
+      "mania",
+      "qt_risk",
+      "bleeding_risk",
+      "hyponatremia_risk",
+      "suicide_risk",
+      "akathisia"
+    ],
+    "current_medicines_excluded": [
+      "maoi",
+      "pimozide"
+    ],
+    "current_medicines_caution": [
+      "serotonergic",
+      "QT_prolonging",
+      "bleeding"
+    ],
+    "other": "<18 not adult anxiety/BDR; severe hepatic no; other hepatic lower dose/frequency unspecified; unstable epilepsy avoid; seizures/current mania stop; renal no adjustment; alcohol/grapefruit avoid; akathisia no automatic increase",
+    "stop": [
+      "mania_symptoms"
+    ],
+    "current_medicines_avoid_standard_combination": [
+      "strong_CYP3A4"
+    ],
+    "interaction_class_locators": {
+      "strong_CYP3A4": "§4.5 с.10"
+    }
+  },
+  {
+    "rule_id": "ser-panic-start",
+    "section": "typed_source_conditions",
+    "input": "hepatic",
+    "operator": "category_equals",
+    "value": "hepatic_impairment",
+    "action": "clinician_choice",
+    "source_ref": "RU-SER",
+    "source_locator": "§4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22"
+  },
+  {
+    "rule_id": "ser-panic-start",
+    "section": "typed_source_conditions",
+    "input": "hepatic",
+    "operator": "category_equals",
+    "value": "severe_hepatic_impairment",
+    "action": "not_applicable_standard_numeric_branch",
+    "source_ref": "RU-SER",
+    "source_locator": "§4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22"
+  },
+  {
+    "rule_id": "ser-panic-start",
+    "section": "typed_source_conditions",
+    "input": "seizure_state",
+    "operator": "equals",
+    "value": "контролируемые",
+    "action": "clinician_choice",
+    "source_ref": "RU-SER",
+    "source_locator": "§4.4 с.4, судороги: прекращение при развитии приступов"
+  },
+  {
+    "rule_id": "ser-panic-start",
+    "section": "typed_source_conditions",
+    "input": "seizure_state",
+    "operator": "equals",
+    "value": "неконтролируемые",
+    "action": "not_applicable_standard_branch; avoid unstable epilepsy",
+    "source_ref": "RU-SER",
+    "source_locator": "§4.4 с.4, судороги: прекращение при развитии приступов"
+  },
+  {
+    "rule_id": "ser-panic-start",
+    "section": "typed_source_conditions",
+    "input": "seizure_state",
+    "operator": "equals",
+    "value": "новые приступы",
+    "action": "stop ongoing source medication",
+    "source_ref": "RU-SER",
+    "source_locator": "§4.4 с.4, судороги: прекращение при развитии приступов"
+  },
+  {
+    "rule_id": "ser-panic-start",
+    "section": "typed_source_conditions",
+    "input": "symptomatic_hyponatremia",
+    "operator": "equals",
+    "value": true,
+    "action": "clinician_choice",
+    "source_ref": "RU-SER",
+    "source_locator": "§4.4 с.6",
+    "requirement_predicate": {
+      "kind": "reported_current_event"
+    },
+    "source_phase": "ongoing",
+    "medication_role": "selected_or_A",
+    "source_actions": [
+      "consider_discontinuation_of_sertraline",
+      "provide_appropriate_medical_care"
+    ]
+  },
+  {
+    "rule_id": "ser-panic-start",
+    "section": "urgent_stop_predicates",
+    "input": "mania_symptoms",
+    "operator": "equals",
+    "value": true,
+    "action": "source_stop_action",
+    "stop_medication": "RU-SER",
+    "source_ref": "RU-SER",
+    "source_locator": "§4.4 с.4",
+    "treatment_phase": "ongoing"
+  },
+  {
+    "rule_id": "ser-panic-start",
+    "section": "source_gates",
+    "source_ref": "RU-SER",
+    "version": "Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является датой содержания",
+    "locator": "§4.1–4.4 с.1–7; §4.5–4.6 с.7–11",
+    "exclusions": [
+      "allergy"
+    ],
+    "cautions": [
+      "pregnancy",
+      "lactation",
+      "mania",
+      "qt_risk",
+      "bleeding_risk",
+      "hyponatremia_risk",
+      "suicide_risk",
+      "akathisia"
+    ],
+    "current_medicines_excluded": [
+      "maoi",
+      "pimozide"
+    ],
+    "current_medicines_caution": [
+      "serotonergic",
+      "QT_prolonging",
+      "bleeding"
+    ],
+    "other": "<18 not adult anxiety/BDR; severe hepatic no; other hepatic lower dose/frequency unspecified; unstable epilepsy avoid; seizures/current mania stop; renal no adjustment; alcohol/grapefruit avoid; akathisia no automatic increase",
+    "stop": [
+      "mania_symptoms"
+    ],
+    "current_medicines_avoid_standard_combination": [
+      "strong_CYP3A4"
+    ],
+    "interaction_class_locators": {
+      "strong_CYP3A4": "§4.5 с.10"
+    }
+  },
+  {
+    "rule_id": "ser-social-start",
+    "section": "typed_source_conditions",
+    "input": "hepatic",
+    "operator": "category_equals",
+    "value": "hepatic_impairment",
+    "action": "clinician_choice",
+    "source_ref": "RU-SER",
+    "source_locator": "§4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22"
+  },
+  {
+    "rule_id": "ser-social-start",
+    "section": "typed_source_conditions",
+    "input": "hepatic",
+    "operator": "category_equals",
+    "value": "severe_hepatic_impairment",
+    "action": "not_applicable_standard_numeric_branch",
+    "source_ref": "RU-SER",
+    "source_locator": "§4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22"
+  },
+  {
+    "rule_id": "ser-social-start",
+    "section": "typed_source_conditions",
+    "input": "seizure_state",
+    "operator": "equals",
+    "value": "контролируемые",
+    "action": "clinician_choice",
+    "source_ref": "RU-SER",
+    "source_locator": "§4.4 с.4, судороги: прекращение при развитии приступов"
+  },
+  {
+    "rule_id": "ser-social-start",
+    "section": "typed_source_conditions",
+    "input": "seizure_state",
+    "operator": "equals",
+    "value": "неконтролируемые",
+    "action": "not_applicable_standard_branch; avoid unstable epilepsy",
+    "source_ref": "RU-SER",
+    "source_locator": "§4.4 с.4, судороги: прекращение при развитии приступов"
+  },
+  {
+    "rule_id": "ser-social-start",
+    "section": "typed_source_conditions",
+    "input": "seizure_state",
+    "operator": "equals",
+    "value": "новые приступы",
+    "action": "stop ongoing source medication",
+    "source_ref": "RU-SER",
+    "source_locator": "§4.4 с.4, судороги: прекращение при развитии приступов"
+  },
+  {
+    "rule_id": "ser-social-start",
+    "section": "typed_source_conditions",
+    "input": "symptomatic_hyponatremia",
+    "operator": "equals",
+    "value": true,
+    "action": "clinician_choice",
+    "source_ref": "RU-SER",
+    "source_locator": "§4.4 с.6",
+    "requirement_predicate": {
+      "kind": "reported_current_event"
+    },
+    "source_phase": "ongoing",
+    "medication_role": "selected_or_A",
+    "source_actions": [
+      "consider_discontinuation_of_sertraline",
+      "provide_appropriate_medical_care"
+    ]
+  },
+  {
+    "rule_id": "ser-social-start",
+    "section": "urgent_stop_predicates",
+    "input": "mania_symptoms",
+    "operator": "equals",
+    "value": true,
+    "action": "source_stop_action",
+    "stop_medication": "RU-SER",
+    "source_ref": "RU-SER",
+    "source_locator": "§4.4 с.4",
+    "treatment_phase": "ongoing"
+  },
+  {
+    "rule_id": "ser-social-start",
+    "section": "source_gates",
+    "source_ref": "RU-SER",
+    "version": "Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является датой содержания",
+    "locator": "§4.1–4.4 с.1–7; §4.5–4.6 с.7–11",
+    "exclusions": [
+      "allergy"
+    ],
+    "cautions": [
+      "pregnancy",
+      "lactation",
+      "mania",
+      "qt_risk",
+      "bleeding_risk",
+      "hyponatremia_risk",
+      "suicide_risk",
+      "akathisia"
+    ],
+    "current_medicines_excluded": [
+      "maoi",
+      "pimozide"
+    ],
+    "current_medicines_caution": [
+      "serotonergic",
+      "QT_prolonging",
+      "bleeding"
+    ],
+    "other": "<18 not adult anxiety/BDR; severe hepatic no; other hepatic lower dose/frequency unspecified; unstable epilepsy avoid; seizures/current mania stop; renal no adjustment; alcohol/grapefruit avoid; akathisia no automatic increase",
+    "stop": [
+      "mania_symptoms"
+    ],
+    "current_medicines_avoid_standard_combination": [
+      "strong_CYP3A4"
+    ],
+    "interaction_class_locators": {
+      "strong_CYP3A4": "§4.5 с.10"
+    }
+  },
+  {
+    "rule_id": "ser-taper-limit",
+    "section": "typed_source_conditions",
+    "input": "hepatic",
+    "operator": "category_equals",
+    "value": "hepatic_impairment",
+    "action": "clinician_choice",
+    "source_ref": "RU-SER",
+    "source_locator": "§4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22"
+  },
+  {
+    "rule_id": "ser-taper-limit",
+    "section": "typed_source_conditions",
+    "input": "hepatic",
+    "operator": "category_equals",
+    "value": "severe_hepatic_impairment",
+    "action": "not_applicable_standard_numeric_branch",
+    "source_ref": "RU-SER",
+    "source_locator": "§4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22"
+  },
+  {
+    "rule_id": "ser-taper-limit",
+    "section": "typed_source_conditions",
+    "input": "seizure_state",
+    "operator": "equals",
+    "value": "контролируемые",
+    "action": "clinician_choice",
+    "source_ref": "RU-SER",
+    "source_locator": "§4.4 с.4, судороги: прекращение при развитии приступов"
+  },
+  {
+    "rule_id": "ser-taper-limit",
+    "section": "typed_source_conditions",
+    "input": "seizure_state",
+    "operator": "equals",
+    "value": "неконтролируемые",
+    "action": "not_applicable_standard_branch; avoid unstable epilepsy",
+    "source_ref": "RU-SER",
+    "source_locator": "§4.4 с.4, судороги: прекращение при развитии приступов"
+  },
+  {
+    "rule_id": "ser-taper-limit",
+    "section": "typed_source_conditions",
+    "input": "seizure_state",
+    "operator": "equals",
+    "value": "новые приступы",
+    "action": "stop ongoing source medication",
+    "source_ref": "RU-SER",
+    "source_locator": "§4.4 с.4, судороги: прекращение при развитии приступов"
+  },
+  {
+    "rule_id": "ser-taper-limit",
+    "section": "typed_source_conditions",
+    "input": "symptomatic_hyponatremia",
+    "operator": "equals",
+    "value": true,
+    "action": "clinician_choice",
+    "source_ref": "RU-SER",
+    "source_locator": "§4.4 с.6",
+    "requirement_predicate": {
+      "kind": "reported_current_event"
+    },
+    "source_phase": "ongoing",
+    "medication_role": "selected_or_A",
+    "source_actions": [
+      "consider_discontinuation_of_sertraline",
+      "provide_appropriate_medical_care"
+    ]
+  },
+  {
+    "rule_id": "ser-taper-limit",
+    "section": "urgent_stop_predicates",
+    "input": "mania_symptoms",
+    "operator": "equals",
+    "value": true,
+    "action": "source_stop_action",
+    "stop_medication": "RU-SER",
+    "source_ref": "RU-SER",
+    "source_locator": "§4.4 с.4"
+  },
+  {
+    "rule_id": "ser-taper-limit",
+    "section": "urgent_stop_predicates",
+    "input": "seizure_state",
+    "operator": "equals",
+    "value": "новые приступы",
+    "action": "source_stop_action",
+    "stop_medication": "RU-SER",
+    "source_ref": "RU-SER",
+    "source_locator": "§4.4 с.4"
+  },
+  {
+    "rule_id": "ser-taper-limit",
+    "section": "source_gates",
+    "source_ref": "RU-SER",
+    "version": "Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является датой содержания",
+    "locator": "§4.1–4.4 с.1–7; §4.5–4.6 с.7–11",
+    "exclusions": [],
+    "cautions": [],
+    "current_medicines_excluded": [],
+    "current_medicines_caution": [],
+    "stop": [],
+    "other": "Source-specific withdrawal guidance; exact taper not inferred. Published immediate cessation conditions take precedence if treatment ongoing.",
+    "current_medicines_avoid_standard_combination": [
+      "strong_CYP3A4"
+    ],
+    "interaction_class_locators": {
+      "strong_CYP3A4": "§4.5 с.10"
+    }
+  },
+  {
+    "rule_id": "switch-esc-ago",
+    "section": "typed_source_conditions",
+    "input": "hepatic",
+    "operator": "category_equals",
+    "value": "hepatic_insufficiency",
+    "action": "not_applicable",
+    "source_ref": "RU-AGO",
+    "source_locator": "§4.3 с.3"
+  },
+  {
+    "rule_id": "switch-esc-ago",
+    "section": "typed_source_conditions",
+    "input": "hepatic",
+    "operator": "category_equals",
+    "value": "cirrhosis",
+    "action": "not_applicable",
+    "source_ref": "RU-AGO",
+    "source_locator": "§4.3 с.3"
+  },
+  {
+    "rule_id": "switch-esc-ago",
+    "section": "typed_source_conditions",
+    "input": "hepatic",
+    "operator": "category_equals",
+    "value": "active_liver_disease",
+    "action": "not_applicable",
+    "source_ref": "RU-AGO",
+    "source_locator": "§4.3 с.3"
+  },
+  {
+    "rule_id": "switch-esc-ago",
+    "section": "typed_source_conditions",
+    "input": "allergy",
+    "field": "A",
+    "operator": "field_equals",
+    "value": true,
+    "action": "not_applicable standard branch",
+    "source_ref": "RU-ESC",
+    "source_locator": "§4.3 с.4"
+  },
+  {
+    "rule_id": "switch-esc-ago",
+    "section": "typed_source_conditions",
+    "input": "allergy",
+    "field": "B",
+    "operator": "field_equals",
+    "value": true,
+    "action": "not_applicable standard branch",
+    "source_ref": "RU-AGO",
+    "source_locator": "§4.3 с.3"
+  },
+  {
+    "rule_id": "switch-esc-ago",
+    "section": "urgent_stop_predicates",
+    "input": "mania_symptoms",
+    "equals": true,
+    "action": "source_stop_action",
+    "source_ref": "RU-ESC",
+    "source_locator": "RU-ESC §4.4 с.4",
+    "scope": "stop currently administered A; no automatic B start"
+  },
+  {
+    "rule_id": "switch-esc-ago",
+    "section": "urgent_stop_predicates",
+    "input": "mania_symptoms",
+    "equals": true,
+    "action": "source_stop_action",
+    "source_ref": "RU-AGO",
+    "source_locator": "§4.4 с.4",
+    "scope": "B: stop if administered; no automatic start"
+  },
+  {
+    "rule_id": "switch-esc-ago",
+    "section": "urgent_stop_predicates",
+    "input": "arrhythmia_signs",
+    "operator": "equals",
+    "value": true,
+    "action": "source_stop_action",
+    "source_ref": "RU-ESC",
+    "source_locator": "§4.4 с.6",
+    "requirement_predicate": {
+      "kind": "always"
+    }
+  },
+  {
+    "rule_id": "switch-esc-ago",
+    "section": "urgent_stop_predicates",
+    "input": "serotonin_syndrome_signs",
+    "operator": "equals",
+    "value": true,
+    "action": "source_stop_action",
+    "source_ref": "RU-ESC",
+    "source_locator": "§4.4 с.5–6",
+    "requirement_predicate": {
+      "kind": "always"
+    }
+  },
+  {
+    "rule_id": "switch-esc-ago",
+    "section": "urgent_stop_predicates",
+    "input": "seizure_state",
+    "operator": "equals",
+    "value": "первичные/участившиеся приступы",
+    "action": "source_stop_action",
+    "source_ref": "RU-ESC",
+    "source_locator": "§4.4 с.4",
+    "requirement_predicate": {
+      "kind": "always"
+    }
+  },
+  {
+    "rule_id": "switch-esc-ago",
+    "section": "source_gates",
+    "source_ref": "RU-ESC",
+    "version": "РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; экспертный отчёт 31.10.2025 №27320, последовательность 0002; текущая опубликованная ОХЛП реестра получена 08.10.2026",
+    "locator": "§4.3–4.6 с.4–10",
+    "exclusions": [],
+    "cautions": [],
+    "stop": [
+      "mania_symptoms"
+    ],
+    "current_medicines_excluded": [
+      "irreversible_maoi",
+      "pimozide",
+      "QT_prolonging"
+    ],
+    "current_medicines_caution": [
+      "reversible_MAO_A",
+      "linezolid",
+      "selective_MAO_B",
+      "serotonergic",
+      "CYP2C19_inhibitor",
+      "cimetidine",
+      "bleeding"
+    ],
+    "other": "CLcr=30 gap; Child–Pugh C supervision; no combined factors; QT electrolyte/ECG obligations; full pair switch calendar absent"
+  },
+  {
+    "rule_id": "switch-esc-ago",
+    "section": "source_gates",
+    "source_ref": "RU-AGO",
+    "version": "Официальная ОХЛП реестра: штамп регистрации 2024-12-28; экспертный отчёт 2024-12-23 №28427/0018; получена 08.10.2026",
+    "locator": "§4.1–4.4 с.1–5; §4.5–4.6 с.5–6",
+    "exclusions": [
+      "allergy",
+      "galactose_intolerance",
+      "complete_lactase_deficiency",
+      "glucose_galactose_malabsorption"
+    ],
+    "cautions": [
+      "pregnancy",
+      "lactation",
+      "mania",
+      "suicide_risk",
+      "overweight_obesity",
+      "fatty_liver",
+      "diabetes",
+      "alcohol_abuse",
+      "alcohol_use",
+      "ect"
+    ],
+    "current_medicines_excluded": [
+      "strong_CYP1A2"
+    ],
+    "current_medicines_caution": [
+      "moderate_CYP1A2",
+      "hepatotoxic"
+    ],
+    "stop": [
+      "liver_injury_signs",
+      "mania_symptoms"
+    ],
+    "other": "ALT and AST separately >3 exclude start; (1,3] caution; liver insufficiency/cirrhosis/active disease exclude; elderly+dementia exclude; GAD >65, BDR >=75 exclude; <18 exclude; moderate/severe renal caution; rising transaminases repeat within 48 hours"
+  },
+  {
+    "rule_id": "switch-esc-ser",
+    "section": "typed_source_conditions",
+    "input": "target_symptomatic_hyponatremia",
+    "operator": "equals",
+    "value": true,
+    "action": "clinician_choice",
+    "source_ref": "RU-SER",
+    "source_locator": "§4.4 с.6",
+    "requirement_predicate": {
+      "kind": "reported_current_event"
+    },
+    "source_phase": "target_ongoing",
+    "medication_role": "B",
+    "source_actions": [
+      "consider_discontinuation_of_sertraline",
+      "provide_appropriate_medical_care"
+    ]
+  },
+  {
+    "rule_id": "switch-esc-ser",
+    "section": "urgent_stop_predicates",
+    "input": "mania_symptoms",
+    "equals": true,
+    "action": "source_stop_action",
+    "source_ref": "RU-ESC",
+    "source_locator": "RU-ESC §4.4 с.4",
+    "scope": "stop currently administered A; no automatic B start"
+  },
+  {
+    "rule_id": "switch-esc-ser",
+    "section": "urgent_stop_predicates",
+    "input": "mania_symptoms",
+    "equals": true,
+    "action": "source_stop_action",
+    "source_ref": "RU-SER",
+    "source_locator": "RU-SER §4.4 с.4",
+    "scope": "B: stop if administered; no automatic start"
+  },
+  {
+    "rule_id": "switch-esc-ser",
+    "section": "urgent_stop_predicates",
+    "input": "arrhythmia_signs",
+    "operator": "equals",
+    "value": true,
+    "action": "source_stop_action",
+    "source_ref": "RU-ESC",
+    "source_locator": "§4.4 с.6",
+    "requirement_predicate": {
+      "kind": "always"
+    }
+  },
+  {
+    "rule_id": "switch-esc-ser",
+    "section": "urgent_stop_predicates",
+    "input": "serotonin_syndrome_signs",
+    "operator": "equals",
+    "value": true,
+    "action": "source_stop_action",
+    "source_ref": "RU-ESC",
+    "source_locator": "§4.4 с.5–6",
+    "requirement_predicate": {
+      "kind": "always"
+    }
+  },
+  {
+    "rule_id": "switch-esc-ser",
+    "section": "urgent_stop_predicates",
+    "input": "seizure_state",
+    "operator": "equals",
+    "value": "первичные/участившиеся приступы",
+    "action": "source_stop_action",
+    "source_ref": "RU-ESC",
+    "source_locator": "§4.4 с.4",
+    "requirement_predicate": {
+      "kind": "always"
+    }
+  },
+  {
+    "rule_id": "switch-esc-ser",
+    "section": "urgent_stop_predicates",
+    "input": "target_new_seizures",
+    "operator": "equals",
+    "value": true,
+    "action": "source_stop_action",
+    "source_ref": "RU-SER",
+    "source_locator": "§4.4 с.4",
+    "requirement_predicate": {
+      "kind": "target_ongoing"
+    },
+    "target_treatment_phase": "ongoing",
+    "medication_role": "B",
+    "scope": "Only stop explicitly ongoing target B; never infer B phase from A"
+  },
+  {
+    "rule_id": "switch-esc-ser",
+    "section": "source_gates",
+    "source_ref": "RU-ESC",
+    "version": "РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; экспертный отчёт 31.10.2025 №27320, последовательность 0002; текущая опубликованная ОХЛП реестра получена 08.10.2026",
+    "locator": "§4.3–4.6 с.4–10",
+    "exclusions": [],
+    "cautions": [],
+    "stop": [],
+    "current_medicines_excluded": [
+      "irreversible_maoi",
+      "pimozide",
+      "QT_prolonging"
+    ],
+    "current_medicines_caution": [
+      "reversible_MAO_A",
+      "linezolid",
+      "selective_MAO_B",
+      "serotonergic",
+      "CYP2C19_inhibitor",
+      "cimetidine",
+      "bleeding"
+    ],
+    "other": "CLcr=30 gap; Child–Pugh C supervision; no combined factors; QT electrolyte/ECG obligations; full pair switch calendar absent"
+  },
+  {
+    "rule_id": "switch-esc-ser",
+    "section": "source_gates",
+    "source_ref": "RU-SER",
+    "version": "Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является датой содержания",
+    "locator": "§4.1–4.4 с.1–7; §4.5–4.6 с.7–11",
+    "exclusions": [],
+    "cautions": [],
+    "current_medicines_excluded": [
+      "maoi",
+      "pimozide"
+    ],
+    "current_medicines_caution": [
+      "serotonergic",
+      "QT_prolonging",
+      "bleeding"
+    ],
+    "other": "<18 not adult anxiety/BDR; severe hepatic no; other hepatic lower dose/frequency unspecified; unstable epilepsy avoid; seizures/current mania stop; renal no adjustment; alcohol/grapefruit avoid; akathisia no automatic increase",
+    "stop": [],
+    "current_medicines_avoid_standard_combination": [
+      "strong_CYP3A4"
+    ],
+    "interaction_class_locators": {
+      "strong_CYP3A4": "§4.5 с.10"
+    },
+    "medication_role": "B",
+    "scope": "SER-specific medicine applicability/avoidance. A cessation and B not_started/ongoing are distinct; no complete pair calendar is supplied."
+  },
+  {
+    "rule_id": "switch-parox-ago-selected-example",
+    "section": "typed_source_conditions",
+    "input": "hepatic",
+    "operator": "category_equals",
+    "value": "hepatic_insufficiency",
+    "action": "not_applicable_standard_numeric_branch",
+    "source_ref": "RU-AGO",
+    "source_locator": "§4.3 с.3, печёночная недостаточность (цирроз или активное заболевание печени)"
+  },
+  {
+    "rule_id": "switch-parox-ago-selected-example",
+    "section": "typed_source_conditions",
+    "input": "hepatic",
+    "operator": "category_equals",
+    "value": "cirrhosis",
+    "action": "not_applicable_standard_numeric_branch",
+    "source_ref": "RU-AGO",
+    "source_locator": "§4.3 с.3, печёночная недостаточность (цирроз или активное заболевание печени)"
+  },
+  {
+    "rule_id": "switch-parox-ago-selected-example",
+    "section": "typed_source_conditions",
+    "input": "hepatic",
+    "operator": "category_equals",
+    "value": "active_liver_disease",
+    "action": "not_applicable_standard_numeric_branch",
+    "source_ref": "RU-AGO",
+    "source_locator": "§4.3 с.3, печёночная недостаточность (цирроз или активное заболевание печени)"
+  },
+  {
+    "rule_id": "switch-parox-ago-selected-example",
+    "section": "typed_source_conditions",
+    "input": "from_hepatic",
+    "operator": "category_equals",
+    "value": "hepatic_insufficiency",
+    "action": "clinician_choice",
+    "source_ref": "RU-PAROX",
+    "source_locator": "§4.2 с.4, нарушение функции печени"
+  },
+  {
+    "rule_id": "switch-parox-ago-selected-example",
+    "section": "typed_source_conditions",
+    "input": "seizure_state",
+    "operator": "equals",
+    "value": "контролируемые",
+    "action": "clinician_choice",
+    "source_ref": "RU-PAROX",
+    "source_locator": "§4.4 с.8"
+  },
+  {
+    "rule_id": "switch-parox-ago-selected-example",
+    "section": "typed_source_conditions",
+    "input": "seizure_state",
+    "operator": "equals",
+    "value": "неконтролируемые",
+    "action": "clinician_choice",
+    "source_ref": "RU-PAROX",
+    "source_locator": "§4.4 с.8"
+  },
+  {
+    "rule_id": "switch-parox-ago-selected-example",
+    "section": "typed_source_conditions",
+    "input": "seizure_state",
+    "operator": "equals",
+    "value": "новые приступы",
+    "action": "stop ongoing source medication",
+    "source_ref": "RU-PAROX",
+    "source_locator": "§4.4 с.9"
+  },
+  {
+    "rule_id": "switch-parox-ago-selected-example",
+    "section": "typed_source_conditions",
+    "input": "allergy",
+    "field": "A",
+    "operator": "field_equals",
+    "value": true,
+    "action": "not_applicable standard branch",
+    "source_ref": "RU-PAROX",
+    "source_locator": "§4.3 с.4"
+  },
+  {
+    "rule_id": "switch-parox-ago-selected-example",
+    "section": "typed_source_conditions",
+    "input": "allergy",
+    "field": "B",
+    "operator": "field_equals",
+    "value": true,
+    "action": "not_applicable standard branch",
+    "source_ref": "RU-AGO",
+    "source_locator": "§4.3 с.3"
+  },
+  {
+    "rule_id": "switch-parox-ago-selected-example",
+    "section": "urgent_stop_predicates",
+    "input": "serotonin_syndrome_signs",
+    "operator": "equals",
+    "value": true,
+    "action": "source_stop_action",
+    "source_ref": "RU-PAROX",
+    "source_locator": "§4.4 с.7",
+    "requirement_predicate": {
+      "kind": "always"
+    }
+  },
+  {
+    "rule_id": "switch-parox-ago-selected-example",
+    "section": "source_gates",
+    "source_ref": "RU-AGO",
+    "version": "Официальная ОХЛП реестра: штамп регистрации 2024-12-28; экспертный отчёт 2024-12-23 №28427/0018; получена 08.10.2026",
+    "locator": "§4.1–4.4 с.1–5; §4.5–4.6 с.5–6",
+    "exclusions": [
+      "allergy",
+      "galactose_intolerance",
+      "complete_lactase_deficiency",
+      "glucose_galactose_malabsorption"
+    ],
+    "cautions": [
+      "pregnancy",
+      "lactation",
+      "mania",
+      "suicide_risk",
+      "overweight_obesity",
+      "fatty_liver",
+      "diabetes",
+      "alcohol_abuse",
+      "alcohol_use",
+      "ect"
+    ],
+    "current_medicines_excluded": [
+      "strong_CYP1A2"
+    ],
+    "current_medicines_caution": [
+      "moderate_CYP1A2",
+      "hepatotoxic"
+    ],
+    "stop": [
+      "liver_injury_signs",
+      "mania_symptoms"
+    ],
+    "other": "ALT and AST separately >3 exclude start; (1,3] caution; liver insufficiency/cirrhosis/active disease exclude; elderly+dementia exclude; GAD >65, BDR >=75 exclude; <18 exclude; moderate/severe renal caution; rising transaminases repeat within 48 hours"
+  },
+  {
+    "rule_id": "switch-parox-ago-selected-example",
+    "section": "source_gates",
+    "source_ref": "RU-PAROX",
+    "version": "Официальная ОХЛП реестра: штамп регистрации 2025-02-14; экспертный отчёт 2025-02-12 №3370/0003; получена 08.10.2026",
+    "locator": "§4.2–4.3 с.3–5; §4.4–4.6 с.5–15",
+    "exclusions": [
+      "allergy"
+    ],
+    "cautions": [
+      "pregnancy",
+      "lactation",
+      "mania",
+      "suicide_risk",
+      "akathisia",
+      "diabetes",
+      "glaucoma",
+      "bleeding_risk",
+      "qt_risk",
+      "ect"
+    ],
+    "current_medicines_excluded": [
+      "maoi",
+      "pimozide",
+      "thioridazine"
+    ],
+    "current_medicines_caution": [
+      "serotonergic",
+      "bleeding",
+      "CYP2D6_substrate"
+    ],
+    "other": "<18 no adult scheme; elderly maximum 40 without invented age threshold; severe CLcr <30 or hepatic insufficiency low therapeutic range unspecified; no general taper tail; standard MAOI branch excludes exceptional linezolid use"
+  },
+  {
+    "rule_id": "switch-parox-ago",
+    "section": "typed_source_conditions",
+    "input": "hepatic",
+    "operator": "category_equals",
+    "value": "hepatic_insufficiency",
+    "action": "not_applicable_standard_numeric_branch",
+    "source_ref": "RU-AGO",
+    "source_locator": "§4.3 с.3, печёночная недостаточность (цирроз или активное заболевание печени)"
+  },
+  {
+    "rule_id": "switch-parox-ago",
+    "section": "typed_source_conditions",
+    "input": "hepatic",
+    "operator": "category_equals",
+    "value": "cirrhosis",
+    "action": "not_applicable_standard_numeric_branch",
+    "source_ref": "RU-AGO",
+    "source_locator": "§4.3 с.3, печёночная недостаточность (цирроз или активное заболевание печени)"
+  },
+  {
+    "rule_id": "switch-parox-ago",
+    "section": "typed_source_conditions",
+    "input": "hepatic",
+    "operator": "category_equals",
+    "value": "active_liver_disease",
+    "action": "not_applicable_standard_numeric_branch",
+    "source_ref": "RU-AGO",
+    "source_locator": "§4.3 с.3, печёночная недостаточность (цирроз или активное заболевание печени)"
+  },
+  {
+    "rule_id": "switch-parox-ago",
+    "section": "typed_source_conditions",
+    "input": "from_hepatic",
+    "operator": "category_equals",
+    "value": "hepatic_insufficiency",
+    "action": "clinician_choice",
+    "source_ref": "RU-PAROX",
+    "source_locator": "§4.2 с.4, нарушение функции печени"
+  },
+  {
+    "rule_id": "switch-parox-ago",
+    "section": "typed_source_conditions",
+    "input": "seizure_state",
+    "operator": "equals",
+    "value": "контролируемые",
+    "action": "clinician_choice",
+    "source_ref": "RU-PAROX",
+    "source_locator": "§4.4 с.8"
+  },
+  {
+    "rule_id": "switch-parox-ago",
+    "section": "typed_source_conditions",
+    "input": "seizure_state",
+    "operator": "equals",
+    "value": "неконтролируемые",
+    "action": "clinician_choice",
+    "source_ref": "RU-PAROX",
+    "source_locator": "§4.4 с.8"
+  },
+  {
+    "rule_id": "switch-parox-ago",
+    "section": "typed_source_conditions",
+    "input": "seizure_state",
+    "operator": "equals",
+    "value": "новые приступы",
+    "action": "stop ongoing source medication",
+    "source_ref": "RU-PAROX",
+    "source_locator": "§4.4 с.9"
+  },
+  {
+    "rule_id": "switch-parox-ago",
+    "section": "typed_source_conditions",
+    "input": "allergy",
+    "field": "A",
+    "operator": "field_equals",
+    "value": true,
+    "action": "not_applicable standard branch",
+    "source_ref": "RU-PAROX",
+    "source_locator": "§4.3 с.4"
+  },
+  {
+    "rule_id": "switch-parox-ago",
+    "section": "typed_source_conditions",
+    "input": "allergy",
+    "field": "B",
+    "operator": "field_equals",
+    "value": true,
+    "action": "not_applicable standard branch",
+    "source_ref": "RU-AGO",
+    "source_locator": "§4.3 с.3"
+  },
+  {
+    "rule_id": "switch-parox-ago",
+    "section": "urgent_stop_predicates",
+    "input": "serotonin_syndrome_signs",
+    "operator": "equals",
+    "value": true,
+    "action": "source_stop_action",
+    "source_ref": "RU-PAROX",
+    "source_locator": "§4.4 с.7",
+    "requirement_predicate": {
+      "kind": "always"
+    }
+  },
+  {
+    "rule_id": "switch-parox-ago",
+    "section": "source_gates",
+    "source_ref": "RU-AGO",
+    "version": "Официальная ОХЛП реестра: штамп регистрации 2024-12-28; экспертный отчёт 2024-12-23 №28427/0018; получена 08.10.2026",
+    "locator": "§4.1–4.4 с.1–5; §4.5–4.6 с.5–6",
+    "exclusions": [
+      "allergy",
+      "galactose_intolerance",
+      "complete_lactase_deficiency",
+      "glucose_galactose_malabsorption"
+    ],
+    "cautions": [
+      "pregnancy",
+      "lactation",
+      "mania",
+      "suicide_risk",
+      "overweight_obesity",
+      "fatty_liver",
+      "diabetes",
+      "alcohol_abuse",
+      "alcohol_use",
+      "ect"
+    ],
+    "current_medicines_excluded": [
+      "strong_CYP1A2"
+    ],
+    "current_medicines_caution": [
+      "moderate_CYP1A2",
+      "hepatotoxic"
+    ],
+    "stop": [
+      "liver_injury_signs",
+      "mania_symptoms"
+    ],
+    "other": "ALT and AST separately >3 exclude start; (1,3] caution; liver insufficiency/cirrhosis/active disease exclude; elderly+dementia exclude; GAD >65, BDR >=75 exclude; <18 exclude; moderate/severe renal caution; rising transaminases repeat within 48 hours"
+  },
+  {
+    "rule_id": "switch-parox-ago",
+    "section": "source_gates",
+    "source_ref": "RU-PAROX",
+    "version": "Официальная ОХЛП реестра: штамп регистрации 2025-02-14; экспертный отчёт 2025-02-12 №3370/0003; получена 08.10.2026",
+    "locator": "§4.2–4.3 с.3–5; §4.4–4.6 с.5–15",
+    "exclusions": [
+      "allergy"
+    ],
+    "cautions": [
+      "pregnancy",
+      "lactation",
+      "mania",
+      "suicide_risk",
+      "akathisia",
+      "diabetes",
+      "glaucoma",
+      "bleeding_risk",
+      "qt_risk",
+      "ect"
+    ],
+    "current_medicines_excluded": [
+      "maoi",
+      "pimozide",
+      "thioridazine"
+    ],
+    "current_medicines_caution": [
+      "serotonergic",
+      "bleeding",
+      "CYP2D6_substrate"
+    ],
+    "other": "<18 no adult scheme; elderly maximum 40 without invented age threshold; severe CLcr <30 or hepatic insufficiency low therapeutic range unspecified; no general taper tail; standard MAOI branch excludes exceptional linezolid use"
+  },
+  {
+    "rule_id": "switch-ser-ago",
+    "section": "typed_source_conditions",
+    "input": "hepatic",
+    "operator": "category_equals",
+    "value": "hepatic_insufficiency",
+    "action": "not_applicable_standard_numeric_branch",
+    "source_ref": "RU-AGO",
+    "source_locator": "§4.3 с.3, печёночная недостаточность (цирроз или активное заболевание печени)"
+  },
+  {
+    "rule_id": "switch-ser-ago",
+    "section": "typed_source_conditions",
+    "input": "hepatic",
+    "operator": "category_equals",
+    "value": "cirrhosis",
+    "action": "not_applicable_standard_numeric_branch",
+    "source_ref": "RU-AGO",
+    "source_locator": "§4.3 с.3, печёночная недостаточность (цирроз или активное заболевание печени)"
+  },
+  {
+    "rule_id": "switch-ser-ago",
+    "section": "typed_source_conditions",
+    "input": "hepatic",
+    "operator": "category_equals",
+    "value": "active_liver_disease",
+    "action": "not_applicable_standard_numeric_branch",
+    "source_ref": "RU-AGO",
+    "source_locator": "§4.3 с.3, печёночная недостаточность (цирроз или активное заболевание печени)"
+  },
+  {
+    "rule_id": "switch-ser-ago",
+    "section": "typed_source_conditions",
+    "input": "from_hepatic",
+    "operator": "category_equals",
+    "value": "hepatic_impairment",
+    "action": "clinician_choice",
+    "source_ref": "RU-SER",
+    "source_locator": "§4.2 с.2, нарушение функции печени"
+  },
+  {
+    "rule_id": "switch-ser-ago",
+    "section": "typed_source_conditions",
+    "input": "from_hepatic",
+    "operator": "category_equals",
+    "value": "severe_hepatic_impairment",
+    "action": "not_applicable_standard_numeric_branch",
+    "source_ref": "RU-SER",
+    "source_locator": "§4.2 с.2, нарушение функции печени"
+  },
+  {
+    "rule_id": "switch-ser-ago",
+    "section": "typed_source_conditions",
+    "input": "seizure_state",
+    "operator": "equals",
+    "value": "контролируемые",
+    "action": "clinician_choice",
+    "source_ref": "RU-SER",
+    "source_locator": "§4.4 с.4, судороги: прекращение при развитии приступов"
+  },
+  {
+    "rule_id": "switch-ser-ago",
+    "section": "typed_source_conditions",
+    "input": "seizure_state",
+    "operator": "equals",
+    "value": "неконтролируемые",
+    "action": "not_applicable_standard_branch; avoid unstable epilepsy",
+    "source_ref": "RU-SER",
+    "source_locator": "§4.4 с.4, судороги: прекращение при развитии приступов"
+  },
+  {
+    "rule_id": "switch-ser-ago",
+    "section": "typed_source_conditions",
+    "input": "seizure_state",
+    "operator": "equals",
+    "value": "новые приступы",
+    "action": "stop ongoing source medication",
+    "source_ref": "RU-SER",
+    "source_locator": "§4.4 с.4, судороги: прекращение при развитии приступов"
+  },
+  {
+    "rule_id": "switch-ser-ago",
+    "section": "typed_source_conditions",
+    "input": "allergy",
+    "field": "A",
+    "operator": "field_equals",
+    "value": true,
+    "action": "not_applicable standard branch",
+    "source_ref": "RU-SER",
+    "source_locator": "§4.3 с.3"
+  },
+  {
+    "rule_id": "switch-ser-ago",
+    "section": "typed_source_conditions",
+    "input": "allergy",
+    "field": "B",
+    "operator": "field_equals",
+    "value": true,
+    "action": "not_applicable standard branch",
+    "source_ref": "RU-AGO",
+    "source_locator": "§4.3 с.3"
+  },
+  {
+    "rule_id": "switch-ser-ago",
+    "section": "typed_source_conditions",
+    "input": "symptomatic_hyponatremia",
+    "operator": "equals",
+    "value": true,
+    "action": "clinician_choice",
+    "source_ref": "RU-SER",
+    "source_locator": "§4.4 с.6",
+    "requirement_predicate": {
+      "kind": "reported_current_event"
+    },
+    "source_phase": "ongoing",
+    "medication_role": "selected_or_A",
+    "source_actions": [
+      "consider_discontinuation_of_sertraline",
+      "provide_appropriate_medical_care"
+    ]
+  },
+  {
+    "rule_id": "switch-ser-ago",
+    "section": "urgent_stop_predicates",
+    "input": "mania_symptoms",
+    "equals": true,
+    "action": "source_stop_action",
+    "source_ref": "RU-SER",
+    "source_locator": "RU-SER §4.4 с.4",
+    "scope": "stop currently administered A; no automatic B start"
+  },
+  {
+    "rule_id": "switch-ser-ago",
+    "section": "urgent_stop_predicates",
+    "input": "mania_symptoms",
+    "equals": true,
+    "action": "source_stop_action",
+    "source_ref": "RU-AGO",
+    "source_locator": "§4.4 с.4",
+    "scope": "B: stop if administered; no automatic start"
+  },
+  {
+    "rule_id": "switch-ser-ago",
+    "section": "source_gates",
+    "source_ref": "RU-AGO",
+    "version": "Официальная ОХЛП реестра: штамп регистрации 2024-12-28; экспертный отчёт 2024-12-23 №28427/0018; получена 08.10.2026",
+    "locator": "§4.1–4.4 с.1–5; §4.5–4.6 с.5–6",
+    "exclusions": [
+      "allergy",
+      "galactose_intolerance",
+      "complete_lactase_deficiency",
+      "glucose_galactose_malabsorption"
+    ],
+    "cautions": [
+      "pregnancy",
+      "lactation",
+      "mania",
+      "suicide_risk",
+      "overweight_obesity",
+      "fatty_liver",
+      "diabetes",
+      "alcohol_abuse",
+      "alcohol_use",
+      "ect"
+    ],
+    "current_medicines_excluded": [
+      "strong_CYP1A2"
+    ],
+    "current_medicines_caution": [
+      "moderate_CYP1A2",
+      "hepatotoxic"
+    ],
+    "stop": [
+      "liver_injury_signs",
+      "mania_symptoms"
+    ],
+    "other": "ALT and AST separately >3 exclude start; (1,3] caution; liver insufficiency/cirrhosis/active disease exclude; elderly+dementia exclude; GAD >65, BDR >=75 exclude; <18 exclude; moderate/severe renal caution; rising transaminases repeat within 48 hours"
+  },
+  {
+    "rule_id": "switch-ser-ago",
+    "section": "source_gates",
+    "source_ref": "RU-SER",
+    "version": "Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является датой содержания",
+    "locator": "§4.1–4.4 с.1–7; §4.5–4.6 с.7–11",
+    "exclusions": [
+      "allergy"
+    ],
+    "cautions": [
+      "pregnancy",
+      "lactation",
+      "mania",
+      "qt_risk",
+      "bleeding_risk",
+      "hyponatremia_risk",
+      "suicide_risk",
+      "akathisia"
+    ],
+    "current_medicines_excluded": [
+      "maoi",
+      "pimozide"
+    ],
+    "current_medicines_caution": [
+      "serotonergic",
+      "QT_prolonging",
+      "bleeding"
+    ],
+    "other": "<18 not adult anxiety/BDR; severe hepatic no; other hepatic lower dose/frequency unspecified; unstable epilepsy avoid; seizures/current mania stop; renal no adjustment; alcohol/grapefruit avoid; akathisia no automatic increase",
+    "current_medicines_avoid_standard_combination": [
+      "strong_CYP3A4"
+    ],
+    "interaction_class_locators": {
+      "strong_CYP3A4": "§4.5 с.10"
+    }
+  },
+  {
+    "rule_id": "switch-ser-esc",
+    "section": "typed_source_conditions",
+    "input": "symptomatic_hyponatremia",
+    "operator": "equals",
+    "value": true,
+    "action": "clinician_choice",
+    "source_ref": "RU-SER",
+    "source_locator": "§4.4 с.6",
+    "requirement_predicate": {
+      "kind": "reported_current_event"
+    },
+    "source_phase": "ongoing",
+    "medication_role": "selected_or_A",
+    "source_actions": [
+      "consider_discontinuation_of_sertraline",
+      "provide_appropriate_medical_care"
+    ]
+  },
+  {
+    "rule_id": "switch-ser-esc",
+    "section": "urgent_stop_predicates",
+    "input": "mania_symptoms",
+    "equals": true,
+    "action": "source_stop_action",
+    "source_ref": "RU-SER",
+    "source_locator": "RU-SER §4.4 с.4",
+    "scope": "stop currently administered A; no automatic B start"
+  },
+  {
+    "rule_id": "switch-ser-esc",
+    "section": "urgent_stop_predicates",
+    "input": "mania_symptoms",
+    "equals": true,
+    "action": "source_stop_action",
+    "source_ref": "RU-ESC",
+    "source_locator": "RU-ESC §4.4 с.4",
+    "scope": "B: stop if administered; no automatic start"
+  },
+  {
+    "rule_id": "switch-ser-esc",
+    "section": "urgent_stop_predicates",
+    "input": "target_arrhythmia_signs",
+    "operator": "equals",
+    "value": true,
+    "action": "source_stop_action",
+    "source_ref": "RU-ESC",
+    "source_locator": "§4.4 с.6",
+    "requirement_predicate": {
+      "kind": "target_ongoing"
+    },
+    "target_treatment_phase": "ongoing",
+    "medication_role": "B",
+    "scope": "Only stop explicitly ongoing target B; never infer B phase from A"
+  },
+  {
+    "rule_id": "switch-ser-esc",
+    "section": "urgent_stop_predicates",
+    "input": "target_serotonin_syndrome_signs",
+    "operator": "equals",
+    "value": true,
+    "action": "source_stop_action",
+    "source_ref": "RU-ESC",
+    "source_locator": "§4.4 с.5–6",
+    "requirement_predicate": {
+      "kind": "target_ongoing"
+    },
+    "target_treatment_phase": "ongoing",
+    "medication_role": "B",
+    "scope": "Only stop explicitly ongoing target B; never infer B phase from A"
+  },
+  {
+    "rule_id": "switch-ser-esc",
+    "section": "urgent_stop_predicates",
+    "input": "target_seizure_state",
+    "operator": "equals",
+    "value": "первичные/участившиеся приступы",
+    "action": "source_stop_action",
+    "source_ref": "RU-ESC",
+    "source_locator": "§4.4 с.4",
+    "requirement_predicate": {
+      "kind": "target_ongoing"
+    },
+    "target_treatment_phase": "ongoing",
+    "medication_role": "B",
+    "scope": "Only stop explicitly ongoing target B; never infer B phase from A"
+  },
+  {
+    "rule_id": "switch-ser-esc",
+    "section": "urgent_stop_predicates",
+    "input": "new_seizures",
+    "operator": "equals",
+    "value": true,
+    "action": "source_stop_action",
+    "source_ref": "RU-SER",
+    "source_locator": "§4.4 с.4",
+    "requirement_predicate": {
+      "kind": "always"
+    }
+  },
+  {
+    "rule_id": "switch-ser-esc",
+    "section": "source_gates",
+    "source_ref": "RU-ESC",
+    "version": "РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; экспертный отчёт 31.10.2025 №27320, последовательность 0002; текущая опубликованная ОХЛП реестра получена 08.10.2026",
+    "locator": "§4.3–4.6 с.4–10",
+    "exclusions": [],
+    "cautions": [],
+    "stop": [],
+    "current_medicines_excluded": [
+      "irreversible_maoi",
+      "pimozide",
+      "QT_prolonging"
+    ],
+    "current_medicines_caution": [
+      "reversible_MAO_A",
+      "linezolid",
+      "selective_MAO_B",
+      "serotonergic",
+      "CYP2C19_inhibitor",
+      "cimetidine",
+      "bleeding"
+    ],
+    "other": "CLcr=30 gap; Child–Pugh C supervision; no combined factors; QT electrolyte/ECG obligations; full pair switch calendar absent"
+  },
+  {
+    "rule_id": "switch-ser-esc",
+    "section": "source_gates",
+    "source_ref": "RU-SER",
+    "version": "Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является датой содержания",
+    "locator": "§4.1–4.4 с.1–7; §4.5–4.6 с.7–11",
+    "exclusions": [],
+    "cautions": [],
+    "current_medicines_excluded": [
+      "maoi",
+      "pimozide"
+    ],
+    "current_medicines_caution": [
+      "serotonergic",
+      "QT_prolonging",
+      "bleeding"
+    ],
+    "other": "<18 not adult anxiety/BDR; severe hepatic no; other hepatic lower dose/frequency unspecified; unstable epilepsy avoid; seizures/current mania stop; renal no adjustment; alcohol/grapefruit avoid; akathisia no automatic increase",
+    "stop": [],
+    "current_medicines_avoid_standard_combination": [
+      "strong_CYP3A4"
+    ],
+    "interaction_class_locators": {
+      "strong_CYP3A4": "§4.5 с.10"
+    },
+    "medication_role": "A",
+    "scope": "SER-specific medicine applicability/avoidance. A cessation and B not_started/ongoing are distinct; no complete pair calendar is supplied."
+  },
+  {
+    "rule_id": "venla-xr-gad-start",
+    "section": "typed_source_conditions",
+    "input": "hepatic",
+    "operator": "category_equals",
+    "value": "mild",
+    "action": "clinician_choice",
+    "source_ref": "RU-VENLA-XR",
+    "source_locator": "§1–3 с.1; §4.1–4.3 с.2–5; §4.4 с.5–13; §4.5 с.13–17; §4.6 с.17–18"
+  },
+  {
+    "rule_id": "venla-xr-gad-start",
+    "section": "typed_source_conditions",
+    "input": "hepatic",
+    "operator": "category_equals",
+    "value": "moderate",
+    "action": "clinician_choice",
+    "source_ref": "RU-VENLA-XR",
+    "source_locator": "§1–3 с.1; §4.1–4.3 с.2–5; §4.4 с.5–13; §4.5 с.13–17; §4.6 с.17–18"
+  },
+  {
+    "rule_id": "venla-xr-gad-start",
+    "section": "typed_source_conditions",
+    "input": "hepatic",
+    "operator": "category_equals",
+    "value": "severe",
+    "action": "not_applicable_standard_numeric_branch",
+    "source_ref": "RU-VENLA-XR",
+    "source_locator": "§1–3 с.1; §4.1–4.3 с.2–5; §4.4 с.5–13; §4.5 с.13–17; §4.6 с.17–18"
+  },
+  {
+    "rule_id": "venla-xr-gad-start",
+    "section": "typed_source_conditions",
+    "input": "suspected_serotonin_syndrome",
+    "operator": "equals",
+    "value": true,
+    "action": "clinician_choice",
+    "source_ref": "RU-VENLA-XR",
+    "source_locator": "§4.4 с.8",
+    "requirement_predicate": {
+      "kind": "reported_current_event"
+    },
+    "source_phase": "ongoing",
+    "medication_role": "selected_or_A",
+    "source_actions": [
+      "consider_dose_reduction_or_discontinuation_according_to_symptom_severity"
+    ]
+  },
+  {
+    "rule_id": "venla-xr-gad-start",
+    "section": "urgent_stop_predicates",
+    "input": "current_allergic_reaction",
+    "operator": "equals",
+    "value": true,
+    "action": "source_stop_action",
+    "source_ref": "RU-VENLA-XR",
+    "source_locator": "§4.4 с.13",
+    "stop_medication": "RU-VENLA-XR",
+    "treatment_phase": "ongoing"
+  },
+  {
+    "rule_id": "venla-xr-gad-start",
+    "section": "urgent_stop_predicates",
+    "input": "diastolic_BP",
+    "operator": "greater_than",
+    "value": 100,
+    "action": "source_stop_action",
+    "source_ref": "RU-VENLA-XR",
+    "source_locator": "§4.4 с.9",
+    "requirement_predicate": {
+      "kind": "ongoing_selected_drug"
+    },
+    "treatment_phase": "ongoing"
+  },
+  {
+    "rule_id": "venla-xr-gad-start",
+    "section": "source_gates",
+    "source_ref": "RU-VENLA-XR",
+    "version": "Официальная ОХЛП реестра: штамп регистрации 2026-06-25; экспертный отчёт 2026-06-11 №11677/0019; получена 08.10.2026",
+    "locator": "§1–3 с.1; §4.1–4.3 с.2–5; §4.4 с.5–13; §4.5 с.13–17; §4.6 с.17–18",
+    "exclusions": [
+      "allergy",
+      "pregnancy",
+      "pregnancy_suspected",
+      "lactation"
+    ],
+    "cautions": [
+      "recent_infarction",
+      "unstable_angina",
+      "heart_failure",
+      "coronary_disease",
+      "ecg_change",
+      "qt_risk",
+      "electrolyte_imbalance",
+      "hypertension",
+      "tachycardia",
+      "seizure_history",
+      "glaucoma",
+      "mania",
+      "bleeding_risk",
+      "low_body_mass",
+      "urinary_impairment",
+      "low_blood_pressure",
+      "diabetes",
+      "recent_stroke",
+      "hyponatremia_risk",
+      "ect",
+      "hypercholesterolemia",
+      "alcohol_use",
+      "suicide_risk"
+    ],
+    "current_medicines_excluded": [
+      "maoi"
+    ],
+    "current_medicines_caution": [
+      "CNS_active",
+      "CYP2D6_inhibitor",
+      "CYP3A4_inhibitor",
+      "QT_prolonging",
+      "bleeding",
+      "metoprolol",
+      "serotonergic"
+    ],
+    "other": "<18 exclude; absolute GFR <10 contraindicated; 10..30 reduced by 50%; >30 unchanged; hepatic mild/moderate consider 50%; severe contraindicated; simultaneous modifiers no product; haemodialysis separate; XR 75/150 cannot realize 37.5; whole capsule with food",
+    "current_medicines_avoid_standard_combination": [
+      "QT_prolonging",
+      "serotonin_precursor",
+      "weight_loss_agent"
+    ],
+    "interaction_class_locators": {
+      "CYP2D6_inhibitor": "§4.5 с.16",
+      "CYP3A4_inhibitor": "§4.5 с.16",
+      "QT_prolonging": "§4.5 с.15–16",
+      "CNS_active": "§4.5 с.15",
+      "metoprolol": "§4.5 с.17",
+      "serotonin_precursor": "§4.4 с.8; §4.5 с.15",
+      "weight_loss_agent": "§4.4 с.10"
+    }
+  },
+  {
+    "rule_id": "venla-xr-panic-form-limit",
+    "section": "typed_source_conditions",
+    "input": "hepatic",
+    "operator": "category_equals",
+    "value": "mild",
+    "action": "clinician_choice",
+    "source_ref": "RU-VENLA-XR",
+    "source_locator": "§1–3 с.1; §4.1–4.3 с.2–5; §4.4 с.5–13; §4.5 с.13–17; §4.6 с.17–18"
+  },
+  {
+    "rule_id": "venla-xr-panic-form-limit",
+    "section": "typed_source_conditions",
+    "input": "hepatic",
+    "operator": "category_equals",
+    "value": "moderate",
+    "action": "clinician_choice",
+    "source_ref": "RU-VENLA-XR",
+    "source_locator": "§1–3 с.1; §4.1–4.3 с.2–5; §4.4 с.5–13; §4.5 с.13–17; §4.6 с.17–18"
+  },
+  {
+    "rule_id": "venla-xr-panic-form-limit",
+    "section": "typed_source_conditions",
+    "input": "hepatic",
+    "operator": "category_equals",
+    "value": "severe",
+    "action": "not_applicable_standard_numeric_branch",
+    "source_ref": "RU-VENLA-XR",
+    "source_locator": "§1–3 с.1; §4.1–4.3 с.2–5; §4.4 с.5–13; §4.5 с.13–17; §4.6 с.17–18"
+  },
+  {
+    "rule_id": "venla-xr-panic-form-limit",
+    "section": "typed_source_conditions",
+    "input": "suspected_serotonin_syndrome",
+    "operator": "equals",
+    "value": true,
+    "action": "clinician_choice",
+    "source_ref": "RU-VENLA-XR",
+    "source_locator": "§4.4 с.8",
+    "requirement_predicate": {
+      "kind": "reported_current_event"
+    },
+    "source_phase": "ongoing",
+    "medication_role": "selected_or_A",
+    "source_actions": [
+      "consider_dose_reduction_or_discontinuation_according_to_symptom_severity"
+    ]
+  },
+  {
+    "rule_id": "venla-xr-panic-form-limit",
+    "section": "urgent_stop_predicates",
+    "input": "current_allergic_reaction",
+    "operator": "equals",
+    "value": true,
+    "action": "source_stop_action",
+    "source_ref": "RU-VENLA-XR",
+    "source_locator": "§4.4 с.13",
+    "stop_medication": "RU-VENLA-XR",
+    "treatment_phase": "ongoing"
+  },
+  {
+    "rule_id": "venla-xr-panic-form-limit",
+    "section": "urgent_stop_predicates",
+    "input": "diastolic_BP",
+    "operator": "greater_than",
+    "value": 100,
+    "action": "source_stop_action",
+    "source_ref": "RU-VENLA-XR",
+    "source_locator": "§4.4 с.9",
+    "requirement_predicate": {
+      "kind": "ongoing_selected_drug"
+    },
+    "treatment_phase": "ongoing"
+  },
+  {
+    "rule_id": "venla-xr-panic-form-limit",
+    "section": "source_gates",
+    "source_ref": "RU-VENLA-XR",
+    "version": "Официальная ОХЛП реестра: штамп регистрации 2026-06-25; экспертный отчёт 2026-06-11 №11677/0019; получена 08.10.2026",
+    "locator": "§1–3 с.1; §4.1–4.3 с.2–5; §4.4 с.5–13; §4.5 с.13–17; §4.6 с.17–18",
+    "exclusions": [
+      "allergy",
+      "pregnancy",
+      "pregnancy_suspected",
+      "lactation"
+    ],
+    "cautions": [
+      "recent_infarction",
+      "unstable_angina",
+      "heart_failure",
+      "coronary_disease",
+      "ecg_change",
+      "qt_risk",
+      "electrolyte_imbalance",
+      "hypertension",
+      "tachycardia",
+      "seizure_history",
+      "glaucoma",
+      "mania",
+      "bleeding_risk",
+      "low_body_mass",
+      "urinary_impairment",
+      "low_blood_pressure",
+      "diabetes",
+      "recent_stroke",
+      "hyponatremia_risk",
+      "ect",
+      "hypercholesterolemia",
+      "alcohol_use",
+      "suicide_risk"
+    ],
+    "current_medicines_excluded": [
+      "maoi"
+    ],
+    "current_medicines_caution": [
+      "CNS_active",
+      "CYP2D6_inhibitor",
+      "CYP3A4_inhibitor",
+      "QT_prolonging",
+      "bleeding",
+      "metoprolol",
+      "serotonergic"
+    ],
+    "other": "<18 exclude; absolute GFR <10 contraindicated; 10..30 reduced by 50%; >30 unchanged; hepatic mild/moderate consider 50%; severe contraindicated; simultaneous modifiers no product; haemodialysis separate; XR 75/150 cannot realize 37.5; whole capsule with food",
+    "current_medicines_avoid_standard_combination": [
+      "QT_prolonging",
+      "serotonin_precursor",
+      "weight_loss_agent"
+    ],
+    "interaction_class_locators": {
+      "CYP2D6_inhibitor": "§4.5 с.16",
+      "CYP3A4_inhibitor": "§4.5 с.16",
+      "QT_prolonging": "§4.5 с.15–16",
+      "CNS_active": "§4.5 с.15",
+      "metoprolol": "§4.5 с.17",
+      "serotonin_precursor": "§4.4 с.8; §4.5 с.15",
+      "weight_loss_agent": "§4.4 с.10"
+    }
+  },
+  {
+    "rule_id": "venla-xr-social-start",
+    "section": "typed_source_conditions",
+    "input": "hepatic",
+    "operator": "category_equals",
+    "value": "mild",
+    "action": "clinician_choice",
+    "source_ref": "RU-VENLA-XR",
+    "source_locator": "§1–3 с.1; §4.1–4.3 с.2–5; §4.4 с.5–13; §4.5 с.13–17; §4.6 с.17–18"
+  },
+  {
+    "rule_id": "venla-xr-social-start",
+    "section": "typed_source_conditions",
+    "input": "hepatic",
+    "operator": "category_equals",
+    "value": "moderate",
+    "action": "clinician_choice",
+    "source_ref": "RU-VENLA-XR",
+    "source_locator": "§1–3 с.1; §4.1–4.3 с.2–5; §4.4 с.5–13; §4.5 с.13–17; §4.6 с.17–18"
+  },
+  {
+    "rule_id": "venla-xr-social-start",
+    "section": "typed_source_conditions",
+    "input": "hepatic",
+    "operator": "category_equals",
+    "value": "severe",
+    "action": "not_applicable_standard_numeric_branch",
+    "source_ref": "RU-VENLA-XR",
+    "source_locator": "§1–3 с.1; §4.1–4.3 с.2–5; §4.4 с.5–13; §4.5 с.13–17; §4.6 с.17–18"
+  },
+  {
+    "rule_id": "venla-xr-social-start",
+    "section": "typed_source_conditions",
+    "input": "suspected_serotonin_syndrome",
+    "operator": "equals",
+    "value": true,
+    "action": "clinician_choice",
+    "source_ref": "RU-VENLA-XR",
+    "source_locator": "§4.4 с.8",
+    "requirement_predicate": {
+      "kind": "reported_current_event"
+    },
+    "source_phase": "ongoing",
+    "medication_role": "selected_or_A",
+    "source_actions": [
+      "consider_dose_reduction_or_discontinuation_according_to_symptom_severity"
+    ]
+  },
+  {
+    "rule_id": "venla-xr-social-start",
+    "section": "urgent_stop_predicates",
+    "input": "current_allergic_reaction",
+    "operator": "equals",
+    "value": true,
+    "action": "source_stop_action",
+    "source_ref": "RU-VENLA-XR",
+    "source_locator": "§4.4 с.13",
+    "stop_medication": "RU-VENLA-XR",
+    "treatment_phase": "ongoing"
+  },
+  {
+    "rule_id": "venla-xr-social-start",
+    "section": "urgent_stop_predicates",
+    "input": "diastolic_BP",
+    "operator": "greater_than",
+    "value": 100,
+    "action": "source_stop_action",
+    "source_ref": "RU-VENLA-XR",
+    "source_locator": "§4.4 с.9",
+    "requirement_predicate": {
+      "kind": "ongoing_selected_drug"
+    },
+    "treatment_phase": "ongoing"
+  },
+  {
+    "rule_id": "venla-xr-social-start",
+    "section": "source_gates",
+    "source_ref": "RU-VENLA-XR",
+    "version": "Официальная ОХЛП реестра: штамп регистрации 2026-06-25; экспертный отчёт 2026-06-11 №11677/0019; получена 08.10.2026",
+    "locator": "§1–3 с.1; §4.1–4.3 с.2–5; §4.4 с.5–13; §4.5 с.13–17; §4.6 с.17–18",
+    "exclusions": [
+      "allergy",
+      "pregnancy",
+      "pregnancy_suspected",
+      "lactation"
+    ],
+    "cautions": [
+      "recent_infarction",
+      "unstable_angina",
+      "heart_failure",
+      "coronary_disease",
+      "ecg_change",
+      "qt_risk",
+      "electrolyte_imbalance",
+      "hypertension",
+      "tachycardia",
+      "seizure_history",
+      "glaucoma",
+      "mania",
+      "bleeding_risk",
+      "low_body_mass",
+      "urinary_impairment",
+      "low_blood_pressure",
+      "diabetes",
+      "recent_stroke",
+      "hyponatremia_risk",
+      "ect",
+      "hypercholesterolemia",
+      "alcohol_use",
+      "suicide_risk"
+    ],
+    "current_medicines_excluded": [
+      "maoi"
+    ],
+    "current_medicines_caution": [
+      "CNS_active",
+      "CYP2D6_inhibitor",
+      "CYP3A4_inhibitor",
+      "QT_prolonging",
+      "bleeding",
+      "metoprolol",
+      "serotonergic"
+    ],
+    "other": "<18 exclude; absolute GFR <10 contraindicated; 10..30 reduced by 50%; >30 unchanged; hepatic mild/moderate consider 50%; severe contraindicated; simultaneous modifiers no product; haemodialysis separate; XR 75/150 cannot realize 37.5; whole capsule with food",
+    "current_medicines_avoid_standard_combination": [
+      "QT_prolonging",
+      "serotonin_precursor",
+      "weight_loss_agent"
+    ],
+    "interaction_class_locators": {
+      "CYP2D6_inhibitor": "§4.5 с.16",
+      "CYP3A4_inhibitor": "§4.5 с.16",
+      "QT_prolonging": "§4.5 с.15–16",
+      "CNS_active": "§4.5 с.15",
+      "metoprolol": "§4.5 с.17",
+      "serotonin_precursor": "§4.4 с.8; §4.5 с.15",
+      "weight_loss_agent": "§4.4 с.10"
+    }
+  },
+  {
+    "rule_id": "venla-xr-taper-limit",
+    "section": "typed_source_conditions",
+    "input": "suspected_serotonin_syndrome",
+    "operator": "equals",
+    "value": true,
+    "action": "clinician_choice",
+    "source_ref": "RU-VENLA-XR",
+    "source_locator": "§4.4 с.8",
+    "requirement_predicate": {
+      "kind": "reported_current_event"
+    },
+    "source_phase": "ongoing",
+    "medication_role": "selected_or_A",
+    "source_actions": [
+      "consider_dose_reduction_or_discontinuation_according_to_symptom_severity"
+    ]
+  },
+  {
+    "rule_id": "venla-xr-taper-limit",
+    "section": "urgent_stop_predicates",
+    "input": "diastolic_BP",
+    "operator": "greater_than",
+    "value": 100,
+    "action": "source_stop_action",
+    "source_ref": "RU-VENLA-XR",
+    "source_locator": "§4.4 с.9",
+    "requirement_predicate": {
+      "kind": "always"
+    }
+  },
+  {
+    "rule_id": "venla-xr-taper-limit",
+    "section": "urgent_stop_predicates",
+    "input": "current_allergic_reaction",
+    "operator": "equals",
+    "value": true,
+    "action": "source_stop_action",
+    "source_ref": "RU-VENLA-XR",
+    "source_locator": "§4.4 с.13",
+    "requirement_predicate": {
+      "kind": "always"
+    }
+  },
+  {
+    "rule_id": "venla-xr-taper-limit",
+    "section": "source_gates",
+    "source_ref": "RU-VENLA-XR",
+    "version": "Официальная ОХЛП реестра: штамп регистрации 2026-06-25; экспертный отчёт 2026-06-11 №11677/0019; получена 08.10.2026",
+    "locator": "§1–3 с.1; §4.1–4.3 с.2–5; §4.4 с.5–13; §4.5 с.13–17; §4.6 с.17–18",
+    "exclusions": [],
+    "cautions": [],
+    "current_medicines_excluded": [],
+    "current_medicines_caution": [
+      "CNS_active",
+      "CYP2D6_inhibitor",
+      "CYP3A4_inhibitor",
+      "metoprolol"
+    ],
+    "stop": [],
+    "other": "Source-specific withdrawal guidance; exact taper not inferred. Published immediate cessation conditions take precedence if treatment ongoing.",
+    "interaction_scope": "Source interaction information only for this limited qualitative result; no patient-specific interaction clearance or dose is granted without a separate medicines contract.",
+    "current_medicines_avoid_standard_combination": [
+      "QT_prolonging",
+      "serotonin_precursor",
+      "weight_loss_agent"
+    ],
+    "interaction_class_locators": {
+      "CYP2D6_inhibitor": "§4.5 с.16",
+      "CYP3A4_inhibitor": "§4.5 с.16",
+      "QT_prolonging": "§4.5 с.15–16",
+      "CNS_active": "§4.5 с.15",
+      "metoprolol": "§4.5 с.17",
+      "serotonin_precursor": "§4.4 с.8; §4.5 с.15",
+      "weight_loss_agent": "§4.4 с.10"
+    }
+  }
+]

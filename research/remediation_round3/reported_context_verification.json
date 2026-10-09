@@ -1,0 +1,64 @@
+{
+  "status": "pass",
+  "paths": 2648,
+  "negative_mutations": [
+    {
+      "mutation": "lost_positive_context",
+      "rejected": true,
+      "evidence": [
+        "Supplied context lost: ago-depression-start--caution-RU-AGO-mania/mania"
+      ]
+    },
+    {
+      "mutation": "lost_negative_context",
+      "rejected": true,
+      "evidence": [
+        "Supplied context lost: ago-depression-start--branch-usual/alcohol_use"
+      ]
+    },
+    {
+      "mutation": "lost_unknown_context",
+      "rejected": true,
+      "evidence": [
+        "Supplied context lost: ago-stop--current_dose-unknown/current_dose"
+      ]
+    },
+    {
+      "mutation": "free_reported_fact",
+      "rejected": true,
+      "evidence": [
+        "Supplied context free: ago-depression-start--branch-usual/suicide_risk"
+      ]
+    },
+    {
+      "mutation": "missing_as_negative",
+      "rejected": true,
+      "evidence": [
+        "Missing context silently negative: ago-depression-start--branch-usual--audit-final-minimal-routine/alcohol_use"
+      ]
+    },
+    {
+      "mutation": "false_count",
+      "rejected": true,
+      "evidence": [
+        "False path count: ago-depression-start--branch-usual"
+      ]
+    },
+    {
+      "mutation": "historical_as_actual",
+      "rejected": true,
+      "evidence": [
+        "Reported course dose falsely means actual current use: preg-taper-limit"
+      ]
+    },
+    {
+      "mutation": "excluded_context_result",
+      "rejected": true,
+      "evidence": [
+        "Context-sensitive full result excluded from paths: ago-depression-start--caution-RU-AGO-mania"
+      ]
+    }
+  ],
+  "scope": "Presence, counting and source-actor provenance only; expected medical result remains independently reviewed research data",
+  "errors": []
+}

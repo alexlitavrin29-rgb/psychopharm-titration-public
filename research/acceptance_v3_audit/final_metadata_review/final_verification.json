@@ -1,0 +1,23 @@
+{
+  "snapshot": "b66e9e0dadca7234ed1e66bc8c103047ff2f96e963313d07dd0075494695f0a4",
+  "aggregate": "b66e9e0dadca7234ed1e66bc8c103047ff2f96e963313d07dd0075494695f0a4",
+  "files": 228,
+  "core_changes": [],
+  "source_originals_sha_rechecked": 16,
+  "previous_research_content_unchanged_files": 222,
+  "raw_cases_changed_metadata_only": 22,
+  "projected_paths_changed_metadata_only": 22,
+  "missing_report_links": [],
+  "old_reports_edited_by_reviewer": false,
+  "core_edited_by_reviewer": false,
+  "output_directory": "research/acceptance_v3_audit/final_metadata_review",
+  "criteria": {
+    "выполнено": 30
+  },
+  "raw_score": "9.560",
+  "final_score": 9.6,
+  "cap": null,
+  "full_research_acceptance": true,
+  "application_executed": false,
+  "clinical_validation": false
+}

@@ -1,0 +1,172 @@
+[
+  {
+    "source_id": "RU-GAD",
+    "url": "https://apicr.minzdrav.gov.ru/api.ashx?id=457_3&op=GetClinrecPdf",
+    "accessed_on": "2026-10-08",
+    "http_status": 200,
+    "final_url": "https://apicr.minzdrav.gov.ru/api.ashx?id=457_3&op=GetClinrecPdf",
+    "content_type": "application/pdf;",
+    "local_file": "remediation/retrieved/RU-GAD.pdf",
+    "sha256": "c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a",
+    "same_bytes": true
+  },
+  {
+    "source_id": "RU-PANIC",
+    "url": "https://apicr.minzdrav.gov.ru/api.ashx?id=456_3&op=GetClinrecPdf",
+    "accessed_on": "2026-10-08",
+    "http_status": 200,
+    "final_url": "https://apicr.minzdrav.gov.ru/api.ashx?id=456_3&op=GetClinrecPdf",
+    "content_type": "application/pdf;",
+    "local_file": "remediation/retrieved/RU-PANIC.pdf",
+    "sha256": "a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d",
+    "same_bytes": true
+  },
+  {
+    "source_id": "RU-PHOB",
+    "url": "https://apicr.minzdrav.gov.ru/api.ashx?id=455_3&op=GetClinrecPdf",
+    "accessed_on": "2026-10-08",
+    "http_status": 200,
+    "final_url": "https://apicr.minzdrav.gov.ru/api.ashx?id=455_3&op=GetClinrecPdf",
+    "content_type": "application/pdf;",
+    "local_file": "remediation/retrieved/RU-PHOB.pdf",
+    "sha256": "2a51982fb1919c0ef9115e5231f8ef9d65863306d2d5b95aa0aa7821a6f328b7",
+    "same_bytes": true
+  },
+  {
+    "source_id": "RU-DEP",
+    "url": "https://apicr.minzdrav.gov.ru/api.ashx?id=301_3&op=GetClinrecPdf",
+    "accessed_on": "2026-10-08",
+    "http_status": 200,
+    "final_url": "https://apicr.minzdrav.gov.ru/api.ashx?id=301_3&op=GetClinrecPdf",
+    "content_type": "application/pdf;",
+    "local_file": "remediation/retrieved/RU-DEP.pdf",
+    "sha256": "2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd",
+    "same_bytes": true
+  },
+  {
+    "source_id": "RU-SER",
+    "url": "https://www.viatris.ru/-/media/project/common/viatrisru/pdf/product-catalog/0006_zoloft_smpc-eaeu_24-apr-2025_ru.pdf",
+    "accessed_on": "2026-10-08",
+    "http_status": 200,
+    "final_url": "https://www.viatris.ru/-/media/project/common/viatrisru/pdf/product-catalog/0006_zoloft_smpc-eaeu_24-apr-2025_ru.pdf",
+    "content_type": "application/pdf",
+    "local_file": "remediation/retrieved/RU-SER.pdf",
+    "sha256": "3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba",
+    "same_bytes": true
+  },
+  {
+    "source_id": "RU-ESC",
+    "url": "https://lk.regmed.ru/Register/ViewPDFfromDAToken?Token=[REDACTED]",
+    "accessed_on": "2026-10-08",
+    "http_status": 403,
+    "final_url": "https://lk.regmed.ru/Register/ViewPDFfromDAToken?Token=[REDACTED]",
+    "content_type": "text/html",
+    "access_status": "original_not_obtained; no_restriction_bypass"
+  },
+  {
+    "source_id": "RU-PREG",
+    "url": "https://www.viatris.ru/-/media/project/common/viatrisru/pdf/product-catalog/lyrica_eaeu_smpc_13-aug-2025_ru.pdf",
+    "accessed_on": "2026-10-08",
+    "http_status": 200,
+    "final_url": "https://www.viatris.ru/-/media/project/common/viatrisru/pdf/product-catalog/lyrica_eaeu_smpc_13-aug-2025_ru.pdf",
+    "content_type": "application/pdf",
+    "local_file": "remediation/retrieved/RU-PREG.pdf",
+    "sha256": "1fcd653e7f3b6bf5b26b3276d0bce97880e74bf345bb69755a275bf8f7117083",
+    "same_bytes": true
+  },
+  {
+    "source_id": "RU-PREG-RICHTER",
+    "url": "https://www.gedeonrichter.com/ru/-/media/sites/ru/russian-products/files/174/productinstruction_lvokhlp-pregab-75mg150mg300mg-hcaps-eaeu-smpc-commruwpsusa2025_pdf.pdf",
+    "accessed_on": "2026-10-08",
+    "http_status": 200,
+    "final_url": "https://www.gedeonrichter.com/ru/-/media/sites/ru/russian-products/files/174/productinstruction_lvokhlp-pregab-75mg150mg300mg-hcaps-eaeu-smpc-commruwpsusa2025_pdf.pdf",
+    "content_type": "application/pdf",
+    "local_file": "remediation/retrieved/RU-PREG-RICHTER.pdf",
+    "sha256": "32bfe8b2ec435201b47cb652818af63a1e6a532669348dfe9110e92a73af7065",
+    "same_bytes": true
+  },
+  {
+    "source_id": "RU-PAROX",
+    "url": "https://www.gedeonrichter.com/ru/-/media/sites/ru/russian-products/files/185/productinstruction_lvokhlpreksetin_pdf.pdf?hash=F730A776EE3E7A92B2EA6A9EA56DCAC2&rev=a198bea8079541528614f6df7eee87fd",
+    "accessed_on": "2026-10-08",
+    "http_status": 200,
+    "final_url": "https://www.gedeonrichter.com/ru/-/media/sites/ru/russian-products/files/185/productinstruction_lvokhlpreksetin_pdf.pdf?hash=F730A776EE3E7A92B2EA6A9EA56DCAC2&rev=a198bea8079541528614f6df7eee87fd",
+    "content_type": "application/pdf",
+    "local_file": "remediation/retrieved/RU-PAROX.pdf",
+    "sha256": "9f6f2646e102956826997ca7e93d84e90c7528db5ceb61896a3d4092841edabe",
+    "same_bytes": true
+  },
+  {
+    "source_id": "RU-AGO",
+    "url": "https://servier.ru/wp-content/uploads/2023/09/20241228_spc-ru_valdoxan_rus.pdf",
+    "accessed_on": "2026-10-08",
+    "http_status": 200,
+    "final_url": "https://servier.ru/wp-content/uploads/2023/09/20241228_spc-ru_valdoxan_rus.pdf",
+    "content_type": "application/pdf",
+    "local_file": "remediation/retrieved/RU-AGO.pdf",
+    "sha256": "1cf8e71b5c27891e17b5b7ab4dd7c8c02697a1d44bb287a57a1ee9de0fb85bd6",
+    "same_bytes": true
+  },
+  {
+    "source_id": "RU-DULOX",
+    "url": "https://www.krka.ru/_assets/Duloxenta-CU_SmPC_18.07.2024.pdf",
+    "accessed_on": "2026-10-08",
+    "http_status": 200,
+    "final_url": "https://www.krka.ru/_assets/Duloxenta-CU_SmPC_18.07.2024.pdf",
+    "content_type": "application/pdf",
+    "local_file": "remediation/retrieved/RU-DULOX.pdf",
+    "sha256": "bcb5a8b9415f15fdae2ec8a8d00abe5788194c59893b6172294c4cf3db839786",
+    "same_bytes": true
+  },
+  {
+    "source_id": "RU-FLUVOX",
+    "url": "https://s3.k2.cloud/static.abbottpro.ru/iblock/1e1/1e119bb21898172a466b489db3ef4837/Fevarin-SmPC-0002_07.02.2025-_1_.pdf",
+    "accessed_on": "2026-10-08",
+    "access_status": "request_failed",
+    "error": "HTTPSConnectionPool(host='s3.k2.cloud', port=443): Read timed out. (read timeout=15)"
+  },
+  {
+    "source_id": "RU-VENLA-XR",
+    "url": "https://egispro.ru/medications/velaksin/instructions/velaksin_75_mg_28_sht/",
+    "accessed_on": "2026-10-08",
+    "http_status": 200,
+    "final_url": "https://egispro.ru/medications/velaksin/instructions/velaksin_75_mg_28_sht/",
+    "content_type": "text/html; charset=UTF-8",
+    "local_file": "remediation/retrieved/RU-VENLA-XR.html",
+    "sha256": "324991815c8cd2def4d644b47b1edaddb1c24ed7ee442d9bdc064b396fae6642",
+    "same_bytes": false
+  },
+  {
+    "source_id": "RU-VENLA-IR",
+    "url": "https://egispro.ru/medications/velaksin/instructions/velaksin_37_5_mg_28_sht/",
+    "accessed_on": "2026-10-08",
+    "http_status": 200,
+    "final_url": "https://egispro.ru/medications/velaksin/instructions/velaksin_37_5_mg_28_sht/",
+    "content_type": "text/html; charset=UTF-8",
+    "local_file": "remediation/retrieved/RU-VENLA-IR.html",
+    "sha256": "d49b24495bebf9a85dd3018454a1f907596a92d6567fe85f62c1a0f0b43017b6",
+    "same_bytes": false
+  },
+  {
+    "source_id": "RU-PHEN",
+    "url": "https://www.valentapharm.com/upload/iblock/fec/juwc91mjfnc770nida6ni9syp92x00if.pdf",
+    "accessed_on": "2026-10-08",
+    "http_status": 200,
+    "final_url": "https://www.valentapharm.com/upload/iblock/fec/juwc91mjfnc770nida6ni9syp92x00if.pdf",
+    "content_type": "application/pdf",
+    "local_file": "remediation/retrieved/RU-PHEN.pdf",
+    "sha256": "e8e6303c10b7b9b31ae6b344eb49d209e148ba5584ac8f55954c8384cfe49a89",
+    "same_bytes": true
+  },
+  {
+    "source_id": "RU-CITAL-LV",
+    "url": "https://pranapharm.ru/allfiles/202610/TSITALOPRAM_Listok_vkladyish-1791177827-TaAy0.docx",
+    "accessed_on": "2026-10-08",
+    "http_status": 200,
+    "final_url": "https://pranapharm.ru/allfiles/202610/TSITALOPRAM_Listok_vkladyish-1791177827-TaAy0.docx",
+    "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "local_file": "remediation/retrieved/RU-CITAL-LV.docx",
+    "sha256": "5e10a0452aa6a432390878027d66309a93729250ae6015c2ec225a28be68fe00",
+    "same_bytes": true
+  }
+]

@@ -1,0 +1,83 @@
+[
+  {
+    "source_id": "RU-AGO",
+    "old_file": "source_downloads/Вальдоксан — агомелатин.pdf",
+    "new_file": "remediation_round3/originals/RU-AGO_current.pdf",
+    "old_version": "Копия производителя с именем 20241228; первичная регистрация 25.01.2022; поле пересмотра пустое",
+    "new_version": "Официальная ОХЛП реестра: штамп регистрации 2024-12-28; экспертный отчёт 2024-12-23 №28427/0018; получена 08.10.2026",
+    "old_sha": "1cf8e71b5c27891e17b5b7ab4dd7c8c02697a1d44bb287a57a1ee9de0fb85bd6",
+    "new_sha": "a98d383832688cee9a09588b1a908555d01ed8b659281cdeee2646c1115ce7c1"
+  },
+  {
+    "source_id": "RU-DULOX",
+    "old_file": "source_downloads/Дулоксента — дулоксетин.pdf",
+    "new_file": "remediation_round3/originals/RU-DULOX_current.pdf",
+    "old_version": "Пересмотр 18.07.2024, §10 с.35; первая регистрация 02.04.2021",
+    "new_version": "Официальная ОХЛП реестра: штамп регистрации 2026-03-24; экспертный отчёт 2026-03-20 №5759/0015; получена 08.10.2026",
+    "old_sha": "bcb5a8b9415f15fdae2ec8a8d00abe5788194c59893b6172294c4cf3db839786",
+    "new_sha": "0551a7306ca4a56b552336bb63fa34905cf4e312702ba811a792221892a42ca1"
+  },
+  {
+    "source_id": "RU-FLUVOX",
+    "old_file": "source_downloads/Феварин — флувоксамин.pdf",
+    "new_file": "remediation_round3/originals/RU-FLUVOX_current.pdf",
+    "old_version": "Имя опубликованной копии 07.02.2025/0002; поля §8–10 PDF пустые; РУ от 07.02.2025 подтверждено реестром",
+    "new_version": "Официальная ОХЛП реестра: штамп регистрации 2026-08-19; экспертный отчёт 2026-08-14 №16133/0004; получена 08.10.2026",
+    "old_sha": "ee988a504bf0e34d9562a5f606f8800c827214fc51f4994a4ab28de9c31ce1d6",
+    "new_sha": "01b6621adad68dfeaf1fbe00db21935b6df1edee141c67307a9b67ad177893f2"
+  },
+  {
+    "source_id": "RU-PAROX",
+    "old_file": "source_downloads/Рексетин — пароксетин.pdf",
+    "new_file": "remediation_round3/originals/RU-PAROX_current.pdf",
+    "old_version": "Первичная регистрация 14.02.2025; страница производителя: файл 26.03.2025; поле пересмотра пустое",
+    "new_version": "Официальная ОХЛП реестра: штамп регистрации 2025-02-14; экспертный отчёт 2025-02-12 №3370/0003; получена 08.10.2026",
+    "old_sha": "9f6f2646e102956826997ca7e93d84e90c7528db5ceb61896a3d4092841edabe",
+    "new_sha": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069"
+  },
+  {
+    "source_id": "RU-PREG",
+    "old_file": "source_downloads/Лирика — прегабалин.pdf",
+    "new_file": "remediation_round3/originals/RU-PREG_current.pdf",
+    "old_version": "Файл 13.08.2025; внутри штамп 26.01.2024 №1319, последовательность 0011",
+    "new_version": "Официальная ОХЛП реестра: штамп регистрации 2025-08-13; экспертный отчёт 2024-01-26 №1319/0011; получена 08.10.2026",
+    "old_sha": "1fcd653e7f3b6bf5b26b3276d0bce97880e74bf345bb69755a275bf8f7117083",
+    "new_sha": "b605c8b381c24d59a48bbab9bfa8621eb70f6ec16ad9e3679aa8457f811663e5"
+  },
+  {
+    "source_id": "RU-PREG-RICHTER",
+    "old_file": "source_downloads/Прегабалин-Рихтер — прегабалин.pdf",
+    "new_file": "remediation_round3/originals/RU-PREG-RICHTER_current.pdf",
+    "old_version": "Снимок файла страницы производителя 08.10.2026; страница датирует файл 18.02.2026; дата пересмотра в оригинале отсутствует",
+    "new_version": "Официальная ОХЛП реестра: штамп регистрации 2026-02-06; экспертный отчёт 2026-02-02 №1678/0014; получена 08.10.2026",
+    "old_sha": "32bfe8b2ec435201b47cb652818af63a1e6a532669348dfe9110e92a73af7065",
+    "new_sha": "8b6240d17e311c9468373c451ad7b4addff096594baf7041097e688ae27ae42f"
+  },
+  {
+    "source_id": "RU-VENLA-IR",
+    "old_file": "source_snapshots/velaxin-IR.html",
+    "new_file": "remediation_round3/originals/RU-VENLA-IR_current.pdf",
+    "old_version": "Версия HTML не датирована; снимок и SHA-256 от 08.10.2026; отдельное РУ формы подтверждено реестром",
+    "new_version": "Официальная ОХЛП реестра: штамп регистрации 2023-11-21; экспертный отчёт 2025-12-26 №32413/0009; получена 08.10.2026",
+    "old_sha": "ecad93859bf9c84daadfcc77bf765ed86d85c44ea4d27edc49903bf57dffca01",
+    "new_sha": "b1e98ffb209390179385a56aa70b6b94eda4a395831464f347aecf721f8701af"
+  },
+  {
+    "source_id": "RU-VENLA-XR",
+    "old_file": "source_snapshots/velaxin-XR.html",
+    "new_file": "remediation_round3/originals/RU-VENLA-XR_current.pdf",
+    "old_version": "Версия HTML не датирована; снимок и SHA-256 от 08.10.2026; отдельное РУ формы подтверждено реестром",
+    "new_version": "Официальная ОХЛП реестра: штамп регистрации 2026-06-25; экспертный отчёт 2026-06-11 №11677/0019; получена 08.10.2026",
+    "old_sha": "3656aeeae0ef60f75fe0ea90e1a9f73ba3734e7b8825e163752d9e6e278bf838",
+    "new_sha": "a21e90141db69d9be5ca44ac3c8c6059c8c82a880f34bbf15143348c36ef4666"
+  },
+  {
+    "source_id": "RU-PHEN",
+    "old_file": "source_downloads/Феназепам — бромдигидрохлорфенилбензодиазепин.pdf",
+    "new_file": "remediation_round3/originals/RU-PHEN_current.pdf",
+    "old_version": "Снимок текущей ссылки производителя 08.10.2026; дата пересмотра в PDF отсутствует",
+    "new_version": "Официальная ОХЛП реестра: штамп регистрации 2026-05-07; экспертный отчёт 2026-05-05 №9041/0004; получена 08.10.2026",
+    "old_sha": "e8e6303c10b7b9b31ae6b344eb49d209e148ba5584ac8f55954c8384cfe49a89",
+    "new_sha": "850486408d225fc603f8f053765491c1e9fd688c5c3d765cdf80a34dd2b3cf1a"
+  }
+]

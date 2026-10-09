@@ -1,0 +1,48 @@
+{
+  "snapshot": "b13033a0687a28b4da4299c171ac6b88a96667e2d6888ab8aecf5e9c85af0514",
+  "scope": "Finite exact current result-specific defects; no global mathematical minimum requirement",
+  "exact_lists": {
+    "V3-01": "exclusion_scope_independent.json#rows(305)",
+    "V3-02a": "choice_scope_candidates.json#rows(135)",
+    "V3-02b": "choice_reason_scope_residue.json#rows(218=173+45)",
+    "V3-07": "form_scope_residue.json#rows(35=29+6)"
+  },
+  "exact_nonlist_scopes": {
+    "V3-03": {
+      "dulox-taper-limit": [
+        "withdrawal_severity"
+      ],
+      "esc-taper-limit": [
+        "seizure_state",
+        "current_withdrawal",
+        "mania_symptoms",
+        "arrhythmia_signs",
+        "serotonin_syndrome_signs"
+      ],
+      "fluvox-taper-limit": [
+        "withdrawal_severity",
+        "serotonin_syndrome_signs",
+        "new_or_increased_seizures",
+        "liver_injury_signs",
+        "mania_symptoms"
+      ],
+      "ser-taper-limit": [
+        "seizure_state",
+        "current_withdrawal",
+        "mania_symptoms"
+      ],
+      "venla-xr-taper-limit": [
+        "withdrawal_severity",
+        "diastolic_BP",
+        "current_allergic_reaction"
+      ]
+    },
+    "V3-04": "switch-parox-ago-selected-example/branch-not_selected"
+  },
+  "explicit_population_scope": "Five AD source-only references may use conditional adult-only scope with population not_assessed; no individual child/unknown schedule.",
+  "unique_listed_cases": 693,
+  "all_list_sets_disjoint": true,
+  "remaining_unbounded_or_unenumerated_tail_claim": false,
+  "retained_numeric_inputs": "Numeric source identity/operands/direct gates remain source-bound. This review does not propose generic demotion of all organ/age/medication questions.",
+  "fixed_scope_countercases": "Unknown/missing causal fact cannot confirm a cause. Current event needs own source actor ongoing; source certificate alone is not a clinical engine."
+}

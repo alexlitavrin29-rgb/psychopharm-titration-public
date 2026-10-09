@@ -1,0 +1,82 @@
+{
+  "snapshot": "8a17ae3f99839548742ee509a23d060ea451ed0018c48432dc73b9ba68de4359",
+  "bad_existing_phase_states": {
+    "not_started": 9,
+    "unknown": 9
+  },
+  "cases": [
+    {
+      "case_id": "ser-panic-start--audit-recheck-symptomatic_hyponatremia-phase-not_started",
+      "treatment_phase": "not_started"
+    },
+    {
+      "case_id": "ser-panic-start--audit-recheck-symptomatic_hyponatremia-phase-unknown",
+      "treatment_phase": "unknown"
+    },
+    {
+      "case_id": "ser-social-start--audit-recheck-symptomatic_hyponatremia-phase-not_started",
+      "treatment_phase": "not_started"
+    },
+    {
+      "case_id": "ser-social-start--audit-recheck-symptomatic_hyponatremia-phase-unknown",
+      "treatment_phase": "unknown"
+    },
+    {
+      "case_id": "preg-gad-start--audit-recheck-current_suicidal_thoughts_or_behavior-phase-not_started",
+      "treatment_phase": "not_started"
+    },
+    {
+      "case_id": "preg-gad-start--audit-recheck-current_suicidal_thoughts_or_behavior-phase-unknown",
+      "treatment_phase": "unknown"
+    },
+    {
+      "case_id": "preg-renal-start--audit-recheck-current_suicidal_thoughts_or_behavior-phase-not_started",
+      "treatment_phase": "not_started"
+    },
+    {
+      "case_id": "preg-renal-start--audit-recheck-current_suicidal_thoughts_or_behavior-phase-unknown",
+      "treatment_phase": "unknown"
+    },
+    {
+      "case_id": "dulox-depression-start--audit-recheck-persistent_BP_increase-phase-not_started",
+      "treatment_phase": "not_started"
+    },
+    {
+      "case_id": "dulox-depression-start--audit-recheck-persistent_BP_increase-phase-unknown",
+      "treatment_phase": "unknown"
+    },
+    {
+      "case_id": "dulox-gad-start--audit-recheck-persistent_BP_increase-phase-not_started",
+      "treatment_phase": "not_started"
+    },
+    {
+      "case_id": "dulox-gad-start--audit-recheck-persistent_BP_increase-phase-unknown",
+      "treatment_phase": "unknown"
+    },
+    {
+      "case_id": "venla-xr-gad-start--audit-recheck-suspected_serotonin_syndrome-phase-not_started",
+      "treatment_phase": "not_started"
+    },
+    {
+      "case_id": "venla-xr-gad-start--audit-recheck-suspected_serotonin_syndrome-phase-unknown",
+      "treatment_phase": "unknown"
+    },
+    {
+      "case_id": "venla-xr-panic-form-limit--audit-recheck-suspected_serotonin_syndrome-phase-not_started",
+      "treatment_phase": "not_started"
+    },
+    {
+      "case_id": "venla-xr-panic-form-limit--audit-recheck-suspected_serotonin_syndrome-phase-unknown",
+      "treatment_phase": "unknown"
+    },
+    {
+      "case_id": "venla-xr-social-start--audit-recheck-suspected_serotonin_syndrome-phase-not_started",
+      "treatment_phase": "not_started"
+    },
+    {
+      "case_id": "venla-xr-social-start--audit-recheck-suspected_serotonin_syndrome-phase-unknown",
+      "treatment_phase": "unknown"
+    }
+  ],
+  "scope": "Reproduction of schema mismatch in the still frozen snapshot; no core mutation"
+}

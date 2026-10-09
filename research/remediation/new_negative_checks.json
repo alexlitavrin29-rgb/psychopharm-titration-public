@@ -1,0 +1,222 @@
+{
+  "status": "pass",
+  "isolated_baseline": "pass",
+  "main_data_modified": false,
+  "nature": "Static contract-detector negative checks; not medical or calculator validation",
+  "cases": [
+    {
+      "mutation": "static_branch_default",
+      "rejected": true,
+      "matching_errors": [
+        "branch output has static default dose: dulox-gad-start"
+      ]
+    },
+    {
+      "mutation": "taper_ceiling",
+      "rejected": true,
+      "matching_errors": [
+        "minimum taper encoded as ceiling: ser-taper-limit"
+      ]
+    },
+    {
+      "mutation": "missing_ago_gate",
+      "rejected": true,
+      "matching_errors": [
+        "agomelatine missing source gate: switch-parox-ago-selected-example"
+      ]
+    },
+    {
+      "mutation": "unknown_permits_dose",
+      "rejected": true,
+      "matching_errors": [
+        "missing field allows dose: dulox-gad-start--renal_metric-unknown"
+      ]
+    },
+    {
+      "mutation": "hidden_maoi_timestamp",
+      "rejected": true,
+      "matching_errors": [
+        "MAOI records/timestamps hidden: ser-panic-start"
+      ]
+    },
+    {
+      "mutation": "contradictory_dependency",
+      "rejected": true,
+      "matching_errors": [
+        "composite readiness/dependency contradiction"
+      ]
+    },
+    {
+      "mutation": "copy_unbound",
+      "rejected": true,
+      "matching_errors": [
+        "source copy without local_file: RU-AGO"
+      ]
+    },
+    {
+      "mutation": "esc_unverified_operator",
+      "rejected": true,
+      "matching_errors": [
+        "unconfirmed ESC predicate: esc-gad-start"
+      ]
+    },
+    {
+      "mutation": "unsupported_currency_claim",
+      "rejected": true,
+      "matching_errors": [
+        "currency claimed without registry document comparison: RU-AGO"
+      ]
+    },
+    {
+      "mutation": "gate_without_input",
+      "rejected": true,
+      "matching_errors": [
+        "source gate without declared input: ago-stop"
+      ]
+    },
+    {
+      "mutation": "wrong_renal_metric",
+      "rejected": true,
+      "matching_errors": [
+        "wrong renal metric permits dose: dulox-gad-start--wrong-renal-metric-renal_metric"
+      ]
+    },
+    {
+      "mutation": "hepatic_AB_owner",
+      "rejected": true,
+      "matching_errors": [
+        "target hepatic owner/action incorrect: switch-parox-ago-selected-example"
+      ]
+    },
+    {
+      "mutation": "missing_seizure_stop",
+      "rejected": true,
+      "matching_errors": [
+        "sertraline seizure stop missing: ser-panic-start"
+      ]
+    },
+    {
+      "mutation": "missing_ongoing_liver_stop",
+      "rejected": true,
+      "matching_errors": [
+        "ongoing transaminase stop missing: ago-gad-start/ALT_ratio"
+      ]
+    },
+    {
+      "mutation": "undeclared_medication_provenance",
+      "rejected": true,
+      "matching_errors": [
+        "undeclared/incomplete medication entry: ago-depression-start--medicine-RU-AGO-strong_CYP1A2",
+        "undeclared/incomplete medication entry: ago-depression-start--medicine-RU-AGO-moderate_CYP1A2",
+        "undeclared/incomplete medication entry: ago-depression-start--medicine-RU-AGO-hepatotoxic",
+        "undeclared/incomplete medication entry: ago-gad-start--medicine-RU-AGO-strong_CYP1A2",
+        "undeclared/incomplete medication entry: ago-gad-start--medicine-RU-AGO-moderate_CYP1A2",
+        "undeclared/incomplete medication entry: ago-gad-start--medicine-RU-AGO-hepatotoxic",
+        "undeclared/incomplete medication entry: dulox-depression-start--medicine-RU-DULOX-maoi",
+        "undeclared/incomplete medication entry: dulox-depression-start--medicine-RU-DULOX-strong_CYP1A2",
+        "undeclared/incomplete medication entry: dulox-depression-start--medicine-RU-DULOX-serotonergic",
+        "undeclared/incomplete medication entry: dulox-depression-start--medicine-RU-DULOX-bleeding",
+        "undeclared/incomplete medication entry: dulox-depression-start--medicine-RU-DULOX-CYP2D6_inhibitor",
+        "undeclared/incomplete medication entry: dulox-gad-adjust--medicine-RU-DULOX-maoi",
+        "undeclared/incomplete medication entry: dulox-gad-adjust--medicine-RU-DULOX-strong_CYP1A2",
+        "undeclared/incomplete medication entry: dulox-gad-adjust--medicine-RU-DULOX-serotonergic",
+        "undeclared/incomplete medication entry: dulox-gad-adjust--medicine-RU-DULOX-bleeding",
+        "undeclared/incomplete medication entry: dulox-gad-adjust--medicine-RU-DULOX-CYP2D6_inhibitor",
+        "undeclared/incomplete medication entry: dulox-gad-start--medicine-RU-DULOX-maoi",
+        "undeclared/incomplete medication entry: dulox-gad-start--medicine-RU-DULOX-strong_CYP1A2",
+        "undeclared/incomplete medication entry: dulox-gad-start--medicine-RU-DULOX-serotonergic",
+        "undeclared/incomplete medication entry: dulox-gad-start--medicine-RU-DULOX-bleeding",
+        "undeclared/incomplete medication entry: dulox-gad-start--medicine-RU-DULOX-CYP2D6_inhibitor",
+        "undeclared/incomplete medication entry: fluvox-depression-start--medicine-RU-FLUVOX-maoi",
+        "undeclared/incomplete medication entry: fluvox-depression-start--medicine-RU-FLUVOX-tizanidine",
+        "undeclared/incomplete medication entry: fluvox-depression-start--medicine-RU-FLUVOX-pimozide",
+        "undeclared/incomplete medication entry: fluvox-depression-start--medicine-RU-FLUVOX-ramelteon",
+        "undeclared/incomplete medication entry: fluvox-depression-start--medicine-RU-FLUVOX-terfenadine",
+        "undeclared/incomplete medication entry: fluvox-depression-start--medicine-RU-FLUVOX-astemizole",
+        "undeclared/incomplete medication entry: fluvox-depression-start--medicine-RU-FLUVOX-cisapride",
+        "undeclared/incomplete medication entry: fluvox-depression-start--medicine-RU-FLUVOX-serotonergic",
+        "undeclared/incomplete medication entry: fluvox-depression-start--medicine-RU-FLUVOX-bleeding",
+        "undeclared/incomplete medication entry: fluvox-depression-start--medicine-RU-FLUVOX-CYP_substrate",
+        "undeclared/incomplete medication entry: parox-panic-kr--medicine-RU-PAROX-maoi",
+        "undeclared/incomplete medication entry: parox-panic-kr--medicine-RU-PAROX-pimozide",
+        "undeclared/incomplete medication entry: parox-panic-kr--medicine-RU-PAROX-thioridazine",
+        "undeclared/incomplete medication entry: parox-panic-kr--medicine-RU-PAROX-serotonergic",
+        "undeclared/incomplete medication entry: parox-panic-kr--medicine-RU-PAROX-bleeding",
+        "undeclared/incomplete medication entry: parox-panic-kr--medicine-RU-PAROX-CYP2D6_substrate",
+        "undeclared/incomplete medication entry: preg-gad-adjust--medicine-RU-PREG-CNS_depressant",
+        "undeclared/incomplete medication entry: preg-gad-adjust--medicine-RU-PREG-opioid",
+        "undeclared/incomplete medication entry: preg-gad-start--medicine-RU-PREG-CNS_depressant",
+        "undeclared/incomplete medication entry: preg-gad-start--medicine-RU-PREG-opioid",
+        "undeclared/incomplete medication entry: preg-renal-start--medicine-RU-PREG-CNS_depressant",
+        "undeclared/incomplete medication entry: preg-renal-start--medicine-RU-PREG-opioid",
+        "undeclared/incomplete medication entry: ser-adult-adjust--medicine-RU-SER-maoi",
+        "undeclared/incomplete medication entry: ser-adult-adjust--medicine-RU-SER-pimozide",
+        "undeclared/incomplete medication entry: ser-adult-adjust--medicine-RU-SER-serotonergic",
+        "undeclared/incomplete medication entry: ser-adult-adjust--medicine-RU-SER-QT_prolonging",
+        "undeclared/incomplete medication entry: ser-adult-adjust--medicine-RU-SER-bleeding",
+        "undeclared/incomplete medication entry: ser-panic-start--medicine-RU-SER-maoi",
+        "undeclared/incomplete medication entry: ser-panic-start--medicine-RU-SER-pimozide",
+        "undeclared/incomplete medication entry: ser-panic-start--medicine-RU-SER-serotonergic",
+        "undeclared/incomplete medication entry: ser-panic-start--medicine-RU-SER-QT_prolonging",
+        "undeclared/incomplete medication entry: ser-panic-start--medicine-RU-SER-bleeding",
+        "undeclared/incomplete medication entry: ser-social-start--medicine-RU-SER-maoi",
+        "undeclared/incomplete medication entry: ser-social-start--medicine-RU-SER-pimozide",
+        "undeclared/incomplete medication entry: ser-social-start--medicine-RU-SER-serotonergic",
+        "undeclared/incomplete medication entry: ser-social-start--medicine-RU-SER-QT_prolonging",
+        "undeclared/incomplete medication entry: ser-social-start--medicine-RU-SER-bleeding",
+        "undeclared/incomplete medication entry: switch-parox-ago-selected-example--medicine-RU-AGO-strong_CYP1A2",
+        "undeclared/incomplete medication entry: switch-parox-ago-selected-example--medicine-RU-AGO-moderate_CYP1A2",
+        "undeclared/incomplete medication entry: switch-parox-ago-selected-example--medicine-RU-AGO-hepatotoxic",
+        "undeclared/incomplete medication entry: switch-parox-ago-selected-example--medicine-RU-PAROX-maoi",
+        "undeclared/incomplete medication entry: switch-parox-ago-selected-example--medicine-RU-PAROX-pimozide",
+        "undeclared/incomplete medication entry: switch-parox-ago-selected-example--medicine-RU-PAROX-thioridazine",
+        "undeclared/incomplete medication entry: switch-parox-ago-selected-example--medicine-RU-PAROX-serotonergic",
+        "undeclared/incomplete medication entry: switch-parox-ago-selected-example--medicine-RU-PAROX-bleeding",
+        "undeclared/incomplete medication entry: switch-parox-ago-selected-example--medicine-RU-PAROX-CYP2D6_substrate",
+        "undeclared/incomplete medication entry: switch-parox-ago--medicine-RU-AGO-strong_CYP1A2",
+        "undeclared/incomplete medication entry: switch-parox-ago--medicine-RU-AGO-moderate_CYP1A2",
+        "undeclared/incomplete medication entry: switch-parox-ago--medicine-RU-AGO-hepatotoxic",
+        "undeclared/incomplete medication entry: switch-parox-ago--medicine-RU-PAROX-maoi",
+        "undeclared/incomplete medication entry: switch-parox-ago--medicine-RU-PAROX-pimozide",
+        "undeclared/incomplete medication entry: switch-parox-ago--medicine-RU-PAROX-thioridazine",
+        "undeclared/incomplete medication entry: switch-parox-ago--medicine-RU-PAROX-serotonergic",
+        "undeclared/incomplete medication entry: switch-parox-ago--medicine-RU-PAROX-bleeding",
+        "undeclared/incomplete medication entry: switch-parox-ago--medicine-RU-PAROX-CYP2D6_substrate",
+        "undeclared/incomplete medication entry: switch-ser-ago--medicine-RU-AGO-strong_CYP1A2",
+        "undeclared/incomplete medication entry: switch-ser-ago--medicine-RU-AGO-moderate_CYP1A2",
+        "undeclared/incomplete medication entry: switch-ser-ago--medicine-RU-AGO-hepatotoxic",
+        "undeclared/incomplete medication entry: switch-ser-ago--medicine-RU-SER-maoi",
+        "undeclared/incomplete medication entry: switch-ser-ago--medicine-RU-SER-pimozide",
+        "undeclared/incomplete medication entry: switch-ser-ago--medicine-RU-SER-serotonergic",
+        "undeclared/incomplete medication entry: switch-ser-ago--medicine-RU-SER-QT_prolonging",
+        "undeclared/incomplete medication entry: switch-ser-ago--medicine-RU-SER-bleeding",
+        "undeclared/incomplete medication entry: venla-xr-gad-start--medicine-RU-VENLA-XR-maoi",
+        "undeclared/incomplete medication entry: venla-xr-gad-start--medicine-RU-VENLA-XR-serotonergic",
+        "undeclared/incomplete medication entry: venla-xr-gad-start--medicine-RU-VENLA-XR-QT_prolonging",
+        "undeclared/incomplete medication entry: venla-xr-gad-start--medicine-RU-VENLA-XR-bleeding",
+        "undeclared/incomplete medication entry: venla-xr-panic-form-limit--medicine-RU-VENLA-XR-maoi",
+        "undeclared/incomplete medication entry: venla-xr-panic-form-limit--medicine-RU-VENLA-XR-serotonergic",
+        "undeclared/incomplete medication entry: venla-xr-panic-form-limit--medicine-RU-VENLA-XR-QT_prolonging",
+        "undeclared/incomplete medication entry: venla-xr-panic-form-limit--medicine-RU-VENLA-XR-bleeding",
+        "undeclared/incomplete medication entry: venla-xr-social-start--medicine-RU-VENLA-XR-maoi",
+        "undeclared/incomplete medication entry: venla-xr-social-start--medicine-RU-VENLA-XR-serotonergic",
+        "undeclared/incomplete medication entry: venla-xr-social-start--medicine-RU-VENLA-XR-QT_prolonging",
+        "undeclared/incomplete medication entry: venla-xr-social-start--medicine-RU-VENLA-XR-bleeding"
+      ]
+    },
+    {
+      "mutation": "missing_switch_identity",
+      "rejected": true,
+      "matching_errors": [
+        "switch identity context missing: switch-parox-ago-selected-example--branch-selected40"
+      ]
+    },
+    {
+      "mutation": "unknown_conditional_timestamp",
+      "rejected": true,
+      "matching_errors": [
+        "missing field allows dose: ser-panic-start--maoi_stopped_at-M1-unknown"
+      ]
+    }
+  ]
+}

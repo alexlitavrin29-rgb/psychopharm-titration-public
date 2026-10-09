@@ -1,0 +1,197 @@
+{
+  "audited_snapshot": "ac33f61373c22b1c160de40057815b16c27bc67e4beb870a56057992f0b06148",
+  "files": [
+    {
+      "path": "research/acceptance_v2_audit/recheck3/acceptance_final.md",
+      "sha256": "3f58debf9811e0a9e8b675b1165138fee3e7f417aaa6f63fff4958497459cda5",
+      "size": 1542
+    },
+    {
+      "path": "research/acceptance_v2_audit/recheck3/acceptance_recheck.json",
+      "sha256": "45276784467a62a3121bbd3eba59af325d078c24fc1fca4e18fc79550698e1c9",
+      "size": 36060
+    },
+    {
+      "path": "research/acceptance_v2_audit/recheck3/acceptance_recheck.md",
+      "sha256": "69b33dcb32c7ff4bd11a8af91d05fad8f8ad1eb333d87339f2c2e6ee7758ce11",
+      "size": 26490
+    },
+    {
+      "path": "research/acceptance_v2_audit/recheck3/additional_checks.json",
+      "sha256": "a51e676ba4557a91b3d9903d3fe815926f106fc67ffdb7432b2c941519234d15",
+      "size": 4531
+    },
+    {
+      "path": "research/acceptance_v2_audit/recheck3/additional_checks.py",
+      "sha256": "864f589e3d4378e928a698403d8dfd6eee8484251329d902cb1797d9ab93763d",
+      "size": 4091
+    },
+    {
+      "path": "research/acceptance_v2_audit/recheck3/B_phase_check.json",
+      "sha256": "43effc972977c5ae3d881507c386b3bbdb4ef17b81b543a892dd2bc373768c3a",
+      "size": 4286
+    },
+    {
+      "path": "research/acceptance_v2_audit/recheck3/complete_given_consistency.json",
+      "sha256": "a67a21173f60083d6abf79d35b5d5172db09038b057f63be2b0b6da0b3445cd1",
+      "size": 174
+    },
+    {
+      "path": "research/acceptance_v2_audit/recheck3/coverage.json",
+      "sha256": "2df8396a59288ba19fe59f6e11c626648dcb4af6fcbccfef4ee88e73b1c8a572",
+      "size": 19212
+    },
+    {
+      "path": "research/acceptance_v2_audit/recheck3/coverage.md",
+      "sha256": "e5c43890d3e459c2d68565a28de45c3570c4e0e0060661b389c019dec539f8e3",
+      "size": 2797
+    },
+    {
+      "path": "research/acceptance_v2_audit/recheck3/final_verification.json",
+      "sha256": "db549c5aee2abf7fb14906082f620724abb8499e6ce857be656a1ee7d2e21bd3",
+      "size": 1171
+    },
+    {
+      "path": "research/acceptance_v2_audit/recheck3/finalize_audit.py",
+      "sha256": "db7dba35a7deb836cd460edeecc6818df9571397d4540f67f2af797b8de722a2",
+      "size": 10642
+    },
+    {
+      "path": "research/acceptance_v2_audit/recheck3/finding_closure.json",
+      "sha256": "8e40c4f4b3f94e802c2eb65dcd5ef59a1403f07d7dbd160249b25fb3ea69753d",
+      "size": 6839
+    },
+    {
+      "path": "research/acceptance_v2_audit/recheck3/findings.json",
+      "sha256": "38388442d998d19e0fd0315840744aa9de26e429f63f0c79512e2c32099bc8a4",
+      "size": 9069
+    },
+    {
+      "path": "research/acceptance_v2_audit/recheck3/findings.md",
+      "sha256": "4ed9d987612097146a4ffd7b9dcb4339275f021387772300280de114c40dee2f",
+      "size": 6267
+    },
+    {
+      "path": "research/acceptance_v2_audit/recheck3/independent_checks.json",
+      "sha256": "737068f816e4620892834f7feacbee93ee85c4e3d9d614855c557aa8148a6ced",
+      "size": 6944
+    },
+    {
+      "path": "research/acceptance_v2_audit/recheck3/independent_paths.json",
+      "sha256": "be7bad76c35212cc542b57036014d081c3b131847f0fdc54eb896f41d6b46181",
+      "size": 800294
+    },
+    {
+      "path": "research/acceptance_v2_audit/recheck3/initial_manifest.json",
+      "sha256": "8df042f81717717c4d12dabd68d9c61d79bdda17f1ff8b730dda9fa063abede5",
+      "size": 56326
+    },
+    {
+      "path": "research/acceptance_v2_audit/recheck3/input_inventory.json",
+      "sha256": "85108406e25ded8e678b82839991452d792323ba5653c826a61a2115b1c616cb",
+      "size": 1916044
+    },
+    {
+      "path": "research/acceptance_v2_audit/recheck3/numeric_inventory.json",
+      "sha256": "7a763e4c082e6fa2c2543aebf9057f17a0d6de765cd0486a525cd4b98c3a0b7c",
+      "size": 108023
+    },
+    {
+      "path": "research/acceptance_v2_audit/recheck3/ordinary_path_check.json",
+      "sha256": "c65d9cf104b46830f3c5f44f4e9d5e2305c279ff26cc215e0c7c557d0c2cf709",
+      "size": 405
+    },
+    {
+      "path": "research/acceptance_v2_audit/recheck3/preservation_check.json",
+      "sha256": "e1dae36f9995d09cb762ae9bdc45e7554c0c9198698c44a8cb6cf99584ca8976",
+      "size": 1659
+    },
+    {
+      "path": "research/acceptance_v2_audit/recheck3/previous_acceptance_final.txt",
+      "sha256": "26c55e377eb66fce959962577b7e2508143acf6e9212e1760f0a05f12d5f083d",
+      "size": 721
+    },
+    {
+      "path": "research/acceptance_v2_audit/recheck3/primary_expected_checks.json",
+      "sha256": "fdb3137860ede5e1caa6b4c350f83f0a674333c4169169ff44ace8eb27bf5293",
+      "size": 3347
+    },
+    {
+      "path": "research/acceptance_v2_audit/recheck3/primary_pages_read.json",
+      "sha256": "dd7f8c9af59fcd9711b63262258673337aad80546ac01e003e4e46074c283094",
+      "size": 53301
+    },
+    {
+      "path": "research/acceptance_v2_audit/recheck3/recheck3_checks.json",
+      "sha256": "2efdf2adf3b0937d3061897126b921fd3fc3d8a7aca6a5a23ebf686aebf25a92",
+      "size": 7618
+    },
+    {
+      "path": "research/acceptance_v2_audit/recheck3/recheck3_checks.py",
+      "sha256": "afc6970c14aa938f364e1f68c5456dde8d4d6f35a7f6756b07157e6bcb9dcb5f",
+      "size": 10328
+    },
+    {
+      "path": "research/acceptance_v2_audit/recheck3/required_fixes.md",
+      "sha256": "15373fae3f3e8ac958de4996c7becfe5bcaf68dcd5b4576069aea0e013022934",
+      "size": 3921
+    },
+    {
+      "path": "research/acceptance_v2_audit/recheck3/requirements_diff.json",
+      "sha256": "f0e06c369ac3819c24ef66f66795f7f5feaec84d98e6d03a88ed717332bf1039",
+      "size": 916
+    },
+    {
+      "path": "research/acceptance_v2_audit/recheck3/scoring.json",
+      "sha256": "2758b3e6c5d7ef7902586670f03820ae9924c4aa3a084fe802c0164744f897dd",
+      "size": 2168
+    },
+    {
+      "path": "research/acceptance_v2_audit/recheck3/scoring.md",
+      "sha256": "89f6bd96fa6526fdcfa911a97f5ae30011076d6eab42cebe75a969aafb9f7a2b",
+      "size": 1909
+    },
+    {
+      "path": "research/acceptance_v2_audit/recheck3/setup_audit.py",
+      "sha256": "2d16a61d03820d0dcc332b93aa1ab609c414ce68705051e4002cc8407e4961cc",
+      "size": 3767
+    },
+    {
+      "path": "research/acceptance_v2_audit/recheck3/snapshot_changes.json",
+      "sha256": "5905f38db1dbe9e9ddd2d637b998d3771f3455953bf46d97d6076296402e2231",
+      "size": 3778
+    },
+    {
+      "path": "research/acceptance_v2_audit/recheck3/source_verification.json",
+      "sha256": "637618afea283e54465b1d39dc44f1a5fb9cc5cabd34a72f0a6da07dd8c722ab",
+      "size": 46739
+    },
+    {
+      "path": "research/acceptance_v2_audit/recheck3/source_verification.md",
+      "sha256": "f4699453079dba4e01d1111cf42791391e60170b21a009f9fafd17c32d67dc45",
+      "size": 6722
+    },
+    {
+      "path": "research/acceptance_v2_audit/recheck3/summary.md",
+      "sha256": "e03e57bcb16fbf30df26c213c613611b91099a125bb512ae9113288dd49af953",
+      "size": 5575
+    },
+    {
+      "path": "research/acceptance_v2_audit/recheck3/verify_independent.py",
+      "sha256": "5c4a408833c4db889f9bb946133d8c50070c3332bc10f0ea7e8a4be8ea1f0ff1",
+      "size": 19356
+    },
+    {
+      "path": "research/acceptance_v2_audit/recheck3/write_reports.py",
+      "sha256": "9426dae42956195194f7c8b72b598d64879891c92bd9a0db87c7641aed505f77",
+      "size": 35052
+    }
+  ],
+  "files_sha256": "cd0b39383fbedf39752f540077b37c8a2daf2cc986bf99a6c0bcd7a00f6b0b42",
+  "current_aggregator": {
+    "path": "research/acceptance_v2_audit/acceptance_final.md",
+    "sha256": "2d30dbbca1bceb298f23a0bdac44403ccc359facb9297f3621cca102a49c8885"
+  },
+  "scope": "Partial V2 research acceptance; finite primary and targeted repair review, not exhaustive medical/necessity review",
+  "utc": "2026-10-08T20:21:39.231726+00:00"
+}

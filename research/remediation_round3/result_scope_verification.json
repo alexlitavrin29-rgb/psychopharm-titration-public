@@ -1,0 +1,63 @@
+{
+  "status": "pass",
+  "prepared_cases": 6646,
+  "paths": 2652,
+  "certificate_cases": 1386,
+  "negative_mutations": [
+    {
+      "mutation": "missing primary cause",
+      "rejected": true
+    },
+    {
+      "mutation": "unknown primary cause",
+      "rejected": true
+    },
+    {
+      "mutation": "wrong actual primary product",
+      "rejected": true
+    },
+    {
+      "mutation": "exclusion becomes dose",
+      "rejected": true
+    },
+    {
+      "mutation": "B unknown cannot stand for first start",
+      "rejected": true
+    },
+    {
+      "mutation": "B already ongoing cannot stand for first start",
+      "rejected": true
+    },
+    {
+      "mutation": "dementia without elderly category",
+      "rejected": true
+    },
+    {
+      "mutation": "stopped MAOI missing system clock",
+      "rejected": true
+    },
+    {
+      "mutation": "current physician action without own ongoing actor",
+      "rejected": true
+    },
+    {
+      "mutation": "contraception without reproductive category",
+      "rejected": true
+    },
+    {
+      "mutation": "unknown selection normalized false",
+      "rejected": true
+    },
+    {
+      "mutation": "full expected stale negative",
+      "rejected": true
+    },
+    {
+      "mutation": "absent age normalized adult",
+      "rejected": true
+    }
+  ],
+  "clinical_engine_executed": false,
+  "scope": "Literal prepared primary-bound causal certificates, projection and actor regression; independent medical sufficiency is reviewed separately",
+  "errors": []
+}

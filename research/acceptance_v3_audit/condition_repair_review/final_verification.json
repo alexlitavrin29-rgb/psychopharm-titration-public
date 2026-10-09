@@ -1,0 +1,89 @@
+{
+  "snapshot": "8fe52f02f06299e87cae714e128d52cd86d2c13af213ddabf68587001fe8206e",
+  "copied_files": 77,
+  "copy_changes_initial": [],
+  "copy_changes_final": [],
+  "source_files_checked": 13,
+  "source_sha_errors": [],
+  "literal_criteria_v2": 30,
+  "literal_criteria_v3": 30,
+  "changed_literal_criteria": [
+    18
+  ],
+  "criterion18_length_violation_not_applied": true,
+  "scoped_new_medical_review": {
+    "scopes": 113,
+    "new_full_cases": 232,
+    "positive_scopes_source_reviewed": 113,
+    "unknown_or_phase_countercases": 119,
+    "primary_norm_record_count_reused": 391,
+    "automatic_verified": 0
+  },
+  "projection_counts": {
+    "snapshot": "8fe52f02f06299e87cae714e128d52cd86d2c13af213ddabf68587001fe8206e",
+    "copied_files": 77,
+    "rules": 38,
+    "full_cases": 5825,
+    "selected_paths": 1786,
+    "scopes": 113,
+    "new_cases": 232,
+    "assertions": 32513,
+    "assertion_errors": 3,
+    "fact_count_defective_paths": 79,
+    "optional_state_occurrences": {
+      "other": 2237,
+      "negative": 11137,
+      "positive": 271,
+      "absent": 1375,
+      "unknown": 42
+    }
+  },
+  "numerical_static_check": {
+    "cases": 5825,
+    "assertions": 20180,
+    "errors": 0
+  },
+  "supplemental_check": {
+    "assertions": 344,
+    "errors": [],
+    "numeric_objects": 211,
+    "historical_phase_countercases": 176,
+    "negative_controls": [
+      {
+        "mutation": "invented_caution_dose",
+        "rejected": true
+      },
+      {
+        "mutation": "invented_schedule",
+        "rejected": true
+      },
+      {
+        "mutation": "false_clinical_clearance",
+        "rejected": true
+      },
+      {
+        "mutation": "unknown_B_stop",
+        "rejected": true
+      },
+      {
+        "mutation": "nonstarted_B_stop",
+        "rejected": true
+      },
+      {
+        "mutation": "free_known_MAOI_type",
+        "rejected": true,
+        "missing_fact": "maoi_type.M1"
+      }
+    ]
+  },
+  "checked_report_links": 9,
+  "missing_links": [],
+  "copy_integrity": "PASS",
+  "status": "PARTIAL_LOCAL_ACCEPTANCE_WITH_RCR01_04_ENUMERATED",
+  "new_score_assigned": false,
+  "all30_acceptance_performed": false,
+  "application_executed": false,
+  "clinical_validation": false,
+  "prior_reports_written": false,
+  "scope_limit": "Copied checkpoint only. Author live fixes pending a new immutable snapshot."
+}

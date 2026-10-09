@@ -1,0 +1,442 @@
+[
+  {
+    "rule_id": "ago-depression-start",
+    "input_id": "renal_state",
+    "old": {
+      "kind": "always"
+    },
+    "new": {
+      "kind": "reported_context"
+    },
+    "reason": "RU-AGO §4.2 с.2/§4.4 с.4 задаёт осторожность при умеренной/тяжёлой почечной недостаточности, без числовой поправки, запрета или требования обязательной предлечебной оценки. Для выбранной ограниченной дозы/источникового перехода не операнд; сообщённое состояние используется и считается, unknown/отсутствие остаётся not_assessed без клинического допуска.",
+    "source_refs": [
+      "RU-AGO"
+    ],
+    "locator": "§4.2 с.2; §4.4 с.4",
+    "changed_missing_cases": [
+      "ago-depression-start--renal_state-omitted",
+      "ago-depression-start--renal_state-unknown",
+      "ago-depression-start--renal_state-not_assessed"
+    ]
+  },
+  {
+    "rule_id": "ago-gad-start",
+    "input_id": "renal_state",
+    "old": {
+      "kind": "always"
+    },
+    "new": {
+      "kind": "reported_context"
+    },
+    "reason": "RU-AGO §4.2 с.2/§4.4 с.4 задаёт осторожность при умеренной/тяжёлой почечной недостаточности, без числовой поправки, запрета или требования обязательной предлечебной оценки. Для выбранной ограниченной дозы/источникового перехода не операнд; сообщённое состояние используется и считается, unknown/отсутствие остаётся not_assessed без клинического допуска.",
+    "source_refs": [
+      "RU-AGO"
+    ],
+    "locator": "§4.2 с.2; §4.4 с.4",
+    "changed_missing_cases": [
+      "ago-gad-start--renal_state-omitted",
+      "ago-gad-start--renal_state-unknown",
+      "ago-gad-start--renal_state-not_assessed"
+    ]
+  },
+  {
+    "rule_id": "switch-esc-ago",
+    "input_id": "alcohol_use",
+    "old": {
+      "kind": "always"
+    },
+    "new": {
+      "kind": "reported_context"
+    },
+    "reason": "Конкретный источниковый анамнез/фактор требует осторожности или наблюдения; первичный источник не задаёт обязательную предварительную оценку, числовую поправку или противопоказание по одному этому фактору. Это не относится к текущим срочным симптомам, лекарственным взаимодействиям, предлечебному печёночному/QT риску. Для выбранной ограниченной дозы/источникового перехода не операнд; сообщённое состояние используется и считается, unknown/отсутствие остаётся not_assessed без клинического допуска.",
+    "source_refs": [
+      "RU-AGO"
+    ],
+    "locator": "§4.5 с.6",
+    "changed_missing_cases": [
+      "switch-esc-ago--current-alcohol_use-omitted",
+      "switch-esc-ago--current-alcohol_use-unknown",
+      "switch-esc-ago--current-alcohol_use-not_assessed"
+    ]
+  },
+  {
+    "rule_id": "switch-esc-ago",
+    "input_id": "mania",
+    "old": {
+      "kind": "always"
+    },
+    "new": {
+      "kind": "reported_context"
+    },
+    "reason": "Конкретный источниковый анамнез/фактор требует осторожности или наблюдения; первичный источник не задаёт обязательную предварительную оценку, числовую поправку или противопоказание по одному этому фактору. Это не относится к текущим срочным симптомам, лекарственным взаимодействиям, предлечебному печёночному/QT риску. Для выбранной ограниченной дозы/источникового перехода не операнд; сообщённое состояние используется и считается, unknown/отсутствие остаётся not_assessed без клинического допуска.",
+    "source_refs": [
+      "RU-AGO"
+    ],
+    "locator": "§4.4 с.4",
+    "changed_missing_cases": [
+      "switch-esc-ago--current-mania-omitted",
+      "switch-esc-ago--current-mania-unknown",
+      "switch-esc-ago--current-mania-not_assessed"
+    ]
+  },
+  {
+    "rule_id": "switch-esc-ago",
+    "input_id": "suicide_risk",
+    "old": {
+      "kind": "always"
+    },
+    "new": {
+      "kind": "reported_context"
+    },
+    "reason": "Конкретный источниковый анамнез/фактор требует осторожности или наблюдения; первичный источник не задаёт обязательную предварительную оценку, числовую поправку или противопоказание по одному этому фактору. Это не относится к текущим срочным симптомам, лекарственным взаимодействиям, предлечебному печёночному/QT риску. Для выбранной ограниченной дозы/источникового перехода не операнд; сообщённое состояние используется и считается, unknown/отсутствие остаётся not_assessed без клинического допуска.",
+    "source_refs": [
+      "RU-AGO"
+    ],
+    "locator": "§4.4 с.4–5",
+    "changed_missing_cases": [
+      "switch-esc-ago--current-suicide_risk-omitted",
+      "switch-esc-ago--current-suicide_risk-unknown",
+      "switch-esc-ago--current-suicide_risk-not_assessed"
+    ]
+  },
+  {
+    "rule_id": "switch-esc-ago",
+    "input_id": "renal_state",
+    "old": {
+      "kind": "always"
+    },
+    "new": {
+      "kind": "reported_context"
+    },
+    "reason": "RU-AGO §4.2 с.2/§4.4 с.4 задаёт осторожность при умеренной/тяжёлой почечной недостаточности, без числовой поправки, запрета или требования обязательной предлечебной оценки. Для выбранной ограниченной дозы/источникового перехода не операнд; сообщённое состояние используется и считается, unknown/отсутствие остаётся not_assessed без клинического допуска.",
+    "source_refs": [
+      "RU-AGO"
+    ],
+    "locator": "§4.2 с.2; §4.4 с.4",
+    "changed_missing_cases": [
+      "switch-esc-ago--current-renal_state-omitted",
+      "switch-esc-ago--current-renal_state-unknown",
+      "switch-esc-ago--current-renal_state-not_assessed"
+    ]
+  },
+  {
+    "rule_id": "switch-parox-ago-selected-example",
+    "input_id": "renal_state",
+    "old": {
+      "kind": "always"
+    },
+    "new": {
+      "kind": "reported_context"
+    },
+    "reason": "RU-AGO §4.2 с.2/§4.4 с.4 задаёт осторожность при умеренной/тяжёлой почечной недостаточности, без числовой поправки, запрета или требования обязательной предлечебной оценки. Для выбранной ограниченной дозы/источникового перехода не операнд; сообщённое состояние используется и считается, unknown/отсутствие остаётся not_assessed без клинического допуска.",
+    "source_refs": [
+      "RU-AGO"
+    ],
+    "locator": "§4.2 с.2; §4.4 с.4",
+    "changed_missing_cases": [
+      "switch-parox-ago-selected-example--renal_state-omitted",
+      "switch-parox-ago-selected-example--renal_state-unknown",
+      "switch-parox-ago-selected-example--renal_state-not_assessed"
+    ]
+  },
+  {
+    "rule_id": "switch-parox-ago-selected-example",
+    "input_id": "alcohol_use",
+    "old": {
+      "kind": "always"
+    },
+    "new": {
+      "kind": "reported_context"
+    },
+    "reason": "Конкретный источниковый анамнез/фактор требует осторожности или наблюдения; первичный источник не задаёт обязательную предварительную оценку, числовую поправку или противопоказание по одному этому фактору. Это не относится к текущим срочным симптомам, лекарственным взаимодействиям, предлечебному печёночному/QT риску. Для выбранной ограниченной дозы/источникового перехода не операнд; сообщённое состояние используется и считается, unknown/отсутствие остаётся not_assessed без клинического допуска.",
+    "source_refs": [
+      "RU-AGO"
+    ],
+    "locator": "§4.5 с.6",
+    "changed_missing_cases": [
+      "switch-parox-ago-selected-example--alcohol_use-omitted",
+      "switch-parox-ago-selected-example--alcohol_use-unknown",
+      "switch-parox-ago-selected-example--alcohol_use-not_assessed"
+    ]
+  },
+  {
+    "rule_id": "switch-parox-ago-selected-example",
+    "input_id": "mania",
+    "old": {
+      "kind": "always"
+    },
+    "new": {
+      "kind": "reported_context"
+    },
+    "reason": "Конкретный источниковый анамнез/фактор требует осторожности или наблюдения; первичный источник не задаёт обязательную предварительную оценку, числовую поправку или противопоказание по одному этому фактору. Это не относится к текущим срочным симптомам, лекарственным взаимодействиям, предлечебному печёночному/QT риску. Для выбранной ограниченной дозы/источникового перехода не операнд; сообщённое состояние используется и считается, unknown/отсутствие остаётся not_assessed без клинического допуска.",
+    "source_refs": [
+      "RU-AGO"
+    ],
+    "locator": "§4.4 с.4",
+    "changed_missing_cases": [
+      "switch-parox-ago-selected-example--mania-omitted",
+      "switch-parox-ago-selected-example--mania-unknown",
+      "switch-parox-ago-selected-example--mania-not_assessed"
+    ]
+  },
+  {
+    "rule_id": "switch-parox-ago-selected-example",
+    "input_id": "suicide_risk",
+    "old": {
+      "kind": "always"
+    },
+    "new": {
+      "kind": "reported_context"
+    },
+    "reason": "Конкретный источниковый анамнез/фактор требует осторожности или наблюдения; первичный источник не задаёт обязательную предварительную оценку, числовую поправку или противопоказание по одному этому фактору. Это не относится к текущим срочным симптомам, лекарственным взаимодействиям, предлечебному печёночному/QT риску. Для выбранной ограниченной дозы/источникового перехода не операнд; сообщённое состояние используется и считается, unknown/отсутствие остаётся not_assessed без клинического допуска.",
+    "source_refs": [
+      "RU-AGO"
+    ],
+    "locator": "§4.4 с.4–5",
+    "changed_missing_cases": [
+      "switch-parox-ago-selected-example--suicide_risk-omitted",
+      "switch-parox-ago-selected-example--suicide_risk-unknown",
+      "switch-parox-ago-selected-example--suicide_risk-not_assessed"
+    ]
+  },
+  {
+    "rule_id": "switch-parox-ago-selected-example",
+    "input_id": "bleeding_risk",
+    "old": {
+      "kind": "always"
+    },
+    "new": {
+      "kind": "reported_context"
+    },
+    "reason": "Конкретный источниковый анамнез/фактор требует осторожности или наблюдения; первичный источник не задаёт обязательную предварительную оценку, числовую поправку или противопоказание по одному этому фактору. Это не относится к текущим срочным симптомам, лекарственным взаимодействиям, предлечебному печёночному/QT риску. Для выбранной ограниченной дозы/источникового перехода не операнд; сообщённое состояние используется и считается, unknown/отсутствие остаётся not_assessed без клинического допуска.",
+    "source_refs": [
+      "RU-PAROX"
+    ],
+    "locator": "RU-PAROX §4.4 с.9",
+    "changed_missing_cases": [
+      "switch-parox-ago-selected-example--bleeding_risk-omitted",
+      "switch-parox-ago-selected-example--bleeding_risk-unknown",
+      "switch-parox-ago-selected-example--bleeding_risk-not_assessed"
+    ]
+  },
+  {
+    "rule_id": "switch-parox-ago",
+    "input_id": "alcohol_use",
+    "old": {
+      "kind": "always"
+    },
+    "new": {
+      "kind": "reported_context"
+    },
+    "reason": "Конкретный источниковый анамнез/фактор требует осторожности или наблюдения; первичный источник не задаёт обязательную предварительную оценку, числовую поправку или противопоказание по одному этому фактору. Это не относится к текущим срочным симптомам, лекарственным взаимодействиям, предлечебному печёночному/QT риску. Для выбранной ограниченной дозы/источникового перехода не операнд; сообщённое состояние используется и считается, unknown/отсутствие остаётся not_assessed без клинического допуска.",
+    "source_refs": [
+      "RU-AGO"
+    ],
+    "locator": "§4.5 с.6",
+    "changed_missing_cases": [
+      "switch-parox-ago--alcohol_use-omitted",
+      "switch-parox-ago--alcohol_use-unknown",
+      "switch-parox-ago--alcohol_use-not_assessed"
+    ]
+  },
+  {
+    "rule_id": "switch-parox-ago",
+    "input_id": "mania",
+    "old": {
+      "kind": "always"
+    },
+    "new": {
+      "kind": "reported_context"
+    },
+    "reason": "Конкретный источниковый анамнез/фактор требует осторожности или наблюдения; первичный источник не задаёт обязательную предварительную оценку, числовую поправку или противопоказание по одному этому фактору. Это не относится к текущим срочным симптомам, лекарственным взаимодействиям, предлечебному печёночному/QT риску. Для выбранной ограниченной дозы/источникового перехода не операнд; сообщённое состояние используется и считается, unknown/отсутствие остаётся not_assessed без клинического допуска.",
+    "source_refs": [
+      "RU-AGO"
+    ],
+    "locator": "§4.4 с.4",
+    "changed_missing_cases": [
+      "switch-parox-ago--mania-omitted",
+      "switch-parox-ago--mania-unknown",
+      "switch-parox-ago--mania-not_assessed"
+    ]
+  },
+  {
+    "rule_id": "switch-parox-ago",
+    "input_id": "suicide_risk",
+    "old": {
+      "kind": "always"
+    },
+    "new": {
+      "kind": "reported_context"
+    },
+    "reason": "Конкретный источниковый анамнез/фактор требует осторожности или наблюдения; первичный источник не задаёт обязательную предварительную оценку, числовую поправку или противопоказание по одному этому фактору. Это не относится к текущим срочным симптомам, лекарственным взаимодействиям, предлечебному печёночному/QT риску. Для выбранной ограниченной дозы/источникового перехода не операнд; сообщённое состояние используется и считается, unknown/отсутствие остаётся not_assessed без клинического допуска.",
+    "source_refs": [
+      "RU-AGO"
+    ],
+    "locator": "§4.4 с.4–5",
+    "changed_missing_cases": [
+      "switch-parox-ago--suicide_risk-omitted",
+      "switch-parox-ago--suicide_risk-unknown",
+      "switch-parox-ago--suicide_risk-not_assessed"
+    ]
+  },
+  {
+    "rule_id": "switch-parox-ago",
+    "input_id": "renal_state",
+    "old": {
+      "kind": "always"
+    },
+    "new": {
+      "kind": "reported_context"
+    },
+    "reason": "RU-AGO §4.2 с.2/§4.4 с.4 задаёт осторожность при умеренной/тяжёлой почечной недостаточности, без числовой поправки, запрета или требования обязательной предлечебной оценки. Для выбранной ограниченной дозы/источникового перехода не операнд; сообщённое состояние используется и считается, unknown/отсутствие остаётся not_assessed без клинического допуска.",
+    "source_refs": [
+      "RU-AGO"
+    ],
+    "locator": "§4.2 с.2; §4.4 с.4",
+    "changed_missing_cases": [
+      "switch-parox-ago--renal_state-omitted",
+      "switch-parox-ago--renal_state-unknown",
+      "switch-parox-ago--renal_state-not_assessed"
+    ]
+  },
+  {
+    "rule_id": "switch-parox-ago",
+    "input_id": "bleeding_risk",
+    "old": {
+      "kind": "always"
+    },
+    "new": {
+      "kind": "reported_context"
+    },
+    "reason": "Конкретный источниковый анамнез/фактор требует осторожности или наблюдения; первичный источник не задаёт обязательную предварительную оценку, числовую поправку или противопоказание по одному этому фактору. Это не относится к текущим срочным симптомам, лекарственным взаимодействиям, предлечебному печёночному/QT риску. Для выбранной ограниченной дозы/источникового перехода не операнд; сообщённое состояние используется и считается, unknown/отсутствие остаётся not_assessed без клинического допуска.",
+    "source_refs": [
+      "RU-PAROX"
+    ],
+    "locator": "RU-PAROX §4.4 с.9",
+    "changed_missing_cases": [
+      "switch-parox-ago--bleeding_risk-omitted",
+      "switch-parox-ago--bleeding_risk-unknown",
+      "switch-parox-ago--bleeding_risk-not_assessed"
+    ]
+  },
+  {
+    "rule_id": "switch-ser-ago",
+    "input_id": "alcohol_use",
+    "old": {
+      "kind": "always"
+    },
+    "new": {
+      "kind": "reported_context"
+    },
+    "reason": "Конкретный источниковый анамнез/фактор требует осторожности или наблюдения; первичный источник не задаёт обязательную предварительную оценку, числовую поправку или противопоказание по одному этому фактору. Это не относится к текущим срочным симптомам, лекарственным взаимодействиям, предлечебному печёночному/QT риску. Для выбранной ограниченной дозы/источникового перехода не операнд; сообщённое состояние используется и считается, unknown/отсутствие остаётся not_assessed без клинического допуска.",
+    "source_refs": [
+      "RU-AGO"
+    ],
+    "locator": "§4.5 с.6",
+    "changed_missing_cases": [
+      "switch-ser-ago--alcohol_use-omitted",
+      "switch-ser-ago--alcohol_use-unknown",
+      "switch-ser-ago--alcohol_use-not_assessed"
+    ]
+  },
+  {
+    "rule_id": "switch-ser-ago",
+    "input_id": "mania",
+    "old": {
+      "kind": "always"
+    },
+    "new": {
+      "kind": "reported_context"
+    },
+    "reason": "Конкретный источниковый анамнез/фактор требует осторожности или наблюдения; первичный источник не задаёт обязательную предварительную оценку, числовую поправку или противопоказание по одному этому фактору. Это не относится к текущим срочным симптомам, лекарственным взаимодействиям, предлечебному печёночному/QT риску. Для выбранной ограниченной дозы/источникового перехода не операнд; сообщённое состояние используется и считается, unknown/отсутствие остаётся not_assessed без клинического допуска.",
+    "source_refs": [
+      "RU-AGO"
+    ],
+    "locator": "§4.4 с.4",
+    "changed_missing_cases": [
+      "switch-ser-ago--mania-omitted",
+      "switch-ser-ago--mania-unknown",
+      "switch-ser-ago--mania-not_assessed"
+    ]
+  },
+  {
+    "rule_id": "switch-ser-ago",
+    "input_id": "suicide_risk",
+    "old": {
+      "kind": "always"
+    },
+    "new": {
+      "kind": "reported_context"
+    },
+    "reason": "Конкретный источниковый анамнез/фактор требует осторожности или наблюдения; первичный источник не задаёт обязательную предварительную оценку, числовую поправку или противопоказание по одному этому фактору. Это не относится к текущим срочным симптомам, лекарственным взаимодействиям, предлечебному печёночному/QT риску. Для выбранной ограниченной дозы/источникового перехода не операнд; сообщённое состояние используется и считается, unknown/отсутствие остаётся not_assessed без клинического допуска.",
+    "source_refs": [
+      "RU-AGO"
+    ],
+    "locator": "§4.4 с.4–5",
+    "changed_missing_cases": [
+      "switch-ser-ago--suicide_risk-omitted",
+      "switch-ser-ago--suicide_risk-unknown",
+      "switch-ser-ago--suicide_risk-not_assessed"
+    ]
+  },
+  {
+    "rule_id": "switch-ser-ago",
+    "input_id": "renal_state",
+    "old": {
+      "kind": "always"
+    },
+    "new": {
+      "kind": "reported_context"
+    },
+    "reason": "RU-AGO §4.2 с.2/§4.4 с.4 задаёт осторожность при умеренной/тяжёлой почечной недостаточности, без числовой поправки, запрета или требования обязательной предлечебной оценки. Для выбранной ограниченной дозы/источникового перехода не операнд; сообщённое состояние используется и считается, unknown/отсутствие остаётся not_assessed без клинического допуска.",
+    "source_refs": [
+      "RU-AGO"
+    ],
+    "locator": "§4.2 с.2; §4.4 с.4",
+    "changed_missing_cases": [
+      "switch-ser-ago--renal_state-omitted",
+      "switch-ser-ago--renal_state-unknown",
+      "switch-ser-ago--renal_state-not_assessed"
+    ]
+  },
+  {
+    "rule_id": "switch-ser-ago",
+    "input_id": "bleeding_risk",
+    "old": {
+      "kind": "always"
+    },
+    "new": {
+      "kind": "reported_context"
+    },
+    "reason": "Конкретный источниковый анамнез/фактор требует осторожности или наблюдения; первичный источник не задаёт обязательную предварительную оценку, числовую поправку или противопоказание по одному этому фактору. Это не относится к текущим срочным симптомам, лекарственным взаимодействиям, предлечебному печёночному/QT риску. Для выбранной ограниченной дозы/источникового перехода не операнд; сообщённое состояние используется и считается, unknown/отсутствие остаётся not_assessed без клинического допуска.",
+    "source_refs": [
+      "RU-SER"
+    ],
+    "locator": "§4.4 с.5",
+    "changed_missing_cases": [
+      "switch-ser-ago--bleeding_risk-omitted",
+      "switch-ser-ago--bleeding_risk-unknown",
+      "switch-ser-ago--bleeding_risk-not_assessed"
+    ]
+  },
+  {
+    "rule_id": "switch-ser-ago",
+    "input_id": "hyponatremia_risk",
+    "old": {
+      "kind": "always"
+    },
+    "new": {
+      "kind": "reported_context"
+    },
+    "reason": "Конкретный источниковый анамнез/фактор требует осторожности или наблюдения; первичный источник не задаёт обязательную предварительную оценку, числовую поправку или противопоказание по одному этому фактору. Это не относится к текущим срочным симптомам, лекарственным взаимодействиям, предлечебному печёночному/QT риску. Для выбранной ограниченной дозы/источникового перехода не операнд; сообщённое состояние используется и считается, unknown/отсутствие остаётся not_assessed без клинического допуска.",
+    "source_refs": [
+      "RU-SER"
+    ],
+    "locator": "§4.4 с.5–6",
+    "changed_missing_cases": [
+      "switch-ser-ago--hyponatremia_risk-omitted",
+      "switch-ser-ago--hyponatremia_risk-unknown",
+      "switch-ser-ago--hyponatremia_risk-not_assessed"
+    ]
+  }
+]

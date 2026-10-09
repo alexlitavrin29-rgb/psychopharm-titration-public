@@ -1,0 +1,960 @@
+{
+  "status": "pass",
+  "protected_files": 159,
+  "files": [
+    {
+      "path": "psychopharm_codex_pack/ACCEPTANCE.md",
+      "baseline_sha256": "c4ca3ea82b949a1b9d985df8bdc8bf25ce9489d1e75ab0230717d69bc698628b",
+      "current_sha256": "c4ca3ea82b949a1b9d985df8bdc8bf25ce9489d1e75ab0230717d69bc698628b",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/00_audit_summary.md",
+      "baseline_sha256": "a445b2ad0b02bfe4623bbabcd0d9120ff5fae8a3822a67582ca068b5d565c900",
+      "current_sha256": "a445b2ad0b02bfe4623bbabcd0d9120ff5fae8a3822a67582ca068b5d565c900",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/01_acceptance_recheck.md",
+      "baseline_sha256": "f0759f46c8d6a1a1ea11236b949f7d0fdefca3e09b31de8be22c6ae388398140",
+      "current_sha256": "f0759f46c8d6a1a1ea11236b949f7d0fdefca3e09b31de8be22c6ae388398140",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/02_findings.csv",
+      "baseline_sha256": "ded4df1b463003b4accf633350912ff2e76582da9d38816244082f0d185a84de",
+      "current_sha256": "ded4df1b463003b4accf633350912ff2e76582da9d38816244082f0d185a84de",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/03_source_verification.csv",
+      "baseline_sha256": "a969596ba74077a458a6ba06af380766909159db8e2881364d7187e5764f704f",
+      "current_sha256": "a969596ba74077a458a6ba06af380766909159db8e2881364d7187e5764f704f",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/04_scoring.md",
+      "baseline_sha256": "91b8da90b30260a1e5fc8d7f1a2da8cfe46b9fda336b8f5d80914894a6e96327",
+      "current_sha256": "91b8da90b30260a1e5fc8d7f1a2da8cfe46b9fda336b8f5d80914894a6e96327",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/05_required_fixes.md",
+      "baseline_sha256": "2a286c02cf0a4562718a48ef5e46914768890bed48211cac56da8d3e4114e4fe",
+      "current_sha256": "2a286c02cf0a4562718a48ef5e46914768890bed48211cac56da8d3e4114e4fe",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/06_card_review.csv",
+      "baseline_sha256": "c619b82b83bf4f293dcde98af4657ba48e74cbfaad71760cbf6f9f061903dc8d",
+      "current_sha256": "c619b82b83bf4f293dcde98af4657ba48e74cbfaad71760cbf6f9f061903dc8d",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/06_condition_review.csv",
+      "baseline_sha256": "4e1dc3a8b31fe87aa56ff2777d2267cfb9e2cdefc5530d4f98fa6d526a61f592",
+      "current_sha256": "4e1dc3a8b31fe87aa56ff2777d2267cfb9e2cdefc5530d4f98fa6d526a61f592",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/06_parameter_review.csv",
+      "baseline_sha256": "f522acb5cc805d4ee254e34df352887e2032e969278a4fa700ee94a19f466941",
+      "current_sha256": "f522acb5cc805d4ee254e34df352887e2032e969278a4fa700ee94a19f466941",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/07_case_contract_review.csv",
+      "baseline_sha256": "335c176905ae1e3a8a6d89ea5e648952c75e53e0729928ce76688ebc560ea023",
+      "current_sha256": "335c176905ae1e3a8a6d89ea5e648952c75e53e0729928ce76688ebc560ea023",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/08_additional_review.md",
+      "baseline_sha256": "a9806ad76ecbd3500fe3eaed960a9ea457814c0617a9c2a857297d3a9c8ebdb3",
+      "current_sha256": "a9806ad76ecbd3500fe3eaed960a9ea457814c0617a9c2a857297d3a9c8ebdb3",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/audit_artifact_checks.json",
+      "baseline_sha256": "13ff8834449362de73a18da7764e4583132a12b92f35e762aeea36f7b281a29d",
+      "current_sha256": "13ff8834449362de73a18da7764e4583132a12b92f35e762aeea36f7b281a29d",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/baseline_manifest.json",
+      "baseline_sha256": "ddc68c6918fa7efe2f5cd63e7864bc051d39b4513910eab5b9729562c5ee4ca2",
+      "current_sha256": "ddc68c6918fa7efe2f5cd63e7864bc051d39b4513910eab5b9729562c5ee4ca2",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/build_audit.py",
+      "baseline_sha256": "0178d0081730a1cde5834387e0a06bc95db94463a35edd07047288c019357107",
+      "current_sha256": "0178d0081730a1cde5834387e0a06bc95db94463a35edd07047288c019357107",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/collect_evidence.py",
+      "baseline_sha256": "73a91eed99a32dff4d2ee35f614049dbeec617fca8252af2bf6cd3d78691a5c4",
+      "current_sha256": "73a91eed99a32dff4d2ee35f614049dbeec617fca8252af2bf6cd3d78691a5c4",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/compact_cards.py",
+      "baseline_sha256": "ebd2a6b7157fa4342206212e17733f695e6212a105f0e9d4ca59f05292d965c1",
+      "current_sha256": "ebd2a6b7157fa4342206212e17733f695e6212a105f0e9d4ca59f05292d965c1",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/current_minzdrav_catalog.json",
+      "baseline_sha256": "09de48ed7f0cb8fdd3afe89974b7a5333fa96a1b415669fd9faeba42e0a7a6f8",
+      "current_sha256": "09de48ed7f0cb8fdd3afe89974b7a5333fa96a1b415669fd9faeba42e0a7a6f8",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/external_fetch_results.json",
+      "baseline_sha256": "33560b6bb1c70a1c78b63c803efe11af11703851eea6c536e41f99753711512a",
+      "current_sha256": "33560b6bb1c70a1c78b63c803efe11af11703851eea6c536e41f99753711512a",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/ago-depression-start.json",
+      "baseline_sha256": "8df6ec63683eb106f49b8799cbb1f00f12bb847a76aa7bacf0bac5ea45f70d9a",
+      "current_sha256": "8df6ec63683eb106f49b8799cbb1f00f12bb847a76aa7bacf0bac5ea45f70d9a",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/ago-gad-start.json",
+      "baseline_sha256": "745d71aa090dd1f5c4e2e1f69301afd6892367d0775431ebb700381297a512ce",
+      "current_sha256": "745d71aa090dd1f5c4e2e1f69301afd6892367d0775431ebb700381297a512ce",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/ago-stop.json",
+      "baseline_sha256": "d5b836bd1d9e26ff46929e7ccbff8ad33fca6dff499eafac0b69ec8129dfbdd8",
+      "current_sha256": "d5b836bd1d9e26ff46929e7ccbff8ad33fca6dff499eafac0b69ec8129dfbdd8",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/depression-301_3.txt",
+      "baseline_sha256": "4be66beaa2ce11c70a00cfb6a24c26db6a8fdb205c8b6ea5c9ad959bd2a0686d",
+      "current_sha256": "4be66beaa2ce11c70a00cfb6a24c26db6a8fdb205c8b6ea5c9ad959bd2a0686d",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/dulox-depression-start.json",
+      "baseline_sha256": "403034988bab84a3d1cf4329d8ad23bb48cf42e3fb282708aad0d3cea22eab63",
+      "current_sha256": "403034988bab84a3d1cf4329d8ad23bb48cf42e3fb282708aad0d3cea22eab63",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/dulox-gad-adjust.json",
+      "baseline_sha256": "bd89f5fff01da0a75b1f18fbfd29d4218eaeef1042b179bc934c9000896a210e",
+      "current_sha256": "bd89f5fff01da0a75b1f18fbfd29d4218eaeef1042b179bc934c9000896a210e",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/dulox-gad-start.json",
+      "baseline_sha256": "4e1244bbbef84d1468b49e3d73f65bd5624eecdee72736a12d84963c0c3c71df",
+      "current_sha256": "4e1244bbbef84d1468b49e3d73f65bd5624eecdee72736a12d84963c0c3c71df",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/dulox-taper-limit.json",
+      "baseline_sha256": "3248a61cc9faa601d63ec048bfff4f930d52102e77873f9ddf9658150ec77783",
+      "current_sha256": "3248a61cc9faa601d63ec048bfff4f930d52102e77873f9ddf9658150ec77783",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/esc-adult-adjust.json",
+      "baseline_sha256": "7a2b1b9e622fd355632e2a3cd7fc05f6293222241ee889de9963d99b2030714d",
+      "current_sha256": "7a2b1b9e622fd355632e2a3cd7fc05f6293222241ee889de9963d99b2030714d",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/esc-cyp2c19-start.json",
+      "baseline_sha256": "5b10c0c4f80a5331d91fefb176b3551da500a8c9255612f6167af3f922420aab",
+      "current_sha256": "5b10c0c4f80a5331d91fefb176b3551da500a8c9255612f6167af3f922420aab",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/esc-elderly-start.json",
+      "baseline_sha256": "9523fff3fced9f1faa82b49f01fe8b0287680947aebe8b39054a541c9701428b",
+      "current_sha256": "9523fff3fced9f1faa82b49f01fe8b0287680947aebe8b39054a541c9701428b",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/esc-gad-start.json",
+      "baseline_sha256": "55208d31bdf6194c2b77d4c0836ddde9a5af024831c886ce6fde8c3375823c0d",
+      "current_sha256": "55208d31bdf6194c2b77d4c0836ddde9a5af024831c886ce6fde8c3375823c0d",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/esc-hepatic-start.json",
+      "baseline_sha256": "e10af9020534734dd77ae42309f7c041410059a3dded3a91d5211fcea44a6906",
+      "current_sha256": "e10af9020534734dd77ae42309f7c041410059a3dded3a91d5211fcea44a6906",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/esc-panic-start.json",
+      "baseline_sha256": "8929becfe8ff9f09cdcca33380a3c5557d5bc2dc9d4500cea4a677830c89bb4d",
+      "current_sha256": "8929becfe8ff9f09cdcca33380a3c5557d5bc2dc9d4500cea4a677830c89bb4d",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/esc-social-start.json",
+      "baseline_sha256": "ff55db97a461ad48f8ecbad55e5af5204e69180331e5166a4cec04715c5ccc4d",
+      "current_sha256": "ff55db97a461ad48f8ecbad55e5af5204e69180331e5166a4cec04715c5ccc4d",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/esc-taper-limit.json",
+      "baseline_sha256": "36d69b170aac3ef79692fae1123d3fe84d4f5a02463bf022c7cdb76d722ba366",
+      "current_sha256": "36d69b170aac3ef79692fae1123d3fe84d4f5a02463bf022c7cdb76d722ba366",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/esc_cards.txt",
+      "baseline_sha256": "7778d513553a62bea0d44f4e730d320c753c0a5251d35d5b9600c01c50b2348a",
+      "current_sha256": "7778d513553a62bea0d44f4e730d320c753c0a5251d35d5b9600c01c50b2348a",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/EU-PREG.txt",
+      "baseline_sha256": "0e44c5054e5a0e456027ca3a86f7e798b0a7c04cb47518476027fbd255848ead",
+      "current_sha256": "0e44c5054e5a0e456027ca3a86f7e798b0a7c04cb47518476027fbd255848ead",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/fluvox-depression-start.json",
+      "baseline_sha256": "dd13118942f2661b59c928c9e0cf5a0d613fe7a50cc942a09c1594a49c9ed193",
+      "current_sha256": "dd13118942f2661b59c928c9e0cf5a0d613fe7a50cc942a09c1594a49c9ed193",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/fluvox-taper-limit.json",
+      "baseline_sha256": "c0dd316d3414353efe0d90bb3482539cdec0106651e093a5e477f5700e5b0080",
+      "current_sha256": "c0dd316d3414353efe0d90bb3482539cdec0106651e093a5e477f5700e5b0080",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/parox-panic-kr.json",
+      "baseline_sha256": "0cb6bc409653338f6453885c87af08891aa463a722f3aad46a05059e2097865a",
+      "current_sha256": "0cb6bc409653338f6453885c87af08891aa463a722f3aad46a05059e2097865a",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/parox-taper-example.json",
+      "baseline_sha256": "5ac16446c81b5cc6f1cdedfc558ff30c0dd8bece0190a91b21914ab7a77fb8bb",
+      "current_sha256": "5ac16446c81b5cc6f1cdedfc558ff30c0dd8bece0190a91b21914ab7a77fb8bb",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/phen-taper-limit.json",
+      "baseline_sha256": "31817338b78b7d9d33700ff15e5081a51f253662e68329735d1f36e7b6510d51",
+      "current_sha256": "31817338b78b7d9d33700ff15e5081a51f253662e68329735d1f36e7b6510d51",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/preg-gad-adjust.json",
+      "baseline_sha256": "76ec274e229b2bf9f53e76c8b4c7ecc41364a314068e982a2f31435b86974b9c",
+      "current_sha256": "76ec274e229b2bf9f53e76c8b4c7ecc41364a314068e982a2f31435b86974b9c",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/preg-gad-start.json",
+      "baseline_sha256": "3e36e1c2256950186254b5750f383b90fc25ee401b8c473be3e2f1ffebcaf8aa",
+      "current_sha256": "3e36e1c2256950186254b5750f383b90fc25ee401b8c473be3e2f1ffebcaf8aa",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/preg-renal-start.json",
+      "baseline_sha256": "68622c46be5d997a75b119d9423c1e8c729a826575968e18d0b0f3e9b655e3cd",
+      "current_sha256": "68622c46be5d997a75b119d9423c1e8c729a826575968e18d0b0f3e9b655e3cd",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/preg-taper-limit.json",
+      "baseline_sha256": "d516e15a1fac9618ad12465b58972057277acf7ffb2d4a514cfb19cadcf204a9",
+      "current_sha256": "d516e15a1fac9618ad12465b58972057277acf7ffb2d4a514cfb19cadcf204a9",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/RU-AGO.txt",
+      "baseline_sha256": "4cda9c5b577a0ed4c19509bd55f28b402698fb326fbaa245b71e098590c22f19",
+      "current_sha256": "4cda9c5b577a0ed4c19509bd55f28b402698fb326fbaa245b71e098590c22f19",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/RU-CLOMI-IV-ARCHIVE.txt",
+      "baseline_sha256": "2f011bafac8b00ffc4825ce01bbd24c01ec405ec61a936165204d43fa2663ffa",
+      "current_sha256": "2f011bafac8b00ffc4825ce01bbd24c01ec405ec61a936165204d43fa2663ffa",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/RU-DEP.txt",
+      "baseline_sha256": "00c859a983b3508c931caa909ea856dfe4226f386d6aca36ea082762f315303d",
+      "current_sha256": "00c859a983b3508c931caa909ea856dfe4226f386d6aca36ea082762f315303d",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/RU-DULOX.txt",
+      "baseline_sha256": "36ca0ae9cb28294dc19054d933d8e09c3956e26a80e354e1a529014f3feb969f",
+      "current_sha256": "36ca0ae9cb28294dc19054d933d8e09c3956e26a80e354e1a529014f3feb969f",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/RU-FLUOX-ARCHIVE.txt",
+      "baseline_sha256": "f0903e70dc558925095eeb117274877ee188c547ebf51645088f2fbaf3ae0305",
+      "current_sha256": "f0903e70dc558925095eeb117274877ee188c547ebf51645088f2fbaf3ae0305",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/RU-FLUVOX.txt",
+      "baseline_sha256": "7a8286c96e4c8b4b5b9343705b5644a037daa7936713a0aba4516eda518bb4c1",
+      "current_sha256": "7a8286c96e4c8b4b5b9343705b5644a037daa7936713a0aba4516eda518bb4c1",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/RU-GAD-sections.txt",
+      "baseline_sha256": "9b4a9b09eb27ffcfd8e3f16fca959dfad27dff03c46df071e37858671a53837e",
+      "current_sha256": "9b4a9b09eb27ffcfd8e3f16fca959dfad27dff03c46df071e37858671a53837e",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/RU-GAD.txt",
+      "baseline_sha256": "3b9a65f8e13e0bfd5c104f51ebb6e1c61aa14326e2c248da90a69b7ad36a9899",
+      "current_sha256": "3b9a65f8e13e0bfd5c104f51ebb6e1c61aa14326e2c248da90a69b7ad36a9899",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/RU-PANIC-sections.txt",
+      "baseline_sha256": "93068620531b10352e931590108fe53a05bdea8cd6540b532ce87e1275e8ff02",
+      "current_sha256": "93068620531b10352e931590108fe53a05bdea8cd6540b532ce87e1275e8ff02",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/RU-PANIC.txt",
+      "baseline_sha256": "f00140cfdb06bfe431df3b78badff53ffa023eda2fb3580aa0614e94f745336b",
+      "current_sha256": "f00140cfdb06bfe431df3b78badff53ffa023eda2fb3580aa0614e94f745336b",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/RU-PAROX.txt",
+      "baseline_sha256": "2b94b4c53e8dd61f6a47455b38fe7bc0a283502e3eff0ff093d6bc74dc2fa434",
+      "current_sha256": "2b94b4c53e8dd61f6a47455b38fe7bc0a283502e3eff0ff093d6bc74dc2fa434",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/RU-PHEN.txt",
+      "baseline_sha256": "906f9dd1c7581bcc2daf06495850316a1a9603afa580fa426c90537b46ed6f6e",
+      "current_sha256": "906f9dd1c7581bcc2daf06495850316a1a9603afa580fa426c90537b46ed6f6e",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/RU-PHOB-sections.txt",
+      "baseline_sha256": "100a3e0eebba5199735ceba37cb4e176c9824ccbbb424eb43af4808f4f47040a",
+      "current_sha256": "100a3e0eebba5199735ceba37cb4e176c9824ccbbb424eb43af4808f4f47040a",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/RU-PHOB.txt",
+      "baseline_sha256": "a5eca987fcd7514d6adf46fe22259f14da76de0e94fea725766ef2559ac87f85",
+      "current_sha256": "a5eca987fcd7514d6adf46fe22259f14da76de0e94fea725766ef2559ac87f85",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/RU-PREG-RICHTER-ARCHIVE.txt",
+      "baseline_sha256": "0e6dc02ffd061a8a649251e55f081012d9fd8352f165885fac180c6d6dd2959d",
+      "current_sha256": "0e6dc02ffd061a8a649251e55f081012d9fd8352f165885fac180c6d6dd2959d",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/RU-PREG-RICHTER.txt",
+      "baseline_sha256": "22381b805d5aeb7d2eef4e130b7e1480539399be5a0839fb03a0d9820c20f4e4",
+      "current_sha256": "22381b805d5aeb7d2eef4e130b7e1480539399be5a0839fb03a0d9820c20f4e4",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/RU-PREG.txt",
+      "baseline_sha256": "cda9494fce0d625d126ffcf4865a10cc883ec3c8e1f27ca936fe11b507da136f",
+      "current_sha256": "cda9494fce0d625d126ffcf4865a10cc883ec3c8e1f27ca936fe11b507da136f",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/RU-SER-2023.txt",
+      "baseline_sha256": "4244ac2f4ddf93ec343fd11da1a253718cd9db82115b0bb07228b8ac0182d94c",
+      "current_sha256": "4244ac2f4ddf93ec343fd11da1a253718cd9db82115b0bb07228b8ac0182d94c",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/RU-SER.txt",
+      "baseline_sha256": "76a063b185b7a21b36a99fed2d36cf79c3a75ddf7628a93d284f58e964ebf360",
+      "current_sha256": "76a063b185b7a21b36a99fed2d36cf79c3a75ddf7628a93d284f58e964ebf360",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/ser-adult-adjust.json",
+      "baseline_sha256": "1c9a93e55c18dea5e8e8f9e6160bbd8eca268cdbf46d4a38307e16c08de0f59f",
+      "current_sha256": "1c9a93e55c18dea5e8e8f9e6160bbd8eca268cdbf46d4a38307e16c08de0f59f",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/ser-panic-start.json",
+      "baseline_sha256": "378296bab70a305c7591f859bbb9ea90f2b376c123aa8ac50024b84902c546ae",
+      "current_sha256": "378296bab70a305c7591f859bbb9ea90f2b376c123aa8ac50024b84902c546ae",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/ser-social-start.json",
+      "baseline_sha256": "74d1aa10efffa15ef45b7b7f5b55c5aa85be29e5c05dd736737a588f7fb4c473",
+      "current_sha256": "74d1aa10efffa15ef45b7b7f5b55c5aa85be29e5c05dd736737a588f7fb4c473",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/ser-taper-limit.json",
+      "baseline_sha256": "a9fa546b19c2cf67005298b9e7282dc96d96f138641de1eb5cdf931da85d2972",
+      "current_sha256": "a9fa546b19c2cf67005298b9e7282dc96d96f138641de1eb5cdf931da85d2972",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/switch-esc-ago.json",
+      "baseline_sha256": "fb4054fa6669aee41df5cba32b97a659277d3fe29109a11304c5108cc9082b96",
+      "current_sha256": "fb4054fa6669aee41df5cba32b97a659277d3fe29109a11304c5108cc9082b96",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/switch-esc-ser.json",
+      "baseline_sha256": "7ad10d680944cdf867e7f3a7097fe48f6cb1c17fc2c69dc9b424a37dd55c726b",
+      "current_sha256": "7ad10d680944cdf867e7f3a7097fe48f6cb1c17fc2c69dc9b424a37dd55c726b",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/switch-parox-ago-selected-example.json",
+      "baseline_sha256": "09458c644c8ad6b399dd4b5354c66d3b8499a8a935b582f471a0127131a32cc7",
+      "current_sha256": "09458c644c8ad6b399dd4b5354c66d3b8499a8a935b582f471a0127131a32cc7",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/switch-parox-ago.json",
+      "baseline_sha256": "9391fa383f027e371dbcacaf303f03df2eac5c0021dd6be46caa5f7165155756",
+      "current_sha256": "9391fa383f027e371dbcacaf303f03df2eac5c0021dd6be46caa5f7165155756",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/switch-ser-ago.json",
+      "baseline_sha256": "f01939048c06f83dfed04092918e9574d9955024563eca2b3582d93dd092e7f7",
+      "current_sha256": "f01939048c06f83dfed04092918e9574d9955024563eca2b3582d93dd092e7f7",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/switch-ser-esc.json",
+      "baseline_sha256": "6e4ee25c16f5ba362976d75da2e20ea5d8a2e855090cc0432aaf72e4afb281f7",
+      "current_sha256": "6e4ee25c16f5ba362976d75da2e20ea5d8a2e855090cc0432aaf72e4afb281f7",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/UK-NICE222.txt",
+      "baseline_sha256": "c81a7dc7194b1a3551603311360d419632c6cd6acc7e690a43926cf53ff95fd0",
+      "current_sha256": "c81a7dc7194b1a3551603311360d419632c6cd6acc7e690a43926cf53ff95fd0",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/US-ASAM.txt",
+      "baseline_sha256": "a9e21810d0a3a0f2f2abfc3063b49769d03c75cc2a36b3ed3c6696676d5a41ef",
+      "current_sha256": "a9e21810d0a3a0f2f2abfc3063b49769d03c75cc2a36b3ed3c6696676d5a41ef",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/velaxin-IR.txt",
+      "baseline_sha256": "694cd522117a0e2d62e50b8f5152fb06a19885784be215daf30f00a53533630c",
+      "current_sha256": "694cd522117a0e2d62e50b8f5152fb06a19885784be215daf30f00a53533630c",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/velaxin-XR.txt",
+      "baseline_sha256": "35517391ae3772f116ac5a09969337c38f3e8148dc00c3e7177bd6e218249693",
+      "current_sha256": "35517391ae3772f116ac5a09969337c38f3e8148dc00c3e7177bd6e218249693",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/venla-xr-gad-start.json",
+      "baseline_sha256": "f552fba3e18ff8d6eae6e139e0e97948bd12edb1b1b0784cf2b4039c2e065f73",
+      "current_sha256": "f552fba3e18ff8d6eae6e139e0e97948bd12edb1b1b0784cf2b4039c2e065f73",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/venla-xr-panic-form-limit.json",
+      "baseline_sha256": "36da41aa59b783206c59aa26f0d31e05886aef142ab1476c89f28458cee4a050",
+      "current_sha256": "36da41aa59b783206c59aa26f0d31e05886aef142ab1476c89f28458cee4a050",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/venla-xr-social-start.json",
+      "baseline_sha256": "7c830c84da4d9523b3171de555d3d34a7c481856492b0824676cb41c604d427c",
+      "current_sha256": "7c830c84da4d9523b3171de555d3d34a7c481856492b0824676cb41c604d427c",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/venla-xr-taper-limit.json",
+      "baseline_sha256": "fadbddd1f1df16c203882003bf9a5c69f89870903a9770768c9f1e0e62f2cca2",
+      "current_sha256": "fadbddd1f1df16c203882003bf9a5c69f89870903a9770768c9f1e0e62f2cca2",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/Вальдоксан — агомелатин.txt",
+      "baseline_sha256": "0cdcb27fb1988be691b98433e92ed75703f6cb0031364dabd6d9153aa7bc5fc3",
+      "current_sha256": "0cdcb27fb1988be691b98433e92ed75703f6cb0031364dabd6d9153aa7bc5fc3",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/Дулоксента — дулоксетин.txt",
+      "baseline_sha256": "bc4f4b726b1ac433a8ddc3713ac276db91e635cfaad7cd9dfdf3c59b35fca9cd",
+      "current_sha256": "bc4f4b726b1ac433a8ddc3713ac276db91e635cfaad7cd9dfdf3c59b35fca9cd",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/Золофт — сертралин.txt",
+      "baseline_sha256": "851c03caefbc7a6d2ffe712372920f835e4fd17b9bdaa2b1841a503a8ef903b2",
+      "current_sha256": "851c03caefbc7a6d2ffe712372920f835e4fd17b9bdaa2b1841a503a8ef903b2",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/Кломипрамин — раствор.txt",
+      "baseline_sha256": "04329e3b32f03e76a743d25b09aba4876500956e76979165642f34d3c047062a",
+      "current_sha256": "04329e3b32f03e76a743d25b09aba4876500956e76979165642f34d3c047062a",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/Лирика — прегабалин.txt",
+      "baseline_sha256": "28adb74a8022f8351de128ff5052fdc011f48cb2796b25ce7b35988ebd068ad7",
+      "current_sha256": "28adb74a8022f8351de128ff5052fdc011f48cb2796b25ce7b35988ebd068ad7",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/Прегабалин-Рихтер — прегабалин.txt",
+      "baseline_sha256": "deff89978d011235184ff2519a490388aea583d18da902fe1f49bfdc655411cd",
+      "current_sha256": "deff89978d011235184ff2519a490388aea583d18da902fe1f49bfdc655411cd",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/Рексетин — пароксетин.txt",
+      "baseline_sha256": "9fb70b6d61b7daf2fd78c5768ef1931f3c4ff252907792724504fd443db4eeae",
+      "current_sha256": "9fb70b6d61b7daf2fd78c5768ef1931f3c4ff252907792724504fd443db4eeae",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/Селектра — эсциталопрам.txt",
+      "baseline_sha256": "ad46f55eee28b9c535f85c7ddd85c19b590b87efaf2267bdf06091a2341e73f4",
+      "current_sha256": "ad46f55eee28b9c535f85c7ddd85c19b590b87efaf2267bdf06091a2341e73f4",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/Феварин — флувоксамин.txt",
+      "baseline_sha256": "e10ef703b0b0cb710ec409a19774d1aa44f13bb551ceab873c3d1f727f73eb0a",
+      "current_sha256": "e10ef703b0b0cb710ec409a19774d1aa44f13bb551ceab873c3d1f727f73eb0a",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/Феназепам — бромдигидрохлорфенилбензодиазепин.txt",
+      "baseline_sha256": "e2b33b5900daa5b7aecb4f280d97d113e6196a829cd695ba030bb62baccce4ad",
+      "current_sha256": "e2b33b5900daa5b7aecb4f280d97d113e6196a829cd695ba030bb62baccce4ad",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/Флуоксетин — Озон.txt",
+      "baseline_sha256": "aeac2d5fdd1e5dfaed105a36ea01cb953a480f039541396de34401403c40c345",
+      "current_sha256": "aeac2d5fdd1e5dfaed105a36ea01cb953a480f039541396de34401403c40c345",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/Циталопрам — Пранафарм.txt",
+      "baseline_sha256": "518120c1f8312046adc8e945178be7eeefc98a1309bfc95cdeae6bb600a31082",
+      "current_sha256": "518120c1f8312046adc8e945178be7eeefc98a1309bfc95cdeae6bb600a31082",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/fetch_sources.py",
+      "baseline_sha256": "82af8051316cbf7c6c6f2bb33b7e75744b825cab11f5c383c6b30fb581656c9d",
+      "current_sha256": "82af8051316cbf7c6c6f2bb33b7e75744b825cab11f5c383c6b30fb581656c9d",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/final_checks.py",
+      "baseline_sha256": "716c0dcd30e15e581f43d8bbdbb6fd283adfb4920fa28fd437af74ae1c3f53c5",
+      "current_sha256": "716c0dcd30e15e581f43d8bbdbb6fd283adfb4920fa28fd437af74ae1c3f53c5",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/independent_acceptance.json",
+      "baseline_sha256": "bc1c6d11d0db897f2a53c31e9b5a9769590e882e4392be13100e67a4a10132d3",
+      "current_sha256": "bc1c6d11d0db897f2a53c31e9b5a9769590e882e4392be13100e67a4a10132d3",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/independent_html_comparison.json",
+      "baseline_sha256": "28e99914c5fd5e90686799b7f1926a9965448007dedc251ba39d0a0d95bbed6d",
+      "current_sha256": "28e99914c5fd5e90686799b7f1926a9965448007dedc251ba39d0a0d95bbed6d",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/independent_inventory.json",
+      "baseline_sha256": "8c0174c5576a2f03b9adaacd659ee4cf032184c4082cec103ea14569cb18ce9d",
+      "current_sha256": "8c0174c5576a2f03b9adaacd659ee4cf032184c4082cec103ea14569cb18ce9d",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/independent_renal_arithmetic.json",
+      "baseline_sha256": "f1af2da39e05632282276eb6ec43ada990b007fac68571e38ca047a4b438e66a",
+      "current_sha256": "f1af2da39e05632282276eb6ec43ada990b007fac68571e38ca047a4b438e66a",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/independent_verification_negative_checks.json",
+      "baseline_sha256": "b13f918881f5202401fe1dc3760800c4548b2a4f1b931f6ef61d25f4894950b0",
+      "current_sha256": "b13f918881f5202401fe1dc3760800c4548b2a4f1b931f6ef61d25f4894950b0",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/independent_verification_report.json",
+      "baseline_sha256": "1c71b3bdfe6a628a4d2b01f198575a0979ed4c2421ba15d4c3c1de2d50cb7461",
+      "current_sha256": "1c71b3bdfe6a628a4d2b01f198575a0979ed4c2421ba15d4c3c1de2d50cb7461",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/original_acceptance_audit.json",
+      "baseline_sha256": "905f3c3492b82a43fb3009963b3be2fea9e83dca8d678376981d96cdc36b1556",
+      "current_sha256": "905f3c3492b82a43fb3009963b3be2fea9e83dca8d678376981d96cdc36b1556",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/original_verification_negative_checks.json",
+      "baseline_sha256": "b13f918881f5202401fe1dc3760800c4548b2a4f1b931f6ef61d25f4894950b0",
+      "current_sha256": "b13f918881f5202401fe1dc3760800c4548b2a4f1b931f6ef61d25f4894950b0",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/original_verification_report.json",
+      "baseline_sha256": "1c71b3bdfe6a628a4d2b01f198575a0979ed4c2421ba15d4c3c1de2d50cb7461",
+      "current_sha256": "1c71b3bdfe6a628a4d2b01f198575a0979ed4c2421ba15d4c3c1de2d50cb7461",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/preservation_check.json",
+      "baseline_sha256": "1f3a0b0e52b13a97e4a4e76299cc108373429107d2bbd4763f6a34519b4c758f",
+      "current_sha256": "1f3a0b0e52b13a97e4a4e76299cc108373429107d2bbd4763f6a34519b4c758f",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/read_cards.py",
+      "baseline_sha256": "891f57cbf5fee8633f9bda12a67c3b3bb5ea4b013e0b741ed1b273e327f2d0de",
+      "current_sha256": "891f57cbf5fee8633f9bda12a67c3b3bb5ea4b013e0b741ed1b273e327f2d0de",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/retrieved/EU-PREG.pdf",
+      "baseline_sha256": "0f82f9dee99e4c6c1ec68a6f67072cf59e9a4dc3997dbe5f30cf806ee2cf3f99",
+      "current_sha256": "0f82f9dee99e4c6c1ec68a6f67072cf59e9a4dc3997dbe5f30cf806ee2cf3f99",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/retrieved/RU-AGO.pdf",
+      "baseline_sha256": "1cf8e71b5c27891e17b5b7ab4dd7c8c02697a1d44bb287a57a1ee9de0fb85bd6",
+      "current_sha256": "1cf8e71b5c27891e17b5b7ab4dd7c8c02697a1d44bb287a57a1ee9de0fb85bd6",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/retrieved/RU-CITAL-LV.docx",
+      "baseline_sha256": "5e10a0452aa6a432390878027d66309a93729250ae6015c2ec225a28be68fe00",
+      "current_sha256": "5e10a0452aa6a432390878027d66309a93729250ae6015c2ec225a28be68fe00",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/retrieved/RU-CLOMI-IV-ARCHIVE.pdf",
+      "baseline_sha256": "81d40c49e7fa50aed75f8719c51f942f40f85a5ad74e1637a45673f0b57f1d33",
+      "current_sha256": "81d40c49e7fa50aed75f8719c51f942f40f85a5ad74e1637a45673f0b57f1d33",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/retrieved/RU-DEP.pdf",
+      "baseline_sha256": "2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd",
+      "current_sha256": "2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/retrieved/RU-DULOX.pdf",
+      "baseline_sha256": "bcb5a8b9415f15fdae2ec8a8d00abe5788194c59893b6172294c4cf3db839786",
+      "current_sha256": "bcb5a8b9415f15fdae2ec8a8d00abe5788194c59893b6172294c4cf3db839786",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/retrieved/RU-FLUOX-ARCHIVE.pdf",
+      "baseline_sha256": "dfcf4a185bb4474bfa7411de1d956be7d309bc9c3e350309f6ca1220fd4e32a3",
+      "current_sha256": "dfcf4a185bb4474bfa7411de1d956be7d309bc9c3e350309f6ca1220fd4e32a3",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/retrieved/RU-FLUVOX.pdf",
+      "baseline_sha256": "ee988a504bf0e34d9562a5f606f8800c827214fc51f4994a4ab28de9c31ce1d6",
+      "current_sha256": "ee988a504bf0e34d9562a5f606f8800c827214fc51f4994a4ab28de9c31ce1d6",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/retrieved/RU-GAD.pdf",
+      "baseline_sha256": "c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a",
+      "current_sha256": "c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/retrieved/RU-PANIC.pdf",
+      "baseline_sha256": "a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d",
+      "current_sha256": "a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/retrieved/RU-PAROX.pdf",
+      "baseline_sha256": "9f6f2646e102956826997ca7e93d84e90c7528db5ceb61896a3d4092841edabe",
+      "current_sha256": "9f6f2646e102956826997ca7e93d84e90c7528db5ceb61896a3d4092841edabe",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/retrieved/RU-PHEN.pdf",
+      "baseline_sha256": "e8e6303c10b7b9b31ae6b344eb49d209e148ba5584ac8f55954c8384cfe49a89",
+      "current_sha256": "e8e6303c10b7b9b31ae6b344eb49d209e148ba5584ac8f55954c8384cfe49a89",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/retrieved/RU-PHOB.pdf",
+      "baseline_sha256": "2a51982fb1919c0ef9115e5231f8ef9d65863306d2d5b95aa0aa7821a6f328b7",
+      "current_sha256": "2a51982fb1919c0ef9115e5231f8ef9d65863306d2d5b95aa0aa7821a6f328b7",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/retrieved/RU-PREG-RICHTER-ARCHIVE.pdf",
+      "baseline_sha256": "c6c6b41dd339536ad1671193a6cd69a7c111d6a2c04c6db501ae85c3beba1ee1",
+      "current_sha256": "c6c6b41dd339536ad1671193a6cd69a7c111d6a2c04c6db501ae85c3beba1ee1",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/retrieved/RU-PREG-RICHTER.pdf",
+      "baseline_sha256": "32bfe8b2ec435201b47cb652818af63a1e6a532669348dfe9110e92a73af7065",
+      "current_sha256": "32bfe8b2ec435201b47cb652818af63a1e6a532669348dfe9110e92a73af7065",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/retrieved/RU-PREG.pdf",
+      "baseline_sha256": "1fcd653e7f3b6bf5b26b3276d0bce97880e74bf345bb69755a275bf8f7117083",
+      "current_sha256": "1fcd653e7f3b6bf5b26b3276d0bce97880e74bf345bb69755a275bf8f7117083",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/retrieved/RU-SER-2023.pdf",
+      "baseline_sha256": "640908909dc7109d614b4f03225d0c31ab2f5f9d6e39b9b8f65046873e9d722c",
+      "current_sha256": "640908909dc7109d614b4f03225d0c31ab2f5f9d6e39b9b8f65046873e9d722c",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/retrieved/RU-SER.pdf",
+      "baseline_sha256": "3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba",
+      "current_sha256": "3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/retrieved/RU-VENLA-IR.html",
+      "baseline_sha256": "49ed1a29889de1aab24571f78d672b21ccc5fcf665e0c925ff47464207a5f7c9",
+      "current_sha256": "49ed1a29889de1aab24571f78d672b21ccc5fcf665e0c925ff47464207a5f7c9",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/retrieved/RU-VENLA-XR.html",
+      "baseline_sha256": "6f14f66f54d649836d17eff481e9538282539780cfa8d26810012a1941cf7550",
+      "current_sha256": "6f14f66f54d649836d17eff481e9538282539780cfa8d26810012a1941cf7550",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/retrieved/UK-NICE222.pdf",
+      "baseline_sha256": "4f59bf752b49734b81244d1251d94a8fc2e984aac34577e295be243582a957de",
+      "current_sha256": "4f59bf752b49734b81244d1251d94a8fc2e984aac34577e295be243582a957de",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/retrieved/UK-PAX.html",
+      "baseline_sha256": "edb3301d0a8db4042e272d8f8f5006877f57c3dc2705c9229747106d89277c7d",
+      "current_sha256": "edb3301d0a8db4042e272d8f8f5006877f57c3dc2705c9229747106d89277c7d",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/retrieved/UK-SPS-AGO.html",
+      "baseline_sha256": "9eaf1ecb34ab384fb14a3eaf9042362bba43ef162efd9ba7461c9b25f14f5fe9",
+      "current_sha256": "9eaf1ecb34ab384fb14a3eaf9042362bba43ef162efd9ba7461c9b25f14f5fe9",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/retrieved/UK-SPS-LACT.html",
+      "baseline_sha256": "45a3a3b4adad455e09d404363a37f6a72164519e2177a84650df85a2adc723a5",
+      "current_sha256": "45a3a3b4adad455e09d404363a37f6a72164519e2177a84650df85a2adc723a5",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/retrieved/UK-SPS-MOC.html",
+      "baseline_sha256": "b42b706dc9ee26685bcab8fe08f2ac164679c076b04e849933487d9d9daa93b7",
+      "current_sha256": "b42b706dc9ee26685bcab8fe08f2ac164679c076b04e849933487d9d9daa93b7",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/retrieved/UK-SPS-SSRI.html",
+      "baseline_sha256": "467ba15c5034421e6aba99703d0140fdd009eb23327064302dd7418a6a043b99",
+      "current_sha256": "467ba15c5034421e6aba99703d0140fdd009eb23327064302dd7418a6a043b99",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/retrieved/US-ASAM.pdf",
+      "baseline_sha256": "a9937c249d7a08658eb10c5b7805fce9bb6e975e4f4d5ac11507434708c4b5ec",
+      "current_sha256": "a9937c249d7a08658eb10c5b7805fce9bb6e975e4f4d5ac11507434708c4b5ec",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/retrieved/WHO-F41.html",
+      "baseline_sha256": "28852802c5d4771ce3d780d4c391a9b5f08e68b6937187fa1540606161996caf",
+      "current_sha256": "28852802c5d4771ce3d780d4c391a9b5f08e68b6937187fa1540606161996caf",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/run_verify_negative_checks.py.stderr.txt",
+      "baseline_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/run_verify_negative_checks.py.stdout.txt",
+      "baseline_sha256": "b3c05ace27a341622af0dab2d57e2308e03243699f0150ed4d9591d2d185ffe2",
+      "current_sha256": "b3c05ace27a341622af0dab2d57e2308e03243699f0150ed4d9591d2d185ffe2",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/run_verify_research.py.stderr.txt",
+      "baseline_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/run_verify_research.py.stdout.txt",
+      "baseline_sha256": "fd108c666f0cba10cc063825b3275ad76c1a622597d8c4b5485a5503dfae9a43",
+      "current_sha256": "fd108c666f0cba10cc063825b3275ad76c1a622597d8c4b5485a5503dfae9a43",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/visual/RU-AGO-1.png",
+      "baseline_sha256": "597098a1c64c13eceea456a161d80c08d65c7c1be34a0e5d610360c5c47c4754",
+      "current_sha256": "597098a1c64c13eceea456a161d80c08d65c7c1be34a0e5d610360c5c47c4754",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/visual/RU-AGO-2.png",
+      "baseline_sha256": "b152df432e4e80aa2cff654bcf651f4c45c936b60413e19d0624a35c3196b226",
+      "current_sha256": "b152df432e4e80aa2cff654bcf651f4c45c936b60413e19d0624a35c3196b226",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/visual/RU-AGO-3.png",
+      "baseline_sha256": "0767344c96cade152cc6b4c9db2c1bd7510280fffc6a06d603b821a2ac275ef7",
+      "current_sha256": "0767344c96cade152cc6b4c9db2c1bd7510280fffc6a06d603b821a2ac275ef7",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/visual/RU-AGO-4.png",
+      "baseline_sha256": "3a1800dbbdc15bcf892450688b174cd099d5619ad6c275c761fb584e685627cc",
+      "current_sha256": "3a1800dbbdc15bcf892450688b174cd099d5619ad6c275c761fb584e685627cc",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/visual/RU-DEP-36.png",
+      "baseline_sha256": "cbac6b53d94e1d6cdc6575d0013591b106a014d948387e4fd65924f66285269d",
+      "current_sha256": "cbac6b53d94e1d6cdc6575d0013591b106a014d948387e4fd65924f66285269d",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/visual/RU-DEP-95.png",
+      "baseline_sha256": "57b2ded6ec1e94c5cc0872375acc68e5e97289399ec00f69922efdbad6d6b744",
+      "current_sha256": "57b2ded6ec1e94c5cc0872375acc68e5e97289399ec00f69922efdbad6d6b744",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/visual/RU-DEP-96.png",
+      "baseline_sha256": "51d856005eb0e4d29a2c88824cc41f4759140a24cc4bb72c42f3320d6448f945",
+      "current_sha256": "51d856005eb0e4d29a2c88824cc41f4759140a24cc4bb72c42f3320d6448f945",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/visual/RU-DULOX-2.png",
+      "baseline_sha256": "51b9b189248681fcaaa1883566431fe83e8ae995e0e485ea6131d98fb453ffe2",
+      "current_sha256": "51b9b189248681fcaaa1883566431fe83e8ae995e0e485ea6131d98fb453ffe2",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/visual/RU-DULOX-3.png",
+      "baseline_sha256": "8ef1a721da109005709fbe59510fb3e8887a3ea00f60f00e6455c30965dc7192",
+      "current_sha256": "8ef1a721da109005709fbe59510fb3e8887a3ea00f60f00e6455c30965dc7192",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/visual/RU-DULOX-4.png",
+      "baseline_sha256": "d10046409cb0d7c6decef651d2fb14bf9b9a1a51ecf236570826b8aa19903bdc",
+      "current_sha256": "d10046409cb0d7c6decef651d2fb14bf9b9a1a51ecf236570826b8aa19903bdc",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/visual/RU-FLUVOX-1.png",
+      "baseline_sha256": "670a829ee361ba681d2abf7a336fa2875244d62752e8567594f10371473f2cfd",
+      "current_sha256": "670a829ee361ba681d2abf7a336fa2875244d62752e8567594f10371473f2cfd",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/visual/RU-FLUVOX-2.png",
+      "baseline_sha256": "ff11987c8c60cecfc6c3fe68eccce729751911cf43c8184a8b665bd1b6bad6a3",
+      "current_sha256": "ff11987c8c60cecfc6c3fe68eccce729751911cf43c8184a8b665bd1b6bad6a3",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/visual/RU-FLUVOX-3.png",
+      "baseline_sha256": "34941b12619edaabe23e76658c13357644a3f8f50ef1ffaef46f4a1637f63536",
+      "current_sha256": "34941b12619edaabe23e76658c13357644a3f8f50ef1ffaef46f4a1637f63536",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/visual/RU-PAROX-16.png",
+      "baseline_sha256": "0d37d5321a96f1243601432b609eb4c379e0b6144551caf50ef0c83a4506c240",
+      "current_sha256": "0d37d5321a96f1243601432b609eb4c379e0b6144551caf50ef0c83a4506c240",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/visual/RU-PAROX-17.png",
+      "baseline_sha256": "dd52ffeb0e98a23f2d28a243c80257365f711416755b5d4d242802f742780d80",
+      "current_sha256": "dd52ffeb0e98a23f2d28a243c80257365f711416755b5d4d242802f742780d80",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/visual/RU-PREG-4.png",
+      "baseline_sha256": "80b715be0f0f46d692288059e4b5b6aaf96f607119c7985a10e13096c488829f",
+      "current_sha256": "80b715be0f0f46d692288059e4b5b6aaf96f607119c7985a10e13096c488829f",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/visual/RU-PREG-5.png",
+      "baseline_sha256": "a0fa697eed1851e8ab078a21b0cae2cf0da7667ca8ad7f0503aa748caa40594b",
+      "current_sha256": "a0fa697eed1851e8ab078a21b0cae2cf0da7667ca8ad7f0503aa748caa40594b",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/visual/RU-PREG-RICHTER-16.png",
+      "baseline_sha256": "b61d12ffe67979214c0727a2a8168c8c75aaff0c8f8764a04f3eb0c49543a364",
+      "current_sha256": "b61d12ffe67979214c0727a2a8168c8c75aaff0c8f8764a04f3eb0c49543a364",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/visual/RU-PREG-RICHTER-ARCHIVE-15.png",
+      "baseline_sha256": "350d1161f1184a1c4e3ba92b74ad55240f27557eaa686bafe4de7f398d8f3f19",
+      "current_sha256": "350d1161f1184a1c4e3ba92b74ad55240f27557eaa686bafe4de7f398d8f3f19",
+      "unchanged": true
+    }
+  ]
+}

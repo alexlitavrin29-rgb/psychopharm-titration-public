@@ -1,0 +1,22 @@
+# Local working files and downloaded challenge images
+tmp_acceptance/
+**/__pycache__/
+*.pyc
+*.pyo
+research/remediation_round2/*_captcha.jpg
+research/remediation_round3/captcha_*.png
+
+# Intermediate duplicate snapshots retained locally; the accepted V3 files stay tracked
+research/remediation_round3/v3_recheck1_snapshot/
+research/remediation_round3/v3_review1_snapshot/
+research/remediation_round3/recheck1_snapshot/
+research/remediation_round3/recheck2_snapshot/
+research/remediation_round3/recheck3_snapshot/
+research/remediation_round3/condition_repairs_review_snapshot/
+research/remediation_round3/review1_snapshot/
+research/remediation_round3/staging_recheck/
+research/remediation_round3/staging_revision/
+research/remediation_round3/recheck_visuals/
+
+# Duplicate local download bundle
+*.zip

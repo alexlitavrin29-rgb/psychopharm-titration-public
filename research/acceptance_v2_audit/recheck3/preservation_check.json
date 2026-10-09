@@ -1,0 +1,42 @@
+{
+  "status": "pass",
+  "snapshot": "ac33f61373c22b1c160de40057815b16c27bc67e4beb870a56057992f0b06148",
+  "core_files": 177,
+  "protected_files": 575,
+  "original_source_files": 17,
+  "prior_immutable_own_audit_files": 131,
+  "protected_changes": [],
+  "original_changes": [],
+  "core_changes": [],
+  "prior_immutable_changes": [],
+  "other_tracked_noncore_changes": [],
+  "archived_snapshots": [
+    {
+      "manifest": "final_manifest_review1.json",
+      "files": 122,
+      "snapshot": "8c757d0c276bf7f308104dff910ae38dcb0196892c73ed6bf735ce6c972b5f56",
+      "changes": []
+    },
+    {
+      "manifest": "final_manifest_recheck1.json",
+      "files": 164,
+      "snapshot": "ff00118c08d144f1434869d25aba164234a443b4732f84fe8d481504622cf6ec",
+      "changes": []
+    },
+    {
+      "manifest": "final_manifest_recheck2.json",
+      "files": 170,
+      "snapshot": "8a17ae3f99839548742ee509a23d060ea451ed0018c48432dc73b9ba68de4359",
+      "changes": []
+    }
+  ],
+  "authorized_current_pointer_update": {
+    "path": "research/acceptance_v2_audit/acceptance_final.md",
+    "previous_sha256": "26c55e377eb66fce959962577b7e2508143acf6e9212e1760f0a05f12d5f083d",
+    "new_sha256": "2d30dbbca1bceb298f23a0bdac44403ccc359facb9297f3621cca102a49c8885",
+    "preserved_copy": "research/acceptance_v2_audit/recheck3/previous_acceptance_final.txt",
+    "authorization": "Current independent acceptance_final.md outside frozen core explicitly requested in recheck3 task"
+  },
+  "write_scope": "recheck3 outputs plus the expressly requested current acceptance_final.md aggregator",
+  "utc": "2026-10-08T20:21:39.200491+00:00"
+}

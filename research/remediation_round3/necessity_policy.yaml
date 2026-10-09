@@ -1,0 +1,131 @@
+schema_version: '1.0'
+nature: Authored primary-source interpretation for the selected result; not clinical validation
+source: RU-SER
+primary_file: source_downloads/Золофт — сертралин.pdf
+result_scope: Execute a psychiatrist-selected dose action; check direct applicability and dose-changing conditions;
+  retain unassessed monitoring context explicitly
+definitions:
+  always: Independent patient fact or identified form needed for the selected individual branch
+  increase: Required only for clinician_action=increase or not_chosen; not for keeping an already selected dose
+  action_choice: Required only when the psychiatrist has not selected an action
+  reported_context: 'Optional explicitly supplied source context: consumed and counted when present. Positive/negative/unknown
+    supplied values are never free. Missing stays not_assessed and does not establish a negative or clinical clearance.
+    If used in an expected reason, it must be included in the projected input.'
+  reported_current_event: Explicitly supplied source event; consumed and counted when supplied, precise source actor
+    ongoing phase is separately known; omitted/unknown unassessed, no clinical clearance
+  reported_source_information: Explicitly supplied source information such as current medicines; no universal prerequisite
+    for a qualitative cessation limit, each consumed fact counted
+  indication_action_choice: Mandatory only for the listed physician-selected diagnoses and action-choice states.
+    For other diagnoses, explicitly supplied information is consumed/counted; absence or unknown remains unassessed.
+    No mandatory prerequisite is borrowed from another indication.
+ser_fields:
+  age:
+    necessity: always
+    locator: §4.4 с.5, дети; §4.1 с.1
+    effect: adult indication applicability
+  form:
+    necessity: always
+    locator: §3 с.1; §4.2 с.2
+    effect: identified strength and equal halves of 50 mg tablet
+  pregnancy:
+    necessity: always
+    locator: §4.6 с.10–11
+    effect: benefit/risk decision; action selection alone does not supply it
+  lactation:
+    necessity: always
+    locator: §4.6 с.11
+    effect: source-specific clinical decision; action selection alone does not supply it
+  medicines:
+    necessity: always
+    locator: §4.3 с.3; §4.5 с.7–11
+    effect: contraindicated combinations and each relevant MAOI interval
+  allergy:
+    necessity: always
+    locator: §4.3 с.3
+    effect: contraindication; dose action does not establish absence
+  hepatic:
+    necessity: always
+    locator: §4.2 с.2; §4.4 с.6
+    effect: lower dose/frequency unspecified or avoid severe impairment
+  mania:
+    necessity: reported_context
+    locator: §4.4 с.4
+    effect: history requires caution/observation; active phase is a separate stop predicate
+  mania_symptoms:
+    necessity: always
+    locator: §4.4 с.4
+    effect: active manic phase requires cessation of sertraline
+  seizure_state:
+    necessity: always
+    locator: §4.4 с.4
+    effect: uncontrolled epilepsy avoids standard branch; new seizure requires cessation
+  current_dose:
+    necessity: always
+    locator: §4.2 с.2–3
+    effect: dose arithmetic and maximum
+  time_at_dose:
+    necessity: increase
+    locator: §4.2 с.2
+    effect: minimum interval before an increase; no new interval check for keep
+  response:
+    necessity: action_choice
+    locator: §4.2 с.2
+    effect: needed for considering an action; not an extra gate after an explicit dose action
+  tolerability:
+    necessity: action_choice
+    locator: §4.2 с.2; §4.4 с.6
+    effect: clinical choice of action; akathisia remains a separate increase gate
+  adherence:
+    necessity: indication_action_choice
+    locator: RU-PANIC физ.с.29–30; RU-PHOB физ.с.29
+    effect: Required only for F41.0 clinical action selection; explicitly supplied F40.1 context counted, absent/unknown
+      unassessed, no automatic increase
+  qt_risk:
+    necessity: reported_context
+    locator: §4.4 с.4
+    effect: caution if risk reported; no source mandate for routine ECG question before every selected action
+  bleeding_risk:
+    necessity: reported_context
+    locator: §4.4 с.5
+    effect: caution/monitoring; medicine interaction remains a mandatory independent check
+  hyponatremia_risk:
+    necessity: reported_context
+    locator: §4.4 с.5–6
+    effect: risk observation; symptomatic disease is a separate clinical cessation decision
+  suicide_risk:
+    necessity: reported_context
+    locator: §4.4 с.4–5
+    effect: observation required generally and after dose changes; no numerical titration rule
+  akathisia:
+    necessity: increase
+    locator: §4.4 с.6
+    effect: increasing dose may worsen symptoms; required before the increase branch
+  maoi_type:
+    necessity: maoi_record
+    locator: §4.3 с.3; §4.5 с.7
+    effect: each relevant MAOI type independently determines applicability
+  maoi_stopped_at:
+    necessity: stopped_maoi_record
+    locator: §4.3 с.3; §4.5 с.7
+    effect: each stopped MAOI timestamp independently determines interval
+taper_scope:
+  statement: Start contraindications do not prevent cessation; preserve direct urgent-stop and withdrawal conditions
+  ser_required:
+  - age
+  - form
+  - seizure_state
+  - current_withdrawal
+  - mania_symptoms
+  ser_locator: §4.2 с.3; §4.4 с.4–6
+  preg_required:
+  - form
+  - current_withdrawal
+  - angioedema
+  - severe_skin_reaction
+  preg_locator: RU-PREG §4.2 с.4; §4.4 с.6, немедленная отмена при ангиоотёке/тяжёлой кожной реакции
+  revised_qualitative_scope: Current dose/duration/prior withdrawal are reported context for non-numerical source
+    limits; urgent facts and current symptoms remain required. See qualitative_necessity_repairs.json.
+  qualitative_population_scope: 'PREG/PHEN adult source reference only: age is reported context, unknown applicability
+    stays unassessed, no individual or pediatric duration/schedule. See final_necessity_repairs.json.'
+review_limit: Other cards retain explicit conservative source-clear branch contracts. Their complete counts are
+  not claimed to be a globally minimal questionnaire

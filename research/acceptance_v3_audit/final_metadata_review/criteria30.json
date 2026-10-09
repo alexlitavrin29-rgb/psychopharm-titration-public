@@ -1,0 +1,471 @@
+{
+  "snapshot": "b66e9e0dadca7234ed1e66bc8c103047ff2f96e963313d07dd0075494695f0a4",
+  "canonical": "psychopharm_codex_pack/ACCEPTANCE_V3.md",
+  "rows": [
+    {
+      "number": 1,
+      "literal_criterion": "Основной пользователь — психиатр, диагноз вводит врач; нет повторной диагностики и анкеты уверенности в диагнозе.",
+      "status": "выполнено",
+      "independent_evidence": "38 выбранных карточек используют диагноз и действие психиатра; PAR bipolar screen — источниковая узкая оценка, не повторная диагностика.",
+      "evidence_files": [
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/all_expected_check_results.json",
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/used_expected_condition_checks.json",
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/main_alignment_checks.json",
+        "source_read_registry.json"
+      ],
+      "finding_ids": [],
+      "limit": "Полная приёмка исследовательского ТЗ V3 в_USED38 области, включая только используемые нормы/условия/числа/подготовленные результаты. Не clinical clearance/validation, не исполнение приложения или медицинского selector; эти этапы не требовались для текущей приёмки.",
+      "evidence_provenance": "Completed independent227 review reused;228 changes verified by exact delta. Original USED sources unchanged SHA, not newly reread."
+    },
+    {
+      "number": 2,
+      "literal_criterion": "Фокус остался на тревожных/тревожно-депрессивных состояниях и применимости в РФ.",
+      "status": "выполнено",
+      "independent_evidence": "Российские КР GAD/PANIC/PHOB/DEP и регистрационные источники задают основной профиль; зарубежные сравнения не заполняют российский пробел.",
+      "evidence_files": [
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/all_expected_check_results.json",
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/used_expected_condition_checks.json",
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/main_alignment_checks.json",
+        "source_read_registry.json"
+      ],
+      "finding_ids": [],
+      "limit": "Полная приёмка исследовательского ТЗ V3 в_USED38 области, включая только используемые нормы/условия/числа/подготовленные результаты. Не clinical clearance/validation, не исполнение приложения или медицинского selector; эти этапы не требовались для текущей приёмки.",
+      "evidence_provenance": "Completed independent227 review reused;228 changes verified by exact delta. Original USED sources unchanged SHA, not newly reread."
+    },
+    {
+      "number": 3,
+      "literal_criterion": "Основной сценарий — выбранный препарат → дозовая схема, не только выбор лекарства или прогноз концентрации.",
+      "status": "выполнено",
+      "independent_evidence": "Карточки дают source-bound дозовые действия выбранного препарата или явно ограниченный gap/choice, а не только рейтинг или прогноз концентрации.",
+      "evidence_files": [
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/all_expected_check_results.json",
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/used_expected_condition_checks.json",
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/main_alignment_checks.json",
+        "source_read_registry.json"
+      ],
+      "finding_ids": [],
+      "limit": "Полная приёмка исследовательского ТЗ V3 в_USED38 области, включая только используемые нормы/условия/числа/подготовленные результаты. Не clinical clearance/validation, не исполнение приложения или медицинского selector; эти этапы не требовались для текущей приёмки.",
+      "evidence_provenance": "Completed independent227 review reused;228 changes verified by exact delta. Original USED sources unchanged SHA, not newly reread."
+    },
+    {
+      "number": 4,
+      "literal_criterion": "Исследованы старт, титрование/коррекция, отмена и переключение. Непокрытые режимы явно обозначены, не удалены молча.",
+      "status": "выполнено",
+      "independent_evidence": "Старт, коррекция, отмена и направления переключения представлены; отсутствующие российские calendars явно сохранены как gaps.",
+      "evidence_files": [
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/all_expected_check_results.json",
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/used_expected_condition_checks.json",
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/main_alignment_checks.json",
+        "source_read_registry.json"
+      ],
+      "finding_ids": [],
+      "limit": "Полная приёмка исследовательского ТЗ V3 в_USED38 области, включая только используемые нормы/условия/числа/подготовленные результаты. Не clinical clearance/validation, не исполнение приложения или медицинского selector; эти этапы не требовались для текущей приёмки.",
+      "evidence_provenance": "Completed independent227 review reused;228 changes verified by exact delta. Original USED sources unchanged SHA, not newly reread."
+    },
+    {
+      "number": 5,
+      "literal_criterion": "Дополнительный топ-3 опирается на КР; не создана собственная шкала индивидуального превосходства.",
+      "status": "выполнено",
+      "independent_evidence": "Топ-3 основан на линиях КР; собственной шкалы индивидуального превосходства нет.",
+      "evidence_files": [
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/all_expected_check_results.json",
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/used_expected_condition_checks.json",
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/main_alignment_checks.json",
+        "source_read_registry.json"
+      ],
+      "finding_ids": [],
+      "limit": "Полная приёмка исследовательского ТЗ V3 в_USED38 области, включая только используемые нормы/условия/числа/подготовленные результаты. Не clinical clearance/validation, не исполнение приложения или медицинского selector; эти этапы не требовались для текущей приёмки.",
+      "evidence_provenance": "Completed independent227 review reused;228 changes verified by exact delta. Original USED sources unchanged SHA, not newly reread."
+    },
+    {
+      "number": 6,
+      "literal_criterion": "Дети, пожилые, беременность и лактация присутствуют в карте покрытия; нет автоматического переноса взрослых доз.",
+      "status": "выполнено",
+      "independent_evidence": "Карты детей/пожилых/pregnancy/lactation сохранены; ни один known child/unknown result не получает автоматически взрослую индивидуальную дозу или календарь. Источниковая справка условно взрослая; остаток population metadata отдельно№20.",
+      "evidence_files": [
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/all_expected_check_results.json",
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/used_expected_condition_checks.json",
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/main_alignment_checks.json",
+        "source_read_registry.json"
+      ],
+      "finding_ids": [],
+      "limit": "Полная приёмка исследовательского ТЗ V3 в_USED38 области, включая только используемые нормы/условия/числа/подготовленные результаты. Не clinical clearance/validation, не исполнение приложения или медицинского selector; эти этапы не требовались для текущей приёмки.",
+      "evidence_provenance": "Completed independent227 review reused;228 changes verified by exact delta. Original USED sources unchanged SHA, not newly reread."
+    },
+    {
+      "number": 7,
+      "literal_criterion": "Нет обязательной генетики, ML, истории пациентов, стоимости, профилей предпочтений и календаря визитов.",
+      "status": "выполнено",
+      "independent_evidence": "Генетика, ML, patient history database, стоимость, preference profiles и календарь визитов не обязательны. Лабораторные source monitoring сроки не выданы за визиты.",
+      "evidence_files": [
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/all_expected_check_results.json",
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/used_expected_condition_checks.json",
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/main_alignment_checks.json",
+        "source_read_registry.json"
+      ],
+      "finding_ids": [],
+      "limit": "Полная приёмка исследовательского ТЗ V3 в_USED38 области, включая только используемые нормы/условия/числа/подготовленные результаты. Не clinical clearance/validation, не исполнение приложения или медицинского selector; эти этапы не требовались для текущей приёмки.",
+      "evidence_provenance": "Completed independent227 review reused;228 changes verified by exact delta. Original USED sources unchanged SHA, not newly reread."
+    },
+    {
+      "number": 8,
+      "literal_criterion": "Есть точные МНН, показание, код/классификация, форма, популяция и режим.",
+      "status": "выполнено",
+      "independent_evidence": "Main и round3 содержат38 идентичных активных карточек с INN/indication/code/mode/population/own product/form.906 active inputs отделены от26 дополнительных каталоговых зависимостей.",
+      "evidence_files": [
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/all_expected_check_results.json",
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/used_expected_condition_checks.json",
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/main_alignment_checks.json",
+        "source_read_registry.json"
+      ],
+      "finding_ids": [],
+      "limit": "Полная приёмка исследовательского ТЗ V3 в_USED38 области, включая только используемые нормы/условия/числа/подготовленные результаты. Не clinical clearance/validation, не исполнение приложения или медицинского selector; эти этапы не требовались для текущей приёмки.",
+      "evidence_provenance": "Completed independent227 review reused;228 changes verified by exact delta. Original USED sources unchanged SHA, not newly reread."
+    },
+    {
+      "number": 9,
+      "literal_criterion": "Есть конкретный источник, версия и локатор, а не только ссылка на главную страницу реестра.",
+      "status": "выполнено",
+      "independent_evidence": "Current source identities/versions/locators unchanged from frozen216; все nested bindings и source original SHA повторно проверены.Источниковые нормы не выводятся из числа сертификатов.",
+      "evidence_files": [
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/all_expected_check_results.json",
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/used_expected_condition_checks.json",
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/main_alignment_checks.json",
+        "source_read_registry.json"
+      ],
+      "finding_ids": [],
+      "limit": "Полная приёмка исследовательского ТЗ V3 в_USED38 области, включая только используемые нормы/условия/числа/подготовленные результаты. Не clinical clearance/validation, не исполнение приложения или медицинского selector; эти этапы не требовались для текущей приёмки.",
+      "evidence_provenance": "Completed independent227 review reused;228 changes verified by exact delta. Original USED sources unchanged SHA, not newly reread."
+    },
+    {
+      "number": 10,
+      "literal_criterion": "Каждая медицинская доза, граница, поправка, срок и условие имеют источник.",
+      "status": "выполнено",
+      "independent_evidence": "Завершённое собственное USED primary reading прежнего sameSHA набора переиспользовано явно; новые result-scope changes сверены по каждой прежней норме.Все211 numerical parameter objects неизменны.6646 full expected дают22869 собственных numerical/guard assertions без ошибки;2731 used causes/actions без unlinked tail.1386 finite certificates по693 старым именованным scopes сверены с original/source/page/actor facts. Не заявлено новое повторное чтение неизменного или полный неиспользуемый текстЛВ.",
+      "evidence_files": [
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/all_expected_check_results.json",
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/used_expected_condition_checks.json",
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/main_alignment_checks.json",
+        "source_read_registry.json"
+      ],
+      "finding_ids": [],
+      "limit": "Полная приёмка исследовательского ТЗ V3 в_USED38 области, включая только используемые нормы/условия/числа/подготовленные результаты. Не clinical clearance/validation, не исполнение приложения или медицинского selector; эти этапы не требовались для текущей приёмки.",
+      "evidence_provenance": "Completed independent227 review reused;228 changes verified by exact delta. Original USED sources unchanged SHA, not newly reread."
+    },
+    {
+      "number": 11,
+      "literal_criterion": "Опубликованный диапазон не заменён произвольно выбранным числом; пример не превращён в обязательный протокол.",
+      "status": "выполнено",
+      "independent_evidence": "Диапазоны/physician options FLUV50or100, PREG25–50/frequencies и optional selectedPAR40 сохранены; пример не превращён в обязательный ladder.",
+      "evidence_files": [
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/all_expected_check_results.json",
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/used_expected_condition_checks.json",
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/main_alignment_checks.json",
+        "source_read_registry.json"
+      ],
+      "finding_ids": [],
+      "limit": "Полная приёмка исследовательского ТЗ V3 в_USED38 области, включая только используемые нормы/условия/числа/подготовленные результаты. Не clinical clearance/validation, не исполнение приложения или медицинского selector; эти этапы не требовались для текущей приёмки.",
+      "evidence_provenance": "Completed independent227 review reused;228 changes verified by exact delta. Original USED sources unchanged SHA, not newly reread."
+    },
+    {
+      "number": 12,
+      "literal_criterion": "Различаются разовая/суточная доза, единицы, кратность и лекарственные формы.",
+      "status": "выполнено",
+      "independent_evidence": "20647 own prepared assertions проверяют total/per-administration/frequency, units/renal metric и формы. Нет автоматического IR/XR переноса, деления запрещённой формы или исполнения ошибочной printed renal unit.",
+      "evidence_files": [
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/all_expected_check_results.json",
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/used_expected_condition_checks.json",
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/main_alignment_checks.json",
+        "source_read_registry.json"
+      ],
+      "finding_ids": [],
+      "limit": "Полная приёмка исследовательского ТЗ V3 в_USED38 области, включая только используемые нормы/условия/числа/подготовленные результаты. Не clinical clearance/validation, не исполнение приложения или медицинского selector; эти этапы не требовались для текущей приёмки.",
+      "evidence_provenance": "Completed independent227 review reused;228 changes verified by exact delta. Original USED sources unchanged SHA, not newly reread."
+    },
+    {
+      "number": 13,
+      "literal_criterion": "Не перемножены самостоятельные поправки и не усреднены несовместимые источники.",
+      "status": "выполнено",
+      "independent_evidence": "Independent hepatic/renal/CYP adjustments не перемножены; DULOX combined modifiers и XR overlap остаются physician_choice/gap.",
+      "evidence_files": [
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/all_expected_check_results.json",
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/used_expected_condition_checks.json",
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/main_alignment_checks.json",
+        "source_read_registry.json"
+      ],
+      "finding_ids": [],
+      "limit": "Полная приёмка исследовательского ТЗ V3 в_USED38 области, включая только используемые нормы/условия/числа/подготовленные результаты. Не clinical clearance/validation, не исполнение приложения или медицинского selector; эти этапы не требовались для текущей приёмки.",
+      "evidence_provenance": "Completed independent227 review reused;228 changes verified by exact delta. Original USED sources unchanged SHA, not newly reread."
+    },
+    {
+      "number": 14,
+      "literal_criterion": "Для переключения проверено направление, оба препарата, допустимость перекрытия и необходимый интервал.",
+      "status": "выполнено",
+      "independent_evidence": "Own A/B forms, source clocks, direction и phase проверены.87 no-auto/source-reference guards сохраняют опубликованный AGO25/overlap как справку, не patient-specific permission. Selected PAR40 composition ограничена явно выбранным примером; полный generic calendar не заявлен.",
+      "evidence_files": [
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/all_expected_check_results.json",
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/used_expected_condition_checks.json",
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/main_alignment_checks.json",
+        "source_read_registry.json"
+      ],
+      "finding_ids": [],
+      "limit": "Полная приёмка исследовательского ТЗ V3 в_USED38 области, включая только используемые нормы/условия/числа/подготовленные результаты. Не clinical clearance/validation, не исполнение приложения или медицинского selector; эти этапы не требовались для текущей приёмки.",
+      "evidence_provenance": "Completed independent227 review reused;228 changes verified by exact delta. Original USED sources unchanged SHA, not newly reread."
+    },
+    {
+      "number": 15,
+      "literal_criterion": "Для отмены сохранены условия изменения темпа; нет единого придуманного процента/срока для всех.",
+      "status": "выполнено",
+      "independent_evidence": "Дозовой общий процент отмены не придуман. DULOX обычный минимум2weeks без потолка учитывает обе нормы; SSRI/XR variation и symptoms source actions сохранены, PREG/PHEN не заимствуют AD hold/restore/slower.",
+      "evidence_files": [
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/all_expected_check_results.json",
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/used_expected_condition_checks.json",
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/main_alignment_checks.json",
+        "source_read_registry.json"
+      ],
+      "finding_ids": [],
+      "limit": "Полная приёмка исследовательского ТЗ V3 в_USED38 области, включая только используемые нормы/условия/числа/подготовленные результаты. Не clinical clearance/validation, не исполнение приложения или медицинского selector; эти этапы не требовались для текущей приёмки.",
+      "evidence_provenance": "Completed independent227 review reused;228 changes verified by exact delta. Original USED sources unchanged SHA, not newly reread."
+    },
+    {
+      "number": 16,
+      "literal_criterion": "Баллы шкалы влияют на дозовое действие только там, где это действительно задано найденным правилом.",
+      "status": "выполнено",
+      "independent_evidence": "Ни monitoring scale, ни efficacy/PK data не создают coefficient без source rule.",
+      "evidence_files": [
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/all_expected_check_results.json",
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/used_expected_condition_checks.json",
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/main_alignment_checks.json",
+        "source_read_registry.json"
+      ],
+      "finding_ids": [],
+      "limit": "Полная приёмка исследовательского ТЗ V3 в_USED38 области, включая только используемые нормы/условия/числа/подготовленные результаты. Не clinical clearance/validation, не исполнение приложения или медицинского selector; эти этапы не требовались для текущей приёмки.",
+      "evidence_provenance": "Completed independent227 review reused;228 changes verified by exact delta. Original USED sources unchanged SHA, not newly reread."
+    },
+    {
+      "number": 17,
+      "literal_criterion": "Для каждого вопроса показано, какое правило использует ответ и почему его нельзя убрать.",
+      "status": "выполнено",
+      "independent_evidence": "Рассмотрены все906 input и текущие сохраняемые mandatory/result scopes. Конечные305 исключений,135 explicit scopes (включая22 unknown clarification),218 reason-only choices,35 form refusals, пять source-only AD references и not_selected получили достаточные own source/cause/compound/phase/clock facts. Все1386 current dense/sparse certificate cases сверены с собственными нормами;4591 finite counterchecks не допускают отсутствующий/unknown cause, неверный actor/source или unknown→positive. Supplied positive/negative/unknown читаются и считаются; unrelated numerical gates unassessed. Прямые numeric operands/gates сохранены. Это предметное обоснование текущего набора, не global mathematical minimum и не исполнение medical selector.",
+      "evidence_files": [
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/terminal_scope_checks.json",
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/terminal_scope_registry.json",
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/terminal_counterchecks.json",
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/independent_data_results.json",
+        "source_read_registry.json"
+      ],
+      "finding_ids": [],
+      "limit": "Полная приёмка исследовательского ТЗ V3 в_USED38 области, включая только используемые нормы/условия/числа/подготовленные результаты. Не clinical clearance/validation, не исполнение приложения или медицинского selector; эти этапы не требовались для текущей приёмки.",
+      "evidence_provenance": "Completed independent227 review reused;228 changes verified by exact delta. Original USED sources unchanged SHA, not newly reread."
+    },
+    {
+      "number": 18,
+      "literal_criterion": "Для обычного индивидуального дозового расчёта 5–10 содержательных вопросов — цель удобства, до 15 — желательный ориентир; более 15 допустимо при обоснованной необходимости обязательных вопросов для конкретного результата. Само превышение числа вопросов не является нарушением или основанием снижения оценки. Начальные выборы и независимые сведения считаются открыто; нагрузка не скрыта в подпунктах или предварительной анкете, необходимые ограничения не удалены ради краткости, длинная обычная ветка не переименована в сложную.",
+      "status": "выполнено",
+      "independent_evidence": "2652 complete selected paths независимо пересчитаны.96 ordinary numerical paths по-прежнему10–34,36≤15 и60>15, lower_bound0. V3 допускает>15 без штрафа за длину. Initial choices, supplied optional facts, separate own A/B phases, MAOI type/time and stage operands считаются явно. Длинные обычные ветки не переименованы.",
+      "evidence_files": [
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/terminal_scope_checks.json",
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/terminal_scope_registry.json",
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/terminal_counterchecks.json",
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/independent_data_results.json",
+        "source_read_registry.json"
+      ],
+      "finding_ids": [],
+      "limit": "Полная приёмка исследовательского ТЗ V3 в_USED38 области, включая только используемые нормы/условия/числа/подготовленные результаты. Не clinical clearance/validation, не исполнение приложения или медицинского selector; эти этапы не требовались для текущей приёмки.",
+      "evidence_provenance": "Completed independent227 review reused;228 changes verified by exact delta. Original USED sources unchanged SHA, not newly reread."
+    },
+    {
+      "number": 19,
+      "literal_criterion": "Для сложных веток зафиксирован предел короткого расчёта, а не удалены обязательные сведения.",
+      "status": "выполнено",
+      "independent_evidence": "Source-triggered CAD/electrolyte/MAOI/organ/switch complexity явна. Own actor, stages/day/dose/frequency и independent clocks считаются отдельно; счёт сложного пути не скрыт.",
+      "evidence_files": [
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/terminal_scope_checks.json",
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/terminal_scope_registry.json",
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/terminal_counterchecks.json",
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/independent_data_results.json",
+        "source_read_registry.json"
+      ],
+      "finding_ids": [],
+      "limit": "Полная приёмка исследовательского ТЗ V3 в_USED38 области, включая только используемые нормы/условия/числа/подготовленные результаты. Не clinical clearance/validation, не исполнение приложения или медицинского selector; эти этапы не требовались для текущей приёмки.",
+      "evidence_provenance": "Completed independent227 review reused;228 changes verified by exact delta. Original USED sources unchanged SHA, not newly reread."
+    },
+    {
+      "number": 20,
+      "literal_criterion": "«Неизвестно/не исследовано/не помню» не интерпретируются как норма/нет.",
+      "status": "выполнено",
+      "independent_evidence": "Прежние24 ложные confirmed_negatives и последние22 population metadata исправлены. Собственная проверка всех текущих raw/projected source-only reference population states проходит. Отметкаadult_source_population допускается только при фактически supplied known age18+;13-я мутация и12 дополнительных raw/projected unknown/nonadult controls отвергнуты. Typed unknown/units/classification и own A/B phase logic прежнего227 набора неизменны и их завершённые проверки переиспользованы.",
+      "evidence_files": [
+        "metadata_delta_checks.json",
+        "population_registry.json",
+        "guard_mutation_checks.json",
+        "finding_closure.json"
+      ],
+      "finding_ids": [],
+      "limit": "Полная приёмка исследовательского ТЗ V3 в_USED38 области, включая только используемые нормы/условия/числа/подготовленные результаты. Не clinical clearance/validation, не исполнение приложения или медицинского selector; эти этапы не требовались для текущей приёмки.",
+      "evidence_provenance": "Completed independent227 review reused;228 changes verified by exact delta. Original USED sources unchanged SHA, not newly reread."
+    },
+    {
+      "number": 21,
+      "literal_criterion": "Недостаток обязательного значения даёт конкретный запрос данных без безусловной дозы.",
+      "status": "выполнено",
+      "independent_evidence": "Missing mandatory operands дают named request без unconditional dose. Unknown class запрашивает classification передMAOItype/time, own actor unknown/not_started не создаёт automatic stop/start.",
+      "evidence_files": [
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/terminal_scope_checks.json",
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/terminal_scope_registry.json",
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/terminal_counterchecks.json",
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/independent_data_results.json",
+        "source_read_registry.json"
+      ],
+      "finding_ids": [],
+      "limit": "Полная приёмка исследовательского ТЗ V3 в_USED38 области, включая только используемые нормы/условия/числа/подготовленные результаты. Не clinical clearance/validation, не исполнение приложения или медицинского selector; эти этапы не требовались для текущей приёмки.",
+      "evidence_provenance": "Completed independent227 review reused;228 changes verified by exact delta. Original USED sources unchanged SHA, not newly reread."
+    },
+    {
+      "number": 22,
+      "literal_criterion": "Схема может быть выдана заранее, но последующие условные шаги не показаны как обязательные.",
+      "status": "выполнено",
+      "independent_evidence": "Future stages имеют условия повторного выбора/оценки; stop/choice/gap не наследуют executable future dose/overlap/calendar. Печатный source reference отдельно от индивидуального действия.",
+      "evidence_files": [
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/terminal_scope_checks.json",
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/terminal_scope_registry.json",
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/terminal_counterchecks.json",
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/independent_data_results.json",
+        "source_read_registry.json"
+      ],
+      "finding_ids": [],
+      "limit": "Полная приёмка исследовательского ТЗ V3 в_USED38 области, включая только используемые нормы/условия/числа/подготовленные результаты. Не clinical clearance/validation, не исполнение приложения или медицинского selector; эти этапы не требовались для текущей приёмки.",
+      "evidence_provenance": "Completed independent227 review reused;228 changes verified by exact delta. Original USED sources unchanged SHA, not newly reread."
+    },
+    {
+      "number": 23,
+      "literal_criterion": "Минимальные интервалы изменения дозы не перепутаны с датами назначаемых врачом визитов.",
+      "status": "выполнено",
+      "independent_evidence": "Minimum interval, approximate laboratory monitoring и physician visit timing не смешаны.",
+      "evidence_files": [
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/terminal_scope_checks.json",
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/terminal_scope_registry.json",
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/terminal_counterchecks.json",
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/independent_data_results.json",
+        "source_read_registry.json"
+      ],
+      "finding_ids": [],
+      "limit": "Полная приёмка исследовательского ТЗ V3 в_USED38 области, включая только используемые нормы/условия/числа/подготовленные результаты. Не clinical clearance/validation, не исполнение приложения или медицинского selector; эти этапы не требовались для текущей приёмки.",
+      "evidence_provenance": "Completed independent227 review reused;228 changes verified by exact delta. Original USED sources unchanged SHA, not newly reread."
+    },
+    {
+      "number": 24,
+      "literal_criterion": "Доступность первоисточника проверена; сниппет/абстракт/перепечатка не названы прочитанным оригиналом.",
+      "status": "выполнено",
+      "independent_evidence": "Own actual primary reading receipts доступны.16 source registry records повторно SHA-checked; старое чтение same bytes зачтено как reuse, не заявлено новым чтением. Human registry originals/CAPTCHA evidence не приписаны самостоятельному сетевому скачиванию.",
+      "evidence_files": [
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/all_expected_check_results.json",
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/used_expected_condition_checks.json",
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/main_alignment_checks.json",
+        "source_read_registry.json"
+      ],
+      "finding_ids": [],
+      "limit": "Полная приёмка исследовательского ТЗ V3 в_USED38 области, включая только используемые нормы/условия/числа/подготовленные результаты. Не clinical clearance/validation, не исполнение приложения или медицинского selector; эти этапы не требовались для текущей приёмки.",
+      "evidence_provenance": "Completed independent227 review reused;228 changes verified by exact delta. Original USED sources unchanged SHA, not newly reread."
+    },
+    {
+      "number": 25,
+      "literal_criterion": "Российская регистрационная применимость не выведена из иностранного руководства.",
+      "status": "выполнено",
+      "independent_evidence": "Российская применимость определена own current registered product/form и КР; иностранные руководства не заменяют её.",
+      "evidence_files": [
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/all_expected_check_results.json",
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/used_expected_condition_checks.json",
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/main_alignment_checks.json",
+        "source_read_registry.json"
+      ],
+      "finding_ids": [],
+      "limit": "Полная приёмка исследовательского ТЗ V3 в_USED38 области, включая только используемые нормы/условия/числа/подготовленные результаты. Не clinical clearance/validation, не исполнение приложения или медицинского selector; эти этапы не требовались для текущей приёмки.",
+      "evidence_provenance": "Completed independent227 review reused;228 changes verified by exact delta. Original USED sources unchanged SHA, not newly reread."
+    },
+    {
+      "number": 26,
+      "literal_criterion": "Источник/КР/экспертный протокол/исследованная модель имеют разные, точно описанные статусы.",
+      "status": "выполнено",
+      "independent_evidence": "КР/label/expert composition/form policy/source reference/model/effectiveness study имеют разные статусы. PREG source table и model whole-form policy явно различены.",
+      "evidence_files": [
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/all_expected_check_results.json",
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/used_expected_condition_checks.json",
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/main_alignment_checks.json",
+        "source_read_registry.json"
+      ],
+      "finding_ids": [],
+      "limit": "Полная приёмка исследовательского ТЗ V3 в_USED38 области, включая только используемые нормы/условия/числа/подготовленные результаты. Не clinical clearance/validation, не исполнение приложения или медицинского selector; эти этапы не требовались для текущей приёмки.",
+      "evidence_provenance": "Completed independent227 review reused;228 changes verified by exact delta. Original USED sources unchanged SHA, not newly reread."
+    },
+    {
+      "number": 27,
+      "literal_criterion": "Эффективность препарата не объявлена доказательством любой алгоритмической дозировки.",
+      "status": "выполнено",
+      "independent_evidence": "Efficacy не доказательство algorithmic dosage. DULOX diabetes adverse-reaction context не коэффициент; medication class fixtures не объявлены исполненным INN classifier.",
+      "evidence_files": [
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/all_expected_check_results.json",
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/used_expected_condition_checks.json",
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/main_alignment_checks.json",
+        "source_read_registry.json"
+      ],
+      "finding_ids": [],
+      "limit": "Полная приёмка исследовательского ТЗ V3 в_USED38 области, включая только используемые нормы/условия/числа/подготовленные результаты. Не clinical clearance/validation, не исполнение приложения или медицинского selector; эти этапы не требовались для текущей приёмки.",
+      "evidence_provenance": "Completed independent227 review reused;228 changes verified by exact delta. Original USED sources unchanged SHA, not newly reread."
+    },
+    {
+      "number": 28,
+      "literal_criterion": "Технический перенос не объявлен клинической валидацией нового продукта.",
+      "status": "выполнено",
+      "independent_evidence": "Static checks, prepared expectations и graph traces не названы запуском приложения или клинической валидацией.",
+      "evidence_files": [
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/all_expected_check_results.json",
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/used_expected_condition_checks.json",
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/main_alignment_checks.json",
+        "source_read_registry.json"
+      ],
+      "finding_ids": [],
+      "limit": "Полная приёмка исследовательского ТЗ V3 в_USED38 области, включая только используемые нормы/условия/числа/подготовленные результаты. Не clinical clearance/validation, не исполнение приложения или медицинского selector; эти этапы не требовались для текущей приёмки.",
+      "evidence_provenance": "Completed independent227 review reused;228 changes verified by exact delta. Original USED sources unchanged SHA, not newly reread."
+    },
+    {
+      "number": 29,
+      "literal_criterion": "Готовность к реализации не перепутана с готовностью к клиническому применению.",
+      "status": "выполнено",
+      "independent_evidence": "Исследовательская готовность конкретных38карточек и их ограниченных контрактов подтверждена в согласованном текущем снимке.Полный подготовленный oracle теперь принят в заявленном объёме. Готовность к реализации отделена от допуска к медицинскому применению; приложения или клинической валидации не было.",
+      "evidence_files": [
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/all_expected_check_results.json",
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/used_expected_condition_checks.json",
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/main_alignment_checks.json",
+        "source_read_registry.json"
+      ],
+      "finding_ids": [],
+      "limit": "Полная приёмка исследовательского ТЗ V3 в_USED38 области, включая только используемые нормы/условия/числа/подготовленные результаты. Не clinical clearance/validation, не исполнение приложения или медицинского selector; эти этапы не требовались для текущей приёмки.",
+      "evidence_provenance": "Completed independent227 review reused;228 changes verified by exact delta. Original USED sources unchanged SHA, not newly reread."
+    },
+    {
+      "number": 30,
+      "literal_criterion": "Все пробелы и конфликты перечислены; отсутствие найденного аналога не названо доказательством его отсутствия.",
+      "status": "выполнено",
+      "independent_evidence": "Все источниковые пробелы/конфликты и границы исследования перечислены; конечные медицинские/necessity/unknown/metadata замечания закрыты собственными свидетельствами. Отсутствие найденного полного российского протокола не названо доказанным отсутствием. Не предъявляется бесконечный неперечисленный хвост минимальности.",
+      "evidence_files": [
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/all_expected_check_results.json",
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/used_expected_condition_checks.json",
+        "C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/main_alignment_checks.json",
+        "source_read_registry.json"
+      ],
+      "finding_ids": [],
+      "limit": "Полная приёмка исследовательского ТЗ V3 в_USED38 области, включая только используемые нормы/условия/числа/подготовленные результаты. Не clinical clearance/validation, не исполнение приложения или медицинского selector; эти этапы не требовались для текущей приёмки.",
+      "evidence_provenance": "Completed independent227 review reused;228 changes verified by exact delta. Original USED sources unchanged SHA, not newly reread."
+    }
+  ],
+  "statuses": {
+    "выполнено": 30
+  },
+  "full_research_acceptance": true,
+  "changed_from_v2_only": [
+    18
+  ],
+  "hard_question_limit": false,
+  "global_mathematical_minimum_required": false
+}

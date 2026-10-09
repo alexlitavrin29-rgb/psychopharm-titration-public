@@ -1,0 +1,443 @@
+{
+  "schema_version": "1.0",
+  "rule_id": "venla-xr-social-start",
+  "development_status": "extracted_research_not_executable",
+  "language": "ru",
+  "identity": {
+    "title": "Венлафаксин XR: социальная тревога, старт",
+    "mode": "start",
+    "drug_inn": "венлафаксин",
+    "from_drug_inn": null,
+    "to_drug_inn": null,
+    "formulation": "Велаксин, капсулы пролонгированного высвобождения 75/150 мг",
+    "route": "oral",
+    "diagnosis_label_ru": "Социальное тревожное расстройство",
+    "classification_system": "МКБ-10",
+    "diagnosis_code": "F40.1",
+    "jurisdiction": "RU_versioned_sources"
+  },
+  "applicability": {
+    "population_description": "Взрослые от 18 лет; показание и клиническое действие выбирает врач.",
+    "age_constraints": [
+      {
+        "minimum": 18,
+        "inclusive": true,
+        "unit": "year",
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "HTML §1–3, §4.1–4.3, §4.5–4.6, §8; заголовки формы/режима сохранены"
+      }
+    ],
+    "pregnancy": "Беременность/предполагаемая беременность противопоказаны, §4.3.",
+    "lactation": "Лактация противопоказана, §4.3.",
+    "renal_constraints": [
+      "Источник XR: абсолютная СКФ >30 мл/мин без коррекции; 10–30 снижение на 50%; <10 не рекомендуется/противопоказание. Нормированную eGFR не подставлять."
+    ],
+    "hepatic_constraints": [
+      "Лёгкая/умеренная: рассмотреть -50%; тяжёлая не рекомендуется; §4.3 ПВ >18 с. Не выводить категорию из одного анализа."
+    ],
+    "comorbidity_constraints": [],
+    "interacting_drugs": [
+      "ИМАО §4.3–4.5; список и даты отмены при необходимости отдельно."
+    ],
+    "other_conditions": [],
+    "exclusions": [],
+    "indication_status_in_russia": "RU_indication_in_read_original_latest_registry_text_separate",
+    "source_refs": [
+      "RU-VENLA-XR",
+      "RU-PHOB"
+    ]
+  },
+  "inputs": [
+    {
+      "input_id": "age",
+      "question_ru": "Возраст, лет?",
+      "data_type": "number",
+      "unit": "year",
+      "allowed_values": [],
+      "required_when": "для выбранного расчёта",
+      "show_when": "для выбранного расчёта",
+      "why_needed": "Взрослая/пожилая применимость §4.1–4.2.",
+      "changes": [
+        "dose_or_action"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Назвать age; не подставлять норму, без безусловной индивидуальной дозы.",
+      "source_refs": [
+        "RU-VENLA-XR"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "form",
+      "question_ru": "Какая конкретная форма и дозировка?",
+      "data_type": "structured_form",
+      "unit": null,
+      "allowed_values": [
+        "подтверждено врачом",
+        "неизвестно"
+      ],
+      "required_when": "для выбранного расчёта",
+      "show_when": "для выбранного расчёта",
+      "why_needed": "Не переносить форму; дозовая исполнимость §1–3/4.2.",
+      "changes": [
+        "dose_or_action"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Назвать form; не подставлять норму, без безусловной индивидуальной дозы.",
+      "source_refs": [
+        "RU-VENLA-XR"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "hepatic",
+      "question_ru": "Подтверждённая функция печени?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [
+        "подтверждено врачом",
+        "неизвестно"
+      ],
+      "required_when": "для выбранного расчёта",
+      "show_when": "для выбранного расчёта",
+      "why_needed": "Ограничения §4.2–4.3; из одного анализа не выводить категорию.",
+      "changes": [
+        "dose_or_action"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Назвать hepatic; не подставлять норму, без безусловной индивидуальной дозы.",
+      "source_refs": [
+        "RU-VENLA-XR"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "pregnancy",
+      "question_ru": "Беременность установлена или возможна?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [
+        "подтверждено врачом",
+        "неизвестно"
+      ],
+      "required_when": "для выбранного расчёта",
+      "show_when": "для выбранного расчёта",
+      "why_needed": "Применимость §4.3/4.6.",
+      "changes": [
+        "dose_or_action"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Назвать pregnancy; не подставлять норму, без безусловной индивидуальной дозы.",
+      "source_refs": [
+        "RU-VENLA-XR"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "lactation",
+      "question_ru": "Есть грудное вскармливание?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [
+        "подтверждено врачом",
+        "неизвестно"
+      ],
+      "required_when": "для выбранного расчёта",
+      "show_when": "для выбранного расчёта",
+      "why_needed": "Применимость §4.3/4.6.",
+      "changes": [
+        "dose_or_action"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Назвать lactation; не подставлять норму, без безусловной индивидуальной дозы.",
+      "source_refs": [
+        "RU-VENLA-XR"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "medicines",
+      "question_ru": "Текущие и недавно отменённые препараты?",
+      "data_type": "medication_list",
+      "unit": null,
+      "allowed_values": [
+        "подтверждено врачом",
+        "неизвестно"
+      ],
+      "required_when": "для выбранного расчёта",
+      "show_when": "для выбранного расчёта",
+      "why_needed": "Взаимодействия и интервалы §4.3–4.5; последние даты при ИМАО отдельны.",
+      "changes": [
+        "dose_or_action"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Назвать medicines; не подставлять норму, без безусловной индивидуальной дозы.",
+      "source_refs": [
+        "RU-VENLA-XR"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "allergy",
+      "question_ru": "Гиперчувствительность к препарату/компонентам?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [
+        "подтверждено врачом",
+        "неизвестно"
+      ],
+      "required_when": "для выбранного расчёта",
+      "show_when": "для выбранного расчёта",
+      "why_needed": "Противопоказание §4.3.",
+      "changes": [
+        "dose_or_action"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Назвать allergy; не подставлять норму, без безусловной индивидуальной дозы.",
+      "source_refs": [
+        "RU-VENLA-XR"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "renal_metric",
+      "question_ru": "Подтверждённый почечный показатель с методом и единицей?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [
+        "подтверждено врачом",
+        "неизвестно"
+      ],
+      "required_when": "для органной ветки",
+      "show_when": "для органной ветки",
+      "why_needed": "§4.2; eGFR/CLcr и нормированная/абсолютная СКФ не взаимозаменяемы.",
+      "changes": [
+        "dose_or_action"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Назвать renal_metric; не подставлять норму, без безусловной индивидуальной дозы.",
+      "source_refs": [
+        "RU-VENLA-XR"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    }
+  ],
+  "clinical_parameters": [
+    {
+      "parameter_id": "start",
+      "meaning": "start",
+      "value": 75,
+      "lower": null,
+      "upper": null,
+      "lower_inclusive": null,
+      "upper_inclusive": null,
+      "unit": "mg/day",
+      "source_ref": "RU-VENLA-XR",
+      "source_locator": "HTML §4.2, подзаголовки ГТР / социальные тревожные расстройства",
+      "source_meaning": "предписание",
+      "derivation": null
+    },
+    {
+      "parameter_id": "maximum",
+      "meaning": "maximum",
+      "value": 225,
+      "lower": null,
+      "upper": null,
+      "lower_inclusive": null,
+      "upper_inclusive": null,
+      "unit": "mg/day",
+      "source_ref": "RU-VENLA-XR",
+      "source_locator": "HTML §4.2, подзаголовки ГТР / социальные тревожные расстройства",
+      "source_meaning": "предписание",
+      "derivation": null
+    },
+    {
+      "parameter_id": "increase_min_interval",
+      "meaning": "increase_min_interval",
+      "value": 2,
+      "lower": null,
+      "upper": null,
+      "lower_inclusive": null,
+      "upper_inclusive": null,
+      "unit": "week",
+      "source_ref": "RU-VENLA-XR",
+      "source_locator": "HTML §4.2, подзаголовки ГТР / социальные тревожные расстройства",
+      "source_meaning": "предписание",
+      "derivation": null
+    },
+    {
+      "parameter_id": "frequency",
+      "meaning": "frequency",
+      "value": 1,
+      "lower": null,
+      "upper": null,
+      "lower_inclusive": null,
+      "upper_inclusive": null,
+      "unit": "administration/day",
+      "source_ref": "RU-VENLA-XR",
+      "source_locator": "HTML §4.2 Способ применения",
+      "source_meaning": "предписание",
+      "derivation": null
+    }
+  ],
+  "logic": {
+    "representation": "conditional_source_rule",
+    "conditions": [
+      "Применимость к указанному показанию/форме подтверждена в пределах дозового расчёта; это не полный клинический допуск."
+    ],
+    "actions": [
+      "75 мг один раз в сутки с пищей, целая капсула.",
+      "При недостаточном ответе врач может повысить до 225; между повышениями не менее 2 недель. Фиксированного шага +75 при этих показаниях здесь нет.",
+      "При социальной тревоге не доказана дополнительная польза более высокой дозы; рассматривать индивидуально.",
+      "Органную поправку не умножать на другую; 37,5 мг XR этой формой не обеспечиваются."
+    ],
+    "parameter_refs": [
+      "start",
+      "maximum",
+      "increase_min_interval",
+      "frequency"
+    ],
+    "source_refs": [
+      "RU-VENLA-XR",
+      "RU-PHOB"
+    ],
+    "clinician_choices": [
+      "Необходимость изменения лечения и неоценённые модулем клинические обстоятельства."
+    ],
+    "missing_data_behaviour": "insufficient_data с конкретным отсутствующим полем, без безусловной дозы.",
+    "unsupported_case_behaviour": "Назвать неприменимую ветку; не переносить другую форму/показание.",
+    "contraindicated_case_behaviour": "Не выдавать схему противопоказанного сочетания, указать источник.",
+    "conflicts": [],
+    "composite_rule_dependencies": [],
+    "combination_justification": "КР определяет клиническую область, инструкция — дозовые параметры; новые коэффициенты не добавлены."
+  },
+  "output": {
+    "result_type": "exact",
+    "medication_inn": "венлафаксин",
+    "dose_per_administration": 75,
+    "administrations_per_day": 1,
+    "total_daily_dose": 75,
+    "unit": "mg",
+    "formulation": "Велаксин, капсулы пролонгированного высвобождения 75/150 мг",
+    "schedule": [],
+    "warnings": [
+      "Последующие этапы условны; максимум не является целью.",
+      "Неоценённое клиническое обстоятельство не считается отсутствующим.",
+      "Версия копии зафиксирована; последнее содержание реестрового документа проверяется перед клиническим внедрением."
+    ],
+    "mandatory_checks": [],
+    "clinician_decisions_remaining": [],
+    "rounding_or_formulation_rule": "Не округлять медицинскую дозу; целые формы/разрешённое деление. Невозможная доза — явный отказ формы.",
+    "source_refs": [
+      "RU-VENLA-XR",
+      "RU-PHOB"
+    ]
+  },
+  "verification": {
+    "primary_source_checked": true,
+    "all_clinical_parameters_have_sources": true,
+    "population_and_indication_checked": true,
+    "russian_applicability_checked": true,
+    "formulation_feasibility_checked": true,
+    "combined_rules_justified": true,
+    "source_transfer_check": "extraction_checked; calculator_not_implemented",
+    "clinical_review": "not_performed",
+    "product_clinical_validation": "not_performed",
+    "ready_for_technical_implementation": true,
+    "unresolved_items": []
+  },
+  "test_cases": [
+    {
+      "case_id": "venla-xr-social-start__usual",
+      "synthetic": true,
+      "given": {
+        "form": "XR 75 мг",
+        "renal_metric": "СКФ >30 мл/мин",
+        "hepatic": "без нарушения"
+      },
+      "expected": {
+        "start_mg_per_day": 75,
+        "frequency": 1,
+        "maximum_mg_per_day": 225,
+        "increase_min_interval_weeks": 2,
+        "automatic_increment": null
+      },
+      "source_refs": [
+        "RU-VENLA-XR"
+      ],
+      "note": "Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена."
+    },
+    {
+      "case_id": "venla-xr-social-start__wrong-form",
+      "synthetic": true,
+      "given": {
+        "form": "Велаксин таблетка 37,5 мг IR"
+      },
+      "expected": {
+        "result_type": "not_applicable",
+        "do_not_substitute_IR": true
+      },
+      "source_refs": [
+        "RU-VENLA-XR"
+      ],
+      "note": "Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена."
+    },
+    {
+      "case_id": "venla-xr-social-start__renal30",
+      "synthetic": true,
+      "given": {
+        "GFR_mL_min": 30,
+        "usual_dose_mg_per_day": 75
+      },
+      "expected": {
+        "published_reduction_percent": 50,
+        "arithmetic_dose_mg_per_day": 37.5,
+        "feasible_with_XR_75_150": false
+      },
+      "source_refs": [
+        "RU-VENLA-XR"
+      ],
+      "note": "Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена."
+    },
+    {
+      "case_id": "venla-xr-social-start__double-modifier",
+      "synthetic": true,
+      "given": {
+        "renal_metric": "СКФ 20 мл/мин",
+        "hepatic": "умеренная недостаточность"
+      },
+      "expected": {
+        "automatic_product_of_reductions": false,
+        "result_type": "clinician_choice"
+      },
+      "source_refs": [
+        "RU-VENLA-XR"
+      ],
+      "note": "Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена."
+    },
+    {
+      "case_id": "venla-xr-social-start__wrong-unit",
+      "synthetic": true,
+      "given": {
+        "renal_metric": "eGFR 45 мл/мин/1,73м2"
+      },
+      "expected": {
+        "result_type": "insufficient_data",
+        "missing": [
+          "absolute_GFR_mL_min"
+        ],
+        "automatic_unit_equivalence": false
+      },
+      "source_refs": [
+        "RU-VENLA-XR"
+      ],
+      "note": "Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена."
+    }
+  ],
+  "profile": {
+    "country": "RU",
+    "selection_status": "RU_profile_research",
+    "foreign_fallback_allowed": false
+  },
+  "card_type": "numeric_source_rule"
+}

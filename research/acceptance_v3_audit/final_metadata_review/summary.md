@@ -1,0 +1,13 @@
+# Окончательная независимая приёмка ТЗ V3
+
+**Исследовательский набор принят:30 из 30 критериев выполнены. Итоговая независимая оценка 9,6/10; взвешенная сумма 9,560, ограничения 4/6 не применяются.**
+
+Снимок `b66e9e0dadca7234ed1e66bc8c103047ff2f96e963313d07dd0075494695f0a4`, 228файлов. Это конкретный новый набор; старые216/227 заключения сохраняются. Все 22 последние отметки взрослой популяции исправлены. Собственные 4410 утверждений дали 0ошибок; общийraw/projectedguard и 13-я мутация с 12 дополнительными unknown/nonadult контролями проверены фактически. Числа, действия, ввод пациента, фазы, вопросы и счёт 2652 путей не менялись.
+
+Завершённая предметная приёмка 38 карточек и 906 входов переиспользована по неизменному источниковомуSHA и точной дельте. Она включает 211 числовых параметров, 6646 полных expected, необходимый_USED medical scope и конечное обоснование mandatory/result prerequisites. Это не новое повторное чтение всех источников. Обычные 96 числовых путей содержат 10–34 независимых сведений; 0 нижних границ, никакого штрафа за >15 или требования globalminimum.
+
+Перенос в последующую реализацию подтверждён для исследованных source-bound values/форм/входов/unknown/ownactions/фаз/clocks и bounded choice/refusal/reference contracts. Честные российские источник-пробелы остаются ограниченными результатами, без иностранной подстановки или выдуманного полного календаря. Приложение, индивидуальный клинический допуск и клиническая валидация не выполнены и не объявлены выполненными; они не требовались для этой исследовательской приёмки.
+
+Открытых обязательных исправлений в принятом объёме нет. После написания приложения требуется фактически проверить его исполнение по подготовленным source-derived expected.Экспертный балл 9,6 отражает также удобство чтения/сопровождения большого набора свидетельств;30/30 не было автоматически переведено в10/10.
+
+Артефакты: [criteria30.md](<C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_metadata_review/criteria30.md>), [scoring.md](<C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_metadata_review/scoring.md>), [findings.md](<C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_metadata_review/findings.md>), [coverage.md](<C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_metadata_review/coverage.md>), [transfer_decision.md](<C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_metadata_review/transfer_decision.md>), [final_verification.json](<C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_metadata_review/final_verification.json>).

@@ -1,0 +1,23 @@
+{
+  "old": {
+    "data_type": "enum",
+    "unit": null,
+    "allowed_values": [
+      "ongoing",
+      "selected_mode"
+    ],
+    "origin": "start + selected_mode explicitly means first administration of this product; ongoing is a separately selected significant branch, counted once; no inference of B phase from A"
+  },
+  "new": {
+    "data_type": "enum",
+    "unit": null,
+    "allowed_values": [
+      "selected_mode",
+      "not_started",
+      "ongoing",
+      "unknown"
+    ],
+    "origin": "Explicit stage of selected/A product. start + selected_mode means first administration; not_started is the explicit same state; ongoing and explicitly unknown are separate supplied facts counted for start paths. unknown never confirms non-use or ongoing use and needs clarification for an ongoing source action. Never infer B phase from A."
+  },
+  "scope": "Schema/validator consistency for actual existing prepared phase states; no medical dose/action/fixture/count change"
+}

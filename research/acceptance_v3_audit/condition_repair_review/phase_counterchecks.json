@@ -1,0 +1,1322 @@
+[
+  {
+    "rule_id": "ago-stop",
+    "dose": 50,
+    "explicit_phase": "selected_mode",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "ago-stop",
+    "dose": 50,
+    "explicit_phase": "ongoing",
+    "expected_phase": "ongoing",
+    "actual_phase": "ongoing"
+  },
+  {
+    "rule_id": "ago-stop",
+    "dose": 50,
+    "explicit_phase": "unknown",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "ago-stop",
+    "dose": 50,
+    "explicit_phase": "not_started",
+    "expected_phase": "not_started",
+    "actual_phase": "not_started"
+  },
+  {
+    "rule_id": "ago-stop",
+    "dose": 0,
+    "explicit_phase": "selected_mode",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "ago-stop",
+    "dose": 0,
+    "explicit_phase": "ongoing",
+    "expected_phase": "ongoing",
+    "actual_phase": "ongoing"
+  },
+  {
+    "rule_id": "ago-stop",
+    "dose": 0,
+    "explicit_phase": "unknown",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "ago-stop",
+    "dose": 0,
+    "explicit_phase": "not_started",
+    "expected_phase": "not_started",
+    "actual_phase": "not_started"
+  },
+  {
+    "rule_id": "ago-stop",
+    "dose": "unknown",
+    "explicit_phase": "selected_mode",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "ago-stop",
+    "dose": "unknown",
+    "explicit_phase": "ongoing",
+    "expected_phase": "ongoing",
+    "actual_phase": "ongoing"
+  },
+  {
+    "rule_id": "ago-stop",
+    "dose": "unknown",
+    "explicit_phase": "unknown",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "ago-stop",
+    "dose": "unknown",
+    "explicit_phase": "not_started",
+    "expected_phase": "not_started",
+    "actual_phase": "not_started"
+  },
+  {
+    "rule_id": "ago-stop",
+    "dose": {
+      "proposed": 50
+    },
+    "explicit_phase": "selected_mode",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "ago-stop",
+    "dose": {
+      "proposed": 50
+    },
+    "explicit_phase": "ongoing",
+    "expected_phase": "ongoing",
+    "actual_phase": "ongoing"
+  },
+  {
+    "rule_id": "ago-stop",
+    "dose": {
+      "proposed": 50
+    },
+    "explicit_phase": "unknown",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "ago-stop",
+    "dose": {
+      "proposed": 50
+    },
+    "explicit_phase": "not_started",
+    "expected_phase": "not_started",
+    "actual_phase": "not_started"
+  },
+  {
+    "rule_id": "dulox-taper-limit",
+    "dose": 50,
+    "explicit_phase": "selected_mode",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "dulox-taper-limit",
+    "dose": 50,
+    "explicit_phase": "ongoing",
+    "expected_phase": "ongoing",
+    "actual_phase": "ongoing"
+  },
+  {
+    "rule_id": "dulox-taper-limit",
+    "dose": 50,
+    "explicit_phase": "unknown",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "dulox-taper-limit",
+    "dose": 50,
+    "explicit_phase": "not_started",
+    "expected_phase": "not_started",
+    "actual_phase": "not_started"
+  },
+  {
+    "rule_id": "dulox-taper-limit",
+    "dose": 0,
+    "explicit_phase": "selected_mode",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "dulox-taper-limit",
+    "dose": 0,
+    "explicit_phase": "ongoing",
+    "expected_phase": "ongoing",
+    "actual_phase": "ongoing"
+  },
+  {
+    "rule_id": "dulox-taper-limit",
+    "dose": 0,
+    "explicit_phase": "unknown",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "dulox-taper-limit",
+    "dose": 0,
+    "explicit_phase": "not_started",
+    "expected_phase": "not_started",
+    "actual_phase": "not_started"
+  },
+  {
+    "rule_id": "dulox-taper-limit",
+    "dose": "unknown",
+    "explicit_phase": "selected_mode",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "dulox-taper-limit",
+    "dose": "unknown",
+    "explicit_phase": "ongoing",
+    "expected_phase": "ongoing",
+    "actual_phase": "ongoing"
+  },
+  {
+    "rule_id": "dulox-taper-limit",
+    "dose": "unknown",
+    "explicit_phase": "unknown",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "dulox-taper-limit",
+    "dose": "unknown",
+    "explicit_phase": "not_started",
+    "expected_phase": "not_started",
+    "actual_phase": "not_started"
+  },
+  {
+    "rule_id": "dulox-taper-limit",
+    "dose": {
+      "proposed": 50
+    },
+    "explicit_phase": "selected_mode",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "dulox-taper-limit",
+    "dose": {
+      "proposed": 50
+    },
+    "explicit_phase": "ongoing",
+    "expected_phase": "ongoing",
+    "actual_phase": "ongoing"
+  },
+  {
+    "rule_id": "dulox-taper-limit",
+    "dose": {
+      "proposed": 50
+    },
+    "explicit_phase": "unknown",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "dulox-taper-limit",
+    "dose": {
+      "proposed": 50
+    },
+    "explicit_phase": "not_started",
+    "expected_phase": "not_started",
+    "actual_phase": "not_started"
+  },
+  {
+    "rule_id": "esc-taper-limit",
+    "dose": 50,
+    "explicit_phase": "selected_mode",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "esc-taper-limit",
+    "dose": 50,
+    "explicit_phase": "ongoing",
+    "expected_phase": "ongoing",
+    "actual_phase": "ongoing"
+  },
+  {
+    "rule_id": "esc-taper-limit",
+    "dose": 50,
+    "explicit_phase": "unknown",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "esc-taper-limit",
+    "dose": 50,
+    "explicit_phase": "not_started",
+    "expected_phase": "not_started",
+    "actual_phase": "not_started"
+  },
+  {
+    "rule_id": "esc-taper-limit",
+    "dose": 0,
+    "explicit_phase": "selected_mode",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "esc-taper-limit",
+    "dose": 0,
+    "explicit_phase": "ongoing",
+    "expected_phase": "ongoing",
+    "actual_phase": "ongoing"
+  },
+  {
+    "rule_id": "esc-taper-limit",
+    "dose": 0,
+    "explicit_phase": "unknown",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "esc-taper-limit",
+    "dose": 0,
+    "explicit_phase": "not_started",
+    "expected_phase": "not_started",
+    "actual_phase": "not_started"
+  },
+  {
+    "rule_id": "esc-taper-limit",
+    "dose": "unknown",
+    "explicit_phase": "selected_mode",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "esc-taper-limit",
+    "dose": "unknown",
+    "explicit_phase": "ongoing",
+    "expected_phase": "ongoing",
+    "actual_phase": "ongoing"
+  },
+  {
+    "rule_id": "esc-taper-limit",
+    "dose": "unknown",
+    "explicit_phase": "unknown",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "esc-taper-limit",
+    "dose": "unknown",
+    "explicit_phase": "not_started",
+    "expected_phase": "not_started",
+    "actual_phase": "not_started"
+  },
+  {
+    "rule_id": "esc-taper-limit",
+    "dose": {
+      "proposed": 50
+    },
+    "explicit_phase": "selected_mode",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "esc-taper-limit",
+    "dose": {
+      "proposed": 50
+    },
+    "explicit_phase": "ongoing",
+    "expected_phase": "ongoing",
+    "actual_phase": "ongoing"
+  },
+  {
+    "rule_id": "esc-taper-limit",
+    "dose": {
+      "proposed": 50
+    },
+    "explicit_phase": "unknown",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "esc-taper-limit",
+    "dose": {
+      "proposed": 50
+    },
+    "explicit_phase": "not_started",
+    "expected_phase": "not_started",
+    "actual_phase": "not_started"
+  },
+  {
+    "rule_id": "fluvox-taper-limit",
+    "dose": 50,
+    "explicit_phase": "selected_mode",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "fluvox-taper-limit",
+    "dose": 50,
+    "explicit_phase": "ongoing",
+    "expected_phase": "ongoing",
+    "actual_phase": "ongoing"
+  },
+  {
+    "rule_id": "fluvox-taper-limit",
+    "dose": 50,
+    "explicit_phase": "unknown",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "fluvox-taper-limit",
+    "dose": 50,
+    "explicit_phase": "not_started",
+    "expected_phase": "not_started",
+    "actual_phase": "not_started"
+  },
+  {
+    "rule_id": "fluvox-taper-limit",
+    "dose": 0,
+    "explicit_phase": "selected_mode",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "fluvox-taper-limit",
+    "dose": 0,
+    "explicit_phase": "ongoing",
+    "expected_phase": "ongoing",
+    "actual_phase": "ongoing"
+  },
+  {
+    "rule_id": "fluvox-taper-limit",
+    "dose": 0,
+    "explicit_phase": "unknown",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "fluvox-taper-limit",
+    "dose": 0,
+    "explicit_phase": "not_started",
+    "expected_phase": "not_started",
+    "actual_phase": "not_started"
+  },
+  {
+    "rule_id": "fluvox-taper-limit",
+    "dose": "unknown",
+    "explicit_phase": "selected_mode",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "fluvox-taper-limit",
+    "dose": "unknown",
+    "explicit_phase": "ongoing",
+    "expected_phase": "ongoing",
+    "actual_phase": "ongoing"
+  },
+  {
+    "rule_id": "fluvox-taper-limit",
+    "dose": "unknown",
+    "explicit_phase": "unknown",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "fluvox-taper-limit",
+    "dose": "unknown",
+    "explicit_phase": "not_started",
+    "expected_phase": "not_started",
+    "actual_phase": "not_started"
+  },
+  {
+    "rule_id": "fluvox-taper-limit",
+    "dose": {
+      "proposed": 50
+    },
+    "explicit_phase": "selected_mode",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "fluvox-taper-limit",
+    "dose": {
+      "proposed": 50
+    },
+    "explicit_phase": "ongoing",
+    "expected_phase": "ongoing",
+    "actual_phase": "ongoing"
+  },
+  {
+    "rule_id": "fluvox-taper-limit",
+    "dose": {
+      "proposed": 50
+    },
+    "explicit_phase": "unknown",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "fluvox-taper-limit",
+    "dose": {
+      "proposed": 50
+    },
+    "explicit_phase": "not_started",
+    "expected_phase": "not_started",
+    "actual_phase": "not_started"
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "dose": 50,
+    "explicit_phase": "selected_mode",
+    "expected_phase": "not_started",
+    "actual_phase": "not_started"
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "dose": 50,
+    "explicit_phase": "ongoing",
+    "expected_phase": "ongoing",
+    "actual_phase": "ongoing"
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "dose": 50,
+    "explicit_phase": "unknown",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "dose": 50,
+    "explicit_phase": "not_started",
+    "expected_phase": "not_started",
+    "actual_phase": "not_started"
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "dose": 0,
+    "explicit_phase": "selected_mode",
+    "expected_phase": "not_started",
+    "actual_phase": "not_started"
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "dose": 0,
+    "explicit_phase": "ongoing",
+    "expected_phase": "ongoing",
+    "actual_phase": "ongoing"
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "dose": 0,
+    "explicit_phase": "unknown",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "dose": 0,
+    "explicit_phase": "not_started",
+    "expected_phase": "not_started",
+    "actual_phase": "not_started"
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "dose": "unknown",
+    "explicit_phase": "selected_mode",
+    "expected_phase": "not_started",
+    "actual_phase": "not_started"
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "dose": "unknown",
+    "explicit_phase": "ongoing",
+    "expected_phase": "ongoing",
+    "actual_phase": "ongoing"
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "dose": "unknown",
+    "explicit_phase": "unknown",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "dose": "unknown",
+    "explicit_phase": "not_started",
+    "expected_phase": "not_started",
+    "actual_phase": "not_started"
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "dose": {
+      "proposed": 50
+    },
+    "explicit_phase": "selected_mode",
+    "expected_phase": "not_started",
+    "actual_phase": "not_started"
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "dose": {
+      "proposed": 50
+    },
+    "explicit_phase": "ongoing",
+    "expected_phase": "ongoing",
+    "actual_phase": "ongoing"
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "dose": {
+      "proposed": 50
+    },
+    "explicit_phase": "unknown",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "dose": {
+      "proposed": 50
+    },
+    "explicit_phase": "not_started",
+    "expected_phase": "not_started",
+    "actual_phase": "not_started"
+  },
+  {
+    "rule_id": "phen-taper-limit",
+    "dose": 50,
+    "explicit_phase": "selected_mode",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "phen-taper-limit",
+    "dose": 50,
+    "explicit_phase": "ongoing",
+    "expected_phase": "ongoing",
+    "actual_phase": "ongoing"
+  },
+  {
+    "rule_id": "phen-taper-limit",
+    "dose": 50,
+    "explicit_phase": "unknown",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "phen-taper-limit",
+    "dose": 50,
+    "explicit_phase": "not_started",
+    "expected_phase": "not_started",
+    "actual_phase": "not_started"
+  },
+  {
+    "rule_id": "phen-taper-limit",
+    "dose": 0,
+    "explicit_phase": "selected_mode",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "phen-taper-limit",
+    "dose": 0,
+    "explicit_phase": "ongoing",
+    "expected_phase": "ongoing",
+    "actual_phase": "ongoing"
+  },
+  {
+    "rule_id": "phen-taper-limit",
+    "dose": 0,
+    "explicit_phase": "unknown",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "phen-taper-limit",
+    "dose": 0,
+    "explicit_phase": "not_started",
+    "expected_phase": "not_started",
+    "actual_phase": "not_started"
+  },
+  {
+    "rule_id": "phen-taper-limit",
+    "dose": "unknown",
+    "explicit_phase": "selected_mode",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "phen-taper-limit",
+    "dose": "unknown",
+    "explicit_phase": "ongoing",
+    "expected_phase": "ongoing",
+    "actual_phase": "ongoing"
+  },
+  {
+    "rule_id": "phen-taper-limit",
+    "dose": "unknown",
+    "explicit_phase": "unknown",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "phen-taper-limit",
+    "dose": "unknown",
+    "explicit_phase": "not_started",
+    "expected_phase": "not_started",
+    "actual_phase": "not_started"
+  },
+  {
+    "rule_id": "phen-taper-limit",
+    "dose": {
+      "proposed": 50
+    },
+    "explicit_phase": "selected_mode",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "phen-taper-limit",
+    "dose": {
+      "proposed": 50
+    },
+    "explicit_phase": "ongoing",
+    "expected_phase": "ongoing",
+    "actual_phase": "ongoing"
+  },
+  {
+    "rule_id": "phen-taper-limit",
+    "dose": {
+      "proposed": 50
+    },
+    "explicit_phase": "unknown",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "phen-taper-limit",
+    "dose": {
+      "proposed": 50
+    },
+    "explicit_phase": "not_started",
+    "expected_phase": "not_started",
+    "actual_phase": "not_started"
+  },
+  {
+    "rule_id": "preg-taper-limit",
+    "dose": 50,
+    "explicit_phase": "selected_mode",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "preg-taper-limit",
+    "dose": 50,
+    "explicit_phase": "ongoing",
+    "expected_phase": "ongoing",
+    "actual_phase": "ongoing"
+  },
+  {
+    "rule_id": "preg-taper-limit",
+    "dose": 50,
+    "explicit_phase": "unknown",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "preg-taper-limit",
+    "dose": 50,
+    "explicit_phase": "not_started",
+    "expected_phase": "not_started",
+    "actual_phase": "not_started"
+  },
+  {
+    "rule_id": "preg-taper-limit",
+    "dose": 0,
+    "explicit_phase": "selected_mode",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "preg-taper-limit",
+    "dose": 0,
+    "explicit_phase": "ongoing",
+    "expected_phase": "ongoing",
+    "actual_phase": "ongoing"
+  },
+  {
+    "rule_id": "preg-taper-limit",
+    "dose": 0,
+    "explicit_phase": "unknown",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "preg-taper-limit",
+    "dose": 0,
+    "explicit_phase": "not_started",
+    "expected_phase": "not_started",
+    "actual_phase": "not_started"
+  },
+  {
+    "rule_id": "preg-taper-limit",
+    "dose": "unknown",
+    "explicit_phase": "selected_mode",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "preg-taper-limit",
+    "dose": "unknown",
+    "explicit_phase": "ongoing",
+    "expected_phase": "ongoing",
+    "actual_phase": "ongoing"
+  },
+  {
+    "rule_id": "preg-taper-limit",
+    "dose": "unknown",
+    "explicit_phase": "unknown",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "preg-taper-limit",
+    "dose": "unknown",
+    "explicit_phase": "not_started",
+    "expected_phase": "not_started",
+    "actual_phase": "not_started"
+  },
+  {
+    "rule_id": "preg-taper-limit",
+    "dose": {
+      "proposed": 50
+    },
+    "explicit_phase": "selected_mode",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "preg-taper-limit",
+    "dose": {
+      "proposed": 50
+    },
+    "explicit_phase": "ongoing",
+    "expected_phase": "ongoing",
+    "actual_phase": "ongoing"
+  },
+  {
+    "rule_id": "preg-taper-limit",
+    "dose": {
+      "proposed": 50
+    },
+    "explicit_phase": "unknown",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "preg-taper-limit",
+    "dose": {
+      "proposed": 50
+    },
+    "explicit_phase": "not_started",
+    "expected_phase": "not_started",
+    "actual_phase": "not_started"
+  },
+  {
+    "rule_id": "ser-taper-limit",
+    "dose": 50,
+    "explicit_phase": "selected_mode",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "ser-taper-limit",
+    "dose": 50,
+    "explicit_phase": "ongoing",
+    "expected_phase": "ongoing",
+    "actual_phase": "ongoing"
+  },
+  {
+    "rule_id": "ser-taper-limit",
+    "dose": 50,
+    "explicit_phase": "unknown",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "ser-taper-limit",
+    "dose": 50,
+    "explicit_phase": "not_started",
+    "expected_phase": "not_started",
+    "actual_phase": "not_started"
+  },
+  {
+    "rule_id": "ser-taper-limit",
+    "dose": 0,
+    "explicit_phase": "selected_mode",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "ser-taper-limit",
+    "dose": 0,
+    "explicit_phase": "ongoing",
+    "expected_phase": "ongoing",
+    "actual_phase": "ongoing"
+  },
+  {
+    "rule_id": "ser-taper-limit",
+    "dose": 0,
+    "explicit_phase": "unknown",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "ser-taper-limit",
+    "dose": 0,
+    "explicit_phase": "not_started",
+    "expected_phase": "not_started",
+    "actual_phase": "not_started"
+  },
+  {
+    "rule_id": "ser-taper-limit",
+    "dose": "unknown",
+    "explicit_phase": "selected_mode",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "ser-taper-limit",
+    "dose": "unknown",
+    "explicit_phase": "ongoing",
+    "expected_phase": "ongoing",
+    "actual_phase": "ongoing"
+  },
+  {
+    "rule_id": "ser-taper-limit",
+    "dose": "unknown",
+    "explicit_phase": "unknown",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "ser-taper-limit",
+    "dose": "unknown",
+    "explicit_phase": "not_started",
+    "expected_phase": "not_started",
+    "actual_phase": "not_started"
+  },
+  {
+    "rule_id": "ser-taper-limit",
+    "dose": {
+      "proposed": 50
+    },
+    "explicit_phase": "selected_mode",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "ser-taper-limit",
+    "dose": {
+      "proposed": 50
+    },
+    "explicit_phase": "ongoing",
+    "expected_phase": "ongoing",
+    "actual_phase": "ongoing"
+  },
+  {
+    "rule_id": "ser-taper-limit",
+    "dose": {
+      "proposed": 50
+    },
+    "explicit_phase": "unknown",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "ser-taper-limit",
+    "dose": {
+      "proposed": 50
+    },
+    "explicit_phase": "not_started",
+    "expected_phase": "not_started",
+    "actual_phase": "not_started"
+  },
+  {
+    "rule_id": "switch-esc-ser",
+    "dose": 50,
+    "explicit_phase": "selected_mode",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "switch-esc-ser",
+    "dose": 50,
+    "explicit_phase": "ongoing",
+    "expected_phase": "ongoing",
+    "actual_phase": "ongoing"
+  },
+  {
+    "rule_id": "switch-esc-ser",
+    "dose": 50,
+    "explicit_phase": "unknown",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "switch-esc-ser",
+    "dose": 50,
+    "explicit_phase": "not_started",
+    "expected_phase": "not_started",
+    "actual_phase": "not_started"
+  },
+  {
+    "rule_id": "switch-esc-ser",
+    "dose": 0,
+    "explicit_phase": "selected_mode",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "switch-esc-ser",
+    "dose": 0,
+    "explicit_phase": "ongoing",
+    "expected_phase": "ongoing",
+    "actual_phase": "ongoing"
+  },
+  {
+    "rule_id": "switch-esc-ser",
+    "dose": 0,
+    "explicit_phase": "unknown",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "switch-esc-ser",
+    "dose": 0,
+    "explicit_phase": "not_started",
+    "expected_phase": "not_started",
+    "actual_phase": "not_started"
+  },
+  {
+    "rule_id": "switch-esc-ser",
+    "dose": "unknown",
+    "explicit_phase": "selected_mode",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "switch-esc-ser",
+    "dose": "unknown",
+    "explicit_phase": "ongoing",
+    "expected_phase": "ongoing",
+    "actual_phase": "ongoing"
+  },
+  {
+    "rule_id": "switch-esc-ser",
+    "dose": "unknown",
+    "explicit_phase": "unknown",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "switch-esc-ser",
+    "dose": "unknown",
+    "explicit_phase": "not_started",
+    "expected_phase": "not_started",
+    "actual_phase": "not_started"
+  },
+  {
+    "rule_id": "switch-esc-ser",
+    "dose": {
+      "proposed": 50
+    },
+    "explicit_phase": "selected_mode",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "switch-esc-ser",
+    "dose": {
+      "proposed": 50
+    },
+    "explicit_phase": "ongoing",
+    "expected_phase": "ongoing",
+    "actual_phase": "ongoing"
+  },
+  {
+    "rule_id": "switch-esc-ser",
+    "dose": {
+      "proposed": 50
+    },
+    "explicit_phase": "unknown",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "switch-esc-ser",
+    "dose": {
+      "proposed": 50
+    },
+    "explicit_phase": "not_started",
+    "expected_phase": "not_started",
+    "actual_phase": "not_started"
+  },
+  {
+    "rule_id": "switch-ser-esc",
+    "dose": 50,
+    "explicit_phase": "selected_mode",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "switch-ser-esc",
+    "dose": 50,
+    "explicit_phase": "ongoing",
+    "expected_phase": "ongoing",
+    "actual_phase": "ongoing"
+  },
+  {
+    "rule_id": "switch-ser-esc",
+    "dose": 50,
+    "explicit_phase": "unknown",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "switch-ser-esc",
+    "dose": 50,
+    "explicit_phase": "not_started",
+    "expected_phase": "not_started",
+    "actual_phase": "not_started"
+  },
+  {
+    "rule_id": "switch-ser-esc",
+    "dose": 0,
+    "explicit_phase": "selected_mode",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "switch-ser-esc",
+    "dose": 0,
+    "explicit_phase": "ongoing",
+    "expected_phase": "ongoing",
+    "actual_phase": "ongoing"
+  },
+  {
+    "rule_id": "switch-ser-esc",
+    "dose": 0,
+    "explicit_phase": "unknown",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "switch-ser-esc",
+    "dose": 0,
+    "explicit_phase": "not_started",
+    "expected_phase": "not_started",
+    "actual_phase": "not_started"
+  },
+  {
+    "rule_id": "switch-ser-esc",
+    "dose": "unknown",
+    "explicit_phase": "selected_mode",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "switch-ser-esc",
+    "dose": "unknown",
+    "explicit_phase": "ongoing",
+    "expected_phase": "ongoing",
+    "actual_phase": "ongoing"
+  },
+  {
+    "rule_id": "switch-ser-esc",
+    "dose": "unknown",
+    "explicit_phase": "unknown",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "switch-ser-esc",
+    "dose": "unknown",
+    "explicit_phase": "not_started",
+    "expected_phase": "not_started",
+    "actual_phase": "not_started"
+  },
+  {
+    "rule_id": "switch-ser-esc",
+    "dose": {
+      "proposed": 50
+    },
+    "explicit_phase": "selected_mode",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "switch-ser-esc",
+    "dose": {
+      "proposed": 50
+    },
+    "explicit_phase": "ongoing",
+    "expected_phase": "ongoing",
+    "actual_phase": "ongoing"
+  },
+  {
+    "rule_id": "switch-ser-esc",
+    "dose": {
+      "proposed": 50
+    },
+    "explicit_phase": "unknown",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "switch-ser-esc",
+    "dose": {
+      "proposed": 50
+    },
+    "explicit_phase": "not_started",
+    "expected_phase": "not_started",
+    "actual_phase": "not_started"
+  },
+  {
+    "rule_id": "venla-xr-taper-limit",
+    "dose": 50,
+    "explicit_phase": "selected_mode",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "venla-xr-taper-limit",
+    "dose": 50,
+    "explicit_phase": "ongoing",
+    "expected_phase": "ongoing",
+    "actual_phase": "ongoing"
+  },
+  {
+    "rule_id": "venla-xr-taper-limit",
+    "dose": 50,
+    "explicit_phase": "unknown",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "venla-xr-taper-limit",
+    "dose": 50,
+    "explicit_phase": "not_started",
+    "expected_phase": "not_started",
+    "actual_phase": "not_started"
+  },
+  {
+    "rule_id": "venla-xr-taper-limit",
+    "dose": 0,
+    "explicit_phase": "selected_mode",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "venla-xr-taper-limit",
+    "dose": 0,
+    "explicit_phase": "ongoing",
+    "expected_phase": "ongoing",
+    "actual_phase": "ongoing"
+  },
+  {
+    "rule_id": "venla-xr-taper-limit",
+    "dose": 0,
+    "explicit_phase": "unknown",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "venla-xr-taper-limit",
+    "dose": 0,
+    "explicit_phase": "not_started",
+    "expected_phase": "not_started",
+    "actual_phase": "not_started"
+  },
+  {
+    "rule_id": "venla-xr-taper-limit",
+    "dose": "unknown",
+    "explicit_phase": "selected_mode",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "venla-xr-taper-limit",
+    "dose": "unknown",
+    "explicit_phase": "ongoing",
+    "expected_phase": "ongoing",
+    "actual_phase": "ongoing"
+  },
+  {
+    "rule_id": "venla-xr-taper-limit",
+    "dose": "unknown",
+    "explicit_phase": "unknown",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "venla-xr-taper-limit",
+    "dose": "unknown",
+    "explicit_phase": "not_started",
+    "expected_phase": "not_started",
+    "actual_phase": "not_started"
+  },
+  {
+    "rule_id": "venla-xr-taper-limit",
+    "dose": {
+      "proposed": 50
+    },
+    "explicit_phase": "selected_mode",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "venla-xr-taper-limit",
+    "dose": {
+      "proposed": 50
+    },
+    "explicit_phase": "ongoing",
+    "expected_phase": "ongoing",
+    "actual_phase": "ongoing"
+  },
+  {
+    "rule_id": "venla-xr-taper-limit",
+    "dose": {
+      "proposed": 50
+    },
+    "explicit_phase": "unknown",
+    "expected_phase": "unknown",
+    "actual_phase": "unknown"
+  },
+  {
+    "rule_id": "venla-xr-taper-limit",
+    "dose": {
+      "proposed": 50
+    },
+    "explicit_phase": "not_started",
+    "expected_phase": "not_started",
+    "actual_phase": "not_started"
+  }
+]

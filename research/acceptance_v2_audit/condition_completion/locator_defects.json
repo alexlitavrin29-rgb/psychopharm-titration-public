@@ -1,0 +1,309 @@
+[
+  {
+    "occurrence_id": "C00410",
+    "rule_id": "dulox-depression-start",
+    "path": "rules/dulox-depression-start.yaml/applicability/pregnancy",
+    "incorrect_claim": "Назначать только если потенциальная польза для матери значительно превышает риск для плода; §4.6 с.12. Автоматической дозовой поправки нет.",
+    "correct_physical_pages": [
+      10
+    ],
+    "source_sha256": {
+      "RU-DULOX": "0551a7306ca4a56b552336bb63fa34905cf4e312702ba811a792221892a42ca1",
+      "RU-DEP": "2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd"
+    }
+  },
+  {
+    "occurrence_id": "C00411",
+    "rule_id": "dulox-depression-start",
+    "path": "rules/dulox-depression-start.yaml/applicability/lactation",
+    "incorrect_claim": "Не рекомендуется кормление грудью во время терапии; §4.6 с.13. Отдельное решение врача, не коэффициент.",
+    "correct_physical_pages": [
+      10
+    ],
+    "source_sha256": {
+      "RU-DULOX": "0551a7306ca4a56b552336bb63fa34905cf4e312702ba811a792221892a42ca1",
+      "RU-DEP": "2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd"
+    }
+  },
+  {
+    "occurrence_id": "C00416",
+    "rule_id": "dulox-depression-start",
+    "path": "rules/dulox-depression-start.yaml/applicability/exclusions/0",
+    "incorrect_claim": "Сахароза: редкие наследственные непереносимость фруктозы, глюкозо-галактозная мальабсорбция, дефицит сахаразы-изомальтазы; §4.4 с.9.",
+    "correct_physical_pages": [
+      7
+    ],
+    "source_sha256": {
+      "RU-DULOX": "0551a7306ca4a56b552336bb63fa34905cf4e312702ba811a792221892a42ca1",
+      "RU-DEP": "2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd"
+    }
+  },
+  {
+    "occurrence_id": "C00421",
+    "rule_id": "dulox-depression-start",
+    "path": "rules/dulox-depression-start.yaml/logic/actions/1",
+    "incorrect_claim": "Указанные наследственные состояния исключают приём Дулоксенты. При акатизии повышение может нанести вред: не выдавать автоматическое повышение (§4.4 с.9).",
+    "correct_physical_pages": [
+      7
+    ],
+    "source_sha256": {
+      "RU-DULOX": "0551a7306ca4a56b552336bb63fa34905cf4e312702ba811a792221892a42ca1",
+      "RU-DEP": "2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd"
+    }
+  },
+  {
+    "occurrence_id": "C00522",
+    "rule_id": "dulox-gad-adjust",
+    "path": "rules/dulox-gad-adjust.yaml/applicability/pregnancy",
+    "incorrect_claim": "Назначать только если потенциальная польза для матери значительно превышает риск для плода; §4.6 с.12. Автоматической дозовой поправки нет.",
+    "correct_physical_pages": [
+      10
+    ],
+    "source_sha256": {
+      "RU-DULOX": "0551a7306ca4a56b552336bb63fa34905cf4e312702ba811a792221892a42ca1",
+      "RU-GAD": "c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a"
+    }
+  },
+  {
+    "occurrence_id": "C00523",
+    "rule_id": "dulox-gad-adjust",
+    "path": "rules/dulox-gad-adjust.yaml/applicability/lactation",
+    "incorrect_claim": "Не рекомендуется кормление грудью во время терапии; §4.6 с.13. Отдельное решение врача, не коэффициент.",
+    "correct_physical_pages": [
+      10
+    ],
+    "source_sha256": {
+      "RU-DULOX": "0551a7306ca4a56b552336bb63fa34905cf4e312702ba811a792221892a42ca1",
+      "RU-GAD": "c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a"
+    }
+  },
+  {
+    "occurrence_id": "C00528",
+    "rule_id": "dulox-gad-adjust",
+    "path": "rules/dulox-gad-adjust.yaml/applicability/exclusions/0",
+    "incorrect_claim": "Сахароза: редкие наследственные непереносимость фруктозы, глюкозо-галактозная мальабсорбция, дефицит сахаразы-изомальтазы; §4.4 с.9.",
+    "correct_physical_pages": [
+      7
+    ],
+    "source_sha256": {
+      "RU-DULOX": "0551a7306ca4a56b552336bb63fa34905cf4e312702ba811a792221892a42ca1",
+      "RU-GAD": "c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a"
+    }
+  },
+  {
+    "occurrence_id": "C00534",
+    "rule_id": "dulox-gad-adjust",
+    "path": "rules/dulox-gad-adjust.yaml/logic/actions/2",
+    "incorrect_claim": "Указанные наследственные состояния исключают приём Дулоксенты. При акатизии повышение может нанести вред: не выдавать автоматическое повышение (§4.4 с.9).",
+    "correct_physical_pages": [
+      7
+    ],
+    "source_sha256": {
+      "RU-DULOX": "0551a7306ca4a56b552336bb63fa34905cf4e312702ba811a792221892a42ca1",
+      "RU-GAD": "c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a"
+    }
+  },
+  {
+    "occurrence_id": "C00636",
+    "rule_id": "dulox-gad-start",
+    "path": "rules/dulox-gad-start.yaml/applicability/pregnancy",
+    "incorrect_claim": "Назначать только если потенциальная польза для матери значительно превышает риск для плода; §4.6 с.12. Автоматической дозовой поправки нет.",
+    "correct_physical_pages": [
+      10
+    ],
+    "source_sha256": {
+      "RU-DULOX": "0551a7306ca4a56b552336bb63fa34905cf4e312702ba811a792221892a42ca1",
+      "RU-GAD": "c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a"
+    }
+  },
+  {
+    "occurrence_id": "C00637",
+    "rule_id": "dulox-gad-start",
+    "path": "rules/dulox-gad-start.yaml/applicability/lactation",
+    "incorrect_claim": "Не рекомендуется кормление грудью во время терапии; §4.6 с.13. Отдельное решение врача, не коэффициент.",
+    "correct_physical_pages": [
+      10
+    ],
+    "source_sha256": {
+      "RU-DULOX": "0551a7306ca4a56b552336bb63fa34905cf4e312702ba811a792221892a42ca1",
+      "RU-GAD": "c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a"
+    }
+  },
+  {
+    "occurrence_id": "C00642",
+    "rule_id": "dulox-gad-start",
+    "path": "rules/dulox-gad-start.yaml/applicability/exclusions/0",
+    "incorrect_claim": "Сахароза: редкие наследственные непереносимость фруктозы, глюкозо-галактозная мальабсорбция, дефицит сахаразы-изомальтазы; §4.4 с.9.",
+    "correct_physical_pages": [
+      7
+    ],
+    "source_sha256": {
+      "RU-DULOX": "0551a7306ca4a56b552336bb63fa34905cf4e312702ba811a792221892a42ca1",
+      "RU-GAD": "c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a"
+    }
+  },
+  {
+    "occurrence_id": "C00650",
+    "rule_id": "dulox-gad-start",
+    "path": "rules/dulox-gad-start.yaml/logic/actions/4",
+    "incorrect_claim": "Указанные наследственные состояния исключают приём Дулоксенты. При акатизии повышение может нанести вред: не выдавать автоматическое повышение (§4.4 с.9).",
+    "correct_physical_pages": [
+      7
+    ],
+    "source_sha256": {
+      "RU-DULOX": "0551a7306ca4a56b552336bb63fa34905cf4e312702ba811a792221892a42ca1",
+      "RU-GAD": "c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a"
+    }
+  },
+  {
+    "occurrence_id": "C00733",
+    "rule_id": "dulox-taper-limit",
+    "path": "rules/dulox-taper-limit.yaml/applicability/pregnancy",
+    "incorrect_claim": "Назначать только если потенциальная польза для матери значительно превышает риск для плода; §4.6 с.12. Автоматической дозовой поправки нет.",
+    "correct_physical_pages": [
+      10
+    ],
+    "source_sha256": {
+      "RU-DULOX": "0551a7306ca4a56b552336bb63fa34905cf4e312702ba811a792221892a42ca1",
+      "RU-GAD": "c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a"
+    }
+  },
+  {
+    "occurrence_id": "C00734",
+    "rule_id": "dulox-taper-limit",
+    "path": "rules/dulox-taper-limit.yaml/applicability/lactation",
+    "incorrect_claim": "Не рекомендуется кормление грудью во время терапии; §4.6 с.13. Отдельное решение врача, не коэффициент.",
+    "correct_physical_pages": [
+      10
+    ],
+    "source_sha256": {
+      "RU-DULOX": "0551a7306ca4a56b552336bb63fa34905cf4e312702ba811a792221892a42ca1",
+      "RU-GAD": "c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a"
+    }
+  },
+  {
+    "occurrence_id": "C01938",
+    "rule_id": "parox-panic-kr",
+    "path": "rules/parox-panic-kr.yaml/applicability/renal_constraints/0",
+    "incorrect_claim": "При CLcr <30 мл/мин нижний край диапазона (§4.2 с.17); не делать автоматический коэффициент.",
+    "correct_physical_pages": [
+      4
+    ],
+    "source_sha256": {
+      "RU-PANIC": "a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d",
+      "RU-PAROX": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069"
+    }
+  },
+  {
+    "occurrence_id": "C01939",
+    "rule_id": "parox-panic-kr",
+    "path": "rules/parox-panic-kr.yaml/applicability/hepatic_constraints/0",
+    "incorrect_claim": "При нарушении функции печени нижний край терапевтического диапазона; точная самостоятельная новая поправка не задана (§4.2 с.17).",
+    "correct_physical_pages": [
+      4
+    ],
+    "source_sha256": {
+      "RU-PANIC": "a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d",
+      "RU-PAROX": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069"
+    }
+  },
+  {
+    "occurrence_id": "C01940",
+    "rule_id": "parox-panic-kr",
+    "path": "rules/parox-panic-kr.yaml/applicability/interacting_drugs/0",
+    "incorrect_claim": "ИМАО, тиоридазин, пимозид — §4.3 с.17–18.",
+    "correct_physical_pages": [
+      4,
+      5
+    ],
+    "source_sha256": {
+      "RU-PANIC": "a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d",
+      "RU-PAROX": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069"
+    }
+  },
+  {
+    "occurrence_id": "C02092",
+    "rule_id": "phen-taper-limit",
+    "path": "rules/phen-taper-limit.yaml/applicability/pregnancy",
+    "incorrect_claim": "Применение при беременности противопоказано; инструкция с.2–3. Это не разрешение резкой отмены уже принимаемого препарата.",
+    "correct_physical_pages": [
+      3,
+      4,
+      5
+    ],
+    "source_sha256": {
+      "RU-PHEN": "850486408d225fc603f8f053765491c1e9fd688c5c3d765cdf80a34dd2b3cf1a",
+      "RU-PANIC": "a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d"
+    }
+  },
+  {
+    "occurrence_id": "C02093",
+    "rule_id": "phen-taper-limit",
+    "path": "rules/phen-taper-limit.yaml/applicability/lactation",
+    "incorrect_claim": "Период грудного вскармливания — противопоказание; с.2–3. Прекращение/снижение требует отдельного решения врача.",
+    "correct_physical_pages": [
+      3,
+      4,
+      5
+    ],
+    "source_sha256": {
+      "RU-PHEN": "850486408d225fc603f8f053765491c1e9fd688c5c3d765cdf80a34dd2b3cf1a",
+      "RU-PANIC": "a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d"
+    }
+  },
+  {
+    "occurrence_id": "C02096",
+    "rule_id": "phen-taper-limit",
+    "path": "rules/phen-taper-limit.yaml/applicability/comorbidity_constraints/0",
+    "incorrect_claim": "Противопоказания включают миастению, острую дыхательную недостаточность, тяжёлую ХОБЛ, тяжёлую депрессию и острые отравления перечисленными веществами; с.2. Это не автоматический календарь отмены.",
+    "correct_physical_pages": [
+      3,
+      4,
+      5
+    ],
+    "source_sha256": {
+      "RU-PHEN": "850486408d225fc603f8f053765491c1e9fd688c5c3d765cdf80a34dd2b3cf1a",
+      "RU-PANIC": "a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d"
+    }
+  },
+  {
+    "record_id": "N-ser-adult-adjust-adult_minimum",
+    "rule_id": "ser-adult-adjust",
+    "path": "clinical_parameters/adult_minimum/source_locator",
+    "incorrect_claim": "§4.1, PDF с.1",
+    "correct_physical_pages": [
+      5
+    ],
+    "source_sha256": "3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba"
+  },
+  {
+    "record_id": "N-ser-panic-start-adult_minimum",
+    "rule_id": "ser-panic-start",
+    "path": "clinical_parameters/adult_minimum/source_locator",
+    "incorrect_claim": "§4.1, PDF с.1",
+    "correct_physical_pages": [
+      5
+    ],
+    "source_sha256": "3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba"
+  },
+  {
+    "record_id": "N-ser-social-start-adult_minimum",
+    "rule_id": "ser-social-start",
+    "path": "clinical_parameters/adult_minimum/source_locator",
+    "incorrect_claim": "§4.1, PDF с.1",
+    "correct_physical_pages": [
+      5
+    ],
+    "source_sha256": "3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba"
+  },
+  {
+    "record_id": "N-ser-taper-limit-adult_minimum",
+    "rule_id": "ser-taper-limit",
+    "path": "clinical_parameters/adult_minimum/source_locator",
+    "incorrect_claim": "§4.1, PDF с.1",
+    "correct_physical_pages": [
+      5
+    ],
+    "source_sha256": "3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba"
+  }
+]

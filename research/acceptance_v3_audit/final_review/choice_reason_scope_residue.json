@@ -1,0 +1,7271 @@
+{
+  "rows": [
+    {
+      "case_id": "ago-depression-start--caution-RU-AGO-pregnancy",
+      "rule_id": "ago-depression-start",
+      "known_positive_reason_fields": [
+        "pregnancy"
+      ],
+      "source_bindings": [
+        {
+          "input": "pregnancy",
+          "source_refs": [
+            "RU-AGO"
+          ],
+          "source_locator": "§4.6 с.6"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "lactation",
+        "medicines",
+        "allergy",
+        "ALT_ratio",
+        "AST_ratio",
+        "elderly_population",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "overweight_obesity",
+        "fatty_liver",
+        "diabetes",
+        "alcohol_abuse"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "ago-depression-start--caution-RU-AGO-lactation",
+      "rule_id": "ago-depression-start",
+      "known_positive_reason_fields": [
+        "lactation"
+      ],
+      "source_bindings": [
+        {
+          "input": "lactation",
+          "source_refs": [
+            "RU-AGO"
+          ],
+          "source_locator": "§4.6 с.6"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "medicines",
+        "allergy",
+        "ALT_ratio",
+        "AST_ratio",
+        "elderly_population",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "overweight_obesity",
+        "fatty_liver",
+        "diabetes",
+        "alcohol_abuse"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "ago-depression-start--caution-RU-AGO-mania",
+      "rule_id": "ago-depression-start",
+      "known_positive_reason_fields": [
+        "mania"
+      ],
+      "source_bindings": [
+        {
+          "input": "mania",
+          "source_refs": [
+            "RU-AGO"
+          ],
+          "source_locator": "§4.4 с.4"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "ALT_ratio",
+        "AST_ratio",
+        "elderly_population",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "overweight_obesity",
+        "fatty_liver",
+        "diabetes",
+        "alcohol_abuse"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "ago-depression-start--caution-RU-AGO-suicide_risk",
+      "rule_id": "ago-depression-start",
+      "known_positive_reason_fields": [
+        "suicide_risk"
+      ],
+      "source_bindings": [
+        {
+          "input": "suicide_risk",
+          "source_refs": [
+            "RU-AGO"
+          ],
+          "source_locator": "§4.4 с.4–5"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "ALT_ratio",
+        "AST_ratio",
+        "elderly_population",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "overweight_obesity",
+        "fatty_liver",
+        "diabetes",
+        "alcohol_abuse"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "ago-depression-start--caution-RU-AGO-overweight_obesity",
+      "rule_id": "ago-depression-start",
+      "known_positive_reason_fields": [
+        "overweight_obesity"
+      ],
+      "source_bindings": [
+        {
+          "input": "overweight_obesity",
+          "source_refs": [
+            "RU-AGO"
+          ],
+          "source_locator": "§4.4 с.3"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "ALT_ratio",
+        "AST_ratio",
+        "elderly_population",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "fatty_liver",
+        "diabetes",
+        "alcohol_abuse"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "ago-depression-start--caution-RU-AGO-fatty_liver",
+      "rule_id": "ago-depression-start",
+      "known_positive_reason_fields": [
+        "fatty_liver"
+      ],
+      "source_bindings": [
+        {
+          "input": "fatty_liver",
+          "source_refs": [
+            "RU-AGO"
+          ],
+          "source_locator": "§4.4 с.3"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "ALT_ratio",
+        "AST_ratio",
+        "elderly_population",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "overweight_obesity",
+        "diabetes",
+        "alcohol_abuse"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "ago-depression-start--caution-RU-AGO-diabetes",
+      "rule_id": "ago-depression-start",
+      "known_positive_reason_fields": [
+        "diabetes"
+      ],
+      "source_bindings": [
+        {
+          "input": "diabetes",
+          "source_refs": [
+            "RU-AGO"
+          ],
+          "source_locator": "§4.4 с.3"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "ALT_ratio",
+        "AST_ratio",
+        "elderly_population",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "overweight_obesity",
+        "fatty_liver",
+        "alcohol_abuse"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "ago-depression-start--caution-RU-AGO-alcohol_abuse",
+      "rule_id": "ago-depression-start",
+      "known_positive_reason_fields": [
+        "alcohol_abuse"
+      ],
+      "source_bindings": [
+        {
+          "input": "alcohol_abuse",
+          "source_refs": [
+            "RU-AGO"
+          ],
+          "source_locator": "§4.4 с.3"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "ALT_ratio",
+        "AST_ratio",
+        "elderly_population",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "overweight_obesity",
+        "fatty_liver",
+        "diabetes"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "ago-depression-start--caution-RU-AGO-alcohol_use",
+      "rule_id": "ago-depression-start",
+      "known_positive_reason_fields": [
+        "alcohol_use"
+      ],
+      "source_bindings": [
+        {
+          "input": "alcohol_use",
+          "source_refs": [
+            "RU-AGO"
+          ],
+          "source_locator": "§4.5 с.6"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "ALT_ratio",
+        "AST_ratio",
+        "elderly_population",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "overweight_obesity",
+        "fatty_liver",
+        "diabetes",
+        "alcohol_abuse"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "ago-depression-start--caution-RU-AGO-ect",
+      "rule_id": "ago-depression-start",
+      "known_positive_reason_fields": [
+        "ect"
+      ],
+      "source_bindings": [
+        {
+          "input": "ect",
+          "source_refs": [
+            "RU-AGO"
+          ],
+          "source_locator": "§4.5 с.6"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "ALT_ratio",
+        "AST_ratio",
+        "elderly_population",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "overweight_obesity",
+        "fatty_liver",
+        "diabetes",
+        "alcohol_abuse"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "ago-gad-start--caution-RU-AGO-pregnancy",
+      "rule_id": "ago-gad-start",
+      "known_positive_reason_fields": [
+        "pregnancy"
+      ],
+      "source_bindings": [
+        {
+          "input": "pregnancy",
+          "source_refs": [
+            "RU-AGO"
+          ],
+          "source_locator": "§4.6 с.6"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "lactation",
+        "medicines",
+        "allergy",
+        "ALT_ratio",
+        "AST_ratio",
+        "elderly_population",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "overweight_obesity",
+        "fatty_liver",
+        "diabetes",
+        "alcohol_abuse"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "ago-gad-start--caution-RU-AGO-lactation",
+      "rule_id": "ago-gad-start",
+      "known_positive_reason_fields": [
+        "lactation"
+      ],
+      "source_bindings": [
+        {
+          "input": "lactation",
+          "source_refs": [
+            "RU-AGO"
+          ],
+          "source_locator": "§4.6 с.6"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "medicines",
+        "allergy",
+        "ALT_ratio",
+        "AST_ratio",
+        "elderly_population",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "overweight_obesity",
+        "fatty_liver",
+        "diabetes",
+        "alcohol_abuse"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "ago-gad-start--caution-RU-AGO-mania",
+      "rule_id": "ago-gad-start",
+      "known_positive_reason_fields": [
+        "mania"
+      ],
+      "source_bindings": [
+        {
+          "input": "mania",
+          "source_refs": [
+            "RU-AGO"
+          ],
+          "source_locator": "§4.4 с.4"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "ALT_ratio",
+        "AST_ratio",
+        "elderly_population",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "overweight_obesity",
+        "fatty_liver",
+        "diabetes",
+        "alcohol_abuse"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "ago-gad-start--caution-RU-AGO-suicide_risk",
+      "rule_id": "ago-gad-start",
+      "known_positive_reason_fields": [
+        "suicide_risk"
+      ],
+      "source_bindings": [
+        {
+          "input": "suicide_risk",
+          "source_refs": [
+            "RU-AGO"
+          ],
+          "source_locator": "§4.4 с.4–5"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "ALT_ratio",
+        "AST_ratio",
+        "elderly_population",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "overweight_obesity",
+        "fatty_liver",
+        "diabetes",
+        "alcohol_abuse"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "ago-gad-start--caution-RU-AGO-overweight_obesity",
+      "rule_id": "ago-gad-start",
+      "known_positive_reason_fields": [
+        "overweight_obesity"
+      ],
+      "source_bindings": [
+        {
+          "input": "overweight_obesity",
+          "source_refs": [
+            "RU-AGO"
+          ],
+          "source_locator": "§4.4 с.3"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "ALT_ratio",
+        "AST_ratio",
+        "elderly_population",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "fatty_liver",
+        "diabetes",
+        "alcohol_abuse"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "ago-gad-start--caution-RU-AGO-fatty_liver",
+      "rule_id": "ago-gad-start",
+      "known_positive_reason_fields": [
+        "fatty_liver"
+      ],
+      "source_bindings": [
+        {
+          "input": "fatty_liver",
+          "source_refs": [
+            "RU-AGO"
+          ],
+          "source_locator": "§4.4 с.3"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "ALT_ratio",
+        "AST_ratio",
+        "elderly_population",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "overweight_obesity",
+        "diabetes",
+        "alcohol_abuse"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "ago-gad-start--caution-RU-AGO-diabetes",
+      "rule_id": "ago-gad-start",
+      "known_positive_reason_fields": [
+        "diabetes"
+      ],
+      "source_bindings": [
+        {
+          "input": "diabetes",
+          "source_refs": [
+            "RU-AGO"
+          ],
+          "source_locator": "§4.4 с.3"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "ALT_ratio",
+        "AST_ratio",
+        "elderly_population",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "overweight_obesity",
+        "fatty_liver",
+        "alcohol_abuse"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "ago-gad-start--caution-RU-AGO-alcohol_abuse",
+      "rule_id": "ago-gad-start",
+      "known_positive_reason_fields": [
+        "alcohol_abuse"
+      ],
+      "source_bindings": [
+        {
+          "input": "alcohol_abuse",
+          "source_refs": [
+            "RU-AGO"
+          ],
+          "source_locator": "§4.4 с.3"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "ALT_ratio",
+        "AST_ratio",
+        "elderly_population",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "overweight_obesity",
+        "fatty_liver",
+        "diabetes"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "ago-gad-start--caution-RU-AGO-alcohol_use",
+      "rule_id": "ago-gad-start",
+      "known_positive_reason_fields": [
+        "alcohol_use"
+      ],
+      "source_bindings": [
+        {
+          "input": "alcohol_use",
+          "source_refs": [
+            "RU-AGO"
+          ],
+          "source_locator": "§4.5 с.6"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "ALT_ratio",
+        "AST_ratio",
+        "elderly_population",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "overweight_obesity",
+        "fatty_liver",
+        "diabetes",
+        "alcohol_abuse"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "ago-gad-start--caution-RU-AGO-ect",
+      "rule_id": "ago-gad-start",
+      "known_positive_reason_fields": [
+        "ect"
+      ],
+      "source_bindings": [
+        {
+          "input": "ect",
+          "source_refs": [
+            "RU-AGO"
+          ],
+          "source_locator": "§4.5 с.6"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "ALT_ratio",
+        "AST_ratio",
+        "elderly_population",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "overweight_obesity",
+        "fatty_liver",
+        "diabetes",
+        "alcohol_abuse"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "dulox-depression-start--caution-RU-DULOX-pregnancy",
+      "rule_id": "dulox-depression-start",
+      "known_positive_reason_fields": [
+        "pregnancy"
+      ],
+      "source_bindings": [
+        {
+          "input": "pregnancy",
+          "source_refs": [
+            "RU-DULOX"
+          ],
+          "source_locator": "§4.6 с.9–10"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "uncontrolled_hypertension",
+        "closed_angle_glaucoma",
+        "fructose_intolerance",
+        "glucose_galactose_malabsorption",
+        "sucrase_isomaltase_deficiency"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "dulox-depression-start--caution-RU-DULOX-lactation",
+      "rule_id": "dulox-depression-start",
+      "known_positive_reason_fields": [
+        "lactation"
+      ],
+      "source_bindings": [
+        {
+          "input": "lactation",
+          "source_refs": [
+            "RU-DULOX"
+          ],
+          "source_locator": "§4.6 с.10"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "uncontrolled_hypertension",
+        "closed_angle_glaucoma",
+        "fructose_intolerance",
+        "glucose_galactose_malabsorption",
+        "sucrase_isomaltase_deficiency"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "dulox-depression-start--caution-RU-DULOX-akathisia",
+      "rule_id": "dulox-depression-start",
+      "known_positive_reason_fields": [
+        "akathisia"
+      ],
+      "source_bindings": [
+        {
+          "input": "akathisia",
+          "source_refs": [
+            "RU-DULOX"
+          ],
+          "source_locator": "§4.4 с.7"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "uncontrolled_hypertension",
+        "closed_angle_glaucoma",
+        "fructose_intolerance",
+        "glucose_galactose_malabsorption",
+        "sucrase_isomaltase_deficiency"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "dulox-depression-start--caution-RU-DULOX-mania",
+      "rule_id": "dulox-depression-start",
+      "known_positive_reason_fields": [
+        "mania"
+      ],
+      "source_bindings": [
+        {
+          "input": "mania",
+          "source_refs": [
+            "RU-DULOX"
+          ],
+          "source_locator": "§4.4 с.4"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "uncontrolled_hypertension",
+        "closed_angle_glaucoma",
+        "fructose_intolerance",
+        "glucose_galactose_malabsorption",
+        "sucrase_isomaltase_deficiency"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "dulox-depression-start--caution-RU-DULOX-suicide_risk",
+      "rule_id": "dulox-depression-start",
+      "known_positive_reason_fields": [
+        "suicide_risk"
+      ],
+      "source_bindings": [
+        {
+          "input": "suicide_risk",
+          "source_refs": [
+            "RU-DULOX"
+          ],
+          "source_locator": "§4.4 с.5–6"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "uncontrolled_hypertension",
+        "closed_angle_glaucoma",
+        "fructose_intolerance",
+        "glucose_galactose_malabsorption",
+        "sucrase_isomaltase_deficiency"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "dulox-depression-start--caution-RU-DULOX-bleeding_risk",
+      "rule_id": "dulox-depression-start",
+      "known_positive_reason_fields": [
+        "bleeding_risk"
+      ],
+      "source_bindings": [
+        {
+          "input": "bleeding_risk",
+          "source_refs": [
+            "RU-DULOX"
+          ],
+          "source_locator": "§4.4 с.6"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "uncontrolled_hypertension",
+        "closed_angle_glaucoma",
+        "fructose_intolerance",
+        "glucose_galactose_malabsorption",
+        "sucrase_isomaltase_deficiency"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "dulox-depression-start--caution-RU-DULOX-hyponatremia_risk",
+      "rule_id": "dulox-depression-start",
+      "known_positive_reason_fields": [
+        "hyponatremia_risk"
+      ],
+      "source_bindings": [
+        {
+          "input": "hyponatremia_risk",
+          "source_refs": [
+            "RU-DULOX"
+          ],
+          "source_locator": "§4.4 с.6"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "uncontrolled_hypertension",
+        "closed_angle_glaucoma",
+        "fructose_intolerance",
+        "glucose_galactose_malabsorption",
+        "sucrase_isomaltase_deficiency"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "dulox-depression-start--caution-RU-DULOX-diabetes",
+      "rule_id": "dulox-depression-start",
+      "known_positive_reason_fields": [
+        "diabetes"
+      ],
+      "source_bindings": [
+        {
+          "input": "diabetes",
+          "source_refs": [
+            "RU-DULOX"
+          ],
+          "source_locator": "§4.8 с.11, гипергликемия; с.14, данные исследований диабетической нейропатии"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "uncontrolled_hypertension",
+        "closed_angle_glaucoma",
+        "fructose_intolerance",
+        "glucose_galactose_malabsorption",
+        "sucrase_isomaltase_deficiency"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "dulox-gad-adjust--caution-RU-DULOX-pregnancy",
+      "rule_id": "dulox-gad-adjust",
+      "known_positive_reason_fields": [
+        "pregnancy"
+      ],
+      "source_bindings": [
+        {
+          "input": "pregnancy",
+          "source_refs": [
+            "RU-DULOX"
+          ],
+          "source_locator": "§4.6 с.9–10"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "comorbid_depression",
+        "elderly_population",
+        "uncontrolled_hypertension",
+        "closed_angle_glaucoma",
+        "current_dose",
+        "response",
+        "tolerability",
+        "fructose_intolerance",
+        "glucose_galactose_malabsorption",
+        "sucrase_isomaltase_deficiency",
+        "akathisia"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "dulox-gad-adjust--caution-RU-DULOX-lactation",
+      "rule_id": "dulox-gad-adjust",
+      "known_positive_reason_fields": [
+        "lactation"
+      ],
+      "source_bindings": [
+        {
+          "input": "lactation",
+          "source_refs": [
+            "RU-DULOX"
+          ],
+          "source_locator": "§4.6 с.10"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "comorbid_depression",
+        "elderly_population",
+        "uncontrolled_hypertension",
+        "closed_angle_glaucoma",
+        "current_dose",
+        "response",
+        "tolerability",
+        "fructose_intolerance",
+        "glucose_galactose_malabsorption",
+        "sucrase_isomaltase_deficiency",
+        "akathisia"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "dulox-gad-adjust--caution-RU-DULOX-akathisia",
+      "rule_id": "dulox-gad-adjust",
+      "known_positive_reason_fields": [
+        "akathisia"
+      ],
+      "source_bindings": [
+        {
+          "input": "akathisia",
+          "source_refs": [
+            "RU-DULOX"
+          ],
+          "source_locator": "§4.4 с.7"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "comorbid_depression",
+        "elderly_population",
+        "uncontrolled_hypertension",
+        "closed_angle_glaucoma",
+        "current_dose",
+        "response",
+        "tolerability",
+        "fructose_intolerance",
+        "glucose_galactose_malabsorption",
+        "sucrase_isomaltase_deficiency"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "dulox-gad-adjust--caution-RU-DULOX-mania",
+      "rule_id": "dulox-gad-adjust",
+      "known_positive_reason_fields": [
+        "mania"
+      ],
+      "source_bindings": [
+        {
+          "input": "mania",
+          "source_refs": [
+            "RU-DULOX"
+          ],
+          "source_locator": "§4.4 с.4"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "comorbid_depression",
+        "elderly_population",
+        "uncontrolled_hypertension",
+        "closed_angle_glaucoma",
+        "current_dose",
+        "response",
+        "tolerability",
+        "fructose_intolerance",
+        "glucose_galactose_malabsorption",
+        "sucrase_isomaltase_deficiency",
+        "akathisia"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "dulox-gad-adjust--caution-RU-DULOX-suicide_risk",
+      "rule_id": "dulox-gad-adjust",
+      "known_positive_reason_fields": [
+        "suicide_risk"
+      ],
+      "source_bindings": [
+        {
+          "input": "suicide_risk",
+          "source_refs": [
+            "RU-DULOX"
+          ],
+          "source_locator": "§4.4 с.5–6"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "comorbid_depression",
+        "elderly_population",
+        "uncontrolled_hypertension",
+        "closed_angle_glaucoma",
+        "current_dose",
+        "response",
+        "tolerability",
+        "fructose_intolerance",
+        "glucose_galactose_malabsorption",
+        "sucrase_isomaltase_deficiency",
+        "akathisia"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "dulox-gad-adjust--caution-RU-DULOX-bleeding_risk",
+      "rule_id": "dulox-gad-adjust",
+      "known_positive_reason_fields": [
+        "bleeding_risk"
+      ],
+      "source_bindings": [
+        {
+          "input": "bleeding_risk",
+          "source_refs": [
+            "RU-DULOX"
+          ],
+          "source_locator": "§4.4 с.6"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "comorbid_depression",
+        "elderly_population",
+        "uncontrolled_hypertension",
+        "closed_angle_glaucoma",
+        "current_dose",
+        "response",
+        "tolerability",
+        "fructose_intolerance",
+        "glucose_galactose_malabsorption",
+        "sucrase_isomaltase_deficiency",
+        "akathisia"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "dulox-gad-adjust--caution-RU-DULOX-hyponatremia_risk",
+      "rule_id": "dulox-gad-adjust",
+      "known_positive_reason_fields": [
+        "hyponatremia_risk"
+      ],
+      "source_bindings": [
+        {
+          "input": "hyponatremia_risk",
+          "source_refs": [
+            "RU-DULOX"
+          ],
+          "source_locator": "§4.4 с.6"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "comorbid_depression",
+        "elderly_population",
+        "uncontrolled_hypertension",
+        "closed_angle_glaucoma",
+        "current_dose",
+        "response",
+        "tolerability",
+        "fructose_intolerance",
+        "glucose_galactose_malabsorption",
+        "sucrase_isomaltase_deficiency",
+        "akathisia"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "dulox-gad-adjust--caution-RU-DULOX-diabetes",
+      "rule_id": "dulox-gad-adjust",
+      "known_positive_reason_fields": [
+        "diabetes"
+      ],
+      "source_bindings": [
+        {
+          "input": "diabetes",
+          "source_refs": [
+            "RU-DULOX"
+          ],
+          "source_locator": "§4.8 с.11, гипергликемия; с.14, данные исследований диабетической нейропатии"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "comorbid_depression",
+        "elderly_population",
+        "uncontrolled_hypertension",
+        "closed_angle_glaucoma",
+        "current_dose",
+        "response",
+        "tolerability",
+        "fructose_intolerance",
+        "glucose_galactose_malabsorption",
+        "sucrase_isomaltase_deficiency",
+        "akathisia"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "dulox-gad-start--caution-RU-DULOX-pregnancy",
+      "rule_id": "dulox-gad-start",
+      "known_positive_reason_fields": [
+        "pregnancy"
+      ],
+      "source_bindings": [
+        {
+          "input": "pregnancy",
+          "source_refs": [
+            "RU-DULOX"
+          ],
+          "source_locator": "§4.6 с.9–10"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "comorbid_depression",
+        "elderly_population",
+        "uncontrolled_hypertension",
+        "closed_angle_glaucoma",
+        "fructose_intolerance",
+        "glucose_galactose_malabsorption",
+        "sucrase_isomaltase_deficiency"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "dulox-gad-start--caution-RU-DULOX-lactation",
+      "rule_id": "dulox-gad-start",
+      "known_positive_reason_fields": [
+        "lactation"
+      ],
+      "source_bindings": [
+        {
+          "input": "lactation",
+          "source_refs": [
+            "RU-DULOX"
+          ],
+          "source_locator": "§4.6 с.10"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "comorbid_depression",
+        "elderly_population",
+        "uncontrolled_hypertension",
+        "closed_angle_glaucoma",
+        "fructose_intolerance",
+        "glucose_galactose_malabsorption",
+        "sucrase_isomaltase_deficiency"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "dulox-gad-start--caution-RU-DULOX-akathisia",
+      "rule_id": "dulox-gad-start",
+      "known_positive_reason_fields": [
+        "akathisia"
+      ],
+      "source_bindings": [
+        {
+          "input": "akathisia",
+          "source_refs": [
+            "RU-DULOX"
+          ],
+          "source_locator": "§4.4 с.7"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "comorbid_depression",
+        "elderly_population",
+        "uncontrolled_hypertension",
+        "closed_angle_glaucoma",
+        "fructose_intolerance",
+        "glucose_galactose_malabsorption",
+        "sucrase_isomaltase_deficiency"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "dulox-gad-start--caution-RU-DULOX-mania",
+      "rule_id": "dulox-gad-start",
+      "known_positive_reason_fields": [
+        "mania"
+      ],
+      "source_bindings": [
+        {
+          "input": "mania",
+          "source_refs": [
+            "RU-DULOX"
+          ],
+          "source_locator": "§4.4 с.4"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "comorbid_depression",
+        "elderly_population",
+        "uncontrolled_hypertension",
+        "closed_angle_glaucoma",
+        "fructose_intolerance",
+        "glucose_galactose_malabsorption",
+        "sucrase_isomaltase_deficiency"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "dulox-gad-start--caution-RU-DULOX-suicide_risk",
+      "rule_id": "dulox-gad-start",
+      "known_positive_reason_fields": [
+        "suicide_risk"
+      ],
+      "source_bindings": [
+        {
+          "input": "suicide_risk",
+          "source_refs": [
+            "RU-DULOX"
+          ],
+          "source_locator": "§4.4 с.5–6"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "comorbid_depression",
+        "elderly_population",
+        "uncontrolled_hypertension",
+        "closed_angle_glaucoma",
+        "fructose_intolerance",
+        "glucose_galactose_malabsorption",
+        "sucrase_isomaltase_deficiency"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "dulox-gad-start--caution-RU-DULOX-bleeding_risk",
+      "rule_id": "dulox-gad-start",
+      "known_positive_reason_fields": [
+        "bleeding_risk"
+      ],
+      "source_bindings": [
+        {
+          "input": "bleeding_risk",
+          "source_refs": [
+            "RU-DULOX"
+          ],
+          "source_locator": "§4.4 с.6"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "comorbid_depression",
+        "elderly_population",
+        "uncontrolled_hypertension",
+        "closed_angle_glaucoma",
+        "fructose_intolerance",
+        "glucose_galactose_malabsorption",
+        "sucrase_isomaltase_deficiency"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "dulox-gad-start--caution-RU-DULOX-hyponatremia_risk",
+      "rule_id": "dulox-gad-start",
+      "known_positive_reason_fields": [
+        "hyponatremia_risk"
+      ],
+      "source_bindings": [
+        {
+          "input": "hyponatremia_risk",
+          "source_refs": [
+            "RU-DULOX"
+          ],
+          "source_locator": "§4.4 с.6"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "comorbid_depression",
+        "elderly_population",
+        "uncontrolled_hypertension",
+        "closed_angle_glaucoma",
+        "fructose_intolerance",
+        "glucose_galactose_malabsorption",
+        "sucrase_isomaltase_deficiency"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "dulox-gad-start--caution-RU-DULOX-diabetes",
+      "rule_id": "dulox-gad-start",
+      "known_positive_reason_fields": [
+        "diabetes"
+      ],
+      "source_bindings": [
+        {
+          "input": "diabetes",
+          "source_refs": [
+            "RU-DULOX"
+          ],
+          "source_locator": "§4.8 с.11, гипергликемия; с.14, данные исследований диабетической нейропатии"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "comorbid_depression",
+        "elderly_population",
+        "uncontrolled_hypertension",
+        "closed_angle_glaucoma",
+        "fructose_intolerance",
+        "glucose_galactose_malabsorption",
+        "sucrase_isomaltase_deficiency"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "fluvox-depression-start--caution-RU-FLUVOX-pregnancy",
+      "rule_id": "fluvox-depression-start",
+      "known_positive_reason_fields": [
+        "pregnancy"
+      ],
+      "source_bindings": [
+        {
+          "input": "pregnancy",
+          "source_refs": [
+            "RU-FLUVOX"
+          ],
+          "source_locator": "§4.1–4.3 PDF с.1–3; §4.4–4.6 с.4–11; §8–10 с.19"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "source_start_choice",
+        "seizure_state"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "fluvox-depression-start--caution-RU-FLUVOX-mania",
+      "rule_id": "fluvox-depression-start",
+      "known_positive_reason_fields": [
+        "mania"
+      ],
+      "source_bindings": [
+        {
+          "input": "mania",
+          "source_refs": [
+            "RU-FLUVOX"
+          ],
+          "source_locator": "§4.4 с.7"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "source_start_choice",
+        "seizure_state"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "fluvox-depression-start--caution-RU-FLUVOX-akathisia",
+      "rule_id": "fluvox-depression-start",
+      "known_positive_reason_fields": [
+        "akathisia"
+      ],
+      "source_bindings": [
+        {
+          "input": "akathisia",
+          "source_refs": [
+            "RU-FLUVOX"
+          ],
+          "source_locator": "§4.4 с.5"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "source_start_choice",
+        "seizure_state"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "fluvox-depression-start--caution-RU-FLUVOX-bleeding_risk",
+      "rule_id": "fluvox-depression-start",
+      "known_positive_reason_fields": [
+        "bleeding_risk"
+      ],
+      "source_bindings": [
+        {
+          "input": "bleeding_risk",
+          "source_refs": [
+            "RU-FLUVOX"
+          ],
+          "source_locator": "§4.4 с.6"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "source_start_choice",
+        "seizure_state"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "fluvox-depression-start--caution-RU-FLUVOX-suicide_risk",
+      "rule_id": "fluvox-depression-start",
+      "known_positive_reason_fields": [
+        "suicide_risk"
+      ],
+      "source_bindings": [
+        {
+          "input": "suicide_risk",
+          "source_refs": [
+            "RU-FLUVOX"
+          ],
+          "source_locator": "§4.4 с.4"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "source_start_choice",
+        "seizure_state"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "fluvox-depression-start--caution-RU-FLUVOX-diabetes",
+      "rule_id": "fluvox-depression-start",
+      "known_positive_reason_fields": [
+        "diabetes"
+      ],
+      "source_bindings": [
+        {
+          "input": "diabetes",
+          "source_refs": [
+            "RU-FLUVOX"
+          ],
+          "source_locator": "§4.4 с.6"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "source_start_choice",
+        "seizure_state"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "fluvox-depression-start--caution-RU-FLUVOX-glaucoma",
+      "rule_id": "fluvox-depression-start",
+      "known_positive_reason_fields": [
+        "glaucoma"
+      ],
+      "source_bindings": [
+        {
+          "input": "glaucoma",
+          "source_refs": [
+            "RU-FLUVOX"
+          ],
+          "source_locator": "§4.4 с.6"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "source_start_choice",
+        "seizure_state"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "fluvox-depression-start--caution-RU-FLUVOX-ect",
+      "rule_id": "fluvox-depression-start",
+      "known_positive_reason_fields": [
+        "ect"
+      ],
+      "source_bindings": [
+        {
+          "input": "ect",
+          "source_refs": [
+            "RU-FLUVOX"
+          ],
+          "source_locator": "§4.4 с.6"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "source_start_choice",
+        "seizure_state"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "parox-panic-kr--caution-RU-PAROX-pregnancy",
+      "rule_id": "parox-panic-kr",
+      "known_positive_reason_fields": [
+        "pregnancy"
+      ],
+      "source_bindings": [
+        {
+          "input": "pregnancy",
+          "source_refs": [
+            "RU-PAROX"
+          ],
+          "source_locator": "RU-PAROX §4.6 с.14–15"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "renal",
+        "lactation",
+        "medicines",
+        "allergy",
+        "elderly_population",
+        "seizure_state",
+        "bipolar_risk_screening"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "parox-panic-kr--caution-RU-PAROX-lactation",
+      "rule_id": "parox-panic-kr",
+      "known_positive_reason_fields": [
+        "lactation"
+      ],
+      "source_bindings": [
+        {
+          "input": "lactation",
+          "source_refs": [
+            "RU-PAROX"
+          ],
+          "source_locator": "RU-PAROX §4.6 с.15"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "renal",
+        "pregnancy",
+        "medicines",
+        "allergy",
+        "elderly_population",
+        "seizure_state",
+        "bipolar_risk_screening"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "parox-panic-kr--caution-RU-PAROX-mania",
+      "rule_id": "parox-panic-kr",
+      "known_positive_reason_fields": [
+        "mania"
+      ],
+      "source_bindings": [
+        {
+          "input": "mania",
+          "source_refs": [
+            "RU-PAROX"
+          ],
+          "source_locator": "RU-PAROX §4.4 с.7–8"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "renal",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "elderly_population",
+        "seizure_state",
+        "bipolar_risk_screening"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "parox-panic-kr--caution-RU-PAROX-suicide_risk",
+      "rule_id": "parox-panic-kr",
+      "known_positive_reason_fields": [
+        "suicide_risk"
+      ],
+      "source_bindings": [
+        {
+          "input": "suicide_risk",
+          "source_refs": [
+            "RU-PAROX"
+          ],
+          "source_locator": "RU-PAROX §4.4 с.5–7"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "renal",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "elderly_population",
+        "seizure_state",
+        "bipolar_risk_screening"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "parox-panic-kr--caution-RU-PAROX-akathisia",
+      "rule_id": "parox-panic-kr",
+      "known_positive_reason_fields": [
+        "akathisia"
+      ],
+      "source_bindings": [
+        {
+          "input": "akathisia",
+          "source_refs": [
+            "RU-PAROX"
+          ],
+          "source_locator": "RU-PAROX §4.4 с.7"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "renal",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "elderly_population",
+        "seizure_state",
+        "bipolar_risk_screening"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "parox-panic-kr--caution-RU-PAROX-diabetes",
+      "rule_id": "parox-panic-kr",
+      "known_positive_reason_fields": [
+        "diabetes"
+      ],
+      "source_bindings": [
+        {
+          "input": "diabetes",
+          "source_refs": [
+            "RU-PAROX"
+          ],
+          "source_locator": "RU-PAROX §4.4 с.8"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "renal",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "elderly_population",
+        "seizure_state",
+        "bipolar_risk_screening"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "parox-panic-kr--caution-RU-PAROX-glaucoma",
+      "rule_id": "parox-panic-kr",
+      "known_positive_reason_fields": [
+        "glaucoma"
+      ],
+      "source_bindings": [
+        {
+          "input": "glaucoma",
+          "source_refs": [
+            "RU-PAROX"
+          ],
+          "source_locator": "RU-PAROX §4.4 с.9"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "renal",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "elderly_population",
+        "seizure_state",
+        "bipolar_risk_screening"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "parox-panic-kr--caution-RU-PAROX-bleeding_risk",
+      "rule_id": "parox-panic-kr",
+      "known_positive_reason_fields": [
+        "bleeding_risk"
+      ],
+      "source_bindings": [
+        {
+          "input": "bleeding_risk",
+          "source_refs": [
+            "RU-PAROX"
+          ],
+          "source_locator": "RU-PAROX §4.4 с.9"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "renal",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "elderly_population",
+        "seizure_state",
+        "bipolar_risk_screening"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "parox-panic-kr--caution-RU-PAROX-qt_risk",
+      "rule_id": "parox-panic-kr",
+      "known_positive_reason_fields": [
+        "qt_risk"
+      ],
+      "source_bindings": [
+        {
+          "input": "qt_risk",
+          "source_refs": [
+            "RU-PAROX"
+          ],
+          "source_locator": "RU-PAROX §4.4 с.9"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "renal",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "elderly_population",
+        "seizure_state",
+        "bipolar_risk_screening"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "parox-panic-kr--caution-RU-PAROX-ect",
+      "rule_id": "parox-panic-kr",
+      "known_positive_reason_fields": [
+        "ect"
+      ],
+      "source_bindings": [
+        {
+          "input": "ect",
+          "source_refs": [
+            "RU-PAROX"
+          ],
+          "source_locator": "RU-PAROX §4.4 с.9"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "renal",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "elderly_population",
+        "seizure_state",
+        "bipolar_risk_screening"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "preg-gad-adjust--caution-RU-PREG-pregnancy",
+      "rule_id": "preg-gad-adjust",
+      "known_positive_reason_fields": [
+        "pregnancy"
+      ],
+      "source_bindings": [
+        {
+          "input": "pregnancy",
+          "source_refs": [
+            "RU-PREG"
+          ],
+          "source_locator": "§4.4 с.9; §4.6 с.12"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "lactation",
+        "medicines",
+        "allergy",
+        "clcr",
+        "dialysis",
+        "respiratory",
+        "frequency",
+        "current_dose",
+        "time_at_dose",
+        "response",
+        "tolerability",
+        "adherence",
+        "angioedema",
+        "severe_skin_reaction",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "misuse_risk_assessment",
+        "reproductive_population"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "preg-gad-adjust--caution-RU-PREG-lactation",
+      "rule_id": "preg-gad-adjust",
+      "known_positive_reason_fields": [
+        "lactation"
+      ],
+      "source_bindings": [
+        {
+          "input": "lactation",
+          "source_refs": [
+            "RU-PREG"
+          ],
+          "source_locator": "§4.6 с.12–13"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "medicines",
+        "allergy",
+        "clcr",
+        "dialysis",
+        "respiratory",
+        "frequency",
+        "current_dose",
+        "time_at_dose",
+        "response",
+        "tolerability",
+        "adherence",
+        "angioedema",
+        "severe_skin_reaction",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "misuse_risk_assessment",
+        "reproductive_population"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "preg-gad-adjust--caution-RU-PREG-substance_use",
+      "rule_id": "preg-gad-adjust",
+      "known_positive_reason_fields": [
+        "substance_use"
+      ],
+      "source_bindings": [
+        {
+          "input": "substance_use",
+          "source_refs": [
+            "RU-PREG",
+            "RU-GAD"
+          ],
+          "source_locator": "§4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "clcr",
+        "dialysis",
+        "respiratory",
+        "frequency",
+        "current_dose",
+        "time_at_dose",
+        "response",
+        "tolerability",
+        "adherence",
+        "angioedema",
+        "severe_skin_reaction",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "misuse_risk_assessment",
+        "reproductive_population"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "preg-gad-adjust--caution-RU-PREG-respiratory",
+      "rule_id": "preg-gad-adjust",
+      "known_positive_reason_fields": [
+        "respiratory"
+      ],
+      "source_bindings": [
+        {
+          "input": "respiratory",
+          "source_refs": [
+            "RU-PREG"
+          ],
+          "source_locator": "§4.4 с.7–8"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "clcr",
+        "dialysis",
+        "frequency",
+        "current_dose",
+        "time_at_dose",
+        "response",
+        "tolerability",
+        "adherence",
+        "angioedema",
+        "severe_skin_reaction",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "misuse_risk_assessment",
+        "reproductive_population"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "preg-gad-adjust--caution-RU-PREG-suicide_risk",
+      "rule_id": "preg-gad-adjust",
+      "known_positive_reason_fields": [
+        "suicide_risk"
+      ],
+      "source_bindings": [
+        {
+          "input": "suicide_risk",
+          "source_refs": [
+            "RU-PREG"
+          ],
+          "source_locator": "§4.4 с.8"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "clcr",
+        "dialysis",
+        "respiratory",
+        "frequency",
+        "current_dose",
+        "time_at_dose",
+        "response",
+        "tolerability",
+        "adherence",
+        "angioedema",
+        "severe_skin_reaction",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "misuse_risk_assessment",
+        "reproductive_population"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "preg-gad-adjust--caution-RU-PREG-heart_failure",
+      "rule_id": "preg-gad-adjust",
+      "known_positive_reason_fields": [
+        "heart_failure"
+      ],
+      "source_bindings": [
+        {
+          "input": "heart_failure",
+          "source_refs": [
+            "RU-PREG"
+          ],
+          "source_locator": "§4.4 с.10"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "clcr",
+        "dialysis",
+        "respiratory",
+        "frequency",
+        "current_dose",
+        "time_at_dose",
+        "response",
+        "tolerability",
+        "adherence",
+        "angioedema",
+        "severe_skin_reaction",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "misuse_risk_assessment",
+        "reproductive_population"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "preg-gad-adjust--caution-RU-PREG-diabetes_weight_gain",
+      "rule_id": "preg-gad-adjust",
+      "known_positive_reason_fields": [
+        "diabetes_weight_gain"
+      ],
+      "source_bindings": [
+        {
+          "input": "diabetes_weight_gain",
+          "source_refs": [
+            "RU-PREG"
+          ],
+          "source_locator": "§4.4 с.6"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "clcr",
+        "dialysis",
+        "respiratory",
+        "frequency",
+        "current_dose",
+        "time_at_dose",
+        "response",
+        "tolerability",
+        "adherence",
+        "angioedema",
+        "severe_skin_reaction",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "misuse_risk_assessment",
+        "reproductive_population"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "preg-gad-start--caution-RU-PREG-pregnancy",
+      "rule_id": "preg-gad-start",
+      "known_positive_reason_fields": [
+        "pregnancy"
+      ],
+      "source_bindings": [
+        {
+          "input": "pregnancy",
+          "source_refs": [
+            "RU-PREG"
+          ],
+          "source_locator": "§4.4 с.9; §4.6 с.12"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "lactation",
+        "medicines",
+        "allergy",
+        "clcr",
+        "dialysis",
+        "respiratory",
+        "frequency",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "misuse_risk_assessment",
+        "reproductive_population"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "preg-gad-start--caution-RU-PREG-lactation",
+      "rule_id": "preg-gad-start",
+      "known_positive_reason_fields": [
+        "lactation"
+      ],
+      "source_bindings": [
+        {
+          "input": "lactation",
+          "source_refs": [
+            "RU-PREG"
+          ],
+          "source_locator": "§4.6 с.12–13"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "medicines",
+        "allergy",
+        "clcr",
+        "dialysis",
+        "respiratory",
+        "frequency",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "misuse_risk_assessment",
+        "reproductive_population"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "preg-gad-start--caution-RU-PREG-substance_use",
+      "rule_id": "preg-gad-start",
+      "known_positive_reason_fields": [
+        "substance_use"
+      ],
+      "source_bindings": [
+        {
+          "input": "substance_use",
+          "source_refs": [
+            "RU-PREG",
+            "RU-GAD"
+          ],
+          "source_locator": "§4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "clcr",
+        "dialysis",
+        "respiratory",
+        "frequency",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "misuse_risk_assessment",
+        "reproductive_population"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "preg-gad-start--caution-RU-PREG-respiratory",
+      "rule_id": "preg-gad-start",
+      "known_positive_reason_fields": [
+        "respiratory"
+      ],
+      "source_bindings": [
+        {
+          "input": "respiratory",
+          "source_refs": [
+            "RU-PREG"
+          ],
+          "source_locator": "§4.4 с.7–8"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "clcr",
+        "dialysis",
+        "frequency",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "misuse_risk_assessment",
+        "reproductive_population"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "preg-gad-start--caution-RU-PREG-suicide_risk",
+      "rule_id": "preg-gad-start",
+      "known_positive_reason_fields": [
+        "suicide_risk"
+      ],
+      "source_bindings": [
+        {
+          "input": "suicide_risk",
+          "source_refs": [
+            "RU-PREG"
+          ],
+          "source_locator": "§4.4 с.8"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "clcr",
+        "dialysis",
+        "respiratory",
+        "frequency",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "misuse_risk_assessment",
+        "reproductive_population"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "preg-gad-start--caution-RU-PREG-heart_failure",
+      "rule_id": "preg-gad-start",
+      "known_positive_reason_fields": [
+        "heart_failure"
+      ],
+      "source_bindings": [
+        {
+          "input": "heart_failure",
+          "source_refs": [
+            "RU-PREG"
+          ],
+          "source_locator": "§4.4 с.10"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "clcr",
+        "dialysis",
+        "respiratory",
+        "frequency",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "misuse_risk_assessment",
+        "reproductive_population"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "preg-gad-start--caution-RU-PREG-diabetes_weight_gain",
+      "rule_id": "preg-gad-start",
+      "known_positive_reason_fields": [
+        "diabetes_weight_gain"
+      ],
+      "source_bindings": [
+        {
+          "input": "diabetes_weight_gain",
+          "source_refs": [
+            "RU-PREG"
+          ],
+          "source_locator": "§4.4 с.6"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "clcr",
+        "dialysis",
+        "respiratory",
+        "frequency",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "misuse_risk_assessment",
+        "reproductive_population"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "preg-renal-start--caution-RU-PREG-pregnancy",
+      "rule_id": "preg-renal-start",
+      "known_positive_reason_fields": [
+        "pregnancy"
+      ],
+      "source_bindings": [
+        {
+          "input": "pregnancy",
+          "source_refs": [
+            "RU-PREG"
+          ],
+          "source_locator": "§4.4 с.9; §4.6 с.12"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "lactation",
+        "medicines",
+        "allergy",
+        "clcr",
+        "dialysis",
+        "respiratory",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "misuse_risk_assessment",
+        "reproductive_population"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "preg-renal-start--caution-RU-PREG-lactation",
+      "rule_id": "preg-renal-start",
+      "known_positive_reason_fields": [
+        "lactation"
+      ],
+      "source_bindings": [
+        {
+          "input": "lactation",
+          "source_refs": [
+            "RU-PREG"
+          ],
+          "source_locator": "§4.6 с.12–13"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "medicines",
+        "allergy",
+        "clcr",
+        "dialysis",
+        "respiratory",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "misuse_risk_assessment",
+        "reproductive_population"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "preg-renal-start--caution-RU-PREG-substance_use",
+      "rule_id": "preg-renal-start",
+      "known_positive_reason_fields": [
+        "substance_use"
+      ],
+      "source_bindings": [
+        {
+          "input": "substance_use",
+          "source_refs": [
+            "RU-PREG",
+            "RU-GAD"
+          ],
+          "source_locator": "§4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "clcr",
+        "dialysis",
+        "respiratory",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "misuse_risk_assessment",
+        "reproductive_population"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "preg-renal-start--caution-RU-PREG-respiratory",
+      "rule_id": "preg-renal-start",
+      "known_positive_reason_fields": [
+        "respiratory"
+      ],
+      "source_bindings": [
+        {
+          "input": "respiratory",
+          "source_refs": [
+            "RU-PREG"
+          ],
+          "source_locator": "§4.4 с.7–8"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "clcr",
+        "dialysis",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "misuse_risk_assessment",
+        "reproductive_population"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "preg-renal-start--caution-RU-PREG-suicide_risk",
+      "rule_id": "preg-renal-start",
+      "known_positive_reason_fields": [
+        "suicide_risk"
+      ],
+      "source_bindings": [
+        {
+          "input": "suicide_risk",
+          "source_refs": [
+            "RU-PREG"
+          ],
+          "source_locator": "§4.4 с.8"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "clcr",
+        "dialysis",
+        "respiratory",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "misuse_risk_assessment",
+        "reproductive_population"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "preg-renal-start--caution-RU-PREG-heart_failure",
+      "rule_id": "preg-renal-start",
+      "known_positive_reason_fields": [
+        "heart_failure"
+      ],
+      "source_bindings": [
+        {
+          "input": "heart_failure",
+          "source_refs": [
+            "RU-PREG"
+          ],
+          "source_locator": "§4.4 с.10"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "clcr",
+        "dialysis",
+        "respiratory",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "misuse_risk_assessment",
+        "reproductive_population"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "preg-renal-start--caution-RU-PREG-diabetes_weight_gain",
+      "rule_id": "preg-renal-start",
+      "known_positive_reason_fields": [
+        "diabetes_weight_gain"
+      ],
+      "source_bindings": [
+        {
+          "input": "diabetes_weight_gain",
+          "source_refs": [
+            "RU-PREG"
+          ],
+          "source_locator": "§4.4 с.6"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "clcr",
+        "dialysis",
+        "respiratory",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "misuse_risk_assessment",
+        "reproductive_population"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "ser-adult-adjust--caution-RU-SER-pregnancy",
+      "rule_id": "ser-adult-adjust",
+      "known_positive_reason_fields": [
+        "pregnancy"
+      ],
+      "source_bindings": [
+        {
+          "input": "pregnancy",
+          "source_refs": [
+            "RU-SER"
+          ],
+          "source_locator": "§4.6 с.10–11"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "lactation",
+        "medicines",
+        "allergy",
+        "hepatic",
+        "seizure_state",
+        "current_dose",
+        "clinician_action",
+        "mania_symptoms"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "ser-adult-adjust--caution-RU-SER-lactation",
+      "rule_id": "ser-adult-adjust",
+      "known_positive_reason_fields": [
+        "lactation"
+      ],
+      "source_bindings": [
+        {
+          "input": "lactation",
+          "source_refs": [
+            "RU-SER"
+          ],
+          "source_locator": "§4.6 с.11"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "medicines",
+        "allergy",
+        "hepatic",
+        "seizure_state",
+        "current_dose",
+        "clinician_action",
+        "mania_symptoms"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "ser-adult-adjust--caution-RU-SER-mania",
+      "rule_id": "ser-adult-adjust",
+      "known_positive_reason_fields": [
+        "mania"
+      ],
+      "source_bindings": [
+        {
+          "input": "mania",
+          "source_refs": [
+            "RU-SER"
+          ],
+          "source_locator": "§4.4 с.4"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "hepatic",
+        "seizure_state",
+        "current_dose",
+        "clinician_action",
+        "mania_symptoms"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "ser-adult-adjust--caution-RU-SER-qt_risk",
+      "rule_id": "ser-adult-adjust",
+      "known_positive_reason_fields": [
+        "qt_risk"
+      ],
+      "source_bindings": [
+        {
+          "input": "qt_risk",
+          "source_refs": [
+            "RU-SER"
+          ],
+          "source_locator": "§4.4 с.4"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "hepatic",
+        "seizure_state",
+        "current_dose",
+        "clinician_action",
+        "mania_symptoms"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "ser-adult-adjust--caution-RU-SER-bleeding_risk",
+      "rule_id": "ser-adult-adjust",
+      "known_positive_reason_fields": [
+        "bleeding_risk"
+      ],
+      "source_bindings": [
+        {
+          "input": "bleeding_risk",
+          "source_refs": [
+            "RU-SER"
+          ],
+          "source_locator": "§4.4 с.5"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "hepatic",
+        "seizure_state",
+        "current_dose",
+        "clinician_action",
+        "mania_symptoms"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "ser-adult-adjust--caution-RU-SER-hyponatremia_risk",
+      "rule_id": "ser-adult-adjust",
+      "known_positive_reason_fields": [
+        "hyponatremia_risk"
+      ],
+      "source_bindings": [
+        {
+          "input": "hyponatremia_risk",
+          "source_refs": [
+            "RU-SER"
+          ],
+          "source_locator": "§4.4 с.5–6"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "hepatic",
+        "seizure_state",
+        "current_dose",
+        "clinician_action",
+        "mania_symptoms"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "ser-adult-adjust--caution-RU-SER-suicide_risk",
+      "rule_id": "ser-adult-adjust",
+      "known_positive_reason_fields": [
+        "suicide_risk"
+      ],
+      "source_bindings": [
+        {
+          "input": "suicide_risk",
+          "source_refs": [
+            "RU-SER"
+          ],
+          "source_locator": "§4.4 с.4–5"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "hepatic",
+        "seizure_state",
+        "current_dose",
+        "clinician_action",
+        "mania_symptoms"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "ser-adult-adjust--caution-RU-SER-akathisia",
+      "rule_id": "ser-adult-adjust",
+      "known_positive_reason_fields": [
+        "akathisia"
+      ],
+      "source_bindings": [
+        {
+          "input": "akathisia",
+          "source_refs": [
+            "RU-SER"
+          ],
+          "source_locator": "§4.4 с.6"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "hepatic",
+        "seizure_state",
+        "current_dose",
+        "clinician_action",
+        "mania_symptoms"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "ser-panic-start--caution-RU-SER-pregnancy",
+      "rule_id": "ser-panic-start",
+      "known_positive_reason_fields": [
+        "pregnancy"
+      ],
+      "source_bindings": [
+        {
+          "input": "pregnancy",
+          "source_refs": [
+            "RU-SER"
+          ],
+          "source_locator": "§4.6 с.10–11"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "lactation",
+        "medicines",
+        "allergy",
+        "hepatic",
+        "seizure_state"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "ser-panic-start--caution-RU-SER-lactation",
+      "rule_id": "ser-panic-start",
+      "known_positive_reason_fields": [
+        "lactation"
+      ],
+      "source_bindings": [
+        {
+          "input": "lactation",
+          "source_refs": [
+            "RU-SER"
+          ],
+          "source_locator": "§4.6 с.11"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "medicines",
+        "allergy",
+        "hepatic",
+        "seizure_state"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "ser-panic-start--caution-RU-SER-mania",
+      "rule_id": "ser-panic-start",
+      "known_positive_reason_fields": [
+        "mania"
+      ],
+      "source_bindings": [
+        {
+          "input": "mania",
+          "source_refs": [
+            "RU-SER"
+          ],
+          "source_locator": "§4.4 с.4"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "hepatic",
+        "seizure_state"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "ser-panic-start--caution-RU-SER-qt_risk",
+      "rule_id": "ser-panic-start",
+      "known_positive_reason_fields": [
+        "qt_risk"
+      ],
+      "source_bindings": [
+        {
+          "input": "qt_risk",
+          "source_refs": [
+            "RU-SER"
+          ],
+          "source_locator": "§4.4 с.4"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "hepatic",
+        "seizure_state"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "ser-panic-start--caution-RU-SER-bleeding_risk",
+      "rule_id": "ser-panic-start",
+      "known_positive_reason_fields": [
+        "bleeding_risk"
+      ],
+      "source_bindings": [
+        {
+          "input": "bleeding_risk",
+          "source_refs": [
+            "RU-SER"
+          ],
+          "source_locator": "§4.4 с.5"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "hepatic",
+        "seizure_state"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "ser-panic-start--caution-RU-SER-hyponatremia_risk",
+      "rule_id": "ser-panic-start",
+      "known_positive_reason_fields": [
+        "hyponatremia_risk"
+      ],
+      "source_bindings": [
+        {
+          "input": "hyponatremia_risk",
+          "source_refs": [
+            "RU-SER"
+          ],
+          "source_locator": "§4.4 с.5–6"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "hepatic",
+        "seizure_state"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "ser-panic-start--caution-RU-SER-suicide_risk",
+      "rule_id": "ser-panic-start",
+      "known_positive_reason_fields": [
+        "suicide_risk"
+      ],
+      "source_bindings": [
+        {
+          "input": "suicide_risk",
+          "source_refs": [
+            "RU-SER"
+          ],
+          "source_locator": "§4.4 с.4–5"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "hepatic",
+        "seizure_state"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "ser-panic-start--caution-RU-SER-akathisia",
+      "rule_id": "ser-panic-start",
+      "known_positive_reason_fields": [
+        "akathisia"
+      ],
+      "source_bindings": [
+        {
+          "input": "akathisia",
+          "source_refs": [
+            "RU-SER"
+          ],
+          "source_locator": "§4.4 с.6"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "hepatic",
+        "seizure_state"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "ser-social-start--caution-RU-SER-pregnancy",
+      "rule_id": "ser-social-start",
+      "known_positive_reason_fields": [
+        "pregnancy"
+      ],
+      "source_bindings": [
+        {
+          "input": "pregnancy",
+          "source_refs": [
+            "RU-SER"
+          ],
+          "source_locator": "§4.6 с.10–11"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "lactation",
+        "medicines",
+        "allergy",
+        "hepatic",
+        "seizure_state"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "ser-social-start--caution-RU-SER-lactation",
+      "rule_id": "ser-social-start",
+      "known_positive_reason_fields": [
+        "lactation"
+      ],
+      "source_bindings": [
+        {
+          "input": "lactation",
+          "source_refs": [
+            "RU-SER"
+          ],
+          "source_locator": "§4.6 с.11"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "medicines",
+        "allergy",
+        "hepatic",
+        "seizure_state"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "ser-social-start--caution-RU-SER-mania",
+      "rule_id": "ser-social-start",
+      "known_positive_reason_fields": [
+        "mania"
+      ],
+      "source_bindings": [
+        {
+          "input": "mania",
+          "source_refs": [
+            "RU-SER"
+          ],
+          "source_locator": "§4.4 с.4"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "hepatic",
+        "seizure_state"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "ser-social-start--caution-RU-SER-qt_risk",
+      "rule_id": "ser-social-start",
+      "known_positive_reason_fields": [
+        "qt_risk"
+      ],
+      "source_bindings": [
+        {
+          "input": "qt_risk",
+          "source_refs": [
+            "RU-SER"
+          ],
+          "source_locator": "§4.4 с.4"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "hepatic",
+        "seizure_state"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "ser-social-start--caution-RU-SER-bleeding_risk",
+      "rule_id": "ser-social-start",
+      "known_positive_reason_fields": [
+        "bleeding_risk"
+      ],
+      "source_bindings": [
+        {
+          "input": "bleeding_risk",
+          "source_refs": [
+            "RU-SER"
+          ],
+          "source_locator": "§4.4 с.5"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "hepatic",
+        "seizure_state"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "ser-social-start--caution-RU-SER-hyponatremia_risk",
+      "rule_id": "ser-social-start",
+      "known_positive_reason_fields": [
+        "hyponatremia_risk"
+      ],
+      "source_bindings": [
+        {
+          "input": "hyponatremia_risk",
+          "source_refs": [
+            "RU-SER"
+          ],
+          "source_locator": "§4.4 с.5–6"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "hepatic",
+        "seizure_state"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "ser-social-start--caution-RU-SER-suicide_risk",
+      "rule_id": "ser-social-start",
+      "known_positive_reason_fields": [
+        "suicide_risk"
+      ],
+      "source_bindings": [
+        {
+          "input": "suicide_risk",
+          "source_refs": [
+            "RU-SER"
+          ],
+          "source_locator": "§4.4 с.4–5"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "hepatic",
+        "seizure_state"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "ser-social-start--caution-RU-SER-akathisia",
+      "rule_id": "ser-social-start",
+      "known_positive_reason_fields": [
+        "akathisia"
+      ],
+      "source_bindings": [
+        {
+          "input": "akathisia",
+          "source_refs": [
+            "RU-SER"
+          ],
+          "source_locator": "§4.4 с.6"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "hepatic",
+        "seizure_state"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "switch-parox-ago-selected-example--caution-RU-AGO-pregnancy",
+      "rule_id": "switch-parox-ago-selected-example",
+      "known_positive_reason_fields": [
+        "pregnancy"
+      ],
+      "source_bindings": [
+        {
+          "input": "pregnancy",
+          "source_refs": [
+            "RU-PAROX",
+            "RU-AGO"
+          ],
+          "source_locator": "RU-PAROX §4.6 с.14–15; RU-AGO §4.6 с.6"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "current_dose",
+        "hepatic",
+        "alt_ratio_uln",
+        "ast_ratio_uln",
+        "medicines",
+        "allergy",
+        "lactation",
+        "withdrawal_severity",
+        "duration",
+        "past_withdrawal",
+        "example_selected",
+        "elderly_population",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "overweight_obesity",
+        "fatty_liver",
+        "diabetes",
+        "alcohol_abuse",
+        "from_renal",
+        "from_hepatic",
+        "seizure_state",
+        "serotonin_syndrome_signs"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "switch-parox-ago-selected-example--caution-RU-AGO-lactation",
+      "rule_id": "switch-parox-ago-selected-example",
+      "known_positive_reason_fields": [
+        "lactation"
+      ],
+      "source_bindings": [
+        {
+          "input": "lactation",
+          "source_refs": [
+            "RU-PAROX",
+            "RU-AGO"
+          ],
+          "source_locator": "RU-PAROX §4.6 с.15; RU-AGO §4.6 с.6"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "current_dose",
+        "hepatic",
+        "alt_ratio_uln",
+        "ast_ratio_uln",
+        "medicines",
+        "allergy",
+        "pregnancy",
+        "withdrawal_severity",
+        "duration",
+        "past_withdrawal",
+        "example_selected",
+        "elderly_population",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "overweight_obesity",
+        "fatty_liver",
+        "diabetes",
+        "alcohol_abuse",
+        "from_renal",
+        "from_hepatic",
+        "seizure_state",
+        "serotonin_syndrome_signs"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "switch-parox-ago-selected-example--caution-RU-AGO-mania",
+      "rule_id": "switch-parox-ago-selected-example",
+      "known_positive_reason_fields": [
+        "mania"
+      ],
+      "source_bindings": [
+        {
+          "input": "mania",
+          "source_refs": [
+            "RU-AGO"
+          ],
+          "source_locator": "§4.4 с.4"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "current_dose",
+        "hepatic",
+        "alt_ratio_uln",
+        "ast_ratio_uln",
+        "medicines",
+        "allergy",
+        "pregnancy",
+        "lactation",
+        "withdrawal_severity",
+        "duration",
+        "past_withdrawal",
+        "example_selected",
+        "elderly_population",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "overweight_obesity",
+        "fatty_liver",
+        "diabetes",
+        "alcohol_abuse",
+        "from_renal",
+        "from_hepatic",
+        "seizure_state",
+        "serotonin_syndrome_signs"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "switch-parox-ago-selected-example--caution-RU-AGO-suicide_risk",
+      "rule_id": "switch-parox-ago-selected-example",
+      "known_positive_reason_fields": [
+        "suicide_risk"
+      ],
+      "source_bindings": [
+        {
+          "input": "suicide_risk",
+          "source_refs": [
+            "RU-AGO"
+          ],
+          "source_locator": "§4.4 с.4–5"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "current_dose",
+        "hepatic",
+        "alt_ratio_uln",
+        "ast_ratio_uln",
+        "medicines",
+        "allergy",
+        "pregnancy",
+        "lactation",
+        "withdrawal_severity",
+        "duration",
+        "past_withdrawal",
+        "example_selected",
+        "elderly_population",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "overweight_obesity",
+        "fatty_liver",
+        "diabetes",
+        "alcohol_abuse",
+        "from_renal",
+        "from_hepatic",
+        "seizure_state",
+        "serotonin_syndrome_signs"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "switch-parox-ago-selected-example--caution-RU-AGO-overweight_obesity",
+      "rule_id": "switch-parox-ago-selected-example",
+      "known_positive_reason_fields": [
+        "overweight_obesity"
+      ],
+      "source_bindings": [
+        {
+          "input": "overweight_obesity",
+          "source_refs": [
+            "RU-AGO"
+          ],
+          "source_locator": "§4.4 с.3"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "current_dose",
+        "hepatic",
+        "alt_ratio_uln",
+        "ast_ratio_uln",
+        "medicines",
+        "allergy",
+        "pregnancy",
+        "lactation",
+        "withdrawal_severity",
+        "duration",
+        "past_withdrawal",
+        "example_selected",
+        "elderly_population",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "fatty_liver",
+        "diabetes",
+        "alcohol_abuse",
+        "from_renal",
+        "from_hepatic",
+        "seizure_state",
+        "serotonin_syndrome_signs"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "switch-parox-ago-selected-example--caution-RU-AGO-fatty_liver",
+      "rule_id": "switch-parox-ago-selected-example",
+      "known_positive_reason_fields": [
+        "fatty_liver"
+      ],
+      "source_bindings": [
+        {
+          "input": "fatty_liver",
+          "source_refs": [
+            "RU-AGO"
+          ],
+          "source_locator": "§4.4 с.3"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "current_dose",
+        "hepatic",
+        "alt_ratio_uln",
+        "ast_ratio_uln",
+        "medicines",
+        "allergy",
+        "pregnancy",
+        "lactation",
+        "withdrawal_severity",
+        "duration",
+        "past_withdrawal",
+        "example_selected",
+        "elderly_population",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "overweight_obesity",
+        "diabetes",
+        "alcohol_abuse",
+        "from_renal",
+        "from_hepatic",
+        "seizure_state",
+        "serotonin_syndrome_signs"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "switch-parox-ago-selected-example--caution-RU-AGO-diabetes",
+      "rule_id": "switch-parox-ago-selected-example",
+      "known_positive_reason_fields": [
+        "diabetes"
+      ],
+      "source_bindings": [
+        {
+          "input": "diabetes",
+          "source_refs": [
+            "RU-AGO"
+          ],
+          "source_locator": "§4.4 с.3"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "current_dose",
+        "hepatic",
+        "alt_ratio_uln",
+        "ast_ratio_uln",
+        "medicines",
+        "allergy",
+        "pregnancy",
+        "lactation",
+        "withdrawal_severity",
+        "duration",
+        "past_withdrawal",
+        "example_selected",
+        "elderly_population",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "overweight_obesity",
+        "fatty_liver",
+        "alcohol_abuse",
+        "from_renal",
+        "from_hepatic",
+        "seizure_state",
+        "serotonin_syndrome_signs"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "switch-parox-ago-selected-example--caution-RU-AGO-alcohol_abuse",
+      "rule_id": "switch-parox-ago-selected-example",
+      "known_positive_reason_fields": [
+        "alcohol_abuse"
+      ],
+      "source_bindings": [
+        {
+          "input": "alcohol_abuse",
+          "source_refs": [
+            "RU-AGO"
+          ],
+          "source_locator": "§4.4 с.3"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "current_dose",
+        "hepatic",
+        "alt_ratio_uln",
+        "ast_ratio_uln",
+        "medicines",
+        "allergy",
+        "pregnancy",
+        "lactation",
+        "withdrawal_severity",
+        "duration",
+        "past_withdrawal",
+        "example_selected",
+        "elderly_population",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "overweight_obesity",
+        "fatty_liver",
+        "diabetes",
+        "from_renal",
+        "from_hepatic",
+        "seizure_state",
+        "serotonin_syndrome_signs"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "switch-parox-ago-selected-example--caution-RU-AGO-alcohol_use",
+      "rule_id": "switch-parox-ago-selected-example",
+      "known_positive_reason_fields": [
+        "alcohol_use"
+      ],
+      "source_bindings": [
+        {
+          "input": "alcohol_use",
+          "source_refs": [
+            "RU-AGO"
+          ],
+          "source_locator": "§4.5 с.6"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "current_dose",
+        "hepatic",
+        "alt_ratio_uln",
+        "ast_ratio_uln",
+        "medicines",
+        "allergy",
+        "pregnancy",
+        "lactation",
+        "withdrawal_severity",
+        "duration",
+        "past_withdrawal",
+        "example_selected",
+        "elderly_population",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "overweight_obesity",
+        "fatty_liver",
+        "diabetes",
+        "alcohol_abuse",
+        "from_renal",
+        "from_hepatic",
+        "seizure_state",
+        "serotonin_syndrome_signs"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "switch-parox-ago-selected-example--caution-RU-AGO-ect",
+      "rule_id": "switch-parox-ago-selected-example",
+      "known_positive_reason_fields": [
+        "ect"
+      ],
+      "source_bindings": [
+        {
+          "input": "ect",
+          "source_refs": [
+            "RU-AGO"
+          ],
+          "source_locator": "§4.5 с.6"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "current_dose",
+        "hepatic",
+        "alt_ratio_uln",
+        "ast_ratio_uln",
+        "medicines",
+        "allergy",
+        "pregnancy",
+        "lactation",
+        "withdrawal_severity",
+        "duration",
+        "past_withdrawal",
+        "example_selected",
+        "elderly_population",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "overweight_obesity",
+        "fatty_liver",
+        "diabetes",
+        "alcohol_abuse",
+        "from_renal",
+        "from_hepatic",
+        "seizure_state",
+        "serotonin_syndrome_signs"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "switch-parox-ago-selected-example--caution-RU-PAROX-pregnancy",
+      "rule_id": "switch-parox-ago-selected-example",
+      "known_positive_reason_fields": [
+        "pregnancy"
+      ],
+      "source_bindings": [
+        {
+          "input": "pregnancy",
+          "source_refs": [
+            "RU-PAROX",
+            "RU-AGO"
+          ],
+          "source_locator": "RU-PAROX §4.6 с.14–15; RU-AGO §4.6 с.6"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "current_dose",
+        "hepatic",
+        "alt_ratio_uln",
+        "ast_ratio_uln",
+        "medicines",
+        "allergy",
+        "lactation",
+        "withdrawal_severity",
+        "duration",
+        "past_withdrawal",
+        "example_selected",
+        "elderly_population",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "overweight_obesity",
+        "fatty_liver",
+        "diabetes",
+        "alcohol_abuse",
+        "from_renal",
+        "from_hepatic",
+        "seizure_state",
+        "serotonin_syndrome_signs"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "switch-parox-ago-selected-example--caution-RU-PAROX-lactation",
+      "rule_id": "switch-parox-ago-selected-example",
+      "known_positive_reason_fields": [
+        "lactation"
+      ],
+      "source_bindings": [
+        {
+          "input": "lactation",
+          "source_refs": [
+            "RU-PAROX",
+            "RU-AGO"
+          ],
+          "source_locator": "RU-PAROX §4.6 с.15; RU-AGO §4.6 с.6"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "current_dose",
+        "hepatic",
+        "alt_ratio_uln",
+        "ast_ratio_uln",
+        "medicines",
+        "allergy",
+        "pregnancy",
+        "withdrawal_severity",
+        "duration",
+        "past_withdrawal",
+        "example_selected",
+        "elderly_population",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "overweight_obesity",
+        "fatty_liver",
+        "diabetes",
+        "alcohol_abuse",
+        "from_renal",
+        "from_hepatic",
+        "seizure_state",
+        "serotonin_syndrome_signs"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "switch-parox-ago-selected-example--caution-RU-PAROX-mania",
+      "rule_id": "switch-parox-ago-selected-example",
+      "known_positive_reason_fields": [
+        "mania"
+      ],
+      "source_bindings": [
+        {
+          "input": "mania",
+          "source_refs": [
+            "RU-AGO"
+          ],
+          "source_locator": "§4.4 с.4"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "current_dose",
+        "hepatic",
+        "alt_ratio_uln",
+        "ast_ratio_uln",
+        "medicines",
+        "allergy",
+        "pregnancy",
+        "lactation",
+        "withdrawal_severity",
+        "duration",
+        "past_withdrawal",
+        "example_selected",
+        "elderly_population",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "overweight_obesity",
+        "fatty_liver",
+        "diabetes",
+        "alcohol_abuse",
+        "from_renal",
+        "from_hepatic",
+        "seizure_state",
+        "serotonin_syndrome_signs"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "switch-parox-ago-selected-example--caution-RU-PAROX-suicide_risk",
+      "rule_id": "switch-parox-ago-selected-example",
+      "known_positive_reason_fields": [
+        "suicide_risk"
+      ],
+      "source_bindings": [
+        {
+          "input": "suicide_risk",
+          "source_refs": [
+            "RU-AGO"
+          ],
+          "source_locator": "§4.4 с.4–5"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "current_dose",
+        "hepatic",
+        "alt_ratio_uln",
+        "ast_ratio_uln",
+        "medicines",
+        "allergy",
+        "pregnancy",
+        "lactation",
+        "withdrawal_severity",
+        "duration",
+        "past_withdrawal",
+        "example_selected",
+        "elderly_population",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "overweight_obesity",
+        "fatty_liver",
+        "diabetes",
+        "alcohol_abuse",
+        "from_renal",
+        "from_hepatic",
+        "seizure_state",
+        "serotonin_syndrome_signs"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "switch-parox-ago-selected-example--caution-RU-PAROX-akathisia",
+      "rule_id": "switch-parox-ago-selected-example",
+      "known_positive_reason_fields": [
+        "akathisia"
+      ],
+      "source_bindings": [
+        {
+          "input": "akathisia",
+          "source_refs": [
+            "RU-PAROX"
+          ],
+          "source_locator": "RU-PAROX §4.4 с.7"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "current_dose",
+        "hepatic",
+        "alt_ratio_uln",
+        "ast_ratio_uln",
+        "medicines",
+        "allergy",
+        "pregnancy",
+        "lactation",
+        "withdrawal_severity",
+        "duration",
+        "past_withdrawal",
+        "example_selected",
+        "elderly_population",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "overweight_obesity",
+        "fatty_liver",
+        "diabetes",
+        "alcohol_abuse",
+        "from_renal",
+        "from_hepatic",
+        "seizure_state",
+        "serotonin_syndrome_signs"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "switch-parox-ago-selected-example--caution-RU-PAROX-diabetes",
+      "rule_id": "switch-parox-ago-selected-example",
+      "known_positive_reason_fields": [
+        "diabetes"
+      ],
+      "source_bindings": [
+        {
+          "input": "diabetes",
+          "source_refs": [
+            "RU-AGO"
+          ],
+          "source_locator": "§4.4 с.3"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "current_dose",
+        "hepatic",
+        "alt_ratio_uln",
+        "ast_ratio_uln",
+        "medicines",
+        "allergy",
+        "pregnancy",
+        "lactation",
+        "withdrawal_severity",
+        "duration",
+        "past_withdrawal",
+        "example_selected",
+        "elderly_population",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "overweight_obesity",
+        "fatty_liver",
+        "alcohol_abuse",
+        "from_renal",
+        "from_hepatic",
+        "seizure_state",
+        "serotonin_syndrome_signs"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "switch-parox-ago-selected-example--caution-RU-PAROX-glaucoma",
+      "rule_id": "switch-parox-ago-selected-example",
+      "known_positive_reason_fields": [
+        "glaucoma"
+      ],
+      "source_bindings": [
+        {
+          "input": "glaucoma",
+          "source_refs": [
+            "RU-PAROX"
+          ],
+          "source_locator": "RU-PAROX §4.4 с.9"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "current_dose",
+        "hepatic",
+        "alt_ratio_uln",
+        "ast_ratio_uln",
+        "medicines",
+        "allergy",
+        "pregnancy",
+        "lactation",
+        "withdrawal_severity",
+        "duration",
+        "past_withdrawal",
+        "example_selected",
+        "elderly_population",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "overweight_obesity",
+        "fatty_liver",
+        "diabetes",
+        "alcohol_abuse",
+        "from_renal",
+        "from_hepatic",
+        "seizure_state",
+        "serotonin_syndrome_signs"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "switch-parox-ago-selected-example--caution-RU-PAROX-bleeding_risk",
+      "rule_id": "switch-parox-ago-selected-example",
+      "known_positive_reason_fields": [
+        "bleeding_risk"
+      ],
+      "source_bindings": [
+        {
+          "input": "bleeding_risk",
+          "source_refs": [
+            "RU-PAROX"
+          ],
+          "source_locator": "RU-PAROX §4.4 с.9"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "current_dose",
+        "hepatic",
+        "alt_ratio_uln",
+        "ast_ratio_uln",
+        "medicines",
+        "allergy",
+        "pregnancy",
+        "lactation",
+        "withdrawal_severity",
+        "duration",
+        "past_withdrawal",
+        "example_selected",
+        "elderly_population",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "overweight_obesity",
+        "fatty_liver",
+        "diabetes",
+        "alcohol_abuse",
+        "from_renal",
+        "from_hepatic",
+        "seizure_state",
+        "serotonin_syndrome_signs"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "switch-parox-ago-selected-example--caution-RU-PAROX-qt_risk",
+      "rule_id": "switch-parox-ago-selected-example",
+      "known_positive_reason_fields": [
+        "qt_risk"
+      ],
+      "source_bindings": [
+        {
+          "input": "qt_risk",
+          "source_refs": [
+            "RU-PAROX"
+          ],
+          "source_locator": "RU-PAROX §4.4 с.9"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "current_dose",
+        "hepatic",
+        "alt_ratio_uln",
+        "ast_ratio_uln",
+        "medicines",
+        "allergy",
+        "pregnancy",
+        "lactation",
+        "withdrawal_severity",
+        "duration",
+        "past_withdrawal",
+        "example_selected",
+        "elderly_population",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "overweight_obesity",
+        "fatty_liver",
+        "diabetes",
+        "alcohol_abuse",
+        "from_renal",
+        "from_hepatic",
+        "seizure_state",
+        "serotonin_syndrome_signs"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "switch-parox-ago-selected-example--caution-RU-PAROX-ect",
+      "rule_id": "switch-parox-ago-selected-example",
+      "known_positive_reason_fields": [
+        "ect"
+      ],
+      "source_bindings": [
+        {
+          "input": "ect",
+          "source_refs": [
+            "RU-AGO"
+          ],
+          "source_locator": "§4.5 с.6"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "current_dose",
+        "hepatic",
+        "alt_ratio_uln",
+        "ast_ratio_uln",
+        "medicines",
+        "allergy",
+        "pregnancy",
+        "lactation",
+        "withdrawal_severity",
+        "duration",
+        "past_withdrawal",
+        "example_selected",
+        "elderly_population",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "overweight_obesity",
+        "fatty_liver",
+        "diabetes",
+        "alcohol_abuse",
+        "from_renal",
+        "from_hepatic",
+        "seizure_state",
+        "serotonin_syndrome_signs"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "venla-xr-gad-start--caution-RU-VENLA-XR-recent_infarction",
+      "rule_id": "venla-xr-gad-start",
+      "known_positive_reason_fields": [
+        "recent_infarction"
+      ],
+      "source_bindings": [
+        {
+          "input": "recent_infarction",
+          "source_refs": [
+            "RU-VENLA-XR"
+          ],
+          "source_locator": "§4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "qt_risk",
+        "pregnancy_suspected"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "venla-xr-gad-start--caution-RU-VENLA-XR-unstable_angina",
+      "rule_id": "venla-xr-gad-start",
+      "known_positive_reason_fields": [
+        "unstable_angina"
+      ],
+      "source_bindings": [
+        {
+          "input": "unstable_angina",
+          "source_refs": [
+            "RU-VENLA-XR"
+          ],
+          "source_locator": "§4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "qt_risk",
+        "pregnancy_suspected"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "venla-xr-gad-start--caution-RU-VENLA-XR-heart_failure",
+      "rule_id": "venla-xr-gad-start",
+      "known_positive_reason_fields": [
+        "heart_failure"
+      ],
+      "source_bindings": [
+        {
+          "input": "heart_failure",
+          "source_refs": [
+            "RU-VENLA-XR"
+          ],
+          "source_locator": "§4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "qt_risk",
+        "pregnancy_suspected"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "venla-xr-gad-start--caution-RU-VENLA-XR-coronary_disease",
+      "rule_id": "venla-xr-gad-start",
+      "known_positive_reason_fields": [
+        "coronary_disease"
+      ],
+      "source_bindings": [
+        {
+          "input": "coronary_disease",
+          "source_refs": [
+            "RU-VENLA-XR"
+          ],
+          "source_locator": "§4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "qt_risk",
+        "pregnancy_suspected"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "venla-xr-gad-start--caution-RU-VENLA-XR-ecg_change",
+      "rule_id": "venla-xr-gad-start",
+      "known_positive_reason_fields": [
+        "ecg_change"
+      ],
+      "source_bindings": [
+        {
+          "input": "ecg_change",
+          "source_refs": [
+            "RU-VENLA-XR"
+          ],
+          "source_locator": "§4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "qt_risk",
+        "pregnancy_suspected"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "venla-xr-gad-start--caution-RU-VENLA-XR-qt_risk",
+      "rule_id": "venla-xr-gad-start",
+      "known_positive_reason_fields": [
+        "qt_risk"
+      ],
+      "source_bindings": [
+        {
+          "input": "qt_risk",
+          "source_refs": [
+            "RU-VENLA-XR"
+          ],
+          "source_locator": "§4.4 с.10; §4.5 с.15–16"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "pregnancy_suspected"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "venla-xr-gad-start--caution-RU-VENLA-XR-electrolyte_imbalance",
+      "rule_id": "venla-xr-gad-start",
+      "known_positive_reason_fields": [
+        "electrolyte_imbalance"
+      ],
+      "source_bindings": [
+        {
+          "input": "electrolyte_imbalance",
+          "source_refs": [
+            "RU-VENLA-XR"
+          ],
+          "source_locator": "§4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "qt_risk",
+        "pregnancy_suspected"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "venla-xr-gad-start--caution-RU-VENLA-XR-hypertension",
+      "rule_id": "venla-xr-gad-start",
+      "known_positive_reason_fields": [
+        "hypertension"
+      ],
+      "source_bindings": [
+        {
+          "input": "hypertension",
+          "source_refs": [
+            "RU-VENLA-XR"
+          ],
+          "source_locator": "§4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "qt_risk",
+        "pregnancy_suspected"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "venla-xr-gad-start--caution-RU-VENLA-XR-tachycardia",
+      "rule_id": "venla-xr-gad-start",
+      "known_positive_reason_fields": [
+        "tachycardia"
+      ],
+      "source_bindings": [
+        {
+          "input": "tachycardia",
+          "source_refs": [
+            "RU-VENLA-XR"
+          ],
+          "source_locator": "§4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "qt_risk",
+        "pregnancy_suspected"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "venla-xr-gad-start--caution-RU-VENLA-XR-seizure_history",
+      "rule_id": "venla-xr-gad-start",
+      "known_positive_reason_fields": [
+        "seizure_history"
+      ],
+      "source_bindings": [
+        {
+          "input": "seizure_history",
+          "source_refs": [
+            "RU-VENLA-XR"
+          ],
+          "source_locator": "§4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "qt_risk",
+        "pregnancy_suspected"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "venla-xr-gad-start--caution-RU-VENLA-XR-glaucoma",
+      "rule_id": "venla-xr-gad-start",
+      "known_positive_reason_fields": [
+        "glaucoma"
+      ],
+      "source_bindings": [
+        {
+          "input": "glaucoma",
+          "source_refs": [
+            "RU-VENLA-XR"
+          ],
+          "source_locator": "§4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "qt_risk",
+        "pregnancy_suspected"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "venla-xr-gad-start--caution-RU-VENLA-XR-mania",
+      "rule_id": "venla-xr-gad-start",
+      "known_positive_reason_fields": [
+        "mania"
+      ],
+      "source_bindings": [
+        {
+          "input": "mania",
+          "source_refs": [
+            "RU-VENLA-XR"
+          ],
+          "source_locator": "§4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "qt_risk",
+        "pregnancy_suspected"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "venla-xr-gad-start--caution-RU-VENLA-XR-bleeding_risk",
+      "rule_id": "venla-xr-gad-start",
+      "known_positive_reason_fields": [
+        "bleeding_risk"
+      ],
+      "source_bindings": [
+        {
+          "input": "bleeding_risk",
+          "source_refs": [
+            "RU-VENLA-XR"
+          ],
+          "source_locator": "§4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "qt_risk",
+        "pregnancy_suspected"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "venla-xr-gad-start--caution-RU-VENLA-XR-low_body_mass",
+      "rule_id": "venla-xr-gad-start",
+      "known_positive_reason_fields": [
+        "low_body_mass"
+      ],
+      "source_bindings": [
+        {
+          "input": "low_body_mass",
+          "source_refs": [
+            "RU-VENLA-XR"
+          ],
+          "source_locator": "§4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "qt_risk",
+        "pregnancy_suspected"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "venla-xr-gad-start--caution-RU-VENLA-XR-urinary_impairment",
+      "rule_id": "venla-xr-gad-start",
+      "known_positive_reason_fields": [
+        "urinary_impairment"
+      ],
+      "source_bindings": [
+        {
+          "input": "urinary_impairment",
+          "source_refs": [
+            "RU-VENLA-XR"
+          ],
+          "source_locator": "§4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "qt_risk",
+        "pregnancy_suspected"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "venla-xr-gad-start--caution-RU-VENLA-XR-low_blood_pressure",
+      "rule_id": "venla-xr-gad-start",
+      "known_positive_reason_fields": [
+        "low_blood_pressure"
+      ],
+      "source_bindings": [
+        {
+          "input": "low_blood_pressure",
+          "source_refs": [
+            "RU-VENLA-XR"
+          ],
+          "source_locator": "§4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "qt_risk",
+        "pregnancy_suspected"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "venla-xr-gad-start--caution-RU-VENLA-XR-diabetes",
+      "rule_id": "venla-xr-gad-start",
+      "known_positive_reason_fields": [
+        "diabetes"
+      ],
+      "source_bindings": [
+        {
+          "input": "diabetes",
+          "source_refs": [
+            "RU-VENLA-XR"
+          ],
+          "source_locator": "§4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "qt_risk",
+        "pregnancy_suspected"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "venla-xr-gad-start--caution-RU-VENLA-XR-recent_stroke",
+      "rule_id": "venla-xr-gad-start",
+      "known_positive_reason_fields": [
+        "recent_stroke"
+      ],
+      "source_bindings": [
+        {
+          "input": "recent_stroke",
+          "source_refs": [
+            "RU-VENLA-XR"
+          ],
+          "source_locator": "§4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "qt_risk",
+        "pregnancy_suspected"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "venla-xr-gad-start--caution-RU-VENLA-XR-hyponatremia_risk",
+      "rule_id": "venla-xr-gad-start",
+      "known_positive_reason_fields": [
+        "hyponatremia_risk"
+      ],
+      "source_bindings": [
+        {
+          "input": "hyponatremia_risk",
+          "source_refs": [
+            "RU-VENLA-XR"
+          ],
+          "source_locator": "§4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "qt_risk",
+        "pregnancy_suspected"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "venla-xr-gad-start--caution-RU-VENLA-XR-ect",
+      "rule_id": "venla-xr-gad-start",
+      "known_positive_reason_fields": [
+        "ect"
+      ],
+      "source_bindings": [
+        {
+          "input": "ect",
+          "source_refs": [
+            "RU-VENLA-XR"
+          ],
+          "source_locator": "§4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "qt_risk",
+        "pregnancy_suspected"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "venla-xr-gad-start--caution-RU-VENLA-XR-hypercholesterolemia",
+      "rule_id": "venla-xr-gad-start",
+      "known_positive_reason_fields": [
+        "hypercholesterolemia"
+      ],
+      "source_bindings": [
+        {
+          "input": "hypercholesterolemia",
+          "source_refs": [
+            "RU-VENLA-XR"
+          ],
+          "source_locator": "§4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "qt_risk",
+        "pregnancy_suspected"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "venla-xr-gad-start--caution-RU-VENLA-XR-alcohol_use",
+      "rule_id": "venla-xr-gad-start",
+      "known_positive_reason_fields": [
+        "alcohol_use"
+      ],
+      "source_bindings": [
+        {
+          "input": "alcohol_use",
+          "source_refs": [
+            "RU-VENLA-XR"
+          ],
+          "source_locator": "§4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "qt_risk",
+        "pregnancy_suspected"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "venla-xr-gad-start--caution-RU-VENLA-XR-suicide_risk",
+      "rule_id": "venla-xr-gad-start",
+      "known_positive_reason_fields": [
+        "suicide_risk"
+      ],
+      "source_bindings": [
+        {
+          "input": "suicide_risk",
+          "source_refs": [
+            "RU-VENLA-XR"
+          ],
+          "source_locator": "§4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "qt_risk",
+        "pregnancy_suspected"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "venla-xr-social-start--caution-RU-VENLA-XR-recent_infarction",
+      "rule_id": "venla-xr-social-start",
+      "known_positive_reason_fields": [
+        "recent_infarction"
+      ],
+      "source_bindings": [
+        {
+          "input": "recent_infarction",
+          "source_refs": [
+            "RU-VENLA-XR"
+          ],
+          "source_locator": "§4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "qt_risk",
+        "pregnancy_suspected"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "venla-xr-social-start--caution-RU-VENLA-XR-unstable_angina",
+      "rule_id": "venla-xr-social-start",
+      "known_positive_reason_fields": [
+        "unstable_angina"
+      ],
+      "source_bindings": [
+        {
+          "input": "unstable_angina",
+          "source_refs": [
+            "RU-VENLA-XR"
+          ],
+          "source_locator": "§4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "qt_risk",
+        "pregnancy_suspected"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "venla-xr-social-start--caution-RU-VENLA-XR-heart_failure",
+      "rule_id": "venla-xr-social-start",
+      "known_positive_reason_fields": [
+        "heart_failure"
+      ],
+      "source_bindings": [
+        {
+          "input": "heart_failure",
+          "source_refs": [
+            "RU-VENLA-XR"
+          ],
+          "source_locator": "§4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "qt_risk",
+        "pregnancy_suspected"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "venla-xr-social-start--caution-RU-VENLA-XR-coronary_disease",
+      "rule_id": "venla-xr-social-start",
+      "known_positive_reason_fields": [
+        "coronary_disease"
+      ],
+      "source_bindings": [
+        {
+          "input": "coronary_disease",
+          "source_refs": [
+            "RU-VENLA-XR"
+          ],
+          "source_locator": "§4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "qt_risk",
+        "pregnancy_suspected"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "venla-xr-social-start--caution-RU-VENLA-XR-ecg_change",
+      "rule_id": "venla-xr-social-start",
+      "known_positive_reason_fields": [
+        "ecg_change"
+      ],
+      "source_bindings": [
+        {
+          "input": "ecg_change",
+          "source_refs": [
+            "RU-VENLA-XR"
+          ],
+          "source_locator": "§4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "qt_risk",
+        "pregnancy_suspected"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "venla-xr-social-start--caution-RU-VENLA-XR-qt_risk",
+      "rule_id": "venla-xr-social-start",
+      "known_positive_reason_fields": [
+        "qt_risk"
+      ],
+      "source_bindings": [
+        {
+          "input": "qt_risk",
+          "source_refs": [
+            "RU-VENLA-XR"
+          ],
+          "source_locator": "§4.4 с.10; §4.5 с.15–16"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "pregnancy_suspected"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "venla-xr-social-start--caution-RU-VENLA-XR-electrolyte_imbalance",
+      "rule_id": "venla-xr-social-start",
+      "known_positive_reason_fields": [
+        "electrolyte_imbalance"
+      ],
+      "source_bindings": [
+        {
+          "input": "electrolyte_imbalance",
+          "source_refs": [
+            "RU-VENLA-XR"
+          ],
+          "source_locator": "§4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "qt_risk",
+        "pregnancy_suspected"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "venla-xr-social-start--caution-RU-VENLA-XR-hypertension",
+      "rule_id": "venla-xr-social-start",
+      "known_positive_reason_fields": [
+        "hypertension"
+      ],
+      "source_bindings": [
+        {
+          "input": "hypertension",
+          "source_refs": [
+            "RU-VENLA-XR"
+          ],
+          "source_locator": "§4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "qt_risk",
+        "pregnancy_suspected"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "venla-xr-social-start--caution-RU-VENLA-XR-tachycardia",
+      "rule_id": "venla-xr-social-start",
+      "known_positive_reason_fields": [
+        "tachycardia"
+      ],
+      "source_bindings": [
+        {
+          "input": "tachycardia",
+          "source_refs": [
+            "RU-VENLA-XR"
+          ],
+          "source_locator": "§4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "qt_risk",
+        "pregnancy_suspected"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "venla-xr-social-start--caution-RU-VENLA-XR-seizure_history",
+      "rule_id": "venla-xr-social-start",
+      "known_positive_reason_fields": [
+        "seizure_history"
+      ],
+      "source_bindings": [
+        {
+          "input": "seizure_history",
+          "source_refs": [
+            "RU-VENLA-XR"
+          ],
+          "source_locator": "§4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "qt_risk",
+        "pregnancy_suspected"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "venla-xr-social-start--caution-RU-VENLA-XR-glaucoma",
+      "rule_id": "venla-xr-social-start",
+      "known_positive_reason_fields": [
+        "glaucoma"
+      ],
+      "source_bindings": [
+        {
+          "input": "glaucoma",
+          "source_refs": [
+            "RU-VENLA-XR"
+          ],
+          "source_locator": "§4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "qt_risk",
+        "pregnancy_suspected"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "venla-xr-social-start--caution-RU-VENLA-XR-mania",
+      "rule_id": "venla-xr-social-start",
+      "known_positive_reason_fields": [
+        "mania"
+      ],
+      "source_bindings": [
+        {
+          "input": "mania",
+          "source_refs": [
+            "RU-VENLA-XR"
+          ],
+          "source_locator": "§4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "qt_risk",
+        "pregnancy_suspected"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "venla-xr-social-start--caution-RU-VENLA-XR-bleeding_risk",
+      "rule_id": "venla-xr-social-start",
+      "known_positive_reason_fields": [
+        "bleeding_risk"
+      ],
+      "source_bindings": [
+        {
+          "input": "bleeding_risk",
+          "source_refs": [
+            "RU-VENLA-XR"
+          ],
+          "source_locator": "§4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "qt_risk",
+        "pregnancy_suspected"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "venla-xr-social-start--caution-RU-VENLA-XR-low_body_mass",
+      "rule_id": "venla-xr-social-start",
+      "known_positive_reason_fields": [
+        "low_body_mass"
+      ],
+      "source_bindings": [
+        {
+          "input": "low_body_mass",
+          "source_refs": [
+            "RU-VENLA-XR"
+          ],
+          "source_locator": "§4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "qt_risk",
+        "pregnancy_suspected"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "venla-xr-social-start--caution-RU-VENLA-XR-urinary_impairment",
+      "rule_id": "venla-xr-social-start",
+      "known_positive_reason_fields": [
+        "urinary_impairment"
+      ],
+      "source_bindings": [
+        {
+          "input": "urinary_impairment",
+          "source_refs": [
+            "RU-VENLA-XR"
+          ],
+          "source_locator": "§4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "qt_risk",
+        "pregnancy_suspected"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "venla-xr-social-start--caution-RU-VENLA-XR-low_blood_pressure",
+      "rule_id": "venla-xr-social-start",
+      "known_positive_reason_fields": [
+        "low_blood_pressure"
+      ],
+      "source_bindings": [
+        {
+          "input": "low_blood_pressure",
+          "source_refs": [
+            "RU-VENLA-XR"
+          ],
+          "source_locator": "§4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "qt_risk",
+        "pregnancy_suspected"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "venla-xr-social-start--caution-RU-VENLA-XR-diabetes",
+      "rule_id": "venla-xr-social-start",
+      "known_positive_reason_fields": [
+        "diabetes"
+      ],
+      "source_bindings": [
+        {
+          "input": "diabetes",
+          "source_refs": [
+            "RU-VENLA-XR"
+          ],
+          "source_locator": "§4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "qt_risk",
+        "pregnancy_suspected"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "venla-xr-social-start--caution-RU-VENLA-XR-recent_stroke",
+      "rule_id": "venla-xr-social-start",
+      "known_positive_reason_fields": [
+        "recent_stroke"
+      ],
+      "source_bindings": [
+        {
+          "input": "recent_stroke",
+          "source_refs": [
+            "RU-VENLA-XR"
+          ],
+          "source_locator": "§4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "qt_risk",
+        "pregnancy_suspected"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "venla-xr-social-start--caution-RU-VENLA-XR-hyponatremia_risk",
+      "rule_id": "venla-xr-social-start",
+      "known_positive_reason_fields": [
+        "hyponatremia_risk"
+      ],
+      "source_bindings": [
+        {
+          "input": "hyponatremia_risk",
+          "source_refs": [
+            "RU-VENLA-XR"
+          ],
+          "source_locator": "§4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "qt_risk",
+        "pregnancy_suspected"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "venla-xr-social-start--caution-RU-VENLA-XR-ect",
+      "rule_id": "venla-xr-social-start",
+      "known_positive_reason_fields": [
+        "ect"
+      ],
+      "source_bindings": [
+        {
+          "input": "ect",
+          "source_refs": [
+            "RU-VENLA-XR"
+          ],
+          "source_locator": "§4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "qt_risk",
+        "pregnancy_suspected"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "venla-xr-social-start--caution-RU-VENLA-XR-hypercholesterolemia",
+      "rule_id": "venla-xr-social-start",
+      "known_positive_reason_fields": [
+        "hypercholesterolemia"
+      ],
+      "source_bindings": [
+        {
+          "input": "hypercholesterolemia",
+          "source_refs": [
+            "RU-VENLA-XR"
+          ],
+          "source_locator": "§4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "qt_risk",
+        "pregnancy_suspected"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "venla-xr-social-start--caution-RU-VENLA-XR-alcohol_use",
+      "rule_id": "venla-xr-social-start",
+      "known_positive_reason_fields": [
+        "alcohol_use"
+      ],
+      "source_bindings": [
+        {
+          "input": "alcohol_use",
+          "source_refs": [
+            "RU-VENLA-XR"
+          ],
+          "source_locator": "§4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "qt_risk",
+        "pregnancy_suspected"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "venla-xr-social-start--caution-RU-VENLA-XR-suicide_risk",
+      "rule_id": "venla-xr-social-start",
+      "known_positive_reason_fields": [
+        "suicide_risk"
+      ],
+      "source_bindings": [
+        {
+          "input": "suicide_risk",
+          "source_refs": [
+            "RU-VENLA-XR"
+          ],
+          "source_locator": "§4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале"
+        }
+      ],
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "qt_risk",
+        "pregnancy_suspected"
+      ],
+      "cause_kind": "known_boolean_source_caution"
+    },
+    {
+      "case_id": "ago-depression-start--medicine-RU-AGO-moderate_CYP1A2",
+      "rule_id": "ago-depression-start",
+      "known_current_source_class_records": [
+        {
+          "record_id": "M1",
+          "inn": "пропранолол",
+          "status": "current",
+          "interaction_class": "moderate_CYP1A2",
+          "classification_basis": {
+            "source_ref": "RU-AGO",
+            "source_locator": "§4.1–4.4 с.1–5; §4.5–4.6 с.5–6"
+          }
+        }
+      ],
+      "causal_fields": [
+        "medicines"
+      ],
+      "source_refs": [
+        "RU-AGO"
+      ],
+      "source_locator": "§4.3 с.3; §4.4–4.5 с.3,5–6",
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "allergy",
+        "ALT_ratio",
+        "AST_ratio",
+        "elderly_population",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "overweight_obesity",
+        "fatty_liver",
+        "diabetes",
+        "alcohol_abuse"
+      ],
+      "cause_kind": "known_current_source_interaction_class"
+    },
+    {
+      "case_id": "ago-depression-start--medicine-RU-AGO-hepatotoxic",
+      "rule_id": "ago-depression-start",
+      "known_current_source_class_records": [
+        {
+          "record_id": "M1",
+          "inn": "synthetic clinically identified hepatotoxic medication",
+          "status": "current",
+          "interaction_class": "hepatotoxic",
+          "classification_basis": {
+            "source_ref": "RU-AGO",
+            "source_locator": "§4.1–4.4 с.1–5; §4.5–4.6 с.5–6"
+          }
+        }
+      ],
+      "causal_fields": [
+        "medicines"
+      ],
+      "source_refs": [
+        "RU-AGO"
+      ],
+      "source_locator": "§4.3 с.3; §4.4–4.5 с.3,5–6",
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "allergy",
+        "ALT_ratio",
+        "AST_ratio",
+        "elderly_population",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "overweight_obesity",
+        "fatty_liver",
+        "diabetes",
+        "alcohol_abuse"
+      ],
+      "cause_kind": "known_current_source_interaction_class"
+    },
+    {
+      "case_id": "ago-gad-start--medicine-RU-AGO-moderate_CYP1A2",
+      "rule_id": "ago-gad-start",
+      "known_current_source_class_records": [
+        {
+          "record_id": "M1",
+          "inn": "пропранолол",
+          "status": "current",
+          "interaction_class": "moderate_CYP1A2",
+          "classification_basis": {
+            "source_ref": "RU-AGO",
+            "source_locator": "§4.1–4.4 с.1–5; §4.5–4.6 с.5–6"
+          }
+        }
+      ],
+      "causal_fields": [
+        "medicines"
+      ],
+      "source_refs": [
+        "RU-AGO"
+      ],
+      "source_locator": "§4.3 с.3; §4.4–4.5 с.3,5–6",
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "allergy",
+        "ALT_ratio",
+        "AST_ratio",
+        "elderly_population",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "overweight_obesity",
+        "fatty_liver",
+        "diabetes",
+        "alcohol_abuse"
+      ],
+      "cause_kind": "known_current_source_interaction_class"
+    },
+    {
+      "case_id": "ago-gad-start--medicine-RU-AGO-hepatotoxic",
+      "rule_id": "ago-gad-start",
+      "known_current_source_class_records": [
+        {
+          "record_id": "M1",
+          "inn": "synthetic clinically identified hepatotoxic medication",
+          "status": "current",
+          "interaction_class": "hepatotoxic",
+          "classification_basis": {
+            "source_ref": "RU-AGO",
+            "source_locator": "§4.1–4.4 с.1–5; §4.5–4.6 с.5–6"
+          }
+        }
+      ],
+      "causal_fields": [
+        "medicines"
+      ],
+      "source_refs": [
+        "RU-AGO"
+      ],
+      "source_locator": "§4.3 с.3; §4.4–4.5 с.3,5–6",
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "allergy",
+        "ALT_ratio",
+        "AST_ratio",
+        "elderly_population",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "overweight_obesity",
+        "fatty_liver",
+        "diabetes",
+        "alcohol_abuse"
+      ],
+      "cause_kind": "known_current_source_interaction_class"
+    },
+    {
+      "case_id": "dulox-depression-start--medicine-RU-DULOX-serotonergic",
+      "rule_id": "dulox-depression-start",
+      "known_current_source_class_records": [
+        {
+          "record_id": "M1",
+          "inn": "synthetic clinically identified serotonergic medication",
+          "status": "current",
+          "interaction_class": "serotonergic",
+          "classification_basis": {
+            "source_ref": "RU-DULOX",
+            "source_locator": "§4.1–4.3 с.1–4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.9–10"
+          }
+        }
+      ],
+      "causal_fields": [
+        "medicines"
+      ],
+      "source_refs": [
+        "RU-DULOX"
+      ],
+      "source_locator": "§4.3 с.3–4; §4.5 с.7–9",
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "allergy",
+        "renal_metric",
+        "uncontrolled_hypertension",
+        "closed_angle_glaucoma",
+        "fructose_intolerance",
+        "glucose_galactose_malabsorption",
+        "sucrase_isomaltase_deficiency"
+      ],
+      "cause_kind": "known_current_source_interaction_class"
+    },
+    {
+      "case_id": "dulox-depression-start--medicine-RU-DULOX-bleeding",
+      "rule_id": "dulox-depression-start",
+      "known_current_source_class_records": [
+        {
+          "record_id": "M1",
+          "inn": "synthetic clinically identified bleeding medication",
+          "status": "current",
+          "interaction_class": "bleeding",
+          "classification_basis": {
+            "source_ref": "RU-DULOX",
+            "source_locator": "§4.1–4.3 с.1–4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.9–10"
+          }
+        }
+      ],
+      "causal_fields": [
+        "medicines"
+      ],
+      "source_refs": [
+        "RU-DULOX"
+      ],
+      "source_locator": "§4.3 с.3–4; §4.5 с.7–9",
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "allergy",
+        "renal_metric",
+        "uncontrolled_hypertension",
+        "closed_angle_glaucoma",
+        "fructose_intolerance",
+        "glucose_galactose_malabsorption",
+        "sucrase_isomaltase_deficiency"
+      ],
+      "cause_kind": "known_current_source_interaction_class"
+    },
+    {
+      "case_id": "dulox-depression-start--medicine-RU-DULOX-CYP2D6_inhibitor",
+      "rule_id": "dulox-depression-start",
+      "known_current_source_class_records": [
+        {
+          "record_id": "M1",
+          "inn": "synthetic clinically identified CYP2D6_inhibitor medication",
+          "status": "current",
+          "interaction_class": "CYP2D6_inhibitor",
+          "classification_basis": {
+            "source_ref": "RU-DULOX",
+            "source_locator": "§4.1–4.3 с.1–4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.9–10"
+          }
+        }
+      ],
+      "causal_fields": [
+        "medicines"
+      ],
+      "source_refs": [
+        "RU-DULOX"
+      ],
+      "source_locator": "§4.3 с.3–4; §4.5 с.7–9",
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "allergy",
+        "renal_metric",
+        "uncontrolled_hypertension",
+        "closed_angle_glaucoma",
+        "fructose_intolerance",
+        "glucose_galactose_malabsorption",
+        "sucrase_isomaltase_deficiency"
+      ],
+      "cause_kind": "known_current_source_interaction_class"
+    },
+    {
+      "case_id": "dulox-gad-adjust--medicine-RU-DULOX-serotonergic",
+      "rule_id": "dulox-gad-adjust",
+      "known_current_source_class_records": [
+        {
+          "record_id": "M1",
+          "inn": "synthetic clinically identified serotonergic medication",
+          "status": "current",
+          "interaction_class": "serotonergic",
+          "classification_basis": {
+            "source_ref": "RU-DULOX",
+            "source_locator": "§4.1–4.3 с.1–4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.9–10"
+          }
+        }
+      ],
+      "causal_fields": [
+        "medicines"
+      ],
+      "source_refs": [
+        "RU-DULOX"
+      ],
+      "source_locator": "§4.3 с.3–4; §4.5 с.7–9",
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "allergy",
+        "renal_metric",
+        "comorbid_depression",
+        "elderly_population",
+        "uncontrolled_hypertension",
+        "closed_angle_glaucoma",
+        "current_dose",
+        "response",
+        "tolerability",
+        "fructose_intolerance",
+        "glucose_galactose_malabsorption",
+        "sucrase_isomaltase_deficiency",
+        "akathisia"
+      ],
+      "cause_kind": "known_current_source_interaction_class"
+    },
+    {
+      "case_id": "dulox-gad-adjust--medicine-RU-DULOX-bleeding",
+      "rule_id": "dulox-gad-adjust",
+      "known_current_source_class_records": [
+        {
+          "record_id": "M1",
+          "inn": "synthetic clinically identified bleeding medication",
+          "status": "current",
+          "interaction_class": "bleeding",
+          "classification_basis": {
+            "source_ref": "RU-DULOX",
+            "source_locator": "§4.1–4.3 с.1–4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.9–10"
+          }
+        }
+      ],
+      "causal_fields": [
+        "medicines"
+      ],
+      "source_refs": [
+        "RU-DULOX"
+      ],
+      "source_locator": "§4.3 с.3–4; §4.5 с.7–9",
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "allergy",
+        "renal_metric",
+        "comorbid_depression",
+        "elderly_population",
+        "uncontrolled_hypertension",
+        "closed_angle_glaucoma",
+        "current_dose",
+        "response",
+        "tolerability",
+        "fructose_intolerance",
+        "glucose_galactose_malabsorption",
+        "sucrase_isomaltase_deficiency",
+        "akathisia"
+      ],
+      "cause_kind": "known_current_source_interaction_class"
+    },
+    {
+      "case_id": "dulox-gad-adjust--medicine-RU-DULOX-CYP2D6_inhibitor",
+      "rule_id": "dulox-gad-adjust",
+      "known_current_source_class_records": [
+        {
+          "record_id": "M1",
+          "inn": "synthetic clinically identified CYP2D6_inhibitor medication",
+          "status": "current",
+          "interaction_class": "CYP2D6_inhibitor",
+          "classification_basis": {
+            "source_ref": "RU-DULOX",
+            "source_locator": "§4.1–4.3 с.1–4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.9–10"
+          }
+        }
+      ],
+      "causal_fields": [
+        "medicines"
+      ],
+      "source_refs": [
+        "RU-DULOX"
+      ],
+      "source_locator": "§4.3 с.3–4; §4.5 с.7–9",
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "allergy",
+        "renal_metric",
+        "comorbid_depression",
+        "elderly_population",
+        "uncontrolled_hypertension",
+        "closed_angle_glaucoma",
+        "current_dose",
+        "response",
+        "tolerability",
+        "fructose_intolerance",
+        "glucose_galactose_malabsorption",
+        "sucrase_isomaltase_deficiency",
+        "akathisia"
+      ],
+      "cause_kind": "known_current_source_interaction_class"
+    },
+    {
+      "case_id": "dulox-gad-start--medicine-RU-DULOX-serotonergic",
+      "rule_id": "dulox-gad-start",
+      "known_current_source_class_records": [
+        {
+          "record_id": "M1",
+          "inn": "synthetic clinically identified serotonergic medication",
+          "status": "current",
+          "interaction_class": "serotonergic",
+          "classification_basis": {
+            "source_ref": "RU-DULOX",
+            "source_locator": "§4.1–4.3 с.1–4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.9–10"
+          }
+        }
+      ],
+      "causal_fields": [
+        "medicines"
+      ],
+      "source_refs": [
+        "RU-DULOX"
+      ],
+      "source_locator": "§4.3 с.3–4; §4.5 с.7–9",
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "allergy",
+        "renal_metric",
+        "comorbid_depression",
+        "elderly_population",
+        "uncontrolled_hypertension",
+        "closed_angle_glaucoma",
+        "fructose_intolerance",
+        "glucose_galactose_malabsorption",
+        "sucrase_isomaltase_deficiency"
+      ],
+      "cause_kind": "known_current_source_interaction_class"
+    },
+    {
+      "case_id": "dulox-gad-start--medicine-RU-DULOX-bleeding",
+      "rule_id": "dulox-gad-start",
+      "known_current_source_class_records": [
+        {
+          "record_id": "M1",
+          "inn": "synthetic clinically identified bleeding medication",
+          "status": "current",
+          "interaction_class": "bleeding",
+          "classification_basis": {
+            "source_ref": "RU-DULOX",
+            "source_locator": "§4.1–4.3 с.1–4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.9–10"
+          }
+        }
+      ],
+      "causal_fields": [
+        "medicines"
+      ],
+      "source_refs": [
+        "RU-DULOX"
+      ],
+      "source_locator": "§4.3 с.3–4; §4.5 с.7–9",
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "allergy",
+        "renal_metric",
+        "comorbid_depression",
+        "elderly_population",
+        "uncontrolled_hypertension",
+        "closed_angle_glaucoma",
+        "fructose_intolerance",
+        "glucose_galactose_malabsorption",
+        "sucrase_isomaltase_deficiency"
+      ],
+      "cause_kind": "known_current_source_interaction_class"
+    },
+    {
+      "case_id": "dulox-gad-start--medicine-RU-DULOX-CYP2D6_inhibitor",
+      "rule_id": "dulox-gad-start",
+      "known_current_source_class_records": [
+        {
+          "record_id": "M1",
+          "inn": "synthetic clinically identified CYP2D6_inhibitor medication",
+          "status": "current",
+          "interaction_class": "CYP2D6_inhibitor",
+          "classification_basis": {
+            "source_ref": "RU-DULOX",
+            "source_locator": "§4.1–4.3 с.1–4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.9–10"
+          }
+        }
+      ],
+      "causal_fields": [
+        "medicines"
+      ],
+      "source_refs": [
+        "RU-DULOX"
+      ],
+      "source_locator": "§4.3 с.3–4; §4.5 с.7–9",
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "allergy",
+        "renal_metric",
+        "comorbid_depression",
+        "elderly_population",
+        "uncontrolled_hypertension",
+        "closed_angle_glaucoma",
+        "fructose_intolerance",
+        "glucose_galactose_malabsorption",
+        "sucrase_isomaltase_deficiency"
+      ],
+      "cause_kind": "known_current_source_interaction_class"
+    },
+    {
+      "case_id": "fluvox-depression-start--medicine-RU-FLUVOX-serotonergic",
+      "rule_id": "fluvox-depression-start",
+      "known_current_source_class_records": [
+        {
+          "record_id": "M1",
+          "inn": "synthetic clinically identified serotonergic medication",
+          "status": "current",
+          "interaction_class": "serotonergic",
+          "classification_basis": {
+            "source_ref": "RU-FLUVOX",
+            "source_locator": "§4.1–4.3 с.1–3; §4.4–4.6 с.4–11"
+          }
+        }
+      ],
+      "causal_fields": [
+        "medicines"
+      ],
+      "source_refs": [
+        "RU-FLUVOX"
+      ],
+      "source_locator": "§4.1–4.3 PDF с.1–3; §4.4–4.6 с.4–11; §8–10 с.19",
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "allergy",
+        "renal_metric",
+        "source_start_choice",
+        "seizure_state"
+      ],
+      "cause_kind": "known_current_source_interaction_class"
+    },
+    {
+      "case_id": "fluvox-depression-start--medicine-RU-FLUVOX-bleeding",
+      "rule_id": "fluvox-depression-start",
+      "known_current_source_class_records": [
+        {
+          "record_id": "M1",
+          "inn": "synthetic clinically identified bleeding medication",
+          "status": "current",
+          "interaction_class": "bleeding",
+          "classification_basis": {
+            "source_ref": "RU-FLUVOX",
+            "source_locator": "§4.1–4.3 с.1–3; §4.4–4.6 с.4–11"
+          }
+        }
+      ],
+      "causal_fields": [
+        "medicines"
+      ],
+      "source_refs": [
+        "RU-FLUVOX"
+      ],
+      "source_locator": "§4.1–4.3 PDF с.1–3; §4.4–4.6 с.4–11; §8–10 с.19",
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "allergy",
+        "renal_metric",
+        "source_start_choice",
+        "seizure_state"
+      ],
+      "cause_kind": "known_current_source_interaction_class"
+    },
+    {
+      "case_id": "fluvox-depression-start--medicine-RU-FLUVOX-CYP_substrate",
+      "rule_id": "fluvox-depression-start",
+      "known_current_source_class_records": [
+        {
+          "record_id": "M1",
+          "inn": "synthetic clinically identified CYP_substrate medication",
+          "status": "current",
+          "interaction_class": "CYP_substrate",
+          "classification_basis": {
+            "source_ref": "RU-FLUVOX",
+            "source_locator": "§4.1–4.3 с.1–3; §4.4–4.6 с.4–11"
+          }
+        }
+      ],
+      "causal_fields": [
+        "medicines"
+      ],
+      "source_refs": [
+        "RU-FLUVOX"
+      ],
+      "source_locator": "§4.1–4.3 PDF с.1–3; §4.4–4.6 с.4–11; §8–10 с.19",
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "allergy",
+        "renal_metric",
+        "source_start_choice",
+        "seizure_state"
+      ],
+      "cause_kind": "known_current_source_interaction_class"
+    },
+    {
+      "case_id": "parox-panic-kr--medicine-RU-PAROX-serotonergic",
+      "rule_id": "parox-panic-kr",
+      "known_current_source_class_records": [
+        {
+          "record_id": "M1",
+          "inn": "synthetic clinically identified serotonergic medication",
+          "status": "current",
+          "interaction_class": "serotonergic",
+          "classification_basis": {
+            "source_ref": "RU-PAROX",
+            "source_locator": "§4.2–4.3 с.3–5; §4.4–4.6 с.5–15"
+          }
+        }
+      ],
+      "causal_fields": [
+        "medicines"
+      ],
+      "source_refs": [
+        "RU-PAROX"
+      ],
+      "source_locator": "RU-PAROX §4.3 с.4–5; §4.5 с.11–14",
+      "late_fields": [
+        "age",
+        "hepatic",
+        "renal",
+        "pregnancy",
+        "lactation",
+        "allergy",
+        "elderly_population",
+        "seizure_state",
+        "bipolar_risk_screening"
+      ],
+      "cause_kind": "known_current_source_interaction_class"
+    },
+    {
+      "case_id": "parox-panic-kr--medicine-RU-PAROX-bleeding",
+      "rule_id": "parox-panic-kr",
+      "known_current_source_class_records": [
+        {
+          "record_id": "M1",
+          "inn": "synthetic clinically identified bleeding medication",
+          "status": "current",
+          "interaction_class": "bleeding",
+          "classification_basis": {
+            "source_ref": "RU-PAROX",
+            "source_locator": "§4.2–4.3 с.3–5; §4.4–4.6 с.5–15"
+          }
+        }
+      ],
+      "causal_fields": [
+        "medicines"
+      ],
+      "source_refs": [
+        "RU-PAROX"
+      ],
+      "source_locator": "RU-PAROX §4.3 с.4–5; §4.5 с.11–14",
+      "late_fields": [
+        "age",
+        "hepatic",
+        "renal",
+        "pregnancy",
+        "lactation",
+        "allergy",
+        "elderly_population",
+        "seizure_state",
+        "bipolar_risk_screening"
+      ],
+      "cause_kind": "known_current_source_interaction_class"
+    },
+    {
+      "case_id": "parox-panic-kr--medicine-RU-PAROX-CYP2D6_substrate",
+      "rule_id": "parox-panic-kr",
+      "known_current_source_class_records": [
+        {
+          "record_id": "M1",
+          "inn": "synthetic clinically identified CYP2D6_substrate medication",
+          "status": "current",
+          "interaction_class": "CYP2D6_substrate",
+          "classification_basis": {
+            "source_ref": "RU-PAROX",
+            "source_locator": "§4.2–4.3 с.3–5; §4.4–4.6 с.5–15"
+          }
+        }
+      ],
+      "causal_fields": [
+        "medicines"
+      ],
+      "source_refs": [
+        "RU-PAROX"
+      ],
+      "source_locator": "RU-PAROX §4.3 с.4–5; §4.5 с.11–14",
+      "late_fields": [
+        "age",
+        "hepatic",
+        "renal",
+        "pregnancy",
+        "lactation",
+        "allergy",
+        "elderly_population",
+        "seizure_state",
+        "bipolar_risk_screening"
+      ],
+      "cause_kind": "known_current_source_interaction_class"
+    },
+    {
+      "case_id": "preg-gad-adjust--medicine-RU-PREG-CNS_depressant",
+      "rule_id": "preg-gad-adjust",
+      "known_current_source_class_records": [
+        {
+          "record_id": "M1",
+          "inn": "synthetic assessed CNS depressant",
+          "status": "current",
+          "interaction_class": "CNS_depressant",
+          "classification_basis": {
+            "source_ref": "RU-PREG",
+            "source_locator": "§4.1–4.3 с.3–6; §4.4–4.6 с.6–12"
+          }
+        }
+      ],
+      "causal_fields": [
+        "medicines"
+      ],
+      "source_refs": [
+        "RU-PREG"
+      ],
+      "source_locator": "§4.4 с.7–8,10; §4.5 с.11–12",
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "lactation",
+        "allergy",
+        "clcr",
+        "dialysis",
+        "respiratory",
+        "frequency",
+        "current_dose",
+        "time_at_dose",
+        "response",
+        "tolerability",
+        "adherence",
+        "angioedema",
+        "severe_skin_reaction",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "misuse_risk_assessment",
+        "reproductive_population"
+      ],
+      "cause_kind": "known_current_source_interaction_class"
+    },
+    {
+      "case_id": "preg-gad-adjust--medicine-RU-PREG-opioid",
+      "rule_id": "preg-gad-adjust",
+      "known_current_source_class_records": [
+        {
+          "record_id": "M1",
+          "inn": "synthetic assessed opioid",
+          "status": "current",
+          "interaction_class": "opioid",
+          "classification_basis": {
+            "source_ref": "RU-PREG",
+            "source_locator": "§4.1–4.3 с.3–6; §4.4–4.6 с.6–12"
+          }
+        }
+      ],
+      "causal_fields": [
+        "medicines"
+      ],
+      "source_refs": [
+        "RU-PREG"
+      ],
+      "source_locator": "§4.4 с.7–8,10; §4.5 с.11–12",
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "lactation",
+        "allergy",
+        "clcr",
+        "dialysis",
+        "respiratory",
+        "frequency",
+        "current_dose",
+        "time_at_dose",
+        "response",
+        "tolerability",
+        "adherence",
+        "angioedema",
+        "severe_skin_reaction",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "misuse_risk_assessment",
+        "reproductive_population"
+      ],
+      "cause_kind": "known_current_source_interaction_class"
+    },
+    {
+      "case_id": "preg-gad-start--medicine-RU-PREG-CNS_depressant",
+      "rule_id": "preg-gad-start",
+      "known_current_source_class_records": [
+        {
+          "record_id": "M1",
+          "inn": "synthetic assessed CNS depressant",
+          "status": "current",
+          "interaction_class": "CNS_depressant",
+          "classification_basis": {
+            "source_ref": "RU-PREG",
+            "source_locator": "§4.1–4.3 с.3–6; §4.4–4.6 с.6–12"
+          }
+        }
+      ],
+      "causal_fields": [
+        "medicines"
+      ],
+      "source_refs": [
+        "RU-PREG"
+      ],
+      "source_locator": "§4.4 с.7–8,10; §4.5 с.11–12",
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "lactation",
+        "allergy",
+        "clcr",
+        "dialysis",
+        "respiratory",
+        "frequency",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "misuse_risk_assessment",
+        "reproductive_population"
+      ],
+      "cause_kind": "known_current_source_interaction_class"
+    },
+    {
+      "case_id": "preg-gad-start--medicine-RU-PREG-opioid",
+      "rule_id": "preg-gad-start",
+      "known_current_source_class_records": [
+        {
+          "record_id": "M1",
+          "inn": "synthetic assessed opioid",
+          "status": "current",
+          "interaction_class": "opioid",
+          "classification_basis": {
+            "source_ref": "RU-PREG",
+            "source_locator": "§4.1–4.3 с.3–6; §4.4–4.6 с.6–12"
+          }
+        }
+      ],
+      "causal_fields": [
+        "medicines"
+      ],
+      "source_refs": [
+        "RU-PREG"
+      ],
+      "source_locator": "§4.4 с.7–8,10; §4.5 с.11–12",
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "lactation",
+        "allergy",
+        "clcr",
+        "dialysis",
+        "respiratory",
+        "frequency",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "misuse_risk_assessment",
+        "reproductive_population"
+      ],
+      "cause_kind": "known_current_source_interaction_class"
+    },
+    {
+      "case_id": "preg-renal-start--medicine-RU-PREG-CNS_depressant",
+      "rule_id": "preg-renal-start",
+      "known_current_source_class_records": [
+        {
+          "record_id": "M1",
+          "inn": "synthetic assessed CNS depressant",
+          "status": "current",
+          "interaction_class": "CNS_depressant",
+          "classification_basis": {
+            "source_ref": "RU-PREG",
+            "source_locator": "§4.1–4.3 с.3–6; §4.4–4.6 с.6–12"
+          }
+        }
+      ],
+      "causal_fields": [
+        "medicines"
+      ],
+      "source_refs": [
+        "RU-PREG"
+      ],
+      "source_locator": "§4.4 с.7–8,10; §4.5 с.11–12",
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "lactation",
+        "allergy",
+        "clcr",
+        "dialysis",
+        "respiratory",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "misuse_risk_assessment",
+        "reproductive_population"
+      ],
+      "cause_kind": "known_current_source_interaction_class"
+    },
+    {
+      "case_id": "preg-renal-start--medicine-RU-PREG-opioid",
+      "rule_id": "preg-renal-start",
+      "known_current_source_class_records": [
+        {
+          "record_id": "M1",
+          "inn": "synthetic assessed opioid",
+          "status": "current",
+          "interaction_class": "opioid",
+          "classification_basis": {
+            "source_ref": "RU-PREG",
+            "source_locator": "§4.1–4.3 с.3–6; §4.4–4.6 с.6–12"
+          }
+        }
+      ],
+      "causal_fields": [
+        "medicines"
+      ],
+      "source_refs": [
+        "RU-PREG"
+      ],
+      "source_locator": "§4.4 с.7–8,10; §4.5 с.11–12",
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "lactation",
+        "allergy",
+        "clcr",
+        "dialysis",
+        "respiratory",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "misuse_risk_assessment",
+        "reproductive_population"
+      ],
+      "cause_kind": "known_current_source_interaction_class"
+    },
+    {
+      "case_id": "ser-adult-adjust--medicine-RU-SER-serotonergic",
+      "rule_id": "ser-adult-adjust",
+      "known_current_source_class_records": [
+        {
+          "record_id": "M1",
+          "inn": "synthetic clinically identified serotonergic medication",
+          "status": "current",
+          "interaction_class": "serotonergic",
+          "classification_basis": {
+            "source_ref": "RU-SER",
+            "source_locator": "§4.1–4.4 с.1–7; §4.5–4.6 с.7–11"
+          }
+        }
+      ],
+      "causal_fields": [
+        "medicines"
+      ],
+      "source_refs": [
+        "RU-SER"
+      ],
+      "source_locator": "§4.3 с.3; §4.5 с.7–11",
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "lactation",
+        "allergy",
+        "hepatic",
+        "seizure_state",
+        "current_dose",
+        "clinician_action",
+        "mania_symptoms"
+      ],
+      "cause_kind": "known_current_source_interaction_class"
+    },
+    {
+      "case_id": "ser-adult-adjust--medicine-RU-SER-QT_prolonging",
+      "rule_id": "ser-adult-adjust",
+      "known_current_source_class_records": [
+        {
+          "record_id": "M1",
+          "inn": "synthetic clinically identified QT_prolonging medication",
+          "status": "current",
+          "interaction_class": "QT_prolonging",
+          "classification_basis": {
+            "source_ref": "RU-SER",
+            "source_locator": "§4.1–4.4 с.1–7; §4.5–4.6 с.7–11"
+          }
+        }
+      ],
+      "causal_fields": [
+        "medicines"
+      ],
+      "source_refs": [
+        "RU-SER"
+      ],
+      "source_locator": "§4.3 с.3; §4.5 с.7–11",
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "lactation",
+        "allergy",
+        "hepatic",
+        "seizure_state",
+        "current_dose",
+        "clinician_action",
+        "mania_symptoms"
+      ],
+      "cause_kind": "known_current_source_interaction_class"
+    },
+    {
+      "case_id": "ser-adult-adjust--medicine-RU-SER-bleeding",
+      "rule_id": "ser-adult-adjust",
+      "known_current_source_class_records": [
+        {
+          "record_id": "M1",
+          "inn": "synthetic clinically identified bleeding medication",
+          "status": "current",
+          "interaction_class": "bleeding",
+          "classification_basis": {
+            "source_ref": "RU-SER",
+            "source_locator": "§4.1–4.4 с.1–7; §4.5–4.6 с.7–11"
+          }
+        }
+      ],
+      "causal_fields": [
+        "medicines"
+      ],
+      "source_refs": [
+        "RU-SER"
+      ],
+      "source_locator": "§4.3 с.3; §4.5 с.7–11",
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "lactation",
+        "allergy",
+        "hepatic",
+        "seizure_state",
+        "current_dose",
+        "clinician_action",
+        "mania_symptoms"
+      ],
+      "cause_kind": "known_current_source_interaction_class"
+    },
+    {
+      "case_id": "ser-panic-start--medicine-RU-SER-serotonergic",
+      "rule_id": "ser-panic-start",
+      "known_current_source_class_records": [
+        {
+          "record_id": "M1",
+          "inn": "synthetic clinically identified serotonergic medication",
+          "status": "current",
+          "interaction_class": "serotonergic",
+          "classification_basis": {
+            "source_ref": "RU-SER",
+            "source_locator": "§4.1–4.4 с.1–7; §4.5–4.6 с.7–11"
+          }
+        }
+      ],
+      "causal_fields": [
+        "medicines"
+      ],
+      "source_refs": [
+        "RU-SER"
+      ],
+      "source_locator": "§4.3 с.3; §4.5 с.7–11",
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "lactation",
+        "allergy",
+        "hepatic",
+        "seizure_state"
+      ],
+      "cause_kind": "known_current_source_interaction_class"
+    },
+    {
+      "case_id": "ser-panic-start--medicine-RU-SER-QT_prolonging",
+      "rule_id": "ser-panic-start",
+      "known_current_source_class_records": [
+        {
+          "record_id": "M1",
+          "inn": "synthetic clinically identified QT_prolonging medication",
+          "status": "current",
+          "interaction_class": "QT_prolonging",
+          "classification_basis": {
+            "source_ref": "RU-SER",
+            "source_locator": "§4.1–4.4 с.1–7; §4.5–4.6 с.7–11"
+          }
+        }
+      ],
+      "causal_fields": [
+        "medicines"
+      ],
+      "source_refs": [
+        "RU-SER"
+      ],
+      "source_locator": "§4.3 с.3; §4.5 с.7–11",
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "lactation",
+        "allergy",
+        "hepatic",
+        "seizure_state"
+      ],
+      "cause_kind": "known_current_source_interaction_class"
+    },
+    {
+      "case_id": "ser-panic-start--medicine-RU-SER-bleeding",
+      "rule_id": "ser-panic-start",
+      "known_current_source_class_records": [
+        {
+          "record_id": "M1",
+          "inn": "synthetic clinically identified bleeding medication",
+          "status": "current",
+          "interaction_class": "bleeding",
+          "classification_basis": {
+            "source_ref": "RU-SER",
+            "source_locator": "§4.1–4.4 с.1–7; §4.5–4.6 с.7–11"
+          }
+        }
+      ],
+      "causal_fields": [
+        "medicines"
+      ],
+      "source_refs": [
+        "RU-SER"
+      ],
+      "source_locator": "§4.3 с.3; §4.5 с.7–11",
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "lactation",
+        "allergy",
+        "hepatic",
+        "seizure_state"
+      ],
+      "cause_kind": "known_current_source_interaction_class"
+    },
+    {
+      "case_id": "ser-social-start--medicine-RU-SER-serotonergic",
+      "rule_id": "ser-social-start",
+      "known_current_source_class_records": [
+        {
+          "record_id": "M1",
+          "inn": "synthetic clinically identified serotonergic medication",
+          "status": "current",
+          "interaction_class": "serotonergic",
+          "classification_basis": {
+            "source_ref": "RU-SER",
+            "source_locator": "§4.1–4.4 с.1–7; §4.5–4.6 с.7–11"
+          }
+        }
+      ],
+      "causal_fields": [
+        "medicines"
+      ],
+      "source_refs": [
+        "RU-SER"
+      ],
+      "source_locator": "§4.3 с.3; §4.5 с.7–11",
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "lactation",
+        "allergy",
+        "hepatic",
+        "seizure_state"
+      ],
+      "cause_kind": "known_current_source_interaction_class"
+    },
+    {
+      "case_id": "ser-social-start--medicine-RU-SER-QT_prolonging",
+      "rule_id": "ser-social-start",
+      "known_current_source_class_records": [
+        {
+          "record_id": "M1",
+          "inn": "synthetic clinically identified QT_prolonging medication",
+          "status": "current",
+          "interaction_class": "QT_prolonging",
+          "classification_basis": {
+            "source_ref": "RU-SER",
+            "source_locator": "§4.1–4.4 с.1–7; §4.5–4.6 с.7–11"
+          }
+        }
+      ],
+      "causal_fields": [
+        "medicines"
+      ],
+      "source_refs": [
+        "RU-SER"
+      ],
+      "source_locator": "§4.3 с.3; §4.5 с.7–11",
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "lactation",
+        "allergy",
+        "hepatic",
+        "seizure_state"
+      ],
+      "cause_kind": "known_current_source_interaction_class"
+    },
+    {
+      "case_id": "ser-social-start--medicine-RU-SER-bleeding",
+      "rule_id": "ser-social-start",
+      "known_current_source_class_records": [
+        {
+          "record_id": "M1",
+          "inn": "synthetic clinically identified bleeding medication",
+          "status": "current",
+          "interaction_class": "bleeding",
+          "classification_basis": {
+            "source_ref": "RU-SER",
+            "source_locator": "§4.1–4.4 с.1–7; §4.5–4.6 с.7–11"
+          }
+        }
+      ],
+      "causal_fields": [
+        "medicines"
+      ],
+      "source_refs": [
+        "RU-SER"
+      ],
+      "source_locator": "§4.3 с.3; §4.5 с.7–11",
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "lactation",
+        "allergy",
+        "hepatic",
+        "seizure_state"
+      ],
+      "cause_kind": "known_current_source_interaction_class"
+    },
+    {
+      "case_id": "switch-parox-ago-selected-example--medicine-RU-AGO-moderate_CYP1A2",
+      "rule_id": "switch-parox-ago-selected-example",
+      "known_current_source_class_records": [
+        {
+          "record_id": "M1",
+          "inn": "пропранолол",
+          "status": "current",
+          "interaction_class": "moderate_CYP1A2",
+          "classification_basis": {
+            "source_ref": "RU-AGO",
+            "source_locator": "§4.1–4.4 с.1–5; §4.5–4.6 с.5–6"
+          }
+        }
+      ],
+      "causal_fields": [
+        "medicines"
+      ],
+      "source_refs": [
+        "RU-PAROX",
+        "RU-AGO"
+      ],
+      "source_locator": "RU-PAROX §4.3 с.4–5; §4.5 с.11–14; RU-AGO §4.3 с.3; §4.5 с.5–6",
+      "late_fields": [
+        "age",
+        "current_dose",
+        "hepatic",
+        "alt_ratio_uln",
+        "ast_ratio_uln",
+        "allergy",
+        "pregnancy",
+        "lactation",
+        "withdrawal_severity",
+        "duration",
+        "past_withdrawal",
+        "example_selected",
+        "elderly_population",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "overweight_obesity",
+        "fatty_liver",
+        "diabetes",
+        "alcohol_abuse",
+        "from_renal",
+        "from_hepatic",
+        "seizure_state",
+        "serotonin_syndrome_signs"
+      ],
+      "cause_kind": "known_current_source_interaction_class"
+    },
+    {
+      "case_id": "switch-parox-ago-selected-example--medicine-RU-AGO-hepatotoxic",
+      "rule_id": "switch-parox-ago-selected-example",
+      "known_current_source_class_records": [
+        {
+          "record_id": "M1",
+          "inn": "synthetic clinically identified hepatotoxic medication",
+          "status": "current",
+          "interaction_class": "hepatotoxic",
+          "classification_basis": {
+            "source_ref": "RU-AGO",
+            "source_locator": "§4.1–4.4 с.1–5; §4.5–4.6 с.5–6"
+          }
+        }
+      ],
+      "causal_fields": [
+        "medicines"
+      ],
+      "source_refs": [
+        "RU-PAROX",
+        "RU-AGO"
+      ],
+      "source_locator": "RU-PAROX §4.3 с.4–5; §4.5 с.11–14; RU-AGO §4.3 с.3; §4.5 с.5–6",
+      "late_fields": [
+        "age",
+        "current_dose",
+        "hepatic",
+        "alt_ratio_uln",
+        "ast_ratio_uln",
+        "allergy",
+        "pregnancy",
+        "lactation",
+        "withdrawal_severity",
+        "duration",
+        "past_withdrawal",
+        "example_selected",
+        "elderly_population",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "overweight_obesity",
+        "fatty_liver",
+        "diabetes",
+        "alcohol_abuse",
+        "from_renal",
+        "from_hepatic",
+        "seizure_state",
+        "serotonin_syndrome_signs"
+      ],
+      "cause_kind": "known_current_source_interaction_class"
+    },
+    {
+      "case_id": "switch-parox-ago-selected-example--medicine-RU-PAROX-serotonergic",
+      "rule_id": "switch-parox-ago-selected-example",
+      "known_current_source_class_records": [
+        {
+          "record_id": "M1",
+          "inn": "synthetic clinically identified serotonergic medication",
+          "status": "current",
+          "interaction_class": "serotonergic",
+          "classification_basis": {
+            "source_ref": "RU-PAROX",
+            "source_locator": "§4.2–4.3 с.3–5; §4.4–4.6 с.5–15"
+          }
+        }
+      ],
+      "causal_fields": [
+        "medicines"
+      ],
+      "source_refs": [
+        "RU-PAROX",
+        "RU-AGO"
+      ],
+      "source_locator": "RU-PAROX §4.3 с.4–5; §4.5 с.11–14; RU-AGO §4.3 с.3; §4.5 с.5–6",
+      "late_fields": [
+        "age",
+        "current_dose",
+        "hepatic",
+        "alt_ratio_uln",
+        "ast_ratio_uln",
+        "allergy",
+        "pregnancy",
+        "lactation",
+        "withdrawal_severity",
+        "duration",
+        "past_withdrawal",
+        "example_selected",
+        "elderly_population",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "overweight_obesity",
+        "fatty_liver",
+        "diabetes",
+        "alcohol_abuse",
+        "from_renal",
+        "from_hepatic",
+        "seizure_state",
+        "serotonin_syndrome_signs"
+      ],
+      "cause_kind": "known_current_source_interaction_class"
+    },
+    {
+      "case_id": "switch-parox-ago-selected-example--medicine-RU-PAROX-bleeding",
+      "rule_id": "switch-parox-ago-selected-example",
+      "known_current_source_class_records": [
+        {
+          "record_id": "M1",
+          "inn": "synthetic clinically identified bleeding medication",
+          "status": "current",
+          "interaction_class": "bleeding",
+          "classification_basis": {
+            "source_ref": "RU-PAROX",
+            "source_locator": "§4.2–4.3 с.3–5; §4.4–4.6 с.5–15"
+          }
+        }
+      ],
+      "causal_fields": [
+        "medicines"
+      ],
+      "source_refs": [
+        "RU-PAROX",
+        "RU-AGO"
+      ],
+      "source_locator": "RU-PAROX §4.3 с.4–5; §4.5 с.11–14; RU-AGO §4.3 с.3; §4.5 с.5–6",
+      "late_fields": [
+        "age",
+        "current_dose",
+        "hepatic",
+        "alt_ratio_uln",
+        "ast_ratio_uln",
+        "allergy",
+        "pregnancy",
+        "lactation",
+        "withdrawal_severity",
+        "duration",
+        "past_withdrawal",
+        "example_selected",
+        "elderly_population",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "overweight_obesity",
+        "fatty_liver",
+        "diabetes",
+        "alcohol_abuse",
+        "from_renal",
+        "from_hepatic",
+        "seizure_state",
+        "serotonin_syndrome_signs"
+      ],
+      "cause_kind": "known_current_source_interaction_class"
+    },
+    {
+      "case_id": "switch-parox-ago-selected-example--medicine-RU-PAROX-CYP2D6_substrate",
+      "rule_id": "switch-parox-ago-selected-example",
+      "known_current_source_class_records": [
+        {
+          "record_id": "M1",
+          "inn": "synthetic clinically identified CYP2D6_substrate medication",
+          "status": "current",
+          "interaction_class": "CYP2D6_substrate",
+          "classification_basis": {
+            "source_ref": "RU-PAROX",
+            "source_locator": "§4.2–4.3 с.3–5; §4.4–4.6 с.5–15"
+          }
+        }
+      ],
+      "causal_fields": [
+        "medicines"
+      ],
+      "source_refs": [
+        "RU-PAROX",
+        "RU-AGO"
+      ],
+      "source_locator": "RU-PAROX §4.3 с.4–5; §4.5 с.11–14; RU-AGO §4.3 с.3; §4.5 с.5–6",
+      "late_fields": [
+        "age",
+        "current_dose",
+        "hepatic",
+        "alt_ratio_uln",
+        "ast_ratio_uln",
+        "allergy",
+        "pregnancy",
+        "lactation",
+        "withdrawal_severity",
+        "duration",
+        "past_withdrawal",
+        "example_selected",
+        "elderly_population",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "overweight_obesity",
+        "fatty_liver",
+        "diabetes",
+        "alcohol_abuse",
+        "from_renal",
+        "from_hepatic",
+        "seizure_state",
+        "serotonin_syndrome_signs"
+      ],
+      "cause_kind": "known_current_source_interaction_class"
+    },
+    {
+      "case_id": "venla-xr-gad-start--medicine-RU-VENLA-XR-serotonergic",
+      "rule_id": "venla-xr-gad-start",
+      "known_current_source_class_records": [
+        {
+          "record_id": "M1",
+          "inn": "synthetic clinically identified serotonergic medication",
+          "status": "current",
+          "interaction_class": "serotonergic",
+          "classification_basis": {
+            "source_ref": "RU-VENLA-XR",
+            "source_locator": "§1–3 с.1; §4.1–4.3 с.2–5; §4.4 с.5–13; §4.5 с.13–17; §4.6 с.17–18"
+          }
+        }
+      ],
+      "causal_fields": [
+        "medicines"
+      ],
+      "source_refs": [
+        "RU-VENLA-XR"
+      ],
+      "source_locator": "§4.3 с.5; §4.5 с.13–17",
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "allergy",
+        "renal_metric",
+        "qt_risk",
+        "pregnancy_suspected"
+      ],
+      "cause_kind": "known_current_source_interaction_class"
+    },
+    {
+      "case_id": "venla-xr-gad-start--medicine-RU-VENLA-XR-QT_prolonging",
+      "rule_id": "venla-xr-gad-start",
+      "known_current_source_class_records": [
+        {
+          "record_id": "M1",
+          "inn": "synthetic clinically identified QT_prolonging medication",
+          "status": "current",
+          "interaction_class": "QT_prolonging",
+          "classification_basis": {
+            "source_ref": "RU-VENLA-XR",
+            "source_locator": "§1–3 с.1; §4.1–4.3 с.2–5; §4.4 с.5–13; §4.5 с.13–17; §4.6 с.17–18"
+          }
+        }
+      ],
+      "causal_fields": [
+        "medicines"
+      ],
+      "source_refs": [
+        "RU-VENLA-XR"
+      ],
+      "source_locator": "§4.3 с.5; §4.5 с.13–17",
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "allergy",
+        "renal_metric",
+        "qt_risk",
+        "pregnancy_suspected"
+      ],
+      "cause_kind": "known_current_source_interaction_class"
+    },
+    {
+      "case_id": "venla-xr-gad-start--medicine-RU-VENLA-XR-bleeding",
+      "rule_id": "venla-xr-gad-start",
+      "known_current_source_class_records": [
+        {
+          "record_id": "M1",
+          "inn": "synthetic clinically identified bleeding medication",
+          "status": "current",
+          "interaction_class": "bleeding",
+          "classification_basis": {
+            "source_ref": "RU-VENLA-XR",
+            "source_locator": "§1–3 с.1; §4.1–4.3 с.2–5; §4.4 с.5–13; §4.5 с.13–17; §4.6 с.17–18"
+          }
+        }
+      ],
+      "causal_fields": [
+        "medicines"
+      ],
+      "source_refs": [
+        "RU-VENLA-XR"
+      ],
+      "source_locator": "§4.3 с.5; §4.5 с.13–17",
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "allergy",
+        "renal_metric",
+        "qt_risk",
+        "pregnancy_suspected"
+      ],
+      "cause_kind": "known_current_source_interaction_class"
+    },
+    {
+      "case_id": "venla-xr-social-start--medicine-RU-VENLA-XR-serotonergic",
+      "rule_id": "venla-xr-social-start",
+      "known_current_source_class_records": [
+        {
+          "record_id": "M1",
+          "inn": "synthetic clinically identified serotonergic medication",
+          "status": "current",
+          "interaction_class": "serotonergic",
+          "classification_basis": {
+            "source_ref": "RU-VENLA-XR",
+            "source_locator": "§1–3 с.1; §4.1–4.3 с.2–5; §4.4 с.5–13; §4.5 с.13–17; §4.6 с.17–18"
+          }
+        }
+      ],
+      "causal_fields": [
+        "medicines"
+      ],
+      "source_refs": [
+        "RU-VENLA-XR"
+      ],
+      "source_locator": "§4.3 с.5; §4.5 с.13–17",
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "allergy",
+        "renal_metric",
+        "qt_risk",
+        "pregnancy_suspected"
+      ],
+      "cause_kind": "known_current_source_interaction_class"
+    },
+    {
+      "case_id": "venla-xr-social-start--medicine-RU-VENLA-XR-QT_prolonging",
+      "rule_id": "venla-xr-social-start",
+      "known_current_source_class_records": [
+        {
+          "record_id": "M1",
+          "inn": "synthetic clinically identified QT_prolonging medication",
+          "status": "current",
+          "interaction_class": "QT_prolonging",
+          "classification_basis": {
+            "source_ref": "RU-VENLA-XR",
+            "source_locator": "§1–3 с.1; §4.1–4.3 с.2–5; §4.4 с.5–13; §4.5 с.13–17; §4.6 с.17–18"
+          }
+        }
+      ],
+      "causal_fields": [
+        "medicines"
+      ],
+      "source_refs": [
+        "RU-VENLA-XR"
+      ],
+      "source_locator": "§4.3 с.5; §4.5 с.13–17",
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "allergy",
+        "renal_metric",
+        "qt_risk",
+        "pregnancy_suspected"
+      ],
+      "cause_kind": "known_current_source_interaction_class"
+    },
+    {
+      "case_id": "venla-xr-social-start--medicine-RU-VENLA-XR-bleeding",
+      "rule_id": "venla-xr-social-start",
+      "known_current_source_class_records": [
+        {
+          "record_id": "M1",
+          "inn": "synthetic clinically identified bleeding medication",
+          "status": "current",
+          "interaction_class": "bleeding",
+          "classification_basis": {
+            "source_ref": "RU-VENLA-XR",
+            "source_locator": "§1–3 с.1; §4.1–4.3 с.2–5; §4.4 с.5–13; §4.5 с.13–17; §4.6 с.17–18"
+          }
+        }
+      ],
+      "causal_fields": [
+        "medicines"
+      ],
+      "source_refs": [
+        "RU-VENLA-XR"
+      ],
+      "source_locator": "§4.3 с.5; §4.5 с.13–17",
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "allergy",
+        "renal_metric",
+        "qt_risk",
+        "pregnancy_suspected"
+      ],
+      "cause_kind": "known_current_source_interaction_class"
+    }
+  ],
+  "scope": "Already source-bound known positive reason, limited non-numerical no-clearance result; no assumption that unidentified reason or unknown fact is enough",
+  "total_bool_and_medication_rows": 218,
+  "case_count": 218,
+  "boolean_rows": 173,
+  "medication_rows": 45
+}

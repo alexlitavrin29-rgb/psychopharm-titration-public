@@ -1,0 +1,761 @@
+{
+  "schema_version": "1.0",
+  "rule_id": "preg-gad-adjust",
+  "development_status": "extracted_research_not_executable",
+  "language": "ru",
+  "identity": {
+    "title": "Прегабалин при ГТР: переход между опубликованными этапами",
+    "mode": "adjust",
+    "drug_inn": "прегабалин",
+    "from_drug_inn": null,
+    "to_drug_inn": null,
+    "formulation": "Лирика: капсулы; 25/50/75/100/150/200/300 мг",
+    "route": "oral",
+    "diagnosis_label_ru": "Генерализованное тревожное расстройство",
+    "classification_system": "МКБ-10",
+    "diagnosis_code": "F41.1",
+    "jurisdiction": "RU_versioned_copy"
+  },
+  "applicability": {
+    "population_description": "Взрослые. Только подтверждённые условия этой карточки; другие популяции не получают масштабированную взрослую дозу.",
+    "age_constraints": [
+      {
+        "minimum": 18,
+        "inclusive": true,
+        "unit": "year",
+        "source_ref": "RU-PREG",
+        "source_locator": "ОХЛП §4.2 PDF с.3–5; КР §3.2 с.24–25"
+      }
+    ],
+    "pregnancy": "Решение по применимости/пользе и риску отдельно; без опубликованной числовой поправки. Стандартная карточка не выдаёт автоматическую дозу при беременности.",
+    "lactation": "Проверять отдельные ограничения источника. Стандартная карточка не выдаёт автоматическую дозу при кормлении.",
+    "renal_constraints": [
+      "Для этой схемы CLcr ≥60 мл/мин и нет гемодиализа; иначе preg-renal-start. eGFR не эквивалент входа CLcr."
+    ],
+    "hepatic_constraints": [
+      "Коррекция при нарушении печени не требуется (§4.2 с.5)."
+    ],
+    "comorbidity_constraints": [
+      "КР ГТР ограничивает применение при зависимости/склонности к злоупотреблению (§3.2 с.24–25).",
+      "Риск угнетения дыхания при дыхательных нарушениях, снижении функции почек, пожилом возрасте и депрессантах ЦНС (§4.4). Числовой множитель не опубликован."
+    ],
+    "interacting_drugs": [],
+    "other_conditions": [],
+    "exclusions": [
+      "Гиперчувствительность",
+      "Непроверенные противопоказания/взаимодействия не считать отсутствующими"
+    ],
+    "indication_status_in_russia": "RU_indication_in_read_copy_registry_row_observed_latest_text_identity_not_asserted",
+    "source_refs": [
+      "RU-PREG",
+      "RU-GAD"
+    ]
+  },
+  "inputs": [
+    {
+      "input_id": "age",
+      "question_ru": "Возраст пациента, полных лет?",
+      "data_type": "integer",
+      "unit": "year",
+      "allowed_values": [],
+      "required_when": "для индивидуального результата",
+      "show_when": "при выборе этой карточки",
+      "why_needed": "Возрастная применимость; для эсциталопрама особая пожилая ветка, для прегабалина возраст не заменяет CLcr.",
+      "changes": [
+        "applicability"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать условно.",
+      "source_refs": [
+        "RU-PREG"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "form",
+      "question_ru": "Какая конкретная форма и сила дозы используются?",
+      "data_type": "structured_form",
+      "unit": null,
+      "allowed_values": [],
+      "required_when": "для индивидуального результата",
+      "show_when": "при выборе этой карточки",
+      "why_needed": "Исполнимость дозы и запрет произвольного деления форм.",
+      "changes": [
+        "applicability"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать условно.",
+      "source_refs": [
+        "RU-PREG"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "pregnancy",
+      "question_ru": "Беременность установлена или возможна?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [
+        "да",
+        "нет",
+        "неизвестно"
+      ],
+      "required_when": "для индивидуального результата",
+      "show_when": "при выборе этой карточки",
+      "why_needed": "Отдельное решение о пользе и риске; числовой коэффициент не опубликован.",
+      "changes": [
+        "applicability"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать условно.",
+      "source_refs": [
+        "RU-PREG"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "lactation",
+      "question_ru": "Есть грудное вскармливание?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [
+        "да",
+        "нет",
+        "неизвестно"
+      ],
+      "required_when": "для индивидуального результата",
+      "show_when": "при выборе этой карточки",
+      "why_needed": "Ограничение инструкции, решение врача; не уменьшение дозы по выдуманному коэффициенту.",
+      "changes": [
+        "applicability"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать условно.",
+      "source_refs": [
+        "RU-PREG"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "medicines",
+      "question_ru": "Какие лекарства и значимые вещества сейчас принимаются или недавно отменены?",
+      "data_type": "medication_list",
+      "unit": null,
+      "allowed_values": [],
+      "required_when": "для индивидуального результата",
+      "show_when": "при выборе этой карточки",
+      "why_needed": "Выявление взаимодействий и интервалов после ИМАО; пустой список и непроверенный список различаются.",
+      "changes": [
+        "applicability"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать условно.",
+      "source_refs": [
+        "RU-PREG"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "allergy",
+      "question_ru": "Есть известная гиперчувствительность к препарату/компонентам?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [
+        "да",
+        "нет",
+        "неизвестно"
+      ],
+      "required_when": "для индивидуального результата",
+      "show_when": "при выборе этой карточки",
+      "why_needed": "Противопоказание.",
+      "changes": [
+        "applicability"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать условно.",
+      "source_refs": [
+        "RU-PREG"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "clcr",
+      "question_ru": "Подтверждённый врачом клиренс креатинина CLcr, мл/мин?",
+      "data_type": "number",
+      "unit": "mL/min",
+      "allowed_values": [],
+      "required_when": "для индивидуального результата",
+      "show_when": "при выборе этой карточки",
+      "why_needed": "Определяет строку почечной таблицы; eGFR с нормированием на площадь тела не подставлять.",
+      "changes": [
+        "applicability"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать условно.",
+      "source_refs": [
+        "RU-PREG"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "dialysis",
+      "question_ru": "Проводится гемодиализ?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [
+        "да",
+        "нет",
+        "неизвестно"
+      ],
+      "required_when": "для индивидуального результата",
+      "show_when": "при выборе этой карточки",
+      "why_needed": "Дополнительная доза после сеанса; сложная ветка вне данного короткого расчёта.",
+      "changes": [
+        "applicability"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать условно.",
+      "source_refs": [
+        "RU-PREG"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "substance_use",
+      "question_ru": "Зависимость/злоупотребление психоактивными веществами отмечены врачом?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [
+        "да",
+        "нет",
+        "неизвестно"
+      ],
+      "required_when": "для индивидуального результата",
+      "show_when": "при выборе этой карточки",
+      "why_needed": "Зависимость и злоупотребление: ограничение КР, не числовая поправка.",
+      "changes": [
+        "applicability"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать условно.",
+      "source_refs": [
+        "RU-PREG",
+        "RU-GAD"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "respiratory",
+      "question_ru": "Дыхательная недостаточность/существенное нарушение дыхания отмечены врачом?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [
+        "да",
+        "нет",
+        "неизвестно"
+      ],
+      "required_when": "для индивидуального результата",
+      "show_when": "при выборе этой карточки",
+      "why_needed": "Риск угнетения дыхания, особенно с депрессантами ЦНС.",
+      "changes": [
+        "applicability"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать условно.",
+      "source_refs": [
+        "RU-PREG"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "frequency",
+      "question_ru": "Врач выбирает деление суточной дозы на два или три приёма?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [
+        2,
+        3,
+        "неизвестно"
+      ],
+      "required_when": "для индивидуального результата",
+      "show_when": "при выборе этой карточки",
+      "why_needed": "Опубликованы оба варианта; ни один не выбирать произвольно. Проверить капсулы.",
+      "changes": [
+        "dose"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать условно.",
+      "source_refs": [
+        "RU-PREG"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "current_dose",
+      "question_ru": "Фактическая суточная доза сейчас?",
+      "data_type": "number",
+      "unit": "mg/day",
+      "allowed_values": [],
+      "required_when": "для индивидуального результата",
+      "show_when": "при выборе этой карточки",
+      "why_needed": "Определяет допустимый следующий шаг и превышение предела.",
+      "changes": [
+        "applicability",
+        "dose_or_action"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать условно.",
+      "source_refs": [
+        "RU-PREG"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "time_at_dose",
+      "question_ru": "Сколько времени принимается именно эта доза?",
+      "data_type": "number",
+      "unit": "week",
+      "allowed_values": [],
+      "required_when": "для индивидуального результата",
+      "show_when": "при выборе этой карточки",
+      "why_needed": "Проверяет минимальный интервал, если он опубликован.",
+      "changes": [
+        "applicability",
+        "dose_or_action"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать условно.",
+      "source_refs": [
+        "RU-PREG"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "response",
+      "question_ru": "Как врач оценивает ответ на лечение?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [
+        "достаточный",
+        "недостаточный",
+        "неизвестно"
+      ],
+      "required_when": "для индивидуального результата",
+      "show_when": "при выборе этой карточки",
+      "why_needed": "Без недостаточного ответа повышение не следует из источника.",
+      "changes": [
+        "applicability",
+        "dose_or_action"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать условно.",
+      "source_refs": [
+        "RU-PREG"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "tolerability",
+      "question_ru": "Как врач оценивает переносимость?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [
+        "достаточная",
+        "неприемлемая",
+        "неизвестно"
+      ],
+      "required_when": "для индивидуального результата",
+      "show_when": "при выборе этой карточки",
+      "why_needed": "Условие повышения/остановки; шкала без связи с действием не требуется.",
+      "changes": [
+        "applicability"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать условно.",
+      "source_refs": [
+        "RU-PREG"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "adherence",
+      "question_ru": "Подтверждён ли фактический приём назначенной дозы?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [
+        "подтверждён",
+        "не подтверждён",
+        "неизвестно"
+      ],
+      "required_when": "для индивидуального результата",
+      "show_when": "при выборе этой карточки",
+      "why_needed": "Не считать отсутствие эффекта при неприверженности основанием автоматического повышения.",
+      "changes": [
+        "applicability"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать условно.",
+      "source_refs": [
+        "RU-PREG",
+        "RU-GAD",
+        "RU-PANIC"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    }
+  ],
+  "clinical_parameters": [
+    {
+      "parameter_id": "d150",
+      "meaning": "Суточная доза этапа",
+      "value": 150,
+      "lower": null,
+      "upper": null,
+      "lower_inclusive": null,
+      "upper_inclusive": null,
+      "unit": "mg/day",
+      "source_ref": "RU-PREG",
+      "source_locator": "§4.2 ГТР, с.3",
+      "source_meaning": "предписание",
+      "derivation": null
+    },
+    {
+      "parameter_id": "d300",
+      "meaning": "Суточная доза этапа",
+      "value": 300,
+      "lower": null,
+      "upper": null,
+      "lower_inclusive": null,
+      "upper_inclusive": null,
+      "unit": "mg/day",
+      "source_ref": "RU-PREG",
+      "source_locator": "§4.2 ГТР, с.3",
+      "source_meaning": "предписание",
+      "derivation": null
+    },
+    {
+      "parameter_id": "d450",
+      "meaning": "Суточная доза этапа",
+      "value": 450,
+      "lower": null,
+      "upper": null,
+      "lower_inclusive": null,
+      "upper_inclusive": null,
+      "unit": "mg/day",
+      "source_ref": "RU-PREG",
+      "source_locator": "§4.2 ГТР, с.3",
+      "source_meaning": "предписание",
+      "derivation": null
+    },
+    {
+      "parameter_id": "d600",
+      "meaning": "Суточная доза этапа",
+      "value": 600,
+      "lower": null,
+      "upper": null,
+      "lower_inclusive": null,
+      "upper_inclusive": null,
+      "unit": "mg/day",
+      "source_ref": "RU-PREG",
+      "source_locator": "§4.2 ГТР, с.3",
+      "source_meaning": "предписание",
+      "derivation": null
+    },
+    {
+      "parameter_id": "interval",
+      "meaning": "Между условными этапами",
+      "value": 1,
+      "lower": null,
+      "upper": null,
+      "lower_inclusive": null,
+      "upper_inclusive": null,
+      "unit": "week",
+      "source_ref": "RU-PREG",
+      "source_locator": "§4.2 ГТР с.3",
+      "source_meaning": "предписание",
+      "derivation": null
+    },
+    {
+      "parameter_id": "frequency",
+      "meaning": "Варианты кратности; выбор врача",
+      "value": [
+        2,
+        3
+      ],
+      "lower": null,
+      "upper": null,
+      "lower_inclusive": null,
+      "upper_inclusive": null,
+      "unit": "administration/day",
+      "source_ref": "RU-PREG",
+      "source_locator": "§4.2 с.3",
+      "source_meaning": "выбор врача",
+      "derivation": null
+    },
+    {
+      "parameter_id": "clcr_normal",
+      "meaning": "Нижняя граница полной дозовой ветки",
+      "value": 60,
+      "lower": null,
+      "upper": null,
+      "lower_inclusive": null,
+      "upper_inclusive": null,
+      "unit": "mL/min",
+      "source_ref": "RU-PREG",
+      "source_locator": "табл.1 с.5",
+      "source_meaning": "предписание",
+      "derivation": null
+    },
+    {
+      "parameter_id": "adult_minimum",
+      "meaning": "Нижняя возрастная граница этой инструкции",
+      "value": 18,
+      "lower": null,
+      "upper": null,
+      "lower_inclusive": null,
+      "upper_inclusive": null,
+      "unit": "year",
+      "source_ref": "RU-PREG",
+      "source_locator": "§4.1/противопоказания: RU-SER с.2, RU-ESC с.4/7, RU-PREG с.5–6",
+      "source_meaning": "предписание",
+      "derivation": null
+    },
+    {
+      "parameter_id": "source_form_strengths",
+      "meaning": "Силы дозы выбранной формы; не дозовая рекомендация",
+      "value": [
+        25,
+        50,
+        75,
+        100,
+        150,
+        200,
+        300
+      ],
+      "lower": null,
+      "upper": null,
+      "lower_inclusive": null,
+      "upper_inclusive": null,
+      "unit": "mg",
+      "source_ref": "RU-PREG",
+      "source_locator": "Состав/описание: PDF с.1–2",
+      "source_meaning": "предписание",
+      "derivation": null
+    }
+  ],
+  "logic": {
+    "representation": "schedule",
+    "conditions": [
+      "Диагноз, препарат и режим выбрал врач. Соответствие популяции/форме и ограничения источника подтверждены."
+    ],
+    "actions": [
+      "При CLcr ≥60 и без гемодиализа, если текущая доза соответствует одному из опубликованных этапов, после как минимум interval на ней и при недостаточном ответе/достаточной переносимости врач может выбрать следующий опубликованный этап.",
+      "Для иных текущих доз и почечных категорий точный следующий шаг не выводится. Не воспроизводить старт заново и не уменьшать дозу этим правилом."
+    ],
+    "parameter_refs": [
+      "d150",
+      "d300",
+      "d450",
+      "d600",
+      "interval",
+      "frequency",
+      "clcr_normal",
+      "adult_minimum",
+      "source_form_strengths"
+    ],
+    "source_refs": [
+      "RU-PREG",
+      "RU-GAD"
+    ],
+    "clinician_choices": [
+      "Применимость при особых состояниях и взаимодействиях",
+      "Необходимость следующего условного шага"
+    ],
+    "missing_data_behaviour": "Назвать обязательные неизвестные поля; результат insufficient_data. Справочные этапы можно показать как условные, без безусловной дозы пациенту.",
+    "unsupported_case_behaviour": "not_applicable для этой карточки; указать конкретную отсутствующую ветку, не запретить всё лечение.",
+    "contraindicated_case_behaviour": "Не выдавать дозовую схему противопоказанного сочетания; отобразить источник и причину.",
+    "conflicts": [],
+    "composite_rule_dependencies": [],
+    "combination_justification": "Самостоятельные поправки не перемножаются. Совпадение числа не подтверждает применимость их сочетания."
+  },
+  "output": {
+    "result_type": "clinician_choice",
+    "medication_inn": "прегабалин",
+    "dose_per_administration": null,
+    "administrations_per_day": null,
+    "total_daily_dose": null,
+    "unit": "mg",
+    "formulation": "Лирика: капсулы; 25/50/75/100/150/200/300 мг",
+    "schedule": [
+      {
+        "stage_id": "phase1",
+        "time_description": "Только ближайший следующий этап после подтверждённой текущей дозы, не повторный старт",
+        "minimum_interval": 1,
+        "interval_unit": "week",
+        "medication_steps": [
+          {
+            "medication_inn": "прегабалин",
+            "dose_per_administration": {
+              "total_daily_parameter": "d300",
+              "divide_by": {
+                "input_ref": "frequency"
+              }
+            },
+            "administrations_per_day": {
+              "input_ref": "frequency"
+            },
+            "total_daily_dose": {
+              "parameter_ref": "d300"
+            },
+            "dose_unit": "mg",
+            "action": "принимать / условно повысить",
+            "source_refs": [
+              "RU-PREG",
+              "RU-GAD"
+            ]
+          }
+        ],
+        "condition_to_proceed": "current_dose соответствует d150; interval выдержан; недостаточный ответ, достаточная переносимость и приём подтверждены; врач выбрал увеличение",
+        "condition_to_hold": "Достаточный эффект, непереносимость, противопоказание, неизвестные обязательные данные или врач не выбрал увеличение",
+        "source_refs": [
+          "RU-PREG",
+          "RU-GAD"
+        ]
+      },
+      {
+        "stage_id": "phase2",
+        "time_description": "Только ближайший следующий этап после подтверждённой текущей дозы, не повторный старт",
+        "minimum_interval": 1,
+        "interval_unit": "week",
+        "medication_steps": [
+          {
+            "medication_inn": "прегабалин",
+            "dose_per_administration": {
+              "total_daily_parameter": "d450",
+              "divide_by": {
+                "input_ref": "frequency"
+              }
+            },
+            "administrations_per_day": {
+              "input_ref": "frequency"
+            },
+            "total_daily_dose": {
+              "parameter_ref": "d450"
+            },
+            "dose_unit": "mg",
+            "action": "принимать / условно повысить",
+            "source_refs": [
+              "RU-PREG",
+              "RU-GAD"
+            ]
+          }
+        ],
+        "condition_to_proceed": "current_dose соответствует d300; interval выдержан; недостаточный ответ, достаточная переносимость и приём подтверждены; врач выбрал увеличение",
+        "condition_to_hold": "Достаточный эффект, непереносимость, противопоказание, неизвестные обязательные данные или врач не выбрал увеличение",
+        "source_refs": [
+          "RU-PREG",
+          "RU-GAD"
+        ]
+      },
+      {
+        "stage_id": "phase3",
+        "time_description": "Только ближайший следующий этап после подтверждённой текущей дозы, не повторный старт",
+        "minimum_interval": 1,
+        "interval_unit": "week",
+        "medication_steps": [
+          {
+            "medication_inn": "прегабалин",
+            "dose_per_administration": {
+              "total_daily_parameter": "d600",
+              "divide_by": {
+                "input_ref": "frequency"
+              }
+            },
+            "administrations_per_day": {
+              "input_ref": "frequency"
+            },
+            "total_daily_dose": {
+              "parameter_ref": "d600"
+            },
+            "dose_unit": "mg",
+            "action": "принимать / условно повысить",
+            "source_refs": [
+              "RU-PREG",
+              "RU-GAD"
+            ]
+          }
+        ],
+        "condition_to_proceed": "current_dose соответствует d450; interval выдержан; недостаточный ответ, достаточная переносимость и приём подтверждены; врач выбрал увеличение",
+        "condition_to_hold": "Достаточный эффект, непереносимость, противопоказание, неизвестные обязательные данные или врач не выбрал увеличение",
+        "source_refs": [
+          "RU-PREG",
+          "RU-GAD"
+        ]
+      }
+    ],
+    "warnings": [
+      "Условная схема источника, не автономное назначение. Максимум не является целью.",
+      "Подтвердить противопоказания и взаимодействия исходной инструкции.",
+      "Числовой вывод относится к указанным дозовым условиям. Неоценённые модулем клинические обстоятельства не считаются отсутствующими; полный клинический допуск врач оценивает отдельно."
+    ],
+    "mandatory_checks": [
+      "Проверить соответствие источнику, указанное в applicability и inputs."
+    ],
+    "clinician_decisions_remaining": [
+      "Подтверждение применимости",
+      "Решение о переходе к следующему этапу"
+    ],
+    "rounding_or_formulation_rule": "Разовая доза = суточная / выбранная кратность. Например, 150/2=75 мг или 150/3=50 мг. Оба исполнимы капсулами; не делить содержимое капсул. Врач выбирает кратность.",
+    "source_refs": [
+      "RU-PREG",
+      "RU-GAD"
+    ]
+  },
+  "verification": {
+    "primary_source_checked": true,
+    "all_clinical_parameters_have_sources": true,
+    "population_and_indication_checked": true,
+    "russian_applicability_checked": false,
+    "formulation_feasibility_checked": true,
+    "combined_rules_justified": false,
+    "source_transfer_check": "extraction_checked; calculator_not_implemented",
+    "clinical_review": "not_performed",
+    "product_clinical_validation": "not_performed",
+    "ready_for_technical_implementation": true,
+    "unresolved_items": [
+      "Последняя регистрационная редакция РФ не сверена; техническое воспроизведение зафиксированной версии не равно разрешению для клинического применения."
+    ]
+  },
+  "test_cases": [
+    {
+      "case_id": "preg-gad-adjust__preg-adjust",
+      "synthetic": true,
+      "given": {
+        "current_dose": 300,
+        "time_at_dose": 1,
+        "response": "недостаточный",
+        "tolerability": "достаточная",
+        "adherence": "подтверждён",
+        "clcr": 70,
+        "dialysis": false,
+        "frequency": 3
+      },
+      "expected": {
+        "optional_next_total_daily_mg": 450,
+        "per_administration_mg": 150,
+        "frequency": 3,
+        "minimum_interval_week": 1
+      },
+      "source_refs": [
+        "RU-PREG"
+      ],
+      "note": "Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены.",
+      "scope": "isolated_source_transfer_expectation_under_card_conditions"
+    }
+  ],
+  "profile": {
+    "country": "RU",
+    "selection_status": "RU_profile_research",
+    "foreign_fallback_allowed": false
+  },
+  "card_type": "numeric_source_rule"
+}

@@ -1,0 +1,118 @@
+{
+  "scope": "Independent selected source assertions; not proof of all 4953 expected or all unique medical conditions",
+  "checks": [
+    {
+      "name": "AGO depression25 / GAD25 and distinct higher2/4 weeks",
+      "pass": true,
+      "source": "RU-AGO",
+      "locator": "§4.2 pp1–2",
+      "cases_checked": []
+    },
+    {
+      "name": "AGO repeat48 and monitoring3/6/12/24",
+      "pass": true,
+      "source": "RU-AGO",
+      "locator": "§4.4 pp3–4",
+      "cases_checked": []
+    },
+    {
+      "name": "DULOX30/60 and elderly2weeks",
+      "pass": true,
+      "source": "RU-DULOX",
+      "locator": "§4.2 pp2–3",
+      "cases_checked": []
+    },
+    {
+      "name": "DULOX no ordinary oneweek taper",
+      "pass": true,
+      "source": "RU-DULOX",
+      "locator": "§4.2 p3 and §4.4 p6",
+      "cases_checked": [
+        "dulox-taper-limit--branch-source_limit"
+      ]
+    },
+    {
+      "name": "FLUV50or100 and >150 division threshold",
+      "pass": true,
+      "source": "RU-FLUVOX",
+      "locator": "§4.2 p2",
+      "cases_checked": []
+    },
+    {
+      "name": "PREG GAD150/300/450/600 and weekly",
+      "pass": true,
+      "source": "RU-PREG",
+      "locator": "§4.2 p3",
+      "cases_checked": []
+    },
+    {
+      "name": "PREG renal cutoffs15/30/60 and variable25–50",
+      "pass": true,
+      "source": "RU-PREG",
+      "locator": "Table1 p5; visually checked formula/table/footnotes",
+      "cases_checked": []
+    },
+    {
+      "name": "PAROX10 weekly10 with40recommended60max",
+      "pass": true,
+      "source": "RU-PAROX / RU-PANIC",
+      "locator": "§4.2 p3 / KR p26",
+      "cases_checked": []
+    },
+    {
+      "name": "PAROX taper example10/wk until20 hold1",
+      "pass": true,
+      "source": "RU-PAROX",
+      "locator": "§4.2 pp3–4",
+      "cases_checked": []
+    },
+    {
+      "name": "SER25→50, selected increase50 / week max200",
+      "pass": true,
+      "source": "RU-SER",
+      "locator": "§4.2 pp2–3",
+      "cases_checked": []
+    },
+    {
+      "name": "ESC exactly30 sourcegap gives no dose",
+      "pass": true,
+      "source": "RU-ESC",
+      "locator": "§4.2 p3 >30 and <30; visually checked",
+      "cases_checked": [
+        "esc-adult-adjust--current-clcr-30",
+        "esc-cyp2c19-start--current-clcr-30",
+        "esc-elderly-start--current-clcr-30",
+        "esc-gad-start--current-clcr-30",
+        "esc-hepatic-start--current-clcr-30",
+        "esc-panic-start--current-clcr-30",
+        "esc-social-start--current-clcr-30"
+      ]
+    },
+    {
+      "name": "ESC65 no automatic >65 special dose",
+      "pass": true,
+      "source": "RU-ESC",
+      "locator": "§4.2 p3 strictly older65",
+      "cases_checked": [
+        "esc-elderly-start--current-age-65"
+      ]
+    },
+    {
+      "name": "XR75,225,>=2week / panic37.5,7day then75",
+      "pass": true,
+      "source": "RU-VENLA-XR",
+      "locator": "§4.2 pp2–5",
+      "cases_checked": []
+    },
+    {
+      "name": "XR known ongoing BP>100 stops",
+      "pass": true,
+      "source": "RU-VENLA-XR",
+      "locator": "§4.4 p9",
+      "cases_checked": [
+        "venla-xr-gad-start--diastolic-BP-100.01",
+        "venla-xr-social-start--diastolic-BP-100.01"
+      ]
+    }
+  ]
+}

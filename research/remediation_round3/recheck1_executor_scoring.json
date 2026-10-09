@@ -1,0 +1,59 @@
+{
+  "state": "Revised candidate awaiting independent recheck; no new score assigned",
+  "previous_independent_scoring": {
+    "dimensions": [
+      {
+        "name": "Источники/версии/РФ",
+        "weight": 0.25,
+        "score": 8.4,
+        "reason": "11 реальных актуальных продуктовых оснований, отделение bytes/версии/штампов и конфликтов. Снижение за205 неверных вложенныхIR версий, ошибочные локаторы и неполную самостоятельно наблюдавшуюся реестровую связь."
+      },
+      {
+        "name": "Правила/воспроизводимость",
+        "weight": 0.3,
+        "score": 7.2,
+        "reason": "Основные дозовые числа и формы воспроизводимы, произвольные коэффициенты исключены. Существенные неперенесённые prerequisites/interactions/urgent actions препятствуют полному источниковому контракту."
+      },
+      {
+        "name": "Входы/пути",
+        "weight": 0.2,
+        "score": 6.2,
+        "reason": "Подсчёт прозрачный, MAOI и A/B стоимость раскрыта. Неподтверждённые negatives97проекций; necessity всех полей не доказана; обычные20/17/18 сохраняются."
+      },
+      {
+        "name": "Покрытие/приёмка",
+        "weight": 0.15,
+        "score": 7.0,
+        "reason": "Все38 рассмотрены, границы/неизвестность/формы и ошибки единиц подготовлены.4953expected не равно4953primary checks; уникальные условия не исчерпывающе проверены, новые пропуски открыты."
+      },
+      {
+        "name": "Техника",
+        "weight": 0.1,
+        "score": 8.0,
+        "reason": "Безопасный независимый rerun,40 изолированных авторских negatives,12 собственных,255 пересчитанных traces. Авторские validators пропускают ошибкуверсии и противоречивые projections; медицинского evaluator/app нет и он на данном этапе не требовался."
+      }
+    ],
+    "weights": [
+      25,
+      30,
+      20,
+      15,
+      10
+    ],
+    "raw_unrounded": 7.35,
+    "raw_one_decimal": 7.4,
+    "cap": 6.0,
+    "cap_basis": [
+      "V2-12/criterion17: необходимость всех обязательных входов не доказана",
+      "V2-13/criterion18: обычные путиAGO20/DULOX-GAD17/PREG17–18",
+      "V2-02–07/10: существенный неполный перенос условий/unknown projections"
+    ],
+    "critical_cap4_applied": false,
+    "critical_cap4_reason": "В фактически проверенной части не установлена изменённая опубликованная дозовая величина/интервал/единица либо полный known contraindication→allow результат. Непроверенные условия не объявляются безопасными.",
+    "final_one_decimal": 6,
+    "clinical_validation": "not_performed; not a required clinical product trial for this research score",
+    "independent_score_not_executor_arithmetic": true
+  },
+  "new_candidate_score": null,
+  "reason": "Known fixes and PASS are not a complete medical audit or proof of input minimality."
+}

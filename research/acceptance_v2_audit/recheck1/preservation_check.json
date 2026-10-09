@@ -1,0 +1,10 @@
+{
+  "status": "pass",
+  "protected_files": 575,
+  "original_source_files": 17,
+  "changed_or_missing": [],
+  "core_files": 164,
+  "core_changes": [],
+  "noncore_changes_during_review": [],
+  "own_write_scope": "research/acceptance_v2_audit/recheck1 only"
+}

@@ -1,0 +1,82 @@
+{
+  "controls": [
+    {
+      "name": "AGO substituted conditional50 for current25",
+      "rejected": true,
+      "mutated": 50
+    },
+    {
+      "name": "DULOX ordinary taper1wk despite4.4 minimum2",
+      "rejected": true,
+      "mutated": 1
+    },
+    {
+      "name": "ESC CLcr30 treated ordinary corrected dose",
+      "rejected": true,
+      "mutated": 30
+    },
+    {
+      "name": "ESC age65 treated strict older65",
+      "rejected": true,
+      "mutated": 65
+    },
+    {
+      "name": "XR BP100 treated strictly above100",
+      "rejected": true,
+      "mutated": 100
+    },
+    {
+      "name": "PREG table CLcr30 assigned15–29row",
+      "rejected": true,
+      "mutated": {
+        "clcr": 30,
+        "start": [
+          25,
+          50
+        ]
+      }
+    },
+    {
+      "name": "SER+50 after6days",
+      "rejected": true,
+      "mutated": 6
+    },
+    {
+      "name": "FLUV reversible later same day treated nextcalendar day",
+      "rejected": true,
+      "mutated": {
+        "stop": "2026-10-08T00:01:00+03:00",
+        "now": "2026-10-08T09:00:00+03:00"
+      }
+    },
+    {
+      "name": "ESC MOC23hours treated>=1day",
+      "rejected": true,
+      "mutated": 23
+    },
+    {
+      "name": "source_only overlap reference promoted to patient permission",
+      "rejected": true,
+      "mutated": true
+    },
+    {
+      "name": "unknown B phase executesBstop",
+      "rejected": true,
+      "mutated": "unknown"
+    },
+    {
+      "name": "proposed50 establishes current use",
+      "rejected": true,
+      "mutated": {
+        "proposed": 50
+      }
+    },
+    {
+      "name": "historical course50 establishes current use",
+      "rejected": true,
+      "mutated": "reported_course_dose_without_current_use_confirmation"
+    }
+  ],
+  "all_rejected": true,
+  "scope": "Independent finite primary boundary counterchecks; neither a medical evaluator nor execution of all author test suites"
+}

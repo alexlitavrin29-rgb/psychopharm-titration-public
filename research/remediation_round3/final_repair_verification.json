@@ -1,0 +1,90 @@
+{
+  "status": "pass",
+  "negative_mutations": [
+    {
+      "mutation": "PAR_universal_history",
+      "rejected": true,
+      "evidence": [
+        "PAR history required outside chosen40 example: duration"
+      ]
+    },
+    {
+      "mutation": "PHEN_false_hold_protocol",
+      "rejected": true,
+      "evidence": [
+        "Unsupported PHEN severity hold/resumption/slower claim"
+      ]
+    },
+    {
+      "mutation": "PREG_borrowed_AD_protocol",
+      "rejected": true,
+      "evidence": [
+        "AD protocol borrowed for PREG"
+      ]
+    },
+    {
+      "mutation": "unknown_age_as_adult",
+      "rejected": true,
+      "evidence": [
+        "Unknown/child population normalized to adult: preg-taper-limit--audit-final-age-unknown"
+      ]
+    },
+    {
+      "mutation": "unknown_A_action",
+      "rejected": true,
+      "evidence": [
+        "Current A action lacks actually consumed ongoing evidence: ago-depression-start--stop-RU-AGO-liver_injury_signs--audit-final-A-phase-unknown",
+        "Unknown/notstarted A received current-use action: ago-depression-start--stop-RU-AGO-liver_injury_signs--audit-final-A-phase-unknown"
+      ]
+    },
+    {
+      "mutation": "hidden_A_phase",
+      "rejected": true,
+      "evidence": [
+        "Explicit A phase hidden/double inferred from mode: ago-depression-start--branch-repeat_tests"
+      ]
+    },
+    {
+      "mutation": "controller_after_dependent",
+      "rejected": true,
+      "evidence": [
+        "Question control not answered before dependent: ser-adult-adjust/time_at_dose",
+        "Question control not answered before dependent: ser-adult-adjust/response"
+      ]
+    },
+    {
+      "mutation": "proposed_dose_as_current_use",
+      "rejected": true,
+      "evidence": [
+        "Current A action lacks actually consumed ongoing evidence: ser-adult-adjust--audit-recheck-symptomatic_hyponatremia-positive",
+        "Current A action lacks actually consumed ongoing evidence: ser-adult-adjust--audit-recheck-symptomatic_hyponatremia-positive--audit-final-source-caution"
+      ]
+    },
+    {
+      "mutation": "inactive_dose_as_current_use",
+      "rejected": true,
+      "evidence": [
+        "Current A action lacks actually consumed ongoing evidence: ser-adult-adjust--audit-recheck-symptomatic_hyponatremia-positive",
+        "Current A action lacks actually consumed ongoing evidence: ser-adult-adjust--audit-recheck-symptomatic_hyponatremia-positive--audit-final-source-caution"
+      ]
+    },
+    {
+      "mutation": "zero_dose_as_current_use",
+      "rejected": true,
+      "evidence": [
+        "Current A action lacks actually consumed ongoing evidence: ser-adult-adjust--audit-recheck-symptomatic_hyponatremia-positive"
+      ]
+    },
+    {
+      "mutation": "unknown_dose_as_current_use",
+      "rejected": true,
+      "evidence": [
+        "Current A action lacks actually consumed ongoing evidence: ser-adult-adjust--audit-recheck-symptomatic_hyponatremia-positive"
+      ]
+    }
+  ],
+  "cases": 6646,
+  "paths": 2648,
+  "scope": "Regression for reviewed research contracts; no calculator execution, no exhaustive medical audit or clinical validation",
+  "errors": []
+}

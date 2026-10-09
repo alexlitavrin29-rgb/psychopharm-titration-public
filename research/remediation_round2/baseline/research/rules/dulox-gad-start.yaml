@@ -1,0 +1,1116 @@
+schema_version: '1.0'
+rule_id: dulox-gad-start
+development_status: extracted_research_not_executable
+language: ru
+identity:
+  title: 'Дулоксетин: ГТР, старт и отдельные модификаторы'
+  mode: start
+  drug_inn: дулоксетин
+  from_drug_inn: null
+  to_drug_inn: null
+  formulation: Дулоксента, кишечнорастворимые капсулы 30/60 мг
+  route: oral
+  diagnosis_label_ru: ГТР
+  classification_system: МКБ-10
+  diagnosis_code: F41.1
+  jurisdiction: RU_versioned_sources
+applicability:
+  population_description: Взрослые от 18 лет; показание и клиническое действие выбирает врач.
+  age_constraints:
+  - minimum: 18
+    inclusive: true
+    unit: year
+    source_ref: RU-DULOX
+    source_locator: §4.1–4.3 с.1–4; §4.4 с.5–9; §4.5 с.9–12; §4.6 с.12–13; §8–10 с.35
+  pregnancy: Назначать только если потенциальная польза для матери значительно превышает риск для плода; §4.6 с.12.
+    Автоматической дозовой поправки нет.
+  lactation: Не рекомендуется кормление грудью во время терапии; §4.6 с.13. Отдельное решение врача, не коэффициент.
+  renal_constraints:
+  - 'КК 30–80 мл/мин: без поправки; <30 противопоказано, §4.2–4.3 с.3–4.'
+  hepatic_constraints:
+  - 'Заболевание печени с недостаточностью: не назначать §4.2–4.3.'
+  comorbidity_constraints:
+  - Неконтролируемая АГ, некомпенсированная закрытоугольная глаукома §4.3.
+  interacting_drugs:
+  - ИМАО; сильные CYP1A2 флувоксамин/ципрофлоксацин/эноксацин §4.3–4.5.
+  other_conditions: []
+  exclusions:
+  - 'Сахароза: редкие наследственные непереносимость фруктозы, глюкозо-галактозная мальабсорбция, дефицит сахаразы-изомальтазы;
+    §4.4 с.9.'
+  indication_status_in_russia: RU_indication_in_read_original_latest_registry_text_separate
+  source_refs: &id003
+  - RU-DULOX
+  - RU-GAD
+inputs:
+- input_id: age
+  question_ru: Возраст, лет?
+  data_type: integer
+  unit: year
+  allowed_values: []
+  required_when: для выбранного расчёта
+  show_when: для выбранного расчёта
+  why_needed: Взрослая/пожилая применимость §4.1–4.2.
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Назвать age; не подставлять норму, без безусловной индивидуальной дозы.
+  source_refs:
+  - RU-DULOX
+  input_role: dose_operand_or_applicability_gate
+  source_locator: §4.1–4.3 с.1–4; §4.4 с.5–9; §4.5 с.9–12; §4.6 с.12–13; §8–10 с.35
+  missing_states: &id001
+  - unknown
+  - not_assessed
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+- input_id: form
+  question_ru: Какая конкретная форма и дозировка?
+  data_type: structured_form
+  unit: null
+  allowed_values: []
+  required_when: для выбранного расчёта
+  show_when: для выбранного расчёта
+  why_needed: Не переносить форму; дозовая исполнимость §1–3/4.2.
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Назвать form; не подставлять норму, без безусловной индивидуальной дозы.
+  source_refs:
+  - RU-DULOX
+  input_role: dose_operand_or_applicability_gate
+  source_locator: §4.1–4.3 с.1–4; §4.4 с.5–9; §4.5 с.9–12; §4.6 с.12–13; §8–10 с.35
+  missing_states: *id001
+  structure_ref: remediation/input_contracts.yaml#structures/structured_form
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+- input_id: hepatic
+  question_ru: Подтверждённая функция печени?
+  data_type: source_hepatic_category
+  unit: null
+  allowed_values: []
+  required_when: для выбранного расчёта
+  show_when: для выбранного расчёта
+  why_needed: Ограничения §4.2–4.3; из одного анализа не выводить категорию.
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Назвать hepatic; не подставлять норму, без безусловной индивидуальной дозы.
+  source_refs:
+  - RU-DULOX
+  input_role: dose_operand_or_applicability_gate
+  source_locator: §4.1–4.3 с.1–4; §4.4 с.5–9; §4.5 с.9–12; §4.6 с.12–13; §8–10 с.35
+  missing_states: *id001
+  structure_ref: remediation/input_contracts.yaml#structures/source_hepatic_category
+  source_categories:
+  - no_impairment_after_assessment
+  - liver_disease_with_insufficiency
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+- input_id: pregnancy
+  question_ru: Беременность установлена или возможна?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: для выбранного расчёта
+  show_when: для выбранного расчёта
+  why_needed: Применимость §4.3/4.6.
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Назвать pregnancy; не подставлять норму, без безусловной индивидуальной дозы.
+  source_refs:
+  - RU-DULOX
+  input_role: dose_operand_or_applicability_gate
+  source_locator: §4.1–4.3 с.1–4; §4.4 с.5–9; §4.5 с.9–12; §4.6 с.12–13; §8–10 с.35
+  missing_states: *id001
+  value_aliases: &id002
+    да: true
+    нет: false
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+- input_id: lactation
+  question_ru: Есть грудное вскармливание?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: для выбранного расчёта
+  show_when: для выбранного расчёта
+  why_needed: Применимость §4.3/4.6.
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Назвать lactation; не подставлять норму, без безусловной индивидуальной дозы.
+  source_refs:
+  - RU-DULOX
+  input_role: dose_operand_or_applicability_gate
+  source_locator: §4.1–4.3 с.1–4; §4.4 с.5–9; §4.5 с.9–12; §4.6 с.12–13; §8–10 с.35
+  missing_states: *id001
+  value_aliases: *id002
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+- input_id: medicines
+  question_ru: Текущие и недавно отменённые препараты?
+  data_type: medication_list
+  unit: null
+  allowed_values: []
+  required_when: для выбранного расчёта
+  show_when: для выбранного расчёта
+  why_needed: Взаимодействия и интервалы §4.3–4.5; последние даты при ИМАО отдельны.
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Назвать medicines; не подставлять норму, без безусловной индивидуальной дозы.
+  source_refs:
+  - RU-DULOX
+  input_role: dose_operand_or_applicability_gate
+  source_locator: §4.1–4.3 с.1–4; §4.4 с.5–9; §4.5 с.9–12; §4.6 с.12–13; §8–10 с.35
+  missing_states: *id001
+  structure_ref: remediation/input_contracts.yaml#structures/medication_list
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+- input_id: allergy
+  question_ru: Гиперчувствительность к препарату/компонентам?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: для выбранного расчёта
+  show_when: для выбранного расчёта
+  why_needed: Противопоказание §4.3.
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Назвать allergy; не подставлять норму, без безусловной индивидуальной дозы.
+  source_refs:
+  - RU-DULOX
+  input_role: dose_operand_or_applicability_gate
+  source_locator: §4.1–4.3 с.1–4; §4.4 с.5–9; §4.5 с.9–12; §4.6 с.12–13; §8–10 с.35
+  missing_states: *id001
+  value_aliases: *id002
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+- input_id: renal_metric
+  question_ru: Подтверждённый почечный показатель с методом и единицей?
+  data_type: structured_renal
+  unit: null
+  allowed_values: []
+  required_when: для органной ветки
+  show_when: для органной ветки
+  why_needed: §4.2; eGFR/CLcr и нормированная/абсолютная СКФ не взаимозаменяемы.
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Назвать renal_metric; не подставлять норму, без безусловной индивидуальной дозы.
+  source_refs:
+  - RU-DULOX
+  input_role: dose_operand_or_applicability_gate
+  source_locator: §4.1–4.3 с.1–4; §4.4 с.5–9; §4.5 с.9–12; §4.6 с.12–13; §8–10 с.35
+  missing_states: *id001
+  structure_ref: remediation/input_contracts.yaml#structures/structured_renal
+  required_metric: CLcr
+  required_unit: mL/min
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+- input_id: comorbid_depression
+  question_ru: Есть самостоятельная сопутствующая депрессия?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: для выбранного расчёта
+  show_when: для выбранного расчёта
+  why_needed: При ГТР + депрессия старт 60 вместо 30 (§4.2 с.2). Диагноз вводит врач.
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Назвать comorbid_depression; не подставлять норму, без безусловной индивидуальной дозы.
+  source_refs:
+  - RU-DULOX
+  input_role: dose_operand_or_applicability_gate
+  source_locator: §4.1–4.3 с.1–4; §4.4 с.5–9; §4.5 с.9–12; §4.6 с.12–13; §8–10 с.35
+  missing_states: *id001
+  value_aliases: *id002
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+- input_id: elderly_population
+  question_ru: Врач относит пациента к пожилым?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: для выбранного расчёта
+  show_when: для выбранного расчёта
+  why_needed: Источник задаёт пожилой этап без точного возрастного порога (§4.2 с.4); порог не придумать.
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Назвать elderly_population; не подставлять норму, без безусловной индивидуальной дозы.
+  source_refs:
+  - RU-DULOX
+  input_role: dose_operand_or_applicability_gate
+  source_locator: §4.1–4.3 с.1–4; §4.4 с.5–9; §4.5 с.9–12; §4.6 с.12–13; §8–10 с.35
+  missing_states: *id001
+  value_aliases: *id002
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+- input_id: uncontrolled_hypertension
+  question_ru: Есть неконтролируемая артериальная гипертензия?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: для выбранного расчёта
+  show_when: для выбранного расчёта
+  why_needed: Противопоказание §4.3 с.4.
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Назвать uncontrolled_hypertension; не подставлять норму, без безусловной индивидуальной дозы.
+  source_refs:
+  - RU-DULOX
+  input_role: dose_operand_or_applicability_gate
+  source_locator: §4.1–4.3 с.1–4; §4.4 с.5–9; §4.5 с.9–12; §4.6 с.12–13; §8–10 с.35
+  missing_states: *id001
+  value_aliases: *id002
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+- input_id: closed_angle_glaucoma
+  question_ru: Есть некомпенсированная закрытоугольная глаукома?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: для выбранного расчёта
+  show_when: для выбранного расчёта
+  why_needed: Противопоказание §4.3 с.4.
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Назвать closed_angle_glaucoma; не подставлять норму, без безусловной индивидуальной дозы.
+  source_refs:
+  - RU-DULOX
+  input_role: dose_operand_or_applicability_gate
+  source_locator: §4.1–4.3 с.1–4; §4.4 с.5–9; §4.5 с.9–12; §4.6 с.12–13; §8–10 с.35
+  missing_states: *id001
+  value_aliases: *id002
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+- input_id: maoi_type
+  question_ru: Тип каждого текущего/отменённого ИМАО?
+  data_type: record_map
+  unit: null
+  allowed_values:
+  - none_after_medication_history
+  - irreversible
+  - reversible_selective
+  - reversible_nonselective
+  - unknown
+  - not_assessed
+  required_when: если список medicines содержит ИМАО или его класс неясен; separate per relevant record
+  show_when: если список medicines содержит ИМАО или его класс неясен; separate per relevant record
+  why_needed: 'Изменяет применимость/действие: §4.3 с.4; §4.5 с.9–10.'
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; запросить maoi_type; числовой выход отсутствует.
+  source_refs:
+  - RU-DULOX
+  source_locator: §4.3 с.4; §4.5 с.9–10
+  input_role: applicability_gate
+  required_for_individual_result: medicines contains current/stopped MAOI or unidentified interaction class
+  missing_states: *id001
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  collection: per medication record_id
+  value_data_type: enum
+- input_id: maoi_stopped_at
+  question_ru: Дата и время последнего приёма каждого отменённого ИМАО?
+  data_type: record_map
+  unit: null
+  allowed_values: []
+  required_when: если ИМАО отменён; separate per relevant record
+  show_when: если ИМАО отменён; separate per relevant record
+  why_needed: 'Изменяет применимость/действие: §4.3 с.4; §4.5 с.9–10.'
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; запросить maoi_stopped_at; числовой выход отсутствует.
+  source_refs:
+  - RU-DULOX
+  source_locator: §4.3 с.4; §4.5 с.9–10
+  input_role: applicability_gate
+  required_for_individual_result: medicines contains stopped MAOI; per relevant record
+  missing_states: *id001
+  collection: per medication record_id
+  value_data_type: datetime
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+- input_id: fructose_intolerance
+  question_ru: Наследственная непереносимость фруктозы?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: individual_result
+  show_when: individual_result
+  why_needed: 'Изменяет применимость/действие: §4.4 с.9.'
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; запросить fructose_intolerance; числовой выход отсутствует.
+  source_refs:
+  - RU-DULOX
+  source_locator: §4.4 с.9
+  input_role: applicability_gate
+  required_for_individual_result: true
+  missing_states: *id001
+  value_aliases: *id002
+- input_id: glucose_galactose_malabsorption
+  question_ru: Глюкозо-галактозная мальабсорбция?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: individual_result
+  show_when: individual_result
+  why_needed: 'Изменяет применимость/действие: §4.4 с.9.'
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; запросить glucose_galactose_malabsorption; числовой выход отсутствует.
+  source_refs:
+  - RU-DULOX
+  source_locator: §4.4 с.9
+  input_role: applicability_gate
+  required_for_individual_result: true
+  missing_states: *id001
+  value_aliases: *id002
+- input_id: sucrase_isomaltase_deficiency
+  question_ru: Дефицит сахаразы-изомальтазы?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: individual_result
+  show_when: individual_result
+  why_needed: 'Изменяет применимость/действие: §4.4 с.9.'
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; запросить sucrase_isomaltase_deficiency; числовой выход отсутствует.
+  source_refs:
+  - RU-DULOX
+  source_locator: §4.4 с.9
+  input_role: applicability_gate
+  required_for_individual_result: true
+  missing_states: *id001
+  value_aliases: *id002
+- input_id: akathisia
+  question_ru: Развилась акатизия?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: individual_result
+  show_when: individual_result
+  why_needed: 'Изменяет применимость/действие: §4.4 с.9.'
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; запросить akathisia; числовой выход отсутствует.
+  source_refs:
+  - RU-DULOX
+  source_locator: §4.4 с.9
+  input_role: applicability_gate
+  required_for_individual_result: true
+  missing_states: *id001
+  value_aliases: *id002
+- input_id: mania
+  question_ru: Подтверждённое значение mania по §4.4 с.5?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: для индивидуального результата этой ветки
+  show_when: эта ветка
+  why_needed: Изменяет допуск/действие по RU-DULOX §4.4 с.5; не общий допуск врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; missing=[mania]; no individual dose
+  source_refs:
+  - RU-DULOX
+  source_locator: §4.4 с.5
+  required_for_individual_result: true
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+- input_id: suicide_risk
+  question_ru: Подтверждённое значение suicide_risk по §4.4 с.7–8?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: для индивидуального результата этой ветки
+  show_when: эта ветка
+  why_needed: Изменяет допуск/действие по RU-DULOX §4.4 с.7–8; не общий допуск врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; missing=[suicide_risk]; no individual dose
+  source_refs:
+  - RU-DULOX
+  source_locator: §4.4 с.7–8
+  required_for_individual_result: true
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+- input_id: bleeding_risk
+  question_ru: Подтверждённое значение bleeding_risk по §4.4 с.8?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: для индивидуального результата этой ветки
+  show_when: эта ветка
+  why_needed: Изменяет допуск/действие по RU-DULOX §4.4 с.8; не общий допуск врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; missing=[bleeding_risk]; no individual dose
+  source_refs:
+  - RU-DULOX
+  source_locator: §4.4 с.8
+  required_for_individual_result: true
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+- input_id: hyponatremia_risk
+  question_ru: Подтверждённое значение hyponatremia_risk по §4.4 с.8?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: для индивидуального результата этой ветки
+  show_when: эта ветка
+  why_needed: Изменяет допуск/действие по RU-DULOX §4.4 с.8; не общий допуск врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; missing=[hyponatremia_risk]; no individual dose
+  source_refs:
+  - RU-DULOX
+  source_locator: §4.4 с.8
+  required_for_individual_result: true
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+- input_id: diabetes
+  question_ru: Подтверждённое значение diabetes по §4.4 с.5?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: для индивидуального результата этой ветки
+  show_when: эта ветка
+  why_needed: Изменяет допуск/действие по RU-DULOX §4.4 с.5; не общий допуск врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; missing=[diabetes]; no individual dose
+  source_refs:
+  - RU-DULOX
+  source_locator: §4.4 с.5
+  required_for_individual_result: true
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+- input_id: seizure_state
+  question_ru: Подтверждённое значение seizure_state по §4.4 с.5?
+  data_type: enum
+  unit: null
+  allowed_values:
+  - не отмечены
+  - контролируемые
+  - неконтролируемые
+  - unknown
+  - not_assessed
+  required_when: для индивидуального результата этой ветки
+  show_when: эта ветка
+  why_needed: Изменяет допуск/действие по RU-DULOX §4.4 с.5; не общий допуск врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; missing=[seizure_state]; no individual dose
+  source_refs:
+  - RU-DULOX
+  source_locator: §4.4 с.5
+  required_for_individual_result: true
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+clinical_parameters:
+- parameter_id: usual_start
+  meaning: usual_start
+  value: 30
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: mg/day
+  source_ref: RU-DULOX
+  source_locator: §4.2 PDF с.2–4
+  source_meaning: предписание
+  derivation: null
+- parameter_id: with_depression_start
+  meaning: with_depression_start
+  value: 60
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: mg/day
+  source_ref: RU-DULOX
+  source_locator: §4.2 PDF с.2–4
+  source_meaning: предписание
+  derivation: null
+- parameter_id: elderly_initial_period
+  meaning: elderly_initial_period
+  value: 2
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: week
+  source_ref: RU-DULOX
+  source_locator: §4.2 PDF с.2–4
+  source_meaning: предписание
+  derivation: null
+- parameter_id: usual_maintenance
+  meaning: usual_maintenance
+  value: 60
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: mg/day
+  source_ref: RU-DULOX
+  source_locator: §4.2 PDF с.2–4
+  source_meaning: предписание
+  derivation: null
+- parameter_id: renal_no_adjust_lower
+  meaning: renal_no_adjust_lower
+  value: 30
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: mL/min
+  source_ref: RU-DULOX
+  source_locator: §4.2 PDF с.2–4
+  source_meaning: предписание
+  derivation: null
+logic:
+  representation: conditional_source_rule
+  conditions:
+  - Применимость к указанному показанию/форме подтверждена в пределах дозового расчёта; это не полный клинический
+    допуск.
+  actions:
+  - 'ГТР без сопутствующей депрессии: 30 мг/сут; при недостаточном ответе возможно 60 мг/сут, фиксированный день
+    повышения не опубликован.'
+  - 'ГТР с самостоятельной депрессией: начало/поддержание 60 мг/сут.'
+  - 'Пожилой ГТР: 30 мг/сут 2 недели до 60. Совпадение пожилой ветки и коморбидной депрессии не решать автоматически.'
+  - Капсулы целые; при старте 30 одна целая капсула 30 в сутки, арифметика формы. Не переносить недельный режим
+    болевого показания.
+  - 'Указанные наследственные состояния исключают приём Дулоксенты. При акатизии повышение может нанести вред: не
+    выдавать автоматическое повышение (§4.4 с.9).'
+  parameter_refs:
+  - usual_start
+  - with_depression_start
+  - elderly_initial_period
+  - usual_maintenance
+  - renal_no_adjust_lower
+  source_refs: *id003
+  clinician_choices:
+  - Необходимость изменения лечения и неоценённые модулем клинические обстоятельства.
+  missing_data_behaviour: insufficient_data с конкретным отсутствующим полем, без безусловной дозы.
+  unsupported_case_behaviour: Назвать неприменимую ветку; не переносить другую форму/показание.
+  contraindicated_case_behaviour: Не выдавать схему противопоказанного сочетания, указать источник.
+  conflicts: []
+  composite_rule_dependencies: []
+  combination_justification: КР определяет клиническую область, инструкция — дозовые параметры; новые коэффициенты
+    не добавлены.
+  maoi_history_contract:
+    source_ref: RU-DULOX
+    source_locator: §4.3 с.4; §4.5 с.9–10
+    locator: §4.3 с.4; §4.5 с.9–10
+    all_maoi_days: 14
+    to_maoi_days: 5
+    concurrent:
+    - maoi
+    - strong_CYP1A2
+    fields:
+    - medicines
+    - maoi_type
+    - maoi_stopped_at
+    reference_time: external_context.calculation_at
+    required_timestamp_unknown: insufficient_data; missing maoi_stopped_at; start_allowed=false
+    current_maoi: not_applicable for standard branch; no numeric start
+    multiple_records: all applicable direction gates must be satisfied; no single last record shortcut
+    calendar_day: next calendar date; not elapsed 24 hours unless that specific source says 24 hours
+  result_contract_ref: remediation/result_contracts.yaml#rules/dulox-gad-start
+  individual_output_gate: All required typed inputs and applicable conditional inputs must be known; evaluate every
+    source-specific gate in result_contract. A caution has clinician_choice, not an invented coefficient. No blanket
+    clinical clearance.
+output:
+  result_type: branch_selected
+  medication_inn: дулоксетин
+  dose_per_administration: null
+  administrations_per_day: null
+  total_daily_dose: null
+  unit: mg
+  formulation: Дулоксента, кишечнорастворимые капсулы 30/60 мг
+  schedule: []
+  warnings:
+  - Последующие этапы условны; максимум не является целью.
+  - Неоценённое клиническое обстоятельство не считается отсутствующим.
+  - Версия копии зафиксирована; последнее содержание реестрового документа проверяется перед клиническим внедрением.
+  mandatory_checks: []
+  clinician_decisions_remaining: []
+  rounding_or_formulation_rule: Не округлять медицинскую дозу; целые формы/разрешённое деление. Невозможная доза
+    — явный отказ формы.
+  source_refs: *id003
+  branches:
+  - branch_id: usual
+    when: elderly_population=false AND comorbid_depression=false
+    expected_output:
+      result_type: exact
+      total_daily_dose_mg: 30
+      dose_per_administration_mg: 30.0
+      administrations_per_day: 1
+      schedule: []
+      missing_fields: []
+      unconditional_future_stages: false
+      automatic_day_for_60: null
+    source_basis:
+    - source_id: RU-DULOX
+      version: Пересмотр 18.07.2024, §10 с.35; первая регистрация 02.04.2021
+      locator: §4.1–4.3 с.1–4; §4.4 с.5–9; §4.5 с.9–12; §4.6 с.12–13; §8–10 с.35
+      sha256: bcb5a8b9415f15fdae2ec8a8d00abe5788194c59893b6172294c4cf3db839786
+    - source_id: RU-GAD
+      version: '2024; каталог: опубликовано 19.09.2024, применяется'
+      locator: §3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78
+      sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+  - branch_id: comorbid
+    when: elderly_population=false AND comorbid_depression=true
+    expected_output:
+      result_type: exact
+      total_daily_dose_mg: 60
+      dose_per_administration_mg: 60.0
+      administrations_per_day: 1
+      schedule: []
+      missing_fields: []
+      unconditional_future_stages: false
+    source_basis:
+    - source_id: RU-DULOX
+      version: Пересмотр 18.07.2024, §10 с.35; первая регистрация 02.04.2021
+      locator: §4.1–4.3 с.1–4; §4.4 с.5–9; §4.5 с.9–12; §4.6 с.12–13; §8–10 с.35
+      sha256: bcb5a8b9415f15fdae2ec8a8d00abe5788194c59893b6172294c4cf3db839786
+    - source_id: RU-GAD
+      version: '2024; каталог: опубликовано 19.09.2024, применяется'
+      locator: §3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78
+      sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+  - branch_id: elderly
+    when: elderly_population=true AND comorbid_depression=false
+    expected_output:
+      result_type: exact
+      total_daily_dose_mg: 30
+      dose_per_administration_mg: 30.0
+      administrations_per_day: 1
+      schedule: []
+      missing_fields: []
+      unconditional_future_stages: false
+      initial_period_weeks: 2
+      conditional_next_total_mg: 60
+    source_basis:
+    - source_id: RU-DULOX
+      version: Пересмотр 18.07.2024, §10 с.35; первая регистрация 02.04.2021
+      locator: §4.1–4.3 с.1–4; §4.4 с.5–9; §4.5 с.9–12; §4.6 с.12–13; §8–10 с.35
+      sha256: bcb5a8b9415f15fdae2ec8a8d00abe5788194c59893b6172294c4cf3db839786
+    - source_id: RU-GAD
+      version: '2024; каталог: опубликовано 19.09.2024, применяется'
+      locator: §3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78
+      sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+  - branch_id: overlap
+    when: elderly_population=true AND comorbid_depression=true
+    expected_output:
+      result_type: clinician_choice
+      total_daily_dose_mg: null
+      dose_per_administration_mg: null
+      administrations_per_day: null
+      schedule: []
+      missing_fields: []
+      unconditional_future_stages: false
+      automatic_combined_start: null
+    source_basis:
+    - source_id: RU-DULOX
+      version: Пересмотр 18.07.2024, §10 с.35; первая регистрация 02.04.2021
+      locator: §4.1–4.3 с.1–4; §4.4 с.5–9; §4.5 с.9–12; §4.6 с.12–13; §8–10 с.35
+      sha256: bcb5a8b9415f15fdae2ec8a8d00abe5788194c59893b6172294c4cf3db839786
+    - source_id: RU-GAD
+      version: '2024; каталог: опубликовано 19.09.2024, применяется'
+      locator: §3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78
+      sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+  selection_contract:
+  - unavailable_source
+  - known immediate stop/exclusion
+  - invalid/missing applicable field
+  - unresolved source caution/modifier
+  - dose branch
+sources:
+- source_id: RU-DULOX
+  title: Дулоксента, ОХЛП, кишечнорастворимые капсулы 30/60 мг
+  organization_or_authors: КРКА
+  url: https://www.krka.ru/_assets/Duloxenta-CU_SmPC_18.07.2024.pdf
+  doi_or_registry_id: ЛП-№(000186)-(РГ-RU)
+  publication_date: null
+  version_or_update_date: Пересмотр 18.07.2024, §10 с.35; первая регистрация 02.04.2021
+  accessed_on: '2026-10-08'
+  source_type: label
+  jurisdiction: RU/EAEU
+  access_status: full
+  exact_locator: §4.1–4.3 с.1–4; §4.4 с.5–9; §4.5 с.9–12; §4.6 с.12–13; §8–10 с.35
+  evidence_status: Инструкция/ОХЛП; не валидированная модель индивидуальной дозы
+  what_was_tested: Не исследовался создаваемый продукт. Содержание и ограничения описаны в evidence_limitations.
+  evidence_limitations: ГТР, сопутствующая депрессия и пожилой старт различаются. Недельный старт при скелетно-мышечной
+    боли не переносить на ГТР. Фиксированного срока повышения обычного ГТР нет; дозовые исследования депрессии не
+    доказывают пользу повышения.
+  reuse_license_or_restriction: Собственное извлечение фактических правил и короткие локаторы; лицензия на код/полное
+    руководство не предполагается.
+  document_fingerprint:
+    source_id: RU-DULOX
+    url: https://www.krka.ru/_assets/Duloxenta-CU_SmPC_18.07.2024.pdf
+    sha256: bcb5a8b9415f15fdae2ec8a8d00abe5788194c59893b6172294c4cf3db839786
+    pages: 35
+    accessed_on: '2026-10-08'
+  local_file: source_downloads/Дулоксента — дулоксетин.pdf
+  registry_observation:
+    registry: https://lk.regmed.ru/Register/EAEU_SmPC
+    query: Дулоксента
+    registration_number: ЛП-№(000186)-(РГ-RU)
+    registration_date: '2021-04-02'
+    forms: капсулы кишечнорастворимые 30/60 мг
+    accessed_on: '2026-10-08'
+    read_part: Видимая официальная строка результата поиска; наличие ОХЛП/ЛВ. Сам документ этой записи не скачан;
+      идентичность копии не заявлена.
+  document_copies:
+  - source_id: RU-DULOX
+    local_file: source_downloads/Дулоксента — дулоксетин.pdf
+    sha256: bcb5a8b9415f15fdae2ec8a8d00abe5788194c59893b6172294c4cf3db839786
+    version: Пересмотр 18.07.2024, §10 с.35; первая регистрация 02.04.2021
+    url: https://www.krka.ru/_assets/Duloxenta-CU_SmPC_18.07.2024.pdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: false
+  - source_id: RU-DULOX
+    local_file: audit/retrieved/RU-DULOX.pdf
+    sha256: bcb5a8b9415f15fdae2ec8a8d00abe5788194c59893b6172294c4cf3db839786
+    version: Пересмотр 18.07.2024, §10 с.35; первая регистрация 02.04.2021
+    url: https://www.krka.ru/_assets/Duloxenta-CU_SmPC_18.07.2024.pdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: false
+  - source_id: RU-DULOX
+    local_file: remediation/retrieved/RU-DULOX.pdf
+    sha256: bcb5a8b9415f15fdae2ec8a8d00abe5788194c59893b6172294c4cf3db839786
+    version: Пересмотр 18.07.2024, §10 с.35; первая регистрация 02.04.2021
+    url: https://www.krka.ru/_assets/Duloxenta-CU_SmPC_18.07.2024.pdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: false
+  dates:
+    registration: '2021-04-02'
+    revision: '2024-07-18'
+    publication: null
+    download: '2026-10-08'
+  latest_registration_revision_confirmed: false
+- source_id: RU-GAD
+  title: Генерализованное тревожное расстройство, КР 457_3
+  organization_or_authors: Минздрав РФ; Российское общество психиатров
+  url: https://apicr.minzdrav.gov.ru/api.ashx?id=457_3&op=GetClinrecPdf
+  doi_or_registry_id: '457_3'
+  publication_date: null
+  version_or_update_date: '2024; каталог: опубликовано 19.09.2024, применяется'
+  accessed_on: '2026-10-08'
+  source_type: guideline
+  jurisdiction: RU
+  access_status: full
+  exact_locator: §3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78
+  evidence_status: Клиническая рекомендация; не валидация калькулятора
+  what_was_tested: Не исследовался создаваемый продукт. Содержание и ограничения описаны в evidence_limitations.
+  evidence_limitations: Взрослые F41.1. УУР/УДД относятся к конкретным рекомендациям, а не к точности индивидуального
+    дозирования.
+  reuse_license_or_restriction: Открытый доступ не означает разрешение перераспространять полный документ. Сохранены
+    собственное извлечение фактических правил, локаторы и ссылки; код и большие цитаты не копируются.
+  document_fingerprint:
+    source_id: RU-GAD
+    url: https://apicr.minzdrav.gov.ru/api.ashx?id=457_3&op=GetClinrecPdf
+    sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+    pages: 121
+  local_file: audit/retrieved/RU-GAD.pdf
+  document_copies:
+  - source_id: RU-GAD
+    local_file: audit/retrieved/RU-GAD.pdf
+    sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+    version: '2024; каталог: опубликовано 19.09.2024, применяется'
+    url: https://apicr.minzdrav.gov.ru/api.ashx?id=457_3&op=GetClinrecPdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: false
+  - source_id: RU-GAD
+    local_file: remediation/retrieved/RU-GAD.pdf
+    sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+    version: '2024; каталог: опубликовано 19.09.2024, применяется'
+    url: https://apicr.minzdrav.gov.ru/api.ashx?id=457_3&op=GetClinrecPdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: false
+  dates:
+    registration: null
+    revision: null
+    publication: null
+    download: '2026-10-08'
+  latest_registration_revision_confirmed: false
+  current_guideline_status_evidence: remediation/catalog_check.json + remediation/current_minzdrav_catalog.json;
+    2026-10-08; CodeVersion/ApplyStatusCalculated=1
+verification:
+  primary_source_checked: true
+  all_clinical_parameters_have_sources: true
+  population_and_indication_checked: true
+  russian_applicability_checked: true
+  formulation_feasibility_checked: true
+  combined_rules_justified: true
+  source_transfer_check: reviewed_available_original_sections_and_contract_consistency; calculator_not_implemented;
+    latest_registration_revision_not_confirmed
+  clinical_review: not_performed
+  product_clinical_validation: not_performed
+  ready_for_technical_implementation: true
+  unresolved_items: []
+  transfer_scope: Only explicitly source-bound branch contracts and prepared expectations; medical currency limits
+    in sources.json remain open. No automatic clinical use.
+test_cases:
+- case_id: dulox-gad-start__usual
+  synthetic: true
+  given:
+    comorbid_depression: false
+    elderly_population: false
+    form: 30 мг целая капсула
+  expected:
+    start_mg_per_day: 30
+    capsules_30_mg_per_day: 1
+    automatic_day_for_60: null
+  source_refs:
+  - RU-DULOX
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+- case_id: dulox-gad-start__with-depression
+  synthetic: true
+  given:
+    comorbid_depression: true
+    elderly_population: false
+  expected:
+    start_mg_per_day: 60
+  source_refs:
+  - RU-DULOX
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+- case_id: dulox-gad-start__elderly
+  synthetic: true
+  given:
+    elderly_population: true
+    comorbid_depression: false
+  expected:
+    start_mg_per_day: 30
+    initial_weeks: 2
+    conditional_next_mg_per_day: 60
+  source_refs:
+  - RU-DULOX
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+- case_id: dulox-gad-start__overlapping-modifiers
+  synthetic: true
+  given:
+    elderly_population: true
+    comorbid_depression: true
+  expected:
+    result_type: clinician_choice
+    automatic_combined_start: null
+  source_refs:
+  - RU-DULOX
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+- case_id: dulox-gad-start__clcr30
+  synthetic: true
+  given:
+    CLcr_mL_min: 30
+  expected:
+    renal_dose_adjustment: false
+  source_refs:
+  - RU-DULOX
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+- case_id: dulox-gad-start__clcr29
+  synthetic: true
+  given:
+    CLcr_mL_min: 29
+  expected:
+    result_type: not_applicable
+    contraindication: true
+  source_refs:
+  - RU-DULOX
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+- case_id: dulox-gad-start__unknown-renal
+  synthetic: true
+  given:
+    renal_metric: неизвестно
+  expected:
+    result_type: insufficient_data
+    missing:
+    - renal_metric
+    unconditional_dose: null
+  source_refs:
+  - RU-DULOX
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+profile:
+  country: RU
+  selection_status: RU_profile_research
+  foreign_fallback_allowed: false
+card_type: numeric_source_rule
+input_contract_ref: remediation/input_contracts.yaml#fragment_bindings/dulox-gad-start

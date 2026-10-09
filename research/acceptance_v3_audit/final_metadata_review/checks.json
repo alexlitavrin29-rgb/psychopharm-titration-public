@@ -1,0 +1,40 @@
+{
+  "snapshot": "b66e9e0dadca7234ed1e66bc8c103047ff2f96e963313d07dd0075494695f0a4",
+  "current_metadata_assertions": 4410,
+  "current_metadata_errors": 0,
+  "current_exact_raw_changes": 22,
+  "current_exact_projected_changes": 22,
+  "numeric_actions_questions_phase_given_changed": false,
+  "new_result_guard_baseline_errors": [],
+  "actual_thirteenth_mutation": true,
+  "independent_raw_projected_controls": 12,
+  "all_12_rejected": true,
+  "reused_checks": {
+    "primary_USED": {
+      "old_occurrences": 6241,
+      "own_norm_key_records": 391,
+      "active_input_bindings": 906,
+      "numeric_objects": 211,
+      "medical_prose_groups": 249,
+      "literal_condition_groups": 900
+    },
+    "full227": {
+      "cards": 38,
+      "full_prepared_cases": 6646,
+      "numeric_assertions": 22869,
+      "data_source_phase_count_assertions": 81616,
+      "used_cause_action_occurrences": 2731,
+      "terminal_certificate_cases": 1386,
+      "terminal_assertions": 19126,
+      "terminal_causal_controls": 4591,
+      "selected_paths": 2652,
+      "ordinary_numeric_paths": 96,
+      "ordinary_count_min": 10,
+      "ordinary_count_max": 34,
+      "lower_bounds": 0,
+      "current_targeted_negatives": 35,
+      "current_main_negatives": 5
+    }
+  },
+  "scope": "Current metadata tests actually repeated; unchanged full227/source results reused by exact identity. No app/clinical engine executed."
+}

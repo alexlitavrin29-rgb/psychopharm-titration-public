@@ -1,0 +1,109 @@
+{
+  "status": "pass",
+  "primary_guards": [
+    {
+      "source_id": "RU-SER",
+      "page": 6,
+      "phrases": [
+        "симптоматической гипонатриемией",
+        "медицинскую помощь"
+      ],
+      "pass_": true
+    },
+    {
+      "source_id": "RU-PREG",
+      "page": 8,
+      "phrases": [
+        "рассмотреть вопрос о прекращении",
+        "медицинской помощью"
+      ],
+      "pass_": true
+    },
+    {
+      "source_id": "RU-PREG",
+      "page": 6,
+      "phrases": [
+        "немедленно отменить",
+        "альтернативное лечение"
+      ],
+      "pass_": true
+    },
+    {
+      "source_id": "RU-DULOX",
+      "page": 4,
+      "phrases": [
+        "стойком повышении АД",
+        "постепенной отмены"
+      ],
+      "pass_": true
+    },
+    {
+      "source_id": "RU-DULOX",
+      "page": 7,
+      "phrases": [
+        "избегать одновременного",
+        "препаратов, содержащих дулоксетин"
+      ],
+      "pass_": true
+    },
+    {
+      "source_id": "RU-VENLA-XR",
+      "page": 8,
+      "phrases": [
+        "тяжести симптомов",
+        "снижения дозы"
+      ],
+      "pass_": true
+    },
+    {
+      "source_id": "RU-VENLA-XR",
+      "page": 16,
+      "phrases": [
+        "ингибитора CYP3A4",
+        "активность изофермента CYP2D6"
+      ],
+      "pass_": true
+    },
+    {
+      "source_id": "RU-VENLA-XR",
+      "page": 17,
+      "phrases": [
+        "венлафаксина и метопролола",
+        "осторожность"
+      ],
+      "pass_": true
+    }
+  ],
+  "isolated_negative_mutations": [
+    {
+      "mutation": "event_automatic_stop",
+      "rejected": true
+    },
+    {
+      "mutation": "missing_medical_help",
+      "rejected": true
+    },
+    {
+      "mutation": "missing_SER_pair_gate",
+      "rejected": true
+    },
+    {
+      "mutation": "missing_XR_CYP",
+      "rejected": true
+    },
+    {
+      "mutation": "false_duplicate",
+      "rejected": true
+    },
+    {
+      "mutation": "missing_SCAR_alternative",
+      "rejected": true
+    },
+    {
+      "mutation": "hidden_projection_reason",
+      "rejected": true
+    }
+  ],
+  "scope": "Targeted primary clauses and prepared contract/projection regression only; not exhaustive source transfer, medical engine execution or clinical validation",
+  "errors": []
+}

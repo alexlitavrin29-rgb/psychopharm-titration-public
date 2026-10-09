@@ -1,0 +1,33 @@
+policy_version: '1.0'
+effective_on: '2026-10-08'
+country: RU
+intended_user: psychiatrist_in_Russian_Federation
+primary_guidelines: Russian_Ministry_of_Health_current_clinical_recommendations
+primary_product_constraints: Russian_registration_label_or_Russian_EAEU_SmPC
+active_rule_directory: rules
+foreign_reference_directory: reference_rules
+foreign_numeric_fallback_allowed: false
+foreign_reference_auto_selection_allowed: false
+source_priority:
+  indication_and_treatment_line: Russian_clinical_recommendation
+  product_dose_form_age_contraindications_interactions: Russian_product_label
+  off_label_recommendation: explicit_separate_status_and_clinician_decision
+  conflict_RU_vs_foreign: use_RU_source_and_preserve_missing_steps
+  conflict_within_RU: unresolved_until_source_specific_review
+  defective_units_in_RU: do_not_execute_seek_separate_RU_original
+source_version_requirement: exact_document_version_and_locator
+current_registry_identity_required_for_clinical_use: true
+manufacturer_copy_equals_latest_GRLS: false
+research_profile_is_clinically_validated: false
+decisions:
+  - conflict_id: ssri_direct_switch
+    status: source_priority_resolved_in_favor_of_RU
+    active_result: gradual_discontinuation_constraint_and_unspecified_target_start_time
+    complete_Russian_numeric_switch_found: false
+  - conflict_id: foreign_taper_percentages
+    status: excluded_from_RU_profile
+    active_result: Russian_drug_specific_constraints_and_Russian_withdrawal_guideline
+  - conflict_id: lyrica_creatinine_units
+    status: original_Lyrica_formula_not_executable
+    active_result: confirmed_CLcr_or_separate_Russian_Richter_estimator_with_mg_per_dL
+    silent_correction_of_Lyrica_allowed: false

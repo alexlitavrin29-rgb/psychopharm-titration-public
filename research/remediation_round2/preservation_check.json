@@ -1,0 +1,2430 @@
+{
+  "status": "pass",
+  "baseline": "baseline_manifest.json",
+  "protected_files": 342,
+  "protected_changed": [],
+  "protected": [
+    {
+      "path": "psychopharm_codex_pack/ACCEPTANCE.md",
+      "sha256_before": "c4ca3ea82b949a1b9d985df8bdc8bf25ce9489d1e75ab0230717d69bc698628b",
+      "sha256_after": "c4ca3ea82b949a1b9d985df8bdc8bf25ce9489d1e75ab0230717d69bc698628b",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/00_audit_summary.md",
+      "sha256_before": "a445b2ad0b02bfe4623bbabcd0d9120ff5fae8a3822a67582ca068b5d565c900",
+      "sha256_after": "a445b2ad0b02bfe4623bbabcd0d9120ff5fae8a3822a67582ca068b5d565c900",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/01_acceptance_recheck.md",
+      "sha256_before": "f0759f46c8d6a1a1ea11236b949f7d0fdefca3e09b31de8be22c6ae388398140",
+      "sha256_after": "f0759f46c8d6a1a1ea11236b949f7d0fdefca3e09b31de8be22c6ae388398140",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/02_findings.csv",
+      "sha256_before": "ded4df1b463003b4accf633350912ff2e76582da9d38816244082f0d185a84de",
+      "sha256_after": "ded4df1b463003b4accf633350912ff2e76582da9d38816244082f0d185a84de",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/03_source_verification.csv",
+      "sha256_before": "a969596ba74077a458a6ba06af380766909159db8e2881364d7187e5764f704f",
+      "sha256_after": "a969596ba74077a458a6ba06af380766909159db8e2881364d7187e5764f704f",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/04_scoring.md",
+      "sha256_before": "91b8da90b30260a1e5fc8d7f1a2da8cfe46b9fda336b8f5d80914894a6e96327",
+      "sha256_after": "91b8da90b30260a1e5fc8d7f1a2da8cfe46b9fda336b8f5d80914894a6e96327",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/05_required_fixes.md",
+      "sha256_before": "2a286c02cf0a4562718a48ef5e46914768890bed48211cac56da8d3e4114e4fe",
+      "sha256_after": "2a286c02cf0a4562718a48ef5e46914768890bed48211cac56da8d3e4114e4fe",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/06_card_review.csv",
+      "sha256_before": "c619b82b83bf4f293dcde98af4657ba48e74cbfaad71760cbf6f9f061903dc8d",
+      "sha256_after": "c619b82b83bf4f293dcde98af4657ba48e74cbfaad71760cbf6f9f061903dc8d",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/06_condition_review.csv",
+      "sha256_before": "4e1dc3a8b31fe87aa56ff2777d2267cfb9e2cdefc5530d4f98fa6d526a61f592",
+      "sha256_after": "4e1dc3a8b31fe87aa56ff2777d2267cfb9e2cdefc5530d4f98fa6d526a61f592",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/06_parameter_review.csv",
+      "sha256_before": "f522acb5cc805d4ee254e34df352887e2032e969278a4fa700ee94a19f466941",
+      "sha256_after": "f522acb5cc805d4ee254e34df352887e2032e969278a4fa700ee94a19f466941",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/07_case_contract_review.csv",
+      "sha256_before": "335c176905ae1e3a8a6d89ea5e648952c75e53e0729928ce76688ebc560ea023",
+      "sha256_after": "335c176905ae1e3a8a6d89ea5e648952c75e53e0729928ce76688ebc560ea023",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/08_additional_review.md",
+      "sha256_before": "a9806ad76ecbd3500fe3eaed960a9ea457814c0617a9c2a857297d3a9c8ebdb3",
+      "sha256_after": "a9806ad76ecbd3500fe3eaed960a9ea457814c0617a9c2a857297d3a9c8ebdb3",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/audit_artifact_checks.json",
+      "sha256_before": "13ff8834449362de73a18da7764e4583132a12b92f35e762aeea36f7b281a29d",
+      "sha256_after": "13ff8834449362de73a18da7764e4583132a12b92f35e762aeea36f7b281a29d",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/baseline_manifest.json",
+      "sha256_before": "ddc68c6918fa7efe2f5cd63e7864bc051d39b4513910eab5b9729562c5ee4ca2",
+      "sha256_after": "ddc68c6918fa7efe2f5cd63e7864bc051d39b4513910eab5b9729562c5ee4ca2",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/build_audit.py",
+      "sha256_before": "0178d0081730a1cde5834387e0a06bc95db94463a35edd07047288c019357107",
+      "sha256_after": "0178d0081730a1cde5834387e0a06bc95db94463a35edd07047288c019357107",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/collect_evidence.py",
+      "sha256_before": "73a91eed99a32dff4d2ee35f614049dbeec617fca8252af2bf6cd3d78691a5c4",
+      "sha256_after": "73a91eed99a32dff4d2ee35f614049dbeec617fca8252af2bf6cd3d78691a5c4",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/compact_cards.py",
+      "sha256_before": "ebd2a6b7157fa4342206212e17733f695e6212a105f0e9d4ca59f05292d965c1",
+      "sha256_after": "ebd2a6b7157fa4342206212e17733f695e6212a105f0e9d4ca59f05292d965c1",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/current_minzdrav_catalog.json",
+      "sha256_before": "09de48ed7f0cb8fdd3afe89974b7a5333fa96a1b415669fd9faeba42e0a7a6f8",
+      "sha256_after": "09de48ed7f0cb8fdd3afe89974b7a5333fa96a1b415669fd9faeba42e0a7a6f8",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/external_fetch_results.json",
+      "sha256_before": "33560b6bb1c70a1c78b63c803efe11af11703851eea6c536e41f99753711512a",
+      "sha256_after": "33560b6bb1c70a1c78b63c803efe11af11703851eea6c536e41f99753711512a",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/ago-depression-start.json",
+      "sha256_before": "8df6ec63683eb106f49b8799cbb1f00f12bb847a76aa7bacf0bac5ea45f70d9a",
+      "sha256_after": "8df6ec63683eb106f49b8799cbb1f00f12bb847a76aa7bacf0bac5ea45f70d9a",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/ago-gad-start.json",
+      "sha256_before": "745d71aa090dd1f5c4e2e1f69301afd6892367d0775431ebb700381297a512ce",
+      "sha256_after": "745d71aa090dd1f5c4e2e1f69301afd6892367d0775431ebb700381297a512ce",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/ago-stop.json",
+      "sha256_before": "d5b836bd1d9e26ff46929e7ccbff8ad33fca6dff499eafac0b69ec8129dfbdd8",
+      "sha256_after": "d5b836bd1d9e26ff46929e7ccbff8ad33fca6dff499eafac0b69ec8129dfbdd8",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/depression-301_3.txt",
+      "sha256_before": "4be66beaa2ce11c70a00cfb6a24c26db6a8fdb205c8b6ea5c9ad959bd2a0686d",
+      "sha256_after": "4be66beaa2ce11c70a00cfb6a24c26db6a8fdb205c8b6ea5c9ad959bd2a0686d",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/dulox-depression-start.json",
+      "sha256_before": "403034988bab84a3d1cf4329d8ad23bb48cf42e3fb282708aad0d3cea22eab63",
+      "sha256_after": "403034988bab84a3d1cf4329d8ad23bb48cf42e3fb282708aad0d3cea22eab63",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/dulox-gad-adjust.json",
+      "sha256_before": "bd89f5fff01da0a75b1f18fbfd29d4218eaeef1042b179bc934c9000896a210e",
+      "sha256_after": "bd89f5fff01da0a75b1f18fbfd29d4218eaeef1042b179bc934c9000896a210e",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/dulox-gad-start.json",
+      "sha256_before": "4e1244bbbef84d1468b49e3d73f65bd5624eecdee72736a12d84963c0c3c71df",
+      "sha256_after": "4e1244bbbef84d1468b49e3d73f65bd5624eecdee72736a12d84963c0c3c71df",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/dulox-taper-limit.json",
+      "sha256_before": "3248a61cc9faa601d63ec048bfff4f930d52102e77873f9ddf9658150ec77783",
+      "sha256_after": "3248a61cc9faa601d63ec048bfff4f930d52102e77873f9ddf9658150ec77783",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/esc-adult-adjust.json",
+      "sha256_before": "7a2b1b9e622fd355632e2a3cd7fc05f6293222241ee889de9963d99b2030714d",
+      "sha256_after": "7a2b1b9e622fd355632e2a3cd7fc05f6293222241ee889de9963d99b2030714d",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/esc-cyp2c19-start.json",
+      "sha256_before": "5b10c0c4f80a5331d91fefb176b3551da500a8c9255612f6167af3f922420aab",
+      "sha256_after": "5b10c0c4f80a5331d91fefb176b3551da500a8c9255612f6167af3f922420aab",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/esc-elderly-start.json",
+      "sha256_before": "9523fff3fced9f1faa82b49f01fe8b0287680947aebe8b39054a541c9701428b",
+      "sha256_after": "9523fff3fced9f1faa82b49f01fe8b0287680947aebe8b39054a541c9701428b",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/esc-gad-start.json",
+      "sha256_before": "55208d31bdf6194c2b77d4c0836ddde9a5af024831c886ce6fde8c3375823c0d",
+      "sha256_after": "55208d31bdf6194c2b77d4c0836ddde9a5af024831c886ce6fde8c3375823c0d",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/esc-hepatic-start.json",
+      "sha256_before": "e10af9020534734dd77ae42309f7c041410059a3dded3a91d5211fcea44a6906",
+      "sha256_after": "e10af9020534734dd77ae42309f7c041410059a3dded3a91d5211fcea44a6906",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/esc-panic-start.json",
+      "sha256_before": "8929becfe8ff9f09cdcca33380a3c5557d5bc2dc9d4500cea4a677830c89bb4d",
+      "sha256_after": "8929becfe8ff9f09cdcca33380a3c5557d5bc2dc9d4500cea4a677830c89bb4d",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/esc-social-start.json",
+      "sha256_before": "ff55db97a461ad48f8ecbad55e5af5204e69180331e5166a4cec04715c5ccc4d",
+      "sha256_after": "ff55db97a461ad48f8ecbad55e5af5204e69180331e5166a4cec04715c5ccc4d",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/esc-taper-limit.json",
+      "sha256_before": "36d69b170aac3ef79692fae1123d3fe84d4f5a02463bf022c7cdb76d722ba366",
+      "sha256_after": "36d69b170aac3ef79692fae1123d3fe84d4f5a02463bf022c7cdb76d722ba366",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/esc_cards.txt",
+      "sha256_before": "7778d513553a62bea0d44f4e730d320c753c0a5251d35d5b9600c01c50b2348a",
+      "sha256_after": "7778d513553a62bea0d44f4e730d320c753c0a5251d35d5b9600c01c50b2348a",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/EU-PREG.txt",
+      "sha256_before": "0e44c5054e5a0e456027ca3a86f7e798b0a7c04cb47518476027fbd255848ead",
+      "sha256_after": "0e44c5054e5a0e456027ca3a86f7e798b0a7c04cb47518476027fbd255848ead",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/fluvox-depression-start.json",
+      "sha256_before": "dd13118942f2661b59c928c9e0cf5a0d613fe7a50cc942a09c1594a49c9ed193",
+      "sha256_after": "dd13118942f2661b59c928c9e0cf5a0d613fe7a50cc942a09c1594a49c9ed193",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/fluvox-taper-limit.json",
+      "sha256_before": "c0dd316d3414353efe0d90bb3482539cdec0106651e093a5e477f5700e5b0080",
+      "sha256_after": "c0dd316d3414353efe0d90bb3482539cdec0106651e093a5e477f5700e5b0080",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/parox-panic-kr.json",
+      "sha256_before": "0cb6bc409653338f6453885c87af08891aa463a722f3aad46a05059e2097865a",
+      "sha256_after": "0cb6bc409653338f6453885c87af08891aa463a722f3aad46a05059e2097865a",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/parox-taper-example.json",
+      "sha256_before": "5ac16446c81b5cc6f1cdedfc558ff30c0dd8bece0190a91b21914ab7a77fb8bb",
+      "sha256_after": "5ac16446c81b5cc6f1cdedfc558ff30c0dd8bece0190a91b21914ab7a77fb8bb",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/phen-taper-limit.json",
+      "sha256_before": "31817338b78b7d9d33700ff15e5081a51f253662e68329735d1f36e7b6510d51",
+      "sha256_after": "31817338b78b7d9d33700ff15e5081a51f253662e68329735d1f36e7b6510d51",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/preg-gad-adjust.json",
+      "sha256_before": "76ec274e229b2bf9f53e76c8b4c7ecc41364a314068e982a2f31435b86974b9c",
+      "sha256_after": "76ec274e229b2bf9f53e76c8b4c7ecc41364a314068e982a2f31435b86974b9c",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/preg-gad-start.json",
+      "sha256_before": "3e36e1c2256950186254b5750f383b90fc25ee401b8c473be3e2f1ffebcaf8aa",
+      "sha256_after": "3e36e1c2256950186254b5750f383b90fc25ee401b8c473be3e2f1ffebcaf8aa",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/preg-renal-start.json",
+      "sha256_before": "68622c46be5d997a75b119d9423c1e8c729a826575968e18d0b0f3e9b655e3cd",
+      "sha256_after": "68622c46be5d997a75b119d9423c1e8c729a826575968e18d0b0f3e9b655e3cd",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/preg-taper-limit.json",
+      "sha256_before": "d516e15a1fac9618ad12465b58972057277acf7ffb2d4a514cfb19cadcf204a9",
+      "sha256_after": "d516e15a1fac9618ad12465b58972057277acf7ffb2d4a514cfb19cadcf204a9",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/RU-AGO.txt",
+      "sha256_before": "4cda9c5b577a0ed4c19509bd55f28b402698fb326fbaa245b71e098590c22f19",
+      "sha256_after": "4cda9c5b577a0ed4c19509bd55f28b402698fb326fbaa245b71e098590c22f19",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/RU-CLOMI-IV-ARCHIVE.txt",
+      "sha256_before": "2f011bafac8b00ffc4825ce01bbd24c01ec405ec61a936165204d43fa2663ffa",
+      "sha256_after": "2f011bafac8b00ffc4825ce01bbd24c01ec405ec61a936165204d43fa2663ffa",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/RU-DEP.txt",
+      "sha256_before": "00c859a983b3508c931caa909ea856dfe4226f386d6aca36ea082762f315303d",
+      "sha256_after": "00c859a983b3508c931caa909ea856dfe4226f386d6aca36ea082762f315303d",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/RU-DULOX.txt",
+      "sha256_before": "36ca0ae9cb28294dc19054d933d8e09c3956e26a80e354e1a529014f3feb969f",
+      "sha256_after": "36ca0ae9cb28294dc19054d933d8e09c3956e26a80e354e1a529014f3feb969f",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/RU-FLUOX-ARCHIVE.txt",
+      "sha256_before": "f0903e70dc558925095eeb117274877ee188c547ebf51645088f2fbaf3ae0305",
+      "sha256_after": "f0903e70dc558925095eeb117274877ee188c547ebf51645088f2fbaf3ae0305",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/RU-FLUVOX.txt",
+      "sha256_before": "7a8286c96e4c8b4b5b9343705b5644a037daa7936713a0aba4516eda518bb4c1",
+      "sha256_after": "7a8286c96e4c8b4b5b9343705b5644a037daa7936713a0aba4516eda518bb4c1",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/RU-GAD-sections.txt",
+      "sha256_before": "9b4a9b09eb27ffcfd8e3f16fca959dfad27dff03c46df071e37858671a53837e",
+      "sha256_after": "9b4a9b09eb27ffcfd8e3f16fca959dfad27dff03c46df071e37858671a53837e",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/RU-GAD.txt",
+      "sha256_before": "3b9a65f8e13e0bfd5c104f51ebb6e1c61aa14326e2c248da90a69b7ad36a9899",
+      "sha256_after": "3b9a65f8e13e0bfd5c104f51ebb6e1c61aa14326e2c248da90a69b7ad36a9899",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/RU-PANIC-sections.txt",
+      "sha256_before": "93068620531b10352e931590108fe53a05bdea8cd6540b532ce87e1275e8ff02",
+      "sha256_after": "93068620531b10352e931590108fe53a05bdea8cd6540b532ce87e1275e8ff02",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/RU-PANIC.txt",
+      "sha256_before": "f00140cfdb06bfe431df3b78badff53ffa023eda2fb3580aa0614e94f745336b",
+      "sha256_after": "f00140cfdb06bfe431df3b78badff53ffa023eda2fb3580aa0614e94f745336b",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/RU-PAROX.txt",
+      "sha256_before": "2b94b4c53e8dd61f6a47455b38fe7bc0a283502e3eff0ff093d6bc74dc2fa434",
+      "sha256_after": "2b94b4c53e8dd61f6a47455b38fe7bc0a283502e3eff0ff093d6bc74dc2fa434",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/RU-PHEN.txt",
+      "sha256_before": "906f9dd1c7581bcc2daf06495850316a1a9603afa580fa426c90537b46ed6f6e",
+      "sha256_after": "906f9dd1c7581bcc2daf06495850316a1a9603afa580fa426c90537b46ed6f6e",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/RU-PHOB-sections.txt",
+      "sha256_before": "100a3e0eebba5199735ceba37cb4e176c9824ccbbb424eb43af4808f4f47040a",
+      "sha256_after": "100a3e0eebba5199735ceba37cb4e176c9824ccbbb424eb43af4808f4f47040a",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/RU-PHOB.txt",
+      "sha256_before": "a5eca987fcd7514d6adf46fe22259f14da76de0e94fea725766ef2559ac87f85",
+      "sha256_after": "a5eca987fcd7514d6adf46fe22259f14da76de0e94fea725766ef2559ac87f85",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/RU-PREG-RICHTER-ARCHIVE.txt",
+      "sha256_before": "0e6dc02ffd061a8a649251e55f081012d9fd8352f165885fac180c6d6dd2959d",
+      "sha256_after": "0e6dc02ffd061a8a649251e55f081012d9fd8352f165885fac180c6d6dd2959d",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/RU-PREG-RICHTER.txt",
+      "sha256_before": "22381b805d5aeb7d2eef4e130b7e1480539399be5a0839fb03a0d9820c20f4e4",
+      "sha256_after": "22381b805d5aeb7d2eef4e130b7e1480539399be5a0839fb03a0d9820c20f4e4",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/RU-PREG.txt",
+      "sha256_before": "cda9494fce0d625d126ffcf4865a10cc883ec3c8e1f27ca936fe11b507da136f",
+      "sha256_after": "cda9494fce0d625d126ffcf4865a10cc883ec3c8e1f27ca936fe11b507da136f",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/RU-SER-2023.txt",
+      "sha256_before": "4244ac2f4ddf93ec343fd11da1a253718cd9db82115b0bb07228b8ac0182d94c",
+      "sha256_after": "4244ac2f4ddf93ec343fd11da1a253718cd9db82115b0bb07228b8ac0182d94c",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/RU-SER.txt",
+      "sha256_before": "76a063b185b7a21b36a99fed2d36cf79c3a75ddf7628a93d284f58e964ebf360",
+      "sha256_after": "76a063b185b7a21b36a99fed2d36cf79c3a75ddf7628a93d284f58e964ebf360",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/ser-adult-adjust.json",
+      "sha256_before": "1c9a93e55c18dea5e8e8f9e6160bbd8eca268cdbf46d4a38307e16c08de0f59f",
+      "sha256_after": "1c9a93e55c18dea5e8e8f9e6160bbd8eca268cdbf46d4a38307e16c08de0f59f",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/ser-panic-start.json",
+      "sha256_before": "378296bab70a305c7591f859bbb9ea90f2b376c123aa8ac50024b84902c546ae",
+      "sha256_after": "378296bab70a305c7591f859bbb9ea90f2b376c123aa8ac50024b84902c546ae",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/ser-social-start.json",
+      "sha256_before": "74d1aa10efffa15ef45b7b7f5b55c5aa85be29e5c05dd736737a588f7fb4c473",
+      "sha256_after": "74d1aa10efffa15ef45b7b7f5b55c5aa85be29e5c05dd736737a588f7fb4c473",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/ser-taper-limit.json",
+      "sha256_before": "a9fa546b19c2cf67005298b9e7282dc96d96f138641de1eb5cdf931da85d2972",
+      "sha256_after": "a9fa546b19c2cf67005298b9e7282dc96d96f138641de1eb5cdf931da85d2972",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/switch-esc-ago.json",
+      "sha256_before": "fb4054fa6669aee41df5cba32b97a659277d3fe29109a11304c5108cc9082b96",
+      "sha256_after": "fb4054fa6669aee41df5cba32b97a659277d3fe29109a11304c5108cc9082b96",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/switch-esc-ser.json",
+      "sha256_before": "7ad10d680944cdf867e7f3a7097fe48f6cb1c17fc2c69dc9b424a37dd55c726b",
+      "sha256_after": "7ad10d680944cdf867e7f3a7097fe48f6cb1c17fc2c69dc9b424a37dd55c726b",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/switch-parox-ago-selected-example.json",
+      "sha256_before": "09458c644c8ad6b399dd4b5354c66d3b8499a8a935b582f471a0127131a32cc7",
+      "sha256_after": "09458c644c8ad6b399dd4b5354c66d3b8499a8a935b582f471a0127131a32cc7",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/switch-parox-ago.json",
+      "sha256_before": "9391fa383f027e371dbcacaf303f03df2eac5c0021dd6be46caa5f7165155756",
+      "sha256_after": "9391fa383f027e371dbcacaf303f03df2eac5c0021dd6be46caa5f7165155756",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/switch-ser-ago.json",
+      "sha256_before": "f01939048c06f83dfed04092918e9574d9955024563eca2b3582d93dd092e7f7",
+      "sha256_after": "f01939048c06f83dfed04092918e9574d9955024563eca2b3582d93dd092e7f7",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/switch-ser-esc.json",
+      "sha256_before": "6e4ee25c16f5ba362976d75da2e20ea5d8a2e855090cc0432aaf72e4afb281f7",
+      "sha256_after": "6e4ee25c16f5ba362976d75da2e20ea5d8a2e855090cc0432aaf72e4afb281f7",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/UK-NICE222.txt",
+      "sha256_before": "c81a7dc7194b1a3551603311360d419632c6cd6acc7e690a43926cf53ff95fd0",
+      "sha256_after": "c81a7dc7194b1a3551603311360d419632c6cd6acc7e690a43926cf53ff95fd0",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/US-ASAM.txt",
+      "sha256_before": "a9e21810d0a3a0f2f2abfc3063b49769d03c75cc2a36b3ed3c6696676d5a41ef",
+      "sha256_after": "a9e21810d0a3a0f2f2abfc3063b49769d03c75cc2a36b3ed3c6696676d5a41ef",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/velaxin-IR.txt",
+      "sha256_before": "694cd522117a0e2d62e50b8f5152fb06a19885784be215daf30f00a53533630c",
+      "sha256_after": "694cd522117a0e2d62e50b8f5152fb06a19885784be215daf30f00a53533630c",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/velaxin-XR.txt",
+      "sha256_before": "35517391ae3772f116ac5a09969337c38f3e8148dc00c3e7177bd6e218249693",
+      "sha256_after": "35517391ae3772f116ac5a09969337c38f3e8148dc00c3e7177bd6e218249693",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/venla-xr-gad-start.json",
+      "sha256_before": "f552fba3e18ff8d6eae6e139e0e97948bd12edb1b1b0784cf2b4039c2e065f73",
+      "sha256_after": "f552fba3e18ff8d6eae6e139e0e97948bd12edb1b1b0784cf2b4039c2e065f73",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/venla-xr-panic-form-limit.json",
+      "sha256_before": "36da41aa59b783206c59aa26f0d31e05886aef142ab1476c89f28458cee4a050",
+      "sha256_after": "36da41aa59b783206c59aa26f0d31e05886aef142ab1476c89f28458cee4a050",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/venla-xr-social-start.json",
+      "sha256_before": "7c830c84da4d9523b3171de555d3d34a7c481856492b0824676cb41c604d427c",
+      "sha256_after": "7c830c84da4d9523b3171de555d3d34a7c481856492b0824676cb41c604d427c",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/venla-xr-taper-limit.json",
+      "sha256_before": "fadbddd1f1df16c203882003bf9a5c69f89870903a9770768c9f1e0e62f2cca2",
+      "sha256_after": "fadbddd1f1df16c203882003bf9a5c69f89870903a9770768c9f1e0e62f2cca2",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/Вальдоксан — агомелатин.txt",
+      "sha256_before": "0cdcb27fb1988be691b98433e92ed75703f6cb0031364dabd6d9153aa7bc5fc3",
+      "sha256_after": "0cdcb27fb1988be691b98433e92ed75703f6cb0031364dabd6d9153aa7bc5fc3",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/Дулоксента — дулоксетин.txt",
+      "sha256_before": "bc4f4b726b1ac433a8ddc3713ac276db91e635cfaad7cd9dfdf3c59b35fca9cd",
+      "sha256_after": "bc4f4b726b1ac433a8ddc3713ac276db91e635cfaad7cd9dfdf3c59b35fca9cd",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/Золофт — сертралин.txt",
+      "sha256_before": "851c03caefbc7a6d2ffe712372920f835e4fd17b9bdaa2b1841a503a8ef903b2",
+      "sha256_after": "851c03caefbc7a6d2ffe712372920f835e4fd17b9bdaa2b1841a503a8ef903b2",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/Кломипрамин — раствор.txt",
+      "sha256_before": "04329e3b32f03e76a743d25b09aba4876500956e76979165642f34d3c047062a",
+      "sha256_after": "04329e3b32f03e76a743d25b09aba4876500956e76979165642f34d3c047062a",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/Лирика — прегабалин.txt",
+      "sha256_before": "28adb74a8022f8351de128ff5052fdc011f48cb2796b25ce7b35988ebd068ad7",
+      "sha256_after": "28adb74a8022f8351de128ff5052fdc011f48cb2796b25ce7b35988ebd068ad7",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/Прегабалин-Рихтер — прегабалин.txt",
+      "sha256_before": "deff89978d011235184ff2519a490388aea583d18da902fe1f49bfdc655411cd",
+      "sha256_after": "deff89978d011235184ff2519a490388aea583d18da902fe1f49bfdc655411cd",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/Рексетин — пароксетин.txt",
+      "sha256_before": "9fb70b6d61b7daf2fd78c5768ef1931f3c4ff252907792724504fd443db4eeae",
+      "sha256_after": "9fb70b6d61b7daf2fd78c5768ef1931f3c4ff252907792724504fd443db4eeae",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/Селектра — эсциталопрам.txt",
+      "sha256_before": "ad46f55eee28b9c535f85c7ddd85c19b590b87efaf2267bdf06091a2341e73f4",
+      "sha256_after": "ad46f55eee28b9c535f85c7ddd85c19b590b87efaf2267bdf06091a2341e73f4",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/Феварин — флувоксамин.txt",
+      "sha256_before": "e10ef703b0b0cb710ec409a19774d1aa44f13bb551ceab873c3d1f727f73eb0a",
+      "sha256_after": "e10ef703b0b0cb710ec409a19774d1aa44f13bb551ceab873c3d1f727f73eb0a",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/Феназепам — бромдигидрохлорфенилбензодиазепин.txt",
+      "sha256_before": "e2b33b5900daa5b7aecb4f280d97d113e6196a829cd695ba030bb62baccce4ad",
+      "sha256_after": "e2b33b5900daa5b7aecb4f280d97d113e6196a829cd695ba030bb62baccce4ad",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/Флуоксетин — Озон.txt",
+      "sha256_before": "aeac2d5fdd1e5dfaed105a36ea01cb953a480f039541396de34401403c40c345",
+      "sha256_after": "aeac2d5fdd1e5dfaed105a36ea01cb953a480f039541396de34401403c40c345",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/extracted/Циталопрам — Пранафарм.txt",
+      "sha256_before": "518120c1f8312046adc8e945178be7eeefc98a1309bfc95cdeae6bb600a31082",
+      "sha256_after": "518120c1f8312046adc8e945178be7eeefc98a1309bfc95cdeae6bb600a31082",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/fetch_sources.py",
+      "sha256_before": "82af8051316cbf7c6c6f2bb33b7e75744b825cab11f5c383c6b30fb581656c9d",
+      "sha256_after": "82af8051316cbf7c6c6f2bb33b7e75744b825cab11f5c383c6b30fb581656c9d",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/final_checks.py",
+      "sha256_before": "716c0dcd30e15e581f43d8bbdbb6fd283adfb4920fa28fd437af74ae1c3f53c5",
+      "sha256_after": "716c0dcd30e15e581f43d8bbdbb6fd283adfb4920fa28fd437af74ae1c3f53c5",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/independent_acceptance.json",
+      "sha256_before": "bc1c6d11d0db897f2a53c31e9b5a9769590e882e4392be13100e67a4a10132d3",
+      "sha256_after": "bc1c6d11d0db897f2a53c31e9b5a9769590e882e4392be13100e67a4a10132d3",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/independent_html_comparison.json",
+      "sha256_before": "28e99914c5fd5e90686799b7f1926a9965448007dedc251ba39d0a0d95bbed6d",
+      "sha256_after": "28e99914c5fd5e90686799b7f1926a9965448007dedc251ba39d0a0d95bbed6d",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/independent_inventory.json",
+      "sha256_before": "8c0174c5576a2f03b9adaacd659ee4cf032184c4082cec103ea14569cb18ce9d",
+      "sha256_after": "8c0174c5576a2f03b9adaacd659ee4cf032184c4082cec103ea14569cb18ce9d",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/independent_renal_arithmetic.json",
+      "sha256_before": "f1af2da39e05632282276eb6ec43ada990b007fac68571e38ca047a4b438e66a",
+      "sha256_after": "f1af2da39e05632282276eb6ec43ada990b007fac68571e38ca047a4b438e66a",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/independent_verification_negative_checks.json",
+      "sha256_before": "b13f918881f5202401fe1dc3760800c4548b2a4f1b931f6ef61d25f4894950b0",
+      "sha256_after": "b13f918881f5202401fe1dc3760800c4548b2a4f1b931f6ef61d25f4894950b0",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/independent_verification_report.json",
+      "sha256_before": "1c71b3bdfe6a628a4d2b01f198575a0979ed4c2421ba15d4c3c1de2d50cb7461",
+      "sha256_after": "1c71b3bdfe6a628a4d2b01f198575a0979ed4c2421ba15d4c3c1de2d50cb7461",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/original_acceptance_audit.json",
+      "sha256_before": "905f3c3492b82a43fb3009963b3be2fea9e83dca8d678376981d96cdc36b1556",
+      "sha256_after": "905f3c3492b82a43fb3009963b3be2fea9e83dca8d678376981d96cdc36b1556",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/original_verification_negative_checks.json",
+      "sha256_before": "b13f918881f5202401fe1dc3760800c4548b2a4f1b931f6ef61d25f4894950b0",
+      "sha256_after": "b13f918881f5202401fe1dc3760800c4548b2a4f1b931f6ef61d25f4894950b0",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/original_verification_report.json",
+      "sha256_before": "1c71b3bdfe6a628a4d2b01f198575a0979ed4c2421ba15d4c3c1de2d50cb7461",
+      "sha256_after": "1c71b3bdfe6a628a4d2b01f198575a0979ed4c2421ba15d4c3c1de2d50cb7461",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/preservation_check.json",
+      "sha256_before": "1f3a0b0e52b13a97e4a4e76299cc108373429107d2bbd4763f6a34519b4c758f",
+      "sha256_after": "1f3a0b0e52b13a97e4a4e76299cc108373429107d2bbd4763f6a34519b4c758f",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/read_cards.py",
+      "sha256_before": "891f57cbf5fee8633f9bda12a67c3b3bb5ea4b013e0b741ed1b273e327f2d0de",
+      "sha256_after": "891f57cbf5fee8633f9bda12a67c3b3bb5ea4b013e0b741ed1b273e327f2d0de",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/retrieved/EU-PREG.pdf",
+      "sha256_before": "0f82f9dee99e4c6c1ec68a6f67072cf59e9a4dc3997dbe5f30cf806ee2cf3f99",
+      "sha256_after": "0f82f9dee99e4c6c1ec68a6f67072cf59e9a4dc3997dbe5f30cf806ee2cf3f99",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/retrieved/RU-AGO.pdf",
+      "sha256_before": "1cf8e71b5c27891e17b5b7ab4dd7c8c02697a1d44bb287a57a1ee9de0fb85bd6",
+      "sha256_after": "1cf8e71b5c27891e17b5b7ab4dd7c8c02697a1d44bb287a57a1ee9de0fb85bd6",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/retrieved/RU-CITAL-LV.docx",
+      "sha256_before": "5e10a0452aa6a432390878027d66309a93729250ae6015c2ec225a28be68fe00",
+      "sha256_after": "5e10a0452aa6a432390878027d66309a93729250ae6015c2ec225a28be68fe00",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/retrieved/RU-CLOMI-IV-ARCHIVE.pdf",
+      "sha256_before": "81d40c49e7fa50aed75f8719c51f942f40f85a5ad74e1637a45673f0b57f1d33",
+      "sha256_after": "81d40c49e7fa50aed75f8719c51f942f40f85a5ad74e1637a45673f0b57f1d33",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/retrieved/RU-DEP.pdf",
+      "sha256_before": "2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd",
+      "sha256_after": "2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/retrieved/RU-DULOX.pdf",
+      "sha256_before": "bcb5a8b9415f15fdae2ec8a8d00abe5788194c59893b6172294c4cf3db839786",
+      "sha256_after": "bcb5a8b9415f15fdae2ec8a8d00abe5788194c59893b6172294c4cf3db839786",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/retrieved/RU-FLUOX-ARCHIVE.pdf",
+      "sha256_before": "dfcf4a185bb4474bfa7411de1d956be7d309bc9c3e350309f6ca1220fd4e32a3",
+      "sha256_after": "dfcf4a185bb4474bfa7411de1d956be7d309bc9c3e350309f6ca1220fd4e32a3",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/retrieved/RU-FLUVOX.pdf",
+      "sha256_before": "ee988a504bf0e34d9562a5f606f8800c827214fc51f4994a4ab28de9c31ce1d6",
+      "sha256_after": "ee988a504bf0e34d9562a5f606f8800c827214fc51f4994a4ab28de9c31ce1d6",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/retrieved/RU-GAD.pdf",
+      "sha256_before": "c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a",
+      "sha256_after": "c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/retrieved/RU-PANIC.pdf",
+      "sha256_before": "a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d",
+      "sha256_after": "a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/retrieved/RU-PAROX.pdf",
+      "sha256_before": "9f6f2646e102956826997ca7e93d84e90c7528db5ceb61896a3d4092841edabe",
+      "sha256_after": "9f6f2646e102956826997ca7e93d84e90c7528db5ceb61896a3d4092841edabe",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/retrieved/RU-PHEN.pdf",
+      "sha256_before": "e8e6303c10b7b9b31ae6b344eb49d209e148ba5584ac8f55954c8384cfe49a89",
+      "sha256_after": "e8e6303c10b7b9b31ae6b344eb49d209e148ba5584ac8f55954c8384cfe49a89",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/retrieved/RU-PHOB.pdf",
+      "sha256_before": "2a51982fb1919c0ef9115e5231f8ef9d65863306d2d5b95aa0aa7821a6f328b7",
+      "sha256_after": "2a51982fb1919c0ef9115e5231f8ef9d65863306d2d5b95aa0aa7821a6f328b7",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/retrieved/RU-PREG-RICHTER-ARCHIVE.pdf",
+      "sha256_before": "c6c6b41dd339536ad1671193a6cd69a7c111d6a2c04c6db501ae85c3beba1ee1",
+      "sha256_after": "c6c6b41dd339536ad1671193a6cd69a7c111d6a2c04c6db501ae85c3beba1ee1",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/retrieved/RU-PREG-RICHTER.pdf",
+      "sha256_before": "32bfe8b2ec435201b47cb652818af63a1e6a532669348dfe9110e92a73af7065",
+      "sha256_after": "32bfe8b2ec435201b47cb652818af63a1e6a532669348dfe9110e92a73af7065",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/retrieved/RU-PREG.pdf",
+      "sha256_before": "1fcd653e7f3b6bf5b26b3276d0bce97880e74bf345bb69755a275bf8f7117083",
+      "sha256_after": "1fcd653e7f3b6bf5b26b3276d0bce97880e74bf345bb69755a275bf8f7117083",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/retrieved/RU-SER-2023.pdf",
+      "sha256_before": "640908909dc7109d614b4f03225d0c31ab2f5f9d6e39b9b8f65046873e9d722c",
+      "sha256_after": "640908909dc7109d614b4f03225d0c31ab2f5f9d6e39b9b8f65046873e9d722c",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/retrieved/RU-SER.pdf",
+      "sha256_before": "3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba",
+      "sha256_after": "3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/retrieved/RU-VENLA-IR.html",
+      "sha256_before": "49ed1a29889de1aab24571f78d672b21ccc5fcf665e0c925ff47464207a5f7c9",
+      "sha256_after": "49ed1a29889de1aab24571f78d672b21ccc5fcf665e0c925ff47464207a5f7c9",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/retrieved/RU-VENLA-XR.html",
+      "sha256_before": "6f14f66f54d649836d17eff481e9538282539780cfa8d26810012a1941cf7550",
+      "sha256_after": "6f14f66f54d649836d17eff481e9538282539780cfa8d26810012a1941cf7550",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/retrieved/UK-NICE222.pdf",
+      "sha256_before": "4f59bf752b49734b81244d1251d94a8fc2e984aac34577e295be243582a957de",
+      "sha256_after": "4f59bf752b49734b81244d1251d94a8fc2e984aac34577e295be243582a957de",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/retrieved/UK-PAX.html",
+      "sha256_before": "edb3301d0a8db4042e272d8f8f5006877f57c3dc2705c9229747106d89277c7d",
+      "sha256_after": "edb3301d0a8db4042e272d8f8f5006877f57c3dc2705c9229747106d89277c7d",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/retrieved/UK-SPS-AGO.html",
+      "sha256_before": "9eaf1ecb34ab384fb14a3eaf9042362bba43ef162efd9ba7461c9b25f14f5fe9",
+      "sha256_after": "9eaf1ecb34ab384fb14a3eaf9042362bba43ef162efd9ba7461c9b25f14f5fe9",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/retrieved/UK-SPS-LACT.html",
+      "sha256_before": "45a3a3b4adad455e09d404363a37f6a72164519e2177a84650df85a2adc723a5",
+      "sha256_after": "45a3a3b4adad455e09d404363a37f6a72164519e2177a84650df85a2adc723a5",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/retrieved/UK-SPS-MOC.html",
+      "sha256_before": "b42b706dc9ee26685bcab8fe08f2ac164679c076b04e849933487d9d9daa93b7",
+      "sha256_after": "b42b706dc9ee26685bcab8fe08f2ac164679c076b04e849933487d9d9daa93b7",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/retrieved/UK-SPS-SSRI.html",
+      "sha256_before": "467ba15c5034421e6aba99703d0140fdd009eb23327064302dd7418a6a043b99",
+      "sha256_after": "467ba15c5034421e6aba99703d0140fdd009eb23327064302dd7418a6a043b99",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/retrieved/US-ASAM.pdf",
+      "sha256_before": "a9937c249d7a08658eb10c5b7805fce9bb6e975e4f4d5ac11507434708c4b5ec",
+      "sha256_after": "a9937c249d7a08658eb10c5b7805fce9bb6e975e4f4d5ac11507434708c4b5ec",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/retrieved/WHO-F41.html",
+      "sha256_before": "28852802c5d4771ce3d780d4c391a9b5f08e68b6937187fa1540606161996caf",
+      "sha256_after": "28852802c5d4771ce3d780d4c391a9b5f08e68b6937187fa1540606161996caf",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/run_verify_negative_checks.py.stderr.txt",
+      "sha256_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256_after": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/run_verify_negative_checks.py.stdout.txt",
+      "sha256_before": "b3c05ace27a341622af0dab2d57e2308e03243699f0150ed4d9591d2d185ffe2",
+      "sha256_after": "b3c05ace27a341622af0dab2d57e2308e03243699f0150ed4d9591d2d185ffe2",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/run_verify_research.py.stderr.txt",
+      "sha256_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256_after": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/run_verify_research.py.stdout.txt",
+      "sha256_before": "fd108c666f0cba10cc063825b3275ad76c1a622597d8c4b5485a5503dfae9a43",
+      "sha256_after": "fd108c666f0cba10cc063825b3275ad76c1a622597d8c4b5485a5503dfae9a43",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/visual/RU-AGO-1.png",
+      "sha256_before": "597098a1c64c13eceea456a161d80c08d65c7c1be34a0e5d610360c5c47c4754",
+      "sha256_after": "597098a1c64c13eceea456a161d80c08d65c7c1be34a0e5d610360c5c47c4754",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/visual/RU-AGO-2.png",
+      "sha256_before": "b152df432e4e80aa2cff654bcf651f4c45c936b60413e19d0624a35c3196b226",
+      "sha256_after": "b152df432e4e80aa2cff654bcf651f4c45c936b60413e19d0624a35c3196b226",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/visual/RU-AGO-3.png",
+      "sha256_before": "0767344c96cade152cc6b4c9db2c1bd7510280fffc6a06d603b821a2ac275ef7",
+      "sha256_after": "0767344c96cade152cc6b4c9db2c1bd7510280fffc6a06d603b821a2ac275ef7",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/visual/RU-AGO-4.png",
+      "sha256_before": "3a1800dbbdc15bcf892450688b174cd099d5619ad6c275c761fb584e685627cc",
+      "sha256_after": "3a1800dbbdc15bcf892450688b174cd099d5619ad6c275c761fb584e685627cc",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/visual/RU-DEP-36.png",
+      "sha256_before": "cbac6b53d94e1d6cdc6575d0013591b106a014d948387e4fd65924f66285269d",
+      "sha256_after": "cbac6b53d94e1d6cdc6575d0013591b106a014d948387e4fd65924f66285269d",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/visual/RU-DEP-95.png",
+      "sha256_before": "57b2ded6ec1e94c5cc0872375acc68e5e97289399ec00f69922efdbad6d6b744",
+      "sha256_after": "57b2ded6ec1e94c5cc0872375acc68e5e97289399ec00f69922efdbad6d6b744",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/visual/RU-DEP-96.png",
+      "sha256_before": "51d856005eb0e4d29a2c88824cc41f4759140a24cc4bb72c42f3320d6448f945",
+      "sha256_after": "51d856005eb0e4d29a2c88824cc41f4759140a24cc4bb72c42f3320d6448f945",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/visual/RU-DULOX-2.png",
+      "sha256_before": "51b9b189248681fcaaa1883566431fe83e8ae995e0e485ea6131d98fb453ffe2",
+      "sha256_after": "51b9b189248681fcaaa1883566431fe83e8ae995e0e485ea6131d98fb453ffe2",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/visual/RU-DULOX-3.png",
+      "sha256_before": "8ef1a721da109005709fbe59510fb3e8887a3ea00f60f00e6455c30965dc7192",
+      "sha256_after": "8ef1a721da109005709fbe59510fb3e8887a3ea00f60f00e6455c30965dc7192",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/visual/RU-DULOX-4.png",
+      "sha256_before": "d10046409cb0d7c6decef651d2fb14bf9b9a1a51ecf236570826b8aa19903bdc",
+      "sha256_after": "d10046409cb0d7c6decef651d2fb14bf9b9a1a51ecf236570826b8aa19903bdc",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/visual/RU-FLUVOX-1.png",
+      "sha256_before": "670a829ee361ba681d2abf7a336fa2875244d62752e8567594f10371473f2cfd",
+      "sha256_after": "670a829ee361ba681d2abf7a336fa2875244d62752e8567594f10371473f2cfd",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/visual/RU-FLUVOX-2.png",
+      "sha256_before": "ff11987c8c60cecfc6c3fe68eccce729751911cf43c8184a8b665bd1b6bad6a3",
+      "sha256_after": "ff11987c8c60cecfc6c3fe68eccce729751911cf43c8184a8b665bd1b6bad6a3",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/visual/RU-FLUVOX-3.png",
+      "sha256_before": "34941b12619edaabe23e76658c13357644a3f8f50ef1ffaef46f4a1637f63536",
+      "sha256_after": "34941b12619edaabe23e76658c13357644a3f8f50ef1ffaef46f4a1637f63536",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/visual/RU-PAROX-16.png",
+      "sha256_before": "0d37d5321a96f1243601432b609eb4c379e0b6144551caf50ef0c83a4506c240",
+      "sha256_after": "0d37d5321a96f1243601432b609eb4c379e0b6144551caf50ef0c83a4506c240",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/visual/RU-PAROX-17.png",
+      "sha256_before": "dd52ffeb0e98a23f2d28a243c80257365f711416755b5d4d242802f742780d80",
+      "sha256_after": "dd52ffeb0e98a23f2d28a243c80257365f711416755b5d4d242802f742780d80",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/visual/RU-PREG-4.png",
+      "sha256_before": "80b715be0f0f46d692288059e4b5b6aaf96f607119c7985a10e13096c488829f",
+      "sha256_after": "80b715be0f0f46d692288059e4b5b6aaf96f607119c7985a10e13096c488829f",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/visual/RU-PREG-5.png",
+      "sha256_before": "a0fa697eed1851e8ab078a21b0cae2cf0da7667ca8ad7f0503aa748caa40594b",
+      "sha256_after": "a0fa697eed1851e8ab078a21b0cae2cf0da7667ca8ad7f0503aa748caa40594b",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/visual/RU-PREG-RICHTER-16.png",
+      "sha256_before": "b61d12ffe67979214c0727a2a8168c8c75aaff0c8f8764a04f3eb0c49543a364",
+      "sha256_after": "b61d12ffe67979214c0727a2a8168c8c75aaff0c8f8764a04f3eb0c49543a364",
+      "unchanged": true
+    },
+    {
+      "path": "research/audit/visual/RU-PREG-RICHTER-ARCHIVE-15.png",
+      "sha256_before": "350d1161f1184a1c4e3ba92b74ad55240f27557eaa686bafe4de7f398d8f3f19",
+      "sha256_after": "350d1161f1184a1c4e3ba92b74ad55240f27557eaa686bafe4de7f398d8f3f19",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/acceptance_recheck.json",
+      "sha256_before": "f6aab0d66fcc592f42823c14cd5481f8eec4aa06714a5a4e9ea83da8144e85d0",
+      "sha256_after": "f6aab0d66fcc592f42823c14cd5481f8eec4aa06714a5a4e9ea83da8144e85d0",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/acceptance_recheck.md",
+      "sha256_before": "d8fd62c391bc7b8609dc832ea23e74b42bd43dd8064ae3cad27fa2b29d7004f4",
+      "sha256_after": "d8fd62c391bc7b8609dc832ea23e74b42bd43dd8064ae3cad27fa2b29d7004f4",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/apply_fixes.py",
+      "sha256_before": "b502e9f1981400278c8f13fb116a1b5531b5aa6df0d6b2847ec4e14b455b2c64",
+      "sha256_after": "b502e9f1981400278c8f13fb116a1b5531b5aa6df0d6b2847ec4e14b455b2c64",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/AGENTS.md",
+      "sha256_before": "b032f577ff95a3f9e73d1e91668947bac08e927b4960e1c236447dde990fdc71",
+      "sha256_after": "b032f577ff95a3f9e73d1e91668947bac08e927b4960e1c236447dde990fdc71",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/PROJECT_BRIEF.md",
+      "sha256_before": "b3a1b41708cd564616538c04eb4f96c70a533734891c50fb7a0492f5d36eac02",
+      "sha256_after": "b3a1b41708cd564616538c04eb4f96c70a533734891c50fb7a0492f5d36eac02",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/psychopharm_codex_pack/ACCEPTANCE.md",
+      "sha256_before": "c4ca3ea82b949a1b9d985df8bdc8bf25ce9489d1e75ab0230717d69bc698628b",
+      "sha256_after": "c4ca3ea82b949a1b9d985df8bdc8bf25ce9489d1e75ab0230717d69bc698628b",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/psychopharm_codex_pack/AGENTS.md",
+      "sha256_before": "90f2828bb52426a0e7c7d0189ae29e45fe24b6a43f3900286e6c05ce35db38c4",
+      "sha256_after": "90f2828bb52426a0e7c7d0189ae29e45fe24b6a43f3900286e6c05ce35db38c4",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/psychopharm_codex_pack/PROJECT_BRIEF.md",
+      "sha256_before": "87d3ef648fa79c0ee0b47bdef7c44943b4505389d766fcc81a30f1839c9e6dcb",
+      "sha256_after": "87d3ef648fa79c0ee0b47bdef7c44943b4505389d766fcc81a30f1839c9e6dcb",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/psychopharm_codex_pack/README.md",
+      "sha256_before": "fe2766cc899e296dce150ec93b22099f58d0afcca74095f83a3df5556d27a603",
+      "sha256_after": "fe2766cc899e296dce150ec93b22099f58d0afcca74095f83a3df5556d27a603",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/psychopharm_codex_pack/RESEARCH_PROMPT.md",
+      "sha256_before": "5f87e55d600df5a2cf404cf018b9533530e3eaac99c504eadc73ee08b74b5db5",
+      "sha256_after": "5f87e55d600df5a2cf404cf018b9533530e3eaac99c504eadc73ee08b74b5db5",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/psychopharm_codex_pack/RULE_TEMPLATE.yaml",
+      "sha256_before": "e751afe42650285aa07ab6868c961ae17ce1563ee7400478d661b84a89435905",
+      "sha256_after": "e751afe42650285aa07ab6868c961ae17ce1563ee7400478d661b84a89435905",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/psychopharm_codex_pack/SEARCH_PLAN.md",
+      "sha256_before": "eaa9072c1a8b51c5ab9f5e7563bc43aca116a10d544cfd6aaf4d084ad227f2db",
+      "sha256_after": "eaa9072c1a8b51c5ab9f5e7563bc43aca116a10d544cfd6aaf4d084ad227f2db",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/psychopharm_codex_pack/SOURCE_SEEDS.md",
+      "sha256_before": "061d4b29bfa3bff26dfb2aad67ae733cd62f37211cd0f5f87c20c3857f6a332a",
+      "sha256_after": "061d4b29bfa3bff26dfb2aad67ae733cd62f37211cd0f5f87c20c3857f6a332a",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/00_summary.md",
+      "sha256_before": "0dc6590feb6f8d540ac0c1a10dfdf5d94446f562dfc6a928faeea164195b24c2",
+      "sha256_after": "0dc6590feb6f8d540ac0c1a10dfdf5d94446f562dfc6a928faeea164195b24c2",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/01_scope_and_sources.md",
+      "sha256_before": "e15120fc3bb2bc24cfd7c48cf66b4d6b17cced8b04622f0dff2bb758e8454872",
+      "sha256_after": "e15120fc3bb2bc24cfd7c48cf66b4d6b17cced8b04622f0dff2bb758e8454872",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/02_rules.md",
+      "sha256_before": "5c73a158b4ff8640740535a7a38e2ca7e9446f34572bb5d3ba039c01c06f0780",
+      "sha256_after": "5c73a158b4ff8640740535a7a38e2ca7e9446f34572bb5d3ba039c01c06f0780",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/03_question_flows.md",
+      "sha256_before": "177db872141d56bb788ae2bdf8bfdf2f429a27f5f601b5b38a6a3085ef202576",
+      "sha256_after": "177db872141d56bb788ae2bdf8bfdf2f429a27f5f601b5b38a6a3085ef202576",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/04_switch_matrix.md",
+      "sha256_before": "f23d15284b2beaf037cad17f441d4abe7b032dc0c002fc73d9e6fe4967f51b92",
+      "sha256_after": "f23d15284b2beaf037cad17f441d4abe7b032dc0c002fc73d9e6fe4967f51b92",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/05_gaps_and_conflicts.md",
+      "sha256_before": "be3da20d1fdf54927ee88d3760d97ef6a2e3713c605894143d61f4ed2c278843",
+      "sha256_after": "be3da20d1fdf54927ee88d3760d97ef6a2e3713c605894143d61f4ed2c278843",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/06_implementation_brief.md",
+      "sha256_before": "70b6c80b3f10fc0e3a3e059819fd462c5117e9c46368d72a295145a295204dce",
+      "sha256_after": "70b6c80b3f10fc0e3a3e059819fd462c5117e9c46368d72a295145a295204dce",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/07_acceptance.md",
+      "sha256_before": "8d46feda190627e4d12512ef6a38511b1782a75b70ddbcc9e289e835593faa0a",
+      "sha256_after": "8d46feda190627e4d12512ef6a38511b1782a75b70ddbcc9e289e835593faa0a",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/08_russian_priority_update.md",
+      "sha256_before": "b27684a69edd886b62ec568be10306158104d49e8c467606d5abd2631e90d2ae",
+      "sha256_after": "b27684a69edd886b62ec568be10306158104d49e8c467606d5abd2631e90d2ae",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/09_download_links.md",
+      "sha256_before": "6d7301af6ed77cbf1886f6df171549d59eed345ccddc9d86e06b727884a96192",
+      "sha256_after": "6d7301af6ed77cbf1886f6df171549d59eed345ccddc9d86e06b727884a96192",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/10_source_audit.md",
+      "sha256_before": "e97989b3446000a02fc1ae3120ec863ca63c4dfb8a23dd4407f2c9d8e987636f",
+      "sha256_after": "e97989b3446000a02fc1ae3120ec863ca63c4dfb8a23dd4407f2c9d8e987636f",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/acceptance_audit.json",
+      "sha256_before": "905f3c3492b82a43fb3009963b3be2fea9e83dca8d678376981d96cdc36b1556",
+      "sha256_after": "905f3c3492b82a43fb3009963b3be2fea9e83dca8d678376981d96cdc36b1556",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/coverage.csv",
+      "sha256_before": "4ff074f4a47919b2d5c473cfee6e9042ae35e0f9e671dd5c4318d18843ba432a",
+      "sha256_after": "4ff074f4a47919b2d5c473cfee6e9042ae35e0f9e671dd5c4318d18843ba432a",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/depression_dose_table.csv",
+      "sha256_before": "3dc4fc30b360a49b4341d7838a36b6a44928a1742c72228c9b47a3d5db8bd992",
+      "sha256_after": "3dc4fc30b360a49b4341d7838a36b6a44928a1742c72228c9b47a3d5db8bd992",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/download_links.json",
+      "sha256_before": "6ffbad98ca9c0414f18446a244acf5cede6880f054675675f219eefcb23d02d0",
+      "sha256_after": "6ffbad98ca9c0414f18446a244acf5cede6880f054675675f219eefcb23d02d0",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/finding_cases.yaml",
+      "sha256_before": "29f96784ad85474e9bce614e327874270fe1f3f4616b21d7cb22d49bf800e071",
+      "sha256_after": "29f96784ad85474e9bce614e327874270fe1f3f4616b21d7cb22d49bf800e071",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/findings/ru-depression-withdrawal.yaml",
+      "sha256_before": "8da3a4f10e8f61ee5aa67de4ec17fab8610e9f729be1703abf972c43366e99f8",
+      "sha256_after": "8da3a4f10e8f61ee5aa67de4ec17fab8610e9f729be1703abf972c43366e99f8",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/findings/switch-moc-ser.yaml",
+      "sha256_before": "c765cb6209ff257b6c2bea9fd6b27b7951501425a0db5890b3e5c42a4740d6d0",
+      "sha256_after": "c765cb6209ff257b6c2bea9fd6b27b7951501425a0db5890b3e5c42a4740d6d0",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/findings/switch-ser-moc.yaml",
+      "sha256_before": "211a1eeb624fa765b95eaa68a5c6c595eef35fb8cc3140a9d79e918699d50e2e",
+      "sha256_after": "211a1eeb624fa765b95eaa68a5c6c595eef35fb8cc3140a9d79e918699d50e2e",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/input_catalog.csv",
+      "sha256_before": "a3d12572bf5b2889c672fbda4cb14febe60c1c4534fdb0fefdd6eba77d7fa94f",
+      "sha256_after": "a3d12572bf5b2889c672fbda4cb14febe60c1c4534fdb0fefdd6eba77d7fa94f",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/minzdrav_catalog_snapshot.json",
+      "sha256_before": "14b2e1664256453707f0374f79e7a12b21aa42d9ebe1eb4ff21984f27c8bdbc2",
+      "sha256_after": "14b2e1664256453707f0374f79e7a12b21aa42d9ebe1eb4ff21984f27c8bdbc2",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/question_counts.json",
+      "sha256_before": "724b6186d783db07a00ac01e48177dab92fdda116d2bb6104ecd3723abf20c97",
+      "sha256_after": "724b6186d783db07a00ac01e48177dab92fdda116d2bb6104ecd3723abf20c97",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/question_flows.yaml",
+      "sha256_before": "5b2d9f653a5ee3acd42a708a13d733ad1dde85cdb1c8be6d92c693be593eac16",
+      "sha256_after": "5b2d9f653a5ee3acd42a708a13d733ad1dde85cdb1c8be6d92c693be593eac16",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/reference_rules/diazepam-asam-initial-taper.yaml",
+      "sha256_before": "b05d4d925078e4322e750e1f7cc3466ed42a910b2793970920e482c2bed180fe",
+      "sha256_after": "b05d4d925078e4322e750e1f7cc3466ed42a910b2793970920e482c2bed180fe",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/reference_rules/nice-ad-taper-principles.yaml",
+      "sha256_before": "eb473b211e4d13fedf39ae91e39f24d4603043e93a9d0ae50b5bc9bb71b03fef",
+      "sha256_after": "eb473b211e4d13fedf39ae91e39f24d4603043e93a9d0ae50b5bc9bb71b03fef",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/reference_rules/pax-uk-trial-taper.yaml",
+      "sha256_before": "37a262f62c78d67f2814e4f3ad5d93f8ff06d18afe16eedececf2a1014e5f9ab",
+      "sha256_after": "37a262f62c78d67f2814e4f3ad5d93f8ff06d18afe16eedececf2a1014e5f9ab",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/reference_rules/README.md",
+      "sha256_before": "61950ede1947e5eca35d434bdcf6f629d3186fa555c5348de280e67abbccc4c6",
+      "sha256_after": "61950ede1947e5eca35d434bdcf6f629d3186fa555c5348de280e67abbccc4c6",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/reference_rules/switch-ago-fluvox.yaml",
+      "sha256_before": "c514cb12687398de8b0e3bbb57d3f8f92199b4660abf10fdca8afd73c9fbc64b",
+      "sha256_after": "c514cb12687398de8b0e3bbb57d3f8f92199b4660abf10fdca8afd73c9fbc64b",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/reference_rules/switch-esc-ser.yaml",
+      "sha256_before": "5a15476c1fd5c474b2a2e36f6f5694fb8d27262d0393cf74b1bbf47359805c92",
+      "sha256_after": "5a15476c1fd5c474b2a2e36f6f5694fb8d27262d0393cf74b1bbf47359805c92",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/reference_rules/switch-fluox-ser.yaml",
+      "sha256_before": "b10d5d970abe24b32ead15bfa87ad2a71036457b0e0ad523d8382a9919101c98",
+      "sha256_after": "b10d5d970abe24b32ead15bfa87ad2a71036457b0e0ad523d8382a9919101c98",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/reference_rules/switch-fluvox-ago.yaml",
+      "sha256_before": "3e85806d47845b3c7960f7dd63b2d9d9c222ee71de30c4b8ea7576a2eb077ca3",
+      "sha256_after": "3e85806d47845b3c7960f7dd63b2d9d9c222ee71de30c4b8ea7576a2eb077ca3",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/reference_rules/switch-moc-ser.yaml",
+      "sha256_before": "3ea91bdbf6c444f3fec523e7673b820cfbf1ac8760ea9c6dfcfcf1d7f76817ca",
+      "sha256_after": "3ea91bdbf6c444f3fec523e7673b820cfbf1ac8760ea9c6dfcfcf1d7f76817ca",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/reference_rules/switch-ser-esc.yaml",
+      "sha256_before": "02745f8b372861d220ad76278e6cfd48d29e79a8fbc3b65c8e404ee17f17bf9c",
+      "sha256_after": "02745f8b372861d220ad76278e6cfd48d29e79a8fbc3b65c8e404ee17f17bf9c",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/reference_rules/switch-ser-fluox.yaml",
+      "sha256_before": "69847b2736fcb28efe68f40f8f414aa92050d59d5444ec2ea3d37f293676998b",
+      "sha256_after": "69847b2736fcb28efe68f40f8f414aa92050d59d5444ec2ea3d37f293676998b",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/reference_rules/switch-ser-moc.yaml",
+      "sha256_before": "67a937e67681adc94306cab852bbbfc69fee7bfb32d4265eee19f144b096c8fa",
+      "sha256_after": "67a937e67681adc94306cab852bbbfc69fee7bfb32d4265eee19f144b096c8fa",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/reference_test_cases.yaml",
+      "sha256_before": "7b4a31bb0f8af8a67c1e94f0170a8bb1a1908a9ca0fea6309a9a67763576e2f7",
+      "sha256_after": "7b4a31bb0f8af8a67c1e94f0170a8bb1a1908a9ca0fea6309a9a67763576e2f7",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/renal_estimator.yaml",
+      "sha256_before": "0b2e264681577022d9b67743f8e69043ccda584fe59e8bcf7abac615c9dcff83",
+      "sha256_after": "0b2e264681577022d9b67743f8e69043ccda584fe59e8bcf7abac615c9dcff83",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/renal_estimator_archive.yaml",
+      "sha256_before": "727c821462a164d601505275d3e4400ce501b1b58dbe6627e91e5385c020c809",
+      "sha256_after": "727c821462a164d601505275d3e4400ce501b1b58dbe6627e91e5385c020c809",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/ru_source_policy.yaml",
+      "sha256_before": "ca4fae0c90df189dcc8281bb7d353061d7229f0a2dbb356bcabf61b11cfe9255",
+      "sha256_after": "ca4fae0c90df189dcc8281bb7d353061d7229f0a2dbb356bcabf61b11cfe9255",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/rules/ago-depression-start.yaml",
+      "sha256_before": "d4aadfee113af239a2eef8357e10b5fc8e2e74b8fc571c8a7ad801fe34961ccb",
+      "sha256_after": "d4aadfee113af239a2eef8357e10b5fc8e2e74b8fc571c8a7ad801fe34961ccb",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/rules/ago-gad-start.yaml",
+      "sha256_before": "1fed6b4e6bb7e01e1c6f8ef2bc19112ca83e0e4bb71aa3cc15dfc9ba103439af",
+      "sha256_after": "1fed6b4e6bb7e01e1c6f8ef2bc19112ca83e0e4bb71aa3cc15dfc9ba103439af",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/rules/ago-stop.yaml",
+      "sha256_before": "a71b2a722409ae266ebc87124127e892fd61779c68c26d5eacc88a78c22a5641",
+      "sha256_after": "a71b2a722409ae266ebc87124127e892fd61779c68c26d5eacc88a78c22a5641",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/rules/dulox-depression-start.yaml",
+      "sha256_before": "0a8a10e08841276abcca100af283ea4caab452f2cacfbf6618b830de33e7f588",
+      "sha256_after": "0a8a10e08841276abcca100af283ea4caab452f2cacfbf6618b830de33e7f588",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/rules/dulox-gad-adjust.yaml",
+      "sha256_before": "bd421c515785d5c3b981b4322b1313eaac3b9613f4352b4619baef1e195b4881",
+      "sha256_after": "bd421c515785d5c3b981b4322b1313eaac3b9613f4352b4619baef1e195b4881",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/rules/dulox-gad-start.yaml",
+      "sha256_before": "3078cdeb8471de8299c968dca9ceb21afaa12121a4a9c4c44e4739d5c8c6a0f5",
+      "sha256_after": "3078cdeb8471de8299c968dca9ceb21afaa12121a4a9c4c44e4739d5c8c6a0f5",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/rules/dulox-taper-limit.yaml",
+      "sha256_before": "aee3cae81135ba9a79ff4453288e1cd5b45452bcad3d412c5d7674d69623e873",
+      "sha256_after": "aee3cae81135ba9a79ff4453288e1cd5b45452bcad3d412c5d7674d69623e873",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/rules/esc-adult-adjust.yaml",
+      "sha256_before": "6ccbf4d1a1ad4e262c13f3341a3879ec78801c44c40e4b423686b93d0171acba",
+      "sha256_after": "6ccbf4d1a1ad4e262c13f3341a3879ec78801c44c40e4b423686b93d0171acba",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/rules/esc-cyp2c19-start.yaml",
+      "sha256_before": "c14759999e48bccd4eac5346e248ab692330c91fd712df06c01b44326ad08a80",
+      "sha256_after": "c14759999e48bccd4eac5346e248ab692330c91fd712df06c01b44326ad08a80",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/rules/esc-elderly-start.yaml",
+      "sha256_before": "f8da8f1e4e6e4f4e15ffaed90679c7c115b76582d29e43bb25018fbb24cefbac",
+      "sha256_after": "f8da8f1e4e6e4f4e15ffaed90679c7c115b76582d29e43bb25018fbb24cefbac",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/rules/esc-gad-start.yaml",
+      "sha256_before": "00c4a3eb2c33b9176625c17c5978cf008250fdb9294c0914e7414f00fc76b4a1",
+      "sha256_after": "00c4a3eb2c33b9176625c17c5978cf008250fdb9294c0914e7414f00fc76b4a1",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/rules/esc-hepatic-start.yaml",
+      "sha256_before": "bfd4b79947bbfa5424bd7a23d6d2e85f99ebd1556747904c3292d2d081bc222e",
+      "sha256_after": "bfd4b79947bbfa5424bd7a23d6d2e85f99ebd1556747904c3292d2d081bc222e",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/rules/esc-panic-start.yaml",
+      "sha256_before": "382b6378957b16c1af2688dd0bcba6f7f8f6621938f40c86364567cfd981a7f9",
+      "sha256_after": "382b6378957b16c1af2688dd0bcba6f7f8f6621938f40c86364567cfd981a7f9",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/rules/esc-social-start.yaml",
+      "sha256_before": "8fe79af34b524cfb26749f3b18689de13cdb86ec7e64e7ce8c518adcf2864d2e",
+      "sha256_after": "8fe79af34b524cfb26749f3b18689de13cdb86ec7e64e7ce8c518adcf2864d2e",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/rules/esc-taper-limit.yaml",
+      "sha256_before": "780e23ce401e88f391c543efe30f1a0323d109ee2107190ad0e26782acec63a0",
+      "sha256_after": "780e23ce401e88f391c543efe30f1a0323d109ee2107190ad0e26782acec63a0",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/rules/fluvox-depression-start.yaml",
+      "sha256_before": "f2da710a05ecd65cfb23f01b1d526afd76bc2de42f2a0348709b676a45944e89",
+      "sha256_after": "f2da710a05ecd65cfb23f01b1d526afd76bc2de42f2a0348709b676a45944e89",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/rules/fluvox-taper-limit.yaml",
+      "sha256_before": "70d4a2ef9499a0877445870af3d5772719e83e4fc4d22a74e9d1cd102d8f6932",
+      "sha256_after": "70d4a2ef9499a0877445870af3d5772719e83e4fc4d22a74e9d1cd102d8f6932",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/rules/parox-panic-kr.yaml",
+      "sha256_before": "b14f178fc6cf8f748b4ee2a57058d44ca4a0f8dfe04ae8c550b291210e402283",
+      "sha256_after": "b14f178fc6cf8f748b4ee2a57058d44ca4a0f8dfe04ae8c550b291210e402283",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/rules/parox-taper-example.yaml",
+      "sha256_before": "92d5b6189a5a4205a9e630b3d72ffb39cba4812cb36c07adcc2141e5203fc852",
+      "sha256_after": "92d5b6189a5a4205a9e630b3d72ffb39cba4812cb36c07adcc2141e5203fc852",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/rules/phen-taper-limit.yaml",
+      "sha256_before": "fe22a770512d84b290810316467b0ec24bfc260fb9af225930f1179240234d79",
+      "sha256_after": "fe22a770512d84b290810316467b0ec24bfc260fb9af225930f1179240234d79",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/rules/preg-gad-adjust.yaml",
+      "sha256_before": "3faccb1ce0b97e8bc4fd93a418d7be3a273452cd7a9f5a63920da06978877164",
+      "sha256_after": "3faccb1ce0b97e8bc4fd93a418d7be3a273452cd7a9f5a63920da06978877164",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/rules/preg-gad-start.yaml",
+      "sha256_before": "f1f33d094eab9f5e1dd53bc4a473346a1579c47ae784dd5f1d457cba80f672d7",
+      "sha256_after": "f1f33d094eab9f5e1dd53bc4a473346a1579c47ae784dd5f1d457cba80f672d7",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/rules/preg-renal-start.yaml",
+      "sha256_before": "80b679a4f8ea1ab59eb12e203421e9ecaff2a36045df301d466feab3e273c09f",
+      "sha256_after": "80b679a4f8ea1ab59eb12e203421e9ecaff2a36045df301d466feab3e273c09f",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/rules/preg-taper-limit.yaml",
+      "sha256_before": "5d19fc16bdb3defa7e54fb3859e1865b840273ec2331627b813d76ce1d1001d6",
+      "sha256_after": "5d19fc16bdb3defa7e54fb3859e1865b840273ec2331627b813d76ce1d1001d6",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/rules/ser-adult-adjust.yaml",
+      "sha256_before": "820fee74095f8ee3d08470a945d0ed9d25bb20c7269272868accf07768c53067",
+      "sha256_after": "820fee74095f8ee3d08470a945d0ed9d25bb20c7269272868accf07768c53067",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/rules/ser-panic-start.yaml",
+      "sha256_before": "e2c3dde07d20f8100f834c7db69dedb2376d65cc8c8ba561df5080b0d70989e8",
+      "sha256_after": "e2c3dde07d20f8100f834c7db69dedb2376d65cc8c8ba561df5080b0d70989e8",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/rules/ser-social-start.yaml",
+      "sha256_before": "1706d124c73a931bcfb84ff3db1323b5ef18edce9d4f7d8bffd8a68e5927452c",
+      "sha256_after": "1706d124c73a931bcfb84ff3db1323b5ef18edce9d4f7d8bffd8a68e5927452c",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/rules/ser-taper-limit.yaml",
+      "sha256_before": "a845a514d2f33536755e229ca6ada5fc61e7b58c770e2daf6e37e5574a79f168",
+      "sha256_after": "a845a514d2f33536755e229ca6ada5fc61e7b58c770e2daf6e37e5574a79f168",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/rules/switch-esc-ago.yaml",
+      "sha256_before": "6165dd984a46460892a69473cadac4bcf73842b1e1ccaed8fda1aa878bae808f",
+      "sha256_after": "6165dd984a46460892a69473cadac4bcf73842b1e1ccaed8fda1aa878bae808f",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/rules/switch-esc-ser.yaml",
+      "sha256_before": "c051e96c937fb499418580a02e87cdc638a26372df53355632f802bc5a0a20e2",
+      "sha256_after": "c051e96c937fb499418580a02e87cdc638a26372df53355632f802bc5a0a20e2",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/rules/switch-parox-ago-selected-example.yaml",
+      "sha256_before": "8ec207f2ca273a43c340099e44d898a00dbb0731fd1454b643a133a575833408",
+      "sha256_after": "8ec207f2ca273a43c340099e44d898a00dbb0731fd1454b643a133a575833408",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/rules/switch-parox-ago.yaml",
+      "sha256_before": "8291c59d2969c7695765a5af1ff3b6a3a709a96315f5a9a85f2992c674daec61",
+      "sha256_after": "8291c59d2969c7695765a5af1ff3b6a3a709a96315f5a9a85f2992c674daec61",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/rules/switch-ser-ago.yaml",
+      "sha256_before": "a315e0b5d595b2fcb5d2492ee450e60866e442cc41b3c29851a0a67d9c7cccf2",
+      "sha256_after": "a315e0b5d595b2fcb5d2492ee450e60866e442cc41b3c29851a0a67d9c7cccf2",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/rules/switch-ser-esc.yaml",
+      "sha256_before": "38a4b7b38f8647f3124860f0f349d9d3abd95a8e603927f4166652c66cc24142",
+      "sha256_after": "38a4b7b38f8647f3124860f0f349d9d3abd95a8e603927f4166652c66cc24142",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/rules/venla-xr-gad-start.yaml",
+      "sha256_before": "615db81e038b605fba8b3f4bcd220ac19a116f7d45dc930cb50cc40f92c606e2",
+      "sha256_after": "615db81e038b605fba8b3f4bcd220ac19a116f7d45dc930cb50cc40f92c606e2",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/rules/venla-xr-panic-form-limit.yaml",
+      "sha256_before": "33867c5294be42dcbd5f45f800b209bea2cc3650c0819e4791a2dc9ea3a6273e",
+      "sha256_after": "33867c5294be42dcbd5f45f800b209bea2cc3650c0819e4791a2dc9ea3a6273e",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/rules/venla-xr-social-start.yaml",
+      "sha256_before": "dcf6550c8717b39f2f70db7744a25612783778507fcb09305449c068d824aaca",
+      "sha256_after": "dcf6550c8717b39f2f70db7744a25612783778507fcb09305449c068d824aaca",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/rules/venla-xr-taper-limit.yaml",
+      "sha256_before": "f9d6c9d655d84f1810d9ff79b57134fa2a1e601216cdd23ce2049b369edd623a",
+      "sha256_after": "f9d6c9d655d84f1810d9ff79b57134fa2a1e601216cdd23ce2049b369edd623a",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/russian_source_recheck.json",
+      "sha256_before": "b9ae8f655aa90a1af3c1e7c3c4cebfca72141f9bf626a3f965f10209c228ece1",
+      "sha256_after": "b9ae8f655aa90a1af3c1e7c3c4cebfca72141f9bf626a3f965f10209c228ece1",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/search_log.csv",
+      "sha256_before": "a485940441968f22642f1d3b429a23efb10060a62a6a4f6fd3cc25c58e191440",
+      "sha256_after": "a485940441968f22642f1d3b429a23efb10060a62a6a4f6fd3cc25c58e191440",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/source_downloads/manifest.json",
+      "sha256_before": "52b1f5bae34ec329b0fc275824b312a8709084f9575628b63849f384afc4daf4",
+      "sha256_after": "52b1f5bae34ec329b0fc275824b312a8709084f9575628b63849f384afc4daf4",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/source_downloads/README.md",
+      "sha256_before": "7f0fc88593a6109f5a328ef51526503f8d97167d4ec90e88305c146f0c7063cf",
+      "sha256_after": "7f0fc88593a6109f5a328ef51526503f8d97167d4ec90e88305c146f0c7063cf",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/source_transfer_audit.yaml",
+      "sha256_before": "37aa0baf0f1ceb562503791a682d62780f0ac62dd961921afc2884b3d895f8ad",
+      "sha256_after": "37aa0baf0f1ceb562503791a682d62780f0ac62dd961921afc2884b3d895f8ad",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/sources.json",
+      "sha256_before": "b84c4a03117dc6ebe73249408be7388449e302a98baee3ea0af28abbc02803f1",
+      "sha256_after": "b84c4a03117dc6ebe73249408be7388449e302a98baee3ea0af28abbc02803f1",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/switch_matrix.yaml",
+      "sha256_before": "94892caec299724e5d7329b043e77cefc47ac48586dcbc63c2416711242cf45a",
+      "sha256_after": "94892caec299724e5d7329b043e77cefc47ac48586dcbc63c2416711242cf45a",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/test_cases.yaml",
+      "sha256_before": "c23b3acc7e2c9c51b2d0567d3acbbc8b573786f76fef6cdb5402b6b52230b2d0",
+      "sha256_after": "c23b3acc7e2c9c51b2d0567d3acbbc8b573786f76fef6cdb5402b6b52230b2d0",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/verification_negative_checks.json",
+      "sha256_before": "b13f918881f5202401fe1dc3760800c4548b2a4f1b931f6ef61d25f4894950b0",
+      "sha256_after": "b13f918881f5202401fe1dc3760800c4548b2a4f1b931f6ef61d25f4894950b0",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/verification_report.json",
+      "sha256_before": "1c71b3bdfe6a628a4d2b01f198575a0979ed4c2421ba15d4c3c1de2d50cb7461",
+      "sha256_after": "1c71b3bdfe6a628a4d2b01f198575a0979ed4c2421ba15d4c3c1de2d50cb7461",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/verify_negative_checks.py",
+      "sha256_before": "452dc6fe7c2de87e1644100b19f07cb077efa466c4785eac72511d9428a0fac2",
+      "sha256_after": "452dc6fe7c2de87e1644100b19f07cb077efa466c4785eac72511d9428a0fac2",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/research/verify_research.py",
+      "sha256_before": "66ab380f8d31e019f9940835c90c47e714ca04412a5e4479f3e224559e726414",
+      "sha256_after": "66ab380f8d31e019f9940835c90c47e714ca04412a5e4479f3e224559e726414",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/tmp_acceptance/bundle_public_documents.py",
+      "sha256_before": "da8e8a0b604271e15d031b8b0c947f71f3eded735cd32ef591eb4079b6b2d3cc",
+      "sha256_after": "da8e8a0b604271e15d031b8b0c947f71f3eded735cd32ef591eb4079b6b2d3cc",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/tmp_acceptance/check_download_links.py",
+      "sha256_before": "93b301b8aca911166ad320b4ebc711db5c119c44ef0fdc78e9bc1e00ed5b6154",
+      "sha256_after": "93b301b8aca911166ad320b4ebc711db5c119c44ef0fdc78e9bc1e00ed5b6154",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/tmp_acceptance/clomi_link_candidate.json",
+      "sha256_before": "1e86e7f15a71c96f0b7a27b5e82457ac36f200b0df3c207b2b8de2d2ecf86001",
+      "sha256_after": "1e86e7f15a71c96f0b7a27b5e82457ac36f200b0df3c207b2b8de2d2ecf86001",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/tmp_acceptance/clomi_link_check.json",
+      "sha256_before": "cb04ceaebd05a0009995ca9a3c27c2bd7fa321d0fe66ff6e28606d1062b3967c",
+      "sha256_after": "cb04ceaebd05a0009995ca9a3c27c2bd7fa321d0fe66ff6e28606d1062b3967c",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/tmp_acceptance/close_research_audit.py",
+      "sha256_before": "26e9c773c463f3c7d5d8b6c3f0f03b7ac97be72c92b0ef553857c386465520a7",
+      "sha256_after": "26e9c773c463f3c7d5d8b6c3f0f03b7ac97be72c92b0ef553857c386465520a7",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/tmp_acceptance/complete_research_docs.py",
+      "sha256_before": "29d8968e1b4083c5350ae36c0f3f93acd7c4d004d5e97258a27038c0b1fddaab",
+      "sha256_after": "29d8968e1b4083c5350ae36c0f3f93acd7c4d004d5e97258a27038c0b1fddaab",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/tmp_acceptance/discover.py",
+      "sha256_before": "1745536d454a3843c3a1b718fbc4cea3faa17fcead7f4cf2df8e53d9be1e26fa",
+      "sha256_after": "1745536d454a3843c3a1b718fbc4cea3faa17fcead7f4cf2df8e53d9be1e26fa",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/tmp_acceptance/discovery.json",
+      "sha256_before": "d4bb55a9501e0896ecfe381932cf7276974793c502df4fb6a22a8b12c062b7ea",
+      "sha256_after": "d4bb55a9501e0896ecfe381932cf7276974793c502df4fb6a22a8b12c062b7ea",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/tmp_acceptance/expand_ru_research.py",
+      "sha256_before": "8e8f1fddb6dedc8b60caa3831c926cede16af94e254bda5dfcf799b74edcab94",
+      "sha256_after": "8e8f1fddb6dedc8b60caa3831c926cede16af94e254bda5dfcf799b74edcab94",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/tmp_acceptance/extra_link_candidates.json",
+      "sha256_before": "e7d695312fdac4e0610e3e54ba3fc47eb7600114f2289e0b3ae243cbdebbbad1",
+      "sha256_after": "e7d695312fdac4e0610e3e54ba3fc47eb7600114f2289e0b3ae243cbdebbbad1",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/tmp_acceptance/extra_link_checks.json",
+      "sha256_before": "ee7859585a8a472fa960b0bdad116be1cbe2080374a027ceb5f5bd174954783e",
+      "sha256_after": "ee7859585a8a472fa960b0bdad116be1cbe2080374a027ceb5f5bd174954783e",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/tmp_acceptance/extracted/html_manifest.json",
+      "sha256_before": "7f821f4412ac4ee1be976da0d8cd5f84b52f78bb32159741700dca32f342f880",
+      "sha256_after": "7f821f4412ac4ee1be976da0d8cd5f84b52f78bb32159741700dca32f342f880",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/tmp_acceptance/extracted/PHEN-meta.json",
+      "sha256_before": "2052a76499c52654084d8647433e7282e2fe04442d45915e2422eef37e345bac",
+      "sha256_after": "2052a76499c52654084d8647433e7282e2fe04442d45915e2422eef37e345bac",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/tmp_acceptance/fetch_more.py",
+      "sha256_before": "1d2c08b4d316f8e59f04d48c8fd119400a3cc2cadfcf6020c71bf0ed3a29a1b7",
+      "sha256_after": "1d2c08b4d316f8e59f04d48c8fd119400a3cc2cadfcf6020c71bf0ed3a29a1b7",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/tmp_acceptance/final_pdf_candidates.json",
+      "sha256_before": "432a6e4b8fcbd0acaf6c6003f9d684d50e8fa6d9e6f1c535166be2e4637a9a4d",
+      "sha256_after": "432a6e4b8fcbd0acaf6c6003f9d684d50e8fa6d9e6f1c535166be2e4637a9a4d",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/tmp_acceptance/final_pdf_checks.json",
+      "sha256_before": "13d5470809bf1be5358e9fdab49a0779e4fd1c0e2cb6df4d0f6f75f92ba467f4",
+      "sha256_after": "13d5470809bf1be5358e9fdab49a0779e4fd1c0e2cb6df4d0f6f75f92ba467f4",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/tmp_acceptance/finalize_indices.py",
+      "sha256_before": "7c18a77e9f677702e6ea229141bc0775b9e53ae39b12ca979da05f9ff084f039",
+      "sha256_after": "7c18a77e9f677702e6ea229141bc0775b9e53ae39b12ca979da05f9ff084f039",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/tmp_acceptance/finalize_ru_research.py",
+      "sha256_before": "6b64f88ad261338717823a095af12129132c7de769b19b2d91a22072fa511091",
+      "sha256_after": "6b64f88ad261338717823a095af12129132c7de769b19b2d91a22072fa511091",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/tmp_acceptance/inspect_primary_pages.py",
+      "sha256_before": "1c0b0241f99ecb8896c715371644b8263e2a25df78e3875b09ef7963bad3c0d7",
+      "sha256_after": "1c0b0241f99ecb8896c715371644b8263e2a25df78e3875b09ef7963bad3c0d7",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/tmp_acceptance/link_checks.json",
+      "sha256_before": "2a31585d40f8e5b50c288523c242e1f269ff1c9adee60f5ff73b5d1faa36f456",
+      "sha256_after": "2a31585d40f8e5b50c288523c242e1f269ff1c9adee60f5ff73b5d1faa36f456",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/tmp_acceptance/more_sources.json",
+      "sha256_before": "2e145489ee851ddf9b879fc01282ef0a91f418ce95e0daf0e2531f2659b84108",
+      "sha256_after": "2e145489ee851ddf9b879fc01282ef0a91f418ce95e0daf0e2531f2659b84108",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/tmp_acceptance/parox_source.json",
+      "sha256_before": "f86304573227996605748cb4591edd8d0e9eaba3f5cff3b82e0740f5a9eb4fd6",
+      "sha256_after": "f86304573227996605748cb4591edd8d0e9eaba3f5cff3b82e0740f5a9eb4fd6",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/tmp_acceptance/primary_page_links.json",
+      "sha256_before": "d752f8aff6af633b7eb013f5712f40db1942926f5c4fbe6c423cab8d728e79f6",
+      "sha256_after": "d752f8aff6af633b7eb013f5712f40db1942926f5c4fbe6c423cab8d728e79f6",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/tmp_acceptance/record_final_source_recheck.py",
+      "sha256_before": "7f2bbe55ac5788db562508054363addf0dc85c120edd6b998c91640abf3f2c3a",
+      "sha256_after": "7f2bbe55ac5788db562508054363addf0dc85c120edd6b998c91640abf3f2c3a",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/tmp_acceptance/refine_population_constraints.py",
+      "sha256_before": "19e090b9217f3f3a57f4602185955c2bf3fd0140e70682efce9448213eac0c54",
+      "sha256_after": "19e090b9217f3f3a57f4602185955c2bf3fd0140e70682efce9448213eac0c54",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/tmp_acceptance/save_download_inventory.py",
+      "sha256_before": "1071f86e936c73ba882f634ef887251a7cb145e346f50490b744c2bbabb59387",
+      "sha256_after": "1071f86e936c73ba882f634ef887251a7cb145e346f50490b744c2bbabb59387",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/tmp_acceptance/update_flows.py",
+      "sha256_before": "3d7f71d99ccfcf8f8b6822b26653f6ed3b4a4358393cfa34c814dadc9b1a2174",
+      "sha256_after": "3d7f71d99ccfcf8f8b6822b26653f6ed3b4a4358393cfa34c814dadc9b1a2174",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline/tmp_acceptance/update_rules.py",
+      "sha256_before": "ec8cb1ebcd3d8f540475c29b97a9fec792d8621dab0c0f92ada3a5c193f112bc",
+      "sha256_after": "ec8cb1ebcd3d8f540475c29b97a9fec792d8621dab0c0f92ada3a5c193f112bc",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/baseline_manifest.json",
+      "sha256_before": "ea71b428bebb33db531d3163da9912670387ff5896eab3c885857bcba7733318",
+      "sha256_after": "ea71b428bebb33db531d3163da9912670387ff5896eab3c885857bcba7733318",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/build_contracts.py",
+      "sha256_before": "d5bfd47c860358ec4d12e4b00c9877115829d0bb6d1c996b849c7a440d25c4fc",
+      "sha256_after": "d5bfd47c860358ec4d12e4b00c9877115829d0bb6d1c996b849c7a440d25c4fc",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/capture_baseline.py",
+      "sha256_before": "4668264bfdb7f0861a68ff649adcad15e7518657492e7e1b7d48ee07f8e9097d",
+      "sha256_after": "4668264bfdb7f0861a68ff649adcad15e7518657492e7e1b7d48ee07f8e9097d",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/capture_final.py",
+      "sha256_before": "909b6b4a4fc8f1bd62770653a7e952dd3fe5c88cf0ce40e51e62d7b4d55667a3",
+      "sha256_after": "909b6b4a4fc8f1bd62770653a7e952dd3fe5c88cf0ce40e51e62d7b4d55667a3",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/card_review.csv",
+      "sha256_before": "140b0e678eba15522e5ed0794a2fe34c8000b4bf5016dde0a7fec743094e7a21",
+      "sha256_after": "140b0e678eba15522e5ed0794a2fe34c8000b4bf5016dde0a7fec743094e7a21",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/catalog_check.json",
+      "sha256_before": "752136daf20b305d1b0c85a32839aa970ec0431b3ae4958456c61da9295f05de",
+      "sha256_after": "752136daf20b305d1b0c85a32839aa970ec0431b3ae4958456c61da9295f05de",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/changes_and_sources.md",
+      "sha256_before": "64d7b8d3c4f61477ffcbb41d42f9ecd6fcc8cdbe3f00e746f1cac479d38a9853",
+      "sha256_after": "64d7b8d3c4f61477ffcbb41d42f9ecd6fcc8cdbe3f00e746f1cac479d38a9853",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/changes_manifest.json",
+      "sha256_before": "5da643c062804e8ef1bf2cbb25837607c41bfe39bd7d081f7cacb0e561d8803f",
+      "sha256_after": "5da643c062804e8ef1bf2cbb25837607c41bfe39bd7d081f7cacb0e561d8803f",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/condition_review.csv",
+      "sha256_before": "da913dd60406a13bdb0501f748960262bc818bb744dfb685342f2be6ad39479e",
+      "sha256_after": "da913dd60406a13bdb0501f748960262bc818bb744dfb685342f2be6ad39479e",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/contract_verification.json",
+      "sha256_before": "a62c4074178ec7441b63cd35290e2411e9600e5efbbc5bb16877da2cd0e291e9",
+      "sha256_after": "a62c4074178ec7441b63cd35290e2411e9600e5efbbc5bb16877da2cd0e291e9",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/current_minzdrav_catalog.json",
+      "sha256_before": "09de48ed7f0cb8fdd3afe89974b7a5333fa96a1b415669fd9faeba42e0a7a6f8",
+      "sha256_after": "09de48ed7f0cb8fdd3afe89974b7a5333fa96a1b415669fd9faeba42e0a7a6f8",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/fetch_catalog.py",
+      "sha256_before": "daf649f3c7cc1f764e27bd7d151e59895d94d6474e7943452e103b66368a71f5",
+      "sha256_after": "daf649f3c7cc1f764e27bd7d151e59895d94d6474e7943452e103b66368a71f5",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/fetch_originals.py",
+      "sha256_before": "1fe8a02661c3a1aa0e7ff3e6c77431d918c2140f6d0de988fc4d59507591da03",
+      "sha256_after": "1fe8a02661c3a1aa0e7ff3e6c77431d918c2140f6d0de988fc4d59507591da03",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/fetch_results.json",
+      "sha256_before": "c7f05c97e59776268db13f54f84316ebe3b9707b3c6f7280bb42812579b3c87c",
+      "sha256_after": "c7f05c97e59776268db13f54f84316ebe3b9707b3c6f7280bb42812579b3c87c",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/finalize_evidence.py",
+      "sha256_before": "5c88d358ddb7989abd9ed47a649512d385e28f99397d08d92bfe2b69f4079c02",
+      "sha256_after": "5c88d358ddb7989abd9ed47a649512d385e28f99397d08d92bfe2b69f4079c02",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/findings_log.csv",
+      "sha256_before": "a119c195bebeb406f1f928a11575d31ea017966d97a9588dfe49929f6c980485",
+      "sha256_after": "a119c195bebeb406f1f928a11575d31ea017966d97a9588dfe49929f6c980485",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/findings_log.md",
+      "sha256_before": "76803132caa27f45e009cbf2b8b060b1751261207d4a259899fade23b8cf8520",
+      "sha256_after": "76803132caa27f45e009cbf2b8b060b1751261207d4a259899fade23b8cf8520",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/finish_reports.py",
+      "sha256_before": "a78d43a50859b9a680eaacad3ac9f90ecb9a453d8f54bc2afabef0190b51d05b",
+      "sha256_after": "a78d43a50859b9a680eaacad3ac9f90ecb9a453d8f54bc2afabef0190b51d05b",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/full_scenarios.json",
+      "sha256_before": "23586b7bbd4f520132bc4c6d9ef377dcd5061c4fc3cf25b9e0fe6db6e3dda889",
+      "sha256_after": "23586b7bbd4f520132bc4c6d9ef377dcd5061c4fc3cf25b9e0fe6db6e3dda889",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/independent_review.md",
+      "sha256_before": "d7a23787309085ee3ac261fa95a0dad7bc1928974685f4b2ee54bc0b66beef15",
+      "sha256_after": "d7a23787309085ee3ac261fa95a0dad7bc1928974685f4b2ee54bc0b66beef15",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/input_contracts.yaml",
+      "sha256_before": "5ac31fde58d389dbf9792feae265e2843579b3878acc184947d699d84e3dd789",
+      "sha256_after": "5ac31fde58d389dbf9792feae265e2843579b3878acc184947d699d84e3dd789",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/inspect_package.py",
+      "sha256_before": "8f7fbaf11a827f61a6a664889d9ca59671fcf78d1f7045c07b90710fc4692c4b",
+      "sha256_after": "8f7fbaf11a827f61a6a664889d9ca59671fcf78d1f7045c07b90710fc4692c4b",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/limitations.md",
+      "sha256_before": "2ebd3336f01583e0a5a160f9387a16f57c8b8e0f453e124a89b07b4a5e1d03a2",
+      "sha256_after": "2ebd3336f01583e0a5a160f9387a16f57c8b8e0f453e124a89b07b4a5e1d03a2",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/new_negative_checks.json",
+      "sha256_before": "6f9738a80e0e542ebe149ae5a5cc78b8e3e71725f34262290123254a742cb683",
+      "sha256_after": "6f9738a80e0e542ebe149ae5a5cc78b8e3e71725f34262290123254a742cb683",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/original_negative_checks.json",
+      "sha256_before": "b13f918881f5202401fe1dc3760800c4548b2a4f1b931f6ef61d25f4894950b0",
+      "sha256_after": "b13f918881f5202401fe1dc3760800c4548b2a4f1b931f6ef61d25f4894950b0",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/panic_discontinuation_context.yaml",
+      "sha256_before": "e050142023f513d207ec1ed98511d106a9112eb54674f2c91d4dd93b987a4f98",
+      "sha256_after": "e050142023f513d207ec1ed98511d106a9112eb54674f2c91d4dd93b987a4f98",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/parameter_review.csv",
+      "sha256_before": "db0bf159b7263067e11fc3c7db22e2d42f6d30d53c01ed2b1e651124e1d1e7db",
+      "sha256_after": "db0bf159b7263067e11fc3c7db22e2d42f6d30d53c01ed2b1e651124e1d1e7db",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/preservation_check.json",
+      "sha256_before": "3e8aca7cc24fa1a4d9f2fc68e31931ebdb001a5812944ab4835d1dda49a14078",
+      "sha256_after": "3e8aca7cc24fa1a4d9f2fc68e31931ebdb001a5812944ab4835d1dda49a14078",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/read_original.py",
+      "sha256_before": "2e13fd50093e09604f6e922961f5b2b7731f06876f6d87baf804c82048117014",
+      "sha256_after": "2e13fd50093e09604f6e922961f5b2b7731f06876f6d87baf804c82048117014",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/result_contracts.yaml",
+      "sha256_before": "a307e59c6dc5acae268144d2431d23a70ad7a39405a24fa8a58208346dc02b2a",
+      "sha256_after": "a307e59c6dc5acae268144d2431d23a70ad7a39405a24fa8a58208346dc02b2a",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/retrieved/RU-AGO.pdf",
+      "sha256_before": "1cf8e71b5c27891e17b5b7ab4dd7c8c02697a1d44bb287a57a1ee9de0fb85bd6",
+      "sha256_after": "1cf8e71b5c27891e17b5b7ab4dd7c8c02697a1d44bb287a57a1ee9de0fb85bd6",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/retrieved/RU-CITAL-LV.docx",
+      "sha256_before": "5e10a0452aa6a432390878027d66309a93729250ae6015c2ec225a28be68fe00",
+      "sha256_after": "5e10a0452aa6a432390878027d66309a93729250ae6015c2ec225a28be68fe00",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/retrieved/RU-DEP.pdf",
+      "sha256_before": "2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd",
+      "sha256_after": "2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/retrieved/RU-DULOX.pdf",
+      "sha256_before": "bcb5a8b9415f15fdae2ec8a8d00abe5788194c59893b6172294c4cf3db839786",
+      "sha256_after": "bcb5a8b9415f15fdae2ec8a8d00abe5788194c59893b6172294c4cf3db839786",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/retrieved/RU-GAD.pdf",
+      "sha256_before": "c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a",
+      "sha256_after": "c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/retrieved/RU-PANIC.pdf",
+      "sha256_before": "a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d",
+      "sha256_after": "a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/retrieved/RU-PAROX.pdf",
+      "sha256_before": "9f6f2646e102956826997ca7e93d84e90c7528db5ceb61896a3d4092841edabe",
+      "sha256_after": "9f6f2646e102956826997ca7e93d84e90c7528db5ceb61896a3d4092841edabe",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/retrieved/RU-PHEN.pdf",
+      "sha256_before": "e8e6303c10b7b9b31ae6b344eb49d209e148ba5584ac8f55954c8384cfe49a89",
+      "sha256_after": "e8e6303c10b7b9b31ae6b344eb49d209e148ba5584ac8f55954c8384cfe49a89",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/retrieved/RU-PHOB.pdf",
+      "sha256_before": "2a51982fb1919c0ef9115e5231f8ef9d65863306d2d5b95aa0aa7821a6f328b7",
+      "sha256_after": "2a51982fb1919c0ef9115e5231f8ef9d65863306d2d5b95aa0aa7821a6f328b7",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/retrieved/RU-PREG-RICHTER.pdf",
+      "sha256_before": "32bfe8b2ec435201b47cb652818af63a1e6a532669348dfe9110e92a73af7065",
+      "sha256_after": "32bfe8b2ec435201b47cb652818af63a1e6a532669348dfe9110e92a73af7065",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/retrieved/RU-PREG.pdf",
+      "sha256_before": "1fcd653e7f3b6bf5b26b3276d0bce97880e74bf345bb69755a275bf8f7117083",
+      "sha256_after": "1fcd653e7f3b6bf5b26b3276d0bce97880e74bf345bb69755a275bf8f7117083",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/retrieved/RU-SER.pdf",
+      "sha256_before": "3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba",
+      "sha256_after": "3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/retrieved/RU-VENLA-IR.html",
+      "sha256_before": "d49b24495bebf9a85dd3018454a1f907596a92d6567fe85f62c1a0f0b43017b6",
+      "sha256_after": "d49b24495bebf9a85dd3018454a1f907596a92d6567fe85f62c1a0f0b43017b6",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/retrieved/RU-VENLA-XR.html",
+      "sha256_before": "324991815c8cd2def4d644b47b1edaddb1c24ed7ee442d9bdc064b396fae6642",
+      "sha256_after": "324991815c8cd2def4d644b47b1edaddb1c24ed7ee442d9bdc064b396fae6642",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/scoring.json",
+      "sha256_before": "758928e02aa3a531f8a2ff13c9be45d568df93276215d5d9affa5aee57b0d6af",
+      "sha256_after": "758928e02aa3a531f8a2ff13c9be45d568df93276215d5d9affa5aee57b0d6af",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/scoring.md",
+      "sha256_before": "11a472c6f66adc5bf7ada156ed4c4556b702ee99943f591d36cf2b1e46784e08",
+      "sha256_after": "11a472c6f66adc5bf7ada156ed4c4556b702ee99943f591d36cf2b1e46784e08",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/source_copy_inventory.yaml",
+      "sha256_before": "7f3f05c2ee6f7b256eb3ae0a5be35634bf2ba18f00ff3f29c1f19ac5faa5323a",
+      "sha256_after": "7f3f05c2ee6f7b256eb3ae0a5be35634bf2ba18f00ff3f29c1f19ac5faa5323a",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/summary.md",
+      "sha256_before": "2b792100baecee828948cce436a87c40ba669a6bce22b96efe2c186523bd1dad",
+      "sha256_after": "2b792100baecee828948cce436a87c40ba669a6bce22b96efe2c186523bd1dad",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/sync_and_review.py",
+      "sha256_before": "1cb135c82e1f091d3cbadb363d78692e9c36b93fab8b0eaaeb3d43099886d319",
+      "sha256_after": "1cb135c82e1f091d3cbadb363d78692e9c36b93fab8b0eaaeb3d43099886d319",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/verification_report.json",
+      "sha256_before": "5e2aba35d4f699868b8013f2f5947b71d0cd4662bdbb4be968ead07bb658f9c6",
+      "sha256_after": "5e2aba35d4f699868b8013f2f5947b71d0cd4662bdbb4be968ead07bb658f9c6",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/verification_results.json",
+      "sha256_before": "d9484690036e793df5b737d85969201c774fb93ce411eea82efcdb316196593e",
+      "sha256_after": "d9484690036e793df5b737d85969201c774fb93ce411eea82efcdb316196593e",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/verify_contracts.py",
+      "sha256_before": "9a62f906a295b5ae1415cefa401dd2916fd1fae25f286b5b11ca0ce9a0da4d6f",
+      "sha256_after": "9a62f906a295b5ae1415cefa401dd2916fd1fae25f286b5b11ca0ce9a0da4d6f",
+      "unchanged": true
+    },
+    {
+      "path": "research/remediation/verify_new_negative_checks.py",
+      "sha256_before": "c6a4306b29a59161124c79ace59c587517e5b687a0395c599db2a1e1f8918f9f",
+      "sha256_after": "c6a4306b29a59161124c79ace59c587517e5b687a0395c599db2a1e1f8918f9f",
+      "unchanged": true
+    }
+  ],
+  "working_files_changed": 61,
+  "working_changes": [
+    {
+      "path": "research/00_summary.md",
+      "change": "modified",
+      "sha256_before": "0ac8ba8f2d4968d7056d65d7e5dd13279de2af8984236bad8e178b3a1ba4dcf3",
+      "sha256_after": "393f1f39a047204187f6da36322a1e240f2d5517b354219b03b20b57fae64bc0"
+    },
+    {
+      "path": "research/02_rules.md",
+      "change": "modified",
+      "sha256_before": "3f7db768b6f84d3cafb77b33e2211e811c35f1352f4260ab183a3eac5a38cf2b",
+      "sha256_after": "0da450ffe610bc27df2c6479f80716c46f2c0df553def95196202a93d7ad30b3"
+    },
+    {
+      "path": "research/03_question_flows.md",
+      "change": "modified",
+      "sha256_before": "aea73e0aaa960c621a6820f9e5e52e2ccd77a3712e4536947f9bb56e81b7f65f",
+      "sha256_after": "95a3f7df61c1435ec46b162201442aeb7164f87ac00b3db53265400e040ab765"
+    },
+    {
+      "path": "research/05_gaps_and_conflicts.md",
+      "change": "modified",
+      "sha256_before": "ffd5cc2f3bb9407e20df97c25c57e39cf9a5bd587fe406b6dc8b2b9f9daccf49",
+      "sha256_after": "f5c07da8ef942f1ae873e5265db7aab19f648c24f3a81248d3164cee06a7d1dc"
+    },
+    {
+      "path": "research/06_implementation_brief.md",
+      "change": "modified",
+      "sha256_before": "c6a3b2c71f197ac1b28925951f3ec530084643d4db7641120911340a4f3d860d",
+      "sha256_after": "d3c711d81a00c5ee8dda57a5d7ce27d51bf9f20ca5ad94e59f4a0898c66cb799"
+    },
+    {
+      "path": "research/07_acceptance.md",
+      "change": "modified",
+      "sha256_before": "df342729827f0807a3bc6cf48c9ee502b7944b967d1ae8e93a3a3a1b1c28bc8b",
+      "sha256_after": "4a3103d3fcd2a78478a237ecca4499052c3f93d51b0061095613edecf74d4132"
+    },
+    {
+      "path": "research/08_russian_priority_update.md",
+      "change": "modified",
+      "sha256_before": "4ec13c94c1e3ec139115d2b72820633bfb2b2ae73c1efef70553e741a52d8e6d",
+      "sha256_after": "3174000f5b75d6380b578f43e55bba54ad8379d28ff313594d6ba44d6d5ded92"
+    },
+    {
+      "path": "research/09_download_links.md",
+      "change": "modified",
+      "sha256_before": "63203865132b37d23b6dd8c7146216ebd6930dc87cc770e55f009804c3bd9514",
+      "sha256_after": "0b6c01c505e2be2a8dc476f0ed893707fb75a2d565cacdb4fa0dd0dcb3ca22e2"
+    },
+    {
+      "path": "research/10_source_audit.md",
+      "change": "modified",
+      "sha256_before": "6fb0394676489b648b7aa3a40376bd75da2c2c8a9169f994ca62959f12c5d80c",
+      "sha256_after": "76e8925ff92919375391fe36ae1ba8f0081a7e837bd93bce270e68841aa21d4e"
+    },
+    {
+      "path": "research/acceptance_audit.json",
+      "change": "modified",
+      "sha256_before": "f6aab0d66fcc592f42823c14cd5481f8eec4aa06714a5a4e9ea83da8144e85d0",
+      "sha256_after": "08089501d5533322803d1621b069c32112f26aa15b6657eb4a885c114eb860fe"
+    },
+    {
+      "path": "research/findings/ru-depression-withdrawal.yaml",
+      "change": "modified",
+      "sha256_before": "fdcf4efa38c0f8d48dbb948a68f8bbed63c835aff663ce081eb4b609051d0d25",
+      "sha256_after": "c118704ef658c4e285057fc4ac033dd05f7e69f880dae966fb4cd0537bbfd29a"
+    },
+    {
+      "path": "research/findings/switch-moc-ser.yaml",
+      "change": "modified",
+      "sha256_before": "8848265bc705ef9ae644d15fd1d87bb6e070b68522d48331f1cf930c83b29e04",
+      "sha256_after": "43f6a94af16c2b82ddc676f8f5fef0c36c2525f589da56f312bb7eeba15ac8c4"
+    },
+    {
+      "path": "research/findings/switch-ser-moc.yaml",
+      "change": "modified",
+      "sha256_before": "73a47972ce294f7703881f915fde223609345d8cfe2cb9b6d76ec9df535aa748",
+      "sha256_after": "7bc6e356827e3610dbbc5f71501253219d58bfb941b943bbe2b1fc1ab9df17b9"
+    },
+    {
+      "path": "research/input_catalog.csv",
+      "change": "modified",
+      "sha256_before": "8a6e4ab22db0b2b30c9a66ec4b3b0ab09c8ec0a200857048f8e0c3dd87b847bc",
+      "sha256_after": "25e8e17991f44b90cdda13e4b27f9f88c75f57e752e5ec5746f7035c600bc257"
+    },
+    {
+      "path": "research/question_counts.json",
+      "change": "modified",
+      "sha256_before": "f4cc0c143890d80bffcfcf3e8a9357a523ad908794ae7d355480ac9046f87f88",
+      "sha256_after": "0477daeb9d8b395a8fd3c772251236df9e8f09ceb6c36038ccf858fc13b55ae6"
+    },
+    {
+      "path": "research/question_flows.yaml",
+      "change": "modified",
+      "sha256_before": "ae3582b18affb70602a95dadf9e810a1b0c17ecfa7b8693d7ed80ad12731c27e",
+      "sha256_after": "05136886d46c86a8ae5bce0bdacc41fc5f8dfb9de2821b84f989d3e3fa3f7537"
+    },
+    {
+      "path": "research/rules/ago-depression-start.yaml",
+      "change": "modified",
+      "sha256_before": "0bc511f0916235bc3bd90b0fee87c9c2986a6c8e031c699737f68928c134ad5a",
+      "sha256_after": "c4ef2a543973e8e80876f7f59d7fb6968469d836fdf5525f652a55b3c7f79beb"
+    },
+    {
+      "path": "research/rules/ago-gad-start.yaml",
+      "change": "modified",
+      "sha256_before": "ed210e75cf9806d37bade26dce2b2832d8a8b5c12c7e17381cce3acedff1aa45",
+      "sha256_after": "7412a728decc7afee89579b075e00760c5b0e10bd31505b297eba7e4c0dc050d"
+    },
+    {
+      "path": "research/rules/ago-stop.yaml",
+      "change": "modified",
+      "sha256_before": "57c637d1aa9be8556793737c0e9ff35305042d257d729439b5eee7fe6cb1807d",
+      "sha256_after": "4193259bfe9c0249a9b52ecd369f4388a24bab95be32ae0a94cec05d0fc414de"
+    },
+    {
+      "path": "research/rules/dulox-depression-start.yaml",
+      "change": "modified",
+      "sha256_before": "f04e8c19727f19b875968811ccc443d219ab49e6ab3157853bb086278026fa78",
+      "sha256_after": "32e213e1a50c93cca703be93add8a7e204b1fab61ab81364b2734f682655e9cd"
+    },
+    {
+      "path": "research/rules/dulox-gad-adjust.yaml",
+      "change": "modified",
+      "sha256_before": "d73d992dd3a895730b31da70a9ff39ce15b9a3fe24652aeeee0574a8eef73b1a",
+      "sha256_after": "060426143f9f625ea3caadad3159c32e655d61daaec91f14d852f73f076928ea"
+    },
+    {
+      "path": "research/rules/dulox-gad-start.yaml",
+      "change": "modified",
+      "sha256_before": "36c7ff40477c18825f2accb1606453fdf0405516fa1fad1a2ddc1bd9adee02d0",
+      "sha256_after": "1f26f51046e1a72148b1d9eaa310c8d5dbf1e527273ab935185f2262296c8c9d"
+    },
+    {
+      "path": "research/rules/dulox-taper-limit.yaml",
+      "change": "modified",
+      "sha256_before": "6ef4f2b690264bfd242433577787b707b43435a86a538354924fc055d9db1f4e",
+      "sha256_after": "41efff32b646517bb3fd1a79032b0eeeeb27651777e4166c89f4c790976acf61"
+    },
+    {
+      "path": "research/rules/esc-adult-adjust.yaml",
+      "change": "modified",
+      "sha256_before": "12f4969f92554b8f062fca10f58d33101d799ad50a2479f82108fd87e5775b03",
+      "sha256_after": "b54e1e1480ce8ab90c55a078263906a9563ef90b44e53faaa300239052cbebc9"
+    },
+    {
+      "path": "research/rules/esc-cyp2c19-start.yaml",
+      "change": "modified",
+      "sha256_before": "65aeecb19aff9a0c3a10391e27b31b4fec39c0d73408a56bbcecb35ec7400d16",
+      "sha256_after": "37a57cf2444909a51c5cb7392aa45a3349828bd2536463dc04d095843befa61c"
+    },
+    {
+      "path": "research/rules/esc-elderly-start.yaml",
+      "change": "modified",
+      "sha256_before": "a394a12d16fc84a07e828ed9ae7f07aa216b8f14c2d0ede146f280e2da8fe078",
+      "sha256_after": "b6af9b02f80635038ad7c8ceda79f44d7e9bfdd0ec90a77cdcb9b9e3b98c030a"
+    },
+    {
+      "path": "research/rules/esc-gad-start.yaml",
+      "change": "modified",
+      "sha256_before": "c532baa8745af4b137b04ab2feb818218ecda90aa0a59e6cd3a713010ab44a0a",
+      "sha256_after": "c877e3d3c7122638459e25fbed089f4de2237202daf621d3ddc2259b66d46f4a"
+    },
+    {
+      "path": "research/rules/esc-hepatic-start.yaml",
+      "change": "modified",
+      "sha256_before": "d6e05a07becda90f4519575e5236d2ab9e282d8b21e02df04da38ecc103276f7",
+      "sha256_after": "3fac8040b8ee6e114fc38898342c0adcd7c0d0ea4101ec4662cf4117475e4232"
+    },
+    {
+      "path": "research/rules/esc-panic-start.yaml",
+      "change": "modified",
+      "sha256_before": "f43712c79d65ca3f171bdbd8a40c3ccb97afcecdb2f4df6cabeb62da1f001656",
+      "sha256_after": "aae7b227b04201cb4362a840434e0b24b269896dc48b43e92c717de9f84bbc55"
+    },
+    {
+      "path": "research/rules/esc-social-start.yaml",
+      "change": "modified",
+      "sha256_before": "efe5cb5a7763c0f2708f92a363211562664c4af310798c93edc84912db4f8c91",
+      "sha256_after": "64a9ca5834c4f72a63d0d6486a13473d643aef811d7cd825c9dc79e317fc2fa0"
+    },
+    {
+      "path": "research/rules/esc-taper-limit.yaml",
+      "change": "modified",
+      "sha256_before": "e839e5429bd75276dab6ab0649826adca32df13eec31b7bebc121cc7fc1dbfdb",
+      "sha256_after": "630a6b799a663ef870a45cc014bc34db4b68614e0aa9b570dc64776e1810821c"
+    },
+    {
+      "path": "research/rules/fluvox-depression-start.yaml",
+      "change": "modified",
+      "sha256_before": "9cb734d21f5673566833db5a54ea3e97a756dd8a801ed65b8a951f6040f81699",
+      "sha256_after": "e80aaff717eed03cde4da96d2888d0bf10c812dc2694dda787a3dcf6ecc1d72a"
+    },
+    {
+      "path": "research/rules/fluvox-taper-limit.yaml",
+      "change": "modified",
+      "sha256_before": "a8575e28ec966f43b2973774595fa7a0c869c237204a43717877d37775809df8",
+      "sha256_after": "4d5e98bafc9df1be077685c90aaa73dc73f57980e114ea2472855ad3a1731002"
+    },
+    {
+      "path": "research/rules/parox-panic-kr.yaml",
+      "change": "modified",
+      "sha256_before": "111096980092a787b35f38486d7a140a3a9e7349637ba849171fbdf0775d6479",
+      "sha256_after": "6d4f3b085d9493fbc8f424c360aa97ec585094e8eeb01a30e95108afd118dd6c"
+    },
+    {
+      "path": "research/rules/parox-taper-example.yaml",
+      "change": "modified",
+      "sha256_before": "cfbff396c90dd714ca92deb3ce1c31a34b87242ba79d2c4590b1c3a8043c02b2",
+      "sha256_after": "a2691c01652e23a5f7fa4bce183278579066be75a4ff4fd9c94811662d4b5a5e"
+    },
+    {
+      "path": "research/rules/phen-taper-limit.yaml",
+      "change": "modified",
+      "sha256_before": "0f0d48b3f0a79565a144ed0811ce85cc32166fe820a00b2af500468dd58d4a88",
+      "sha256_after": "ce132bec28ea7203fde06b9adea720661a28c8e4c0496d947845d87c6dd7c75b"
+    },
+    {
+      "path": "research/rules/preg-gad-adjust.yaml",
+      "change": "modified",
+      "sha256_before": "eb72b1dcb55eeab8911786bcf8de9e40301a7c8532de449a77254187d3fc167b",
+      "sha256_after": "efa57f3ca80cee040ee143c8a51b15f3b26cd88abf1d4256c1bebcfcf9a1950f"
+    },
+    {
+      "path": "research/rules/preg-gad-start.yaml",
+      "change": "modified",
+      "sha256_before": "aa7e22b898d9e715ccaf5199977c8e37ff5db486b24bc10bcdef25821bb6d971",
+      "sha256_after": "3daade5f7e28cd6277dd6e184aaab51637fca210f2f83eae291ab02c9399542f"
+    },
+    {
+      "path": "research/rules/preg-renal-start.yaml",
+      "change": "modified",
+      "sha256_before": "2d3415d2183e20dd2fe9189b7d815a0ecb7e1151f51cd8969137ab7ac74ae27c",
+      "sha256_after": "0edb8ecf4857fb076d9ff9ce437b5788b4b3316954763ff0b5a1a0202d617a2b"
+    },
+    {
+      "path": "research/rules/preg-taper-limit.yaml",
+      "change": "modified",
+      "sha256_before": "2c4ef802d7df1232e7d8ec2bc51fdc7e2660cd172232a0ff9d093abb18204e31",
+      "sha256_after": "847e137f4005a867883c0949fa0709b89a03e40f9fe2ec92375f31b48c1ed57b"
+    },
+    {
+      "path": "research/rules/ser-adult-adjust.yaml",
+      "change": "modified",
+      "sha256_before": "7abde658f529a600181eb2cbc6c10c1fe4e544a1aa7fcee1b535107bfa9c6083",
+      "sha256_after": "2b3654740a4f58c1dc51238d0bda9842d0b1dda6d6821ff04ea93e36a0862b81"
+    },
+    {
+      "path": "research/rules/ser-panic-start.yaml",
+      "change": "modified",
+      "sha256_before": "0b1ef6d69e5c8962f8bdba3e59b485b6b819aa62c2dd488fa9cf546fd34883ed",
+      "sha256_after": "456f108837a091b62b3ef3cbd044b426e81562c3bed800c08ac0dbf54caace43"
+    },
+    {
+      "path": "research/rules/ser-social-start.yaml",
+      "change": "modified",
+      "sha256_before": "40e3a10d77fce33244a07b3e13aa0c254e9e92c3bd823fc62b8266f35a4242d4",
+      "sha256_after": "39970521fab4e1660cf437fe7ca04fb8d8c3add4cc7ac16fb15aa85114224a75"
+    },
+    {
+      "path": "research/rules/ser-taper-limit.yaml",
+      "change": "modified",
+      "sha256_before": "8c77fdb2d3cc78420b51a622f18e1d9593420cd931f53ac9a0db05deee43695c",
+      "sha256_after": "661df690db454cb801f4819f90b63e5d2f1ecdd5ddd09afc2cb6f115876b8cff"
+    },
+    {
+      "path": "research/rules/switch-esc-ago.yaml",
+      "change": "modified",
+      "sha256_before": "8d505ca34f2dfccb693ed546bc7098cdbd62cfe268270b39ff19176373d05c61",
+      "sha256_after": "3553287abfdfe148e1b87a3c1b3c1c4e979d1ec85f41ee6519e8b519178d4b9d"
+    },
+    {
+      "path": "research/rules/switch-esc-ser.yaml",
+      "change": "modified",
+      "sha256_before": "792ef443d7292e25f289bc6ae9c7f283df412c88e6f378c23138c195bd355f2e",
+      "sha256_after": "9cc5f161e19e96167abdb8d1c07b03b14533276e44806e746eb555a9c106956e"
+    },
+    {
+      "path": "research/rules/switch-parox-ago-selected-example.yaml",
+      "change": "modified",
+      "sha256_before": "4802914bef055648f9b2a500d5af204d9988c4e71f19d82966cb841508d06910",
+      "sha256_after": "1753537e291a652dfa707cd82d89ef648d47e1c10675affad8fa9417492c919b"
+    },
+    {
+      "path": "research/rules/switch-parox-ago.yaml",
+      "change": "modified",
+      "sha256_before": "4eadfd326d591949b7c12fa5e570df042da3080e0bba9584f219a146bd75197e",
+      "sha256_after": "398de46ffe39d4f6fe0e5ad3fad39a5b21076a3141282518d1977c67e6ae7d95"
+    },
+    {
+      "path": "research/rules/switch-ser-ago.yaml",
+      "change": "modified",
+      "sha256_before": "9bbe07c7ef1734741b26a08ef39ecf97d747c05c691edb12a8f44b617d96a96a",
+      "sha256_after": "f602d6b0f08da32ec8a30d371ecd9c35d243f74e46ab95b645385d48f16a236d"
+    },
+    {
+      "path": "research/rules/switch-ser-esc.yaml",
+      "change": "modified",
+      "sha256_before": "00403eb6fd4266ee493b0018ba4438d48b5b3dec8ea327c2b54051f91c53644f",
+      "sha256_after": "23d3ee39f10210e738f59a0fb13f9935736c88586bf6e2cccefff85a91e60b00"
+    },
+    {
+      "path": "research/rules/venla-xr-gad-start.yaml",
+      "change": "modified",
+      "sha256_before": "0a2b680466324458d1f90e05c31543f55e73fd546a907da583029a5e9ea05c32",
+      "sha256_after": "7e08660b76c3dbdf51f5707883ca511f0a0e6a07a371e3abcd145a4088bf83c1"
+    },
+    {
+      "path": "research/rules/venla-xr-panic-form-limit.yaml",
+      "change": "modified",
+      "sha256_before": "e9080a9825e352a72ba6900e525f1cbd2a0ad74a16d0358a21fc450540f1994e",
+      "sha256_after": "805e5a657dba1b97b9fd360a046d565763e5ee3a8459749b0be59043b4e77a62"
+    },
+    {
+      "path": "research/rules/venla-xr-social-start.yaml",
+      "change": "modified",
+      "sha256_before": "715e64775e1b75dc2a2922b6c0be332f0df30faec85e193763bb4c06744d19a6",
+      "sha256_after": "acdd961a4c625ffba01861e1927076e25518ae563acd5806d77a3e4f925d3d2e"
+    },
+    {
+      "path": "research/rules/venla-xr-taper-limit.yaml",
+      "change": "modified",
+      "sha256_before": "87002ab0cde56acdde1ba004613fa5c29a02e608c85c3cfe7278bea9f56bf1a7",
+      "sha256_after": "2e6482a3507154748c8e27ec47d51f0c9e2ff92a847717e8a8703a1b100d3057"
+    },
+    {
+      "path": "research/search_log.csv",
+      "change": "modified",
+      "sha256_before": "c2ae9b76c4e73d634717c7a84164f54d6c012e47a71b4691b73c12f55fcfe514",
+      "sha256_after": "bcf31e3bb2039cbdbec1ea003e95e7d0bc0bb1e1449915a390b8b0f76686fada"
+    },
+    {
+      "path": "research/source_downloads/README.md",
+      "change": "modified",
+      "sha256_before": "a910997f4f0a46bc2526127f127687def4da8ddf520a401f59284be1cff5024c",
+      "sha256_after": "810cccf50a2f90024af7e021dd4c6f9c57807ed5df29480c9a92c4a9adb14d56"
+    },
+    {
+      "path": "research/source_transfer_audit.yaml",
+      "change": "modified",
+      "sha256_before": "84740054dd1b733e6806deaf0d1cac3f27f9d82ec0d40794464be012796b7db2",
+      "sha256_after": "1820e38d1436d644cba7a563370553253d44b2e54a902c98a2a2a5a5b2dad07f"
+    },
+    {
+      "path": "research/sources.json",
+      "change": "modified",
+      "sha256_before": "204761e6988299e34d582be01d63fdef1ec9935c4a05dd02495bc7fb0ae9757d",
+      "sha256_after": "306e8d8b2aff3451f316e4f60819d65ac1808c5d87e01464deb1d08ebb97adde"
+    },
+    {
+      "path": "research/switch_matrix.yaml",
+      "change": "modified",
+      "sha256_before": "6b9805e11ac786c430d57122093ef0343b1dfbeec5bfbccb75d58bc31550cf80",
+      "sha256_after": "a3c92354c88d4acf9df84b0bba9cafa80d389525cd6d508fae4327ff40d103f9"
+    },
+    {
+      "path": "research/test_cases.yaml",
+      "change": "modified",
+      "sha256_before": "bb589236964572a0f0717e4c6575e195870389229b04b425425c61d5c5b78c62",
+      "sha256_after": "7bf923a93fbd5d27a992c0c318bcd081f93697a0b0db99a6da7cea36e351424a"
+    },
+    {
+      "path": "research/verification_report.json",
+      "change": "modified",
+      "sha256_before": "5e2aba35d4f699868b8013f2f5947b71d0cd4662bdbb4be968ead07bb658f9c6",
+      "sha256_after": "e3b1eef65a983815da6b9acb495bbf24c4ab34b2615bcfa0a3a9b4152d86741d"
+    }
+  ],
+  "application_written": false
+}

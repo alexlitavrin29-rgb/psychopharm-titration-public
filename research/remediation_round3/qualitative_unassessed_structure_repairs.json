@@ -1,0 +1,10 @@
+{
+  "cases": [
+    "switch-parox-ago--nested-from_renal-metric-omitted",
+    "switch-parox-ago--nested-from_renal-value-omitted",
+    "switch-parox-ago--nested-from_renal-unit-omitted",
+    "switch-parox-ago--nested-from_renal-assessment-omitted"
+  ],
+  "no_value_or_unit_inferred": true,
+  "scope": "No incomplete reported context is used for a patient dose; bounded source reference retains named uncertainty"
+}

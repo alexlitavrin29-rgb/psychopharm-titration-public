@@ -1,0 +1,6104 @@
+{
+  "RU-AGO": {
+    "age": {
+      "locator": "§4.1 с.1; §4.2 с.2",
+      "types": "integer",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "ago-depression-start",
+        "ago-gad-start",
+        "switch-esc-ago",
+        "switch-parox-ago-selected-example",
+        "switch-parox-ago",
+        "switch-ser-ago"
+      ]
+    },
+    "form": {
+      "locator": "§1–3 с.1; §4.2 с.2",
+      "types": "structured_form",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "ago-depression-start",
+        "ago-gad-start"
+      ]
+    },
+    "hepatic": {
+      "locator": "§4.2 с.2; §4.3 с.3",
+      "types": "source_hepatic_category",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "ago-depression-start",
+        "ago-gad-start",
+        "switch-esc-ago",
+        "switch-parox-ago-selected-example",
+        "switch-parox-ago",
+        "switch-ser-ago"
+      ]
+    },
+    "pregnancy": {
+      "locator": "§4.6 с.6",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "ago-depression-start",
+        "ago-gad-start",
+        "switch-esc-ago",
+        "switch-parox-ago-selected-example",
+        "switch-parox-ago",
+        "switch-ser-ago"
+      ]
+    },
+    "lactation": {
+      "locator": "§4.6 с.6",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "ago-depression-start",
+        "ago-gad-start",
+        "switch-esc-ago",
+        "switch-parox-ago-selected-example",
+        "switch-parox-ago",
+        "switch-ser-ago"
+      ]
+    },
+    "medicines": {
+      "locator": "§4.3 с.3; §4.4–4.5 с.3,5–6",
+      "types": "medication_list",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "ago-depression-start",
+        "ago-gad-start",
+        "switch-esc-ago",
+        "switch-parox-ago-selected-example",
+        "switch-parox-ago",
+        "switch-ser-ago"
+      ]
+    },
+    "allergy": {
+      "locator": "§4.3 с.3",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "ago-depression-start",
+        "ago-gad-start",
+        "switch-esc-ago",
+        "switch-parox-ago-selected-example",
+        "switch-parox-ago",
+        "switch-ser-ago"
+      ]
+    },
+    "ALT_ratio": {
+      "locator": "§4.3–4.4 с.3–4",
+      "types": "number",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "ago-depression-start",
+        "ago-gad-start"
+      ]
+    },
+    "AST_ratio": {
+      "locator": "§4.3–4.4 с.3–4",
+      "types": "number",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "ago-depression-start",
+        "ago-gad-start"
+      ]
+    },
+    "renal_state": {
+      "locator": "§4.2 с.2; §4.4 с.4",
+      "types": "enum",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "ago-depression-start",
+        "ago-gad-start",
+        "switch-esc-ago",
+        "switch-parox-ago-selected-example",
+        "switch-parox-ago",
+        "switch-ser-ago"
+      ]
+    },
+    "elderly_population": {
+      "locator": "§4.4 с.4; числовая граница категории не задана",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "ago-depression-start",
+        "ago-gad-start",
+        "switch-esc-ago",
+        "switch-parox-ago-selected-example",
+        "switch-parox-ago",
+        "switch-ser-ago"
+      ]
+    },
+    "dementia": {
+      "locator": "§4.4 с.4",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "field_true",
+          "field": "elderly_population"
+        },
+        {
+          "kind": "field_true",
+          "field": "elderly_population"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "ago-depression-start",
+        "ago-gad-start",
+        "switch-esc-ago",
+        "switch-parox-ago-selected-example",
+        "switch-parox-ago",
+        "switch-ser-ago"
+      ]
+    },
+    "galactose_intolerance": {
+      "locator": "§4.3 с.3; §4.4 с.5",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "ago-depression-start",
+        "ago-gad-start",
+        "switch-esc-ago",
+        "switch-parox-ago-selected-example",
+        "switch-parox-ago",
+        "switch-ser-ago"
+      ]
+    },
+    "complete_lactase_deficiency": {
+      "locator": "§4.3 с.3; §4.4 с.5",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "ago-depression-start",
+        "ago-gad-start",
+        "switch-esc-ago",
+        "switch-parox-ago-selected-example",
+        "switch-parox-ago",
+        "switch-ser-ago"
+      ]
+    },
+    "glucose_galactose_malabsorption": {
+      "locator": "§4.3 с.3; §4.4 с.5",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "ago-depression-start",
+        "ago-gad-start",
+        "switch-esc-ago",
+        "switch-parox-ago-selected-example",
+        "switch-parox-ago",
+        "switch-ser-ago"
+      ]
+    },
+    "liver_injury_signs": {
+      "locator": "§4.4 с.4: темная моча, обесцвеченный стул, желтуха, боль справа вверху живота, новая необъяснимая постоянная утомляемость",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "ongoing_selected_drug"
+        },
+        {
+          "kind": "ongoing_selected_drug"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "ago-depression-start",
+        "ago-gad-start",
+        "switch-esc-ago",
+        "switch-parox-ago-selected-example",
+        "switch-parox-ago",
+        "switch-ser-ago"
+      ]
+    },
+    "transaminases_rising": {
+      "locator": "§4.4 с.4",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "ongoing_selected_drug"
+        },
+        {
+          "kind": "ongoing_selected_drug"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "ago-depression-start",
+        "ago-gad-start",
+        "switch-esc-ago",
+        "switch-parox-ago-selected-example",
+        "switch-parox-ago",
+        "switch-ser-ago"
+      ]
+    },
+    "overweight_obesity": {
+      "locator": "§4.4 с.3",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "ago-depression-start",
+        "ago-gad-start",
+        "switch-esc-ago",
+        "switch-parox-ago-selected-example",
+        "switch-parox-ago",
+        "switch-ser-ago"
+      ]
+    },
+    "fatty_liver": {
+      "locator": "§4.4 с.3",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "ago-depression-start",
+        "ago-gad-start",
+        "switch-esc-ago",
+        "switch-parox-ago-selected-example",
+        "switch-parox-ago",
+        "switch-ser-ago"
+      ]
+    },
+    "diabetes": {
+      "locator": "§4.4 с.3",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "ago-depression-start",
+        "ago-gad-start",
+        "switch-esc-ago",
+        "switch-parox-ago-selected-example",
+        "switch-parox-ago",
+        "switch-ser-ago"
+      ]
+    },
+    "alcohol_abuse": {
+      "locator": "§4.4 с.3",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "ago-depression-start",
+        "ago-gad-start",
+        "switch-esc-ago",
+        "switch-parox-ago-selected-example",
+        "switch-parox-ago",
+        "switch-ser-ago"
+      ]
+    },
+    "alcohol_use": {
+      "locator": "§4.5 с.6",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "ago-depression-start",
+        "ago-gad-start",
+        "switch-esc-ago",
+        "switch-parox-ago-selected-example",
+        "switch-parox-ago",
+        "switch-ser-ago"
+      ]
+    },
+    "mania": {
+      "locator": "§4.4 с.4",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "ago-depression-start",
+        "ago-gad-start",
+        "switch-esc-ago",
+        "switch-parox-ago-selected-example",
+        "switch-parox-ago",
+        "switch-ser-ago"
+      ]
+    },
+    "mania_symptoms": {
+      "locator": "§4.4 с.4",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "ongoing_selected_drug"
+        },
+        {
+          "kind": "ongoing_selected_drug"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "ago-depression-start",
+        "ago-gad-start",
+        "switch-esc-ago",
+        "switch-parox-ago-selected-example",
+        "switch-parox-ago",
+        "switch-ser-ago"
+      ]
+    },
+    "suicide_risk": {
+      "locator": "§4.4 с.4–5",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "ago-depression-start",
+        "ago-gad-start",
+        "switch-esc-ago",
+        "switch-parox-ago-selected-example",
+        "switch-parox-ago",
+        "switch-ser-ago"
+      ]
+    },
+    "ect": {
+      "locator": "§4.5 с.6",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "ago-depression-start",
+        "ago-gad-start",
+        "switch-esc-ago",
+        "switch-parox-ago-selected-example",
+        "switch-parox-ago",
+        "switch-ser-ago"
+      ]
+    },
+    "current_dose": {
+      "locator": "§4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16",
+      "types": "number",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        }
+      ],
+      "rules": [
+        "ago-stop"
+      ]
+    },
+    "clinician_action": {
+      "locator": "§4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16",
+      "types": "enum",
+      "predicates": [
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "ago-stop"
+      ]
+    },
+    "to_form": {
+      "locator": "§2–3 с.1, Вальдоксан 25 мг",
+      "types": "structured_form",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "switch-esc-ago",
+        "switch-parox-ago-selected-example",
+        "switch-parox-ago",
+        "switch-ser-ago"
+      ]
+    },
+    "alt_ratio_uln": {
+      "locator": "§4.3 с.3; §4.4 с.3–4, АЛТ отдельно",
+      "types": "number",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "switch-esc-ago",
+        "switch-parox-ago-selected-example",
+        "switch-parox-ago",
+        "switch-ser-ago"
+      ]
+    },
+    "ast_ratio_uln": {
+      "locator": "§4.3 с.3; §4.4 с.3–4, АСТ отдельно",
+      "types": "number",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "switch-esc-ago",
+        "switch-parox-ago-selected-example",
+        "switch-parox-ago",
+        "switch-ser-ago"
+      ]
+    }
+  },
+  "RU-DULOX": {
+    "age": {
+      "locator": "§4.1–4.3 с.1–4",
+      "types": "integer",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "dulox-depression-start",
+        "dulox-gad-adjust",
+        "dulox-gad-start",
+        "dulox-taper-limit"
+      ]
+    },
+    "form": {
+      "locator": "§1–3 с.1",
+      "types": "structured_form",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "dulox-depression-start",
+        "dulox-gad-adjust",
+        "dulox-gad-start",
+        "dulox-taper-limit"
+      ]
+    },
+    "hepatic": {
+      "locator": "§4.2–4.3 с.3–4",
+      "types": "source_hepatic_category",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "dulox-depression-start",
+        "dulox-gad-adjust",
+        "dulox-gad-start"
+      ]
+    },
+    "pregnancy": {
+      "locator": "§4.6 с.9–10",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "dulox-depression-start",
+        "dulox-gad-adjust",
+        "dulox-gad-start"
+      ]
+    },
+    "lactation": {
+      "locator": "§4.6 с.10",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "dulox-depression-start",
+        "dulox-gad-adjust",
+        "dulox-gad-start"
+      ]
+    },
+    "medicines": {
+      "locator": "§4.3 с.3–4; §4.5 с.7–9",
+      "types": "medication_list",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "reported_source_information"
+        }
+      ],
+      "rules": [
+        "dulox-depression-start",
+        "dulox-gad-adjust",
+        "dulox-gad-start",
+        "dulox-taper-limit"
+      ]
+    },
+    "allergy": {
+      "locator": "§4.3 с.3",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "dulox-depression-start",
+        "dulox-gad-adjust",
+        "dulox-gad-start"
+      ]
+    },
+    "renal_metric": {
+      "locator": "§4.2 с.3; §4.3 с.4",
+      "types": "structured_renal",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "dulox-depression-start",
+        "dulox-gad-adjust",
+        "dulox-gad-start"
+      ]
+    },
+    "uncontrolled_hypertension": {
+      "locator": "§4.3 с.4",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "dulox-depression-start",
+        "dulox-gad-adjust",
+        "dulox-gad-start"
+      ]
+    },
+    "closed_angle_glaucoma": {
+      "locator": "§4.3 с.3",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "dulox-depression-start",
+        "dulox-gad-adjust",
+        "dulox-gad-start"
+      ]
+    },
+    "maoi_type": {
+      "locator": "§4.5 с.7",
+      "types": "record_map",
+      "predicates": [
+        {
+          "kind": "maoi_record"
+        },
+        {
+          "kind": "maoi_record"
+        },
+        {
+          "kind": "maoi_record"
+        }
+      ],
+      "rules": [
+        "dulox-depression-start",
+        "dulox-gad-adjust",
+        "dulox-gad-start"
+      ]
+    },
+    "maoi_stopped_at": {
+      "locator": "§4.5 с.7",
+      "types": "record_map",
+      "predicates": [
+        {
+          "kind": "stopped_maoi_record"
+        },
+        {
+          "kind": "stopped_maoi_record"
+        },
+        {
+          "kind": "stopped_maoi_record"
+        }
+      ],
+      "rules": [
+        "dulox-depression-start",
+        "dulox-gad-adjust",
+        "dulox-gad-start"
+      ]
+    },
+    "fructose_intolerance": {
+      "locator": "§4.4 с.7",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "dulox-depression-start",
+        "dulox-gad-adjust",
+        "dulox-gad-start"
+      ]
+    },
+    "glucose_galactose_malabsorption": {
+      "locator": "§4.4 с.7",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "dulox-depression-start",
+        "dulox-gad-adjust",
+        "dulox-gad-start"
+      ]
+    },
+    "sucrase_isomaltase_deficiency": {
+      "locator": "§4.4 с.7",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "dulox-depression-start",
+        "dulox-gad-adjust",
+        "dulox-gad-start"
+      ]
+    },
+    "akathisia": {
+      "locator": "§4.4 с.7",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "reported_context"
+        }
+      ],
+      "rules": [
+        "dulox-depression-start",
+        "dulox-gad-adjust",
+        "dulox-gad-start"
+      ]
+    },
+    "mania": {
+      "locator": "§4.4 с.4",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        }
+      ],
+      "rules": [
+        "dulox-depression-start",
+        "dulox-gad-adjust",
+        "dulox-gad-start"
+      ]
+    },
+    "suicide_risk": {
+      "locator": "§4.4 с.5–6",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        }
+      ],
+      "rules": [
+        "dulox-depression-start",
+        "dulox-gad-adjust",
+        "dulox-gad-start"
+      ]
+    },
+    "bleeding_risk": {
+      "locator": "§4.4 с.6",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        }
+      ],
+      "rules": [
+        "dulox-depression-start",
+        "dulox-gad-adjust",
+        "dulox-gad-start"
+      ]
+    },
+    "hyponatremia_risk": {
+      "locator": "§4.4 с.6",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        }
+      ],
+      "rules": [
+        "dulox-depression-start",
+        "dulox-gad-adjust",
+        "dulox-gad-start"
+      ]
+    },
+    "diabetes": {
+      "locator": "§4.8 с.11, гипергликемия; с.14, данные исследований диабетической нейропатии",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        }
+      ],
+      "rules": [
+        "dulox-depression-start",
+        "dulox-gad-adjust",
+        "dulox-gad-start"
+      ]
+    },
+    "seizure_state": {
+      "locator": "§4.4 с.4",
+      "types": "enum",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        }
+      ],
+      "rules": [
+        "dulox-depression-start",
+        "dulox-gad-adjust",
+        "dulox-gad-start"
+      ]
+    },
+    "persistent_BP_increase": {
+      "locator": "§4.4 с.4",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_current_event"
+        },
+        {
+          "kind": "reported_current_event"
+        },
+        {
+          "kind": "reported_current_event"
+        },
+        {
+          "kind": "reported_current_event"
+        }
+      ],
+      "rules": [
+        "dulox-depression-start",
+        "dulox-gad-adjust",
+        "dulox-gad-start",
+        "dulox-taper-limit"
+      ]
+    },
+    "comorbid_depression": {
+      "locator": "§4.2 с.2",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "dulox-gad-adjust",
+        "dulox-gad-start"
+      ]
+    },
+    "elderly_population": {
+      "locator": "§4.2 с.3",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "dulox-gad-adjust",
+        "dulox-gad-start"
+      ]
+    },
+    "current_dose": {
+      "locator": "§4.2 с.2–3",
+      "types": "number",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "reported_context"
+        }
+      ],
+      "rules": [
+        "dulox-gad-adjust",
+        "dulox-taper-limit"
+      ]
+    },
+    "response": {
+      "locator": "§4.2 с.2",
+      "types": "enum",
+      "predicates": [
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "dulox-gad-adjust"
+      ]
+    },
+    "tolerability": {
+      "locator": "§4.2 с.2",
+      "types": "enum",
+      "predicates": [
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "dulox-gad-adjust"
+      ]
+    },
+    "duration": {
+      "locator": "§4.2 с.3; §4.4 с.6",
+      "types": "number",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        }
+      ],
+      "rules": [
+        "dulox-taper-limit"
+      ]
+    },
+    "withdrawal_severity": {
+      "locator": "§4.2 с.3; §4.4 с.6",
+      "types": "enum",
+      "predicates": [
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "dulox-taper-limit"
+      ]
+    },
+    "past_withdrawal": {
+      "locator": "§4.4 с.6",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        }
+      ],
+      "rules": [
+        "dulox-taper-limit"
+      ]
+    }
+  },
+  "RU-ESC": {
+    "age": {
+      "locator": "§4.1 с.2; §4.2 с.3",
+      "types": "integer",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "esc-adult-adjust",
+        "esc-cyp2c19-start",
+        "esc-elderly-start",
+        "esc-gad-start",
+        "esc-hepatic-start",
+        "esc-panic-start",
+        "esc-social-start",
+        "esc-taper-limit",
+        "switch-esc-ago"
+      ]
+    },
+    "form": {
+      "locator": "§3 с.1–2",
+      "types": "structured_form",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "esc-adult-adjust",
+        "esc-cyp2c19-start",
+        "esc-elderly-start",
+        "esc-gad-start",
+        "esc-hepatic-start",
+        "esc-panic-start",
+        "esc-social-start",
+        "esc-taper-limit"
+      ]
+    },
+    "pregnancy": {
+      "locator": "§4.6 с.10",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "outside_cessation_scope"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "esc-adult-adjust",
+        "esc-cyp2c19-start",
+        "esc-elderly-start",
+        "esc-gad-start",
+        "esc-hepatic-start",
+        "esc-panic-start",
+        "esc-social-start",
+        "esc-taper-limit",
+        "switch-esc-ago"
+      ]
+    },
+    "lactation": {
+      "locator": "§4.6 с.10",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "outside_cessation_scope"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "esc-adult-adjust",
+        "esc-cyp2c19-start",
+        "esc-elderly-start",
+        "esc-gad-start",
+        "esc-hepatic-start",
+        "esc-panic-start",
+        "esc-social-start",
+        "esc-taper-limit",
+        "switch-esc-ago"
+      ]
+    },
+    "medicines": {
+      "locator": "§4.3 с.4; §4.5 с.7–9",
+      "types": "medication_list",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "reported_source_information"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "esc-adult-adjust",
+        "esc-cyp2c19-start",
+        "esc-elderly-start",
+        "esc-gad-start",
+        "esc-hepatic-start",
+        "esc-panic-start",
+        "esc-social-start",
+        "esc-taper-limit",
+        "switch-esc-ago",
+        "switch-esc-ser",
+        "switch-ser-esc"
+      ]
+    },
+    "allergy": {
+      "locator": "§4.3 с.4",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "outside_cessation_scope"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "esc-adult-adjust",
+        "esc-cyp2c19-start",
+        "esc-elderly-start",
+        "esc-gad-start",
+        "esc-hepatic-start",
+        "esc-panic-start",
+        "esc-social-start",
+        "esc-taper-limit",
+        "switch-esc-ago"
+      ]
+    },
+    "hepatic": {
+      "locator": "§4.2 с.3",
+      "types": "source_hepatic_category",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "outside_cessation_scope"
+        }
+      ],
+      "rules": [
+        "esc-adult-adjust",
+        "esc-cyp2c19-start",
+        "esc-elderly-start",
+        "esc-gad-start",
+        "esc-hepatic-start",
+        "esc-panic-start",
+        "esc-social-start",
+        "esc-taper-limit"
+      ]
+    },
+    "mania": {
+      "locator": "§4.4 с.4",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "outside_cessation_scope"
+        }
+      ],
+      "rules": [
+        "esc-adult-adjust",
+        "esc-cyp2c19-start",
+        "esc-elderly-start",
+        "esc-gad-start",
+        "esc-hepatic-start",
+        "esc-panic-start",
+        "esc-social-start",
+        "esc-taper-limit"
+      ]
+    },
+    "seizure_state": {
+      "locator": "§4.4 с.4",
+      "types": "enum",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "esc-adult-adjust",
+        "esc-cyp2c19-start",
+        "esc-elderly-start",
+        "esc-gad-start",
+        "esc-hepatic-start",
+        "esc-panic-start",
+        "esc-social-start",
+        "esc-taper-limit",
+        "switch-esc-ago",
+        "switch-esc-ser"
+      ]
+    },
+    "known_cyp2c19": {
+      "locator": "§4.2 с.3",
+      "types": "enum",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "outside_cessation_scope"
+        }
+      ],
+      "rules": [
+        "esc-adult-adjust",
+        "esc-cyp2c19-start",
+        "esc-elderly-start",
+        "esc-gad-start",
+        "esc-hepatic-start",
+        "esc-panic-start",
+        "esc-social-start",
+        "esc-taper-limit"
+      ]
+    },
+    "renal": {
+      "locator": "§4.2 с.3",
+      "types": "structured_renal",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "outside_cessation_scope"
+        }
+      ],
+      "rules": [
+        "esc-adult-adjust",
+        "esc-cyp2c19-start",
+        "esc-elderly-start",
+        "esc-gad-start",
+        "esc-hepatic-start",
+        "esc-panic-start",
+        "esc-social-start",
+        "esc-taper-limit"
+      ]
+    },
+    "current_dose": {
+      "locator": "§4.2 с.2–3",
+      "types": "number",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "esc-adult-adjust",
+        "esc-taper-limit",
+        "switch-esc-ago",
+        "switch-esc-ser"
+      ]
+    },
+    "time_at_dose": {
+      "locator": "§4.2 с.2–3; no fixed general increase interval",
+      "types": "number",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        }
+      ],
+      "rules": [
+        "esc-adult-adjust"
+      ]
+    },
+    "response": {
+      "locator": "§4.2 с.2–3",
+      "types": "enum",
+      "predicates": [
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "esc-adult-adjust"
+      ]
+    },
+    "tolerability": {
+      "locator": "§4.2 с.3; §4.4 с.5–6",
+      "types": "enum",
+      "predicates": [
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "esc-adult-adjust"
+      ]
+    },
+    "adherence": {
+      "locator": "§4.2 с.2–3; §4.3–4.6 с.4–10",
+      "types": "enum",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        }
+      ],
+      "rules": [
+        "esc-adult-adjust"
+      ]
+    },
+    "qt_risk": {
+      "locator": "§4.4 с.6",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "outside_cessation_scope"
+        }
+      ],
+      "rules": [
+        "esc-adult-adjust",
+        "esc-cyp2c19-start",
+        "esc-elderly-start",
+        "esc-gad-start",
+        "esc-hepatic-start",
+        "esc-panic-start",
+        "esc-social-start",
+        "esc-taper-limit"
+      ]
+    },
+    "bleeding_risk": {
+      "locator": "§4.4 с.5",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "outside_cessation_scope"
+        }
+      ],
+      "rules": [
+        "esc-adult-adjust",
+        "esc-cyp2c19-start",
+        "esc-elderly-start",
+        "esc-gad-start",
+        "esc-hepatic-start",
+        "esc-panic-start",
+        "esc-social-start",
+        "esc-taper-limit"
+      ]
+    },
+    "hyponatremia_risk": {
+      "locator": "§4.4 с.5",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "outside_cessation_scope"
+        }
+      ],
+      "rules": [
+        "esc-adult-adjust",
+        "esc-cyp2c19-start",
+        "esc-elderly-start",
+        "esc-gad-start",
+        "esc-hepatic-start",
+        "esc-panic-start",
+        "esc-social-start",
+        "esc-taper-limit"
+      ]
+    },
+    "suicide_risk": {
+      "locator": "§4.4 с.4–5",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "outside_cessation_scope"
+        }
+      ],
+      "rules": [
+        "esc-adult-adjust",
+        "esc-cyp2c19-start",
+        "esc-elderly-start",
+        "esc-gad-start",
+        "esc-hepatic-start",
+        "esc-panic-start",
+        "esc-social-start",
+        "esc-taper-limit"
+      ]
+    },
+    "akathisia": {
+      "locator": "§4.4 с.5",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "esc-adult-adjust"
+      ]
+    },
+    "diabetes": {
+      "locator": "§4.4 с.4",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "outside_cessation_scope"
+        }
+      ],
+      "rules": [
+        "esc-adult-adjust",
+        "esc-cyp2c19-start",
+        "esc-elderly-start",
+        "esc-gad-start",
+        "esc-hepatic-start",
+        "esc-panic-start",
+        "esc-social-start",
+        "esc-taper-limit"
+      ]
+    },
+    "glaucoma": {
+      "locator": "§4.4 с.7",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "outside_cessation_scope"
+        }
+      ],
+      "rules": [
+        "esc-adult-adjust",
+        "esc-cyp2c19-start",
+        "esc-elderly-start",
+        "esc-gad-start",
+        "esc-hepatic-start",
+        "esc-panic-start",
+        "esc-social-start",
+        "esc-taper-limit"
+      ]
+    },
+    "mania_symptoms": {
+      "locator": "§4.4 с.4",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "ongoing_selected_drug"
+        },
+        {
+          "kind": "ongoing_selected_drug"
+        },
+        {
+          "kind": "ongoing_selected_drug"
+        },
+        {
+          "kind": "ongoing_selected_drug"
+        },
+        {
+          "kind": "ongoing_selected_drug"
+        },
+        {
+          "kind": "ongoing_selected_drug"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "esc-adult-adjust",
+        "esc-cyp2c19-start",
+        "esc-elderly-start",
+        "esc-gad-start",
+        "esc-hepatic-start",
+        "esc-panic-start",
+        "esc-social-start",
+        "esc-taper-limit",
+        "switch-esc-ago",
+        "switch-esc-ser",
+        "switch-ser-esc"
+      ]
+    },
+    "arrhythmia_signs": {
+      "locator": "§4.4 с.6",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "ongoing_selected_drug"
+        },
+        {
+          "kind": "ongoing_selected_drug"
+        },
+        {
+          "kind": "ongoing_selected_drug"
+        },
+        {
+          "kind": "ongoing_selected_drug"
+        },
+        {
+          "kind": "ongoing_selected_drug"
+        },
+        {
+          "kind": "ongoing_selected_drug"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "esc-adult-adjust",
+        "esc-cyp2c19-start",
+        "esc-elderly-start",
+        "esc-gad-start",
+        "esc-hepatic-start",
+        "esc-panic-start",
+        "esc-social-start",
+        "esc-taper-limit",
+        "switch-esc-ago",
+        "switch-esc-ser"
+      ]
+    },
+    "serotonin_syndrome_signs": {
+      "locator": "§4.4 с.5–6",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "ongoing_selected_drug"
+        },
+        {
+          "kind": "ongoing_selected_drug"
+        },
+        {
+          "kind": "ongoing_selected_drug"
+        },
+        {
+          "kind": "ongoing_selected_drug"
+        },
+        {
+          "kind": "ongoing_selected_drug"
+        },
+        {
+          "kind": "ongoing_selected_drug"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "esc-adult-adjust",
+        "esc-cyp2c19-start",
+        "esc-elderly-start",
+        "esc-gad-start",
+        "esc-hepatic-start",
+        "esc-panic-start",
+        "esc-social-start",
+        "esc-taper-limit",
+        "switch-esc-ago",
+        "switch-esc-ser"
+      ]
+    },
+    "maoi_type": {
+      "locator": "§4.5 с.7–8",
+      "types": "record_map",
+      "predicates": [
+        {
+          "kind": "maoi_record"
+        },
+        {
+          "kind": "maoi_record"
+        },
+        {
+          "kind": "maoi_record"
+        },
+        {
+          "kind": "maoi_record"
+        },
+        {
+          "kind": "maoi_record"
+        },
+        {
+          "kind": "maoi_record"
+        },
+        {
+          "kind": "maoi_record"
+        },
+        {
+          "kind": "maoi_record"
+        },
+        {
+          "kind": "maoi_record"
+        }
+      ],
+      "rules": [
+        "esc-adult-adjust",
+        "esc-cyp2c19-start",
+        "esc-elderly-start",
+        "esc-gad-start",
+        "esc-hepatic-start",
+        "esc-panic-start",
+        "esc-social-start",
+        "switch-esc-ser",
+        "switch-ser-esc"
+      ]
+    },
+    "maoi_stopped_at": {
+      "locator": "§4.5 с.7–8",
+      "types": "record_map",
+      "predicates": [
+        {
+          "kind": "stopped_maoi_record"
+        },
+        {
+          "kind": "stopped_maoi_record"
+        },
+        {
+          "kind": "stopped_maoi_record"
+        },
+        {
+          "kind": "stopped_maoi_record"
+        },
+        {
+          "kind": "stopped_maoi_record"
+        },
+        {
+          "kind": "stopped_maoi_record"
+        },
+        {
+          "kind": "stopped_maoi_record"
+        },
+        {
+          "kind": "stopped_maoi_record"
+        },
+        {
+          "kind": "stopped_maoi_record"
+        }
+      ],
+      "rules": [
+        "esc-adult-adjust",
+        "esc-cyp2c19-start",
+        "esc-elderly-start",
+        "esc-gad-start",
+        "esc-hepatic-start",
+        "esc-panic-start",
+        "esc-social-start",
+        "switch-esc-ser",
+        "switch-ser-esc"
+      ]
+    },
+    "coronary_disease": {
+      "locator": "§4.4 с.6",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "esc-cyp2c19-start",
+        "esc-elderly-start",
+        "esc-gad-start",
+        "esc-hepatic-start",
+        "esc-panic-start",
+        "esc-social-start"
+      ]
+    },
+    "electrolyte_disturbance": {
+      "locator": "§4.4 с.6",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "esc-cyp2c19-start",
+        "esc-elderly-start",
+        "esc-gad-start",
+        "esc-hepatic-start",
+        "esc-panic-start",
+        "esc-social-start"
+      ]
+    },
+    "ecg_done": {
+      "locator": "§4.4 с.6",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "ecg_if_cad"
+        },
+        {
+          "kind": "ecg_if_cad"
+        },
+        {
+          "kind": "ecg_if_cad"
+        },
+        {
+          "kind": "ecg_if_cad"
+        },
+        {
+          "kind": "ecg_if_cad"
+        },
+        {
+          "kind": "ecg_if_cad"
+        }
+      ],
+      "rules": [
+        "esc-cyp2c19-start",
+        "esc-elderly-start",
+        "esc-gad-start",
+        "esc-hepatic-start",
+        "esc-panic-start",
+        "esc-social-start"
+      ]
+    },
+    "electrolytes_corrected": {
+      "locator": "§4.4 с.6",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "correction_if_electrolytes"
+        },
+        {
+          "kind": "correction_if_electrolytes"
+        },
+        {
+          "kind": "correction_if_electrolytes"
+        },
+        {
+          "kind": "correction_if_electrolytes"
+        },
+        {
+          "kind": "correction_if_electrolytes"
+        },
+        {
+          "kind": "correction_if_electrolytes"
+        }
+      ],
+      "rules": [
+        "esc-cyp2c19-start",
+        "esc-elderly-start",
+        "esc-gad-start",
+        "esc-hepatic-start",
+        "esc-panic-start",
+        "esc-social-start"
+      ]
+    },
+    "duration_of_use": {
+      "locator": "§4.4 с.6",
+      "types": "number",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        }
+      ],
+      "rules": [
+        "esc-taper-limit"
+      ]
+    },
+    "prior_withdrawal": {
+      "locator": "§4.2 с.2–3; §4.3–4.6 с.4–10",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        }
+      ],
+      "rules": [
+        "esc-taper-limit"
+      ]
+    },
+    "current_withdrawal": {
+      "locator": "§4.4 с.6",
+      "types": "enum",
+      "predicates": [
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "esc-taper-limit"
+      ]
+    },
+    "from_form": {
+      "locator": "§3 с.1–2",
+      "types": "structured_form",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "switch-esc-ago",
+        "switch-esc-ser"
+      ]
+    },
+    "from_taper_plan": {
+      "locator": "§4.2 с.3; §4.4 с.6; physician-supplied stages, no published fixed ladder",
+      "types": "dose_schedule",
+      "predicates": [
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "switch-esc-ago"
+      ]
+    },
+    "withdrawal_severity": {
+      "locator": "§4.2 с.3; §4.4 с.6",
+      "types": "enum",
+      "predicates": [
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "switch-esc-ago"
+      ]
+    },
+    "from_hepatic": {
+      "locator": "§4.2 с.3",
+      "types": "source_hepatic_category",
+      "predicates": [
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "switch-esc-ago"
+      ]
+    },
+    "duration": {
+      "locator": "§4.2 с.2–3; §4.4 с.4–6",
+      "types": "number",
+      "predicates": [
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "switch-esc-ser"
+      ]
+    },
+    "last_dose_time": {
+      "locator": "§4.2 с.2–3; §4.4 с.4–6",
+      "types": "datetime",
+      "predicates": [
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "switch-esc-ser"
+      ]
+    },
+    "withdrawal_symptoms": {
+      "locator": "§4.2 с.2–3; §4.4 с.4–6",
+      "types": "enum",
+      "predicates": [
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "switch-esc-ser"
+      ]
+    },
+    "to_form": {
+      "locator": "§3 с.1–2",
+      "types": "structured_form",
+      "predicates": [
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "switch-ser-esc"
+      ]
+    },
+    "target_applicability": {
+      "locator": "§4.1–4.6 с.2–10",
+      "types": "clinical_assessment",
+      "predicates": [
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "switch-ser-esc"
+      ]
+    },
+    "target_arrhythmia_signs": {
+      "locator": "§4.4 с.6",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "target_ongoing"
+        }
+      ],
+      "rules": [
+        "switch-ser-esc"
+      ]
+    },
+    "target_serotonin_syndrome_signs": {
+      "locator": "§4.4 с.5–6",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "target_ongoing"
+        }
+      ],
+      "rules": [
+        "switch-ser-esc"
+      ]
+    },
+    "target_seizure_state": {
+      "locator": "§4.4 с.4",
+      "types": "enum",
+      "predicates": [
+        {
+          "kind": "target_ongoing"
+        }
+      ],
+      "rules": [
+        "switch-ser-esc"
+      ]
+    }
+  },
+  "RU-FLUVOX": {
+    "age": {
+      "locator": "§4.1–4.3 PDF с.1–3; §4.4–4.6 с.4–11; §8–10 с.19",
+      "types": "integer",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "fluvox-depression-start",
+        "fluvox-taper-limit"
+      ]
+    },
+    "form": {
+      "locator": "§4.1–4.3 PDF с.1–3; §4.4–4.6 с.4–11; §8–10 с.19",
+      "types": "structured_form",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "fluvox-depression-start",
+        "fluvox-taper-limit"
+      ]
+    },
+    "hepatic": {
+      "locator": "§4.1–4.3 PDF с.1–3; §4.4–4.6 с.4–11; §8–10 с.19",
+      "types": "source_hepatic_category",
+      "predicates": [
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "fluvox-depression-start"
+      ]
+    },
+    "pregnancy": {
+      "locator": "§4.1–4.3 PDF с.1–3; §4.4–4.6 с.4–11; §8–10 с.19",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "fluvox-depression-start"
+      ]
+    },
+    "lactation": {
+      "locator": "§4.1–4.3 PDF с.1–3; §4.4–4.6 с.4–11; §8–10 с.19",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "fluvox-depression-start"
+      ]
+    },
+    "medicines": {
+      "locator": "§4.1–4.3 PDF с.1–3; §4.4–4.6 с.4–11; §8–10 с.19",
+      "types": "medication_list",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "reported_source_information"
+        }
+      ],
+      "rules": [
+        "fluvox-depression-start",
+        "fluvox-taper-limit"
+      ]
+    },
+    "allergy": {
+      "locator": "§4.1–4.3 PDF с.1–3; §4.4–4.6 с.4–11; §8–10 с.19",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "fluvox-depression-start"
+      ]
+    },
+    "renal_metric": {
+      "locator": "§4.1–4.3 PDF с.1–3; §4.4–4.6 с.4–11; §8–10 с.19",
+      "types": "enum",
+      "predicates": [
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "fluvox-depression-start"
+      ]
+    },
+    "source_start_choice": {
+      "locator": "§4.1–4.3 PDF с.1–3; §4.4–4.6 с.4–11; §8–10 с.19",
+      "types": "enum",
+      "predicates": [
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "fluvox-depression-start"
+      ]
+    },
+    "maoi_type": {
+      "locator": "§4.3 с.3",
+      "types": "record_map",
+      "predicates": [
+        {
+          "kind": "maoi_record"
+        }
+      ],
+      "rules": [
+        "fluvox-depression-start"
+      ]
+    },
+    "maoi_stopped_at": {
+      "locator": "§4.3 с.3",
+      "types": "record_map",
+      "predicates": [
+        {
+          "kind": "stopped_maoi_record"
+        }
+      ],
+      "rules": [
+        "fluvox-depression-start"
+      ]
+    },
+    "mania": {
+      "locator": "§4.4 с.7",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        }
+      ],
+      "rules": [
+        "fluvox-depression-start"
+      ]
+    },
+    "mania_symptoms": {
+      "locator": "§4.4 с.7",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "ongoing_selected_drug"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "fluvox-depression-start",
+        "fluvox-taper-limit"
+      ]
+    },
+    "akathisia": {
+      "locator": "§4.4 с.5",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        }
+      ],
+      "rules": [
+        "fluvox-depression-start"
+      ]
+    },
+    "bleeding_risk": {
+      "locator": "§4.4 с.6",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        }
+      ],
+      "rules": [
+        "fluvox-depression-start"
+      ]
+    },
+    "suicide_risk": {
+      "locator": "§4.4 с.4",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        }
+      ],
+      "rules": [
+        "fluvox-depression-start"
+      ]
+    },
+    "diabetes": {
+      "locator": "§4.4 с.6",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        }
+      ],
+      "rules": [
+        "fluvox-depression-start"
+      ]
+    },
+    "glaucoma": {
+      "locator": "§4.4 с.6",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        }
+      ],
+      "rules": [
+        "fluvox-depression-start"
+      ]
+    },
+    "ect": {
+      "locator": "§4.4 с.6",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        }
+      ],
+      "rules": [
+        "fluvox-depression-start"
+      ]
+    },
+    "liver_injury_signs": {
+      "locator": "§4.4 с.5",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "ongoing_selected_drug"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "fluvox-depression-start",
+        "fluvox-taper-limit"
+      ]
+    },
+    "seizure_state": {
+      "locator": "§4.4 с.5",
+      "types": "enum",
+      "predicates": [
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "fluvox-depression-start"
+      ]
+    },
+    "serotonin_syndrome_signs": {
+      "locator": "§4.4 с.5",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "ongoing_selected_drug"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "fluvox-depression-start",
+        "fluvox-taper-limit"
+      ]
+    },
+    "new_or_increased_seizures": {
+      "locator": "§4.4 с.5",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "ongoing_selected_drug"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "fluvox-depression-start",
+        "fluvox-taper-limit"
+      ]
+    },
+    "current_dose": {
+      "locator": "§4.1–4.3 PDF с.1–3; §4.4–4.6 с.4–11; §8–10 с.19",
+      "types": "number",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        }
+      ],
+      "rules": [
+        "fluvox-taper-limit"
+      ]
+    },
+    "duration": {
+      "locator": "§4.1–4.3 PDF с.1–3; §4.4–4.6 с.4–11; §8–10 с.19",
+      "types": "number",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        }
+      ],
+      "rules": [
+        "fluvox-taper-limit"
+      ]
+    },
+    "withdrawal_severity": {
+      "locator": "§4.1–4.3 PDF с.1–3; §4.4–4.6 с.4–11; §8–10 с.19",
+      "types": "enum",
+      "predicates": [
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "fluvox-taper-limit"
+      ]
+    },
+    "past_withdrawal": {
+      "locator": "§4.1–4.3 PDF с.1–3; §4.4–4.6 с.4–11; §8–10 с.19",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        }
+      ],
+      "rules": [
+        "fluvox-taper-limit"
+      ]
+    }
+  },
+  "RU-PAROX": {
+    "age": {
+      "locator": "RU-PAROX §4.1 с.1–2; §4.2 с.4; §4.3 с.5",
+      "types": "integer",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "parox-panic-kr",
+        "parox-taper-example",
+        "switch-parox-ago-selected-example",
+        "switch-parox-ago"
+      ]
+    },
+    "form": {
+      "locator": "RU-PAROX §3 с.1; §4.2 с.4",
+      "types": "structured_form",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "parox-panic-kr",
+        "parox-taper-example"
+      ]
+    },
+    "hepatic": {
+      "locator": "RU-PAROX §4.2 с.4",
+      "types": "source_hepatic_category",
+      "predicates": [
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "parox-panic-kr"
+      ]
+    },
+    "renal": {
+      "locator": "RU-PAROX §4.2 с.4",
+      "types": "structured_renal",
+      "predicates": [
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "parox-panic-kr"
+      ]
+    },
+    "pregnancy": {
+      "locator": "RU-PAROX §4.6 с.14–15",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "parox-panic-kr",
+        "switch-parox-ago-selected-example",
+        "switch-parox-ago"
+      ]
+    },
+    "lactation": {
+      "locator": "RU-PAROX §4.6 с.15",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "parox-panic-kr",
+        "switch-parox-ago-selected-example",
+        "switch-parox-ago"
+      ]
+    },
+    "medicines": {
+      "locator": "RU-PAROX §4.3 с.4–5; §4.5 с.11–14",
+      "types": "medication_list",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "parox-panic-kr",
+        "switch-parox-ago-selected-example",
+        "switch-parox-ago"
+      ]
+    },
+    "allergy": {
+      "locator": "RU-PAROX §4.3 с.4",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "parox-panic-kr",
+        "switch-parox-ago-selected-example",
+        "switch-parox-ago"
+      ]
+    },
+    "response": {
+      "locator": "RU-PAROX §4.2 с.3",
+      "types": "enum",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        }
+      ],
+      "rules": [
+        "parox-panic-kr"
+      ]
+    },
+    "tolerability": {
+      "locator": "RU-PAROX §4.2 с.3",
+      "types": "enum",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        }
+      ],
+      "rules": [
+        "parox-panic-kr"
+      ]
+    },
+    "current_dose": {
+      "locator": "RU-PAROX §4.2 с.3–4",
+      "types": "number",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "field_true",
+          "field": "example_selected"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "parox-panic-kr",
+        "parox-taper-example",
+        "switch-parox-ago-selected-example",
+        "switch-parox-ago"
+      ]
+    },
+    "time_at_dose": {
+      "locator": "RU-PAROX §4.2 с.3",
+      "types": "number",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        }
+      ],
+      "rules": [
+        "parox-panic-kr"
+      ]
+    },
+    "maoi_type": {
+      "locator": "RU-PAROX §4.3 с.4–5; §4.5 с.11",
+      "types": "record_map",
+      "predicates": [
+        {
+          "kind": "maoi_record"
+        },
+        {
+          "kind": "maoi_record"
+        },
+        {
+          "kind": "maoi_record"
+        }
+      ],
+      "rules": [
+        "parox-panic-kr",
+        "switch-parox-ago-selected-example",
+        "switch-parox-ago"
+      ]
+    },
+    "maoi_stopped_at": {
+      "locator": "RU-PAROX §4.3 с.4–5; §4.5 с.11",
+      "types": "record_map",
+      "predicates": [
+        {
+          "kind": "stopped_maoi_record"
+        },
+        {
+          "kind": "stopped_maoi_record"
+        },
+        {
+          "kind": "stopped_maoi_record"
+        }
+      ],
+      "rules": [
+        "parox-panic-kr",
+        "switch-parox-ago-selected-example",
+        "switch-parox-ago"
+      ]
+    },
+    "elderly_population": {
+      "locator": "RU-PAROX §4.2 с.4",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "parox-panic-kr"
+      ]
+    },
+    "mania": {
+      "locator": "RU-PAROX §4.4 с.7–8",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        }
+      ],
+      "rules": [
+        "parox-panic-kr"
+      ]
+    },
+    "suicide_risk": {
+      "locator": "RU-PAROX §4.4 с.5–7",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        }
+      ],
+      "rules": [
+        "parox-panic-kr"
+      ]
+    },
+    "akathisia": {
+      "locator": "RU-PAROX §4.4 с.7",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "parox-panic-kr",
+        "switch-parox-ago-selected-example",
+        "switch-parox-ago"
+      ]
+    },
+    "diabetes": {
+      "locator": "RU-PAROX §4.4 с.8",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        }
+      ],
+      "rules": [
+        "parox-panic-kr"
+      ]
+    },
+    "glaucoma": {
+      "locator": "RU-PAROX §4.4 с.9",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "parox-panic-kr",
+        "switch-parox-ago-selected-example",
+        "switch-parox-ago"
+      ]
+    },
+    "bleeding_risk": {
+      "locator": "RU-PAROX §4.4 с.9",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "parox-panic-kr",
+        "switch-parox-ago-selected-example",
+        "switch-parox-ago"
+      ]
+    },
+    "qt_risk": {
+      "locator": "RU-PAROX §4.4 с.9",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "parox-panic-kr",
+        "switch-parox-ago-selected-example",
+        "switch-parox-ago"
+      ]
+    },
+    "ect": {
+      "locator": "RU-PAROX §4.4 с.9",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        }
+      ],
+      "rules": [
+        "parox-panic-kr"
+      ]
+    },
+    "seizure_state": {
+      "locator": "RU-PAROX §4.4 с.8–9",
+      "types": "enum",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "parox-panic-kr",
+        "switch-parox-ago-selected-example",
+        "switch-parox-ago"
+      ]
+    },
+    "serotonin_syndrome_signs": {
+      "locator": "RU-PAROX §4.4 с.7",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "ongoing_selected_drug"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "parox-panic-kr",
+        "parox-taper-example",
+        "switch-parox-ago-selected-example",
+        "switch-parox-ago"
+      ]
+    },
+    "bipolar_risk_screening": {
+      "locator": "RU-PAROX §4.4 с.7–8",
+      "types": "enum",
+      "predicates": [
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "parox-panic-kr"
+      ]
+    },
+    "duration": {
+      "locator": "RU-PAROX §4.4 с.9–10; RU-DEP Б5 с.105–106, риск синдрома отмены",
+      "types": "number",
+      "predicates": [
+        {
+          "kind": "all_equals",
+          "values": {
+            "example_selected": true,
+            "current_dose": 40
+          }
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "parox-taper-example",
+        "switch-parox-ago-selected-example"
+      ]
+    },
+    "past_withdrawal": {
+      "locator": "RU-PAROX §4.4 с.9–10; RU-DEP Б5 с.105–106, риск синдрома отмены",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "all_equals",
+          "values": {
+            "example_selected": true,
+            "current_dose": 40
+          }
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "parox-taper-example",
+        "switch-parox-ago-selected-example"
+      ]
+    },
+    "withdrawal_severity": {
+      "locator": "RU-PAROX §4.2 с.3–4; §4.4 с.9–10",
+      "types": "enum",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "parox-taper-example",
+        "switch-parox-ago-selected-example",
+        "switch-parox-ago"
+      ]
+    },
+    "example_selected": {
+      "locator": "RU-PAROX §4.2 с.3–4",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "parox-taper-example",
+        "switch-parox-ago-selected-example"
+      ]
+    },
+    "new_seizures": {
+      "locator": "§4.4 с.9",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "parox-taper-example"
+      ]
+    },
+    "from_form": {
+      "locator": "RU-PAROX §3 с.1; §4.2 с.4",
+      "types": "structured_form",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "switch-parox-ago-selected-example",
+        "switch-parox-ago"
+      ]
+    },
+    "from_renal": {
+      "locator": "RU-PAROX §4.2 с.4",
+      "types": "structured_renal",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "switch-parox-ago-selected-example",
+        "switch-parox-ago"
+      ]
+    },
+    "from_hepatic": {
+      "locator": "RU-PAROX §4.2 с.4",
+      "types": "source_hepatic_category",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "switch-parox-ago-selected-example",
+        "switch-parox-ago"
+      ]
+    },
+    "from_taper_plan": {
+      "locator": "RU-PAROX §4.2 с.3–4; §4.4 с.9–10",
+      "types": "dose_schedule",
+      "predicates": [
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "switch-parox-ago"
+      ]
+    }
+  },
+  "RU-PHEN": {
+    "age": {
+      "locator": "§4.2 с.2–3; §4.3 с.3",
+      "types": "integer",
+      "predicates": [
+        {
+          "kind": "reported_source_information"
+        }
+      ],
+      "rules": [
+        "phen-taper-limit"
+      ]
+    },
+    "form": {
+      "locator": "§1–3 с.1; §4.2 с.3",
+      "types": "structured_form",
+      "predicates": [
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "phen-taper-limit"
+      ]
+    },
+    "current_dose": {
+      "locator": "§4.2 с.2",
+      "types": "number",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        }
+      ],
+      "rules": [
+        "phen-taper-limit"
+      ]
+    },
+    "duration": {
+      "locator": "§4.2 с.2; §4.4 с.4",
+      "types": "number",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        }
+      ],
+      "rules": [
+        "phen-taper-limit"
+      ]
+    },
+    "withdrawal_severity": {
+      "locator": "§4.4 с.4, синдром отмены; индивидуальное решение врача без опубликованного правила hold/resumption/slower",
+      "types": "enum",
+      "predicates": [
+        {
+          "kind": "reported_source_information"
+        }
+      ],
+      "rules": [
+        "phen-taper-limit"
+      ]
+    },
+    "past_withdrawal": {
+      "locator": "§4.4 с.4",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        }
+      ],
+      "rules": [
+        "phen-taper-limit"
+      ]
+    },
+    "unusual_reactions": {
+      "locator": "§4.4 с.4",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "phen-taper-limit"
+      ]
+    },
+    "medicines": {
+      "locator": "§1–3 с.1; §4.1–4.2 с.1–3; §4.3–4.4 с.3–4; §4.5–4.6 с.4–5",
+      "types": "medication_list",
+      "predicates": [
+        {
+          "kind": "reported_source_information"
+        }
+      ],
+      "rules": [
+        "phen-taper-limit"
+      ]
+    }
+  },
+  "RU-PREG": {
+    "age": {
+      "locator": "§4.1 с.3; §4.2 с.5; §4.3 с.6",
+      "types": "integer",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "reported_source_information"
+        }
+      ],
+      "rules": [
+        "preg-gad-adjust",
+        "preg-gad-start",
+        "preg-renal-start",
+        "preg-taper-limit"
+      ]
+    },
+    "form": {
+      "locator": "§1–3 с.1–2; §4.2 с.3,5",
+      "types": "structured_form",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "preg-gad-adjust",
+        "preg-gad-start",
+        "preg-renal-start",
+        "preg-taper-limit"
+      ]
+    },
+    "pregnancy": {
+      "locator": "§4.4 с.9; §4.6 с.12",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "outside_cessation_scope"
+        }
+      ],
+      "rules": [
+        "preg-gad-adjust",
+        "preg-gad-start",
+        "preg-renal-start",
+        "preg-taper-limit"
+      ]
+    },
+    "lactation": {
+      "locator": "§4.6 с.12–13",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "outside_cessation_scope"
+        }
+      ],
+      "rules": [
+        "preg-gad-adjust",
+        "preg-gad-start",
+        "preg-renal-start",
+        "preg-taper-limit"
+      ]
+    },
+    "medicines": {
+      "locator": "§4.4 с.7–8,10; §4.5 с.11–12",
+      "types": "medication_list",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "reported_source_information"
+        }
+      ],
+      "rules": [
+        "preg-gad-adjust",
+        "preg-gad-start",
+        "preg-renal-start",
+        "preg-taper-limit"
+      ]
+    },
+    "allergy": {
+      "locator": "§4.3 с.6",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "outside_cessation_scope"
+        }
+      ],
+      "rules": [
+        "preg-gad-adjust",
+        "preg-gad-start",
+        "preg-renal-start",
+        "preg-taper-limit"
+      ]
+    },
+    "clcr": {
+      "locator": "§4.2 с.4–5, таблица 1 с.5; формула с.4 не исполняется",
+      "types": "number",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "outside_cessation_scope"
+        }
+      ],
+      "rules": [
+        "preg-gad-adjust",
+        "preg-gad-start",
+        "preg-renal-start",
+        "preg-taper-limit"
+      ]
+    },
+    "dialysis": {
+      "locator": "§4.2 с.4–5, таблица 1",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "outside_cessation_scope"
+        }
+      ],
+      "rules": [
+        "preg-gad-adjust",
+        "preg-gad-start",
+        "preg-renal-start",
+        "preg-taper-limit"
+      ]
+    },
+    "substance_use": {
+      "locator": "§4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "outside_cessation_scope"
+        }
+      ],
+      "rules": [
+        "preg-gad-adjust",
+        "preg-gad-start",
+        "preg-renal-start",
+        "preg-taper-limit"
+      ]
+    },
+    "respiratory": {
+      "locator": "§4.4 с.7–8",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "outside_cessation_scope"
+        }
+      ],
+      "rules": [
+        "preg-gad-adjust",
+        "preg-gad-start",
+        "preg-renal-start",
+        "preg-taper-limit"
+      ]
+    },
+    "frequency": {
+      "locator": "§4.2 с.3,5",
+      "types": "enum",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "preg-gad-adjust",
+        "preg-gad-start"
+      ]
+    },
+    "current_dose": {
+      "locator": "§4.2 с.3–5; §4.4 с.9",
+      "types": "number",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "reported_context"
+        }
+      ],
+      "rules": [
+        "preg-gad-adjust",
+        "preg-taper-limit"
+      ]
+    },
+    "time_at_dose": {
+      "locator": "§4.2 с.3, ГТР",
+      "types": "number",
+      "predicates": [
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "preg-gad-adjust"
+      ]
+    },
+    "response": {
+      "locator": "§4.2 с.3, ГТР",
+      "types": "enum",
+      "predicates": [
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "preg-gad-adjust"
+      ]
+    },
+    "tolerability": {
+      "locator": "§4.2 с.3, ГТР",
+      "types": "enum",
+      "predicates": [
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "preg-gad-adjust"
+      ]
+    },
+    "adherence": {
+      "locator": "§4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4",
+      "types": "enum",
+      "predicates": [
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "preg-gad-adjust"
+      ]
+    },
+    "angioedema": {
+      "locator": "§4.4 с.6",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "ongoing_selected_drug"
+        },
+        {
+          "kind": "ongoing_selected_drug"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "preg-gad-adjust",
+        "preg-gad-start",
+        "preg-renal-start",
+        "preg-taper-limit"
+      ]
+    },
+    "severe_skin_reaction": {
+      "locator": "§4.4 с.6",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "ongoing_selected_drug"
+        },
+        {
+          "kind": "ongoing_selected_drug"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "preg-gad-adjust",
+        "preg-gad-start",
+        "preg-renal-start",
+        "preg-taper-limit"
+      ]
+    },
+    "galactose_intolerance": {
+      "locator": "§4.4 с.10, вспомогательные вещества",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "outside_cessation_scope"
+        }
+      ],
+      "rules": [
+        "preg-gad-adjust",
+        "preg-gad-start",
+        "preg-renal-start",
+        "preg-taper-limit"
+      ]
+    },
+    "complete_lactase_deficiency": {
+      "locator": "§4.4 с.10, вспомогательные вещества",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "outside_cessation_scope"
+        }
+      ],
+      "rules": [
+        "preg-gad-adjust",
+        "preg-gad-start",
+        "preg-renal-start",
+        "preg-taper-limit"
+      ]
+    },
+    "glucose_galactose_malabsorption": {
+      "locator": "§4.4 с.10, вспомогательные вещества",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "outside_cessation_scope"
+        }
+      ],
+      "rules": [
+        "preg-gad-adjust",
+        "preg-gad-start",
+        "preg-renal-start",
+        "preg-taper-limit"
+      ]
+    },
+    "suicide_risk": {
+      "locator": "§4.4 с.8",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "outside_cessation_scope"
+        }
+      ],
+      "rules": [
+        "preg-gad-adjust",
+        "preg-gad-start",
+        "preg-renal-start",
+        "preg-taper-limit"
+      ]
+    },
+    "heart_failure": {
+      "locator": "§4.4 с.10",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "outside_cessation_scope"
+        }
+      ],
+      "rules": [
+        "preg-gad-adjust",
+        "preg-gad-start",
+        "preg-renal-start",
+        "preg-taper-limit"
+      ]
+    },
+    "diabetes_weight_gain": {
+      "locator": "§4.4 с.6",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "outside_cessation_scope"
+        }
+      ],
+      "rules": [
+        "preg-gad-adjust",
+        "preg-gad-start",
+        "preg-renal-start",
+        "preg-taper-limit"
+      ]
+    },
+    "misuse_risk_assessment": {
+      "locator": "§4.4 с.8–9",
+      "types": "enum",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "preg-gad-adjust",
+        "preg-gad-start",
+        "preg-renal-start"
+      ]
+    },
+    "reproductive_population": {
+      "locator": "§4.4 с.9; §4.6 с.12",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "preg-gad-adjust",
+        "preg-gad-start",
+        "preg-renal-start"
+      ]
+    },
+    "effective_contraception": {
+      "locator": "§4.6 с.12",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "field_true",
+          "field": "reproductive_population"
+        },
+        {
+          "kind": "field_true",
+          "field": "reproductive_population"
+        },
+        {
+          "kind": "field_true",
+          "field": "reproductive_population"
+        }
+      ],
+      "rules": [
+        "preg-gad-adjust",
+        "preg-gad-start",
+        "preg-renal-start"
+      ]
+    },
+    "current_suicidal_thoughts_or_behavior": {
+      "locator": "§4.4 с.8",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_current_event"
+        },
+        {
+          "kind": "reported_current_event"
+        },
+        {
+          "kind": "reported_current_event"
+        },
+        {
+          "kind": "reported_current_event"
+        }
+      ],
+      "rules": [
+        "preg-gad-adjust",
+        "preg-gad-start",
+        "preg-renal-start",
+        "preg-taper-limit"
+      ]
+    },
+    "duration_of_use": {
+      "locator": "§4.4 с.9",
+      "types": "number",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        }
+      ],
+      "rules": [
+        "preg-taper-limit"
+      ]
+    },
+    "prior_withdrawal": {
+      "locator": "§4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        }
+      ],
+      "rules": [
+        "preg-taper-limit"
+      ]
+    },
+    "current_withdrawal": {
+      "locator": "§4.2 с.4; §4.4 с.9",
+      "types": "enum",
+      "predicates": [
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "preg-taper-limit"
+      ]
+    }
+  },
+  "RU-SER": {
+    "age": {
+      "locator": "§4.4 с.5, дети; §4.1 с.1",
+      "types": "integer",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "ser-adult-adjust",
+        "ser-panic-start",
+        "ser-social-start",
+        "ser-taper-limit",
+        "switch-ser-ago"
+      ]
+    },
+    "form": {
+      "locator": "§3 с.1; §4.2 с.2",
+      "types": "structured_form",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "ser-adult-adjust",
+        "ser-panic-start",
+        "ser-social-start",
+        "ser-taper-limit"
+      ]
+    },
+    "pregnancy": {
+      "locator": "§4.6 с.10–11",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "outside_cessation_scope"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "ser-adult-adjust",
+        "ser-panic-start",
+        "ser-social-start",
+        "ser-taper-limit",
+        "switch-ser-ago"
+      ]
+    },
+    "lactation": {
+      "locator": "§4.6 с.11",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "outside_cessation_scope"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "ser-adult-adjust",
+        "ser-panic-start",
+        "ser-social-start",
+        "ser-taper-limit",
+        "switch-ser-ago"
+      ]
+    },
+    "medicines": {
+      "locator": "§4.3 с.3; §4.5 с.7–11",
+      "types": "medication_list",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "reported_source_information"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "ser-adult-adjust",
+        "ser-panic-start",
+        "ser-social-start",
+        "ser-taper-limit",
+        "switch-esc-ser",
+        "switch-ser-ago",
+        "switch-ser-esc"
+      ]
+    },
+    "allergy": {
+      "locator": "§4.3 с.3",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "outside_cessation_scope"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "ser-adult-adjust",
+        "ser-panic-start",
+        "ser-social-start",
+        "ser-taper-limit",
+        "switch-ser-ago"
+      ]
+    },
+    "hepatic": {
+      "locator": "§4.2 с.2; §4.4 с.6",
+      "types": "source_hepatic_category",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "outside_cessation_scope"
+        }
+      ],
+      "rules": [
+        "ser-adult-adjust",
+        "ser-panic-start",
+        "ser-social-start",
+        "ser-taper-limit"
+      ]
+    },
+    "mania": {
+      "locator": "§4.4 с.4",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "outside_cessation_scope"
+        }
+      ],
+      "rules": [
+        "ser-adult-adjust",
+        "ser-panic-start",
+        "ser-social-start",
+        "ser-taper-limit"
+      ]
+    },
+    "seizure_state": {
+      "locator": "§4.4 с.4",
+      "types": "enum",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "ser-adult-adjust",
+        "ser-panic-start",
+        "ser-social-start",
+        "ser-taper-limit",
+        "switch-ser-ago"
+      ]
+    },
+    "current_dose": {
+      "locator": "§4.2 с.2–3",
+      "types": "number",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "ser-adult-adjust",
+        "ser-taper-limit",
+        "switch-ser-ago",
+        "switch-ser-esc"
+      ]
+    },
+    "time_at_dose": {
+      "locator": "§4.2 с.2",
+      "types": "number",
+      "predicates": [
+        {
+          "kind": "increase",
+          "actions": [
+            "increase",
+            "not_chosen"
+          ]
+        }
+      ],
+      "rules": [
+        "ser-adult-adjust"
+      ]
+    },
+    "response": {
+      "locator": "§4.2 с.2",
+      "types": "enum",
+      "predicates": [
+        {
+          "kind": "action_choice",
+          "actions": [
+            "not_chosen",
+            "unknown",
+            "not_assessed"
+          ]
+        }
+      ],
+      "rules": [
+        "ser-adult-adjust"
+      ]
+    },
+    "tolerability": {
+      "locator": "§4.2 с.2; §4.4 с.6",
+      "types": "enum",
+      "predicates": [
+        {
+          "kind": "action_choice",
+          "actions": [
+            "not_chosen",
+            "unknown",
+            "not_assessed"
+          ]
+        }
+      ],
+      "rules": [
+        "ser-adult-adjust"
+      ]
+    },
+    "qt_risk": {
+      "locator": "§4.4 с.4",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "outside_cessation_scope"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "ser-adult-adjust",
+        "ser-panic-start",
+        "ser-social-start",
+        "ser-taper-limit",
+        "switch-ser-ago"
+      ]
+    },
+    "bleeding_risk": {
+      "locator": "§4.4 с.5",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "outside_cessation_scope"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "ser-adult-adjust",
+        "ser-panic-start",
+        "ser-social-start",
+        "ser-taper-limit",
+        "switch-ser-ago"
+      ]
+    },
+    "hyponatremia_risk": {
+      "locator": "§4.4 с.5–6",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "outside_cessation_scope"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "ser-adult-adjust",
+        "ser-panic-start",
+        "ser-social-start",
+        "ser-taper-limit",
+        "switch-ser-ago"
+      ]
+    },
+    "suicide_risk": {
+      "locator": "§4.4 с.4–5",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "outside_cessation_scope"
+        }
+      ],
+      "rules": [
+        "ser-adult-adjust",
+        "ser-panic-start",
+        "ser-social-start",
+        "ser-taper-limit"
+      ]
+    },
+    "akathisia": {
+      "locator": "§4.4 с.6",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "increase",
+          "actions": [
+            "increase",
+            "not_chosen"
+          ]
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "ser-adult-adjust",
+        "ser-panic-start",
+        "ser-social-start",
+        "switch-ser-ago"
+      ]
+    },
+    "clinician_action": {
+      "locator": "§4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22",
+      "types": "enum",
+      "predicates": [
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "ser-adult-adjust"
+      ]
+    },
+    "maoi_type": {
+      "locator": "§4.3 с.3; §4.5 с.7",
+      "types": "record_map",
+      "predicates": [
+        {
+          "kind": "maoi_record"
+        },
+        {
+          "kind": "maoi_record"
+        },
+        {
+          "kind": "maoi_record"
+        },
+        {
+          "kind": "maoi_record"
+        },
+        {
+          "kind": "maoi_record"
+        },
+        {
+          "kind": "maoi_record"
+        }
+      ],
+      "rules": [
+        "ser-adult-adjust",
+        "ser-panic-start",
+        "ser-social-start",
+        "switch-esc-ser",
+        "switch-ser-ago",
+        "switch-ser-esc"
+      ]
+    },
+    "maoi_stopped_at": {
+      "locator": "§4.3 с.3; §4.5 с.7",
+      "types": "record_map",
+      "predicates": [
+        {
+          "kind": "stopped_maoi_record"
+        },
+        {
+          "kind": "stopped_maoi_record"
+        },
+        {
+          "kind": "stopped_maoi_record"
+        },
+        {
+          "kind": "stopped_maoi_record"
+        },
+        {
+          "kind": "stopped_maoi_record"
+        },
+        {
+          "kind": "stopped_maoi_record"
+        }
+      ],
+      "rules": [
+        "ser-adult-adjust",
+        "ser-panic-start",
+        "ser-social-start",
+        "switch-esc-ser",
+        "switch-ser-ago",
+        "switch-ser-esc"
+      ]
+    },
+    "mania_symptoms": {
+      "locator": "§4.4 с.4",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "ongoing_selected_drug"
+        },
+        {
+          "kind": "ongoing_selected_drug"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "ser-adult-adjust",
+        "ser-panic-start",
+        "ser-social-start",
+        "ser-taper-limit",
+        "switch-esc-ser",
+        "switch-ser-ago",
+        "switch-ser-esc"
+      ]
+    },
+    "symptomatic_hyponatremia": {
+      "locator": "§4.4 с.6",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_current_event"
+        },
+        {
+          "kind": "reported_current_event"
+        },
+        {
+          "kind": "reported_current_event"
+        },
+        {
+          "kind": "reported_current_event"
+        },
+        {
+          "kind": "reported_current_event"
+        },
+        {
+          "kind": "reported_current_event"
+        }
+      ],
+      "rules": [
+        "ser-adult-adjust",
+        "ser-panic-start",
+        "ser-social-start",
+        "ser-taper-limit",
+        "switch-ser-ago",
+        "switch-ser-esc"
+      ]
+    },
+    "duration_of_use": {
+      "locator": "§4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22",
+      "types": "number",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        }
+      ],
+      "rules": [
+        "ser-taper-limit"
+      ]
+    },
+    "prior_withdrawal": {
+      "locator": "§4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        }
+      ],
+      "rules": [
+        "ser-taper-limit"
+      ]
+    },
+    "current_withdrawal": {
+      "locator": "§4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22",
+      "types": "enum",
+      "predicates": [
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "ser-taper-limit"
+      ]
+    },
+    "to_form": {
+      "locator": "§3 с.1",
+      "types": "structured_form",
+      "predicates": [
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "switch-esc-ser"
+      ]
+    },
+    "target_applicability": {
+      "locator": "§4.1–4.6 с.1–11",
+      "types": "clinical_assessment",
+      "predicates": [
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "switch-esc-ser"
+      ]
+    },
+    "target_new_seizures": {
+      "locator": "§4.4 с.4",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "target_ongoing"
+        }
+      ],
+      "rules": [
+        "switch-esc-ser"
+      ]
+    },
+    "target_symptomatic_hyponatremia": {
+      "locator": "§4.4 с.6",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_current_event"
+        }
+      ],
+      "rules": [
+        "switch-esc-ser"
+      ]
+    },
+    "from_form": {
+      "locator": "§4.2 с.2–3, прекращение; §3 с.1, форма",
+      "types": "structured_form",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "switch-ser-ago",
+        "switch-ser-esc"
+      ]
+    },
+    "from_taper_plan": {
+      "locator": "§4.2 с.2–3, прекращение; §3 с.1, форма",
+      "types": "dose_schedule",
+      "predicates": [
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "switch-ser-ago"
+      ]
+    },
+    "withdrawal_severity": {
+      "locator": "§4.2 с.2–3, прекращение; §3 с.1, форма",
+      "types": "enum",
+      "predicates": [
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "switch-ser-ago"
+      ]
+    },
+    "from_hepatic": {
+      "locator": "§4.2 с.2, нарушение функции печени",
+      "types": "source_hepatic_category",
+      "predicates": [
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "switch-ser-ago"
+      ]
+    },
+    "duration": {
+      "locator": "§4.2 с.2–3; §4.4 с.4–6",
+      "types": "number",
+      "predicates": [
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "switch-ser-esc"
+      ]
+    },
+    "last_dose_time": {
+      "locator": "§4.2 с.2–3; §4.4 с.4–6",
+      "types": "datetime",
+      "predicates": [
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "switch-ser-esc"
+      ]
+    },
+    "withdrawal_symptoms": {
+      "locator": "§4.2 с.2–3; §4.4 с.4–6",
+      "types": "enum",
+      "predicates": [
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "switch-ser-esc"
+      ]
+    },
+    "new_seizures": {
+      "locator": "§4.4 с.4",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "switch-ser-esc"
+      ]
+    }
+  },
+  "RU-VENLA-XR": {
+    "age": {
+      "locator": "§4.2 с.4; §4.3 с.5",
+      "types": "integer",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "venla-xr-gad-start",
+        "venla-xr-panic-form-limit",
+        "venla-xr-social-start",
+        "venla-xr-taper-limit"
+      ]
+    },
+    "form": {
+      "locator": "§1–3 с.1; §4.2 с.5",
+      "types": "structured_form",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "venla-xr-gad-start",
+        "venla-xr-panic-form-limit",
+        "venla-xr-social-start",
+        "venla-xr-taper-limit"
+      ]
+    },
+    "hepatic": {
+      "locator": "§4.2 с.4; §4.3 с.5",
+      "types": "source_hepatic_category",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "venla-xr-gad-start",
+        "venla-xr-panic-form-limit",
+        "venla-xr-social-start"
+      ]
+    },
+    "pregnancy": {
+      "locator": "§4.3 с.5; §4.6 с.17–18 (противоречие формулировок, обычная ветка запрещена)",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "venla-xr-gad-start",
+        "venla-xr-panic-form-limit",
+        "venla-xr-social-start"
+      ]
+    },
+    "lactation": {
+      "locator": "§4.3 с.5; §4.6 с.18",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "venla-xr-gad-start",
+        "venla-xr-panic-form-limit",
+        "venla-xr-social-start"
+      ]
+    },
+    "medicines": {
+      "locator": "§4.3 с.5; §4.5 с.13–17",
+      "types": "medication_list",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "reported_source_information"
+        }
+      ],
+      "rules": [
+        "venla-xr-gad-start",
+        "venla-xr-panic-form-limit",
+        "venla-xr-social-start",
+        "venla-xr-taper-limit"
+      ]
+    },
+    "allergy": {
+      "locator": "§4.3 с.5",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "venla-xr-gad-start",
+        "venla-xr-panic-form-limit",
+        "venla-xr-social-start"
+      ]
+    },
+    "renal_metric": {
+      "locator": "§4.2 с.4; §4.3 с.5",
+      "types": "structured_renal",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "venla-xr-gad-start",
+        "venla-xr-panic-form-limit",
+        "venla-xr-social-start"
+      ]
+    },
+    "maoi_type": {
+      "locator": "§4.5 с.13–14",
+      "types": "record_map",
+      "predicates": [
+        {
+          "kind": "maoi_record"
+        },
+        {
+          "kind": "maoi_record"
+        },
+        {
+          "kind": "maoi_record"
+        }
+      ],
+      "rules": [
+        "venla-xr-gad-start",
+        "venla-xr-panic-form-limit",
+        "venla-xr-social-start"
+      ]
+    },
+    "maoi_stopped_at": {
+      "locator": "§4.5 с.13–14",
+      "types": "record_map",
+      "predicates": [
+        {
+          "kind": "stopped_maoi_record"
+        },
+        {
+          "kind": "stopped_maoi_record"
+        },
+        {
+          "kind": "stopped_maoi_record"
+        }
+      ],
+      "rules": [
+        "venla-xr-gad-start",
+        "venla-xr-panic-form-limit",
+        "venla-xr-social-start"
+      ]
+    },
+    "recent_infarction": {
+      "locator": "§4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        }
+      ],
+      "rules": [
+        "venla-xr-gad-start",
+        "venla-xr-panic-form-limit",
+        "venla-xr-social-start"
+      ]
+    },
+    "unstable_angina": {
+      "locator": "§4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        }
+      ],
+      "rules": [
+        "venla-xr-gad-start",
+        "venla-xr-panic-form-limit",
+        "venla-xr-social-start"
+      ]
+    },
+    "heart_failure": {
+      "locator": "§4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        }
+      ],
+      "rules": [
+        "venla-xr-gad-start",
+        "venla-xr-panic-form-limit",
+        "venla-xr-social-start"
+      ]
+    },
+    "coronary_disease": {
+      "locator": "§4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        }
+      ],
+      "rules": [
+        "venla-xr-gad-start",
+        "venla-xr-panic-form-limit",
+        "venla-xr-social-start"
+      ]
+    },
+    "ecg_change": {
+      "locator": "§4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        }
+      ],
+      "rules": [
+        "venla-xr-gad-start",
+        "venla-xr-panic-form-limit",
+        "venla-xr-social-start"
+      ]
+    },
+    "qt_risk": {
+      "locator": "§4.4 с.10; §4.5 с.15–16",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "venla-xr-gad-start",
+        "venla-xr-panic-form-limit",
+        "venla-xr-social-start"
+      ]
+    },
+    "electrolyte_imbalance": {
+      "locator": "§4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        }
+      ],
+      "rules": [
+        "venla-xr-gad-start",
+        "venla-xr-panic-form-limit",
+        "venla-xr-social-start"
+      ]
+    },
+    "hypertension": {
+      "locator": "§4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        }
+      ],
+      "rules": [
+        "venla-xr-gad-start",
+        "venla-xr-panic-form-limit",
+        "venla-xr-social-start"
+      ]
+    },
+    "tachycardia": {
+      "locator": "§4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        }
+      ],
+      "rules": [
+        "venla-xr-gad-start",
+        "venla-xr-panic-form-limit",
+        "venla-xr-social-start"
+      ]
+    },
+    "seizure_history": {
+      "locator": "§4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        }
+      ],
+      "rules": [
+        "venla-xr-gad-start",
+        "venla-xr-panic-form-limit",
+        "venla-xr-social-start"
+      ]
+    },
+    "glaucoma": {
+      "locator": "§4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        }
+      ],
+      "rules": [
+        "venla-xr-gad-start",
+        "venla-xr-panic-form-limit",
+        "venla-xr-social-start"
+      ]
+    },
+    "mania": {
+      "locator": "§4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        }
+      ],
+      "rules": [
+        "venla-xr-gad-start",
+        "venla-xr-panic-form-limit",
+        "venla-xr-social-start"
+      ]
+    },
+    "bleeding_risk": {
+      "locator": "§4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        }
+      ],
+      "rules": [
+        "venla-xr-gad-start",
+        "venla-xr-panic-form-limit",
+        "venla-xr-social-start"
+      ]
+    },
+    "low_body_mass": {
+      "locator": "§4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        }
+      ],
+      "rules": [
+        "venla-xr-gad-start",
+        "venla-xr-panic-form-limit",
+        "venla-xr-social-start"
+      ]
+    },
+    "urinary_impairment": {
+      "locator": "§4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        }
+      ],
+      "rules": [
+        "venla-xr-gad-start",
+        "venla-xr-panic-form-limit",
+        "venla-xr-social-start"
+      ]
+    },
+    "low_blood_pressure": {
+      "locator": "§4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        }
+      ],
+      "rules": [
+        "venla-xr-gad-start",
+        "venla-xr-panic-form-limit",
+        "venla-xr-social-start"
+      ]
+    },
+    "diabetes": {
+      "locator": "§4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        }
+      ],
+      "rules": [
+        "venla-xr-gad-start",
+        "venla-xr-panic-form-limit",
+        "venla-xr-social-start"
+      ]
+    },
+    "recent_stroke": {
+      "locator": "§4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        }
+      ],
+      "rules": [
+        "venla-xr-gad-start",
+        "venla-xr-panic-form-limit",
+        "venla-xr-social-start"
+      ]
+    },
+    "hyponatremia_risk": {
+      "locator": "§4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        }
+      ],
+      "rules": [
+        "venla-xr-gad-start",
+        "venla-xr-panic-form-limit",
+        "venla-xr-social-start"
+      ]
+    },
+    "ect": {
+      "locator": "§4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        }
+      ],
+      "rules": [
+        "venla-xr-gad-start",
+        "venla-xr-panic-form-limit",
+        "venla-xr-social-start"
+      ]
+    },
+    "hypercholesterolemia": {
+      "locator": "§4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        }
+      ],
+      "rules": [
+        "venla-xr-gad-start",
+        "venla-xr-panic-form-limit",
+        "venla-xr-social-start"
+      ]
+    },
+    "alcohol_use": {
+      "locator": "§4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        }
+      ],
+      "rules": [
+        "venla-xr-gad-start",
+        "venla-xr-panic-form-limit",
+        "venla-xr-social-start"
+      ]
+    },
+    "suicide_risk": {
+      "locator": "§4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        },
+        {
+          "kind": "reported_context"
+        }
+      ],
+      "rules": [
+        "venla-xr-gad-start",
+        "venla-xr-panic-form-limit",
+        "venla-xr-social-start"
+      ]
+    },
+    "pregnancy_suspected": {
+      "locator": "§4.3 с.5",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "venla-xr-gad-start",
+        "venla-xr-panic-form-limit",
+        "venla-xr-social-start"
+      ]
+    },
+    "diastolic_BP": {
+      "locator": "§4.4 с.9",
+      "types": "number",
+      "predicates": [
+        {
+          "kind": "ongoing_selected_drug"
+        },
+        {
+          "kind": "ongoing_selected_drug"
+        },
+        {
+          "kind": "ongoing_selected_drug"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "venla-xr-gad-start",
+        "venla-xr-panic-form-limit",
+        "venla-xr-social-start",
+        "venla-xr-taper-limit"
+      ]
+    },
+    "current_allergic_reaction": {
+      "locator": "§4.4 с.13",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "ongoing_selected_drug"
+        },
+        {
+          "kind": "ongoing_selected_drug"
+        },
+        {
+          "kind": "ongoing_selected_drug"
+        },
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "venla-xr-gad-start",
+        "venla-xr-panic-form-limit",
+        "venla-xr-social-start",
+        "venla-xr-taper-limit"
+      ]
+    },
+    "suspected_serotonin_syndrome": {
+      "locator": "§4.4 с.8",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_current_event"
+        },
+        {
+          "kind": "reported_current_event"
+        },
+        {
+          "kind": "reported_current_event"
+        },
+        {
+          "kind": "reported_current_event"
+        }
+      ],
+      "rules": [
+        "venla-xr-gad-start",
+        "venla-xr-panic-form-limit",
+        "venla-xr-social-start",
+        "venla-xr-taper-limit"
+      ]
+    },
+    "current_dose": {
+      "locator": "§4.2 с.4–5",
+      "types": "number",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        }
+      ],
+      "rules": [
+        "venla-xr-taper-limit"
+      ]
+    },
+    "duration": {
+      "locator": "§4.2 с.4–5; §4.4 с.11–12",
+      "types": "number",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        }
+      ],
+      "rules": [
+        "venla-xr-taper-limit"
+      ]
+    },
+    "withdrawal_severity": {
+      "locator": "§4.4 с.11–12",
+      "types": "enum",
+      "predicates": [
+        {
+          "kind": "always"
+        }
+      ],
+      "rules": [
+        "venla-xr-taper-limit"
+      ]
+    },
+    "past_withdrawal": {
+      "locator": "§4.4 с.11–12",
+      "types": "boolean",
+      "predicates": [
+        {
+          "kind": "reported_context"
+        }
+      ],
+      "rules": [
+        "venla-xr-taper-limit"
+      ]
+    }
+  }
+}

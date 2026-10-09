@@ -1,0 +1,316 @@
+{
+  "snapshot_sha256": "8fe52f02f06299e87cae714e128d52cd86d2c13af213ddabf68587001fe8206e",
+  "files": [
+    {
+      "path": "sources.json",
+      "sha256": "af8a195dbf4ca9cf6d979cfb5d32f973b142d63e6261c6bc5a48d51a513f482c"
+    },
+    {
+      "path": "input_contracts.yaml",
+      "sha256": "cfbae4a020b0d3b252ebefad13766cb9405601dbd8c051ed08a3d5fe26c49c9c"
+    },
+    {
+      "path": "result_contracts.yaml",
+      "sha256": "4cc527036afe50efe23d140269ec882d259c85831461b3f753a36ad3f16fe3bd"
+    },
+    {
+      "path": "full_scenarios.json",
+      "sha256": "a43b442618e440a9cb34532f667522b4ea353c8ce4a4de1d3b59e997c324925b"
+    },
+    {
+      "path": "necessity_decisions.json",
+      "sha256": "f298603247ca2239da4444fedee9552a458ef477d63b084812af2d9dea0b235e"
+    },
+    {
+      "path": "necessity_policy.yaml",
+      "sha256": "f6fa24096dff9623a4c604a343cae2ec5d21c5bd22f8b82e66384e829f4d12c4"
+    },
+    {
+      "path": "actual_question_paths.json",
+      "sha256": "3522ed6856fbcf27cff214826f63874cf0da6b8f00a1fa34d12f5237931ae427"
+    },
+    {
+      "path": "question_graphs.yaml",
+      "sha256": "fd42b81f507b49f5c38826131f5e445a0b12385ee02f5c3f9a6747e9a8ebfc12"
+    },
+    {
+      "path": "phase_provenance.py",
+      "sha256": "b0ce5765f38e890f271dce91132e8602ef72d3af58e82a68872d827264f6a5d9"
+    },
+    {
+      "path": "build_graphs.py",
+      "sha256": "3a8b7452dc1caab474fe53f071c9f1386f3327ea03c5d801cab94e2b9c40074d"
+    },
+    {
+      "path": "caution_necessity_repairs.json",
+      "sha256": "dcda7bd3a0ada996bcb4c6227745283c5ff1c1ebdccbb46e4dc75e799b979c86"
+    },
+    {
+      "path": "condition_locator_repairs.json",
+      "sha256": "24660b3acdbc4353ff22a7920de1d4fc1c8d62eccdb4273cfe08242542bfc045"
+    },
+    {
+      "path": "result_scope_repairs.json",
+      "sha256": "0920540e3956a133ebcb282114600fc8d3fd8a3766eda423097a3ca96461d280"
+    },
+    {
+      "path": "reported_context_repairs.json",
+      "sha256": "db2473c4fa85524c3a1367ca04bb53eedc88435d2f90dba0aec363dd926619fe"
+    },
+    {
+      "path": "condition_case_repairs.json",
+      "sha256": "67f32cfedf0988a611a0fcfa54e5c2262044727e0e763c690f69a73d6d2fe3b2"
+    },
+    {
+      "path": "condition_payload_alignment.json",
+      "sha256": "65141626c5feeca4eb94b9e7e253ef7923fc8b0ffa77d6dfab682cd289ea706e"
+    },
+    {
+      "path": "verify_contracts.py",
+      "sha256": "3bfa1a4380a8bd5bf2860f0ffb561d24e7ed59223cd77bbad10bc456ff7a427d"
+    },
+    {
+      "path": "verify_reported_context.py",
+      "sha256": "4823aeb1ad1f3ccbd13ef440f56d3a68fa1c5f666dfa300ad86d123379390d7f"
+    },
+    {
+      "path": "verify_condition_repairs.py",
+      "sha256": "764d0d4e99f750963b1f15b8ffadaa1d10749f5bc4b7bd7ce5bedcdaa8096664"
+    },
+    {
+      "path": "verify_final_repairs.py",
+      "sha256": "219d418fc943bb4ee3a32ae12808b30e069c74ceba5e07564ea6edd376a35334"
+    },
+    {
+      "path": "rules/ago-depression-start.yaml",
+      "sha256": "a49c84e86d2eab4a41b8840c2061e4b54070300b84a088f15dd079df88de6959"
+    },
+    {
+      "path": "rules/ago-gad-start.yaml",
+      "sha256": "1499741e1cee6c93a62358b928165a89b4cc7dfe71c71da8de6586cb0b2f4d28"
+    },
+    {
+      "path": "rules/ago-stop.yaml",
+      "sha256": "80f30c70010ffd2b1c88d2169e63d14a1b7cb8a3476cfc117d659f5475748653"
+    },
+    {
+      "path": "rules/dulox-depression-start.yaml",
+      "sha256": "1c1017b778c1e17d2a9076435b84865e28421f70de25f4c5f66f881638ca3a79"
+    },
+    {
+      "path": "rules/dulox-gad-adjust.yaml",
+      "sha256": "e24acba02b52ef12d1bfda5b96de2452b3926630e2e261437dc3d402578bb985"
+    },
+    {
+      "path": "rules/dulox-gad-start.yaml",
+      "sha256": "42e6ec5128f7f1a841d1930421a052d4c9e33e444b38848fb7ad85d5943ff8f5"
+    },
+    {
+      "path": "rules/dulox-taper-limit.yaml",
+      "sha256": "5be3aab45e6eb01cd27f67738a3859e813bad079250b0e263cb11557a67b1f32"
+    },
+    {
+      "path": "rules/esc-adult-adjust.yaml",
+      "sha256": "81b1e49122c9c0fa288023db04aeba340ab4b4840f9bac036709244c164c8870"
+    },
+    {
+      "path": "rules/esc-cyp2c19-start.yaml",
+      "sha256": "820e41c05939e73ef3b4f498287d5b628eca7df662250b02ecde8e6355014252"
+    },
+    {
+      "path": "rules/esc-elderly-start.yaml",
+      "sha256": "37738bcc631cdb088947df5ad1392bfde25b69471e0e54df08d0f4982ae14731"
+    },
+    {
+      "path": "rules/esc-gad-start.yaml",
+      "sha256": "c2a519e61fa41195b615c86a8a0a1140df3e4ce39390084a774407d495772f0b"
+    },
+    {
+      "path": "rules/esc-hepatic-start.yaml",
+      "sha256": "5071b87915b6fab20930224c8672d4e30b907fdf11c0bfed3dc8d983f724cd6e"
+    },
+    {
+      "path": "rules/esc-panic-start.yaml",
+      "sha256": "f901b39898887c9a53055f051ef41d687ab7aef72785094d32a5185690b405f9"
+    },
+    {
+      "path": "rules/esc-social-start.yaml",
+      "sha256": "6d80f415da7751699b53926fa1eab806b6faac77e0584db580ac3d59eeed4789"
+    },
+    {
+      "path": "rules/esc-taper-limit.yaml",
+      "sha256": "e8a8e4905fa46b4c735ec7d3ccc5dd41f33fcccc01a950aa0d13ea4724fcf7d8"
+    },
+    {
+      "path": "rules/fluvox-depression-start.yaml",
+      "sha256": "95b294348e218de59975c5fbaea8f088b1e8e7d8d6b2c77f50d1808386e4dcb3"
+    },
+    {
+      "path": "rules/fluvox-taper-limit.yaml",
+      "sha256": "593ca084488fcf6837dc737f0273fae361eee4c7adbbf0ab6ee81f1a4d4b8ffd"
+    },
+    {
+      "path": "rules/parox-panic-kr.yaml",
+      "sha256": "31920d1232aba8280ca3eb4edb1763a4cebd3aa3b7046be3fb5f0ac182c53254"
+    },
+    {
+      "path": "rules/parox-taper-example.yaml",
+      "sha256": "79f21174879f5b5e6a506f59a38a97152389adc0242b2c0606dbc370798bc70b"
+    },
+    {
+      "path": "rules/phen-taper-limit.yaml",
+      "sha256": "d65049f18ab52c7970dc1f85f9524103f0270f06d1ecacb88546dfa26c3cfe2c"
+    },
+    {
+      "path": "rules/preg-gad-adjust.yaml",
+      "sha256": "0e697e97aa0fb268b40a16258709e6441bdc092ed9a0a248db66c553a48f6870"
+    },
+    {
+      "path": "rules/preg-gad-start.yaml",
+      "sha256": "c231c4754aecd44c099d0d640e81053691883fdf7d6f7068e6ce7c823b0ff52e"
+    },
+    {
+      "path": "rules/preg-renal-start.yaml",
+      "sha256": "25d4590fa0fbc24c18d8b9db1f7a3c3ff85f7a1ed299fef663c0ed63e1ed03cc"
+    },
+    {
+      "path": "rules/preg-taper-limit.yaml",
+      "sha256": "1273afec77d5bba532c62bc82327f7e8c2ed504adfccc02cd3ab580470775a69"
+    },
+    {
+      "path": "rules/ser-adult-adjust.yaml",
+      "sha256": "caa0bf0ffa25121c51bc6ae4309685b54e8e748a5c7fd975fc550bc70c0adf63"
+    },
+    {
+      "path": "rules/ser-panic-start.yaml",
+      "sha256": "e680145029c3e7f70f39512cd081ac498e345e2f9292dacf1fc0390de1fe8d44"
+    },
+    {
+      "path": "rules/ser-social-start.yaml",
+      "sha256": "b3800be7ac9853418a0fd9efe37794b3b46ff4bf401f69ad0a9b2e716946046e"
+    },
+    {
+      "path": "rules/ser-taper-limit.yaml",
+      "sha256": "ddf307f262a4da2fc70b479efb490e44c3e675f471a099d30aed5fe325abd64c"
+    },
+    {
+      "path": "rules/switch-esc-ago.yaml",
+      "sha256": "23433298d6722db9a376ac79caee06329f0e3c04cb8fc488e0a860a320ec5419"
+    },
+    {
+      "path": "rules/switch-esc-ser.yaml",
+      "sha256": "bdc0760b604bf701830327298ddcf1b69dee8f99291264d8af70b38e33abdd36"
+    },
+    {
+      "path": "rules/switch-parox-ago-selected-example.yaml",
+      "sha256": "fc33c86928010c96ba8a2bc268452758d3ba569bfb04e0492151cdc3ed403a6c"
+    },
+    {
+      "path": "rules/switch-parox-ago.yaml",
+      "sha256": "56e4bfe0741ce2bf441e4729db0d3ced694bfeb66e3208e770675fd8c40b01e6"
+    },
+    {
+      "path": "rules/switch-ser-ago.yaml",
+      "sha256": "cad435647a4dd146e327f696d155c64f49d21d6bb22e165a6d3504c6cdf0ccd9"
+    },
+    {
+      "path": "rules/switch-ser-esc.yaml",
+      "sha256": "629e00ae4c82f65aa19775ec66f061823da61a90a8be30fd4b457955d4065984"
+    },
+    {
+      "path": "rules/venla-xr-gad-start.yaml",
+      "sha256": "ff6b40e7ba286d4ee02bd9b13893a7a1387280efb40c9dfddabe6981fdbc6f75"
+    },
+    {
+      "path": "rules/venla-xr-panic-form-limit.yaml",
+      "sha256": "be8c8d382d9af974847c72bbe2dedf9353d87e13fe2cfb8a4aec3ae0599c8ade"
+    },
+    {
+      "path": "rules/venla-xr-social-start.yaml",
+      "sha256": "3cec8b2e252e2f3bb05aea900a08cfb9fbe18c40fc4a4958c8ed8f8d27f76fd7"
+    },
+    {
+      "path": "rules/venla-xr-taper-limit.yaml",
+      "sha256": "1731ca393733a19753daab2d2742d8acaf1cfeb4c29e893b67a5f83d0d875617"
+    },
+    {
+      "path": "originals/RU-AGO_current.pdf",
+      "sha256": "a98d383832688cee9a09588b1a908555d01ed8b659281cdeee2646c1115ce7c1"
+    },
+    {
+      "path": "originals/RU-AGO_current_PIL.pdf",
+      "sha256": "720bf4e1b9ca3131f7ee844a8f731cb9872d8c545cbae32e9b2936d5d563b18b"
+    },
+    {
+      "path": "originals/RU-DULOX_current.pdf",
+      "sha256": "0551a7306ca4a56b552336bb63fa34905cf4e312702ba811a792221892a42ca1"
+    },
+    {
+      "path": "originals/RU-DULOX_current_PIL.pdf",
+      "sha256": "2668b290164ad40af2b92af2d8724c839770c9b58f339186e5e4175bccdf8a88"
+    },
+    {
+      "path": "originals/RU-FLUVOX_current.pdf",
+      "sha256": "01b6621adad68dfeaf1fbe00db21935b6df1edee141c67307a9b67ad177893f2"
+    },
+    {
+      "path": "originals/RU-FLUVOX_current_PIL.pdf",
+      "sha256": "76d4eef8f34f35fd1917671399cb105187ae3c65cd0835dc633015d733a450fe"
+    },
+    {
+      "path": "originals/RU-GERIATRIC_613_2.pdf",
+      "sha256": "431d916605b0e7a2ee7e124dcef7975bd6db46121a4853271cfb59c20b3ea719"
+    },
+    {
+      "path": "originals/RU-PAROX_current.pdf",
+      "sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069"
+    },
+    {
+      "path": "originals/RU-PAROX_current_PIL.pdf",
+      "sha256": "b9efb47bcc396ef6a0419a590d4dabe8e01ce91d208ad2300db18c01df57275c"
+    },
+    {
+      "path": "originals/RU-PHEN_current.pdf",
+      "sha256": "850486408d225fc603f8f053765491c1e9fd688c5c3d765cdf80a34dd2b3cf1a"
+    },
+    {
+      "path": "originals/RU-PHEN_current_PIL.pdf",
+      "sha256": "87f96baff17663cdeb4ef9a5b02c18e2277fc2bcfec28712843df2564828c609"
+    },
+    {
+      "path": "originals/RU-PREG-RICHTER_current.pdf",
+      "sha256": "8b6240d17e311c9468373c451ad7b4addff096594baf7041097e688ae27ae42f"
+    },
+    {
+      "path": "originals/RU-PREG-RICHTER_current_PIL.pdf",
+      "sha256": "bd0a7106e2703d206ddafa986b817fa1daa57eb4c1d87d5ed244dbdd1b4afb17"
+    },
+    {
+      "path": "originals/RU-PREG_current.pdf",
+      "sha256": "b605c8b381c24d59a48bbab9bfa8621eb70f6ec16ad9e3679aa8457f811663e5"
+    },
+    {
+      "path": "originals/RU-PREG_current_PIL.pdf",
+      "sha256": "465238d72bb90bbf03d850fe53e6d7c249bcbd2037308c7213b452dff42e55d7"
+    },
+    {
+      "path": "originals/RU-VENLA-IR_current.pdf",
+      "sha256": "b1e98ffb209390179385a56aa70b6b94eda4a395831464f347aecf721f8701af"
+    },
+    {
+      "path": "originals/RU-VENLA-IR_current_PIL.pdf",
+      "sha256": "0db67cdfc698abea7a563e619e9068ef8a9e74c722b4f29d6a12ef4c73e1ef97"
+    },
+    {
+      "path": "originals/RU-VENLA-XR_current.pdf",
+      "sha256": "a21e90141db69d9be5ca44ac3c8c6059c8c82a880f34bbf15143348c36ef4666"
+    },
+    {
+      "path": "originals/RU-VENLA-XR_current_PIL.pdf",
+      "sha256": "a28a53108a7d031d763bec1b4b0faa626076038745b2e2e0feb0e9fe592fdb7d"
+    }
+  ],
+  "review_root": "research/remediation_round3/condition_repairs_review_snapshot",
+  "scope": "CC01–CC05 and NR01–NR04 repairs only; no final acceptance or complete question-necessity proof claimed",
+  "main_package_not_yet_promoted": true
+}

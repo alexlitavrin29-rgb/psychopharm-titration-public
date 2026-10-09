@@ -1,0 +1,19 @@
+﻿inn,indication,population,start_mg_per_day_reported,therapeutic_range_mg_per_day_reported,source_ref,source_locator,formulation,routing_status
+пароксетин,F32/F33,adult,20,20–50,RU-DEP,А3 таблица2 PDF с.95–96,не задана таблицей,not_autonomous_dose_module
+сертралин,F32/F33,adult,50,50–200,RU-DEP,А3 таблица2 PDF с.95–96,не задана таблицей,not_autonomous_dose_module
+флувоксамин,F32/F33,adult,50–100,100–300,RU-DEP,А3 таблица2 PDF с.95–96,не задана таблицей,not_autonomous_dose_module
+флуоксетин,F32/F33,adult,20,20–80,RU-DEP,А3 таблица2 PDF с.95–96,не задана таблицей,not_autonomous_dose_module
+циталопрам,F32/F33,adult,20,20–40,RU-DEP,А3 таблица2 PDF с.95–96,не задана таблицей,not_autonomous_dose_module
+эсциталопрам,F32/F33,adult,10,10–20,RU-DEP,А3 таблица2 PDF с.95–96,не задана таблицей,not_autonomous_dose_module
+венлафаксин,F32/F33,adult,75,75–375; >225 стационар,RU-DEP,А3 таблица2 PDF с.95–96,не задана таблицей,not_autonomous_dose_module
+дулоксетин,F32/F33,adult,60,60–120,RU-DEP,А3 таблица2 PDF с.95–96,не задана таблицей,not_autonomous_dose_module
+амитриптилин,F32/F33,adult,50–75,150–300; >150 стационар,RU-DEP,А3 таблица2 PDF с.95–96,не задана таблицей,not_autonomous_dose_module
+имипрамин,F32/F33,adult,25–75,150–300; >200 стационар,RU-DEP,А3 таблица2 PDF с.95–96,не задана таблицей,not_autonomous_dose_module
+кломипрамин,F32/F33,adult,50–75,100–250,RU-DEP,А3 таблица2 PDF с.95–96,не задана таблицей,not_autonomous_dose_module
+пипофезин,F32/F33,adult,25–50,150–500,RU-DEP,А3 таблица2 PDF с.95–96,не задана таблицей,not_autonomous_dose_module
+миансерин,F32/F33,adult,30,60–90,RU-DEP,А3 таблица2 PDF с.95–96,не задана таблицей,not_autonomous_dose_module
+миртазапин,F32/F33,adult,15–30,15–45,RU-DEP,А3 таблица2 PDF с.95–96,не задана таблицей,not_autonomous_dose_module
+тразодон,F32/F33,adult,100,150–600; >450 стационар,RU-DEP,А3 таблица2 PDF с.95–96,не задана таблицей,not_autonomous_dose_module
+пирлиндол,F32/F33,adult,50–75,150–400,RU-DEP,А3 таблица2 PDF с.95–96,не задана таблицей,not_autonomous_dose_module
+агомелатин,F32/F33,adult,25,25–50,RU-DEP,А3 таблица2 PDF с.95–96,не задана таблицей,not_autonomous_dose_module
+вортиоксетин,F32/F33,adult,10,10–20,RU-DEP,А3 таблица2 PDF с.95–96,не задана таблицей,not_autonomous_dose_module

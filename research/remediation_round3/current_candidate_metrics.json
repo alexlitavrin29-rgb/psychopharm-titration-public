@@ -1,0 +1,30 @@
+{
+  "cards": 38,
+  "prepared_cases": 6646,
+  "selected_complete_paths": 2652,
+  "question_rows": 906,
+  "per_result_ledger_rows": 2230,
+  "decision_count": 450,
+  "ordinary_selected_paths": 96,
+  "ordinary_counts": [
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    19,
+    20,
+    21,
+    22,
+    24,
+    25,
+    34
+  ],
+  "hard_question_maximum": null,
+  "acceptance_version": 3,
+  "clinical_validation": "not_performed",
+  "calculator_implemented": false
+}

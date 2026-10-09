@@ -1,0 +1,627 @@
+{
+  "sources": [
+    {
+      "source_id": "RU-AGO",
+      "path": "C:\\Users\\Alex\\Documents\\ChatGPT\\титрование\\research\\remediation_round3\\originals\\RU-AGO_current.pdf",
+      "sha256": "a98d383832688cee9a09588b1a908555d01ed8b659281cdeee2646c1115ce7c1",
+      "version": "Официальная ОХЛП реестра: штамп регистрации 2024-12-28; экспертный отчёт 2024-12-23 №28427/0018; получена 08.10.2026",
+      "url": "https://lk.regmed.ru/Register/EAEU_SmPC",
+      "access_date": "2026-10-08",
+      "text_physical_pages_actually_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "visual_physical_pages_actually_checked": [
+        1
+      ],
+      "full_document_read": false,
+      "medical_scope": "Переносимые дозы/единицы/формы и выбранные основные §4.1–4.6 условия; не полная медицинская рецензия всех разделов документа.",
+      "unread_or_unverified": "Полные ЛВ, неиспользуемые разделы4.8/5, неактивные IR/Richter предупреждения; все индивидуальные INN→class mappings и исчерпывающие result-specific necessity контрпримеры не подтверждены. Не заявляется полная медицинская рецензия документа.",
+      "registration_number": "ЛП-№(000528)-(РГ-RU)",
+      "registration_stamp": "2024-12-28",
+      "expert_stamp": {
+        "date": "2024-12-23",
+        "report_number": "28427",
+        "sequence": "0018"
+      },
+      "authority_basis": "Ручное получение человеком текущего официально запрошенного документа + предоставленный provenance реестровой строки + независимая сверка титула/штампа/формы и SHA. Проверяющий не наблюдал сам CAPTCHA/download или все строки реестра.",
+      "currency_conclusion": "Предоставленное основание текущей официальной редакции принимается для данного источникового снимка; дата регистрации/экспертизы не названа самостоятельной датой редакции. История всех редакций не доказана и не требуется.",
+      "previous_actual_reading_reused_for_identical_bytes": true,
+      "recheck_extra_reading": "Дополнительное прямое чтение применимых §4.4–4.5 событий/взаимодействий и сопоставление с новыми inputs/branches/expected. Точная детализация — condition_inventory.json/findings.",
+      "prior_reading_reused_only_after_SHA_equality": true
+    },
+    {
+      "source_id": "RU-DULOX",
+      "path": "C:\\Users\\Alex\\Documents\\ChatGPT\\титрование\\research\\remediation_round3\\originals\\RU-DULOX_current.pdf",
+      "sha256": "0551a7306ca4a56b552336bb63fa34905cf4e312702ba811a792221892a42ca1",
+      "version": "Официальная ОХЛП реестра: штамп регистрации 2026-03-24; экспертный отчёт 2026-03-20 №5759/0015; получена 08.10.2026",
+      "url": "https://lk.regmed.ru/Register/EAEU_SmPC",
+      "access_date": "2026-10-08",
+      "text_physical_pages_actually_read": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        14
+      ],
+      "visual_physical_pages_actually_checked": [
+        1,
+        11
+      ],
+      "full_document_read": false,
+      "medical_scope": "Переносимые дозы/единицы/формы и выбранные основные §4.1–4.6 условия; не полная медицинская рецензия всех разделов документа.",
+      "unread_or_unverified": "Полные ЛВ, неиспользуемые разделы4.8/5, неактивные IR/Richter предупреждения; все индивидуальные INN→class mappings и исчерпывающие result-specific necessity контрпримеры не подтверждены. Не заявляется полная медицинская рецензия документа.",
+      "registration_number": "ЛП-№(000186)-(РГ-RU)",
+      "registration_stamp": "2026-03-24",
+      "expert_stamp": {
+        "date": "2026-03-20",
+        "report_number": "5759",
+        "sequence": "0015"
+      },
+      "authority_basis": "Ручное получение человеком текущего официально запрошенного документа + предоставленный provenance реестровой строки + независимая сверка титула/штампа/формы и SHA. Проверяющий не наблюдал сам CAPTCHA/download или все строки реестра.",
+      "currency_conclusion": "Предоставленное основание текущей официальной редакции принимается для данного источникового снимка; дата регистрации/экспертизы не названа самостоятельной датой редакции. История всех редакций не доказана и не требуется.",
+      "previous_actual_reading_reused_for_identical_bytes": true,
+      "recheck_extra_reading": "Дополнительное прямое чтение применимых §4.4–4.5 событий/взаимодействий и сопоставление с новыми inputs/branches/expected. Точная детализация — condition_inventory.json/findings.",
+      "prior_reading_reused_only_after_SHA_equality": true
+    },
+    {
+      "source_id": "RU-FLUVOX",
+      "path": "C:\\Users\\Alex\\Documents\\ChatGPT\\титрование\\research\\remediation_round3\\originals\\RU-FLUVOX_current.pdf",
+      "sha256": "01b6621adad68dfeaf1fbe00db21935b6df1edee141c67307a9b67ad177893f2",
+      "version": "Официальная ОХЛП реестра: штамп регистрации 2026-08-19; экспертный отчёт 2026-08-14 №16133/0004; получена 08.10.2026",
+      "url": "https://lk.regmed.ru/Register/EAEU_SmPC",
+      "access_date": "2026-10-08",
+      "text_physical_pages_actually_read": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "visual_physical_pages_actually_checked": [
+        1
+      ],
+      "full_document_read": false,
+      "medical_scope": "Переносимые дозы/единицы/формы и выбранные основные §4.1–4.6 условия; не полная медицинская рецензия всех разделов документа.",
+      "unread_or_unverified": "Полные ЛВ, неиспользуемые разделы4.8/5, неактивные IR/Richter предупреждения; все индивидуальные INN→class mappings и исчерпывающие result-specific necessity контрпримеры не подтверждены. Не заявляется полная медицинская рецензия документа.",
+      "registration_number": "ЛП-№(008757)-(РГ-RU)",
+      "registration_stamp": "2026-08-19",
+      "expert_stamp": {
+        "date": "2026-08-14",
+        "report_number": "16133",
+        "sequence": "0004"
+      },
+      "authority_basis": "Ручное получение человеком текущего официально запрошенного документа + предоставленный provenance реестровой строки + независимая сверка титула/штампа/формы и SHA. Проверяющий не наблюдал сам CAPTCHA/download или все строки реестра.",
+      "currency_conclusion": "Предоставленное основание текущей официальной редакции принимается для данного источникового снимка; дата регистрации/экспертизы не названа самостоятельной датой редакции. История всех редакций не доказана и не требуется.",
+      "previous_actual_reading_reused_for_identical_bytes": true,
+      "recheck_extra_reading": "Дополнительное прямое чтение применимых §4.4–4.5 событий/взаимодействий и сопоставление с новыми inputs/branches/expected. Точная детализация — condition_inventory.json/findings.",
+      "prior_reading_reused_only_after_SHA_equality": true
+    },
+    {
+      "source_id": "RU-PAROX",
+      "path": "C:\\Users\\Alex\\Documents\\ChatGPT\\титрование\\research\\remediation_round3\\originals\\RU-PAROX_current.pdf",
+      "sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069",
+      "version": "Официальная ОХЛП реестра: штамп регистрации 2025-02-14; экспертный отчёт 2025-02-12 №3370/0003; получена 08.10.2026",
+      "url": "https://lk.regmed.ru/Register/EAEU_SmPC",
+      "access_date": "2026-10-08",
+      "text_physical_pages_actually_read": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "visual_physical_pages_actually_checked": [
+        1,
+        3,
+        4
+      ],
+      "full_document_read": false,
+      "medical_scope": "Переносимые дозы/единицы/формы и выбранные основные §4.1–4.6 условия; не полная медицинская рецензия всех разделов документа.",
+      "unread_or_unverified": "Полные ЛВ, неиспользуемые разделы4.8/5, неактивные IR/Richter предупреждения; все индивидуальные INN→class mappings и исчерпывающие result-specific necessity контрпримеры не подтверждены. Не заявляется полная медицинская рецензия документа.",
+      "registration_number": "ЛП-№(008861)-(РГ-RU)",
+      "registration_stamp": "2025-02-14",
+      "expert_stamp": {
+        "date": "2025-02-12",
+        "report_number": "3370",
+        "sequence": "0003"
+      },
+      "authority_basis": "Ручное получение человеком текущего официально запрошенного документа + предоставленный provenance реестровой строки + независимая сверка титула/штампа/формы и SHA. Проверяющий не наблюдал сам CAPTCHA/download или все строки реестра.",
+      "currency_conclusion": "Предоставленное основание текущей официальной редакции принимается для данного источникового снимка; дата регистрации/экспертизы не названа самостоятельной датой редакции. История всех редакций не доказана и не требуется.",
+      "previous_actual_reading_reused_for_identical_bytes": true,
+      "recheck_extra_reading": "Дополнительное прямое чтение применимых §4.4–4.5 событий/взаимодействий и сопоставление с новыми inputs/branches/expected. Точная детализация — condition_inventory.json/findings.",
+      "prior_reading_reused_only_after_SHA_equality": true
+    },
+    {
+      "source_id": "RU-PREG",
+      "path": "C:\\Users\\Alex\\Documents\\ChatGPT\\титрование\\research\\remediation_round3\\originals\\RU-PREG_current.pdf",
+      "sha256": "b605c8b381c24d59a48bbab9bfa8621eb70f6ec16ad9e3679aa8457f811663e5",
+      "version": "Официальная ОХЛП реестра: штамп регистрации 2025-08-13; экспертный отчёт 2024-01-26 №1319/0011; получена 08.10.2026",
+      "url": "https://lk.regmed.ru/Register/EAEU_SmPC",
+      "access_date": "2026-10-08",
+      "text_physical_pages_actually_read": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "visual_physical_pages_actually_checked": [
+        1,
+        4,
+        5
+      ],
+      "full_document_read": false,
+      "medical_scope": "Переносимые дозы/единицы/формы и выбранные основные §4.1–4.6 условия; не полная медицинская рецензия всех разделов документа.",
+      "unread_or_unverified": "Полные ЛВ, неиспользуемые разделы4.8/5, неактивные IR/Richter предупреждения; все индивидуальные INN→class mappings и исчерпывающие result-specific necessity контрпримеры не подтверждены. Не заявляется полная медицинская рецензия документа.",
+      "registration_number": "ЛП-№(004450)-(РГ-RU)",
+      "registration_stamp": "2025-08-13",
+      "expert_stamp": {
+        "date": "2024-01-26",
+        "report_number": "1319",
+        "sequence": "0011"
+      },
+      "authority_basis": "Ручное получение человеком текущего официально запрошенного документа + предоставленный provenance реестровой строки + независимая сверка титула/штампа/формы и SHA. Проверяющий не наблюдал сам CAPTCHA/download или все строки реестра.",
+      "currency_conclusion": "Предоставленное основание текущей официальной редакции принимается для данного источникового снимка; дата регистрации/экспертизы не названа самостоятельной датой редакции. История всех редакций не доказана и не требуется.",
+      "previous_actual_reading_reused_for_identical_bytes": true,
+      "recheck_extra_reading": "Дополнительное прямое чтение применимых §4.4–4.5 событий/взаимодействий и сопоставление с новыми inputs/branches/expected. Точная детализация — condition_inventory.json/findings.",
+      "prior_reading_reused_only_after_SHA_equality": true
+    },
+    {
+      "source_id": "RU-PREG-RICHTER",
+      "path": "C:\\Users\\Alex\\Documents\\ChatGPT\\титрование\\research\\remediation_round3\\originals\\RU-PREG-RICHTER_current.pdf",
+      "sha256": "8b6240d17e311c9468373c451ad7b4addff096594baf7041097e688ae27ae42f",
+      "version": "Официальная ОХЛП реестра: штамп регистрации 2026-02-06; экспертный отчёт 2026-02-02 №1678/0014; получена 08.10.2026",
+      "url": "https://lk.regmed.ru/Register/EAEU_SmPC",
+      "access_date": "2026-10-08",
+      "text_physical_pages_actually_read": [
+        3
+      ],
+      "visual_physical_pages_actually_checked": [
+        1,
+        3
+      ],
+      "full_document_read": false,
+      "medical_scope": "Переносимые дозы/единицы/формы и выбранные основные §4.1–4.6 условия; не полная медицинская рецензия всех разделов документа.",
+      "unread_or_unverified": "Полные ЛВ, неиспользуемые разделы4.8/5, неактивные IR/Richter предупреждения; все индивидуальные INN→class mappings и исчерпывающие result-specific necessity контрпримеры не подтверждены. Не заявляется полная медицинская рецензия документа.",
+      "registration_number": "ЛП-№(002412)-(РГ-RU)",
+      "registration_stamp": "2026-02-06",
+      "expert_stamp": {
+        "date": "2026-02-02",
+        "report_number": "1678",
+        "sequence": "0014"
+      },
+      "authority_basis": "Ручное получение человеком текущего официально запрошенного документа + предоставленный provenance реестровой строки + независимая сверка титула/штампа/формы и SHA. Проверяющий не наблюдал сам CAPTCHA/download или все строки реестра.",
+      "currency_conclusion": "Предоставленное основание текущей официальной редакции принимается для данного источникового снимка; дата регистрации/экспертизы не названа самостоятельной датой редакции. История всех редакций не доказана и не требуется.",
+      "previous_actual_reading_reused_for_identical_bytes": true,
+      "recheck_extra_reading": "Дополнительное прямое чтение применимых §4.4–4.5 событий/взаимодействий и сопоставление с новыми inputs/branches/expected. Точная детализация — condition_inventory.json/findings.",
+      "prior_reading_reused_only_after_SHA_equality": true
+    },
+    {
+      "source_id": "RU-PHEN",
+      "path": "C:\\Users\\Alex\\Documents\\ChatGPT\\титрование\\research\\remediation_round3\\originals\\RU-PHEN_current.pdf",
+      "sha256": "850486408d225fc603f8f053765491c1e9fd688c5c3d765cdf80a34dd2b3cf1a",
+      "version": "Официальная ОХЛП реестра: штамп регистрации 2026-05-07; экспертный отчёт 2026-05-05 №9041/0004; получена 08.10.2026",
+      "url": "https://lk.regmed.ru/Register/EAEU_SmPC",
+      "access_date": "2026-10-08",
+      "text_physical_pages_actually_read": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "visual_physical_pages_actually_checked": [
+        1
+      ],
+      "full_document_read": false,
+      "medical_scope": "Переносимые дозы/единицы/формы и выбранные основные §4.1–4.6 условия; не полная медицинская рецензия всех разделов документа.",
+      "unread_or_unverified": "Полные ЛВ, неиспользуемые разделы4.8/5, неактивные IR/Richter предупреждения; все индивидуальные INN→class mappings и исчерпывающие result-specific necessity контрпримеры не подтверждены. Не заявляется полная медицинская рецензия документа.",
+      "registration_number": "ЛП-№(005387)-(РГ-RU)",
+      "registration_stamp": "2026-05-07",
+      "expert_stamp": {
+        "date": "2026-05-05",
+        "report_number": "9041",
+        "sequence": "0004"
+      },
+      "authority_basis": "Ручное получение человеком текущего официально запрошенного документа + предоставленный provenance реестровой строки + независимая сверка титула/штампа/формы и SHA. Проверяющий не наблюдал сам CAPTCHA/download или все строки реестра.",
+      "currency_conclusion": "Предоставленное основание текущей официальной редакции принимается для данного источникового снимка; дата регистрации/экспертизы не названа самостоятельной датой редакции. История всех редакций не доказана и не требуется.",
+      "previous_actual_reading_reused_for_identical_bytes": true,
+      "recheck_extra_reading": "Дополнительное прямое чтение применимых §4.4–4.5 событий/взаимодействий и сопоставление с новыми inputs/branches/expected. Точная детализация — condition_inventory.json/findings.",
+      "prior_reading_reused_only_after_SHA_equality": true
+    },
+    {
+      "source_id": "RU-VENLA-IR",
+      "path": "C:\\Users\\Alex\\Documents\\ChatGPT\\титрование\\research\\remediation_round3\\originals\\RU-VENLA-IR_current.pdf",
+      "sha256": "b1e98ffb209390179385a56aa70b6b94eda4a395831464f347aecf721f8701af",
+      "version": "Официальная ОХЛП реестра: штамп регистрации 2023-11-21; экспертный отчёт 2025-12-26 №32413/0009; получена 08.10.2026",
+      "url": "https://lk.regmed.ru/Register/EAEU_SmPC",
+      "access_date": "2026-10-08",
+      "text_physical_pages_actually_read": [
+        2,
+        3
+      ],
+      "visual_physical_pages_actually_checked": [
+        1
+      ],
+      "full_document_read": false,
+      "medical_scope": "Переносимые дозы/единицы/формы и выбранные основные §4.1–4.6 условия; не полная медицинская рецензия всех разделов документа.",
+      "unread_or_unverified": "Полные ЛВ, неиспользуемые разделы4.8/5, неактивные IR/Richter предупреждения; все индивидуальные INN→class mappings и исчерпывающие result-specific necessity контрпримеры не подтверждены. Не заявляется полная медицинская рецензия документа.",
+      "registration_number": "ЛП-№(002276)-(РГ-RU)",
+      "registration_stamp": "2023-11-21",
+      "expert_stamp": {
+        "date": "2025-12-26",
+        "report_number": "32413",
+        "sequence": "0009"
+      },
+      "authority_basis": "Ручное получение человеком текущего официально запрошенного документа + предоставленный provenance реестровой строки + независимая сверка титула/штампа/формы и SHA. Проверяющий не наблюдал сам CAPTCHA/download или все строки реестра.",
+      "currency_conclusion": "Предоставленное основание текущей официальной редакции принимается для данного источникового снимка; дата регистрации/экспертизы не названа самостоятельной датой редакции. История всех редакций не доказана и не требуется.",
+      "previous_actual_reading_reused_for_identical_bytes": true,
+      "recheck_extra_reading": "Дополнительное прямое чтение применимых §4.4–4.5 событий/взаимодействий и сопоставление с новыми inputs/branches/expected. Точная детализация — condition_inventory.json/findings.",
+      "prior_reading_reused_only_after_SHA_equality": true
+    },
+    {
+      "source_id": "RU-VENLA-XR",
+      "path": "C:\\Users\\Alex\\Documents\\ChatGPT\\титрование\\research\\remediation_round3\\originals\\RU-VENLA-XR_current.pdf",
+      "sha256": "a21e90141db69d9be5ca44ac3c8c6059c8c82a880f34bbf15143348c36ef4666",
+      "version": "Официальная ОХЛП реестра: штамп регистрации 2026-06-25; экспертный отчёт 2026-06-11 №11677/0019; получена 08.10.2026",
+      "url": "https://lk.regmed.ru/Register/EAEU_SmPC",
+      "access_date": "2026-10-08",
+      "text_physical_pages_actually_read": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "visual_physical_pages_actually_checked": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        9
+      ],
+      "full_document_read": false,
+      "medical_scope": "Переносимые дозы/единицы/формы и выбранные основные §4.1–4.6 условия; не полная медицинская рецензия всех разделов документа.",
+      "unread_or_unverified": "Полные ЛВ, неиспользуемые разделы4.8/5, неактивные IR/Richter предупреждения; все индивидуальные INN→class mappings и исчерпывающие result-specific necessity контрпримеры не подтверждены. Не заявляется полная медицинская рецензия документа.",
+      "registration_number": "ЛП-№(002093)-(РГ-RU)",
+      "registration_stamp": "2026-06-25",
+      "expert_stamp": {
+        "date": "2026-06-11",
+        "report_number": "11677",
+        "sequence": "0019"
+      },
+      "authority_basis": "Ручное получение человеком текущего официально запрошенного документа + предоставленный provenance реестровой строки + независимая сверка титула/штампа/формы и SHA. Проверяющий не наблюдал сам CAPTCHA/download или все строки реестра.",
+      "currency_conclusion": "Предоставленное основание текущей официальной редакции принимается для данного источникового снимка; дата регистрации/экспертизы не названа самостоятельной датой редакции. История всех редакций не доказана и не требуется.",
+      "previous_actual_reading_reused_for_identical_bytes": true,
+      "recheck_extra_reading": "Дополнительное прямое чтение применимых §4.4–4.5 событий/взаимодействий и сопоставление с новыми inputs/branches/expected. Точная детализация — condition_inventory.json/findings.",
+      "prior_reading_reused_only_after_SHA_equality": true
+    },
+    {
+      "source_id": "RU-ESC",
+      "path": "C:\\Users\\Alex\\Documents\\ChatGPT\\титрование\\research\\remediation_round2\\Selectra_current_registry.pdf",
+      "sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "version": "РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; экспертный отчёт 31.10.2025 №27320, последовательность 0002; текущая опубликованная ОХЛП реестра получена 08.10.2026",
+      "url": "https://lk.regmed.ru/Register/ViewPDFfromDAToken?Token=[REDACTED]",
+      "access_date": "2026-10-08",
+      "text_physical_pages_actually_read": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "visual_physical_pages_actually_checked": [
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      "full_document_read": false,
+      "medical_scope": "Переносимые дозы/единицы/формы и выбранные основные §4.1–4.6 условия; не полная медицинская рецензия всех разделов документа.",
+      "unread_or_unverified": "Полные ЛВ, неиспользуемые разделы4.8/5, неактивные IR/Richter предупреждения; все индивидуальные INN→class mappings и исчерпывающие result-specific necessity контрпримеры не подтверждены. Не заявляется полная медицинская рецензия документа.",
+      "authority_basis": "Ручные текущие оригиналы round2 и предоставленные registry comparison; SHA independently checked, current title/form/stamp visually inspected.",
+      "currency_conclusion": "Текущая официальная редакционная связь сохранена. SER current SHA равен read manufacturer copy; это отдельное доказательство байтов, не автоматическое доказательство всех условий.",
+      "previous_actual_reading_reused_for_identical_bytes": true,
+      "recheck_extra_reading": "Дополнительное прямое чтение применимых §4.4–4.5 событий/взаимодействий и сопоставление с новыми inputs/branches/expected. Точная детализация — condition_inventory.json/findings.",
+      "prior_reading_reused_only_after_SHA_equality": true
+    },
+    {
+      "source_id": "RU-SER",
+      "path": "C:\\Users\\Alex\\Documents\\ChatGPT\\титрование\\research\\source_downloads\\Золофт — сертралин.pdf",
+      "sha256": "3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba",
+      "version": "Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является датой содержания",
+      "url": "https://www.viatris.ru/-/media/project/common/viatrisru/pdf/product-catalog/0006_zoloft_smpc-eaeu_24-apr-2025_ru.pdf",
+      "access_date": "2026-10-08",
+      "text_physical_pages_actually_read": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "visual_physical_pages_actually_checked": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "full_document_read": false,
+      "medical_scope": "Переносимые дозы/единицы/формы и выбранные основные §4.1–4.6 условия; не полная медицинская рецензия всех разделов документа.",
+      "unread_or_unverified": "Полные ЛВ, неиспользуемые разделы4.8/5, неактивные IR/Richter предупреждения; все индивидуальные INN→class mappings и исчерпывающие result-specific necessity контрпримеры не подтверждены. Не заявляется полная медицинская рецензия документа.",
+      "authority_basis": "Ручные текущие оригиналы round2 и предоставленные registry comparison; SHA independently checked, current title/form/stamp visually inspected.",
+      "currency_conclusion": "Текущая официальная редакционная связь сохранена. SER current SHA равен read manufacturer copy; это отдельное доказательство байтов, не автоматическое доказательство всех условий.",
+      "previous_actual_reading_reused_for_identical_bytes": true,
+      "recheck_extra_reading": "Дополнительное прямое чтение применимых §4.4–4.5 событий/взаимодействий и сопоставление с новыми inputs/branches/expected. Точная детализация — condition_inventory.json/findings.",
+      "prior_reading_reused_only_after_SHA_equality": true
+    },
+    {
+      "source_id": "RU-PANIC",
+      "path": "C:\\Users\\Alex\\Documents\\ChatGPT\\титрование\\research\\audit\\retrieved\\RU-PANIC.pdf",
+      "sha256": "a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d",
+      "version": "2024; каталог: опубликовано 19.09.2024, применяется",
+      "url": "https://apicr.minzdrav.gov.ru/api.ashx?id=456_3&op=GetClinrecPdf",
+      "access_date": "2026-10-08",
+      "text_physical_pages_actually_read": [
+        25,
+        26,
+        27,
+        28
+      ],
+      "visual_physical_pages_actually_checked": [
+        26
+      ],
+      "full_document_read": false,
+      "medical_scope": "Переносимые дозы/единицы/формы и выбранные основные §4.1–4.6 условия; не полная медицинская рецензия всех разделов документа.",
+      "unread_or_unverified": "Полные ЛВ, неиспользуемые разделы4.8/5, неактивные IR/Richter предупреждения; все индивидуальные INN→class mappings и исчерпывающие result-specific necessity контрпримеры не подтверждены. Не заявляется полная медицинская рецензия документа.",
+      "authority_basis": "Официальный PDF Минздрава; предоставленная текущая запись каталога, версия 2024; каталог: опубликовано 19.09.2024, применяется",
+      "currency_conclusion": "Содержание выбранных разделов проверено самостоятельно; весь новый каталог и его 767 строки этим агентом не читались заново.",
+      "previous_actual_reading_reused_for_identical_bytes": true,
+      "recheck_extra_reading": "Дополнительное прямое чтение применимых §4.4–4.5 событий/взаимодействий и сопоставление с новыми inputs/branches/expected. Точная детализация — condition_inventory.json/findings.",
+      "prior_reading_reused_only_after_SHA_equality": true
+    },
+    {
+      "source_id": "RU-GAD",
+      "path": "C:\\Users\\Alex\\Documents\\ChatGPT\\титрование\\research\\audit\\retrieved\\RU-GAD.pdf",
+      "sha256": "c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a",
+      "version": "2024; каталог: опубликовано 19.09.2024, применяется",
+      "url": "https://apicr.minzdrav.gov.ru/api.ashx?id=457_3&op=GetClinrecPdf",
+      "access_date": "2026-10-08",
+      "text_physical_pages_actually_read": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        77,
+        78
+      ],
+      "visual_physical_pages_actually_checked": [],
+      "full_document_read": false,
+      "medical_scope": "Переносимые дозы/единицы/формы и выбранные основные §4.1–4.6 условия; не полная медицинская рецензия всех разделов документа.",
+      "unread_or_unverified": "Полные ЛВ, неиспользуемые разделы4.8/5, неактивные IR/Richter предупреждения; все индивидуальные INN→class mappings и исчерпывающие result-specific necessity контрпримеры не подтверждены. Не заявляется полная медицинская рецензия документа.",
+      "authority_basis": "Официальный PDF Минздрава; предоставленная текущая запись каталога, версия 2024; каталог: опубликовано 19.09.2024, применяется",
+      "currency_conclusion": "Содержание выбранных разделов проверено самостоятельно; весь новый каталог и его 767 строки этим агентом не читались заново.",
+      "previous_actual_reading_reused_for_identical_bytes": true,
+      "recheck_extra_reading": "Дополнительное прямое чтение применимых §4.4–4.5 событий/взаимодействий и сопоставление с новыми inputs/branches/expected. Точная детализация — condition_inventory.json/findings.",
+      "prior_reading_reused_only_after_SHA_equality": true
+    },
+    {
+      "source_id": "RU-PHOB",
+      "path": "C:\\Users\\Alex\\Documents\\ChatGPT\\титрование\\research\\audit\\retrieved\\RU-PHOB.pdf",
+      "sha256": "2a51982fb1919c0ef9115e5231f8ef9d65863306d2d5b95aa0aa7821a6f328b7",
+      "version": "2024; каталог: опубликовано 21.10.2024, применяется",
+      "url": "https://apicr.minzdrav.gov.ru/api.ashx?id=455_3&op=GetClinrecPdf",
+      "access_date": "2026-10-08",
+      "text_physical_pages_actually_read": [
+        19,
+        20,
+        29,
+        30,
+        32,
+        33,
+        35,
+        36,
+        39
+      ],
+      "visual_physical_pages_actually_checked": [],
+      "full_document_read": false,
+      "medical_scope": "Переносимые дозы/единицы/формы и выбранные основные §4.1–4.6 условия; не полная медицинская рецензия всех разделов документа.",
+      "unread_or_unverified": "Полные ЛВ, неиспользуемые разделы4.8/5, неактивные IR/Richter предупреждения; все индивидуальные INN→class mappings и исчерпывающие result-specific necessity контрпримеры не подтверждены. Не заявляется полная медицинская рецензия документа.",
+      "authority_basis": "Официальный PDF Минздрава; предоставленная текущая запись каталога, версия 2024; каталог: опубликовано 21.10.2024, применяется",
+      "currency_conclusion": "Содержание выбранных разделов проверено самостоятельно; весь новый каталог и его 767 строки этим агентом не читались заново.",
+      "previous_actual_reading_reused_for_identical_bytes": true,
+      "recheck_extra_reading": "Дополнительное прямое чтение применимых §4.4–4.5 событий/взаимодействий и сопоставление с новыми inputs/branches/expected. Точная детализация — condition_inventory.json/findings.",
+      "prior_reading_reused_only_after_SHA_equality": true
+    },
+    {
+      "source_id": "RU-DEP",
+      "path": "C:\\Users\\Alex\\Documents\\ChatGPT\\титрование\\research\\source_snapshots\\depression-301_3.pdf",
+      "sha256": "2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd",
+      "version": "2024; каталог: опубликовано 26.08.2024, применяется",
+      "url": "https://apicr.minzdrav.gov.ru/api.ashx?id=301_3&op=GetClinrecPdf",
+      "access_date": "2026-10-08",
+      "text_physical_pages_actually_read": [
+        36,
+        45,
+        95,
+        96,
+        105,
+        106
+      ],
+      "visual_physical_pages_actually_checked": [
+        36,
+        96,
+        105
+      ],
+      "full_document_read": false,
+      "medical_scope": "Переносимые дозы/единицы/формы и выбранные основные §4.1–4.6 условия; не полная медицинская рецензия всех разделов документа.",
+      "unread_or_unverified": "Полные ЛВ, неиспользуемые разделы4.8/5, неактивные IR/Richter предупреждения; все индивидуальные INN→class mappings и исчерпывающие result-specific necessity контрпримеры не подтверждены. Не заявляется полная медицинская рецензия документа.",
+      "authority_basis": "Официальный PDF Минздрава; предоставленная текущая запись каталога, версия 2024; каталог: опубликовано 26.08.2024, применяется",
+      "currency_conclusion": "Содержание выбранных разделов проверено самостоятельно; весь новый каталог и его 767 строки этим агентом не читались заново.",
+      "previous_actual_reading_reused_for_identical_bytes": true,
+      "recheck_extra_reading": "Дополнительное прямое чтение применимых §4.4–4.5 событий/взаимодействий и сопоставление с новыми inputs/branches/expected. Точная детализация — condition_inventory.json/findings.",
+      "prior_reading_reused_only_after_SHA_equality": true
+    },
+    {
+      "source_id": "RU-CITAL-LV",
+      "path": "C:\\Users\\Alex\\Documents\\ChatGPT\\титрование\\research\\source_downloads\\Циталопрам — Пранафарм.docx",
+      "url": "https://pranapharm.ru/allfiles/202610/TSITALOPRAM_Listok_vkladyish-1791177827-TaAy0.docx",
+      "sha256": "5e10a0452aa6a432390878027d66309a93729250ae6015c2ec225a28be68fe00",
+      "access_date": "2026-10-08",
+      "read_scope": "Текст §3 рекомендуемая доза/прекращение через XML DOCX; общий максимум20 рядом с разрешённым40 независимо подтверждён. Полный документ/действующая ОХЛП не проверены.",
+      "active_numeric_rule": false,
+      "current_edition_confirmed": false,
+      "previous_actual_reading_reused_for_identical_bytes": true,
+      "recheck_extra_reading": "Дополнительное прямое чтение применимых §4.4–4.5 событий/взаимодействий и сопоставление с новыми inputs/branches/expected. Точная детализация — condition_inventory.json/findings.",
+      "unread_or_unverified": "Полные ЛВ, неиспользуемые разделы4.8/5, неактивные IR/Richter предупреждения; все индивидуальные INN→class mappings и исчерпывающие result-specific necessity контрпримеры не подтверждены. Не заявляется полная медицинская рецензия документа.",
+      "prior_reading_reused_only_after_SHA_equality": true
+    }
+  ],
+  "official_web_attempt": {
+    "date": "2026-10-08",
+    "urls": [
+      "https://lk.regmed.ru/Register/EAEU_SmPC",
+      "https://cr.minzdrav.gov.ru/view-cr/455_3",
+      "https://cr.minzdrav.gov.ru/view-cr/457_3"
+    ],
+    "result": "Web opened official registry landing page and empty JS rubricator pages; did not independently verify each queried product row or bypass CAPTCHA."
+  },
+  "blocked_source_conflicts_confirmed": [
+    "PREG p4 ммоль/л printed with1.23; not silently corrected",
+    "RICHTER p3 мкмоль/л and capsule footnote25–50 infeasible",
+    "DEP p36 ≥0.5мкмоль/л vs0.5–0.8ммоль/л; blocked",
+    "CITAL §3 max20 vs increase40; blocked"
+  ],
+  "snapshot": "8a17ae3f99839548742ee509a23d060ea451ed0018c48432dc73b9ba68de4359",
+  "source_original_hash_changes": [],
+  "additional_recheck2_reading": {
+    "RU-DEP": {
+      "text": [
+        105,
+        106
+      ],
+      "visual": [
+        105
+      ]
+    },
+    "RU-PAROX": {
+      "text": [
+        4,
+        10
+      ]
+    },
+    "RU-DULOX": {
+      "text": [
+        3,
+        6,
+        11,
+        14
+      ],
+      "visual": [
+        11
+      ]
+    },
+    "RU-FLUVOX": {
+      "text": [
+        2,
+        3
+      ]
+    },
+    "RU-AGO": {
+      "text": [
+        1,
+        2
+      ]
+    },
+    "RU-PHEN": {
+      "text": [
+        2,
+        3,
+        4
+      ]
+    },
+    "RU-PREG": {
+      "text": [
+        4,
+        5,
+        8
+      ]
+    },
+    "RU-SER": {
+      "text": [
+        6
+      ]
+    },
+    "RU-GAD": {
+      "text": [
+        26,
+        27,
+        28,
+        29,
+        30,
+        77,
+        78
+      ],
+      "scope": "Therapy map and appendix B2 explicitly limited to antidepressant withdrawal; no PREG taper ladder inferred."
+    }
+  }
+}

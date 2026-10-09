@@ -1,0 +1,2482 @@
+schema_version: '1.0'
+rule_id: switch-ser-ago
+development_status: extracted_research_not_executable
+language: ru
+identity:
+  title: 'сертралин → агомелатин: старт B с первого дня снижения A'
+  mode: switch
+  drug_inn: null
+  from_drug_inn: сертралин
+  to_drug_inn: агомелатин
+  formulation:
+    from: Золофт, таблетки 50/100 мг; 50 мг делится на равные дозы
+    to: Вальдоксан, таблетки 25 мг, покрытые пленочной оболочкой
+  route: oral
+  diagnosis_label_ru: Депрессивный эпизод/рекуррентная депрессия у взрослых
+  classification_system: МКБ-10
+  diagnosis_code: F32/F33
+  jurisdiction: RU_versioned_sources
+applicability:
+  population_description: Взрослые с самостоятельным депрессивным расстройством; B не применять от 75 лет по ОХЛП.
+  age_constraints:
+  - minimum: 18
+    inclusive: true
+    unit: year
+    source_ref: RU-AGO
+    source_locator: §4.1–4.2, PDF с.1–2
+  pregnancy: ОХЛП B рекомендует избегать назначения при беременности (§4.6 с.6); отдельное решение врача по A/B,
+    без коэффициента.
+  lactation: ОХЛП B требует решения прекратить вскармливание или терапию (§4.6 с.6); без коэффициента.
+  renal_constraints:
+  - Средняя/тяжёлая почечная недостаточность B требует осторожности, без отдельного числа.
+  hepatic_constraints:
+  - B противопоказан при печеночной недостаточности и АЛТ/АСТ >3 ВГН. До начала печёночные пробы обязательны всем.
+  comorbidity_constraints: []
+  interacting_drugs:
+  - B противопоказан с флувоксамином/ципрофлоксацином (сильные CYP1A2-ингибиторы); проверять оба препарата, §4.3–4.5.
+  other_conditions:
+  - ОХЛП B прямо разрешает начало с 1-го дня постепенного снижения СИОЗС/СИОЗСН. Это классовое разрешение, применённое
+    к явно указанному СИОЗС A; не исследование каждой пары.
+  - Нет полного обязательного календаря доз A. Нужен выбор темпа врачом, а для пароксетина доступен отдельно маркированный
+    взрослый пример.
+  exclusions:
+  - Печеночная недостаточность B; АЛТ или АСТ >3 ВГН; противопоказанный ингибитор CYP1A2; возрастная неприменимость;
+    гиперчувствительность.
+  - Редкие наследственные непереносимость галактозы, полная лактазная недостаточность, глюкозо-галактозная мальабсорбция
+    (§4.3 с.3).
+  - 'Пожилые с деменцией: не назначать (§4.4 с.4); не выводить категорию пожилых из самостоятельно выбранного возраста.'
+  indication_status_in_russia: RU_indication_present_in_original_registry_currency_separate
+  source_refs:
+  - RU-SER
+  - RU-AGO
+  - RU-DEP
+inputs:
+- input_id: from_form
+  question_ru: Какая форма A?
+  data_type: structured_form
+  unit: null
+  allowed_values: []
+  required_when: 'для выбранного индивидуального результата: числовой операнд или явно проверяемое источниковое
+    ограничение'
+  show_when: при выборе результата или использовании уже подтверждённого в этом расчёте факта
+  why_needed: Исполнимость снижения по инструкции A.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; request this specific necessary fact; no individual dose
+  source_refs:
+  - RU-SER
+  input_role: required_selected_result_operand_or_source_gate
+  source_locator: §4.2 с.2–3, прекращение; §3 с.1, форма
+  missing_states:
+  - unknown
+  - not_assessed
+  structure_ref: remediation_round3/input_contracts.yaml#structures/structured_form
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  source_condition_ownership: A=RU-SER
+  requirement_predicate:
+    kind: always
+  necessity_reason: Исполнимость снижения по инструкции A.
+  fact_origin: product_metadata
+- input_id: to_form
+  question_ru: Какая форма B?
+  data_type: structured_form
+  unit: null
+  allowed_values: []
+  required_when: 'для выбранного индивидуального результата: числовой операнд или явно проверяемое источниковое
+    ограничение'
+  show_when: при выборе результата или использовании уже подтверждённого в этом расчёте факта
+  why_needed: Вальдоксан 25 мг, целая таблетка.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; request this specific necessary fact; no individual dose
+  source_refs:
+  - RU-AGO
+  input_role: required_selected_result_operand_or_source_gate
+  source_locator: §2–3 с.1, Вальдоксан 25 мг
+  missing_states:
+  - unknown
+  - not_assessed
+  structure_ref: remediation_round3/input_contracts.yaml#structures/structured_form
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  source_condition_ownership: B=RU-AGO
+  requirement_predicate:
+    kind: always
+  necessity_reason: Вальдоксан 25 мг, целая таблетка.
+  fact_origin: product_metadata
+- input_id: age
+  question_ru: Возраст, полных лет?
+  data_type: integer
+  unit: year
+  allowed_values: []
+  required_when: Only when explicitly supplied for this bounded source result
+  show_when: Only when explicitly supplied
+  why_needed: Для этого ограниченного источникового результата индивидуальная доза/календарь/разрешение старта не
+    выдаются. Пациентское сведение не является обязательной предпосылкой чтения выбранной российской инструкции.
+    Явно сообщённые значения и источниковые ограничения сохраняются и считаются; отсутствие/unknown остаётся not_assessed.
+    Сообщённое текущее условие источникового прекращения получает приоритет только при подтверждённых идентичности
+    фактического препарата и фазе соответствующего A/B. Для отдельного индивидуального дозового/клинического действия
+    нужен его собственный контракт входов.
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Named unassessed context; no clinical clearance or automatic action
+  source_refs:
+  - RU-SER
+  - RU-AGO
+  input_role: reported_source_information
+  source_locator: 'RU-SER: §4.1 с.1; §4.4 с.4; RU-AGO: §4.2 с.2, возрастная применимость'
+  missing_states:
+  - unknown
+  - not_assessed
+  required_for_individual_result: false
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  source_condition_ownership: Shared patient/history fact; each applicable source gate evaluated separately
+  source_locators_by_ref:
+    RU-SER: §4.1 с.1; §4.4 с.4
+    RU-AGO: §4.2 с.2, возрастная применимость
+  requirement_predicate:
+    kind: reported_source_information
+  necessity_reason: Для этого ограниченного источникового результата индивидуальная доза/календарь/разрешение старта
+    не выдаются. Пациентское сведение не является обязательной предпосылкой чтения выбранной российской инструкции.
+    Явно сообщённые значения и источниковые ограничения сохраняются и считаются; отсутствие/unknown остаётся not_assessed.
+    Сообщённое текущее условие источникового прекращения получает приоритет только при подтверждённых идентичности
+    фактического препарата и фазе соответствующего A/B. Для отдельного индивидуального дозового/клинического действия
+    нужен его собственный контракт входов.
+  fact_origin: patient_fact
+- input_id: current_dose
+  question_ru: Сообщённая исходная/последняя суточная доза курса для контекста (мг/сут)? Она не подтверждает текущую
+    фазу приёма.
+  data_type: number
+  unit: mg/day
+  allowed_values: []
+  required_when: Only when explicitly supplied for this bounded source result
+  show_when: Only when explicitly supplied
+  why_needed: Для этого ограниченного источникового результата индивидуальная доза/календарь/разрешение старта не
+    выдаются. Пациентское сведение не является обязательной предпосылкой чтения выбранной российской инструкции.
+    Явно сообщённые значения и источниковые ограничения сохраняются и считаются; отсутствие/unknown остаётся not_assessed.
+    Сообщённое текущее условие источникового прекращения получает приоритет только при подтверждённых идентичности
+    фактического препарата и фазе соответствующего A/B. Для отдельного индивидуального дозового/клинического действия
+    нужен его собственный контракт входов.
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Named unassessed context; no clinical clearance or automatic action
+  source_refs:
+  - RU-SER
+  input_role: reported_source_information
+  source_locator: §4.2 с.2–3, прекращение; §3 с.1, форма
+  missing_states:
+  - unknown
+  - not_assessed
+  required_for_individual_result: false
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  source_condition_ownership: A=RU-SER
+  requirement_predicate:
+    kind: reported_source_information
+  necessity_reason: Для этого ограниченного источникового результата индивидуальная доза/календарь/разрешение старта
+    не выдаются. Пациентское сведение не является обязательной предпосылкой чтения выбранной российской инструкции.
+    Явно сообщённые значения и источниковые ограничения сохраняются и считаются; отсутствие/unknown остаётся not_assessed.
+    Сообщённое текущее условие источникового прекращения получает приоритет только при подтверждённых идентичности
+    фактического препарата и фазе соответствующего A/B. Для отдельного индивидуального дозового/клинического действия
+    нужен его собственный контракт входов.
+  fact_origin: Reported course-dose context only; ongoing current source action requires a separately supplied counted
+    phase.
+  fact_semantics: reported_course_dose_without_current_use_confirmation
+- input_id: from_taper_plan
+  question_ru: Какие конкретные ступени/темп A выбрал врач?
+  data_type: dose_schedule
+  unit: null
+  allowed_values: []
+  required_when: Only when explicitly supplied for this bounded source result
+  show_when: Only when explicitly supplied
+  why_needed: Для этого ограниченного источникового результата индивидуальная доза/календарь/разрешение старта не
+    выдаются. Пациентское сведение не является обязательной предпосылкой чтения выбранной российской инструкции.
+    Явно сообщённые значения и источниковые ограничения сохраняются и считаются; отсутствие/unknown остаётся not_assessed.
+    Сообщённое текущее условие источникового прекращения получает приоритет только при подтверждённых идентичности
+    фактического препарата и фазе соответствующего A/B. Для отдельного индивидуального дозового/клинического действия
+    нужен его собственный контракт входов.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Named unassessed context; no clinical clearance or automatic action
+  source_refs:
+  - RU-SER
+  input_role: reported_source_information
+  source_locator: §4.2 с.2–3, прекращение; §3 с.1, форма
+  missing_states:
+  - unknown
+  - not_assessed
+  required_for_individual_result: false
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  structure_ref: remediation_round3/input_contracts.yaml#structures/dose_schedule
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  source_condition_ownership: A=RU-SER
+  requirement_predicate:
+    kind: reported_source_information
+  necessity_reason: Для этого ограниченного источникового результата индивидуальная доза/календарь/разрешение старта
+    не выдаются. Пациентское сведение не является обязательной предпосылкой чтения выбранной российской инструкции.
+    Явно сообщённые значения и источниковые ограничения сохраняются и считаются; отсутствие/unknown остаётся not_assessed.
+    Сообщённое текущее условие источникового прекращения получает приоритет только при подтверждённых идентичности
+    фактического препарата и фазе соответствующего A/B. Для отдельного индивидуального дозового/клинического действия
+    нужен его собственный контракт входов.
+  fact_origin: patient_fact
+- input_id: hepatic
+  question_ru: Есть нарушение функции печени?
+  data_type: source_hepatic_category
+  unit: null
+  allowed_values: []
+  required_when: Only when explicitly supplied for this bounded source result
+  show_when: Only when explicitly supplied
+  why_needed: Для этого ограниченного источникового результата индивидуальная доза/календарь/разрешение старта не
+    выдаются. Пациентское сведение не является обязательной предпосылкой чтения выбранной российской инструкции.
+    Явно сообщённые значения и источниковые ограничения сохраняются и считаются; отсутствие/unknown остаётся not_assessed.
+    Сообщённое текущее условие источникового прекращения получает приоритет только при подтверждённых идентичности
+    фактического препарата и фазе соответствующего A/B. Для отдельного индивидуального дозового/клинического действия
+    нужен его собственный контракт входов.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Named unassessed context; no clinical clearance or automatic action
+  source_refs:
+  - RU-AGO
+  input_role: reported_source_information
+  source_locator: §4.2 с.2; §4.3 с.3
+  missing_states:
+  - unknown
+  - not_assessed
+  structure_ref: remediation_round3/input_contracts.yaml#structures/source_hepatic_category
+  source_categories:
+  - no_impairment_after_assessment
+  - hepatic_insufficiency
+  - cirrhosis
+  - active_liver_disease
+  required_for_individual_result: false
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  source_condition_ownership: B=RU-AGO
+  requirement_predicate:
+    kind: reported_source_information
+  necessity_reason: Для этого ограниченного источникового результата индивидуальная доза/календарь/разрешение старта
+    не выдаются. Пациентское сведение не является обязательной предпосылкой чтения выбранной российской инструкции.
+    Явно сообщённые значения и источниковые ограничения сохраняются и считаются; отсутствие/unknown остаётся not_assessed.
+    Сообщённое текущее условие источникового прекращения получает приоритет только при подтверждённых идентичности
+    фактического препарата и фазе соответствующего A/B. Для отдельного индивидуального дозового/клинического действия
+    нужен его собственный контракт входов.
+  fact_origin: patient_fact
+- input_id: alt_ratio_uln
+  question_ru: АЛТ относительно ВГН?
+  data_type: number
+  unit: ratio_to_ULN
+  allowed_values: []
+  required_when: Only when explicitly supplied for this bounded source result
+  show_when: Only when explicitly supplied
+  why_needed: Для этого ограниченного источникового результата индивидуальная доза/календарь/разрешение старта не
+    выдаются. Пациентское сведение не является обязательной предпосылкой чтения выбранной российской инструкции.
+    Явно сообщённые значения и источниковые ограничения сохраняются и считаются; отсутствие/unknown остаётся not_assessed.
+    Сообщённое текущее условие источникового прекращения получает приоритет только при подтверждённых идентичности
+    фактического препарата и фазе соответствующего A/B. Для отдельного индивидуального дозового/клинического действия
+    нужен его собственный контракт входов.
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Named unassessed context; no clinical clearance or automatic action
+  source_refs:
+  - RU-AGO
+  input_role: reported_source_information
+  source_locator: §4.3 с.3; §4.4 с.3–4, АЛТ отдельно
+  missing_states:
+  - unknown
+  - not_assessed
+  required_for_individual_result: false
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  source_condition_ownership: B=RU-AGO
+  requirement_predicate:
+    kind: reported_source_information
+  necessity_reason: Для этого ограниченного источникового результата индивидуальная доза/календарь/разрешение старта
+    не выдаются. Пациентское сведение не является обязательной предпосылкой чтения выбранной российской инструкции.
+    Явно сообщённые значения и источниковые ограничения сохраняются и считаются; отсутствие/unknown остаётся not_assessed.
+    Сообщённое текущее условие источникового прекращения получает приоритет только при подтверждённых идентичности
+    фактического препарата и фазе соответствующего A/B. Для отдельного индивидуального дозового/клинического действия
+    нужен его собственный контракт входов.
+  fact_origin: patient_fact
+- input_id: ast_ratio_uln
+  question_ru: АСТ относительно ВГН?
+  data_type: number
+  unit: ratio_to_ULN
+  allowed_values: []
+  required_when: Only when explicitly supplied for this bounded source result
+  show_when: Only when explicitly supplied
+  why_needed: Для этого ограниченного источникового результата индивидуальная доза/календарь/разрешение старта не
+    выдаются. Пациентское сведение не является обязательной предпосылкой чтения выбранной российской инструкции.
+    Явно сообщённые значения и источниковые ограничения сохраняются и считаются; отсутствие/unknown остаётся not_assessed.
+    Сообщённое текущее условие источникового прекращения получает приоритет только при подтверждённых идентичности
+    фактического препарата и фазе соответствующего A/B. Для отдельного индивидуального дозового/клинического действия
+    нужен его собственный контракт входов.
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Named unassessed context; no clinical clearance or automatic action
+  source_refs:
+  - RU-AGO
+  input_role: reported_source_information
+  source_locator: §4.3 с.3; §4.4 с.3–4, АСТ отдельно
+  missing_states:
+  - unknown
+  - not_assessed
+  required_for_individual_result: false
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  source_condition_ownership: B=RU-AGO
+  requirement_predicate:
+    kind: reported_source_information
+  necessity_reason: Для этого ограниченного источникового результата индивидуальная доза/календарь/разрешение старта
+    не выдаются. Пациентское сведение не является обязательной предпосылкой чтения выбранной российской инструкции.
+    Явно сообщённые значения и источниковые ограничения сохраняются и считаются; отсутствие/unknown остаётся not_assessed.
+    Сообщённое текущее условие источникового прекращения получает приоритет только при подтверждённых идентичности
+    фактического препарата и фазе соответствующего A/B. Для отдельного индивидуального дозового/клинического действия
+    нужен его собственный контракт входов.
+  fact_origin: patient_fact
+- input_id: medicines
+  question_ru: Текущие/недавно отменённые лекарства?
+  data_type: medication_list
+  unit: null
+  allowed_values: []
+  required_when: Only when explicitly supplied for this bounded source result
+  show_when: Only when explicitly supplied
+  why_needed: Для этого ограниченного источникового результата индивидуальная доза/календарь/разрешение старта не
+    выдаются. Пациентское сведение не является обязательной предпосылкой чтения выбранной российской инструкции.
+    Явно сообщённые значения и источниковые ограничения сохраняются и считаются; отсутствие/unknown остаётся not_assessed.
+    Сообщённое текущее условие источникового прекращения получает приоритет только при подтверждённых идентичности
+    фактического препарата и фазе соответствующего A/B. Для отдельного индивидуального дозового/клинического действия
+    нужен его собственный контракт входов.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Named unassessed context; no clinical clearance or automatic action
+  source_refs:
+  - RU-SER
+  - RU-AGO
+  input_role: reported_source_information
+  source_locator: 'RU-SER: §4.3 с.3; §4.5 с.7–11; RU-AGO: §4.3 с.3; §4.5 с.5–6'
+  missing_states:
+  - unknown
+  - not_assessed
+  structure_ref: remediation_round3/input_contracts.yaml#structures/medication_list
+  required_for_individual_result: false
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  source_condition_ownership: Shared patient/history fact; each applicable source gate evaluated separately
+  source_locators_by_ref:
+    RU-SER: §4.3 с.3; §4.5 с.7–11
+    RU-AGO: §4.3 с.3; §4.5 с.5–6
+  requirement_predicate:
+    kind: reported_source_information
+  necessity_reason: Для этого ограниченного источникового результата индивидуальная доза/календарь/разрешение старта
+    не выдаются. Пациентское сведение не является обязательной предпосылкой чтения выбранной российской инструкции.
+    Явно сообщённые значения и источниковые ограничения сохраняются и считаются; отсутствие/unknown остаётся not_assessed.
+    Сообщённое текущее условие источникового прекращения получает приоритет только при подтверждённых идентичности
+    фактического препарата и фазе соответствующего A/B. Для отдельного индивидуального дозового/клинического действия
+    нужен его собственный контракт входов.
+  fact_origin: patient_fact
+- input_id: allergy
+  question_ru: 'Отдельно: гиперчувствительность к A и его компонентам? К B и его компонентам?'
+  data_type: paired_allergy
+  unit: null
+  allowed_values: []
+  required_when: Only when explicitly supplied for this bounded source result
+  show_when: Only when explicitly supplied
+  why_needed: Для этого ограниченного источникового результата индивидуальная доза/календарь/разрешение старта не
+    выдаются. Пациентское сведение не является обязательной предпосылкой чтения выбранной российской инструкции.
+    Явно сообщённые значения и источниковые ограничения сохраняются и считаются; отсутствие/unknown остаётся not_assessed.
+    Сообщённое текущее условие источникового прекращения получает приоритет только при подтверждённых идентичности
+    фактического препарата и фазе соответствующего A/B. Для отдельного индивидуального дозового/клинического действия
+    нужен его собственный контракт входов.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Named unassessed context; no clinical clearance or automatic action
+  source_refs:
+  - RU-SER
+  - RU-AGO
+  input_role: reported_source_information
+  source_locator: 'RU-SER: §4.3 с.3; RU-AGO: §4.3 с.3'
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    да: true
+    нет: false
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  required_for_individual_result: false
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  source_condition_ownership: Shared patient/history fact; each applicable source gate evaluated separately
+  source_locators_by_ref:
+    RU-SER: §4.3 с.3
+    RU-AGO: §4.3 с.3
+  requirement_predicate:
+    kind: reported_source_information
+  necessity_reason: Для этого ограниченного источникового результата индивидуальная доза/календарь/разрешение старта
+    не выдаются. Пациентское сведение не является обязательной предпосылкой чтения выбранной российской инструкции.
+    Явно сообщённые значения и источниковые ограничения сохраняются и считаются; отсутствие/unknown остаётся not_assessed.
+    Сообщённое текущее условие источникового прекращения получает приоритет только при подтверждённых идентичности
+    фактического препарата и фазе соответствующего A/B. Для отдельного индивидуального дозового/клинического действия
+    нужен его собственный контракт входов.
+  fact_origin: patient_fact
+  structure_ref: remediation_round3/input_contracts.yaml#structures/paired_allergy
+  source_owner_by_member:
+    A: RU-SER
+    B: RU-AGO
+- input_id: pregnancy
+  question_ru: Беременность установлена или возможна?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: Only when explicitly supplied for this bounded source result
+  show_when: Only when explicitly supplied
+  why_needed: Для этого ограниченного источникового результата индивидуальная доза/календарь/разрешение старта не
+    выдаются. Пациентское сведение не является обязательной предпосылкой чтения выбранной российской инструкции.
+    Явно сообщённые значения и источниковые ограничения сохраняются и считаются; отсутствие/unknown остаётся not_assessed.
+    Сообщённое текущее условие источникового прекращения получает приоритет только при подтверждённых идентичности
+    фактического препарата и фазе соответствующего A/B. Для отдельного индивидуального дозового/клинического действия
+    нужен его собственный контракт входов.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Named unassessed context; no clinical clearance or automatic action
+  source_refs:
+  - RU-SER
+  - RU-AGO
+  input_role: reported_source_information
+  source_locator: 'RU-SER: §4.6 с.10–11; RU-AGO: §4.6 с.6'
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    да: true
+    нет: false
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  required_for_individual_result: false
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  source_condition_ownership: Shared patient/history fact; each applicable source gate evaluated separately
+  source_locators_by_ref:
+    RU-SER: §4.6 с.10–11
+    RU-AGO: §4.6 с.6
+  requirement_predicate:
+    kind: reported_source_information
+  necessity_reason: Для этого ограниченного источникового результата индивидуальная доза/календарь/разрешение старта
+    не выдаются. Пациентское сведение не является обязательной предпосылкой чтения выбранной российской инструкции.
+    Явно сообщённые значения и источниковые ограничения сохраняются и считаются; отсутствие/unknown остаётся not_assessed.
+    Сообщённое текущее условие источникового прекращения получает приоритет только при подтверждённых идентичности
+    фактического препарата и фазе соответствующего A/B. Для отдельного индивидуального дозового/клинического действия
+    нужен его собственный контракт входов.
+  fact_origin: patient_fact
+- input_id: lactation
+  question_ru: Есть грудное вскармливание?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: Only when explicitly supplied for this bounded source result
+  show_when: Only when explicitly supplied
+  why_needed: Для этого ограниченного источникового результата индивидуальная доза/календарь/разрешение старта не
+    выдаются. Пациентское сведение не является обязательной предпосылкой чтения выбранной российской инструкции.
+    Явно сообщённые значения и источниковые ограничения сохраняются и считаются; отсутствие/unknown остаётся not_assessed.
+    Сообщённое текущее условие источникового прекращения получает приоритет только при подтверждённых идентичности
+    фактического препарата и фазе соответствующего A/B. Для отдельного индивидуального дозового/клинического действия
+    нужен его собственный контракт входов.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Named unassessed context; no clinical clearance or automatic action
+  source_refs:
+  - RU-SER
+  - RU-AGO
+  input_role: reported_source_information
+  source_locator: 'RU-SER: §4.6 с.11; RU-AGO: §4.6 с.6'
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    да: true
+    нет: false
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  required_for_individual_result: false
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  source_condition_ownership: Shared patient/history fact; each applicable source gate evaluated separately
+  source_locators_by_ref:
+    RU-SER: §4.6 с.11
+    RU-AGO: §4.6 с.6
+  requirement_predicate:
+    kind: reported_source_information
+  necessity_reason: Для этого ограниченного источникового результата индивидуальная доза/календарь/разрешение старта
+    не выдаются. Пациентское сведение не является обязательной предпосылкой чтения выбранной российской инструкции.
+    Явно сообщённые значения и источниковые ограничения сохраняются и считаются; отсутствие/unknown остаётся not_assessed.
+    Сообщённое текущее условие источникового прекращения получает приоритет только при подтверждённых идентичности
+    фактического препарата и фазе соответствующего A/B. Для отдельного индивидуального дозового/клинического действия
+    нужен его собственный контракт входов.
+  fact_origin: patient_fact
+- input_id: withdrawal_severity
+  question_ru: Текущие симптомы отмены A по оценке врача?
+  data_type: enum
+  unit: null
+  allowed_values:
+  - нет
+  - лёгкие
+  - умеренные
+  - тяжёлые
+  - непереносимые
+  - выраженные
+  - unknown
+  - not_assessed
+  required_when: Only when explicitly supplied for this bounded source result
+  show_when: Only when explicitly supplied
+  why_needed: Для этого ограниченного источникового результата индивидуальная доза/календарь/разрешение старта не
+    выдаются. Пациентское сведение не является обязательной предпосылкой чтения выбранной российской инструкции.
+    Явно сообщённые значения и источниковые ограничения сохраняются и считаются; отсутствие/unknown остаётся not_assessed.
+    Сообщённое текущее условие источникового прекращения получает приоритет только при подтверждённых идентичности
+    фактического препарата и фазе соответствующего A/B. Для отдельного индивидуального дозового/клинического действия
+    нужен его собственный контракт входов.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Named unassessed context; no clinical clearance or automatic action
+  source_refs:
+  - RU-SER
+  input_role: reported_source_information
+  source_locator: §4.2 с.2–3, прекращение; §3 с.1, форма
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    нет требующих замедления симптомов: нет
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  required_for_individual_result: false
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  source_condition_ownership: A=RU-SER
+  requirement_predicate:
+    kind: reported_source_information
+  necessity_reason: Для этого ограниченного источникового результата индивидуальная доза/календарь/разрешение старта
+    не выдаются. Пациентское сведение не является обязательной предпосылкой чтения выбранной российской инструкции.
+    Явно сообщённые значения и источниковые ограничения сохраняются и считаются; отсутствие/unknown остаётся not_assessed.
+    Сообщённое текущее условие источникового прекращения получает приоритет только при подтверждённых идентичности
+    фактического препарата и фазе соответствующего A/B. Для отдельного индивидуального дозового/клинического действия
+    нужен его собственный контракт входов.
+  fact_origin: patient_fact
+- input_id: maoi_type
+  question_ru: Тип каждого текущего/отменённого ИМАО?
+  data_type: record_map
+  unit: null
+  allowed_values:
+  - none_after_medication_history
+  - irreversible
+  - reversible_selective
+  - reversible_nonselective
+  - unknown
+  - not_assessed
+  required_when: каждая текущая/отменённая запись ИМАО или неизвестный класс взаимодействия
+  show_when: каждая текущая/отменённая запись ИМАО или неизвестный класс взаимодействия
+  why_needed: 'Изменяет применимость/действие: §4.3 с.3; §4.5 с.7–8.'
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; request this specific necessary fact; no individual dose
+  source_refs:
+  - RU-SER
+  source_locator: §4.3 с.3; §4.5 с.7–8
+  input_role: maoi_record
+  required_for_individual_result: false
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  collection: per medication record_id
+  value_data_type: enum
+  source_condition_ownership: A=RU-SER
+  requirement_predicate:
+    kind: maoi_record
+  necessity_reason: Each relevant MAOI type, not one compound clearance answer.
+  fact_origin: patient_fact
+- input_id: maoi_stopped_at
+  question_ru: Дата и время последнего приёма каждого отменённого ИМАО?
+  data_type: record_map
+  unit: null
+  allowed_values: []
+  required_when: каждая отменённая запись ИМАО отдельно
+  show_when: каждая отменённая запись ИМАО отдельно
+  why_needed: 'Изменяет применимость/действие: §4.3 с.3; §4.5 с.7–8.'
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; request this specific necessary fact; no individual dose
+  source_refs:
+  - RU-SER
+  source_locator: §4.3 с.3; §4.5 с.7–8
+  input_role: stopped_maoi_record
+  required_for_individual_result: false
+  missing_states:
+  - unknown
+  - not_assessed
+  collection: per medication record_id
+  value_data_type: datetime
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  source_condition_ownership: A=RU-SER
+  requirement_predicate:
+    kind: stopped_maoi_record
+  necessity_reason: Timestamp of each stopped MAOI; no timestamp for an empty assessed history.
+  fact_origin: patient_fact
+- input_id: elderly_population
+  question_ru: Врач относит пациента к пожилым?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: Only when explicitly supplied for this bounded source result
+  show_when: Only when explicitly supplied
+  why_needed: Для этого ограниченного источникового результата индивидуальная доза/календарь/разрешение старта не
+    выдаются. Пациентское сведение не является обязательной предпосылкой чтения выбранной российской инструкции.
+    Явно сообщённые значения и источниковые ограничения сохраняются и считаются; отсутствие/unknown остаётся not_assessed.
+    Сообщённое текущее условие источникового прекращения получает приоритет только при подтверждённых идентичности
+    фактического препарата и фазе соответствующего A/B. Для отдельного индивидуального дозового/клинического действия
+    нужен его собственный контракт входов.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: Named unassessed context; no clinical clearance or automatic action
+  source_refs:
+  - RU-AGO
+  source_locator: §4.4 с.4; числовая граница категории не задана
+  input_role: reported_source_information
+  required_for_individual_result: false
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    да: true
+    нет: false
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  source_condition_ownership: B=RU-AGO
+  requirement_predicate:
+    kind: reported_source_information
+  necessity_reason: Для этого ограниченного источникового результата индивидуальная доза/календарь/разрешение старта
+    не выдаются. Пациентское сведение не является обязательной предпосылкой чтения выбранной российской инструкции.
+    Явно сообщённые значения и источниковые ограничения сохраняются и считаются; отсутствие/unknown остаётся not_assessed.
+    Сообщённое текущее условие источникового прекращения получает приоритет только при подтверждённых идентичности
+    фактического препарата и фазе соответствующего A/B. Для отдельного индивидуального дозового/клинического действия
+    нужен его собственный контракт входов.
+  fact_origin: patient_fact
+- input_id: dementia
+  question_ru: Есть деменция?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: Only when explicitly supplied for this bounded source result
+  show_when: Only when explicitly supplied
+  why_needed: Для этого ограниченного источникового результата индивидуальная доза/календарь/разрешение старта не
+    выдаются. Пациентское сведение не является обязательной предпосылкой чтения выбранной российской инструкции.
+    Явно сообщённые значения и источниковые ограничения сохраняются и считаются; отсутствие/unknown остаётся not_assessed.
+    Сообщённое текущее условие источникового прекращения получает приоритет только при подтверждённых идентичности
+    фактического препарата и фазе соответствующего A/B. Для отдельного индивидуального дозового/клинического действия
+    нужен его собственный контракт входов.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: Named unassessed context; no clinical clearance or automatic action
+  source_refs:
+  - RU-AGO
+  source_locator: §4.4 с.4
+  input_role: reported_source_information
+  required_for_individual_result: false
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    да: true
+    нет: false
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  source_condition_ownership: B=RU-AGO
+  requirement_predicate:
+    kind: reported_source_information
+  necessity_reason: Для этого ограниченного источникового результата индивидуальная доза/календарь/разрешение старта
+    не выдаются. Пациентское сведение не является обязательной предпосылкой чтения выбранной российской инструкции.
+    Явно сообщённые значения и источниковые ограничения сохраняются и считаются; отсутствие/unknown остаётся not_assessed.
+    Сообщённое текущее условие источникового прекращения получает приоритет только при подтверждённых идентичности
+    фактического препарата и фазе соответствующего A/B. Для отдельного индивидуального дозового/клинического действия
+    нужен его собственный контракт входов.
+  fact_origin: patient_fact
+- input_id: galactose_intolerance
+  question_ru: Редкая наследственная непереносимость галактозы?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: Only when explicitly supplied for this bounded source result
+  show_when: Only when explicitly supplied
+  why_needed: Для этого ограниченного источникового результата индивидуальная доза/календарь/разрешение старта не
+    выдаются. Пациентское сведение не является обязательной предпосылкой чтения выбранной российской инструкции.
+    Явно сообщённые значения и источниковые ограничения сохраняются и считаются; отсутствие/unknown остаётся not_assessed.
+    Сообщённое текущее условие источникового прекращения получает приоритет только при подтверждённых идентичности
+    фактического препарата и фазе соответствующего A/B. Для отдельного индивидуального дозового/клинического действия
+    нужен его собственный контракт входов.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: Named unassessed context; no clinical clearance or automatic action
+  source_refs:
+  - RU-AGO
+  source_locator: §4.3 с.3; §4.4 с.5
+  input_role: reported_source_information
+  required_for_individual_result: false
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    да: true
+    нет: false
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  source_condition_ownership: B=RU-AGO
+  requirement_predicate:
+    kind: reported_source_information
+  necessity_reason: Для этого ограниченного источникового результата индивидуальная доза/календарь/разрешение старта
+    не выдаются. Пациентское сведение не является обязательной предпосылкой чтения выбранной российской инструкции.
+    Явно сообщённые значения и источниковые ограничения сохраняются и считаются; отсутствие/unknown остаётся not_assessed.
+    Сообщённое текущее условие источникового прекращения получает приоритет только при подтверждённых идентичности
+    фактического препарата и фазе соответствующего A/B. Для отдельного индивидуального дозового/клинического действия
+    нужен его собственный контракт входов.
+  fact_origin: patient_fact
+- input_id: complete_lactase_deficiency
+  question_ru: Полная лактазная недостаточность?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: Only when explicitly supplied for this bounded source result
+  show_when: Only when explicitly supplied
+  why_needed: Для этого ограниченного источникового результата индивидуальная доза/календарь/разрешение старта не
+    выдаются. Пациентское сведение не является обязательной предпосылкой чтения выбранной российской инструкции.
+    Явно сообщённые значения и источниковые ограничения сохраняются и считаются; отсутствие/unknown остаётся not_assessed.
+    Сообщённое текущее условие источникового прекращения получает приоритет только при подтверждённых идентичности
+    фактического препарата и фазе соответствующего A/B. Для отдельного индивидуального дозового/клинического действия
+    нужен его собственный контракт входов.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: Named unassessed context; no clinical clearance or automatic action
+  source_refs:
+  - RU-AGO
+  source_locator: §4.3 с.3; §4.4 с.5
+  input_role: reported_source_information
+  required_for_individual_result: false
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    да: true
+    нет: false
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  source_condition_ownership: B=RU-AGO
+  requirement_predicate:
+    kind: reported_source_information
+  necessity_reason: Для этого ограниченного источникового результата индивидуальная доза/календарь/разрешение старта
+    не выдаются. Пациентское сведение не является обязательной предпосылкой чтения выбранной российской инструкции.
+    Явно сообщённые значения и источниковые ограничения сохраняются и считаются; отсутствие/unknown остаётся not_assessed.
+    Сообщённое текущее условие источникового прекращения получает приоритет только при подтверждённых идентичности
+    фактического препарата и фазе соответствующего A/B. Для отдельного индивидуального дозового/клинического действия
+    нужен его собственный контракт входов.
+  fact_origin: patient_fact
+- input_id: glucose_galactose_malabsorption
+  question_ru: Глюкозо-галактозная мальабсорбция?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: Only when explicitly supplied for this bounded source result
+  show_when: Only when explicitly supplied
+  why_needed: Для этого ограниченного источникового результата индивидуальная доза/календарь/разрешение старта не
+    выдаются. Пациентское сведение не является обязательной предпосылкой чтения выбранной российской инструкции.
+    Явно сообщённые значения и источниковые ограничения сохраняются и считаются; отсутствие/unknown остаётся not_assessed.
+    Сообщённое текущее условие источникового прекращения получает приоритет только при подтверждённых идентичности
+    фактического препарата и фазе соответствующего A/B. Для отдельного индивидуального дозового/клинического действия
+    нужен его собственный контракт входов.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: Named unassessed context; no clinical clearance or automatic action
+  source_refs:
+  - RU-AGO
+  source_locator: §4.3 с.3; §4.4 с.5
+  input_role: reported_source_information
+  required_for_individual_result: false
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    да: true
+    нет: false
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  source_condition_ownership: B=RU-AGO
+  requirement_predicate:
+    kind: reported_source_information
+  necessity_reason: Для этого ограниченного источникового результата индивидуальная доза/календарь/разрешение старта
+    не выдаются. Пациентское сведение не является обязательной предпосылкой чтения выбранной российской инструкции.
+    Явно сообщённые значения и источниковые ограничения сохраняются и считаются; отсутствие/unknown остаётся not_assessed.
+    Сообщённое текущее условие источникового прекращения получает приоритет только при подтверждённых идентичности
+    фактического препарата и фазе соответствующего A/B. Для отдельного индивидуального дозового/клинического действия
+    нужен его собственный контракт входов.
+  fact_origin: patient_fact
+- input_id: liver_injury_signs
+  question_ru: Есть признаки возможного поражения печени?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: Only when explicitly supplied for this bounded source result
+  show_when: Only when explicitly supplied
+  why_needed: Для этого ограниченного источникового результата индивидуальная доза/календарь/разрешение старта не
+    выдаются. Пациентское сведение не является обязательной предпосылкой чтения выбранной российской инструкции.
+    Явно сообщённые значения и источниковые ограничения сохраняются и считаются; отсутствие/unknown остаётся not_assessed.
+    Сообщённое текущее условие источникового прекращения получает приоритет только при подтверждённых идентичности
+    фактического препарата и фазе соответствующего A/B. Для отдельного индивидуального дозового/клинического действия
+    нужен его собственный контракт входов.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: Named unassessed context; no clinical clearance or automatic action
+  source_refs:
+  - RU-AGO
+  source_locator: '§4.4 с.4: темная моча, обесцвеченный стул, желтуха, боль справа вверху живота, новая необъяснимая
+    постоянная утомляемость'
+  input_role: reported_current_event
+  required_for_individual_result: false
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    да: true
+    нет: false
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  source_condition_ownership: B=RU-AGO
+  requirement_predicate:
+    kind: reported_current_event
+  necessity_reason: Для этого ограниченного источникового результата индивидуальная доза/календарь/разрешение старта
+    не выдаются. Пациентское сведение не является обязательной предпосылкой чтения выбранной российской инструкции.
+    Явно сообщённые значения и источниковые ограничения сохраняются и считаются; отсутствие/unknown остаётся not_assessed.
+    Сообщённое текущее условие источникового прекращения получает приоритет только при подтверждённых идентичности
+    фактического препарата и фазе соответствующего A/B. Для отдельного индивидуального дозового/клинического действия
+    нужен его собственный контракт входов.
+  fact_origin: patient_fact
+- input_id: transaminases_rising
+  question_ru: Установлено повышение активности трансаминаз в ходе лечения?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: Only when explicitly supplied for this bounded source result
+  show_when: Only when explicitly supplied
+  why_needed: Для этого ограниченного источникового результата индивидуальная доза/календарь/разрешение старта не
+    выдаются. Пациентское сведение не является обязательной предпосылкой чтения выбранной российской инструкции.
+    Явно сообщённые значения и источниковые ограничения сохраняются и считаются; отсутствие/unknown остаётся not_assessed.
+    Сообщённое текущее условие источникового прекращения получает приоритет только при подтверждённых идентичности
+    фактического препарата и фазе соответствующего A/B. Для отдельного индивидуального дозового/клинического действия
+    нужен его собственный контракт входов.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: Named unassessed context; no clinical clearance or automatic action
+  source_refs:
+  - RU-AGO
+  source_locator: §4.4 с.4
+  input_role: reported_source_information
+  required_for_individual_result: false
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    да: true
+    нет: false
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  source_condition_ownership: B=RU-AGO
+  requirement_predicate:
+    kind: reported_source_information
+  necessity_reason: Для этого ограниченного источникового результата индивидуальная доза/календарь/разрешение старта
+    не выдаются. Пациентское сведение не является обязательной предпосылкой чтения выбранной российской инструкции.
+    Явно сообщённые значения и источниковые ограничения сохраняются и считаются; отсутствие/unknown остаётся not_assessed.
+    Сообщённое текущее условие источникового прекращения получает приоритет только при подтверждённых идентичности
+    фактического препарата и фазе соответствующего A/B. Для отдельного индивидуального дозового/клинического действия
+    нужен его собственный контракт входов.
+  fact_origin: patient_fact
+- input_id: overweight_obesity
+  question_ru: Есть избыточная масса тела/ожирение?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: Only when explicitly supplied for this bounded source result
+  show_when: Only when explicitly supplied
+  why_needed: Для этого ограниченного источникового результата индивидуальная доза/календарь/разрешение старта не
+    выдаются. Пациентское сведение не является обязательной предпосылкой чтения выбранной российской инструкции.
+    Явно сообщённые значения и источниковые ограничения сохраняются и считаются; отсутствие/unknown остаётся not_assessed.
+    Сообщённое текущее условие источникового прекращения получает приоритет только при подтверждённых идентичности
+    фактического препарата и фазе соответствующего A/B. Для отдельного индивидуального дозового/клинического действия
+    нужен его собственный контракт входов.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: Named unassessed context; no clinical clearance or automatic action
+  source_refs:
+  - RU-AGO
+  source_locator: §4.4 с.3
+  input_role: reported_source_information
+  required_for_individual_result: false
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    да: true
+    нет: false
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  source_condition_ownership: B=RU-AGO
+  requirement_predicate:
+    kind: reported_source_information
+  necessity_reason: Для этого ограниченного источникового результата индивидуальная доза/календарь/разрешение старта
+    не выдаются. Пациентское сведение не является обязательной предпосылкой чтения выбранной российской инструкции.
+    Явно сообщённые значения и источниковые ограничения сохраняются и считаются; отсутствие/unknown остаётся not_assessed.
+    Сообщённое текущее условие источникового прекращения получает приоритет только при подтверждённых идентичности
+    фактического препарата и фазе соответствующего A/B. Для отдельного индивидуального дозового/клинического действия
+    нужен его собственный контракт входов.
+  fact_origin: patient_fact
+- input_id: fatty_liver
+  question_ru: Есть неалкогольная жировая болезнь печени?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: Only when explicitly supplied for this bounded source result
+  show_when: Only when explicitly supplied
+  why_needed: Для этого ограниченного источникового результата индивидуальная доза/календарь/разрешение старта не
+    выдаются. Пациентское сведение не является обязательной предпосылкой чтения выбранной российской инструкции.
+    Явно сообщённые значения и источниковые ограничения сохраняются и считаются; отсутствие/unknown остаётся not_assessed.
+    Сообщённое текущее условие источникового прекращения получает приоритет только при подтверждённых идентичности
+    фактического препарата и фазе соответствующего A/B. Для отдельного индивидуального дозового/клинического действия
+    нужен его собственный контракт входов.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: Named unassessed context; no clinical clearance or automatic action
+  source_refs:
+  - RU-AGO
+  source_locator: §4.4 с.3
+  input_role: reported_source_information
+  required_for_individual_result: false
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    да: true
+    нет: false
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  source_condition_ownership: B=RU-AGO
+  requirement_predicate:
+    kind: reported_source_information
+  necessity_reason: Для этого ограниченного источникового результата индивидуальная доза/календарь/разрешение старта
+    не выдаются. Пациентское сведение не является обязательной предпосылкой чтения выбранной российской инструкции.
+    Явно сообщённые значения и источниковые ограничения сохраняются и считаются; отсутствие/unknown остаётся not_assessed.
+    Сообщённое текущее условие источникового прекращения получает приоритет только при подтверждённых идентичности
+    фактического препарата и фазе соответствующего A/B. Для отдельного индивидуального дозового/клинического действия
+    нужен его собственный контракт входов.
+  fact_origin: patient_fact
+- input_id: diabetes
+  question_ru: Есть диабет?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: Only when explicitly supplied for this bounded source result
+  show_when: Only when explicitly supplied
+  why_needed: Для этого ограниченного источникового результата индивидуальная доза/календарь/разрешение старта не
+    выдаются. Пациентское сведение не является обязательной предпосылкой чтения выбранной российской инструкции.
+    Явно сообщённые значения и источниковые ограничения сохраняются и считаются; отсутствие/unknown остаётся not_assessed.
+    Сообщённое текущее условие источникового прекращения получает приоритет только при подтверждённых идентичности
+    фактического препарата и фазе соответствующего A/B. Для отдельного индивидуального дозового/клинического действия
+    нужен его собственный контракт входов.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: Named unassessed context; no clinical clearance or automatic action
+  source_refs:
+  - RU-AGO
+  source_locator: §4.4 с.3
+  input_role: reported_source_information
+  required_for_individual_result: false
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    да: true
+    нет: false
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  source_condition_ownership: B=RU-AGO
+  requirement_predicate:
+    kind: reported_source_information
+  necessity_reason: Для этого ограниченного источникового результата индивидуальная доза/календарь/разрешение старта
+    не выдаются. Пациентское сведение не является обязательной предпосылкой чтения выбранной российской инструкции.
+    Явно сообщённые значения и источниковые ограничения сохраняются и считаются; отсутствие/unknown остаётся not_assessed.
+    Сообщённое текущее условие источникового прекращения получает приоритет только при подтверждённых идентичности
+    фактического препарата и фазе соответствующего A/B. Для отдельного индивидуального дозового/клинического действия
+    нужен его собственный контракт входов.
+  fact_origin: patient_fact
+- input_id: alcohol_abuse
+  question_ru: Есть алкоголизм или злоупотребление алкоголем?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: Only when explicitly supplied for this bounded source result
+  show_when: Only when explicitly supplied
+  why_needed: Для этого ограниченного источникового результата индивидуальная доза/календарь/разрешение старта не
+    выдаются. Пациентское сведение не является обязательной предпосылкой чтения выбранной российской инструкции.
+    Явно сообщённые значения и источниковые ограничения сохраняются и считаются; отсутствие/unknown остаётся not_assessed.
+    Сообщённое текущее условие источникового прекращения получает приоритет только при подтверждённых идентичности
+    фактического препарата и фазе соответствующего A/B. Для отдельного индивидуального дозового/клинического действия
+    нужен его собственный контракт входов.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: Named unassessed context; no clinical clearance or automatic action
+  source_refs:
+  - RU-AGO
+  source_locator: §4.4 с.3
+  input_role: reported_source_information
+  required_for_individual_result: false
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    да: true
+    нет: false
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  source_condition_ownership: B=RU-AGO
+  requirement_predicate:
+    kind: reported_source_information
+  necessity_reason: Для этого ограниченного источникового результата индивидуальная доза/календарь/разрешение старта
+    не выдаются. Пациентское сведение не является обязательной предпосылкой чтения выбранной российской инструкции.
+    Явно сообщённые значения и источниковые ограничения сохраняются и считаются; отсутствие/unknown остаётся not_assessed.
+    Сообщённое текущее условие источникового прекращения получает приоритет только при подтверждённых идентичности
+    фактического препарата и фазе соответствующего A/B. Для отдельного индивидуального дозового/клинического действия
+    нужен его собственный контракт входов.
+  fact_origin: patient_fact
+- input_id: alcohol_use
+  question_ru: Предполагается совместное употребление алкоголя?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: If explicitly supplied
+  show_when: If explicitly supplied
+  why_needed: Конкретный источниковый анамнез/фактор требует осторожности или наблюдения; первичный источник не
+    задаёт обязательную предварительную оценку, числовую поправку или противопоказание по одному этому фактору.
+    Это не относится к текущим срочным симптомам, лекарственным взаимодействиям, предлечебному печёночному/QT риску.
+    Для выбранной ограниченной дозы/источникового перехода не операнд; сообщённое состояние используется и считается,
+    unknown/отсутствие остаётся not_assessed без клинического допуска.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: Source caution remains visible; not_assessed, no inferred negative and no clinical clearance
+  source_refs:
+  - RU-AGO
+  source_locator: §4.5 с.6
+  input_role: reported_context
+  required_for_individual_result: false
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    да: true
+    нет: false
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  source_condition_ownership: B=RU-AGO
+  requirement_predicate:
+    kind: reported_context
+  necessity_reason: Конкретный источниковый анамнез/фактор требует осторожности или наблюдения; первичный источник
+    не задаёт обязательную предварительную оценку, числовую поправку или противопоказание по одному этому фактору.
+    Это не относится к текущим срочным симптомам, лекарственным взаимодействиям, предлечебному печёночному/QT риску.
+    Для выбранной ограниченной дозы/источникового перехода не операнд; сообщённое состояние используется и считается,
+    unknown/отсутствие остаётся not_assessed без клинического допуска.
+  fact_origin: patient_fact
+- input_id: mania
+  question_ru: Есть мания/гипомания или БАР в анамнезе?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: If explicitly supplied
+  show_when: If explicitly supplied
+  why_needed: Конкретный источниковый анамнез/фактор требует осторожности или наблюдения; первичный источник не
+    задаёт обязательную предварительную оценку, числовую поправку или противопоказание по одному этому фактору.
+    Это не относится к текущим срочным симптомам, лекарственным взаимодействиям, предлечебному печёночному/QT риску.
+    Для выбранной ограниченной дозы/источникового перехода не операнд; сообщённое состояние используется и считается,
+    unknown/отсутствие остаётся not_assessed без клинического допуска.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: Source caution remains visible; not_assessed, no inferred negative and no clinical clearance
+  source_refs:
+  - RU-AGO
+  source_locator: §4.4 с.4
+  input_role: reported_context
+  required_for_individual_result: false
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    да: true
+    нет: false
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  source_condition_ownership: B=RU-AGO
+  requirement_predicate:
+    kind: reported_context
+  necessity_reason: Конкретный источниковый анамнез/фактор требует осторожности или наблюдения; первичный источник
+    не задаёт обязательную предварительную оценку, числовую поправку или противопоказание по одному этому фактору.
+    Это не относится к текущим срочным симптомам, лекарственным взаимодействиям, предлечебному печёночному/QT риску.
+    Для выбранной ограниченной дозы/источникового перехода не операнд; сообщённое состояние используется и считается,
+    unknown/отсутствие остаётся not_assessed без клинического допуска.
+  fact_origin: patient_fact
+- input_id: mania_symptoms
+  question_ru: Появились текущие симптомы мании?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: Only when explicitly supplied for this bounded source result
+  show_when: Only when explicitly supplied
+  why_needed: Для этого ограниченного источникового результата индивидуальная доза/календарь/разрешение старта не
+    выдаются. Пациентское сведение не является обязательной предпосылкой чтения выбранной российской инструкции.
+    Явно сообщённые значения и источниковые ограничения сохраняются и считаются; отсутствие/unknown остаётся not_assessed.
+    Сообщённое текущее условие источникового прекращения получает приоритет только при подтверждённых идентичности
+    фактического препарата и фазе соответствующего A/B. Для отдельного индивидуального дозового/клинического действия
+    нужен его собственный контракт входов.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: Named unassessed context; no clinical clearance or automatic action
+  source_refs:
+  - RU-SER
+  - RU-AGO
+  source_locator: RU-SER §4.4 с.4; RU-AGO §4.4 с.4
+  input_role: reported_current_event
+  required_for_individual_result: false
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    да: true
+    нет: false
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  source_condition_ownership: B=RU-AGO
+  requirement_predicate:
+    kind: reported_current_event
+  necessity_reason: Для этого ограниченного источникового результата индивидуальная доза/календарь/разрешение старта
+    не выдаются. Пациентское сведение не является обязательной предпосылкой чтения выбранной российской инструкции.
+    Явно сообщённые значения и источниковые ограничения сохраняются и считаются; отсутствие/unknown остаётся not_assessed.
+    Сообщённое текущее условие источникового прекращения получает приоритет только при подтверждённых идентичности
+    фактического препарата и фазе соответствующего A/B. Для отдельного индивидуального дозового/клинического действия
+    нужен его собственный контракт входов.
+  fact_origin: patient_fact
+- input_id: suicide_risk
+  question_ru: Врач выявил суицидальный риск?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: If explicitly supplied
+  show_when: If explicitly supplied
+  why_needed: Конкретный источниковый анамнез/фактор требует осторожности или наблюдения; первичный источник не
+    задаёт обязательную предварительную оценку, числовую поправку или противопоказание по одному этому фактору.
+    Это не относится к текущим срочным симптомам, лекарственным взаимодействиям, предлечебному печёночному/QT риску.
+    Для выбранной ограниченной дозы/источникового перехода не операнд; сообщённое состояние используется и считается,
+    unknown/отсутствие остаётся not_assessed без клинического допуска.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: Source caution remains visible; not_assessed, no inferred negative and no clinical clearance
+  source_refs:
+  - RU-AGO
+  source_locator: §4.4 с.4–5
+  input_role: reported_context
+  required_for_individual_result: false
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    да: true
+    нет: false
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  source_condition_ownership: B=RU-AGO
+  requirement_predicate:
+    kind: reported_context
+  necessity_reason: Конкретный источниковый анамнез/фактор требует осторожности или наблюдения; первичный источник
+    не задаёт обязательную предварительную оценку, числовую поправку или противопоказание по одному этому фактору.
+    Это не относится к текущим срочным симптомам, лекарственным взаимодействиям, предлечебному печёночному/QT риску.
+    Для выбранной ограниченной дозы/источникового перехода не операнд; сообщённое состояние используется и считается,
+    unknown/отсутствие остаётся not_assessed без клинического допуска.
+  fact_origin: patient_fact
+- input_id: ect
+  question_ru: Применяется ЭСТ?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: Only when explicitly supplied for this bounded source result
+  show_when: Only when explicitly supplied
+  why_needed: Для этого ограниченного источникового результата индивидуальная доза/календарь/разрешение старта не
+    выдаются. Пациентское сведение не является обязательной предпосылкой чтения выбранной российской инструкции.
+    Явно сообщённые значения и источниковые ограничения сохраняются и считаются; отсутствие/unknown остаётся not_assessed.
+    Сообщённое текущее условие источникового прекращения получает приоритет только при подтверждённых идентичности
+    фактического препарата и фазе соответствующего A/B. Для отдельного индивидуального дозового/клинического действия
+    нужен его собственный контракт входов.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: Named unassessed context; no clinical clearance or automatic action
+  source_refs:
+  - RU-AGO
+  source_locator: §4.5 с.6
+  input_role: reported_source_information
+  required_for_individual_result: false
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    да: true
+    нет: false
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  source_condition_ownership: B=RU-AGO
+  requirement_predicate:
+    kind: reported_source_information
+  necessity_reason: Для этого ограниченного источникового результата индивидуальная доза/календарь/разрешение старта
+    не выдаются. Пациентское сведение не является обязательной предпосылкой чтения выбранной российской инструкции.
+    Явно сообщённые значения и источниковые ограничения сохраняются и считаются; отсутствие/unknown остаётся not_assessed.
+    Сообщённое текущее условие источникового прекращения получает приоритет только при подтверждённых идентичности
+    фактического препарата и фазе соответствующего A/B. Для отдельного индивидуального дозового/клинического действия
+    нужен его собственный контракт входов.
+  fact_origin: patient_fact
+- input_id: renal_state
+  question_ru: Категория почечной недостаточности по оценке врача?
+  data_type: enum
+  unit: null
+  allowed_values:
+  - недостаточность не выявлена после оценки
+  - лёгкая
+  - средняя
+  - тяжёлая
+  - unknown
+  - not_assessed
+  required_when: If explicitly supplied
+  show_when: If explicitly supplied
+  why_needed: RU-AGO §4.2 с.2/§4.4 с.4 задаёт осторожность при умеренной/тяжёлой почечной недостаточности, без числовой
+    поправки, запрета или требования обязательной предлечебной оценки. Для выбранной ограниченной дозы/источникового
+    перехода не операнд; сообщённое состояние используется и считается, unknown/отсутствие остаётся not_assessed
+    без клинического допуска.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: Source caution remains visible; not_assessed, no inferred negative and no clinical clearance
+  source_refs:
+  - RU-AGO
+  source_locator: §4.2 с.2; §4.4 с.4
+  input_role: reported_context
+  required_for_individual_result: false
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  source_condition_ownership: B=RU-AGO
+  requirement_predicate:
+    kind: reported_context
+  necessity_reason: RU-AGO §4.2 с.2/§4.4 с.4 задаёт осторожность при умеренной/тяжёлой почечной недостаточности,
+    без числовой поправки, запрета или требования обязательной предлечебной оценки. Для выбранной ограниченной дозы/источникового
+    перехода не операнд; сообщённое состояние используется и считается, unknown/отсутствие остаётся not_assessed
+    без клинического допуска.
+  fact_origin: patient_fact
+- input_id: from_hepatic
+  question_ru: Подтверждённое значение from_hepatic по §4.2 с.3?
+  data_type: source_hepatic_category
+  unit: null
+  allowed_values: []
+  required_when: Only when explicitly supplied for this bounded source result
+  show_when: Only when explicitly supplied
+  why_needed: Для этого ограниченного источникового результата индивидуальная доза/календарь/разрешение старта не
+    выдаются. Пациентское сведение не является обязательной предпосылкой чтения выбранной российской инструкции.
+    Явно сообщённые значения и источниковые ограничения сохраняются и считаются; отсутствие/unknown остаётся not_assessed.
+    Сообщённое текущее условие источникового прекращения получает приоритет только при подтверждённых идентичности
+    фактического препарата и фазе соответствующего A/B. Для отдельного индивидуального дозового/клинического действия
+    нужен его собственный контракт входов.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: Named unassessed context; no clinical clearance or automatic action
+  source_refs:
+  - RU-SER
+  source_locator: §4.2 с.2, нарушение функции печени
+  required_for_individual_result: false
+  missing_states:
+  - unknown
+  - not_assessed
+  structure_ref: remediation_round3/input_contracts.yaml#structures/source_hepatic_category
+  source_categories:
+  - no_impairment_after_assessment
+  - hepatic_impairment
+  - severe_hepatic_impairment
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  source_condition_ownership: A=RU-SER
+  requirement_predicate:
+    kind: reported_source_information
+  input_role: reported_source_information
+  necessity_reason: Для этого ограниченного источникового результата индивидуальная доза/календарь/разрешение старта
+    не выдаются. Пациентское сведение не является обязательной предпосылкой чтения выбранной российской инструкции.
+    Явно сообщённые значения и источниковые ограничения сохраняются и считаются; отсутствие/unknown остаётся not_assessed.
+    Сообщённое текущее условие источникового прекращения получает приоритет только при подтверждённых идентичности
+    фактического препарата и фазе соответствующего A/B. Для отдельного индивидуального дозового/клинического действия
+    нужен его собственный контракт входов.
+  fact_origin: patient_fact
+- input_id: akathisia
+  question_ru: Подтверждённое значение akathisia по §4.4 с.6?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: Only when explicitly supplied for this bounded source result
+  show_when: Only when explicitly supplied
+  why_needed: Для этого ограниченного источникового результата индивидуальная доза/календарь/разрешение старта не
+    выдаются. Пациентское сведение не является обязательной предпосылкой чтения выбранной российской инструкции.
+    Явно сообщённые значения и источниковые ограничения сохраняются и считаются; отсутствие/unknown остаётся not_assessed.
+    Сообщённое текущее условие источникового прекращения получает приоритет только при подтверждённых идентичности
+    фактического препарата и фазе соответствующего A/B. Для отдельного индивидуального дозового/клинического действия
+    нужен его собственный контракт входов.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: Named unassessed context; no clinical clearance or automatic action
+  source_refs:
+  - RU-SER
+  source_locator: §4.4 с.6
+  required_for_individual_result: false
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  source_condition_ownership: A=RU-SER
+  requirement_predicate:
+    kind: reported_source_information
+  input_role: reported_source_information
+  necessity_reason: Для этого ограниченного источникового результата индивидуальная доза/календарь/разрешение старта
+    не выдаются. Пациентское сведение не является обязательной предпосылкой чтения выбранной российской инструкции.
+    Явно сообщённые значения и источниковые ограничения сохраняются и считаются; отсутствие/unknown остаётся not_assessed.
+    Сообщённое текущее условие источникового прекращения получает приоритет только при подтверждённых идентичности
+    фактического препарата и фазе соответствующего A/B. Для отдельного индивидуального дозового/клинического действия
+    нужен его собственный контракт входов.
+  fact_origin: patient_fact
+- input_id: qt_risk
+  question_ru: Подтверждённое значение qt_risk по §4.4 с.4?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: Only when explicitly supplied for this bounded source result
+  show_when: Only when explicitly supplied
+  why_needed: Для этого ограниченного источникового результата индивидуальная доза/календарь/разрешение старта не
+    выдаются. Пациентское сведение не является обязательной предпосылкой чтения выбранной российской инструкции.
+    Явно сообщённые значения и источниковые ограничения сохраняются и считаются; отсутствие/unknown остаётся not_assessed.
+    Сообщённое текущее условие источникового прекращения получает приоритет только при подтверждённых идентичности
+    фактического препарата и фазе соответствующего A/B. Для отдельного индивидуального дозового/клинического действия
+    нужен его собственный контракт входов.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: Named unassessed context; no clinical clearance or automatic action
+  source_refs:
+  - RU-SER
+  source_locator: §4.4 с.4
+  required_for_individual_result: false
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  source_condition_ownership: A=RU-SER
+  requirement_predicate:
+    kind: reported_source_information
+  input_role: reported_source_information
+  necessity_reason: Для этого ограниченного источникового результата индивидуальная доза/календарь/разрешение старта
+    не выдаются. Пациентское сведение не является обязательной предпосылкой чтения выбранной российской инструкции.
+    Явно сообщённые значения и источниковые ограничения сохраняются и считаются; отсутствие/unknown остаётся not_assessed.
+    Сообщённое текущее условие источникового прекращения получает приоритет только при подтверждённых идентичности
+    фактического препарата и фазе соответствующего A/B. Для отдельного индивидуального дозового/клинического действия
+    нужен его собственный контракт входов.
+  fact_origin: patient_fact
+- input_id: bleeding_risk
+  question_ru: Подтверждённое значение bleeding_risk по §4.4 с.5?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: If explicitly supplied
+  show_when: If explicitly supplied
+  why_needed: Конкретный источниковый анамнез/фактор требует осторожности или наблюдения; первичный источник не
+    задаёт обязательную предварительную оценку, числовую поправку или противопоказание по одному этому фактору.
+    Это не относится к текущим срочным симптомам, лекарственным взаимодействиям, предлечебному печёночному/QT риску.
+    Для выбранной ограниченной дозы/источникового перехода не операнд; сообщённое состояние используется и считается,
+    unknown/отсутствие остаётся not_assessed без клинического допуска.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: Source caution remains visible; not_assessed, no inferred negative and no clinical clearance
+  source_refs:
+  - RU-SER
+  source_locator: §4.4 с.5
+  required_for_individual_result: false
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  source_condition_ownership: A=RU-SER
+  requirement_predicate:
+    kind: reported_context
+  input_role: reported_context
+  necessity_reason: Конкретный источниковый анамнез/фактор требует осторожности или наблюдения; первичный источник
+    не задаёт обязательную предварительную оценку, числовую поправку или противопоказание по одному этому фактору.
+    Это не относится к текущим срочным симптомам, лекарственным взаимодействиям, предлечебному печёночному/QT риску.
+    Для выбранной ограниченной дозы/источникового перехода не операнд; сообщённое состояние используется и считается,
+    unknown/отсутствие остаётся not_assessed без клинического допуска.
+  fact_origin: patient_fact
+- input_id: hyponatremia_risk
+  question_ru: Подтверждённое значение hyponatremia_risk по §4.4 с.5–6?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: If explicitly supplied
+  show_when: If explicitly supplied
+  why_needed: Конкретный источниковый анамнез/фактор требует осторожности или наблюдения; первичный источник не
+    задаёт обязательную предварительную оценку, числовую поправку или противопоказание по одному этому фактору.
+    Это не относится к текущим срочным симптомам, лекарственным взаимодействиям, предлечебному печёночному/QT риску.
+    Для выбранной ограниченной дозы/источникового перехода не операнд; сообщённое состояние используется и считается,
+    unknown/отсутствие остаётся not_assessed без клинического допуска.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: Source caution remains visible; not_assessed, no inferred negative and no clinical clearance
+  source_refs:
+  - RU-SER
+  source_locator: §4.4 с.5–6
+  required_for_individual_result: false
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  source_condition_ownership: A=RU-SER
+  requirement_predicate:
+    kind: reported_context
+  input_role: reported_context
+  necessity_reason: Конкретный источниковый анамнез/фактор требует осторожности или наблюдения; первичный источник
+    не задаёт обязательную предварительную оценку, числовую поправку или противопоказание по одному этому фактору.
+    Это не относится к текущим срочным симптомам, лекарственным взаимодействиям, предлечебному печёночному/QT риску.
+    Для выбранной ограниченной дозы/источникового перехода не операнд; сообщённое состояние используется и считается,
+    unknown/отсутствие остаётся not_assessed без клинического допуска.
+  fact_origin: patient_fact
+- input_id: seizure_state
+  question_ru: Подтверждённое значение seizure_state по §4.4 с.4?
+  data_type: enum
+  unit: null
+  allowed_values:
+  - не отмечены
+  - контролируемые
+  - неконтролируемые
+  - новые приступы
+  - unknown
+  - not_assessed
+  required_when: Only when explicitly supplied for this bounded source result
+  show_when: Only when explicitly supplied
+  why_needed: Для этого ограниченного источникового результата индивидуальная доза/календарь/разрешение старта не
+    выдаются. Пациентское сведение не является обязательной предпосылкой чтения выбранной российской инструкции.
+    Явно сообщённые значения и источниковые ограничения сохраняются и считаются; отсутствие/unknown остаётся not_assessed.
+    Сообщённое текущее условие источникового прекращения получает приоритет только при подтверждённых идентичности
+    фактического препарата и фазе соответствующего A/B. Для отдельного индивидуального дозового/клинического действия
+    нужен его собственный контракт входов.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: Named unassessed context; no clinical clearance or automatic action
+  source_refs:
+  - RU-SER
+  source_locator: '§4.4 с.4, судороги: прекращение при развитии приступов'
+  required_for_individual_result: false
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  source_condition_ownership: A=RU-SER
+  requirement_predicate:
+    kind: reported_current_event
+  input_role: reported_current_event
+  necessity_reason: Для этого ограниченного источникового результата индивидуальная доза/календарь/разрешение старта
+    не выдаются. Пациентское сведение не является обязательной предпосылкой чтения выбранной российской инструкции.
+    Явно сообщённые значения и источниковые ограничения сохраняются и считаются; отсутствие/unknown остаётся not_assessed.
+    Сообщённое текущее условие источникового прекращения получает приоритет только при подтверждённых идентичности
+    фактического препарата и фазе соответствующего A/B. Для отдельного индивидуального дозового/клинического действия
+    нужен его собственный контракт входов.
+  fact_origin: patient_fact
+- input_id: symptomatic_hyponatremia
+  question_ru: Врач подтвердил симптоматическую гипонатриемию при текущем приёме сертралина?
+  data_type: boolean
+  unit: null
+  allowed_values: []
+  source_refs:
+  - RU-SER
+  source_locator: §4.4 с.6
+  unknown_allowed: true
+  changes:
+  - source_clinician_action
+  requirement_predicate:
+    kind: reported_current_event
+  required_for_individual_result: false
+  input_role: reported_current_event
+  required_when: Not an unconditional required absence check; source event handling when explicitly reported
+  show_when: Если врач отдельно сообщает это текущее событие; фаза принимаемого A/B известна отдельно
+  why_needed: Обрабатывает отдельно сообщённое текущее источниковое событие при явном приёме соответствующего препарата.
+    Не универсальный обязательный скрининг и не отрицание события при отсутствии/unknown. Положительный известный
+    факт останавливает автоматический календарь и сохраняет опубликованный выбор врача; числовое снижение/немедленная
+    отмена не придуманы.
+  necessity_reason: Обрабатывает отдельно сообщённое текущее источниковое событие при явном приёме соответствующего
+    препарата. Не универсальный обязательный скрининг и не отрицание события при отсутствии/unknown. Положительный
+    известный факт останавливает автоматический календарь и сохраняет опубликованный выбор врача; числовое снижение/немедленная
+    отмена не придуманы.
+  action_if_unknown: Explicit not_assessed; no clinical clearance. A reported unknown current event needs clinician
+    assessment, not a confirmed negative or automatic calendar.
+  fact_origin: explicitly supplied current physician event, not hidden pre-screening
+clinical_parameters:
+- parameter_id: target_start
+  meaning: target_start
+  value: 25
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: mg/day
+  source_ref: RU-AGO
+  source_locator: §4.2, PDF с.1
+  source_meaning: предписание
+  derivation: null
+- parameter_id: target_frequency
+  meaning: target_frequency
+  value: 1
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: administration/day
+  source_ref: RU-AGO
+  source_locator: §4.2, PDF с.1
+  source_meaning: предписание
+  derivation: null
+- parameter_id: start_taper_day
+  meaning: start_taper_day
+  value: 1
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: day_of_A_taper
+  source_ref: RU-AGO
+  source_locator: §4.2, PDF с.2
+  source_meaning: предписание
+  derivation: null
+- parameter_id: hepatic_cutoff
+  meaning: hepatic_cutoff
+  value: 3
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: ratio_to_ULN
+  source_ref: RU-AGO
+  source_locator: §4.2–4.4, PDF с.1/3
+  source_meaning: предписание
+  derivation: null
+- parameter_id: depression_age_exclusion
+  meaning: depression_age_exclusion
+  value: 75
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: year
+  source_ref: RU-AGO
+  source_locator: §4.2, PDF с.2
+  source_meaning: предписание
+  derivation: null
+- parameter_id: repeat_liver_tests_hours
+  meaning: repeat_liver_tests_hours
+  value: 48
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: hour
+  source_ref: RU-AGO
+  source_locator: §4.4 PDF с.4
+  source_meaning: предписание
+  derivation: null
+- parameter_id: liver_monitoring_weeks
+  meaning: liver_monitoring_weeks
+  value:
+  - 3
+  - 6
+  - 12
+  - 24
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: week
+  source_ref: RU-AGO
+  source_locator: §4.2 с.1; §4.4 с.3
+  source_meaning: предписание
+  derivation: null
+logic:
+  representation: directed_switch_strategy
+  conditions:
+  - Показание/препарат выбраны врачом; взрослая применимость и форма подтверждены.
+  actions:
+  - A постепенно снижать по собственной инструкции и выбранному врачом плану.
+  - 'B можно начать с первого дня снижения A: 25 мг однократно перед сном. Опубликовано разрешение перекрытия; ожидание
+    последней дозы A не требуется этим способом перехода.'
+  - 'Не вычислять универсальный washout из полувыведения. Не применять разрешение к флувоксамину: его сочетание
+    с B противопоказано.'
+  parameter_refs:
+  - target_start
+  - target_frequency
+  - start_taper_day
+  - hepatic_cutoff
+  - depression_age_exclusion
+  - repeat_liver_tests_hours
+  - liver_monitoring_weeks
+  source_refs:
+  - RU-SER
+  - RU-AGO
+  - RU-DEP
+  clinician_choices:
+  - Индивидуальные ступени снижения A, оценка риска отмены и решение о начале B.
+  - Применимость B и обязательный контроль печёночных проб.
+  missing_data_behaviour: Назвать обязательные неизвестные поля; результат insufficient_data. Справочные этапы можно
+    показать как условные, без безусловной дозы пациенту.
+  unsupported_case_behaviour: not_applicable для этой карточки; указать конкретную отсутствующую ветку, не запретить
+    всё лечение.
+  contraindicated_case_behaviour: Не выдавать дозовую схему противопоказанного сочетания; отобразить источник и
+    причину.
+  conflicts: []
+  composite_rule_dependencies:
+  - ser-taper-limit
+  combination_justification: Опубликованное правило B прямо отсылает к инструкции A. Классовое разрешение СИОЗС
+    применяется к конкретной названной паре; точные дозы/темп A не выводятся из этого разрешения.
+  maoi_history_contract:
+    source_ref: RU-SER
+    source_locator: §4.3 с.3; §4.5 с.7–8
+    locator: §4.3 с.3; §4.5 с.7–8
+    irreversible_days: 14
+    to_maoi_days: 7
+    reversible: 'Источник допускает короче 14 дней, но не задаёт точный срок: clinician_choice без разрешения старта
+      по числу.'
+    concurrent:
+    - irreversible_maoi
+    - reversible_selective_maoi
+    - reversible_nonselective_maoi
+    - pimozide
+    fields:
+    - medicines
+    - maoi_type
+    - maoi_stopped_at
+    reference_time: external_context.calculation_at
+    required_timestamp_unknown: insufficient_data; missing maoi_stopped_at; start_allowed=false
+    current_maoi: not_applicable for standard branch; no numeric start
+    multiple_records: all applicable direction gates must be satisfied; no single last record shortcut
+    calendar_day: next calendar date; not elapsed 24 hours unless that specific source says 24 hours
+    scope: Medication-history applicability of the identified A source; not an A→AGO washout. B overlap is independently
+      bound to RU-AGO §4.2.
+  agomelatine_conditions:
+  - id: hereditary_exclusion
+    fields:
+    - galactose_intolerance
+    - complete_lactase_deficiency
+    - glucose_galactose_malabsorption
+    if: any true
+    then: not_applicable; no start
+    source_ref: RU-AGO
+    source_locator: §4.3 с.3
+  - id: elderly_dementia
+    fields:
+    - elderly_population
+    - dementia
+    if: both true
+    then: not_applicable; no start
+    source_ref: RU-AGO
+    source_locator: §4.4 с.4
+  - id: liver_stop
+    fields:
+    - liver_injury_signs
+    - alt_ratio_uln
+    - ast_ratio_uln
+    if: liver_injury_signs true OR ALT > 3 OR AST > 3 during treatment
+    then: stop agomelatine immediately; regular liver tests until normalization; no further numeric stage
+    source_ref: RU-AGO
+    source_locator: §4.4 с.4
+  - id: repeat_liver_tests
+    fields:
+    - transaminases_rising
+    if: 'true'
+    then: repeat liver tests within repeat_liver_tests_hours; independently assess stop conditions
+    source_ref: RU-AGO
+    source_locator: §4.4 с.4
+  - id: liver_risk_review
+    fields:
+    - overweight_obesity
+    - fatty_liver
+    - diabetes
+    - alcohol_abuse
+    - medicines
+    if: risk factor present or hepatotoxic comedication
+    then: clinician benefit/risk assessment before start; no dose coefficient
+    source_ref: RU-AGO
+    source_locator: §4.4 с.3
+  - id: renal_caution
+    fields:
+    - renal_state
+    if: средняя or тяжёлая
+    then: clinician_choice; no new renal factor
+    source_ref: RU-AGO
+    source_locator: §4.2 с.2; §4.4 с.4
+  - id: pregnancy_lactation
+    fields:
+    - pregnancy
+    - lactation
+    if: 'true'
+    then: pregnancy avoid; lactation choose stopping breastfeeding or therapy; no standard automatic start
+    source_ref: RU-AGO
+    source_locator: §4.6 с.6
+  - id: cyp1a2
+    fields:
+    - medicines
+    if: strong CYP1A2 current
+    then: not_applicable; moderate inhibitor -> clinician_choice; no PK-to-dose coefficient
+    source_ref: RU-AGO
+    source_locator: §4.3 с.3; §4.5 с.5–6
+  - id: mania_stop
+    fields:
+    - mania_symptoms
+    if: true during treatment
+    then: stop agomelatine; source caution for history of mania/BAR is a separate mania field
+    source_ref: RU-AGO
+    source_locator: §4.4 с.4
+  result_contract_ref: remediation_round3/result_contracts.yaml#rules/switch-ser-ago
+  individual_output_gate: All required typed inputs and applicable conditional inputs must be known; evaluate every
+    source-specific gate in result_contract. A caution has clinician_choice, not an invented coefficient. No blanket
+    clinical clearance.
+  urgent_switch_actions:
+  - input: mania_symptoms
+    equals: true
+    action: source_stop_action
+    source_ref: RU-SER
+    source_locator: RU-SER §4.4 с.4
+    scope: stop currently administered A; no automatic B start
+  - input: mania_symptoms
+    equals: true
+    action: source_stop_action
+    source_ref: RU-AGO
+    source_locator: §4.4 с.4
+    scope: 'B: stop if administered; no automatic start'
+  input_necessity_policy_ref: remediation_round3/necessity_decisions.json#switch-ser-ago
+output:
+  result_type: branch_selected
+  medication_inn: агомелатин
+  dose_per_administration: null
+  administrations_per_day: null
+  total_daily_dose: null
+  unit: mg
+  formulation:
+    from: Золофт, таблетки 50/100 мг; 50 мг делится на равные дозы
+    to: Вальдоксан, таблетки 25 мг, покрытые пленочной оболочкой
+  schedule: []
+  warnings:
+  - Переход требует расширенной ветки; 5–10 вопросов не обещаны.
+  - 25 мг B — опубликованный старт, индивидуальный выход только после обязательных данных и плана A.
+  - Числовой вывод относится к указанным дозовым условиям. Неоценённые модулем клинические обстоятельства не считаются
+    отсутствующими; полный клинический допуск врач оценивает отдельно.
+  mandatory_checks:
+  - Каждый применимый agomelatine_conditions; АЛТ/АСТ независимо; форма B; неизвестный обязательный ответ не норма.
+  clinician_decisions_remaining:
+  - Индивидуальные ступени снижения A, оценка риска отмены и решение о начале B.
+  - Применимость B и обязательный контроль печёночных проб.
+  rounding_or_formulation_rule: Не округлять медицинскую дозу; использовать только разрешённую форму/деление. При
+    невозможности дозы формой — явно сообщить.
+  source_refs:
+  - RU-SER
+  - RU-AGO
+  - RU-DEP
+  liver_monitoring:
+    before_start: true
+    approximate_weeks_parameter: liver_monitoring_weeks
+    restart_same_frequency_after_dose_increase: true
+    rising_repeat_hours_parameter: repeat_liver_tests_hours
+    stop_signs_action: immediate cessation; tests until normal
+    source_ref: RU-AGO
+    source_locator: §4.2 с.1; §4.4 с.3–4
+  branches:
+  - branch_id: source_class_overlap
+    when: A plan supplied by clinician; B all conditions evaluated; no exact A calendar inferred
+    expected_output:
+      result_type: clinician_choice
+      total_daily_dose_mg: null
+      dose_per_administration_mg: null
+      administrations_per_day: null
+      schedule: []
+      missing_fields: []
+      unconditional_future_stages: false
+      full_pair_calendar: null
+      monitoring:
+        before_start: true
+        approximate_weeks_parameter: liver_monitoring_weeks
+        restart_same_frequency_after_dose_increase: true
+        rising_repeat_hours_parameter: repeat_liver_tests_hours
+        stop_signs_action: immediate cessation; tests until normal
+        source_ref: RU-AGO
+        source_locator: §4.2 с.1; §4.4 с.3–4
+      source_reference:
+        scope: Published product component reference only; no individual pair calendar, target applicability, start
+          permission or overlap permission
+        source_ref: RU-AGO
+        source_locator: §4.2 физ.с.2
+        published_target_start_mg: 25
+        published_overlap_on_first_day_of_A_reduction: true
+      target_source_start_mg: null
+      overlap_allowed_on_first_day_of_A_reduction: null
+      no_automatic_target_start: true
+      automatic_direct_switch: false
+      next_drug_start_day: null
+      clinical_clearance: false
+    source_basis:
+    - source_id: RU-DEP
+      version: '2024; каталог: опубликовано 26.08.2024, применяется'
+      locator: §3.1–3.4 PDF с.24–40; таблица2 с.95–96; §3.6 с.45; Б5 с.105–106
+      sha256: 2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd
+    - source_id: RU-SER
+      version: Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является
+        датой содержания
+      locator: §4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22
+      sha256: 3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba
+    - source_id: RU-AGO
+      version: 'Официальная ОХЛП реестра: штамп регистрации 2024-12-28; экспертный отчёт 2024-12-23 №28427/0018;
+        получена 08.10.2026'
+      locator: §4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16
+      sha256: a98d383832688cee9a09588b1a908555d01ed8b659281cdeee2646c1115ce7c1
+  selection_contract:
+  - unavailable_source
+  - known immediate stop/exclusion
+  - invalid/missing applicable field
+  - unresolved source caution/modifier
+  - dose branch
+sources:
+- source_id: RU-DEP
+  title: Депрессивный эпизод, Рекуррентное депрессивное расстройство, КР 301_3
+  organization_or_authors: Минздрав РФ; Российское общество психиатров
+  url: https://apicr.minzdrav.gov.ru/api.ashx?id=301_3&op=GetClinrecPdf
+  doi_or_registry_id: '301_3'
+  publication_date: null
+  version_or_update_date: '2024; каталог: опубликовано 26.08.2024, применяется'
+  accessed_on: '2026-10-08'
+  source_type: guideline
+  jurisdiction: RU
+  access_status: full
+  exact_locator: §3.1–3.4 PDF с.24–40; таблица2 с.95–96; §3.6 с.45; Б5 с.105–106
+  evidence_status: Клиническая рекомендация; не валидация калькулятора
+  what_was_tested: Не исследовался создаваемый продукт. Содержание и ограничения описаны в evidence_limitations.
+  evidence_limitations: 'Взрослая депрессия: дополнительно прочитаны терапевтические разделы и таблица доз. Таблица
+    без форм/индивидуальных ограничений не автономный модуль. Концентрация лития с.36 имеет конфликт мкмоль/л против
+    ммоль/л; автоматическое исправление не разрешено.'
+  reuse_license_or_restriction: Открытый доступ не означает разрешение перераспространять полный документ. Сохранены
+    собственное извлечение фактических правил, локаторы и ссылки; код и большие цитаты не копируются.
+  document_fingerprint:
+    source_id: RU-DEP
+    url: https://apicr.minzdrav.gov.ru/api.ashx?id=301_3&op=GetClinrecPdf
+    sha256: 2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd
+    pages: 125
+  local_file: source_snapshots/depression-301_3.pdf
+  document_copies:
+  - source_id: RU-DEP
+    local_file: source_snapshots/depression-301_3.pdf
+    sha256: 2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd
+    version: '2024; каталог: опубликовано 26.08.2024, применяется'
+    url: https://apicr.minzdrav.gov.ru/api.ashx?id=301_3&op=GetClinrecPdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: false
+  - source_id: RU-DEP
+    local_file: audit/retrieved/RU-DEP.pdf
+    sha256: 2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd
+    version: '2024; каталог: опубликовано 26.08.2024, применяется'
+    url: https://apicr.minzdrav.gov.ru/api.ashx?id=301_3&op=GetClinrecPdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: false
+  - source_id: RU-DEP
+    local_file: remediation/retrieved/RU-DEP.pdf
+    sha256: 2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd
+    version: '2024; каталог: опубликовано 26.08.2024, применяется'
+    url: https://apicr.minzdrav.gov.ru/api.ashx?id=301_3&op=GetClinrecPdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: false
+  - source_id: RU-DEP
+    local_file: ../tmp_acceptance/DEP-KR.pdf
+    sha256: 2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd
+    version: '2024; каталог: опубликовано 26.08.2024, применяется'
+    url: https://apicr.minzdrav.gov.ru/api.ashx?id=301_3&op=GetClinrecPdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: false
+  dates:
+    registration: null
+    revision: null
+    publication: null
+    download: '2026-10-08'
+  latest_registration_revision_confirmed: false
+  current_guideline_status_evidence: remediation_round2/catalog_check.json; 08.10.2026; CodeVersion/ApplyStatusCalculated=1
+- source_id: RU-SER
+  title: Золофт (сертралин), ОХЛП ЕАЭС, таблетки
+  organization_or_authors: Viatris / держатель регистрационного удостоверения
+  url: https://www.viatris.ru/-/media/project/common/viatrisru/pdf/product-catalog/0006_zoloft_smpc-eaeu_24-apr-2025_ru.pdf
+  doi_or_registry_id: ЛП-№(002851)-(РГ-RU), §8 PDF с.22
+  publication_date: null
+  version_or_update_date: Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025
+    не является датой содержания
+  accessed_on: '2026-10-08'
+  source_type: label
+  jurisdiction: RU/EAEU
+  access_status: full
+  exact_locator: §4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22
+  evidence_status: Инструкция/ОХЛП; не валидированная модель индивидуальной дозы
+  what_was_tested: Не исследовался создаваемый продукт. Содержание и ограничения описаны в evidence_limitations.
+  evidence_limitations: Current registry original provided by the user after CAPTCHA; complete byte identity to
+    the read manufacturer original verified. Current stamp, exact product and form visually checked. This is document-version
+    evidence, not clinical validation.
+  reuse_license_or_restriction: Открытый доступ не означает разрешение перераспространять полный документ. Сохранены
+    собственное извлечение фактических правил, локаторы и ссылки; код и большие цитаты не копируются.
+  document_fingerprint:
+    source_id: RU-SER
+    url: https://www.viatris.ru/-/media/project/common/viatrisru/pdf/product-catalog/0006_zoloft_smpc-eaeu_24-apr-2025_ru.pdf
+    sha256: 3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba
+    pages: 22
+    accessed_on: '2026-10-08'
+  manufacturer_page: https://www.viatris.ru/ru-ru/препараты/product-catalog/zoloft
+  registry_observation:
+    registry: https://lk.regmed.ru/Register/EAEU_SmPC
+    query: Золофт
+    registration_number: ЛП-№(002851)-(РГ-RU)
+    initial_registration_date: '2023-07-24'
+    latest_document_name: 1.3.1 Золофт ОХЛП 21.04.26_02002 (1817931491) [0008] штамп МЗ.pdf
+    document_url: https://lk.regmed.ru/Register/ViewPDFfromDAToken?Token=[REDACTED]
+    visual_page_1_registration_date: '2026-06-11'
+    expert_stamp: 29.05.2026 №10729, последовательность 0008
+    pages: 22
+    accessed_on: '2026-10-08'
+    read_part: Current full official original provided by human in round2; stamp/form/version checked. Latest comparison
+      and SHA evidence in latest_registry_document_comparison.
+    historical_read_part_before_round2: Реестровая запись, список документов, визуально с.1. Полная побайтовая сверка
+      с копией производителя не выполнена.
+  local_file: source_downloads/Золофт — сертралин.pdf
+  document_copies:
+  - source_id: RU-SER
+    local_file: source_downloads/Золофт — сертралин.pdf
+    sha256: 3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba
+    version: Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является
+      датой содержания
+    url: https://www.viatris.ru/-/media/project/common/viatrisru/pdf/product-catalog/0006_zoloft_smpc-eaeu_24-apr-2025_ru.pdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: true
+  - source_id: RU-SER
+    local_file: audit/retrieved/RU-SER.pdf
+    sha256: 3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba
+    version: Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является
+      датой содержания
+    url: https://www.viatris.ru/-/media/project/common/viatrisru/pdf/product-catalog/0006_zoloft_smpc-eaeu_24-apr-2025_ru.pdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: true
+  - source_id: RU-SER
+    local_file: remediation/retrieved/RU-SER.pdf
+    sha256: 3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba
+    version: Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является
+      датой содержания
+    url: https://www.viatris.ru/-/media/project/common/viatrisru/pdf/product-catalog/0006_zoloft_smpc-eaeu_24-apr-2025_ru.pdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: true
+  - filename: 1.3.1 Золофт ОХЛП 21.04.26_02002 (1817931491) [0008] штамп МЗ.pdf
+    local_file: remediation_round2/Zoloft_current_registry.pdf
+    sha256: 3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba
+    pages: 22
+    document_type: SmPC
+    byte_identity_to_previously_read_original: true
+    download_date: '2026-10-08'
+    latest_registration_revision_confirmed: true
+    version: Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является
+      датой содержания
+    byte_identity_to_primary_snapshot: true
+  - filename: 1.3.1 Золофт ЛВ 22.04.26_02001 (1817931561) [0008] штамп МЗ.pdf
+    local_file: remediation_round2/Zoloft_current_registry_PIL.pdf
+    sha256: eac44c60d0b40687cbe565a03d16679a82671e7ee13593648fc2beebfdcd61bd
+    pages: 13
+    document_type: PIL
+    download_date: '2026-10-08'
+    latest_registration_revision_confirmed: true
+    role: Patient leaflet, separate from the dose basis
+  dates:
+    initial_registration: '2023-07-24'
+    registration_stamp: '2026-06-11'
+    expert_report: '2026-05-29'
+    revision: null
+    approval: null
+    publication: null
+    download: '2026-10-08'
+    filename_dates_not_used:
+    - 21.04.26
+    - 24-apr-2025
+  latest_registration_revision_confirmed: true
+  latest_registry_document_comparison:
+    download_date: '2026-10-08'
+    human_provided: true
+    registry_url: https://lk.regmed.ru/Register/EAEU_SmPC
+    old_local_file: source_downloads/Золофт — сертралин.pdf
+    old_sha256: 3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba
+    documents:
+    - filename: 1.3.1 Золофт ОХЛП 21.04.26_02002 (1817931491) [0008] штамп МЗ.pdf
+      local_file: remediation_round2/Zoloft_current_registry.pdf
+      sha256: 3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba
+      pages: 22
+      document_type: SmPC
+      byte_identity_to_previously_read_original: true
+    - filename: 1.3.1 Золофт ЛВ 22.04.26_02001 (1817931561) [0008] штамп МЗ.pdf
+      local_file: remediation_round2/Zoloft_current_registry_PIL.pdf
+      sha256: eac44c60d0b40687cbe565a03d16679a82671e7ee13593648fc2beebfdcd61bd
+      pages: 13
+      document_type: PIL
+    confirmation_pending: null
+    confirmation: Downloaded by the user in response to a specific request for the current official registry SmPC;
+      filename and stamp match the previously observed registry edition. Complete bytes equal the read manufacturer
+      original. Page1 visually verified again; initial registry date differs from current document stamp.
+- source_id: RU-AGO
+  title: Вальдоксан (агомелатин), российская ОХЛП, 25 мг
+  organization_or_authors: Сервье
+  url: https://lk.regmed.ru/Register/EAEU_SmPC
+  doi_or_registry_id: ЛП-№(000528)-(РГ-RU)
+  publication_date: null
+  version_or_update_date: 'Официальная ОХЛП реестра: штамп регистрации 2024-12-28; экспертный отчёт 2024-12-23 №28427/0018;
+    получена 08.10.2026'
+  accessed_on: '2026-10-08'
+  source_type: label
+  jurisdiction: RU/EAEU
+  access_status: full
+  exact_locator: §4.1–4.6 с.1–6; §8–10 с.16
+  evidence_status: Инструкция/ОХЛП; не валидированная модель индивидуальной дозы
+  what_was_tested: Не исследовался создаваемый продукт. Содержание и ограничения описаны в evidence_limitations.
+  evidence_limitations: Полный оригинал производителя прочитан; принадлежность РФ указана §8–9. Актуальность последней
+    регистрационной редакции не выводится из имени файла. Момент начала B опубликован для класса СИОЗС/СИОЗСН; ступени
+    отмены A берутся из его собственного источника, не из исследования эффективности агомелатина. Новая первичная
+    копия получена из указанной строки реестра; старые копии сохранены как исторические. Даты штампов не подменяют
+    незаполненное поле пересмотра. Принадлежность версии и медицинский перенос проверяются раздельно.
+  reuse_license_or_restriction: Открытый доступ не означает разрешение перераспространять полный документ. Сохранены
+    собственное извлечение фактических правил, локаторы и ссылки; код и большие цитаты не копируются.
+  document_fingerprint:
+    source_id: RU-AGO
+    url: https://lk.regmed.ru/Register/EAEU_SmPC
+    sha256: a98d383832688cee9a09588b1a908555d01ed8b659281cdeee2646c1115ce7c1
+    pages: 16
+    accessed_on: '2026-10-08'
+  registry_observation:
+    registry: https://lk.regmed.ru/Register/EAEU_SmPC
+    query: Вальдоксан
+    registration_number: ЛП-№(000528)-(РГ-RU)
+    registration_date: '2022-01-25'
+    forms: таблетки25мг
+    accessed_on: '2026-10-08'
+    read_part: Exact RU/form row observed in official registry; user downloaded after CAPTCHA request; matching
+      title/form and stamps visually checked
+  local_file: remediation_round3/originals/RU-AGO_current.pdf
+  document_copies:
+  - source_id: RU-AGO
+    local_file: source_downloads/Вальдоксан — агомелатин.pdf
+    sha256: 1cf8e71b5c27891e17b5b7ab4dd7c8c02697a1d44bb287a57a1ee9de0fb85bd6
+    version: Копия производителя с именем 20241228; первичная регистрация 25.01.2022; поле пересмотра пустое
+    url: https://servier.ru/wp-content/uploads/2023/09/20241228_spc-ru_valdoxan_rus.pdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: false
+    latest_registration_revision_confirmed: false
+  - source_id: RU-AGO
+    local_file: audit/retrieved/RU-AGO.pdf
+    sha256: 1cf8e71b5c27891e17b5b7ab4dd7c8c02697a1d44bb287a57a1ee9de0fb85bd6
+    version: Копия производителя с именем 20241228; первичная регистрация 25.01.2022; поле пересмотра пустое
+    url: https://servier.ru/wp-content/uploads/2023/09/20241228_spc-ru_valdoxan_rus.pdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: false
+    latest_registration_revision_confirmed: false
+  - source_id: RU-AGO
+    local_file: remediation/retrieved/RU-AGO.pdf
+    sha256: 1cf8e71b5c27891e17b5b7ab4dd7c8c02697a1d44bb287a57a1ee9de0fb85bd6
+    version: Копия производителя с именем 20241228; первичная регистрация 25.01.2022; поле пересмотра пустое
+    url: https://servier.ru/wp-content/uploads/2023/09/20241228_spc-ru_valdoxan_rus.pdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: false
+    latest_registration_revision_confirmed: false
+  - source_id: RU-AGO
+    local_file: ../tmp_acceptance/AGO.pdf
+    sha256: 1cf8e71b5c27891e17b5b7ab4dd7c8c02697a1d44bb287a57a1ee9de0fb85bd6
+    version: Копия производителя с именем 20241228; первичная регистрация 25.01.2022; поле пересмотра пустое
+    url: https://servier.ru/wp-content/uploads/2023/09/20241228_spc-ru_valdoxan_rus.pdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: false
+    latest_registration_revision_confirmed: false
+  - source_id: RU-AGO
+    local_file: remediation_round3/originals/RU-AGO_current.pdf
+    sha256: a98d383832688cee9a09588b1a908555d01ed8b659281cdeee2646c1115ce7c1
+    version: 'Официальная ОХЛП реестра: штамп регистрации 2024-12-28; экспертный отчёт 2024-12-23 №28427/0018; получена
+      08.10.2026'
+    url: https://lk.regmed.ru/Register/EAEU_SmPC
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: true
+  dates:
+    registration: '2022-01-25'
+    revision: null
+    publication: null
+    download: '2026-10-08'
+    document_registration_stamp: '2024-12-28'
+    expert_report: '2024-12-23'
+  latest_registration_revision_confirmed: true
+  latest_registry_document_comparison:
+    record: remediation_round3/current_registry_documents.json#RU-AGO
+    original: remediation_round3/originals/RU-AGO_current.pdf
+    sha256: a98d383832688cee9a09588b1a908555d01ed8b659281cdeee2646c1115ce7c1
+    authority_evidence: Exact RU/form row observed in official registry; user downloaded after CAPTCHA request;
+      matching title/form and stamps visually checked
+    comparison_scope: Listed primary sections and dependency review; no inference of byte identity to historical
+      copies
+  own_read_scope:
+    text_pages:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 16
+    visual_pages:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    remaining_sections_not_claimed_read: true
+verification:
+  primary_source_checked: true
+  all_clinical_parameters_have_sources: true
+  population_and_indication_checked: true
+  russian_applicability_checked: true
+  formulation_feasibility_checked: true
+  combined_rules_justified: false
+  source_transfer_check: Current exact Russian product originals obtained and active owner/version/hash/locators
+    synchronized; listed primary sections reviewed. Full independent medical acceptance and question necessity remain
+    separate; calculator_not_implemented.
+  clinical_review: not_performed
+  product_clinical_validation: not_performed
+  ready_for_technical_implementation: false
+  unresolved_items:
+  - Полные обязательные ступени A не опубликованы; без выбранного плана не создавать календарь.
+  - Минимальность входов/полные обычные пути и повторная независимая проверка медицинских исправлений остаются отдельными
+    условиями приёмки V2.
+  transfer_scope: Explicit source-bound branch contracts and prepared expectations only. Current originals obtained;
+    pending independent findings, result-specific necessity and V2 ordinary-question limit are not inferred complete
+    from download. No clinical validation.
+  round3_status: candidate_primary_transfer_and_necessity_review; independent acceptance pending
+  russian_applicability_scope: Identity of the exact registered Russian product/form and published indication scope;
+    does not grant patient clearance or prove every transferred condition.
+test_cases:
+- case_id: switch-ser-ago__overlap-permission
+  synthetic: true
+  given:
+    from_drug: сертралин
+    to_drug: агомелатин
+  expected:
+    target_start_mg_per_day: 25
+    frequency: 1
+    target_start: первый день постепенного снижения A
+    overlap_allowed: true
+    invented_washout_days: null
+    complete_schedule: null
+  source_refs:
+  - RU-SER
+  - RU-AGO
+  - RU-DEP
+  note: Ожидание переноса источника; калькулятор не реализован, клиническая валидация не выполнена.
+  case_kind: parameter_or_constraint_fragment
+- case_id: switch-ser-ago__missing-liver-tests
+  synthetic: true
+  given:
+    alt_ratio_uln: null
+    ast_ratio_uln: null
+  expected:
+    result_type: insufficient_data
+    missing:
+    - alt_ratio_uln
+    - ast_ratio_uln
+    unconditional_target_dose: null
+  source_refs:
+  - RU-SER
+  - RU-AGO
+  - RU-DEP
+  note: Ожидание переноса источника; калькулятор не реализован, клиническая валидация не выполнена.
+  case_kind: parameter_or_constraint_fragment
+- case_id: switch-ser-ago__alt-above-cutoff
+  synthetic: true
+  given:
+    alt_ratio_uln: 3.1
+  expected:
+    result_type: not_applicable
+    target_start_allowed: false
+  source_refs:
+  - RU-SER
+  - RU-AGO
+  - RU-DEP
+  note: Ожидание переноса источника; калькулятор не реализован, клиническая валидация не выполнена.
+  case_kind: parameter_or_constraint_fragment
+profile:
+  country: RU
+  selection_status: RU_profile_research
+  foreign_fallback_allowed: false
+switch_assessment:
+  from_action: gradual_taper_from_own_RU_label
+  to_action: 25 mg once at bedtime from first day of A taper
+  overlap: explicitly_allowed_for_SSRI_to_agomelatine
+  interval_after_last_A: not_required_for_this_overlap_strategy
+  interval_value_days: null
+  pair_specific_trial_claimed: false
+  full_numeric_A_calendar_published: false
+card_type: partial_source_constraint
+input_contract_ref: remediation_round3/input_contracts.yaml#fragment_bindings/switch-ser-ago

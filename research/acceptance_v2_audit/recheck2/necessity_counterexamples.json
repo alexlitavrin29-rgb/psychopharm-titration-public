@@ -1,0 +1,146 @@
+{
+  "scope": "Source/result-specific witnesses, not a clinical evaluator and not a proposed child regimen.",
+  "PAR_existing_other_current10": {
+    "case_id": "parox-taper-example--branch-other",
+    "rule_id": "parox-taper-example",
+    "case_kind": "full_synthetic_input_scenario",
+    "not_executed_against_calculator": true,
+    "source_basis": [
+      {
+        "source_id": "RU-DEP",
+        "version": "2024; каталог: опубликовано 26.08.2024, применяется",
+        "locator": "§3.1–3.4 PDF с.24–40; таблица2 с.95–96; §3.6 с.45; Б5 с.105–106",
+        "sha256": "2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd"
+      },
+      {
+        "source_id": "RU-PAROX",
+        "version": "Официальная ОХЛП реестра: штамп регистрации 2025-02-14; экспертный отчёт 2025-02-12 №3370/0003; получена 08.10.2026",
+        "locator": "ОХЛП: PDF с.1–5 (§4.1–4.3), с.6–10 (§4.4), с.11–15 (§4.5–4.6), с.26 (§8–10)",
+        "sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069"
+      },
+      {
+        "source_id": "RU-PANIC",
+        "version": "2024; каталог: опубликовано 19.09.2024, применяется",
+        "locator": "§3.1, PDF с.25–33; приложение А3, с.76–77",
+        "sha256": "a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d"
+      }
+    ],
+    "branch_id": "other",
+    "external_context": {
+      "diagnosis": "F32",
+      "drug": "пароксетин",
+      "mode": "taper",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "selected_mode"
+    },
+    "given": {
+      "age": 40,
+      "form": {
+        "product": "Рексетин",
+        "registration_number": "ЛП-№(008861)-(РГ-RU)",
+        "source_id": "RU-PAROX",
+        "source_version": "Официальная ОХЛП реестра: штамп регистрации 2025-02-14; экспертный отчёт 2025-02-12 №3370/0003; получена 08.10.2026",
+        "dosage_form": "tablet",
+        "strengths_mg": [
+          20
+        ],
+        "release": "immediate",
+        "route": "oral"
+      },
+      "current_dose": 10,
+      "duration": 24,
+      "past_withdrawal": false,
+      "withdrawal_severity": "нет",
+      "example_selected": true,
+      "serotonin_syndrome_signs": false,
+      "new_seizures": false
+    },
+    "expected": {
+      "result_type": "clinician_choice",
+      "total_daily_dose_mg": null,
+      "dose_per_administration_mg": null,
+      "administrations_per_day": null,
+      "schedule": [],
+      "missing_fields": [],
+      "unconditional_future_stages": false,
+      "invented_last_step": false,
+      "clinical_clearance": false,
+      "confirmed_negatives": [
+        "past_withdrawal",
+        "serotonin_syndrome_signs",
+        "new_seizures"
+      ],
+      "unassessed_context": []
+    }
+  },
+  "PAR_own_false_selection": {
+    "case_id": "independent-PAR-example-not-selected",
+    "rule_id": "parox-taper-example",
+    "case_kind": "full_synthetic_input_scenario",
+    "not_executed_against_calculator": true,
+    "source_basis": [
+      {
+        "source_id": "RU-DEP",
+        "version": "2024; каталог: опубликовано 26.08.2024, применяется",
+        "locator": "§3.1–3.4 PDF с.24–40; таблица2 с.95–96; §3.6 с.45; Б5 с.105–106",
+        "sha256": "2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd"
+      },
+      {
+        "source_id": "RU-PAROX",
+        "version": "Официальная ОХЛП реестра: штамп регистрации 2025-02-14; экспертный отчёт 2025-02-12 №3370/0003; получена 08.10.2026",
+        "locator": "ОХЛП: PDF с.1–5 (§4.1–4.3), с.6–10 (§4.4), с.11–15 (§4.5–4.6), с.26 (§8–10)",
+        "sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069"
+      },
+      {
+        "source_id": "RU-PANIC",
+        "version": "2024; каталог: опубликовано 19.09.2024, применяется",
+        "locator": "§3.1, PDF с.25–33; приложение А3, с.76–77",
+        "sha256": "a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d"
+      }
+    ],
+    "branch_id": "other",
+    "external_context": {
+      "diagnosis": "F32",
+      "drug": "пароксетин",
+      "mode": "taper",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "selected_mode"
+    },
+    "given": {
+      "age": 40,
+      "form": {
+        "product": "Рексетин",
+        "registration_number": "ЛП-№(008861)-(РГ-RU)",
+        "source_id": "RU-PAROX",
+        "source_version": "Официальная ОХЛП реестра: штамп регистрации 2025-02-14; экспертный отчёт 2025-02-12 №3370/0003; получена 08.10.2026",
+        "dosage_form": "tablet",
+        "strengths_mg": [
+          20
+        ],
+        "release": "immediate",
+        "route": "oral"
+      },
+      "withdrawal_severity": "нет",
+      "example_selected": false,
+      "serotonin_syndrome_signs": false,
+      "new_seizures": false
+    },
+    "expected": {
+      "result_type": "clinician_choice",
+      "total_daily_dose_mg": null,
+      "schedule": [],
+      "clinical_clearance": false,
+      "source_statement": "The published numeric example was not selected; no individual taper calendar is established. Known ongoing urgent conditions remain separately handled; unassessed context is retained.",
+      "unassessed_context": [
+        "current_dose",
+        "duration",
+        "past_withdrawal"
+      ],
+      "no_automatic_resumption": true
+    }
+  },
+  "PREG_PHEN_population": "A source-only adult reference can retain age as unassessed without claiming an individual withdrawal duration or transferring it to children. Numeric adult/pediatric dosing still needs its population gate.",
+  "AGO_alternatives": "Narrow explicit hepatic benefit/risk assessment may replace four source risk factors as a physician assessment, not four assumed negatives: 20−4+1=17. If renal caution were demonstrably reported rather than universal, the same chosen reference could be16; no full ordinary≤15 proof is established. Elderly/dementia remains separately assessed.",
+  "PREG_frequency": "2 or3 administrations are source alternatives. Presenting both is a source-options output, not a chosen exact per-administration dose; frequency must be counted when selected.",
+  "DULOX_GAD": "Comorbid depression and elderly_population have separate source effects and cannot be merged into a hidden single fact."
+}

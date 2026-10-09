@@ -1,0 +1,663 @@
+{
+  "snapshot_sha256": "ff00118c08d144f1434869d25aba164234a443b4732f84fe8d481504622cf6ec",
+  "files": [
+    {
+      "path": "research/remediation_round3/sources.json",
+      "sha256": "af8a195dbf4ca9cf6d979cfb5d32f973b142d63e6261c6bc5a48d51a513f482c"
+    },
+    {
+      "path": "research/remediation_round3/input_contracts.yaml",
+      "sha256": "6349ae9674fe403b400c0b27d543f73b1323b1d028bf8883f91b4920f6ca9fc8"
+    },
+    {
+      "path": "research/remediation_round3/result_contracts.yaml",
+      "sha256": "527e38756f50762fdfd1faa83c7d8b07d6ea29fb2a122a20b8773bb2c98f8abf"
+    },
+    {
+      "path": "research/remediation_round3/full_scenarios.json",
+      "sha256": "880a8c4c2ea8e94b809f60a26a83ac583369d6024ee4dab6a0a75cfa227b59da"
+    },
+    {
+      "path": "research/remediation_round3/necessity_decisions.json",
+      "sha256": "bbd33e9eb10bbcc8af9041576ded4c1bd57356b65ccba60e61cdce0744aee3a4"
+    },
+    {
+      "path": "research/remediation_round3/necessity_policy.yaml",
+      "sha256": "35f56a9f8317c55b874cb8f8f83fd1bd1bbdb58e4dca14771f163a43208e7da6"
+    },
+    {
+      "path": "research/remediation_round3/question_graphs.yaml",
+      "sha256": "ec8934b862ffe49dd50405e88a81f7defa7bc64fb9f37278fc3e817f758cc23b"
+    },
+    {
+      "path": "research/remediation_round3/actual_question_paths.json",
+      "sha256": "72d06da0d604e4bb9f7599434e523449b26084c8bb578e7abba6d24dd02d2017"
+    },
+    {
+      "path": "research/remediation_round3/input_necessity.csv",
+      "sha256": "177c23497fbc9394c9495a17e1c6af13298c89b147eeefa92d61c2a250cd8ad4"
+    },
+    {
+      "path": "research/remediation_round3/renal_estimator.yaml",
+      "sha256": "0dd5df39c38632874fe0558e1de6d9fbfbabaa4f894a686ffa138964d7c3df3c"
+    },
+    {
+      "path": "research/remediation_round3/current_registry_documents.json",
+      "sha256": "777ab2ebc65907b9333d52b75be57ec1f7260834839f966a6437a90da7bb657d"
+    },
+    {
+      "path": "research/remediation_round3/requirements_diff.json",
+      "sha256": "8a20c5c56135c60440ba061fec9358139744c9a8db150d6ccb8e3e14a3aa5d20"
+    },
+    {
+      "path": "research/remediation_round3/version_inventory.json",
+      "sha256": "989da9709b16f3a23b02b6327571e8514d2ff63f4511167b7beeef767668b1ef"
+    },
+    {
+      "path": "research/remediation_round3/coverage_map.json",
+      "sha256": "9f052295ef825bf75373e4ec5891a1f7d007a20c0ac007dc73b21a0bbb347cf2"
+    },
+    {
+      "path": "research/remediation_round3/verify_contracts.py",
+      "sha256": "b0227bb4fb12fabf4afccdcc79e087689a435ab49a312c7b279c4ba8407f6076"
+    },
+    {
+      "path": "research/remediation_round3/verify_v2_negatives.py",
+      "sha256": "5aa736a05837cdbf9043904e1e9565005811e0d3f41a9671a6c10d4c7e61f35c"
+    },
+    {
+      "path": "research/remediation_round3/verify_graphs.py",
+      "sha256": "82d44fa30d75a4cc215d5da568667cb55d0477c54e3667046da2b51bc8fe699c"
+    },
+    {
+      "path": "research/remediation_round3/verify_new_negative_checks.py",
+      "sha256": "398195fe84caee6da362f0a97533941198fec354d3ebfde71a3b0b2812162321"
+    },
+    {
+      "path": "research/remediation_round3/verify_audit_repairs.py",
+      "sha256": "aa74dacf7f2d76722cf46fef1b4d0baf2b8336163ee51d4f6ee9ea6be0e5d47c"
+    },
+    {
+      "path": "research/remediation_round3/primary_expected_checks.py",
+      "sha256": "08dcd096cac86bfe566616adbc080dadb33749c56bc47aee9780bc09e5ebf30d"
+    },
+    {
+      "path": "research/remediation_round3/primary_current_expected_checks.py",
+      "sha256": "e9028923b89036dc8d9123ba41985ce973a2bb2ffb233d1fe7fc3e101ef3d6d0"
+    },
+    {
+      "path": "research/remediation_round3/build_graphs.py",
+      "sha256": "764fe1f16fbbc423c01130124b543d80d650a8add9d30424990bb3ba08feb2ba"
+    },
+    {
+      "path": "research/remediation_round3/ordinary_path_report.json",
+      "sha256": "6898477aee495a08561ef60a18f9a511005a9ae55ac4d1f4e00fb59612f697be"
+    },
+    {
+      "path": "research/remediation_round3/source_binding_repairs.json",
+      "sha256": "3aaa5ea83066bd7a4252f7ddd89e678e9ae098d51670e9981d5485ceb02ef251"
+    },
+    {
+      "path": "research/remediation_round3/medical_condition_repairs.json",
+      "sha256": "47718a7b7a46f53eee5b17cb622859953dab4038bcb0118a2f82eab943712afd"
+    },
+    {
+      "path": "research/remediation_round3/qualitative_necessity_repairs.json",
+      "sha256": "c71db181d5824361b651d4ca8f60956b35bcb7e1488ed01208ab9ad93f9861fc"
+    },
+    {
+      "path": "research/remediation_round3/findings_response.json",
+      "sha256": "c0161db1ac3d41c600f99473b7e062d3b41e6d9f4614f9debbd9057a3ff3e006"
+    },
+    {
+      "path": "research/remediation_round3/primary_review_notes.md",
+      "sha256": "048e78e9c5db9fffc5f13aed416ac33a016778d6efc980c31ab7228742bd3015"
+    },
+    {
+      "path": "research/remediation_round3/README.md",
+      "sha256": "207aaf64bab306acb76f0fcff21085093f2003c06ed0b0c04801df0741b8655f"
+    },
+    {
+      "path": "research/remediation_round3/limitations.md",
+      "sha256": "d94722ed7800ef43aa4c058e5907d9af0bc785faa342437674819556dd8d43e2"
+    },
+    {
+      "path": "research/remediation_round3/rules/ago-depression-start.yaml",
+      "sha256": "4356579343bb4378a12531f8595e1b781cf238d67fbe90b24236ec1f7dc3960d"
+    },
+    {
+      "path": "research/remediation_round3/rules/ago-gad-start.yaml",
+      "sha256": "bb07cef0a8895427cd23e28efa26575bddebeab929791e5dcc4ff8fcaeaa6ebd"
+    },
+    {
+      "path": "research/remediation_round3/rules/ago-stop.yaml",
+      "sha256": "44d99b28661a4fc0ee0c114b39445b6e9f368e229983e15d78aa2f97a783a1c6"
+    },
+    {
+      "path": "research/remediation_round3/rules/dulox-depression-start.yaml",
+      "sha256": "0d3f2b5843c837b534f6568a400820e33ade1141a69338ecf046a81c1589cc9d"
+    },
+    {
+      "path": "research/remediation_round3/rules/dulox-gad-adjust.yaml",
+      "sha256": "acd76f8a6f454a0a7d9ebb282c2126b30e467f51c179a7a0f8d4c98a2eb47976"
+    },
+    {
+      "path": "research/remediation_round3/rules/dulox-gad-start.yaml",
+      "sha256": "874a8ba717d1e540aa3d1121a9528855fb0757b837659ab5d25d61a272bac080"
+    },
+    {
+      "path": "research/remediation_round3/rules/dulox-taper-limit.yaml",
+      "sha256": "13bf5f0a59dd267eb9a49f1ca1bc34a601aab6cca5b15354f40e9a1e258982d4"
+    },
+    {
+      "path": "research/remediation_round3/rules/esc-adult-adjust.yaml",
+      "sha256": "4995b5ad6e0c19e01d09898f4486fd122f88094a86649a330fa9ffbb0d83df5e"
+    },
+    {
+      "path": "research/remediation_round3/rules/esc-cyp2c19-start.yaml",
+      "sha256": "820e41c05939e73ef3b4f498287d5b628eca7df662250b02ecde8e6355014252"
+    },
+    {
+      "path": "research/remediation_round3/rules/esc-elderly-start.yaml",
+      "sha256": "37738bcc631cdb088947df5ad1392bfde25b69471e0e54df08d0f4982ae14731"
+    },
+    {
+      "path": "research/remediation_round3/rules/esc-gad-start.yaml",
+      "sha256": "c2a519e61fa41195b615c86a8a0a1140df3e4ce39390084a774407d495772f0b"
+    },
+    {
+      "path": "research/remediation_round3/rules/esc-hepatic-start.yaml",
+      "sha256": "e199908bbebfcbd041713b52a07cee643154fdf54c2da4b18f1bd9b42c9b2946"
+    },
+    {
+      "path": "research/remediation_round3/rules/esc-panic-start.yaml",
+      "sha256": "f901b39898887c9a53055f051ef41d687ab7aef72785094d32a5185690b405f9"
+    },
+    {
+      "path": "research/remediation_round3/rules/esc-social-start.yaml",
+      "sha256": "6d80f415da7751699b53926fa1eab806b6faac77e0584db580ac3d59eeed4789"
+    },
+    {
+      "path": "research/remediation_round3/rules/esc-taper-limit.yaml",
+      "sha256": "bbff4b3df9b8d6d32be4931c8f76fb41b65c67dfe525d31481bbb1d5461c4f24"
+    },
+    {
+      "path": "research/remediation_round3/rules/fluvox-depression-start.yaml",
+      "sha256": "95b294348e218de59975c5fbaea8f088b1e8e7d8d6b2c77f50d1808386e4dcb3"
+    },
+    {
+      "path": "research/remediation_round3/rules/fluvox-taper-limit.yaml",
+      "sha256": "5691f872bef7eb2a628b156fff9cf2a9715e6477d50470d3872e42d7201e516d"
+    },
+    {
+      "path": "research/remediation_round3/rules/parox-panic-kr.yaml",
+      "sha256": "cf1aded1167e6c808f431d512f1aaa6aca7f517494a0c728a1fcf58bb94ea4ab"
+    },
+    {
+      "path": "research/remediation_round3/rules/parox-taper-example.yaml",
+      "sha256": "4ea46fc23555dcbe7083b21b10579669f0ae213e473d7fcbb9b8151e784008f1"
+    },
+    {
+      "path": "research/remediation_round3/rules/phen-taper-limit.yaml",
+      "sha256": "7eeada96317d9c3e226c8dc86d433972a8ce6458d727f2810d06395cd5313184"
+    },
+    {
+      "path": "research/remediation_round3/rules/preg-gad-adjust.yaml",
+      "sha256": "c1b4816727b6b1863419a90b81a7558319f9b2fc9120a4062441a973373b75ff"
+    },
+    {
+      "path": "research/remediation_round3/rules/preg-gad-start.yaml",
+      "sha256": "22e7e744f9d2cbbdb1554bd73db81803cf0c2d83ed5868851b508e1d8e6ff67b"
+    },
+    {
+      "path": "research/remediation_round3/rules/preg-renal-start.yaml",
+      "sha256": "6560b9b3647db9cbae015081f101c3800d87157fcfb27aba237115e20144db7e"
+    },
+    {
+      "path": "research/remediation_round3/rules/preg-taper-limit.yaml",
+      "sha256": "f441e4d7cc19a7b9a30703d04dfc2165c142705cd87a7ea7764acb44e442d454"
+    },
+    {
+      "path": "research/remediation_round3/rules/ser-adult-adjust.yaml",
+      "sha256": "be342cd5bb7df78f41c4ce2c52943e3395909637f2763ed54425d7e3e8ce617c"
+    },
+    {
+      "path": "research/remediation_round3/rules/ser-panic-start.yaml",
+      "sha256": "fd773cc095e4a135f93bf1ec1801ef274b20f9a0cb98253e7a3285b206dcca31"
+    },
+    {
+      "path": "research/remediation_round3/rules/ser-social-start.yaml",
+      "sha256": "c5e5200e80473d9d84602d6e530002643d0a67ee7996c733cf635033de6ae3cd"
+    },
+    {
+      "path": "research/remediation_round3/rules/ser-taper-limit.yaml",
+      "sha256": "130548d79a2a3f311e172c71ae29244eddfbaafd670a9ed13b71387ed9e1da12"
+    },
+    {
+      "path": "research/remediation_round3/rules/switch-esc-ago.yaml",
+      "sha256": "f1ea8cc45d3796072f97304bff358c5a3c03881e1608468a2221216376ba8f7b"
+    },
+    {
+      "path": "research/remediation_round3/rules/switch-esc-ser.yaml",
+      "sha256": "866dde8e1c5473a105d4bc51a2a219a01e71d91b39bace12f252f6db44864d84"
+    },
+    {
+      "path": "research/remediation_round3/rules/switch-parox-ago-selected-example.yaml",
+      "sha256": "ee85b701ed34d7f91b969196f0c0710a8ddd1a13e44ea1564f29410f92b081a7"
+    },
+    {
+      "path": "research/remediation_round3/rules/switch-parox-ago.yaml",
+      "sha256": "094aebf774306dfb70bf60eaeb531587d731fd8bf3151aeceb4e961fdcc515f5"
+    },
+    {
+      "path": "research/remediation_round3/rules/switch-ser-ago.yaml",
+      "sha256": "f8c755b1cfda4e5a9c2ffae52dff1543ce449bf9e404bbcf84c8996340f7ef66"
+    },
+    {
+      "path": "research/remediation_round3/rules/switch-ser-esc.yaml",
+      "sha256": "615ff03adca339c4c2bf47348bf142d243b6c61c2fb82985f5bce6762439fca1"
+    },
+    {
+      "path": "research/remediation_round3/rules/venla-xr-gad-start.yaml",
+      "sha256": "99a64f489c29df21a2796eac1ff652619c290fd23d6d11a7de140e3d00119b18"
+    },
+    {
+      "path": "research/remediation_round3/rules/venla-xr-panic-form-limit.yaml",
+      "sha256": "1a8e07ee9aaad02ccccc029720cf39ae9cf574107e08cbd1af5499283118415b"
+    },
+    {
+      "path": "research/remediation_round3/rules/venla-xr-social-start.yaml",
+      "sha256": "a28c0d62f443ed507df3a7ec3ad720c2aab249ef132d4bf377e262fdf0bef8f5"
+    },
+    {
+      "path": "research/remediation_round3/rules/venla-xr-taper-limit.yaml",
+      "sha256": "32a9e297c424a857b593877138159224e4b43b17105a1505df8103438ea335ba"
+    },
+    {
+      "path": "research/remediation_round3/originals/RU-AGO_current.pdf",
+      "sha256": "a98d383832688cee9a09588b1a908555d01ed8b659281cdeee2646c1115ce7c1"
+    },
+    {
+      "path": "research/remediation_round3/originals/RU-AGO_current_PIL.pdf",
+      "sha256": "720bf4e1b9ca3131f7ee844a8f731cb9872d8c545cbae32e9b2936d5d563b18b"
+    },
+    {
+      "path": "research/remediation_round3/originals/RU-DULOX_current.pdf",
+      "sha256": "0551a7306ca4a56b552336bb63fa34905cf4e312702ba811a792221892a42ca1"
+    },
+    {
+      "path": "research/remediation_round3/originals/RU-DULOX_current_PIL.pdf",
+      "sha256": "2668b290164ad40af2b92af2d8724c839770c9b58f339186e5e4175bccdf8a88"
+    },
+    {
+      "path": "research/remediation_round3/originals/RU-FLUVOX_current.pdf",
+      "sha256": "01b6621adad68dfeaf1fbe00db21935b6df1edee141c67307a9b67ad177893f2"
+    },
+    {
+      "path": "research/remediation_round3/originals/RU-FLUVOX_current_PIL.pdf",
+      "sha256": "76d4eef8f34f35fd1917671399cb105187ae3c65cd0835dc633015d733a450fe"
+    },
+    {
+      "path": "research/remediation_round3/originals/RU-GERIATRIC_613_2.pdf",
+      "sha256": "431d916605b0e7a2ee7e124dcef7975bd6db46121a4853271cfb59c20b3ea719"
+    },
+    {
+      "path": "research/remediation_round3/originals/RU-PAROX_current.pdf",
+      "sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069"
+    },
+    {
+      "path": "research/remediation_round3/originals/RU-PAROX_current_PIL.pdf",
+      "sha256": "b9efb47bcc396ef6a0419a590d4dabe8e01ce91d208ad2300db18c01df57275c"
+    },
+    {
+      "path": "research/remediation_round3/originals/RU-PHEN_current.pdf",
+      "sha256": "850486408d225fc603f8f053765491c1e9fd688c5c3d765cdf80a34dd2b3cf1a"
+    },
+    {
+      "path": "research/remediation_round3/originals/RU-PHEN_current_PIL.pdf",
+      "sha256": "87f96baff17663cdeb4ef9a5b02c18e2277fc2bcfec28712843df2564828c609"
+    },
+    {
+      "path": "research/remediation_round3/originals/RU-PREG-RICHTER_current.pdf",
+      "sha256": "8b6240d17e311c9468373c451ad7b4addff096594baf7041097e688ae27ae42f"
+    },
+    {
+      "path": "research/remediation_round3/originals/RU-PREG-RICHTER_current_PIL.pdf",
+      "sha256": "bd0a7106e2703d206ddafa986b817fa1daa57eb4c1d87d5ed244dbdd1b4afb17"
+    },
+    {
+      "path": "research/remediation_round3/originals/RU-PREG_current.pdf",
+      "sha256": "b605c8b381c24d59a48bbab9bfa8621eb70f6ec16ad9e3679aa8457f811663e5"
+    },
+    {
+      "path": "research/remediation_round3/originals/RU-PREG_current_PIL.pdf",
+      "sha256": "465238d72bb90bbf03d850fe53e6d7c249bcbd2037308c7213b452dff42e55d7"
+    },
+    {
+      "path": "research/remediation_round3/originals/RU-VENLA-IR_current.pdf",
+      "sha256": "b1e98ffb209390179385a56aa70b6b94eda4a395831464f347aecf721f8701af"
+    },
+    {
+      "path": "research/remediation_round3/originals/RU-VENLA-IR_current_PIL.pdf",
+      "sha256": "0db67cdfc698abea7a563e619e9068ef8a9e74c722b4f29d6a12ef4c73e1ef97"
+    },
+    {
+      "path": "research/remediation_round3/originals/RU-VENLA-XR_current.pdf",
+      "sha256": "a21e90141db69d9be5ca44ac3c8c6059c8c82a880f34bbf15143348c36ef4666"
+    },
+    {
+      "path": "research/remediation_round3/originals/RU-VENLA-XR_current_PIL.pdf",
+      "sha256": "a28a53108a7d031d763bec1b4b0faa626076038745b2e2e0feb0e9fe592fdb7d"
+    },
+    {
+      "path": "psychopharm_codex_pack/ACCEPTANCE_V2.md",
+      "sha256": "799ea55256a726c8a9c7964073d45e45baf69a7e379fa4ad0cadd110da9585de"
+    },
+    {
+      "path": "REQUIREMENTS_UPDATE_2026-10-08.md",
+      "sha256": "4caa4c8f0d69562a31818a6706ac41867f2bff0c0efda5fe103babd8b6734dbb"
+    },
+    {
+      "path": "research/sources.json",
+      "sha256": "af8a195dbf4ca9cf6d979cfb5d32f973b142d63e6261c6bc5a48d51a513f482c"
+    },
+    {
+      "path": "research/input_catalog.csv",
+      "sha256": "260bdb9415a67783bdb70282e23e8cadacd1d999b2028fd43a78e5d0aaca826d"
+    },
+    {
+      "path": "research/question_counts.json",
+      "sha256": "649b9ce68c3158355683538ee54d538304a3c504340f8ff1ac8a4820e265b2d9"
+    },
+    {
+      "path": "research/question_flows.yaml",
+      "sha256": "397766ccf231e27779e2c610edc364cacecc9326e0a7e8f2bd8ffd9d58e465c7"
+    },
+    {
+      "path": "research/switch_matrix.yaml",
+      "sha256": "2f7a53c895b4fa123d80cc7bfa7c5a8206fa79b8a746a3fad61ea4630c23e0df"
+    },
+    {
+      "path": "research/test_cases.yaml",
+      "sha256": "f27db031c71f4cca592f866af5fc3655c43ea24c67f52aaa8fa8f629ea73839d"
+    },
+    {
+      "path": "research/renal_estimator.yaml",
+      "sha256": "0dd5df39c38632874fe0558e1de6d9fbfbabaa4f894a686ffa138964d7c3df3c"
+    },
+    {
+      "path": "research/source_transfer_audit.yaml",
+      "sha256": "3610f3c134f27fb1e88d17eb59b9767556473b55bc3200d0cea85c9170f1ee2f"
+    },
+    {
+      "path": "research/verify_research.py",
+      "sha256": "4cf0084f0c2a5ec5439ad57e24175f9630ed4f4ca6118b61000b568e57798a45"
+    },
+    {
+      "path": "research/rules/ago-depression-start.yaml",
+      "sha256": "4356579343bb4378a12531f8595e1b781cf238d67fbe90b24236ec1f7dc3960d"
+    },
+    {
+      "path": "research/rules/ago-gad-start.yaml",
+      "sha256": "bb07cef0a8895427cd23e28efa26575bddebeab929791e5dcc4ff8fcaeaa6ebd"
+    },
+    {
+      "path": "research/rules/ago-stop.yaml",
+      "sha256": "44d99b28661a4fc0ee0c114b39445b6e9f368e229983e15d78aa2f97a783a1c6"
+    },
+    {
+      "path": "research/rules/dulox-depression-start.yaml",
+      "sha256": "0d3f2b5843c837b534f6568a400820e33ade1141a69338ecf046a81c1589cc9d"
+    },
+    {
+      "path": "research/rules/dulox-gad-adjust.yaml",
+      "sha256": "acd76f8a6f454a0a7d9ebb282c2126b30e467f51c179a7a0f8d4c98a2eb47976"
+    },
+    {
+      "path": "research/rules/dulox-gad-start.yaml",
+      "sha256": "874a8ba717d1e540aa3d1121a9528855fb0757b837659ab5d25d61a272bac080"
+    },
+    {
+      "path": "research/rules/dulox-taper-limit.yaml",
+      "sha256": "13bf5f0a59dd267eb9a49f1ca1bc34a601aab6cca5b15354f40e9a1e258982d4"
+    },
+    {
+      "path": "research/rules/esc-adult-adjust.yaml",
+      "sha256": "4995b5ad6e0c19e01d09898f4486fd122f88094a86649a330fa9ffbb0d83df5e"
+    },
+    {
+      "path": "research/rules/esc-cyp2c19-start.yaml",
+      "sha256": "820e41c05939e73ef3b4f498287d5b628eca7df662250b02ecde8e6355014252"
+    },
+    {
+      "path": "research/rules/esc-elderly-start.yaml",
+      "sha256": "37738bcc631cdb088947df5ad1392bfde25b69471e0e54df08d0f4982ae14731"
+    },
+    {
+      "path": "research/rules/esc-gad-start.yaml",
+      "sha256": "c2a519e61fa41195b615c86a8a0a1140df3e4ce39390084a774407d495772f0b"
+    },
+    {
+      "path": "research/rules/esc-hepatic-start.yaml",
+      "sha256": "e199908bbebfcbd041713b52a07cee643154fdf54c2da4b18f1bd9b42c9b2946"
+    },
+    {
+      "path": "research/rules/esc-panic-start.yaml",
+      "sha256": "f901b39898887c9a53055f051ef41d687ab7aef72785094d32a5185690b405f9"
+    },
+    {
+      "path": "research/rules/esc-social-start.yaml",
+      "sha256": "6d80f415da7751699b53926fa1eab806b6faac77e0584db580ac3d59eeed4789"
+    },
+    {
+      "path": "research/rules/esc-taper-limit.yaml",
+      "sha256": "bbff4b3df9b8d6d32be4931c8f76fb41b65c67dfe525d31481bbb1d5461c4f24"
+    },
+    {
+      "path": "research/rules/fluvox-depression-start.yaml",
+      "sha256": "95b294348e218de59975c5fbaea8f088b1e8e7d8d6b2c77f50d1808386e4dcb3"
+    },
+    {
+      "path": "research/rules/fluvox-taper-limit.yaml",
+      "sha256": "5691f872bef7eb2a628b156fff9cf2a9715e6477d50470d3872e42d7201e516d"
+    },
+    {
+      "path": "research/rules/parox-panic-kr.yaml",
+      "sha256": "cf1aded1167e6c808f431d512f1aaa6aca7f517494a0c728a1fcf58bb94ea4ab"
+    },
+    {
+      "path": "research/rules/parox-taper-example.yaml",
+      "sha256": "4ea46fc23555dcbe7083b21b10579669f0ae213e473d7fcbb9b8151e784008f1"
+    },
+    {
+      "path": "research/rules/phen-taper-limit.yaml",
+      "sha256": "7eeada96317d9c3e226c8dc86d433972a8ce6458d727f2810d06395cd5313184"
+    },
+    {
+      "path": "research/rules/preg-gad-adjust.yaml",
+      "sha256": "c1b4816727b6b1863419a90b81a7558319f9b2fc9120a4062441a973373b75ff"
+    },
+    {
+      "path": "research/rules/preg-gad-start.yaml",
+      "sha256": "22e7e744f9d2cbbdb1554bd73db81803cf0c2d83ed5868851b508e1d8e6ff67b"
+    },
+    {
+      "path": "research/rules/preg-renal-start.yaml",
+      "sha256": "6560b9b3647db9cbae015081f101c3800d87157fcfb27aba237115e20144db7e"
+    },
+    {
+      "path": "research/rules/preg-taper-limit.yaml",
+      "sha256": "f441e4d7cc19a7b9a30703d04dfc2165c142705cd87a7ea7764acb44e442d454"
+    },
+    {
+      "path": "research/rules/ser-adult-adjust.yaml",
+      "sha256": "be342cd5bb7df78f41c4ce2c52943e3395909637f2763ed54425d7e3e8ce617c"
+    },
+    {
+      "path": "research/rules/ser-panic-start.yaml",
+      "sha256": "fd773cc095e4a135f93bf1ec1801ef274b20f9a0cb98253e7a3285b206dcca31"
+    },
+    {
+      "path": "research/rules/ser-social-start.yaml",
+      "sha256": "c5e5200e80473d9d84602d6e530002643d0a67ee7996c733cf635033de6ae3cd"
+    },
+    {
+      "path": "research/rules/ser-taper-limit.yaml",
+      "sha256": "130548d79a2a3f311e172c71ae29244eddfbaafd670a9ed13b71387ed9e1da12"
+    },
+    {
+      "path": "research/rules/switch-esc-ago.yaml",
+      "sha256": "f1ea8cc45d3796072f97304bff358c5a3c03881e1608468a2221216376ba8f7b"
+    },
+    {
+      "path": "research/rules/switch-esc-ser.yaml",
+      "sha256": "866dde8e1c5473a105d4bc51a2a219a01e71d91b39bace12f252f6db44864d84"
+    },
+    {
+      "path": "research/rules/switch-parox-ago-selected-example.yaml",
+      "sha256": "ee85b701ed34d7f91b969196f0c0710a8ddd1a13e44ea1564f29410f92b081a7"
+    },
+    {
+      "path": "research/rules/switch-parox-ago.yaml",
+      "sha256": "094aebf774306dfb70bf60eaeb531587d731fd8bf3151aeceb4e961fdcc515f5"
+    },
+    {
+      "path": "research/rules/switch-ser-ago.yaml",
+      "sha256": "f8c755b1cfda4e5a9c2ffae52dff1543ce449bf9e404bbcf84c8996340f7ef66"
+    },
+    {
+      "path": "research/rules/switch-ser-esc.yaml",
+      "sha256": "615ff03adca339c4c2bf47348bf142d243b6c61c2fb82985f5bce6762439fca1"
+    },
+    {
+      "path": "research/rules/venla-xr-gad-start.yaml",
+      "sha256": "99a64f489c29df21a2796eac1ff652619c290fd23d6d11a7de140e3d00119b18"
+    },
+    {
+      "path": "research/rules/venla-xr-panic-form-limit.yaml",
+      "sha256": "1a8e07ee9aaad02ccccc029720cf39ae9cf574107e08cbd1af5499283118415b"
+    },
+    {
+      "path": "research/rules/venla-xr-social-start.yaml",
+      "sha256": "a28c0d62f443ed507df3a7ec3ad720c2aab249ef132d4bf377e262fdf0bef8f5"
+    },
+    {
+      "path": "research/rules/venla-xr-taper-limit.yaml",
+      "sha256": "32a9e297c424a857b593877138159224e4b43b17105a1505df8103438ea335ba"
+    },
+    {
+      "path": "research/00_summary.md",
+      "sha256": "2b3e507d7856356a24d054d661fb074e73ca674c1225fc497b06b62045edfe2c"
+    },
+    {
+      "path": "research/01_scope_and_sources.md",
+      "sha256": "97a80f4d0bb50794bc606e65bf0bad45d8ff17d7e515e076d9b446001238a481"
+    },
+    {
+      "path": "research/02_rules.md",
+      "sha256": "bafde3058c43518f8f6d77bd7bb9a993f9f8f46ddda937089646c852f6726e00"
+    },
+    {
+      "path": "research/03_question_flows.md",
+      "sha256": "4cb4c7ed468c132730b1da9c3ee4c3b89d8745eb8aedcd0341ca4ec3862ee8f8"
+    },
+    {
+      "path": "research/04_switch_matrix.md",
+      "sha256": "6e2b1b514dd74cab2db30e62a106484ca12f21746febae936520986e04965999"
+    },
+    {
+      "path": "research/05_gaps_and_conflicts.md",
+      "sha256": "2760061fef75a91097e7e0a1ac891a29fa2d62ec5657d2d4ae80127ed55aeef4"
+    },
+    {
+      "path": "research/06_implementation_brief.md",
+      "sha256": "548fe5006a08f14a1d993af35688a4dca359030467ec6f8dac5a1fb34fb717e5"
+    },
+    {
+      "path": "research/07_acceptance.md",
+      "sha256": "8ab77a66aed12a25737926716f1d15116135c247e4587c33df9d78e5fe020d8b"
+    },
+    {
+      "path": "research/08_russian_priority_update.md",
+      "sha256": "c3846c0294ed962206c6d03fc9e5b6bc183393819693e5d0c31492467189ab86"
+    },
+    {
+      "path": "research/09_download_links.md",
+      "sha256": "1eb07a03c5bb013e4a63b337160f219766f7fbf8d491bf94d5ea0fb3a26eb465"
+    },
+    {
+      "path": "research/10_source_audit.md",
+      "sha256": "7756a2928734943591c90a90a860425f6dddfa71063891e20fb03561c2c2249c"
+    },
+    {
+      "path": "research/search_log.csv",
+      "sha256": "0913be93c457a558846112a454b309d6d1324ea14014c6b91d33a8432b9a1fea"
+    },
+    {
+      "path": "research/audit/retrieved/RU-GAD.pdf",
+      "sha256": "c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a"
+    },
+    {
+      "path": "research/audit/retrieved/RU-PANIC.pdf",
+      "sha256": "a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d"
+    },
+    {
+      "path": "research/audit/retrieved/RU-PHOB.pdf",
+      "sha256": "2a51982fb1919c0ef9115e5231f8ef9d65863306d2d5b95aa0aa7821a6f328b7"
+    },
+    {
+      "path": "research/source_snapshots/depression-301_3.pdf",
+      "sha256": "2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd"
+    },
+    {
+      "path": "research/source_downloads/Золофт — сертралин.pdf",
+      "sha256": "3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba"
+    },
+    {
+      "path": "research/remediation_round2/Selectra_current_registry.pdf",
+      "sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6"
+    },
+    {
+      "path": "research/audit/retrieved/EU-PREG.pdf",
+      "sha256": "0f82f9dee99e4c6c1ec68a6f67072cf59e9a4dc3997dbe5f30cf806ee2cf3f99"
+    },
+    {
+      "path": "research/audit/retrieved/UK-NICE222.pdf",
+      "sha256": "4f59bf752b49734b81244d1251d94a8fc2e984aac34577e295be243582a957de"
+    },
+    {
+      "path": "research/audit/retrieved/US-ASAM.pdf",
+      "sha256": "a9937c249d7a08658eb10c5b7805fce9bb6e975e4f4d5ac11507434708c4b5ec"
+    },
+    {
+      "path": "research/audit/retrieved/WHO-F41.html",
+      "sha256": "28852802c5d4771ce3d780d4c391a9b5f08e68b6937187fa1540606161996caf"
+    },
+    {
+      "path": "research/audit/retrieved/RU-SER-2023.pdf",
+      "sha256": "640908909dc7109d614b4f03225d0c31ab2f5f9d6e39b9b8f65046873e9d722c"
+    },
+    {
+      "path": "research/source_downloads/Селектра — эсциталопрам.pdf",
+      "sha256": "ea5d007a4026e850b514badeabfdb5d6e0ece163a1a84e6fa5453a8ff0c73497"
+    },
+    {
+      "path": "research/audit/retrieved/RU-PREG-RICHTER-ARCHIVE.pdf",
+      "sha256": "c6c6b41dd339536ad1671193a6cd69a7c111d6a2c04c6db501ae85c3beba1ee1"
+    },
+    {
+      "path": "research/source_downloads/Циталопрам — Пранафарм.docx",
+      "sha256": "5e10a0452aa6a432390878027d66309a93729250ae6015c2ec225a28be68fe00"
+    },
+    {
+      "path": "research/source_downloads/Флуоксетин — Озон.pdf",
+      "sha256": "dfcf4a185bb4474bfa7411de1d956be7d309bc9c3e350309f6ca1220fd4e32a3"
+    },
+    {
+      "path": "research/source_downloads/Кломипрамин — раствор.pdf",
+      "sha256": "81d40c49e7fa50aed75f8719c51f942f40f85a5ad74e1637a45673f0b57f1d33"
+    }
+  ],
+  "main_package_state": "round3 promoted; independent acceptance pending",
+  "nature": "Research data freeze, not git commit or clinical validation"
+}

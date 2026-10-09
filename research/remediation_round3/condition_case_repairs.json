@@ -1,0 +1,2059 @@
+{
+  "original_literal_occurrences": 114,
+  "unique_condition_scopes": 113,
+  "new_cases": 232,
+  "rows": [
+    {
+      "record_ids": [
+        "L-C00884"
+      ],
+      "rule_id": "esc-adult-adjust",
+      "source_id": "RU-ESC",
+      "condition_literal": "reversible_MAO_A",
+      "new_cases": [
+        "esc-adult-adjust--audit-final-primary-RU-ESC-reversible_MAO_A-positive",
+        "esc-adult-adjust--audit-final-primary-RU-ESC-reversible_MAO_A-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        7
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C00885"
+      ],
+      "rule_id": "esc-adult-adjust",
+      "source_id": "RU-ESC",
+      "condition_literal": "linezolid",
+      "new_cases": [
+        "esc-adult-adjust--audit-final-primary-RU-ESC-linezolid-positive",
+        "esc-adult-adjust--audit-final-primary-RU-ESC-linezolid-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        8
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C00886"
+      ],
+      "rule_id": "esc-adult-adjust",
+      "source_id": "RU-ESC",
+      "condition_literal": "selective_MAO_B",
+      "new_cases": [
+        "esc-adult-adjust--audit-final-primary-RU-ESC-selective_MAO_B-positive",
+        "esc-adult-adjust--audit-final-primary-RU-ESC-selective_MAO_B-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        8
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C00887"
+      ],
+      "rule_id": "esc-adult-adjust",
+      "source_id": "RU-ESC",
+      "condition_literal": "serotonergic",
+      "new_cases": [
+        "esc-adult-adjust--audit-final-primary-RU-ESC-serotonergic-positive",
+        "esc-adult-adjust--audit-final-primary-RU-ESC-serotonergic-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        5,
+        6,
+        8
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C00888"
+      ],
+      "rule_id": "esc-adult-adjust",
+      "source_id": "RU-ESC",
+      "condition_literal": "CYP2C19_inhibitor",
+      "new_cases": [
+        "esc-adult-adjust--audit-final-primary-RU-ESC-CYP2C19_inhibitor-positive",
+        "esc-adult-adjust--audit-final-primary-RU-ESC-CYP2C19_inhibitor-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        9
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C00889"
+      ],
+      "rule_id": "esc-adult-adjust",
+      "source_id": "RU-ESC",
+      "condition_literal": "cimetidine",
+      "new_cases": [
+        "esc-adult-adjust--audit-final-primary-RU-ESC-cimetidine-positive",
+        "esc-adult-adjust--audit-final-primary-RU-ESC-cimetidine-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        9
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C00890"
+      ],
+      "rule_id": "esc-adult-adjust",
+      "source_id": "RU-ESC",
+      "condition_literal": "bleeding",
+      "new_cases": [
+        "esc-adult-adjust--audit-final-primary-RU-ESC-bleeding-positive",
+        "esc-adult-adjust--audit-final-primary-RU-ESC-bleeding-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        5,
+        8,
+        9
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C01004"
+      ],
+      "rule_id": "esc-cyp2c19-start",
+      "source_id": "RU-ESC",
+      "condition_literal": "reversible_MAO_A",
+      "new_cases": [
+        "esc-cyp2c19-start--audit-final-primary-RU-ESC-reversible_MAO_A-positive",
+        "esc-cyp2c19-start--audit-final-primary-RU-ESC-reversible_MAO_A-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        7
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C01005"
+      ],
+      "rule_id": "esc-cyp2c19-start",
+      "source_id": "RU-ESC",
+      "condition_literal": "linezolid",
+      "new_cases": [
+        "esc-cyp2c19-start--audit-final-primary-RU-ESC-linezolid-positive",
+        "esc-cyp2c19-start--audit-final-primary-RU-ESC-linezolid-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        8
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C01006"
+      ],
+      "rule_id": "esc-cyp2c19-start",
+      "source_id": "RU-ESC",
+      "condition_literal": "selective_MAO_B",
+      "new_cases": [
+        "esc-cyp2c19-start--audit-final-primary-RU-ESC-selective_MAO_B-positive",
+        "esc-cyp2c19-start--audit-final-primary-RU-ESC-selective_MAO_B-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        8
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C01007"
+      ],
+      "rule_id": "esc-cyp2c19-start",
+      "source_id": "RU-ESC",
+      "condition_literal": "serotonergic",
+      "new_cases": [
+        "esc-cyp2c19-start--audit-final-primary-RU-ESC-serotonergic-positive",
+        "esc-cyp2c19-start--audit-final-primary-RU-ESC-serotonergic-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        5,
+        6,
+        8
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C01008"
+      ],
+      "rule_id": "esc-cyp2c19-start",
+      "source_id": "RU-ESC",
+      "condition_literal": "CYP2C19_inhibitor",
+      "new_cases": [
+        "esc-cyp2c19-start--audit-final-primary-RU-ESC-CYP2C19_inhibitor-positive",
+        "esc-cyp2c19-start--audit-final-primary-RU-ESC-CYP2C19_inhibitor-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        9
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C01009"
+      ],
+      "rule_id": "esc-cyp2c19-start",
+      "source_id": "RU-ESC",
+      "condition_literal": "cimetidine",
+      "new_cases": [
+        "esc-cyp2c19-start--audit-final-primary-RU-ESC-cimetidine-positive",
+        "esc-cyp2c19-start--audit-final-primary-RU-ESC-cimetidine-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        9
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C01010"
+      ],
+      "rule_id": "esc-cyp2c19-start",
+      "source_id": "RU-ESC",
+      "condition_literal": "bleeding",
+      "new_cases": [
+        "esc-cyp2c19-start--audit-final-primary-RU-ESC-bleeding-positive",
+        "esc-cyp2c19-start--audit-final-primary-RU-ESC-bleeding-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        5,
+        8,
+        9
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C01126"
+      ],
+      "rule_id": "esc-elderly-start",
+      "source_id": "RU-ESC",
+      "condition_literal": "reversible_MAO_A",
+      "new_cases": [
+        "esc-elderly-start--audit-final-primary-RU-ESC-reversible_MAO_A-positive",
+        "esc-elderly-start--audit-final-primary-RU-ESC-reversible_MAO_A-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        7
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C01127"
+      ],
+      "rule_id": "esc-elderly-start",
+      "source_id": "RU-ESC",
+      "condition_literal": "linezolid",
+      "new_cases": [
+        "esc-elderly-start--audit-final-primary-RU-ESC-linezolid-positive",
+        "esc-elderly-start--audit-final-primary-RU-ESC-linezolid-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        8
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C01128"
+      ],
+      "rule_id": "esc-elderly-start",
+      "source_id": "RU-ESC",
+      "condition_literal": "selective_MAO_B",
+      "new_cases": [
+        "esc-elderly-start--audit-final-primary-RU-ESC-selective_MAO_B-positive",
+        "esc-elderly-start--audit-final-primary-RU-ESC-selective_MAO_B-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        8
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C01129"
+      ],
+      "rule_id": "esc-elderly-start",
+      "source_id": "RU-ESC",
+      "condition_literal": "serotonergic",
+      "new_cases": [
+        "esc-elderly-start--audit-final-primary-RU-ESC-serotonergic-positive",
+        "esc-elderly-start--audit-final-primary-RU-ESC-serotonergic-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        5,
+        6,
+        8
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C01130"
+      ],
+      "rule_id": "esc-elderly-start",
+      "source_id": "RU-ESC",
+      "condition_literal": "CYP2C19_inhibitor",
+      "new_cases": [
+        "esc-elderly-start--audit-final-primary-RU-ESC-CYP2C19_inhibitor-positive",
+        "esc-elderly-start--audit-final-primary-RU-ESC-CYP2C19_inhibitor-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        9
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C01131"
+      ],
+      "rule_id": "esc-elderly-start",
+      "source_id": "RU-ESC",
+      "condition_literal": "cimetidine",
+      "new_cases": [
+        "esc-elderly-start--audit-final-primary-RU-ESC-cimetidine-positive",
+        "esc-elderly-start--audit-final-primary-RU-ESC-cimetidine-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        9
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C01132"
+      ],
+      "rule_id": "esc-elderly-start",
+      "source_id": "RU-ESC",
+      "condition_literal": "bleeding",
+      "new_cases": [
+        "esc-elderly-start--audit-final-primary-RU-ESC-bleeding-positive",
+        "esc-elderly-start--audit-final-primary-RU-ESC-bleeding-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        5,
+        8,
+        9
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C01249"
+      ],
+      "rule_id": "esc-gad-start",
+      "source_id": "RU-ESC",
+      "condition_literal": "reversible_MAO_A",
+      "new_cases": [
+        "esc-gad-start--audit-final-primary-RU-ESC-reversible_MAO_A-positive",
+        "esc-gad-start--audit-final-primary-RU-ESC-reversible_MAO_A-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        7
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C01250"
+      ],
+      "rule_id": "esc-gad-start",
+      "source_id": "RU-ESC",
+      "condition_literal": "linezolid",
+      "new_cases": [
+        "esc-gad-start--audit-final-primary-RU-ESC-linezolid-positive",
+        "esc-gad-start--audit-final-primary-RU-ESC-linezolid-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        8
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C01251"
+      ],
+      "rule_id": "esc-gad-start",
+      "source_id": "RU-ESC",
+      "condition_literal": "selective_MAO_B",
+      "new_cases": [
+        "esc-gad-start--audit-final-primary-RU-ESC-selective_MAO_B-positive",
+        "esc-gad-start--audit-final-primary-RU-ESC-selective_MAO_B-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        8
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C01252"
+      ],
+      "rule_id": "esc-gad-start",
+      "source_id": "RU-ESC",
+      "condition_literal": "serotonergic",
+      "new_cases": [
+        "esc-gad-start--audit-final-primary-RU-ESC-serotonergic-positive",
+        "esc-gad-start--audit-final-primary-RU-ESC-serotonergic-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        5,
+        6,
+        8
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C01253"
+      ],
+      "rule_id": "esc-gad-start",
+      "source_id": "RU-ESC",
+      "condition_literal": "CYP2C19_inhibitor",
+      "new_cases": [
+        "esc-gad-start--audit-final-primary-RU-ESC-CYP2C19_inhibitor-positive",
+        "esc-gad-start--audit-final-primary-RU-ESC-CYP2C19_inhibitor-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        9
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C01254"
+      ],
+      "rule_id": "esc-gad-start",
+      "source_id": "RU-ESC",
+      "condition_literal": "cimetidine",
+      "new_cases": [
+        "esc-gad-start--audit-final-primary-RU-ESC-cimetidine-positive",
+        "esc-gad-start--audit-final-primary-RU-ESC-cimetidine-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        9
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C01255"
+      ],
+      "rule_id": "esc-gad-start",
+      "source_id": "RU-ESC",
+      "condition_literal": "bleeding",
+      "new_cases": [
+        "esc-gad-start--audit-final-primary-RU-ESC-bleeding-positive",
+        "esc-gad-start--audit-final-primary-RU-ESC-bleeding-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        5,
+        8,
+        9
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C01371"
+      ],
+      "rule_id": "esc-hepatic-start",
+      "source_id": "RU-ESC",
+      "condition_literal": "reversible_MAO_A",
+      "new_cases": [
+        "esc-hepatic-start--audit-final-primary-RU-ESC-reversible_MAO_A-positive",
+        "esc-hepatic-start--audit-final-primary-RU-ESC-reversible_MAO_A-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        7
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C01372"
+      ],
+      "rule_id": "esc-hepatic-start",
+      "source_id": "RU-ESC",
+      "condition_literal": "linezolid",
+      "new_cases": [
+        "esc-hepatic-start--audit-final-primary-RU-ESC-linezolid-positive",
+        "esc-hepatic-start--audit-final-primary-RU-ESC-linezolid-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        8
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C01373"
+      ],
+      "rule_id": "esc-hepatic-start",
+      "source_id": "RU-ESC",
+      "condition_literal": "selective_MAO_B",
+      "new_cases": [
+        "esc-hepatic-start--audit-final-primary-RU-ESC-selective_MAO_B-positive",
+        "esc-hepatic-start--audit-final-primary-RU-ESC-selective_MAO_B-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        8
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C01374"
+      ],
+      "rule_id": "esc-hepatic-start",
+      "source_id": "RU-ESC",
+      "condition_literal": "serotonergic",
+      "new_cases": [
+        "esc-hepatic-start--audit-final-primary-RU-ESC-serotonergic-positive",
+        "esc-hepatic-start--audit-final-primary-RU-ESC-serotonergic-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        5,
+        6,
+        8
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C01375"
+      ],
+      "rule_id": "esc-hepatic-start",
+      "source_id": "RU-ESC",
+      "condition_literal": "CYP2C19_inhibitor",
+      "new_cases": [
+        "esc-hepatic-start--audit-final-primary-RU-ESC-CYP2C19_inhibitor-positive",
+        "esc-hepatic-start--audit-final-primary-RU-ESC-CYP2C19_inhibitor-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        9
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C01376"
+      ],
+      "rule_id": "esc-hepatic-start",
+      "source_id": "RU-ESC",
+      "condition_literal": "cimetidine",
+      "new_cases": [
+        "esc-hepatic-start--audit-final-primary-RU-ESC-cimetidine-positive",
+        "esc-hepatic-start--audit-final-primary-RU-ESC-cimetidine-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        9
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C01377"
+      ],
+      "rule_id": "esc-hepatic-start",
+      "source_id": "RU-ESC",
+      "condition_literal": "bleeding",
+      "new_cases": [
+        "esc-hepatic-start--audit-final-primary-RU-ESC-bleeding-positive",
+        "esc-hepatic-start--audit-final-primary-RU-ESC-bleeding-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        5,
+        8,
+        9
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C01496"
+      ],
+      "rule_id": "esc-panic-start",
+      "source_id": "RU-ESC",
+      "condition_literal": "reversible_MAO_A",
+      "new_cases": [
+        "esc-panic-start--audit-final-primary-RU-ESC-reversible_MAO_A-positive",
+        "esc-panic-start--audit-final-primary-RU-ESC-reversible_MAO_A-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        7
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C01497"
+      ],
+      "rule_id": "esc-panic-start",
+      "source_id": "RU-ESC",
+      "condition_literal": "linezolid",
+      "new_cases": [
+        "esc-panic-start--audit-final-primary-RU-ESC-linezolid-positive",
+        "esc-panic-start--audit-final-primary-RU-ESC-linezolid-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        8
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C01498"
+      ],
+      "rule_id": "esc-panic-start",
+      "source_id": "RU-ESC",
+      "condition_literal": "selective_MAO_B",
+      "new_cases": [
+        "esc-panic-start--audit-final-primary-RU-ESC-selective_MAO_B-positive",
+        "esc-panic-start--audit-final-primary-RU-ESC-selective_MAO_B-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        8
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C01499"
+      ],
+      "rule_id": "esc-panic-start",
+      "source_id": "RU-ESC",
+      "condition_literal": "serotonergic",
+      "new_cases": [
+        "esc-panic-start--audit-final-primary-RU-ESC-serotonergic-positive",
+        "esc-panic-start--audit-final-primary-RU-ESC-serotonergic-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        5,
+        6,
+        8
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C01500"
+      ],
+      "rule_id": "esc-panic-start",
+      "source_id": "RU-ESC",
+      "condition_literal": "CYP2C19_inhibitor",
+      "new_cases": [
+        "esc-panic-start--audit-final-primary-RU-ESC-CYP2C19_inhibitor-positive",
+        "esc-panic-start--audit-final-primary-RU-ESC-CYP2C19_inhibitor-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        9
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C01501"
+      ],
+      "rule_id": "esc-panic-start",
+      "source_id": "RU-ESC",
+      "condition_literal": "cimetidine",
+      "new_cases": [
+        "esc-panic-start--audit-final-primary-RU-ESC-cimetidine-positive",
+        "esc-panic-start--audit-final-primary-RU-ESC-cimetidine-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        9
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C01502"
+      ],
+      "rule_id": "esc-panic-start",
+      "source_id": "RU-ESC",
+      "condition_literal": "bleeding",
+      "new_cases": [
+        "esc-panic-start--audit-final-primary-RU-ESC-bleeding-positive",
+        "esc-panic-start--audit-final-primary-RU-ESC-bleeding-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        5,
+        8,
+        9
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C01619"
+      ],
+      "rule_id": "esc-social-start",
+      "source_id": "RU-ESC",
+      "condition_literal": "reversible_MAO_A",
+      "new_cases": [
+        "esc-social-start--audit-final-primary-RU-ESC-reversible_MAO_A-positive",
+        "esc-social-start--audit-final-primary-RU-ESC-reversible_MAO_A-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        7
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C01620"
+      ],
+      "rule_id": "esc-social-start",
+      "source_id": "RU-ESC",
+      "condition_literal": "linezolid",
+      "new_cases": [
+        "esc-social-start--audit-final-primary-RU-ESC-linezolid-positive",
+        "esc-social-start--audit-final-primary-RU-ESC-linezolid-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        8
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C01621"
+      ],
+      "rule_id": "esc-social-start",
+      "source_id": "RU-ESC",
+      "condition_literal": "selective_MAO_B",
+      "new_cases": [
+        "esc-social-start--audit-final-primary-RU-ESC-selective_MAO_B-positive",
+        "esc-social-start--audit-final-primary-RU-ESC-selective_MAO_B-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        8
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C01622"
+      ],
+      "rule_id": "esc-social-start",
+      "source_id": "RU-ESC",
+      "condition_literal": "serotonergic",
+      "new_cases": [
+        "esc-social-start--audit-final-primary-RU-ESC-serotonergic-positive",
+        "esc-social-start--audit-final-primary-RU-ESC-serotonergic-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        5,
+        6,
+        8
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C01623"
+      ],
+      "rule_id": "esc-social-start",
+      "source_id": "RU-ESC",
+      "condition_literal": "CYP2C19_inhibitor",
+      "new_cases": [
+        "esc-social-start--audit-final-primary-RU-ESC-CYP2C19_inhibitor-positive",
+        "esc-social-start--audit-final-primary-RU-ESC-CYP2C19_inhibitor-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        9
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C01624"
+      ],
+      "rule_id": "esc-social-start",
+      "source_id": "RU-ESC",
+      "condition_literal": "cimetidine",
+      "new_cases": [
+        "esc-social-start--audit-final-primary-RU-ESC-cimetidine-positive",
+        "esc-social-start--audit-final-primary-RU-ESC-cimetidine-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        9
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C01625"
+      ],
+      "rule_id": "esc-social-start",
+      "source_id": "RU-ESC",
+      "condition_literal": "bleeding",
+      "new_cases": [
+        "esc-social-start--audit-final-primary-RU-ESC-bleeding-positive",
+        "esc-social-start--audit-final-primary-RU-ESC-bleeding-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        5,
+        8,
+        9
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C01721"
+      ],
+      "rule_id": "esc-taper-limit",
+      "source_id": "RU-ESC",
+      "condition_literal": {
+        "input": "seizure_state",
+        "operator": "equals",
+        "value": "неконтролируемые",
+        "action": "not_applicable standard branch",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.4"
+      },
+      "new_cases": [
+        "esc-taper-limit--audit-final-primary-RU-ESC-seizure_state-неконтролируемые-positive",
+        "esc-taper-limit--audit-final-primary-RU-ESC-seizure_state-неконтролируемые-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        4
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C01722"
+      ],
+      "rule_id": "esc-taper-limit",
+      "source_id": "RU-ESC",
+      "condition_literal": {
+        "input": "seizure_state",
+        "operator": "equals",
+        "value": "первичные/участившиеся приступы",
+        "action": "stop ESC",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.4"
+      },
+      "new_cases": [
+        "esc-taper-limit--audit-final-primary-RU-ESC-seizure_state-первичные/участившиеся приступы-positive",
+        "esc-taper-limit--audit-final-primary-RU-ESC-seizure_state-первичные/участившиеся приступы-unknown",
+        "esc-taper-limit--audit-final-primary-RU-ESC-seizure_state-первичные/участившиеся приступы-phase-unknown",
+        "esc-taper-limit--audit-final-primary-RU-ESC-seizure_state-первичные/участившиеся приступы-phase-not_started"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        4
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C03053"
+      ],
+      "rule_id": "ser-taper-limit",
+      "source_id": "RU-SER",
+      "condition_literal": {
+        "input": "seizure_state",
+        "operator": "equals",
+        "value": "контролируемые",
+        "action": "clinician_choice",
+        "source_ref": "RU-SER",
+        "source_locator": "§4.4 с.4, судороги: прекращение при развитии приступов"
+      },
+      "new_cases": [
+        "ser-taper-limit--audit-final-primary-RU-SER-seizure_state-контролируемые-positive",
+        "ser-taper-limit--audit-final-primary-RU-SER-seizure_state-контролируемые-unknown"
+      ],
+      "source_sha256": "3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba",
+      "physical_pages": [
+        4
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C03054"
+      ],
+      "rule_id": "ser-taper-limit",
+      "source_id": "RU-SER",
+      "condition_literal": {
+        "input": "seizure_state",
+        "operator": "equals",
+        "value": "неконтролируемые",
+        "action": "not_applicable_standard_branch; avoid unstable epilepsy",
+        "source_ref": "RU-SER",
+        "source_locator": "§4.4 с.4, судороги: прекращение при развитии приступов"
+      },
+      "new_cases": [
+        "ser-taper-limit--audit-final-primary-RU-SER-seizure_state-неконтролируемые-positive",
+        "ser-taper-limit--audit-final-primary-RU-SER-seizure_state-неконтролируемые-unknown"
+      ],
+      "source_sha256": "3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba",
+      "physical_pages": [
+        4
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C03055"
+      ],
+      "rule_id": "ser-taper-limit",
+      "source_id": "RU-SER",
+      "condition_literal": {
+        "input": "seizure_state",
+        "operator": "equals",
+        "value": "новые приступы",
+        "action": "stop ongoing source medication",
+        "source_ref": "RU-SER",
+        "source_locator": "§4.4 с.4, судороги: прекращение при развитии приступов"
+      },
+      "new_cases": [
+        "ser-taper-limit--audit-final-primary-RU-SER-seizure_state-новые приступы-positive",
+        "ser-taper-limit--audit-final-primary-RU-SER-seizure_state-новые приступы-unknown",
+        "ser-taper-limit--audit-final-primary-RU-SER-seizure_state-новые приступы-phase-unknown",
+        "ser-taper-limit--audit-final-primary-RU-SER-seizure_state-новые приступы-phase-not_started"
+      ],
+      "source_sha256": "3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba",
+      "physical_pages": [
+        4
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C03221"
+      ],
+      "rule_id": "switch-esc-ago",
+      "source_id": "RU-ESC",
+      "condition_literal": "irreversible_maoi",
+      "new_cases": [
+        "switch-esc-ago--audit-final-primary-RU-ESC-irreversible_maoi-positive",
+        "switch-esc-ago--audit-final-primary-RU-ESC-irreversible_maoi-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        7
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C03222"
+      ],
+      "rule_id": "switch-esc-ago",
+      "source_id": "RU-ESC",
+      "condition_literal": "pimozide",
+      "new_cases": [
+        "switch-esc-ago--audit-final-primary-RU-ESC-pimozide-positive",
+        "switch-esc-ago--audit-final-primary-RU-ESC-pimozide-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        4,
+        8
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C03223"
+      ],
+      "rule_id": "switch-esc-ago",
+      "source_id": "RU-ESC",
+      "condition_literal": "QT_prolonging",
+      "new_cases": [
+        "switch-esc-ago--audit-final-primary-RU-ESC-QT_prolonging-positive",
+        "switch-esc-ago--audit-final-primary-RU-ESC-QT_prolonging-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        4,
+        8
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C03224"
+      ],
+      "rule_id": "switch-esc-ago",
+      "source_id": "RU-ESC",
+      "condition_literal": "reversible_MAO_A",
+      "new_cases": [
+        "switch-esc-ago--audit-final-primary-RU-ESC-reversible_MAO_A-positive",
+        "switch-esc-ago--audit-final-primary-RU-ESC-reversible_MAO_A-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        7
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C03225"
+      ],
+      "rule_id": "switch-esc-ago",
+      "source_id": "RU-ESC",
+      "condition_literal": "linezolid",
+      "new_cases": [
+        "switch-esc-ago--audit-final-primary-RU-ESC-linezolid-positive",
+        "switch-esc-ago--audit-final-primary-RU-ESC-linezolid-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        8
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C03226"
+      ],
+      "rule_id": "switch-esc-ago",
+      "source_id": "RU-ESC",
+      "condition_literal": "selective_MAO_B",
+      "new_cases": [
+        "switch-esc-ago--audit-final-primary-RU-ESC-selective_MAO_B-positive",
+        "switch-esc-ago--audit-final-primary-RU-ESC-selective_MAO_B-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        8
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C03227"
+      ],
+      "rule_id": "switch-esc-ago",
+      "source_id": "RU-ESC",
+      "condition_literal": "serotonergic",
+      "new_cases": [
+        "switch-esc-ago--audit-final-primary-RU-ESC-serotonergic-positive",
+        "switch-esc-ago--audit-final-primary-RU-ESC-serotonergic-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        5,
+        6,
+        8
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C03228"
+      ],
+      "rule_id": "switch-esc-ago",
+      "source_id": "RU-ESC",
+      "condition_literal": "CYP2C19_inhibitor",
+      "new_cases": [
+        "switch-esc-ago--audit-final-primary-RU-ESC-CYP2C19_inhibitor-positive",
+        "switch-esc-ago--audit-final-primary-RU-ESC-CYP2C19_inhibitor-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        9
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C03229"
+      ],
+      "rule_id": "switch-esc-ago",
+      "source_id": "RU-ESC",
+      "condition_literal": "cimetidine",
+      "new_cases": [
+        "switch-esc-ago--audit-final-primary-RU-ESC-cimetidine-positive",
+        "switch-esc-ago--audit-final-primary-RU-ESC-cimetidine-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        9
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C03230"
+      ],
+      "rule_id": "switch-esc-ago",
+      "source_id": "RU-ESC",
+      "condition_literal": "bleeding",
+      "new_cases": [
+        "switch-esc-ago--audit-final-primary-RU-ESC-bleeding-positive",
+        "switch-esc-ago--audit-final-primary-RU-ESC-bleeding-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        5,
+        8,
+        9
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C03233"
+      ],
+      "rule_id": "switch-esc-ago",
+      "source_id": "RU-AGO",
+      "condition_literal": "galactose_intolerance",
+      "new_cases": [
+        "switch-esc-ago--audit-final-primary-RU-AGO-galactose_intolerance-positive",
+        "switch-esc-ago--audit-final-primary-RU-AGO-galactose_intolerance-unknown"
+      ],
+      "source_sha256": "a98d383832688cee9a09588b1a908555d01ed8b659281cdeee2646c1115ce7c1",
+      "physical_pages": [
+        3,
+        5
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C03234"
+      ],
+      "rule_id": "switch-esc-ago",
+      "source_id": "RU-AGO",
+      "condition_literal": "complete_lactase_deficiency",
+      "new_cases": [
+        "switch-esc-ago--audit-final-primary-RU-AGO-complete_lactase_deficiency-positive",
+        "switch-esc-ago--audit-final-primary-RU-AGO-complete_lactase_deficiency-unknown"
+      ],
+      "source_sha256": "a98d383832688cee9a09588b1a908555d01ed8b659281cdeee2646c1115ce7c1",
+      "physical_pages": [
+        3,
+        5
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C03235"
+      ],
+      "rule_id": "switch-esc-ago",
+      "source_id": "RU-AGO",
+      "condition_literal": "glucose_galactose_malabsorption",
+      "new_cases": [
+        "switch-esc-ago--audit-final-primary-RU-AGO-glucose_galactose_malabsorption-positive",
+        "switch-esc-ago--audit-final-primary-RU-AGO-glucose_galactose_malabsorption-unknown"
+      ],
+      "source_sha256": "a98d383832688cee9a09588b1a908555d01ed8b659281cdeee2646c1115ce7c1",
+      "physical_pages": [
+        3,
+        5
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C03236"
+      ],
+      "rule_id": "switch-esc-ago",
+      "source_id": "RU-AGO",
+      "condition_literal": "pregnancy",
+      "new_cases": [
+        "switch-esc-ago--audit-final-primary-RU-AGO-pregnancy-positive",
+        "switch-esc-ago--audit-final-primary-RU-AGO-pregnancy-unknown"
+      ],
+      "source_sha256": "a98d383832688cee9a09588b1a908555d01ed8b659281cdeee2646c1115ce7c1",
+      "physical_pages": [
+        6
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C03237"
+      ],
+      "rule_id": "switch-esc-ago",
+      "source_id": "RU-AGO",
+      "condition_literal": "lactation",
+      "new_cases": [
+        "switch-esc-ago--audit-final-primary-RU-AGO-lactation-positive",
+        "switch-esc-ago--audit-final-primary-RU-AGO-lactation-unknown"
+      ],
+      "source_sha256": "a98d383832688cee9a09588b1a908555d01ed8b659281cdeee2646c1115ce7c1",
+      "physical_pages": [
+        6
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C03238"
+      ],
+      "rule_id": "switch-esc-ago",
+      "source_id": "RU-AGO",
+      "condition_literal": "mania",
+      "new_cases": [
+        "switch-esc-ago--audit-final-primary-RU-AGO-mania-positive",
+        "switch-esc-ago--audit-final-primary-RU-AGO-mania-unknown"
+      ],
+      "source_sha256": "a98d383832688cee9a09588b1a908555d01ed8b659281cdeee2646c1115ce7c1",
+      "physical_pages": [
+        4
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C03239"
+      ],
+      "rule_id": "switch-esc-ago",
+      "source_id": "RU-AGO",
+      "condition_literal": "suicide_risk",
+      "new_cases": [
+        "switch-esc-ago--audit-final-primary-RU-AGO-suicide_risk-positive",
+        "switch-esc-ago--audit-final-primary-RU-AGO-suicide_risk-unknown"
+      ],
+      "source_sha256": "a98d383832688cee9a09588b1a908555d01ed8b659281cdeee2646c1115ce7c1",
+      "physical_pages": [
+        4,
+        5
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C03240"
+      ],
+      "rule_id": "switch-esc-ago",
+      "source_id": "RU-AGO",
+      "condition_literal": "overweight_obesity",
+      "new_cases": [
+        "switch-esc-ago--audit-final-primary-RU-AGO-overweight_obesity-positive",
+        "switch-esc-ago--audit-final-primary-RU-AGO-overweight_obesity-unknown"
+      ],
+      "source_sha256": "a98d383832688cee9a09588b1a908555d01ed8b659281cdeee2646c1115ce7c1",
+      "physical_pages": [
+        3
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C03241"
+      ],
+      "rule_id": "switch-esc-ago",
+      "source_id": "RU-AGO",
+      "condition_literal": "fatty_liver",
+      "new_cases": [
+        "switch-esc-ago--audit-final-primary-RU-AGO-fatty_liver-positive",
+        "switch-esc-ago--audit-final-primary-RU-AGO-fatty_liver-unknown"
+      ],
+      "source_sha256": "a98d383832688cee9a09588b1a908555d01ed8b659281cdeee2646c1115ce7c1",
+      "physical_pages": [
+        3
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C03242"
+      ],
+      "rule_id": "switch-esc-ago",
+      "source_id": "RU-AGO",
+      "condition_literal": "diabetes",
+      "new_cases": [
+        "switch-esc-ago--audit-final-primary-RU-AGO-diabetes-positive",
+        "switch-esc-ago--audit-final-primary-RU-AGO-diabetes-unknown"
+      ],
+      "source_sha256": "a98d383832688cee9a09588b1a908555d01ed8b659281cdeee2646c1115ce7c1",
+      "physical_pages": [
+        3
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C03243"
+      ],
+      "rule_id": "switch-esc-ago",
+      "source_id": "RU-AGO",
+      "condition_literal": "alcohol_abuse",
+      "new_cases": [
+        "switch-esc-ago--audit-final-primary-RU-AGO-alcohol_abuse-positive",
+        "switch-esc-ago--audit-final-primary-RU-AGO-alcohol_abuse-unknown"
+      ],
+      "source_sha256": "a98d383832688cee9a09588b1a908555d01ed8b659281cdeee2646c1115ce7c1",
+      "physical_pages": [
+        3
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C03244"
+      ],
+      "rule_id": "switch-esc-ago",
+      "source_id": "RU-AGO",
+      "condition_literal": "alcohol_use",
+      "new_cases": [
+        "switch-esc-ago--audit-final-primary-RU-AGO-alcohol_use-positive",
+        "switch-esc-ago--audit-final-primary-RU-AGO-alcohol_use-unknown"
+      ],
+      "source_sha256": "a98d383832688cee9a09588b1a908555d01ed8b659281cdeee2646c1115ce7c1",
+      "physical_pages": [
+        6
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C03245"
+      ],
+      "rule_id": "switch-esc-ago",
+      "source_id": "RU-AGO",
+      "condition_literal": "ect",
+      "new_cases": [
+        "switch-esc-ago--audit-final-primary-RU-AGO-ect-positive",
+        "switch-esc-ago--audit-final-primary-RU-AGO-ect-unknown"
+      ],
+      "source_sha256": "a98d383832688cee9a09588b1a908555d01ed8b659281cdeee2646c1115ce7c1",
+      "physical_pages": [
+        6
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C03247"
+      ],
+      "rule_id": "switch-esc-ago",
+      "source_id": "RU-AGO",
+      "condition_literal": "moderate_CYP1A2",
+      "new_cases": [
+        "switch-esc-ago--audit-final-primary-RU-AGO-moderate_CYP1A2-positive",
+        "switch-esc-ago--audit-final-primary-RU-AGO-moderate_CYP1A2-unknown"
+      ],
+      "source_sha256": "a98d383832688cee9a09588b1a908555d01ed8b659281cdeee2646c1115ce7c1",
+      "physical_pages": [
+        5,
+        6
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C03248"
+      ],
+      "rule_id": "switch-esc-ago",
+      "source_id": "RU-AGO",
+      "condition_literal": "hepatotoxic",
+      "new_cases": [
+        "switch-esc-ago--audit-final-primary-RU-AGO-hepatotoxic-positive",
+        "switch-esc-ago--audit-final-primary-RU-AGO-hepatotoxic-unknown"
+      ],
+      "source_sha256": "a98d383832688cee9a09588b1a908555d01ed8b659281cdeee2646c1115ce7c1",
+      "physical_pages": [
+        3
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C03249"
+      ],
+      "rule_id": "switch-esc-ago",
+      "source_id": "RU-AGO",
+      "condition_literal": "liver_injury_signs",
+      "new_cases": [
+        "switch-esc-ago--audit-final-primary-RU-AGO-liver_injury_signs-positive",
+        "switch-esc-ago--audit-final-primary-RU-AGO-liver_injury_signs-unknown",
+        "switch-esc-ago--audit-final-primary-RU-AGO-liver_injury_signs-phase-unknown",
+        "switch-esc-ago--audit-final-primary-RU-AGO-liver_injury_signs-phase-not_started"
+      ],
+      "source_sha256": "a98d383832688cee9a09588b1a908555d01ed8b659281cdeee2646c1115ce7c1",
+      "physical_pages": [
+        4
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C03252"
+      ],
+      "rule_id": "switch-esc-ago",
+      "source_id": "RU-AGO",
+      "condition_literal": {
+        "input": "hepatic",
+        "operator": "category_equals",
+        "value": "hepatic_insufficiency",
+        "action": "not_applicable",
+        "source_ref": "RU-AGO",
+        "source_locator": "§4.3 с.3"
+      },
+      "new_cases": [
+        "switch-esc-ago--audit-final-primary-RU-AGO-hepatic-hepatic_insufficiency-positive",
+        "switch-esc-ago--audit-final-primary-RU-AGO-hepatic-hepatic_insufficiency-unknown"
+      ],
+      "source_sha256": "a98d383832688cee9a09588b1a908555d01ed8b659281cdeee2646c1115ce7c1",
+      "physical_pages": [
+        2,
+        3
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C03253"
+      ],
+      "rule_id": "switch-esc-ago",
+      "source_id": "RU-AGO",
+      "condition_literal": {
+        "input": "hepatic",
+        "operator": "category_equals",
+        "value": "cirrhosis",
+        "action": "not_applicable",
+        "source_ref": "RU-AGO",
+        "source_locator": "§4.3 с.3"
+      },
+      "new_cases": [
+        "switch-esc-ago--audit-final-primary-RU-AGO-hepatic-cirrhosis-positive",
+        "switch-esc-ago--audit-final-primary-RU-AGO-hepatic-cirrhosis-unknown"
+      ],
+      "source_sha256": "a98d383832688cee9a09588b1a908555d01ed8b659281cdeee2646c1115ce7c1",
+      "physical_pages": [
+        2,
+        3
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C03254"
+      ],
+      "rule_id": "switch-esc-ago",
+      "source_id": "RU-AGO",
+      "condition_literal": {
+        "input": "hepatic",
+        "operator": "category_equals",
+        "value": "active_liver_disease",
+        "action": "not_applicable",
+        "source_ref": "RU-AGO",
+        "source_locator": "§4.3 с.3"
+      },
+      "new_cases": [
+        "switch-esc-ago--audit-final-primary-RU-AGO-hepatic-active_liver_disease-positive",
+        "switch-esc-ago--audit-final-primary-RU-AGO-hepatic-active_liver_disease-unknown"
+      ],
+      "source_sha256": "a98d383832688cee9a09588b1a908555d01ed8b659281cdeee2646c1115ce7c1",
+      "physical_pages": [
+        2,
+        3
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C03345"
+      ],
+      "rule_id": "switch-esc-ser",
+      "source_id": "RU-ESC",
+      "condition_literal": "irreversible_maoi",
+      "new_cases": [
+        "switch-esc-ser--audit-final-primary-RU-ESC-irreversible_maoi-positive",
+        "switch-esc-ser--audit-final-primary-RU-ESC-irreversible_maoi-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        7
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C03346"
+      ],
+      "rule_id": "switch-esc-ser",
+      "source_id": "RU-ESC",
+      "condition_literal": "pimozide",
+      "new_cases": [
+        "switch-esc-ser--audit-final-primary-RU-ESC-pimozide-positive",
+        "switch-esc-ser--audit-final-primary-RU-ESC-pimozide-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        4,
+        8
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C03347"
+      ],
+      "rule_id": "switch-esc-ser",
+      "source_id": "RU-ESC",
+      "condition_literal": "QT_prolonging",
+      "new_cases": [
+        "switch-esc-ser--audit-final-primary-RU-ESC-QT_prolonging-positive",
+        "switch-esc-ser--audit-final-primary-RU-ESC-QT_prolonging-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        4,
+        8
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C03348"
+      ],
+      "rule_id": "switch-esc-ser",
+      "source_id": "RU-ESC",
+      "condition_literal": "reversible_MAO_A",
+      "new_cases": [
+        "switch-esc-ser--audit-final-primary-RU-ESC-reversible_MAO_A-positive",
+        "switch-esc-ser--audit-final-primary-RU-ESC-reversible_MAO_A-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        7
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C03349"
+      ],
+      "rule_id": "switch-esc-ser",
+      "source_id": "RU-ESC",
+      "condition_literal": "linezolid",
+      "new_cases": [
+        "switch-esc-ser--audit-final-primary-RU-ESC-linezolid-positive",
+        "switch-esc-ser--audit-final-primary-RU-ESC-linezolid-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        8
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C03350"
+      ],
+      "rule_id": "switch-esc-ser",
+      "source_id": "RU-ESC",
+      "condition_literal": "selective_MAO_B",
+      "new_cases": [
+        "switch-esc-ser--audit-final-primary-RU-ESC-selective_MAO_B-positive",
+        "switch-esc-ser--audit-final-primary-RU-ESC-selective_MAO_B-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        8
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C03351"
+      ],
+      "rule_id": "switch-esc-ser",
+      "source_id": "RU-ESC",
+      "condition_literal": "serotonergic",
+      "new_cases": [
+        "switch-esc-ser--audit-final-primary-RU-ESC-serotonergic-positive",
+        "switch-esc-ser--audit-final-primary-RU-ESC-serotonergic-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        5,
+        6,
+        8
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C03352"
+      ],
+      "rule_id": "switch-esc-ser",
+      "source_id": "RU-ESC",
+      "condition_literal": "CYP2C19_inhibitor",
+      "new_cases": [
+        "switch-esc-ser--audit-final-primary-RU-ESC-CYP2C19_inhibitor-positive",
+        "switch-esc-ser--audit-final-primary-RU-ESC-CYP2C19_inhibitor-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        9
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C03353"
+      ],
+      "rule_id": "switch-esc-ser",
+      "source_id": "RU-ESC",
+      "condition_literal": "cimetidine",
+      "new_cases": [
+        "switch-esc-ser--audit-final-primary-RU-ESC-cimetidine-positive",
+        "switch-esc-ser--audit-final-primary-RU-ESC-cimetidine-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        9
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C03354"
+      ],
+      "rule_id": "switch-esc-ser",
+      "source_id": "RU-ESC",
+      "condition_literal": "bleeding",
+      "new_cases": [
+        "switch-esc-ser--audit-final-primary-RU-ESC-bleeding-positive",
+        "switch-esc-ser--audit-final-primary-RU-ESC-bleeding-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        5,
+        8,
+        9
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C03356"
+      ],
+      "rule_id": "switch-esc-ser",
+      "source_id": "RU-SER",
+      "condition_literal": "maoi",
+      "new_cases": [
+        "switch-esc-ser--audit-final-primary-RU-SER-maoi-positive",
+        "switch-esc-ser--audit-final-primary-RU-SER-maoi-unknown"
+      ],
+      "source_sha256": "3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba",
+      "physical_pages": [
+        3,
+        7,
+        8
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C03357"
+      ],
+      "rule_id": "switch-esc-ser",
+      "source_id": "RU-SER",
+      "condition_literal": "pimozide",
+      "new_cases": [
+        "switch-esc-ser--audit-final-primary-RU-SER-pimozide-positive",
+        "switch-esc-ser--audit-final-primary-RU-SER-pimozide-unknown"
+      ],
+      "source_sha256": "3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba",
+      "physical_pages": [
+        3,
+        8
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C03358"
+      ],
+      "rule_id": "switch-esc-ser",
+      "source_id": "RU-SER",
+      "condition_literal": "serotonergic",
+      "new_cases": [
+        "switch-esc-ser--audit-final-primary-RU-SER-serotonergic-positive",
+        "switch-esc-ser--audit-final-primary-RU-SER-serotonergic-unknown"
+      ],
+      "source_sha256": "3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba",
+      "physical_pages": [
+        3,
+        4,
+        8
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C03359"
+      ],
+      "rule_id": "switch-esc-ser",
+      "source_id": "RU-SER",
+      "condition_literal": "QT_prolonging",
+      "new_cases": [
+        "switch-esc-ser--audit-final-primary-RU-SER-QT_prolonging-positive",
+        "switch-esc-ser--audit-final-primary-RU-SER-QT_prolonging-unknown"
+      ],
+      "source_sha256": "3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba",
+      "physical_pages": [
+        4,
+        8
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C03360"
+      ],
+      "rule_id": "switch-esc-ser",
+      "source_id": "RU-SER",
+      "condition_literal": "bleeding",
+      "new_cases": [
+        "switch-esc-ser--audit-final-primary-RU-SER-bleeding-positive",
+        "switch-esc-ser--audit-final-primary-RU-SER-bleeding-unknown"
+      ],
+      "source_sha256": "3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba",
+      "physical_pages": [
+        5,
+        9
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C04205"
+      ],
+      "rule_id": "switch-ser-esc",
+      "source_id": "RU-ESC",
+      "condition_literal": "irreversible_maoi",
+      "new_cases": [
+        "switch-ser-esc--audit-final-primary-RU-ESC-irreversible_maoi-positive",
+        "switch-ser-esc--audit-final-primary-RU-ESC-irreversible_maoi-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        7
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C04206"
+      ],
+      "rule_id": "switch-ser-esc",
+      "source_id": "RU-ESC",
+      "condition_literal": "pimozide",
+      "new_cases": [
+        "switch-ser-esc--audit-final-primary-RU-ESC-pimozide-positive",
+        "switch-ser-esc--audit-final-primary-RU-ESC-pimozide-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        4,
+        8
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C04207"
+      ],
+      "rule_id": "switch-ser-esc",
+      "source_id": "RU-ESC",
+      "condition_literal": "QT_prolonging",
+      "new_cases": [
+        "switch-ser-esc--audit-final-primary-RU-ESC-QT_prolonging-positive",
+        "switch-ser-esc--audit-final-primary-RU-ESC-QT_prolonging-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        4,
+        8
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C04208"
+      ],
+      "rule_id": "switch-ser-esc",
+      "source_id": "RU-ESC",
+      "condition_literal": "reversible_MAO_A",
+      "new_cases": [
+        "switch-ser-esc--audit-final-primary-RU-ESC-reversible_MAO_A-positive",
+        "switch-ser-esc--audit-final-primary-RU-ESC-reversible_MAO_A-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        7
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C04209"
+      ],
+      "rule_id": "switch-ser-esc",
+      "source_id": "RU-ESC",
+      "condition_literal": "linezolid",
+      "new_cases": [
+        "switch-ser-esc--audit-final-primary-RU-ESC-linezolid-positive",
+        "switch-ser-esc--audit-final-primary-RU-ESC-linezolid-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        8
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C04210"
+      ],
+      "rule_id": "switch-ser-esc",
+      "source_id": "RU-ESC",
+      "condition_literal": "selective_MAO_B",
+      "new_cases": [
+        "switch-ser-esc--audit-final-primary-RU-ESC-selective_MAO_B-positive",
+        "switch-ser-esc--audit-final-primary-RU-ESC-selective_MAO_B-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        8
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C04211"
+      ],
+      "rule_id": "switch-ser-esc",
+      "source_id": "RU-ESC",
+      "condition_literal": "serotonergic",
+      "new_cases": [
+        "switch-ser-esc--audit-final-primary-RU-ESC-serotonergic-positive",
+        "switch-ser-esc--audit-final-primary-RU-ESC-serotonergic-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        5,
+        6,
+        8
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C04212"
+      ],
+      "rule_id": "switch-ser-esc",
+      "source_id": "RU-ESC",
+      "condition_literal": "CYP2C19_inhibitor",
+      "new_cases": [
+        "switch-ser-esc--audit-final-primary-RU-ESC-CYP2C19_inhibitor-positive",
+        "switch-ser-esc--audit-final-primary-RU-ESC-CYP2C19_inhibitor-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        9
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C04213"
+      ],
+      "rule_id": "switch-ser-esc",
+      "source_id": "RU-ESC",
+      "condition_literal": "cimetidine",
+      "new_cases": [
+        "switch-ser-esc--audit-final-primary-RU-ESC-cimetidine-positive",
+        "switch-ser-esc--audit-final-primary-RU-ESC-cimetidine-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        9
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C04214"
+      ],
+      "rule_id": "switch-ser-esc",
+      "source_id": "RU-ESC",
+      "condition_literal": "bleeding",
+      "new_cases": [
+        "switch-ser-esc--audit-final-primary-RU-ESC-bleeding-positive",
+        "switch-ser-esc--audit-final-primary-RU-ESC-bleeding-unknown"
+      ],
+      "source_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "physical_pages": [
+        5,
+        8,
+        9
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C04216"
+      ],
+      "rule_id": "switch-ser-esc",
+      "source_id": "RU-SER",
+      "condition_literal": "maoi",
+      "new_cases": [
+        "switch-ser-esc--audit-final-primary-RU-SER-maoi-positive",
+        "switch-ser-esc--audit-final-primary-RU-SER-maoi-unknown"
+      ],
+      "source_sha256": "3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba",
+      "physical_pages": [
+        3,
+        7,
+        8
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C04217"
+      ],
+      "rule_id": "switch-ser-esc",
+      "source_id": "RU-SER",
+      "condition_literal": "pimozide",
+      "new_cases": [
+        "switch-ser-esc--audit-final-primary-RU-SER-pimozide-positive",
+        "switch-ser-esc--audit-final-primary-RU-SER-pimozide-unknown"
+      ],
+      "source_sha256": "3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba",
+      "physical_pages": [
+        3,
+        8
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C04218"
+      ],
+      "rule_id": "switch-ser-esc",
+      "source_id": "RU-SER",
+      "condition_literal": "serotonergic",
+      "new_cases": [
+        "switch-ser-esc--audit-final-primary-RU-SER-serotonergic-positive",
+        "switch-ser-esc--audit-final-primary-RU-SER-serotonergic-unknown"
+      ],
+      "source_sha256": "3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba",
+      "physical_pages": [
+        3,
+        4,
+        8
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C04219"
+      ],
+      "rule_id": "switch-ser-esc",
+      "source_id": "RU-SER",
+      "condition_literal": "QT_prolonging",
+      "new_cases": [
+        "switch-ser-esc--audit-final-primary-RU-SER-QT_prolonging-positive",
+        "switch-ser-esc--audit-final-primary-RU-SER-QT_prolonging-unknown"
+      ],
+      "source_sha256": "3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba",
+      "physical_pages": [
+        4,
+        8
+      ],
+      "independent_medical_acceptance": "pending"
+    },
+    {
+      "record_ids": [
+        "L-C04220"
+      ],
+      "rule_id": "switch-ser-esc",
+      "source_id": "RU-SER",
+      "condition_literal": "bleeding",
+      "new_cases": [
+        "switch-ser-esc--audit-final-primary-RU-SER-bleeding-positive",
+        "switch-ser-esc--audit-final-primary-RU-SER-bleeding-unknown"
+      ],
+      "source_sha256": "3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba",
+      "physical_pages": [
+        5,
+        9
+      ],
+      "independent_medical_acceptance": "pending"
+    }
+  ],
+  "no_calculator_execution": true
+}

@@ -1,0 +1,217 @@
+{
+  "accessed_on": "2026-10-08",
+  "endpoint": "https://apicr.minzdrav.gov.ru/api.ashx?op=GetJsonClinrecsFilterV2",
+  "method": "POST, read-only catalogue query",
+  "query": {
+    "filters": [
+      {
+        "fieldName": "status",
+        "filterType": 1,
+        "filterValueType": 2,
+        "value1": 0,
+        "value2": "",
+        "values": []
+      }
+    ],
+    "sortOption": {
+      "fieldName": "publishdate",
+      "sortType": 2
+    },
+    "pageSize": 5000,
+    "currentPage": 1,
+    "useANDoperator": true,
+    "columns": []
+  },
+  "total_records": 767,
+  "matched_records": [
+    {
+      "Id": 1937,
+      "Name": "Биполярное аффективное расстройство",
+      "NPC_approved": true,
+      "PublishDate": "/Date(1752740723420)/",
+      "PublishDateStr": "2025-07-17T11:25:23",
+      "Code": 675,
+      "Version": 2,
+      "CodeVersion": "675_2",
+      "Status": 0,
+      "ApplyStatus": null,
+      "AgeCategory": 1,
+      "AgeCategoryStr": "Взрослые",
+      "Created": "/Date(1752667734030)/",
+      "CreatedStr": "2025-07-16T15:08:54",
+      "ApplyStatusCalculated": 1,
+      "PrevCrId": null,
+      "Developers": [
+        {
+          "ClinRecId": 1937,
+          "NkoId": 36,
+          "NkoName": "Общественная организация \"Российское общество психиатров\"",
+          "NkoShortName": "РОП"
+        }
+      ],
+      "Mkbs": [
+        {
+          "ClinRecId": 1937,
+          "MkbId": 2573,
+          "MkbName": "Биполярное аффективное расстройство",
+          "MkbCode": "F31"
+        }
+      ],
+      "Specialities": [
+        {
+          "ClinRecId": 1937,
+          "ReferenceId": 69,
+          "ReferenceName": "Психиатрия"
+        }
+      ]
+    },
+    {
+      "Id": 1620,
+      "Name": "Тревожно-фобические расстройства",
+      "NPC_approved": true,
+      "PublishDate": "/Date(1729458000000)/",
+      "PublishDateStr": "2024-10-21T00:00:00",
+      "Code": 455,
+      "Version": 3,
+      "CodeVersion": "455_3",
+      "Status": 0,
+      "ApplyStatus": null,
+      "AgeCategory": 1,
+      "AgeCategoryStr": "Взрослые",
+      "Created": "/Date(1729494372767)/",
+      "CreatedStr": "2024-10-21T10:06:12",
+      "ApplyStatusCalculated": 1,
+      "PrevCrId": null,
+      "Developers": [
+        {
+          "ClinRecId": 1620,
+          "NkoId": 36,
+          "NkoName": "Общественная организация \"Российское общество психиатров\"",
+          "NkoShortName": "РОП"
+        }
+      ],
+      "Mkbs": [
+        {
+          "ClinRecId": 1620,
+          "MkbId": 2610,
+          "MkbName": "Фобические тревожные расстройства",
+          "MkbCode": "F40"
+        }
+      ],
+      "Specialities": null
+    },
+    {
+      "Id": 1560,
+      "Name": "Паническое расстройство",
+      "NPC_approved": true,
+      "PublishDate": "/Date(1726739778293)/",
+      "PublishDateStr": "2024-09-19T12:56:18",
+      "Code": 456,
+      "Version": 3,
+      "CodeVersion": "456_3",
+      "Status": 0,
+      "ApplyStatus": null,
+      "AgeCategory": 1,
+      "AgeCategoryStr": "Взрослые",
+      "Created": "/Date(1726729529337)/",
+      "CreatedStr": "2024-09-19T10:05:29",
+      "ApplyStatusCalculated": 1,
+      "PrevCrId": null,
+      "Developers": [
+        {
+          "ClinRecId": 1560,
+          "NkoId": 36,
+          "NkoName": "Общественная организация \"Российское общество психиатров\"",
+          "NkoShortName": "РОП"
+        }
+      ],
+      "Mkbs": [
+        {
+          "ClinRecId": 1560,
+          "MkbId": 2617,
+          "MkbName": "Паническое расстройство [эпизодическая пароксизмальная тревожность]",
+          "MkbCode": "F41.0"
+        }
+      ],
+      "Specialities": null
+    },
+    {
+      "Id": 1557,
+      "Name": "Генерализованное тревожное расстройство",
+      "NPC_approved": true,
+      "PublishDate": "/Date(1726693200000)/",
+      "PublishDateStr": "2024-09-19T00:00:00",
+      "Code": 457,
+      "Version": 3,
+      "CodeVersion": "457_3",
+      "Status": 0,
+      "ApplyStatus": null,
+      "AgeCategory": 1,
+      "AgeCategoryStr": "Взрослые",
+      "Created": "/Date(1726641298673)/",
+      "CreatedStr": "2024-09-18T09:34:58",
+      "ApplyStatusCalculated": 1,
+      "PrevCrId": null,
+      "Developers": [
+        {
+          "ClinRecId": 1557,
+          "NkoId": 36,
+          "NkoName": "Общественная организация \"Российское общество психиатров\"",
+          "NkoShortName": "РОП"
+        }
+      ],
+      "Mkbs": [
+        {
+          "ClinRecId": 1557,
+          "MkbId": 2618,
+          "MkbName": "Генерализованное тревожное расстройство",
+          "MkbCode": "F41.1"
+        }
+      ],
+      "Specialities": null
+    },
+    {
+      "Id": 1542,
+      "Name": "Депрессивный эпизод, Рекуррентное депрессивное расстройство",
+      "NPC_approved": true,
+      "PublishDate": "/Date(1724663161300)/",
+      "PublishDateStr": "2024-08-26T12:06:01",
+      "Code": 301,
+      "Version": 3,
+      "CodeVersion": "301_3",
+      "Status": 0,
+      "ApplyStatus": null,
+      "AgeCategory": 1,
+      "AgeCategoryStr": "Взрослые",
+      "Created": "/Date(1724655397817)/",
+      "CreatedStr": "2024-08-26T09:56:37",
+      "ApplyStatusCalculated": 1,
+      "PrevCrId": null,
+      "Developers": [
+        {
+          "ClinRecId": 1542,
+          "NkoId": 36,
+          "NkoName": "Общественная организация \"Российское общество психиатров\"",
+          "NkoShortName": "РОП"
+        }
+      ],
+      "Mkbs": [
+        {
+          "ClinRecId": 1542,
+          "MkbId": 2584,
+          "MkbName": "Депрессивный эпизод",
+          "MkbCode": "F32"
+        },
+        {
+          "ClinRecId": 1542,
+          "MkbId": 2591,
+          "MkbName": "Рекуррентное депрессивное расстройство",
+          "MkbCode": "F33"
+        }
+      ],
+      "Specialities": null
+    }
+  ],
+  "F41_2_name_match": [],
+  "F41_2_code_match": []
+}

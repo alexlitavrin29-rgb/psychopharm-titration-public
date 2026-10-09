@@ -1,0 +1,48 @@
+{
+  "old_snapshot": "b13033a0687a28b4da4299c171ac6b88a96667e2d6888ab8aecf5e9c85af0514",
+  "new_snapshot": "27ef14e77185b7b104d43199664a5b1ca42b73dd8b09f921ee539e97fae971f8",
+  "rows": [
+    {
+      "finding_id": "V3-01",
+      "status": "closed_in_227",
+      "independent_evidence": "All exact old finite scopes checked against own same-SHA primary norms, current causal certificates and selected paths; all source/phase/compound/arithmetic/supplied-count controls passed.",
+      "remaining": null
+    },
+    {
+      "finding_id": "V3-02",
+      "status": "closed_in_227",
+      "independent_evidence": "All exact old finite scopes checked against own same-SHA primary norms, current causal certificates and selected paths; all source/phase/compound/arithmetic/supplied-count controls passed.",
+      "remaining": null
+    },
+    {
+      "finding_id": "V3-03",
+      "status": "partially_closed_population_metadata22_remains",
+      "independent_evidence": "All exact old finite scopes checked against own same-SHA primary norms, current causal certificates and selected paths; all source/phase/compound/arithmetic/supplied-count controls passed.",
+      "remaining": "V3-RC01 only; mandatory/reference scope correction itself verified."
+    },
+    {
+      "finding_id": "V3-04",
+      "status": "closed_in_227",
+      "independent_evidence": "All exact old finite scopes checked against own same-SHA primary norms, current causal certificates and selected paths; all source/phase/compound/arithmetic/supplied-count controls passed.",
+      "remaining": null
+    },
+    {
+      "finding_id": "V3-05",
+      "status": "closed_in_227",
+      "independent_evidence": "All24 fabricated raw negatives removed; actual False-only assertion over6646 passes.",
+      "remaining": null
+    },
+    {
+      "finding_id": "V3-06",
+      "status": "closed_in_227",
+      "independent_evidence": "Current35 targeted mutations and5 main in-memory mutations all rejected; current main V3 pointers updated.",
+      "remaining": null
+    },
+    {
+      "finding_id": "V3-07",
+      "status": "closed_in_227",
+      "independent_evidence": "All exact old finite scopes checked against own same-SHA primary norms, current causal certificates and selected paths; all source/phase/compound/arithmetic/supplied-count controls passed.",
+      "remaining": null
+    }
+  ]
+}

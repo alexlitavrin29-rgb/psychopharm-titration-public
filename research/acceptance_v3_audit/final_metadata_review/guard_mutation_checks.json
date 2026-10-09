@@ -1,0 +1,59 @@
+{
+  "author13th_mutation_rejected": true,
+  "actual_error": [
+    "adult applicability lacks known age: dulox-taper-limit--audit-final-conditional-adult-reference"
+  ],
+  "own_twelve_controls": [
+    {
+      "raw_age": null,
+      "rejected": true
+    },
+    {
+      "raw_age": "unknown",
+      "rejected": true
+    },
+    {
+      "raw_age": "not_assessed",
+      "rejected": true
+    },
+    {
+      "raw_age": 17,
+      "rejected": true
+    },
+    {
+      "raw_age": true,
+      "rejected": true
+    },
+    {
+      "raw_age": "18",
+      "rejected": true
+    },
+    {
+      "projected_age": null,
+      "rejected": true
+    },
+    {
+      "projected_age": "unknown",
+      "rejected": true
+    },
+    {
+      "projected_age": "not_assessed",
+      "rejected": true
+    },
+    {
+      "projected_age": 17,
+      "rejected": true
+    },
+    {
+      "projected_age": true,
+      "rejected": true
+    },
+    {
+      "projected_age": "18",
+      "rejected": true
+    }
+  ],
+  "all_rejected": true,
+  "baseline_errors": [],
+  "scope": "Actually called current read-only check; not author run/report or application execution."
+}

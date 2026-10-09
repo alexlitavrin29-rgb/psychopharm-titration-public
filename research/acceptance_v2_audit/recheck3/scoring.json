@@ -1,0 +1,43 @@
+{
+  "snapshot": "ac33f61373c22b1c160de40057815b16c27bc67e4beb870a56057992f0b06148",
+  "dimensions": [
+    {
+      "name": "Источники, версии и РФ",
+      "weight": 25,
+      "score": "9.2",
+      "evidence": "Current exact originals and prior actual reading reused after SHA equality;11801 source bases agree. PHEN locator/scope repaired; complete PIL/revision-history review not claimed."
+    },
+    {
+      "name": "Правила и воспроизводимость",
+      "weight": 30,
+      "score": "8.4",
+      "evidence": "Published parameter objects unchanged and reviewed; current action phases, population reference bounds and source gaps repaired. Exhaustive every-condition primary review remains incomplete."
+    },
+    {
+      "name": "Входы и пути",
+      "weight": 20,
+      "score": "7.0",
+      "evidence": "All737 complete fact/count/edge sets agree, dependencies ordered, six concrete necessity defects repaired. Remaining result-specific necessity and ordinary≤15 remain open."
+    },
+    {
+      "name": "Покрытие и приёмка",
+      "weight": 15,
+      "score": "8.2",
+      "evidence": "All30 literal criteria reassessed with new phase/population/qualitative counterexamples and precise coverage limits. No credit for case count as medical evidence."
+    },
+    {
+      "name": "Техническая проверяемость",
+      "weight": 10,
+      "score": "9.4",
+      "evidence": "Static/provenance/arithmetic, isolated enum/phase/scope/order mutations and preservation independently checked. These do not execute a medical evaluator or app."
+    }
+  ],
+  "uncapped_raw": "8.39",
+  "uncapped_one_decimal": "8.4",
+  "cap": "6.0",
+  "cap_reason": "Material open17/18: R3-LIMIT-02 and R2-05. Criterion10 also incomplete in explicitly unreviewed primary scope.",
+  "final": "6.0",
+  "critical_cap4_applied": false,
+  "critical_cap4_reason": "No wrong transferable clinical numeric dose/interval/unit or known-contra permission established in checked scope; correctly blocked source conflicts are not such errors.",
+  "clinical_validation": false
+}

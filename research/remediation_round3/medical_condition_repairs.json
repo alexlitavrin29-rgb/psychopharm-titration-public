@@ -1,0 +1,245 @@
+[
+  {
+    "rule_id": "parox-panic-kr",
+    "input_id": "serotonin_syndrome_signs",
+    "source_ref": "RU-PAROX",
+    "locator": "§4.4 с.7",
+    "repaired": "typed source predicate and full positive/negative/unknown prepared fixtures"
+  },
+  {
+    "rule_id": "parox-taper-example",
+    "input_id": "serotonin_syndrome_signs",
+    "source_ref": "RU-PAROX",
+    "locator": "§4.4 с.7",
+    "repaired": "typed source predicate and full positive/negative/unknown prepared fixtures"
+  },
+  {
+    "rule_id": "switch-parox-ago",
+    "input_id": "serotonin_syndrome_signs",
+    "source_ref": "RU-PAROX",
+    "locator": "§4.4 с.7",
+    "repaired": "typed source predicate and full positive/negative/unknown prepared fixtures"
+  },
+  {
+    "rule_id": "switch-parox-ago-selected-example",
+    "input_id": "serotonin_syndrome_signs",
+    "source_ref": "RU-PAROX",
+    "locator": "§4.4 с.7",
+    "repaired": "typed source predicate and full positive/negative/unknown prepared fixtures"
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "input_id": "bipolar_risk_screening",
+    "source_ref": "RU-PAROX",
+    "locator": "§4.4 с.7–8",
+    "repaired": "typed source predicate and full positive/negative/unknown prepared fixtures"
+  },
+  {
+    "rule_id": "parox-taper-example",
+    "input_id": "new_seizures",
+    "source_ref": "RU-PAROX",
+    "locator": "§4.4 с.9",
+    "repaired": "typed source predicate and full positive/negative/unknown prepared fixtures"
+  },
+  {
+    "rule_id": "fluvox-taper-limit",
+    "input_id": "serotonin_syndrome_signs",
+    "source_ref": "RU-FLUVOX",
+    "locator": "§4.4 с.5",
+    "repaired": "typed source predicate and full positive/negative/unknown prepared fixtures"
+  },
+  {
+    "rule_id": "fluvox-taper-limit",
+    "input_id": "new_or_increased_seizures",
+    "source_ref": "RU-FLUVOX",
+    "locator": "§4.4 с.5",
+    "repaired": "typed source predicate and full positive/negative/unknown prepared fixtures"
+  },
+  {
+    "rule_id": "fluvox-taper-limit",
+    "input_id": "liver_injury_signs",
+    "source_ref": "RU-FLUVOX",
+    "locator": "§4.4 с.5",
+    "repaired": "typed source predicate and full positive/negative/unknown prepared fixtures"
+  },
+  {
+    "rule_id": "fluvox-taper-limit",
+    "input_id": "mania_symptoms",
+    "source_ref": "RU-FLUVOX",
+    "locator": "§4.4 с.7",
+    "repaired": "typed source predicate and full positive/negative/unknown prepared fixtures"
+  },
+  {
+    "rule_id": "venla-xr-gad-start",
+    "input_id": "diastolic_BP",
+    "source_ref": "RU-VENLA-XR",
+    "locator": "§4.4 с.9",
+    "repaired": "typed source predicate and full positive/negative/unknown prepared fixtures"
+  },
+  {
+    "rule_id": "venla-xr-social-start",
+    "input_id": "diastolic_BP",
+    "source_ref": "RU-VENLA-XR",
+    "locator": "§4.4 с.9",
+    "repaired": "typed source predicate and full positive/negative/unknown prepared fixtures"
+  },
+  {
+    "rule_id": "venla-xr-panic-form-limit",
+    "input_id": "diastolic_BP",
+    "source_ref": "RU-VENLA-XR",
+    "locator": "§4.4 с.9",
+    "repaired": "typed source predicate and full positive/negative/unknown prepared fixtures"
+  },
+  {
+    "rule_id": "venla-xr-taper-limit",
+    "input_id": "diastolic_BP",
+    "source_ref": "RU-VENLA-XR",
+    "locator": "§4.4 с.9",
+    "repaired": "typed source predicate and full positive/negative/unknown prepared fixtures"
+  },
+  {
+    "rule_id": "venla-xr-taper-limit",
+    "input_id": "current_allergic_reaction",
+    "source_ref": "RU-VENLA-XR",
+    "locator": "§4.4 с.13",
+    "repaired": "typed source predicate and full positive/negative/unknown prepared fixtures"
+  },
+  {
+    "rule_id": "switch-esc-ago",
+    "input_id": "arrhythmia_signs",
+    "source_ref": "RU-ESC",
+    "locator": "§4.4 с.6",
+    "repaired": "typed source predicate and full positive/negative/unknown prepared fixtures"
+  },
+  {
+    "rule_id": "switch-esc-ago",
+    "input_id": "serotonin_syndrome_signs",
+    "source_ref": "RU-ESC",
+    "locator": "§4.4 с.5–6",
+    "repaired": "typed source predicate and full positive/negative/unknown prepared fixtures"
+  },
+  {
+    "rule_id": "switch-esc-ago",
+    "input_id": "seizure_state",
+    "source_ref": "RU-ESC",
+    "locator": "§4.4 с.4",
+    "repaired": "typed source predicate and full positive/negative/unknown prepared fixtures"
+  },
+  {
+    "rule_id": "switch-esc-ser",
+    "input_id": "arrhythmia_signs",
+    "source_ref": "RU-ESC",
+    "locator": "§4.4 с.6",
+    "repaired": "typed source predicate and full positive/negative/unknown prepared fixtures"
+  },
+  {
+    "rule_id": "switch-esc-ser",
+    "input_id": "serotonin_syndrome_signs",
+    "source_ref": "RU-ESC",
+    "locator": "§4.4 с.5–6",
+    "repaired": "typed source predicate and full positive/negative/unknown prepared fixtures"
+  },
+  {
+    "rule_id": "switch-esc-ser",
+    "input_id": "seizure_state",
+    "source_ref": "RU-ESC",
+    "locator": "§4.4 с.4",
+    "repaired": "typed source predicate and full positive/negative/unknown prepared fixtures"
+  },
+  {
+    "rule_id": "switch-ser-esc",
+    "input_id": "target_arrhythmia_signs",
+    "source_ref": "RU-ESC",
+    "locator": "§4.4 с.6",
+    "repaired": "typed source predicate and full positive/negative/unknown prepared fixtures"
+  },
+  {
+    "rule_id": "switch-ser-esc",
+    "input_id": "target_serotonin_syndrome_signs",
+    "source_ref": "RU-ESC",
+    "locator": "§4.4 с.5–6",
+    "repaired": "typed source predicate and full positive/negative/unknown prepared fixtures"
+  },
+  {
+    "rule_id": "switch-ser-esc",
+    "input_id": "target_seizure_state",
+    "source_ref": "RU-ESC",
+    "locator": "§4.4 с.4",
+    "repaired": "typed source predicate and full positive/negative/unknown prepared fixtures"
+  },
+  {
+    "rule_id": "fluvox-depression-start",
+    "input_id": "new_or_increased_seizures",
+    "source_ref": "RU-FLUVOX",
+    "locator": "§4.4 с.5",
+    "repaired": "typed source predicate and full positive/negative/unknown prepared fixtures"
+  },
+  {
+    "rule_id": "switch-ser-esc",
+    "input_id": "new_seizures",
+    "source_ref": "RU-SER",
+    "locator": "§4.4 с.4",
+    "repaired": "typed source predicate and full positive/negative/unknown prepared fixtures"
+  },
+  {
+    "rule_id": "switch-esc-ser",
+    "input_id": "target_new_seizures",
+    "source_ref": "RU-SER",
+    "locator": "§4.4 с.4",
+    "repaired": "typed source predicate and full positive/negative/unknown prepared fixtures"
+  },
+  {
+    "rule_id": "dulox-depression-start",
+    "source_ref": "RU-DULOX",
+    "locator": "§4.4 с.7; §4.5 с.7–8",
+    "repaired": "CNS, CYP1A2 inhibitor, CYP2D6 substrate and hepatotoxic caution classes; no invented reduction coefficient"
+  },
+  {
+    "rule_id": "dulox-gad-adjust",
+    "source_ref": "RU-DULOX",
+    "locator": "§4.4 с.7; §4.5 с.7–8",
+    "repaired": "CNS, CYP1A2 inhibitor, CYP2D6 substrate and hepatotoxic caution classes; no invented reduction coefficient"
+  },
+  {
+    "rule_id": "dulox-gad-start",
+    "source_ref": "RU-DULOX",
+    "locator": "§4.4 с.7; §4.5 с.7–8",
+    "repaired": "CNS, CYP1A2 inhibitor, CYP2D6 substrate and hepatotoxic caution classes; no invented reduction coefficient"
+  },
+  {
+    "rule_id": "dulox-taper-limit",
+    "source_ref": "RU-DULOX",
+    "locator": "§4.4 с.7; §4.5 с.7–8",
+    "repaired": "CNS, CYP1A2 inhibitor, CYP2D6 substrate and hepatotoxic caution classes; no invented reduction coefficient"
+  },
+  {
+    "rule_id": "ser-adult-adjust",
+    "source_ref": "RU-SER",
+    "locator": "§4.5 с.10",
+    "repaired": "strong CYP3A4 inhibitors: avoid, distinguished from formal contraindication"
+  },
+  {
+    "rule_id": "ser-panic-start",
+    "source_ref": "RU-SER",
+    "locator": "§4.5 с.10",
+    "repaired": "strong CYP3A4 inhibitors: avoid, distinguished from formal contraindication"
+  },
+  {
+    "rule_id": "ser-social-start",
+    "source_ref": "RU-SER",
+    "locator": "§4.5 с.10",
+    "repaired": "strong CYP3A4 inhibitors: avoid, distinguished from formal contraindication"
+  },
+  {
+    "rule_id": "ser-taper-limit",
+    "source_ref": "RU-SER",
+    "locator": "§4.5 с.10",
+    "repaired": "strong CYP3A4 inhibitors: avoid, distinguished from formal contraindication"
+  },
+  {
+    "rule_id": "switch-ser-ago",
+    "source_ref": "RU-SER",
+    "locator": "§4.5 с.10",
+    "repaired": "strong CYP3A4 inhibitors: avoid, distinguished from formal contraindication"
+  }
+]

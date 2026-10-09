@@ -1,0 +1,45 @@
+{
+  "snapshot": "8a17ae3f99839548742ee509a23d060ea451ed0018c48432dc73b9ba68de4359",
+  "dimensions": [
+    {
+      "name": "Источники, версии и РФ",
+      "weight": 25,
+      "score": "9.0",
+      "evidence": "Official supplied originals/stamps/forms, SHA reuse and11377 source bases; remaining PHEN attribution/locator residual."
+    },
+    {
+      "name": "Правила и воспроизводимость",
+      "weight": 30,
+      "score": "8.0",
+      "evidence": "All38 and211parameter rows/104groups inspected, published scopes/actions/ranges corrected; nonstart A phase mapping and PREG/PHEN narrative scope residual; remaining completeness limits."
+    },
+    {
+      "name": "Входы и пути",
+      "weight": 20,
+      "score": "6.6",
+      "evidence": "All531 final fact counts/projections independently recomputed; ordinary over15, result-specific necessity unproved,21backward SER dependencies."
+    },
+    {
+      "name": "Покрытие и приёмка",
+      "weight": 15,
+      "score": "8.0",
+      "evidence": "All30 literalcriteria reassessed, representative full expected reconstructed from originals, source reading/unknown gaps explicit; not exhaustive every branch/class combination."
+    },
+    {
+      "name": "Техническая проверяемость",
+      "weight": 10,
+      "score": "8.8",
+      "evidence": "Own isolated read-only static/negative/count/provenance checks and preservation; undeclared A phases/accepted invalid enum still unresolved. No penalty for not having an app at research stage."
+    }
+  ],
+  "uncapped_raw": "8.05",
+  "uncapped_one_decimal": "8.1",
+  "cap": "6.0",
+  "cap_reason": "Substantial open17/18 (R2-02/04/05), not old limit10. R2-03 source scope and R2-01 enum additionally open.",
+  "critical_cap4_applied": false,
+  "critical_cap4_reason": "No new wrong transferable numerical dose/interval/unit or known-contra permission established in checked scope. Blocked source conflicts are not executable errors.",
+  "final": "6.0",
+  "previous_recheck1_raw": "7.79",
+  "previous_final": "6.0",
+  "clinical_validation": false
+}

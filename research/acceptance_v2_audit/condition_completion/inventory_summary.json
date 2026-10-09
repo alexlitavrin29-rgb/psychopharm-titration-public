@@ -1,0 +1,46 @@
+{
+  "snapshot": "ac33f61373c22b1c160de40057815b16c27bc67e4beb870a56057992f0b06148",
+  "cards": 38,
+  "occurrences": 5987,
+  "kinds": {
+    "input": 906,
+    "clinical_parameter": 211,
+    "applicability_text": 441,
+    "logic_text": 1331,
+    "output_text": 738,
+    "source_gate:exclusions": 82,
+    "source_gate:cautions": 293,
+    "source_gate:current_medicines_excluded": 73,
+    "source_gate:current_medicines_caution": 168,
+    "source_gate:stop": 50,
+    "source_gate:other": 44,
+    "typed_source_conditions": 127,
+    "ongoing_stop_conditions": 12,
+    "branch": 90,
+    "source_gate:interaction_scope": 6,
+    "source_gate:interaction_class_locators": 15,
+    "source_gate:context_field_locators": 4,
+    "source_gate:current_medicines_avoid_standard_combination": 23,
+    "source_gate:duplicate_product_requirement": 4,
+    "urgent_source_actions": 16,
+    "conditional_actions": 12,
+    "urgent_stop_predicates": 44,
+    "qualitative_population_scope": 10,
+    "general_result_templates": 3,
+    "source_gate:medication_role": 2,
+    "source_gate:scope": 2,
+    "full_expected_payload": 1280
+  },
+  "status_counts": {
+    "UNREVIEWED": 5987
+  },
+  "prepared_cases": 5430,
+  "full_expected_payload_groups": 1280,
+  "grouping": "No primary-condition equivalence assumed. Complete expected payload equality grouped only within same rule, all distinct givens/context variants retained.",
+  "excluded_payload_keys": [
+    "confirmed_negatives",
+    "unassessed_context",
+    "missing_fields"
+  ],
+  "exclusion_reason": "Technical presence/assessment lists inspected via complete case variants and independent recheck3 projection checks; excluded only from clinical payload grouping, not from case review."
+}

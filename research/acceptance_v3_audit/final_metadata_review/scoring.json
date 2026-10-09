@@ -1,0 +1,57 @@
+{
+  "snapshot": "b66e9e0dadca7234ed1e66bc8c103047ff2f96e963313d07dd0075494695f0a4",
+  "method": "Five independent expert dimensions, not30/30 percentage and not executor score",
+  "dimensions": [
+    {
+      "dimension": "Источники, версии и применимость РФ",
+      "score": 9.5,
+      "weight_percent": 25,
+      "contribution": "2.375",
+      "reason": "Полный применяемый первичный объём и точные версии/байты подтверждены. Оценка качества оформления provenance учитывает распределение сведений между реестром, карточкой и нормами; неподтверждённого ключевого источника нет."
+    },
+    {
+      "dimension": "Правила, ограничения и воспроизводимость",
+      "score": 9.6,
+      "weight_percent": 30,
+      "contribution": "2.88",
+      "reason": "Числа/условия/границы/владельцы/фазы сверены независимо.Источник-пробелы ограничены явно, диапазоны и решения врача сохранены.Подготовленные сложные контракты требуют внимательного чтения нескольких связанных полей, но медицинского открытого дефекта не осталось."
+    },
+    {
+      "dimension": "Входы, unknown и пути",
+      "score": 9.6,
+      "weight_percent": 20,
+      "contribution": "1.92",
+      "reason": "Все906 входов и необходимые result scopes рассмотрены предметно; finite причинные сертификаты/условная справка/source actions сохраняют честный unknown и count. Последние22 population tags и общий guard исправлены."
+    },
+    {
+      "dimension": "Покрытие ТЗ и честность приёмки",
+      "score": 9.5,
+      "weight_percent": 15,
+      "contribution": "1.425",
+      "reason": "Все30 literalcriteria выполнены в_USED38 области.Точное покрытие и различие own primary reuse/static/graph/clinical execution раскрыты.Объём evidence велик и повторяет ряд норм, что влияет на удобство независимого воспроизведения, а не на охват ТЗ."
+    },
+    {
+      "dimension": "Техническая согласованность и перенос",
+      "score": 9.6,
+      "weight_percent": 10,
+      "contribution": "0.96",
+      "reason": "Current contracts/graphs/counts согласованы; прошлые35+5 отрицательных и4591 finite causal controls зачитываются только при unchanged code/data.Собственные4410 metadata assertions, новый guard и13-я mutation повторены. Машинные свидетельства корректны; множество взаимосвязанных артефактов повышает стоимость сопровождения."
+    }
+  ],
+  "raw_unrounded": "9.560",
+  "raw_one_decimal": 9.6,
+  "cap": null,
+  "final_score": 9.6,
+  "cap4_not_applied": "No established critical transferable medical dose/unit/interval/contraindication permission defect.",
+  "cap6_not_applied": "No material required research criterion, hidden mandatory fact or key unsupported source remains open in the checked_USED scope.",
+  "not_penalized": [
+    "More than15 ordinary questions",
+    "No global mathematical minimum",
+    "Honest source gaps",
+    "No application implementation",
+    "No clinical validation",
+    "Unused_PIL content outside research_USED"
+  ],
+  "full_research_acceptance": true,
+  "clinical_validation": false
+}

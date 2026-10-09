@@ -1,0 +1,172 @@
+{
+  "status": "pass",
+  "checked_primary_cases": 15,
+  "cases": [
+    {
+      "case_id": "dulox-gad-start--branch-usual",
+      "source_ref": "RU-DULOX",
+      "source_version": "Официальная ОХЛП реестра: штамп регистрации 2026-03-24; экспертный отчёт 2026-03-20 №5759/0015; получена 08.10.2026",
+      "source_sha256": "0551a7306ca4a56b552336bb63fa34905cf4e312702ba811a792221892a42ca1",
+      "physical_page": 2,
+      "fact": "GAD initial30, not obligatory future calendar",
+      "source_condition_confirmed": true,
+      "prepared_expected_agrees": true,
+      "calculator_executed": false
+    },
+    {
+      "case_id": "dulox-gad-start--branch-comorbid",
+      "source_ref": "RU-DULOX",
+      "source_version": "Официальная ОХЛП реестра: штамп регистрации 2026-03-24; экспертный отчёт 2026-03-20 №5759/0015; получена 08.10.2026",
+      "source_sha256": "0551a7306ca4a56b552336bb63fa34905cf4e312702ba811a792221892a42ca1",
+      "physical_page": 2,
+      "fact": "Comorbid depression initial60",
+      "source_condition_confirmed": true,
+      "prepared_expected_agrees": true,
+      "calculator_executed": false
+    },
+    {
+      "case_id": "dulox-gad-start--branch-elderly",
+      "source_ref": "RU-DULOX",
+      "source_version": "Официальная ОХЛП реестра: штамп регистрации 2026-03-24; экспертный отчёт 2026-03-20 №5759/0015; получена 08.10.2026",
+      "source_sha256": "0551a7306ca4a56b552336bb63fa34905cf4e312702ba811a792221892a42ca1",
+      "physical_page": 3,
+      "fact": "Elderly GAD30 for2 weeks before target60",
+      "source_condition_confirmed": true,
+      "prepared_expected_agrees": true,
+      "calculator_executed": false
+    },
+    {
+      "case_id": "dulox-taper-limit--branch-source_limit",
+      "source_ref": "RU-DULOX",
+      "source_version": "Официальная ОХЛП реестра: штамп регистрации 2026-03-24; экспертный отчёт 2026-03-20 №5759/0015; получена 08.10.2026",
+      "source_sha256": "0551a7306ca4a56b552336bb63fa34905cf4e312702ba811a792221892a42ca1",
+      "physical_page": 6,
+      "fact": "At least2 weeks in §4.4, no hard ceiling",
+      "source_condition_confirmed": true,
+      "prepared_expected_agrees": true,
+      "calculator_executed": false
+    },
+    {
+      "case_id": "fluvox-depression-start--branch-selected50",
+      "source_ref": "RU-FLUVOX",
+      "source_version": "Официальная ОХЛП реестра: штамп регистрации 2026-08-19; экспертный отчёт 2026-08-14 №16133/0004; получена 08.10.2026",
+      "source_sha256": "01b6621adad68dfeaf1fbe00db21935b6df1edee141c67307a9b67ad177893f2",
+      "physical_page": 1,
+      "fact": "Current form explicitly permits equal doses; halves specified §4.2 p3",
+      "source_condition_confirmed": true,
+      "prepared_expected_agrees": true,
+      "calculator_executed": false
+    },
+    {
+      "case_id": "fluvox-depression-start--r3-serotonin_syndrome_signs-positive",
+      "source_ref": "RU-FLUVOX",
+      "source_version": "Официальная ОХЛП реестра: штамп регистрации 2026-08-19; экспертный отчёт 2026-08-14 №16133/0004; получена 08.10.2026",
+      "source_sha256": "01b6621adad68dfeaf1fbe00db21935b6df1edee141c67307a9b67ad177893f2",
+      "physical_page": 5,
+      "fact": "Cessation plus symptomatic treatment",
+      "source_condition_confirmed": true,
+      "prepared_expected_agrees": true,
+      "calculator_executed": false
+    },
+    {
+      "case_id": "parox-panic-kr--branch-elderly",
+      "source_ref": "RU-PAROX",
+      "source_version": "Официальная ОХЛП реестра: штамп регистрации 2025-02-14; экспертный отчёт 2025-02-12 №3370/0003; получена 08.10.2026",
+      "source_sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069",
+      "physical_page": 4,
+      "fact": "Elderly max40; lower therapeutic range in severe renal/hepatic impairment",
+      "source_condition_confirmed": true,
+      "prepared_expected_agrees": true,
+      "calculator_executed": false
+    },
+    {
+      "case_id": "parox-panic-kr--branch-usual",
+      "source_ref": "RU-PAROX",
+      "source_version": "Официальная ОХЛП реестра: штамп регистрации 2025-02-14; экспертный отчёт 2025-02-12 №3370/0003; получена 08.10.2026",
+      "source_sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069",
+      "physical_page": 4,
+      "fact": "20mg tablet half allows10mg",
+      "source_condition_confirmed": true,
+      "prepared_expected_agrees": true,
+      "calculator_executed": false
+    },
+    {
+      "case_id": "preg-gad-start--r3-misuse_risk_assessment-unknown",
+      "source_ref": "RU-PREG",
+      "source_version": "Официальная ОХЛП реестра: штамп регистрации 2025-08-13; экспертный отчёт 2024-01-26 №1319/0011; получена 08.10.2026",
+      "source_sha256": "b605c8b381c24d59a48bbab9bfa8621eb70f6ec16ad9e3679aa8457f811663e5",
+      "physical_page": 9,
+      "fact": "Specific risk of misuse assessed before prescribing",
+      "source_condition_confirmed": true,
+      "prepared_expected_agrees": true,
+      "calculator_executed": false
+    },
+    {
+      "case_id": "preg-gad-start--r3-effective_contraception-negative",
+      "source_ref": "RU-PREG",
+      "source_version": "Официальная ОХЛП реестра: штамп регистрации 2025-08-13; экспертный отчёт 2024-01-26 №1319/0011; получена 08.10.2026",
+      "source_sha256": "b605c8b381c24d59a48bbab9bfa8621eb70f6ec16ad9e3679aa8457f811663e5",
+      "physical_page": 12,
+      "fact": "Effective contraception for reproductive population",
+      "source_condition_confirmed": true,
+      "prepared_expected_agrees": true,
+      "calculator_executed": false
+    },
+    {
+      "case_id": "venla-xr-gad-start--branch-usual",
+      "source_ref": "RU-VENLA-XR",
+      "source_version": "Официальная ОХЛП реестра: штамп регистрации 2026-06-25; экспертный отчёт 2026-06-11 №11677/0019; получена 08.10.2026",
+      "source_sha256": "a21e90141db69d9be5ca44ac3c8c6059c8c82a880f34bbf15143348c36ef4666",
+      "physical_page": 2,
+      "fact": "GAD75; max225, minimum2 weeks for possible increase",
+      "source_condition_confirmed": true,
+      "prepared_expected_agrees": true,
+      "calculator_executed": false
+    },
+    {
+      "case_id": "venla-xr-panic-form-limit--branch-form_limit",
+      "source_ref": "RU-VENLA-XR",
+      "source_version": "Официальная ОХЛП реестра: штамп регистрации 2026-06-25; экспертный отчёт 2026-06-11 №11677/0019; получена 08.10.2026",
+      "source_sha256": "a21e90141db69d9be5ca44ac3c8c6059c8c82a880f34bbf15143348c36ef4666",
+      "physical_page": 5,
+      "fact": "Whole capsules must not be divided",
+      "source_condition_confirmed": true,
+      "prepared_expected_agrees": true,
+      "calculator_executed": false
+    },
+    {
+      "case_id": "venla-xr-gad-start--r3-current_allergic_reaction-positive",
+      "source_ref": "RU-VENLA-XR",
+      "source_version": "Официальная ОХЛП реестра: штамп регистрации 2026-06-25; экспертный отчёт 2026-06-11 №11677/0019; получена 08.10.2026",
+      "source_sha256": "a21e90141db69d9be5ca44ac3c8c6059c8c82a880f34bbf15143348c36ef4666",
+      "physical_page": 13,
+      "fact": "Rash/urticaria/allergic reaction cessation",
+      "source_condition_confirmed": true,
+      "prepared_expected_agrees": true,
+      "calculator_executed": false
+    },
+    {
+      "case_id": "phen-taper-limit--r3-unusual_reactions-positive",
+      "source_ref": "RU-PHEN",
+      "source_version": "Официальная ОХЛП реестра: штамп регистрации 2026-05-07; экспертный отчёт 2026-05-05 №9041/0004; получена 08.10.2026",
+      "source_sha256": "850486408d225fc603f8f053765491c1e9fd688c5c3d765cdf80a34dd2b3cf1a",
+      "physical_page": 4,
+      "fact": "Unusual reactions require cessation; emergency numerical taper not specified",
+      "source_condition_confirmed": true,
+      "prepared_expected_agrees": true,
+      "calculator_executed": false
+    },
+    {
+      "case_id": "phen-taper-limit--branch-source_limit",
+      "source_ref": "RU-PHEN",
+      "source_version": "Официальная ОХЛП реестра: штамп регистрации 2026-05-07; экспертный отчёт 2026-05-05 №9041/0004; получена 08.10.2026",
+      "source_sha256": "850486408d225fc603f8f053765491c1e9fd688c5c3d765cdf80a34dd2b3cf1a",
+      "physical_page": 1,
+      "fact": "Score is not intended for division",
+      "source_condition_confirmed": true,
+      "prepared_expected_agrees": true,
+      "calculator_executed": false
+    }
+  ],
+  "scope": "New clinically material facts and expected independently of generator; not exhaustive all-condition review"
+}

@@ -1,0 +1,40 @@
+{
+  "snapshot": "b13033a0687a28b4da4299c171ac6b88a96667e2d6888ab8aecf5e9c85af0514",
+  "medical_condition_reading": "Actual prior complete USED primary reading reused after sameSHA verification; changed action/result scope rechecked",
+  "assertions": {
+    "numeric_expected": 20647,
+    "data_count_source_phase_invariants": 62056,
+    "changed_113_scopes": 2034,
+    "main_alignment": 991
+  },
+  "independently_examined": {
+    "full_prepared_cases": 5946,
+    "same_given_groups": 5718,
+    "selected_paths": 1907,
+    "inputs": 906,
+    "numeric_objects": 211,
+    "used_cause_action_occurrences": 1867,
+    "changed_scopes": 113,
+    "changed_cases": 232,
+    "named_source_stop_scopes": 229,
+    "source_choice_no_mandatory_taper": 5
+  },
+  "numerical_errors": 0,
+  "same_given_clinical_conflicts": 0,
+  "source_binding_errors": 0,
+  "graph_count_errors": 0,
+  "raw_expected_negative_errors": 24,
+  "author_validate_errors": 0,
+  "author_mutations_rejected": 34,
+  "author_mutations_total": 35,
+  "author_old_mutation_error": "KeyError('count')",
+  "finite_own_source_counterchecks": 13,
+  "all_pass_claim": false,
+  "app_execution": false,
+  "clinical_validation": false,
+  "scopes": {
+    "primary_counterchecks": "Finite own source/boundary checks, not medical evaluator or entire negative test suite.",
+    "static_repeat": "Actually executed read-only author validate and AST-extracted mutations in memory on archived frozen data, no author report side effects.",
+    "graph": "Own edge/count/actor/projection checks on prepared traces, not execution of clinical selector."
+  }
+}

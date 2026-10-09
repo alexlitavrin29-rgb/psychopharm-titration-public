@@ -1,0 +1,54 @@
+{
+  "status": "pass",
+  "checks": [
+    {
+      "check": "score_and_acceptance_arithmetic",
+      "status": "pass",
+      "meaning": "Weights, arithmetic and declared status counts only; not truth of the assessment"
+    },
+    {
+      "check": "structure",
+      "status": "pass",
+      "report": "remediation/verification_report.json",
+      "report_sha256": "5e2aba35d4f699868b8013f2f5947b71d0cd4662bdbb4be968ead07bb658f9c6",
+      "meaning": "Structural consistency and provenance references only; not verification against a running calculator or clinical validation",
+      "rejected_mutations": 0
+    },
+    {
+      "check": "original_negative",
+      "status": "pass",
+      "report": "remediation/original_negative_checks.json",
+      "report_sha256": "b13f918881f5202401fe1dc3760800c4548b2a4f1b931f6ef61d25f4894950b0",
+      "meaning": "Audit rejection checks; no calculator or clinical validation",
+      "rejected_mutations": 5
+    },
+    {
+      "check": "contracts",
+      "status": "pass",
+      "report": "remediation/contract_verification.json",
+      "report_sha256": "a62c4074178ec7441b63cd35290e2411e9600e5efbbc5bb16877da2cd0e291e9",
+      "meaning": "Static typing, completeness, provenance and specified research-contract rejection checks only",
+      "rejected_mutations": 0
+    },
+    {
+      "check": "new_negative",
+      "status": "pass",
+      "report": "remediation/new_negative_checks.json",
+      "report_sha256": "6f9738a80e0e542ebe149ae5a5cc78b8e3e71725f34262290123254a742cb683",
+      "meaning": "Static contract-detector negative checks; not medical or calculator validation",
+      "rejected_mutations": 17
+    },
+    {
+      "check": "protected_originals",
+      "status": "pass",
+      "report": "remediation/preservation_check.json",
+      "meaning": "Byte identity, not medical validation"
+    }
+  ],
+  "source_currency_proven": false,
+  "calculator_execution": false,
+  "clinical_validation": "not_performed",
+  "full_synthetic_expected_cases": 3631,
+  "unchanged_acceptance_criteria": 30,
+  "limitation": "PASS covers listed static invariants and rejection mutations. It is not independent evidence of every medical statement, latest source revision, or calculator execution."
+}

@@ -1,0 +1,145 @@
+{
+  "scope": "Actual source B cessation/help actions; conditional stop-if-taking action is not evidence B already administered",
+  "rows": [
+    {
+      "case_id": "switch-parox-ago-selected-example--stop-RU-AGO-liver_injury_signs",
+      "source": "RU-AGO",
+      "target_phase": "ongoing",
+      "scalar_stop": "RU-AGO",
+      "B_actions": []
+    },
+    {
+      "case_id": "switch-parox-ago-selected-example--stop-RU-AGO-mania_symptoms",
+      "source": "RU-AGO",
+      "target_phase": "ongoing",
+      "scalar_stop": "RU-AGO",
+      "B_actions": []
+    },
+    {
+      "case_id": "switch-parox-ago-selected-example--alt_ratio_uln-ongoing-above3",
+      "source": "RU-AGO",
+      "target_phase": "ongoing",
+      "scalar_stop": "RU-AGO",
+      "B_actions": []
+    },
+    {
+      "case_id": "switch-parox-ago-selected-example--ast_ratio_uln-ongoing-above3",
+      "source": "RU-AGO",
+      "target_phase": "ongoing",
+      "scalar_stop": "RU-AGO",
+      "B_actions": []
+    },
+    {
+      "case_id": "switch-parox-ago--stop-RU-AGO-liver_injury_signs",
+      "source": "RU-AGO",
+      "target_phase": "ongoing",
+      "scalar_stop": "RU-AGO",
+      "B_actions": []
+    },
+    {
+      "case_id": "switch-parox-ago--stop-RU-AGO-mania_symptoms",
+      "source": "RU-AGO",
+      "target_phase": "ongoing",
+      "scalar_stop": "RU-AGO",
+      "B_actions": []
+    },
+    {
+      "case_id": "switch-parox-ago--alt_ratio_uln-ongoing-above3",
+      "source": "RU-AGO",
+      "target_phase": "ongoing",
+      "scalar_stop": "RU-AGO",
+      "B_actions": []
+    },
+    {
+      "case_id": "switch-parox-ago--ast_ratio_uln-ongoing-above3",
+      "source": "RU-AGO",
+      "target_phase": "ongoing",
+      "scalar_stop": "RU-AGO",
+      "B_actions": []
+    },
+    {
+      "case_id": "switch-ser-ago--stop-RU-AGO-liver_injury_signs",
+      "source": "RU-AGO",
+      "target_phase": "ongoing",
+      "scalar_stop": "RU-AGO",
+      "B_actions": []
+    },
+    {
+      "case_id": "switch-ser-ago--alt_ratio_uln-ongoing-above3",
+      "source": "RU-AGO",
+      "target_phase": "ongoing",
+      "scalar_stop": "RU-AGO",
+      "B_actions": []
+    },
+    {
+      "case_id": "switch-ser-ago--ast_ratio_uln-ongoing-above3",
+      "source": "RU-AGO",
+      "target_phase": "ongoing",
+      "scalar_stop": "RU-AGO",
+      "B_actions": []
+    },
+    {
+      "case_id": "switch-esc-ago--current-alt_ratio_uln-ongoing-above3",
+      "source": "RU-AGO",
+      "target_phase": "ongoing",
+      "scalar_stop": "RU-AGO",
+      "B_actions": []
+    },
+    {
+      "case_id": "switch-esc-ago--current-ast_ratio_uln-ongoing-above3",
+      "source": "RU-AGO",
+      "target_phase": "ongoing",
+      "scalar_stop": "RU-AGO",
+      "B_actions": []
+    },
+    {
+      "case_id": "switch-ser-esc--audit-v2-target_arrhythmia_signs-positive",
+      "source": "RU-ESC",
+      "target_phase": "ongoing",
+      "scalar_stop": "RU-ESC",
+      "B_actions": []
+    },
+    {
+      "case_id": "switch-ser-esc--audit-v2-target_serotonin_syndrome_signs-positive",
+      "source": "RU-ESC",
+      "target_phase": "ongoing",
+      "scalar_stop": "RU-ESC",
+      "B_actions": []
+    },
+    {
+      "case_id": "switch-ser-esc--audit-v2-target_seizure_state-positive",
+      "source": "RU-ESC",
+      "target_phase": "ongoing",
+      "scalar_stop": "RU-ESC",
+      "B_actions": []
+    },
+    {
+      "case_id": "switch-esc-ser--audit-v2-target_new_seizures-positive",
+      "source": "RU-SER",
+      "target_phase": "ongoing",
+      "scalar_stop": "RU-SER",
+      "B_actions": []
+    },
+    {
+      "case_id": "switch-esc-ser--audit-recheck-target_symptomatic_hyponatremia-positive",
+      "source": "RU-SER",
+      "target_phase": "ongoing",
+      "scalar_stop": null,
+      "B_actions": [
+        {
+          "action": "consider_discontinuation_of_sertraline",
+          "source_ref": "RU-SER",
+          "source_locator": "§4.4 с.6",
+          "medication_role": "B"
+        },
+        {
+          "action": "provide_appropriate_medical_care",
+          "source_ref": "RU-SER",
+          "source_locator": "§4.4 с.6",
+          "medication_role": "B"
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

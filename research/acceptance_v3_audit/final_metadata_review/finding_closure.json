@@ -1,0 +1,54 @@
+{
+  "previous_snapshot": "27ef14e77185b7b104d43199664a5b1ca42b73dd8b09f921ee539e97fae971f8",
+  "current_snapshot": "b66e9e0dadca7234ed1e66bc8c103047ff2f96e963313d07dd0075494695f0a4",
+  "rows": [
+    {
+      "finding_id": "V3-01",
+      "status": "closed_in_228",
+      "independent_evidence": "All exact old finite scopes checked against own same-SHA primary norms, current causal certificates and selected paths; all source/phase/compound/arithmetic/supplied-count controls passed.",
+      "remaining": null
+    },
+    {
+      "finding_id": "V3-02",
+      "status": "closed_in_228",
+      "independent_evidence": "All exact old finite scopes checked against own same-SHA primary norms, current causal certificates and selected paths; all source/phase/compound/arithmetic/supplied-count controls passed.",
+      "remaining": null
+    },
+    {
+      "finding_id": "V3-03",
+      "status": "closed_in_228",
+      "independent_evidence": "All exact old finite scopes checked against own same-SHA primary norms, current causal certificates and selected paths; all source/phase/compound/arithmetic/supplied-count controls passed. Final22 sparse population metadata repaired; own4410 assertions and actual13th guard mutation/12 independent controls passed.",
+      "remaining": null
+    },
+    {
+      "finding_id": "V3-04",
+      "status": "closed_in_228",
+      "independent_evidence": "All exact old finite scopes checked against own same-SHA primary norms, current causal certificates and selected paths; all source/phase/compound/arithmetic/supplied-count controls passed.",
+      "remaining": null
+    },
+    {
+      "finding_id": "V3-05",
+      "status": "closed_in_228",
+      "independent_evidence": "All24 fabricated raw negatives removed; actual False-only assertion over6646 passes.",
+      "remaining": null
+    },
+    {
+      "finding_id": "V3-06",
+      "status": "closed_in_228",
+      "independent_evidence": "Current35 targeted mutations and5 main in-memory mutations all rejected; current main V3 pointers updated.",
+      "remaining": null
+    },
+    {
+      "finding_id": "V3-07",
+      "status": "closed_in_228",
+      "independent_evidence": "All exact old finite scopes checked against own same-SHA primary norms, current causal certificates and selected paths; all source/phase/compound/arithmetic/supplied-count controls passed.",
+      "remaining": null
+    },
+    {
+      "finding_id": "V3-RC01",
+      "status": "closed_in_228",
+      "independent_evidence": "Exact22 raw/projected population labels now not_assessed with age unassessed; raw/projected known18+ guard and13th mutation plus12 controls actually repeated. Counts/actions/numbers/questions unchanged.",
+      "remaining": null
+    }
+  ]
+}

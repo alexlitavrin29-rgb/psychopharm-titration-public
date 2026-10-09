@@ -1,0 +1,104 @@
+{
+  "accessed_on": "2026-10-08",
+  "observations": {
+    "Zoloft": "Linked producer copy bears expert stamp 29.05.2026; filename year 2025 does not date content",
+    "GRLS": "Public individual search required image code; no individual record extracted",
+    "Richter": "Separate Russian original with mg/dL formula and explicit unavailable 25–50 mg dosage footnote"
+  },
+  "public_requests": {
+    "RU-GAD": {
+      "source_id": "RU-GAD",
+      "url": "https://apicr.minzdrav.gov.ru/api.ashx?id=457_3&op=GetClinrecPdf",
+      "final_url": "https://apicr.minzdrav.gov.ru/api.ashx?id=457_3&op=GetClinrecPdf",
+      "status": 200,
+      "sha256": "c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a",
+      "accessed_on": "2026-10-08",
+      "pages": 121
+    },
+    "RU-PANIC": {
+      "source_id": "RU-PANIC",
+      "url": "https://apicr.minzdrav.gov.ru/api.ashx?id=456_3&op=GetClinrecPdf",
+      "final_url": "https://apicr.minzdrav.gov.ru/api.ashx?id=456_3&op=GetClinrecPdf",
+      "status": 200,
+      "sha256": "a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d",
+      "accessed_on": "2026-10-08",
+      "pages": 140
+    },
+    "RU-PHOB": {
+      "source_id": "RU-PHOB",
+      "url": "https://apicr.minzdrav.gov.ru/api.ashx?id=455_3&op=GetClinrecPdf",
+      "final_url": "https://apicr.minzdrav.gov.ru/api.ashx?id=455_3&op=GetClinrecPdf",
+      "status": 200,
+      "sha256": "2a51982fb1919c0ef9115e5231f8ef9d65863306d2d5b95aa0aa7821a6f328b7",
+      "accessed_on": "2026-10-08",
+      "pages": 148
+    },
+    "RU-DEP": {
+      "source_id": "RU-DEP",
+      "url": "https://apicr.minzdrav.gov.ru/api.ashx?id=301_3&op=GetClinrecPdf",
+      "final_url": "https://apicr.minzdrav.gov.ru/api.ashx?id=301_3&op=GetClinrecPdf",
+      "status": 200,
+      "sha256": "2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd",
+      "accessed_on": "2026-10-08",
+      "pages": 125
+    },
+    "RU-PREG": {
+      "source_id": "RU-PREG",
+      "url": "https://www.viatris.ru/-/media/project/common/viatrisru/pdf/product-catalog/lyrica_eaeu_smpc_13-aug-2025_ru.pdf",
+      "final_url": "https://www.viatris.ru/-/media/project/common/viatrisru/pdf/product-catalog/lyrica_eaeu_smpc_13-aug-2025_ru.pdf",
+      "status": 200,
+      "sha256": "1fcd653e7f3b6bf5b26b3276d0bce97880e74bf345bb69755a275bf8f7117083",
+      "accessed_on": "2026-10-08",
+      "pages": 30
+    },
+    "RU-ESC": {
+      "source_id": "RU-ESC",
+      "url": "https://s3.k2.cloud/static.abbottpro.ru/iblock/65e/65e594ed9b06b488eb136309c4567129/Selectra_PIL_14.01.2025-clean-_1_.pdf",
+      "final_url": "https://s3.k2.cloud/static.abbottpro.ru/iblock/65e/65e594ed9b06b488eb136309c4567129/Selectra_PIL_14.01.2025-clean-_1_.pdf",
+      "status": 200,
+      "sha256": "ea5d007a4026e850b514badeabfdb5d6e0ece163a1a84e6fa5453a8ff0c73497",
+      "accessed_on": "2026-10-08",
+      "pages": 17
+    },
+    "RU-SER-CURRENT": {
+      "source_id": "RU-SER-CURRENT",
+      "url": "https://www.viatris.ru/-/media/project/common/viatrisru/pdf/product-catalog/0006_zoloft_smpc-eaeu_24-apr-2025_ru.pdf",
+      "sha256": "3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba",
+      "pages": 22,
+      "accessed_on": "2026-10-08"
+    },
+    "RU-PREG-RICHTER": {
+      "source_id": "RU-PREG-RICHTER",
+      "url": "https://www.gedeonrichter.com/ru/-/media/sites/ru/russian-products/files/productinstruction_8a8628ec-2c00-4909-a91a-c85e0d0a08a8_pdf.pdf?hash=6A0B9A99FE97A62F26D5FFFBC5234CA7&rev=fab5a6cc7e4540a48f725203a9a7545e",
+      "final_url": "https://www.gedeonrichter.com/ru/-/media/sites/ru/russian-products/files/productinstruction_8a8628ec-2c00-4909-a91a-c85e0d0a08a8_pdf.pdf?hash=6A0B9A99FE97A62F26D5FFFBC5234CA7&rev=fab5a6cc7e4540a48f725203a9a7545e",
+      "status": 200,
+      "sha256": "c6c6b41dd339536ad1671193a6cd69a7c111d6a2c04c6db501ae85c3beba1ee1",
+      "accessed_on": "2026-10-08",
+      "pages": 33
+    },
+    "ZOLOFT-PAGE": {
+      "source_id": "ZOLOFT-PAGE",
+      "url": "https://www.viatris.ru/ru-ru/препараты/product-catalog/zoloft",
+      "final_url": "https://www.viatris.ru/ru-ru/%D0%BF%D1%80%D0%B5%D0%BF%D0%B0%D1%80%D0%B0%D1%82%D1%8B/product-catalog/zoloft",
+      "status": 200,
+      "sha256": "a434fb913241080c149f753c1f73d4d0d7b7761c521ffc886f77edc591d165cd",
+      "accessed_on": "2026-10-08"
+    },
+    "LYRICA-PAGE": {
+      "source_id": "LYRICA-PAGE",
+      "url": "https://www.viatris.ru/ru-ru/препараты/product-catalog/lyrica",
+      "final_url": "https://www.viatris.ru/ru-ru/%D0%BF%D1%80%D0%B5%D0%BF%D0%B0%D1%80%D0%B0%D1%82%D1%8B/product-catalog/lyrica",
+      "status": 200,
+      "sha256": "1234fd05ee8ba583440778d0b32b266be60773013f4beabb7de3bf35fae3f421",
+      "accessed_on": "2026-10-08"
+    },
+    "GRLS-SER": {
+      "source_id": "GRLS-SER",
+      "url": "https://grls.rosminzdrav.ru/GRLS.aspx?isfs=0&regtype=1%2c6&pageSize=10&order=Registered&orderType=desc&pageNum=1&TradeNmR=Золофт",
+      "final_url": "https://grls.rosminzdrav.ru/GRLS.aspx?isfs=0&regtype=1%2C6&pageSize=10&order=Registered&orderType=desc&pageNum=1&TradeNmR=%D0%97%D0%BE%D0%BB%D0%BE%D1%84%D1%82",
+      "status": 200,
+      "sha256": "ba2c7f0f8426ac83ff8f139a84beb1b857576caddc77f6b85f3e06753b429153",
+      "accessed_on": "2026-10-08"
+    }
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "accessed_on": "2026-10-08",
+  "endpoint": "https://apicr.minzdrav.gov.ru/api.ashx?op=GetJsonClinrecsFilterV2",
+  "method": "POST read-only catalog query",
+  "query": {
+    "filters": [
+      {
+        "fieldName": "status",
+        "filterType": 1,
+        "filterValueType": 2,
+        "value1": 0,
+        "value2": "",
+        "values": []
+      }
+    ],
+    "sortOption": {
+      "fieldName": "publishdate",
+      "sortType": 2
+    },
+    "pageSize": 5000,
+    "currentPage": 1,
+    "useANDoperator": true,
+    "columns": []
+  },
+  "sha256": "09de48ed7f0cb8fdd3afe89974b7a5333fa96a1b415669fd9faeba42e0a7a6f8",
+  "selected_entries": [
+    {
+      "CodeVersion": "455_3",
+      "Name": "Тревожно-фобические расстройства",
+      "PublishDateStr": "2024-10-21T00:00:00",
+      "ApplyStatusCalculated": 1,
+      "AgeCategory": 1,
+      "Mkbs": [
+        {
+          "ClinRecId": 1620,
+          "MkbId": 2610,
+          "MkbName": "Фобические тревожные расстройства",
+          "MkbCode": "F40"
+        }
+      ]
+    },
+    {
+      "CodeVersion": "456_3",
+      "Name": "Паническое расстройство",
+      "PublishDateStr": "2024-09-19T12:56:18",
+      "ApplyStatusCalculated": 1,
+      "AgeCategory": 1,
+      "Mkbs": [
+        {
+          "ClinRecId": 1560,
+          "MkbId": 2617,
+          "MkbName": "Паническое расстройство [эпизодическая пароксизмальная тревожность]",
+          "MkbCode": "F41.0"
+        }
+      ]
+    },
+    {
+      "CodeVersion": "457_3",
+      "Name": "Генерализованное тревожное расстройство",
+      "PublishDateStr": "2024-09-19T00:00:00",
+      "ApplyStatusCalculated": 1,
+      "AgeCategory": 1,
+      "Mkbs": [
+        {
+          "ClinRecId": 1557,
+          "MkbId": 2618,
+          "MkbName": "Генерализованное тревожное расстройство",
+          "MkbCode": "F41.1"
+        }
+      ]
+    },
+    {
+      "CodeVersion": "301_3",
+      "Name": "Депрессивный эпизод, Рекуррентное депрессивное расстройство",
+      "PublishDateStr": "2024-08-26T12:06:01",
+      "ApplyStatusCalculated": 1,
+      "AgeCategory": 1,
+      "Mkbs": [
+        {
+          "ClinRecId": 1542,
+          "MkbId": 2584,
+          "MkbName": "Депрессивный эпизод",
+          "MkbCode": "F32"
+        },
+        {
+          "ClinRecId": 1542,
+          "MkbId": 2591,
+          "MkbName": "Рекуррентное депрессивное расстройство",
+          "MkbCode": "F33"
+        }
+      ]
+    }
+  ],
+  "limitation": "Catalog status verifies guideline listing, not latest registration revisions of medicinal product labels"
+}

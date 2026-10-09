@@ -1,0 +1,241 @@
+country: RU
+foreign_fallback_allowed: false
+selected_conditional_example: switch-parox-ago-selected-example
+directions:
+- from_inn: сертралин
+  to_inn: эсциталопрам
+  diagnosis_code: F32/F33
+  population: adult
+  from_form: Золофт, таблетки 50/100
+  to_form: Селектра, таблетки 5/10/15/20
+  from_source: RU-SER
+  to_source: RU-ESC
+  source_refs:
+  - RU-SER
+  - RU-ESC
+  overlap_status: not_established
+  interval: null
+  source_locator: §4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22; §1–3 PDF с.1–2;
+    §4.1 с.2; §4.2 с.2–3; §4.3 с.4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.10
+  complete_universal_calendar: false
+  notes: Постепенная отмена A; начало B не задаётся дозой обычного старта.
+  source_currency_status: latest_registration_revision_not_confirmed
+  transfer_status: blocked_current_RU_ESC_original
+  numeric_pair_result: null
+- from_inn: эсциталопрам
+  to_inn: сертралин
+  diagnosis_code: F32/F33
+  population: adult
+  from_form: Селектра, таблетки 5/10/15/20
+  to_form: Золофт, таблетки 50/100
+  from_source: RU-ESC
+  to_source: RU-SER
+  source_refs:
+  - RU-ESC
+  - RU-SER
+  overlap_status: not_established
+  interval: null
+  source_locator: §1–3 PDF с.1–2; §4.1 с.2; §4.2 с.2–3; §4.3 с.4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.10; §4.1 с.1; §4.2
+    с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22
+  complete_universal_calendar: false
+  notes: Постепенная отмена A; нет автоматического следующего дня.
+  source_currency_status: latest_registration_revision_not_confirmed
+  transfer_status: blocked_current_RU_ESC_original
+  numeric_pair_result: null
+- from_inn: сертралин
+  to_inn: моклобемид
+  diagnosis_code: F32/F33
+  population: adult
+  from_form: Золофт, таблетки 50/100
+  to_form: Российская форма/актуальная инструкция не получены
+  from_source: RU-SER
+  to_source: null
+  source_refs:
+  - RU-SER
+  overlap_status: not_recommended
+  interval:
+    minimum: 7
+    unit: day
+    anchor: после полного прекращения сертралина
+  source_locator: §4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22
+  complete_universal_calendar: false
+  notes: §4.5 Золофт с.8; источник/доза B отсутствуют.
+  source_currency_status: latest_registration_revision_not_confirmed
+  transfer_status: source_direction_constraint_only; pair calendar only selected explicitly justified example
+- from_inn: моклобемид
+  to_inn: сертралин
+  diagnosis_code: F32/F33
+  population: adult
+  from_form: Российская форма/актуальная инструкция не получены
+  to_form: Золофт, таблетки 50/100
+  from_source: null
+  to_source: RU-SER
+  source_refs:
+  - RU-SER
+  overlap_status: not_recommended
+  interval: null
+  source_locator: §4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22
+  complete_universal_calendar: false
+  notes: §4.5 Золофт с.8 допускает короче14 после обратимого ИМАО, но точного российского интервала нет.
+  source_currency_status: latest_registration_revision_not_confirmed
+  transfer_status: source_direction_constraint_only; pair calendar only selected explicitly justified example
+- from_inn: сертралин
+  to_inn: агомелатин
+  diagnosis_code: F32/F33
+  population: adult
+  from_form: Золофт, таблетки 50/100
+  to_form: Вальдоксан, таблетки25
+  from_source: RU-SER
+  to_source: RU-AGO
+  source_refs:
+  - RU-SER
+  - RU-AGO
+  overlap_status: allowed_class_rule_day1_gradual_taper
+  interval:
+    anchor: первый день постепенного снижения A
+    additional_wait: null
+  source_locator: §4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22; §4.1–4.2 PDF с.1–2;
+    §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16
+  complete_universal_calendar: false
+  notes: ОХЛП B §4.2 с.2; ступени A не опубликованы.
+  source_currency_status: latest_registration_revision_not_confirmed
+  transfer_status: source_direction_constraint_only; pair calendar only selected explicitly justified example
+- from_inn: эсциталопрам
+  to_inn: агомелатин
+  diagnosis_code: F32/F33
+  population: adult
+  from_form: Селектра, таблетки 5/10/15/20
+  to_form: Вальдоксан, таблетки25
+  from_source: RU-ESC
+  to_source: RU-AGO
+  source_refs:
+  - RU-ESC
+  - RU-AGO
+  overlap_status: allowed_class_rule_day1_gradual_taper
+  interval:
+    anchor: первый день постепенного снижения A
+    additional_wait: null
+  source_locator: §1–3 PDF с.1–2; §4.1 с.2; §4.2 с.2–3; §4.3 с.4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.10; §4.1–4.2 PDF
+    с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16
+  complete_universal_calendar: false
+  notes: ОХЛП B §4.2 с.2; общий срок отмены A не задаёт ступени.
+  source_currency_status: latest_registration_revision_not_confirmed
+  transfer_status: blocked_current_RU_ESC_original
+  numeric_pair_result: null
+- from_inn: пароксетин
+  to_inn: агомелатин
+  diagnosis_code: F32/F33
+  population: adult
+  from_form: Рексетин, таблетки20
+  to_form: Вальдоксан, таблетки25
+  from_source: RU-PAROX
+  to_source: RU-AGO
+  source_refs:
+  - RU-PAROX
+  - RU-AGO
+  overlap_status: allowed_class_rule_day1_gradual_taper
+  interval:
+    anchor: первый день постепенного снижения A
+    additional_wait: null
+  source_locator: 'ОХЛП: PDF с.14–18 (§4.1–4.3), с.19–23 (§4.4), с.24–28 (§4.5–4.6), с.39 (§8–10); §4.1–4.2 PDF
+    с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16'
+  complete_universal_calendar: false
+  notes: Есть выбранный взрослый составной пример при40, не общий обязательный календарь.
+  source_currency_status: latest_registration_revision_not_confirmed
+  transfer_status: source_direction_constraint_only; pair calendar only selected explicitly justified example
+- from_inn: агомелатин
+  to_inn: сертралин
+  diagnosis_code: F32/F33
+  population: adult
+  from_form: Вальдоксан, таблетки25
+  to_form: Золофт, таблетки 50/100
+  from_source: RU-AGO
+  to_source: RU-SER
+  source_refs:
+  - RU-AGO
+  - RU-SER
+  overlap_status: not_established
+  interval: null
+  source_locator: §4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16; §4.1 с.1; §4.2 с.2–3; §4.3 с.3;
+    §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22
+  complete_universal_calendar: false
+  notes: A не требует постепенного снижения; точное время B между препаратами не опубликовано.
+  source_currency_status: latest_registration_revision_not_confirmed
+  transfer_status: source_direction_constraint_only; pair calendar only selected explicitly justified example
+- from_inn: агомелатин
+  to_inn: эсциталопрам
+  diagnosis_code: F32/F33
+  population: adult
+  from_form: Вальдоксан, таблетки25
+  to_form: Селектра, таблетки 5/10/15/20
+  from_source: RU-AGO
+  to_source: RU-ESC
+  source_refs:
+  - RU-AGO
+  - RU-ESC
+  overlap_status: not_established
+  interval: null
+  source_locator: §4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16; §1–3 PDF с.1–2; §4.1 с.2; §4.2
+    с.2–3; §4.3 с.4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.10
+  complete_universal_calendar: false
+  notes: Отсутствие снижения A не равно нулевому washout/разрешению перекрытия.
+  source_currency_status: latest_registration_revision_not_confirmed
+  transfer_status: blocked_current_RU_ESC_original
+  numeric_pair_result: null
+- from_inn: агомелатин
+  to_inn: пароксетин
+  diagnosis_code: F32/F33
+  population: adult
+  from_form: Вальдоксан, таблетки25
+  to_form: Рексетин, таблетки20
+  from_source: RU-AGO
+  to_source: RU-PAROX
+  source_refs:
+  - RU-AGO
+  - RU-PAROX
+  overlap_status: not_established
+  interval: null
+  source_locator: '§4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16; ОХЛП: PDF с.14–18 (§4.1–4.3),
+    с.19–23 (§4.4), с.24–28 (§4.5–4.6), с.39 (§8–10)'
+  complete_universal_calendar: false
+  notes: Нужны решение времени B и его начальная схема по показанию.
+  source_currency_status: latest_registration_revision_not_confirmed
+  transfer_status: source_direction_constraint_only; pair calendar only selected explicitly justified example
+- from_inn: флувоксамин
+  to_inn: агомелатин
+  diagnosis_code: F32/F33
+  population: adult
+  from_form: Феварин, таблетки50/100
+  to_form: Вальдоксан, таблетки25
+  from_source: RU-FLUVOX
+  to_source: RU-AGO
+  source_refs:
+  - RU-FLUVOX
+  - RU-AGO
+  overlap_status: contraindicated
+  interval: null
+  source_locator: §4.1–4.3 PDF с.1–3; §4.4–4.6 с.4–11; §8–10 с.19; §4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6
+    с.5–6; §8–10 с.16
+  complete_universal_calendar: false
+  notes: 'Сильный CYP1A2: ОХЛП B §4.3–4.5 с.3/5. Точный российский срок до B не извлечён; SPS не подставлять.'
+  source_currency_status: latest_registration_revision_not_confirmed
+  transfer_status: source_direction_constraint_only; pair calendar only selected explicitly justified example
+- from_inn: агомелатин
+  to_inn: флувоксамин
+  diagnosis_code: F32/F33
+  population: adult
+  from_form: Вальдоксан, таблетки25
+  to_form: Феварин, таблетки50/100
+  from_source: RU-AGO
+  to_source: RU-FLUVOX
+  source_refs:
+  - RU-AGO
+  - RU-FLUVOX
+  overlap_status: contraindicated
+  interval: null
+  source_locator: §4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16; §4.1–4.3 PDF с.1–3; §4.4–4.6 с.4–11;
+    §8–10 с.19
+  complete_universal_calendar: false
+  notes: Одновременное применение противопоказано. A без снижения, но точный межпрепаратный срок не опубликован.
+  source_currency_status: latest_registration_revision_not_confirmed
+  transfer_status: source_direction_constraint_only; pair calendar only selected explicitly justified example

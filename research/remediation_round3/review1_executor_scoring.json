@@ -1,0 +1,43 @@
+{
+  "nature": "provisional executor expert assessment; arithmetic reproducible, not independent medical validation",
+  "dimensions": [
+    {
+      "name": "источники",
+      "score": "9.3",
+      "weight": "0.25",
+      "contribution": "2.325"
+    },
+    {
+      "name": "правила",
+      "score": "8.8",
+      "weight": "0.30",
+      "contribution": "2.640"
+    },
+    {
+      "name": "входы",
+      "score": "7.8",
+      "weight": "0.20",
+      "contribution": "1.560"
+    },
+    {
+      "name": "покрытие",
+      "score": "8.8",
+      "weight": "0.15",
+      "contribution": "1.320"
+    },
+    {
+      "name": "техника",
+      "score": "9.1",
+      "weight": "0.10",
+      "contribution": "0.910"
+    }
+  ],
+  "weighted_unrounded": "8.755",
+  "uncapped_rounded": "8.8",
+  "cap": "6",
+  "cap_reason": "Substantial unfinished ordinary question limit and unproved complete result-specific necessity; V2 paths11–15 are allowed and do not cause cap",
+  "score": "6.0",
+  "old_uncapped": "8.55",
+  "raw_delta": "0.205",
+  "independent_acceptance_pending": true
+}

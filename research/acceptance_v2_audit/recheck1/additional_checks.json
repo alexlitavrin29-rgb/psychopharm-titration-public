@@ -1,0 +1,141 @@
+{
+  "author_repair_validator_independently_run": true,
+  "author_repair_baseline_errors": [],
+  "author_extra_mutations": [
+    {
+      "name": "wrong_source_version",
+      "rejected": true
+    },
+    {
+      "name": "remove_PAR_screening",
+      "rejected": true
+    },
+    {
+      "name": "remove_SER_CYP3A4",
+      "rejected": true
+    },
+    {
+      "name": "remove_DULOX_CYP2D6",
+      "rejected": true
+    },
+    {
+      "name": "XR_inclusive100",
+      "rejected": true
+    },
+    {
+      "name": "unasked_negative",
+      "rejected": true
+    },
+    {
+      "name": "missing_ESC_ECG",
+      "rejected": true
+    },
+    {
+      "name": "missing_PAR_support",
+      "rejected": true
+    }
+  ],
+  "author_primary_phrase_guards_independently_run": [
+    {
+      "source_id": "RU-PAROX",
+      "physical_page": 7,
+      "sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069",
+      "source_phrases_present": true,
+      "scope": "Specific independently selected source condition/action, not full document review or calculator execution"
+    },
+    {
+      "source_id": "RU-PAROX",
+      "physical_page": 9,
+      "sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069",
+      "source_phrases_present": true,
+      "scope": "Specific independently selected source condition/action, not full document review or calculator execution"
+    },
+    {
+      "source_id": "RU-FLUVOX",
+      "physical_page": 5,
+      "sha256": "01b6621adad68dfeaf1fbe00db21935b6df1edee141c67307a9b67ad177893f2",
+      "source_phrases_present": true,
+      "scope": "Specific independently selected source condition/action, not full document review or calculator execution"
+    },
+    {
+      "source_id": "RU-FLUVOX",
+      "physical_page": 7,
+      "sha256": "01b6621adad68dfeaf1fbe00db21935b6df1edee141c67307a9b67ad177893f2",
+      "source_phrases_present": true,
+      "scope": "Specific independently selected source condition/action, not full document review or calculator execution"
+    },
+    {
+      "source_id": "RU-VENLA-XR",
+      "physical_page": 9,
+      "sha256": "a21e90141db69d9be5ca44ac3c8c6059c8c82a880f34bbf15143348c36ef4666",
+      "source_phrases_present": true,
+      "scope": "Specific independently selected source condition/action, not full document review or calculator execution"
+    },
+    {
+      "source_id": "RU-VENLA-XR",
+      "physical_page": 13,
+      "sha256": "a21e90141db69d9be5ca44ac3c8c6059c8c82a880f34bbf15143348c36ef4666",
+      "source_phrases_present": true,
+      "scope": "Specific independently selected source condition/action, not full document review or calculator execution"
+    },
+    {
+      "source_id": "RU-SER",
+      "physical_page": 10,
+      "sha256": "3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba",
+      "source_phrases_present": true,
+      "scope": "Specific independently selected source condition/action, not full document review or calculator execution"
+    },
+    {
+      "source_id": "RU-DULOX",
+      "physical_page": 8,
+      "sha256": "0551a7306ca4a56b552336bb63fa34905cf4e312702ba811a792221892a42ca1",
+      "source_phrases_present": true,
+      "scope": "Specific independently selected source condition/action, not full document review or calculator execution"
+    },
+    {
+      "source_id": "RU-DULOX",
+      "physical_page": 7,
+      "sha256": "0551a7306ca4a56b552336bb63fa34905cf4e312702ba811a792221892a42ca1",
+      "source_phrases_present": true,
+      "scope": "Specific independently selected source condition/action, not full document review or calculator execution"
+    },
+    {
+      "source_id": "RU-ESC",
+      "physical_page": 4,
+      "sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "source_phrases_present": true,
+      "scope": "Specific independently selected source condition/action, not full document review or calculator execution"
+    },
+    {
+      "source_id": "RU-ESC",
+      "physical_page": 6,
+      "sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "source_phrases_present": true,
+      "scope": "Specific independently selected source condition/action, not full document review or calculator execution"
+    }
+  ],
+  "arithmetic_consistency_errors": [],
+  "nested_basis_count": 11076,
+  "version_SHA_errors": [],
+  "own_projected_consumed_input_errors": [
+    {
+      "case_id": "ser-taper-limit--audit-v2-interaction-strong_CYP3A4",
+      "input": "medicines"
+    }
+  ],
+  "medical_evaluator_executed": false,
+  "author_v2_technical_checks_reexecuted": [
+    {
+      "name": "limit15",
+      "pass": true
+    },
+    {
+      "name": "limit16",
+      "pass": true
+    },
+    {
+      "name": "understated_count",
+      "pass": true
+    }
+  ]
+}

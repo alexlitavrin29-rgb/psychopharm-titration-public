@@ -1,0 +1,223 @@
+{
+  "criteria_version": "ACCEPTANCE_V2",
+  "criteria_count": 30,
+  "criteria": [
+    {
+      "number": 1,
+      "criterion": "Основной пользователь — психиатр, диагноз вводит врач; нет повторной диагностики и анкеты уверенности в диагнозе.",
+      "status": "выполнено",
+      "evidence": "PROJECT_BRIEF.md; physician-selected diagnosis; no diagnostic module",
+      "assessment_scope": "executor provisional; independent source audit can revise this status"
+    },
+    {
+      "number": 2,
+      "criterion": "Фокус остался на тревожных/тревожно-депрессивных состояниях и применимости в РФ.",
+      "status": "выполнено",
+      "evidence": "ru_source_policy.yaml; active RU cards",
+      "assessment_scope": "executor provisional; independent source audit can revise this status"
+    },
+    {
+      "number": 3,
+      "criterion": "Основной сценарий — выбранный препарат → дозовая схема, не только выбор лекарства или прогноз концентрации.",
+      "status": "выполнено",
+      "evidence": "38 selected product cards and per-result contracts",
+      "assessment_scope": "executor provisional; independent source audit can revise this status"
+    },
+    {
+      "number": 4,
+      "criterion": "Исследованы старт, титрование/коррекция, отмена и переключение. Непокрытые режимы явно обозначены, не удалены молча.",
+      "status": "выполнено",
+      "evidence": "38 cards span start/adjust/taper/switch; coverage.csv and source gaps retained",
+      "assessment_scope": "executor provisional; independent source audit can revise this status"
+    },
+    {
+      "number": 5,
+      "criterion": "Дополнительный топ-3 опирается на КР; не создана собственная шкала индивидуального превосходства.",
+      "status": "выполнено",
+      "evidence": "KR-based top3 findings excluded from individual efficacy ranking",
+      "assessment_scope": "executor provisional; independent source audit can revise this status"
+    },
+    {
+      "number": 6,
+      "criterion": "Дети, пожилые, беременность и лактация присутствуют в карте покрытия; нет автоматического переноса взрослых доз.",
+      "status": "выполнено",
+      "evidence": "coverage.csv; population boundaries and honest missing pediatric/gestation schemes",
+      "assessment_scope": "executor provisional; independent source audit can revise this status"
+    },
+    {
+      "number": 7,
+      "criterion": "Нет обязательной генетики, ML, истории пациентов, стоимости, профилей предпочтений и календаря визитов.",
+      "status": "выполнено",
+      "evidence": "No genetics demand; known_cyp2c19 context/conditional source branch; no app/history/ML",
+      "assessment_scope": "executor provisional; independent source audit can revise this status"
+    },
+    {
+      "number": 8,
+      "criterion": "Есть точные МНН, показание, код/классификация, форма, популяция и режим.",
+      "status": "выполнено",
+      "evidence": "identity/applicability in every card; exact product edition binding",
+      "assessment_scope": "executor provisional; independent source audit can revise this status"
+    },
+    {
+      "number": 9,
+      "criterion": "Есть конкретный источник, версия и локатор, а не только ссылка на главную страницу реестра.",
+      "status": "выполнено",
+      "evidence": "current_registry_documents.json; nine exact current originals plus ESC/SER; version_inventory.json",
+      "assessment_scope": "executor provisional; independent source audit can revise this status"
+    },
+    {
+      "number": 10,
+      "criterion": "Каждая медицинская доза, граница, поправка, срок и условие имеют источник.",
+      "status": "выполнено",
+      "evidence": "211 located parameter anchors and typed source conditions; primary reading journal; independent full transfer audit pending",
+      "assessment_scope": "executor provisional; independent source audit can revise this status"
+    },
+    {
+      "number": 11,
+      "criterion": "Опубликованный диапазон не заменён произвольно выбранным числом; пример не превращён в обязательный протокол.",
+      "status": "выполнено",
+      "evidence": "Source options/ranges/examples retained; selected source examples need clinician choice",
+      "assessment_scope": "executor provisional; independent source audit can revise this status"
+    },
+    {
+      "number": 12,
+      "criterion": "Различаются разовая/суточная доза, единицы, кратность и лекарственные формы.",
+      "status": "выполнено",
+      "evidence": "Separate dose/frequency/unit/form; Lyrica typo blocked; current XR vs IR unit distinction",
+      "assessment_scope": "executor provisional; independent source audit can revise this status"
+    },
+    {
+      "number": 13,
+      "criterion": "Не перемножены самостоятельные поправки и не усреднены несовместимые источники.",
+      "status": "выполнено",
+      "evidence": "Joint modifiers return choice; no multiplication or averaging",
+      "assessment_scope": "executor provisional; independent source audit can revise this status"
+    },
+    {
+      "number": 14,
+      "criterion": "Для переключения проверено направление, оба препарата, допустимость перекрытия и необходимый интервал.",
+      "status": "выполнено",
+      "evidence": "Directional matrix and source-specific pair gaps; A/B owners and target phase checked",
+      "assessment_scope": "executor provisional; independent source audit can revise this status"
+    },
+    {
+      "number": 15,
+      "criterion": "Для отмены сохранены условия изменения темпа; нет единого придуманного процента/срока для всех.",
+      "status": "выполнено",
+      "evidence": "Current duloxetine §4.4 minimum2; no universal decrement; source examples and symptoms retained",
+      "assessment_scope": "executor provisional; independent source audit can revise this status"
+    },
+    {
+      "number": 16,
+      "criterion": "Баллы шкалы влияют на дозовое действие только там, где это действительно задано найденным правилом.",
+      "status": "выполнено",
+      "evidence": "No new scale-to-mg coefficient; physician action/source decisions",
+      "assessment_scope": "executor provisional; independent source audit can revise this status"
+    },
+    {
+      "number": 17,
+      "criterion": "Для каждого вопроса показано, какое правило использует ответ и почему его нельзя убрать.",
+      "status": "частично",
+      "evidence": "2126 per-result ledger rows and 193 explicit revisions; minimum not proved for all unchanged/result branches",
+      "assessment_scope": "executor provisional; independent source audit can revise this status"
+    },
+    {
+      "number": 18,
+      "criterion": "Для обычного индивидуального дозового расчёта 5–10 содержательных вопросов — целевой диапазон; допустимо до 15 включительно при обоснованной необходимости каждого вопроса. Начальные выборы и независимые сведения считаются отдельно; нагрузка не скрыта в подпунктах или предварительной анкете, необходимые ограничения не удалены ради лимита.",
+      "status": "частично",
+      "evidence": "Complete counted ordinary paths still exceed15: AGO20, DULOX GAD17, PREG up to18; not relabelled",
+      "assessment_scope": "executor provisional; independent source audit can revise this status"
+    },
+    {
+      "number": 19,
+      "criterion": "Для сложных веток зафиксирован предел короткого расчёта, а не удалены обязательные сведения.",
+      "status": "выполнено",
+      "evidence": "Source-triggered complex paths and independent fact/stage/record costs; long paths visible",
+      "assessment_scope": "executor provisional; independent source audit can revise this status"
+    },
+    {
+      "number": 20,
+      "criterion": "«Неизвестно/не исследовано/не помню» не интерпретируются как норма/нет.",
+      "status": "выполнено",
+      "evidence": "Nested unknown, optional context with warnings and clinical_clearance=false; exact negatives distinct",
+      "assessment_scope": "executor provisional; independent source audit can revise this status"
+    },
+    {
+      "number": 21,
+      "criterion": "Недостаток обязательного значения даёт конкретный запрос данных без безусловной дозы.",
+      "status": "выполнено",
+      "evidence": "4953 prepared full expected; named missing inputs; source-specific gates",
+      "assessment_scope": "executor provisional; independent source audit can revise this status"
+    },
+    {
+      "number": 22,
+      "criterion": "Схема может быть выдана заранее, но последующие условные шаги не показаны как обязательные.",
+      "status": "выполнено",
+      "evidence": "Conditional future stages remain conditional; no automatic fabricated step",
+      "assessment_scope": "executor provisional; independent source audit can revise this status"
+    },
+    {
+      "number": 23,
+      "criterion": "Минимальные интервалы изменения дозы не перепутаны с датами назначаемых врачом визитов.",
+      "status": "выполнено",
+      "evidence": "Minimum intervals distinct from visit schedule; no calendar module",
+      "assessment_scope": "executor provisional; independent source audit can revise this status"
+    },
+    {
+      "number": 24,
+      "criterion": "Доступность первоисточника проверена; сниппет/абстракт/перепечатка не названы прочитанным оригиналом.",
+      "status": "выполнено",
+      "evidence": "Archived official originals and SHA; actual read scope separate from access/download",
+      "assessment_scope": "executor provisional; independent source audit can revise this status"
+    },
+    {
+      "number": 25,
+      "criterion": "Российская регистрационная применимость не выведена из иностранного руководства.",
+      "status": "выполнено",
+      "evidence": "Exact RU records, Russian KRs, foreign comparisons excluded",
+      "assessment_scope": "executor provisional; independent source audit can revise this status"
+    },
+    {
+      "number": 26,
+      "criterion": "Источник/КР/экспертный протокол/исследованная модель имеют разные, точно описанные статусы.",
+      "status": "выполнено",
+      "evidence": "Source types and unvalidated research/product status explicit",
+      "assessment_scope": "executor provisional; independent source audit can revise this status"
+    },
+    {
+      "number": 27,
+      "criterion": "Эффективность препарата не объявлена доказательством любой алгоритмической дозировки.",
+      "status": "выполнено",
+      "evidence": "No efficacy evidence converted into validation of algorithm",
+      "assessment_scope": "executor provisional; independent source audit can revise this status"
+    },
+    {
+      "number": 28,
+      "criterion": "Технический перенос не объявлен клинической валидацией нового продукта.",
+      "status": "выполнено",
+      "evidence": "No calculator or clinical validation claimed",
+      "assessment_scope": "executor provisional; independent source audit can revise this status"
+    },
+    {
+      "number": 29,
+      "criterion": "Готовность к реализации не перепутана с готовностью к клиническому применению.",
+      "status": "выполнено",
+      "evidence": "Source-bound transfer only; independent acceptance and implementation tests remain separate",
+      "assessment_scope": "executor provisional; independent source audit can revise this status"
+    },
+    {
+      "number": 30,
+      "criterion": "Все пробелы и конфликты перечислены; отсутствие найденного аналога не названо доказательством его отсутствия.",
+      "status": "выполнено",
+      "evidence": "Existing renal/lithium/citalopram/pair/form gaps preserved; current source conflicts recorded",
+      "assessment_scope": "executor provisional; independent source audit can revise this status"
+    }
+  ],
+  "status_counts": {
+    "выполнено": 28,
+    "частично": 2
+  },
+  "independent_acceptance_pending": true,
+  "application_implemented": false,
+  "clinical_validation": "not_performed"
+}

@@ -1,0 +1,19 @@
+{
+  "snapshot": "8fe52f02f06299e87cae714e128d52cd86d2c13af213ddabf68587001fe8206e",
+  "copied_files": 77,
+  "rules": 38,
+  "full_cases": 5825,
+  "selected_paths": 1786,
+  "scopes": 113,
+  "new_cases": 232,
+  "assertions": 32513,
+  "assertion_errors": 3,
+  "fact_count_defective_paths": 79,
+  "optional_state_occurrences": {
+    "other": 2237,
+    "negative": 11137,
+    "positive": 271,
+    "absent": 1375,
+    "unknown": 42
+  }
+}

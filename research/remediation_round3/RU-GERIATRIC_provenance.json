@@ -1,0 +1,8 @@
+{
+  "url": "https://apicr.minzdrav.gov.ru/api.ashx?id=613_2&op=GetClinrecPdf",
+  "accessed_on": "2026-10-08",
+  "sha256": "431d916605b0e7a2ee7e124dcef7975bd6db46121a4853271cfb59c20b3ea719",
+  "read_scope": "title and terms only; population-definition candidate, not active dosing rule",
+  "catalog_entry": "613_2; 2024; applies in current saved official catalog",
+  "active": false
+}

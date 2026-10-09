@@ -1,0 +1,1505 @@
+schema_version: '1.0'
+rule_id: preg-renal-start
+development_status: extracted_research_not_executable
+language: ru
+identity:
+  title: 'Прегабалин: начальная доза и предел по CLcr'
+  mode: start
+  drug_inn: прегабалин
+  from_drug_inn: null
+  to_drug_inn: null
+  formulation: 'Лирика: капсулы; 25/50/75/100/150/200/300 мг'
+  route: oral
+  diagnosis_label_ru: Генерализованное тревожное расстройство
+  classification_system: МКБ-10
+  diagnosis_code: F41.1
+  jurisdiction: RU_versioned_copy
+applicability:
+  population_description: Взрослые. Только подтверждённые условия этой карточки; другие популяции не получают масштабированную
+    взрослую дозу.
+  age_constraints:
+  - minimum: 18
+    inclusive: true
+    unit: year
+    source_ref: RU-PREG
+    source_locator: §4.2 табл.1, PDF с.5
+  pregnancy: Решение по применимости/пользе и риску отдельно; без опубликованной числовой поправки. Стандартная
+    карточка не выдаёт автоматическую дозу при беременности.
+  lactation: Проверять отдельные ограничения источника. Стандартная карточка не выдаёт автоматическую дозу при кормлении.
+  renal_constraints: []
+  hepatic_constraints: []
+  comorbidity_constraints: []
+  interacting_drugs: []
+  other_conditions: []
+  exclusions:
+  - Гиперчувствительность
+  - Непроверенные противопоказания/взаимодействия не считать отсутствующими
+  - 'Гемодиализ: отдельная дополнительная доза и сложная ветка; полной индивидуальной схемы не извлечено.'
+  indication_status_in_russia: RU_indication_in_read_copy_registry_row_observed_latest_text_identity_not_asserted
+  source_refs:
+  - RU-PREG
+inputs:
+- input_id: age
+  question_ru: Возраст пациента, полных лет?
+  data_type: integer
+  unit: year
+  allowed_values: []
+  required_when: 'для выбранного индивидуального результата: числовой операнд или явно проверяемое источниковое
+    ограничение'
+  show_when: при выборе результата или использовании уже подтверждённого в этом расчёте факта
+  why_needed: '§4.1 с.3 и §4.3 с.6: взрослое показание и возрастное противопоказание; возраст не заменяет подтверждённый
+    CLcr для дозовой таблицы.'
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; request this specific necessary fact; no individual dose
+  source_refs:
+  - RU-PREG
+  input_role: required_selected_result_operand_or_source_gate
+  source_locator: §4.1 с.3; §4.2 с.5; §4.3 с.6
+  missing_states:
+  - unknown
+  - not_assessed
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: always
+  necessity_reason: '§4.1 с.3 и §4.3 с.6: взрослое показание и возрастное противопоказание; возраст не заменяет
+    подтверждённый CLcr для дозовой таблицы.'
+  fact_origin: patient_fact
+- input_id: form
+  question_ru: Какая конкретная форма и сила дозы используются?
+  data_type: structured_form
+  unit: null
+  allowed_values: []
+  required_when: 'для выбранного индивидуального результата: числовой операнд или явно проверяемое источниковое
+    ограничение'
+  show_when: при выборе результата или использовании уже подтверждённого в этом расчёте факта
+  why_needed: Исполнимость дозы и запрет произвольного деления форм.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; request this specific necessary fact; no individual dose
+  source_refs:
+  - RU-PREG
+  input_role: required_selected_result_operand_or_source_gate
+  source_locator: §1–3 с.1–2; §4.2 с.3,5
+  missing_states:
+  - unknown
+  - not_assessed
+  structure_ref: remediation_round3/input_contracts.yaml#structures/structured_form
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: always
+  necessity_reason: Исполнимость дозы и запрет произвольного деления форм.
+  fact_origin: product_metadata
+- input_id: pregnancy
+  question_ru: Беременность установлена или возможна?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: 'для выбранного индивидуального результата: числовой операнд или явно проверяемое источниковое
+    ограничение'
+  show_when: при выборе результата или использовании уже подтверждённого в этом расчёте факта
+  why_needed: Отдельное решение о пользе и риске; числовой коэффициент не опубликован.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; request this specific necessary fact; no individual dose
+  source_refs:
+  - RU-PREG
+  input_role: required_selected_result_operand_or_source_gate
+  source_locator: §4.4 с.9; §4.6 с.12
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    да: true
+    нет: false
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  requirement_predicate:
+    kind: always
+  necessity_reason: Отдельное решение о пользе и риске; числовой коэффициент не опубликован.
+  fact_origin: patient_fact
+- input_id: lactation
+  question_ru: Есть грудное вскармливание?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: 'для выбранного индивидуального результата: числовой операнд или явно проверяемое источниковое
+    ограничение'
+  show_when: при выборе результата или использовании уже подтверждённого в этом расчёте факта
+  why_needed: Ограничение инструкции, решение врача; не уменьшение дозы по выдуманному коэффициенту.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; request this specific necessary fact; no individual dose
+  source_refs:
+  - RU-PREG
+  input_role: required_selected_result_operand_or_source_gate
+  source_locator: §4.6 с.12–13
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    да: true
+    нет: false
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  requirement_predicate:
+    kind: always
+  necessity_reason: Ограничение инструкции, решение врача; не уменьшение дозы по выдуманному коэффициенту.
+  fact_origin: patient_fact
+- input_id: medicines
+  question_ru: Какие лекарства и значимые вещества сейчас принимаются или недавно отменены?
+  data_type: medication_list
+  unit: null
+  allowed_values: []
+  required_when: 'для выбранного индивидуального результата: числовой операнд или явно проверяемое источниковое
+    ограничение'
+  show_when: при выборе результата или использовании уже подтверждённого в этом расчёте факта
+  why_needed: '§4.4 с.7–8,10 и §4.5 с.11–12: взаимодействия с угнетающими ЦНС средствами/опиоидами; не ИМАО-интервал
+    от другого препарата. Пустой и непроверенный список различаются.'
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; request this specific necessary fact; no individual dose
+  source_refs:
+  - RU-PREG
+  input_role: required_selected_result_operand_or_source_gate
+  source_locator: §4.4 с.7–8,10; §4.5 с.11–12
+  missing_states:
+  - unknown
+  - not_assessed
+  structure_ref: remediation_round3/input_contracts.yaml#structures/medication_list
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: always
+  necessity_reason: Выявление взаимодействий и интервалов после ИМАО; пустой список и непроверенный список различаются.
+  fact_origin: patient_fact
+- input_id: allergy
+  question_ru: Есть известная гиперчувствительность к препарату/компонентам?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: 'для выбранного индивидуального результата: числовой операнд или явно проверяемое источниковое
+    ограничение'
+  show_when: при выборе результата или использовании уже подтверждённого в этом расчёте факта
+  why_needed: Противопоказание.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; request this specific necessary fact; no individual dose
+  source_refs:
+  - RU-PREG
+  input_role: required_selected_result_operand_or_source_gate
+  source_locator: §4.3 с.6
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    да: true
+    нет: false
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  requirement_predicate:
+    kind: always
+  necessity_reason: Противопоказание.
+  fact_origin: patient_fact
+- input_id: clcr
+  question_ru: Подтверждённый врачом клиренс креатинина CLcr, мл/мин?
+  data_type: number
+  unit: mL/min
+  allowed_values: []
+  required_when: 'для выбранного индивидуального результата: числовой операнд или явно проверяемое источниковое
+    ограничение'
+  show_when: при выборе результата или использовании уже подтверждённого в этом расчёте факта
+  why_needed: Определяет строку почечной таблицы; eGFR с нормированием на площадь тела не подставлять.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; request this specific necessary fact; no individual dose
+  source_refs:
+  - RU-PREG
+  input_role: required_selected_result_operand_or_source_gate
+  source_locator: §4.2 с.4–5, таблица 1 с.5; формула с.4 не исполняется
+  missing_states:
+  - unknown
+  - not_assessed
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  metric: CLcr
+  method_context: clinician-confirmed CLcr; never indexed eGFR
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: always
+  necessity_reason: Определяет строку почечной таблицы; eGFR с нормированием на площадь тела не подставлять.
+  fact_origin: patient_fact
+- input_id: dialysis
+  question_ru: Проводится гемодиализ?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: 'для выбранного индивидуального результата: числовой операнд или явно проверяемое источниковое
+    ограничение'
+  show_when: при выборе результата или использовании уже подтверждённого в этом расчёте факта
+  why_needed: Дополнительная доза после сеанса; сложная ветка вне данного короткого расчёта.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; request this specific necessary fact; no individual dose
+  source_refs:
+  - RU-PREG
+  input_role: required_selected_result_operand_or_source_gate
+  source_locator: §4.2 с.4–5, таблица 1
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    да: true
+    нет: false
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  requirement_predicate:
+    kind: always
+  necessity_reason: Дополнительная доза после сеанса; сложная ветка вне данного короткого расчёта.
+  fact_origin: patient_fact
+- input_id: substance_use
+  question_ru: Зависимость/злоупотребление психоактивными веществами отмечены врачом?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  show_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы. Сохранить
+    источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт полного клинического
+    допуска.'
+  why_needed: 'Зависимость и злоупотребление: ограничение КР, не числовая поправка.'
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: insufficient_data only when exact predicate active; otherwise explicit not_assessed warning,
+    no clinical clearance
+  source_refs:
+  - RU-PREG
+  - RU-GAD
+  input_role: reported_context
+  source_locator: §4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    да: true
+    нет: false
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  required_for_individual_result: false
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  requirement_predicate:
+    kind: reported_context
+  necessity_reason: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  fact_origin: patient_fact
+- input_id: respiratory
+  question_ru: Дыхательная недостаточность/существенное нарушение дыхания отмечены врачом?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: 'для выбранного индивидуального результата: числовой операнд или явно проверяемое источниковое
+    ограничение'
+  show_when: при выборе результата или использовании уже подтверждённого в этом расчёте факта
+  why_needed: Риск угнетения дыхания, особенно с депрессантами ЦНС.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; request this specific necessary fact; no individual dose
+  source_refs:
+  - RU-PREG
+  input_role: required_selected_result_operand_or_source_gate
+  source_locator: §4.4 с.7–8
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    да: true
+    нет: false
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  requirement_predicate:
+    kind: always
+  necessity_reason: Риск угнетения дыхания, особенно с депрессантами ЦНС.
+  fact_origin: patient_fact
+- input_id: angioedema
+  question_ru: Подтверждённое значение angioedema по §4.4 с.6?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: Обязательно при уже начатой терапии данным препаратом (treatment_phase=ongoing). Выбор start/selected_mode
+    означает первую дозу; положительный сообщённый признак до первой дозы требует решения врача, а не прекращения
+    ещё не начатого препарата.
+  show_when: Обязательно при уже начатой терапии данным препаратом (treatment_phase=ongoing). Выбор start/selected_mode
+    означает первую дозу; положительный сообщённый признак до первой дозы требует решения врача, а не прекращения
+    ещё не начатого препарата.
+  why_needed: Изменяет допуск/действие по RU-PREG §4.4 с.6; не общий допуск врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data only when exact predicate active; otherwise explicit not_assessed warning,
+    no clinical clearance
+  source_refs:
+  - RU-PREG
+  source_locator: §4.4 с.6
+  required_for_individual_result: false
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: ongoing_selected_drug
+  input_role: ongoing_selected_drug
+  necessity_reason: Обязательно при уже начатой терапии данным препаратом (treatment_phase=ongoing). Выбор start/selected_mode
+    означает первую дозу; положительный сообщённый признак до первой дозы требует решения врача, а не прекращения
+    ещё не начатого препарата.
+  fact_origin: patient_fact
+- input_id: severe_skin_reaction
+  question_ru: Подтверждённое значение severe_skin_reaction по §4.4 с.6?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: Обязательно при уже начатой терапии данным препаратом (treatment_phase=ongoing). Выбор start/selected_mode
+    означает первую дозу; положительный сообщённый признак до первой дозы требует решения врача, а не прекращения
+    ещё не начатого препарата.
+  show_when: Обязательно при уже начатой терапии данным препаратом (treatment_phase=ongoing). Выбор start/selected_mode
+    означает первую дозу; положительный сообщённый признак до первой дозы требует решения врача, а не прекращения
+    ещё не начатого препарата.
+  why_needed: Изменяет допуск/действие по RU-PREG §4.4 с.6; не общий допуск врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data only when exact predicate active; otherwise explicit not_assessed warning,
+    no clinical clearance
+  source_refs:
+  - RU-PREG
+  source_locator: §4.4 с.6
+  required_for_individual_result: false
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: ongoing_selected_drug
+  input_role: ongoing_selected_drug
+  necessity_reason: Обязательно при уже начатой терапии данным препаратом (treatment_phase=ongoing). Выбор start/selected_mode
+    означает первую дозу; положительный сообщённый признак до первой дозы требует решения врача, а не прекращения
+    ещё не начатого препарата.
+  fact_origin: patient_fact
+- input_id: galactose_intolerance
+  question_ru: Подтверждённое значение galactose_intolerance по §4.4 с.10, вспомогательные вещества?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: 'для выбранного индивидуального результата: числовой операнд или явно проверяемое источниковое
+    ограничение'
+  show_when: при выборе результата или использовании уже подтверждённого в этом расчёте факта
+  why_needed: Изменяет допуск/действие по RU-PREG §4.4 с.10, вспомогательные вещества; не общий допуск врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; request this specific necessary fact; no individual dose
+  source_refs:
+  - RU-PREG
+  source_locator: §4.4 с.10, вспомогательные вещества
+  required_for_individual_result: true
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: always
+  input_role: required_selected_result_operand_or_source_gate
+  necessity_reason: Изменяет допуск/действие по RU-PREG §4.4 с.10, вспомогательные вещества; не общий допуск врача.
+  fact_origin: patient_fact
+- input_id: complete_lactase_deficiency
+  question_ru: Подтверждённое значение complete_lactase_deficiency по §4.4 с.10, вспомогательные вещества?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: 'для выбранного индивидуального результата: числовой операнд или явно проверяемое источниковое
+    ограничение'
+  show_when: при выборе результата или использовании уже подтверждённого в этом расчёте факта
+  why_needed: Изменяет допуск/действие по RU-PREG §4.4 с.10, вспомогательные вещества; не общий допуск врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; request this specific necessary fact; no individual dose
+  source_refs:
+  - RU-PREG
+  source_locator: §4.4 с.10, вспомогательные вещества
+  required_for_individual_result: true
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: always
+  input_role: required_selected_result_operand_or_source_gate
+  necessity_reason: Изменяет допуск/действие по RU-PREG §4.4 с.10, вспомогательные вещества; не общий допуск врача.
+  fact_origin: patient_fact
+- input_id: glucose_galactose_malabsorption
+  question_ru: Подтверждённое значение glucose_galactose_malabsorption по §4.4 с.10, вспомогательные вещества?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: 'для выбранного индивидуального результата: числовой операнд или явно проверяемое источниковое
+    ограничение'
+  show_when: при выборе результата или использовании уже подтверждённого в этом расчёте факта
+  why_needed: Изменяет допуск/действие по RU-PREG §4.4 с.10, вспомогательные вещества; не общий допуск врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; request this specific necessary fact; no individual dose
+  source_refs:
+  - RU-PREG
+  source_locator: §4.4 с.10, вспомогательные вещества
+  required_for_individual_result: true
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: always
+  input_role: required_selected_result_operand_or_source_gate
+  necessity_reason: Изменяет допуск/действие по RU-PREG §4.4 с.10, вспомогательные вещества; не общий допуск врача.
+  fact_origin: patient_fact
+- input_id: suicide_risk
+  question_ru: Подтверждённое значение suicide_risk по §4.4 с.8?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  show_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы. Сохранить
+    источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт полного клинического
+    допуска.'
+  why_needed: Изменяет допуск/действие по RU-PREG §4.4 с.8; не общий допуск врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data only when exact predicate active; otherwise explicit not_assessed warning,
+    no clinical clearance
+  source_refs:
+  - RU-PREG
+  source_locator: §4.4 с.8
+  required_for_individual_result: false
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: reported_context
+  input_role: reported_context
+  necessity_reason: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  fact_origin: patient_fact
+- input_id: heart_failure
+  question_ru: Подтверждённое значение heart_failure по §4.4 с.10?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  show_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы. Сохранить
+    источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт полного клинического
+    допуска.'
+  why_needed: Изменяет допуск/действие по RU-PREG §4.4 с.10; не общий допуск врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data only when exact predicate active; otherwise explicit not_assessed warning,
+    no clinical clearance
+  source_refs:
+  - RU-PREG
+  source_locator: §4.4 с.10
+  required_for_individual_result: false
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: reported_context
+  input_role: reported_context
+  necessity_reason: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  fact_origin: patient_fact
+- input_id: diabetes_weight_gain
+  question_ru: Подтверждённое значение diabetes_weight_gain по §4.4 с.6?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  show_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы. Сохранить
+    источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт полного клинического
+    допуска.'
+  why_needed: Изменяет допуск/действие по RU-PREG §4.4 с.6; не общий допуск врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data only when exact predicate active; otherwise explicit not_assessed warning,
+    no clinical clearance
+  source_refs:
+  - RU-PREG
+  source_locator: §4.4 с.6
+  required_for_individual_result: false
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: reported_context
+  input_role: reported_context
+  necessity_reason: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  fact_origin: patient_fact
+- input_id: misuse_risk_assessment
+  question_ru: Оценка риска неправильного применения, злоупотребления и зависимости по §4.4 завершена для выбранного
+    режима?
+  data_type: enum
+  unit: null
+  allowed_values:
+  - врач допускает выбранный режим
+  - требуется отдельное решение врача
+  required_when: Источниковая оценка конкретного риска до назначения. Не подтверждает остальные противопоказания;
+    исходные сведения не являются скрытыми операндами дозы. Неизвестная/незавершённая оценка блокирует индивидуальный
+    результат.
+  show_when: Источниковая оценка конкретного риска до назначения. Не подтверждает остальные противопоказания; исходные
+    сведения не являются скрытыми операндами дозы. Неизвестная/незавершённая оценка блокирует индивидуальный результат.
+  why_needed: Источниковая оценка конкретного риска до назначения. Не подтверждает остальные противопоказания; исходные
+    сведения не являются скрытыми операндами дозы. Неизвестная/незавершённая оценка блокирует индивидуальный результат.
+  changes:
+  - source_action_or_applicability
+  unknown_allowed: true
+  action_if_unknown: insufficient_data when active; explicit not_assessed when inactive
+  source_refs:
+  - RU-PREG
+  input_role: required_selected_result_operand_or_source_gate
+  source_locator: §4.4 с.8–9
+  required_for_individual_result: true
+  requirement_predicate:
+    kind: always
+  necessity_reason: Источниковая оценка конкретного риска до назначения. Не подтверждает остальные противопоказания;
+    исходные сведения не являются скрытыми операндами дозы. Неизвестная/незавершённая оценка блокирует индивидуальный
+    результат.
+  fact_origin: explicit physician fact for this calculation; no inference from other negative answers
+- input_id: reproductive_population
+  question_ru: Пациентка относится к женщинам репродуктивного возраста?
+  data_type: boolean
+  unit: null
+  allowed_values: []
+  required_when: Отдельный триггер требования контрацепции; не выводить из pregnancy=false или возраста без данных.
+  show_when: Отдельный триггер требования контрацепции; не выводить из pregnancy=false или возраста без данных.
+  why_needed: Отдельный триггер требования контрацепции; не выводить из pregnancy=false или возраста без данных.
+  changes:
+  - source_action_or_applicability
+  unknown_allowed: true
+  action_if_unknown: insufficient_data when active; explicit not_assessed when inactive
+  source_refs:
+  - RU-PREG
+  input_role: required_selected_result_operand_or_source_gate
+  source_locator: §4.4 с.9; §4.6 с.12
+  required_for_individual_result: true
+  requirement_predicate:
+    kind: always
+  necessity_reason: Отдельный триггер требования контрацепции; не выводить из pregnancy=false или возраста без данных.
+  fact_origin: explicit physician fact for this calculation; no inference from other negative answers
+- input_id: effective_contraception
+  question_ru: Используется эффективная контрацепция?
+  data_type: boolean
+  unit: null
+  allowed_values: []
+  required_when: Обязательно при reproductive_population=true; отрицательный/неизвестный ответ не разрешает обычный
+    индивидуальный старт.
+  show_when: Обязательно при reproductive_population=true; отрицательный/неизвестный ответ не разрешает обычный
+    индивидуальный старт.
+  why_needed: Обязательно при reproductive_population=true; отрицательный/неизвестный ответ не разрешает обычный
+    индивидуальный старт.
+  changes:
+  - source_action_or_applicability
+  unknown_allowed: true
+  action_if_unknown: insufficient_data when active; explicit not_assessed when inactive
+  source_refs:
+  - RU-PREG
+  input_role: field_true
+  source_locator: §4.6 с.12
+  required_for_individual_result: false
+  requirement_predicate:
+    kind: field_true
+    field: reproductive_population
+  necessity_reason: Обязательно при reproductive_population=true; отрицательный/неизвестный ответ не разрешает обычный
+    индивидуальный старт.
+  fact_origin: explicit physician fact for this calculation; no inference from other negative answers
+- input_id: current_suicidal_thoughts_or_behavior
+  question_ru: На текущей терапии прегабалином возникли суицидальные мысли или поведение?
+  data_type: boolean
+  unit: null
+  allowed_values: []
+  source_refs:
+  - RU-PREG
+  source_locator: §4.4 с.8
+  unknown_allowed: true
+  changes:
+  - source_clinician_action
+  requirement_predicate:
+    kind: reported_current_event
+  required_for_individual_result: false
+  input_role: reported_current_event
+  required_when: Not an unconditional required absence check; source event handling when explicitly reported
+  show_when: Если врач отдельно сообщает это текущее событие; фаза принимаемого A/B известна отдельно
+  why_needed: Обрабатывает отдельно сообщённое текущее источниковое событие при явном приёме соответствующего препарата.
+    Не универсальный обязательный скрининг и не отрицание события при отсутствии/unknown. Положительный известный
+    факт останавливает автоматический календарь и сохраняет опубликованный выбор врача; числовое снижение/немедленная
+    отмена не придуманы.
+  necessity_reason: Обрабатывает отдельно сообщённое текущее источниковое событие при явном приёме соответствующего
+    препарата. Не универсальный обязательный скрининг и не отрицание события при отсутствии/unknown. Положительный
+    известный факт останавливает автоматический календарь и сохраняет опубликованный выбор врача; числовое снижение/немедленная
+    отмена не придуманы.
+  action_if_unknown: Explicit not_assessed; no clinical clearance. A reported unknown current event needs clinician
+    assessment, not a confirmed negative or automatic calendar.
+  fact_origin: explicitly supplied current physician event, not hidden pre-screening
+clinical_parameters:
+- parameter_id: clcr_cutoffs
+  meaning: Границы таблицы
+  value:
+  - 15
+  - 30
+  - 60
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: mL/min
+  source_ref: RU-PREG
+  source_locator: табл.1 с.5
+  source_meaning: предписание
+  derivation: null
+- parameter_id: start_ge60
+  meaning: Старт CLcr ≥60
+  value: 150
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: mg/day
+  source_ref: RU-PREG
+  source_locator: табл.1 с.5
+  source_meaning: предписание
+  derivation: null
+- parameter_id: max_ge60
+  meaning: Максимум CLcr ≥60
+  value: 600
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: mg/day
+  source_ref: RU-PREG
+  source_locator: табл.1 с.5
+  source_meaning: предписание
+  derivation: null
+- parameter_id: start_30_60
+  meaning: Старт 30≤CLcr<60
+  value: 75
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: mg/day
+  source_ref: RU-PREG
+  source_locator: табл.1 с.5
+  source_meaning: предписание
+  derivation: null
+- parameter_id: max_30_60
+  meaning: Максимум 30≤CLcr<60
+  value: 300
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: mg/day
+  source_ref: RU-PREG
+  source_locator: табл.1 с.5
+  source_meaning: предписание
+  derivation: null
+- parameter_id: start_15_30
+  meaning: Старт 15≤CLcr<30
+  value: null
+  lower: 25
+  upper: 50
+  lower_inclusive: true
+  upper_inclusive: true
+  unit: mg/day
+  source_ref: RU-PREG
+  source_locator: табл.1 с.5
+  source_meaning: диапазон
+  derivation: null
+- parameter_id: max_15_30
+  meaning: Максимум 15≤CLcr<30
+  value: 150
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: mg/day
+  source_ref: RU-PREG
+  source_locator: табл.1 с.5
+  source_meaning: предписание
+  derivation: null
+- parameter_id: start_lt15
+  meaning: Старт CLcr<15
+  value: 25
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: mg/day
+  source_ref: RU-PREG
+  source_locator: табл.1 с.5
+  source_meaning: предписание
+  derivation: null
+- parameter_id: max_lt15
+  meaning: Максимум CLcr<15
+  value: 75
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: mg/day
+  source_ref: RU-PREG
+  source_locator: табл.1 с.5
+  source_meaning: предписание
+  derivation: null
+- parameter_id: freq_ge30
+  meaning: Кратность для CLcr≥30
+  value:
+  - 2
+  - 3
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: administration/day
+  source_ref: RU-PREG
+  source_locator: табл.1 с.5
+  source_meaning: выбор врача
+  derivation: null
+- parameter_id: freq_15_30
+  meaning: Кратность 15≤CLcr<30
+  value:
+  - 1
+  - 2
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: administration/day
+  source_ref: RU-PREG
+  source_locator: табл.1 с.5
+  source_meaning: выбор врача
+  derivation: null
+- parameter_id: freq_lt15
+  meaning: Кратность CLcr<15
+  value: 1
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: administration/day
+  source_ref: RU-PREG
+  source_locator: табл.1 с.5
+  source_meaning: предписание
+  derivation: null
+- parameter_id: adult_minimum
+  meaning: Нижняя возрастная граница этой инструкции
+  value: 18
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: year
+  source_ref: RU-PREG
+  source_locator: RU-PREG §4.1 с.3; §4.2–4.3 с.5–6
+  source_meaning: предписание
+  derivation: null
+- parameter_id: source_form_strengths
+  meaning: Силы дозы выбранной формы; не дозовая рекомендация
+  value:
+  - 25
+  - 50
+  - 75
+  - 100
+  - 150
+  - 200
+  - 300
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: mg
+  source_ref: RU-PREG
+  source_locator: 'Состав/описание: PDF с.1–2'
+  source_meaning: предписание
+  derivation: null
+logic:
+  representation: decision_table
+  conditions:
+  - Диагноз, препарат и режим выбрал врач. Соответствие популяции/форме и ограничения источника подтверждены.
+  - CLcr ≥0, числовой, подтверждён врачом; нет гемодиализа. Отрицательные значения/ошибки единиц не клиническая
+    строка таблицы.
+  actions:
+  - clcr_lower: 60
+    lower_inclusive: true
+    clcr_upper: null
+    start_ref: start_ge60
+    max_ref: max_ge60
+    frequency_ref: freq_ge30
+  - clcr_lower: 30
+    lower_inclusive: true
+    clcr_upper: 60
+    upper_inclusive: false
+    start_ref: start_30_60
+    max_ref: max_30_60
+    frequency_ref: freq_ge30
+  - clcr_lower: 15
+    lower_inclusive: true
+    clcr_upper: 30
+    upper_inclusive: false
+    start_ref: start_15_30
+    max_ref: max_15_30
+    frequency_ref: freq_15_30
+  - clcr_lower: 0
+    lower_inclusive: true
+    clcr_upper: 15
+    upper_inclusive: false
+    start_ref: start_lt15
+    max_ref: max_lt15
+    frequency_ref: freq_lt15
+  parameter_refs:
+  - clcr_cutoffs
+  - start_ge60
+  - max_ge60
+  - start_30_60
+  - max_30_60
+  - start_15_30
+  - max_15_30
+  - start_lt15
+  - max_lt15
+  - freq_ge30
+  - freq_15_30
+  - freq_lt15
+  - adult_minimum
+  - source_form_strengths
+  source_refs:
+  - RU-PREG
+  clinician_choices:
+  - Старт внутри опубликованного диапазона, если он дан
+  - Кратность из допустимого перечня
+  - Способ набора/перехода между начальной и максимальной дозой при нарушенной функции почек; точных недельных ступеней
+    таблица не задаёт
+  missing_data_behaviour: Назвать обязательные неизвестные поля; результат insufficient_data. Справочные этапы можно
+    показать как условные, без безусловной дозы пациенту.
+  unsupported_case_behaviour: not_applicable для этой карточки; указать конкретную отсутствующую ветку, не запретить
+    всё лечение.
+  contraindicated_case_behaviour: Не выдавать дозовую схему противопоказанного сочетания; отобразить источник и
+    причину.
+  conflicts:
+  - Российская формула с.4 содержит единицы, отличные от EMA. Использовать готовый подтверждённый CLcr; встроенный
+    расчёт по этой формуле исключён.
+  composite_rule_dependencies: []
+  combination_justification: Самостоятельные поправки не перемножаются. Совпадение числа не подтверждает применимость
+    их сочетания.
+  result_contract_ref: remediation_round3/result_contracts.yaml#rules/preg-renal-start
+  individual_output_gate: All required typed inputs and applicable conditional inputs must be known; evaluate every
+    source-specific gate in result_contract. A caution has clinician_choice, not an invented coefficient. No blanket
+    clinical clearance.
+  input_necessity_policy_ref: remediation_round3/necessity_decisions.json#preg-renal-start
+  form_evidence_policy:
+    source_ref: RU-PREG
+    source_locator: §1–3 с.1–2; §4.2 с.3–6
+    source_claim: Registered capsule strengths and oral administration are confirmed. A categorical source prohibition
+      on opening/splitting is not claimed.
+    model_policy: Only confirmed whole registered units are used to establish dose feasibility. Fractional/opened
+      capsule dose is not source-confirmed and is not automatically produced or rounded.
+output:
+  result_type: branch_selected
+  medication_inn: прегабалин
+  dose_per_administration: null
+  administrations_per_day: null
+  total_daily_dose: null
+  unit: mg
+  formulation: 'Лирика: капсулы; 25/50/75/100/150/200/300 мг'
+  schedule: []
+  warnings:
+  - Условная схема источника, не автономное назначение. Максимум не является целью.
+  - Подтвердить противопоказания и взаимодействия исходной инструкции.
+  - Числовой вывод относится к указанным дозовым условиям. Неоценённые модулем клинические обстоятельства не считаются
+    отсутствующими; полный клинический допуск врач оценивает отдельно.
+  mandatory_checks:
+  - Проверить соответствие источнику, указанное в applicability и inputs.
+  clinician_decisions_remaining:
+  - Подтверждение применимости
+  - Решение о переходе к следующему этапу
+  rounding_or_formulation_rule: Старт 75 мг/сут делить на 3 приёма по 25 мг можно; равные 2 приёма по 37,5 мг этими
+    капсулами не исполнимы. Для 25–50 мг/сут и кратности 1/2 показать диапазон и проверить выбранный вариант; не
+    подменять диапазон автоматически 25 мг. Не открывать/делить капсулу для округления.
+  source_refs:
+  - RU-PREG
+  branches:
+  - branch_id: ge60
+    when: CLcr>=60; no dialysis
+    expected_output:
+      result_type: clinician_choice
+      total_daily_dose_mg: null
+      dose_per_administration_mg: null
+      administrations_per_day: null
+      schedule: []
+      missing_fields: []
+      unconditional_future_stages: false
+      source_start_mg: 150
+      maximum_mg: 600
+      frequency_options:
+      - 2
+      - 3
+      auto_selected_range_endpoint: null
+      source_interval_for_renal_titration: null
+      form_feasibility: each physician selected dose/frequency must be realizable with whole identified capsules
+    source_basis:
+    - source_id: RU-GAD
+      version: '2024; каталог: опубликовано 19.09.2024, применяется'
+      locator: §3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78
+      sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+    - source_id: RU-PREG
+      version: 'Официальная ОХЛП реестра: штамп регистрации 2025-08-13; экспертный отчёт 2024-01-26 №1319/0011;
+        получена 08.10.2026'
+      locator: §4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4
+      sha256: b605c8b381c24d59a48bbab9bfa8621eb70f6ec16ad9e3679aa8457f811663e5
+  - branch_id: '30_60'
+    when: 30<=CLcr<60; no dialysis
+    expected_output:
+      result_type: clinician_choice
+      total_daily_dose_mg: null
+      dose_per_administration_mg: null
+      administrations_per_day: null
+      schedule: []
+      missing_fields: []
+      unconditional_future_stages: false
+      source_start_mg: 75
+      maximum_mg: 300
+      frequency_options:
+      - 2
+      - 3
+      auto_selected_range_endpoint: null
+      source_interval_for_renal_titration: null
+      form_feasibility: each physician selected dose/frequency must be realizable with whole identified capsules
+    source_basis:
+    - source_id: RU-GAD
+      version: '2024; каталог: опубликовано 19.09.2024, применяется'
+      locator: §3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78
+      sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+    - source_id: RU-PREG
+      version: 'Официальная ОХЛП реестра: штамп регистрации 2025-08-13; экспертный отчёт 2024-01-26 №1319/0011;
+        получена 08.10.2026'
+      locator: §4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4
+      sha256: b605c8b381c24d59a48bbab9bfa8621eb70f6ec16ad9e3679aa8457f811663e5
+  - branch_id: '15_30'
+    when: 15<=CLcr<30; no dialysis
+    expected_output:
+      result_type: clinician_choice
+      total_daily_dose_mg: null
+      dose_per_administration_mg: null
+      administrations_per_day: null
+      schedule: []
+      missing_fields: []
+      unconditional_future_stages: false
+      source_start_mg:
+      - 25
+      - 50
+      maximum_mg: 150
+      frequency_options:
+      - 1
+      - 2
+      auto_selected_range_endpoint: null
+      source_interval_for_renal_titration: null
+      form_feasibility: each physician selected dose/frequency must be realizable with whole identified capsules
+    source_basis:
+    - source_id: RU-GAD
+      version: '2024; каталог: опубликовано 19.09.2024, применяется'
+      locator: §3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78
+      sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+    - source_id: RU-PREG
+      version: 'Официальная ОХЛП реестра: штамп регистрации 2025-08-13; экспертный отчёт 2024-01-26 №1319/0011;
+        получена 08.10.2026'
+      locator: §4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4
+      sha256: b605c8b381c24d59a48bbab9bfa8621eb70f6ec16ad9e3679aa8457f811663e5
+  - branch_id: lt15
+    when: 0<=CLcr<15; no dialysis
+    expected_output:
+      result_type: clinician_choice
+      total_daily_dose_mg: null
+      dose_per_administration_mg: null
+      administrations_per_day: null
+      schedule: []
+      missing_fields: []
+      unconditional_future_stages: false
+      source_start_mg: 25
+      maximum_mg: 75
+      frequency_options:
+      - 1
+      auto_selected_range_endpoint: null
+      source_interval_for_renal_titration: null
+      form_feasibility: each physician selected dose/frequency must be realizable with whole identified capsules
+    source_basis:
+    - source_id: RU-GAD
+      version: '2024; каталог: опубликовано 19.09.2024, применяется'
+      locator: §3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78
+      sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+    - source_id: RU-PREG
+      version: 'Официальная ОХЛП реестра: штамп регистрации 2025-08-13; экспертный отчёт 2024-01-26 №1319/0011;
+        получена 08.10.2026'
+      locator: §4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4
+      sha256: b605c8b381c24d59a48bbab9bfa8621eb70f6ec16ad9e3679aa8457f811663e5
+  selection_contract:
+  - unavailable_source
+  - known immediate stop/exclusion
+  - invalid/missing applicable field
+  - unresolved source caution/modifier
+  - dose branch
+sources:
+- source_id: RU-GAD
+  title: Генерализованное тревожное расстройство, КР 457_3
+  organization_or_authors: Минздрав РФ; Российское общество психиатров
+  url: https://apicr.minzdrav.gov.ru/api.ashx?id=457_3&op=GetClinrecPdf
+  doi_or_registry_id: '457_3'
+  publication_date: null
+  version_or_update_date: '2024; каталог: опубликовано 19.09.2024, применяется'
+  accessed_on: '2026-10-08'
+  source_type: guideline
+  jurisdiction: RU
+  access_status: full
+  exact_locator: §3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78
+  evidence_status: Клиническая рекомендация; не валидация калькулятора
+  what_was_tested: Не исследовался создаваемый продукт. Содержание и ограничения описаны в evidence_limitations.
+  evidence_limitations: Взрослые F41.1. УУР/УДД относятся к конкретным рекомендациям, а не к точности индивидуального
+    дозирования.
+  reuse_license_or_restriction: Открытый доступ не означает разрешение перераспространять полный документ. Сохранены
+    собственное извлечение фактических правил, локаторы и ссылки; код и большие цитаты не копируются.
+  document_fingerprint:
+    source_id: RU-GAD
+    url: https://apicr.minzdrav.gov.ru/api.ashx?id=457_3&op=GetClinrecPdf
+    sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+    pages: 121
+  local_file: audit/retrieved/RU-GAD.pdf
+  document_copies:
+  - source_id: RU-GAD
+    local_file: audit/retrieved/RU-GAD.pdf
+    sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+    version: '2024; каталог: опубликовано 19.09.2024, применяется'
+    url: https://apicr.minzdrav.gov.ru/api.ashx?id=457_3&op=GetClinrecPdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: false
+  - source_id: RU-GAD
+    local_file: remediation/retrieved/RU-GAD.pdf
+    sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+    version: '2024; каталог: опубликовано 19.09.2024, применяется'
+    url: https://apicr.minzdrav.gov.ru/api.ashx?id=457_3&op=GetClinrecPdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: false
+  dates:
+    registration: null
+    revision: null
+    publication: null
+    download: '2026-10-08'
+  latest_registration_revision_confirmed: false
+  current_guideline_status_evidence: remediation_round2/catalog_check.json; 08.10.2026; CodeVersion/ApplyStatusCalculated=1
+- source_id: RU-PREG
+  title: Лирика (прегабалин), ОХЛП ЕАЭС, капсулы
+  organization_or_authors: Viatris / держатель регистрационного удостоверения
+  url: https://lk.regmed.ru/Register/EAEU_SmPC
+  doi_or_registry_id: ЛП-№(004450)-(РГ-RU)
+  publication_date: null
+  version_or_update_date: 'Официальная ОХЛП реестра: штамп регистрации 2025-08-13; экспертный отчёт 2024-01-26 №1319/0011;
+    получена 08.10.2026'
+  accessed_on: '2026-10-08'
+  source_type: label
+  jurisdiction: RU/EAEU
+  access_status: full
+  exact_locator: §4.1–4.2 с.2–5; §4.3–4.4 с.6–11; §4.5–4.6 с.11–13; формула с.4, таблица со сносками с.5
+  evidence_status: Инструкция/ОХЛП; не валидированная модель индивидуальной дозы
+  what_was_tested: Не исследовался создаваемый продукт. Содержание и ограничения описаны в evidence_limitations.
+  evidence_limitations: Не приравнивать имя файла к дате клинического обновления. ГРЛС не сверён. В знаменателе
+    формулы напечатано ммоль/л при коэффициенте 1,23; конфликт с EMA µmol/L. В калькулятор формулу РФ не переносить
+    до официального уточнения. Новая первичная копия получена из указанной строки реестра; старые копии сохранены
+    как исторические. Даты штампов не подменяют незаполненное поле пересмотра. Принадлежность версии и медицинский
+    перенос проверяются раздельно.
+  reuse_license_or_restriction: Открытый доступ не означает разрешение перераспространять полный документ. Сохранены
+    собственное извлечение фактических правил, локаторы и ссылки; код и большие цитаты не копируются.
+  document_fingerprint:
+    source_id: RU-PREG
+    url: https://lk.regmed.ru/Register/EAEU_SmPC
+    sha256: b605c8b381c24d59a48bbab9bfa8621eb70f6ec16ad9e3679aa8457f811663e5
+    pages: 30
+    accessed_on: '2026-10-08'
+  registry_observation:
+    registry: https://lk.regmed.ru/Register/EAEU_SmPC
+    query: Лирика
+    registration_number: ЛП-№(004450)-(РГ-RU)
+    registration_date: '2024-01-30'
+    forms: капсулы25/50/75/100/150/200/300мг
+    accessed_on: '2026-10-08'
+    read_part: Exact RU/form row observed in official registry; user downloaded after CAPTCHA request; matching
+      title/form and stamps visually checked
+  local_file: remediation_round3/originals/RU-PREG_current.pdf
+  document_copies:
+  - source_id: RU-PREG
+    local_file: source_downloads/Лирика — прегабалин.pdf
+    sha256: 1fcd653e7f3b6bf5b26b3276d0bce97880e74bf345bb69755a275bf8f7117083
+    version: Файл 13.08.2025; внутри штамп 26.01.2024 №1319, последовательность 0011
+    url: https://www.viatris.ru/-/media/project/common/viatrisru/pdf/product-catalog/lyrica_eaeu_smpc_13-aug-2025_ru.pdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: false
+    latest_registration_revision_confirmed: false
+  - source_id: RU-PREG
+    local_file: audit/retrieved/RU-PREG.pdf
+    sha256: 1fcd653e7f3b6bf5b26b3276d0bce97880e74bf345bb69755a275bf8f7117083
+    version: Файл 13.08.2025; внутри штамп 26.01.2024 №1319, последовательность 0011
+    url: https://www.viatris.ru/-/media/project/common/viatrisru/pdf/product-catalog/lyrica_eaeu_smpc_13-aug-2025_ru.pdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: false
+    latest_registration_revision_confirmed: false
+  - source_id: RU-PREG
+    local_file: remediation/retrieved/RU-PREG.pdf
+    sha256: 1fcd653e7f3b6bf5b26b3276d0bce97880e74bf345bb69755a275bf8f7117083
+    version: Файл 13.08.2025; внутри штамп 26.01.2024 №1319, последовательность 0011
+    url: https://www.viatris.ru/-/media/project/common/viatrisru/pdf/product-catalog/lyrica_eaeu_smpc_13-aug-2025_ru.pdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: false
+    latest_registration_revision_confirmed: false
+  - source_id: RU-PREG
+    local_file: remediation_round3/originals/RU-PREG_current.pdf
+    sha256: b605c8b381c24d59a48bbab9bfa8621eb70f6ec16ad9e3679aa8457f811663e5
+    version: 'Официальная ОХЛП реестра: штамп регистрации 2025-08-13; экспертный отчёт 2024-01-26 №1319/0011; получена
+      08.10.2026'
+    url: https://lk.regmed.ru/Register/EAEU_SmPC
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: true
+  dates:
+    registration: '2024-01-30'
+    revision: null
+    publication: null
+    download: '2026-10-08'
+    document_registration_stamp: '2025-08-13'
+    expert_report: '2024-01-26'
+  latest_registration_revision_confirmed: true
+  latest_registry_document_comparison:
+    record: remediation_round3/current_registry_documents.json#RU-PREG
+    original: remediation_round3/originals/RU-PREG_current.pdf
+    sha256: b605c8b381c24d59a48bbab9bfa8621eb70f6ec16ad9e3679aa8457f811663e5
+    authority_evidence: Exact RU/form row observed in official registry; user downloaded after CAPTCHA request;
+      matching title/form and stamps visually checked
+    comparison_scope: Listed primary sections and dependency review; no inference of byte identity to historical
+      copies
+  own_read_scope:
+    text_pages:
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - 11
+    - 12
+    - 13
+    - 30
+    visual_pages:
+    - 1
+    - 3
+    - 4
+    - 5
+    remaining_sections_not_claimed_read: true
+verification:
+  primary_source_checked: true
+  all_clinical_parameters_have_sources: true
+  population_and_indication_checked: true
+  russian_applicability_checked: true
+  formulation_feasibility_checked: true
+  combined_rules_justified: false
+  source_transfer_check: Current exact Russian product originals obtained and active owner/version/hash/locators
+    synchronized; listed primary sections reviewed. Full independent medical acceptance and question necessity remain
+    separate; calculator_not_implemented.
+  clinical_review: not_performed
+  product_clinical_validation: not_performed
+  ready_for_technical_implementation: true
+  unresolved_items:
+  - Минимальность входов/полные обычные пути и повторная независимая проверка медицинских исправлений остаются отдельными
+    условиями приёмки V2.
+  transfer_scope: Explicit source-bound branch contracts and prepared expectations only. Current originals obtained;
+    pending independent findings, result-specific necessity and V2 ordinary-question limit are not inferred complete
+    from download. No clinical validation.
+  round3_status: candidate_primary_transfer_and_necessity_review; independent acceptance pending
+  russian_applicability_scope: Identity of the exact registered Russian product/form and published indication scope;
+    does not grant patient clearance or prove every transferred condition.
+test_cases:
+- case_id: preg-renal-start__renal-at30
+  synthetic: true
+  given:
+    clcr: 30
+    dialysis: false
+  expected:
+    start_total_daily_mg: 75
+    max_total_daily_mg: 300
+    published_frequencies:
+    - 2
+    - 3
+    whole_capsule_equal_division:
+      3_times_mg: 25
+      2_times_mg: null
+  source_refs:
+  - RU-PREG
+  note: Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены.
+  scope: isolated_source_transfer_expectation_under_card_conditions
+  case_kind: parameter_or_constraint_fragment
+- case_id: preg-renal-start__renal-at15
+  synthetic: true
+  given:
+    clcr: 15
+    dialysis: false
+  expected:
+    start_total_daily_range_mg:
+    - 25
+    - 50
+    max_total_daily_mg: 150
+    published_frequencies:
+    - 1
+    - 2
+    automatic_choice: null
+  source_refs:
+  - RU-PREG
+  note: Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены.
+  scope: isolated_source_transfer_expectation_under_card_conditions
+  case_kind: parameter_or_constraint_fragment
+- case_id: preg-renal-start__renal-below15
+  synthetic: true
+  given:
+    clcr: 14
+    dialysis: false
+  expected:
+    start_total_daily_mg: 25
+    max_total_daily_mg: 75
+    frequency: 1
+  source_refs:
+  - RU-PREG
+  note: Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены.
+  scope: isolated_source_transfer_expectation_under_card_conditions
+  case_kind: parameter_or_constraint_fragment
+- case_id: preg-renal-start__renal-unit-error
+  synthetic: true
+  given:
+    eGFR: 30
+    unit: mL/min/1.73m2
+  expected:
+    result_type: insufficient_data
+    missing:
+    - confirmed_clcr_mL_per_min
+    automatic_substitution: false
+  source_refs:
+  - RU-PREG
+  note: Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены.
+  case_kind: parameter_or_constraint_fragment
+- case_id: preg-renal-start__renal-hd
+  synthetic: true
+  given:
+    clcr: 14
+    dialysis: true
+  expected:
+    result_type: not_applicable
+    reason: Отдельная диализная схема; обычная строка недостаточна
+  source_refs:
+  - RU-PREG
+  note: Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены.
+  case_kind: parameter_or_constraint_fragment
+- case_id: preg-renal-start__clcr-negative
+  synthetic: true
+  given:
+    clcr: -1
+    unit: mL/min
+  expected:
+    result_type: insufficient_data
+    reason: Недопустимое значение показателя
+    renal_row_selected: null
+  source_refs:
+  - RU-PREG
+  note: Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены.
+  case_kind: parameter_or_constraint_fragment
+- case_id: preg-renal-start__clcr-unit-invalid
+  synthetic: true
+  given:
+    clcr: 30
+    unit: mmol/L
+  expected:
+    result_type: insufficient_data
+    reason: Таблица требует CLcr в мл/мин
+  source_refs:
+  - RU-PREG
+  note: Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены.
+  case_kind: parameter_or_constraint_fragment
+profile:
+  country: RU
+  selection_status: RU_profile_research
+  foreign_fallback_allowed: false
+card_type: numeric_source_rule
+input_contract_ref: remediation_round3/input_contracts.yaml#fragment_bindings/preg-renal-start

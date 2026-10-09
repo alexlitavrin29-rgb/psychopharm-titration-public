@@ -1,0 +1,268 @@
+[
+  {
+    "rule_id": "ago-depression-start",
+    "clinical_input_entries": 10,
+    "initial_selections": 3,
+    "all_catalog_fields_count": 13,
+    "count_meaning": "Каталог всех полей, включая условные; число реального пути в question_flows.yaml."
+  },
+  {
+    "rule_id": "ago-gad-start",
+    "clinical_input_entries": 10,
+    "initial_selections": 3,
+    "all_catalog_fields_count": 13,
+    "count_meaning": "Каталог всех полей, включая условные; число реального пути в question_flows.yaml."
+  },
+  {
+    "rule_id": "ago-stop",
+    "clinical_input_entries": 2,
+    "initial_selections": 3,
+    "all_catalog_fields_count": 5,
+    "count_meaning": "Каталог всех полей, включая условные; число реального пути в question_flows.yaml."
+  },
+  {
+    "rule_id": "dulox-depression-start",
+    "clinical_input_entries": 12,
+    "initial_selections": 3,
+    "all_catalog_fields_count": 15,
+    "count_meaning": "Каталог всех полей, включая условные; число реального пути в question_flows.yaml."
+  },
+  {
+    "rule_id": "dulox-gad-adjust",
+    "clinical_input_entries": 15,
+    "initial_selections": 3,
+    "all_catalog_fields_count": 18,
+    "count_meaning": "Каталог всех полей, включая условные; число реального пути в question_flows.yaml."
+  },
+  {
+    "rule_id": "dulox-gad-start",
+    "clinical_input_entries": 12,
+    "initial_selections": 3,
+    "all_catalog_fields_count": 15,
+    "count_meaning": "Каталог всех полей, включая условные; число реального пути в question_flows.yaml."
+  },
+  {
+    "rule_id": "dulox-taper-limit",
+    "clinical_input_entries": 6,
+    "initial_selections": 3,
+    "all_catalog_fields_count": 9,
+    "count_meaning": "Каталог всех полей, включая условные; число реального пути в question_flows.yaml."
+  },
+  {
+    "rule_id": "esc-adult-adjust",
+    "clinical_input_entries": 23,
+    "initial_selections": 3,
+    "all_catalog_fields_count": 26,
+    "count_meaning": "Каталог всех полей, включая условные; число реального пути в question_flows.yaml."
+  },
+  {
+    "rule_id": "esc-cyp2c19-start",
+    "clinical_input_entries": 17,
+    "initial_selections": 3,
+    "all_catalog_fields_count": 20,
+    "count_meaning": "Каталог всех полей, включая условные; число реального пути в question_flows.yaml."
+  },
+  {
+    "rule_id": "esc-elderly-start",
+    "clinical_input_entries": 17,
+    "initial_selections": 3,
+    "all_catalog_fields_count": 20,
+    "count_meaning": "Каталог всех полей, включая условные; число реального пути в question_flows.yaml."
+  },
+  {
+    "rule_id": "esc-gad-start",
+    "clinical_input_entries": 17,
+    "initial_selections": 3,
+    "all_catalog_fields_count": 20,
+    "count_meaning": "Каталог всех полей, включая условные; число реального пути в question_flows.yaml."
+  },
+  {
+    "rule_id": "esc-hepatic-start",
+    "clinical_input_entries": 17,
+    "initial_selections": 3,
+    "all_catalog_fields_count": 20,
+    "count_meaning": "Каталог всех полей, включая условные; число реального пути в question_flows.yaml."
+  },
+  {
+    "rule_id": "esc-panic-start",
+    "clinical_input_entries": 17,
+    "initial_selections": 3,
+    "all_catalog_fields_count": 20,
+    "count_meaning": "Каталог всех полей, включая условные; число реального пути в question_flows.yaml."
+  },
+  {
+    "rule_id": "esc-social-start",
+    "clinical_input_entries": 17,
+    "initial_selections": 3,
+    "all_catalog_fields_count": 20,
+    "count_meaning": "Каталог всех полей, включая условные; число реального пути в question_flows.yaml."
+  },
+  {
+    "rule_id": "esc-taper-limit",
+    "clinical_input_entries": 21,
+    "initial_selections": 3,
+    "all_catalog_fields_count": 24,
+    "count_meaning": "Каталог всех полей, включая условные; число реального пути в question_flows.yaml."
+  },
+  {
+    "rule_id": "fluvox-depression-start",
+    "clinical_input_entries": 11,
+    "initial_selections": 3,
+    "all_catalog_fields_count": 14,
+    "count_meaning": "Каталог всех полей, включая условные; число реального пути в question_flows.yaml."
+  },
+  {
+    "rule_id": "fluvox-taper-limit",
+    "clinical_input_entries": 6,
+    "initial_selections": 3,
+    "all_catalog_fields_count": 9,
+    "count_meaning": "Каталог всех полей, включая условные; число реального пути в question_flows.yaml."
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "clinical_input_entries": 12,
+    "initial_selections": 3,
+    "all_catalog_fields_count": 15,
+    "count_meaning": "Каталог всех полей, включая условные; число реального пути в question_flows.yaml."
+  },
+  {
+    "rule_id": "parox-taper-example",
+    "clinical_input_entries": 7,
+    "initial_selections": 3,
+    "all_catalog_fields_count": 10,
+    "count_meaning": "Каталог всех полей, включая условные; число реального пути в question_flows.yaml."
+  },
+  {
+    "rule_id": "phen-taper-limit",
+    "clinical_input_entries": 6,
+    "initial_selections": 3,
+    "all_catalog_fields_count": 9,
+    "count_meaning": "Каталог всех полей, включая условные; число реального пути в question_flows.yaml."
+  },
+  {
+    "rule_id": "preg-gad-adjust",
+    "clinical_input_entries": 16,
+    "initial_selections": 3,
+    "all_catalog_fields_count": 19,
+    "count_meaning": "Каталог всех полей, включая условные; число реального пути в question_flows.yaml."
+  },
+  {
+    "rule_id": "preg-gad-start",
+    "clinical_input_entries": 11,
+    "initial_selections": 3,
+    "all_catalog_fields_count": 14,
+    "count_meaning": "Каталог всех полей, включая условные; число реального пути в question_flows.yaml."
+  },
+  {
+    "rule_id": "preg-renal-start",
+    "clinical_input_entries": 10,
+    "initial_selections": 3,
+    "all_catalog_fields_count": 13,
+    "count_meaning": "Каталог всех полей, включая условные; число реального пути в question_flows.yaml."
+  },
+  {
+    "rule_id": "preg-taper-limit",
+    "clinical_input_entries": 14,
+    "initial_selections": 3,
+    "all_catalog_fields_count": 17,
+    "count_meaning": "Каталог всех полей, включая условные; число реального пути в question_flows.yaml."
+  },
+  {
+    "rule_id": "ser-adult-adjust",
+    "clinical_input_entries": 20,
+    "initial_selections": 3,
+    "all_catalog_fields_count": 23,
+    "count_meaning": "Каталог всех полей, включая условные; число реального пути в question_flows.yaml."
+  },
+  {
+    "rule_id": "ser-panic-start",
+    "clinical_input_entries": 13,
+    "initial_selections": 3,
+    "all_catalog_fields_count": 16,
+    "count_meaning": "Каталог всех полей, включая условные; число реального пути в question_flows.yaml."
+  },
+  {
+    "rule_id": "ser-social-start",
+    "clinical_input_entries": 13,
+    "initial_selections": 3,
+    "all_catalog_fields_count": 16,
+    "count_meaning": "Каталог всех полей, включая условные; число реального пути в question_flows.yaml."
+  },
+  {
+    "rule_id": "ser-taper-limit",
+    "clinical_input_entries": 17,
+    "initial_selections": 3,
+    "all_catalog_fields_count": 20,
+    "count_meaning": "Каталог всех полей, включая условные; число реального пути в question_flows.yaml."
+  },
+  {
+    "rule_id": "switch-esc-ago",
+    "clinical_input_entries": 13,
+    "initial_selections": 4,
+    "all_catalog_fields_count": 17,
+    "count_meaning": "Каталог всех полей, включая условные; число реального пути в question_flows.yaml."
+  },
+  {
+    "rule_id": "switch-esc-ser",
+    "clinical_input_entries": 8,
+    "initial_selections": 4,
+    "all_catalog_fields_count": 12,
+    "count_meaning": "Каталог всех полей, включая условные; число реального пути в question_flows.yaml."
+  },
+  {
+    "rule_id": "switch-parox-ago-selected-example",
+    "clinical_input_entries": 16,
+    "initial_selections": 4,
+    "all_catalog_fields_count": 20,
+    "count_meaning": "Каталог всех полей, включая условные; число реального пути в question_flows.yaml."
+  },
+  {
+    "rule_id": "switch-parox-ago",
+    "clinical_input_entries": 13,
+    "initial_selections": 4,
+    "all_catalog_fields_count": 17,
+    "count_meaning": "Каталог всех полей, включая условные; число реального пути в question_flows.yaml."
+  },
+  {
+    "rule_id": "switch-ser-ago",
+    "clinical_input_entries": 13,
+    "initial_selections": 4,
+    "all_catalog_fields_count": 17,
+    "count_meaning": "Каталог всех полей, включая условные; число реального пути в question_flows.yaml."
+  },
+  {
+    "rule_id": "switch-ser-esc",
+    "clinical_input_entries": 8,
+    "initial_selections": 4,
+    "all_catalog_fields_count": 12,
+    "count_meaning": "Каталог всех полей, включая условные; число реального пути в question_flows.yaml."
+  },
+  {
+    "rule_id": "venla-xr-gad-start",
+    "clinical_input_entries": 8,
+    "initial_selections": 3,
+    "all_catalog_fields_count": 11,
+    "count_meaning": "Каталог всех полей, включая условные; число реального пути в question_flows.yaml."
+  },
+  {
+    "rule_id": "venla-xr-panic-form-limit",
+    "clinical_input_entries": 8,
+    "initial_selections": 3,
+    "all_catalog_fields_count": 11,
+    "count_meaning": "Каталог всех полей, включая условные; число реального пути в question_flows.yaml."
+  },
+  {
+    "rule_id": "venla-xr-social-start",
+    "clinical_input_entries": 8,
+    "initial_selections": 3,
+    "all_catalog_fields_count": 11,
+    "count_meaning": "Каталог всех полей, включая условные; число реального пути в question_flows.yaml."
+  },
+  {
+    "rule_id": "venla-xr-taper-limit",
+    "clinical_input_entries": 6,
+    "initial_selections": 3,
+    "all_catalog_fields_count": 9,
+    "count_meaning": "Каталог всех полей, включая условные; число реального пути в question_flows.yaml."
+  }
+]

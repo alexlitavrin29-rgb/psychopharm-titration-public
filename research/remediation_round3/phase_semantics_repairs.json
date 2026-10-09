@@ -1,0 +1,108 @@
+{
+  "changed_fixtures": [
+    {
+      "case_id": "phen-taper-limit--r3-unusual_reactions-positive",
+      "old": "selected_mode",
+      "new": "ongoing",
+      "reason": "Synthetic positive source-action fixture now explicitly supplies current A use; separate counted fact, no inference from requested mode"
+    },
+    {
+      "case_id": "fluvox-taper-limit--audit-v2-serotonin_syndrome_signs-positive",
+      "old": "selected_mode",
+      "new": "ongoing",
+      "reason": "Synthetic positive source-action fixture now explicitly supplies current A use; separate counted fact, no inference from requested mode"
+    },
+    {
+      "case_id": "fluvox-taper-limit--audit-v2-new_or_increased_seizures-positive",
+      "old": "selected_mode",
+      "new": "ongoing",
+      "reason": "Synthetic positive source-action fixture now explicitly supplies current A use; separate counted fact, no inference from requested mode"
+    },
+    {
+      "case_id": "fluvox-taper-limit--audit-v2-liver_injury_signs-positive",
+      "old": "selected_mode",
+      "new": "ongoing",
+      "reason": "Synthetic positive source-action fixture now explicitly supplies current A use; separate counted fact, no inference from requested mode"
+    },
+    {
+      "case_id": "fluvox-taper-limit--audit-v2-mania_symptoms-positive",
+      "old": "selected_mode",
+      "new": "ongoing",
+      "reason": "Synthetic positive source-action fixture now explicitly supplies current A use; separate counted fact, no inference from requested mode"
+    },
+    {
+      "case_id": "venla-xr-taper-limit--audit-v2-diastolic_BP-positive",
+      "old": "selected_mode",
+      "new": "ongoing",
+      "reason": "Synthetic positive source-action fixture now explicitly supplies current A use; separate counted fact, no inference from requested mode"
+    },
+    {
+      "case_id": "venla-xr-taper-limit--audit-v2-current_allergic_reaction-positive",
+      "old": "selected_mode",
+      "new": "ongoing",
+      "reason": "Synthetic positive source-action fixture now explicitly supplies current A use; separate counted fact, no inference from requested mode"
+    },
+    {
+      "case_id": "ser-taper-limit--audit-recheck-symptomatic_hyponatremia-positive",
+      "old": "selected_mode",
+      "new": "ongoing",
+      "reason": "Synthetic positive source-action fixture now explicitly supplies current A use; separate counted fact, no inference from requested mode"
+    },
+    {
+      "case_id": "preg-taper-limit--audit-recheck-current_suicidal_thoughts_or_behavior-positive",
+      "old": "selected_mode",
+      "new": "ongoing",
+      "reason": "Synthetic positive source-action fixture now explicitly supplies current A use; separate counted fact, no inference from requested mode"
+    },
+    {
+      "case_id": "dulox-taper-limit--audit-recheck-persistent_BP_increase-positive",
+      "old": "selected_mode",
+      "new": "ongoing",
+      "reason": "Synthetic positive source-action fixture now explicitly supplies current A use; separate counted fact, no inference from requested mode"
+    },
+    {
+      "case_id": "venla-xr-taper-limit--audit-recheck-suspected_serotonin_syndrome-positive",
+      "old": "selected_mode",
+      "new": "ongoing",
+      "reason": "Synthetic positive source-action fixture now explicitly supplies current A use; separate counted fact, no inference from requested mode"
+    }
+  ],
+  "new_counter_fixtures": 194,
+  "scope": "Explicit actor evidence, actual consumed dose provenance and honest phase counts; no new medical dose or source action",
+  "removed_redundant_counterfixtures": [
+    "ago-stop--current_dose-omitted--audit-final-A-phase-unknown",
+    "ago-stop--current_dose-omitted--audit-final-A-phase-not_started",
+    "ago-stop--current_dose-unknown--audit-final-A-phase-unknown",
+    "ago-stop--current_dose-unknown--audit-final-A-phase-not_started",
+    "ago-stop--current_dose-not_assessed--audit-final-A-phase-unknown",
+    "ago-stop--current_dose-not_assessed--audit-final-A-phase-not_started",
+    "ago-stop--clinician_action-omitted--audit-final-A-phase-unknown",
+    "ago-stop--clinician_action-omitted--audit-final-A-phase-not_started",
+    "ago-stop--clinician_action-unknown--audit-final-A-phase-unknown",
+    "ago-stop--clinician_action-unknown--audit-final-A-phase-not_started",
+    "ago-stop--clinician_action-not_assessed--audit-final-A-phase-unknown",
+    "ago-stop--clinician_action-not_assessed--audit-final-A-phase-not_started",
+    "ago-stop--confirmed-negative-fields--audit-final-A-phase-unknown",
+    "ago-stop--confirmed-negative-fields--audit-final-A-phase-not_started",
+    "switch-esc-ago--round2-A-active-mania-True--audit-final-A-phase-unknown",
+    "switch-esc-ago--round2-A-active-mania-True--audit-final-A-phase-not_started",
+    "ser-panic-start--audit-recheck-symptomatic_hyponatremia-positive--audit-final-A-phase-unknown",
+    "ser-panic-start--audit-recheck-symptomatic_hyponatremia-positive--audit-final-A-phase-not_started",
+    "ser-social-start--audit-recheck-symptomatic_hyponatremia-positive--audit-final-A-phase-unknown",
+    "ser-social-start--audit-recheck-symptomatic_hyponatremia-positive--audit-final-A-phase-not_started",
+    "preg-gad-start--audit-recheck-current_suicidal_thoughts_or_behavior-positive--audit-final-A-phase-unknown",
+    "preg-gad-start--audit-recheck-current_suicidal_thoughts_or_behavior-positive--audit-final-A-phase-not_started",
+    "preg-renal-start--audit-recheck-current_suicidal_thoughts_or_behavior-positive--audit-final-A-phase-unknown",
+    "preg-renal-start--audit-recheck-current_suicidal_thoughts_or_behavior-positive--audit-final-A-phase-not_started",
+    "dulox-depression-start--audit-recheck-persistent_BP_increase-positive--audit-final-A-phase-unknown",
+    "dulox-depression-start--audit-recheck-persistent_BP_increase-positive--audit-final-A-phase-not_started",
+    "dulox-gad-start--audit-recheck-persistent_BP_increase-positive--audit-final-A-phase-unknown",
+    "dulox-gad-start--audit-recheck-persistent_BP_increase-positive--audit-final-A-phase-not_started",
+    "venla-xr-gad-start--audit-recheck-suspected_serotonin_syndrome-positive--audit-final-A-phase-unknown",
+    "venla-xr-gad-start--audit-recheck-suspected_serotonin_syndrome-positive--audit-final-A-phase-not_started",
+    "venla-xr-panic-form-limit--audit-recheck-suspected_serotonin_syndrome-positive--audit-final-A-phase-unknown",
+    "venla-xr-panic-form-limit--audit-recheck-suspected_serotonin_syndrome-positive--audit-final-A-phase-not_started",
+    "venla-xr-social-start--audit-recheck-suspected_serotonin_syndrome-positive--audit-final-A-phase-unknown",
+    "venla-xr-social-start--audit-recheck-suspected_serotonin_syndrome-positive--audit-final-A-phase-not_started"
+  ]
+}

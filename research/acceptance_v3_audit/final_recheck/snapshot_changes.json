@@ -1,0 +1,171 @@
+{
+  "old_snapshot": "b13033a0687a28b4da4299c171ac6b88a96667e2d6888ab8aecf5e9c85af0514",
+  "new_snapshot": "27ef14e77185b7b104d43199664a5b1ca42b73dd8b09f921ee539e97fae971f8",
+  "changed_or_new": [
+    {
+      "path": "research/remediation_round3/result_contracts.yaml",
+      "sha256": "3cfdf62cdc9a3912b020dc23f31edb98b7011c1684ea0518c9de74a7466f1c90"
+    },
+    {
+      "path": "research/remediation_round3/full_scenarios.json",
+      "sha256": "b23bc5a553e2d218c2854f074613e832f49d5881b99f5bce5af756f057edd38f"
+    },
+    {
+      "path": "research/remediation_round3/necessity_decisions.json",
+      "sha256": "5fd3c1b93fd25d354528be7795e50fe5a35e034c8a28bf9dbbdf96638259d7e9"
+    },
+    {
+      "path": "research/remediation_round3/question_graphs.yaml",
+      "sha256": "756c85071b349e2dbab49492b9587dbf93d12be8643654a7c787d14f016a53c3"
+    },
+    {
+      "path": "research/remediation_round3/actual_question_paths.json",
+      "sha256": "d82f57b486ef60b3c0c4be810cf555714f6ea61310dcb0471f55e24378592c28"
+    },
+    {
+      "path": "research/remediation_round3/input_necessity.csv",
+      "sha256": "be07c5a580eeae7168ef674ba84350e8d4051ee5b0ded45b68ccfb3f7e30d18d"
+    },
+    {
+      "path": "research/remediation_round3/verify_contracts.py",
+      "sha256": "73548d3d34d5b1e4cbdec69dece5bde5bf7a15a81aaf9552bbe8ddd271b3bfb5"
+    },
+    {
+      "path": "research/remediation_round3/verify_new_negative_checks.py",
+      "sha256": "ddd693f0541f959ba679e431956dda602a88826dd7645a4d194d1464cc741c1a"
+    },
+    {
+      "path": "research/remediation_round3/verify_audit_repairs.py",
+      "sha256": "2f3c90ac1616edf2608e6216c115e4eb37722b68ca49fa071a9563978a620511"
+    },
+    {
+      "path": "research/remediation_round3/build_graphs.py",
+      "sha256": "3e7cae7c631d44134f8b74b098737b0a8b1ed86d004e5484836b417769ab3475"
+    },
+    {
+      "path": "research/remediation_round3/README.md",
+      "sha256": "911db9b36fad3f82a6e2d244d71f5412bdf97b8e44951c4870ac3f52b27c044e"
+    },
+    {
+      "path": "research/remediation_round3/rules/dulox-taper-limit.yaml",
+      "sha256": "5bf0668c8dd1e65dc20b1f064c88c5df3e4ba1274e55c06f20548970d3637ed7"
+    },
+    {
+      "path": "research/remediation_round3/rules/esc-taper-limit.yaml",
+      "sha256": "b064b3071d02a8591e17af319e61bb0b883efc567c74c2d33be2a9d3e9780b6e"
+    },
+    {
+      "path": "research/remediation_round3/rules/fluvox-taper-limit.yaml",
+      "sha256": "27c517858228c162a8ab5116422d04ba1c54dd7171347115d0c6c995f9c6ea8a"
+    },
+    {
+      "path": "research/remediation_round3/rules/ser-taper-limit.yaml",
+      "sha256": "fb93de5d7c488e9c2007ccae6b91e6b7552cb64008005931f46f2a6900dca4da"
+    },
+    {
+      "path": "research/remediation_round3/rules/venla-xr-taper-limit.yaml",
+      "sha256": "5e93e000fd15fe51bf891fa32ee3291d7dd38bf3c41baa66440e814b2b6aa6f3"
+    },
+    {
+      "path": "research/input_catalog.csv",
+      "sha256": "ed02ad8da3cd45fddaca55f30363f30c13cf4c0477d9c5d581866806e3d4ccd0"
+    },
+    {
+      "path": "research/question_flows.yaml",
+      "sha256": "eeec3d4a1981783b99105771d38d6ef35dcd1ac917139554cb522be233ce61f6"
+    },
+    {
+      "path": "research/rules/dulox-taper-limit.yaml",
+      "sha256": "5bf0668c8dd1e65dc20b1f064c88c5df3e4ba1274e55c06f20548970d3637ed7"
+    },
+    {
+      "path": "research/rules/esc-taper-limit.yaml",
+      "sha256": "b064b3071d02a8591e17af319e61bb0b883efc567c74c2d33be2a9d3e9780b6e"
+    },
+    {
+      "path": "research/rules/fluvox-taper-limit.yaml",
+      "sha256": "27c517858228c162a8ab5116422d04ba1c54dd7171347115d0c6c995f9c6ea8a"
+    },
+    {
+      "path": "research/rules/ser-taper-limit.yaml",
+      "sha256": "fb93de5d7c488e9c2007ccae6b91e6b7552cb64008005931f46f2a6900dca4da"
+    },
+    {
+      "path": "research/rules/venla-xr-taper-limit.yaml",
+      "sha256": "5e93e000fd15fe51bf891fa32ee3291d7dd38bf3c41baa66440e814b2b6aa6f3"
+    },
+    {
+      "path": "research/remediation_round3/necessity_evidence.json",
+      "sha256": "f217466c7fae92fa1868e200ccdfcc057ef3d6f3d18925c743c36f01d3317113"
+    },
+    {
+      "path": "research/remediation_round3/necessity_result_policy.md",
+      "sha256": "609cc31c0b3616fd1de2def1fe4381ac7333ec70a2e4aee40fb900fd4316660c"
+    },
+    {
+      "path": "research/remediation_round3/current_candidate_metrics.json",
+      "sha256": "205b50d235275b68b1eb65b1b6d3803dbb47c226e85f062731b428659d0f617a"
+    },
+    {
+      "path": "research/remediation_round3/bounded_source_exclusions.py",
+      "sha256": "f794eaa32775dd88c9995ae4687cb276a0d45305c1774f200e373b0a47bbc18f"
+    },
+    {
+      "path": "research/remediation_round3/bounded_unselected_example.py",
+      "sha256": "b552345716264823ed9c8c5a931ecd7783018ac9c993c3b23da735feb55f1f96"
+    },
+    {
+      "path": "research/remediation_round3/verify_result_scopes.py",
+      "sha256": "3b54161d447cf07e806ff51ea2802747a48dd2ef2a6185f8e68fdcf2c92c47a9"
+    },
+    {
+      "path": "research/remediation_round3/source_exclusion_scope_repairs.json",
+      "sha256": "82f1632bd2aa3ee413198af0ee8eeef113ee49670e060d66bb29a4930c832af8"
+    },
+    {
+      "path": "research/remediation_round3/taper_reference_scope_repairs.json",
+      "sha256": "5e6dd135f774067cad4946f5869cf5040fdcfc0dcb1990efb8717f2611b5fc41"
+    },
+    {
+      "path": "research/remediation_round3/unselected_example_scope_repairs.json",
+      "sha256": "dba45da332b79794180ee01243a2a43e0b5458b238304d9437429079cd3be579"
+    },
+    {
+      "path": "research/remediation_round3/source_choice_scope_repairs.json",
+      "sha256": "cb54beb3bfcfa8f3b12fab9979dd7d2a4efb9bb5de06334a537e85b75de13c70"
+    },
+    {
+      "path": "research/remediation_round3/remaining_terminal_scope_repairs.json",
+      "sha256": "cbbbf62da0488bf1e7c003f2e3f3092f6a02cea79bc0b4fb99bcf916bbdf02f0"
+    },
+    {
+      "path": "research/remediation_round3/terminal_certificate_alignment.json",
+      "sha256": "9ff7137d420373d640cce71ef6f473832f546020ed3e4c8140abf199f6729342"
+    },
+    {
+      "path": "research/remediation_round3/v3_completion_response.md",
+      "sha256": "867cf2faa0694be8588e8db1bdc1300c9826258e6eb2d4c3baef8eda4ecccf3b"
+    },
+    {
+      "path": "research/verify_negative_checks.py",
+      "sha256": "7106c3bc28f43a87dc4e5445d008f041401da51e3946767ad6073bc84238fabf"
+    },
+    {
+      "path": "research/00_summary.md",
+      "sha256": "1852eb4fcbe0e83493d9635cf775cf91bf02b977ac3c0e20242e338857757711"
+    },
+    {
+      "path": "research/01_scope_and_sources.md",
+      "sha256": "fb0a16ceca624d78da207341c0ecd063fb8100eeba4d607d83bc5b067462cb7f"
+    },
+    {
+      "path": "research/02_rules.md",
+      "sha256": "5bc38c898161b11830284bf35f58fd6c50f043146dfca9cc2e125dd370badae1"
+    },
+    {
+      "path": "research/08_russian_priority_update.md",
+      "sha256": "eb37d20ee8fa6b1720098dcb154925f79b46deac03aa90e5e21fa366d433ac10"
+    }
+  ],
+  "removed": []
+}

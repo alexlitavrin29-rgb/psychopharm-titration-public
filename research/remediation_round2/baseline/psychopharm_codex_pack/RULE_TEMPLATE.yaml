@@ -1,0 +1,144 @@
+# Карточка извлечённого правила. Формат данных, НЕ медицинская модель.
+# Здесь намеренно нет клинических чисел и исполняемой логики.
+# null означает отсутствие извлечённого значения, а не 0/норму/отсутствие риска.
+# Создавайте отдельную карточку для каждого применимого сценария.
+# Все границы, коэффициенты, дозы, сроки и правила выбора должны иметь provenance.
+
+schema_version: "1.0"
+rule_id: null
+development_status: template_not_executable
+language: ru
+
+identity:
+  title: null
+  mode: null # start | adjust | taper | switch | candidates
+  drug_inn: null
+  from_drug_inn: null # Для переключения направление обязательно.
+  to_drug_inn: null
+  formulation: null
+  route: null
+  diagnosis_label_ru: null
+  classification_system: null
+  diagnosis_code: null
+  jurisdiction: null
+
+applicability:
+  population_description: null
+  age_constraints: [] # Каждая граница с единицей и source_ref.
+  pregnancy: null # Не выводить разрешение/запрет из пустого поля.
+  lactation: null
+  renal_constraints: []
+  hepatic_constraints: []
+  comorbidity_constraints: []
+  interacting_drugs: []
+  other_conditions: []
+  exclusions: []
+  indication_status_in_russia: not_verified
+  source_refs: []
+
+inputs:
+  - input_id: null
+    question_ru: null
+    data_type: null
+    unit: null
+    allowed_values: []
+    required_when: null
+    show_when: null
+    why_needed: null
+    changes: [] # dose | interval | applicability | warning | display
+    unknown_allowed: null
+    action_if_unknown: null
+    source_refs: []
+
+# Перечень ВСЕХ медицинских чисел, используемых карточкой.
+clinical_parameters:
+  - parameter_id: null
+    meaning: null
+    value: null
+    lower: null
+    upper: null
+    lower_inclusive: null
+    upper_inclusive: null
+    unit: null
+    source_ref: null
+    source_locator: null
+    source_meaning: null # предписание | диапазон | пример | выбор врача
+    derivation: null # Только прозрачное вычисление по опубликованному правилу.
+
+logic:
+  representation: null # decision_table | schedule | source_formula | narrative_only
+  conditions: []
+  actions: []
+  parameter_refs: []
+  source_refs: []
+  clinician_choices: [] # Не подставлять произвольный выбор за врача.
+  missing_data_behaviour: null
+  unsupported_case_behaviour: null
+  contraindicated_case_behaviour: null
+  conflicts: []
+  composite_rule_dependencies: [] # Если собирается несколько исходных правил.
+  combination_justification: null # Не перемножать поправки автоматически.
+
+output:
+  result_type: null # exact | range | clinician_choice | insufficient_data | not_applicable
+  medication_inn: null
+  dose_per_administration: null
+  administrations_per_day: null
+  total_daily_dose: null
+  unit: null
+  formulation: null
+  schedule:
+    - stage_id: null
+      time_description: null
+      minimum_interval: null
+      interval_unit: null
+      medication_steps:
+        - medication_inn: null
+          dose_per_administration: null
+          administrations_per_day: null
+          total_daily_dose: null
+          dose_unit: null
+          action: null
+          source_refs: []
+      condition_to_proceed: null
+      condition_to_hold: null
+      source_refs: []
+  warnings: []
+  mandatory_checks: []
+  clinician_decisions_remaining: []
+  rounding_or_formulation_rule: null
+  source_refs: []
+
+sources:
+  - source_id: null
+    title: null
+    organization_or_authors: null
+    url: null
+    doi_or_registry_id: null
+    publication_date: null
+    version_or_update_date: null
+    accessed_on: null
+    source_type: null # label | guideline | expert_protocol | primary_study
+    jurisdiction: null
+    access_status: not_checked # full | partial | abstract_only | unavailable
+    exact_locator: null
+    evidence_status: null # Не заменять «guideline» словом «validated».
+    what_was_tested: null
+    evidence_limitations: null
+    reuse_license_or_restriction: null
+
+verification:
+  primary_source_checked: false
+  all_clinical_parameters_have_sources: false
+  population_and_indication_checked: false
+  russian_applicability_checked: false
+  formulation_feasibility_checked: false
+  combined_rules_justified: false
+  source_transfer_check: not_performed
+  clinical_review: not_performed
+  product_clinical_validation: not_performed
+  ready_for_technical_implementation: false
+  unresolved_items: []
+
+# Только синтетические случаи. Не реальные персональные медицинские данные.
+test_cases: []

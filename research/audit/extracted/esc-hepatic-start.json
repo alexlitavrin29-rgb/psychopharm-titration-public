@@ -1,0 +1,717 @@
+{
+  "schema_version": "1.0",
+  "rule_id": "esc-hepatic-start",
+  "development_status": "extracted_research_not_executable",
+  "language": "ru",
+  "identity": {
+    "title": "Эсциталопрам при ГТР: Сниженная функция печени",
+    "mode": "start",
+    "drug_inn": "эсциталопрам",
+    "from_drug_inn": null,
+    "to_drug_inn": null,
+    "formulation": "Селектра: таблетки, покрытые плёночной оболочкой; 5/10/15/20 мг; 10/15/20 делятся на равные дозы (§3 с.1–2)",
+    "route": "oral",
+    "diagnosis_label_ru": "Генерализованное тревожное расстройство",
+    "classification_system": "МКБ-10",
+    "diagnosis_code": "F41.1",
+    "jurisdiction": "RU_registry_original_2025-11-05"
+  },
+  "applicability": {
+    "population_description": "Взрослые. Только подтверждённые условия этой карточки; другие популяции не получают масштабированную взрослую дозу.",
+    "age_constraints": [
+      {
+        "minimum": 18,
+        "inclusive": true,
+        "unit": "year",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.1 с.2; §4.2 с.3"
+      }
+    ],
+    "pregnancy": "Решение по применимости/пользе и риску отдельно; без опубликованной числовой поправки. Стандартная карточка не выдаёт автоматическую дозу при беременности.",
+    "lactation": "Проверять отдельные ограничения источника. Стандартная карточка не выдаёт автоматическую дозу при кормлении.",
+    "renal_constraints": [
+      "КК >30 мл/мин: коррекция не требуется. КК <=30 мл/мин: осторожность, точное уменьшение не задано (§4.2, PDF с.3)."
+    ],
+    "hepatic_constraints": [
+      "Лёгкая/средняя недостаточность, классы A/B Чайлд–Пью: 5 мг/сут первые две недели, затем по реакции до 10 мг. Тяжёлая C: пристальный контроль врача, без самостоятельного числового переноса (§4.2 с.3)."
+    ],
+    "comorbidity_constraints": [
+      "Мания/гипомания, судороги/неконтролируемая эпилепсия, суицидальный риск, акатизия, риск кровотечения, гипонатремии и удлинения QT: ограничения/наблюдение по инструкции; числовых множителей для них нет. Для эсциталопрама дополнительно диабет и закрытоугольная глаукома."
+    ],
+    "interacting_drugs": [],
+    "other_conditions": [],
+    "exclusions": [
+      "Гиперчувствительность",
+      "Непроверенные противопоказания/взаимодействия не считать отсутствующими"
+    ],
+    "indication_status_in_russia": "RU_registry_original_indication_confirmed",
+    "source_refs": [
+      "RU-ESC"
+    ]
+  },
+  "inputs": [
+    {
+      "input_id": "age",
+      "question_ru": "Возраст пациента, полных лет?",
+      "data_type": "integer",
+      "unit": "year",
+      "allowed_values": [],
+      "required_when": "для индивидуального результата",
+      "show_when": "при выборе этой карточки",
+      "why_needed": "Возрастная применимость; для эсциталопрама особая пожилая ветка, для прегабалина возраст не заменяет CLcr.",
+      "changes": [
+        "applicability"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать условно.",
+      "source_refs": [
+        "RU-ESC"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "form",
+      "question_ru": "Какая конкретная форма и сила дозы используются?",
+      "data_type": "structured_form",
+      "unit": null,
+      "allowed_values": [],
+      "required_when": "для индивидуального результата",
+      "show_when": "при выборе этой карточки",
+      "why_needed": "Исполнимость дозы и запрет произвольного деления форм.",
+      "changes": [
+        "applicability"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать условно.",
+      "source_refs": [
+        "RU-ESC"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "pregnancy",
+      "question_ru": "Беременность установлена или возможна?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [
+        "да",
+        "нет",
+        "неизвестно"
+      ],
+      "required_when": "для индивидуального результата",
+      "show_when": "при выборе этой карточки",
+      "why_needed": "Отдельное решение о пользе и риске; числовой коэффициент не опубликован.",
+      "changes": [
+        "applicability"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать условно.",
+      "source_refs": [
+        "RU-ESC"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "lactation",
+      "question_ru": "Есть грудное вскармливание?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [
+        "да",
+        "нет",
+        "неизвестно"
+      ],
+      "required_when": "для индивидуального результата",
+      "show_when": "при выборе этой карточки",
+      "why_needed": "Ограничение инструкции, решение врача; не уменьшение дозы по выдуманному коэффициенту.",
+      "changes": [
+        "applicability"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать условно.",
+      "source_refs": [
+        "RU-ESC"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "medicines",
+      "question_ru": "Какие лекарства и значимые вещества сейчас принимаются или недавно отменены?",
+      "data_type": "medication_list",
+      "unit": null,
+      "allowed_values": [],
+      "required_when": "для индивидуального результата",
+      "show_when": "при выборе этой карточки",
+      "why_needed": "Выявление взаимодействий и интервалов после ИМАО; пустой список и непроверенный список различаются.",
+      "changes": [
+        "applicability"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать условно.",
+      "source_refs": [
+        "RU-ESC"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "allergy",
+      "question_ru": "Есть известная гиперчувствительность к препарату/компонентам?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [
+        "да",
+        "нет",
+        "неизвестно"
+      ],
+      "required_when": "для индивидуального результата",
+      "show_when": "при выборе этой карточки",
+      "why_needed": "Противопоказание.",
+      "changes": [
+        "applicability"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать условно.",
+      "source_refs": [
+        "RU-ESC"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "hepatic",
+      "question_ru": "Как врач характеризует функцию печени: нарушения не известны, нарушена, тяжёлое нарушение, неизвестно?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [
+        "нарушения не известны после оценки",
+        "нарушена",
+        "тяжёлое нарушение",
+        "неизвестно"
+      ],
+      "required_when": "для индивидуального результата",
+      "show_when": "при выборе этой карточки",
+      "why_needed": "Выбор отдельного дозового правила; не вычислять степень по одному анализу.",
+      "changes": [
+        "applicability"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать условно.",
+      "source_refs": [
+        "RU-ESC"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "mania",
+      "question_ru": "Имеется мания/гипомания или её появление отмечено врачом?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [
+        "да",
+        "нет",
+        "неизвестно"
+      ],
+      "required_when": "при известном соответствующем обстоятельстве/выявленном взаимодействии; для его клинического разбора",
+      "show_when": "врач сообщил обстоятельство или выявлено релевантное взаимодействие",
+      "why_needed": "Ограничение/пересмотр терапии; диагноз врача не перепроверяется.",
+      "changes": [
+        "applicability"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Сохранить not_assessed/неизвестно; не считать отсутствием риска. Дозовый модуль не подтверждает полный клинический допуск. При необходимости разбора — расширенная ветка.",
+      "source_refs": [
+        "RU-ESC"
+      ],
+      "input_role": "conditional_clinical_context"
+    },
+    {
+      "input_id": "seizure_state",
+      "question_ru": "Эпилепсия/судороги: отсутствуют по оценке, контролируемые, неконтролируемые, неизвестно?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [
+        "не отмечены",
+        "контролируемые",
+        "неконтролируемые",
+        "неизвестно"
+      ],
+      "required_when": "при известном соответствующем обстоятельстве/выявленном взаимодействии; для его клинического разбора",
+      "show_when": "врач сообщил обстоятельство или выявлено релевантное взаимодействие",
+      "why_needed": "Осторожность/неприменимость короткой ветки.",
+      "changes": [
+        "applicability"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Сохранить not_assessed/неизвестно; не считать отсутствием риска. Дозовый модуль не подтверждает полный клинический допуск. При необходимости разбора — расширенная ветка.",
+      "source_refs": [
+        "RU-ESC"
+      ],
+      "input_role": "conditional_clinical_context"
+    },
+    {
+      "input_id": "known_cyp2c19",
+      "question_ru": "Уже известно о слабой активности CYP2C19?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [
+        "известная слабая активность",
+        "другой известный результат",
+        "не исследовано",
+        "неизвестно"
+      ],
+      "required_when": "если фенотип уже известен; исследование не обязательно",
+      "show_when": "если врач предоставляет уже известный низкий CYP2C19",
+      "why_needed": "Только известный результат открывает отдельную ветку; тест всем не требуется.",
+      "changes": [
+        "applicability"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Сохранить не исследовано/неизвестно; не объявлять нормальным фенотипом и не требовать генетическое исследование всем.",
+      "source_refs": [
+        "RU-ESC"
+      ],
+      "input_role": "conditional_dose_modifier"
+    },
+    {
+      "input_id": "renal",
+      "question_ru": "Известно выраженное нарушение функции почек? Если да, каков подтверждённый CLcr?",
+      "data_type": "structured_renal",
+      "unit": null,
+      "allowed_values": [],
+      "required_when": "при известном нарушении почек или необходимости его оценки",
+      "show_when": "врач сообщил известное нарушение/сомнение о функции почек",
+      "why_needed": "При выраженном нарушении — осторожность; точной числовой поправки нет.",
+      "changes": [
+        "applicability"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Не считать нормой; числовой почечной поправки в источнике нет. При клинической необходимости уточнить КК отдельно; при <=30 осторожность.",
+      "source_refs": [
+        "RU-ESC"
+      ],
+      "input_role": "conditional_clinical_context"
+    },
+    {
+      "input_id": "qt_risk",
+      "question_ru": "Известен врачу риск удлинения QT/аритмии?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [
+        "да",
+        "нет",
+        "неизвестно"
+      ],
+      "required_when": "при известном соответствующем обстоятельстве/выявленном взаимодействии; для его клинического разбора",
+      "show_when": "врач сообщил обстоятельство или выявлено релевантное взаимодействие",
+      "why_needed": "Требует отдельной оценки; нет опубликованного коэффициента дозы.",
+      "changes": [
+        "applicability",
+        "warning"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Сохранить not_assessed/неизвестно; не считать отсутствием риска. Дозовый модуль не подтверждает полный клинический допуск. При необходимости разбора — расширенная ветка.",
+      "source_refs": [
+        "RU-ESC"
+      ],
+      "input_role": "conditional_clinical_context"
+    },
+    {
+      "input_id": "bleeding_risk",
+      "question_ru": "Известна склонность к кровотечениям?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [
+        "да",
+        "нет",
+        "неизвестно"
+      ],
+      "required_when": "при известном соответствующем обстоятельстве/выявленном взаимодействии; для его клинического разбора",
+      "show_when": "врач сообщил обстоятельство или выявлено релевантное взаимодействие",
+      "why_needed": "Взаимодействия/наблюдение; не автоматическое уменьшение дозы.",
+      "changes": [
+        "applicability",
+        "warning"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Сохранить not_assessed/неизвестно; не считать отсутствием риска. Дозовый модуль не подтверждает полный клинический допуск. При необходимости разбора — расширенная ветка.",
+      "source_refs": [
+        "RU-ESC"
+      ],
+      "input_role": "conditional_clinical_context"
+    },
+    {
+      "input_id": "hyponatremia_risk",
+      "question_ru": "Известны врачу гипонатремия или её повышенный риск?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [
+        "да",
+        "нет",
+        "неизвестно"
+      ],
+      "required_when": "при известном соответствующем обстоятельстве/выявленном взаимодействии; для его клинического разбора",
+      "show_when": "врач сообщил обстоятельство или выявлено релевантное взаимодействие",
+      "why_needed": "Осторожность, особенно при соответствующих препаратах/возрасте; лаборатория не обязательна всем.",
+      "changes": [
+        "applicability",
+        "warning"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Сохранить not_assessed/неизвестно; не считать отсутствием риска. Дозовый модуль не подтверждает полный клинический допуск. При необходимости разбора — расширенная ветка.",
+      "source_refs": [
+        "RU-ESC"
+      ],
+      "input_role": "conditional_clinical_context"
+    },
+    {
+      "input_id": "suicide_risk",
+      "question_ru": "Выраженный суицидальный риск отмечен врачом?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [
+        "да",
+        "нет",
+        "неизвестно"
+      ],
+      "required_when": "при известном соответствующем обстоятельстве/выявленном взаимодействии; для его клинического разбора",
+      "show_when": "врач сообщил обстоятельство или выявлено релевантное взаимодействие",
+      "why_needed": "Изменяет необходимое наблюдение и условия ведения, не числовую формулу.",
+      "changes": [
+        "applicability",
+        "warning"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Сохранить not_assessed/неизвестно; не считать отсутствием риска. Дозовый модуль не подтверждает полный клинический допуск. При необходимости разбора — расширенная ветка.",
+      "source_refs": [
+        "RU-ESC"
+      ],
+      "input_role": "conditional_clinical_context"
+    },
+    {
+      "input_id": "diabetes",
+      "question_ru": "Сахарный диабет отмечен врачом?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [
+        "да",
+        "нет",
+        "неизвестно"
+      ],
+      "required_when": "при известном соответствующем обстоятельстве/выявленном взаимодействии; для его клинического разбора",
+      "show_when": "врач сообщил обстоятельство или выявлено релевантное взаимодействие",
+      "why_needed": "Осторожность/возможная коррекция сахароснижающей терапии, не коэффициент эсциталопрама.",
+      "changes": [
+        "warning"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Сохранить not_assessed/неизвестно; не считать отсутствием риска. Дозовый модуль не подтверждает полный клинический допуск. При необходимости разбора — расширенная ветка.",
+      "source_refs": [
+        "RU-ESC"
+      ],
+      "input_role": "conditional_clinical_context"
+    },
+    {
+      "input_id": "glaucoma",
+      "question_ru": "Закрытоугольная глаукома/её анамнез отмечены врачом?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [
+        "да",
+        "нет",
+        "неизвестно"
+      ],
+      "required_when": "при известном соответствующем обстоятельстве/выявленном взаимодействии; для его клинического разбора",
+      "show_when": "врач сообщил обстоятельство или выявлено релевантное взаимодействие",
+      "why_needed": "Осторожность по инструкции, не дозовая поправка.",
+      "changes": [
+        "applicability",
+        "warning"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Сохранить not_assessed/неизвестно; не считать отсутствием риска. Дозовый модуль не подтверждает полный клинический допуск. При необходимости разбора — расширенная ветка.",
+      "source_refs": [
+        "RU-ESC"
+      ],
+      "input_role": "conditional_clinical_context"
+    }
+  ],
+  "clinical_parameters": [
+    {
+      "parameter_id": "start",
+      "meaning": "Начальная суточная доза",
+      "value": 5,
+      "lower": null,
+      "upper": null,
+      "lower_inclusive": null,
+      "upper_inclusive": null,
+      "unit": "mg/day",
+      "source_ref": "RU-ESC",
+      "source_locator": "§4.2, PDF с.2–3",
+      "source_meaning": "предписание",
+      "derivation": null
+    },
+    {
+      "parameter_id": "after",
+      "meaning": "Более высокая доза по ответу; для пожилых также максимум",
+      "value": 10,
+      "lower": null,
+      "upper": null,
+      "lower_inclusive": null,
+      "upper_inclusive": null,
+      "unit": "mg/day",
+      "source_ref": "RU-ESC",
+      "source_locator": "§4.2, PDF с.2–3",
+      "source_meaning": "предписание",
+      "derivation": null
+    },
+    {
+      "parameter_id": "frequency",
+      "meaning": "Кратность",
+      "value": 1,
+      "lower": null,
+      "upper": null,
+      "lower_inclusive": null,
+      "upper_inclusive": null,
+      "unit": "administration/day",
+      "source_ref": "RU-ESC",
+      "source_locator": "§4.2, PDF с.2–3",
+      "source_meaning": "предписание",
+      "derivation": null
+    },
+    {
+      "parameter_id": "interval",
+      "meaning": "Первые две недели на стартовой дозе",
+      "value": 2,
+      "lower": null,
+      "upper": null,
+      "lower_inclusive": null,
+      "upper_inclusive": null,
+      "unit": "week",
+      "source_ref": "RU-ESC",
+      "source_locator": "§4.2, PDF с.2–3",
+      "source_meaning": "предписание",
+      "derivation": null
+    },
+    {
+      "parameter_id": "adult_minimum",
+      "meaning": "Нижняя возрастная граница этой инструкции",
+      "value": 18,
+      "lower": null,
+      "upper": null,
+      "lower_inclusive": null,
+      "upper_inclusive": null,
+      "unit": "year",
+      "source_ref": "RU-ESC",
+      "source_locator": "§4.1, PDF с.2",
+      "source_meaning": "предписание",
+      "derivation": null
+    },
+    {
+      "parameter_id": "source_form_strengths",
+      "meaning": "Силы дозы выбранной формы; не дозовая рекомендация",
+      "value": [
+        5,
+        10,
+        15,
+        20
+      ],
+      "lower": null,
+      "upper": null,
+      "lower_inclusive": null,
+      "upper_inclusive": null,
+      "unit": "mg",
+      "source_ref": "RU-ESC",
+      "source_locator": "§1–3, PDF с.1–2",
+      "source_meaning": "предписание",
+      "derivation": null
+    },
+    {
+      "parameter_id": "renal_caution_threshold",
+      "meaning": "Выраженное снижение CLcr — строго ниже этой границы; числовой поправки не дано",
+      "value": 30,
+      "lower": null,
+      "upper": null,
+      "lower_inclusive": null,
+      "upper_inclusive": null,
+      "unit": "mL/min",
+      "source_ref": "RU-ESC",
+      "source_locator": "§4.2, PDF с.2–3",
+      "source_meaning": "предписание",
+      "derivation": null
+    }
+  ],
+  "logic": {
+    "representation": "schedule",
+    "conditions": [
+      "Диагноз, препарат и режим выбрал врач. Соответствие популяции/форме и ограничения источника подтверждены.",
+      "hepatic = нарушена"
+    ],
+    "actions": [
+      "Использовать только одну подтверждённую специальную ветку. Если совпали пожилой возраст, снижение печени и/или известный CYP2C19 — отдельное решение врача, без 5×0,5 и без автоматического выбора меньшей дозы.",
+      "Старт start один раз/сут; первые interval недели, затем возможно after по ответу; источник не задаёт дальнейшего повышения выше этой ветки."
+    ],
+    "parameter_refs": [
+      "start",
+      "after",
+      "frequency",
+      "interval",
+      "adult_minimum",
+      "source_form_strengths",
+      "renal_caution_threshold"
+    ],
+    "source_refs": [
+      "RU-ESC"
+    ],
+    "clinician_choices": [
+      "Применимость при особых состояниях и взаимодействиях",
+      "Необходимость следующего условного шага"
+    ],
+    "missing_data_behaviour": "Назвать обязательные неизвестные поля; результат insufficient_data. Справочные этапы можно показать как условные, без безусловной дозы пациенту.",
+    "unsupported_case_behaviour": "not_applicable для этой карточки; указать конкретную отсутствующую ветку, не запретить всё лечение.",
+    "contraindicated_case_behaviour": "Не выдавать дозовую схему противопоказанного сочетания; отобразить источник и причину.",
+    "conflicts": [
+      "Не опубликована явная схема для одновременных специальных условий."
+    ],
+    "composite_rule_dependencies": [],
+    "combination_justification": "Самостоятельные поправки не перемножаются. Совпадение числа не подтверждает применимость их сочетания."
+  },
+  "output": {
+    "result_type": "exact",
+    "medication_inn": "эсциталопрам",
+    "dose_per_administration": 5,
+    "administrations_per_day": 1,
+    "total_daily_dose": 5,
+    "unit": "mg",
+    "formulation": "Селектра: таблетки, покрытые плёночной оболочкой; 5/10/15/20 мг; 10/15/20 делятся на равные дозы (§3 с.1–2)",
+    "schedule": [
+      {
+        "stage_id": "special_start",
+        "time_description": "Исходный этап",
+        "minimum_interval": null,
+        "interval_unit": null,
+        "medication_steps": [
+          {
+            "medication_inn": "эсциталопрам",
+            "dose_per_administration": {
+              "total_daily_parameter": "start",
+              "divide_by": 1
+            },
+            "administrations_per_day": 1,
+            "total_daily_dose": {
+              "parameter_ref": "start"
+            },
+            "dose_unit": "mg",
+            "action": "принимать / условно повысить",
+            "source_refs": [
+              "RU-ESC"
+            ]
+          }
+        ],
+        "condition_to_proceed": "hepatic = нарушена и подтверждение применимости",
+        "condition_to_hold": "Достаточный эффект, непереносимость, противопоказание, неизвестные обязательные данные или врач не выбрал увеличение",
+        "source_refs": [
+          "RU-ESC"
+        ]
+      },
+      {
+        "stage_id": "optional_increase",
+        "time_description": "Не ранее указанного интервала после предыдущего этапа; не дата визита",
+        "minimum_interval": 2,
+        "interval_unit": "week",
+        "medication_steps": [
+          {
+            "medication_inn": "эсциталопрам",
+            "dose_per_administration": {
+              "total_daily_parameter": "after",
+              "divide_by": 1
+            },
+            "administrations_per_day": 1,
+            "total_daily_dose": {
+              "parameter_ref": "after"
+            },
+            "dose_unit": "mg",
+            "action": "принимать / условно повысить",
+            "source_refs": [
+              "RU-ESC"
+            ]
+          }
+        ],
+        "condition_to_proceed": "При необходимости, достаточной переносимости и решении врача",
+        "condition_to_hold": "Достаточный эффект, непереносимость, противопоказание, неизвестные обязательные данные или врач не выбрал увеличение",
+        "source_refs": [
+          "RU-ESC"
+        ]
+      }
+    ],
+    "warnings": [
+      "Условная схема источника, не автономное назначение. Максимум не является целью.",
+      "Подтвердить противопоказания и взаимодействия исходной инструкции.",
+      "Числовой вывод относится к указанным дозовым условиям. Неоценённые модулем клинические обстоятельства не считаются отсутствующими; полный клинический допуск врач оценивает отдельно."
+    ],
+    "mandatory_checks": [
+      "Проверить соответствие источнику, указанное в applicability и inputs."
+    ],
+    "clinician_decisions_remaining": [
+      "Подтверждение применимости",
+      "Решение о переходе к следующему этапу",
+      "Для elderly нет опубликованного дня повышения; для hepatic/CYP не подставлять обычный максимум 20 как подтверждённый предел специальной схемы."
+    ],
+    "rounding_or_formulation_rule": "Не округлять медицинскую дозу; использовать только разрешённую форму/деление. При невозможности дозы формой — явно сообщить.",
+    "source_refs": [
+      "RU-ESC"
+    ]
+  },
+  "verification": {
+    "primary_source_checked": true,
+    "all_clinical_parameters_have_sources": true,
+    "population_and_indication_checked": true,
+    "russian_applicability_checked": true,
+    "formulation_feasibility_checked": true,
+    "combined_rules_justified": false,
+    "source_transfer_check": "extraction_checked; calculator_not_implemented",
+    "clinical_review": "not_performed",
+    "product_clinical_validation": "not_performed",
+    "ready_for_technical_implementation": true,
+    "unresolved_items": []
+  },
+  "test_cases": [
+    {
+      "case_id": "esc-hepatic-start__special-hepatic",
+      "synthetic": true,
+      "given": {
+        "hepatic": "нарушена"
+      },
+      "expected": {
+        "start_mg_per_day": 5,
+        "frequency": 1,
+        "higher_dose_by_response_mg_per_day": 10,
+        "first_increase_after_week": 2
+      },
+      "source_refs": [
+        "RU-ESC"
+      ],
+      "note": "Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены.",
+      "scope": "isolated_source_transfer_expectation_under_card_conditions"
+    },
+    {
+      "case_id": "esc-hepatic-start__clcr-exact-30-current-label",
+      "synthetic": true,
+      "given": {
+        "clcr_mL_min": 30
+      },
+      "expected": {
+        "renal_caution": true,
+        "automatic_numeric_renal_factor": null
+      },
+      "source_refs": [
+        "RU-ESC"
+      ],
+      "note": "Граница <=30 визуально проверена в текущей ОХЛП §4.2 с.3; не калькулятор и не клиническая валидация."
+    }
+  ],
+  "profile": {
+    "country": "RU",
+    "selection_status": "RU_profile_research",
+    "foreign_fallback_allowed": false
+  },
+  "card_type": "numeric_source_rule"
+}

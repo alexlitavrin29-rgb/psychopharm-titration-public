@@ -1,0 +1,29 @@
+{
+  "snapshot": "b13033a0687a28b4da4299c171ac6b88a96667e2d6888ab8aecf5e9c85af0514",
+  "selected_paths": 1907,
+  "ordinary_numeric_selected_paths": 96,
+  "ordinary_min": 10,
+  "ordinary_max": 34,
+  "ordinary_count_distribution": {
+    "10": 2,
+    "11": 3,
+    "12": 4,
+    "13": 8,
+    "14": 5,
+    "15": 14,
+    "16": 7,
+    "17": 5,
+    "19": 8,
+    "20": 5,
+    "21": 16,
+    "22": 3,
+    "24": 11,
+    "25": 3,
+    "34": 2
+  },
+  "ordinary_le15": 36,
+  "ordinary_gt15": 60,
+  "lower_bounds": 0,
+  "hard_upper_limit": false,
+  "exhaustive_patient_combination_claim": false
+}

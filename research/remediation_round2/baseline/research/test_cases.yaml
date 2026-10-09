@@ -1,0 +1,1874 @@
+clinical_validation: not_performed
+calculator_execution: not_performed
+profile: RU
+cases:
+- rule_id: ago-depression-start
+  case_id: ago-depression-start__usual
+  synthetic: true
+  given:
+    age: 40
+    ALT_ratio: 1
+    AST_ratio: 1
+    form: Вальдоксан 25
+  expected:
+    start_mg_per_day: 25
+    frequency: 1
+    earliest_conditional_increase_weeks: 2
+    higher_dose_mg_per_day: 50
+  source_refs:
+  - RU-AGO
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: ago-depression-start
+  case_id: ago-depression-start__age-before-limit
+  synthetic: true
+  given:
+    age: 74
+  expected:
+    age_alone_excludes: false
+  source_refs:
+  - RU-AGO
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: ago-depression-start
+  case_id: ago-depression-start__age-exclusion
+  synthetic: true
+  given:
+    age: 75
+  expected:
+    result_type: not_applicable
+    age_excludes: true
+  source_refs:
+  - RU-AGO
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: ago-depression-start
+  case_id: ago-depression-start__ALT3
+  synthetic: true
+  given:
+    ALT_ratio: 3
+    AST_ratio: 1
+  expected:
+    transaminase_threshold_alone_excludes: false
+    caution_required: true
+  source_refs:
+  - RU-AGO
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: ago-depression-start
+  case_id: ago-depression-start__AST-over3
+  synthetic: true
+  given:
+    ALT_ratio: 1
+    AST_ratio: 3.1
+  expected:
+    result_type: not_applicable
+    unconditional_dose: null
+  source_refs:
+  - RU-AGO
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: ago-depression-start
+  case_id: ago-depression-start__AST-unknown
+  synthetic: true
+  given:
+    ALT_ratio: 1
+    AST_ratio: неизвестно
+  expected:
+    result_type: insufficient_data
+    missing:
+    - AST_ratio
+    unconditional_dose: null
+  source_refs:
+  - RU-AGO
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: ago-depression-start
+  case_id: ago-depression-start__fluvox-combination
+  synthetic: true
+  given:
+    medicines:
+    - флувоксамин
+  expected:
+    result_type: not_applicable
+    contraindicated_overlap: true
+  source_refs:
+  - RU-AGO
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: ago-depression-start
+  case_id: ago-depression-start__renal-caution
+  synthetic: true
+  given:
+    renal_state: средняя
+  expected:
+    result_type: clinician_choice
+    new_numeric_renal_coefficient: null
+    caution_required: true
+  source_refs:
+  - RU-AGO
+  note: Ожидаемый перенос опубликованного ограничения; не выполнение калькулятора и не клиническая валидация.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: ago-gad-start
+  case_id: ago-gad-start__usual
+  synthetic: true
+  given:
+    age: 40
+    ALT_ratio: 1
+    AST_ratio: 1
+    form: Вальдоксан 25
+  expected:
+    start_mg_per_day: 25
+    frequency: 1
+    earliest_conditional_increase_weeks: 4
+    higher_dose_mg_per_day: 50
+  source_refs:
+  - RU-AGO
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: ago-gad-start
+  case_id: ago-gad-start__age-before-limit
+  synthetic: true
+  given:
+    age: 65
+  expected:
+    age_alone_excludes: false
+  source_refs:
+  - RU-AGO
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: ago-gad-start
+  case_id: ago-gad-start__age-exclusion
+  synthetic: true
+  given:
+    age: 66
+  expected:
+    result_type: not_applicable
+    age_excludes: true
+  source_refs:
+  - RU-AGO
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: ago-gad-start
+  case_id: ago-gad-start__ALT3
+  synthetic: true
+  given:
+    ALT_ratio: 3
+    AST_ratio: 1
+  expected:
+    transaminase_threshold_alone_excludes: false
+    caution_required: true
+  source_refs:
+  - RU-AGO
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: ago-gad-start
+  case_id: ago-gad-start__AST-over3
+  synthetic: true
+  given:
+    ALT_ratio: 1
+    AST_ratio: 3.1
+  expected:
+    result_type: not_applicable
+    unconditional_dose: null
+  source_refs:
+  - RU-AGO
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: ago-gad-start
+  case_id: ago-gad-start__AST-unknown
+  synthetic: true
+  given:
+    ALT_ratio: 1
+    AST_ratio: неизвестно
+  expected:
+    result_type: insufficient_data
+    missing:
+    - AST_ratio
+    unconditional_dose: null
+  source_refs:
+  - RU-AGO
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: ago-gad-start
+  case_id: ago-gad-start__fluvox-combination
+  synthetic: true
+  given:
+    medicines:
+    - флувоксамин
+  expected:
+    result_type: not_applicable
+    contraindicated_overlap: true
+  source_refs:
+  - RU-AGO
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: ago-stop
+  case_id: ago-stop__stop50
+  synthetic: true
+  given:
+    current_dose: 50
+    clinician_action: прекратить
+  expected:
+    mandatory_taper: false
+    next_drug_start_day: null
+  source_refs:
+  - RU-AGO
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: ago-stop
+  case_id: ago-stop__unknown-action
+  synthetic: true
+  given:
+    clinician_action: неизвестно
+  expected:
+    result_type: insufficient_data
+    missing:
+    - clinician_action
+  source_refs:
+  - RU-AGO
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: dulox-depression-start
+  case_id: dulox-depression-start__usual
+  synthetic: true
+  given:
+    form: капсула 60 мг
+    indication: F32
+  expected:
+    start_mg_per_day: 60
+    frequency: 1
+    automatic_escalation_to120: false
+  source_refs:
+  - RU-DULOX
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: dulox-depression-start
+  case_id: dulox-depression-start__liver-failure
+  synthetic: true
+  given:
+    hepatic: заболевание печени с недостаточностью
+  expected:
+    result_type: not_applicable
+  source_refs:
+  - RU-DULOX
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: dulox-gad-adjust
+  case_id: dulox-gad-adjust__at60
+  synthetic: true
+  given:
+    current_dose: 60
+    response: недостаточный
+    tolerability: приемлемая
+  expected:
+    published_options_mg_per_day:
+    - 90
+    - 120
+    automatic_next_dose: null
+    automatic_interval_days: null
+  source_refs:
+  - RU-DULOX
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: dulox-gad-adjust
+  case_id: dulox-gad-adjust__unknown-response
+  synthetic: true
+  given:
+    response: неизвестно
+  expected:
+    result_type: insufficient_data
+    missing:
+    - response
+    automatic_increase: false
+  source_refs:
+  - RU-DULOX
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: dulox-gad-start
+  case_id: dulox-gad-start__usual
+  synthetic: true
+  given:
+    comorbid_depression: false
+    elderly_population: false
+    form: 30 мг целая капсула
+  expected:
+    start_mg_per_day: 30
+    capsules_30_mg_per_day: 1
+    automatic_day_for_60: null
+  source_refs:
+  - RU-DULOX
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: dulox-gad-start
+  case_id: dulox-gad-start__with-depression
+  synthetic: true
+  given:
+    comorbid_depression: true
+    elderly_population: false
+  expected:
+    start_mg_per_day: 60
+  source_refs:
+  - RU-DULOX
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: dulox-gad-start
+  case_id: dulox-gad-start__elderly
+  synthetic: true
+  given:
+    elderly_population: true
+    comorbid_depression: false
+  expected:
+    start_mg_per_day: 30
+    initial_weeks: 2
+    conditional_next_mg_per_day: 60
+  source_refs:
+  - RU-DULOX
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: dulox-gad-start
+  case_id: dulox-gad-start__overlapping-modifiers
+  synthetic: true
+  given:
+    elderly_population: true
+    comorbid_depression: true
+  expected:
+    result_type: clinician_choice
+    automatic_combined_start: null
+  source_refs:
+  - RU-DULOX
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: dulox-gad-start
+  case_id: dulox-gad-start__clcr30
+  synthetic: true
+  given:
+    CLcr_mL_min: 30
+  expected:
+    renal_dose_adjustment: false
+  source_refs:
+  - RU-DULOX
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: dulox-gad-start
+  case_id: dulox-gad-start__clcr29
+  synthetic: true
+  given:
+    CLcr_mL_min: 29
+  expected:
+    result_type: not_applicable
+    contraindication: true
+  source_refs:
+  - RU-DULOX
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: dulox-gad-start
+  case_id: dulox-gad-start__unknown-renal
+  synthetic: true
+  given:
+    renal_metric: неизвестно
+  expected:
+    result_type: insufficient_data
+    missing:
+    - renal_metric
+    unconditional_dose: null
+  source_refs:
+  - RU-DULOX
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: dulox-taper-limit
+  case_id: dulox-taper-limit__no-invented-tail
+  synthetic: true
+  given:
+    current_dose: null
+  expected:
+    automatic_full_taper_calendar: null
+    uniform_percentage: null
+    duration_upper_limit_weeks: null
+    duration_operator: recommended_period
+  source_refs:
+  - RU-DULOX
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: dulox-taper-limit
+  case_id: dulox-taper-limit__symptoms
+  synthetic: true
+  given:
+    withdrawal_severity: выраженные
+  expected:
+    automatic_next_reduction: false
+    clinician_reassessment: true
+    duration_upper_limit_weeks: null
+    duration_operator: recommended_period
+  source_refs:
+  - RU-DULOX
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: esc-adult-adjust
+  case_id: esc-adult-adjust__esc-adjust-not-fixed
+  synthetic: true
+  given:
+    current_dose: 10
+    response: недостаточный
+    tolerability: достаточная
+  expected:
+    result_type: clinician_choice
+    upper_standard_mg_per_day: 20
+    exact_next_dose: null
+    exact_next_day: null
+  source_refs:
+  - RU-ESC
+  note: Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены.
+  scope: isolated_source_transfer_expectation_under_card_conditions
+  case_kind: unverified_source_fragment
+  transfer_allowed: false
+  source_confirmation: current RU-ESC original unavailable
+- rule_id: esc-adult-adjust
+  case_id: esc-adult-adjust__clcr-exact-30-current-label
+  synthetic: true
+  given:
+    clcr_mL_min: 30
+  expected:
+    result_type: source_unavailable
+    renal_caution: null
+    renal_boundary_operator: null
+    unconditional_dose: null
+  source_refs:
+  - RU-ESC
+  note: Граница <=30 визуально проверена в текущей ОХЛП §4.2 с.3; не калькулятор и не клиническая валидация.
+  case_kind: unverified_source_fragment
+  transfer_allowed: false
+  source_confirmation: current RU-ESC original unavailable
+- rule_id: esc-cyp2c19-start
+  case_id: esc-cyp2c19-start__special-cyp2c19
+  synthetic: true
+  given:
+    cyp2c19: известная слабая активность
+  expected:
+    start_mg_per_day: 5
+    frequency: 1
+    higher_dose_by_response_mg_per_day: 10
+    first_increase_after_week: 2
+  source_refs:
+  - RU-ESC
+  note: Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены.
+  scope: isolated_source_transfer_expectation_under_card_conditions
+  case_kind: unverified_source_fragment
+  transfer_allowed: false
+  source_confirmation: current RU-ESC original unavailable
+- rule_id: esc-cyp2c19-start
+  case_id: esc-cyp2c19-start__clcr-exact-30-current-label
+  synthetic: true
+  given:
+    clcr_mL_min: 30
+  expected:
+    result_type: source_unavailable
+    renal_caution: null
+    renal_boundary_operator: null
+    unconditional_dose: null
+  source_refs:
+  - RU-ESC
+  note: Граница <=30 визуально проверена в текущей ОХЛП §4.2 с.3; не калькулятор и не клиническая валидация.
+  case_kind: unverified_source_fragment
+  transfer_allowed: false
+  source_confirmation: current RU-ESC original unavailable
+- rule_id: esc-elderly-start
+  case_id: esc-elderly-start__special-elderly
+  synthetic: true
+  given:
+    elderly: 70
+  expected:
+    start_mg_per_day: 5
+    frequency: 1
+    higher_dose_by_response_mg_per_day: 10
+    first_increase_after_week: null
+  source_refs:
+  - RU-ESC
+  note: Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены.
+  scope: isolated_source_transfer_expectation_under_card_conditions
+  case_kind: unverified_source_fragment
+  transfer_allowed: false
+  source_confirmation: current RU-ESC original unavailable
+- rule_id: esc-elderly-start
+  case_id: esc-elderly-start__clcr-exact-30-current-label
+  synthetic: true
+  given:
+    clcr_mL_min: 30
+  expected:
+    result_type: source_unavailable
+    renal_caution: null
+    renal_boundary_operator: null
+    unconditional_dose: null
+  source_refs:
+  - RU-ESC
+  note: Граница <=30 визуально проверена в текущей ОХЛП §4.2 с.3; не калькулятор и не клиническая валидация.
+  case_kind: unverified_source_fragment
+  transfer_allowed: false
+  source_confirmation: current RU-ESC original unavailable
+- rule_id: esc-gad-start
+  case_id: esc-gad-start__usual-gad
+  synthetic: true
+  given:
+    age: 40
+    known_cyp2c19: не исследовано
+    hepatic: нарушения не известны после оценки
+  expected:
+    start_mg_per_day: 10
+    frequency: 1
+    maximum_mg_per_day: 20
+    fixed_increase_day: null
+  source_refs:
+  - RU-ESC
+  note: Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены.
+  scope: isolated_source_transfer_expectation_under_card_conditions
+  case_kind: unverified_source_fragment
+  transfer_allowed: false
+  source_confirmation: current RU-ESC original unavailable
+- rule_id: esc-gad-start
+  case_id: esc-gad-start__age-boundary-65
+  synthetic: true
+  given:
+    age: 65
+  expected:
+    standard_start_mg_per_day: 10
+    note: Порог этой копии строго >65; не считать его универсальным для всех инструкций.
+  source_refs:
+  - RU-ESC
+  note: Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены.
+  scope: isolated_source_transfer_expectation_under_card_conditions
+  case_kind: unverified_source_fragment
+  transfer_allowed: false
+  source_confirmation: current RU-ESC original unavailable
+- rule_id: esc-gad-start
+  case_id: esc-gad-start__esc-combined-modifiers
+  synthetic: true
+  given:
+    age: 70
+    hepatic: нарушена
+    known_cyp2c19: известная слабая активность
+  expected:
+    result_type: not_applicable
+    reason: Нет подтверждённой совместной числовой ветки
+    multiplied_dose: null
+  source_refs:
+  - RU-ESC
+  note: Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены.
+  case_kind: unverified_source_fragment
+  transfer_allowed: false
+  source_confirmation: current RU-ESC original unavailable
+- rule_id: esc-gad-start
+  case_id: esc-gad-start__esc-pregnancy-decision
+  synthetic: true
+  given:
+    pregnancy: true
+  expected:
+    result_type: clinician_choice
+    automatic_standard_dose: null
+    pregnancy_multiplier: null
+  source_refs:
+  - RU-ESC
+  note: Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены.
+  case_kind: unverified_source_fragment
+  transfer_allowed: false
+  source_confirmation: current RU-ESC original unavailable
+- rule_id: esc-gad-start
+  case_id: esc-gad-start__esc-form-not-divisible
+  synthetic: true
+  given:
+    requested_mg: 5
+    form: Другой продукт 10 мг, равное деление не подтверждено
+  expected:
+    confirmed_half_tablet: false
+    result_type: insufficient_data
+    reason: Нужна подтверждённая форма/делимость
+  source_refs:
+  - RU-ESC
+  note: Не переносить разрешённую отдельную силу 5 мг Селектры на половину произвольной таблетки другого продукта.
+  case_kind: unverified_source_fragment
+  transfer_allowed: false
+  source_confirmation: current RU-ESC original unavailable
+- rule_id: esc-gad-start
+  case_id: esc-gad-start__clcr-exact-30-current-label
+  synthetic: true
+  given:
+    clcr_mL_min: 30
+  expected:
+    result_type: source_unavailable
+    renal_caution: null
+    renal_boundary_operator: null
+    unconditional_dose: null
+  source_refs:
+  - RU-ESC
+  note: Граница <=30 визуально проверена в текущей ОХЛП §4.2 с.3; не калькулятор и не клиническая валидация.
+  case_kind: unverified_source_fragment
+  transfer_allowed: false
+  source_confirmation: current RU-ESC original unavailable
+- rule_id: esc-hepatic-start
+  case_id: esc-hepatic-start__special-hepatic
+  synthetic: true
+  given:
+    hepatic: нарушена
+  expected:
+    start_mg_per_day: 5
+    frequency: 1
+    higher_dose_by_response_mg_per_day: 10
+    first_increase_after_week: 2
+  source_refs:
+  - RU-ESC
+  note: Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены.
+  scope: isolated_source_transfer_expectation_under_card_conditions
+  case_kind: unverified_source_fragment
+  transfer_allowed: false
+  source_confirmation: current RU-ESC original unavailable
+- rule_id: esc-hepatic-start
+  case_id: esc-hepatic-start__clcr-exact-30-current-label
+  synthetic: true
+  given:
+    clcr_mL_min: 30
+  expected:
+    result_type: source_unavailable
+    renal_caution: null
+    renal_boundary_operator: null
+    unconditional_dose: null
+  source_refs:
+  - RU-ESC
+  note: Граница <=30 визуально проверена в текущей ОХЛП §4.2 с.3; не калькулятор и не клиническая валидация.
+  case_kind: unverified_source_fragment
+  transfer_allowed: false
+  source_confirmation: current RU-ESC original unavailable
+- rule_id: esc-panic-start
+  case_id: esc-panic-start__usual-panic
+  synthetic: true
+  given:
+    age: 40
+    known_cyp2c19: не исследовано
+    hepatic: нарушения не известны после оценки
+  expected:
+    start_mg_per_day: 5
+    frequency: 1
+    maximum_mg_per_day: 20
+    after_first_week_mg_per_day: 10
+  source_refs:
+  - RU-ESC
+  note: Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены.
+  scope: isolated_source_transfer_expectation_under_card_conditions
+  case_kind: unverified_source_fragment
+  transfer_allowed: false
+  source_confirmation: current RU-ESC original unavailable
+- rule_id: esc-panic-start
+  case_id: esc-panic-start__clcr-exact-30-current-label
+  synthetic: true
+  given:
+    clcr_mL_min: 30
+  expected:
+    result_type: source_unavailable
+    renal_caution: null
+    renal_boundary_operator: null
+    unconditional_dose: null
+  source_refs:
+  - RU-ESC
+  note: Граница <=30 визуально проверена в текущей ОХЛП §4.2 с.3; не калькулятор и не клиническая валидация.
+  case_kind: unverified_source_fragment
+  transfer_allowed: false
+  source_confirmation: current RU-ESC original unavailable
+- rule_id: esc-social-start
+  case_id: esc-social-start__usual-social
+  synthetic: true
+  given:
+    age: 40
+    known_cyp2c19: не исследовано
+    hepatic: нарушения не известны после оценки
+  expected:
+    start_mg_per_day: 10
+    frequency: 1
+    maximum_mg_per_day: 20
+    fixed_increase_day: null
+  source_refs:
+  - RU-ESC
+  note: Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены.
+  scope: isolated_source_transfer_expectation_under_card_conditions
+  case_kind: unverified_source_fragment
+  transfer_allowed: false
+  source_confirmation: current RU-ESC original unavailable
+- rule_id: esc-social-start
+  case_id: esc-social-start__clcr-exact-30-current-label
+  synthetic: true
+  given:
+    clcr_mL_min: 30
+  expected:
+    result_type: source_unavailable
+    renal_caution: null
+    renal_boundary_operator: null
+    unconditional_dose: null
+  source_refs:
+  - RU-ESC
+  note: Граница <=30 визуально проверена в текущей ОХЛП §4.2 с.3; не калькулятор и не клиническая валидация.
+  case_kind: unverified_source_fragment
+  transfer_allowed: false
+  source_confirmation: current RU-ESC original unavailable
+- rule_id: esc-taper-limit
+  case_id: esc-taper-limit__esc-taper-no-invention
+  synthetic: true
+  given:
+    current_dose: 10
+  expected:
+    exact_decrement_mg: null
+    fixed_full_schedule: null
+    source_time_weeks:
+    - 1
+    - 2
+    result_type: clinician_choice
+  source_refs:
+  - RU-ESC
+  note: Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены.
+  scope: isolated_source_transfer_expectation_under_card_conditions
+  case_kind: unverified_source_fragment
+  transfer_allowed: false
+  source_confirmation: current RU-ESC original unavailable
+- rule_id: esc-taper-limit
+  case_id: esc-taper-limit__clcr-exact-30-current-label
+  synthetic: true
+  given:
+    clcr_mL_min: 30
+  expected:
+    result_type: source_unavailable
+    renal_caution: null
+    renal_boundary_operator: null
+    unconditional_dose: null
+  source_refs:
+  - RU-ESC
+  note: Граница <=30 визуально проверена в текущей ОХЛП §4.2 с.3; не калькулятор и не клиническая валидация.
+  case_kind: unverified_source_fragment
+  transfer_allowed: false
+  source_confirmation: current RU-ESC original unavailable
+- rule_id: fluvox-depression-start
+  case_id: fluvox-depression-start__50-selected
+  synthetic: true
+  given:
+    source_start_choice: 50 мг
+  expected:
+    start_mg_per_day: 50
+    frequency: 1
+    administration_time: вечер
+  source_refs:
+  - RU-FLUVOX
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: fluvox-depression-start
+  case_id: fluvox-depression-start__unselected
+  synthetic: true
+  given:
+    source_start_choice: не выбран
+  expected:
+    result_type: clinician_choice
+    automatic_start_mg_per_day: null
+    published_options_mg_per_day:
+    - 50
+    - 100
+  source_refs:
+  - RU-FLUVOX
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: fluvox-depression-start
+  case_id: fluvox-depression-start__child-anxiety
+  synthetic: true
+  given:
+    age: 12
+    indication: F41.1
+  expected:
+    result_type: not_applicable
+    pediatric_OCD_not_transferred: true
+  source_refs:
+  - RU-FLUVOX
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: fluvox-depression-start
+  case_id: fluvox-depression-start__lactation-block
+  synthetic: true
+  given:
+    lactation: да
+  expected:
+    result_type: not_applicable
+    standard_start_blocked: true
+  source_refs:
+  - RU-FLUVOX
+  note: Ожидаемый перенос опубликованного ограничения; не выполнение калькулятора и не клиническая валидация.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: fluvox-depression-start
+  case_id: fluvox-depression-start__maoi-unknown-time
+  synthetic: true
+  given:
+    last_maoi_type: необратимый
+    time_since_last_maoi: неизвестно
+  expected:
+    result_type: insufficient_data
+    missing_input: time_since_last_maoi
+  source_refs:
+  - RU-FLUVOX
+  note: Ожидаемый перенос опубликованного ограничения; не выполнение калькулятора и не клиническая валидация.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: fluvox-depression-start
+  case_id: fluvox-depression-start__irreversible-maoi-before
+  synthetic: true
+  given:
+    last_maoi_type: необратимый
+    time_since_last_maoi: 13
+  expected:
+    standard_start_blocked: true
+    minimum_interval_days: 14
+  source_refs:
+  - RU-FLUVOX
+  note: Ожидаемый перенос опубликованного ограничения; не выполнение калькулятора и не клиническая валидация.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: fluvox-depression-start
+  case_id: fluvox-depression-start__irreversible-maoi-at
+  synthetic: true
+  given:
+    last_maoi_type: необратимый
+    time_since_last_maoi: 14
+  expected:
+    interval_gate_satisfied: true
+    full_clinical_clearance: false
+  source_refs:
+  - RU-FLUVOX
+  note: Ожидаемый перенос опубликованного ограничения; не выполнение калькулятора и не клиническая валидация.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: fluvox-depression-start
+  case_id: fluvox-depression-start__organ-low-dose-unspecified
+  synthetic: true
+  given:
+    renal_metric: почечная недостаточность
+  expected:
+    result_type: clinician_choice
+    specific_renal_coefficient: null
+    automatic_start_mg_per_day: null
+  source_refs:
+  - RU-FLUVOX
+  note: Ожидаемый перенос опубликованного ограничения; не выполнение калькулятора и не клиническая валидация.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: fluvox-taper-limit
+  case_id: fluvox-taper-limit__no-invented-tail
+  synthetic: true
+  given:
+    current_dose: null
+  expected:
+    automatic_full_taper_calendar: null
+    uniform_percentage: null
+    duration_upper_limit_weeks: null
+    duration_operator: minimum_choice
+  source_refs:
+  - RU-FLUVOX
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: fluvox-taper-limit
+  case_id: fluvox-taper-limit__symptoms
+  synthetic: true
+  given:
+    withdrawal_severity: выраженные
+  expected:
+    automatic_next_reduction: false
+    clinician_reassessment: true
+    duration_upper_limit_weeks: null
+    duration_operator: minimum_choice
+  source_refs:
+  - RU-FLUVOX
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: parox-panic-kr
+  case_id: parox-panic-kr__usual-start
+  synthetic: true
+  given:
+    age: 40
+    form: Рексетин 20 мг, деление разрешено
+  expected:
+    start_mg_per_day: 10
+    dose_per_administration_mg: 10
+    frequency: 1
+    tablet_fraction: 0.5
+    future_increases_conditional: true
+  source_refs: &id001
+  - RU-PANIC
+  - RU-PAROX
+  note: Ожидание переноса источника; калькулятор не реализован, клиническая валидация не выполнена.
+  scope: isolated_source_transfer_expectation_under_card_conditions
+  case_kind: parameter_or_constraint_fragment
+- rule_id: parox-panic-kr
+  case_id: parox-panic-kr__at-40-not-automatic-50
+  synthetic: true
+  given:
+    current_dose: 40
+    time_at_dose: несколько недель не подтверждено
+  expected:
+    automatic_increase_to_50: false
+    result_type: clinician_choice
+  source_refs: *id001
+  note: Ожидание переноса источника; калькулятор не реализован, клиническая валидация не выполнена.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: parox-panic-kr
+  case_id: parox-panic-kr__elderly-limit
+  synthetic: true
+  given:
+    population: пожилой
+    current_dose: 40
+  expected:
+    maximum_mg_per_day: 40
+    automatic_increase: false
+  source_refs: *id001
+  note: Ожидание переноса источника; калькулятор не реализован, клиническая валидация не выполнена.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: parox-panic-kr
+  case_id: parox-panic-kr__unknown-form
+  synthetic: true
+  given:
+    form: неизвестно
+  expected:
+    result_type: insufficient_data
+    missing:
+    - form
+    unconditional_dose: null
+  source_refs: *id001
+  note: Ожидание переноса источника; калькулятор не реализован, клиническая валидация не выполнена.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: parox-taper-example
+  case_id: parox-taper-example__selected-40-example
+  synthetic: true
+  given:
+    age: 40
+    current_dose: 40
+    form: Рексетин 20 мг
+    example_selected: true
+    withdrawal_severity: нет
+    past_withdrawal: нет
+  expected:
+    source_example_doses_mg_per_day:
+    - 30
+    - 20
+    - 0
+    holds_before_next_days:
+    - 7
+    - 7
+    last_source_dose_mg_per_day: 20
+    mandatory_for_all: false
+  source_refs: &id002
+  - RU-PAROX
+  - RU-DEP
+  - RU-PANIC
+  note: Ожидание переноса источника; калькулятор не реализован, клиническая валидация не выполнена.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: parox-taper-example
+  case_id: parox-taper-example__below-20
+  synthetic: true
+  given:
+    current_dose: 10
+    example_selected: true
+  expected:
+    result_type: clinician_choice
+    complete_schedule: null
+    invented_last_step: false
+  source_refs: *id002
+  note: Ожидание переноса источника; калькулятор не реализован, клиническая валидация не выполнена.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: parox-taper-example
+  case_id: parox-taper-example__symptoms
+  synthetic: true
+  given:
+    current_dose: 20
+    withdrawal_severity: непереносимые
+  expected:
+    automatic_stop: false
+    option: рассмотреть прежнюю переносимую дозу и более медленное снижение
+    fixed_slower_step: null
+  source_refs: *id002
+  note: Ожидание переноса источника; калькулятор не реализован, клиническая валидация не выполнена.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: phen-taper-limit
+  case_id: phen-taper-limit__no-ASAM-default
+  synthetic: true
+  given:
+    current_dose: 1
+    duration: 12
+  expected:
+    automatic_taper_percentage: null
+    automatic_full_calendar: null
+    foreign_fallback_allowed: false
+  source_refs:
+  - RU-PHEN
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: phen-taper-limit
+  case_id: phen-taper-limit__course-not-taper
+  synthetic: true
+  given:
+    duration: 2
+  expected:
+    taper_duration_equals_course: false
+  source_refs:
+  - RU-PHEN
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: preg-gad-adjust
+  case_id: preg-gad-adjust__preg-adjust
+  synthetic: true
+  given:
+    current_dose: 300
+    time_at_dose: 1
+    response: недостаточный
+    tolerability: достаточная
+    adherence: подтверждён
+    clcr: 70
+    dialysis: false
+    frequency: 3
+  expected:
+    optional_next_total_daily_mg: 450
+    per_administration_mg: 150
+    frequency: 3
+    minimum_interval_week: 1
+  source_refs:
+  - RU-PREG
+  note: Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены.
+  scope: isolated_source_transfer_expectation_under_card_conditions
+  case_kind: parameter_or_constraint_fragment
+- rule_id: preg-gad-start
+  case_id: preg-gad-start__preg-start-bid
+  synthetic: true
+  given:
+    clcr: 60
+    dialysis: false
+    frequency: 2
+  expected:
+    per_administration_mg: 75
+    total_daily_mg: 150
+    frequency: 2
+    optional_total_daily_stages_mg:
+    - 300
+    - 450
+    - 600
+    minimum_week_between_stages: 1
+  source_refs:
+  - RU-PREG
+  note: 75 = опубликованные 150 мг/сут / выбранные 2; следующие дозы условны.
+  scope: isolated_source_transfer_expectation_under_card_conditions
+  case_kind: parameter_or_constraint_fragment
+- rule_id: preg-gad-start
+  case_id: preg-gad-start__preg-start-tid
+  synthetic: true
+  given:
+    clcr: 90
+    dialysis: false
+    frequency: 3
+  expected:
+    per_administration_mg: 50
+    total_daily_mg: 150
+    frequency: 3
+  source_refs:
+  - RU-PREG
+  note: Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены.
+  scope: isolated_source_transfer_expectation_under_card_conditions
+  case_kind: parameter_or_constraint_fragment
+- rule_id: preg-gad-start
+  case_id: preg-gad-start__preg-clcr-unknown
+  synthetic: true
+  given:
+    clcr: не исследовано
+  expected:
+    result_type: insufficient_data
+    missing:
+    - clcr
+    unconditional_dose: null
+  source_refs:
+  - RU-PREG
+  note: Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: preg-renal-start
+  case_id: preg-renal-start__renal-at30
+  synthetic: true
+  given:
+    clcr: 30
+    dialysis: false
+  expected:
+    start_total_daily_mg: 75
+    max_total_daily_mg: 300
+    published_frequencies:
+    - 2
+    - 3
+    whole_capsule_equal_division:
+      3_times_mg: 25
+      2_times_mg: null
+  source_refs:
+  - RU-PREG
+  note: Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены.
+  scope: isolated_source_transfer_expectation_under_card_conditions
+  case_kind: parameter_or_constraint_fragment
+- rule_id: preg-renal-start
+  case_id: preg-renal-start__renal-at15
+  synthetic: true
+  given:
+    clcr: 15
+    dialysis: false
+  expected:
+    start_total_daily_range_mg:
+    - 25
+    - 50
+    max_total_daily_mg: 150
+    published_frequencies:
+    - 1
+    - 2
+    automatic_choice: null
+  source_refs:
+  - RU-PREG
+  note: Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены.
+  scope: isolated_source_transfer_expectation_under_card_conditions
+  case_kind: parameter_or_constraint_fragment
+- rule_id: preg-renal-start
+  case_id: preg-renal-start__renal-below15
+  synthetic: true
+  given:
+    clcr: 14
+    dialysis: false
+  expected:
+    start_total_daily_mg: 25
+    max_total_daily_mg: 75
+    frequency: 1
+  source_refs:
+  - RU-PREG
+  note: Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены.
+  scope: isolated_source_transfer_expectation_under_card_conditions
+  case_kind: parameter_or_constraint_fragment
+- rule_id: preg-renal-start
+  case_id: preg-renal-start__renal-unit-error
+  synthetic: true
+  given:
+    eGFR: 30
+    unit: mL/min/1.73m2
+  expected:
+    result_type: insufficient_data
+    missing:
+    - confirmed_clcr_mL_per_min
+    automatic_substitution: false
+  source_refs:
+  - RU-PREG
+  note: Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: preg-renal-start
+  case_id: preg-renal-start__renal-hd
+  synthetic: true
+  given:
+    clcr: 14
+    dialysis: true
+  expected:
+    result_type: not_applicable
+    reason: Отдельная диализная схема; обычная строка недостаточна
+  source_refs:
+  - RU-PREG
+  note: Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: preg-renal-start
+  case_id: preg-renal-start__clcr-negative
+  synthetic: true
+  given:
+    clcr: -1
+    unit: mL/min
+  expected:
+    result_type: insufficient_data
+    reason: Недопустимое значение показателя
+    renal_row_selected: null
+  source_refs:
+  - RU-PREG
+  note: Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: preg-renal-start
+  case_id: preg-renal-start__clcr-unit-invalid
+  synthetic: true
+  given:
+    clcr: 30
+    unit: mmol/L
+  expected:
+    result_type: insufficient_data
+    reason: Таблица требует CLcr в мл/мин
+  source_refs:
+  - RU-PREG
+  note: Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: preg-taper-limit
+  case_id: preg-taper-limit__preg-taper-no-invention
+  synthetic: true
+  given:
+    current_dose: 150
+  expected:
+    exact_decrement_mg: null
+    fixed_full_schedule: null
+    source_time_weeks:
+    - 1
+    - null
+    result_type: clinician_choice
+  source_refs:
+  - RU-PREG
+  note: Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены.
+  scope: isolated_source_transfer_expectation_under_card_conditions
+  case_kind: parameter_or_constraint_fragment
+- rule_id: ser-adult-adjust
+  case_id: ser-adult-adjust__adjust-100
+  synthetic: true
+  given:
+    current_dose: 100
+    time_at_dose: 1
+    response: недостаточный
+    tolerability: достаточная
+    adherence: подтверждён
+  expected:
+    clinician_option_mg_per_day: 150
+    frequency: 1
+    minimum_interval_week: 1
+  source_refs:
+  - RU-SER
+  note: 150 = введённые 100 + опубликованный шаг 50; это разрешённый вариант, не обязательная доза.
+  scope: isolated_source_transfer_expectation_under_card_conditions
+  case_kind: parameter_or_constraint_fragment
+- rule_id: ser-adult-adjust
+  case_id: ser-adult-adjust__adjust-too-early
+  synthetic: true
+  given:
+    current_dose: 100
+    time_at_dose: 0.5
+  expected:
+    increase_allowed_by_interval: false
+  source_refs:
+  - RU-SER
+  note: Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: ser-adult-adjust
+  case_id: ser-adult-adjust__adjust-at-max
+  synthetic: true
+  given:
+    current_dose: 200
+    time_at_dose: 1
+  expected:
+    next_increase_mg: null
+    reason: достигнут максимум
+  source_refs:
+  - RU-SER
+  note: Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: ser-adult-adjust
+  case_id: ser-adult-adjust__ser-response-unknown
+  synthetic: true
+  given:
+    current_dose: 100
+    time_at_dose: 1
+    response: неизвестно
+  expected:
+    result_type: insufficient_data
+    missing:
+    - response
+    automatic_increase: false
+  source_refs:
+  - RU-SER
+  note: Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: ser-panic-start
+  case_id: ser-panic-start__usual-panic
+  synthetic: true
+  given:
+    age: 40
+    pregnancy: false
+    lactation: false
+    hepatic: нарушения не известны после оценки
+  expected:
+    start_mg_per_day: 25
+    frequency: 1
+    after_first_week_mg_per_day: 50
+  source_refs:
+  - RU-SER
+  note: Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены.
+  scope: isolated_source_transfer_expectation_under_card_conditions
+  case_kind: parameter_or_constraint_fragment
+- rule_id: ser-panic-start
+  case_id: ser-panic-start__hepatic-unknown-panic
+  synthetic: true
+  given:
+    hepatic: неизвестно
+  expected:
+    result_type: insufficient_data
+    missing:
+    - hepatic
+    unconditional_dose: null
+  source_refs:
+  - RU-SER
+  note: Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: ser-panic-start
+  case_id: ser-panic-start__ser-child-anxiety
+  synthetic: true
+  given:
+    age: 12
+    diagnosis: F41.0
+  expected:
+    result_type: not_applicable
+    adult_dose_transferred: false
+  source_refs:
+  - RU-SER
+  note: Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: ser-panic-start
+  case_id: ser-panic-start__ser-pimozide
+  synthetic: true
+  given:
+    medicines:
+    - пимозид
+  expected:
+    result_type: not_applicable
+    reason: Противопоказанное сочетание
+  source_refs:
+  - RU-SER
+  note: Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: ser-panic-start
+  case_id: ser-panic-start__ser-hepatic-not-half
+  synthetic: true
+  given:
+    hepatic: нарушена
+  expected:
+    result_type: clinician_choice
+    exact_reduced_dose_mg: null
+    automatic_halving: false
+  source_refs:
+  - RU-SER
+  note: Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: ser-social-start
+  case_id: ser-social-start__usual-social
+  synthetic: true
+  given:
+    age: 40
+    pregnancy: false
+    lactation: false
+    hepatic: нарушения не известны после оценки
+  expected:
+    start_mg_per_day: 25
+    frequency: 1
+    after_first_week_mg_per_day: 50
+  source_refs:
+  - RU-SER
+  note: Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены.
+  scope: isolated_source_transfer_expectation_under_card_conditions
+  case_kind: parameter_or_constraint_fragment
+- rule_id: ser-social-start
+  case_id: ser-social-start__hepatic-unknown-social
+  synthetic: true
+  given:
+    hepatic: неизвестно
+  expected:
+    result_type: insufficient_data
+    missing:
+    - hepatic
+    unconditional_dose: null
+  source_refs:
+  - RU-SER
+  note: Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: ser-taper-limit
+  case_id: ser-taper-limit__ser-taper-no-invention
+  synthetic: true
+  given:
+    current_dose: 50
+  expected:
+    exact_decrement_mg: null
+    fixed_full_schedule: null
+    source_time_weeks:
+    - 1
+    - 2
+    result_type: clinician_choice
+    duration_upper_limit_weeks: null
+    duration_operator: minimum_choice
+  source_refs:
+  - RU-SER
+  note: Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены.
+  scope: isolated_source_transfer_expectation_under_card_conditions
+  case_kind: parameter_or_constraint_fragment
+- rule_id: switch-esc-ago
+  case_id: switch-esc-ago__overlap-permission
+  synthetic: true
+  given:
+    from_drug: эсциталопрам
+    to_drug: агомелатин
+  expected:
+    target_start_mg_per_day: 25
+    frequency: 1
+    target_start: первый день постепенного снижения A
+    overlap_allowed: true
+    invented_washout_days: null
+    complete_schedule: null
+  source_refs: &id003
+  - RU-ESC
+  - RU-AGO
+  - RU-DEP
+  note: Ожидание переноса источника; калькулятор не реализован, клиническая валидация не выполнена.
+  case_kind: unverified_source_fragment
+  transfer_allowed: false
+  source_confirmation: current RU-ESC original unavailable
+- rule_id: switch-esc-ago
+  case_id: switch-esc-ago__missing-liver-tests
+  synthetic: true
+  given:
+    alt_ratio_uln: null
+    ast_ratio_uln: null
+  expected:
+    result_type: insufficient_data
+    missing:
+    - alt_ratio_uln
+    - ast_ratio_uln
+    unconditional_target_dose: null
+  source_refs: *id003
+  note: Ожидание переноса источника; калькулятор не реализован, клиническая валидация не выполнена.
+  case_kind: unverified_source_fragment
+  transfer_allowed: false
+  source_confirmation: current RU-ESC original unavailable
+- rule_id: switch-esc-ago
+  case_id: switch-esc-ago__alt-above-cutoff
+  synthetic: true
+  given:
+    alt_ratio_uln: 3.1
+  expected:
+    result_type: not_applicable
+    target_start_allowed: false
+  source_refs: *id003
+  note: Ожидание переноса источника; калькулятор не реализован, клиническая валидация не выполнена.
+  case_kind: unverified_source_fragment
+  transfer_allowed: false
+  source_confirmation: current RU-ESC original unavailable
+- rule_id: switch-esc-ser
+  case_id: switch-esc-ser__foreign-next-day-excluded
+  synthetic: true
+  given:
+    foreign_requested_strategy: direct_next_day
+    current_dose: 50
+  expected:
+    result_type: clinician_choice
+    source_priority: RU
+    automatic_direct_switch: false
+    target_start_time: null
+    complete_schedule: null
+  source_refs:
+  - RU-ESC
+  - RU-SER
+  - RU-DEP
+  note: Ожидание переноса из источника; калькулятор не реализован, клиническая валидация не выполнена.
+  case_kind: unverified_source_fragment
+  transfer_allowed: false
+  source_confirmation: current RU-ESC original unavailable
+- rule_id: switch-esc-ser
+  case_id: switch-esc-ser__gradual-is-not-washout
+  synthetic: true
+  given:
+    withdrawal_plan_duration_days: 14
+  expected:
+    invented_washout_days: null
+    automatic_overlap_permission: false
+    automatic_overlap_prohibition: false
+  source_refs:
+  - RU-ESC
+  - RU-SER
+  - RU-DEP
+  note: Ожидание переноса из источника; калькулятор не реализован, клиническая валидация не выполнена.
+  case_kind: unverified_source_fragment
+  transfer_allowed: false
+  source_confirmation: current RU-ESC original unavailable
+- rule_id: switch-parox-ago-selected-example
+  case_id: switch-parox-ago-selected-example__selected40
+  synthetic: true
+  given:
+    current_dose: 40
+    example_selected: true
+    withdrawal_severity: нет требующих замедления симптомов
+    alt_ratio_uln: 1
+    ast_ratio_uln: 1
+  expected:
+    days:
+    - 1
+    - 8
+    - 15
+    paroxetine_mg_per_day:
+    - 30
+    - 20
+    - 0
+    agomelatine_mg_per_day:
+    - 25
+    - 25
+    - 25
+    mandatory_for_all: false
+    automatic_increase_B: false
+  source_refs:
+  - RU-PAROX
+  - RU-AGO
+  note: Составной условный пример; проверка исполнения/клиническая валидация не выполнены.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: switch-parox-ago-selected-example
+  case_id: switch-parox-ago-selected-example__symptoms
+  synthetic: true
+  given:
+    withdrawal_severity: тяжёлые
+  expected:
+    automatic_calendar_allowed: false
+    result_type: clinician_choice
+  source_refs:
+  - RU-PAROX
+  - RU-AGO
+  note: Врач переоценивает темп.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: switch-parox-ago-selected-example
+  case_id: switch-parox-ago-selected-example__not-selected
+  synthetic: true
+  given:
+    example_selected: false
+  expected:
+    automatic_calendar_allowed: false
+    result_type: clinician_choice
+  source_refs:
+  - RU-PAROX
+  - RU-AGO
+  note: Пример не назначается всем.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: switch-parox-ago-selected-example
+  case_id: switch-parox-ago-selected-example__other-baseline
+  synthetic: true
+  given:
+    current_dose: 10
+    example_selected: true
+  expected:
+    automatic_calendar_allowed: false
+    result_type: not_applicable
+    invented_last_step: null
+  source_refs:
+  - RU-PAROX
+  - RU-AGO
+  note: Нет переноса чужого последнего шага.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: switch-parox-ago
+  case_id: switch-parox-ago__overlap-permission
+  synthetic: true
+  given:
+    from_drug: пароксетин
+    to_drug: агомелатин
+  expected:
+    target_start_mg_per_day: 25
+    frequency: 1
+    target_start: первый день постепенного снижения A
+    overlap_allowed: true
+    invented_washout_days: null
+    complete_schedule: null
+  source_refs: &id004
+  - RU-PAROX
+  - RU-AGO
+  - RU-DEP
+  note: Ожидание переноса источника; калькулятор не реализован, клиническая валидация не выполнена.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: switch-parox-ago
+  case_id: switch-parox-ago__missing-liver-tests
+  synthetic: true
+  given:
+    alt_ratio_uln: null
+    ast_ratio_uln: null
+  expected:
+    result_type: insufficient_data
+    missing:
+    - alt_ratio_uln
+    - ast_ratio_uln
+    unconditional_target_dose: null
+  source_refs: *id004
+  note: Ожидание переноса источника; калькулятор не реализован, клиническая валидация не выполнена.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: switch-parox-ago
+  case_id: switch-parox-ago__alt-above-cutoff
+  synthetic: true
+  given:
+    alt_ratio_uln: 3.1
+  expected:
+    result_type: not_applicable
+    target_start_allowed: false
+  source_refs: *id004
+  note: Ожидание переноса источника; калькулятор не реализован, клиническая валидация не выполнена.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: switch-ser-ago
+  case_id: switch-ser-ago__overlap-permission
+  synthetic: true
+  given:
+    from_drug: сертралин
+    to_drug: агомелатин
+  expected:
+    target_start_mg_per_day: 25
+    frequency: 1
+    target_start: первый день постепенного снижения A
+    overlap_allowed: true
+    invented_washout_days: null
+    complete_schedule: null
+  source_refs: &id005
+  - RU-SER
+  - RU-AGO
+  - RU-DEP
+  note: Ожидание переноса источника; калькулятор не реализован, клиническая валидация не выполнена.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: switch-ser-ago
+  case_id: switch-ser-ago__missing-liver-tests
+  synthetic: true
+  given:
+    alt_ratio_uln: null
+    ast_ratio_uln: null
+  expected:
+    result_type: insufficient_data
+    missing:
+    - alt_ratio_uln
+    - ast_ratio_uln
+    unconditional_target_dose: null
+  source_refs: *id005
+  note: Ожидание переноса источника; калькулятор не реализован, клиническая валидация не выполнена.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: switch-ser-ago
+  case_id: switch-ser-ago__alt-above-cutoff
+  synthetic: true
+  given:
+    alt_ratio_uln: 3.1
+  expected:
+    result_type: not_applicable
+    target_start_allowed: false
+  source_refs: *id005
+  note: Ожидание переноса источника; калькулятор не реализован, клиническая валидация не выполнена.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: switch-ser-esc
+  case_id: switch-ser-esc__foreign-next-day-excluded
+  synthetic: true
+  given:
+    foreign_requested_strategy: direct_next_day
+    current_dose: 50
+  expected:
+    result_type: clinician_choice
+    source_priority: RU
+    automatic_direct_switch: false
+    target_start_time: null
+    complete_schedule: null
+  source_refs:
+  - RU-SER
+  - RU-ESC
+  - RU-DEP
+  note: Ожидание переноса из источника; калькулятор не реализован, клиническая валидация не выполнена.
+  case_kind: unverified_source_fragment
+  transfer_allowed: false
+  source_confirmation: current RU-ESC original unavailable
+- rule_id: switch-ser-esc
+  case_id: switch-ser-esc__gradual-is-not-washout
+  synthetic: true
+  given:
+    withdrawal_plan_duration_days: 14
+  expected:
+    invented_washout_days: null
+    automatic_overlap_permission: false
+    automatic_overlap_prohibition: false
+  source_refs:
+  - RU-SER
+  - RU-ESC
+  - RU-DEP
+  note: Ожидание переноса из источника; калькулятор не реализован, клиническая валидация не выполнена.
+  case_kind: unverified_source_fragment
+  transfer_allowed: false
+  source_confirmation: current RU-ESC original unavailable
+- rule_id: venla-xr-gad-start
+  case_id: venla-xr-gad-start__usual
+  synthetic: true
+  given:
+    form: XR 75 мг
+    renal_metric: СКФ >30 мл/мин
+    hepatic: без нарушения
+  expected:
+    start_mg_per_day: 75
+    frequency: 1
+    maximum_mg_per_day: 225
+    increase_min_interval_weeks: 2
+    automatic_increment: null
+  source_refs:
+  - RU-VENLA-XR
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: venla-xr-gad-start
+  case_id: venla-xr-gad-start__wrong-form
+  synthetic: true
+  given:
+    form: Велаксин таблетка 37,5 мг IR
+  expected:
+    result_type: not_applicable
+    do_not_substitute_IR: true
+  source_refs:
+  - RU-VENLA-XR
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: venla-xr-gad-start
+  case_id: venla-xr-gad-start__renal30
+  synthetic: true
+  given:
+    GFR_mL_min: 30
+    usual_dose_mg_per_day: 75
+  expected:
+    published_reduction_percent: 50
+    arithmetic_dose_mg_per_day: 37.5
+    feasible_with_XR_75_150: false
+  source_refs:
+  - RU-VENLA-XR
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: venla-xr-gad-start
+  case_id: venla-xr-gad-start__double-modifier
+  synthetic: true
+  given:
+    renal_metric: СКФ 20 мл/мин
+    hepatic: умеренная недостаточность
+  expected:
+    automatic_product_of_reductions: false
+    result_type: clinician_choice
+  source_refs:
+  - RU-VENLA-XR
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: venla-xr-gad-start
+  case_id: venla-xr-gad-start__wrong-unit
+  synthetic: true
+  given:
+    renal_metric: eGFR 45 мл/мин/1,73м2
+  expected:
+    result_type: insufficient_data
+    missing:
+    - absolute_GFR_mL_min
+    automatic_unit_equivalence: false
+  source_refs:
+  - RU-VENLA-XR
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: venla-xr-panic-form-limit
+  case_id: venla-xr-panic-form-limit__capsule75
+  synthetic: true
+  given:
+    form: Велаксин XR75
+  expected:
+    published_start_mg_per_day: 37.5
+    dose_feasible: false
+    split_capsule_allowed: false
+    unconditional_dose: null
+  source_refs:
+  - RU-VENLA-XR
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: venla-xr-panic-form-limit
+  case_id: venla-xr-panic-form-limit__IR-substitution
+  synthetic: true
+  given:
+    form: Велаксин IR37,5
+  expected:
+    dose_form_substitution_allowed: false
+  source_refs:
+  - RU-VENLA-XR
+  - RU-VENLA-IR
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: venla-xr-social-start
+  case_id: venla-xr-social-start__usual
+  synthetic: true
+  given:
+    form: XR 75 мг
+    renal_metric: СКФ >30 мл/мин
+    hepatic: без нарушения
+  expected:
+    start_mg_per_day: 75
+    frequency: 1
+    maximum_mg_per_day: 225
+    increase_min_interval_weeks: 2
+    automatic_increment: null
+  source_refs:
+  - RU-VENLA-XR
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: venla-xr-social-start
+  case_id: venla-xr-social-start__wrong-form
+  synthetic: true
+  given:
+    form: Велаксин таблетка 37,5 мг IR
+  expected:
+    result_type: not_applicable
+    do_not_substitute_IR: true
+  source_refs:
+  - RU-VENLA-XR
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: venla-xr-social-start
+  case_id: venla-xr-social-start__renal30
+  synthetic: true
+  given:
+    GFR_mL_min: 30
+    usual_dose_mg_per_day: 75
+  expected:
+    published_reduction_percent: 50
+    arithmetic_dose_mg_per_day: 37.5
+    feasible_with_XR_75_150: false
+  source_refs:
+  - RU-VENLA-XR
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: venla-xr-social-start
+  case_id: venla-xr-social-start__double-modifier
+  synthetic: true
+  given:
+    renal_metric: СКФ 20 мл/мин
+    hepatic: умеренная недостаточность
+  expected:
+    automatic_product_of_reductions: false
+    result_type: clinician_choice
+  source_refs:
+  - RU-VENLA-XR
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: venla-xr-social-start
+  case_id: venla-xr-social-start__wrong-unit
+  synthetic: true
+  given:
+    renal_metric: eGFR 45 мл/мин/1,73м2
+  expected:
+    result_type: insufficient_data
+    missing:
+    - absolute_GFR_mL_min
+    automatic_unit_equivalence: false
+  source_refs:
+  - RU-VENLA-XR
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: venla-xr-taper-limit
+  case_id: venla-xr-taper-limit__no-invented-tail
+  synthetic: true
+  given:
+    current_dose: null
+  expected:
+    automatic_full_taper_calendar: null
+    uniform_percentage: null
+    duration_upper_limit_weeks: null
+    duration_operator: minimum_choice
+  source_refs:
+  - RU-VENLA-XR
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+- rule_id: venla-xr-taper-limit
+  case_id: venla-xr-taper-limit__symptoms
+  synthetic: true
+  given:
+    withdrawal_severity: выраженные
+  expected:
+    automatic_next_reduction: false
+    clinician_reassessment: true
+    duration_upper_limit_weeks: null
+    duration_operator: minimum_choice
+  source_refs:
+  - RU-VENLA-XR
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+case_conventions:
+  scope: source_parameter_and_constraint_fragments
+  unlisted_inputs: not_assessed_by_fragment; no default normal/no values
+  positive_numeric_expectations: Conditional published parameter under the applicability/logic of its rule, not
+    an unconditional patient prescription. Complete end-to-end input fixtures must be assembled when the calculator
+    is implemented.
+  negative_expectations: The given explicit contraindication/missing operand is sufficient for the stated refusal;
+    omitted values never imply normality.

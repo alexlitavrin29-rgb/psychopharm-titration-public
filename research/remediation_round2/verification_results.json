@@ -1,0 +1,20 @@
+{
+  "main_structure": "verification_report.json",
+  "structural_negative_mutations": "verification_negative_checks.json",
+  "contracts": "contract_verification.json",
+  "targeted_negative_mutations": "new_negative_checks.json",
+  "independent_primary_expectations": "primary_expected_checks.json",
+  "rule_cards": 38,
+  "prepared_full_scenarios": 4897,
+  "prepared_isolated_fragments": 124,
+  "question_paths": 124,
+  "calculator_tests_executed": false,
+  "clinical_validation": "not_performed",
+  "scope": "Prepared expected, static consistency and targeted primary checks; no calculator execution or clinical validation. Independent final review completed with explicit F12/17/18 limitations.",
+  "graph_check": "graph_verification.json",
+  "targeted_negative_mutations_count": 35,
+  "structural_negative_mutations_count": 5,
+  "independent_primary_cases": 19,
+  "independent_final_review": "independent_review.md",
+  "independent_final_review_status": "completed_with_open_F12_criterion17_criterion18"
+}

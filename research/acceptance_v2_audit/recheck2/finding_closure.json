@@ -1,0 +1,107 @@
+[
+  {
+    "id": "V2-01",
+    "status": "closed in original scope",
+    "evidence": "Ранее проверенная правка сохранена; medical parameters unchanged and source SHA equality confirmed."
+  },
+  {
+    "id": "V2-02",
+    "status": "closed in original scope",
+    "evidence": "Ранее проверенная правка сохранена; medical parameters unchanged and source SHA equality confirmed."
+  },
+  {
+    "id": "V2-03",
+    "status": "closed in original scope",
+    "evidence": "Ранее проверенная правка сохранена; medical parameters unchanged and source SHA equality confirmed."
+  },
+  {
+    "id": "V2-04",
+    "status": "closed in original scope",
+    "evidence": "Ранее проверенная правка сохранена; medical parameters unchanged and source SHA equality confirmed."
+  },
+  {
+    "id": "V2-05",
+    "status": "closed in original scope",
+    "evidence": "Ранее проверенная правка сохранена; medical parameters unchanged and source SHA equality confirmed."
+  },
+  {
+    "id": "V2-06",
+    "status": "closed in original scope",
+    "evidence": "Ранее проверенная правка сохранена; medical parameters unchanged and source SHA equality confirmed."
+  },
+  {
+    "id": "V2-07",
+    "status": "closed in original scope",
+    "evidence": "Ранее проверенная правка сохранена; medical parameters unchanged and source SHA equality confirmed."
+  },
+  {
+    "id": "V2-08",
+    "status": "closed in original scope",
+    "evidence": "68 ранее зафиксированных locator records изменены; текущие PAR физ.страницы, DULOX §4.8 physical11/14 и AGO/PREG типовые locators сверены. Новая PHEN scope/locator ошибка отдельно R2-03."
+  },
+  {
+    "id": "V2-09",
+    "status": "closed in original scope",
+    "evidence": "Ранее проверенная правка сохранена; medical parameters unchanged and source SHA equality confirmed."
+  },
+  {
+    "id": "V2-10",
+    "status": "closed in original scope",
+    "evidence": "Все531 projected paths: zero absent negatives/negative-unassessed overlap/hidden positive input; SER strong_CYP3A4 qualitative path count9 includes INN/status."
+  },
+  {
+    "id": "V2-11",
+    "status": "closed in original scope",
+    "evidence": "Current main01/09 не объявляют ESC unavailable; README/main pointers и historical copies различаются."
+  },
+  {
+    "id": "V2-12",
+    "status": "partial/open",
+    "evidence": "22 qualitative operands demoted; PREG3 закрыты. Полная necessity остаётся открытой; R2-02/04."
+  },
+  {
+    "id": "V2-13",
+    "status": "partial/open",
+    "evidence": "Long ordinary20/17/17–18/16 сохраняются; R2-05."
+  },
+  {
+    "id": "V2-14",
+    "status": "closed in original scope",
+    "evidence": "Ранее проверенная правка сохранена; medical parameters unchanged and source SHA equality confirmed."
+  },
+  {
+    "id": "R1-01",
+    "status": "partial: source actions checked, nonstart A phase mapping unresolved (R2-01)",
+    "evidence": "Four known events preserve exact consider/help actions, actor and ongoing phase; unknown/omitted explicit unassessed; missing phase requests a named field. Domain mismatch separately R2-01."
+  },
+  {
+    "id": "R1-02",
+    "status": "closed in reviewed source/expected scope",
+    "evidence": "Seven XR classes: caution / avoid QT / not recommended precursor and weightloss, no invented factor; all4 cards fixtures independently checked."
+  },
+  {
+    "id": "R1-03",
+    "status": "closed in reviewed source/expected scope",
+    "evidence": "Own SER gate both SSRI directions, source role A/B and strong_CYP3A4 avoidance retained; no pair calendar invented."
+  },
+  {
+    "id": "R1-04",
+    "status": "closed in reviewed source/expected scope",
+    "evidence": "Additional concurrent duloxetine product counted as a separate fact; selected product alone not duplicate; unknown additional identity blocked."
+  },
+  {
+    "id": "R1-05",
+    "status": "closed in reviewed source/expected scope",
+    "evidence": "All4 PREG SCAR known-stop results: immediate stop plus conditional consider alternative; no named/dosed alternative."
+  },
+  {
+    "id": "R1-06",
+    "status": "partial: expected fixed, narrative/necessity residual open",
+    "evidence": "Expected prior_dose_resumption null+gap correct for PREG/PHEN; residual source-attribution metadata remains R2-03."
+  },
+  {
+    "id": "R1-07",
+    "status": "closed in reviewed source/expected scope",
+    "evidence": "XR confirmed pregnancy question differs from suspected pregnancy; both facts still counted."
+  }
+]

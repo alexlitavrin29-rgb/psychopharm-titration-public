@@ -1,0 +1,1706 @@
+schema_version: '1.0'
+rule_id: switch-parox-ago
+development_status: extracted_research_not_executable
+language: ru
+identity:
+  title: 'пароксетин → агомелатин: старт B с первого дня снижения A'
+  mode: switch
+  drug_inn: null
+  from_drug_inn: пароксетин
+  to_drug_inn: агомелатин
+  formulation: &id004
+    from: Рексетин, таблетки 20 мг; половина 10 мг
+    to: Вальдоксан, таблетки 25 мг, покрытые пленочной оболочкой
+  route: oral
+  diagnosis_label_ru: Депрессивный эпизод/рекуррентная депрессия у взрослых
+  classification_system: МКБ-10
+  diagnosis_code: F32/F33
+  jurisdiction: RU_versioned_sources
+applicability:
+  population_description: Взрослые с самостоятельным депрессивным расстройством; B не применять от 75 лет по ОХЛП.
+  age_constraints:
+  - minimum: 18
+    inclusive: true
+    unit: year
+    source_ref: RU-AGO
+    source_locator: §4.1–4.2, PDF с.1–2
+  pregnancy: ОХЛП B рекомендует избегать назначения при беременности (§4.6 с.6); отдельное решение врача по A/B,
+    без коэффициента.
+  lactation: ОХЛП B требует решения прекратить вскармливание или терапию (§4.6 с.6); без коэффициента.
+  renal_constraints:
+  - Средняя/тяжёлая почечная недостаточность B требует осторожности, без отдельного числа.
+  hepatic_constraints:
+  - B противопоказан при печеночной недостаточности и АЛТ/АСТ >3 ВГН. До начала печёночные пробы обязательны всем.
+  comorbidity_constraints: []
+  interacting_drugs:
+  - B противопоказан с флувоксамином/ципрофлоксацином (сильные CYP1A2-ингибиторы); проверять оба препарата, §4.3–4.5.
+  other_conditions:
+  - ОХЛП B прямо разрешает начало с 1-го дня постепенного снижения СИОЗС/СИОЗСН. Это классовое разрешение, применённое
+    к явно указанному СИОЗС A; не исследование каждой пары.
+  - Нет полного обязательного календаря доз A. Нужен выбор темпа врачом, а для пароксетина доступен отдельно маркированный
+    взрослый пример.
+  exclusions:
+  - Печеночная недостаточность B; АЛТ или АСТ >3 ВГН; противопоказанный ингибитор CYP1A2; возрастная неприменимость;
+    гиперчувствительность.
+  - Редкие наследственные непереносимость галактозы, полная лактазная недостаточность, глюкозо-галактозная мальабсорбция
+    (§4.3 с.3).
+  - 'Пожилые с деменцией: не назначать (§4.4 с.4); не выводить категорию пожилых из самостоятельно выбранного возраста.'
+  indication_status_in_russia: RU_indication_present_in_original_registry_currency_separate
+  source_refs: &id003
+  - RU-PAROX
+  - RU-AGO
+  - RU-DEP
+inputs:
+- input_id: from_form
+  question_ru: Какая форма A?
+  data_type: structured_form
+  unit: null
+  allowed_values: []
+  required_when: для этой ветки
+  show_when: для этой ветки
+  why_needed: Исполнимость снижения по инструкции A.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Назвать отсутствующее поле; не подставлять норму и не выдавать безусловную индивидуальную схему.
+  source_refs:
+  - RU-PAROX
+  input_role: dose_operand_or_applicability_gate
+  source_locator: §4.2 с.16–17, прекращение/симптомы отмены; §3 с.15, форма
+  missing_states: &id001
+  - unknown
+  - not_assessed
+  structure_ref: remediation/input_contracts.yaml#structures/structured_form
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  source_condition_ownership: A=RU-PAROX
+- input_id: to_form
+  question_ru: Какая форма B?
+  data_type: structured_form
+  unit: null
+  allowed_values: []
+  required_when: для этой ветки
+  show_when: для этой ветки
+  why_needed: Вальдоксан 25 мг, целая таблетка.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Назвать отсутствующее поле; не подставлять норму и не выдавать безусловную индивидуальную схему.
+  source_refs:
+  - RU-AGO
+  input_role: dose_operand_or_applicability_gate
+  source_locator: §2–3 с.1, Вальдоксан 25 мг
+  missing_states: *id001
+  structure_ref: remediation/input_contracts.yaml#structures/structured_form
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  source_condition_ownership: B=RU-AGO
+- input_id: age
+  question_ru: Возраст, полных лет?
+  data_type: integer
+  unit: year
+  allowed_values: []
+  required_when: для этой ветки
+  show_when: для этой ветки
+  why_needed: Взрослая популяция; исключение B >=75 при депрессии.
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Назвать отсутствующее поле; не подставлять норму и не выдавать безусловную индивидуальную схему.
+  source_refs:
+  - RU-PAROX
+  - RU-AGO
+  input_role: dose_operand_or_applicability_gate
+  source_locator: 'RU-PAROX: §4.2 с.17; §4.4 с.18; RU-AGO: §4.2 с.2, возрастная применимость'
+  missing_states: *id001
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  source_condition_ownership: Shared patient/history fact; each applicable source gate evaluated separately
+  source_locators_by_ref:
+    RU-PAROX: §4.2 с.17; §4.4 с.18
+    RU-AGO: §4.2 с.2, возрастная применимость
+- input_id: current_dose
+  question_ru: Текущая доза A?
+  data_type: number
+  unit: mg/day
+  allowed_values: []
+  required_when: для этой ветки
+  show_when: для этой ветки
+  why_needed: Исходная точка снижения, не эквивалент B.
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Назвать отсутствующее поле; не подставлять норму и не выдавать безусловную индивидуальную схему.
+  source_refs:
+  - RU-PAROX
+  input_role: dose_operand_or_applicability_gate
+  source_locator: §4.2 с.16–17, прекращение/симптомы отмены; §3 с.15, форма
+  missing_states: *id001
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  source_condition_ownership: A=RU-PAROX
+- input_id: from_taper_plan
+  question_ru: Какие конкретные ступени/темп A выбрал врач?
+  data_type: dose_schedule
+  unit: null
+  allowed_values: []
+  required_when: для этой ветки
+  show_when: для этой ветки
+  why_needed: Источник B отсылает к инструкции A; сам не задаёт календарь A.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Назвать отсутствующее поле; не подставлять норму и не выдавать безусловную индивидуальную схему.
+  source_refs:
+  - RU-PAROX
+  input_role: dose_operand_or_applicability_gate
+  source_locator: §4.2 с.16–17, прекращение/симптомы отмены; §3 с.15, форма
+  missing_states: *id001
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  structure_ref: remediation/input_contracts.yaml#structures/dose_schedule
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  source_condition_ownership: A=RU-PAROX
+- input_id: hepatic
+  question_ru: Есть нарушение функции печени?
+  data_type: source_hepatic_category
+  unit: null
+  allowed_values: []
+  required_when: для этой ветки
+  show_when: для этой ветки
+  why_needed: Противопоказание B, отдельное от анализов.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Назвать отсутствующее поле; не подставлять норму и не выдавать безусловную индивидуальную схему.
+  source_refs:
+  - RU-AGO
+  input_role: dose_operand_or_applicability_gate
+  source_locator: §4.3 с.3, печёночная недостаточность (цирроз или активное заболевание печени)
+  missing_states: *id001
+  structure_ref: remediation/input_contracts.yaml#structures/source_hepatic_category
+  source_categories:
+  - no_impairment_after_assessment
+  - hepatic_insufficiency
+  - cirrhosis
+  - active_liver_disease
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  source_condition_ownership: B=RU-AGO
+- input_id: alt_ratio_uln
+  question_ru: АЛТ относительно ВГН?
+  data_type: number
+  unit: ratio_to_ULN
+  allowed_values: []
+  required_when: для этой ветки
+  show_when: для этой ветки
+  why_needed: Обязательная проба B; не заменять одним показателем категорию печени.
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Назвать отсутствующее поле; не подставлять норму и не выдавать безусловную индивидуальную схему.
+  source_refs:
+  - RU-AGO
+  input_role: dose_operand_or_applicability_gate
+  source_locator: §4.3 с.3; §4.4 с.3–4, АЛТ отдельно
+  missing_states: *id001
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  source_condition_ownership: B=RU-AGO
+- input_id: ast_ratio_uln
+  question_ru: АСТ относительно ВГН?
+  data_type: number
+  unit: ratio_to_ULN
+  allowed_values: []
+  required_when: для этой ветки
+  show_when: для этой ветки
+  why_needed: Самостоятельная обязательная проба B.
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Назвать отсутствующее поле; не подставлять норму и не выдавать безусловную индивидуальную схему.
+  source_refs:
+  - RU-AGO
+  input_role: dose_operand_or_applicability_gate
+  source_locator: §4.3 с.3; §4.4 с.3–4, АСТ отдельно
+  missing_states: *id001
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  source_condition_ownership: B=RU-AGO
+- input_id: medicines
+  question_ru: Текущие/недавно отменённые лекарства?
+  data_type: medication_list
+  unit: null
+  allowed_values: []
+  required_when: для этой ветки
+  show_when: для этой ветки
+  why_needed: Взаимодействия обоих препаратов.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Назвать отсутствующее поле; не подставлять норму и не выдавать безусловную индивидуальную схему.
+  source_refs:
+  - RU-PAROX
+  - RU-AGO
+  input_role: dose_operand_or_applicability_gate
+  source_locator: 'RU-PAROX: §4.3 с.17–18; §4.5 с.24–26; RU-AGO: §4.3 с.3; §4.5 с.5–6'
+  missing_states: *id001
+  structure_ref: remediation/input_contracts.yaml#structures/medication_list
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  source_condition_ownership: Shared patient/history fact; each applicable source gate evaluated separately
+  source_locators_by_ref:
+    RU-PAROX: §4.3 с.17–18; §4.5 с.24–26
+    RU-AGO: §4.3 с.3; §4.5 с.5–6
+- input_id: allergy
+  question_ru: Есть гиперчувствительность к A/B или компонентам?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: для этой ветки
+  show_when: для этой ветки
+  why_needed: Противопоказания обоих препаратов.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Назвать отсутствующее поле; не подставлять норму и не выдавать безусловную индивидуальную схему.
+  source_refs:
+  - RU-PAROX
+  - RU-AGO
+  input_role: dose_operand_or_applicability_gate
+  source_locator: 'RU-PAROX: §4.3 с.17; RU-AGO: §4.3 с.3'
+  missing_states: *id001
+  value_aliases: &id002
+    да: true
+    нет: false
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  source_condition_ownership: Shared patient/history fact; each applicable source gate evaluated separately
+  source_locators_by_ref:
+    RU-PAROX: §4.3 с.17
+    RU-AGO: §4.3 с.3
+- input_id: pregnancy
+  question_ru: Беременность установлена или возможна?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: для этой ветки
+  show_when: для этой ветки
+  why_needed: Отдельная оценка; B рекомендуется избегать.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Назвать отсутствующее поле; не подставлять норму и не выдавать безусловную индивидуальную схему.
+  source_refs:
+  - RU-PAROX
+  - RU-AGO
+  input_role: dose_operand_or_applicability_gate
+  source_locator: 'RU-PAROX: §4.6 с.27–28; RU-AGO: §4.6 с.6'
+  missing_states: *id001
+  value_aliases: *id002
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  source_condition_ownership: Shared patient/history fact; each applicable source gate evaluated separately
+  source_locators_by_ref:
+    RU-PAROX: §4.6 с.27–28
+    RU-AGO: §4.6 с.6
+- input_id: lactation
+  question_ru: Есть грудное вскармливание?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: для этой ветки
+  show_when: для этой ветки
+  why_needed: 'Отдельное решение B: вскармливание/терапия.'
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Назвать отсутствующее поле; не подставлять норму и не выдавать безусловную индивидуальную схему.
+  source_refs:
+  - RU-PAROX
+  - RU-AGO
+  input_role: dose_operand_or_applicability_gate
+  source_locator: 'RU-PAROX: §4.6 с.28; RU-AGO: §4.6 с.6'
+  missing_states: *id001
+  value_aliases: *id002
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  source_condition_ownership: Shared patient/history fact; each applicable source gate evaluated separately
+  source_locators_by_ref:
+    RU-PAROX: §4.6 с.28
+    RU-AGO: §4.6 с.6
+- input_id: withdrawal_severity
+  question_ru: Текущие симптомы отмены A по оценке врача?
+  data_type: enum
+  unit: null
+  allowed_values:
+  - нет
+  - лёгкие
+  - умеренные
+  - тяжёлые
+  - непереносимые
+  - выраженные
+  - unknown
+  - not_assessed
+  required_when: для этой ветки
+  show_when: для этой ветки
+  why_needed: Следующую ступень A при симптомах пересматривают.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Назвать отсутствующее поле; не подставлять норму и не выдавать безусловную индивидуальную схему.
+  source_refs:
+  - RU-PAROX
+  input_role: dose_operand_or_applicability_gate
+  source_locator: §4.2 с.16–17, прекращение/симптомы отмены; §3 с.15, форма
+  missing_states: *id001
+  value_aliases:
+    нет требующих замедления симптомов: нет
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  source_condition_ownership: A=RU-PAROX
+- input_id: maoi_type
+  question_ru: Тип каждого текущего/отменённого ИМАО?
+  data_type: record_map
+  unit: null
+  allowed_values:
+  - none_after_medication_history
+  - irreversible
+  - reversible_selective
+  - reversible_nonselective
+  - unknown
+  - not_assessed
+  required_when: если список medicines содержит ИМАО или его класс неясен; separate per relevant record
+  show_when: если список medicines содержит ИМАО или его класс неясен; separate per relevant record
+  why_needed: 'Изменяет применимость/действие: §4.3 с.17–18.'
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; запросить maoi_type; числовой выход отсутствует.
+  source_refs:
+  - RU-PAROX
+  source_locator: §4.3 с.17–18
+  input_role: applicability_gate
+  required_for_individual_result: medicines contains current/stopped MAOI or unidentified interaction class
+  missing_states: *id001
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  collection: per medication record_id
+  value_data_type: enum
+  source_condition_ownership: A=RU-PAROX
+- input_id: maoi_stopped_at
+  question_ru: Дата и время последнего приёма каждого отменённого ИМАО?
+  data_type: record_map
+  unit: null
+  allowed_values: []
+  required_when: если ИМАО отменён; separate per relevant record
+  show_when: если ИМАО отменён; separate per relevant record
+  why_needed: 'Изменяет применимость/действие: §4.3 с.17–18.'
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; запросить maoi_stopped_at; числовой выход отсутствует.
+  source_refs:
+  - RU-PAROX
+  source_locator: §4.3 с.17–18
+  input_role: applicability_gate
+  required_for_individual_result: medicines contains stopped MAOI; per relevant record
+  missing_states: *id001
+  collection: per medication record_id
+  value_data_type: datetime
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  source_condition_ownership: A=RU-PAROX
+- input_id: elderly_population
+  question_ru: Врач относит пациента к пожилым?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: individual_result
+  show_when: individual_result
+  why_needed: 'Изменяет применимость/действие: §4.4 с.4; числовая граница категории не задана.'
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; запросить elderly_population; числовой выход отсутствует.
+  source_refs:
+  - RU-AGO
+  source_locator: §4.4 с.4; числовая граница категории не задана
+  input_role: applicability_gate
+  required_for_individual_result: true
+  missing_states: *id001
+  value_aliases: *id002
+  source_condition_ownership: B=RU-AGO
+- input_id: dementia
+  question_ru: Есть деменция?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: individual_result
+  show_when: individual_result
+  why_needed: 'Изменяет применимость/действие: §4.4 с.4.'
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; запросить dementia; числовой выход отсутствует.
+  source_refs:
+  - RU-AGO
+  source_locator: §4.4 с.4
+  input_role: applicability_gate
+  required_for_individual_result: true
+  missing_states: *id001
+  value_aliases: *id002
+  source_condition_ownership: B=RU-AGO
+- input_id: galactose_intolerance
+  question_ru: Редкая наследственная непереносимость галактозы?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: individual_result
+  show_when: individual_result
+  why_needed: 'Изменяет применимость/действие: §4.3 с.3; §4.4 с.5.'
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; запросить galactose_intolerance; числовой выход отсутствует.
+  source_refs:
+  - RU-AGO
+  source_locator: §4.3 с.3; §4.4 с.5
+  input_role: applicability_gate
+  required_for_individual_result: true
+  missing_states: *id001
+  value_aliases: *id002
+  source_condition_ownership: B=RU-AGO
+- input_id: complete_lactase_deficiency
+  question_ru: Полная лактазная недостаточность?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: individual_result
+  show_when: individual_result
+  why_needed: 'Изменяет применимость/действие: §4.3 с.3; §4.4 с.5.'
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; запросить complete_lactase_deficiency; числовой выход отсутствует.
+  source_refs:
+  - RU-AGO
+  source_locator: §4.3 с.3; §4.4 с.5
+  input_role: applicability_gate
+  required_for_individual_result: true
+  missing_states: *id001
+  value_aliases: *id002
+  source_condition_ownership: B=RU-AGO
+- input_id: glucose_galactose_malabsorption
+  question_ru: Глюкозо-галактозная мальабсорбция?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: individual_result
+  show_when: individual_result
+  why_needed: 'Изменяет применимость/действие: §4.3 с.3; §4.4 с.5.'
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; запросить glucose_galactose_malabsorption; числовой выход отсутствует.
+  source_refs:
+  - RU-AGO
+  source_locator: §4.3 с.3; §4.4 с.5
+  input_role: applicability_gate
+  required_for_individual_result: true
+  missing_states: *id001
+  value_aliases: *id002
+  source_condition_ownership: B=RU-AGO
+- input_id: liver_injury_signs
+  question_ru: Есть признаки возможного поражения печени?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: individual_result
+  show_when: individual_result
+  why_needed: 'Изменяет применимость/действие: §4.4 с.4: темная моча, обесцвеченный стул, желтуха, боль справа вверху
+    живота, новая необъяснимая постоянная утомляемость.'
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; запросить liver_injury_signs; числовой выход отсутствует.
+  source_refs:
+  - RU-AGO
+  source_locator: '§4.4 с.4: темная моча, обесцвеченный стул, желтуха, боль справа вверху живота, новая необъяснимая
+    постоянная утомляемость'
+  input_role: applicability_gate
+  required_for_individual_result: true
+  missing_states: *id001
+  value_aliases: *id002
+  source_condition_ownership: B=RU-AGO
+- input_id: transaminases_rising
+  question_ru: Установлено повышение активности трансаминаз в ходе лечения?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: individual_result
+  show_when: individual_result
+  why_needed: 'Изменяет применимость/действие: §4.4 с.4.'
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; запросить transaminases_rising; числовой выход отсутствует.
+  source_refs:
+  - RU-AGO
+  source_locator: §4.4 с.4
+  input_role: applicability_gate
+  required_for_individual_result: true
+  missing_states: *id001
+  value_aliases: *id002
+  source_condition_ownership: B=RU-AGO
+- input_id: overweight_obesity
+  question_ru: Есть избыточная масса тела/ожирение?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: individual_result
+  show_when: individual_result
+  why_needed: 'Изменяет применимость/действие: §4.4 с.3.'
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; запросить overweight_obesity; числовой выход отсутствует.
+  source_refs:
+  - RU-AGO
+  source_locator: §4.4 с.3
+  input_role: applicability_gate
+  required_for_individual_result: true
+  missing_states: *id001
+  value_aliases: *id002
+  source_condition_ownership: B=RU-AGO
+- input_id: fatty_liver
+  question_ru: Есть неалкогольная жировая болезнь печени?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: individual_result
+  show_when: individual_result
+  why_needed: 'Изменяет применимость/действие: §4.4 с.3.'
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; запросить fatty_liver; числовой выход отсутствует.
+  source_refs:
+  - RU-AGO
+  source_locator: §4.4 с.3
+  input_role: applicability_gate
+  required_for_individual_result: true
+  missing_states: *id001
+  value_aliases: *id002
+  source_condition_ownership: B=RU-AGO
+- input_id: diabetes
+  question_ru: Есть диабет?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: individual_result
+  show_when: individual_result
+  why_needed: 'Изменяет применимость/действие: §4.4 с.3.'
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; запросить diabetes; числовой выход отсутствует.
+  source_refs:
+  - RU-AGO
+  source_locator: §4.4 с.3
+  input_role: applicability_gate
+  required_for_individual_result: true
+  missing_states: *id001
+  value_aliases: *id002
+  source_condition_ownership: B=RU-AGO
+- input_id: alcohol_abuse
+  question_ru: Есть алкоголизм или злоупотребление алкоголем?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: individual_result
+  show_when: individual_result
+  why_needed: 'Изменяет применимость/действие: §4.4 с.3.'
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; запросить alcohol_abuse; числовой выход отсутствует.
+  source_refs:
+  - RU-AGO
+  source_locator: §4.4 с.3
+  input_role: applicability_gate
+  required_for_individual_result: true
+  missing_states: *id001
+  value_aliases: *id002
+  source_condition_ownership: B=RU-AGO
+- input_id: alcohol_use
+  question_ru: Предполагается совместное употребление алкоголя?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: individual_result
+  show_when: individual_result
+  why_needed: 'Изменяет применимость/действие: §4.5 с.6.'
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; запросить alcohol_use; числовой выход отсутствует.
+  source_refs:
+  - RU-AGO
+  source_locator: §4.5 с.6
+  input_role: applicability_gate
+  required_for_individual_result: true
+  missing_states: *id001
+  value_aliases: *id002
+  source_condition_ownership: B=RU-AGO
+- input_id: mania
+  question_ru: Есть мания/гипомания или БАР в анамнезе?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: individual_result
+  show_when: individual_result
+  why_needed: 'Изменяет применимость/действие: §4.4 с.4.'
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; запросить mania; числовой выход отсутствует.
+  source_refs:
+  - RU-AGO
+  source_locator: §4.4 с.4
+  input_role: applicability_gate
+  required_for_individual_result: true
+  missing_states: *id001
+  value_aliases: *id002
+  source_condition_ownership: B=RU-AGO
+- input_id: mania_symptoms
+  question_ru: Появились текущие симптомы мании?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: individual_result
+  show_when: individual_result
+  why_needed: 'Изменяет применимость/действие: §4.4 с.4.'
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; запросить mania_symptoms; числовой выход отсутствует.
+  source_refs:
+  - RU-AGO
+  source_locator: §4.4 с.4
+  input_role: applicability_gate
+  required_for_individual_result: true
+  missing_states: *id001
+  value_aliases: *id002
+  source_condition_ownership: B=RU-AGO
+- input_id: suicide_risk
+  question_ru: Врач выявил суицидальный риск?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: individual_result
+  show_when: individual_result
+  why_needed: 'Изменяет применимость/действие: §4.4 с.4–5.'
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; запросить suicide_risk; числовой выход отсутствует.
+  source_refs:
+  - RU-AGO
+  source_locator: §4.4 с.4–5
+  input_role: applicability_gate
+  required_for_individual_result: true
+  missing_states: *id001
+  value_aliases: *id002
+  source_condition_ownership: B=RU-AGO
+- input_id: ect
+  question_ru: Применяется ЭСТ?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: individual_result
+  show_when: individual_result
+  why_needed: 'Изменяет применимость/действие: §4.5 с.6.'
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; запросить ect; числовой выход отсутствует.
+  source_refs:
+  - RU-AGO
+  source_locator: §4.5 с.6
+  input_role: applicability_gate
+  required_for_individual_result: true
+  missing_states: *id001
+  value_aliases: *id002
+  source_condition_ownership: B=RU-AGO
+- input_id: renal_state
+  question_ru: Категория почечной недостаточности по оценке врача?
+  data_type: enum
+  unit: null
+  allowed_values:
+  - недостаточность не выявлена после оценки
+  - лёгкая
+  - средняя
+  - тяжёлая
+  - unknown
+  - not_assessed
+  required_when: individual_result
+  show_when: individual_result
+  why_needed: 'Изменяет применимость/действие: §4.2 с.2; §4.4 с.4.'
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; запросить renal_state; числовой выход отсутствует.
+  source_refs:
+  - RU-AGO
+  source_locator: §4.2 с.2, почечная недостаточность
+  input_role: applicability_gate
+  required_for_individual_result: true
+  missing_states: *id001
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  source_condition_ownership: B=RU-AGO
+- input_id: from_hepatic
+  question_ru: Подтверждённое значение from_hepatic по §4.2 с.17?
+  data_type: source_hepatic_category
+  unit: null
+  allowed_values: []
+  required_when: для индивидуального результата этой ветки
+  show_when: эта ветка
+  why_needed: Изменяет допуск/действие по RU-PAROX §4.2 с.17; не общий допуск врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; missing=[from_hepatic]; no individual dose
+  source_refs:
+  - RU-PAROX
+  source_locator: §4.2 с.17, нарушение функции печени
+  required_for_individual_result: true
+  missing_states:
+  - unknown
+  - not_assessed
+  structure_ref: remediation/input_contracts.yaml#structures/source_hepatic_category
+  source_categories:
+  - no_impairment_after_assessment
+  - hepatic_insufficiency
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  source_condition_ownership: A=RU-PAROX
+- input_id: from_renal
+  question_ru: Подтверждённое значение from_renal по §4.2 с.17?
+  data_type: structured_renal
+  unit: null
+  allowed_values: []
+  required_when: для индивидуального результата этой ветки
+  show_when: эта ветка
+  why_needed: Изменяет допуск/действие по RU-PAROX §4.2 с.17; не общий допуск врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; missing=[from_renal]; no individual dose
+  source_refs:
+  - RU-PAROX
+  source_locator: §4.2 с.17
+  required_for_individual_result: true
+  missing_states:
+  - unknown
+  - not_assessed
+  structure_ref: remediation/input_contracts.yaml#structures/structured_renal
+  required_metric: CLcr
+  required_unit: mL/min
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  source_condition_ownership: A=RU-PAROX
+- input_id: akathisia
+  question_ru: Подтверждённое значение akathisia по §4.4 с.20?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: для индивидуального результата этой ветки
+  show_when: эта ветка
+  why_needed: Изменяет допуск/действие по RU-PAROX §4.4 с.20; не общий допуск врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; missing=[akathisia]; no individual dose
+  source_refs:
+  - RU-PAROX
+  source_locator: §4.4 с.20
+  required_for_individual_result: true
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  source_condition_ownership: A=RU-PAROX
+- input_id: glaucoma
+  question_ru: Подтверждённое значение glaucoma по §4.4 с.22?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: для индивидуального результата этой ветки
+  show_when: эта ветка
+  why_needed: Изменяет допуск/действие по RU-PAROX §4.4 с.22; не общий допуск врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; missing=[glaucoma]; no individual dose
+  source_refs:
+  - RU-PAROX
+  source_locator: §4.4 с.22
+  required_for_individual_result: true
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  source_condition_ownership: A=RU-PAROX
+- input_id: bleeding_risk
+  question_ru: Подтверждённое значение bleeding_risk по §4.4 с.22?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: для индивидуального результата этой ветки
+  show_when: эта ветка
+  why_needed: Изменяет допуск/действие по RU-PAROX §4.4 с.22; не общий допуск врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; missing=[bleeding_risk]; no individual dose
+  source_refs:
+  - RU-PAROX
+  source_locator: §4.4 с.22
+  required_for_individual_result: true
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  source_condition_ownership: A=RU-PAROX
+- input_id: qt_risk
+  question_ru: Подтверждённое значение qt_risk по §4.4 с.22?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: для индивидуального результата этой ветки
+  show_when: эта ветка
+  why_needed: Изменяет допуск/действие по RU-PAROX §4.4 с.22; не общий допуск врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; missing=[qt_risk]; no individual dose
+  source_refs:
+  - RU-PAROX
+  source_locator: §4.4 с.22
+  required_for_individual_result: true
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  source_condition_ownership: A=RU-PAROX
+- input_id: seizure_state
+  question_ru: Подтверждённое значение seizure_state по §4.4 с.21?
+  data_type: enum
+  unit: null
+  allowed_values:
+  - не отмечены
+  - контролируемые
+  - неконтролируемые
+  - новые приступы
+  - unknown
+  - not_assessed
+  required_when: для индивидуального результата этой ветки
+  show_when: эта ветка
+  why_needed: Изменяет допуск/действие по RU-PAROX §4.4 с.21; не общий допуск врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; missing=[seizure_state]; no individual dose
+  source_refs:
+  - RU-PAROX
+  source_locator: §4.4 с.21
+  required_for_individual_result: true
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  source_condition_ownership: A=RU-PAROX
+clinical_parameters:
+- parameter_id: target_start
+  meaning: target_start
+  value: 25
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: mg/day
+  source_ref: RU-AGO
+  source_locator: §4.2, PDF с.1
+  source_meaning: предписание
+  derivation: null
+- parameter_id: target_frequency
+  meaning: target_frequency
+  value: 1
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: administration/day
+  source_ref: RU-AGO
+  source_locator: §4.2, PDF с.1
+  source_meaning: предписание
+  derivation: null
+- parameter_id: start_taper_day
+  meaning: start_taper_day
+  value: 1
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: day_of_A_taper
+  source_ref: RU-AGO
+  source_locator: §4.2, PDF с.2
+  source_meaning: предписание
+  derivation: null
+- parameter_id: hepatic_cutoff
+  meaning: hepatic_cutoff
+  value: 3
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: ratio_to_ULN
+  source_ref: RU-AGO
+  source_locator: §4.2–4.4, PDF с.1/3
+  source_meaning: предписание
+  derivation: null
+- parameter_id: depression_age_exclusion
+  meaning: depression_age_exclusion
+  value: 75
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: year
+  source_ref: RU-AGO
+  source_locator: §4.2, PDF с.2
+  source_meaning: предписание
+  derivation: null
+- parameter_id: repeat_liver_tests_hours
+  meaning: repeat_liver_tests_hours
+  value: 48
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: hour
+  source_ref: RU-AGO
+  source_locator: §4.4 PDF с.4
+  source_meaning: предписание
+  derivation: null
+- parameter_id: liver_monitoring_weeks
+  meaning: liver_monitoring_weeks
+  value:
+  - 3
+  - 6
+  - 12
+  - 24
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: week
+  source_ref: RU-AGO
+  source_locator: §4.2 с.1; §4.4 с.3
+  source_meaning: предписание
+  derivation: null
+logic:
+  representation: directed_switch_strategy
+  conditions:
+  - Показание/препарат выбраны врачом; взрослая применимость и форма подтверждены.
+  actions:
+  - A постепенно снижать по собственной инструкции и выбранному врачом плану.
+  - 'B можно начать с первого дня снижения A: 25 мг однократно перед сном. Опубликовано разрешение перекрытия; ожидание
+    последней дозы A не требуется этим способом перехода.'
+  - 'Не вычислять универсальный washout из полувыведения. Не применять разрешение к флувоксамину: его сочетание
+    с B противопоказано.'
+  parameter_refs:
+  - target_start
+  - target_frequency
+  - start_taper_day
+  - hepatic_cutoff
+  - depression_age_exclusion
+  - repeat_liver_tests_hours
+  - liver_monitoring_weeks
+  source_refs: *id003
+  clinician_choices: &id005
+  - Индивидуальные ступени снижения A, оценка риска отмены и решение о начале B.
+  - Применимость B и обязательный контроль печёночных проб.
+  missing_data_behaviour: Назвать обязательные неизвестные поля; результат insufficient_data. Справочные этапы можно
+    показать как условные, без безусловной дозы пациенту.
+  unsupported_case_behaviour: not_applicable для этой карточки; указать конкретную отсутствующую ветку, не запретить
+    всё лечение.
+  contraindicated_case_behaviour: Не выдавать дозовую схему противопоказанного сочетания; отобразить источник и
+    причину.
+  conflicts: []
+  composite_rule_dependencies:
+  - parox-taper-example
+  combination_justification: Опубликованное правило B прямо отсылает к инструкции A. Классовое разрешение СИОЗС
+    применяется к конкретной названной паре; точные дозы/темп A не выводятся из этого разрешения.
+  maoi_history_contract:
+    source_ref: RU-PAROX
+    source_locator: §4.3 с.17–18
+    locator: §4.3 с.17–18
+    irreversible_days: 14
+    reversible_hours: 24
+    to_maoi_days: 7
+    concurrent:
+    - maoi
+    - pimozide
+    - thioridazine
+    exception: Линезолид только исключительная клиническая ветка при отсутствии альтернатив, доступном наблюдении
+      и оценке пользы/риска; обычный старт не разрешается.
+    fields:
+    - medicines
+    - maoi_type
+    - maoi_stopped_at
+    reference_time: external_context.calculation_at
+    required_timestamp_unknown: insufficient_data; missing maoi_stopped_at; start_allowed=false
+    current_maoi: not_applicable for standard branch; no numeric start
+    multiple_records: all applicable direction gates must be satisfied; no single last record shortcut
+    calendar_day: next calendar date; not elapsed 24 hours unless that specific source says 24 hours
+    scope: Medication-history applicability of the identified A source; not an A→AGO washout. B overlap is independently
+      bound to RU-AGO §4.2.
+  agomelatine_conditions:
+  - id: hereditary_exclusion
+    fields:
+    - galactose_intolerance
+    - complete_lactase_deficiency
+    - glucose_galactose_malabsorption
+    if: any true
+    then: not_applicable; no start
+    source_ref: RU-AGO
+    source_locator: §4.3 с.3
+  - id: elderly_dementia
+    fields:
+    - elderly_population
+    - dementia
+    if: both true
+    then: not_applicable; no start
+    source_ref: RU-AGO
+    source_locator: §4.4 с.4
+  - id: liver_stop
+    fields:
+    - liver_injury_signs
+    - alt_ratio_uln
+    - ast_ratio_uln
+    if: liver_injury_signs true OR ALT > 3 OR AST > 3 during treatment
+    then: stop agomelatine immediately; regular liver tests until normalization; no further numeric stage
+    source_ref: RU-AGO
+    source_locator: §4.4 с.4
+  - id: repeat_liver_tests
+    fields:
+    - transaminases_rising
+    if: 'true'
+    then: repeat liver tests within repeat_liver_tests_hours; independently assess stop conditions
+    source_ref: RU-AGO
+    source_locator: §4.4 с.4
+  - id: liver_risk_review
+    fields:
+    - overweight_obesity
+    - fatty_liver
+    - diabetes
+    - alcohol_abuse
+    - medicines
+    if: risk factor present or hepatotoxic comedication
+    then: clinician benefit/risk assessment before start; no dose coefficient
+    source_ref: RU-AGO
+    source_locator: §4.4 с.3
+  - id: renal_caution
+    fields:
+    - renal_state
+    if: средняя or тяжёлая
+    then: clinician_choice; no new renal factor
+    source_ref: RU-AGO
+    source_locator: §4.2 с.2; §4.4 с.4
+  - id: pregnancy_lactation
+    fields:
+    - pregnancy
+    - lactation
+    if: 'true'
+    then: pregnancy avoid; lactation choose stopping breastfeeding or therapy; no standard automatic start
+    source_ref: RU-AGO
+    source_locator: §4.6 с.6
+  - id: cyp1a2
+    fields:
+    - medicines
+    if: strong CYP1A2 current
+    then: not_applicable; moderate inhibitor -> clinician_choice; no PK-to-dose coefficient
+    source_ref: RU-AGO
+    source_locator: §4.3 с.3; §4.5 с.5–6
+  - id: mania_stop
+    fields:
+    - mania_symptoms
+    if: true during treatment
+    then: stop agomelatine; source caution for history of mania/BAR is a separate mania field
+    source_ref: RU-AGO
+    source_locator: §4.4 с.4
+  result_contract_ref: remediation/result_contracts.yaml#rules/switch-parox-ago
+  individual_output_gate: All required typed inputs and applicable conditional inputs must be known; evaluate every
+    source-specific gate in result_contract. A caution has clinician_choice, not an invented coefficient. No blanket
+    clinical clearance.
+output:
+  result_type: branch_selected
+  medication_inn: агомелатин
+  dose_per_administration: null
+  administrations_per_day: null
+  total_daily_dose: null
+  unit: mg
+  formulation: *id004
+  schedule: []
+  warnings:
+  - Переход требует расширенной ветки; 5–10 вопросов не обещаны.
+  - 25 мг B — опубликованный старт, индивидуальный выход только после обязательных данных и плана A.
+  - Числовой вывод относится к указанным дозовым условиям. Неоценённые модулем клинические обстоятельства не считаются
+    отсутствующими; полный клинический допуск врач оценивает отдельно.
+  mandatory_checks:
+  - Каждый применимый agomelatine_conditions; АЛТ/АСТ независимо; форма B; неизвестный обязательный ответ не норма.
+  clinician_decisions_remaining: *id005
+  rounding_or_formulation_rule: Не округлять медицинскую дозу; использовать только разрешённую форму/деление. При
+    невозможности дозы формой — явно сообщить.
+  source_refs: *id003
+  liver_monitoring:
+    before_start: true
+    approximate_weeks_parameter: liver_monitoring_weeks
+    restart_same_frequency_after_dose_increase: true
+    rising_repeat_hours_parameter: repeat_liver_tests_hours
+    stop_signs_action: immediate cessation; tests until normal
+    source_ref: RU-AGO
+    source_locator: §4.2 с.1; §4.4 с.3–4
+  branches:
+  - branch_id: source_class_overlap
+    when: A plan supplied by clinician; B all conditions evaluated; no exact A calendar inferred
+    expected_output:
+      result_type: clinician_choice
+      total_daily_dose_mg: null
+      dose_per_administration_mg: null
+      administrations_per_day: null
+      schedule: []
+      missing_fields: []
+      unconditional_future_stages: false
+      overlap_allowed_on_first_day_of_A_reduction: true
+      target_source_start_mg: 25
+      full_pair_calendar: null
+      monitoring:
+        before_start: true
+        approximate_weeks_parameter: liver_monitoring_weeks
+        restart_same_frequency_after_dose_increase: true
+        rising_repeat_hours_parameter: repeat_liver_tests_hours
+        stop_signs_action: immediate cessation; tests until normal
+        source_ref: RU-AGO
+        source_locator: §4.2 с.1; §4.4 с.3–4
+    source_basis:
+    - source_id: RU-DEP
+      version: '2024; каталог: опубликовано 26.08.2024, применяется'
+      locator: §3.1–3.4 PDF с.24–40; таблица2 с.95–96; §3.6 с.45; Б5 с.105–106
+      sha256: 2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd
+    - source_id: RU-PAROX
+      version: 'Первичная регистрация 14.02.2025; страница производителя: файл 26.03.2025; поле пересмотра пустое'
+      locator: 'ОХЛП: PDF с.14–18 (§4.1–4.3), с.19–23 (§4.4), с.24–28 (§4.5–4.6), с.39 (§8–10)'
+      sha256: 9f6f2646e102956826997ca7e93d84e90c7528db5ceb61896a3d4092841edabe
+    - source_id: RU-AGO
+      version: Копия производителя с именем 20241228; первичная регистрация 25.01.2022; поле пересмотра пустое
+      locator: §4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16
+      sha256: 1cf8e71b5c27891e17b5b7ab4dd7c8c02697a1d44bb287a57a1ee9de0fb85bd6
+  selection_contract:
+  - unavailable_source
+  - known immediate stop/exclusion
+  - invalid/missing applicable field
+  - unresolved source caution/modifier
+  - dose branch
+sources:
+- source_id: RU-DEP
+  title: Депрессивный эпизод, Рекуррентное депрессивное расстройство, КР 301_3
+  organization_or_authors: Минздрав РФ; Российское общество психиатров
+  url: https://apicr.minzdrav.gov.ru/api.ashx?id=301_3&op=GetClinrecPdf
+  doi_or_registry_id: '301_3'
+  publication_date: null
+  version_or_update_date: '2024; каталог: опубликовано 26.08.2024, применяется'
+  accessed_on: '2026-10-08'
+  source_type: guideline
+  jurisdiction: RU
+  access_status: full
+  exact_locator: §3.1–3.4 PDF с.24–40; таблица2 с.95–96; §3.6 с.45; Б5 с.105–106
+  evidence_status: Клиническая рекомендация; не валидация калькулятора
+  what_was_tested: Не исследовался создаваемый продукт. Содержание и ограничения описаны в evidence_limitations.
+  evidence_limitations: 'Взрослая депрессия: дополнительно прочитаны терапевтические разделы и таблица доз. Таблица
+    без форм/индивидуальных ограничений не автономный модуль. Концентрация лития с.36 имеет конфликт мкмоль/л против
+    ммоль/л; автоматическое исправление не разрешено.'
+  reuse_license_or_restriction: Открытый доступ не означает разрешение перераспространять полный документ. Сохранены
+    собственное извлечение фактических правил, локаторы и ссылки; код и большие цитаты не копируются.
+  document_fingerprint:
+    source_id: RU-DEP
+    url: https://apicr.minzdrav.gov.ru/api.ashx?id=301_3&op=GetClinrecPdf
+    sha256: 2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd
+    pages: 125
+  local_file: source_snapshots/depression-301_3.pdf
+  document_copies:
+  - source_id: RU-DEP
+    local_file: source_snapshots/depression-301_3.pdf
+    sha256: 2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd
+    version: '2024; каталог: опубликовано 26.08.2024, применяется'
+    url: https://apicr.minzdrav.gov.ru/api.ashx?id=301_3&op=GetClinrecPdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: false
+  - source_id: RU-DEP
+    local_file: audit/retrieved/RU-DEP.pdf
+    sha256: 2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd
+    version: '2024; каталог: опубликовано 26.08.2024, применяется'
+    url: https://apicr.minzdrav.gov.ru/api.ashx?id=301_3&op=GetClinrecPdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: false
+  - source_id: RU-DEP
+    local_file: remediation/retrieved/RU-DEP.pdf
+    sha256: 2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd
+    version: '2024; каталог: опубликовано 26.08.2024, применяется'
+    url: https://apicr.minzdrav.gov.ru/api.ashx?id=301_3&op=GetClinrecPdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: false
+  - source_id: RU-DEP
+    local_file: ../tmp_acceptance/DEP-KR.pdf
+    sha256: 2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd
+    version: '2024; каталог: опубликовано 26.08.2024, применяется'
+    url: https://apicr.minzdrav.gov.ru/api.ashx?id=301_3&op=GetClinrecPdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: false
+  dates:
+    registration: null
+    revision: null
+    publication: null
+    download: '2026-10-08'
+  latest_registration_revision_confirmed: false
+  current_guideline_status_evidence: remediation/catalog_check.json + remediation/current_minzdrav_catalog.json;
+    2026-10-08; CodeVersion/ApplyStatusCalculated=1
+- source_id: RU-PAROX
+  title: Рексетин (пароксетин), ЛВ и ОХЛП, 20 мг
+  organization_or_authors: Гедеон Рихтер
+  url: https://www.gedeonrichter.com/ru/-/media/sites/ru/russian-products/files/185/productinstruction_lvokhlpreksetin_pdf.pdf?hash=F730A776EE3E7A92B2EA6A9EA56DCAC2&rev=a198bea8079541528614f6df7eee87fd
+  doi_or_registry_id: ЛП-№(008861)-(РГ-RU)
+  publication_date: null
+  version_or_update_date: 'Первичная регистрация 14.02.2025; страница производителя: файл 26.03.2025; поле пересмотра
+    пустое'
+  accessed_on: '2026-10-08'
+  source_type: label
+  jurisdiction: RU/EAEU
+  access_status: full
+  exact_locator: 'ОХЛП: PDF с.14–18 (§4.1–4.3), с.19–23 (§4.4), с.24–28 (§4.5–4.6), с.39 (§8–10)'
+  evidence_status: Инструкция/ОХЛП; не валидированная модель индивидуальной дозы
+  what_was_tested: Не исследовался создаваемый продукт. Содержание и ограничения описаны в evidence_limitations.
+  evidence_limitations: Российская принадлежность указана в оригинале §8–9. Текущая регистрационная редакция отдельно
+    сверяется; дата публикации страницы не равна дате пересмотра. Взрослый пример отмены заканчивается на 20 мг;
+    детский пример 10 мг не переносить на взрослых.
+  reuse_license_or_restriction: Открытый доступ не означает разрешение перераспространять полный документ. Сохранены
+    собственное извлечение фактических правил, локаторы и ссылки; код и большие цитаты не копируются.
+  document_fingerprint:
+    url: https://www.gedeonrichter.com/ru/-/media/sites/ru/russian-products/files/185/productinstruction_lvokhlpreksetin_pdf.pdf?hash=F730A776EE3E7A92B2EA6A9EA56DCAC2&rev=a198bea8079541528614f6df7eee87fd
+    final_url: https://www.gedeonrichter.com/ru/-/media/sites/ru/russian-products/files/185/productinstruction_lvokhlpreksetin_pdf.pdf?hash=F730A776EE3E7A92B2EA6A9EA56DCAC2&rev=a198bea8079541528614f6df7eee87fd
+    status: 200
+    sha256: 9f6f2646e102956826997ca7e93d84e90c7528db5ceb61896a3d4092841edabe
+    pages: 39
+    source_id: RU-PAROX
+    accessed_on: '2026-10-08'
+  registry_observation:
+    registry: https://lk.regmed.ru/Register/EAEU_SmPC
+    query: Рексетин
+    registration_number: ЛП-№(008861)-(РГ-RU)
+    registration_date: '2025-02-14'
+    forms: таблетки20/30; прочитанная ОХЛП только20
+    accessed_on: '2026-10-08'
+    read_part: Видимая официальная строка; реестровый PDF не скачан. Копия производителя не объявлена побайтово
+      тождественной.
+  local_file: source_downloads/Рексетин — пароксетин.pdf
+  document_copies:
+  - source_id: RU-PAROX
+    local_file: source_downloads/Рексетин — пароксетин.pdf
+    sha256: 9f6f2646e102956826997ca7e93d84e90c7528db5ceb61896a3d4092841edabe
+    version: 'Первичная регистрация 14.02.2025; страница производителя: файл 26.03.2025; поле пересмотра пустое'
+    url: https://www.gedeonrichter.com/ru/-/media/sites/ru/russian-products/files/185/productinstruction_lvokhlpreksetin_pdf.pdf?hash=F730A776EE3E7A92B2EA6A9EA56DCAC2&rev=a198bea8079541528614f6df7eee87fd
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: false
+  - source_id: RU-PAROX
+    local_file: audit/retrieved/RU-PAROX.pdf
+    sha256: 9f6f2646e102956826997ca7e93d84e90c7528db5ceb61896a3d4092841edabe
+    version: 'Первичная регистрация 14.02.2025; страница производителя: файл 26.03.2025; поле пересмотра пустое'
+    url: https://www.gedeonrichter.com/ru/-/media/sites/ru/russian-products/files/185/productinstruction_lvokhlpreksetin_pdf.pdf?hash=F730A776EE3E7A92B2EA6A9EA56DCAC2&rev=a198bea8079541528614f6df7eee87fd
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: false
+  - source_id: RU-PAROX
+    local_file: remediation/retrieved/RU-PAROX.pdf
+    sha256: 9f6f2646e102956826997ca7e93d84e90c7528db5ceb61896a3d4092841edabe
+    version: 'Первичная регистрация 14.02.2025; страница производителя: файл 26.03.2025; поле пересмотра пустое'
+    url: https://www.gedeonrichter.com/ru/-/media/sites/ru/russian-products/files/185/productinstruction_lvokhlpreksetin_pdf.pdf?hash=F730A776EE3E7A92B2EA6A9EA56DCAC2&rev=a198bea8079541528614f6df7eee87fd
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: false
+  - source_id: RU-PAROX
+    local_file: ../tmp_acceptance/PAROX.pdf
+    sha256: 9f6f2646e102956826997ca7e93d84e90c7528db5ceb61896a3d4092841edabe
+    version: 'Первичная регистрация 14.02.2025; страница производителя: файл 26.03.2025; поле пересмотра пустое'
+    url: https://www.gedeonrichter.com/ru/-/media/sites/ru/russian-products/files/185/productinstruction_lvokhlpreksetin_pdf.pdf?hash=F730A776EE3E7A92B2EA6A9EA56DCAC2&rev=a198bea8079541528614f6df7eee87fd
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: false
+  dates:
+    registration: '2025-02-14'
+    revision: null
+    publication: null
+    download: '2026-10-08'
+  latest_registration_revision_confirmed: false
+- source_id: RU-AGO
+  title: Вальдоксан (агомелатин), российская ОХЛП, 25 мг
+  organization_or_authors: Сервье
+  url: https://servier.ru/wp-content/uploads/2023/09/20241228_spc-ru_valdoxan_rus.pdf
+  doi_or_registry_id: ЛП-№(000528)-(РГ-RU)
+  publication_date: null
+  version_or_update_date: Копия производителя с именем 20241228; первичная регистрация 25.01.2022; поле пересмотра
+    пустое
+  accessed_on: '2026-10-08'
+  source_type: label
+  jurisdiction: RU/EAEU
+  access_status: full
+  exact_locator: §4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16
+  evidence_status: Инструкция/ОХЛП; не валидированная модель индивидуальной дозы
+  what_was_tested: Не исследовался создаваемый продукт. Содержание и ограничения описаны в evidence_limitations.
+  evidence_limitations: Полный оригинал производителя прочитан; принадлежность РФ указана §8–9. Актуальность последней
+    регистрационной редакции не выводится из имени файла. Момент начала B опубликован для класса СИОЗС/СИОЗСН; ступени
+    отмены A берутся из его собственного источника, не из исследования эффективности агомелатина.
+  reuse_license_or_restriction: Открытый доступ не означает разрешение перераспространять полный документ. Сохранены
+    собственное извлечение фактических правил, локаторы и ссылки; код и большие цитаты не копируются.
+  document_fingerprint:
+    url: https://servier.ru/wp-content/uploads/2023/09/20241228_spc-ru_valdoxan_rus.pdf
+    final_url: https://servier.ru/wp-content/uploads/2023/09/20241228_spc-ru_valdoxan_rus.pdf
+    status: 200
+    sha256: 1cf8e71b5c27891e17b5b7ab4dd7c8c02697a1d44bb287a57a1ee9de0fb85bd6
+    pages: 16
+    source_id: RU-AGO
+    accessed_on: '2026-10-08'
+  registry_observation:
+    registry: https://lk.regmed.ru/Register/EAEU_SmPC
+    query: Вальдоксан
+    registration_number: ЛП-№(000528)-(РГ-RU)
+    registration_date: '2022-01-25'
+    forms: таблетки 25 мг
+    accessed_on: '2026-10-08'
+    read_part: Видимая официальная строка результата поиска; наличие ОХЛП/ЛВ. Сам документ этой записи не скачан;
+      идентичность копии не заявлена.
+  local_file: source_downloads/Вальдоксан — агомелатин.pdf
+  document_copies:
+  - source_id: RU-AGO
+    local_file: source_downloads/Вальдоксан — агомелатин.pdf
+    sha256: 1cf8e71b5c27891e17b5b7ab4dd7c8c02697a1d44bb287a57a1ee9de0fb85bd6
+    version: Копия производителя с именем 20241228; первичная регистрация 25.01.2022; поле пересмотра пустое
+    url: https://servier.ru/wp-content/uploads/2023/09/20241228_spc-ru_valdoxan_rus.pdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: false
+  - source_id: RU-AGO
+    local_file: audit/retrieved/RU-AGO.pdf
+    sha256: 1cf8e71b5c27891e17b5b7ab4dd7c8c02697a1d44bb287a57a1ee9de0fb85bd6
+    version: Копия производителя с именем 20241228; первичная регистрация 25.01.2022; поле пересмотра пустое
+    url: https://servier.ru/wp-content/uploads/2023/09/20241228_spc-ru_valdoxan_rus.pdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: false
+  - source_id: RU-AGO
+    local_file: remediation/retrieved/RU-AGO.pdf
+    sha256: 1cf8e71b5c27891e17b5b7ab4dd7c8c02697a1d44bb287a57a1ee9de0fb85bd6
+    version: Копия производителя с именем 20241228; первичная регистрация 25.01.2022; поле пересмотра пустое
+    url: https://servier.ru/wp-content/uploads/2023/09/20241228_spc-ru_valdoxan_rus.pdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: false
+  - source_id: RU-AGO
+    local_file: ../tmp_acceptance/AGO.pdf
+    sha256: 1cf8e71b5c27891e17b5b7ab4dd7c8c02697a1d44bb287a57a1ee9de0fb85bd6
+    version: Копия производителя с именем 20241228; первичная регистрация 25.01.2022; поле пересмотра пустое
+    url: https://servier.ru/wp-content/uploads/2023/09/20241228_spc-ru_valdoxan_rus.pdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: false
+  dates:
+    registration: '2022-01-25'
+    revision: null
+    publication: null
+    download: '2026-10-08'
+  latest_registration_revision_confirmed: false
+verification:
+  primary_source_checked: true
+  all_clinical_parameters_have_sources: true
+  population_and_indication_checked: true
+  russian_applicability_checked: false
+  formulation_feasibility_checked: true
+  combined_rules_justified: false
+  source_transfer_check: reviewed_available_original_sections_and_contract_consistency; calculator_not_implemented;
+    latest_registration_revision_not_confirmed
+  clinical_review: not_performed
+  product_clinical_validation: not_performed
+  ready_for_technical_implementation: false
+  unresolved_items:
+  - Полные обязательные ступени A не опубликованы; без выбранного плана не создавать календарь.
+  - Последняя регистрационная редакция B сверяется отдельно.
+  transfer_scope: Only explicitly source-bound branch contracts and prepared expectations; medical currency limits
+    in sources.json remain open. No automatic clinical use.
+test_cases:
+- case_id: switch-parox-ago__overlap-permission
+  synthetic: true
+  given:
+    from_drug: пароксетин
+    to_drug: агомелатин
+  expected:
+    target_start_mg_per_day: 25
+    frequency: 1
+    target_start: первый день постепенного снижения A
+    overlap_allowed: true
+    invented_washout_days: null
+    complete_schedule: null
+  source_refs: *id003
+  note: Ожидание переноса источника; калькулятор не реализован, клиническая валидация не выполнена.
+  case_kind: parameter_or_constraint_fragment
+- case_id: switch-parox-ago__missing-liver-tests
+  synthetic: true
+  given:
+    alt_ratio_uln: null
+    ast_ratio_uln: null
+  expected:
+    result_type: insufficient_data
+    missing:
+    - alt_ratio_uln
+    - ast_ratio_uln
+    unconditional_target_dose: null
+  source_refs: *id003
+  note: Ожидание переноса источника; калькулятор не реализован, клиническая валидация не выполнена.
+  case_kind: parameter_or_constraint_fragment
+- case_id: switch-parox-ago__alt-above-cutoff
+  synthetic: true
+  given:
+    alt_ratio_uln: 3.1
+  expected:
+    result_type: not_applicable
+    target_start_allowed: false
+  source_refs: *id003
+  note: Ожидание переноса источника; калькулятор не реализован, клиническая валидация не выполнена.
+  case_kind: parameter_or_constraint_fragment
+profile:
+  country: RU
+  selection_status: RU_profile_research
+  foreign_fallback_allowed: false
+switch_assessment:
+  from_action: gradual_taper_from_own_RU_label
+  to_action: 25 mg once at bedtime from first day of A taper
+  overlap: explicitly_allowed_for_SSRI_to_agomelatine
+  interval_after_last_A: not_required_for_this_overlap_strategy
+  interval_value_days: null
+  pair_specific_trial_claimed: false
+  full_numeric_A_calendar_published: false
+card_type: partial_source_constraint
+input_contract_ref: remediation/input_contracts.yaml#fragment_bindings/switch-parox-ago

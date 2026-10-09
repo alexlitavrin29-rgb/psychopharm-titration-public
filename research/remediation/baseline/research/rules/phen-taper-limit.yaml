@@ -1,0 +1,273 @@
+schema_version: '1.0'
+rule_id: phen-taper-limit
+development_status: extracted_research_not_executable
+language: ru
+identity:
+  title: 'бромдигидрохлорфенилбензодиазепин: ограничения отмены'
+  mode: taper
+  drug_inn: бромдигидрохлорфенилбензодиазепин
+  from_drug_inn: null
+  to_drug_inn: null
+  formulation: Феназепам, таблетки диспергируемые 0,25/0,5/1 мг
+  route: oral
+  diagnosis_label_ru: Паническое расстройство
+  classification_system: МКБ-10
+  diagnosis_code: F41.0
+  jurisdiction: RU_versioned_sources
+applicability:
+  population_description: Взрослые от 18 лет; показание и клиническое действие выбирает врач.
+  age_constraints:
+  - minimum: 18
+    inclusive: true
+    unit: year
+    source_ref: RU-PHEN
+    source_locator: PDF с.2 показания/противопоказания; с.3 дозы/отмена; с.4–5 особые указания
+  pregnancy: Применение при беременности противопоказано; инструкция с.2–3. Это не разрешение резкой отмены
+    уже принимаемого препарата.
+  lactation: Период грудного вскармливания — противопоказание; с.2–3. Прекращение/снижение требует отдельного
+    решения врача.
+  renal_constraints:
+  - При недостаточности функции почек — осторожность; при длительной терапии контроль, с.2/4. Числовой
+    коэффициент не задан.
+  hepatic_constraints:
+  - При печёночной недостаточности — осторожность; при длительной терапии контроль печёночных ферментов/крови,
+    с.2/4. Числовой коэффициент не задан.
+  comorbidity_constraints:
+  - Противопоказания включают миастению, острую дыхательную недостаточность, тяжёлую ХОБЛ, тяжёлую депрессию
+    и острые отравления перечисленными веществами; с.2. Это не автоматический календарь отмены.
+  interacting_drugs:
+  - Взаимное усиление действия с другими средствами, угнетающими ЦНС, и этанолом; клозапин может усиливать
+    угнетение дыхания; с.4. Требуется клинический разбор без выдуманной процентной поправки.
+  other_conditions: []
+  exclusions: []
+  indication_status_in_russia: RU_indication_in_read_original_latest_registry_text_separate
+  source_refs: &id001
+  - RU-PHEN
+  - RU-PANIC
+inputs:
+- input_id: age
+  question_ru: Возраст?
+  data_type: number
+  unit: year
+  allowed_values: []
+  required_when: для выбранного расчёта
+  show_when: для выбранного расчёта
+  why_needed: Взрослая область источника.
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Назвать age; не подставлять норму, без безусловной индивидуальной дозы.
+  source_refs:
+  - RU-PHEN
+  input_role: dose_operand_or_applicability_gate
+- input_id: form
+  question_ru: Форма и разрешённые дозировки?
+  data_type: enum
+  unit: null
+  allowed_values:
+  - подтверждено врачом
+  - неизвестно
+  required_when: для выбранного расчёта
+  show_when: для выбранного расчёта
+  why_needed: Исполнимость уменьшения дозы.
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Назвать form; не подставлять норму, без безусловной индивидуальной дозы.
+  source_refs:
+  - RU-PHEN
+  input_role: dose_operand_or_applicability_gate
+- input_id: current_dose
+  question_ru: Текущая суточная доза?
+  data_type: number
+  unit: mg/day
+  allowed_values: []
+  required_when: для выбранного расчёта
+  show_when: для выбранного расчёта
+  why_needed: Исходная точка отмены.
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Назвать current_dose; не подставлять норму, без безусловной индивидуальной дозы.
+  source_refs:
+  - RU-PHEN
+  input_role: dose_operand_or_applicability_gate
+- input_id: duration
+  question_ru: Длительность лечения?
+  data_type: number
+  unit: week
+  allowed_values: []
+  required_when: для выбранного расчёта
+  show_when: для выбранного расчёта
+  why_needed: Индивидуализация риска/темпа PDF с.3–5
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Назвать duration; не подставлять норму, без безусловной индивидуальной дозы.
+  source_refs:
+  - RU-PHEN
+  input_role: dose_operand_or_applicability_gate
+- input_id: withdrawal_severity
+  question_ru: Симптомы отмены по оценке врача?
+  data_type: enum
+  unit: null
+  allowed_values:
+  - подтверждено врачом
+  - неизвестно
+  required_when: для выбранного расчёта
+  show_when: для выбранного расчёта
+  why_needed: Условие удержания/возврата/замедления PDF с.3–5
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Назвать withdrawal_severity; не подставлять норму, без безусловной индивидуальной
+    дозы.
+  source_refs:
+  - RU-PHEN
+  input_role: dose_operand_or_applicability_gate
+- input_id: past_withdrawal
+  question_ru: Были тяжёлые симптомы при прошлой отмене?
+  data_type: enum
+  unit: null
+  allowed_values:
+  - подтверждено врачом
+  - неизвестно
+  required_when: для выбранного расчёта
+  show_when: для выбранного расчёта
+  why_needed: КР депрессии Б5/продуктовая индивидуализация; не строить универсальный срок.
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Назвать past_withdrawal; не подставлять норму, без безусловной индивидуальной дозы.
+  source_refs:
+  - RU-PHEN
+  input_role: dose_operand_or_applicability_gate
+clinical_parameters: []
+logic:
+  representation: conditional_source_rule
+  conditions:
+  - Применимость к указанному показанию/форме подтверждена в пределах дозового расчёта; это не полный
+    клинический допуск.
+  actions:
+  - Дозу при отмене уменьшают постепенно (PDF с.3). Источник не задаёт числовой шаг/процент/период отмены.
+  - Длительность курса 2 недели, иногда до 2 месяцев — не длительность снижения и не обязательный календарь.
+  - При внезапной отмене возможен синдром отмены; зависимость/сложный случай требует отдельной клинической
+    стратегии. ASAM остаётся сравнением.
+  parameter_refs: []
+  source_refs: *id001
+  clinician_choices:
+  - Необходимость изменения лечения и неоценённые модулем клинические обстоятельства.
+  missing_data_behaviour: insufficient_data с конкретным отсутствующим полем, без безусловной дозы.
+  unsupported_case_behaviour: Назвать неприменимую ветку; не переносить другую форму/показание.
+  contraindicated_case_behaviour: Не выдавать схему противопоказанного сочетания, указать источник.
+  conflicts: []
+  composite_rule_dependencies: []
+  combination_justification: КР определяет клиническую область, инструкция — дозовые параметры; новые
+    коэффициенты не добавлены.
+output:
+  result_type: clinician_choice
+  medication_inn: бромдигидрохлорфенилбензодиазепин
+  dose_per_administration: null
+  administrations_per_day: null
+  total_daily_dose: null
+  unit: mg
+  formulation: Феназепам, таблетки диспергируемые 0,25/0,5/1 мг
+  schedule: []
+  warnings:
+  - Последующие этапы условны; максимум не является целью.
+  - Неоценённое клиническое обстоятельство не считается отсутствующим.
+  - Версия копии зафиксирована; последнее содержание реестрового документа проверяется перед клиническим
+    внедрением.
+  mandatory_checks: []
+  clinician_decisions_remaining: []
+  rounding_or_formulation_rule: Не округлять медицинскую дозу; целые формы/разрешённое деление. Невозможная
+    доза — явный отказ формы.
+  source_refs: *id001
+sources:
+- source_id: RU-PHEN
+  title: Феназепам, инструкция ородиспергируемых таблеток
+  organization_or_authors: Валента Фарм
+  url: https://www.valentapharm.com/upload/iblock/fec/juwc91mjfnc770nida6ni9syp92x00if.pdf
+  doi_or_registry_id: 'Страница производителя: ЛП-№(005387)-(РГ-RU) от 07.05.2024; поле в PDF пустое'
+  publication_date: null
+  version_or_update_date: Снимок текущей ссылки производителя 08.10.2026; дата пересмотра в PDF отсутствует
+  accessed_on: '2026-10-08'
+  source_type: label
+  jurisdiction: RU/EAEU
+  access_status: full
+  exact_locator: PDF с.2 показания/противопоказания; с.3 дозы/отмена; с.4–5 особые указания
+  evidence_status: Инструкция/ОХЛП; не валидированная модель индивидуальной дозы
+  what_was_tested: Не исследовался создаваемый продукт. Содержание и ограничения описаны в evidence_limitations.
+  evidence_limitations: Точный числовой темп отмены не задан. Проценты ASAM в РФ автоматически не переносятся.
+    Прочитанная копия не доказывает последнее реестровое содержание.
+  reuse_license_or_restriction: Собственное извлечение фактических правил и короткие локаторы; лицензия
+    на код/полное руководство не предполагается.
+  document_fingerprint:
+    source_id: RU-PHEN
+    url: https://www.valentapharm.com/upload/iblock/fec/juwc91mjfnc770nida6ni9syp92x00if.pdf
+    sha256: e8e6303c10b7b9b31ae6b344eb49d209e148ba5584ac8f55954c8384cfe49a89
+    pages: 5
+    accessed_on: '2026-10-08'
+  local_file: source_downloads/Феназепам — бромдигидрохлорфенилбензодиазепин.pdf
+- source_id: RU-PANIC
+  title: Паническое расстройство, КР 456_3
+  organization_or_authors: Минздрав РФ; Российское общество психиатров
+  url: https://apicr.minzdrav.gov.ru/api.ashx?id=456_3&op=GetClinrecPdf
+  doi_or_registry_id: '456_3'
+  publication_date: null
+  version_or_update_date: '2024; каталог: опубликовано 19.09.2024, применяется'
+  accessed_on: '2026-10-08'
+  source_type: guideline
+  jurisdiction: RU
+  access_status: full
+  exact_locator: §3.1, PDF с.25–33; приложение А3, с.76–77
+  evidence_status: Клиническая рекомендация; не валидация калькулятора
+  what_was_tested: Не исследовался создаваемый продукт. Содержание и ограничения описаны в evidence_limitations.
+  evidence_limitations: Взрослые F41.0. Терапевтический диапазон не равен стартовой дозе.
+  reuse_license_or_restriction: Открытый доступ не означает разрешение перераспространять полный документ.
+    Сохранены собственное извлечение фактических правил, локаторы и ссылки; код и большие цитаты не копируются.
+  document_fingerprint:
+    source_id: RU-PANIC
+    url: https://apicr.minzdrav.gov.ru/api.ashx?id=456_3&op=GetClinrecPdf
+    sha256: a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d
+    pages: 140
+verification:
+  primary_source_checked: true
+  all_clinical_parameters_have_sources: true
+  population_and_indication_checked: true
+  russian_applicability_checked: false
+  formulation_feasibility_checked: false
+  combined_rules_justified: true
+  source_transfer_check: extraction_checked; calculator_not_implemented
+  clinical_review: not_performed
+  product_clinical_validation: not_performed
+  ready_for_technical_implementation: false
+  unresolved_items:
+  - Полный календарь или исполнимость конкретной формы отсутствует; частичный результат не автосхема.
+test_cases:
+- case_id: phen-taper-limit__no-ASAM-default
+  synthetic: true
+  given:
+    current_dose: 1
+    duration: 12
+  expected:
+    automatic_taper_percentage: null
+    automatic_full_calendar: null
+    foreign_fallback_allowed: false
+  source_refs:
+  - RU-PHEN
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+- case_id: phen-taper-limit__course-not-taper
+  synthetic: true
+  given:
+    duration: 2
+  expected:
+    taper_duration_equals_course: false
+  source_refs:
+  - RU-PHEN
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+profile:
+  country: RU
+  selection_status: RU_profile_research
+  foreign_fallback_allowed: false
+card_type: partial_source_constraint

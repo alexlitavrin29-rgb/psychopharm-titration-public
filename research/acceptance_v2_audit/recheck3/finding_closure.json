@@ -1,0 +1,100 @@
+[
+  {
+    "id": "R2-01",
+    "status": "closed in reviewed local scope",
+    "evidence": "A enum declares selected_mode/not_started/ongoing/unknown; invalid enum/domain mutations rejected. All 5430 cases and 737 projected paths checked for action phase/provenance; 106 actual A-action cases and 18 actual B-action cases have ongoing evidence. Seven own positive/zero/unknown/proposed/inactive/explicit override counterexamples match the declared semantics. Explicit phase counted separately; no inference of B from A.",
+    "files": [
+      "input_contracts.yaml:147",
+      "phase_provenance.py",
+      "recheck3_checks.json",
+      "B_phase_check.json"
+    ],
+    "limits": "Phase is research input provenance, not an automatic clinical fact classifier; qualitative source-reference display is distinct from current-treatment cessation."
+  },
+  {
+    "id": "R2-02",
+    "status": "closed concrete counterexamples; global criterion17 remains partial",
+    "evidence": "Six result-specific fields changed. PAR example_selected=false can omit/retain unknown dose/history without calendar; selected current10 needs no duration/past_withdrawal. Current40 example retains separate risk context and unknown active operands block. Eight PREG/PHEN population fixtures preserve adult/not_assessed/nonadult applicability, null individual duration/calendar and clinical_clearance=false.",
+    "source_basis": [
+      {
+        "source_id": "RU-PAROX",
+        "version": "Официальная ОХЛП реестра: штамп регистрации 2025-02-14; экспертный отчёт 2025-02-12 №3370/0003; получена 08.10.2026",
+        "sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069",
+        "path": "remediation_round3/originals/RU-PAROX_current.pdf",
+        "locator": "§4.2 физ.3–4; §4.4 физ.9–10"
+      },
+      {
+        "source_id": "RU-PREG",
+        "version": "Официальная ОХЛП реестра: штамп регистрации 2025-08-13; экспертный отчёт 2024-01-26 №1319/0011; получена 08.10.2026",
+        "sha256": "b605c8b381c24d59a48bbab9bfa8621eb70f6ec16ad9e3679aa8457f811663e5",
+        "path": "remediation_round3/originals/RU-PREG_current.pdf",
+        "locator": "§4.2 физ.4–5; §4.3 физ.6"
+      },
+      {
+        "source_id": "RU-PHEN",
+        "version": "Официальная ОХЛП реестра: штамп регистрации 2026-05-07; экспертный отчёт 2026-05-05 №9041/0004; получена 08.10.2026",
+        "sha256": "850486408d225fc603f8f053765491c1e9fd688c5c3d765cdf80a34dd2b3cf1a",
+        "path": "remediation_round3/originals/RU-PHEN_current.pdf",
+        "locator": "§4.2 физ.2–3; §4.3 физ.3"
+      }
+    ],
+    "limits": "Universal necessity of the remaining operands, including history for selected40, is not established by conditionalizing their predicates. No claim that qualitative reference satisfies an individual numeric pathway."
+  },
+  {
+    "id": "R2-03",
+    "status": "closed in reviewed source-scope chain",
+    "evidence": "PHEN gradual cessation correctly locates physical2; symptoms/unusual reactions physical4. Why/necessity/aliases no longer attribute hold/restore/slower protocol. PREG4/9 gives minimum1week and withdrawal risk; GAD77–78 appendixБ2 explicitly concerns antidepressants. Product-only taper branch basis, null resumption and management gap preserved; no transplanted AD algorithm.",
+    "source_basis": [
+      {
+        "source_id": "RU-PHEN",
+        "version": "Официальная ОХЛП реестра: штамп регистрации 2026-05-07; экспертный отчёт 2026-05-05 №9041/0004; получена 08.10.2026",
+        "sha256": "850486408d225fc603f8f053765491c1e9fd688c5c3d765cdf80a34dd2b3cf1a",
+        "path": "remediation_round3/originals/RU-PHEN_current.pdf",
+        "locator": "§4.2 физ.2; §4.4 физ.4"
+      },
+      {
+        "source_id": "RU-PREG",
+        "version": "Официальная ОХЛП реестра: штамп регистрации 2025-08-13; экспертный отчёт 2024-01-26 №1319/0011; получена 08.10.2026",
+        "sha256": "b605c8b381c24d59a48bbab9bfa8621eb70f6ec16ad9e3679aa8457f811663e5",
+        "path": "remediation_round3/originals/RU-PREG_current.pdf",
+        "locator": "§4.2 физ.4; §4.4 физ.9"
+      },
+      {
+        "source_id": "RU-GAD",
+        "version": "2024; каталог: опубликовано 19.09.2024, применяется",
+        "sha256": "c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a",
+        "path": "audit/retrieved/RU-GAD.pdf",
+        "locator": "Б2 физ.77–78, антидепрессанты"
+      }
+    ],
+    "limits": "General disease context references on the card/case remain context, not product-specific taper permission."
+  },
+  {
+    "id": "R2-04",
+    "status": "closed in reviewed graph scope",
+    "evidence": "Dependency order independently checked across all38 graphs. Controller assessment precedes dependent check for field_true/all_equals/action/MAOI/CAD/electrolyte predicates. All737 final fact sets, counts, asks and edges recomputed; no error. Previously affected SER paths and new PAR choice/dose/history chain are ordered causally.",
+    "source_basis": [
+      {
+        "source_id": "RU-SER",
+        "version": "Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является датой содержания",
+        "sha256": "3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba",
+        "path": "source_downloads/Золофт — сертралин.pdf",
+        "locator": "§4.2 физ.2–3; §4.4 физ.6"
+      },
+      {
+        "source_id": "RU-PAROX",
+        "version": "Официальная ОХЛП реестра: штамп регистрации 2025-02-14; экспертный отчёт 2025-02-12 №3370/0003; получена 08.10.2026",
+        "sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069",
+        "path": "remediation_round3/originals/RU-PAROX_current.pdf",
+        "locator": "§4.2 физ.3–4"
+      }
+    ],
+    "limits": "The graph consumes prepared full inputs and expected terminal; this is not execution of a medical calculator."
+  },
+  {
+    "id": "R2-05",
+    "status": "open",
+    "evidence": "Ordinary AGO20, DULOX-GAD17, PREG17/18, SER increase15 plus separate reported-negative event16 persist. No global≤15/minimum claim.",
+    "limits": "Material criterion18 remains unmet in those ordinary alternatives; cap6 applies."
+  }
+]

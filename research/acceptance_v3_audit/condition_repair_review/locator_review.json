@@ -1,0 +1,261 @@
+[
+  {
+    "path": "rules/dulox-depression-start.yaml/applicability/pregnancy",
+    "new": "Назначать только если потенциальная польза для матери значительно превышает риск для плода; §4.6 с.10. Автоматической дозовой поправки нет.",
+    "primary_sha": {
+      "RU-DULOX": "0551a7306ca4a56b552336bb63fa34905cf4e312702ba811a792221892a42ca1",
+      "RU-DEP": "2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd"
+    },
+    "correct_physical_pages": [
+      10
+    ]
+  },
+  {
+    "path": "rules/dulox-depression-start.yaml/applicability/lactation",
+    "new": "Не рекомендуется кормление грудью во время терапии; §4.6 с.10. Отдельное решение врача, не коэффициент.",
+    "primary_sha": {
+      "RU-DULOX": "0551a7306ca4a56b552336bb63fa34905cf4e312702ba811a792221892a42ca1",
+      "RU-DEP": "2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd"
+    },
+    "correct_physical_pages": [
+      10
+    ]
+  },
+  {
+    "path": "rules/dulox-depression-start.yaml/applicability/exclusions/0",
+    "new": "Сахароза: редкие наследственные непереносимость фруктозы, глюкозо-галактозная мальабсорбция, дефицит сахаразы-изомальтазы; §4.4 с.7.",
+    "primary_sha": {
+      "RU-DULOX": "0551a7306ca4a56b552336bb63fa34905cf4e312702ba811a792221892a42ca1",
+      "RU-DEP": "2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd"
+    },
+    "correct_physical_pages": [
+      7
+    ]
+  },
+  {
+    "path": "rules/dulox-depression-start.yaml/logic/actions/1",
+    "new": "Указанные наследственные состояния исключают приём Дулоксенты. При акатизии повышение может нанести вред: не выдавать автоматическое повышение (§4.4 с.7).",
+    "primary_sha": {
+      "RU-DULOX": "0551a7306ca4a56b552336bb63fa34905cf4e312702ba811a792221892a42ca1",
+      "RU-DEP": "2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd"
+    },
+    "correct_physical_pages": [
+      7
+    ]
+  },
+  {
+    "path": "rules/dulox-gad-adjust.yaml/applicability/pregnancy",
+    "new": "Назначать только если потенциальная польза для матери значительно превышает риск для плода; §4.6 с.10. Автоматической дозовой поправки нет.",
+    "primary_sha": {
+      "RU-DULOX": "0551a7306ca4a56b552336bb63fa34905cf4e312702ba811a792221892a42ca1",
+      "RU-GAD": "c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a"
+    },
+    "correct_physical_pages": [
+      10
+    ]
+  },
+  {
+    "path": "rules/dulox-gad-adjust.yaml/applicability/lactation",
+    "new": "Не рекомендуется кормление грудью во время терапии; §4.6 с.10. Отдельное решение врача, не коэффициент.",
+    "primary_sha": {
+      "RU-DULOX": "0551a7306ca4a56b552336bb63fa34905cf4e312702ba811a792221892a42ca1",
+      "RU-GAD": "c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a"
+    },
+    "correct_physical_pages": [
+      10
+    ]
+  },
+  {
+    "path": "rules/dulox-gad-adjust.yaml/applicability/exclusions/0",
+    "new": "Сахароза: редкие наследственные непереносимость фруктозы, глюкозо-галактозная мальабсорбция, дефицит сахаразы-изомальтазы; §4.4 с.7.",
+    "primary_sha": {
+      "RU-DULOX": "0551a7306ca4a56b552336bb63fa34905cf4e312702ba811a792221892a42ca1",
+      "RU-GAD": "c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a"
+    },
+    "correct_physical_pages": [
+      7
+    ]
+  },
+  {
+    "path": "rules/dulox-gad-adjust.yaml/logic/actions/2",
+    "new": "Указанные наследственные состояния исключают приём Дулоксенты. При акатизии повышение может нанести вред: не выдавать автоматическое повышение (§4.4 с.7).",
+    "primary_sha": {
+      "RU-DULOX": "0551a7306ca4a56b552336bb63fa34905cf4e312702ba811a792221892a42ca1",
+      "RU-GAD": "c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a"
+    },
+    "correct_physical_pages": [
+      7
+    ]
+  },
+  {
+    "path": "rules/dulox-gad-start.yaml/applicability/pregnancy",
+    "new": "Назначать только если потенциальная польза для матери значительно превышает риск для плода; §4.6 с.10. Автоматической дозовой поправки нет.",
+    "primary_sha": {
+      "RU-DULOX": "0551a7306ca4a56b552336bb63fa34905cf4e312702ba811a792221892a42ca1",
+      "RU-GAD": "c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a"
+    },
+    "correct_physical_pages": [
+      10
+    ]
+  },
+  {
+    "path": "rules/dulox-gad-start.yaml/applicability/lactation",
+    "new": "Не рекомендуется кормление грудью во время терапии; §4.6 с.10. Отдельное решение врача, не коэффициент.",
+    "primary_sha": {
+      "RU-DULOX": "0551a7306ca4a56b552336bb63fa34905cf4e312702ba811a792221892a42ca1",
+      "RU-GAD": "c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a"
+    },
+    "correct_physical_pages": [
+      10
+    ]
+  },
+  {
+    "path": "rules/dulox-gad-start.yaml/applicability/exclusions/0",
+    "new": "Сахароза: редкие наследственные непереносимость фруктозы, глюкозо-галактозная мальабсорбция, дефицит сахаразы-изомальтазы; §4.4 с.7.",
+    "primary_sha": {
+      "RU-DULOX": "0551a7306ca4a56b552336bb63fa34905cf4e312702ba811a792221892a42ca1",
+      "RU-GAD": "c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a"
+    },
+    "correct_physical_pages": [
+      7
+    ]
+  },
+  {
+    "path": "rules/dulox-gad-start.yaml/logic/actions/4",
+    "new": "Указанные наследственные состояния исключают приём Дулоксенты. При акатизии повышение может нанести вред: не выдавать автоматическое повышение (§4.4 с.7).",
+    "primary_sha": {
+      "RU-DULOX": "0551a7306ca4a56b552336bb63fa34905cf4e312702ba811a792221892a42ca1",
+      "RU-GAD": "c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a"
+    },
+    "correct_physical_pages": [
+      7
+    ]
+  },
+  {
+    "path": "rules/dulox-taper-limit.yaml/applicability/pregnancy",
+    "new": "Назначать только если потенциальная польза для матери значительно превышает риск для плода; §4.6 с.10. Автоматической дозовой поправки нет.",
+    "primary_sha": {
+      "RU-DULOX": "0551a7306ca4a56b552336bb63fa34905cf4e312702ba811a792221892a42ca1",
+      "RU-GAD": "c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a"
+    },
+    "correct_physical_pages": [
+      10
+    ]
+  },
+  {
+    "path": "rules/dulox-taper-limit.yaml/applicability/lactation",
+    "new": "Не рекомендуется кормление грудью во время терапии; §4.6 с.10. Отдельное решение врача, не коэффициент.",
+    "primary_sha": {
+      "RU-DULOX": "0551a7306ca4a56b552336bb63fa34905cf4e312702ba811a792221892a42ca1",
+      "RU-GAD": "c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a"
+    },
+    "correct_physical_pages": [
+      10
+    ]
+  },
+  {
+    "path": "rules/parox-panic-kr.yaml/applicability/renal_constraints/0",
+    "new": "При CLcr <30 мл/мин нижний край диапазона (§4.2 с.4); не делать автоматический коэффициент.",
+    "primary_sha": {
+      "RU-PANIC": "a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d",
+      "RU-PAROX": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069"
+    },
+    "correct_physical_pages": [
+      4
+    ]
+  },
+  {
+    "path": "rules/parox-panic-kr.yaml/applicability/hepatic_constraints/0",
+    "new": "При нарушении функции печени нижний край терапевтического диапазона; точная самостоятельная новая поправка не задана (§4.2 с.4).",
+    "primary_sha": {
+      "RU-PANIC": "a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d",
+      "RU-PAROX": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069"
+    },
+    "correct_physical_pages": [
+      4
+    ]
+  },
+  {
+    "path": "rules/parox-panic-kr.yaml/applicability/interacting_drugs/0",
+    "new": "ИМАО, тиоридазин, пимозид — §4.3 с.4–5.",
+    "primary_sha": {
+      "RU-PANIC": "a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d",
+      "RU-PAROX": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069"
+    },
+    "correct_physical_pages": [
+      4,
+      5
+    ]
+  },
+  {
+    "path": "rules/phen-taper-limit.yaml/applicability/pregnancy",
+    "new": "Применение при беременности противопоказано; инструкция с.3–5. Это не разрешение резкой отмены уже принимаемого препарата.",
+    "primary_sha": {
+      "RU-PHEN": "850486408d225fc603f8f053765491c1e9fd688c5c3d765cdf80a34dd2b3cf1a",
+      "RU-PANIC": "a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d"
+    },
+    "correct_physical_pages": [
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "path": "rules/phen-taper-limit.yaml/applicability/lactation",
+    "new": "Период грудного вскармливания — противопоказание; с.3–5. Прекращение/снижение требует отдельного решения врача.",
+    "primary_sha": {
+      "RU-PHEN": "850486408d225fc603f8f053765491c1e9fd688c5c3d765cdf80a34dd2b3cf1a",
+      "RU-PANIC": "a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d"
+    },
+    "correct_physical_pages": [
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "path": "rules/phen-taper-limit.yaml/applicability/comorbidity_constraints/0",
+    "new": "Противопоказания включают миастению, острую дыхательную недостаточность, тяжёлую ХОБЛ, тяжёлую депрессию и острые отравления перечисленными веществами; с.3–5. Это не автоматический календарь отмены.",
+    "primary_sha": {
+      "RU-PHEN": "850486408d225fc603f8f053765491c1e9fd688c5c3d765cdf80a34dd2b3cf1a",
+      "RU-PANIC": "a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d"
+    },
+    "correct_physical_pages": [
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "path": "clinical_parameters/adult_minimum/source_locator",
+    "new": "§4.4 с.5, дети и подростки: активные показания, кроме ОКР, не применяются до18",
+    "primary_sha": "3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba",
+    "correct_physical_pages": [
+      5
+    ]
+  },
+  {
+    "path": "clinical_parameters/adult_minimum/source_locator",
+    "new": "§4.4 с.5, дети и подростки: активные показания, кроме ОКР, не применяются до18",
+    "primary_sha": "3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba",
+    "correct_physical_pages": [
+      5
+    ]
+  },
+  {
+    "path": "clinical_parameters/adult_minimum/source_locator",
+    "new": "§4.4 с.5, дети и подростки: активные показания, кроме ОКР, не применяются до18",
+    "primary_sha": "3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba",
+    "correct_physical_pages": [
+      5
+    ]
+  },
+  {
+    "path": "clinical_parameters/adult_minimum/source_locator",
+    "new": "§4.4 с.5, дети и подростки: активные показания, кроме ОКР, не применяются до18",
+    "primary_sha": "3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba",
+    "correct_physical_pages": [
+      5
+    ]
+  }
+]

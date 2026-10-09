@@ -1,0 +1,4949 @@
+schema_version: '2.0'
+nature: Source-bound research expectations; no calculator implementation
+rules:
+  ago-depression-start:
+    required_inputs:
+    - age
+    - form
+    - hepatic
+    - pregnancy
+    - lactation
+    - medicines
+    - allergy
+    - ALT_ratio
+    - AST_ratio
+    - renal_state
+    - elderly_population
+    - dementia
+    - galactose_intolerance
+    - complete_lactase_deficiency
+    - glucose_galactose_malabsorption
+    - liver_injury_signs
+    - transaminases_rising
+    - overweight_obesity
+    - fatty_liver
+    - diabetes
+    - alcohol_abuse
+    - alcohol_use
+    - mania
+    - mania_symptoms
+    - suicide_risk
+    - ect
+    conditional_inputs: {}
+    source_gates:
+    - source_ref: RU-AGO
+      version: Копия производителя с именем 20241228; первичная регистрация 25.01.2022; поле пересмотра пустое
+      locator: §4.1–4.4 с.1–5; §4.5–4.6 с.5–6
+      exclusions: &id001
+      - allergy
+      - galactose_intolerance
+      - complete_lactase_deficiency
+      - glucose_galactose_malabsorption
+      cautions: &id002
+      - pregnancy
+      - lactation
+      - mania
+      - suicide_risk
+      - overweight_obesity
+      - fatty_liver
+      - diabetes
+      - alcohol_abuse
+      - alcohol_use
+      - ect
+      current_medicines_excluded: &id003
+      - strong_CYP1A2
+      current_medicines_caution: &id004
+      - moderate_CYP1A2
+      - hepatotoxic
+      stop: &id005
+      - liver_injury_signs
+      - mania_symptoms
+      other: ALT and AST separately >3 exclude start; (1,3] caution; liver insufficiency/cirrhosis/active disease
+        exclude; elderly+dementia exclude; GAD >65, BDR >=75 exclude; <18 exclude; moderate/severe renal caution;
+        rising transaminases repeat within 48 hours
+    gate_order:
+    - unavailable_source
+    - known immediate stop/exclusion
+    - invalid/missing applicable field
+    - unresolved source caution/modifier
+    - dose branch
+    reference_display: Source scheme only, without individualized dose; no omitted field treated as negative
+    branches:
+    - branch_id: usual
+      when: all gates clear; assessed liver normal; ALT<=1 AND AST<=1; adult within indication-specific age
+      expected_output:
+        result_type: exact
+        total_daily_dose_mg: 25
+        dose_per_administration_mg: 25.0
+        administrations_per_day: 1
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        monitoring:
+          before_start: true
+          approximate_weeks_parameter: liver_monitoring_weeks
+          restart_same_frequency_after_dose_increase: true
+          rising_repeat_hours_parameter: repeat_liver_tests_hours
+          stop_signs_action: immediate cessation; tests until normal
+          source_ref: RU-AGO
+          source_locator: §4.2 с.1; §4.4 с.3–4
+        conditional_higher_dose_mg: 50
+        earliest_higher_weeks: 2
+        higher_requires: no positive dynamics + clinician benefit/risk decision + liver monitoring
+      source_basis:
+      - source_id: RU-AGO
+        version: Копия производителя с именем 20241228; первичная регистрация 25.01.2022; поле пересмотра пустое
+        locator: §4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16
+        sha256: 1cf8e71b5c27891e17b5b7ab4dd7c8c02697a1d44bb287a57a1ee9de0fb85bd6
+      - source_id: RU-DEP
+        version: '2024; каталог: опубликовано 26.08.2024, применяется'
+        locator: §3.1–3.4 PDF с.24–40; таблица2 с.95–96; §3.6 с.45; Б5 с.105–106
+        sha256: 2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd
+    - branch_id: liver_caution
+      when: ALT or AST >1 and <=3; no exclusion
+      expected_output:
+        result_type: clinician_choice
+        total_daily_dose_mg: null
+        dose_per_administration_mg: null
+        administrations_per_day: null
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        monitoring:
+          before_start: true
+          approximate_weeks_parameter: liver_monitoring_weeks
+          restart_same_frequency_after_dose_increase: true
+          rising_repeat_hours_parameter: repeat_liver_tests_hours
+          stop_signs_action: immediate cessation; tests until normal
+          source_ref: RU-AGO
+          source_locator: §4.2 с.1; §4.4 с.3–4
+      source_basis:
+      - source_id: RU-AGO
+        version: Копия производителя с именем 20241228; первичная регистрация 25.01.2022; поле пересмотра пустое
+        locator: §4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16
+        sha256: 1cf8e71b5c27891e17b5b7ab4dd7c8c02697a1d44bb287a57a1ee9de0fb85bd6
+      - source_id: RU-DEP
+        version: '2024; каталог: опубликовано 26.08.2024, применяется'
+        locator: §3.1–3.4 PDF с.24–40; таблица2 с.95–96; §3.6 с.45; Б5 с.105–106
+        sha256: 2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd
+    - branch_id: renal_caution
+      when: moderate/severe renal impairment
+      expected_output:
+        result_type: clinician_choice
+        total_daily_dose_mg: null
+        dose_per_administration_mg: null
+        administrations_per_day: null
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        dose_coefficient: null
+      source_basis:
+      - source_id: RU-AGO
+        version: Копия производителя с именем 20241228; первичная регистрация 25.01.2022; поле пересмотра пустое
+        locator: §4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16
+        sha256: 1cf8e71b5c27891e17b5b7ab4dd7c8c02697a1d44bb287a57a1ee9de0fb85bd6
+      - source_id: RU-DEP
+        version: '2024; каталог: опубликовано 26.08.2024, применяется'
+        locator: §3.1–3.4 PDF с.24–40; таблица2 с.95–96; §3.6 с.45; Б5 с.105–106
+        sha256: 2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd
+    - branch_id: repeat_tests
+      when: rising transaminases; ALT and AST still <=3; no injury signs
+      expected_output:
+        result_type: clinician_choice
+        total_daily_dose_mg: null
+        dose_per_administration_mg: null
+        administrations_per_day: null
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        repeat_tests_within_hours: 48
+      source_basis:
+      - source_id: RU-AGO
+        version: Копия производителя с именем 20241228; первичная регистрация 25.01.2022; поле пересмотра пустое
+        locator: §4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16
+        sha256: 1cf8e71b5c27891e17b5b7ab4dd7c8c02697a1d44bb287a57a1ee9de0fb85bd6
+      - source_id: RU-DEP
+        version: '2024; каталог: опубликовано 26.08.2024, применяется'
+        locator: §3.1–3.4 PDF с.24–40; таблица2 с.95–96; §3.6 с.45; Б5 с.105–106
+        sha256: 2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd
+    source_gate_scope: start/adjust applicability; both identified products for switch
+    typed_source_conditions:
+    - input: hepatic
+      operator: category_equals
+      value: hepatic_insufficiency
+      action: not_applicable_standard_numeric_branch
+      source_ref: RU-AGO
+      source_locator: §4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16
+    - input: hepatic
+      operator: category_equals
+      value: cirrhosis
+      action: not_applicable_standard_numeric_branch
+      source_ref: RU-AGO
+      source_locator: §4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16
+    - input: hepatic
+      operator: category_equals
+      value: active_liver_disease
+      action: not_applicable_standard_numeric_branch
+      source_ref: RU-AGO
+      source_locator: §4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16
+    ongoing_stop_conditions:
+    - input: ALT_ratio
+      operator: '>'
+      value: 3
+      unit: ULN ratio
+      treatment_phase: ongoing
+      action: source_stop_action
+      stop_medication: RU-AGO
+      followup: liver tests regularly until normalization
+      source_ref: RU-AGO
+      source_locator: §4.4 с.4, немедленное прекращение при АЛТ или АСТ >3 ВГН
+    - input: AST_ratio
+      operator: '>'
+      value: 3
+      unit: ULN ratio
+      treatment_phase: ongoing
+      action: source_stop_action
+      stop_medication: RU-AGO
+      followup: liver tests regularly until normalization
+      source_ref: RU-AGO
+      source_locator: §4.4 с.4, немедленное прекращение при АЛТ или АСТ >3 ВГН
+  ago-gad-start:
+    required_inputs:
+    - age
+    - form
+    - hepatic
+    - pregnancy
+    - lactation
+    - medicines
+    - allergy
+    - ALT_ratio
+    - AST_ratio
+    - renal_state
+    - elderly_population
+    - dementia
+    - galactose_intolerance
+    - complete_lactase_deficiency
+    - glucose_galactose_malabsorption
+    - liver_injury_signs
+    - transaminases_rising
+    - overweight_obesity
+    - fatty_liver
+    - diabetes
+    - alcohol_abuse
+    - alcohol_use
+    - mania
+    - mania_symptoms
+    - suicide_risk
+    - ect
+    conditional_inputs: {}
+    source_gates:
+    - source_ref: RU-AGO
+      version: Копия производителя с именем 20241228; первичная регистрация 25.01.2022; поле пересмотра пустое
+      locator: §4.1–4.4 с.1–5; §4.5–4.6 с.5–6
+      exclusions: *id001
+      cautions: *id002
+      current_medicines_excluded: *id003
+      current_medicines_caution: *id004
+      stop: *id005
+      other: ALT and AST separately >3 exclude start; (1,3] caution; liver insufficiency/cirrhosis/active disease
+        exclude; elderly+dementia exclude; GAD >65, BDR >=75 exclude; <18 exclude; moderate/severe renal caution;
+        rising transaminases repeat within 48 hours
+    gate_order:
+    - unavailable_source
+    - known immediate stop/exclusion
+    - invalid/missing applicable field
+    - unresolved source caution/modifier
+    - dose branch
+    reference_display: Source scheme only, without individualized dose; no omitted field treated as negative
+    branches:
+    - branch_id: usual
+      when: all gates clear; assessed liver normal; ALT<=1 AND AST<=1; adult within indication-specific age
+      expected_output:
+        result_type: exact
+        total_daily_dose_mg: 25
+        dose_per_administration_mg: 25.0
+        administrations_per_day: 1
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        monitoring:
+          before_start: true
+          approximate_weeks_parameter: liver_monitoring_weeks
+          restart_same_frequency_after_dose_increase: true
+          rising_repeat_hours_parameter: repeat_liver_tests_hours
+          stop_signs_action: immediate cessation; tests until normal
+          source_ref: RU-AGO
+          source_locator: §4.2 с.1; §4.4 с.3–4
+        conditional_higher_dose_mg: 50
+        earliest_higher_weeks: 4
+        higher_requires: no positive dynamics + clinician benefit/risk decision + liver monitoring
+      source_basis:
+      - source_id: RU-AGO
+        version: Копия производителя с именем 20241228; первичная регистрация 25.01.2022; поле пересмотра пустое
+        locator: §4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16
+        sha256: 1cf8e71b5c27891e17b5b7ab4dd7c8c02697a1d44bb287a57a1ee9de0fb85bd6
+      - source_id: RU-GAD
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78
+        sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+    - branch_id: liver_caution
+      when: ALT or AST >1 and <=3; no exclusion
+      expected_output:
+        result_type: clinician_choice
+        total_daily_dose_mg: null
+        dose_per_administration_mg: null
+        administrations_per_day: null
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        monitoring:
+          before_start: true
+          approximate_weeks_parameter: liver_monitoring_weeks
+          restart_same_frequency_after_dose_increase: true
+          rising_repeat_hours_parameter: repeat_liver_tests_hours
+          stop_signs_action: immediate cessation; tests until normal
+          source_ref: RU-AGO
+          source_locator: §4.2 с.1; §4.4 с.3–4
+      source_basis:
+      - source_id: RU-AGO
+        version: Копия производителя с именем 20241228; первичная регистрация 25.01.2022; поле пересмотра пустое
+        locator: §4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16
+        sha256: 1cf8e71b5c27891e17b5b7ab4dd7c8c02697a1d44bb287a57a1ee9de0fb85bd6
+      - source_id: RU-GAD
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78
+        sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+    - branch_id: renal_caution
+      when: moderate/severe renal impairment
+      expected_output:
+        result_type: clinician_choice
+        total_daily_dose_mg: null
+        dose_per_administration_mg: null
+        administrations_per_day: null
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        dose_coefficient: null
+      source_basis:
+      - source_id: RU-AGO
+        version: Копия производителя с именем 20241228; первичная регистрация 25.01.2022; поле пересмотра пустое
+        locator: §4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16
+        sha256: 1cf8e71b5c27891e17b5b7ab4dd7c8c02697a1d44bb287a57a1ee9de0fb85bd6
+      - source_id: RU-GAD
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78
+        sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+    - branch_id: repeat_tests
+      when: rising transaminases; ALT and AST still <=3; no injury signs
+      expected_output:
+        result_type: clinician_choice
+        total_daily_dose_mg: null
+        dose_per_administration_mg: null
+        administrations_per_day: null
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        repeat_tests_within_hours: 48
+      source_basis:
+      - source_id: RU-AGO
+        version: Копия производителя с именем 20241228; первичная регистрация 25.01.2022; поле пересмотра пустое
+        locator: §4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16
+        sha256: 1cf8e71b5c27891e17b5b7ab4dd7c8c02697a1d44bb287a57a1ee9de0fb85bd6
+      - source_id: RU-GAD
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78
+        sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+    source_gate_scope: start/adjust applicability; both identified products for switch
+    typed_source_conditions:
+    - input: hepatic
+      operator: category_equals
+      value: hepatic_insufficiency
+      action: not_applicable_standard_numeric_branch
+      source_ref: RU-AGO
+      source_locator: §4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16
+    - input: hepatic
+      operator: category_equals
+      value: cirrhosis
+      action: not_applicable_standard_numeric_branch
+      source_ref: RU-AGO
+      source_locator: §4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16
+    - input: hepatic
+      operator: category_equals
+      value: active_liver_disease
+      action: not_applicable_standard_numeric_branch
+      source_ref: RU-AGO
+      source_locator: §4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16
+    ongoing_stop_conditions:
+    - input: ALT_ratio
+      operator: '>'
+      value: 3
+      unit: ULN ratio
+      treatment_phase: ongoing
+      action: source_stop_action
+      stop_medication: RU-AGO
+      followup: liver tests regularly until normalization
+      source_ref: RU-AGO
+      source_locator: §4.4 с.4, немедленное прекращение при АЛТ или АСТ >3 ВГН
+    - input: AST_ratio
+      operator: '>'
+      value: 3
+      unit: ULN ratio
+      treatment_phase: ongoing
+      action: source_stop_action
+      stop_medication: RU-AGO
+      followup: liver tests regularly until normalization
+      source_ref: RU-AGO
+      source_locator: §4.4 с.4, немедленное прекращение при АЛТ или АСТ >3 ВГН
+  ago-stop:
+    required_inputs:
+    - current_dose
+    - clinician_action
+    conditional_inputs: {}
+    source_gates:
+    - source_ref: RU-AGO
+      version: Копия производителя с именем 20241228; первичная регистрация 25.01.2022; поле пересмотра пустое
+      locator: §4.2 с.2, Прекращение лечения
+      exclusions: []
+      cautions: []
+      current_medicines_excluded: []
+      current_medicines_caution: []
+      other: No mandatory taper of agomelatine; no next-drug start time derived
+    gate_order:
+    - unavailable_source
+    - known immediate stop/exclusion
+    - invalid/missing applicable field
+    - unresolved source caution/modifier
+    - dose branch
+    reference_display: Source scheme only, without individualized dose; no omitted field treated as negative
+    branches:
+    - branch_id: chosen_stop
+      when: clinician_action=stop; current dose known
+      expected_output:
+        result_type: source_stop_action
+        total_daily_dose_mg: null
+        dose_per_administration_mg: null
+        administrations_per_day: null
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        mandatory_taper: false
+        next_drug_start_day: null
+      source_basis:
+      - source_id: RU-AGO
+        version: Копия производителя с именем 20241228; первичная регистрация 25.01.2022; поле пересмотра пустое
+        locator: §4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16
+        sha256: 1cf8e71b5c27891e17b5b7ab4dd7c8c02697a1d44bb287a57a1ee9de0fb85bd6
+      - source_id: RU-GAD
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78
+        sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+    source_gate_scope: physician-chosen cessation of agomelatine only; no starting or next-drug clearance
+    typed_source_conditions: []
+  dulox-depression-start:
+    required_inputs:
+    - age
+    - form
+    - hepatic
+    - pregnancy
+    - lactation
+    - medicines
+    - allergy
+    - renal_metric
+    - uncontrolled_hypertension
+    - closed_angle_glaucoma
+    - fructose_intolerance
+    - glucose_galactose_malabsorption
+    - sucrase_isomaltase_deficiency
+    - akathisia
+    - mania
+    - suicide_risk
+    - bleeding_risk
+    - hyponatremia_risk
+    - diabetes
+    - seizure_state
+    conditional_inputs:
+      maoi_type: medicines contains current/stopped MAOI or unidentified interaction class
+      maoi_stopped_at: medicines contains stopped MAOI; per relevant record
+    source_gates:
+    - source_ref: RU-DULOX
+      version: Пересмотр 18.07.2024, §10 с.35; первая регистрация 02.04.2021
+      locator: §4.1–4.3 с.2–4; §4.4–4.6 с.4–14
+      exclusions: &id006
+      - allergy
+      - uncontrolled_hypertension
+      - closed_angle_glaucoma
+      - fructose_intolerance
+      - glucose_galactose_malabsorption
+      - sucrase_isomaltase_deficiency
+      cautions: &id007
+      - pregnancy
+      - lactation
+      - akathisia
+      - mania
+      - suicide_risk
+      - bleeding_risk
+      - hyponatremia_risk
+      - diabetes
+      current_medicines_excluded: &id008
+      - maoi
+      - strong_CYP1A2
+      current_medicines_caution: &id009
+      - serotonergic
+      - bleeding
+      - CYP2D6_inhibitor
+      other: <18 exclude; CLcr <30 exclude; hepatic disease with insufficiency exclude; akathisia increase harmful;
+        no joint elderly+depression dose
+    gate_order:
+    - unavailable_source
+    - known immediate stop/exclusion
+    - invalid/missing applicable field
+    - unresolved source caution/modifier
+    - dose branch
+    reference_display: Source scheme only, without individualized dose; no omitted field treated as negative
+    branches:
+    - branch_id: usual
+      when: all source gates clear; BDR
+      expected_output:
+        result_type: exact
+        total_daily_dose_mg: 60
+        dose_per_administration_mg: 60.0
+        administrations_per_day: 1
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        automatic_escalation_to_120: false
+      source_basis:
+      - source_id: RU-DULOX
+        version: Пересмотр 18.07.2024, §10 с.35; первая регистрация 02.04.2021
+        locator: §4.1–4.3 с.1–4; §4.4 с.5–9; §4.5 с.9–12; §4.6 с.12–13; §8–10 с.35
+        sha256: bcb5a8b9415f15fdae2ec8a8d00abe5788194c59893b6172294c4cf3db839786
+      - source_id: RU-DEP
+        version: '2024; каталог: опубликовано 26.08.2024, применяется'
+        locator: §3.1–3.4 PDF с.24–40; таблица2 с.95–96; §3.6 с.45; Б5 с.105–106
+        sha256: 2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd
+    source_gate_scope: start/adjust applicability; both identified products for switch
+    typed_source_conditions:
+    - input: hepatic
+      operator: category_equals
+      value: liver_disease_with_insufficiency
+      action: not_applicable_standard_numeric_branch
+      source_ref: RU-DULOX
+      source_locator: §4.1–4.3 с.1–4; §4.4 с.5–9; §4.5 с.9–12; §4.6 с.12–13; §8–10 с.35
+    - input: seizure_state
+      operator: equals
+      value: контролируемые
+      action: clinician_choice
+      source_ref: RU-DULOX
+      source_locator: §4.4 с.5
+    - input: seizure_state
+      operator: equals
+      value: неконтролируемые
+      action: clinician_choice
+      source_ref: RU-DULOX
+      source_locator: §4.4 с.5
+  dulox-gad-adjust:
+    required_inputs:
+    - age
+    - form
+    - hepatic
+    - pregnancy
+    - lactation
+    - medicines
+    - allergy
+    - renal_metric
+    - comorbid_depression
+    - elderly_population
+    - uncontrolled_hypertension
+    - closed_angle_glaucoma
+    - current_dose
+    - response
+    - tolerability
+    - fructose_intolerance
+    - glucose_galactose_malabsorption
+    - sucrase_isomaltase_deficiency
+    - akathisia
+    - mania
+    - suicide_risk
+    - bleeding_risk
+    - hyponatremia_risk
+    - diabetes
+    - seizure_state
+    conditional_inputs:
+      maoi_type: medicines contains current/stopped MAOI or unidentified interaction class
+      maoi_stopped_at: medicines contains stopped MAOI; per relevant record
+    source_gates:
+    - source_ref: RU-DULOX
+      version: Пересмотр 18.07.2024, §10 с.35; первая регистрация 02.04.2021
+      locator: §4.1–4.3 с.2–4; §4.4–4.6 с.4–14
+      exclusions: *id006
+      cautions: *id007
+      current_medicines_excluded: *id008
+      current_medicines_caution: *id009
+      other: <18 exclude; CLcr <30 exclude; hepatic disease with insufficiency exclude; akathisia increase harmful;
+        no joint elderly+depression dose
+    gate_order:
+    - unavailable_source
+    - known immediate stop/exclusion
+    - invalid/missing applicable field
+    - unresolved source caution/modifier
+    - dose branch
+    reference_display: Source scheme only, without individualized dose; no omitted field treated as negative
+    branches:
+    - branch_id: at30
+      when: current=30; inadequate response; acceptable tolerance; no overlap
+      expected_output:
+        result_type: clinician_choice
+        total_daily_dose_mg: null
+        dose_per_administration_mg: null
+        administrations_per_day: null
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        published_options_mg:
+        - 60
+        automatic_interval_days: null
+      source_basis:
+      - source_id: RU-DULOX
+        version: Пересмотр 18.07.2024, §10 с.35; первая регистрация 02.04.2021
+        locator: §4.1–4.3 с.1–4; §4.4 с.5–9; §4.5 с.9–12; §4.6 с.12–13; §8–10 с.35
+        sha256: bcb5a8b9415f15fdae2ec8a8d00abe5788194c59893b6172294c4cf3db839786
+      - source_id: RU-GAD
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78
+        sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+    - branch_id: at60
+      when: current=60; inadequate response; acceptable tolerance; no overlap
+      expected_output:
+        result_type: clinician_choice
+        total_daily_dose_mg: null
+        dose_per_administration_mg: null
+        administrations_per_day: null
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        published_options_mg:
+        - 90
+        - 120
+        automatic_interval_days: null
+      source_basis:
+      - source_id: RU-DULOX
+        version: Пересмотр 18.07.2024, §10 с.35; первая регистрация 02.04.2021
+        locator: §4.1–4.3 с.1–4; §4.4 с.5–9; §4.5 с.9–12; §4.6 с.12–13; §8–10 с.35
+        sha256: bcb5a8b9415f15fdae2ec8a8d00abe5788194c59893b6172294c4cf3db839786
+      - source_id: RU-GAD
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78
+        sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+    - branch_id: other
+      when: other dose, adequate response, intolerance or combined modifiers
+      expected_output:
+        result_type: clinician_choice
+        total_daily_dose_mg: null
+        dose_per_administration_mg: null
+        administrations_per_day: null
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        automatic_next_dose: null
+      source_basis:
+      - source_id: RU-DULOX
+        version: Пересмотр 18.07.2024, §10 с.35; первая регистрация 02.04.2021
+        locator: §4.1–4.3 с.1–4; §4.4 с.5–9; §4.5 с.9–12; §4.6 с.12–13; §8–10 с.35
+        sha256: bcb5a8b9415f15fdae2ec8a8d00abe5788194c59893b6172294c4cf3db839786
+      - source_id: RU-GAD
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78
+        sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+    source_gate_scope: start/adjust applicability; both identified products for switch
+    typed_source_conditions:
+    - input: hepatic
+      operator: category_equals
+      value: liver_disease_with_insufficiency
+      action: not_applicable_standard_numeric_branch
+      source_ref: RU-DULOX
+      source_locator: §4.1–4.3 с.1–4; §4.4 с.5–9; §4.5 с.9–12; §4.6 с.12–13; §8–10 с.35
+    - input: seizure_state
+      operator: equals
+      value: контролируемые
+      action: clinician_choice
+      source_ref: RU-DULOX
+      source_locator: §4.4 с.5
+    - input: seizure_state
+      operator: equals
+      value: неконтролируемые
+      action: clinician_choice
+      source_ref: RU-DULOX
+      source_locator: §4.4 с.5
+  dulox-gad-start:
+    required_inputs:
+    - age
+    - form
+    - hepatic
+    - pregnancy
+    - lactation
+    - medicines
+    - allergy
+    - renal_metric
+    - comorbid_depression
+    - elderly_population
+    - uncontrolled_hypertension
+    - closed_angle_glaucoma
+    - fructose_intolerance
+    - glucose_galactose_malabsorption
+    - sucrase_isomaltase_deficiency
+    - akathisia
+    - mania
+    - suicide_risk
+    - bleeding_risk
+    - hyponatremia_risk
+    - diabetes
+    - seizure_state
+    conditional_inputs:
+      maoi_type: medicines contains current/stopped MAOI or unidentified interaction class
+      maoi_stopped_at: medicines contains stopped MAOI; per relevant record
+    source_gates:
+    - source_ref: RU-DULOX
+      version: Пересмотр 18.07.2024, §10 с.35; первая регистрация 02.04.2021
+      locator: §4.1–4.3 с.2–4; §4.4–4.6 с.4–14
+      exclusions: *id006
+      cautions: *id007
+      current_medicines_excluded: *id008
+      current_medicines_caution: *id009
+      other: <18 exclude; CLcr <30 exclude; hepatic disease with insufficiency exclude; akathisia increase harmful;
+        no joint elderly+depression dose
+    gate_order:
+    - unavailable_source
+    - known immediate stop/exclusion
+    - invalid/missing applicable field
+    - unresolved source caution/modifier
+    - dose branch
+    reference_display: Source scheme only, without individualized dose; no omitted field treated as negative
+    branches:
+    - branch_id: usual
+      when: elderly_population=false AND comorbid_depression=false
+      expected_output:
+        result_type: exact
+        total_daily_dose_mg: 30
+        dose_per_administration_mg: 30.0
+        administrations_per_day: 1
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        automatic_day_for_60: null
+      source_basis:
+      - source_id: RU-DULOX
+        version: Пересмотр 18.07.2024, §10 с.35; первая регистрация 02.04.2021
+        locator: §4.1–4.3 с.1–4; §4.4 с.5–9; §4.5 с.9–12; §4.6 с.12–13; §8–10 с.35
+        sha256: bcb5a8b9415f15fdae2ec8a8d00abe5788194c59893b6172294c4cf3db839786
+      - source_id: RU-GAD
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78
+        sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+    - branch_id: comorbid
+      when: elderly_population=false AND comorbid_depression=true
+      expected_output:
+        result_type: exact
+        total_daily_dose_mg: 60
+        dose_per_administration_mg: 60.0
+        administrations_per_day: 1
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+      source_basis:
+      - source_id: RU-DULOX
+        version: Пересмотр 18.07.2024, §10 с.35; первая регистрация 02.04.2021
+        locator: §4.1–4.3 с.1–4; §4.4 с.5–9; §4.5 с.9–12; §4.6 с.12–13; §8–10 с.35
+        sha256: bcb5a8b9415f15fdae2ec8a8d00abe5788194c59893b6172294c4cf3db839786
+      - source_id: RU-GAD
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78
+        sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+    - branch_id: elderly
+      when: elderly_population=true AND comorbid_depression=false
+      expected_output:
+        result_type: exact
+        total_daily_dose_mg: 30
+        dose_per_administration_mg: 30.0
+        administrations_per_day: 1
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        initial_period_weeks: 2
+        conditional_next_total_mg: 60
+      source_basis:
+      - source_id: RU-DULOX
+        version: Пересмотр 18.07.2024, §10 с.35; первая регистрация 02.04.2021
+        locator: §4.1–4.3 с.1–4; §4.4 с.5–9; §4.5 с.9–12; §4.6 с.12–13; §8–10 с.35
+        sha256: bcb5a8b9415f15fdae2ec8a8d00abe5788194c59893b6172294c4cf3db839786
+      - source_id: RU-GAD
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78
+        sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+    - branch_id: overlap
+      when: elderly_population=true AND comorbid_depression=true
+      expected_output:
+        result_type: clinician_choice
+        total_daily_dose_mg: null
+        dose_per_administration_mg: null
+        administrations_per_day: null
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        automatic_combined_start: null
+      source_basis:
+      - source_id: RU-DULOX
+        version: Пересмотр 18.07.2024, §10 с.35; первая регистрация 02.04.2021
+        locator: §4.1–4.3 с.1–4; §4.4 с.5–9; §4.5 с.9–12; §4.6 с.12–13; §8–10 с.35
+        sha256: bcb5a8b9415f15fdae2ec8a8d00abe5788194c59893b6172294c4cf3db839786
+      - source_id: RU-GAD
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78
+        sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+    source_gate_scope: start/adjust applicability; both identified products for switch
+    typed_source_conditions:
+    - input: hepatic
+      operator: category_equals
+      value: liver_disease_with_insufficiency
+      action: not_applicable_standard_numeric_branch
+      source_ref: RU-DULOX
+      source_locator: §4.1–4.3 с.1–4; §4.4 с.5–9; §4.5 с.9–12; §4.6 с.12–13; §8–10 с.35
+    - input: seizure_state
+      operator: equals
+      value: контролируемые
+      action: clinician_choice
+      source_ref: RU-DULOX
+      source_locator: §4.4 с.5
+    - input: seizure_state
+      operator: equals
+      value: неконтролируемые
+      action: clinician_choice
+      source_ref: RU-DULOX
+      source_locator: §4.4 с.5
+  dulox-taper-limit:
+    required_inputs:
+    - age
+    - form
+    - current_dose
+    - duration
+    - withdrawal_severity
+    - past_withdrawal
+    conditional_inputs: {}
+    source_gates:
+    - source_ref: RU-DULOX
+      version: Пересмотр 18.07.2024, §10 с.35; первая регистрация 02.04.2021
+      locator: §4.1–4.3 с.2–4; §4.4–4.6 с.4–14
+      exclusions: []
+      cautions: []
+      current_medicines_excluded: []
+      current_medicines_caution: []
+      stop: []
+      other: Source-specific withdrawal guidance; exact taper not inferred. Published immediate cessation conditions
+        take precedence if treatment ongoing.
+    gate_order:
+    - unavailable_source
+    - known immediate stop/exclusion
+    - invalid/missing applicable field
+    - unresolved source caution/modifier
+    - dose branch
+    reference_display: Source scheme only, without individualized dose; no omitted field treated as negative
+    branches:
+    - branch_id: source_limit
+      when: known current dose/form/duration; no urgent stop condition
+      expected_output:
+        result_type: clinician_choice
+        total_daily_dose_mg: null
+        dose_per_administration_mg: null
+        administrations_per_day: null
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        duration_constraint:
+          operator: recommended_period
+          source_options_weeks:
+          - 1
+          - 2
+          chosen_minimum_weeks: null
+          hard_upper_limit_weeks: null
+          exact_taper_duration_weeks: null
+          slower_if_symptoms: true
+          source_ref: RU-DULOX
+          source_locator: §4.2 PDF с.4
+          note: '§4.2 с.4: «в течение», без «минимум»; при симптомах более постепенно. Не переносить оператор minimum
+            других препаратов.'
+        full_taper_calendar: null
+        universal_percentage: null
+      source_basis:
+      - source_id: RU-DULOX
+        version: Пересмотр 18.07.2024, §10 с.35; первая регистрация 02.04.2021
+        locator: §4.1–4.3 с.1–4; §4.4 с.5–9; §4.5 с.9–12; §4.6 с.12–13; §8–10 с.35
+        sha256: bcb5a8b9415f15fdae2ec8a8d00abe5788194c59893b6172294c4cf3db839786
+      - source_id: RU-GAD
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78
+        sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+    - branch_id: withdrawal
+      when: withdrawal symptoms present
+      expected_output:
+        result_type: clinician_choice
+        total_daily_dose_mg: null
+        dose_per_administration_mg: null
+        administrations_per_day: null
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        automatic_next_reduction: false
+        slower_step: null
+        prior_dose_resumption: clinician consideration where source permits
+      source_basis:
+      - source_id: RU-DULOX
+        version: Пересмотр 18.07.2024, §10 с.35; первая регистрация 02.04.2021
+        locator: §4.1–4.3 с.1–4; §4.4 с.5–9; §4.5 с.9–12; §4.6 с.12–13; §8–10 с.35
+        sha256: bcb5a8b9415f15fdae2ec8a8d00abe5788194c59893b6172294c4cf3db839786
+      - source_id: RU-GAD
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78
+        sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+    source_gate_scope: discontinuation statement and symptom-dependent hold/stop only; start exclusions do not prevent
+      discontinuation
+    typed_source_conditions: []
+  esc-adult-adjust:
+    required_inputs:
+    - age
+    - form
+    - pregnancy
+    - lactation
+    - medicines
+    - allergy
+    - hepatic
+    - mania
+    - seizure_state
+    - known_cyp2c19
+    - renal
+    - current_dose
+    - time_at_dose
+    - response
+    - tolerability
+    - adherence
+    - qt_risk
+    - bleeding_risk
+    - hyponatremia_risk
+    - suicide_risk
+    - akathisia
+    - diabetes
+    - glaucoma
+    conditional_inputs: {}
+    source_gates: []
+    gate_order:
+    - unavailable_source
+    - known immediate stop/exclusion
+    - invalid/missing applicable field
+    - unresolved source caution/modifier
+    - dose branch
+    reference_display: Source scheme only, without individualized dose; no omitted field treated as negative
+    branches:
+    - branch_id: unavailable
+      when: Current RU-ESC full original unavailable
+      expected_output:
+        result_type: source_unavailable
+        total_daily_dose_mg: null
+        dose_per_administration_mg: null
+        administrations_per_day: null
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        reason_ids:
+        - F01
+        - F02
+        - F13
+      source_basis:
+      - source_id: RU-GAD
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78
+        sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+      - source_id: RU-PANIC
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.1, PDF с.25–33; приложение А3, с.76–77
+        sha256: a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d
+      - source_id: RU-ESC
+        version: Текущий полный оригинал недоступен; наблюдался РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; прежние дата/штамп
+          документа не воспроизведены
+        locator: Прежние заявленные разделы/страницы — historical_unreproduced_claim.locator; не текущий подтверждённый
+          локатор
+        sha256: null
+    source_gate_scope: Blocked before clinical predicates; source sections retained for future original review,
+      not evaluated as confirmed rules
+    typed_source_conditions:
+    - input: hepatic
+      operator: category_equals
+      value: 'недостаточность: степень по источнику'
+      action: clinician_choice
+      source_ref: RU-ESC
+      source_locator: §1–3 PDF с.1–2; §4.1 с.2; §4.2 с.2–3; §4.3 с.4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.10
+    - input: seizure_state
+      operator: equals
+      value: контролируемые
+      action: clinician_choice
+      source_ref: RU-ESC
+      source_locator: §1–3 PDF с.1–2; §4.1 с.2; §4.2 с.2–3; §4.3 с.4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.10
+    - input: seizure_state
+      operator: equals
+      value: неконтролируемые
+      action: clinician_choice
+      source_ref: RU-ESC
+      source_locator: §1–3 PDF с.1–2; §4.1 с.2; §4.2 с.2–3; §4.3 с.4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.10
+    unverified_source_sections: []
+  esc-cyp2c19-start:
+    required_inputs:
+    - age
+    - form
+    - pregnancy
+    - lactation
+    - medicines
+    - allergy
+    - hepatic
+    - mania
+    - seizure_state
+    - known_cyp2c19
+    - renal
+    - qt_risk
+    - bleeding_risk
+    - hyponatremia_risk
+    - suicide_risk
+    - diabetes
+    - glaucoma
+    conditional_inputs: {}
+    source_gates: []
+    gate_order:
+    - unavailable_source
+    - known immediate stop/exclusion
+    - invalid/missing applicable field
+    - unresolved source caution/modifier
+    - dose branch
+    reference_display: Source scheme only, without individualized dose; no omitted field treated as negative
+    branches:
+    - branch_id: unavailable
+      when: Current RU-ESC full original unavailable
+      expected_output:
+        result_type: source_unavailable
+        total_daily_dose_mg: null
+        dose_per_administration_mg: null
+        administrations_per_day: null
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        reason_ids:
+        - F01
+        - F02
+        - F13
+      source_basis:
+      - source_id: RU-ESC
+        version: Текущий полный оригинал недоступен; наблюдался РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; прежние дата/штамп
+          документа не воспроизведены
+        locator: Прежние заявленные разделы/страницы — historical_unreproduced_claim.locator; не текущий подтверждённый
+          локатор
+        sha256: null
+    source_gate_scope: Blocked before clinical predicates; source sections retained for future original review,
+      not evaluated as confirmed rules
+    typed_source_conditions:
+    - input: hepatic
+      operator: category_equals
+      value: 'недостаточность: степень по источнику'
+      action: clinician_choice
+      source_ref: RU-ESC
+      source_locator: §1–3 PDF с.1–2; §4.1 с.2; §4.2 с.2–3; §4.3 с.4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.10
+    - input: seizure_state
+      operator: equals
+      value: контролируемые
+      action: clinician_choice
+      source_ref: RU-ESC
+      source_locator: §1–3 PDF с.1–2; §4.1 с.2; §4.2 с.2–3; §4.3 с.4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.10
+    - input: seizure_state
+      operator: equals
+      value: неконтролируемые
+      action: clinician_choice
+      source_ref: RU-ESC
+      source_locator: §1–3 PDF с.1–2; §4.1 с.2; §4.2 с.2–3; §4.3 с.4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.10
+    unverified_source_sections: []
+  esc-elderly-start:
+    required_inputs:
+    - age
+    - form
+    - pregnancy
+    - lactation
+    - medicines
+    - allergy
+    - hepatic
+    - mania
+    - seizure_state
+    - known_cyp2c19
+    - renal
+    - qt_risk
+    - bleeding_risk
+    - hyponatremia_risk
+    - suicide_risk
+    - diabetes
+    - glaucoma
+    conditional_inputs: {}
+    source_gates: []
+    gate_order:
+    - unavailable_source
+    - known immediate stop/exclusion
+    - invalid/missing applicable field
+    - unresolved source caution/modifier
+    - dose branch
+    reference_display: Source scheme only, without individualized dose; no omitted field treated as negative
+    branches:
+    - branch_id: unavailable
+      when: Current RU-ESC full original unavailable
+      expected_output:
+        result_type: source_unavailable
+        total_daily_dose_mg: null
+        dose_per_administration_mg: null
+        administrations_per_day: null
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        reason_ids:
+        - F01
+        - F02
+        - F13
+      source_basis:
+      - source_id: RU-ESC
+        version: Текущий полный оригинал недоступен; наблюдался РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; прежние дата/штамп
+          документа не воспроизведены
+        locator: Прежние заявленные разделы/страницы — historical_unreproduced_claim.locator; не текущий подтверждённый
+          локатор
+        sha256: null
+    source_gate_scope: Blocked before clinical predicates; source sections retained for future original review,
+      not evaluated as confirmed rules
+    typed_source_conditions:
+    - input: hepatic
+      operator: category_equals
+      value: 'недостаточность: степень по источнику'
+      action: clinician_choice
+      source_ref: RU-ESC
+      source_locator: §1–3 PDF с.1–2; §4.1 с.2; §4.2 с.2–3; §4.3 с.4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.10
+    - input: seizure_state
+      operator: equals
+      value: контролируемые
+      action: clinician_choice
+      source_ref: RU-ESC
+      source_locator: §1–3 PDF с.1–2; §4.1 с.2; §4.2 с.2–3; §4.3 с.4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.10
+    - input: seizure_state
+      operator: equals
+      value: неконтролируемые
+      action: clinician_choice
+      source_ref: RU-ESC
+      source_locator: §1–3 PDF с.1–2; §4.1 с.2; §4.2 с.2–3; §4.3 с.4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.10
+    unverified_source_sections: []
+  esc-gad-start:
+    required_inputs:
+    - age
+    - form
+    - pregnancy
+    - lactation
+    - medicines
+    - allergy
+    - hepatic
+    - mania
+    - seizure_state
+    - known_cyp2c19
+    - renal
+    - qt_risk
+    - bleeding_risk
+    - hyponatremia_risk
+    - suicide_risk
+    - diabetes
+    - glaucoma
+    conditional_inputs: {}
+    source_gates: []
+    gate_order:
+    - unavailable_source
+    - known immediate stop/exclusion
+    - invalid/missing applicable field
+    - unresolved source caution/modifier
+    - dose branch
+    reference_display: Source scheme only, without individualized dose; no omitted field treated as negative
+    branches:
+    - branch_id: unavailable
+      when: Current RU-ESC full original unavailable
+      expected_output:
+        result_type: source_unavailable
+        total_daily_dose_mg: null
+        dose_per_administration_mg: null
+        administrations_per_day: null
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        reason_ids:
+        - F01
+        - F02
+        - F13
+      source_basis:
+      - source_id: RU-ESC
+        version: Текущий полный оригинал недоступен; наблюдался РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; прежние дата/штамп
+          документа не воспроизведены
+        locator: Прежние заявленные разделы/страницы — historical_unreproduced_claim.locator; не текущий подтверждённый
+          локатор
+        sha256: null
+    source_gate_scope: Blocked before clinical predicates; source sections retained for future original review,
+      not evaluated as confirmed rules
+    typed_source_conditions:
+    - input: hepatic
+      operator: category_equals
+      value: 'недостаточность: степень по источнику'
+      action: clinician_choice
+      source_ref: RU-ESC
+      source_locator: §1–3 PDF с.1–2; §4.1 с.2; §4.2 с.2–3; §4.3 с.4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.10
+    - input: seizure_state
+      operator: equals
+      value: контролируемые
+      action: clinician_choice
+      source_ref: RU-ESC
+      source_locator: §1–3 PDF с.1–2; §4.1 с.2; §4.2 с.2–3; §4.3 с.4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.10
+    - input: seizure_state
+      operator: equals
+      value: неконтролируемые
+      action: clinician_choice
+      source_ref: RU-ESC
+      source_locator: §1–3 PDF с.1–2; §4.1 с.2; §4.2 с.2–3; §4.3 с.4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.10
+    unverified_source_sections: []
+  esc-hepatic-start:
+    required_inputs:
+    - age
+    - form
+    - pregnancy
+    - lactation
+    - medicines
+    - allergy
+    - hepatic
+    - mania
+    - seizure_state
+    - known_cyp2c19
+    - renal
+    - qt_risk
+    - bleeding_risk
+    - hyponatremia_risk
+    - suicide_risk
+    - diabetes
+    - glaucoma
+    conditional_inputs: {}
+    source_gates: []
+    gate_order:
+    - unavailable_source
+    - known immediate stop/exclusion
+    - invalid/missing applicable field
+    - unresolved source caution/modifier
+    - dose branch
+    reference_display: Source scheme only, without individualized dose; no omitted field treated as negative
+    branches:
+    - branch_id: unavailable
+      when: Current RU-ESC full original unavailable
+      expected_output:
+        result_type: source_unavailable
+        total_daily_dose_mg: null
+        dose_per_administration_mg: null
+        administrations_per_day: null
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        reason_ids:
+        - F01
+        - F02
+        - F13
+      source_basis:
+      - source_id: RU-ESC
+        version: Текущий полный оригинал недоступен; наблюдался РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; прежние дата/штамп
+          документа не воспроизведены
+        locator: Прежние заявленные разделы/страницы — historical_unreproduced_claim.locator; не текущий подтверждённый
+          локатор
+        sha256: null
+    source_gate_scope: Blocked before clinical predicates; source sections retained for future original review,
+      not evaluated as confirmed rules
+    typed_source_conditions:
+    - input: hepatic
+      operator: category_equals
+      value: 'недостаточность: степень по источнику'
+      action: clinician_choice
+      source_ref: RU-ESC
+      source_locator: §1–3 PDF с.1–2; §4.1 с.2; §4.2 с.2–3; §4.3 с.4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.10
+    - input: seizure_state
+      operator: equals
+      value: контролируемые
+      action: clinician_choice
+      source_ref: RU-ESC
+      source_locator: §1–3 PDF с.1–2; §4.1 с.2; §4.2 с.2–3; §4.3 с.4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.10
+    - input: seizure_state
+      operator: equals
+      value: неконтролируемые
+      action: clinician_choice
+      source_ref: RU-ESC
+      source_locator: §1–3 PDF с.1–2; §4.1 с.2; §4.2 с.2–3; §4.3 с.4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.10
+    unverified_source_sections: []
+  esc-panic-start:
+    required_inputs:
+    - age
+    - form
+    - pregnancy
+    - lactation
+    - medicines
+    - allergy
+    - hepatic
+    - mania
+    - seizure_state
+    - known_cyp2c19
+    - renal
+    - qt_risk
+    - bleeding_risk
+    - hyponatremia_risk
+    - suicide_risk
+    - diabetes
+    - glaucoma
+    conditional_inputs: {}
+    source_gates: []
+    gate_order:
+    - unavailable_source
+    - known immediate stop/exclusion
+    - invalid/missing applicable field
+    - unresolved source caution/modifier
+    - dose branch
+    reference_display: Source scheme only, without individualized dose; no omitted field treated as negative
+    branches:
+    - branch_id: unavailable
+      when: Current RU-ESC full original unavailable
+      expected_output:
+        result_type: source_unavailable
+        total_daily_dose_mg: null
+        dose_per_administration_mg: null
+        administrations_per_day: null
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        reason_ids:
+        - F01
+        - F02
+        - F13
+      source_basis:
+      - source_id: RU-ESC
+        version: Текущий полный оригинал недоступен; наблюдался РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; прежние дата/штамп
+          документа не воспроизведены
+        locator: Прежние заявленные разделы/страницы — historical_unreproduced_claim.locator; не текущий подтверждённый
+          локатор
+        sha256: null
+    source_gate_scope: Blocked before clinical predicates; source sections retained for future original review,
+      not evaluated as confirmed rules
+    typed_source_conditions:
+    - input: hepatic
+      operator: category_equals
+      value: 'недостаточность: степень по источнику'
+      action: clinician_choice
+      source_ref: RU-ESC
+      source_locator: §1–3 PDF с.1–2; §4.1 с.2; §4.2 с.2–3; §4.3 с.4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.10
+    - input: seizure_state
+      operator: equals
+      value: контролируемые
+      action: clinician_choice
+      source_ref: RU-ESC
+      source_locator: §1–3 PDF с.1–2; §4.1 с.2; §4.2 с.2–3; §4.3 с.4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.10
+    - input: seizure_state
+      operator: equals
+      value: неконтролируемые
+      action: clinician_choice
+      source_ref: RU-ESC
+      source_locator: §1–3 PDF с.1–2; §4.1 с.2; §4.2 с.2–3; §4.3 с.4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.10
+    unverified_source_sections: []
+  esc-social-start:
+    required_inputs:
+    - age
+    - form
+    - pregnancy
+    - lactation
+    - medicines
+    - allergy
+    - hepatic
+    - mania
+    - seizure_state
+    - known_cyp2c19
+    - renal
+    - qt_risk
+    - bleeding_risk
+    - hyponatremia_risk
+    - suicide_risk
+    - diabetes
+    - glaucoma
+    conditional_inputs: {}
+    source_gates: []
+    gate_order:
+    - unavailable_source
+    - known immediate stop/exclusion
+    - invalid/missing applicable field
+    - unresolved source caution/modifier
+    - dose branch
+    reference_display: Source scheme only, without individualized dose; no omitted field treated as negative
+    branches:
+    - branch_id: unavailable
+      when: Current RU-ESC full original unavailable
+      expected_output:
+        result_type: source_unavailable
+        total_daily_dose_mg: null
+        dose_per_administration_mg: null
+        administrations_per_day: null
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        reason_ids:
+        - F01
+        - F02
+        - F13
+      source_basis:
+      - source_id: RU-ESC
+        version: Текущий полный оригинал недоступен; наблюдался РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; прежние дата/штамп
+          документа не воспроизведены
+        locator: Прежние заявленные разделы/страницы — historical_unreproduced_claim.locator; не текущий подтверждённый
+          локатор
+        sha256: null
+    source_gate_scope: Blocked before clinical predicates; source sections retained for future original review,
+      not evaluated as confirmed rules
+    typed_source_conditions:
+    - input: hepatic
+      operator: category_equals
+      value: 'недостаточность: степень по источнику'
+      action: clinician_choice
+      source_ref: RU-ESC
+      source_locator: §1–3 PDF с.1–2; §4.1 с.2; §4.2 с.2–3; §4.3 с.4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.10
+    - input: seizure_state
+      operator: equals
+      value: контролируемые
+      action: clinician_choice
+      source_ref: RU-ESC
+      source_locator: §1–3 PDF с.1–2; §4.1 с.2; §4.2 с.2–3; §4.3 с.4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.10
+    - input: seizure_state
+      operator: equals
+      value: неконтролируемые
+      action: clinician_choice
+      source_ref: RU-ESC
+      source_locator: §1–3 PDF с.1–2; §4.1 с.2; §4.2 с.2–3; §4.3 с.4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.10
+    unverified_source_sections: []
+  esc-taper-limit:
+    required_inputs:
+    - age
+    - form
+    - pregnancy
+    - lactation
+    - medicines
+    - allergy
+    - hepatic
+    - mania
+    - seizure_state
+    - known_cyp2c19
+    - renal
+    - current_dose
+    - duration_of_use
+    - prior_withdrawal
+    - current_withdrawal
+    - qt_risk
+    - bleeding_risk
+    - hyponatremia_risk
+    - suicide_risk
+    - diabetes
+    - glaucoma
+    conditional_inputs: {}
+    source_gates: []
+    gate_order:
+    - unavailable_source
+    - known immediate stop/exclusion
+    - invalid/missing applicable field
+    - unresolved source caution/modifier
+    - dose branch
+    reference_display: Source scheme only, without individualized dose; no omitted field treated as negative
+    branches:
+    - branch_id: unavailable
+      when: Current RU-ESC full original unavailable
+      expected_output:
+        result_type: source_unavailable
+        total_daily_dose_mg: null
+        dose_per_administration_mg: null
+        administrations_per_day: null
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        reason_ids:
+        - F01
+        - F02
+        - F13
+      source_basis:
+      - source_id: RU-GAD
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78
+        sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+      - source_id: RU-ESC
+        version: Текущий полный оригинал недоступен; наблюдался РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; прежние дата/штамп
+          документа не воспроизведены
+        locator: Прежние заявленные разделы/страницы — historical_unreproduced_claim.locator; не текущий подтверждённый
+          локатор
+        sha256: null
+      - source_id: RU-PANIC
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.1, PDF с.25–33; приложение А3, с.76–77
+        sha256: a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d
+    source_gate_scope: Blocked before clinical predicates; source sections retained for future original review,
+      not evaluated as confirmed rules
+    typed_source_conditions:
+    - input: hepatic
+      operator: category_equals
+      value: 'недостаточность: степень по источнику'
+      action: clinician_choice
+      source_ref: RU-ESC
+      source_locator: §1–3 PDF с.1–2; §4.1 с.2; §4.2 с.2–3; §4.3 с.4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.10
+    - input: seizure_state
+      operator: equals
+      value: контролируемые
+      action: clinician_choice
+      source_ref: RU-ESC
+      source_locator: §1–3 PDF с.1–2; §4.1 с.2; §4.2 с.2–3; §4.3 с.4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.10
+    - input: seizure_state
+      operator: equals
+      value: неконтролируемые
+      action: clinician_choice
+      source_ref: RU-ESC
+      source_locator: §1–3 PDF с.1–2; §4.1 с.2; §4.2 с.2–3; §4.3 с.4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.10
+    unverified_source_sections: []
+  fluvox-depression-start:
+    required_inputs:
+    - age
+    - form
+    - hepatic
+    - pregnancy
+    - lactation
+    - medicines
+    - allergy
+    - renal_metric
+    - source_start_choice
+    - mania
+    - mania_symptoms
+    - akathisia
+    - bleeding_risk
+    - suicide_risk
+    - diabetes
+    - glaucoma
+    - ect
+    - liver_injury_signs
+    - seizure_state
+    conditional_inputs:
+      maoi_type: medicines contains current/stopped MAOI or unidentified interaction class
+      maoi_stopped_at: medicines contains stopped MAOI; per relevant record
+    source_gates:
+    - source_ref: RU-FLUVOX
+      version: Имя опубликованной копии 07.02.2025/0002; поля §8–10 PDF пустые; РУ от 07.02.2025 подтверждено реестром
+      locator: §4.1–4.3 с.1–3; §4.4–4.6 с.4–11
+      exclusions:
+      - allergy
+      - lactation
+      cautions:
+      - pregnancy
+      - mania
+      - akathisia
+      - bleeding_risk
+      - suicide_risk
+      - diabetes
+      - glaucoma
+      - ect
+      current_medicines_excluded:
+      - maoi
+      - tizanidine
+      - pimozide
+      - ramelteon
+      - terfenadine
+      - astemizole
+      - cisapride
+      current_medicines_caution:
+      - serotonergic
+      - bleeding
+      - CYP_substrate
+      stop:
+      - mania_symptoms
+      - liver_injury_signs
+      other: <18 depression no; renal/hepatic insufficiency low dose not numerically specified; uncontrolled epilepsy
+        avoid; new seizures stop; >150 divided into 2 or 3 administrations by choice; next calendar day after reversible
+        MAOI
+    gate_order:
+    - unavailable_source
+    - known immediate stop/exclusion
+    - invalid/missing applicable field
+    - unresolved source caution/modifier
+    - dose branch
+    reference_display: Source scheme only, without individualized dose; no omitted field treated as negative
+    branches:
+    - branch_id: selected50
+      when: source_start_choice=50; organs assessed without insufficiency; all gates clear
+      expected_output:
+        result_type: exact
+        total_daily_dose_mg: 50
+        dose_per_administration_mg: 50.0
+        administrations_per_day: 1
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        review_period_weeks:
+        - 3
+        - 4
+        automatic_next_increment: null
+      source_basis:
+      - source_id: RU-FLUVOX
+        version: Имя опубликованной копии 07.02.2025/0002; поля §8–10 PDF пустые; РУ от 07.02.2025 подтверждено
+          реестром
+        locator: §4.1–4.3 PDF с.1–3; §4.4–4.6 с.4–11; §8–10 с.19
+        sha256: ee988a504bf0e34d9562a5f606f8800c827214fc51f4994a4ab28de9c31ce1d6
+      - source_id: RU-DEP
+        version: '2024; каталог: опубликовано 26.08.2024, применяется'
+        locator: §3.1–3.4 PDF с.24–40; таблица2 с.95–96; §3.6 с.45; Б5 с.105–106
+        sha256: 2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd
+    - branch_id: selected100
+      when: source_start_choice=100; organs assessed without insufficiency; all gates clear
+      expected_output:
+        result_type: exact
+        total_daily_dose_mg: 100
+        dose_per_administration_mg: 100.0
+        administrations_per_day: 1
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        review_period_weeks:
+        - 3
+        - 4
+        automatic_next_increment: null
+      source_basis:
+      - source_id: RU-FLUVOX
+        version: Имя опубликованной копии 07.02.2025/0002; поля §8–10 PDF пустые; РУ от 07.02.2025 подтверждено
+          реестром
+        locator: §4.1–4.3 PDF с.1–3; §4.4–4.6 с.4–11; §8–10 с.19
+        sha256: ee988a504bf0e34d9562a5f606f8800c827214fc51f4994a4ab28de9c31ce1d6
+      - source_id: RU-DEP
+        version: '2024; каталог: опубликовано 26.08.2024, применяется'
+        locator: §3.1–3.4 PDF с.24–40; таблица2 с.95–96; §3.6 с.45; Б5 с.105–106
+        sha256: 2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd
+    - branch_id: choice
+      when: start choice not selected or renal/hepatic insufficiency
+      expected_output:
+        result_type: clinician_choice
+        total_daily_dose_mg: null
+        dose_per_administration_mg: null
+        administrations_per_day: null
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        published_start_options_mg:
+        - 50
+        - 100
+        numeric_organ_factor: null
+      source_basis:
+      - source_id: RU-FLUVOX
+        version: Имя опубликованной копии 07.02.2025/0002; поля §8–10 PDF пустые; РУ от 07.02.2025 подтверждено
+          реестром
+        locator: §4.1–4.3 PDF с.1–3; §4.4–4.6 с.4–11; §8–10 с.19
+        sha256: ee988a504bf0e34d9562a5f606f8800c827214fc51f4994a4ab28de9c31ce1d6
+      - source_id: RU-DEP
+        version: '2024; каталог: опубликовано 26.08.2024, применяется'
+        locator: §3.1–3.4 PDF с.24–40; таблица2 с.95–96; §3.6 с.45; Б5 с.105–106
+        sha256: 2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd
+    source_gate_scope: start/adjust applicability; both identified products for switch
+    typed_source_conditions:
+    - input: hepatic
+      operator: category_equals
+      value: hepatic_impairment
+      action: clinician_choice
+      source_ref: RU-FLUVOX
+      source_locator: §4.1–4.3 PDF с.1–3; §4.4–4.6 с.4–11; §8–10 с.19
+    - input: seizure_state
+      operator: equals
+      value: контролируемые
+      action: clinician_choice
+      source_ref: RU-FLUVOX
+      source_locator: §4.4 с.5
+    - input: seizure_state
+      operator: equals
+      value: неконтролируемые
+      action: not_applicable_standard_branch; avoid unstable epilepsy
+      source_ref: RU-FLUVOX
+      source_locator: §4.4 с.5
+    - input: seizure_state
+      operator: equals
+      value: новые приступы
+      action: stop ongoing source medication
+      source_ref: RU-FLUVOX
+      source_locator: §4.4 с.5
+  fluvox-taper-limit:
+    required_inputs:
+    - age
+    - form
+    - current_dose
+    - duration
+    - withdrawal_severity
+    - past_withdrawal
+    conditional_inputs: {}
+    source_gates:
+    - source_ref: RU-FLUVOX
+      version: Имя опубликованной копии 07.02.2025/0002; поля §8–10 PDF пустые; РУ от 07.02.2025 подтверждено реестром
+      locator: §4.1–4.3 с.1–3; §4.4–4.6 с.4–11
+      exclusions: []
+      cautions: []
+      current_medicines_excluded: []
+      current_medicines_caution: []
+      stop: []
+      other: Source-specific withdrawal guidance; exact taper not inferred. Published immediate cessation conditions
+        take precedence if treatment ongoing.
+    gate_order:
+    - unavailable_source
+    - known immediate stop/exclusion
+    - invalid/missing applicable field
+    - unresolved source caution/modifier
+    - dose branch
+    reference_display: Source scheme only, without individualized dose; no omitted field treated as negative
+    branches:
+    - branch_id: source_limit
+      when: known current dose/form/duration; no urgent stop condition
+      expected_output:
+        result_type: clinician_choice
+        total_daily_dose_mg: null
+        dose_per_administration_mg: null
+        administrations_per_day: null
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        duration_constraint:
+          operator: minimum_choice
+          source_options_weeks:
+          - 1
+          - 2
+          chosen_minimum_weeks: null
+          hard_upper_limit_weeks: null
+          exact_taper_duration_weeks: null
+          slower_if_symptoms: true
+          source_ref: RU-FLUVOX
+          source_locator: §4.2 PDF с.2
+        full_taper_calendar: null
+        universal_percentage: null
+      source_basis:
+      - source_id: RU-FLUVOX
+        version: Имя опубликованной копии 07.02.2025/0002; поля §8–10 PDF пустые; РУ от 07.02.2025 подтверждено
+          реестром
+        locator: §4.1–4.3 PDF с.1–3; §4.4–4.6 с.4–11; §8–10 с.19
+        sha256: ee988a504bf0e34d9562a5f606f8800c827214fc51f4994a4ab28de9c31ce1d6
+      - source_id: RU-DEP
+        version: '2024; каталог: опубликовано 26.08.2024, применяется'
+        locator: §3.1–3.4 PDF с.24–40; таблица2 с.95–96; §3.6 с.45; Б5 с.105–106
+        sha256: 2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd
+    - branch_id: withdrawal
+      when: withdrawal symptoms present
+      expected_output:
+        result_type: clinician_choice
+        total_daily_dose_mg: null
+        dose_per_administration_mg: null
+        administrations_per_day: null
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        automatic_next_reduction: false
+        slower_step: null
+        prior_dose_resumption: clinician consideration where source permits
+      source_basis:
+      - source_id: RU-FLUVOX
+        version: Имя опубликованной копии 07.02.2025/0002; поля §8–10 PDF пустые; РУ от 07.02.2025 подтверждено
+          реестром
+        locator: §4.1–4.3 PDF с.1–3; §4.4–4.6 с.4–11; §8–10 с.19
+        sha256: ee988a504bf0e34d9562a5f606f8800c827214fc51f4994a4ab28de9c31ce1d6
+      - source_id: RU-DEP
+        version: '2024; каталог: опубликовано 26.08.2024, применяется'
+        locator: §3.1–3.4 PDF с.24–40; таблица2 с.95–96; §3.6 с.45; Б5 с.105–106
+        sha256: 2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd
+    source_gate_scope: discontinuation statement and symptom-dependent hold/stop only; start exclusions do not prevent
+      discontinuation
+    typed_source_conditions: []
+  parox-panic-kr:
+    required_inputs:
+    - age
+    - form
+    - hepatic
+    - renal
+    - pregnancy
+    - lactation
+    - medicines
+    - allergy
+    - response
+    - tolerability
+    - current_dose
+    - time_at_dose
+    - elderly_population
+    - mania
+    - suicide_risk
+    - akathisia
+    - diabetes
+    - glaucoma
+    - bleeding_risk
+    - qt_risk
+    - ect
+    - seizure_state
+    conditional_inputs:
+      maoi_type: medicines contains current/stopped MAOI or unidentified interaction class
+      maoi_stopped_at: medicines contains stopped MAOI; per relevant record
+    source_gates:
+    - source_ref: RU-PAROX
+      version: 'Первичная регистрация 14.02.2025; страница производителя: файл 26.03.2025; поле пересмотра пустое'
+      locator: §4.2–4.3 с.16–18; §4.4–4.6 с.18–28
+      exclusions: &id019
+      - allergy
+      cautions: &id020
+      - pregnancy
+      - lactation
+      - mania
+      - suicide_risk
+      - akathisia
+      - diabetes
+      - glaucoma
+      - bleeding_risk
+      - qt_risk
+      - ect
+      current_medicines_excluded: &id021
+      - maoi
+      - pimozide
+      - thioridazine
+      current_medicines_caution: &id022
+      - serotonergic
+      - bleeding
+      - CYP2D6_substrate
+      other: <18 no adult scheme; elderly maximum 40 without invented age threshold; severe CLcr <30 or hepatic
+        insufficiency low therapeutic range unspecified; no general taper tail; standard MAOI branch excludes exceptional
+        linezolid use
+    gate_order:
+    - unavailable_source
+    - known immediate stop/exclusion
+    - invalid/missing applicable field
+    - unresolved source caution/modifier
+    - dose branch
+    reference_display: Source scheme only, without individualized dose; no omitted field treated as negative
+    branches:
+    - branch_id: usual
+      when: all gates clear; elderly_population=false; start
+      expected_output:
+        result_type: exact
+        total_daily_dose_mg: 10
+        dose_per_administration_mg: 10.0
+        administrations_per_day: 1
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        recommended_mg: 40
+        maximum_mg: 60
+        optional_increment_mg: 10
+        minimum_interval_weeks: 1
+        beyond_recommended_requires: inadequate response after several weeks, no fabricated exact interval
+      source_basis:
+      - source_id: RU-PANIC
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.1, PDF с.25–33; приложение А3, с.76–77
+        sha256: a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d
+      - source_id: RU-PAROX
+        version: 'Первичная регистрация 14.02.2025; страница производителя: файл 26.03.2025; поле пересмотра пустое'
+        locator: 'ОХЛП: PDF с.14–18 (§4.1–4.3), с.19–23 (§4.4), с.24–28 (§4.5–4.6), с.39 (§8–10)'
+        sha256: 9f6f2646e102956826997ca7e93d84e90c7528db5ceb61896a3d4092841edabe
+    - branch_id: elderly
+      when: elderly_population=true; organs clear
+      expected_output:
+        result_type: exact
+        total_daily_dose_mg: 10
+        dose_per_administration_mg: 10.0
+        administrations_per_day: 1
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        maximum_mg: 40
+        elderly_age_cutoff: null
+      source_basis:
+      - source_id: RU-PANIC
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.1, PDF с.25–33; приложение А3, с.76–77
+        sha256: a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d
+      - source_id: RU-PAROX
+        version: 'Первичная регистрация 14.02.2025; страница производителя: файл 26.03.2025; поле пересмотра пустое'
+        locator: 'ОХЛП: PDF с.14–18 (§4.1–4.3), с.19–23 (§4.4), с.24–28 (§4.5–4.6), с.39 (§8–10)'
+        sha256: 9f6f2646e102956826997ca7e93d84e90c7528db5ceb61896a3d4092841edabe
+    - branch_id: organ_caution
+      when: CLcr<30 or hepatic insufficiency
+      expected_output:
+        result_type: clinician_choice
+        total_daily_dose_mg: null
+        dose_per_administration_mg: null
+        administrations_per_day: null
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        published_lower_therapeutic_range_no_exact_start: true
+      source_basis:
+      - source_id: RU-PANIC
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.1, PDF с.25–33; приложение А3, с.76–77
+        sha256: a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d
+      - source_id: RU-PAROX
+        version: 'Первичная регистрация 14.02.2025; страница производителя: файл 26.03.2025; поле пересмотра пустое'
+        locator: 'ОХЛП: PDF с.14–18 (§4.1–4.3), с.19–23 (§4.4), с.24–28 (§4.5–4.6), с.39 (§8–10)'
+        sha256: 9f6f2646e102956826997ca7e93d84e90c7528db5ceb61896a3d4092841edabe
+    source_gate_scope: start/adjust applicability; both identified products for switch
+    typed_source_conditions:
+    - input: hepatic
+      operator: category_equals
+      value: hepatic_impairment
+      action: clinician_choice
+      source_ref: RU-PANIC
+      source_locator: §3.1, PDF с.25–33; приложение А3, с.76–77
+    - input: seizure_state
+      operator: equals
+      value: контролируемые
+      action: clinician_choice
+      source_ref: RU-PAROX
+      source_locator: §4.4 с.21
+    - input: seizure_state
+      operator: equals
+      value: неконтролируемые
+      action: clinician_choice
+      source_ref: RU-PAROX
+      source_locator: §4.4 с.21
+    - input: seizure_state
+      operator: equals
+      value: новые приступы
+      action: stop ongoing source medication
+      source_ref: RU-PAROX
+      source_locator: §4.4 с.21
+  parox-taper-example:
+    required_inputs:
+    - age
+    - form
+    - current_dose
+    - duration
+    - past_withdrawal
+    - withdrawal_severity
+    - example_selected
+    conditional_inputs: {}
+    source_gates:
+    - source_ref: RU-PAROX
+      version: 'Первичная регистрация 14.02.2025; страница производителя: файл 26.03.2025; поле пересмотра пустое'
+      locator: §4.2–4.3 с.16–18; §4.4–4.6 с.18–28
+      exclusions: []
+      cautions: []
+      current_medicines_excluded: []
+      current_medicines_caution: []
+      stop: []
+      other: Source-specific withdrawal guidance; exact taper not inferred. Published immediate cessation conditions
+        take precedence if treatment ongoing.
+    gate_order:
+    - unavailable_source
+    - known immediate stop/exclusion
+    - invalid/missing applicable field
+    - unresolved source caution/modifier
+    - dose branch
+    reference_display: Source scheme only, without individualized dose; no omitted field treated as negative
+    branches:
+    - branch_id: selected40
+      when: current=40; example_selected=true; symptoms absent; form valid
+      expected_output:
+        result_type: selected_source_example
+        total_daily_dose_mg: null
+        dose_per_administration_mg: null
+        administrations_per_day: 1
+        schedule:
+        - day: 1
+          total_daily_mg: 30
+          frequency: 1
+          conditional: true
+        - day: 8
+          total_daily_mg: 20
+          frequency: 1
+          conditional: true
+        - day: 15
+          total_daily_mg: 0
+          frequency: 1
+          conditional: true
+        missing_fields: []
+        unconditional_future_stages: false
+        mandatory_for_all: false
+        hold_if: withdrawal symptoms; clinician reassessment/prior-dose resumption then slower, unspecified steps
+      source_basis:
+      - source_id: RU-DEP
+        version: '2024; каталог: опубликовано 26.08.2024, применяется'
+        locator: §3.1–3.4 PDF с.24–40; таблица2 с.95–96; §3.6 с.45; Б5 с.105–106
+        sha256: 2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd
+      - source_id: RU-PAROX
+        version: 'Первичная регистрация 14.02.2025; страница производителя: файл 26.03.2025; поле пересмотра пустое'
+        locator: 'ОХЛП: PDF с.14–18 (§4.1–4.3), с.19–23 (§4.4), с.24–28 (§4.5–4.6), с.39 (§8–10)'
+        sha256: 9f6f2646e102956826997ca7e93d84e90c7528db5ceb61896a3d4092841edabe
+      - source_id: RU-PANIC
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.1, PDF с.25–33; приложение А3, с.76–77
+        sha256: a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d
+    - branch_id: other
+      when: example not selected, current<20 or withdrawal symptoms
+      expected_output:
+        result_type: clinician_choice
+        total_daily_dose_mg: null
+        dose_per_administration_mg: null
+        administrations_per_day: null
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        invented_last_step: false
+      source_basis:
+      - source_id: RU-DEP
+        version: '2024; каталог: опубликовано 26.08.2024, применяется'
+        locator: §3.1–3.4 PDF с.24–40; таблица2 с.95–96; §3.6 с.45; Б5 с.105–106
+        sha256: 2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd
+      - source_id: RU-PAROX
+        version: 'Первичная регистрация 14.02.2025; страница производителя: файл 26.03.2025; поле пересмотра пустое'
+        locator: 'ОХЛП: PDF с.14–18 (§4.1–4.3), с.19–23 (§4.4), с.24–28 (§4.5–4.6), с.39 (§8–10)'
+        sha256: 9f6f2646e102956826997ca7e93d84e90c7528db5ceb61896a3d4092841edabe
+      - source_id: RU-PANIC
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.1, PDF с.25–33; приложение А3, с.76–77
+        sha256: a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d
+    source_gate_scope: discontinuation statement and symptom-dependent hold/stop only; start exclusions do not prevent
+      discontinuation
+    typed_source_conditions: []
+  phen-taper-limit:
+    required_inputs:
+    - age
+    - form
+    - current_dose
+    - duration
+    - withdrawal_severity
+    - past_withdrawal
+    conditional_inputs: {}
+    source_gates:
+    - source_ref: RU-PHEN
+      version: Снимок текущей ссылки производителя 08.10.2026; дата пересмотра в PDF отсутствует
+      locator: PDF с.2–5
+      exclusions: []
+      cautions: []
+      current_medicines_excluded: []
+      current_medicines_caution: []
+      stop: []
+      other: Source-specific withdrawal guidance; exact taper not inferred. Published immediate cessation conditions
+        take precedence if treatment ongoing.
+    gate_order:
+    - unavailable_source
+    - known immediate stop/exclusion
+    - invalid/missing applicable field
+    - unresolved source caution/modifier
+    - dose branch
+    reference_display: Source scheme only, without individualized dose; no omitted field treated as negative
+    branches:
+    - branch_id: source_limit
+      when: known current dose/form/duration; no urgent stop condition
+      expected_output:
+        result_type: clinician_choice
+        total_daily_dose_mg: null
+        dose_per_administration_mg: null
+        administrations_per_day: null
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        duration_constraint: {}
+        full_taper_calendar: null
+        universal_percentage: null
+      source_basis:
+      - source_id: RU-PHEN
+        version: Снимок текущей ссылки производителя 08.10.2026; дата пересмотра в PDF отсутствует
+        locator: PDF с.2 показания/противопоказания; с.3 дозы/отмена; с.4–5 особые указания
+        sha256: e8e6303c10b7b9b31ae6b344eb49d209e148ba5584ac8f55954c8384cfe49a89
+      - source_id: RU-PANIC
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.1, PDF с.25–33; приложение А3, с.76–77
+        sha256: a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d
+    - branch_id: withdrawal
+      when: withdrawal symptoms present
+      expected_output:
+        result_type: clinician_choice
+        total_daily_dose_mg: null
+        dose_per_administration_mg: null
+        administrations_per_day: null
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        automatic_next_reduction: false
+        slower_step: null
+        prior_dose_resumption: clinician consideration where source permits
+      source_basis:
+      - source_id: RU-PHEN
+        version: Снимок текущей ссылки производителя 08.10.2026; дата пересмотра в PDF отсутствует
+        locator: PDF с.2 показания/противопоказания; с.3 дозы/отмена; с.4–5 особые указания
+        sha256: e8e6303c10b7b9b31ae6b344eb49d209e148ba5584ac8f55954c8384cfe49a89
+      - source_id: RU-PANIC
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.1, PDF с.25–33; приложение А3, с.76–77
+        sha256: a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d
+    source_gate_scope: discontinuation statement and symptom-dependent hold/stop only; start exclusions do not prevent
+      discontinuation
+    typed_source_conditions: []
+  preg-gad-adjust:
+    required_inputs:
+    - age
+    - form
+    - pregnancy
+    - lactation
+    - medicines
+    - allergy
+    - clcr
+    - dialysis
+    - substance_use
+    - respiratory
+    - frequency
+    - current_dose
+    - time_at_dose
+    - response
+    - tolerability
+    - adherence
+    - angioedema
+    - severe_skin_reaction
+    - galactose_intolerance
+    - complete_lactase_deficiency
+    - glucose_galactose_malabsorption
+    - suicide_risk
+    - heart_failure
+    - diabetes_weight_gain
+    conditional_inputs: {}
+    source_gates:
+    - source_ref: RU-PREG
+      version: Файл 13.08.2025; внутри штамп 26.01.2024 №1319, последовательность 0011
+      locator: §4.1–4.3 с.3–6; §4.4–4.6 с.6–12
+      exclusions: &id010
+      - allergy
+      - galactose_intolerance
+      - complete_lactase_deficiency
+      - glucose_galactose_malabsorption
+      cautions: &id011
+      - pregnancy
+      - lactation
+      - substance_use
+      - respiratory
+      - suicide_risk
+      - heart_failure
+      - diabetes_weight_gain
+      current_medicines_excluded: &id012 []
+      current_medicines_caution: &id013
+      - CNS_depressant
+      - opioid
+      stop: &id014
+      - angioedema
+      - severe_skin_reaction
+      other: <18 exclude; CLcr source table; haemodialysis separate no complete scheme; hepatic no adjustment; no
+        splitting/opening capsules; diabetes weight gain requires separate hypoglycaemic review
+    gate_order:
+    - unavailable_source
+    - known immediate stop/exclusion
+    - invalid/missing applicable field
+    - unresolved source caution/modifier
+    - dose branch
+    reference_display: Source scheme only, without individualized dose; no omitted field treated as negative
+    branches:
+    - branch_id: from150-frequency2
+      when: current=150; time>=1week; inadequate response; adequate tolerance; adherence confirmed; CLcr>=60; frequency=2
+      expected_output:
+        result_type: clinician_choice
+        total_daily_dose_mg: null
+        dose_per_administration_mg: null
+        administrations_per_day: null
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        published_option_mg: 300
+        per_administration_option_mg: 150.0
+        frequency_option: 2
+        minimum_interval_weeks: 1
+      source_basis:
+      - source_id: RU-GAD
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78
+        sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+      - source_id: RU-PANIC
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.1, PDF с.25–33; приложение А3, с.76–77
+        sha256: a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d
+      - source_id: RU-PREG
+        version: Файл 13.08.2025; внутри штамп 26.01.2024 №1319, последовательность 0011
+        locator: §4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4
+        sha256: 1fcd653e7f3b6bf5b26b3276d0bce97880e74bf345bb69755a275bf8f7117083
+    - branch_id: from300-frequency2
+      when: current=300; time>=1week; inadequate response; adequate tolerance; adherence confirmed; CLcr>=60; frequency=2
+      expected_output:
+        result_type: clinician_choice
+        total_daily_dose_mg: null
+        dose_per_administration_mg: null
+        administrations_per_day: null
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        published_option_mg: 450
+        per_administration_option_mg: 225.0
+        frequency_option: 2
+        minimum_interval_weeks: 1
+      source_basis:
+      - source_id: RU-GAD
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78
+        sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+      - source_id: RU-PANIC
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.1, PDF с.25–33; приложение А3, с.76–77
+        sha256: a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d
+      - source_id: RU-PREG
+        version: Файл 13.08.2025; внутри штамп 26.01.2024 №1319, последовательность 0011
+        locator: §4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4
+        sha256: 1fcd653e7f3b6bf5b26b3276d0bce97880e74bf345bb69755a275bf8f7117083
+    - branch_id: from450-frequency2
+      when: current=450; time>=1week; inadequate response; adequate tolerance; adherence confirmed; CLcr>=60; frequency=2
+      expected_output:
+        result_type: clinician_choice
+        total_daily_dose_mg: null
+        dose_per_administration_mg: null
+        administrations_per_day: null
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        published_option_mg: 600
+        per_administration_option_mg: 300.0
+        frequency_option: 2
+        minimum_interval_weeks: 1
+      source_basis:
+      - source_id: RU-GAD
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78
+        sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+      - source_id: RU-PANIC
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.1, PDF с.25–33; приложение А3, с.76–77
+        sha256: a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d
+      - source_id: RU-PREG
+        version: Файл 13.08.2025; внутри штамп 26.01.2024 №1319, последовательность 0011
+        locator: §4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4
+        sha256: 1fcd653e7f3b6bf5b26b3276d0bce97880e74bf345bb69755a275bf8f7117083
+    - branch_id: from150-frequency3
+      when: current=150; time>=1week; inadequate response; adequate tolerance; adherence confirmed; CLcr>=60; frequency=3
+      expected_output:
+        result_type: clinician_choice
+        total_daily_dose_mg: null
+        dose_per_administration_mg: null
+        administrations_per_day: null
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        published_option_mg: 300
+        per_administration_option_mg: 100.0
+        frequency_option: 3
+        minimum_interval_weeks: 1
+      source_basis:
+      - source_id: RU-GAD
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78
+        sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+      - source_id: RU-PANIC
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.1, PDF с.25–33; приложение А3, с.76–77
+        sha256: a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d
+      - source_id: RU-PREG
+        version: Файл 13.08.2025; внутри штамп 26.01.2024 №1319, последовательность 0011
+        locator: §4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4
+        sha256: 1fcd653e7f3b6bf5b26b3276d0bce97880e74bf345bb69755a275bf8f7117083
+    - branch_id: from300-frequency3
+      when: current=300; time>=1week; inadequate response; adequate tolerance; adherence confirmed; CLcr>=60; frequency=3
+      expected_output:
+        result_type: clinician_choice
+        total_daily_dose_mg: null
+        dose_per_administration_mg: null
+        administrations_per_day: null
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        published_option_mg: 450
+        per_administration_option_mg: 150.0
+        frequency_option: 3
+        minimum_interval_weeks: 1
+      source_basis:
+      - source_id: RU-GAD
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78
+        sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+      - source_id: RU-PANIC
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.1, PDF с.25–33; приложение А3, с.76–77
+        sha256: a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d
+      - source_id: RU-PREG
+        version: Файл 13.08.2025; внутри штамп 26.01.2024 №1319, последовательность 0011
+        locator: §4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4
+        sha256: 1fcd653e7f3b6bf5b26b3276d0bce97880e74bf345bb69755a275bf8f7117083
+    - branch_id: from450-frequency3
+      when: current=450; time>=1week; inadequate response; adequate tolerance; adherence confirmed; CLcr>=60; frequency=3
+      expected_output:
+        result_type: clinician_choice
+        total_daily_dose_mg: null
+        dose_per_administration_mg: null
+        administrations_per_day: null
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        published_option_mg: 600
+        per_administration_option_mg: 200.0
+        frequency_option: 3
+        minimum_interval_weeks: 1
+      source_basis:
+      - source_id: RU-GAD
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78
+        sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+      - source_id: RU-PANIC
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.1, PDF с.25–33; приложение А3, с.76–77
+        sha256: a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d
+      - source_id: RU-PREG
+        version: Файл 13.08.2025; внутри штамп 26.01.2024 №1319, последовательность 0011
+        locator: §4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4
+        sha256: 1fcd653e7f3b6bf5b26b3276d0bce97880e74bf345bb69755a275bf8f7117083
+    - branch_id: other
+      when: other dose, interval short, sufficient response, ceiling, intolerance or renal impairment
+      expected_output:
+        result_type: clinician_choice
+        total_daily_dose_mg: null
+        dose_per_administration_mg: null
+        administrations_per_day: null
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        automatic_next_dose: null
+      source_basis:
+      - source_id: RU-GAD
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78
+        sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+      - source_id: RU-PANIC
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.1, PDF с.25–33; приложение А3, с.76–77
+        sha256: a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d
+      - source_id: RU-PREG
+        version: Файл 13.08.2025; внутри штамп 26.01.2024 №1319, последовательность 0011
+        locator: §4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4
+        sha256: 1fcd653e7f3b6bf5b26b3276d0bce97880e74bf345bb69755a275bf8f7117083
+    source_gate_scope: start/adjust applicability; both identified products for switch
+    typed_source_conditions: []
+  preg-gad-start:
+    required_inputs:
+    - age
+    - form
+    - pregnancy
+    - lactation
+    - medicines
+    - allergy
+    - clcr
+    - dialysis
+    - substance_use
+    - respiratory
+    - frequency
+    - angioedema
+    - severe_skin_reaction
+    - galactose_intolerance
+    - complete_lactase_deficiency
+    - glucose_galactose_malabsorption
+    - suicide_risk
+    - heart_failure
+    - diabetes_weight_gain
+    conditional_inputs: {}
+    source_gates:
+    - source_ref: RU-PREG
+      version: Файл 13.08.2025; внутри штамп 26.01.2024 №1319, последовательность 0011
+      locator: §4.1–4.3 с.3–6; §4.4–4.6 с.6–12
+      exclusions: *id010
+      cautions: *id011
+      current_medicines_excluded: *id012
+      current_medicines_caution: *id013
+      stop: *id014
+      other: <18 exclude; CLcr source table; haemodialysis separate no complete scheme; hepatic no adjustment; no
+        splitting/opening capsules; diabetes weight gain requires separate hypoglycaemic review
+    gate_order:
+    - unavailable_source
+    - known immediate stop/exclusion
+    - invalid/missing applicable field
+    - unresolved source caution/modifier
+    - dose branch
+    reference_display: Source scheme only, without individualized dose; no omitted field treated as negative
+    branches:
+    - branch_id: frequency2
+      when: CLcr>=60; no dialysis; selected frequency=2
+      expected_output:
+        result_type: exact
+        total_daily_dose_mg: 150
+        dose_per_administration_mg: 75.0
+        administrations_per_day: 2
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        optional_stages_mg:
+        - 300
+        - 450
+        - 600
+        minimum_interval_weeks: 1
+      source_basis:
+      - source_id: RU-GAD
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78
+        sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+      - source_id: RU-PREG
+        version: Файл 13.08.2025; внутри штамп 26.01.2024 №1319, последовательность 0011
+        locator: §4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4
+        sha256: 1fcd653e7f3b6bf5b26b3276d0bce97880e74bf345bb69755a275bf8f7117083
+    - branch_id: frequency3
+      when: CLcr>=60; no dialysis; selected frequency=3
+      expected_output:
+        result_type: exact
+        total_daily_dose_mg: 150
+        dose_per_administration_mg: 50.0
+        administrations_per_day: 3
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        optional_stages_mg:
+        - 300
+        - 450
+        - 600
+        minimum_interval_weeks: 1
+      source_basis:
+      - source_id: RU-GAD
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78
+        sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+      - source_id: RU-PREG
+        version: Файл 13.08.2025; внутри штамп 26.01.2024 №1319, последовательность 0011
+        locator: §4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4
+        sha256: 1fcd653e7f3b6bf5b26b3276d0bce97880e74bf345bb69755a275bf8f7117083
+    source_gate_scope: start/adjust applicability; both identified products for switch
+    typed_source_conditions: []
+  preg-renal-start:
+    required_inputs:
+    - age
+    - form
+    - pregnancy
+    - lactation
+    - medicines
+    - allergy
+    - clcr
+    - dialysis
+    - substance_use
+    - respiratory
+    - angioedema
+    - severe_skin_reaction
+    - galactose_intolerance
+    - complete_lactase_deficiency
+    - glucose_galactose_malabsorption
+    - suicide_risk
+    - heart_failure
+    - diabetes_weight_gain
+    conditional_inputs: {}
+    source_gates:
+    - source_ref: RU-PREG
+      version: Файл 13.08.2025; внутри штамп 26.01.2024 №1319, последовательность 0011
+      locator: §4.1–4.3 с.3–6; §4.4–4.6 с.6–12
+      exclusions: *id010
+      cautions: *id011
+      current_medicines_excluded: *id012
+      current_medicines_caution: *id013
+      stop: *id014
+      other: <18 exclude; CLcr source table; haemodialysis separate no complete scheme; hepatic no adjustment; no
+        splitting/opening capsules; diabetes weight gain requires separate hypoglycaemic review
+    gate_order:
+    - unavailable_source
+    - known immediate stop/exclusion
+    - invalid/missing applicable field
+    - unresolved source caution/modifier
+    - dose branch
+    reference_display: Source scheme only, without individualized dose; no omitted field treated as negative
+    branches:
+    - branch_id: ge60
+      when: CLcr>=60; no dialysis
+      expected_output:
+        result_type: clinician_choice
+        total_daily_dose_mg: null
+        dose_per_administration_mg: null
+        administrations_per_day: null
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        source_start_mg: 150
+        maximum_mg: 600
+        frequency_options:
+        - 2
+        - 3
+        auto_selected_range_endpoint: null
+        source_interval_for_renal_titration: null
+        form_feasibility: each physician selected dose/frequency must be realizable with whole identified capsules
+      source_basis:
+      - source_id: RU-GAD
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78
+        sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+      - source_id: RU-PREG
+        version: Файл 13.08.2025; внутри штамп 26.01.2024 №1319, последовательность 0011
+        locator: §4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4
+        sha256: 1fcd653e7f3b6bf5b26b3276d0bce97880e74bf345bb69755a275bf8f7117083
+    - branch_id: '30_60'
+      when: 30<=CLcr<60; no dialysis
+      expected_output:
+        result_type: clinician_choice
+        total_daily_dose_mg: null
+        dose_per_administration_mg: null
+        administrations_per_day: null
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        source_start_mg: 75
+        maximum_mg: 300
+        frequency_options:
+        - 2
+        - 3
+        auto_selected_range_endpoint: null
+        source_interval_for_renal_titration: null
+        form_feasibility: each physician selected dose/frequency must be realizable with whole identified capsules
+      source_basis:
+      - source_id: RU-GAD
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78
+        sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+      - source_id: RU-PREG
+        version: Файл 13.08.2025; внутри штамп 26.01.2024 №1319, последовательность 0011
+        locator: §4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4
+        sha256: 1fcd653e7f3b6bf5b26b3276d0bce97880e74bf345bb69755a275bf8f7117083
+    - branch_id: '15_30'
+      when: 15<=CLcr<30; no dialysis
+      expected_output:
+        result_type: clinician_choice
+        total_daily_dose_mg: null
+        dose_per_administration_mg: null
+        administrations_per_day: null
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        source_start_mg:
+        - 25
+        - 50
+        maximum_mg: 150
+        frequency_options:
+        - 1
+        - 2
+        auto_selected_range_endpoint: null
+        source_interval_for_renal_titration: null
+        form_feasibility: each physician selected dose/frequency must be realizable with whole identified capsules
+      source_basis:
+      - source_id: RU-GAD
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78
+        sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+      - source_id: RU-PREG
+        version: Файл 13.08.2025; внутри штамп 26.01.2024 №1319, последовательность 0011
+        locator: §4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4
+        sha256: 1fcd653e7f3b6bf5b26b3276d0bce97880e74bf345bb69755a275bf8f7117083
+    - branch_id: lt15
+      when: 0<=CLcr<15; no dialysis
+      expected_output:
+        result_type: clinician_choice
+        total_daily_dose_mg: null
+        dose_per_administration_mg: null
+        administrations_per_day: null
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        source_start_mg: 25
+        maximum_mg: 75
+        frequency_options:
+        - 1
+        auto_selected_range_endpoint: null
+        source_interval_for_renal_titration: null
+        form_feasibility: each physician selected dose/frequency must be realizable with whole identified capsules
+      source_basis:
+      - source_id: RU-GAD
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78
+        sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+      - source_id: RU-PREG
+        version: Файл 13.08.2025; внутри штамп 26.01.2024 №1319, последовательность 0011
+        locator: §4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4
+        sha256: 1fcd653e7f3b6bf5b26b3276d0bce97880e74bf345bb69755a275bf8f7117083
+    source_gate_scope: start/adjust applicability; both identified products for switch
+    typed_source_conditions: []
+  preg-taper-limit:
+    required_inputs:
+    - age
+    - form
+    - pregnancy
+    - lactation
+    - medicines
+    - allergy
+    - clcr
+    - dialysis
+    - substance_use
+    - respiratory
+    - current_dose
+    - duration_of_use
+    - prior_withdrawal
+    - current_withdrawal
+    - angioedema
+    - severe_skin_reaction
+    - galactose_intolerance
+    - complete_lactase_deficiency
+    - glucose_galactose_malabsorption
+    - suicide_risk
+    - heart_failure
+    - diabetes_weight_gain
+    conditional_inputs: {}
+    source_gates:
+    - source_ref: RU-PREG
+      version: Файл 13.08.2025; внутри штамп 26.01.2024 №1319, последовательность 0011
+      locator: §4.1–4.3 с.3–6; §4.4–4.6 с.6–12
+      exclusions: []
+      cautions: []
+      current_medicines_excluded: []
+      current_medicines_caution: []
+      stop:
+      - angioedema
+      - severe_skin_reaction
+      other: Source-specific withdrawal guidance; exact taper not inferred. Published immediate cessation conditions
+        take precedence if treatment ongoing.
+    gate_order:
+    - unavailable_source
+    - known immediate stop/exclusion
+    - invalid/missing applicable field
+    - unresolved source caution/modifier
+    - dose branch
+    reference_display: Source scheme only, without individualized dose; no omitted field treated as negative
+    branches:
+    - branch_id: source_limit
+      when: known current dose/form/duration; no urgent stop condition
+      expected_output:
+        result_type: clinician_choice
+        total_daily_dose_mg: null
+        dose_per_administration_mg: null
+        administrations_per_day: null
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        duration_constraint:
+          operator: minimum
+          minimum_weeks: 1
+          hard_upper_limit_weeks: null
+          source_ref: RU-PREG
+          source_locator: §4.2 с.4
+        full_taper_calendar: null
+        universal_percentage: null
+      source_basis:
+      - source_id: RU-GAD
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78
+        sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+      - source_id: RU-PREG
+        version: Файл 13.08.2025; внутри штамп 26.01.2024 №1319, последовательность 0011
+        locator: §4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4
+        sha256: 1fcd653e7f3b6bf5b26b3276d0bce97880e74bf345bb69755a275bf8f7117083
+    - branch_id: withdrawal
+      when: withdrawal symptoms present
+      expected_output:
+        result_type: clinician_choice
+        total_daily_dose_mg: null
+        dose_per_administration_mg: null
+        administrations_per_day: null
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        automatic_next_reduction: false
+        slower_step: null
+        prior_dose_resumption: clinician consideration where source permits
+      source_basis:
+      - source_id: RU-GAD
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78
+        sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+      - source_id: RU-PREG
+        version: Файл 13.08.2025; внутри штамп 26.01.2024 №1319, последовательность 0011
+        locator: §4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4
+        sha256: 1fcd653e7f3b6bf5b26b3276d0bce97880e74bf345bb69755a275bf8f7117083
+    source_gate_scope: discontinuation statement and symptom-dependent hold/stop only; start exclusions do not prevent
+      discontinuation
+    typed_source_conditions: []
+  ser-adult-adjust:
+    required_inputs:
+    - age
+    - form
+    - pregnancy
+    - lactation
+    - medicines
+    - allergy
+    - hepatic
+    - mania
+    - seizure_state
+    - current_dose
+    - time_at_dose
+    - qt_risk
+    - bleeding_risk
+    - hyponatremia_risk
+    - suicide_risk
+    - akathisia
+    - clinician_action
+    conditional_inputs:
+      response: clinician_action in [not_chosen, unknown, not_assessed]
+      tolerability: clinician_action in [not_chosen, unknown, not_assessed]
+      adherence: clinician_action in [not_chosen, unknown, not_assessed]
+      maoi_type: medicines contains current/stopped MAOI or unidentified interaction class
+      maoi_stopped_at: medicines contains stopped MAOI; per relevant record
+    source_gates:
+    - source_ref: RU-SER
+      version: Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является
+        датой содержания
+      locator: §4.1–4.4 с.1–7; §4.5–4.6 с.7–11
+      exclusions: &id015
+      - allergy
+      cautions: &id016
+      - pregnancy
+      - lactation
+      - mania
+      - qt_risk
+      - bleeding_risk
+      - hyponatremia_risk
+      - suicide_risk
+      - akathisia
+      current_medicines_excluded: &id017
+      - maoi
+      - pimozide
+      current_medicines_caution: &id018
+      - serotonergic
+      - QT_prolonging
+      - bleeding
+      other: <18 not adult anxiety/BDR; severe hepatic no; other hepatic lower dose/frequency unspecified; unstable
+        epilepsy avoid; seizures/current mania stop; renal no adjustment; alcohol/grapefruit avoid; akathisia no
+        automatic increase
+    gate_order:
+    - unavailable_source
+    - known immediate stop/exclusion
+    - invalid/missing applicable field
+    - unresolved source caution/modifier
+    - dose branch
+    reference_display: Source scheme only, without individualized dose; no omitted field treated as negative
+    branches:
+    - branch_id: increase
+      when: clinician_action=increase; current=100; time_at_dose>=1 week; no source cautions
+      expected_output:
+        result_type: exact
+        total_daily_dose_mg: 150
+        dose_per_administration_mg: 150.0
+        administrations_per_day: 1
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        minimum_interval_weeks: 1
+      source_basis:
+      - source_id: RU-GAD
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78
+        sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+      - source_id: RU-PANIC
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.1, PDF с.25–33; приложение А3, с.76–77
+        sha256: a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d
+      - source_id: RU-SER
+        version: Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является
+          датой содержания
+        locator: §4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22
+        sha256: 3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba
+    - branch_id: keep
+      when: clinician_action=keep; current=100; dose/form applicable
+      expected_output:
+        result_type: exact
+        total_daily_dose_mg: 100
+        dose_per_administration_mg: 100.0
+        administrations_per_day: 1
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+      source_basis:
+      - source_id: RU-GAD
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78
+        sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+      - source_id: RU-PANIC
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.1, PDF с.25–33; приложение А3, с.76–77
+        sha256: a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d
+      - source_id: RU-SER
+        version: Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является
+          датой содержания
+        locator: §4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22
+        sha256: 3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba
+    - branch_id: increase-from50
+      when: clinician_action=increase; current=50; time>=1week; all source gates clear
+      expected_output:
+        result_type: exact
+        total_daily_dose_mg: 100
+        dose_per_administration_mg: 100.0
+        administrations_per_day: 1
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        minimum_interval_weeks: 1
+      source_basis:
+      - source_id: RU-GAD
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78
+        sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+      - source_id: RU-PANIC
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.1, PDF с.25–33; приложение А3, с.76–77
+        sha256: a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d
+      - source_id: RU-SER
+        version: Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является
+          датой содержания
+        locator: §4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22
+        sha256: 3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba
+    - branch_id: increase-from150
+      when: clinician_action=increase; current=150; time>=1week; all source gates clear
+      expected_output:
+        result_type: exact
+        total_daily_dose_mg: 200
+        dose_per_administration_mg: 200.0
+        administrations_per_day: 1
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        minimum_interval_weeks: 1
+      source_basis:
+      - source_id: RU-GAD
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78
+        sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+      - source_id: RU-PANIC
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.1, PDF с.25–33; приложение А3, с.76–77
+        sha256: a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d
+      - source_id: RU-SER
+        version: Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является
+          датой содержания
+        locator: §4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22
+        sha256: 3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba
+    - branch_id: keep50
+      when: clinician_action=keep; current=50; dose/form applicable
+      expected_output:
+        result_type: exact
+        total_daily_dose_mg: 50
+        dose_per_administration_mg: 50.0
+        administrations_per_day: 1
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+      source_basis:
+      - source_id: RU-GAD
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78
+        sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+      - source_id: RU-PANIC
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.1, PDF с.25–33; приложение А3, с.76–77
+        sha256: a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d
+      - source_id: RU-SER
+        version: Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является
+          датой содержания
+        locator: §4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22
+        sha256: 3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba
+    - branch_id: keep150
+      when: clinician_action=keep; current=150; dose/form applicable
+      expected_output:
+        result_type: exact
+        total_daily_dose_mg: 150
+        dose_per_administration_mg: 150.0
+        administrations_per_day: 1
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+      source_basis:
+      - source_id: RU-GAD
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78
+        sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+      - source_id: RU-PANIC
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.1, PDF с.25–33; приложение А3, с.76–77
+        sha256: a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d
+      - source_id: RU-SER
+        version: Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является
+          датой содержания
+        locator: §4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22
+        sha256: 3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba
+    - branch_id: keep200
+      when: clinician_action=keep; current=200; dose/form applicable
+      expected_output:
+        result_type: exact
+        total_daily_dose_mg: 200
+        dose_per_administration_mg: 200.0
+        administrations_per_day: 1
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+      source_basis:
+      - source_id: RU-GAD
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78
+        sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+      - source_id: RU-PANIC
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.1, PDF с.25–33; приложение А3, с.76–77
+        sha256: a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d
+      - source_id: RU-SER
+        version: Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является
+          датой содержания
+        locator: §4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22
+        sha256: 3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba
+    - branch_id: initial25
+      when: clinician_action=increase; panic/social initial25 completed at least1week; all gates clear
+      expected_output:
+        result_type: exact
+        total_daily_dose_mg: 50
+        dose_per_administration_mg: 50.0
+        administrations_per_day: 1
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        minimum_interval_weeks: 1
+      source_basis:
+      - source_id: RU-GAD
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78
+        sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+      - source_id: RU-PANIC
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.1, PDF с.25–33; приложение А3, с.76–77
+        sha256: a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d
+      - source_id: RU-SER
+        version: Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является
+          датой содержания
+        locator: §4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22
+        sha256: 3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba
+    - branch_id: other-source-dose
+      when: clinician_action=increase; source-compatible current75; time>=1week; next125 achievable from 50mg tablets
+        with equal halves; no caution
+      expected_output:
+        result_type: exact
+        total_daily_dose_mg: 125
+        dose_per_administration_mg: 125.0
+        administrations_per_day: 1
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        expression: current_dose + clinical_parameters.step; only if candidate <=maximum, interval>=interval, source/form
+          compatible; no rounding to maximum
+        expression_source_ref: RU-SER
+        expression_source_locator: §4.2 с.2–3
+      source_basis:
+      - source_id: RU-GAD
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78
+        sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+      - source_id: RU-PANIC
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.1, PDF с.25–33; приложение А3, с.76–77
+        sha256: a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d
+      - source_id: RU-SER
+        version: Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является
+          датой содержания
+        locator: §4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22
+        sha256: 3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba
+    - branch_id: ceiling
+      when: action=increase AND current_dose + step >maximum
+      expected_output:
+        result_type: clinician_choice
+        total_daily_dose_mg: null
+        dose_per_administration_mg: null
+        administrations_per_day: null
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        next_increase_mg: null
+      source_basis:
+      - source_id: RU-GAD
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78
+        sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+      - source_id: RU-PANIC
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.1, PDF с.25–33; приложение А3, с.76–77
+        sha256: a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d
+      - source_id: RU-SER
+        version: Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является
+          датой содержания
+        locator: §4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22
+        sha256: 3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba
+    - branch_id: early
+      when: time_at_dose<1 week AND action=increase
+      expected_output:
+        result_type: clinician_choice
+        total_daily_dose_mg: null
+        dose_per_administration_mg: null
+        administrations_per_day: null
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        increase_allowed: false
+      source_basis:
+      - source_id: RU-GAD
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78
+        sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+      - source_id: RU-PANIC
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.1, PDF с.25–33; приложение А3, с.76–77
+        sha256: a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d
+      - source_id: RU-SER
+        version: Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является
+          датой содержания
+        locator: §4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22
+        sha256: 3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba
+    - branch_id: decrease
+      when: clinician_action=decrease or stop
+      expected_output:
+        result_type: clinician_choice
+        total_daily_dose_mg: null
+        dose_per_administration_mg: null
+        administrations_per_day: null
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        automatic_smaller_dose: null
+      source_basis:
+      - source_id: RU-GAD
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78
+        sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+      - source_id: RU-PANIC
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.1, PDF с.25–33; приложение А3, с.76–77
+        sha256: a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d
+      - source_id: RU-SER
+        version: Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является
+          датой содержания
+        locator: §4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22
+        sha256: 3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba
+    - branch_id: clinical_option
+      when: action=not_chosen; response inadequate; tolerance adequate; adherence confirmed; current=100; time>=1week
+      expected_output:
+        result_type: clinician_choice
+        total_daily_dose_mg: null
+        dose_per_administration_mg: null
+        administrations_per_day: null
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        published_option_mg: 150
+      source_basis:
+      - source_id: RU-GAD
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78
+        sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+      - source_id: RU-PANIC
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.1, PDF с.25–33; приложение А3, с.76–77
+        sha256: a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d
+      - source_id: RU-SER
+        version: Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является
+          датой содержания
+        locator: §4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22
+        sha256: 3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba
+    source_gate_scope: start/adjust applicability; both identified products for switch
+    typed_source_conditions:
+    - input: hepatic
+      operator: category_equals
+      value: hepatic_impairment
+      action: clinician_choice
+      source_ref: RU-SER
+      source_locator: §4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22
+    - input: hepatic
+      operator: category_equals
+      value: severe_hepatic_impairment
+      action: not_applicable_standard_numeric_branch
+      source_ref: RU-SER
+      source_locator: §4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22
+    - input: seizure_state
+      operator: equals
+      value: контролируемые
+      action: clinician_choice
+      source_ref: RU-SER
+      source_locator: '§4.4 с.4, судороги: прекращение при развитии приступов'
+    - input: seizure_state
+      operator: equals
+      value: неконтролируемые
+      action: not_applicable_standard_branch; avoid unstable epilepsy
+      source_ref: RU-SER
+      source_locator: '§4.4 с.4, судороги: прекращение при развитии приступов'
+    - input: seizure_state
+      operator: equals
+      value: новые приступы
+      action: stop ongoing source medication
+      source_ref: RU-SER
+      source_locator: '§4.4 с.4, судороги: прекращение при развитии приступов'
+    general_result_templates:
+    - action: increase
+      conditions:
+      - all applicable source gates known and clear
+      - source-compatible current_dose>=50
+      - time_at_dose>=interval
+      - current_dose+step<=maximum
+      - candidate realizable with identified source form
+      total_daily_dose_expression: current_dose + clinical_parameters.step
+      frequency_expression: clinical_parameters.frequency
+      dose_per_administration_expression: total_daily_dose / frequency
+      source_ref: RU-SER
+      source_locator: §4.2 с.2–3
+      special_initial_25: 'panic/social first week only: published transition to50, not +50'
+    - action: keep
+      conditions:
+      - current dose and form source-compatible
+      - all applicable source gates known and clear
+      total_daily_dose_expression: current_dose
+      source_ref: RU-SER
+      source_locator: §4.2 с.2–3, минимальная эффективная доза
+    - action: increase
+      conditions:
+      - candidate exceeds maximum OR minimum interval not yet reached
+      result_type: clinician_choice
+      individual_dose: null
+      round_to_maximum: false
+      source_ref: RU-SER
+      source_locator: §4.2 с.2–3
+  ser-panic-start:
+    required_inputs:
+    - age
+    - form
+    - pregnancy
+    - lactation
+    - medicines
+    - allergy
+    - hepatic
+    - mania
+    - seizure_state
+    - qt_risk
+    - bleeding_risk
+    - hyponatremia_risk
+    - suicide_risk
+    - akathisia
+    conditional_inputs:
+      maoi_type: medicines contains current/stopped MAOI or unidentified interaction class
+      maoi_stopped_at: medicines contains stopped MAOI; per relevant record
+    source_gates:
+    - source_ref: RU-SER
+      version: Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является
+        датой содержания
+      locator: §4.1–4.4 с.1–7; §4.5–4.6 с.7–11
+      exclusions: *id015
+      cautions: *id016
+      current_medicines_excluded: *id017
+      current_medicines_caution: *id018
+      other: <18 not adult anxiety/BDR; severe hepatic no; other hepatic lower dose/frequency unspecified; unstable
+        epilepsy avoid; seizures/current mania stop; renal no adjustment; alcohol/grapefruit avoid; akathisia no
+        automatic increase
+    gate_order:
+    - unavailable_source
+    - known immediate stop/exclusion
+    - invalid/missing applicable field
+    - unresolved source caution/modifier
+    - dose branch
+    reference_display: Source scheme only, without individualized dose; no omitted field treated as negative
+    branches:
+    - branch_id: usual
+      when: all source gates clear
+      expected_output:
+        result_type: exact
+        total_daily_dose_mg: 25
+        dose_per_administration_mg: 25.0
+        administrations_per_day: 1
+        schedule:
+        - day: 1
+          total_daily_mg: 25
+          frequency: 1
+        - day: 8
+          total_daily_mg: 50
+          frequency: 1
+          conditional: true
+        missing_fields: []
+        unconditional_future_stages: false
+        maximum_mg: 200
+        future_increment_mg: 50
+        minimum_interval_weeks: 1
+      source_basis:
+      - source_id: RU-SER
+        version: Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является
+          датой содержания
+        locator: §4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22
+        sha256: 3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba
+    source_gate_scope: start/adjust applicability; both identified products for switch
+    typed_source_conditions:
+    - input: hepatic
+      operator: category_equals
+      value: hepatic_impairment
+      action: clinician_choice
+      source_ref: RU-SER
+      source_locator: §4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22
+    - input: hepatic
+      operator: category_equals
+      value: severe_hepatic_impairment
+      action: not_applicable_standard_numeric_branch
+      source_ref: RU-SER
+      source_locator: §4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22
+    - input: seizure_state
+      operator: equals
+      value: контролируемые
+      action: clinician_choice
+      source_ref: RU-SER
+      source_locator: '§4.4 с.4, судороги: прекращение при развитии приступов'
+    - input: seizure_state
+      operator: equals
+      value: неконтролируемые
+      action: not_applicable_standard_branch; avoid unstable epilepsy
+      source_ref: RU-SER
+      source_locator: '§4.4 с.4, судороги: прекращение при развитии приступов'
+    - input: seizure_state
+      operator: equals
+      value: новые приступы
+      action: stop ongoing source medication
+      source_ref: RU-SER
+      source_locator: '§4.4 с.4, судороги: прекращение при развитии приступов'
+  ser-social-start:
+    required_inputs:
+    - age
+    - form
+    - pregnancy
+    - lactation
+    - medicines
+    - allergy
+    - hepatic
+    - mania
+    - seizure_state
+    - qt_risk
+    - bleeding_risk
+    - hyponatremia_risk
+    - suicide_risk
+    - akathisia
+    conditional_inputs:
+      maoi_type: medicines contains current/stopped MAOI or unidentified interaction class
+      maoi_stopped_at: medicines contains stopped MAOI; per relevant record
+    source_gates:
+    - source_ref: RU-SER
+      version: Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является
+        датой содержания
+      locator: §4.1–4.4 с.1–7; §4.5–4.6 с.7–11
+      exclusions: *id015
+      cautions: *id016
+      current_medicines_excluded: *id017
+      current_medicines_caution: *id018
+      other: <18 not adult anxiety/BDR; severe hepatic no; other hepatic lower dose/frequency unspecified; unstable
+        epilepsy avoid; seizures/current mania stop; renal no adjustment; alcohol/grapefruit avoid; akathisia no
+        automatic increase
+    gate_order:
+    - unavailable_source
+    - known immediate stop/exclusion
+    - invalid/missing applicable field
+    - unresolved source caution/modifier
+    - dose branch
+    reference_display: Source scheme only, without individualized dose; no omitted field treated as negative
+    branches:
+    - branch_id: usual
+      when: all source gates clear
+      expected_output:
+        result_type: exact
+        total_daily_dose_mg: 25
+        dose_per_administration_mg: 25.0
+        administrations_per_day: 1
+        schedule:
+        - day: 1
+          total_daily_mg: 25
+          frequency: 1
+        - day: 8
+          total_daily_mg: 50
+          frequency: 1
+          conditional: true
+        missing_fields: []
+        unconditional_future_stages: false
+        maximum_mg: 200
+        future_increment_mg: 50
+        minimum_interval_weeks: 1
+      source_basis:
+      - source_id: RU-SER
+        version: Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является
+          датой содержания
+        locator: §4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22
+        sha256: 3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba
+    source_gate_scope: start/adjust applicability; both identified products for switch
+    typed_source_conditions:
+    - input: hepatic
+      operator: category_equals
+      value: hepatic_impairment
+      action: clinician_choice
+      source_ref: RU-SER
+      source_locator: §4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22
+    - input: hepatic
+      operator: category_equals
+      value: severe_hepatic_impairment
+      action: not_applicable_standard_numeric_branch
+      source_ref: RU-SER
+      source_locator: §4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22
+    - input: seizure_state
+      operator: equals
+      value: контролируемые
+      action: clinician_choice
+      source_ref: RU-SER
+      source_locator: '§4.4 с.4, судороги: прекращение при развитии приступов'
+    - input: seizure_state
+      operator: equals
+      value: неконтролируемые
+      action: not_applicable_standard_branch; avoid unstable epilepsy
+      source_ref: RU-SER
+      source_locator: '§4.4 с.4, судороги: прекращение при развитии приступов'
+    - input: seizure_state
+      operator: equals
+      value: новые приступы
+      action: stop ongoing source medication
+      source_ref: RU-SER
+      source_locator: '§4.4 с.4, судороги: прекращение при развитии приступов'
+  ser-taper-limit:
+    required_inputs:
+    - age
+    - form
+    - pregnancy
+    - lactation
+    - medicines
+    - allergy
+    - hepatic
+    - mania
+    - seizure_state
+    - current_dose
+    - duration_of_use
+    - prior_withdrawal
+    - current_withdrawal
+    - qt_risk
+    - bleeding_risk
+    - hyponatremia_risk
+    - suicide_risk
+    conditional_inputs: {}
+    source_gates:
+    - source_ref: RU-SER
+      version: Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является
+        датой содержания
+      locator: §4.1–4.4 с.1–7; §4.5–4.6 с.7–11
+      exclusions: []
+      cautions: []
+      current_medicines_excluded: []
+      current_medicines_caution: []
+      stop: []
+      other: Source-specific withdrawal guidance; exact taper not inferred. Published immediate cessation conditions
+        take precedence if treatment ongoing.
+    gate_order:
+    - unavailable_source
+    - known immediate stop/exclusion
+    - invalid/missing applicable field
+    - unresolved source caution/modifier
+    - dose branch
+    reference_display: Source scheme only, without individualized dose; no omitted field treated as negative
+    branches:
+    - branch_id: source_limit
+      when: known current dose/form/duration; no urgent stop condition
+      expected_output:
+        result_type: clinician_choice
+        total_daily_dose_mg: null
+        dose_per_administration_mg: null
+        administrations_per_day: null
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        duration_constraint:
+          operator: minimum_choice
+          source_options_weeks:
+          - 1
+          - 2
+          chosen_minimum_weeks: null
+          hard_upper_limit_weeks: null
+          exact_taper_duration_weeks: null
+          slower_if_symptoms: true
+          source_ref: RU-SER
+          source_locator: §4.2, PDF с.3; индивидуальное замедление §4.4 с.6
+        full_taper_calendar: null
+        universal_percentage: null
+      source_basis:
+      - source_id: RU-PANIC
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.1, PDF с.25–33; приложение А3, с.76–77
+        sha256: a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d
+      - source_id: RU-SER
+        version: Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является
+          датой содержания
+        locator: §4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22
+        sha256: 3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba
+    - branch_id: withdrawal
+      when: withdrawal symptoms present
+      expected_output:
+        result_type: clinician_choice
+        total_daily_dose_mg: null
+        dose_per_administration_mg: null
+        administrations_per_day: null
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        automatic_next_reduction: false
+        slower_step: null
+        prior_dose_resumption: clinician consideration where source permits
+      source_basis:
+      - source_id: RU-PANIC
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.1, PDF с.25–33; приложение А3, с.76–77
+        sha256: a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d
+      - source_id: RU-SER
+        version: Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является
+          датой содержания
+        locator: §4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22
+        sha256: 3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba
+    source_gate_scope: discontinuation statement and symptom-dependent hold/stop only; start exclusions do not prevent
+      discontinuation
+    typed_source_conditions:
+    - input: hepatic
+      operator: category_equals
+      value: hepatic_impairment
+      action: clinician_choice
+      source_ref: RU-SER
+      source_locator: §4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22
+    - input: hepatic
+      operator: category_equals
+      value: severe_hepatic_impairment
+      action: not_applicable_standard_numeric_branch
+      source_ref: RU-SER
+      source_locator: §4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22
+    - input: seizure_state
+      operator: equals
+      value: контролируемые
+      action: clinician_choice
+      source_ref: RU-SER
+      source_locator: '§4.4 с.4, судороги: прекращение при развитии приступов'
+    - input: seizure_state
+      operator: equals
+      value: неконтролируемые
+      action: not_applicable_standard_branch; avoid unstable epilepsy
+      source_ref: RU-SER
+      source_locator: '§4.4 с.4, судороги: прекращение при развитии приступов'
+    - input: seizure_state
+      operator: equals
+      value: новые приступы
+      action: stop ongoing source medication
+      source_ref: RU-SER
+      source_locator: '§4.4 с.4, судороги: прекращение при развитии приступов'
+  switch-esc-ago:
+    required_inputs:
+    - from_form
+    - to_form
+    - age
+    - current_dose
+    - from_taper_plan
+    - hepatic
+    - alt_ratio_uln
+    - ast_ratio_uln
+    - medicines
+    - allergy
+    - pregnancy
+    - lactation
+    - withdrawal_severity
+    - elderly_population
+    - dementia
+    - galactose_intolerance
+    - complete_lactase_deficiency
+    - glucose_galactose_malabsorption
+    - liver_injury_signs
+    - transaminases_rising
+    - overweight_obesity
+    - fatty_liver
+    - diabetes
+    - alcohol_abuse
+    - alcohol_use
+    - mania
+    - mania_symptoms
+    - suicide_risk
+    - ect
+    - renal_state
+    conditional_inputs: {}
+    source_gates: []
+    gate_order:
+    - unavailable_source
+    - known immediate stop/exclusion
+    - invalid/missing applicable field
+    - unresolved source caution/modifier
+    - dose branch
+    reference_display: Source scheme only, without individualized dose; no omitted field treated as negative
+    branches:
+    - branch_id: unavailable
+      when: Current RU-ESC full original unavailable
+      expected_output:
+        result_type: source_unavailable
+        total_daily_dose_mg: null
+        dose_per_administration_mg: null
+        administrations_per_day: null
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        reason_ids:
+        - F01
+        - F02
+        - F13
+      source_basis:
+      - source_id: RU-DEP
+        version: '2024; каталог: опубликовано 26.08.2024, применяется'
+        locator: §3.1–3.4 PDF с.24–40; таблица2 с.95–96; §3.6 с.45; Б5 с.105–106
+        sha256: 2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd
+      - source_id: RU-ESC
+        version: Текущий полный оригинал недоступен; наблюдался РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; прежние дата/штамп
+          документа не воспроизведены
+        locator: Прежние заявленные разделы/страницы — historical_unreproduced_claim.locator; не текущий подтверждённый
+          локатор
+        sha256: null
+      - source_id: RU-AGO
+        version: Копия производителя с именем 20241228; первичная регистрация 25.01.2022; поле пересмотра пустое
+        locator: §4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16
+        sha256: 1cf8e71b5c27891e17b5b7ab4dd7c8c02697a1d44bb287a57a1ee9de0fb85bd6
+    source_gate_scope: Blocked before clinical predicates; source sections retained for future original review,
+      not evaluated as confirmed rules
+    typed_source_conditions:
+    - input: hepatic
+      operator: category_equals
+      value: 'недостаточность: степень по источнику'
+      action: not_applicable_standard_numeric_branch
+      source_ref: RU-AGO
+      source_locator: §4.3 с.3, печёночная недостаточность (цирроз или активное заболевание печени)
+    ongoing_stop_conditions:
+    - input: alt_ratio_uln
+      operator: '>'
+      value: 3
+      unit: ULN ratio
+      treatment_phase: ongoing
+      action: source_stop_action
+      stop_medication: RU-AGO
+      followup: liver tests regularly until normalization
+      source_ref: RU-AGO
+      source_locator: §4.4 с.4, немедленное прекращение при АЛТ или АСТ >3 ВГН
+    - input: ast_ratio_uln
+      operator: '>'
+      value: 3
+      unit: ULN ratio
+      treatment_phase: ongoing
+      action: source_stop_action
+      stop_medication: RU-AGO
+      followup: liver tests regularly until normalization
+      source_ref: RU-AGO
+      source_locator: §4.4 с.4, немедленное прекращение при АЛТ или АСТ >3 ВГН
+    unverified_source_sections:
+    - source_ref: RU-AGO
+      version: Копия производителя с именем 20241228; первичная регистрация 25.01.2022; поле пересмотра пустое
+      locator: §4.1–4.4 с.1–5; §4.5–4.6 с.5–6
+      exclusions:
+      - allergy
+      - galactose_intolerance
+      - complete_lactase_deficiency
+      - glucose_galactose_malabsorption
+      cautions:
+      - pregnancy
+      - lactation
+      - mania
+      - suicide_risk
+      - overweight_obesity
+      - fatty_liver
+      - diabetes
+      - alcohol_abuse
+      - alcohol_use
+      - ect
+      current_medicines_excluded:
+      - strong_CYP1A2
+      current_medicines_caution:
+      - moderate_CYP1A2
+      - hepatotoxic
+      stop:
+      - liver_injury_signs
+      - mania_symptoms
+      other: ALT and AST separately >3 exclude start; (1,3] caution; liver insufficiency/cirrhosis/active disease
+        exclude; elderly+dementia exclude; GAD >65, BDR >=75 exclude; <18 exclude; moderate/severe renal caution;
+        rising transaminases repeat within 48 hours
+  switch-esc-ser:
+    required_inputs:
+    - from_form
+    - to_form
+    - current_dose
+    - duration
+    - last_dose_time
+    - withdrawal_symptoms
+    - medicines
+    - target_applicability
+    conditional_inputs:
+      maoi_type: medicines contains current/stopped MAOI or unidentified interaction class
+      maoi_stopped_at: medicines contains stopped MAOI; per relevant record
+    source_gates: []
+    gate_order:
+    - unavailable_source
+    - known immediate stop/exclusion
+    - invalid/missing applicable field
+    - unresolved source caution/modifier
+    - dose branch
+    reference_display: Source scheme only, without individualized dose; no omitted field treated as negative
+    branches:
+    - branch_id: unavailable
+      when: Current RU-ESC full original unavailable
+      expected_output:
+        result_type: source_unavailable
+        total_daily_dose_mg: null
+        dose_per_administration_mg: null
+        administrations_per_day: null
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        reason_ids:
+        - F01
+        - F02
+        - F13
+      source_basis:
+      - source_id: RU-DEP
+        version: '2024; каталог: опубликовано 26.08.2024, применяется'
+        locator: §3.1–3.4 PDF с.24–40; таблица2 с.95–96; §3.6 с.45; Б5 с.105–106
+        sha256: 2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd
+      - source_id: RU-SER
+        version: Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является
+          датой содержания
+        locator: §4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22
+        sha256: 3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba
+      - source_id: RU-ESC
+        version: Текущий полный оригинал недоступен; наблюдался РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; прежние дата/штамп
+          документа не воспроизведены
+        locator: Прежние заявленные разделы/страницы — historical_unreproduced_claim.locator; не текущий подтверждённый
+          локатор
+        sha256: null
+    source_gate_scope: Blocked before clinical predicates; source sections retained for future original review,
+      not evaluated as confirmed rules
+    typed_source_conditions: []
+    unverified_source_sections:
+    - source_ref: RU-SER
+      version: Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является
+        датой содержания
+      locator: §4.1–4.4 с.1–7; §4.5–4.6 с.7–11
+      exclusions:
+      - allergy
+      cautions:
+      - pregnancy
+      - lactation
+      - mania
+      - qt_risk
+      - bleeding_risk
+      - hyponatremia_risk
+      - suicide_risk
+      - akathisia
+      current_medicines_excluded:
+      - maoi
+      - pimozide
+      current_medicines_caution:
+      - serotonergic
+      - QT_prolonging
+      - bleeding
+      other: <18 not adult anxiety/BDR; severe hepatic no; other hepatic lower dose/frequency unspecified; unstable
+        epilepsy avoid; seizures/current mania stop; renal no adjustment; alcohol/grapefruit avoid; akathisia no
+        automatic increase
+  switch-parox-ago-selected-example:
+    required_inputs:
+    - from_form
+    - to_form
+    - age
+    - current_dose
+    - hepatic
+    - alt_ratio_uln
+    - ast_ratio_uln
+    - medicines
+    - allergy
+    - pregnancy
+    - lactation
+    - withdrawal_severity
+    - duration
+    - past_withdrawal
+    - example_selected
+    - renal_state
+    - elderly_population
+    - dementia
+    - galactose_intolerance
+    - complete_lactase_deficiency
+    - glucose_galactose_malabsorption
+    - liver_injury_signs
+    - transaminases_rising
+    - overweight_obesity
+    - fatty_liver
+    - diabetes
+    - alcohol_abuse
+    - alcohol_use
+    - mania
+    - mania_symptoms
+    - suicide_risk
+    - ect
+    - from_renal
+    - from_hepatic
+    - akathisia
+    - glaucoma
+    - bleeding_risk
+    - qt_risk
+    - seizure_state
+    conditional_inputs:
+      maoi_type: medicines contains current/stopped MAOI or unidentified interaction class
+      maoi_stopped_at: medicines contains stopped MAOI; per relevant record
+    source_gates:
+    - source_ref: RU-AGO
+      version: Копия производителя с именем 20241228; первичная регистрация 25.01.2022; поле пересмотра пустое
+      locator: §4.1–4.4 с.1–5; §4.5–4.6 с.5–6
+      exclusions: *id001
+      cautions: *id002
+      current_medicines_excluded: *id003
+      current_medicines_caution: *id004
+      stop: *id005
+      other: ALT and AST separately >3 exclude start; (1,3] caution; liver insufficiency/cirrhosis/active disease
+        exclude; elderly+dementia exclude; GAD >65, BDR >=75 exclude; <18 exclude; moderate/severe renal caution;
+        rising transaminases repeat within 48 hours
+    - source_ref: RU-PAROX
+      version: 'Первичная регистрация 14.02.2025; страница производителя: файл 26.03.2025; поле пересмотра пустое'
+      locator: §4.2–4.3 с.16–18; §4.4–4.6 с.18–28
+      exclusions: *id019
+      cautions: *id020
+      current_medicines_excluded: *id021
+      current_medicines_caution: *id022
+      other: <18 no adult scheme; elderly maximum 40 without invented age threshold; severe CLcr <30 or hepatic
+        insufficiency low therapeutic range unspecified; no general taper tail; standard MAOI branch excludes exceptional
+        linezolid use
+    gate_order:
+    - unavailable_source
+    - known immediate stop/exclusion
+    - invalid/missing applicable field
+    - unresolved source caution/modifier
+    - dose branch
+    reference_display: Source scheme only, without individualized dose; no omitted field treated as negative
+    branches:
+    - branch_id: selected40
+      when: current=40; example_selected=true; no withdrawal; all A/B gates clear; identified products
+      expected_output:
+        result_type: selected_source_example
+        total_daily_dose_mg: null
+        dose_per_administration_mg: null
+        administrations_per_day: null
+        schedule:
+        - stage_id: day1
+          time_description: День 1 выбранного примера
+          minimum_interval: null
+          interval_unit: day
+          medication_steps:
+          - medication_inn: пароксетин
+            dose_per_administration: 30
+            administrations_per_day: 1
+            total_daily_dose: 30
+            dose_unit: mg
+            action: снизить
+            source_refs:
+            - RU-PAROX
+          - medication_inn: агомелатин
+            dose_per_administration: 25
+            administrations_per_day: 1
+            total_daily_dose: 25
+            dose_unit: mg
+            action: начать
+            source_refs:
+            - RU-AGO
+          condition_to_proceed: Врач сохранил выбранный пример и подтвердил применимость; нет основания замедлить/остановить.
+          condition_to_hold: Симптомы отмены A -> врач оценивает возврат прежней дозы и более медленное снижение;
+            неподтвержденные входы -> не выполнять следующий этап.
+          source_refs:
+          - RU-PAROX
+          - RU-AGO
+          condition_to_stop: Признаки поражения печени B, АЛТ/АСТ >3 ВГН или новая мания -> немедленно прекратить
+            B по RU-AGO §4.4 с.4; календарь A пересматривает врач.
+          source_locators:
+          - RU-PAROX §4.2 с.16–17
+          - RU-AGO §4.2 с.1–2; §4.4 с.4
+        - stage_id: day8
+          time_description: День 8 выбранного примера
+          minimum_interval: 7
+          interval_unit: day
+          medication_steps:
+          - medication_inn: пароксетин
+            dose_per_administration: 20
+            administrations_per_day: 1
+            total_daily_dose: 20
+            dose_unit: mg
+            action: снизить
+            source_refs:
+            - RU-PAROX
+          - medication_inn: агомелатин
+            dose_per_administration: 25
+            administrations_per_day: 1
+            total_daily_dose: 25
+            dose_unit: mg
+            action: сохранить до решения врача
+            source_refs:
+            - RU-AGO
+          condition_to_proceed: Врач сохранил выбранный пример и подтвердил применимость; нет основания замедлить/остановить.
+          condition_to_hold: Симптомы отмены A -> врач оценивает возврат прежней дозы и более медленное снижение;
+            неподтвержденные входы -> не выполнять следующий этап.
+          source_refs:
+          - RU-PAROX
+          - RU-AGO
+          condition_to_stop: Признаки поражения печени B, АЛТ/АСТ >3 ВГН или новая мания -> немедленно прекратить
+            B по RU-AGO §4.4 с.4; календарь A пересматривает врач.
+          source_locators:
+          - RU-PAROX §4.2 с.16–17
+          - RU-AGO §4.2 с.1–2; §4.4 с.4
+        - stage_id: day15
+          time_description: День 15 выбранного примера
+          minimum_interval: 7
+          interval_unit: day
+          medication_steps:
+          - medication_inn: пароксетин
+            dose_per_administration: 0
+            administrations_per_day: 1
+            total_daily_dose: 0
+            dose_unit: mg
+            action: прекратить
+            source_refs:
+            - RU-PAROX
+          - medication_inn: агомелатин
+            dose_per_administration: 25
+            administrations_per_day: 1
+            total_daily_dose: 25
+            dose_unit: mg
+            action: сохранить до решения врача
+            source_refs:
+            - RU-AGO
+          condition_to_proceed: Врач сохранил выбранный пример и подтвердил применимость; нет основания замедлить/остановить.
+          condition_to_hold: Симптомы отмены A -> врач оценивает возврат прежней дозы и более медленное снижение;
+            неподтвержденные входы -> не выполнять следующий этап.
+          source_refs:
+          - RU-PAROX
+          - RU-AGO
+          condition_to_stop: Признаки поражения печени B, АЛТ/АСТ >3 ВГН или новая мания -> немедленно прекратить
+            B по RU-AGO §4.4 с.4; календарь A пересматривает врач.
+          source_locators:
+          - RU-PAROX §4.2 с.16–17
+          - RU-AGO §4.2 с.1–2; §4.4 с.4
+        missing_fields: []
+        unconditional_future_stages: false
+        monitoring:
+          before_start: true
+          approximate_weeks_parameter: liver_monitoring_weeks
+          restart_same_frequency_after_dose_increase: true
+          rising_repeat_hours_parameter: repeat_liver_tests_hours
+          stop_signs_action: immediate cessation; tests until normal
+          source_ref: RU-AGO
+          source_locator: §4.2 с.1; §4.4 с.3–4
+        trial_validated_pair: false
+      source_basis:
+      - source_id: RU-DEP
+        version: '2024; каталог: опубликовано 26.08.2024, применяется'
+        locator: §3.1–3.4 PDF с.24–40; таблица2 с.95–96; §3.6 с.45; Б5 с.105–106
+        sha256: 2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd
+      - source_id: RU-PAROX
+        version: 'Первичная регистрация 14.02.2025; страница производителя: файл 26.03.2025; поле пересмотра пустое'
+        locator: 'ОХЛП: PDF с.14–18 (§4.1–4.3), с.19–23 (§4.4), с.24–28 (§4.5–4.6), с.39 (§8–10)'
+        sha256: 9f6f2646e102956826997ca7e93d84e90c7528db5ceb61896a3d4092841edabe
+      - source_id: RU-AGO
+        version: Копия производителя с именем 20241228; первичная регистрация 25.01.2022; поле пересмотра пустое
+        locator: §4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16
+        sha256: 1cf8e71b5c27891e17b5b7ab4dd7c8c02697a1d44bb287a57a1ee9de0fb85bd6
+    - branch_id: withdrawal_hold
+      when: withdrawal symptoms or previous difficult withdrawal
+      expected_output:
+        result_type: clinician_choice
+        total_daily_dose_mg: null
+        dose_per_administration_mg: null
+        administrations_per_day: null
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        automatic_next_stage: false
+        slower_step: null
+      source_basis:
+      - source_id: RU-DEP
+        version: '2024; каталог: опубликовано 26.08.2024, применяется'
+        locator: §3.1–3.4 PDF с.24–40; таблица2 с.95–96; §3.6 с.45; Б5 с.105–106
+        sha256: 2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd
+      - source_id: RU-PAROX
+        version: 'Первичная регистрация 14.02.2025; страница производителя: файл 26.03.2025; поле пересмотра пустое'
+        locator: 'ОХЛП: PDF с.14–18 (§4.1–4.3), с.19–23 (§4.4), с.24–28 (§4.5–4.6), с.39 (§8–10)'
+        sha256: 9f6f2646e102956826997ca7e93d84e90c7528db5ceb61896a3d4092841edabe
+      - source_id: RU-AGO
+        version: Копия производителя с именем 20241228; первичная регистрация 25.01.2022; поле пересмотра пустое
+        locator: §4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16
+        sha256: 1cf8e71b5c27891e17b5b7ab4dd7c8c02697a1d44bb287a57a1ee9de0fb85bd6
+    - branch_id: not_selected
+      when: example_selected=false or current dose !=40
+      expected_output:
+        result_type: clinician_choice
+        total_daily_dose_mg: null
+        dose_per_administration_mg: null
+        administrations_per_day: null
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        complete_calendar: null
+      source_basis:
+      - source_id: RU-DEP
+        version: '2024; каталог: опубликовано 26.08.2024, применяется'
+        locator: §3.1–3.4 PDF с.24–40; таблица2 с.95–96; §3.6 с.45; Б5 с.105–106
+        sha256: 2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd
+      - source_id: RU-PAROX
+        version: 'Первичная регистрация 14.02.2025; страница производителя: файл 26.03.2025; поле пересмотра пустое'
+        locator: 'ОХЛП: PDF с.14–18 (§4.1–4.3), с.19–23 (§4.4), с.24–28 (§4.5–4.6), с.39 (§8–10)'
+        sha256: 9f6f2646e102956826997ca7e93d84e90c7528db5ceb61896a3d4092841edabe
+      - source_id: RU-AGO
+        version: Копия производителя с именем 20241228; первичная регистрация 25.01.2022; поле пересмотра пустое
+        locator: §4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16
+        sha256: 1cf8e71b5c27891e17b5b7ab4dd7c8c02697a1d44bb287a57a1ee9de0fb85bd6
+    source_gate_scope: start/adjust applicability; both identified products for switch
+    typed_source_conditions:
+    - input: hepatic
+      operator: category_equals
+      value: hepatic_insufficiency
+      action: not_applicable_standard_numeric_branch
+      source_ref: RU-AGO
+      source_locator: §4.3 с.3, печёночная недостаточность (цирроз или активное заболевание печени)
+    - input: hepatic
+      operator: category_equals
+      value: cirrhosis
+      action: not_applicable_standard_numeric_branch
+      source_ref: RU-AGO
+      source_locator: §4.3 с.3, печёночная недостаточность (цирроз или активное заболевание печени)
+    - input: hepatic
+      operator: category_equals
+      value: active_liver_disease
+      action: not_applicable_standard_numeric_branch
+      source_ref: RU-AGO
+      source_locator: §4.3 с.3, печёночная недостаточность (цирроз или активное заболевание печени)
+    - input: from_hepatic
+      operator: category_equals
+      value: hepatic_insufficiency
+      action: clinician_choice
+      source_ref: RU-PAROX
+      source_locator: §4.2 с.17, нарушение функции печени
+    - input: seizure_state
+      operator: equals
+      value: контролируемые
+      action: clinician_choice
+      source_ref: RU-PAROX
+      source_locator: §4.4 с.21
+    - input: seizure_state
+      operator: equals
+      value: неконтролируемые
+      action: clinician_choice
+      source_ref: RU-PAROX
+      source_locator: §4.4 с.21
+    - input: seizure_state
+      operator: equals
+      value: новые приступы
+      action: stop ongoing source medication
+      source_ref: RU-PAROX
+      source_locator: §4.4 с.21
+    ongoing_stop_conditions:
+    - input: alt_ratio_uln
+      operator: '>'
+      value: 3
+      unit: ULN ratio
+      treatment_phase: ongoing
+      action: source_stop_action
+      stop_medication: RU-AGO
+      followup: liver tests regularly until normalization
+      source_ref: RU-AGO
+      source_locator: §4.4 с.4, немедленное прекращение при АЛТ или АСТ >3 ВГН
+    - input: ast_ratio_uln
+      operator: '>'
+      value: 3
+      unit: ULN ratio
+      treatment_phase: ongoing
+      action: source_stop_action
+      stop_medication: RU-AGO
+      followup: liver tests regularly until normalization
+      source_ref: RU-AGO
+      source_locator: §4.4 с.4, немедленное прекращение при АЛТ или АСТ >3 ВГН
+  switch-parox-ago:
+    required_inputs:
+    - from_form
+    - to_form
+    - age
+    - current_dose
+    - from_taper_plan
+    - hepatic
+    - alt_ratio_uln
+    - ast_ratio_uln
+    - medicines
+    - allergy
+    - pregnancy
+    - lactation
+    - withdrawal_severity
+    - elderly_population
+    - dementia
+    - galactose_intolerance
+    - complete_lactase_deficiency
+    - glucose_galactose_malabsorption
+    - liver_injury_signs
+    - transaminases_rising
+    - overweight_obesity
+    - fatty_liver
+    - diabetes
+    - alcohol_abuse
+    - alcohol_use
+    - mania
+    - mania_symptoms
+    - suicide_risk
+    - ect
+    - renal_state
+    - from_hepatic
+    - from_renal
+    - akathisia
+    - glaucoma
+    - bleeding_risk
+    - qt_risk
+    - seizure_state
+    conditional_inputs:
+      maoi_type: medicines contains current/stopped MAOI or unidentified interaction class
+      maoi_stopped_at: medicines contains stopped MAOI; per relevant record
+    source_gates:
+    - source_ref: RU-AGO
+      version: Копия производителя с именем 20241228; первичная регистрация 25.01.2022; поле пересмотра пустое
+      locator: §4.1–4.4 с.1–5; §4.5–4.6 с.5–6
+      exclusions: *id001
+      cautions: *id002
+      current_medicines_excluded: *id003
+      current_medicines_caution: *id004
+      stop: *id005
+      other: ALT and AST separately >3 exclude start; (1,3] caution; liver insufficiency/cirrhosis/active disease
+        exclude; elderly+dementia exclude; GAD >65, BDR >=75 exclude; <18 exclude; moderate/severe renal caution;
+        rising transaminases repeat within 48 hours
+    - source_ref: RU-PAROX
+      version: 'Первичная регистрация 14.02.2025; страница производителя: файл 26.03.2025; поле пересмотра пустое'
+      locator: §4.2–4.3 с.16–18; §4.4–4.6 с.18–28
+      exclusions: *id019
+      cautions: *id020
+      current_medicines_excluded: *id021
+      current_medicines_caution: *id022
+      other: <18 no adult scheme; elderly maximum 40 without invented age threshold; severe CLcr <30 or hepatic
+        insufficiency low therapeutic range unspecified; no general taper tail; standard MAOI branch excludes exceptional
+        linezolid use
+    gate_order:
+    - unavailable_source
+    - known immediate stop/exclusion
+    - invalid/missing applicable field
+    - unresolved source caution/modifier
+    - dose branch
+    reference_display: Source scheme only, without individualized dose; no omitted field treated as negative
+    branches:
+    - branch_id: source_class_overlap
+      when: A plan supplied by clinician; B all conditions evaluated; no exact A calendar inferred
+      expected_output:
+        result_type: clinician_choice
+        total_daily_dose_mg: null
+        dose_per_administration_mg: null
+        administrations_per_day: null
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        overlap_allowed_on_first_day_of_A_reduction: true
+        target_source_start_mg: 25
+        full_pair_calendar: null
+        monitoring:
+          before_start: true
+          approximate_weeks_parameter: liver_monitoring_weeks
+          restart_same_frequency_after_dose_increase: true
+          rising_repeat_hours_parameter: repeat_liver_tests_hours
+          stop_signs_action: immediate cessation; tests until normal
+          source_ref: RU-AGO
+          source_locator: §4.2 с.1; §4.4 с.3–4
+      source_basis:
+      - source_id: RU-DEP
+        version: '2024; каталог: опубликовано 26.08.2024, применяется'
+        locator: §3.1–3.4 PDF с.24–40; таблица2 с.95–96; §3.6 с.45; Б5 с.105–106
+        sha256: 2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd
+      - source_id: RU-PAROX
+        version: 'Первичная регистрация 14.02.2025; страница производителя: файл 26.03.2025; поле пересмотра пустое'
+        locator: 'ОХЛП: PDF с.14–18 (§4.1–4.3), с.19–23 (§4.4), с.24–28 (§4.5–4.6), с.39 (§8–10)'
+        sha256: 9f6f2646e102956826997ca7e93d84e90c7528db5ceb61896a3d4092841edabe
+      - source_id: RU-AGO
+        version: Копия производителя с именем 20241228; первичная регистрация 25.01.2022; поле пересмотра пустое
+        locator: §4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16
+        sha256: 1cf8e71b5c27891e17b5b7ab4dd7c8c02697a1d44bb287a57a1ee9de0fb85bd6
+    source_gate_scope: start/adjust applicability; both identified products for switch
+    typed_source_conditions:
+    - input: hepatic
+      operator: category_equals
+      value: hepatic_insufficiency
+      action: not_applicable_standard_numeric_branch
+      source_ref: RU-AGO
+      source_locator: §4.3 с.3, печёночная недостаточность (цирроз или активное заболевание печени)
+    - input: hepatic
+      operator: category_equals
+      value: cirrhosis
+      action: not_applicable_standard_numeric_branch
+      source_ref: RU-AGO
+      source_locator: §4.3 с.3, печёночная недостаточность (цирроз или активное заболевание печени)
+    - input: hepatic
+      operator: category_equals
+      value: active_liver_disease
+      action: not_applicable_standard_numeric_branch
+      source_ref: RU-AGO
+      source_locator: §4.3 с.3, печёночная недостаточность (цирроз или активное заболевание печени)
+    - input: from_hepatic
+      operator: category_equals
+      value: hepatic_insufficiency
+      action: clinician_choice
+      source_ref: RU-PAROX
+      source_locator: §4.2 с.17, нарушение функции печени
+    - input: seizure_state
+      operator: equals
+      value: контролируемые
+      action: clinician_choice
+      source_ref: RU-PAROX
+      source_locator: §4.4 с.21
+    - input: seizure_state
+      operator: equals
+      value: неконтролируемые
+      action: clinician_choice
+      source_ref: RU-PAROX
+      source_locator: §4.4 с.21
+    - input: seizure_state
+      operator: equals
+      value: новые приступы
+      action: stop ongoing source medication
+      source_ref: RU-PAROX
+      source_locator: §4.4 с.21
+    ongoing_stop_conditions:
+    - input: alt_ratio_uln
+      operator: '>'
+      value: 3
+      unit: ULN ratio
+      treatment_phase: ongoing
+      action: source_stop_action
+      stop_medication: RU-AGO
+      followup: liver tests regularly until normalization
+      source_ref: RU-AGO
+      source_locator: §4.4 с.4, немедленное прекращение при АЛТ или АСТ >3 ВГН
+    - input: ast_ratio_uln
+      operator: '>'
+      value: 3
+      unit: ULN ratio
+      treatment_phase: ongoing
+      action: source_stop_action
+      stop_medication: RU-AGO
+      followup: liver tests regularly until normalization
+      source_ref: RU-AGO
+      source_locator: §4.4 с.4, немедленное прекращение при АЛТ или АСТ >3 ВГН
+  switch-ser-ago:
+    required_inputs:
+    - from_form
+    - to_form
+    - age
+    - current_dose
+    - from_taper_plan
+    - hepatic
+    - alt_ratio_uln
+    - ast_ratio_uln
+    - medicines
+    - allergy
+    - pregnancy
+    - lactation
+    - withdrawal_severity
+    - elderly_population
+    - dementia
+    - galactose_intolerance
+    - complete_lactase_deficiency
+    - glucose_galactose_malabsorption
+    - liver_injury_signs
+    - transaminases_rising
+    - overweight_obesity
+    - fatty_liver
+    - diabetes
+    - alcohol_abuse
+    - alcohol_use
+    - mania
+    - mania_symptoms
+    - suicide_risk
+    - ect
+    - renal_state
+    - from_hepatic
+    - akathisia
+    - qt_risk
+    - bleeding_risk
+    - hyponatremia_risk
+    - seizure_state
+    conditional_inputs:
+      maoi_type: medicines contains current/stopped MAOI or unidentified interaction class
+      maoi_stopped_at: medicines contains stopped MAOI; per relevant record
+    source_gates:
+    - source_ref: RU-AGO
+      version: Копия производителя с именем 20241228; первичная регистрация 25.01.2022; поле пересмотра пустое
+      locator: §4.1–4.4 с.1–5; §4.5–4.6 с.5–6
+      exclusions: *id001
+      cautions: *id002
+      current_medicines_excluded: *id003
+      current_medicines_caution: *id004
+      stop: *id005
+      other: ALT and AST separately >3 exclude start; (1,3] caution; liver insufficiency/cirrhosis/active disease
+        exclude; elderly+dementia exclude; GAD >65, BDR >=75 exclude; <18 exclude; moderate/severe renal caution;
+        rising transaminases repeat within 48 hours
+    - source_ref: RU-SER
+      version: Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является
+        датой содержания
+      locator: §4.1–4.4 с.1–7; §4.5–4.6 с.7–11
+      exclusions: *id015
+      cautions: *id016
+      current_medicines_excluded: *id017
+      current_medicines_caution: *id018
+      other: <18 not adult anxiety/BDR; severe hepatic no; other hepatic lower dose/frequency unspecified; unstable
+        epilepsy avoid; seizures/current mania stop; renal no adjustment; alcohol/grapefruit avoid; akathisia no
+        automatic increase
+    gate_order:
+    - unavailable_source
+    - known immediate stop/exclusion
+    - invalid/missing applicable field
+    - unresolved source caution/modifier
+    - dose branch
+    reference_display: Source scheme only, without individualized dose; no omitted field treated as negative
+    branches:
+    - branch_id: source_class_overlap
+      when: A plan supplied by clinician; B all conditions evaluated; no exact A calendar inferred
+      expected_output:
+        result_type: clinician_choice
+        total_daily_dose_mg: null
+        dose_per_administration_mg: null
+        administrations_per_day: null
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        overlap_allowed_on_first_day_of_A_reduction: true
+        target_source_start_mg: 25
+        full_pair_calendar: null
+        monitoring:
+          before_start: true
+          approximate_weeks_parameter: liver_monitoring_weeks
+          restart_same_frequency_after_dose_increase: true
+          rising_repeat_hours_parameter: repeat_liver_tests_hours
+          stop_signs_action: immediate cessation; tests until normal
+          source_ref: RU-AGO
+          source_locator: §4.2 с.1; §4.4 с.3–4
+      source_basis:
+      - source_id: RU-DEP
+        version: '2024; каталог: опубликовано 26.08.2024, применяется'
+        locator: §3.1–3.4 PDF с.24–40; таблица2 с.95–96; §3.6 с.45; Б5 с.105–106
+        sha256: 2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd
+      - source_id: RU-SER
+        version: Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является
+          датой содержания
+        locator: §4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22
+        sha256: 3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba
+      - source_id: RU-AGO
+        version: Копия производителя с именем 20241228; первичная регистрация 25.01.2022; поле пересмотра пустое
+        locator: §4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16
+        sha256: 1cf8e71b5c27891e17b5b7ab4dd7c8c02697a1d44bb287a57a1ee9de0fb85bd6
+    source_gate_scope: start/adjust applicability; both identified products for switch
+    typed_source_conditions:
+    - input: hepatic
+      operator: category_equals
+      value: hepatic_insufficiency
+      action: not_applicable_standard_numeric_branch
+      source_ref: RU-AGO
+      source_locator: §4.3 с.3, печёночная недостаточность (цирроз или активное заболевание печени)
+    - input: hepatic
+      operator: category_equals
+      value: cirrhosis
+      action: not_applicable_standard_numeric_branch
+      source_ref: RU-AGO
+      source_locator: §4.3 с.3, печёночная недостаточность (цирроз или активное заболевание печени)
+    - input: hepatic
+      operator: category_equals
+      value: active_liver_disease
+      action: not_applicable_standard_numeric_branch
+      source_ref: RU-AGO
+      source_locator: §4.3 с.3, печёночная недостаточность (цирроз или активное заболевание печени)
+    - input: from_hepatic
+      operator: category_equals
+      value: hepatic_impairment
+      action: clinician_choice
+      source_ref: RU-SER
+      source_locator: §4.2 с.2, нарушение функции печени
+    - input: from_hepatic
+      operator: category_equals
+      value: severe_hepatic_impairment
+      action: not_applicable_standard_numeric_branch
+      source_ref: RU-SER
+      source_locator: §4.2 с.2, нарушение функции печени
+    - input: seizure_state
+      operator: equals
+      value: контролируемые
+      action: clinician_choice
+      source_ref: RU-SER
+      source_locator: '§4.4 с.4, судороги: прекращение при развитии приступов'
+    - input: seizure_state
+      operator: equals
+      value: неконтролируемые
+      action: not_applicable_standard_branch; avoid unstable epilepsy
+      source_ref: RU-SER
+      source_locator: '§4.4 с.4, судороги: прекращение при развитии приступов'
+    - input: seizure_state
+      operator: equals
+      value: новые приступы
+      action: stop ongoing source medication
+      source_ref: RU-SER
+      source_locator: '§4.4 с.4, судороги: прекращение при развитии приступов'
+    ongoing_stop_conditions:
+    - input: alt_ratio_uln
+      operator: '>'
+      value: 3
+      unit: ULN ratio
+      treatment_phase: ongoing
+      action: source_stop_action
+      stop_medication: RU-AGO
+      followup: liver tests regularly until normalization
+      source_ref: RU-AGO
+      source_locator: §4.4 с.4, немедленное прекращение при АЛТ или АСТ >3 ВГН
+    - input: ast_ratio_uln
+      operator: '>'
+      value: 3
+      unit: ULN ratio
+      treatment_phase: ongoing
+      action: source_stop_action
+      stop_medication: RU-AGO
+      followup: liver tests regularly until normalization
+      source_ref: RU-AGO
+      source_locator: §4.4 с.4, немедленное прекращение при АЛТ или АСТ >3 ВГН
+  switch-ser-esc:
+    required_inputs:
+    - from_form
+    - to_form
+    - current_dose
+    - duration
+    - last_dose_time
+    - withdrawal_symptoms
+    - medicines
+    - target_applicability
+    conditional_inputs:
+      maoi_type: medicines contains current/stopped MAOI or unidentified interaction class
+      maoi_stopped_at: medicines contains stopped MAOI; per relevant record
+    source_gates: []
+    gate_order:
+    - unavailable_source
+    - known immediate stop/exclusion
+    - invalid/missing applicable field
+    - unresolved source caution/modifier
+    - dose branch
+    reference_display: Source scheme only, without individualized dose; no omitted field treated as negative
+    branches:
+    - branch_id: unavailable
+      when: Current RU-ESC full original unavailable
+      expected_output:
+        result_type: source_unavailable
+        total_daily_dose_mg: null
+        dose_per_administration_mg: null
+        administrations_per_day: null
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        reason_ids:
+        - F01
+        - F02
+        - F13
+      source_basis:
+      - source_id: RU-DEP
+        version: '2024; каталог: опубликовано 26.08.2024, применяется'
+        locator: §3.1–3.4 PDF с.24–40; таблица2 с.95–96; §3.6 с.45; Б5 с.105–106
+        sha256: 2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd
+      - source_id: RU-SER
+        version: Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является
+          датой содержания
+        locator: §4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22
+        sha256: 3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba
+      - source_id: RU-ESC
+        version: Текущий полный оригинал недоступен; наблюдался РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; прежние дата/штамп
+          документа не воспроизведены
+        locator: Прежние заявленные разделы/страницы — historical_unreproduced_claim.locator; не текущий подтверждённый
+          локатор
+        sha256: null
+    source_gate_scope: Blocked before clinical predicates; source sections retained for future original review,
+      not evaluated as confirmed rules
+    typed_source_conditions: []
+    unverified_source_sections:
+    - source_ref: RU-SER
+      version: Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является
+        датой содержания
+      locator: §4.1–4.4 с.1–7; §4.5–4.6 с.7–11
+      exclusions:
+      - allergy
+      cautions:
+      - pregnancy
+      - lactation
+      - mania
+      - qt_risk
+      - bleeding_risk
+      - hyponatremia_risk
+      - suicide_risk
+      - akathisia
+      current_medicines_excluded:
+      - maoi
+      - pimozide
+      current_medicines_caution:
+      - serotonergic
+      - QT_prolonging
+      - bleeding
+      other: <18 not adult anxiety/BDR; severe hepatic no; other hepatic lower dose/frequency unspecified; unstable
+        epilepsy avoid; seizures/current mania stop; renal no adjustment; alcohol/grapefruit avoid; akathisia no
+        automatic increase
+  venla-xr-gad-start:
+    required_inputs:
+    - age
+    - form
+    - hepatic
+    - pregnancy
+    - lactation
+    - medicines
+    - allergy
+    - renal_metric
+    - recent_infarction
+    - unstable_angina
+    - heart_failure
+    - coronary_disease
+    - ecg_change
+    - qt_risk
+    - electrolyte_imbalance
+    - hypertension
+    - tachycardia
+    - seizure_history
+    - glaucoma
+    - mania
+    - bleeding_risk
+    - low_body_mass
+    - urinary_impairment
+    - low_blood_pressure
+    - diabetes
+    - recent_stroke
+    - hyponatremia_risk
+    - ect
+    - hypercholesterolemia
+    - alcohol_use
+    - suicide_risk
+    - pregnancy_suspected
+    - diastolic_BP
+    conditional_inputs:
+      maoi_type: medicines contains current/stopped MAOI or unidentified interaction class
+      maoi_stopped_at: medicines contains stopped MAOI; per relevant record
+    source_gates:
+    - source_ref: RU-VENLA-XR
+      version: Версия HTML не датирована; снимок и SHA-256 от 08.10.2026; отдельное РУ формы подтверждено реестром
+      locator: HTML §4.2–4.6
+      exclusions: &id023
+      - allergy
+      - pregnancy
+      - pregnancy_suspected
+      - lactation
+      cautions: &id024
+      - recent_infarction
+      - unstable_angina
+      - heart_failure
+      - coronary_disease
+      - ecg_change
+      - qt_risk
+      - electrolyte_imbalance
+      - hypertension
+      - tachycardia
+      - seizure_history
+      - glaucoma
+      - mania
+      - bleeding_risk
+      - low_body_mass
+      - urinary_impairment
+      - low_blood_pressure
+      - diabetes
+      - recent_stroke
+      - hyponatremia_risk
+      - ect
+      - hypercholesterolemia
+      - alcohol_use
+      - suicide_risk
+      current_medicines_excluded: &id025
+      - maoi
+      current_medicines_caution: &id026
+      - serotonergic
+      - QT_prolonging
+      - bleeding
+      other: <18 exclude; absolute GFR <10 contraindicated; 10..30 reduced by 50%; >30 unchanged; hepatic mild/moderate
+        consider 50%; severe contraindicated; simultaneous modifiers no product; haemodialysis separate; XR 75/150
+        cannot realize 37.5; whole capsule with food
+    gate_order:
+    - unavailable_source
+    - known immediate stop/exclusion
+    - invalid/missing applicable field
+    - unresolved source caution/modifier
+    - dose branch
+    reference_display: Source scheme only, without individualized dose; no omitted field treated as negative
+    branches:
+    - branch_id: usual
+      when: absolute_GFR>30; no hepatic insufficiency; all gates clear
+      expected_output:
+        result_type: exact
+        total_daily_dose_mg: 75
+        dose_per_administration_mg: 75.0
+        administrations_per_day: 1
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        maximum_mg: 225
+        minimum_increase_interval_weeks: 2
+        automatic_increment: null
+        higher_social_benefit_proven: null
+      source_basis:
+      - source_id: RU-VENLA-XR
+        version: Версия HTML не датирована; снимок и SHA-256 от 08.10.2026; отдельное РУ формы подтверждено реестром
+        locator: HTML §1–3, §4.1–4.3, §4.5–4.6, §8; заголовки формы/режима сохранены
+        sha256: 3656aeeae0ef60f75fe0ea90e1a9f73ba3734e7b8825e163752d9e6e278bf838
+      - source_id: RU-GAD
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78
+        sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+    - branch_id: renal_reduction
+      when: 10<=absolute_GFR<=30; liver clear
+      expected_output:
+        result_type: form_not_feasible
+        total_daily_dose_mg: null
+        dose_per_administration_mg: null
+        administrations_per_day: null
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        published_reduction_percent: 50
+        arithmetic_total_mg: 37.5
+        executable_dose: null
+        IR_substitution_allowed: false
+      source_basis:
+      - source_id: RU-VENLA-XR
+        version: Версия HTML не датирована; снимок и SHA-256 от 08.10.2026; отдельное РУ формы подтверждено реестром
+        locator: HTML §1–3, §4.1–4.3, §4.5–4.6, §8; заголовки формы/режима сохранены
+        sha256: 3656aeeae0ef60f75fe0ea90e1a9f73ba3734e7b8825e163752d9e6e278bf838
+      - source_id: RU-GAD
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78
+        sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+    - branch_id: hepatic_reduction
+      when: mild/moderate hepatic insufficiency; renal clear
+      expected_output:
+        result_type: clinician_choice
+        total_daily_dose_mg: null
+        dose_per_administration_mg: null
+        administrations_per_day: null
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        published_reduction_percent: 50
+        arithmetic_total_mg: 37.5
+        executable_dose: null
+      source_basis:
+      - source_id: RU-VENLA-XR
+        version: Версия HTML не датирована; снимок и SHA-256 от 08.10.2026; отдельное РУ формы подтверждено реестром
+        locator: HTML §1–3, §4.1–4.3, §4.5–4.6, §8; заголовки формы/режима сохранены
+        sha256: 3656aeeae0ef60f75fe0ea90e1a9f73ba3734e7b8825e163752d9e6e278bf838
+      - source_id: RU-GAD
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78
+        sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+    - branch_id: joint_modifiers
+      when: renal and hepatic modifier overlap
+      expected_output:
+        result_type: clinician_choice
+        total_daily_dose_mg: null
+        dose_per_administration_mg: null
+        administrations_per_day: null
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        product_of_reductions: null
+      source_basis:
+      - source_id: RU-VENLA-XR
+        version: Версия HTML не датирована; снимок и SHA-256 от 08.10.2026; отдельное РУ формы подтверждено реестром
+        locator: HTML §1–3, §4.1–4.3, §4.5–4.6, §8; заголовки формы/режима сохранены
+        sha256: 3656aeeae0ef60f75fe0ea90e1a9f73ba3734e7b8825e163752d9e6e278bf838
+      - source_id: RU-GAD
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78
+        sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+    source_gate_scope: start/adjust applicability; both identified products for switch
+    typed_source_conditions:
+    - input: hepatic
+      operator: category_equals
+      value: mild
+      action: clinician_choice
+      source_ref: RU-VENLA-XR
+      source_locator: HTML §1–3, §4.1–4.3, §4.5–4.6, §8; заголовки формы/режима сохранены
+    - input: hepatic
+      operator: category_equals
+      value: moderate
+      action: clinician_choice
+      source_ref: RU-VENLA-XR
+      source_locator: HTML §1–3, §4.1–4.3, §4.5–4.6, §8; заголовки формы/режима сохранены
+    - input: hepatic
+      operator: category_equals
+      value: severe
+      action: not_applicable_standard_numeric_branch
+      source_ref: RU-VENLA-XR
+      source_locator: HTML §1–3, §4.1–4.3, §4.5–4.6, §8; заголовки формы/режима сохранены
+  venla-xr-panic-form-limit:
+    required_inputs:
+    - age
+    - form
+    - hepatic
+    - pregnancy
+    - lactation
+    - medicines
+    - allergy
+    - renal_metric
+    - recent_infarction
+    - unstable_angina
+    - heart_failure
+    - coronary_disease
+    - ecg_change
+    - qt_risk
+    - electrolyte_imbalance
+    - hypertension
+    - tachycardia
+    - seizure_history
+    - glaucoma
+    - mania
+    - bleeding_risk
+    - low_body_mass
+    - urinary_impairment
+    - low_blood_pressure
+    - diabetes
+    - recent_stroke
+    - hyponatremia_risk
+    - ect
+    - hypercholesterolemia
+    - alcohol_use
+    - suicide_risk
+    - pregnancy_suspected
+    - diastolic_BP
+    conditional_inputs:
+      maoi_type: medicines contains current/stopped MAOI or unidentified interaction class
+      maoi_stopped_at: medicines contains stopped MAOI; per relevant record
+    source_gates:
+    - source_ref: RU-VENLA-XR
+      version: Версия HTML не датирована; снимок и SHA-256 от 08.10.2026; отдельное РУ формы подтверждено реестром
+      locator: HTML §4.2–4.6
+      exclusions: *id023
+      cautions: *id024
+      current_medicines_excluded: *id025
+      current_medicines_caution: *id026
+      other: <18 exclude; absolute GFR <10 contraindicated; 10..30 reduced by 50%; >30 unchanged; hepatic mild/moderate
+        consider 50%; severe contraindicated; simultaneous modifiers no product; haemodialysis separate; XR 75/150
+        cannot realize 37.5; whole capsule with food
+    gate_order:
+    - unavailable_source
+    - known immediate stop/exclusion
+    - invalid/missing applicable field
+    - unresolved source caution/modifier
+    - dose branch
+    reference_display: Source scheme only, without individualized dose; no omitted field treated as negative
+    branches:
+    - branch_id: form_limit
+      when: identified Velaxin XR 75/150
+      expected_output:
+        result_type: form_not_feasible
+        total_daily_dose_mg: null
+        dose_per_administration_mg: null
+        administrations_per_day: null
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        source_initial_mg: 37.5
+        initial_days: 7
+        source_next_mg: 75
+        IR_substitution_allowed: false
+      source_basis:
+      - source_id: RU-VENLA-XR
+        version: Версия HTML не датирована; снимок и SHA-256 от 08.10.2026; отдельное РУ формы подтверждено реестром
+        locator: HTML §1–3, §4.1–4.3, §4.5–4.6, §8; заголовки формы/режима сохранены
+        sha256: 3656aeeae0ef60f75fe0ea90e1a9f73ba3734e7b8825e163752d9e6e278bf838
+      - source_id: RU-PANIC
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.1, PDF с.25–33; приложение А3, с.76–77
+        sha256: a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d
+      - source_id: RU-VENLA-IR
+        version: Версия HTML не датирована; снимок и SHA-256 от 08.10.2026; отдельное РУ формы подтверждено реестром
+        locator: HTML §1–3, §4.1–4.3, §4.5–4.6, §8; заголовки формы/режима сохранены
+        sha256: ecad93859bf9c84daadfcc77bf765ed86d85c44ea4d27edc49903bf57dffca01
+    source_gate_scope: start/adjust applicability; both identified products for switch
+    typed_source_conditions:
+    - input: hepatic
+      operator: category_equals
+      value: mild
+      action: clinician_choice
+      source_ref: RU-VENLA-XR
+      source_locator: HTML §1–3, §4.1–4.3, §4.5–4.6, §8; заголовки формы/режима сохранены
+    - input: hepatic
+      operator: category_equals
+      value: moderate
+      action: clinician_choice
+      source_ref: RU-VENLA-XR
+      source_locator: HTML §1–3, §4.1–4.3, §4.5–4.6, §8; заголовки формы/режима сохранены
+    - input: hepatic
+      operator: category_equals
+      value: severe
+      action: not_applicable_standard_numeric_branch
+      source_ref: RU-VENLA-XR
+      source_locator: HTML §1–3, §4.1–4.3, §4.5–4.6, §8; заголовки формы/режима сохранены
+  venla-xr-social-start:
+    required_inputs:
+    - age
+    - form
+    - hepatic
+    - pregnancy
+    - lactation
+    - medicines
+    - allergy
+    - renal_metric
+    - recent_infarction
+    - unstable_angina
+    - heart_failure
+    - coronary_disease
+    - ecg_change
+    - qt_risk
+    - electrolyte_imbalance
+    - hypertension
+    - tachycardia
+    - seizure_history
+    - glaucoma
+    - mania
+    - bleeding_risk
+    - low_body_mass
+    - urinary_impairment
+    - low_blood_pressure
+    - diabetes
+    - recent_stroke
+    - hyponatremia_risk
+    - ect
+    - hypercholesterolemia
+    - alcohol_use
+    - suicide_risk
+    - pregnancy_suspected
+    - diastolic_BP
+    conditional_inputs:
+      maoi_type: medicines contains current/stopped MAOI or unidentified interaction class
+      maoi_stopped_at: medicines contains stopped MAOI; per relevant record
+    source_gates:
+    - source_ref: RU-VENLA-XR
+      version: Версия HTML не датирована; снимок и SHA-256 от 08.10.2026; отдельное РУ формы подтверждено реестром
+      locator: HTML §4.2–4.6
+      exclusions: *id023
+      cautions: *id024
+      current_medicines_excluded: *id025
+      current_medicines_caution: *id026
+      other: <18 exclude; absolute GFR <10 contraindicated; 10..30 reduced by 50%; >30 unchanged; hepatic mild/moderate
+        consider 50%; severe contraindicated; simultaneous modifiers no product; haemodialysis separate; XR 75/150
+        cannot realize 37.5; whole capsule with food
+    gate_order:
+    - unavailable_source
+    - known immediate stop/exclusion
+    - invalid/missing applicable field
+    - unresolved source caution/modifier
+    - dose branch
+    reference_display: Source scheme only, without individualized dose; no omitted field treated as negative
+    branches:
+    - branch_id: usual
+      when: absolute_GFR>30; no hepatic insufficiency; all gates clear
+      expected_output:
+        result_type: exact
+        total_daily_dose_mg: 75
+        dose_per_administration_mg: 75.0
+        administrations_per_day: 1
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        maximum_mg: 225
+        minimum_increase_interval_weeks: 2
+        automatic_increment: null
+        higher_social_benefit_proven: false
+      source_basis:
+      - source_id: RU-VENLA-XR
+        version: Версия HTML не датирована; снимок и SHA-256 от 08.10.2026; отдельное РУ формы подтверждено реестром
+        locator: HTML §1–3, §4.1–4.3, §4.5–4.6, §8; заголовки формы/режима сохранены
+        sha256: 3656aeeae0ef60f75fe0ea90e1a9f73ba3734e7b8825e163752d9e6e278bf838
+      - source_id: RU-PHOB
+        version: '2024; каталог: опубликовано 21.10.2024, применяется'
+        locator: §1.4; §3.1 PDF с.32–38; приложение А3 с.93
+        sha256: 2a51982fb1919c0ef9115e5231f8ef9d65863306d2d5b95aa0aa7821a6f328b7
+    - branch_id: renal_reduction
+      when: 10<=absolute_GFR<=30; liver clear
+      expected_output:
+        result_type: form_not_feasible
+        total_daily_dose_mg: null
+        dose_per_administration_mg: null
+        administrations_per_day: null
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        published_reduction_percent: 50
+        arithmetic_total_mg: 37.5
+        executable_dose: null
+        IR_substitution_allowed: false
+      source_basis:
+      - source_id: RU-VENLA-XR
+        version: Версия HTML не датирована; снимок и SHA-256 от 08.10.2026; отдельное РУ формы подтверждено реестром
+        locator: HTML §1–3, §4.1–4.3, §4.5–4.6, §8; заголовки формы/режима сохранены
+        sha256: 3656aeeae0ef60f75fe0ea90e1a9f73ba3734e7b8825e163752d9e6e278bf838
+      - source_id: RU-PHOB
+        version: '2024; каталог: опубликовано 21.10.2024, применяется'
+        locator: §1.4; §3.1 PDF с.32–38; приложение А3 с.93
+        sha256: 2a51982fb1919c0ef9115e5231f8ef9d65863306d2d5b95aa0aa7821a6f328b7
+    - branch_id: hepatic_reduction
+      when: mild/moderate hepatic insufficiency; renal clear
+      expected_output:
+        result_type: clinician_choice
+        total_daily_dose_mg: null
+        dose_per_administration_mg: null
+        administrations_per_day: null
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        published_reduction_percent: 50
+        arithmetic_total_mg: 37.5
+        executable_dose: null
+      source_basis:
+      - source_id: RU-VENLA-XR
+        version: Версия HTML не датирована; снимок и SHA-256 от 08.10.2026; отдельное РУ формы подтверждено реестром
+        locator: HTML §1–3, §4.1–4.3, §4.5–4.6, §8; заголовки формы/режима сохранены
+        sha256: 3656aeeae0ef60f75fe0ea90e1a9f73ba3734e7b8825e163752d9e6e278bf838
+      - source_id: RU-PHOB
+        version: '2024; каталог: опубликовано 21.10.2024, применяется'
+        locator: §1.4; §3.1 PDF с.32–38; приложение А3 с.93
+        sha256: 2a51982fb1919c0ef9115e5231f8ef9d65863306d2d5b95aa0aa7821a6f328b7
+    - branch_id: joint_modifiers
+      when: renal and hepatic modifier overlap
+      expected_output:
+        result_type: clinician_choice
+        total_daily_dose_mg: null
+        dose_per_administration_mg: null
+        administrations_per_day: null
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        product_of_reductions: null
+      source_basis:
+      - source_id: RU-VENLA-XR
+        version: Версия HTML не датирована; снимок и SHA-256 от 08.10.2026; отдельное РУ формы подтверждено реестром
+        locator: HTML §1–3, §4.1–4.3, §4.5–4.6, §8; заголовки формы/режима сохранены
+        sha256: 3656aeeae0ef60f75fe0ea90e1a9f73ba3734e7b8825e163752d9e6e278bf838
+      - source_id: RU-PHOB
+        version: '2024; каталог: опубликовано 21.10.2024, применяется'
+        locator: §1.4; §3.1 PDF с.32–38; приложение А3 с.93
+        sha256: 2a51982fb1919c0ef9115e5231f8ef9d65863306d2d5b95aa0aa7821a6f328b7
+    source_gate_scope: start/adjust applicability; both identified products for switch
+    typed_source_conditions:
+    - input: hepatic
+      operator: category_equals
+      value: mild
+      action: clinician_choice
+      source_ref: RU-VENLA-XR
+      source_locator: HTML §1–3, §4.1–4.3, §4.5–4.6, §8; заголовки формы/режима сохранены
+    - input: hepatic
+      operator: category_equals
+      value: moderate
+      action: clinician_choice
+      source_ref: RU-VENLA-XR
+      source_locator: HTML §1–3, §4.1–4.3, §4.5–4.6, §8; заголовки формы/режима сохранены
+    - input: hepatic
+      operator: category_equals
+      value: severe
+      action: not_applicable_standard_numeric_branch
+      source_ref: RU-VENLA-XR
+      source_locator: HTML §1–3, §4.1–4.3, §4.5–4.6, §8; заголовки формы/режима сохранены
+  venla-xr-taper-limit:
+    required_inputs:
+    - age
+    - form
+    - current_dose
+    - duration
+    - withdrawal_severity
+    - past_withdrawal
+    conditional_inputs: {}
+    source_gates:
+    - source_ref: RU-VENLA-XR
+      version: Версия HTML не датирована; снимок и SHA-256 от 08.10.2026; отдельное РУ формы подтверждено реестром
+      locator: HTML §4.2–4.6
+      exclusions: []
+      cautions: []
+      current_medicines_excluded: []
+      current_medicines_caution: []
+      stop: []
+      other: Source-specific withdrawal guidance; exact taper not inferred. Published immediate cessation conditions
+        take precedence if treatment ongoing.
+    gate_order:
+    - unavailable_source
+    - known immediate stop/exclusion
+    - invalid/missing applicable field
+    - unresolved source caution/modifier
+    - dose branch
+    reference_display: Source scheme only, without individualized dose; no omitted field treated as negative
+    branches:
+    - branch_id: source_limit
+      when: known current dose/form/duration; no urgent stop condition
+      expected_output:
+        result_type: clinician_choice
+        total_daily_dose_mg: null
+        dose_per_administration_mg: null
+        administrations_per_day: null
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        duration_constraint:
+          operator: minimum_choice
+          source_options_weeks:
+          - 1
+          - 2
+          chosen_minimum_weeks: null
+          hard_upper_limit_weeks: null
+          exact_taper_duration_weeks: null
+          slower_if_symptoms: true
+          source_ref: RU-VENLA-XR
+          source_locator: HTML §4.2 Синдром отмены
+        full_taper_calendar: null
+        universal_percentage: null
+      source_basis:
+      - source_id: RU-VENLA-XR
+        version: Версия HTML не датирована; снимок и SHA-256 от 08.10.2026; отдельное РУ формы подтверждено реестром
+        locator: HTML §1–3, §4.1–4.3, §4.5–4.6, §8; заголовки формы/режима сохранены
+        sha256: 3656aeeae0ef60f75fe0ea90e1a9f73ba3734e7b8825e163752d9e6e278bf838
+      - source_id: RU-GAD
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78
+        sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+    - branch_id: withdrawal
+      when: withdrawal symptoms present
+      expected_output:
+        result_type: clinician_choice
+        total_daily_dose_mg: null
+        dose_per_administration_mg: null
+        administrations_per_day: null
+        schedule: []
+        missing_fields: []
+        unconditional_future_stages: false
+        automatic_next_reduction: false
+        slower_step: null
+        prior_dose_resumption: clinician consideration where source permits
+      source_basis:
+      - source_id: RU-VENLA-XR
+        version: Версия HTML не датирована; снимок и SHA-256 от 08.10.2026; отдельное РУ формы подтверждено реестром
+        locator: HTML §1–3, §4.1–4.3, §4.5–4.6, §8; заголовки формы/режима сохранены
+        sha256: 3656aeeae0ef60f75fe0ea90e1a9f73ba3734e7b8825e163752d9e6e278bf838
+      - source_id: RU-GAD
+        version: '2024; каталог: опубликовано 19.09.2024, применяется'
+        locator: §3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78
+        sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+    source_gate_scope: discontinuation statement and symptom-dependent hold/stop only; start exclusions do not prevent
+      discontinuation
+    typed_source_conditions: []

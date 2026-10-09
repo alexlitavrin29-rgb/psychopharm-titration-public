@@ -1,0 +1,208 @@
+[
+  {
+    "source_id": "RU-AGO",
+    "local_file": "source_downloads/Вальдоксан — агомелатин.pdf",
+    "pages": 16,
+    "title": "Вальдоксан (агомелатин), российская ОХЛП, 25 мг",
+    "url": "https://servier.ru/wp-content/uploads/2023/09/20241228_spc-ru_valdoxan_rus.pdf",
+    "rules": [
+      "ago-depression-start",
+      "ago-gad-start",
+      "ago-stop",
+      "switch-esc-ago",
+      "switch-parox-ago-selected-example",
+      "switch-parox-ago",
+      "switch-ser-ago"
+    ]
+  },
+  {
+    "source_id": "RU-DEP",
+    "local_file": "source_snapshots/depression-301_3.pdf",
+    "pages": 125,
+    "title": "Депрессивный эпизод, Рекуррентное депрессивное расстройство, КР 301_3",
+    "url": "https://apicr.minzdrav.gov.ru/api.ashx?id=301_3&op=GetClinrecPdf",
+    "rules": [
+      "ago-depression-start",
+      "dulox-depression-start",
+      "fluvox-depression-start",
+      "fluvox-taper-limit",
+      "parox-taper-example",
+      "switch-esc-ago",
+      "switch-esc-ser",
+      "switch-parox-ago-selected-example",
+      "switch-parox-ago",
+      "switch-ser-ago",
+      "switch-ser-esc"
+    ]
+  },
+  {
+    "source_id": "RU-DULOX",
+    "local_file": "source_downloads/Дулоксента — дулоксетин.pdf",
+    "pages": 35,
+    "title": "Дулоксента, ОХЛП, кишечнорастворимые капсулы 30/60 мг",
+    "url": "https://www.krka.ru/_assets/Duloxenta-CU_SmPC_18.07.2024.pdf",
+    "rules": [
+      "dulox-depression-start",
+      "dulox-gad-adjust",
+      "dulox-gad-start",
+      "dulox-taper-limit"
+    ]
+  },
+  {
+    "source_id": "RU-ESC",
+    "local_file": "remediation_round2/Selectra_current_registry.pdf",
+    "pages": 17,
+    "title": "Селектра (эсциталопрам), текущая официальная ОХЛП РУ ЛП-№(012351)-(РГ-RU), штамп 31.10.2025/0002",
+    "url": "https://lk.regmed.ru/Register/ViewPDFfromDAToken?Token=[REDACTED]",
+    "rules": [
+      "esc-adult-adjust",
+      "esc-cyp2c19-start",
+      "esc-elderly-start",
+      "esc-gad-start",
+      "esc-hepatic-start",
+      "esc-panic-start",
+      "esc-social-start",
+      "esc-taper-limit",
+      "switch-esc-ago",
+      "switch-esc-ser",
+      "switch-ser-esc"
+    ]
+  },
+  {
+    "source_id": "RU-FLUVOX",
+    "local_file": "source_downloads/Феварин — флувоксамин.pdf",
+    "pages": 19,
+    "title": "Феварин, ОХЛП 50/100 мг",
+    "url": "https://s3.k2.cloud/static.abbottpro.ru/iblock/1e1/1e119bb21898172a466b489db3ef4837/Fevarin-SmPC-0002_07.02.2025-_1_.pdf",
+    "rules": [
+      "fluvox-depression-start",
+      "fluvox-taper-limit"
+    ]
+  },
+  {
+    "source_id": "RU-GAD",
+    "local_file": "audit/retrieved/RU-GAD.pdf",
+    "pages": 121,
+    "title": "Генерализованное тревожное расстройство, КР 457_3",
+    "url": "https://apicr.minzdrav.gov.ru/api.ashx?id=457_3&op=GetClinrecPdf",
+    "rules": [
+      "ago-gad-start",
+      "ago-stop",
+      "dulox-gad-adjust",
+      "dulox-gad-start",
+      "dulox-taper-limit",
+      "esc-adult-adjust",
+      "esc-taper-limit",
+      "preg-gad-adjust",
+      "preg-gad-start",
+      "preg-renal-start",
+      "preg-taper-limit",
+      "ser-adult-adjust",
+      "venla-xr-gad-start",
+      "venla-xr-taper-limit"
+    ]
+  },
+  {
+    "source_id": "RU-PANIC",
+    "local_file": "audit/retrieved/RU-PANIC.pdf",
+    "pages": 140,
+    "title": "Паническое расстройство, КР 456_3",
+    "url": "https://apicr.minzdrav.gov.ru/api.ashx?id=456_3&op=GetClinrecPdf",
+    "rules": [
+      "esc-adult-adjust",
+      "esc-taper-limit",
+      "parox-panic-kr",
+      "parox-taper-example",
+      "phen-taper-limit",
+      "preg-gad-adjust",
+      "ser-adult-adjust",
+      "ser-taper-limit",
+      "venla-xr-panic-form-limit"
+    ]
+  },
+  {
+    "source_id": "RU-PAROX",
+    "local_file": "source_downloads/Рексетин — пароксетин.pdf",
+    "pages": 39,
+    "title": "Рексетин (пароксетин), ЛВ и ОХЛП, 20 мг",
+    "url": "https://www.gedeonrichter.com/ru/-/media/sites/ru/russian-products/files/185/productinstruction_lvokhlpreksetin_pdf.pdf?hash=F730A776EE3E7A92B2EA6A9EA56DCAC2&rev=a198bea8079541528614f6df7eee87fd",
+    "rules": [
+      "parox-panic-kr",
+      "parox-taper-example",
+      "switch-parox-ago-selected-example",
+      "switch-parox-ago"
+    ]
+  },
+  {
+    "source_id": "RU-PHEN",
+    "local_file": "source_downloads/Феназепам — бромдигидрохлорфенилбензодиазепин.pdf",
+    "pages": 5,
+    "title": "Феназепам, инструкция ородиспергируемых таблеток",
+    "url": "https://www.valentapharm.com/upload/iblock/fec/juwc91mjfnc770nida6ni9syp92x00if.pdf",
+    "rules": [
+      "phen-taper-limit"
+    ]
+  },
+  {
+    "source_id": "RU-PHOB",
+    "local_file": "audit/retrieved/RU-PHOB.pdf",
+    "pages": 148,
+    "title": "Тревожно-фобические расстройства, КР 455_3",
+    "url": "https://apicr.minzdrav.gov.ru/api.ashx?id=455_3&op=GetClinrecPdf",
+    "rules": [
+      "venla-xr-social-start"
+    ]
+  },
+  {
+    "source_id": "RU-PREG",
+    "local_file": "source_downloads/Лирика — прегабалин.pdf",
+    "pages": 30,
+    "title": "Лирика (прегабалин), ОХЛП ЕАЭС, капсулы",
+    "url": "https://www.viatris.ru/-/media/project/common/viatrisru/pdf/product-catalog/lyrica_eaeu_smpc_13-aug-2025_ru.pdf",
+    "rules": [
+      "preg-gad-adjust",
+      "preg-gad-start",
+      "preg-renal-start",
+      "preg-taper-limit"
+    ]
+  },
+  {
+    "source_id": "RU-SER",
+    "local_file": "source_downloads/Золофт — сертралин.pdf",
+    "pages": 22,
+    "title": "Золофт (сертралин), ОХЛП ЕАЭС, таблетки",
+    "url": "https://www.viatris.ru/-/media/project/common/viatrisru/pdf/product-catalog/0006_zoloft_smpc-eaeu_24-apr-2025_ru.pdf",
+    "rules": [
+      "ser-adult-adjust",
+      "ser-panic-start",
+      "ser-social-start",
+      "ser-taper-limit",
+      "switch-esc-ser",
+      "switch-ser-ago",
+      "switch-ser-esc"
+    ]
+  },
+  {
+    "source_id": "RU-VENLA-IR",
+    "local_file": "source_snapshots/velaxin-IR.html",
+    "pages": null,
+    "title": "Велаксин, ОХЛП таблеток 37,5/75 мг",
+    "url": "https://egispro.ru/medications/velaksin/instructions/velaksin_37_5_mg_28_sht/",
+    "rules": [
+      "venla-xr-panic-form-limit"
+    ]
+  },
+  {
+    "source_id": "RU-VENLA-XR",
+    "local_file": "source_snapshots/velaxin-XR.html",
+    "pages": null,
+    "title": "Велаксин, ОХЛП пролонгированных капсул 75/150 мг",
+    "url": "https://egispro.ru/medications/velaksin/instructions/velaksin_75_mg_28_sht/",
+    "rules": [
+      "venla-xr-gad-start",
+      "venla-xr-panic-form-limit",
+      "venla-xr-social-start",
+      "venla-xr-taper-limit"
+    ]
+  }
+]

@@ -1,0 +1,439 @@
+{
+  "baseline_file_count": 342,
+  "changed_existing_files": [
+    {
+      "path": "research/00_summary.md",
+      "baseline_sha256": "0dc6590feb6f8d540ac0c1a10dfdf5d94446f562dfc6a928faeea164195b24c2",
+      "current_sha256": "0ac8ba8f2d4968d7056d65d7e5dd13279de2af8984236bad8e178b3a1ba4dcf3"
+    },
+    {
+      "path": "research/01_scope_and_sources.md",
+      "baseline_sha256": "e15120fc3bb2bc24cfd7c48cf66b4d6b17cced8b04622f0dff2bb758e8454872",
+      "current_sha256": "bc076cd5f8495393d1b7aba0c887f85e7dcf2ff4685e52ae699d99e7d3197019"
+    },
+    {
+      "path": "research/02_rules.md",
+      "baseline_sha256": "5c73a158b4ff8640740535a7a38e2ca7e9446f34572bb5d3ba039c01c06f0780",
+      "current_sha256": "3f7db768b6f84d3cafb77b33e2211e811c35f1352f4260ab183a3eac5a38cf2b"
+    },
+    {
+      "path": "research/03_question_flows.md",
+      "baseline_sha256": "177db872141d56bb788ae2bdf8bfdf2f429a27f5f601b5b38a6a3085ef202576",
+      "current_sha256": "aea73e0aaa960c621a6820f9e5e52e2ccd77a3712e4536947f9bb56e81b7f65f"
+    },
+    {
+      "path": "research/05_gaps_and_conflicts.md",
+      "baseline_sha256": "be3da20d1fdf54927ee88d3760d97ef6a2e3713c605894143d61f4ed2c278843",
+      "current_sha256": "ffd5cc2f3bb9407e20df97c25c57e39cf9a5bd587fe406b6dc8b2b9f9daccf49"
+    },
+    {
+      "path": "research/06_implementation_brief.md",
+      "baseline_sha256": "70b6c80b3f10fc0e3a3e059819fd462c5117e9c46368d72a295145a295204dce",
+      "current_sha256": "c6a3b2c71f197ac1b28925951f3ec530084643d4db7641120911340a4f3d860d"
+    },
+    {
+      "path": "research/07_acceptance.md",
+      "baseline_sha256": "8d46feda190627e4d12512ef6a38511b1782a75b70ddbcc9e289e835593faa0a",
+      "current_sha256": "df342729827f0807a3bc6cf48c9ee502b7944b967d1ae8e93a3a3a1b1c28bc8b"
+    },
+    {
+      "path": "research/08_russian_priority_update.md",
+      "baseline_sha256": "b27684a69edd886b62ec568be10306158104d49e8c467606d5abd2631e90d2ae",
+      "current_sha256": "4ec13c94c1e3ec139115d2b72820633bfb2b2ae73c1efef70553e741a52d8e6d"
+    },
+    {
+      "path": "research/09_download_links.md",
+      "baseline_sha256": "6d7301af6ed77cbf1886f6df171549d59eed345ccddc9d86e06b727884a96192",
+      "current_sha256": "63203865132b37d23b6dd8c7146216ebd6930dc87cc770e55f009804c3bd9514"
+    },
+    {
+      "path": "research/10_source_audit.md",
+      "baseline_sha256": "e97989b3446000a02fc1ae3120ec863ca63c4dfb8a23dd4407f2c9d8e987636f",
+      "current_sha256": "6fb0394676489b648b7aa3a40376bd75da2c2c8a9169f994ca62959f12c5d80c"
+    },
+    {
+      "path": "research/acceptance_audit.json",
+      "baseline_sha256": "905f3c3492b82a43fb3009963b3be2fea9e83dca8d678376981d96cdc36b1556",
+      "current_sha256": "f6aab0d66fcc592f42823c14cd5481f8eec4aa06714a5a4e9ea83da8144e85d0"
+    },
+    {
+      "path": "research/findings/ru-depression-withdrawal.yaml",
+      "baseline_sha256": "8da3a4f10e8f61ee5aa67de4ec17fab8610e9f729be1703abf972c43366e99f8",
+      "current_sha256": "fdcf4efa38c0f8d48dbb948a68f8bbed63c835aff663ce081eb4b609051d0d25"
+    },
+    {
+      "path": "research/findings/switch-moc-ser.yaml",
+      "baseline_sha256": "c765cb6209ff257b6c2bea9fd6b27b7951501425a0db5890b3e5c42a4740d6d0",
+      "current_sha256": "8848265bc705ef9ae644d15fd1d87bb6e070b68522d48331f1cf930c83b29e04"
+    },
+    {
+      "path": "research/findings/switch-ser-moc.yaml",
+      "baseline_sha256": "211a1eeb624fa765b95eaa68a5c6c595eef35fb8cc3140a9d79e918699d50e2e",
+      "current_sha256": "73a47972ce294f7703881f915fde223609345d8cfe2cb9b6d76ec9df535aa748"
+    },
+    {
+      "path": "research/input_catalog.csv",
+      "baseline_sha256": "a3d12572bf5b2889c672fbda4cb14febe60c1c4534fdb0fefdd6eba77d7fa94f",
+      "current_sha256": "8a6e4ab22db0b2b30c9a66ec4b3b0ab09c8ec0a200857048f8e0c3dd87b847bc"
+    },
+    {
+      "path": "research/question_counts.json",
+      "baseline_sha256": "724b6186d783db07a00ac01e48177dab92fdda116d2bb6104ecd3723abf20c97",
+      "current_sha256": "f4cc0c143890d80bffcfcf3e8a9357a523ad908794ae7d355480ac9046f87f88"
+    },
+    {
+      "path": "research/question_flows.yaml",
+      "baseline_sha256": "5b2d9f653a5ee3acd42a708a13d733ad1dde85cdb1c8be6d92c693be593eac16",
+      "current_sha256": "ae3582b18affb70602a95dadf9e810a1b0c17ecfa7b8693d7ed80ad12731c27e"
+    },
+    {
+      "path": "research/reference_rules/diazepam-asam-initial-taper.yaml",
+      "baseline_sha256": "b05d4d925078e4322e750e1f7cc3466ed42a910b2793970920e482c2bed180fe",
+      "current_sha256": "c3dbd1ec8b3fbe03fa8c0aaf73fff3d9de9b708a30fe883f24fda0df7a39ff69"
+    },
+    {
+      "path": "research/reference_rules/nice-ad-taper-principles.yaml",
+      "baseline_sha256": "eb473b211e4d13fedf39ae91e39f24d4603043e93a9d0ae50b5bc9bb71b03fef",
+      "current_sha256": "f374e10cd882ef1a783576e386cd678a36ea555afcd57a0e13396499333af898"
+    },
+    {
+      "path": "research/reference_rules/pax-uk-trial-taper.yaml",
+      "baseline_sha256": "37a262f62c78d67f2814e4f3ad5d93f8ff06d18afe16eedececf2a1014e5f9ab",
+      "current_sha256": "9dd0ab772e821bda5aeb66fc462e11cd928cd7de0cbb8ad294e784dc3a005094"
+    },
+    {
+      "path": "research/reference_rules/switch-ago-fluvox.yaml",
+      "baseline_sha256": "c514cb12687398de8b0e3bbb57d3f8f92199b4660abf10fdca8afd73c9fbc64b",
+      "current_sha256": "a69abe491414bbdaa20db1a0586bff60a805fb421086cebf21d0139bfec5a90d"
+    },
+    {
+      "path": "research/reference_rules/switch-esc-ser.yaml",
+      "baseline_sha256": "5a15476c1fd5c474b2a2e36f6f5694fb8d27262d0393cf74b1bbf47359805c92",
+      "current_sha256": "dc80b90b94a983d0f166a6fe0485c08d69dbe1759a5c14cd12ae3e58eed1be75"
+    },
+    {
+      "path": "research/reference_rules/switch-fluox-ser.yaml",
+      "baseline_sha256": "b10d5d970abe24b32ead15bfa87ad2a71036457b0e0ad523d8382a9919101c98",
+      "current_sha256": "8a02477be80cb0d71d22f1712e57d19fbe4d9dc1f94323d434820f9fb171a920"
+    },
+    {
+      "path": "research/reference_rules/switch-fluvox-ago.yaml",
+      "baseline_sha256": "3e85806d47845b3c7960f7dd63b2d9d9c222ee71de30c4b8ea7576a2eb077ca3",
+      "current_sha256": "bd256f965b30e99a60874fca1016e64d6b0669d6e67f22400c96bceafbf574e4"
+    },
+    {
+      "path": "research/reference_rules/switch-moc-ser.yaml",
+      "baseline_sha256": "3ea91bdbf6c444f3fec523e7673b820cfbf1ac8760ea9c6dfcfcf1d7f76817ca",
+      "current_sha256": "35add91c503ef28ba0bb875928635fd1e1c0fe049c97c462de4379953e945c9e"
+    },
+    {
+      "path": "research/reference_rules/switch-ser-esc.yaml",
+      "baseline_sha256": "02745f8b372861d220ad76278e6cfd48d29e79a8fbc3b65c8e404ee17f17bf9c",
+      "current_sha256": "a32b79554ac2120e7cd29ee79c2863eed84cd2d1b0a82d1f93bf8f93b5489c2a"
+    },
+    {
+      "path": "research/reference_rules/switch-ser-fluox.yaml",
+      "baseline_sha256": "69847b2736fcb28efe68f40f8f414aa92050d59d5444ec2ea3d37f293676998b",
+      "current_sha256": "c383b19f9260c256ed9d09d069e1ecf459aae76503be25fd0d0f087f095fe2b3"
+    },
+    {
+      "path": "research/reference_rules/switch-ser-moc.yaml",
+      "baseline_sha256": "67a937e67681adc94306cab852bbbfc69fee7bfb32d4265eee19f144b096c8fa",
+      "current_sha256": "f842db87a15aa32a92fd220341d9b388eb55c45d18665b4bef63800fe15ceb10"
+    },
+    {
+      "path": "research/reference_test_cases.yaml",
+      "baseline_sha256": "7b4a31bb0f8af8a67c1e94f0170a8bb1a1908a9ca0fea6309a9a67763576e2f7",
+      "current_sha256": "45e9f4fa47d46dc3e0c76482732a1e5af467ed60cc7a01f115bb2419bd3ce9ba"
+    },
+    {
+      "path": "research/rules/ago-depression-start.yaml",
+      "baseline_sha256": "d4aadfee113af239a2eef8357e10b5fc8e2e74b8fc571c8a7ad801fe34961ccb",
+      "current_sha256": "0bc511f0916235bc3bd90b0fee87c9c2986a6c8e031c699737f68928c134ad5a"
+    },
+    {
+      "path": "research/rules/ago-gad-start.yaml",
+      "baseline_sha256": "1fed6b4e6bb7e01e1c6f8ef2bc19112ca83e0e4bb71aa3cc15dfc9ba103439af",
+      "current_sha256": "ed210e75cf9806d37bade26dce2b2832d8a8b5c12c7e17381cce3acedff1aa45"
+    },
+    {
+      "path": "research/rules/ago-stop.yaml",
+      "baseline_sha256": "a71b2a722409ae266ebc87124127e892fd61779c68c26d5eacc88a78c22a5641",
+      "current_sha256": "57c637d1aa9be8556793737c0e9ff35305042d257d729439b5eee7fe6cb1807d"
+    },
+    {
+      "path": "research/rules/dulox-depression-start.yaml",
+      "baseline_sha256": "0a8a10e08841276abcca100af283ea4caab452f2cacfbf6618b830de33e7f588",
+      "current_sha256": "f04e8c19727f19b875968811ccc443d219ab49e6ab3157853bb086278026fa78"
+    },
+    {
+      "path": "research/rules/dulox-gad-adjust.yaml",
+      "baseline_sha256": "bd421c515785d5c3b981b4322b1313eaac3b9613f4352b4619baef1e195b4881",
+      "current_sha256": "d73d992dd3a895730b31da70a9ff39ce15b9a3fe24652aeeee0574a8eef73b1a"
+    },
+    {
+      "path": "research/rules/dulox-gad-start.yaml",
+      "baseline_sha256": "3078cdeb8471de8299c968dca9ceb21afaa12121a4a9c4c44e4739d5c8c6a0f5",
+      "current_sha256": "36c7ff40477c18825f2accb1606453fdf0405516fa1fad1a2ddc1bd9adee02d0"
+    },
+    {
+      "path": "research/rules/dulox-taper-limit.yaml",
+      "baseline_sha256": "aee3cae81135ba9a79ff4453288e1cd5b45452bcad3d412c5d7674d69623e873",
+      "current_sha256": "6ef4f2b690264bfd242433577787b707b43435a86a538354924fc055d9db1f4e"
+    },
+    {
+      "path": "research/rules/esc-adult-adjust.yaml",
+      "baseline_sha256": "6ccbf4d1a1ad4e262c13f3341a3879ec78801c44c40e4b423686b93d0171acba",
+      "current_sha256": "12f4969f92554b8f062fca10f58d33101d799ad50a2479f82108fd87e5775b03"
+    },
+    {
+      "path": "research/rules/esc-cyp2c19-start.yaml",
+      "baseline_sha256": "c14759999e48bccd4eac5346e248ab692330c91fd712df06c01b44326ad08a80",
+      "current_sha256": "65aeecb19aff9a0c3a10391e27b31b4fec39c0d73408a56bbcecb35ec7400d16"
+    },
+    {
+      "path": "research/rules/esc-elderly-start.yaml",
+      "baseline_sha256": "f8da8f1e4e6e4f4e15ffaed90679c7c115b76582d29e43bb25018fbb24cefbac",
+      "current_sha256": "a394a12d16fc84a07e828ed9ae7f07aa216b8f14c2d0ede146f280e2da8fe078"
+    },
+    {
+      "path": "research/rules/esc-gad-start.yaml",
+      "baseline_sha256": "00c4a3eb2c33b9176625c17c5978cf008250fdb9294c0914e7414f00fc76b4a1",
+      "current_sha256": "c532baa8745af4b137b04ab2feb818218ecda90aa0a59e6cd3a713010ab44a0a"
+    },
+    {
+      "path": "research/rules/esc-hepatic-start.yaml",
+      "baseline_sha256": "bfd4b79947bbfa5424bd7a23d6d2e85f99ebd1556747904c3292d2d081bc222e",
+      "current_sha256": "d6e05a07becda90f4519575e5236d2ab9e282d8b21e02df04da38ecc103276f7"
+    },
+    {
+      "path": "research/rules/esc-panic-start.yaml",
+      "baseline_sha256": "382b6378957b16c1af2688dd0bcba6f7f8f6621938f40c86364567cfd981a7f9",
+      "current_sha256": "f43712c79d65ca3f171bdbd8a40c3ccb97afcecdb2f4df6cabeb62da1f001656"
+    },
+    {
+      "path": "research/rules/esc-social-start.yaml",
+      "baseline_sha256": "8fe79af34b524cfb26749f3b18689de13cdb86ec7e64e7ce8c518adcf2864d2e",
+      "current_sha256": "efe5cb5a7763c0f2708f92a363211562664c4af310798c93edc84912db4f8c91"
+    },
+    {
+      "path": "research/rules/esc-taper-limit.yaml",
+      "baseline_sha256": "780e23ce401e88f391c543efe30f1a0323d109ee2107190ad0e26782acec63a0",
+      "current_sha256": "e839e5429bd75276dab6ab0649826adca32df13eec31b7bebc121cc7fc1dbfdb"
+    },
+    {
+      "path": "research/rules/fluvox-depression-start.yaml",
+      "baseline_sha256": "f2da710a05ecd65cfb23f01b1d526afd76bc2de42f2a0348709b676a45944e89",
+      "current_sha256": "9cb734d21f5673566833db5a54ea3e97a756dd8a801ed65b8a951f6040f81699"
+    },
+    {
+      "path": "research/rules/fluvox-taper-limit.yaml",
+      "baseline_sha256": "70d4a2ef9499a0877445870af3d5772719e83e4fc4d22a74e9d1cd102d8f6932",
+      "current_sha256": "a8575e28ec966f43b2973774595fa7a0c869c237204a43717877d37775809df8"
+    },
+    {
+      "path": "research/rules/parox-panic-kr.yaml",
+      "baseline_sha256": "b14f178fc6cf8f748b4ee2a57058d44ca4a0f8dfe04ae8c550b291210e402283",
+      "current_sha256": "111096980092a787b35f38486d7a140a3a9e7349637ba849171fbdf0775d6479"
+    },
+    {
+      "path": "research/rules/parox-taper-example.yaml",
+      "baseline_sha256": "92d5b6189a5a4205a9e630b3d72ffb39cba4812cb36c07adcc2141e5203fc852",
+      "current_sha256": "cfbff396c90dd714ca92deb3ce1c31a34b87242ba79d2c4590b1c3a8043c02b2"
+    },
+    {
+      "path": "research/rules/phen-taper-limit.yaml",
+      "baseline_sha256": "fe22a770512d84b290810316467b0ec24bfc260fb9af225930f1179240234d79",
+      "current_sha256": "0f0d48b3f0a79565a144ed0811ce85cc32166fe820a00b2af500468dd58d4a88"
+    },
+    {
+      "path": "research/rules/preg-gad-adjust.yaml",
+      "baseline_sha256": "3faccb1ce0b97e8bc4fd93a418d7be3a273452cd7a9f5a63920da06978877164",
+      "current_sha256": "eb72b1dcb55eeab8911786bcf8de9e40301a7c8532de449a77254187d3fc167b"
+    },
+    {
+      "path": "research/rules/preg-gad-start.yaml",
+      "baseline_sha256": "f1f33d094eab9f5e1dd53bc4a473346a1579c47ae784dd5f1d457cba80f672d7",
+      "current_sha256": "aa7e22b898d9e715ccaf5199977c8e37ff5db486b24bc10bcdef25821bb6d971"
+    },
+    {
+      "path": "research/rules/preg-renal-start.yaml",
+      "baseline_sha256": "80b679a4f8ea1ab59eb12e203421e9ecaff2a36045df301d466feab3e273c09f",
+      "current_sha256": "2d3415d2183e20dd2fe9189b7d815a0ecb7e1151f51cd8969137ab7ac74ae27c"
+    },
+    {
+      "path": "research/rules/preg-taper-limit.yaml",
+      "baseline_sha256": "5d19fc16bdb3defa7e54fb3859e1865b840273ec2331627b813d76ce1d1001d6",
+      "current_sha256": "2c4ef802d7df1232e7d8ec2bc51fdc7e2660cd172232a0ff9d093abb18204e31"
+    },
+    {
+      "path": "research/rules/ser-adult-adjust.yaml",
+      "baseline_sha256": "820fee74095f8ee3d08470a945d0ed9d25bb20c7269272868accf07768c53067",
+      "current_sha256": "7abde658f529a600181eb2cbc6c10c1fe4e544a1aa7fcee1b535107bfa9c6083"
+    },
+    {
+      "path": "research/rules/ser-panic-start.yaml",
+      "baseline_sha256": "e2c3dde07d20f8100f834c7db69dedb2376d65cc8c8ba561df5080b0d70989e8",
+      "current_sha256": "0b1ef6d69e5c8962f8bdba3e59b485b6b819aa62c2dd488fa9cf546fd34883ed"
+    },
+    {
+      "path": "research/rules/ser-social-start.yaml",
+      "baseline_sha256": "1706d124c73a931bcfb84ff3db1323b5ef18edce9d4f7d8bffd8a68e5927452c",
+      "current_sha256": "40e3a10d77fce33244a07b3e13aa0c254e9e92c3bd823fc62b8266f35a4242d4"
+    },
+    {
+      "path": "research/rules/ser-taper-limit.yaml",
+      "baseline_sha256": "a845a514d2f33536755e229ca6ada5fc61e7b58c770e2daf6e37e5574a79f168",
+      "current_sha256": "8c77fdb2d3cc78420b51a622f18e1d9593420cd931f53ac9a0db05deee43695c"
+    },
+    {
+      "path": "research/rules/switch-esc-ago.yaml",
+      "baseline_sha256": "6165dd984a46460892a69473cadac4bcf73842b1e1ccaed8fda1aa878bae808f",
+      "current_sha256": "8d505ca34f2dfccb693ed546bc7098cdbd62cfe268270b39ff19176373d05c61"
+    },
+    {
+      "path": "research/rules/switch-esc-ser.yaml",
+      "baseline_sha256": "c051e96c937fb499418580a02e87cdc638a26372df53355632f802bc5a0a20e2",
+      "current_sha256": "792ef443d7292e25f289bc6ae9c7f283df412c88e6f378c23138c195bd355f2e"
+    },
+    {
+      "path": "research/rules/switch-parox-ago-selected-example.yaml",
+      "baseline_sha256": "8ec207f2ca273a43c340099e44d898a00dbb0731fd1454b643a133a575833408",
+      "current_sha256": "4802914bef055648f9b2a500d5af204d9988c4e71f19d82966cb841508d06910"
+    },
+    {
+      "path": "research/rules/switch-parox-ago.yaml",
+      "baseline_sha256": "8291c59d2969c7695765a5af1ff3b6a3a709a96315f5a9a85f2992c674daec61",
+      "current_sha256": "4eadfd326d591949b7c12fa5e570df042da3080e0bba9584f219a146bd75197e"
+    },
+    {
+      "path": "research/rules/switch-ser-ago.yaml",
+      "baseline_sha256": "a315e0b5d595b2fcb5d2492ee450e60866e442cc41b3c29851a0a67d9c7cccf2",
+      "current_sha256": "9bbe07c7ef1734741b26a08ef39ecf97d747c05c691edb12a8f44b617d96a96a"
+    },
+    {
+      "path": "research/rules/switch-ser-esc.yaml",
+      "baseline_sha256": "38a4b7b38f8647f3124860f0f349d9d3abd95a8e603927f4166652c66cc24142",
+      "current_sha256": "00403eb6fd4266ee493b0018ba4438d48b5b3dec8ea327c2b54051f91c53644f"
+    },
+    {
+      "path": "research/rules/venla-xr-gad-start.yaml",
+      "baseline_sha256": "615db81e038b605fba8b3f4bcd220ac19a116f7d45dc930cb50cc40f92c606e2",
+      "current_sha256": "0a2b680466324458d1f90e05c31543f55e73fd546a907da583029a5e9ea05c32"
+    },
+    {
+      "path": "research/rules/venla-xr-panic-form-limit.yaml",
+      "baseline_sha256": "33867c5294be42dcbd5f45f800b209bea2cc3650c0819e4791a2dc9ea3a6273e",
+      "current_sha256": "e9080a9825e352a72ba6900e525f1cbd2a0ad74a16d0358a21fc450540f1994e"
+    },
+    {
+      "path": "research/rules/venla-xr-social-start.yaml",
+      "baseline_sha256": "dcf6550c8717b39f2f70db7744a25612783778507fcb09305449c068d824aaca",
+      "current_sha256": "715e64775e1b75dc2a2922b6c0be332f0df30faec85e193763bb4c06744d19a6"
+    },
+    {
+      "path": "research/rules/venla-xr-taper-limit.yaml",
+      "baseline_sha256": "f9d6c9d655d84f1810d9ff79b57134fa2a1e601216cdd23ce2049b369edd623a",
+      "current_sha256": "87002ab0cde56acdde1ba004613fa5c29a02e608c85c3cfe7278bea9f56bf1a7"
+    },
+    {
+      "path": "research/search_log.csv",
+      "baseline_sha256": "a485940441968f22642f1d3b429a23efb10060a62a6a4f6fd3cc25c58e191440",
+      "current_sha256": "c2ae9b76c4e73d634717c7a84164f54d6c012e47a71b4691b73c12f55fcfe514"
+    },
+    {
+      "path": "research/source_downloads/README.md",
+      "baseline_sha256": "7f0fc88593a6109f5a328ef51526503f8d97167d4ec90e88305c146f0c7063cf",
+      "current_sha256": "a910997f4f0a46bc2526127f127687def4da8ddf520a401f59284be1cff5024c"
+    },
+    {
+      "path": "research/source_transfer_audit.yaml",
+      "baseline_sha256": "37aa0baf0f1ceb562503791a682d62780f0ac62dd961921afc2884b3d895f8ad",
+      "current_sha256": "84740054dd1b733e6806deaf0d1cac3f27f9d82ec0d40794464be012796b7db2"
+    },
+    {
+      "path": "research/sources.json",
+      "baseline_sha256": "b84c4a03117dc6ebe73249408be7388449e302a98baee3ea0af28abbc02803f1",
+      "current_sha256": "204761e6988299e34d582be01d63fdef1ec9935c4a05dd02495bc7fb0ae9757d"
+    },
+    {
+      "path": "research/switch_matrix.yaml",
+      "baseline_sha256": "94892caec299724e5d7329b043e77cefc47ac48586dcbc63c2416711242cf45a",
+      "current_sha256": "6b9805e11ac786c430d57122093ef0343b1dfbeec5bfbccb75d58bc31550cf80"
+    },
+    {
+      "path": "research/test_cases.yaml",
+      "baseline_sha256": "c23b3acc7e2c9c51b2d0567d3acbbc8b573786f76fef6cdb5402b6b52230b2d0",
+      "current_sha256": "bb589236964572a0f0717e4c6575e195870389229b04b425425c61d5c5b78c62"
+    },
+    {
+      "path": "research/verification_report.json",
+      "baseline_sha256": "1c71b3bdfe6a628a4d2b01f198575a0979ed4c2421ba15d4c3c1de2d50cb7461",
+      "current_sha256": "5e2aba35d4f699868b8013f2f5947b71d0cd4662bdbb4be968ead07bb658f9c6"
+    },
+    {
+      "path": "research/verify_research.py",
+      "baseline_sha256": "66ab380f8d31e019f9940835c90c47e714ca04412a5e4479f3e224559e726414",
+      "current_sha256": "ba7abf28795b519b2def57dcd43416ca7c56d6441f488328354063bb796083b9"
+    }
+  ],
+  "removed_existing_files": [],
+  "new_research_files": [
+    "research/remediation/acceptance_recheck.json",
+    "research/remediation/acceptance_recheck.md",
+    "research/remediation/apply_fixes.py",
+    "research/remediation/baseline_manifest.json",
+    "research/remediation/build_contracts.py",
+    "research/remediation/capture_baseline.py",
+    "research/remediation/capture_final.py",
+    "research/remediation/card_review.csv",
+    "research/remediation/catalog_check.json",
+    "research/remediation/changes_and_sources.md",
+    "research/remediation/changes_manifest.json",
+    "research/remediation/condition_review.csv",
+    "research/remediation/contract_verification.json",
+    "research/remediation/current_minzdrav_catalog.json",
+    "research/remediation/fetch_catalog.py",
+    "research/remediation/fetch_originals.py",
+    "research/remediation/fetch_results.json",
+    "research/remediation/finalize_evidence.py",
+    "research/remediation/findings_log.csv",
+    "research/remediation/findings_log.md",
+    "research/remediation/finish_reports.py",
+    "research/remediation/full_scenarios.json",
+    "research/remediation/independent_review.md",
+    "research/remediation/input_contracts.yaml",
+    "research/remediation/inspect_package.py",
+    "research/remediation/limitations.md",
+    "research/remediation/new_negative_checks.json",
+    "research/remediation/original_negative_checks.json",
+    "research/remediation/panic_discontinuation_context.yaml",
+    "research/remediation/parameter_review.csv",
+    "research/remediation/preservation_check.json",
+    "research/remediation/read_original.py",
+    "research/remediation/result_contracts.yaml",
+    "research/remediation/retrieved/RU-AGO.pdf",
+    "research/remediation/retrieved/RU-CITAL-LV.docx",
+    "research/remediation/retrieved/RU-DEP.pdf",
+    "research/remediation/retrieved/RU-DULOX.pdf",
+    "research/remediation/retrieved/RU-GAD.pdf",
+    "research/remediation/retrieved/RU-PANIC.pdf",
+    "research/remediation/retrieved/RU-PAROX.pdf",
+    "research/remediation/retrieved/RU-PHEN.pdf",
+    "research/remediation/retrieved/RU-PHOB.pdf",
+    "research/remediation/retrieved/RU-PREG-RICHTER.pdf",
+    "research/remediation/retrieved/RU-PREG.pdf",
+    "research/remediation/retrieved/RU-SER.pdf",
+    "research/remediation/retrieved/RU-VENLA-IR.html",
+    "research/remediation/retrieved/RU-VENLA-XR.html",
+    "research/remediation/scoring.json",
+    "research/remediation/scoring.md",
+    "research/remediation/source_copy_inventory.yaml",
+    "research/remediation/summary.md",
+    "research/remediation/sync_and_review.py",
+    "research/remediation/verification_report.json",
+    "research/remediation/verification_results.json",
+    "research/remediation/verify_contracts.py",
+    "research/remediation/verify_new_negative_checks.py"
+  ]
+}

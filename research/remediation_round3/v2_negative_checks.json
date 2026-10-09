@@ -1,0 +1,62 @@
+{
+  "status": "pass",
+  "mutations": [
+    {
+      "mutation": "removed_pregabalin_specific_assessment",
+      "rejected": true,
+      "errors": [
+        "required input drift: preg-gad-start",
+        "semantic required contract drift: preg-gad-start/misuse_risk_assessment",
+        "pregabalin pretreatment requirement lost: preg-gad-start"
+      ]
+    },
+    {
+      "mutation": "missing_new_fluvox_symptomatic_action",
+      "rejected": true,
+      "errors": [
+        "round3 complete stop expected lost: fluvox-depression-start",
+        "round3 fluvox symptomatic action lost"
+      ]
+    },
+    {
+      "mutation": "lost_XR_current_allergic_stop",
+      "rejected": true,
+      "errors": [
+        "round3 source stop predicate lost: venla-xr-gad-start"
+      ]
+    },
+    {
+      "mutation": "old_duloxetine_one_week_allowed",
+      "rejected": true,
+      "errors": [
+        "full expected branch mismatch: dulox-taper-limit--branch-source_limit",
+        "identical typed input/context has different full output: dulox-taper-limit--confirmed-negative-fields",
+        "current duloxetine §4.4 minimum lost"
+      ]
+    },
+    {
+      "mutation": "stop_before_drug_started",
+      "rejected": true,
+      "errors": [
+        "selected/A current-treatment source action lacks phase evidence: fluvox-depression-start--r3-serotonin_syndrome_signs-positive",
+        "stop of drug before first administration: fluvox-depression-start--r3-serotonin_syndrome_signs-positive"
+      ]
+    },
+    {
+      "mutation": "limit15",
+      "technical_boundary_only": true,
+      "rejected": true
+    },
+    {
+      "mutation": "limit16",
+      "technical_boundary_only": true,
+      "rejected": true
+    },
+    {
+      "mutation": "understated_count",
+      "rejected": true
+    }
+  ],
+  "main_files_changed": false,
+  "scope": "Source-specific static detector and technical limit15/16; no new medical schema or calculator"
+}

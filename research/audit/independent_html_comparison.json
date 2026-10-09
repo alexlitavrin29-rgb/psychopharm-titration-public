@@ -1,0 +1,12 @@
+[
+  {
+    "source": "RU-VENLA-IR",
+    "normalized_visible_text_equal": true,
+    "note": "Текстовое совпадение не подтверждает последнюю утверждённую регистрацию"
+  },
+  {
+    "source": "RU-VENLA-XR",
+    "normalized_visible_text_equal": true,
+    "note": "Текстовое совпадение не подтверждает последнюю утверждённую регистрацию"
+  }
+]

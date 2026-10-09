@@ -1,0 +1,12 @@
+{
+  "snapshot": "ac33f61373c22b1c160de40057815b16c27bc67e4beb870a56057992f0b06148",
+  "raw_occurrences": 5987,
+  "scoped_input_rows": 906,
+  "literal_contract_rows": 900,
+  "numerical_rows": 211,
+  "manual_source_key_norms": 391,
+  "reported_material_rows": 187,
+  "locator_defects": 24,
+  "remaining_identified_gaps": 114,
+  "primary_mapping_missing": []
+}

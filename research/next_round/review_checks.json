@@ -1,0 +1,94 @@
+{
+  "date": "2026-10-08",
+  "review_scope": "Targeted read-only review; no repeated complete medical audit or script execution",
+  "previous_acceptance_counts": {
+    "satisfied_for_research_stage": 27,
+    "partial": 3
+  },
+  "original_criteria_count": 30,
+  "v2_criteria_count": 30,
+  "changed_criteria": [
+    18
+  ],
+  "protected_files_rechecked": 342,
+  "protected_files_changed": [],
+  "snapshot_hashes_match_review": {
+    "result_contracts.yaml": true,
+    "input_contracts.yaml": true,
+    "full_scenarios.json": true,
+    "question_graphs.yaml": true,
+    "actual_question_paths.json": true
+  },
+  "reported_weighted_score_arithmetic": 8.549999999999999,
+  "full_expected_count": 4897,
+  "path_count": 124,
+  "all_path_buckets": {
+    ">15": 90,
+    "<=10": 15,
+    "11-15": 19
+  },
+  "usual_paths": [
+    {
+      "rule_id": "ago-depression-start",
+      "count": 28,
+      "result_type": "exact"
+    },
+    {
+      "rule_id": "ago-gad-start",
+      "count": 28,
+      "result_type": "exact"
+    },
+    {
+      "rule_id": "dulox-depression-start",
+      "count": 24,
+      "result_type": "exact"
+    },
+    {
+      "rule_id": "dulox-gad-start",
+      "count": 26,
+      "result_type": "exact"
+    },
+    {
+      "rule_id": "esc-gad-start",
+      "count": 18,
+      "result_type": "exact"
+    },
+    {
+      "rule_id": "esc-panic-start",
+      "count": 18,
+      "result_type": "exact"
+    },
+    {
+      "rule_id": "esc-social-start",
+      "count": 18,
+      "result_type": "exact"
+    },
+    {
+      "rule_id": "parox-panic-kr",
+      "count": 22,
+      "result_type": "exact"
+    },
+    {
+      "rule_id": "ser-panic-start",
+      "count": 11,
+      "result_type": "exact"
+    },
+    {
+      "rule_id": "ser-social-start",
+      "count": 11,
+      "result_type": "exact"
+    },
+    {
+      "rule_id": "venla-xr-gad-start",
+      "count": 37,
+      "result_type": "exact"
+    },
+    {
+      "rule_id": "venla-xr-social-start",
+      "count": 37,
+      "result_type": "exact"
+    }
+  ],
+  "original_acceptance_sha256": "c4ca3ea82b949a1b9d985df8bdc8bf25ce9489d1e75ab0230717d69bc698628b",
+  "v2_acceptance_sha256": "799ea55256a726c8a9c7964073d45e45baf69a7e379fa4ad0cadd110da9585de"
+}

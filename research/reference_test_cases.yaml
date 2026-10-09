@@ -1,0 +1,218 @@
+clinical_validation: not_performed
+calculator_execution: not_performed
+profile: foreign_reference_excluded_from_RU
+cases:
+- rule_id: diazepam-asam-initial-taper
+  case_id: diazepam-asam-initial-taper__diazepam-initial-range
+  synthetic: true
+  given:
+    current_dose: 10
+    regular_use: true
+    clinical_setting: амбулаторная применимость подтверждена
+  expected:
+    information_next_total_daily_range_mg:
+    - 9
+    - 9.5
+    initial_interval_range_weeks:
+    - 2
+    - 4
+    exact_prescription: null
+  source_refs:
+  - US-ASAM
+  note: 9–9,5 = 10 × (1−10%..1−5%); форма РФ для этих доз не проверена, поэтому это информационный диапазон.
+- rule_id: nice-ad-taper-principles
+  case_id: nice-ad-taper-principles__nice-examples-not-protocol
+  synthetic: true
+  given:
+    current_dose: 20
+  expected:
+    automatic_percent: null
+    fixed_full_schedule: null
+  source_refs:
+  - UK-NICE222
+  note: Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены.
+- rule_id: pax-uk-trial-taper
+  case_id: pax-uk-trial-taper__pax-trial-40
+  synthetic: true
+  given:
+    current_dose: 40
+    clinician_template: true
+    withdrawal: переносимы
+    form: Seroxat 20mg equal halves
+  expected:
+    illustrative_next_daily_mg: 30
+    interval_week: 1
+    mandatory_for_all: false
+  source_refs:
+  - UK-PAX
+  note: 30 = введённые 40 − опубликованные 10. Это демонстрация выбранного врачом шаблона; не утверждение универсальной
+    клинической схемы.
+- rule_id: pax-uk-trial-taper
+  case_id: pax-uk-trial-taper__pax-intolerable
+  synthetic: true
+  given:
+    current_dose: 30
+    previous_dose: 40
+    withdrawal: непереносимы
+  expected:
+    automatic_next_reduction: false
+    clinician_option: рассмотреть ранее назначенную дозу, затем медленнее
+  source_refs:
+  - UK-PAX
+  note: Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены.
+- rule_id: switch-ago-fluvox
+  case_id: switch-ago-fluvox__reverse-ago-fluvox
+  synthetic: true
+  given:
+    clinician_strategy: direct switch
+  expected:
+    normally_possible_start: следующий календарный день
+    copied_reverse_washout_days: null
+    exact_target_daily_mg: null
+  source_refs:
+  - UK-SPS-AGO
+  note: Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены.
+- rule_id: switch-esc-ser
+  case_id: switch-esc-ser__switch-esc-ser-depression
+  synthetic: true
+  given:
+    diagnosis: F32
+    age: 40
+    from_dose: 20
+    clinician_strategy: direct switch
+    target_standard_applicability: true
+  expected:
+    overlap: false
+    start_B: следующий календарный день
+    target_daily_mg: 50
+    frequency: 1
+    dose_equivalence: false
+    conflict_resolution_required: true
+  source_refs:
+  - UK-SPS-SSRI
+  - RU-SER-2023
+  note: Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены.
+- rule_id: switch-esc-ser
+  case_id: switch-esc-ser__switch-esc-ser-anxiety
+  synthetic: true
+  given:
+    diagnosis: F41.1
+  expected:
+    result_type: not_applicable
+    reason: Контекст переключения при чистом ГТР отдельно не подтверждён
+  source_refs:
+  - UK-SPS-SSRI
+  note: Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены.
+- rule_id: switch-fluox-ser
+  case_id: switch-fluox-ser__fluox-not-lowest
+  synthetic: true
+  given:
+    from_dose: 40
+  expected:
+    prestop_target_daily_mg: 20
+    washout_days_range:
+    - 4
+    - 7
+    automatic_selected_washout: null
+    exact_target_sertraline_mg: null
+  source_refs:
+  - UK-SPS-SSRI
+  note: Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены.
+- rule_id: switch-fluvox-ago
+  case_id: switch-fluvox-ago__fluvox-ago-overlap
+  synthetic: true
+  given:
+    requested_overlap: true
+  expected:
+    result_type: not_applicable
+    overlap_allowed: false
+    washout_after_stop_days: 4
+  source_refs:
+  - UK-SPS-SSRI
+  note: Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены.
+- rule_id: switch-moc-ser
+  case_id: switch-moc-ser__moc-ser-direction
+  synthetic: true
+  given:
+    hours_since_stop: 12
+  expected:
+    start_B_allowed: false
+    required_interval_hours: 24
+    copied_reverse_days: null
+  source_refs:
+  - UK-SPS-MOC
+  note: Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены.
+- rule_id: switch-ser-esc
+  case_id: switch-ser-esc__switch-ser-esc-depression
+  synthetic: true
+  given:
+    diagnosis: F32
+    age: 40
+    from_dose: 100
+    clinician_strategy: direct switch
+    target_standard_applicability: true
+  expected:
+    overlap: false
+    start_B: следующий календарный день
+    target_daily_mg: 10
+    frequency: 1
+    dose_equivalence: false
+    conflict_resolution_required: true
+  source_refs:
+  - UK-SPS-SSRI
+  - RU-ESC-2025-JAN
+  note: Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены.
+- rule_id: switch-ser-esc
+  case_id: switch-ser-esc__switch-ser-esc-anxiety
+  synthetic: true
+  given:
+    diagnosis: F41.1
+  expected:
+    result_type: not_applicable
+    reason: Контекст переключения при чистом ГТР отдельно не подтверждён
+  source_refs:
+  - UK-SPS-SSRI
+  note: Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены.
+- rule_id: switch-ser-fluox
+  case_id: switch-ser-fluox__reverse-ser-fluox
+  synthetic: true
+  given:
+    clinician_strategy: direct switch
+  expected:
+    normally_possible_start: следующий календарный день
+    copied_reverse_washout_days: null
+    exact_target_daily_mg: null
+    RU_taper_conflict_unresolved: true
+  source_refs:
+  - UK-SPS-SSRI
+  note: Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены.
+- rule_id: switch-ser-moc
+  case_id: switch-ser-moc__ser-moc-too-early
+  synthetic: true
+  given:
+    days_since_stop: 1
+    requested_overlap: false
+  expected:
+    start_B_allowed: false
+    minimum_RU_days: 7
+    SPS_choice_range_days:
+    - 7
+    - 13
+  source_refs:
+  - RU-SER-2023
+  - UK-SPS-SSRI
+  note: Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены.
+- rule_id: switch-ser-moc
+  case_id: switch-ser-moc__last-dose-unknown
+  synthetic: true
+  given:
+    last_dose: не помню
+  expected:
+    result_type: insufficient_data
+    missing:
+    - last_dose
+    washout_completed: false
+  source_refs:
+  - UK-SPS-SSRI
+  - RU-SER-2023
+  note: Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены.

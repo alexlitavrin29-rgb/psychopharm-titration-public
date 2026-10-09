@@ -1,0 +1,671 @@
+schema_version: '1.0'
+rule_id: parox-taper-example
+development_status: extracted_research_not_executable
+language: ru
+identity:
+  title: 'Пароксетин: российский взрослый исследовательский пример отмены'
+  mode: taper
+  drug_inn: пароксетин
+  from_drug_inn: null
+  to_drug_inn: null
+  formulation: Рексетин, таблетки 20 мг; разрешена половина 10 мг
+  route: oral
+  diagnosis_label_ru: Депрессивный эпизод/рекуррентная депрессия у взрослых
+  classification_system: МКБ-10
+  diagnosis_code: F32/F33
+  jurisdiction: RU_versioned_sources
+applicability:
+  population_description: Взрослые от 18 лет, паническое расстройство; пожилой/органный контекст разбирается отдельно.
+  age_constraints:
+  - minimum: 18
+    inclusive: true
+    unit: year
+    source_ref: RU-PAROX
+    source_locator: §4.1, PDF с.14
+  pregnancy: Отдельная оценка применимости; дозовые коэффициенты не извлечены.
+  lactation: Отдельная оценка применимости; дозовые коэффициенты не извлечены.
+  renal_constraints: []
+  hepatic_constraints: []
+  comorbidity_constraints: []
+  interacting_drugs:
+  - Проверять текущие сочетания по ОХЛП; отмена не разрешает неподтверждённый переход на ИМАО.
+  other_conditions:
+  - Воспроизведение взрослого примера §4.2; не универсальный обязательный протокол.
+  - Пример завершает снижение на 20 мг, держит 1 неделю и отменяет. Для исходной дозы ниже 20 мг полного расписания
+    в этом примере нет.
+  exclusions:
+  - Возраст менее 18 лет; гиперчувствительность; противопоказанное сочетание по §4.3.
+  indication_status_in_russia: RU_indication_present_in_original_registry_currency_separate
+  source_refs: &id001
+  - RU-PAROX
+  - RU-DEP
+  - RU-PANIC
+inputs:
+- input_id: age
+  question_ru: Возраст, полных лет?
+  data_type: integer
+  unit: year
+  allowed_values: []
+  required_when: для этой ветки
+  show_when: для этой ветки
+  why_needed: Только взрослая популяция примера.
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Назвать отсутствующее поле; не подставлять норму и не выдавать безусловную индивидуальную схему.
+  source_refs: *id001
+  input_role: dose_operand_or_applicability_gate
+  source_locator: 'ОХЛП: PDF с.14–18 (§4.1–4.3), с.19–23 (§4.4), с.24–28 (§4.5–4.6), с.39 (§8–10)'
+  missing_states: &id002
+  - unknown
+  - not_assessed
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+- input_id: form
+  question_ru: Какая форма используется?
+  data_type: structured_form
+  unit: null
+  allowed_values: []
+  required_when: для этой ветки
+  show_when: для этой ветки
+  why_needed: Исполнимость ступеней; деление 20 мг на 10 разрешено.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Назвать отсутствующее поле; не подставлять норму и не выдавать безусловную индивидуальную схему.
+  source_refs: *id001
+  input_role: dose_operand_or_applicability_gate
+  source_locator: 'ОХЛП: PDF с.14–18 (§4.1–4.3), с.19–23 (§4.4), с.24–28 (§4.5–4.6), с.39 (§8–10)'
+  missing_states: *id002
+  structure_ref: remediation/input_contracts.yaml#structures/structured_form
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+- input_id: current_dose
+  question_ru: Текущая суточная доза?
+  data_type: number
+  unit: mg/day
+  allowed_values: []
+  required_when: для этой ветки
+  show_when: для этой ветки
+  why_needed: Начальная точка примера; ниже 20 мг нет последней ступени.
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Назвать отсутствующее поле; не подставлять норму и не выдавать безусловную индивидуальную схему.
+  source_refs: *id001
+  input_role: dose_operand_or_applicability_gate
+  source_locator: 'ОХЛП: PDF с.14–18 (§4.1–4.3), с.19–23 (§4.4), с.24–28 (§4.5–4.6), с.39 (§8–10)'
+  missing_states: *id002
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+- input_id: duration
+  question_ru: Как долго принимается препарат?
+  data_type: number
+  unit: week
+  allowed_values: []
+  required_when: для этой ветки
+  show_when: для этой ветки
+  why_needed: Фактор риска отмены КР Б5, не числовой коэффициент.
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Назвать отсутствующее поле; не подставлять норму и не выдавать безусловную индивидуальную схему.
+  source_refs: *id001
+  input_role: dose_operand_or_applicability_gate
+  source_locator: 'ОХЛП: PDF с.14–18 (§4.1–4.3), с.19–23 (§4.4), с.24–28 (§4.5–4.6), с.39 (§8–10)'
+  missing_states: *id002
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+- input_id: past_withdrawal
+  question_ru: Были трудности при пропусках/снижении?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: для этой ветки
+  show_when: для этой ветки
+  why_needed: 'КР Б5: высокий риск требует более медленного плана.'
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Назвать отсутствующее поле; не подставлять норму и не выдавать безусловную индивидуальную схему.
+  source_refs: *id001
+  input_role: dose_operand_or_applicability_gate
+  source_locator: 'ОХЛП: PDF с.14–18 (§4.1–4.3), с.19–23 (§4.4), с.24–28 (§4.5–4.6), с.39 (§8–10)'
+  missing_states: *id002
+  value_aliases: &id003
+    да: true
+    нет: false
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+- input_id: withdrawal_severity
+  question_ru: Как врач оценивает текущие симптомы отмены?
+  data_type: enum
+  unit: null
+  allowed_values:
+  - нет
+  - лёгкие
+  - умеренные
+  - тяжёлые
+  - непереносимые
+  - выраженные
+  - unknown
+  - not_assessed
+  required_when: для этой ветки
+  show_when: для этой ветки
+  why_needed: Изменение темпа/возврат предыдущей дозы, §4.2 и КР Б5.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Назвать отсутствующее поле; не подставлять норму и не выдавать безусловную индивидуальную схему.
+  source_refs: *id001
+  input_role: dose_operand_or_applicability_gate
+  source_locator: 'ОХЛП: PDF с.14–18 (§4.1–4.3), с.19–23 (§4.4), с.24–28 (§4.5–4.6), с.39 (§8–10)'
+  missing_states: *id002
+  value_aliases:
+    нет требующих замедления симптомов: нет
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+- input_id: example_selected
+  question_ru: Врач выбрал опубликованный пример для этого случая?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: для этой ветки
+  show_when: для этой ветки
+  why_needed: Без выбора пример не становится назначением.
+  changes:
+  - applicability
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Назвать отсутствующее поле; не подставлять норму и не выдавать безусловную индивидуальную схему.
+  source_refs: *id001
+  input_role: dose_operand_or_applicability_gate
+  source_locator: 'ОХЛП: PDF с.14–18 (§4.1–4.3), с.19–23 (§4.4), с.24–28 (§4.5–4.6), с.39 (§8–10)'
+  missing_states: *id002
+  value_aliases: *id003
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+clinical_parameters:
+- parameter_id: weekly_decrement
+  meaning: weekly_decrement
+  value: 10
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: mg/day
+  source_ref: RU-PAROX
+  source_locator: §4.2, PDF с.16
+  source_meaning: пример
+  derivation: null
+- parameter_id: decrement_interval
+  meaning: decrement_interval
+  value: 1
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: week
+  source_ref: RU-PAROX
+  source_locator: §4.2, PDF с.16
+  source_meaning: пример
+  derivation: null
+- parameter_id: last_source_dose
+  meaning: last_source_dose
+  value: 20
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: mg/day
+  source_ref: RU-PAROX
+  source_locator: §4.2, PDF с.17
+  source_meaning: пример
+  derivation: null
+- parameter_id: last_hold
+  meaning: last_hold
+  value: 1
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: week
+  source_ref: RU-PAROX
+  source_locator: §4.2, PDF с.17
+  source_meaning: пример
+  derivation: null
+logic:
+  representation: source_example
+  conditions:
+  - Показание/препарат выбраны врачом; взрослая применимость и форма подтверждены.
+  actions:
+  - Если врач выбрал пример, снижать суточную дозу на 10 мг через неделю до 20 мг; после 1 недели на 20 мг отменить.
+  - При симптомах во время снижения/после отмены возможно возобновление прежней дозы и последующее более медленное
+    снижение; точный более медленный шаг источник не задаёт.
+  - 'Исходная доза <20, недостижимые формы, высокий риск/тяжелая отмена: пример не достраивать автоматически.'
+  parameter_refs:
+  - weekly_decrement
+  - decrement_interval
+  - last_source_dose
+  - last_hold
+  source_refs: *id001
+  clinician_choices: &id004
+  - Выбор применимости примера; необходимость более медленного снижения; прежняя переносимая доза при симптомах.
+  missing_data_behaviour: Назвать обязательные неизвестные поля; результат insufficient_data. Справочные этапы можно
+    показать как условные, без безусловной дозы пациенту.
+  unsupported_case_behaviour: not_applicable для этой карточки; указать конкретную отсутствующую ветку, не запретить
+    всё лечение.
+  contraindicated_case_behaviour: Не выдавать дозовую схему противопоказанного сочетания; отобразить источник и
+    причину.
+  conflicts: []
+  composite_rule_dependencies: []
+  combination_justification: КР Б5 определяет риск/ведение отмены, ОХЛП задаёт отдельно маркированный взрослый пример.
+    Детский пример §4.8 не используется.
+  panic_discontinuation_context:
+    source_ref: RU-PANIC
+    source_locator: 456_3 §3.1 PDF с.31–32, приложение Б4
+    course:
+      minimum_months: 6
+      comment_alternative_months: 12
+      meaning: профилактика рецидива; сохранять достигнутую эффективную дозу
+    discontinuation:
+      gradual: true
+      careful_observation: true
+      source_minimum_phrase_months:
+      - 2
+      - 3
+      taper_only_duration_months: null
+      observation_only_duration_months: null
+      interpretation: Фраза относится к постепенному снижению с тщательным контролем; источник не разделяет их длительности.
+        Не строить собственный точный календарь.
+    guideline_algorithm: 'Б4: профилактика/ведение СОПА; не график универсальных доз'
+  result_contract_ref: remediation/result_contracts.yaml#rules/parox-taper-example
+  individual_output_gate: All required typed inputs and applicable conditional inputs must be known; evaluate every
+    source-specific gate in result_contract. A caution has clinician_choice, not an invented coefficient. No blanket
+    clinical clearance.
+output:
+  result_type: branch_selected
+  medication_inn: пароксетин
+  dose_per_administration: null
+  administrations_per_day: null
+  total_daily_dose: null
+  unit: mg
+  formulation: Рексетин, таблетки 20 мг; разрешена половина 10 мг
+  schedule: []
+  warnings:
+  - Пример исследования, не обязательный протокол для всех.
+  - Взрослая последняя доза источника 20 мг. Не подменять иностранными/детскими 10 мг.
+  - Числовой вывод относится к указанным дозовым условиям. Неоценённые модулем клинические обстоятельства не считаются
+    отсутствующими; полный клинический допуск врач оценивает отдельно.
+  mandatory_checks: []
+  clinician_decisions_remaining: *id004
+  rounding_or_formulation_rule: Не округлять медицинскую дозу; использовать только разрешённую форму/деление. При
+    невозможности дозы формой — явно сообщить.
+  source_refs: *id001
+  branches:
+  - branch_id: selected40
+    when: current=40; example_selected=true; symptoms absent; form valid
+    expected_output:
+      result_type: selected_source_example
+      total_daily_dose_mg: null
+      dose_per_administration_mg: null
+      administrations_per_day: 1
+      schedule:
+      - day: 1
+        total_daily_mg: 30
+        frequency: 1
+        conditional: true
+      - day: 8
+        total_daily_mg: 20
+        frequency: 1
+        conditional: true
+      - day: 15
+        total_daily_mg: 0
+        frequency: 1
+        conditional: true
+      missing_fields: []
+      unconditional_future_stages: false
+      mandatory_for_all: false
+      hold_if: withdrawal symptoms; clinician reassessment/prior-dose resumption then slower, unspecified steps
+    source_basis:
+    - source_id: RU-DEP
+      version: '2024; каталог: опубликовано 26.08.2024, применяется'
+      locator: §3.1–3.4 PDF с.24–40; таблица2 с.95–96; §3.6 с.45; Б5 с.105–106
+      sha256: 2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd
+    - source_id: RU-PAROX
+      version: 'Первичная регистрация 14.02.2025; страница производителя: файл 26.03.2025; поле пересмотра пустое'
+      locator: 'ОХЛП: PDF с.14–18 (§4.1–4.3), с.19–23 (§4.4), с.24–28 (§4.5–4.6), с.39 (§8–10)'
+      sha256: 9f6f2646e102956826997ca7e93d84e90c7528db5ceb61896a3d4092841edabe
+    - source_id: RU-PANIC
+      version: '2024; каталог: опубликовано 19.09.2024, применяется'
+      locator: §3.1, PDF с.25–33; приложение А3, с.76–77
+      sha256: a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d
+  - branch_id: other
+    when: example not selected, current<20 or withdrawal symptoms
+    expected_output:
+      result_type: clinician_choice
+      total_daily_dose_mg: null
+      dose_per_administration_mg: null
+      administrations_per_day: null
+      schedule: []
+      missing_fields: []
+      unconditional_future_stages: false
+      invented_last_step: false
+    source_basis:
+    - source_id: RU-DEP
+      version: '2024; каталог: опубликовано 26.08.2024, применяется'
+      locator: §3.1–3.4 PDF с.24–40; таблица2 с.95–96; §3.6 с.45; Б5 с.105–106
+      sha256: 2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd
+    - source_id: RU-PAROX
+      version: 'Первичная регистрация 14.02.2025; страница производителя: файл 26.03.2025; поле пересмотра пустое'
+      locator: 'ОХЛП: PDF с.14–18 (§4.1–4.3), с.19–23 (§4.4), с.24–28 (§4.5–4.6), с.39 (§8–10)'
+      sha256: 9f6f2646e102956826997ca7e93d84e90c7528db5ceb61896a3d4092841edabe
+    - source_id: RU-PANIC
+      version: '2024; каталог: опубликовано 19.09.2024, применяется'
+      locator: §3.1, PDF с.25–33; приложение А3, с.76–77
+      sha256: a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d
+  selection_contract:
+  - unavailable_source
+  - known immediate stop/exclusion
+  - invalid/missing applicable field
+  - unresolved source caution/modifier
+  - dose branch
+sources:
+- source_id: RU-DEP
+  title: Депрессивный эпизод, Рекуррентное депрессивное расстройство, КР 301_3
+  organization_or_authors: Минздрав РФ; Российское общество психиатров
+  url: https://apicr.minzdrav.gov.ru/api.ashx?id=301_3&op=GetClinrecPdf
+  doi_or_registry_id: '301_3'
+  publication_date: null
+  version_or_update_date: '2024; каталог: опубликовано 26.08.2024, применяется'
+  accessed_on: '2026-10-08'
+  source_type: guideline
+  jurisdiction: RU
+  access_status: full
+  exact_locator: §3.1–3.4 PDF с.24–40; таблица2 с.95–96; §3.6 с.45; Б5 с.105–106
+  evidence_status: Клиническая рекомендация; не валидация калькулятора
+  what_was_tested: Не исследовался создаваемый продукт. Содержание и ограничения описаны в evidence_limitations.
+  evidence_limitations: 'Взрослая депрессия: дополнительно прочитаны терапевтические разделы и таблица доз. Таблица
+    без форм/индивидуальных ограничений не автономный модуль. Концентрация лития с.36 имеет конфликт мкмоль/л против
+    ммоль/л; автоматическое исправление не разрешено.'
+  reuse_license_or_restriction: Открытый доступ не означает разрешение перераспространять полный документ. Сохранены
+    собственное извлечение фактических правил, локаторы и ссылки; код и большие цитаты не копируются.
+  document_fingerprint:
+    source_id: RU-DEP
+    url: https://apicr.minzdrav.gov.ru/api.ashx?id=301_3&op=GetClinrecPdf
+    sha256: 2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd
+    pages: 125
+  local_file: source_snapshots/depression-301_3.pdf
+  document_copies:
+  - source_id: RU-DEP
+    local_file: source_snapshots/depression-301_3.pdf
+    sha256: 2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd
+    version: '2024; каталог: опубликовано 26.08.2024, применяется'
+    url: https://apicr.minzdrav.gov.ru/api.ashx?id=301_3&op=GetClinrecPdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: false
+  - source_id: RU-DEP
+    local_file: audit/retrieved/RU-DEP.pdf
+    sha256: 2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd
+    version: '2024; каталог: опубликовано 26.08.2024, применяется'
+    url: https://apicr.minzdrav.gov.ru/api.ashx?id=301_3&op=GetClinrecPdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: false
+  - source_id: RU-DEP
+    local_file: remediation/retrieved/RU-DEP.pdf
+    sha256: 2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd
+    version: '2024; каталог: опубликовано 26.08.2024, применяется'
+    url: https://apicr.minzdrav.gov.ru/api.ashx?id=301_3&op=GetClinrecPdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: false
+  - source_id: RU-DEP
+    local_file: ../tmp_acceptance/DEP-KR.pdf
+    sha256: 2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd
+    version: '2024; каталог: опубликовано 26.08.2024, применяется'
+    url: https://apicr.minzdrav.gov.ru/api.ashx?id=301_3&op=GetClinrecPdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: false
+  dates:
+    registration: null
+    revision: null
+    publication: null
+    download: '2026-10-08'
+  latest_registration_revision_confirmed: false
+  current_guideline_status_evidence: remediation/catalog_check.json + remediation/current_minzdrav_catalog.json;
+    2026-10-08; CodeVersion/ApplyStatusCalculated=1
+- source_id: RU-PAROX
+  title: Рексетин (пароксетин), ЛВ и ОХЛП, 20 мг
+  organization_or_authors: Гедеон Рихтер
+  url: https://www.gedeonrichter.com/ru/-/media/sites/ru/russian-products/files/185/productinstruction_lvokhlpreksetin_pdf.pdf?hash=F730A776EE3E7A92B2EA6A9EA56DCAC2&rev=a198bea8079541528614f6df7eee87fd
+  doi_or_registry_id: ЛП-№(008861)-(РГ-RU)
+  publication_date: null
+  version_or_update_date: 'Первичная регистрация 14.02.2025; страница производителя: файл 26.03.2025; поле пересмотра
+    пустое'
+  accessed_on: '2026-10-08'
+  source_type: label
+  jurisdiction: RU/EAEU
+  access_status: full
+  exact_locator: 'ОХЛП: PDF с.14–18 (§4.1–4.3), с.19–23 (§4.4), с.24–28 (§4.5–4.6), с.39 (§8–10)'
+  evidence_status: Инструкция/ОХЛП; не валидированная модель индивидуальной дозы
+  what_was_tested: Не исследовался создаваемый продукт. Содержание и ограничения описаны в evidence_limitations.
+  evidence_limitations: Российская принадлежность указана в оригинале §8–9. Текущая регистрационная редакция отдельно
+    сверяется; дата публикации страницы не равна дате пересмотра. Взрослый пример отмены заканчивается на 20 мг;
+    детский пример 10 мг не переносить на взрослых.
+  reuse_license_or_restriction: Открытый доступ не означает разрешение перераспространять полный документ. Сохранены
+    собственное извлечение фактических правил, локаторы и ссылки; код и большие цитаты не копируются.
+  document_fingerprint:
+    url: https://www.gedeonrichter.com/ru/-/media/sites/ru/russian-products/files/185/productinstruction_lvokhlpreksetin_pdf.pdf?hash=F730A776EE3E7A92B2EA6A9EA56DCAC2&rev=a198bea8079541528614f6df7eee87fd
+    final_url: https://www.gedeonrichter.com/ru/-/media/sites/ru/russian-products/files/185/productinstruction_lvokhlpreksetin_pdf.pdf?hash=F730A776EE3E7A92B2EA6A9EA56DCAC2&rev=a198bea8079541528614f6df7eee87fd
+    status: 200
+    sha256: 9f6f2646e102956826997ca7e93d84e90c7528db5ceb61896a3d4092841edabe
+    pages: 39
+    source_id: RU-PAROX
+    accessed_on: '2026-10-08'
+  registry_observation:
+    registry: https://lk.regmed.ru/Register/EAEU_SmPC
+    query: Рексетин
+    registration_number: ЛП-№(008861)-(РГ-RU)
+    registration_date: '2025-02-14'
+    forms: таблетки20/30; прочитанная ОХЛП только20
+    accessed_on: '2026-10-08'
+    read_part: Видимая официальная строка; реестровый PDF не скачан. Копия производителя не объявлена побайтово
+      тождественной.
+  local_file: source_downloads/Рексетин — пароксетин.pdf
+  document_copies:
+  - source_id: RU-PAROX
+    local_file: source_downloads/Рексетин — пароксетин.pdf
+    sha256: 9f6f2646e102956826997ca7e93d84e90c7528db5ceb61896a3d4092841edabe
+    version: 'Первичная регистрация 14.02.2025; страница производителя: файл 26.03.2025; поле пересмотра пустое'
+    url: https://www.gedeonrichter.com/ru/-/media/sites/ru/russian-products/files/185/productinstruction_lvokhlpreksetin_pdf.pdf?hash=F730A776EE3E7A92B2EA6A9EA56DCAC2&rev=a198bea8079541528614f6df7eee87fd
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: false
+  - source_id: RU-PAROX
+    local_file: audit/retrieved/RU-PAROX.pdf
+    sha256: 9f6f2646e102956826997ca7e93d84e90c7528db5ceb61896a3d4092841edabe
+    version: 'Первичная регистрация 14.02.2025; страница производителя: файл 26.03.2025; поле пересмотра пустое'
+    url: https://www.gedeonrichter.com/ru/-/media/sites/ru/russian-products/files/185/productinstruction_lvokhlpreksetin_pdf.pdf?hash=F730A776EE3E7A92B2EA6A9EA56DCAC2&rev=a198bea8079541528614f6df7eee87fd
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: false
+  - source_id: RU-PAROX
+    local_file: remediation/retrieved/RU-PAROX.pdf
+    sha256: 9f6f2646e102956826997ca7e93d84e90c7528db5ceb61896a3d4092841edabe
+    version: 'Первичная регистрация 14.02.2025; страница производителя: файл 26.03.2025; поле пересмотра пустое'
+    url: https://www.gedeonrichter.com/ru/-/media/sites/ru/russian-products/files/185/productinstruction_lvokhlpreksetin_pdf.pdf?hash=F730A776EE3E7A92B2EA6A9EA56DCAC2&rev=a198bea8079541528614f6df7eee87fd
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: false
+  - source_id: RU-PAROX
+    local_file: ../tmp_acceptance/PAROX.pdf
+    sha256: 9f6f2646e102956826997ca7e93d84e90c7528db5ceb61896a3d4092841edabe
+    version: 'Первичная регистрация 14.02.2025; страница производителя: файл 26.03.2025; поле пересмотра пустое'
+    url: https://www.gedeonrichter.com/ru/-/media/sites/ru/russian-products/files/185/productinstruction_lvokhlpreksetin_pdf.pdf?hash=F730A776EE3E7A92B2EA6A9EA56DCAC2&rev=a198bea8079541528614f6df7eee87fd
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: false
+  dates:
+    registration: '2025-02-14'
+    revision: null
+    publication: null
+    download: '2026-10-08'
+  latest_registration_revision_confirmed: false
+- source_id: RU-PANIC
+  title: Паническое расстройство, КР 456_3
+  organization_or_authors: Минздрав РФ; Российское общество психиатров
+  url: https://apicr.minzdrav.gov.ru/api.ashx?id=456_3&op=GetClinrecPdf
+  doi_or_registry_id: '456_3'
+  publication_date: null
+  version_or_update_date: '2024; каталог: опубликовано 19.09.2024, применяется'
+  accessed_on: '2026-10-08'
+  source_type: guideline
+  jurisdiction: RU
+  access_status: full
+  exact_locator: §3.1, PDF с.25–33; приложение А3, с.76–77
+  evidence_status: Клиническая рекомендация; не валидация калькулятора
+  what_was_tested: Не исследовался создаваемый продукт. Содержание и ограничения описаны в evidence_limitations.
+  evidence_limitations: Взрослые F41.0. Терапевтический диапазон не равен стартовой дозе.
+  reuse_license_or_restriction: Открытый доступ не означает разрешение перераспространять полный документ. Сохранены
+    собственное извлечение фактических правил, локаторы и ссылки; код и большие цитаты не копируются.
+  document_fingerprint:
+    source_id: RU-PANIC
+    url: https://apicr.minzdrav.gov.ru/api.ashx?id=456_3&op=GetClinrecPdf
+    sha256: a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d
+    pages: 140
+  local_file: audit/retrieved/RU-PANIC.pdf
+  document_copies:
+  - source_id: RU-PANIC
+    local_file: audit/retrieved/RU-PANIC.pdf
+    sha256: a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d
+    version: '2024; каталог: опубликовано 19.09.2024, применяется'
+    url: https://apicr.minzdrav.gov.ru/api.ashx?id=456_3&op=GetClinrecPdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: false
+  - source_id: RU-PANIC
+    local_file: remediation/retrieved/RU-PANIC.pdf
+    sha256: a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d
+    version: '2024; каталог: опубликовано 19.09.2024, применяется'
+    url: https://apicr.minzdrav.gov.ru/api.ashx?id=456_3&op=GetClinrecPdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: false
+  dates:
+    registration: null
+    revision: null
+    publication: null
+    download: '2026-10-08'
+  latest_registration_revision_confirmed: false
+  current_guideline_status_evidence: remediation/catalog_check.json + remediation/current_minzdrav_catalog.json;
+    2026-10-08; CodeVersion/ApplyStatusCalculated=1
+verification:
+  primary_source_checked: true
+  all_clinical_parameters_have_sources: true
+  population_and_indication_checked: true
+  russian_applicability_checked: false
+  formulation_feasibility_checked: true
+  combined_rules_justified: false
+  source_transfer_check: reviewed_available_original_sections_and_contract_consistency; calculator_not_implemented;
+    latest_registration_revision_not_confirmed
+  clinical_review: not_performed
+  product_clinical_validation: not_performed
+  ready_for_technical_implementation: true
+  unresolved_items:
+  - Пример не задаёт полный план для исходных доз <20 мг или более медленных индивидуальных ступеней.
+  - Регистрационная актуальность и клиническая проверка отдельно.
+  transfer_scope: Only explicitly source-bound branch contracts and prepared expectations; medical currency limits
+    in sources.json remain open. No automatic clinical use.
+test_cases:
+- case_id: parox-taper-example__selected-40-example
+  synthetic: true
+  given:
+    age: 40
+    current_dose: 40
+    form: Рексетин 20 мг
+    example_selected: true
+    withdrawal_severity: нет
+    past_withdrawal: нет
+  expected:
+    source_example_doses_mg_per_day:
+    - 30
+    - 20
+    - 0
+    holds_before_next_days:
+    - 7
+    - 7
+    last_source_dose_mg_per_day: 20
+    mandatory_for_all: false
+  source_refs: *id001
+  note: Ожидание переноса источника; калькулятор не реализован, клиническая валидация не выполнена.
+  case_kind: parameter_or_constraint_fragment
+- case_id: parox-taper-example__below-20
+  synthetic: true
+  given:
+    current_dose: 10
+    example_selected: true
+  expected:
+    result_type: clinician_choice
+    complete_schedule: null
+    invented_last_step: false
+  source_refs: *id001
+  note: Ожидание переноса источника; калькулятор не реализован, клиническая валидация не выполнена.
+  case_kind: parameter_or_constraint_fragment
+- case_id: parox-taper-example__symptoms
+  synthetic: true
+  given:
+    current_dose: 20
+    withdrawal_severity: непереносимые
+  expected:
+    automatic_stop: false
+    option: рассмотреть прежнюю переносимую дозу и более медленное снижение
+    fixed_slower_step: null
+  source_refs: *id001
+  note: Ожидание переноса источника; калькулятор не реализован, клиническая валидация не выполнена.
+  case_kind: parameter_or_constraint_fragment
+profile:
+  country: RU
+  selection_status: RU_profile_research
+  foreign_fallback_allowed: false
+card_type: partial_source_constraint
+input_contract_ref: remediation/input_contracts.yaml#fragment_bindings/parox-taper-example

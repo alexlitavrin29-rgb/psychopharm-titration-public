@@ -1,0 +1,11 @@
+# Фактический охват дельты227
+
+Исходная независимая проверка38card USED условий и211 numeric parameters сохранена в final_review и condition_completion; exactsameSHA reading reuse отражён в [source_read_registry.json](<C:/Users/Alex/Documents/ChatGPT/титрование/research/acceptance_v3_audit/final_recheck/source_read_registry.json>). Новое чтение неизменных источников не заявлено.
+
+Все693 конечных старых scope exemplars имеют current certificate и dense/sparse witness(1386cases).Каждое текущие source/physical-page/SHA основание сверено с собственным прежним primary norm; cause/compound/actor/sourceform/phase/clock/arithmetic checked отдельно, не засчитано поauthor PASS.4591 literal causal counterchecks отвергают отсутствие/unknown причины, инойsource/phase и ошибочную подстановкуpositive в unknown clarification.22 unknown-current-event scopes получили explicit clarification-only, namedmissing/unassessed и no source action.
+
+Проверены305 исключений,135 explicit scopes и218reason-only caution scopes,29 known wrong form/release и6XR75×50%=37.5wholeform refusals,5conditional adult AD references иnotselectedPAR40 result. Прямыеnumeric operands и source gates сохраняются. Свойства source exclusion/refusal не выданы за stop; current clinician action требует свой ongoing и consumed actual currentdose при производной фазе. Supplied optional positive/negative/unknown считаются, отсутствующие nonused fields unassessed.
+
+Полные6646 expected повторно прошли22869 собственных numeric/guard и81616 source/phase/count assertions без ошибки;2731 used cause/action occurrences безunlinked.2652paths имеют корректные edges/terminals/counts;96 ordinary numerical10–34 unchanged и0lowerbounds. Current author baseline и35targeted+5main isolated mutations фактически повторены.
+
+Единственный новый ограниченный остаток —22 unsupported patient population tags; нет нового неправильного dose/action или доказанного knowncontra numericalpermission. Перед полной приёмкой нужна конечная метадельта22/guard с новымSHA. Static scope functions/certificates and prepared graphs не clinical selector/app; непрочитанный неиспользуемый текст всехЛВ/неисследованных препаратов внеUSED и произвольная клиническая комбинаторика не сертифицировались.

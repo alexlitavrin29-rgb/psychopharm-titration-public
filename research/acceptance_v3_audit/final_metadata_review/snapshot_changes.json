@@ -1,0 +1,31 @@
+{
+  "old_snapshot": "27ef14e77185b7b104d43199664a5b1ca42b73dd8b09f921ee539e97fae971f8",
+  "new_snapshot": "b66e9e0dadca7234ed1e66bc8c103047ff2f96e963313d07dd0075494695f0a4",
+  "changed_or_new": [
+    {
+      "path": "research/remediation_round3/full_scenarios.json",
+      "sha256": "b310b3ed9383c3a8abe5d34e5ed6cc8290818ab367811dcba1f0ad2600ac252d"
+    },
+    {
+      "path": "research/remediation_round3/question_graphs.yaml",
+      "sha256": "a75fa561ac4649f6fab2a65d2e55ec44b2e5065452480f07cf1cd7aeffa5106b"
+    },
+    {
+      "path": "research/remediation_round3/actual_question_paths.json",
+      "sha256": "8e6a7a1840a662521c2ecdc7659a1ce01856f8afdb27cc35a8c5c9c9d3f0080e"
+    },
+    {
+      "path": "research/remediation_round3/verify_result_scopes.py",
+      "sha256": "871ae55c95f9184885ecb3fc14f802c3d38a4151e7004730f4eeda12c3685026"
+    },
+    {
+      "path": "research/remediation_round3/v3_completion_response.md",
+      "sha256": "eafa63a1f135decbd659ef59ba3b6c9ee685ab82eaccb0b1dc7be722379706e7"
+    },
+    {
+      "path": "research/remediation_round3/sparse_population_metadata_repairs.json",
+      "sha256": "17af4c625fb5e635a42ac56eb2f133b0a70660a2c0a1b3cedd466a27ea39879b"
+    }
+  ],
+  "removed": []
+}

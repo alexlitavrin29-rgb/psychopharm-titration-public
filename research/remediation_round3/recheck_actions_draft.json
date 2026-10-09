@@ -1,0 +1,54 @@
+{
+  "state": "Separate executor proposal; not part of the frozen candidate or an accepted medical contract",
+  "scope": "Known ongoing clinical events, not a new diagnostic questionnaire; exact source operations retain physician choice",
+  "proposals": [
+    {
+      "source_id": "RU-SER",
+      "locator": "§4.4 physical p6",
+      "fact": "symptomatic_hyponatremia",
+      "physician_confirmed_event": true,
+      "proposed_result": "clinician_choice",
+      "source_actions": ["consider_discontinuation_of_sertraline", "provide_appropriate_medical_care"],
+      "not_inferred": ["serum sodium <110 is not a new decision threshold", "risk of hyponatremia is not symptomatic disease", "source does not mandate automatic cessation"],
+      "affected_cards": ["ser-panic-start", "ser-social-start", "ser-adult-adjust", "ser-taper-limit", "switch-ser-ago", "switch-ser-esc", "switch-esc-ser target B"],
+      "phase": "Only explicitly ongoing SER; target phase separate from A",
+      "necessity_question_open": "Known event must override a standard calendar; mandatory absence check vs reported current event needs result-specific review"
+    },
+    {
+      "source_id": "RU-PREG",
+      "locator": "§4.4 physical p8",
+      "fact": "current_suicidal_thoughts_or_behavior",
+      "physician_confirmed_event": true,
+      "proposed_result": "clinician_choice",
+      "source_actions": ["consider_discontinuation_of_pregabalin", "consider_appropriate_treatment"],
+      "not_inferred": ["source does not mandate automatic cessation", "general suicide risk is not occurrence of current thoughts/behavior", "no emergency taper percentage is published"],
+      "affected_cards": ["preg-gad-start", "preg-gad-adjust", "preg-renal-start", "preg-taper-limit"],
+      "phase": "Ongoing PREG, not an unadministered first dose",
+      "necessity_question_open": "Known event must override a standard calendar; source does not itself define a new universal prestart diagnostic questionnaire"
+    },
+    {
+      "source_id": "RU-DULOX",
+      "locator": "§4.4 physical p4",
+      "fact": "persistent_BP_increase_during_treatment",
+      "physician_confirmed_event": true,
+      "proposed_result": "clinician_choice",
+      "source_actions": ["consider_dose_adjustment_or_gradual_discontinuation"],
+      "not_inferred": ["not a new numeric BP threshold", "not identical to uncontrolled hypertension contraindication before start", "not an immediate unconditional stop"],
+      "affected_cards": ["dulox-depression-start", "dulox-gad-start", "dulox-gad-adjust", "dulox-taper-limit"],
+      "phase": "Ongoing DULOX only",
+      "necessity_question_open": "Known event changes current action; unknown monitoring context is not a confirmed negative"
+    },
+    {
+      "source_id": "RU-VENLA-XR",
+      "locator": "§4.4 physical p8",
+      "fact": "suspected_serotonin_syndrome",
+      "physician_confirmed_event": true,
+      "proposed_result": "clinician_choice",
+      "source_actions": ["consider_dose_reduction_or_discontinuation_according_to_symptom_severity"],
+      "not_inferred": ["do not borrow unconditional SSRI stop/supportive action from PAR or ESC", "no source-defined numeric severity-to-dose coefficient"],
+      "affected_cards": ["venla-xr-gad-start", "venla-xr-social-start", "venla-xr-panic-form-limit", "venla-xr-taper-limit"],
+      "phase": "Ongoing XR only; IR source not interchangeable",
+      "necessity_question_open": "Known source event must have the source's physician choice; absence of assessment cannot become no syndrome"
+    }
+  ]
+}

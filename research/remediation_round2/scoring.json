@@ -1,0 +1,52 @@
+{
+  "dimensions": [
+    {
+      "dimension": "Достоверность источников, версии и применимость РФ",
+      "previous_score": 7.0,
+      "score": 8.0,
+      "weight_percent": 25,
+      "contribution": 2.0,
+      "new_evidence_and_change": "ESC current full original and SER full byte comparison; PHEN exact RU/form. Nine active product edition confirmations remain F12, so not10."
+    },
+    {
+      "dimension": "Правильность правил, ограничений и воспроизводимость",
+      "previous_score": 8.5,
+      "score": 9.0,
+      "weight_percent": 30,
+      "contribution": 2.7,
+      "new_evidence_and_change": "All11 affected ESC/dependency cards source-read, exact30 and >65, hepatic classes, taper semantics and A/B mania repaired; key expected independently checked. Medical review is limited, not exhaustive."
+    },
+    {
+      "dimension": "Входы, неизвестные и короткие пути",
+      "previous_score": 7.0,
+      "score": 8.0,
+      "weight_percent": 20,
+      "contribution": 1.6,
+      "new_evidence_and_change": "Source/result necessity collision repaired; increase vs keep, start vs cessation separated; actual paths count independent facts. Other card minimum necessity and universal5–10 remain open."
+    },
+    {
+      "dimension": "Покрытие ТЗ и честность приёмки",
+      "previous_score": 8.0,
+      "score": 9.0,
+      "weight_percent": 15,
+      "contribution": 1.35,
+      "new_evidence_and_change": "27 of30 literal research criteria met by new evidence; current source/limits/form criteria close. General short path remains incompatible with the enumerated lower bound."
+    },
+    {
+      "dimension": "Техническая согласованность и перенос",
+      "previous_score": 8.5,
+      "score": 9.0,
+      "weight_percent": 10,
+      "contribution": 0.9,
+      "new_evidence_and_change": "38 typed contracts and indices agree; explicit graph edges/path traversal;35 targeted plus5 structural mutations reject defects;19 primary expected checks supplement internal anchors. Independent review corrections include ordinary ESC inputs, A/B provenance, nested coverage and complete ECG/serotonin source actions. No executed calculator or clinical validation. Paired A/B allergy, target treatment phase, AGO mania locator and identical-input full expected corrected and independently rechecked."
+    }
+  ],
+  "previous_uncapped_score": 7.75,
+  "weighted_score": 8.55,
+  "original_audit_cap": 6.0,
+  "original_cap_applies": true,
+  "cap_reason": "INDEPENDENT_AUDIT_PROMPT.md §7: при любом незакрытом существенном требовании ТЗ итог≤6. Критерий18 (5–10) и F12 остаются открытыми, поэтому cap6 сохраняется после получения ESC/SER. Взвешенный экспертный балл8.55 отражает улучшение относительно7.75; снятие ограничения не выполнено. Cap4 не применяется: выявленные неверные ordinary ESC inputs исправлены и повторно проверены; медицинские выводы не исполнялись калькулятором.",
+  "final_score": 6.0,
+  "clinical_validation": "not_performed",
+  "independent_review_status": "completed; independent_review.md supports 27 satisfied / 3 partial (9,17,18), retains cap6; limited review, not clinical validation"
+}

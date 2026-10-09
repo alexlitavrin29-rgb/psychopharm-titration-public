@@ -1,0 +1,106 @@
+[
+  {
+    "rule_id": "preg-taper-limit",
+    "result": "source_limit",
+    "fields": [
+      "current_dose",
+      "duration_of_use",
+      "prior_withdrawal"
+    ],
+    "source": "RU-PREG §4.4 физ.9",
+    "known": "150/24weeks/false",
+    "missing_unknown": "Each currently forces insufficient_data; source minimum>=1week with no exact calendar does not calculate from these three operands.",
+    "required_resolution": "Demote for this limited result with explicit unassessed; keep known urgent/current symptom actions. Numerical individualized calendar still needs separate data."
+  },
+  {
+    "rule_id": "parox-taper-example",
+    "result": "not_selected/withdrawal vs selected40",
+    "fields": [
+      "current_dose",
+      "duration",
+      "past_withdrawal"
+    ],
+    "source": "RU-PAROX §4.2 физ.3–4, §4.4 физ.10",
+    "known": "Selected40 requires current40 and explicit example choice; produces concrete30/20/0.",
+    "missing_unknown": "Qualitative not_selected gives no calendar; its unconditional current/duration/history necessity cannot be inferred from selected40.",
+    "required_resolution": "Result-specific trigger and own missing/unknown proof rather than globalalways; retain clinically known withdrawal."
+  },
+  {
+    "rule_id": "ago-gad-start/ago-depression-start",
+    "result": "already chosen source-bound25 start",
+    "fields": [
+      "renal_state"
+    ],
+    "source": "RU-AGO §4.2 физ.2 / §4.4 физ.4",
+    "known": "moderate/severe source caution, no numerical correction; no significant PKdose change",
+    "missing_unknown": "Generic caution is not an explicit source mandate for a separate universal prestart assessment. Existing model returns choice.",
+    "required_resolution": "Potential reported_context model with known caution action/unassessed warning/clinical_clearance=false requires a complete rebuilt proof; do not silently remove fact or call current path minimal."
+  },
+  {
+    "rule_id": "ago-gad-start/ago-depression-start",
+    "result": "selected25 start",
+    "fields": [
+      "overweight_obesity",
+      "fatty_liver",
+      "diabetes",
+      "alcohol_abuse"
+    ],
+    "source": "RU-AGO §4.4 физ.3",
+    "known": "Source asks careful benefit/risk assessment in risk patients.",
+    "missing_unknown": "Explicit narrow clinician hepatic benefit/risk conclusion may be an alternative result fact; four false answers cannot be invented from it.",
+    "required_resolution": "Source-bound assessment/provenance and all applicable paths, no generalclinicalclearance or claim<=15 from one substitution."
+  },
+  {
+    "rule_id": "ser-adult-adjust",
+    "result": "keep vs increase vs not_chosen",
+    "fields": [
+      "time_at_dose",
+      "response",
+      "tolerability",
+      "adherence",
+      "akathisia"
+    ],
+    "source": "RU-SER §4.2 физ.2 / §4.4 физ.6",
+    "known": "keep100 remains100 without future increase data; increase needs>=1week/akathisia; notchosen needs source clinical assessment.",
+    "missing_unknown": "Own static checks and full prepared examples preserve conditional operands rather than requiring next-step data forkeep.",
+    "required_resolution": "This selected-action distinction is supported in reviewed source scope; known symptomatic events still need R1-01."
+  },
+  {
+    "rule_id": "preg-gad-start",
+    "result": "reproductive condition",
+    "fields": [
+      "reproductive_population",
+      "effective_contraception"
+    ],
+    "source": "RU-PREG §4.4 физ.9 / §4.6 физ.12",
+    "known": "true requires contraception;false does not infer pregnancy/lactation negatives.",
+    "missing_unknown": "Unknown reproductive trigger blocks; explicit effective contraception missing/unknown undertrue requests it.",
+    "required_resolution": "Keep separate independent source facts; do not merge pregnancy/lactation/contraception forcount."
+  },
+  {
+    "rule_id": "esc-start variants",
+    "result": "CAD/electrolytes condition",
+    "fields": [
+      "coronary_disease",
+      "ecg_done",
+      "electrolyte_disturbance",
+      "electrolytes_corrected"
+    ],
+    "source": "RU-ESC §4.4 физ.6",
+    "known": "Actual CAD needs ECG; actual disturbance needs correction; all such paths complex by source intervention.",
+    "missing_unknown": "Unknown trigger notfalse; unknown required followup no automaticdose.",
+    "required_resolution": "Correct conditional structure; supportscomplex classification, doesnot shortenAGO/DULOX/PREGordinary."
+  },
+  {
+    "rule_id": "ser-taper-limit",
+    "result": "known strongCYP3A4 caution/avoid",
+    "fields": [
+      "medicines.INN",
+      "medicines.status"
+    ],
+    "source": "RU-SER §4.5 физ.10",
+    "known": "Full case has knowncurrent strongCYP3A4.",
+    "missing_unknown": "Projectedgiven losesmedicines yet attributes specific class/action.",
+    "required_resolution": "Consume/count two recordfacts ifknown; otherwise no specific positive class inference. No mandatory routine prestart screen forqualitative cessation implied."
+  }
+]

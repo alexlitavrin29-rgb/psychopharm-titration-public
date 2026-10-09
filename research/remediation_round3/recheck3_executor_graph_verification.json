@@ -1,0 +1,9 @@
+{
+  "status": "pass",
+  "graphs": 38,
+  "prepared_paths": 737,
+  "explicit_edges": true,
+  "counts_from_question_traversal": true,
+  "clinical_result_scope": "Prepared separately source-bound expected; graph verification does not execute medical branch evaluation or a calculator",
+  "errors": []
+}

@@ -1,0 +1,26 @@
+{
+  "download_date": "2026-10-08",
+  "human_provided": true,
+  "registry_url": "https://lk.regmed.ru/Register/EAEU_SmPC",
+  "old_local_file": "source_downloads/Золофт — сертралин.pdf",
+  "old_sha256": "3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba",
+  "documents": [
+    {
+      "filename": "1.3.1 Золофт ОХЛП 21.04.26_02002 (1817931491) [0008] штамп МЗ.pdf",
+      "local_file": "remediation_round2/Zoloft_current_registry.pdf",
+      "sha256": "3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba",
+      "pages": 22,
+      "document_type": "SmPC",
+      "byte_identity_to_previously_read_original": true
+    },
+    {
+      "filename": "1.3.1 Золофт ЛВ 22.04.26_02001 (1817931561) [0008] штамп МЗ.pdf",
+      "local_file": "remediation_round2/Zoloft_current_registry_PIL.pdf",
+      "sha256": "eac44c60d0b40687cbe565a03d16679a82671e7ee13593648fc2beebfdcd61bd",
+      "pages": 13,
+      "document_type": "PIL"
+    }
+  ],
+  "confirmation_pending": null,
+  "confirmation": "Downloaded by the user in response to a specific request for the current official registry SmPC; filename and stamp match the previously observed registry edition. Complete bytes equal the read manufacturer original. Page1 visually verified again; initial registry date differs from current document stamp."
+}

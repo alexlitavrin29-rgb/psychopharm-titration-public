@@ -1,0 +1,704 @@
+[
+  {
+    "rule_id": "ago-depression-start",
+    "source_ids": [
+      "RU-AGO",
+      "RU-DEP"
+    ],
+    "parameter_count": 8,
+    "input_count": 26,
+    "branch_ids": [
+      "usual",
+      "liver_caution",
+      "renal_caution",
+      "repeat_tests"
+    ],
+    "source_review": "primary_review_notes.md",
+    "necessity_decisions": "necessity_decisions.json",
+    "per_result_input_ledger": "input_necessity.csv",
+    "prepared_expected": "full_scenarios.json",
+    "calculator_execution": false
+  },
+  {
+    "rule_id": "ago-gad-start",
+    "source_ids": [
+      "RU-AGO",
+      "RU-GAD"
+    ],
+    "parameter_count": 8,
+    "input_count": 26,
+    "branch_ids": [
+      "usual",
+      "liver_caution",
+      "renal_caution",
+      "repeat_tests"
+    ],
+    "source_review": "primary_review_notes.md",
+    "necessity_decisions": "necessity_decisions.json",
+    "per_result_input_ledger": "input_necessity.csv",
+    "prepared_expected": "full_scenarios.json",
+    "calculator_execution": false
+  },
+  {
+    "rule_id": "ago-stop",
+    "source_ids": [
+      "RU-AGO",
+      "RU-GAD"
+    ],
+    "parameter_count": 0,
+    "input_count": 2,
+    "branch_ids": [
+      "chosen_stop"
+    ],
+    "source_review": "primary_review_notes.md",
+    "necessity_decisions": "necessity_decisions.json",
+    "per_result_input_ledger": "input_necessity.csv",
+    "prepared_expected": "full_scenarios.json",
+    "calculator_execution": false
+  },
+  {
+    "rule_id": "dulox-depression-start",
+    "source_ids": [
+      "RU-DULOX",
+      "RU-DEP"
+    ],
+    "parameter_count": 2,
+    "input_count": 23,
+    "branch_ids": [
+      "usual"
+    ],
+    "source_review": "primary_review_notes.md",
+    "necessity_decisions": "necessity_decisions.json",
+    "per_result_input_ledger": "input_necessity.csv",
+    "prepared_expected": "full_scenarios.json",
+    "calculator_execution": false
+  },
+  {
+    "rule_id": "dulox-gad-adjust",
+    "source_ids": [
+      "RU-DULOX",
+      "RU-GAD"
+    ],
+    "parameter_count": 3,
+    "input_count": 28,
+    "branch_ids": [
+      "at30",
+      "at60",
+      "other"
+    ],
+    "source_review": "primary_review_notes.md",
+    "necessity_decisions": "necessity_decisions.json",
+    "per_result_input_ledger": "input_necessity.csv",
+    "prepared_expected": "full_scenarios.json",
+    "calculator_execution": false
+  },
+  {
+    "rule_id": "dulox-gad-start",
+    "source_ids": [
+      "RU-DULOX",
+      "RU-GAD"
+    ],
+    "parameter_count": 5,
+    "input_count": 25,
+    "branch_ids": [
+      "usual",
+      "comorbid",
+      "elderly",
+      "overlap"
+    ],
+    "source_review": "primary_review_notes.md",
+    "necessity_decisions": "necessity_decisions.json",
+    "per_result_input_ledger": "input_necessity.csv",
+    "prepared_expected": "full_scenarios.json",
+    "calculator_execution": false
+  },
+  {
+    "rule_id": "dulox-taper-limit",
+    "source_ids": [
+      "RU-DULOX",
+      "RU-GAD"
+    ],
+    "parameter_count": 2,
+    "input_count": 8,
+    "branch_ids": [
+      "source_limit",
+      "withdrawal"
+    ],
+    "source_review": "primary_review_notes.md",
+    "necessity_decisions": "necessity_decisions.json",
+    "per_result_input_ledger": "input_necessity.csv",
+    "prepared_expected": "full_scenarios.json",
+    "calculator_execution": false
+  },
+  {
+    "rule_id": "esc-adult-adjust",
+    "source_ids": [
+      "RU-GAD",
+      "RU-PANIC",
+      "RU-ESC"
+    ],
+    "parameter_count": 5,
+    "input_count": 28,
+    "branch_ids": [
+      "response_decision"
+    ],
+    "source_review": "primary_review_notes.md",
+    "necessity_decisions": "necessity_decisions.json",
+    "per_result_input_ledger": "input_necessity.csv",
+    "prepared_expected": "full_scenarios.json",
+    "calculator_execution": false
+  },
+  {
+    "rule_id": "esc-cyp2c19-start",
+    "source_ids": [
+      "RU-ESC"
+    ],
+    "parameter_count": 7,
+    "input_count": 26,
+    "branch_ids": [
+      "special"
+    ],
+    "source_review": "primary_review_notes.md",
+    "necessity_decisions": "necessity_decisions.json",
+    "per_result_input_ledger": "input_necessity.csv",
+    "prepared_expected": "full_scenarios.json",
+    "calculator_execution": false
+  },
+  {
+    "rule_id": "esc-elderly-start",
+    "source_ids": [
+      "RU-ESC"
+    ],
+    "parameter_count": 7,
+    "input_count": 26,
+    "branch_ids": [
+      "elderly"
+    ],
+    "source_review": "primary_review_notes.md",
+    "necessity_decisions": "necessity_decisions.json",
+    "per_result_input_ledger": "input_necessity.csv",
+    "prepared_expected": "full_scenarios.json",
+    "calculator_execution": false
+  },
+  {
+    "rule_id": "esc-gad-start",
+    "source_ids": [
+      "RU-ESC"
+    ],
+    "parameter_count": 7,
+    "input_count": 26,
+    "branch_ids": [
+      "usual"
+    ],
+    "source_review": "primary_review_notes.md",
+    "necessity_decisions": "necessity_decisions.json",
+    "per_result_input_ledger": "input_necessity.csv",
+    "prepared_expected": "full_scenarios.json",
+    "calculator_execution": false
+  },
+  {
+    "rule_id": "esc-hepatic-start",
+    "source_ids": [
+      "RU-ESC"
+    ],
+    "parameter_count": 7,
+    "input_count": 26,
+    "branch_ids": [
+      "special"
+    ],
+    "source_review": "primary_review_notes.md",
+    "necessity_decisions": "necessity_decisions.json",
+    "per_result_input_ledger": "input_necessity.csv",
+    "prepared_expected": "full_scenarios.json",
+    "calculator_execution": false
+  },
+  {
+    "rule_id": "esc-panic-start",
+    "source_ids": [
+      "RU-ESC"
+    ],
+    "parameter_count": 9,
+    "input_count": 26,
+    "branch_ids": [
+      "usual"
+    ],
+    "source_review": "primary_review_notes.md",
+    "necessity_decisions": "necessity_decisions.json",
+    "per_result_input_ledger": "input_necessity.csv",
+    "prepared_expected": "full_scenarios.json",
+    "calculator_execution": false
+  },
+  {
+    "rule_id": "esc-social-start",
+    "source_ids": [
+      "RU-ESC"
+    ],
+    "parameter_count": 7,
+    "input_count": 26,
+    "branch_ids": [
+      "usual"
+    ],
+    "source_review": "primary_review_notes.md",
+    "necessity_decisions": "necessity_decisions.json",
+    "per_result_input_ledger": "input_necessity.csv",
+    "prepared_expected": "full_scenarios.json",
+    "calculator_execution": false
+  },
+  {
+    "rule_id": "esc-taper-limit",
+    "source_ids": [
+      "RU-GAD",
+      "RU-ESC",
+      "RU-PANIC"
+    ],
+    "parameter_count": 4,
+    "input_count": 24,
+    "branch_ids": [
+      "source_limit"
+    ],
+    "source_review": "primary_review_notes.md",
+    "necessity_decisions": "necessity_decisions.json",
+    "per_result_input_ledger": "input_necessity.csv",
+    "prepared_expected": "full_scenarios.json",
+    "calculator_execution": false
+  },
+  {
+    "rule_id": "fluvox-depression-start",
+    "source_ids": [
+      "RU-FLUVOX",
+      "RU-DEP"
+    ],
+    "parameter_count": 7,
+    "input_count": 23,
+    "branch_ids": [
+      "selected50",
+      "selected100",
+      "choice"
+    ],
+    "source_review": "primary_review_notes.md",
+    "necessity_decisions": "necessity_decisions.json",
+    "per_result_input_ledger": "input_necessity.csv",
+    "prepared_expected": "full_scenarios.json",
+    "calculator_execution": false
+  },
+  {
+    "rule_id": "fluvox-taper-limit",
+    "source_ids": [
+      "RU-FLUVOX",
+      "RU-DEP"
+    ],
+    "parameter_count": 1,
+    "input_count": 11,
+    "branch_ids": [
+      "source_limit",
+      "withdrawal"
+    ],
+    "source_review": "primary_review_notes.md",
+    "necessity_decisions": "necessity_decisions.json",
+    "per_result_input_ledger": "input_necessity.csv",
+    "prepared_expected": "full_scenarios.json",
+    "calculator_execution": false
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "source_ids": [
+      "RU-PANIC",
+      "RU-PAROX"
+    ],
+    "parameter_count": 10,
+    "input_count": 26,
+    "branch_ids": [
+      "usual",
+      "elderly",
+      "organ_caution"
+    ],
+    "source_review": "primary_review_notes.md",
+    "necessity_decisions": "necessity_decisions.json",
+    "per_result_input_ledger": "input_necessity.csv",
+    "prepared_expected": "full_scenarios.json",
+    "calculator_execution": false
+  },
+  {
+    "rule_id": "parox-taper-example",
+    "source_ids": [
+      "RU-DEP",
+      "RU-PAROX",
+      "RU-PANIC"
+    ],
+    "parameter_count": 4,
+    "input_count": 9,
+    "branch_ids": [
+      "selected40",
+      "other"
+    ],
+    "source_review": "primary_review_notes.md",
+    "necessity_decisions": "necessity_decisions.json",
+    "per_result_input_ledger": "input_necessity.csv",
+    "prepared_expected": "full_scenarios.json",
+    "calculator_execution": false
+  },
+  {
+    "rule_id": "phen-taper-limit",
+    "source_ids": [
+      "RU-PHEN",
+      "RU-PANIC"
+    ],
+    "parameter_count": 0,
+    "input_count": 8,
+    "branch_ids": [
+      "source_limit",
+      "withdrawal"
+    ],
+    "source_review": "primary_review_notes.md",
+    "necessity_decisions": "necessity_decisions.json",
+    "per_result_input_ledger": "input_necessity.csv",
+    "prepared_expected": "full_scenarios.json",
+    "calculator_execution": false
+  },
+  {
+    "rule_id": "preg-gad-adjust",
+    "source_ids": [
+      "RU-GAD",
+      "RU-PANIC",
+      "RU-PREG"
+    ],
+    "parameter_count": 9,
+    "input_count": 28,
+    "branch_ids": [
+      "from150-frequency2",
+      "from300-frequency2",
+      "from450-frequency2",
+      "from150-frequency3",
+      "from300-frequency3",
+      "from450-frequency3",
+      "other"
+    ],
+    "source_review": "primary_review_notes.md",
+    "necessity_decisions": "necessity_decisions.json",
+    "per_result_input_ledger": "input_necessity.csv",
+    "prepared_expected": "full_scenarios.json",
+    "calculator_execution": false
+  },
+  {
+    "rule_id": "preg-gad-start",
+    "source_ids": [
+      "RU-GAD",
+      "RU-PREG"
+    ],
+    "parameter_count": 9,
+    "input_count": 23,
+    "branch_ids": [
+      "frequency2",
+      "frequency3"
+    ],
+    "source_review": "primary_review_notes.md",
+    "necessity_decisions": "necessity_decisions.json",
+    "per_result_input_ledger": "input_necessity.csv",
+    "prepared_expected": "full_scenarios.json",
+    "calculator_execution": false
+  },
+  {
+    "rule_id": "preg-renal-start",
+    "source_ids": [
+      "RU-GAD",
+      "RU-PREG"
+    ],
+    "parameter_count": 14,
+    "input_count": 22,
+    "branch_ids": [
+      "ge60",
+      "30_60",
+      "15_30",
+      "lt15"
+    ],
+    "source_review": "primary_review_notes.md",
+    "necessity_decisions": "necessity_decisions.json",
+    "per_result_input_ledger": "input_necessity.csv",
+    "prepared_expected": "full_scenarios.json",
+    "calculator_execution": false
+  },
+  {
+    "rule_id": "preg-taper-limit",
+    "source_ids": [
+      "RU-GAD",
+      "RU-PREG"
+    ],
+    "parameter_count": 3,
+    "input_count": 23,
+    "branch_ids": [
+      "source_limit",
+      "withdrawal"
+    ],
+    "source_review": "primary_review_notes.md",
+    "necessity_decisions": "necessity_decisions.json",
+    "per_result_input_ledger": "input_necessity.csv",
+    "prepared_expected": "full_scenarios.json",
+    "calculator_execution": false
+  },
+  {
+    "rule_id": "ser-adult-adjust",
+    "source_ids": [
+      "RU-GAD",
+      "RU-PANIC",
+      "RU-SER"
+    ],
+    "parameter_count": 7,
+    "input_count": 24,
+    "branch_ids": [
+      "increase",
+      "keep",
+      "increase-from50",
+      "increase-from150",
+      "keep50",
+      "keep150",
+      "keep200",
+      "initial25",
+      "other-source-dose",
+      "ceiling",
+      "early",
+      "decrease",
+      "clinical_option"
+    ],
+    "source_review": "primary_review_notes.md",
+    "necessity_decisions": "necessity_decisions.json",
+    "per_result_input_ledger": "input_necessity.csv",
+    "prepared_expected": "full_scenarios.json",
+    "calculator_execution": false
+  },
+  {
+    "rule_id": "ser-panic-start",
+    "source_ids": [
+      "RU-SER"
+    ],
+    "parameter_count": 7,
+    "input_count": 18,
+    "branch_ids": [
+      "usual"
+    ],
+    "source_review": "primary_review_notes.md",
+    "necessity_decisions": "necessity_decisions.json",
+    "per_result_input_ledger": "input_necessity.csv",
+    "prepared_expected": "full_scenarios.json",
+    "calculator_execution": false
+  },
+  {
+    "rule_id": "ser-social-start",
+    "source_ids": [
+      "RU-SER"
+    ],
+    "parameter_count": 7,
+    "input_count": 18,
+    "branch_ids": [
+      "usual"
+    ],
+    "source_review": "primary_review_notes.md",
+    "necessity_decisions": "necessity_decisions.json",
+    "per_result_input_ledger": "input_necessity.csv",
+    "prepared_expected": "full_scenarios.json",
+    "calculator_execution": false
+  },
+  {
+    "rule_id": "ser-taper-limit",
+    "source_ids": [
+      "RU-PANIC",
+      "RU-SER"
+    ],
+    "parameter_count": 3,
+    "input_count": 19,
+    "branch_ids": [
+      "source_limit",
+      "withdrawal"
+    ],
+    "source_review": "primary_review_notes.md",
+    "necessity_decisions": "necessity_decisions.json",
+    "per_result_input_ledger": "input_necessity.csv",
+    "prepared_expected": "full_scenarios.json",
+    "calculator_execution": false
+  },
+  {
+    "rule_id": "switch-esc-ago",
+    "source_ids": [
+      "RU-DEP",
+      "RU-ESC",
+      "RU-AGO"
+    ],
+    "parameter_count": 7,
+    "input_count": 34,
+    "branch_ids": [
+      "class_overlap"
+    ],
+    "source_review": "primary_review_notes.md",
+    "necessity_decisions": "necessity_decisions.json",
+    "per_result_input_ledger": "input_necessity.csv",
+    "prepared_expected": "full_scenarios.json",
+    "calculator_execution": false
+  },
+  {
+    "rule_id": "switch-esc-ser",
+    "source_ids": [
+      "RU-DEP",
+      "RU-SER",
+      "RU-ESC"
+    ],
+    "parameter_count": 1,
+    "input_count": 16,
+    "branch_ids": [
+      "pair_gap"
+    ],
+    "source_review": "primary_review_notes.md",
+    "necessity_decisions": "necessity_decisions.json",
+    "per_result_input_ledger": "input_necessity.csv",
+    "prepared_expected": "full_scenarios.json",
+    "calculator_execution": false
+  },
+  {
+    "rule_id": "switch-parox-ago-selected-example",
+    "source_ids": [
+      "RU-DEP",
+      "RU-PAROX",
+      "RU-AGO"
+    ],
+    "parameter_count": 11,
+    "input_count": 42,
+    "branch_ids": [
+      "selected40",
+      "withdrawal_hold",
+      "not_selected"
+    ],
+    "source_review": "primary_review_notes.md",
+    "necessity_decisions": "necessity_decisions.json",
+    "per_result_input_ledger": "input_necessity.csv",
+    "prepared_expected": "full_scenarios.json",
+    "calculator_execution": false
+  },
+  {
+    "rule_id": "switch-parox-ago",
+    "source_ids": [
+      "RU-DEP",
+      "RU-PAROX",
+      "RU-AGO"
+    ],
+    "parameter_count": 7,
+    "input_count": 40,
+    "branch_ids": [
+      "source_class_overlap"
+    ],
+    "source_review": "primary_review_notes.md",
+    "necessity_decisions": "necessity_decisions.json",
+    "per_result_input_ledger": "input_necessity.csv",
+    "prepared_expected": "full_scenarios.json",
+    "calculator_execution": false
+  },
+  {
+    "rule_id": "switch-ser-ago",
+    "source_ids": [
+      "RU-DEP",
+      "RU-SER",
+      "RU-AGO"
+    ],
+    "parameter_count": 7,
+    "input_count": 39,
+    "branch_ids": [
+      "source_class_overlap"
+    ],
+    "source_review": "primary_review_notes.md",
+    "necessity_decisions": "necessity_decisions.json",
+    "per_result_input_ledger": "input_necessity.csv",
+    "prepared_expected": "full_scenarios.json",
+    "calculator_execution": false
+  },
+  {
+    "rule_id": "switch-ser-esc",
+    "source_ids": [
+      "RU-DEP",
+      "RU-SER",
+      "RU-ESC"
+    ],
+    "parameter_count": 1,
+    "input_count": 16,
+    "branch_ids": [
+      "pair_gap"
+    ],
+    "source_review": "primary_review_notes.md",
+    "necessity_decisions": "necessity_decisions.json",
+    "per_result_input_ledger": "input_necessity.csv",
+    "prepared_expected": "full_scenarios.json",
+    "calculator_execution": false
+  },
+  {
+    "rule_id": "venla-xr-gad-start",
+    "source_ids": [
+      "RU-VENLA-XR",
+      "RU-GAD"
+    ],
+    "parameter_count": 5,
+    "input_count": 37,
+    "branch_ids": [
+      "usual",
+      "renal_reduction",
+      "hepatic_reduction",
+      "joint_modifiers"
+    ],
+    "source_review": "primary_review_notes.md",
+    "necessity_decisions": "necessity_decisions.json",
+    "per_result_input_ledger": "input_necessity.csv",
+    "prepared_expected": "full_scenarios.json",
+    "calculator_execution": false
+  },
+  {
+    "rule_id": "venla-xr-panic-form-limit",
+    "source_ids": [
+      "RU-VENLA-XR",
+      "RU-PANIC",
+      "RU-VENLA-IR"
+    ],
+    "parameter_count": 4,
+    "input_count": 37,
+    "branch_ids": [
+      "form_limit"
+    ],
+    "source_review": "primary_review_notes.md",
+    "necessity_decisions": "necessity_decisions.json",
+    "per_result_input_ledger": "input_necessity.csv",
+    "prepared_expected": "full_scenarios.json",
+    "calculator_execution": false
+  },
+  {
+    "rule_id": "venla-xr-social-start",
+    "source_ids": [
+      "RU-VENLA-XR",
+      "RU-PHOB"
+    ],
+    "parameter_count": 5,
+    "input_count": 37,
+    "branch_ids": [
+      "usual",
+      "renal_reduction",
+      "hepatic_reduction",
+      "joint_modifiers"
+    ],
+    "source_review": "primary_review_notes.md",
+    "necessity_decisions": "necessity_decisions.json",
+    "per_result_input_ledger": "input_necessity.csv",
+    "prepared_expected": "full_scenarios.json",
+    "calculator_execution": false
+  },
+  {
+    "rule_id": "venla-xr-taper-limit",
+    "source_ids": [
+      "RU-VENLA-XR",
+      "RU-GAD"
+    ],
+    "parameter_count": 1,
+    "input_count": 10,
+    "branch_ids": [
+      "source_limit",
+      "withdrawal"
+    ],
+    "source_review": "primary_review_notes.md",
+    "necessity_decisions": "necessity_decisions.json",
+    "per_result_input_ledger": "input_necessity.csv",
+    "prepared_expected": "full_scenarios.json",
+    "calculator_execution": false
+  }
+]

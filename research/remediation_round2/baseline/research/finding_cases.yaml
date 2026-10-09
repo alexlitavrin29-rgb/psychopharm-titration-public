@@ -1,0 +1,66 @@
+profile: RU_findings_not_numeric_modules
+clinical_validation: not_performed
+cases:
+- rule_id: ru-depression-withdrawal
+  case_id: ru-depression-withdrawal__severe-withdrawal
+  synthetic: true
+  given:
+    diagnosis: F32
+    withdrawal_severity: тяжёлая
+    previous_tolerated_dose: null
+  expected:
+    result_type: clinician_choice
+    automatic_further_reduction: false
+    automatic_percent: null
+    resume_dose_mg: null
+    fluoxetine_bridge_calendar: null
+  source_refs: &id001
+  - RU-DEP
+  note: Ожидание переноса из источника; калькулятор не реализован, клиническая валидация не выполнена.
+- rule_id: ru-depression-withdrawal
+  case_id: ru-depression-withdrawal__unknown-is-not-low-risk
+  synthetic: true
+  given:
+    past_withdrawal: неизвестно
+  expected:
+    assumed_low_risk: false
+    automatic_taper_percent: null
+  source_refs: *id001
+  note: Ожидание переноса из источника; калькулятор не реализован, клиническая валидация не выполнена.
+- rule_id: switch-moc-ser
+  case_id: switch-moc-ser__no-foreign-24h
+  synthetic: true
+  given:
+    hours_after_moclobemide: 24
+  expected:
+    result_type: clinician_choice
+    russian_exact_washout_hours: null
+    automatic_sertraline_start: false
+  source_refs:
+  - RU-SER
+  - RU-DEP
+  note: Ожидание переноса из источника; калькулятор не реализован, клиническая валидация не выполнена.
+- rule_id: switch-ser-moc
+  case_id: switch-ser-moc__too-early
+  synthetic: true
+  given:
+    days_after_sertraline: 6
+  expected:
+    start_moclobemide_allowed_by_interval: false
+    minimum_days: 7
+    target_dose_mg: null
+  source_refs: &id002
+  - RU-SER
+  - RU-DEP
+  note: Ожидание переноса из источника; калькулятор не реализован, клиническая валидация не выполнена.
+- rule_id: switch-ser-moc
+  case_id: switch-ser-moc__interval-not-complete-regimen
+  synthetic: true
+  given:
+    days_after_sertraline: 7
+  expected:
+    interval_condition_met: true
+    automatic_target_start: false
+    complete_schedule: null
+  source_refs: *id002
+  note: Ожидание переноса из источника; калькулятор не реализован, клиническая валидация не выполнена.

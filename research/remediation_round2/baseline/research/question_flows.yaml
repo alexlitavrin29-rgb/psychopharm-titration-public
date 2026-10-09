@@ -1,0 +1,527 @@
+schema_version: '1.0'
+country: RU
+scope: professional_dose_calculation_under_stated_conditions
+calculator_implemented: false
+clinical_clearance_claimed: false
+question_count_policy:
+  initial_selections_counted_separately: true
+  independent_subfields_count_separately: true
+  medication_list_is_one_input: true
+  conditionally_unasked_values: not_assessed_by_module
+  unasked_is_normal: false
+  universal_risk_confirmation_checkbox_allowed: false
+  form_selection: Одна опция конкретный продукт+форма+сила; независимые дополнительные сведения о делении считаются
+    отдельно, если не заданы версией источника.
+  medication_timestamps: Список препаратов один вход; дата/время отмены каждого релевантного ИМАО — отдельные условные
+    входы. Они не спрятаны внутри списка.
+  short_individual_path_proven_for_all_usual_rules: false
+flows:
+- flow_id: ser-start-usual
+  rule_id: ser-panic-start
+  initial_questions:
+  - diagnosis
+  - drug
+  - mode
+  clinical_questions:
+  - age
+  - form
+  - hepatic
+  - pregnancy
+  - lactation
+  - medicines
+  - allergy
+  count: 10
+  clinical_output: reference_only_source_scheme
+  source_refs:
+  - RU-SER
+  - RU-PANIC
+  source_locators:
+  - ОХЛП §4.1–4.3 с.1–3; §4.5–4.6 с.7–11
+  - КР ПР §3.1 с.25–26
+  conditional_questions:
+  - mania
+  - seizure_state
+  - qt_risk
+  - bleeding_risk
+  - hyponatremia_risk
+  - suicide_risk
+  - maoi_type
+  - maoi_stopped_at
+  - akathisia
+  conditional_trigger: For an individual result, all applicable required fields must be known. Short reference display
+    leaves unasked fields not_assessed; it does not grant an individual dose.
+  if_complex: Complete every required dose/applicability input; count them separately. Reference path is not sufficient
+    for an individual numeric result.
+  ordinary_expected:
+    start_mg_per_day: 25
+    administrations_per_day: 1
+    after_first_week_mg_per_day: 50
+    next_step_conditional: true
+    all_patient_safety_checks_completed: false
+    reference_only: true
+    individual_dose: null
+    calculator_execution_tested: false
+  input_units:
+    age: year
+    form: null
+    pregnancy: null
+    lactation: null
+    medicines: null
+    allergy: null
+    hepatic: null
+    mania: null
+    seizure_state: null
+    qt_risk: null
+    bleeding_risk: null
+    hyponatremia_risk: null
+    suicide_risk: null
+    maoi_type: null
+    maoi_stopped_at: null
+    akathisia: null
+  individual_result_required_fields:
+  - age
+  - form
+  - pregnancy
+  - lactation
+  - medicines
+  - allergy
+  - hepatic
+  - mania
+  - seizure_state
+  - qt_risk
+  - bleeding_risk
+  - hyponatremia_risk
+  - suicide_risk
+  - akathisia
+  individual_result_count_without_maoi_history: 17
+  maoi_history_count: each relevant MAOI adds a type; each stopped MAOI also adds its timestamp; unknown prevents
+    start
+- flow_id: esc-start-usual
+  rule_id: esc-gad-start
+  initial_questions:
+  - diagnosis
+  - drug
+  - mode
+  clinical_questions:
+  - age
+  - form
+  - hepatic
+  - pregnancy
+  - lactation
+  - medicines
+  - allergy
+  count: 10
+  clinical_output: blocked_source
+  source_refs:
+  - RU-ESC
+  - RU-GAD
+  source_locators:
+  - ОХЛП §4.1–4.3 с.2–4; §4.5–4.6 с.7–10
+  - КР ГТР §3.2
+  conditional_questions:
+  - mania
+  - seizure_state
+  - known_cyp2c19
+  - renal
+  - qt_risk
+  - bleeding_risk
+  - hyponatremia_risk
+  - suicide_risk
+  - diabetes
+  - glaucoma
+  conditional_trigger: For an individual result, all applicable required fields must be known. Short reference display
+    leaves unasked fields not_assessed; it does not grant an individual dose.
+  if_complex: F01/F02/F13 open; renal sign not confirmed; no individual dose
+  ordinary_expected:
+    result_type: source_unavailable
+    unconditional_dose: null
+    all_patient_safety_checks_completed: false
+    calculator_execution_tested: false
+  input_units:
+    age: year
+    form: null
+    pregnancy: null
+    lactation: null
+    medicines: null
+    allergy: null
+    hepatic: null
+    mania: null
+    seizure_state: null
+    known_cyp2c19: null
+    renal: null
+    qt_risk: null
+    bleeding_risk: null
+    hyponatremia_risk: null
+    suicide_risk: null
+    diabetes: null
+    glaucoma: null
+  individual_result_required_fields:
+  - age
+  - form
+  - pregnancy
+  - lactation
+  - medicines
+  - allergy
+  - hepatic
+  - mania
+  - seizure_state
+  - known_cyp2c19
+  - renal
+  - qt_risk
+  - bleeding_risk
+  - hyponatremia_risk
+  - suicide_risk
+  - diabetes
+  - glaucoma
+  individual_result_count_without_maoi_history: 22
+  maoi_history_count: each relevant MAOI adds a type; each stopped MAOI also adds its timestamp; unknown prevents
+    start
+- flow_id: ser-adjust-clinician-action
+  rule_id: ser-adult-adjust
+  initial_questions:
+  - diagnosis
+  - drug
+  - mode
+  clinical_questions:
+  - age
+  - form
+  - hepatic
+  - current_dose
+  - time_at_dose
+  - clinician_action
+  count: 9
+  clinical_output: reference_only_source_scheme
+  source_refs:
+  - RU-SER
+  source_locators:
+  - §4.1–4.2 с.1–3
+  conditional_questions:
+  - pregnancy
+  - lactation
+  - medicines
+  - allergy
+  - mania
+  - seizure_state
+  - response
+  - tolerability
+  - adherence
+  - qt_risk
+  - bleeding_risk
+  - hyponatremia_risk
+  - suicide_risk
+  - akathisia
+  - maoi_type
+  - maoi_stopped_at
+  conditional_trigger: For an individual result, all applicable required fields must be known. Short reference display
+    leaves unasked fields not_assessed; it does not grant an individual dose.
+  if_complex: Complete every required dose/applicability input; count them separately. Reference path is not sufficient
+    for an individual numeric result.
+  ordinary_expected:
+    given_current_dose_mg_per_day: 50
+    given_time_at_dose_days: 7
+    given_clinician_action: increase
+    next_dose_mg_per_day: 100
+    increment_mg_per_day: 50
+    all_patient_safety_checks_completed: false
+    reference_only: true
+    individual_dose: null
+    calculator_execution_tested: false
+  input_units:
+    age: year
+    form: null
+    pregnancy: null
+    lactation: null
+    medicines: null
+    allergy: null
+    hepatic: null
+    mania: null
+    seizure_state: null
+    current_dose: mg/day
+    time_at_dose: week
+    response: null
+    tolerability: null
+    adherence: null
+    qt_risk: null
+    bleeding_risk: null
+    hyponatremia_risk: null
+    suicide_risk: null
+    akathisia: null
+    clinician_action: null
+    maoi_type: null
+    maoi_stopped_at: null
+  individual_result_required_fields:
+  - age
+  - form
+  - pregnancy
+  - lactation
+  - medicines
+  - allergy
+  - hepatic
+  - mania
+  - seizure_state
+  - current_dose
+  - time_at_dose
+  - qt_risk
+  - bleeding_risk
+  - hyponatremia_risk
+  - suicide_risk
+  - akathisia
+  - clinician_action
+  individual_result_count_without_maoi_history: 20
+  maoi_history_count: each relevant MAOI adds a type; each stopped MAOI also adds its timestamp; unknown prevents
+    start
+- flow_id: parox-taper-selected-example
+  rule_id: parox-taper-example
+  initial_questions:
+  - diagnosis
+  - drug
+  - mode
+  clinical_questions:
+  - age
+  - form
+  - current_dose
+  - duration
+  - past_withdrawal
+  - withdrawal_severity
+  - example_selected
+  count: 10
+  clinical_output: selected_source_example
+  source_refs:
+  - RU-PAROX
+  - RU-DEP
+  source_locators:
+  - ОХЛП §4.2 с.16–17
+  - КР депрессии Б5 с.105–106
+  conditional_questions: []
+  conditional_trigger: For an individual result, all applicable required fields must be known. Short reference display
+    leaves unasked fields not_assessed; it does not grant an individual dose.
+  if_complex: Врач выбирает более медленный план; конкретный новый шаг из источника не извлечён. Пример не выполняется
+    автоматически при симптомах.
+  ordinary_expected:
+    given_current_dose_mg_per_day: 40
+    source_example_doses_mg_per_day:
+    - 30
+    - 20
+    - 0
+    holds_before_next_days:
+    - 7
+    - 7
+    mandatory_for_all: false
+    all_patient_safety_checks_completed: false
+    calculator_execution_tested: false
+  input_units:
+    age: year
+    form: null
+    current_dose: mg/day
+    duration: week
+    past_withdrawal: null
+    withdrawal_severity: null
+    example_selected: null
+  individual_result_required_fields:
+  - age
+  - form
+  - current_dose
+  - duration
+  - past_withdrawal
+  - withdrawal_severity
+  - example_selected
+  individual_result_count_without_maoi_history: 10
+  maoi_history_count: each relevant MAOI adds a type; each stopped MAOI also adds its timestamp; unknown prevents
+    start
+- flow_id: ago-stop-chosen-action
+  rule_id: ago-stop
+  initial_questions:
+  - diagnosis
+  - drug
+  - mode
+  clinical_questions:
+  - current_dose
+  - clinician_action
+  count: 5
+  clinical_output: source_stop_action
+  source_refs:
+  - RU-AGO
+  source_locators:
+  - §4.2 PDF с.2 Прекращение лечения
+  conditional_questions: []
+  conditional_trigger: For an individual result, all applicable required fields must be known. Short reference display
+    leaves unasked fields not_assessed; it does not grant an individual dose.
+  if_complex: Не превращать отсутствие обязательного снижения A в разрешённый интервал до B.
+  ordinary_expected:
+    given_current_dose_mg_per_day: 50
+    mandatory_taper: false
+    next_drug_start_day: null
+    all_patient_safety_checks_completed: false
+    calculator_execution_tested: false
+  input_units:
+    current_dose: mg/day
+    clinician_action: null
+  individual_result_required_fields:
+  - current_dose
+  - clinician_action
+  individual_result_count_without_maoi_history: 5
+  maoi_history_count: each relevant MAOI adds a type; each stopped MAOI also adds its timestamp; unknown prevents
+    start
+complex_flows:
+- rule_ids:
+  - ago-depression-start
+  count_without_relevant_maoi_history: 29
+  reason: Independent source applicability inputs; no blanket clearance. MAOI history and renal operands counted
+    separately.
+- rule_ids:
+  - ago-gad-start
+  count_without_relevant_maoi_history: 29
+  reason: Independent source applicability inputs; no blanket clearance. MAOI history and renal operands counted
+    separately.
+- rule_ids:
+  - dulox-depression-start
+  count_without_relevant_maoi_history: 25
+  reason: Independent source applicability inputs; no blanket clearance. MAOI history and renal operands counted
+    separately.
+- rule_ids:
+  - dulox-gad-adjust
+  count_without_relevant_maoi_history: 30
+  reason: Independent source applicability inputs; no blanket clearance. MAOI history and renal operands counted
+    separately.
+- rule_ids:
+  - dulox-gad-start
+  count_without_relevant_maoi_history: 27
+  reason: Independent source applicability inputs; no blanket clearance. MAOI history and renal operands counted
+    separately.
+- rule_ids:
+  - esc-adult-adjust
+  count_without_relevant_maoi_history: 28
+  reason: Independent source applicability inputs; no blanket clearance. MAOI history and renal operands counted
+    separately.
+- rule_ids:
+  - esc-cyp2c19-start
+  count_without_relevant_maoi_history: 22
+  reason: Independent source applicability inputs; no blanket clearance. MAOI history and renal operands counted
+    separately.
+- rule_ids:
+  - esc-elderly-start
+  count_without_relevant_maoi_history: 22
+  reason: Independent source applicability inputs; no blanket clearance. MAOI history and renal operands counted
+    separately.
+- rule_ids:
+  - esc-gad-start
+  count_without_relevant_maoi_history: 22
+  reason: Independent source applicability inputs; no blanket clearance. MAOI history and renal operands counted
+    separately.
+- rule_ids:
+  - esc-hepatic-start
+  count_without_relevant_maoi_history: 22
+  reason: Independent source applicability inputs; no blanket clearance. MAOI history and renal operands counted
+    separately.
+- rule_ids:
+  - esc-panic-start
+  count_without_relevant_maoi_history: 22
+  reason: Independent source applicability inputs; no blanket clearance. MAOI history and renal operands counted
+    separately.
+- rule_ids:
+  - esc-social-start
+  count_without_relevant_maoi_history: 22
+  reason: Independent source applicability inputs; no blanket clearance. MAOI history and renal operands counted
+    separately.
+- rule_ids:
+  - esc-taper-limit
+  count_without_relevant_maoi_history: 26
+  reason: Independent source applicability inputs; no blanket clearance. MAOI history and renal operands counted
+    separately.
+- rule_ids:
+  - fluvox-depression-start
+  count_without_relevant_maoi_history: 22
+  reason: Independent source applicability inputs; no blanket clearance. MAOI history and renal operands counted
+    separately.
+- rule_ids:
+  - parox-panic-kr
+  count_without_relevant_maoi_history: 27
+  reason: Independent source applicability inputs; no blanket clearance. MAOI history and renal operands counted
+    separately.
+- rule_ids:
+  - preg-gad-adjust
+  count_without_relevant_maoi_history: 27
+  reason: Independent source applicability inputs; no blanket clearance. MAOI history and renal operands counted
+    separately.
+- rule_ids:
+  - preg-gad-start
+  count_without_relevant_maoi_history: 22
+  reason: Independent source applicability inputs; no blanket clearance. MAOI history and renal operands counted
+    separately.
+- rule_ids:
+  - preg-renal-start
+  count_without_relevant_maoi_history: 21
+  reason: Independent source applicability inputs; no blanket clearance. MAOI history and renal operands counted
+    separately.
+- rule_ids:
+  - preg-taper-limit
+  count_without_relevant_maoi_history: 25
+  reason: Independent source applicability inputs; no blanket clearance. MAOI history and renal operands counted
+    separately.
+- rule_ids:
+  - ser-adult-adjust
+  count_without_relevant_maoi_history: 20
+  reason: Independent source applicability inputs; no blanket clearance. MAOI history and renal operands counted
+    separately.
+- rule_ids:
+  - ser-panic-start
+  count_without_relevant_maoi_history: 17
+  reason: Independent source applicability inputs; no blanket clearance. MAOI history and renal operands counted
+    separately.
+- rule_ids:
+  - ser-social-start
+  count_without_relevant_maoi_history: 17
+  reason: Independent source applicability inputs; no blanket clearance. MAOI history and renal operands counted
+    separately.
+- rule_ids:
+  - ser-taper-limit
+  count_without_relevant_maoi_history: 20
+  reason: Independent source applicability inputs; no blanket clearance. MAOI history and renal operands counted
+    separately.
+- rule_ids:
+  - switch-esc-ago
+  count_without_relevant_maoi_history: 35
+  reason: Independent source applicability inputs; no blanket clearance. MAOI history and renal operands counted
+    separately.
+- rule_ids:
+  - switch-esc-ser
+  count_without_relevant_maoi_history: 12
+  reason: Independent source applicability inputs; no blanket clearance. MAOI history and renal operands counted
+    separately.
+- rule_ids:
+  - switch-parox-ago-selected-example
+  count_without_relevant_maoi_history: 46
+  reason: Independent source applicability inputs; no blanket clearance. MAOI history and renal operands counted
+    separately.
+- rule_ids:
+  - switch-parox-ago
+  count_without_relevant_maoi_history: 44
+  reason: Independent source applicability inputs; no blanket clearance. MAOI history and renal operands counted
+    separately.
+- rule_ids:
+  - switch-ser-ago
+  count_without_relevant_maoi_history: 41
+  reason: Independent source applicability inputs; no blanket clearance. MAOI history and renal operands counted
+    separately.
+- rule_ids:
+  - switch-ser-esc
+  count_without_relevant_maoi_history: 12
+  reason: Independent source applicability inputs; no blanket clearance. MAOI history and renal operands counted
+    separately.
+- rule_ids:
+  - venla-xr-gad-start
+  count_without_relevant_maoi_history: 38
+  reason: Independent source applicability inputs; no blanket clearance. MAOI history and renal operands counted
+    separately.
+- rule_ids:
+  - venla-xr-panic-form-limit
+  count_without_relevant_maoi_history: 38
+  reason: Independent source applicability inputs; no blanket clearance. MAOI history and renal operands counted
+    separately.
+- rule_ids:
+  - venla-xr-social-start
+  count_without_relevant_maoi_history: 38
+  reason: Independent source applicability inputs; no blanket clearance. MAOI history and renal operands counted
+    separately.
+actual_path_assessment: Some source displays fit 5–10; most individual start/adjust branches exceed 10 once all
+  independent source gates are explicit. Criterion18 remains partial.

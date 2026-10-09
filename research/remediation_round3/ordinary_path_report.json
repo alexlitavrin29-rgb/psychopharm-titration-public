@@ -1,0 +1,563 @@
+[
+  {
+    "rule_id": "ago-depression-start",
+    "ordinary_counts": [
+      19,
+      24
+    ],
+    "maximum": 24,
+    "examples": [
+      "ago-depression-start--branch-usual",
+      "ago-depression-start--age-74",
+      "ago-depression-start--branch-usual--audit-final-minimal-routine"
+    ],
+    "acceptance_version": 3,
+    "hard_maximum": null,
+    "necessity_evidence": "necessity_evidence.json",
+    "global_minimum_claimed": false
+  },
+  {
+    "rule_id": "ago-gad-start",
+    "ordinary_counts": [
+      19,
+      24
+    ],
+    "maximum": 24,
+    "examples": [
+      "ago-gad-start--branch-usual",
+      "ago-gad-start--age-65",
+      "ago-gad-start--branch-usual--audit-final-minimal-routine"
+    ],
+    "acceptance_version": 3,
+    "hard_maximum": null,
+    "necessity_evidence": "necessity_evidence.json",
+    "global_minimum_claimed": false
+  },
+  {
+    "rule_id": "ago-stop",
+    "ordinary_counts": [],
+    "maximum": null,
+    "examples": [],
+    "acceptance_version": 3,
+    "hard_maximum": null,
+    "necessity_evidence": "necessity_evidence.json",
+    "global_minimum_claimed": false
+  },
+  {
+    "rule_id": "dulox-depression-start",
+    "ordinary_counts": [
+      15,
+      22
+    ],
+    "maximum": 22,
+    "examples": [
+      "dulox-depression-start--branch-usual",
+      "dulox-depression-start--branch-usual--audit-final-minimal-routine"
+    ],
+    "acceptance_version": 3,
+    "hard_maximum": null,
+    "necessity_evidence": "necessity_evidence.json",
+    "global_minimum_claimed": false
+  },
+  {
+    "rule_id": "dulox-gad-adjust",
+    "ordinary_counts": [],
+    "maximum": null,
+    "examples": [],
+    "acceptance_version": 3,
+    "hard_maximum": null,
+    "necessity_evidence": "necessity_evidence.json",
+    "global_minimum_claimed": false
+  },
+  {
+    "rule_id": "dulox-gad-start",
+    "ordinary_counts": [
+      17,
+      24
+    ],
+    "maximum": 24,
+    "examples": [
+      "dulox-gad-start--branch-usual",
+      "dulox-gad-start--branch-comorbid",
+      "dulox-gad-start--branch-elderly",
+      "dulox-gad-start--branch-usual--audit-final-minimal-routine",
+      "dulox-gad-start--branch-comorbid--audit-final-minimal-routine",
+      "dulox-gad-start--branch-elderly--audit-final-minimal-routine"
+    ],
+    "acceptance_version": 3,
+    "hard_maximum": null,
+    "necessity_evidence": "necessity_evidence.json",
+    "global_minimum_claimed": false
+  },
+  {
+    "rule_id": "dulox-taper-limit",
+    "ordinary_counts": [],
+    "maximum": null,
+    "examples": [],
+    "acceptance_version": 3,
+    "hard_maximum": null,
+    "necessity_evidence": "necessity_evidence.json",
+    "global_minimum_claimed": false
+  },
+  {
+    "rule_id": "esc-adult-adjust",
+    "ordinary_counts": [],
+    "maximum": null,
+    "examples": [],
+    "acceptance_version": 3,
+    "hard_maximum": null,
+    "necessity_evidence": "necessity_evidence.json",
+    "global_minimum_claimed": false
+  },
+  {
+    "rule_id": "esc-cyp2c19-start",
+    "ordinary_counts": [
+      14,
+      21
+    ],
+    "maximum": 21,
+    "examples": [
+      "esc-cyp2c19-start--current-branch-special",
+      "esc-cyp2c19-start--current-unassessed-monitoring-context"
+    ],
+    "acceptance_version": 3,
+    "hard_maximum": null,
+    "necessity_evidence": "necessity_evidence.json",
+    "global_minimum_claimed": false
+  },
+  {
+    "rule_id": "esc-elderly-start",
+    "ordinary_counts": [
+      13,
+      21
+    ],
+    "maximum": 21,
+    "examples": [
+      "esc-elderly-start--current-branch-elderly",
+      "esc-elderly-start--current-unassessed-monitoring-context"
+    ],
+    "acceptance_version": 3,
+    "hard_maximum": null,
+    "necessity_evidence": "necessity_evidence.json",
+    "global_minimum_claimed": false
+  },
+  {
+    "rule_id": "esc-gad-start",
+    "ordinary_counts": [
+      13,
+      21
+    ],
+    "maximum": 21,
+    "examples": [
+      "esc-gad-start--current-branch-usual",
+      "esc-gad-start--current-unassessed-monitoring-context"
+    ],
+    "acceptance_version": 3,
+    "hard_maximum": null,
+    "necessity_evidence": "necessity_evidence.json",
+    "global_minimum_claimed": false
+  },
+  {
+    "rule_id": "esc-hepatic-start",
+    "ordinary_counts": [
+      13,
+      21
+    ],
+    "maximum": 21,
+    "examples": [
+      "esc-hepatic-start--current-branch-special",
+      "esc-hepatic-start--current-unassessed-monitoring-context"
+    ],
+    "acceptance_version": 3,
+    "hard_maximum": null,
+    "necessity_evidence": "necessity_evidence.json",
+    "global_minimum_claimed": false
+  },
+  {
+    "rule_id": "esc-panic-start",
+    "ordinary_counts": [
+      13,
+      21
+    ],
+    "maximum": 21,
+    "examples": [
+      "esc-panic-start--current-branch-usual",
+      "esc-panic-start--current-unassessed-monitoring-context"
+    ],
+    "acceptance_version": 3,
+    "hard_maximum": null,
+    "necessity_evidence": "necessity_evidence.json",
+    "global_minimum_claimed": false
+  },
+  {
+    "rule_id": "esc-social-start",
+    "ordinary_counts": [
+      13,
+      21
+    ],
+    "maximum": 21,
+    "examples": [
+      "esc-social-start--current-branch-usual",
+      "esc-social-start--current-unassessed-monitoring-context"
+    ],
+    "acceptance_version": 3,
+    "hard_maximum": null,
+    "necessity_evidence": "necessity_evidence.json",
+    "global_minimum_claimed": false
+  },
+  {
+    "rule_id": "esc-taper-limit",
+    "ordinary_counts": [],
+    "maximum": null,
+    "examples": [],
+    "acceptance_version": 3,
+    "hard_maximum": null,
+    "necessity_evidence": "necessity_evidence.json",
+    "global_minimum_claimed": false
+  },
+  {
+    "rule_id": "fluvox-depression-start",
+    "ordinary_counts": [
+      12,
+      19
+    ],
+    "maximum": 19,
+    "examples": [
+      "fluvox-depression-start--branch-selected50",
+      "fluvox-depression-start--branch-selected100",
+      "fluvox-depression-start--branch-selected50--audit-final-minimal-routine",
+      "fluvox-depression-start--branch-selected100--audit-final-minimal-routine"
+    ],
+    "acceptance_version": 3,
+    "hard_maximum": null,
+    "necessity_evidence": "necessity_evidence.json",
+    "global_minimum_claimed": false
+  },
+  {
+    "rule_id": "fluvox-taper-limit",
+    "ordinary_counts": [],
+    "maximum": null,
+    "examples": [],
+    "acceptance_version": 3,
+    "hard_maximum": null,
+    "necessity_evidence": "necessity_evidence.json",
+    "global_minimum_claimed": false
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "ordinary_counts": [
+      13,
+      24,
+      25
+    ],
+    "maximum": 25,
+    "examples": [
+      "parox-panic-kr--branch-usual",
+      "parox-panic-kr--branch-elderly",
+      "parox-panic-kr--response-omitted",
+      "parox-panic-kr--tolerability-omitted",
+      "parox-panic-kr--current_dose-omitted",
+      "parox-panic-kr--time_at_dose-omitted",
+      "parox-panic-kr--audit-v2-bipolar_risk_screening-negative",
+      "parox-panic-kr--branch-usual--audit-final-minimal-routine",
+      "parox-panic-kr--branch-elderly--audit-final-minimal-routine"
+    ],
+    "acceptance_version": 3,
+    "hard_maximum": null,
+    "necessity_evidence": "necessity_evidence.json",
+    "global_minimum_claimed": false
+  },
+  {
+    "rule_id": "parox-taper-example",
+    "ordinary_counts": [
+      11
+    ],
+    "maximum": 11,
+    "examples": [
+      "parox-taper-example--branch-selected40",
+      "parox-taper-example--audit-v2-serotonin_syndrome_signs-negative",
+      "parox-taper-example--audit-v2-new_seizures-negative"
+    ],
+    "acceptance_version": 3,
+    "hard_maximum": null,
+    "necessity_evidence": "necessity_evidence.json",
+    "global_minimum_claimed": false
+  },
+  {
+    "rule_id": "phen-taper-limit",
+    "ordinary_counts": [],
+    "maximum": null,
+    "examples": [],
+    "acceptance_version": 3,
+    "hard_maximum": null,
+    "necessity_evidence": "necessity_evidence.json",
+    "global_minimum_claimed": false
+  },
+  {
+    "rule_id": "preg-gad-adjust",
+    "ordinary_counts": [],
+    "maximum": null,
+    "examples": [],
+    "acceptance_version": 3,
+    "hard_maximum": null,
+    "necessity_evidence": "necessity_evidence.json",
+    "global_minimum_claimed": false
+  },
+  {
+    "rule_id": "preg-gad-start",
+    "ordinary_counts": [
+      17,
+      21,
+      22
+    ],
+    "maximum": 22,
+    "examples": [
+      "preg-gad-start--branch-frequency2",
+      "preg-gad-start--branch-frequency3",
+      "preg-gad-start--r3-misuse_risk_assessment-negative",
+      "preg-gad-start--r3-reproductive_population-negative",
+      "preg-gad-start--r3-effective_contraception-positive",
+      "preg-gad-start--branch-frequency2--audit-final-minimal-routine",
+      "preg-gad-start--branch-frequency3--audit-final-minimal-routine"
+    ],
+    "acceptance_version": 3,
+    "hard_maximum": null,
+    "necessity_evidence": "necessity_evidence.json",
+    "global_minimum_claimed": false
+  },
+  {
+    "rule_id": "preg-renal-start",
+    "ordinary_counts": [],
+    "maximum": null,
+    "examples": [],
+    "acceptance_version": 3,
+    "hard_maximum": null,
+    "necessity_evidence": "necessity_evidence.json",
+    "global_minimum_claimed": false
+  },
+  {
+    "rule_id": "preg-taper-limit",
+    "ordinary_counts": [],
+    "maximum": null,
+    "examples": [],
+    "acceptance_version": 3,
+    "hard_maximum": null,
+    "necessity_evidence": "necessity_evidence.json",
+    "global_minimum_claimed": false
+  },
+  {
+    "rule_id": "ser-adult-adjust",
+    "ordinary_counts": [
+      13,
+      14,
+      15,
+      16,
+      19,
+      20,
+      21,
+      22
+    ],
+    "maximum": 22,
+    "examples": [
+      "ser-adult-adjust--branch-increase",
+      "ser-adult-adjust--branch-keep",
+      "ser-adult-adjust--branch-increase-from50",
+      "ser-adult-adjust--branch-increase-from150",
+      "ser-adult-adjust--branch-keep50",
+      "ser-adult-adjust--branch-keep150",
+      "ser-adult-adjust--branch-keep200",
+      "ser-adult-adjust--branch-initial25",
+      "ser-adult-adjust--branch-other-source-dose",
+      "ser-adult-adjust--mania-omitted",
+      "ser-adult-adjust--qt_risk-omitted",
+      "ser-adult-adjust--bleeding_risk-omitted",
+      "ser-adult-adjust--hyponatremia_risk-omitted",
+      "ser-adult-adjust--suicide_risk-omitted",
+      "ser-adult-adjust--round2-minimal-selected-action",
+      "ser-adult-adjust--round2-keep-without-increase-fields",
+      "ser-adult-adjust--audit-recheck-symptomatic_hyponatremia-negative",
+      "ser-adult-adjust--audit-recheck-symptomatic_hyponatremia-omitted",
+      "ser-adult-adjust--branch-increase--audit-final-minimal-routine",
+      "ser-adult-adjust--branch-keep--audit-final-minimal-routine",
+      "ser-adult-adjust--branch-increase-from50--audit-final-minimal-routine",
+      "ser-adult-adjust--branch-increase-from150--audit-final-minimal-routine",
+      "ser-adult-adjust--branch-keep50--audit-final-minimal-routine",
+      "ser-adult-adjust--branch-keep150--audit-final-minimal-routine",
+      "ser-adult-adjust--branch-keep200--audit-final-minimal-routine",
+      "ser-adult-adjust--branch-initial25--audit-final-minimal-routine",
+      "ser-adult-adjust--branch-other-source-dose--audit-final-minimal-routine"
+    ],
+    "acceptance_version": 3,
+    "hard_maximum": null,
+    "necessity_evidence": "necessity_evidence.json",
+    "global_minimum_claimed": false
+  },
+  {
+    "rule_id": "ser-panic-start",
+    "ordinary_counts": [
+      10,
+      15,
+      16
+    ],
+    "maximum": 16,
+    "examples": [
+      "ser-panic-start--branch-usual",
+      "ser-panic-start--mania-omitted",
+      "ser-panic-start--qt_risk-omitted",
+      "ser-panic-start--bleeding_risk-omitted",
+      "ser-panic-start--hyponatremia_risk-omitted",
+      "ser-panic-start--suicide_risk-omitted",
+      "ser-panic-start--akathisia-omitted",
+      "ser-panic-start--round2-minimal-selected-action"
+    ],
+    "acceptance_version": 3,
+    "hard_maximum": null,
+    "necessity_evidence": "necessity_evidence.json",
+    "global_minimum_claimed": false
+  },
+  {
+    "rule_id": "ser-social-start",
+    "ordinary_counts": [
+      10,
+      15,
+      16
+    ],
+    "maximum": 16,
+    "examples": [
+      "ser-social-start--branch-usual",
+      "ser-social-start--mania-omitted",
+      "ser-social-start--qt_risk-omitted",
+      "ser-social-start--bleeding_risk-omitted",
+      "ser-social-start--hyponatremia_risk-omitted",
+      "ser-social-start--suicide_risk-omitted",
+      "ser-social-start--akathisia-omitted",
+      "ser-social-start--round2-minimal-selected-action"
+    ],
+    "acceptance_version": 3,
+    "hard_maximum": null,
+    "necessity_evidence": "necessity_evidence.json",
+    "global_minimum_claimed": false
+  },
+  {
+    "rule_id": "ser-taper-limit",
+    "ordinary_counts": [],
+    "maximum": null,
+    "examples": [],
+    "acceptance_version": 3,
+    "hard_maximum": null,
+    "necessity_evidence": "necessity_evidence.json",
+    "global_minimum_claimed": false
+  },
+  {
+    "rule_id": "switch-esc-ago",
+    "ordinary_counts": [],
+    "maximum": null,
+    "examples": [],
+    "acceptance_version": 3,
+    "hard_maximum": null,
+    "necessity_evidence": "necessity_evidence.json",
+    "global_minimum_claimed": false
+  },
+  {
+    "rule_id": "switch-esc-ser",
+    "ordinary_counts": [],
+    "maximum": null,
+    "examples": [],
+    "acceptance_version": 3,
+    "hard_maximum": null,
+    "necessity_evidence": "necessity_evidence.json",
+    "global_minimum_claimed": false
+  },
+  {
+    "rule_id": "switch-parox-ago-selected-example",
+    "ordinary_counts": [],
+    "maximum": null,
+    "examples": [],
+    "acceptance_version": 3,
+    "hard_maximum": null,
+    "necessity_evidence": "necessity_evidence.json",
+    "global_minimum_claimed": false
+  },
+  {
+    "rule_id": "switch-parox-ago",
+    "ordinary_counts": [],
+    "maximum": null,
+    "examples": [],
+    "acceptance_version": 3,
+    "hard_maximum": null,
+    "necessity_evidence": "necessity_evidence.json",
+    "global_minimum_claimed": false
+  },
+  {
+    "rule_id": "switch-ser-ago",
+    "ordinary_counts": [],
+    "maximum": null,
+    "examples": [],
+    "acceptance_version": 3,
+    "hard_maximum": null,
+    "necessity_evidence": "necessity_evidence.json",
+    "global_minimum_claimed": false
+  },
+  {
+    "rule_id": "switch-ser-esc",
+    "ordinary_counts": [],
+    "maximum": null,
+    "examples": [],
+    "acceptance_version": 3,
+    "hard_maximum": null,
+    "necessity_evidence": "necessity_evidence.json",
+    "global_minimum_claimed": false
+  },
+  {
+    "rule_id": "venla-xr-gad-start",
+    "ordinary_counts": [
+      12,
+      34
+    ],
+    "maximum": 34,
+    "examples": [
+      "venla-xr-gad-start--branch-usual",
+      "venla-xr-gad-start--branch-usual--audit-final-minimal-routine"
+    ],
+    "acceptance_version": 3,
+    "hard_maximum": null,
+    "necessity_evidence": "necessity_evidence.json",
+    "global_minimum_claimed": false
+  },
+  {
+    "rule_id": "venla-xr-panic-form-limit",
+    "ordinary_counts": [],
+    "maximum": null,
+    "examples": [],
+    "acceptance_version": 3,
+    "hard_maximum": null,
+    "necessity_evidence": "necessity_evidence.json",
+    "global_minimum_claimed": false
+  },
+  {
+    "rule_id": "venla-xr-social-start",
+    "ordinary_counts": [
+      12,
+      34
+    ],
+    "maximum": 34,
+    "examples": [
+      "venla-xr-social-start--branch-usual",
+      "venla-xr-social-start--branch-usual--audit-final-minimal-routine"
+    ],
+    "acceptance_version": 3,
+    "hard_maximum": null,
+    "necessity_evidence": "necessity_evidence.json",
+    "global_minimum_claimed": false
+  },
+  {
+    "rule_id": "venla-xr-taper-limit",
+    "ordinary_counts": [],
+    "maximum": null,
+    "examples": [],
+    "acceptance_version": 3,
+    "hard_maximum": null,
+    "necessity_evidence": "necessity_evidence.json",
+    "global_minimum_claimed": false
+  }
+]

@@ -1,0 +1,45 @@
+{
+  "current_snapshot": "b66e9e0dadca7234ed1e66bc8c103047ff2f96e963313d07dd0075494695f0a4",
+  "previous_completed_snapshot": "27ef14e77185b7b104d43199664a5b1ca42b73dd8b09f921ee539e97fae971f8",
+  "final_delta": "Six files; exact22 raw and22 projected population/unassessed-age metadata + guarded detector/document journal. No numbers/actions/questions/given/phases altered.",
+  "own_current_assertions": 4410,
+  "own_current_errors": 0,
+  "actual_mutation13_rejected": true,
+  "own_raw_projected_controls": 12,
+  "prior_results_reused": {
+    "primary_USED": {
+      "old_occurrences": 6241,
+      "own_norm_key_records": 391,
+      "active_input_bindings": 906,
+      "numeric_objects": 211,
+      "medical_prose_groups": 249,
+      "literal_condition_groups": 900
+    },
+    "full227": {
+      "cards": 38,
+      "full_prepared_cases": 6646,
+      "numeric_assertions": 22869,
+      "data_source_phase_count_assertions": 81616,
+      "used_cause_action_occurrences": 2731,
+      "terminal_certificate_cases": 1386,
+      "terminal_assertions": 19126,
+      "terminal_causal_controls": 4591,
+      "selected_paths": 2652,
+      "ordinary_numeric_paths": 96,
+      "ordinary_count_min": 10,
+      "ordinary_count_max": 34,
+      "lower_bounds": 0,
+      "current_targeted_negatives": 35,
+      "current_main_negatives": 5
+    }
+  },
+  "reuse_basis": "All222 unchanged core files have exact old227 SHA; remaining full/graph/path changes were semantically compared field-by-field. Sixteen original source SHA reconfirmed. Previous population22 errors superseded only by actual current check.",
+  "outside_scope": [
+    "All unconsumed source/PIL sentences and all nonactive drugs",
+    "Arbitrary exhaustive patient combinations",
+    "Application/medical selector execution",
+    "Clinical validation/regulatory process"
+  ],
+  "coverage_not_automatic_from_count": true,
+  "full_research_acceptance": true
+}

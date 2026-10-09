@@ -1,0 +1,2404 @@
+[
+  {
+    "case_id": "switch-esc-ser--current-current_dose-omitted",
+    "given": {
+      "from_form": {
+        "product": "Селектра",
+        "registration_number": "ЛП-№(012351)-(РГ-RU)",
+        "source_id": "RU-ESC",
+        "source_version": "РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; экспертный отчёт 31.10.2025 №27320, последовательность 0002; текущая опубликованная ОХЛП реестра получена 08.10.2026",
+        "dosage_form": "tablet",
+        "strengths_mg": [
+          5,
+          10,
+          15,
+          20
+        ],
+        "release": "immediate",
+        "route": "oral"
+      },
+      "to_form": {
+        "product": "Золофт",
+        "registration_number": "ЛП-№(002851)-(РГ-RU)",
+        "source_id": "RU-SER",
+        "source_version": "Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является датой содержания",
+        "dosage_form": "tablet",
+        "strengths_mg": [
+          50,
+          100
+        ],
+        "release": "immediate",
+        "route": "oral"
+      },
+      "duration": 24,
+      "last_dose_time": "2026-10-01T09:00:00+03:00",
+      "withdrawal_symptoms": "нет",
+      "medicines": [],
+      "target_applicability": {
+        "status": "not_supported_for_full_pair",
+        "basis": "no verified source interval"
+      },
+      "mania_symptoms": false,
+      "arrhythmia_signs": false,
+      "serotonin_syndrome_signs": false,
+      "seizure_state": "нет",
+      "target_new_seizures": false
+    },
+    "context": {
+      "diagnosis": "F32",
+      "drug": null,
+      "mode": "switch",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "selected_mode",
+      "from_drug": "эсциталопрам",
+      "to_drug": "сертралин",
+      "target_treatment_phase": "not_started"
+    },
+    "expected": {
+      "result_type": "clinician_choice",
+      "total_daily_dose_mg": null,
+      "dose_per_administration_mg": null,
+      "administrations_per_day": null,
+      "schedule": [],
+      "missing_fields": [],
+      "unconditional_future_stages": false,
+      "clinical_clearance": false,
+      "automatic_direct_switch": false,
+      "full_pair_calendar": null,
+      "next_drug_start_day": null,
+      "source_gap_scope": {
+        "full_pair_calendar": null,
+        "automatic_direct_switch": false,
+        "next_drug_start_day": null,
+        "patient_target_applicability": "not_assessed unless separately reported; never clearance",
+        "planning_data": "Reported only for this bounded source gap; current source actions retain their own known actor/phase requirements"
+      },
+      "unassessed_context": [
+        "current_dose"
+      ],
+      "confirmed_negatives": []
+    }
+  },
+  {
+    "case_id": "switch-esc-ser--current-current_dose-unknown",
+    "given": {
+      "from_form": {
+        "product": "Селектра",
+        "registration_number": "ЛП-№(012351)-(РГ-RU)",
+        "source_id": "RU-ESC",
+        "source_version": "РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; экспертный отчёт 31.10.2025 №27320, последовательность 0002; текущая опубликованная ОХЛП реестра получена 08.10.2026",
+        "dosage_form": "tablet",
+        "strengths_mg": [
+          5,
+          10,
+          15,
+          20
+        ],
+        "release": "immediate",
+        "route": "oral"
+      },
+      "to_form": {
+        "product": "Золофт",
+        "registration_number": "ЛП-№(002851)-(РГ-RU)",
+        "source_id": "RU-SER",
+        "source_version": "Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является датой содержания",
+        "dosage_form": "tablet",
+        "strengths_mg": [
+          50,
+          100
+        ],
+        "release": "immediate",
+        "route": "oral"
+      },
+      "current_dose": "unknown",
+      "duration": 24,
+      "last_dose_time": "2026-10-01T09:00:00+03:00",
+      "withdrawal_symptoms": "нет",
+      "medicines": [],
+      "target_applicability": {
+        "status": "not_supported_for_full_pair",
+        "basis": "no verified source interval"
+      },
+      "mania_symptoms": false,
+      "arrhythmia_signs": false,
+      "serotonin_syndrome_signs": false,
+      "seizure_state": "нет",
+      "target_new_seizures": false
+    },
+    "context": {
+      "diagnosis": "F32",
+      "drug": null,
+      "mode": "switch",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "selected_mode",
+      "from_drug": "эсциталопрам",
+      "to_drug": "сертралин",
+      "target_treatment_phase": "not_started"
+    },
+    "expected": {
+      "result_type": "clinician_choice",
+      "total_daily_dose_mg": null,
+      "dose_per_administration_mg": null,
+      "administrations_per_day": null,
+      "schedule": [],
+      "missing_fields": [],
+      "unconditional_future_stages": false,
+      "clinical_clearance": false,
+      "automatic_direct_switch": false,
+      "full_pair_calendar": null,
+      "next_drug_start_day": null,
+      "source_gap_scope": {
+        "full_pair_calendar": null,
+        "automatic_direct_switch": false,
+        "next_drug_start_day": null,
+        "patient_target_applicability": "not_assessed unless separately reported; never clearance",
+        "planning_data": "Reported only for this bounded source gap; current source actions retain their own known actor/phase requirements"
+      },
+      "unassessed_context": [
+        "current_dose"
+      ],
+      "confirmed_negatives": []
+    }
+  },
+  {
+    "case_id": "switch-esc-ser--current-current_dose-not_assessed",
+    "given": {
+      "from_form": {
+        "product": "Селектра",
+        "registration_number": "ЛП-№(012351)-(РГ-RU)",
+        "source_id": "RU-ESC",
+        "source_version": "РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; экспертный отчёт 31.10.2025 №27320, последовательность 0002; текущая опубликованная ОХЛП реестра получена 08.10.2026",
+        "dosage_form": "tablet",
+        "strengths_mg": [
+          5,
+          10,
+          15,
+          20
+        ],
+        "release": "immediate",
+        "route": "oral"
+      },
+      "to_form": {
+        "product": "Золофт",
+        "registration_number": "ЛП-№(002851)-(РГ-RU)",
+        "source_id": "RU-SER",
+        "source_version": "Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является датой содержания",
+        "dosage_form": "tablet",
+        "strengths_mg": [
+          50,
+          100
+        ],
+        "release": "immediate",
+        "route": "oral"
+      },
+      "current_dose": "not_assessed",
+      "duration": 24,
+      "last_dose_time": "2026-10-01T09:00:00+03:00",
+      "withdrawal_symptoms": "нет",
+      "medicines": [],
+      "target_applicability": {
+        "status": "not_supported_for_full_pair",
+        "basis": "no verified source interval"
+      },
+      "mania_symptoms": false,
+      "arrhythmia_signs": false,
+      "serotonin_syndrome_signs": false,
+      "seizure_state": "нет",
+      "target_new_seizures": false
+    },
+    "context": {
+      "diagnosis": "F32",
+      "drug": null,
+      "mode": "switch",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "selected_mode",
+      "from_drug": "эсциталопрам",
+      "to_drug": "сертралин",
+      "target_treatment_phase": "not_started"
+    },
+    "expected": {
+      "result_type": "clinician_choice",
+      "total_daily_dose_mg": null,
+      "dose_per_administration_mg": null,
+      "administrations_per_day": null,
+      "schedule": [],
+      "missing_fields": [],
+      "unconditional_future_stages": false,
+      "clinical_clearance": false,
+      "automatic_direct_switch": false,
+      "full_pair_calendar": null,
+      "next_drug_start_day": null,
+      "source_gap_scope": {
+        "full_pair_calendar": null,
+        "automatic_direct_switch": false,
+        "next_drug_start_day": null,
+        "patient_target_applicability": "not_assessed unless separately reported; never clearance",
+        "planning_data": "Reported only for this bounded source gap; current source actions retain their own known actor/phase requirements"
+      },
+      "unassessed_context": [
+        "current_dose"
+      ],
+      "confirmed_negatives": []
+    }
+  },
+  {
+    "case_id": "switch-esc-ser--current-duration-omitted",
+    "given": {
+      "from_form": {
+        "product": "Селектра",
+        "registration_number": "ЛП-№(012351)-(РГ-RU)",
+        "source_id": "RU-ESC",
+        "source_version": "РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; экспертный отчёт 31.10.2025 №27320, последовательность 0002; текущая опубликованная ОХЛП реестра получена 08.10.2026",
+        "dosage_form": "tablet",
+        "strengths_mg": [
+          5,
+          10,
+          15,
+          20
+        ],
+        "release": "immediate",
+        "route": "oral"
+      },
+      "to_form": {
+        "product": "Золофт",
+        "registration_number": "ЛП-№(002851)-(РГ-RU)",
+        "source_id": "RU-SER",
+        "source_version": "Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является датой содержания",
+        "dosage_form": "tablet",
+        "strengths_mg": [
+          50,
+          100
+        ],
+        "release": "immediate",
+        "route": "oral"
+      },
+      "current_dose": 10,
+      "last_dose_time": "2026-10-01T09:00:00+03:00",
+      "withdrawal_symptoms": "нет",
+      "medicines": [],
+      "target_applicability": {
+        "status": "not_supported_for_full_pair",
+        "basis": "no verified source interval"
+      },
+      "mania_symptoms": false,
+      "arrhythmia_signs": false,
+      "serotonin_syndrome_signs": false,
+      "seizure_state": "нет",
+      "target_new_seizures": false
+    },
+    "context": {
+      "diagnosis": "F32",
+      "drug": null,
+      "mode": "switch",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "selected_mode",
+      "from_drug": "эсциталопрам",
+      "to_drug": "сертралин",
+      "target_treatment_phase": "not_started"
+    },
+    "expected": {
+      "result_type": "clinician_choice",
+      "total_daily_dose_mg": null,
+      "dose_per_administration_mg": null,
+      "administrations_per_day": null,
+      "schedule": [],
+      "missing_fields": [],
+      "unconditional_future_stages": false,
+      "clinical_clearance": false,
+      "automatic_direct_switch": false,
+      "full_pair_calendar": null,
+      "next_drug_start_day": null,
+      "source_gap_scope": {
+        "full_pair_calendar": null,
+        "automatic_direct_switch": false,
+        "next_drug_start_day": null,
+        "patient_target_applicability": "not_assessed unless separately reported; never clearance",
+        "planning_data": "Reported only for this bounded source gap; current source actions retain their own known actor/phase requirements"
+      },
+      "unassessed_context": [
+        "duration"
+      ],
+      "confirmed_negatives": []
+    }
+  },
+  {
+    "case_id": "switch-esc-ser--current-duration-unknown",
+    "given": {
+      "from_form": {
+        "product": "Селектра",
+        "registration_number": "ЛП-№(012351)-(РГ-RU)",
+        "source_id": "RU-ESC",
+        "source_version": "РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; экспертный отчёт 31.10.2025 №27320, последовательность 0002; текущая опубликованная ОХЛП реестра получена 08.10.2026",
+        "dosage_form": "tablet",
+        "strengths_mg": [
+          5,
+          10,
+          15,
+          20
+        ],
+        "release": "immediate",
+        "route": "oral"
+      },
+      "to_form": {
+        "product": "Золофт",
+        "registration_number": "ЛП-№(002851)-(РГ-RU)",
+        "source_id": "RU-SER",
+        "source_version": "Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является датой содержания",
+        "dosage_form": "tablet",
+        "strengths_mg": [
+          50,
+          100
+        ],
+        "release": "immediate",
+        "route": "oral"
+      },
+      "current_dose": 10,
+      "duration": "unknown",
+      "last_dose_time": "2026-10-01T09:00:00+03:00",
+      "withdrawal_symptoms": "нет",
+      "medicines": [],
+      "target_applicability": {
+        "status": "not_supported_for_full_pair",
+        "basis": "no verified source interval"
+      },
+      "mania_symptoms": false,
+      "arrhythmia_signs": false,
+      "serotonin_syndrome_signs": false,
+      "seizure_state": "нет",
+      "target_new_seizures": false
+    },
+    "context": {
+      "diagnosis": "F32",
+      "drug": null,
+      "mode": "switch",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "selected_mode",
+      "from_drug": "эсциталопрам",
+      "to_drug": "сертралин",
+      "target_treatment_phase": "not_started"
+    },
+    "expected": {
+      "result_type": "clinician_choice",
+      "total_daily_dose_mg": null,
+      "dose_per_administration_mg": null,
+      "administrations_per_day": null,
+      "schedule": [],
+      "missing_fields": [],
+      "unconditional_future_stages": false,
+      "clinical_clearance": false,
+      "automatic_direct_switch": false,
+      "full_pair_calendar": null,
+      "next_drug_start_day": null,
+      "source_gap_scope": {
+        "full_pair_calendar": null,
+        "automatic_direct_switch": false,
+        "next_drug_start_day": null,
+        "patient_target_applicability": "not_assessed unless separately reported; never clearance",
+        "planning_data": "Reported only for this bounded source gap; current source actions retain their own known actor/phase requirements"
+      },
+      "unassessed_context": [
+        "duration"
+      ],
+      "confirmed_negatives": []
+    }
+  },
+  {
+    "case_id": "switch-esc-ser--current-duration-not_assessed",
+    "given": {
+      "from_form": {
+        "product": "Селектра",
+        "registration_number": "ЛП-№(012351)-(РГ-RU)",
+        "source_id": "RU-ESC",
+        "source_version": "РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; экспертный отчёт 31.10.2025 №27320, последовательность 0002; текущая опубликованная ОХЛП реестра получена 08.10.2026",
+        "dosage_form": "tablet",
+        "strengths_mg": [
+          5,
+          10,
+          15,
+          20
+        ],
+        "release": "immediate",
+        "route": "oral"
+      },
+      "to_form": {
+        "product": "Золофт",
+        "registration_number": "ЛП-№(002851)-(РГ-RU)",
+        "source_id": "RU-SER",
+        "source_version": "Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является датой содержания",
+        "dosage_form": "tablet",
+        "strengths_mg": [
+          50,
+          100
+        ],
+        "release": "immediate",
+        "route": "oral"
+      },
+      "current_dose": 10,
+      "duration": "not_assessed",
+      "last_dose_time": "2026-10-01T09:00:00+03:00",
+      "withdrawal_symptoms": "нет",
+      "medicines": [],
+      "target_applicability": {
+        "status": "not_supported_for_full_pair",
+        "basis": "no verified source interval"
+      },
+      "mania_symptoms": false,
+      "arrhythmia_signs": false,
+      "serotonin_syndrome_signs": false,
+      "seizure_state": "нет",
+      "target_new_seizures": false
+    },
+    "context": {
+      "diagnosis": "F32",
+      "drug": null,
+      "mode": "switch",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "selected_mode",
+      "from_drug": "эсциталопрам",
+      "to_drug": "сертралин",
+      "target_treatment_phase": "not_started"
+    },
+    "expected": {
+      "result_type": "clinician_choice",
+      "total_daily_dose_mg": null,
+      "dose_per_administration_mg": null,
+      "administrations_per_day": null,
+      "schedule": [],
+      "missing_fields": [],
+      "unconditional_future_stages": false,
+      "clinical_clearance": false,
+      "automatic_direct_switch": false,
+      "full_pair_calendar": null,
+      "next_drug_start_day": null,
+      "source_gap_scope": {
+        "full_pair_calendar": null,
+        "automatic_direct_switch": false,
+        "next_drug_start_day": null,
+        "patient_target_applicability": "not_assessed unless separately reported; never clearance",
+        "planning_data": "Reported only for this bounded source gap; current source actions retain their own known actor/phase requirements"
+      },
+      "unassessed_context": [
+        "duration"
+      ],
+      "confirmed_negatives": []
+    }
+  },
+  {
+    "case_id": "switch-esc-ser--current-last_dose_time-omitted",
+    "given": {
+      "from_form": {
+        "product": "Селектра",
+        "registration_number": "ЛП-№(012351)-(РГ-RU)",
+        "source_id": "RU-ESC",
+        "source_version": "РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; экспертный отчёт 31.10.2025 №27320, последовательность 0002; текущая опубликованная ОХЛП реестра получена 08.10.2026",
+        "dosage_form": "tablet",
+        "strengths_mg": [
+          5,
+          10,
+          15,
+          20
+        ],
+        "release": "immediate",
+        "route": "oral"
+      },
+      "to_form": {
+        "product": "Золофт",
+        "registration_number": "ЛП-№(002851)-(РГ-RU)",
+        "source_id": "RU-SER",
+        "source_version": "Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является датой содержания",
+        "dosage_form": "tablet",
+        "strengths_mg": [
+          50,
+          100
+        ],
+        "release": "immediate",
+        "route": "oral"
+      },
+      "current_dose": 10,
+      "duration": 24,
+      "withdrawal_symptoms": "нет",
+      "medicines": [],
+      "target_applicability": {
+        "status": "not_supported_for_full_pair",
+        "basis": "no verified source interval"
+      },
+      "mania_symptoms": false,
+      "arrhythmia_signs": false,
+      "serotonin_syndrome_signs": false,
+      "seizure_state": "нет",
+      "target_new_seizures": false
+    },
+    "context": {
+      "diagnosis": "F32",
+      "drug": null,
+      "mode": "switch",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "selected_mode",
+      "from_drug": "эсциталопрам",
+      "to_drug": "сертралин",
+      "target_treatment_phase": "not_started"
+    },
+    "expected": {
+      "result_type": "clinician_choice",
+      "total_daily_dose_mg": null,
+      "dose_per_administration_mg": null,
+      "administrations_per_day": null,
+      "schedule": [],
+      "missing_fields": [],
+      "unconditional_future_stages": false,
+      "clinical_clearance": false,
+      "automatic_direct_switch": false,
+      "full_pair_calendar": null,
+      "next_drug_start_day": null,
+      "source_gap_scope": {
+        "full_pair_calendar": null,
+        "automatic_direct_switch": false,
+        "next_drug_start_day": null,
+        "patient_target_applicability": "not_assessed unless separately reported; never clearance",
+        "planning_data": "Reported only for this bounded source gap; current source actions retain their own known actor/phase requirements"
+      },
+      "unassessed_context": [
+        "last_dose_time"
+      ],
+      "confirmed_negatives": []
+    }
+  },
+  {
+    "case_id": "switch-esc-ser--current-last_dose_time-unknown",
+    "given": {
+      "from_form": {
+        "product": "Селектра",
+        "registration_number": "ЛП-№(012351)-(РГ-RU)",
+        "source_id": "RU-ESC",
+        "source_version": "РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; экспертный отчёт 31.10.2025 №27320, последовательность 0002; текущая опубликованная ОХЛП реестра получена 08.10.2026",
+        "dosage_form": "tablet",
+        "strengths_mg": [
+          5,
+          10,
+          15,
+          20
+        ],
+        "release": "immediate",
+        "route": "oral"
+      },
+      "to_form": {
+        "product": "Золофт",
+        "registration_number": "ЛП-№(002851)-(РГ-RU)",
+        "source_id": "RU-SER",
+        "source_version": "Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является датой содержания",
+        "dosage_form": "tablet",
+        "strengths_mg": [
+          50,
+          100
+        ],
+        "release": "immediate",
+        "route": "oral"
+      },
+      "current_dose": 10,
+      "duration": 24,
+      "last_dose_time": "unknown",
+      "withdrawal_symptoms": "нет",
+      "medicines": [],
+      "target_applicability": {
+        "status": "not_supported_for_full_pair",
+        "basis": "no verified source interval"
+      },
+      "mania_symptoms": false,
+      "arrhythmia_signs": false,
+      "serotonin_syndrome_signs": false,
+      "seizure_state": "нет",
+      "target_new_seizures": false
+    },
+    "context": {
+      "diagnosis": "F32",
+      "drug": null,
+      "mode": "switch",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "selected_mode",
+      "from_drug": "эсциталопрам",
+      "to_drug": "сертралин",
+      "target_treatment_phase": "not_started"
+    },
+    "expected": {
+      "result_type": "clinician_choice",
+      "total_daily_dose_mg": null,
+      "dose_per_administration_mg": null,
+      "administrations_per_day": null,
+      "schedule": [],
+      "missing_fields": [],
+      "unconditional_future_stages": false,
+      "clinical_clearance": false,
+      "automatic_direct_switch": false,
+      "full_pair_calendar": null,
+      "next_drug_start_day": null,
+      "source_gap_scope": {
+        "full_pair_calendar": null,
+        "automatic_direct_switch": false,
+        "next_drug_start_day": null,
+        "patient_target_applicability": "not_assessed unless separately reported; never clearance",
+        "planning_data": "Reported only for this bounded source gap; current source actions retain their own known actor/phase requirements"
+      },
+      "unassessed_context": [
+        "last_dose_time"
+      ],
+      "confirmed_negatives": []
+    }
+  },
+  {
+    "case_id": "switch-esc-ser--current-last_dose_time-not_assessed",
+    "given": {
+      "from_form": {
+        "product": "Селектра",
+        "registration_number": "ЛП-№(012351)-(РГ-RU)",
+        "source_id": "RU-ESC",
+        "source_version": "РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; экспертный отчёт 31.10.2025 №27320, последовательность 0002; текущая опубликованная ОХЛП реестра получена 08.10.2026",
+        "dosage_form": "tablet",
+        "strengths_mg": [
+          5,
+          10,
+          15,
+          20
+        ],
+        "release": "immediate",
+        "route": "oral"
+      },
+      "to_form": {
+        "product": "Золофт",
+        "registration_number": "ЛП-№(002851)-(РГ-RU)",
+        "source_id": "RU-SER",
+        "source_version": "Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является датой содержания",
+        "dosage_form": "tablet",
+        "strengths_mg": [
+          50,
+          100
+        ],
+        "release": "immediate",
+        "route": "oral"
+      },
+      "current_dose": 10,
+      "duration": 24,
+      "last_dose_time": "not_assessed",
+      "withdrawal_symptoms": "нет",
+      "medicines": [],
+      "target_applicability": {
+        "status": "not_supported_for_full_pair",
+        "basis": "no verified source interval"
+      },
+      "mania_symptoms": false,
+      "arrhythmia_signs": false,
+      "serotonin_syndrome_signs": false,
+      "seizure_state": "нет",
+      "target_new_seizures": false
+    },
+    "context": {
+      "diagnosis": "F32",
+      "drug": null,
+      "mode": "switch",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "selected_mode",
+      "from_drug": "эсциталопрам",
+      "to_drug": "сертралин",
+      "target_treatment_phase": "not_started"
+    },
+    "expected": {
+      "result_type": "clinician_choice",
+      "total_daily_dose_mg": null,
+      "dose_per_administration_mg": null,
+      "administrations_per_day": null,
+      "schedule": [],
+      "missing_fields": [],
+      "unconditional_future_stages": false,
+      "clinical_clearance": false,
+      "automatic_direct_switch": false,
+      "full_pair_calendar": null,
+      "next_drug_start_day": null,
+      "source_gap_scope": {
+        "full_pair_calendar": null,
+        "automatic_direct_switch": false,
+        "next_drug_start_day": null,
+        "patient_target_applicability": "not_assessed unless separately reported; never clearance",
+        "planning_data": "Reported only for this bounded source gap; current source actions retain their own known actor/phase requirements"
+      },
+      "unassessed_context": [
+        "last_dose_time"
+      ],
+      "confirmed_negatives": []
+    }
+  },
+  {
+    "case_id": "switch-esc-ser--current-withdrawal_symptoms-omitted",
+    "given": {
+      "from_form": {
+        "product": "Селектра",
+        "registration_number": "ЛП-№(012351)-(РГ-RU)",
+        "source_id": "RU-ESC",
+        "source_version": "РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; экспертный отчёт 31.10.2025 №27320, последовательность 0002; текущая опубликованная ОХЛП реестра получена 08.10.2026",
+        "dosage_form": "tablet",
+        "strengths_mg": [
+          5,
+          10,
+          15,
+          20
+        ],
+        "release": "immediate",
+        "route": "oral"
+      },
+      "to_form": {
+        "product": "Золофт",
+        "registration_number": "ЛП-№(002851)-(РГ-RU)",
+        "source_id": "RU-SER",
+        "source_version": "Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является датой содержания",
+        "dosage_form": "tablet",
+        "strengths_mg": [
+          50,
+          100
+        ],
+        "release": "immediate",
+        "route": "oral"
+      },
+      "current_dose": 10,
+      "duration": 24,
+      "last_dose_time": "2026-10-01T09:00:00+03:00",
+      "medicines": [],
+      "target_applicability": {
+        "status": "not_supported_for_full_pair",
+        "basis": "no verified source interval"
+      },
+      "mania_symptoms": false,
+      "arrhythmia_signs": false,
+      "serotonin_syndrome_signs": false,
+      "seizure_state": "нет",
+      "target_new_seizures": false
+    },
+    "context": {
+      "diagnosis": "F32",
+      "drug": null,
+      "mode": "switch",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "selected_mode",
+      "from_drug": "эсциталопрам",
+      "to_drug": "сертралин",
+      "target_treatment_phase": "not_started"
+    },
+    "expected": {
+      "result_type": "clinician_choice",
+      "total_daily_dose_mg": null,
+      "dose_per_administration_mg": null,
+      "administrations_per_day": null,
+      "schedule": [],
+      "missing_fields": [],
+      "unconditional_future_stages": false,
+      "clinical_clearance": false,
+      "automatic_direct_switch": false,
+      "full_pair_calendar": null,
+      "next_drug_start_day": null,
+      "source_gap_scope": {
+        "full_pair_calendar": null,
+        "automatic_direct_switch": false,
+        "next_drug_start_day": null,
+        "patient_target_applicability": "not_assessed unless separately reported; never clearance",
+        "planning_data": "Reported only for this bounded source gap; current source actions retain their own known actor/phase requirements"
+      },
+      "unassessed_context": [
+        "withdrawal_symptoms"
+      ],
+      "confirmed_negatives": []
+    }
+  },
+  {
+    "case_id": "switch-esc-ser--current-withdrawal_symptoms-unknown",
+    "given": {
+      "from_form": {
+        "product": "Селектра",
+        "registration_number": "ЛП-№(012351)-(РГ-RU)",
+        "source_id": "RU-ESC",
+        "source_version": "РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; экспертный отчёт 31.10.2025 №27320, последовательность 0002; текущая опубликованная ОХЛП реестра получена 08.10.2026",
+        "dosage_form": "tablet",
+        "strengths_mg": [
+          5,
+          10,
+          15,
+          20
+        ],
+        "release": "immediate",
+        "route": "oral"
+      },
+      "to_form": {
+        "product": "Золофт",
+        "registration_number": "ЛП-№(002851)-(РГ-RU)",
+        "source_id": "RU-SER",
+        "source_version": "Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является датой содержания",
+        "dosage_form": "tablet",
+        "strengths_mg": [
+          50,
+          100
+        ],
+        "release": "immediate",
+        "route": "oral"
+      },
+      "current_dose": 10,
+      "duration": 24,
+      "last_dose_time": "2026-10-01T09:00:00+03:00",
+      "withdrawal_symptoms": "unknown",
+      "medicines": [],
+      "target_applicability": {
+        "status": "not_supported_for_full_pair",
+        "basis": "no verified source interval"
+      },
+      "mania_symptoms": false,
+      "arrhythmia_signs": false,
+      "serotonin_syndrome_signs": false,
+      "seizure_state": "нет",
+      "target_new_seizures": false
+    },
+    "context": {
+      "diagnosis": "F32",
+      "drug": null,
+      "mode": "switch",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "selected_mode",
+      "from_drug": "эсциталопрам",
+      "to_drug": "сертралин",
+      "target_treatment_phase": "not_started"
+    },
+    "expected": {
+      "result_type": "clinician_choice",
+      "total_daily_dose_mg": null,
+      "dose_per_administration_mg": null,
+      "administrations_per_day": null,
+      "schedule": [],
+      "missing_fields": [],
+      "unconditional_future_stages": false,
+      "clinical_clearance": false,
+      "automatic_direct_switch": false,
+      "full_pair_calendar": null,
+      "next_drug_start_day": null,
+      "source_gap_scope": {
+        "full_pair_calendar": null,
+        "automatic_direct_switch": false,
+        "next_drug_start_day": null,
+        "patient_target_applicability": "not_assessed unless separately reported; never clearance",
+        "planning_data": "Reported only for this bounded source gap; current source actions retain their own known actor/phase requirements"
+      },
+      "unassessed_context": [
+        "withdrawal_symptoms"
+      ],
+      "confirmed_negatives": []
+    }
+  },
+  {
+    "case_id": "switch-esc-ser--current-withdrawal_symptoms-not_assessed",
+    "given": {
+      "from_form": {
+        "product": "Селектра",
+        "registration_number": "ЛП-№(012351)-(РГ-RU)",
+        "source_id": "RU-ESC",
+        "source_version": "РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; экспертный отчёт 31.10.2025 №27320, последовательность 0002; текущая опубликованная ОХЛП реестра получена 08.10.2026",
+        "dosage_form": "tablet",
+        "strengths_mg": [
+          5,
+          10,
+          15,
+          20
+        ],
+        "release": "immediate",
+        "route": "oral"
+      },
+      "to_form": {
+        "product": "Золофт",
+        "registration_number": "ЛП-№(002851)-(РГ-RU)",
+        "source_id": "RU-SER",
+        "source_version": "Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является датой содержания",
+        "dosage_form": "tablet",
+        "strengths_mg": [
+          50,
+          100
+        ],
+        "release": "immediate",
+        "route": "oral"
+      },
+      "current_dose": 10,
+      "duration": 24,
+      "last_dose_time": "2026-10-01T09:00:00+03:00",
+      "withdrawal_symptoms": "not_assessed",
+      "medicines": [],
+      "target_applicability": {
+        "status": "not_supported_for_full_pair",
+        "basis": "no verified source interval"
+      },
+      "mania_symptoms": false,
+      "arrhythmia_signs": false,
+      "serotonin_syndrome_signs": false,
+      "seizure_state": "нет",
+      "target_new_seizures": false
+    },
+    "context": {
+      "diagnosis": "F32",
+      "drug": null,
+      "mode": "switch",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "selected_mode",
+      "from_drug": "эсциталопрам",
+      "to_drug": "сертралин",
+      "target_treatment_phase": "not_started"
+    },
+    "expected": {
+      "result_type": "clinician_choice",
+      "total_daily_dose_mg": null,
+      "dose_per_administration_mg": null,
+      "administrations_per_day": null,
+      "schedule": [],
+      "missing_fields": [],
+      "unconditional_future_stages": false,
+      "clinical_clearance": false,
+      "automatic_direct_switch": false,
+      "full_pair_calendar": null,
+      "next_drug_start_day": null,
+      "source_gap_scope": {
+        "full_pair_calendar": null,
+        "automatic_direct_switch": false,
+        "next_drug_start_day": null,
+        "patient_target_applicability": "not_assessed unless separately reported; never clearance",
+        "planning_data": "Reported only for this bounded source gap; current source actions retain their own known actor/phase requirements"
+      },
+      "unassessed_context": [
+        "withdrawal_symptoms"
+      ],
+      "confirmed_negatives": []
+    }
+  },
+  {
+    "case_id": "switch-esc-ser--current-target_applicability-omitted",
+    "given": {
+      "from_form": {
+        "product": "Селектра",
+        "registration_number": "ЛП-№(012351)-(РГ-RU)",
+        "source_id": "RU-ESC",
+        "source_version": "РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; экспертный отчёт 31.10.2025 №27320, последовательность 0002; текущая опубликованная ОХЛП реестра получена 08.10.2026",
+        "dosage_form": "tablet",
+        "strengths_mg": [
+          5,
+          10,
+          15,
+          20
+        ],
+        "release": "immediate",
+        "route": "oral"
+      },
+      "to_form": {
+        "product": "Золофт",
+        "registration_number": "ЛП-№(002851)-(РГ-RU)",
+        "source_id": "RU-SER",
+        "source_version": "Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является датой содержания",
+        "dosage_form": "tablet",
+        "strengths_mg": [
+          50,
+          100
+        ],
+        "release": "immediate",
+        "route": "oral"
+      },
+      "current_dose": 10,
+      "duration": 24,
+      "last_dose_time": "2026-10-01T09:00:00+03:00",
+      "withdrawal_symptoms": "нет",
+      "medicines": [],
+      "mania_symptoms": false,
+      "arrhythmia_signs": false,
+      "serotonin_syndrome_signs": false,
+      "seizure_state": "нет",
+      "target_new_seizures": false
+    },
+    "context": {
+      "diagnosis": "F32",
+      "drug": null,
+      "mode": "switch",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "selected_mode",
+      "from_drug": "эсциталопрам",
+      "to_drug": "сертралин",
+      "target_treatment_phase": "not_started"
+    },
+    "expected": {
+      "result_type": "clinician_choice",
+      "total_daily_dose_mg": null,
+      "dose_per_administration_mg": null,
+      "administrations_per_day": null,
+      "schedule": [],
+      "missing_fields": [],
+      "unconditional_future_stages": false,
+      "clinical_clearance": false,
+      "automatic_direct_switch": false,
+      "full_pair_calendar": null,
+      "next_drug_start_day": null,
+      "source_gap_scope": {
+        "full_pair_calendar": null,
+        "automatic_direct_switch": false,
+        "next_drug_start_day": null,
+        "patient_target_applicability": "not_assessed unless separately reported; never clearance",
+        "planning_data": "Reported only for this bounded source gap; current source actions retain their own known actor/phase requirements"
+      },
+      "unassessed_context": [
+        "target_applicability"
+      ],
+      "confirmed_negatives": []
+    }
+  },
+  {
+    "case_id": "switch-esc-ser--current-target_applicability-unknown",
+    "given": {
+      "from_form": {
+        "product": "Селектра",
+        "registration_number": "ЛП-№(012351)-(РГ-RU)",
+        "source_id": "RU-ESC",
+        "source_version": "РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; экспертный отчёт 31.10.2025 №27320, последовательность 0002; текущая опубликованная ОХЛП реестра получена 08.10.2026",
+        "dosage_form": "tablet",
+        "strengths_mg": [
+          5,
+          10,
+          15,
+          20
+        ],
+        "release": "immediate",
+        "route": "oral"
+      },
+      "to_form": {
+        "product": "Золофт",
+        "registration_number": "ЛП-№(002851)-(РГ-RU)",
+        "source_id": "RU-SER",
+        "source_version": "Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является датой содержания",
+        "dosage_form": "tablet",
+        "strengths_mg": [
+          50,
+          100
+        ],
+        "release": "immediate",
+        "route": "oral"
+      },
+      "current_dose": 10,
+      "duration": 24,
+      "last_dose_time": "2026-10-01T09:00:00+03:00",
+      "withdrawal_symptoms": "нет",
+      "medicines": [],
+      "target_applicability": "unknown",
+      "mania_symptoms": false,
+      "arrhythmia_signs": false,
+      "serotonin_syndrome_signs": false,
+      "seizure_state": "нет",
+      "target_new_seizures": false
+    },
+    "context": {
+      "diagnosis": "F32",
+      "drug": null,
+      "mode": "switch",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "selected_mode",
+      "from_drug": "эсциталопрам",
+      "to_drug": "сертралин",
+      "target_treatment_phase": "not_started"
+    },
+    "expected": {
+      "result_type": "clinician_choice",
+      "total_daily_dose_mg": null,
+      "dose_per_administration_mg": null,
+      "administrations_per_day": null,
+      "schedule": [],
+      "missing_fields": [],
+      "unconditional_future_stages": false,
+      "clinical_clearance": false,
+      "automatic_direct_switch": false,
+      "full_pair_calendar": null,
+      "next_drug_start_day": null,
+      "source_gap_scope": {
+        "full_pair_calendar": null,
+        "automatic_direct_switch": false,
+        "next_drug_start_day": null,
+        "patient_target_applicability": "not_assessed unless separately reported; never clearance",
+        "planning_data": "Reported only for this bounded source gap; current source actions retain their own known actor/phase requirements"
+      },
+      "unassessed_context": [
+        "target_applicability"
+      ],
+      "confirmed_negatives": []
+    }
+  },
+  {
+    "case_id": "switch-esc-ser--current-target_applicability-not_assessed",
+    "given": {
+      "from_form": {
+        "product": "Селектра",
+        "registration_number": "ЛП-№(012351)-(РГ-RU)",
+        "source_id": "RU-ESC",
+        "source_version": "РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; экспертный отчёт 31.10.2025 №27320, последовательность 0002; текущая опубликованная ОХЛП реестра получена 08.10.2026",
+        "dosage_form": "tablet",
+        "strengths_mg": [
+          5,
+          10,
+          15,
+          20
+        ],
+        "release": "immediate",
+        "route": "oral"
+      },
+      "to_form": {
+        "product": "Золофт",
+        "registration_number": "ЛП-№(002851)-(РГ-RU)",
+        "source_id": "RU-SER",
+        "source_version": "Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является датой содержания",
+        "dosage_form": "tablet",
+        "strengths_mg": [
+          50,
+          100
+        ],
+        "release": "immediate",
+        "route": "oral"
+      },
+      "current_dose": 10,
+      "duration": 24,
+      "last_dose_time": "2026-10-01T09:00:00+03:00",
+      "withdrawal_symptoms": "нет",
+      "medicines": [],
+      "target_applicability": "not_assessed",
+      "mania_symptoms": false,
+      "arrhythmia_signs": false,
+      "serotonin_syndrome_signs": false,
+      "seizure_state": "нет",
+      "target_new_seizures": false
+    },
+    "context": {
+      "diagnosis": "F32",
+      "drug": null,
+      "mode": "switch",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "selected_mode",
+      "from_drug": "эсциталопрам",
+      "to_drug": "сертралин",
+      "target_treatment_phase": "not_started"
+    },
+    "expected": {
+      "result_type": "clinician_choice",
+      "total_daily_dose_mg": null,
+      "dose_per_administration_mg": null,
+      "administrations_per_day": null,
+      "schedule": [],
+      "missing_fields": [],
+      "unconditional_future_stages": false,
+      "clinical_clearance": false,
+      "automatic_direct_switch": false,
+      "full_pair_calendar": null,
+      "next_drug_start_day": null,
+      "source_gap_scope": {
+        "full_pair_calendar": null,
+        "automatic_direct_switch": false,
+        "next_drug_start_day": null,
+        "patient_target_applicability": "not_assessed unless separately reported; never clearance",
+        "planning_data": "Reported only for this bounded source gap; current source actions retain their own known actor/phase requirements"
+      },
+      "unassessed_context": [
+        "target_applicability"
+      ],
+      "confirmed_negatives": []
+    }
+  },
+  {
+    "case_id": "switch-ser-esc--current-current_dose-omitted",
+    "given": {
+      "from_form": {
+        "product": "Золофт",
+        "registration_number": "ЛП-№(002851)-(РГ-RU)",
+        "source_id": "RU-SER",
+        "source_version": "Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является датой содержания",
+        "dosage_form": "tablet",
+        "strengths_mg": [
+          50,
+          100
+        ],
+        "release": "immediate",
+        "route": "oral"
+      },
+      "to_form": {
+        "product": "Селектра",
+        "registration_number": "ЛП-№(012351)-(РГ-RU)",
+        "source_id": "RU-ESC",
+        "source_version": "РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; экспертный отчёт 31.10.2025 №27320, последовательность 0002; текущая опубликованная ОХЛП реестра получена 08.10.2026",
+        "dosage_form": "tablet",
+        "strengths_mg": [
+          5,
+          10,
+          15,
+          20
+        ],
+        "release": "immediate",
+        "route": "oral"
+      },
+      "duration": 24,
+      "last_dose_time": "2026-10-01T09:00:00+03:00",
+      "withdrawal_symptoms": "нет",
+      "medicines": [],
+      "target_applicability": {
+        "status": "not_supported_for_full_pair",
+        "basis": "no verified source interval"
+      },
+      "mania_symptoms": false,
+      "target_arrhythmia_signs": false,
+      "target_serotonin_syndrome_signs": false,
+      "target_seizure_state": "нет",
+      "new_seizures": false
+    },
+    "context": {
+      "diagnosis": "F32",
+      "drug": null,
+      "mode": "switch",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "selected_mode",
+      "from_drug": "сертралин",
+      "to_drug": "эсциталопрам",
+      "target_treatment_phase": "not_started"
+    },
+    "expected": {
+      "result_type": "clinician_choice",
+      "total_daily_dose_mg": null,
+      "dose_per_administration_mg": null,
+      "administrations_per_day": null,
+      "schedule": [],
+      "missing_fields": [],
+      "unconditional_future_stages": false,
+      "clinical_clearance": false,
+      "automatic_direct_switch": false,
+      "full_pair_calendar": null,
+      "next_drug_start_day": null,
+      "source_gap_scope": {
+        "full_pair_calendar": null,
+        "automatic_direct_switch": false,
+        "next_drug_start_day": null,
+        "patient_target_applicability": "not_assessed unless separately reported; never clearance",
+        "planning_data": "Reported only for this bounded source gap; current source actions retain their own known actor/phase requirements"
+      },
+      "unassessed_context": [
+        "current_dose"
+      ],
+      "confirmed_negatives": []
+    }
+  },
+  {
+    "case_id": "switch-ser-esc--current-current_dose-unknown",
+    "given": {
+      "from_form": {
+        "product": "Золофт",
+        "registration_number": "ЛП-№(002851)-(РГ-RU)",
+        "source_id": "RU-SER",
+        "source_version": "Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является датой содержания",
+        "dosage_form": "tablet",
+        "strengths_mg": [
+          50,
+          100
+        ],
+        "release": "immediate",
+        "route": "oral"
+      },
+      "to_form": {
+        "product": "Селектра",
+        "registration_number": "ЛП-№(012351)-(РГ-RU)",
+        "source_id": "RU-ESC",
+        "source_version": "РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; экспертный отчёт 31.10.2025 №27320, последовательность 0002; текущая опубликованная ОХЛП реестра получена 08.10.2026",
+        "dosage_form": "tablet",
+        "strengths_mg": [
+          5,
+          10,
+          15,
+          20
+        ],
+        "release": "immediate",
+        "route": "oral"
+      },
+      "current_dose": "unknown",
+      "duration": 24,
+      "last_dose_time": "2026-10-01T09:00:00+03:00",
+      "withdrawal_symptoms": "нет",
+      "medicines": [],
+      "target_applicability": {
+        "status": "not_supported_for_full_pair",
+        "basis": "no verified source interval"
+      },
+      "mania_symptoms": false,
+      "target_arrhythmia_signs": false,
+      "target_serotonin_syndrome_signs": false,
+      "target_seizure_state": "нет",
+      "new_seizures": false
+    },
+    "context": {
+      "diagnosis": "F32",
+      "drug": null,
+      "mode": "switch",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "selected_mode",
+      "from_drug": "сертралин",
+      "to_drug": "эсциталопрам",
+      "target_treatment_phase": "not_started"
+    },
+    "expected": {
+      "result_type": "clinician_choice",
+      "total_daily_dose_mg": null,
+      "dose_per_administration_mg": null,
+      "administrations_per_day": null,
+      "schedule": [],
+      "missing_fields": [],
+      "unconditional_future_stages": false,
+      "clinical_clearance": false,
+      "automatic_direct_switch": false,
+      "full_pair_calendar": null,
+      "next_drug_start_day": null,
+      "source_gap_scope": {
+        "full_pair_calendar": null,
+        "automatic_direct_switch": false,
+        "next_drug_start_day": null,
+        "patient_target_applicability": "not_assessed unless separately reported; never clearance",
+        "planning_data": "Reported only for this bounded source gap; current source actions retain their own known actor/phase requirements"
+      },
+      "unassessed_context": [
+        "current_dose"
+      ],
+      "confirmed_negatives": []
+    }
+  },
+  {
+    "case_id": "switch-ser-esc--current-current_dose-not_assessed",
+    "given": {
+      "from_form": {
+        "product": "Золофт",
+        "registration_number": "ЛП-№(002851)-(РГ-RU)",
+        "source_id": "RU-SER",
+        "source_version": "Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является датой содержания",
+        "dosage_form": "tablet",
+        "strengths_mg": [
+          50,
+          100
+        ],
+        "release": "immediate",
+        "route": "oral"
+      },
+      "to_form": {
+        "product": "Селектра",
+        "registration_number": "ЛП-№(012351)-(РГ-RU)",
+        "source_id": "RU-ESC",
+        "source_version": "РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; экспертный отчёт 31.10.2025 №27320, последовательность 0002; текущая опубликованная ОХЛП реестра получена 08.10.2026",
+        "dosage_form": "tablet",
+        "strengths_mg": [
+          5,
+          10,
+          15,
+          20
+        ],
+        "release": "immediate",
+        "route": "oral"
+      },
+      "current_dose": "not_assessed",
+      "duration": 24,
+      "last_dose_time": "2026-10-01T09:00:00+03:00",
+      "withdrawal_symptoms": "нет",
+      "medicines": [],
+      "target_applicability": {
+        "status": "not_supported_for_full_pair",
+        "basis": "no verified source interval"
+      },
+      "mania_symptoms": false,
+      "target_arrhythmia_signs": false,
+      "target_serotonin_syndrome_signs": false,
+      "target_seizure_state": "нет",
+      "new_seizures": false
+    },
+    "context": {
+      "diagnosis": "F32",
+      "drug": null,
+      "mode": "switch",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "selected_mode",
+      "from_drug": "сертралин",
+      "to_drug": "эсциталопрам",
+      "target_treatment_phase": "not_started"
+    },
+    "expected": {
+      "result_type": "clinician_choice",
+      "total_daily_dose_mg": null,
+      "dose_per_administration_mg": null,
+      "administrations_per_day": null,
+      "schedule": [],
+      "missing_fields": [],
+      "unconditional_future_stages": false,
+      "clinical_clearance": false,
+      "automatic_direct_switch": false,
+      "full_pair_calendar": null,
+      "next_drug_start_day": null,
+      "source_gap_scope": {
+        "full_pair_calendar": null,
+        "automatic_direct_switch": false,
+        "next_drug_start_day": null,
+        "patient_target_applicability": "not_assessed unless separately reported; never clearance",
+        "planning_data": "Reported only for this bounded source gap; current source actions retain their own known actor/phase requirements"
+      },
+      "unassessed_context": [
+        "current_dose"
+      ],
+      "confirmed_negatives": []
+    }
+  },
+  {
+    "case_id": "switch-ser-esc--current-duration-omitted",
+    "given": {
+      "from_form": {
+        "product": "Золофт",
+        "registration_number": "ЛП-№(002851)-(РГ-RU)",
+        "source_id": "RU-SER",
+        "source_version": "Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является датой содержания",
+        "dosage_form": "tablet",
+        "strengths_mg": [
+          50,
+          100
+        ],
+        "release": "immediate",
+        "route": "oral"
+      },
+      "to_form": {
+        "product": "Селектра",
+        "registration_number": "ЛП-№(012351)-(РГ-RU)",
+        "source_id": "RU-ESC",
+        "source_version": "РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; экспертный отчёт 31.10.2025 №27320, последовательность 0002; текущая опубликованная ОХЛП реестра получена 08.10.2026",
+        "dosage_form": "tablet",
+        "strengths_mg": [
+          5,
+          10,
+          15,
+          20
+        ],
+        "release": "immediate",
+        "route": "oral"
+      },
+      "current_dose": 100,
+      "last_dose_time": "2026-10-01T09:00:00+03:00",
+      "withdrawal_symptoms": "нет",
+      "medicines": [],
+      "target_applicability": {
+        "status": "not_supported_for_full_pair",
+        "basis": "no verified source interval"
+      },
+      "mania_symptoms": false,
+      "target_arrhythmia_signs": false,
+      "target_serotonin_syndrome_signs": false,
+      "target_seizure_state": "нет",
+      "new_seizures": false
+    },
+    "context": {
+      "diagnosis": "F32",
+      "drug": null,
+      "mode": "switch",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "selected_mode",
+      "from_drug": "сертралин",
+      "to_drug": "эсциталопрам",
+      "target_treatment_phase": "not_started"
+    },
+    "expected": {
+      "result_type": "clinician_choice",
+      "total_daily_dose_mg": null,
+      "dose_per_administration_mg": null,
+      "administrations_per_day": null,
+      "schedule": [],
+      "missing_fields": [],
+      "unconditional_future_stages": false,
+      "clinical_clearance": false,
+      "automatic_direct_switch": false,
+      "full_pair_calendar": null,
+      "next_drug_start_day": null,
+      "source_gap_scope": {
+        "full_pair_calendar": null,
+        "automatic_direct_switch": false,
+        "next_drug_start_day": null,
+        "patient_target_applicability": "not_assessed unless separately reported; never clearance",
+        "planning_data": "Reported only for this bounded source gap; current source actions retain their own known actor/phase requirements"
+      },
+      "unassessed_context": [
+        "duration"
+      ],
+      "confirmed_negatives": []
+    }
+  },
+  {
+    "case_id": "switch-ser-esc--current-duration-unknown",
+    "given": {
+      "from_form": {
+        "product": "Золофт",
+        "registration_number": "ЛП-№(002851)-(РГ-RU)",
+        "source_id": "RU-SER",
+        "source_version": "Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является датой содержания",
+        "dosage_form": "tablet",
+        "strengths_mg": [
+          50,
+          100
+        ],
+        "release": "immediate",
+        "route": "oral"
+      },
+      "to_form": {
+        "product": "Селектра",
+        "registration_number": "ЛП-№(012351)-(РГ-RU)",
+        "source_id": "RU-ESC",
+        "source_version": "РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; экспертный отчёт 31.10.2025 №27320, последовательность 0002; текущая опубликованная ОХЛП реестра получена 08.10.2026",
+        "dosage_form": "tablet",
+        "strengths_mg": [
+          5,
+          10,
+          15,
+          20
+        ],
+        "release": "immediate",
+        "route": "oral"
+      },
+      "current_dose": 100,
+      "duration": "unknown",
+      "last_dose_time": "2026-10-01T09:00:00+03:00",
+      "withdrawal_symptoms": "нет",
+      "medicines": [],
+      "target_applicability": {
+        "status": "not_supported_for_full_pair",
+        "basis": "no verified source interval"
+      },
+      "mania_symptoms": false,
+      "target_arrhythmia_signs": false,
+      "target_serotonin_syndrome_signs": false,
+      "target_seizure_state": "нет",
+      "new_seizures": false
+    },
+    "context": {
+      "diagnosis": "F32",
+      "drug": null,
+      "mode": "switch",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "selected_mode",
+      "from_drug": "сертралин",
+      "to_drug": "эсциталопрам",
+      "target_treatment_phase": "not_started"
+    },
+    "expected": {
+      "result_type": "clinician_choice",
+      "total_daily_dose_mg": null,
+      "dose_per_administration_mg": null,
+      "administrations_per_day": null,
+      "schedule": [],
+      "missing_fields": [],
+      "unconditional_future_stages": false,
+      "clinical_clearance": false,
+      "automatic_direct_switch": false,
+      "full_pair_calendar": null,
+      "next_drug_start_day": null,
+      "source_gap_scope": {
+        "full_pair_calendar": null,
+        "automatic_direct_switch": false,
+        "next_drug_start_day": null,
+        "patient_target_applicability": "not_assessed unless separately reported; never clearance",
+        "planning_data": "Reported only for this bounded source gap; current source actions retain their own known actor/phase requirements"
+      },
+      "unassessed_context": [
+        "duration"
+      ],
+      "confirmed_negatives": []
+    }
+  },
+  {
+    "case_id": "switch-ser-esc--current-duration-not_assessed",
+    "given": {
+      "from_form": {
+        "product": "Золофт",
+        "registration_number": "ЛП-№(002851)-(РГ-RU)",
+        "source_id": "RU-SER",
+        "source_version": "Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является датой содержания",
+        "dosage_form": "tablet",
+        "strengths_mg": [
+          50,
+          100
+        ],
+        "release": "immediate",
+        "route": "oral"
+      },
+      "to_form": {
+        "product": "Селектра",
+        "registration_number": "ЛП-№(012351)-(РГ-RU)",
+        "source_id": "RU-ESC",
+        "source_version": "РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; экспертный отчёт 31.10.2025 №27320, последовательность 0002; текущая опубликованная ОХЛП реестра получена 08.10.2026",
+        "dosage_form": "tablet",
+        "strengths_mg": [
+          5,
+          10,
+          15,
+          20
+        ],
+        "release": "immediate",
+        "route": "oral"
+      },
+      "current_dose": 100,
+      "duration": "not_assessed",
+      "last_dose_time": "2026-10-01T09:00:00+03:00",
+      "withdrawal_symptoms": "нет",
+      "medicines": [],
+      "target_applicability": {
+        "status": "not_supported_for_full_pair",
+        "basis": "no verified source interval"
+      },
+      "mania_symptoms": false,
+      "target_arrhythmia_signs": false,
+      "target_serotonin_syndrome_signs": false,
+      "target_seizure_state": "нет",
+      "new_seizures": false
+    },
+    "context": {
+      "diagnosis": "F32",
+      "drug": null,
+      "mode": "switch",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "selected_mode",
+      "from_drug": "сертралин",
+      "to_drug": "эсциталопрам",
+      "target_treatment_phase": "not_started"
+    },
+    "expected": {
+      "result_type": "clinician_choice",
+      "total_daily_dose_mg": null,
+      "dose_per_administration_mg": null,
+      "administrations_per_day": null,
+      "schedule": [],
+      "missing_fields": [],
+      "unconditional_future_stages": false,
+      "clinical_clearance": false,
+      "automatic_direct_switch": false,
+      "full_pair_calendar": null,
+      "next_drug_start_day": null,
+      "source_gap_scope": {
+        "full_pair_calendar": null,
+        "automatic_direct_switch": false,
+        "next_drug_start_day": null,
+        "patient_target_applicability": "not_assessed unless separately reported; never clearance",
+        "planning_data": "Reported only for this bounded source gap; current source actions retain their own known actor/phase requirements"
+      },
+      "unassessed_context": [
+        "duration"
+      ],
+      "confirmed_negatives": []
+    }
+  },
+  {
+    "case_id": "switch-ser-esc--current-last_dose_time-omitted",
+    "given": {
+      "from_form": {
+        "product": "Золофт",
+        "registration_number": "ЛП-№(002851)-(РГ-RU)",
+        "source_id": "RU-SER",
+        "source_version": "Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является датой содержания",
+        "dosage_form": "tablet",
+        "strengths_mg": [
+          50,
+          100
+        ],
+        "release": "immediate",
+        "route": "oral"
+      },
+      "to_form": {
+        "product": "Селектра",
+        "registration_number": "ЛП-№(012351)-(РГ-RU)",
+        "source_id": "RU-ESC",
+        "source_version": "РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; экспертный отчёт 31.10.2025 №27320, последовательность 0002; текущая опубликованная ОХЛП реестра получена 08.10.2026",
+        "dosage_form": "tablet",
+        "strengths_mg": [
+          5,
+          10,
+          15,
+          20
+        ],
+        "release": "immediate",
+        "route": "oral"
+      },
+      "current_dose": 100,
+      "duration": 24,
+      "withdrawal_symptoms": "нет",
+      "medicines": [],
+      "target_applicability": {
+        "status": "not_supported_for_full_pair",
+        "basis": "no verified source interval"
+      },
+      "mania_symptoms": false,
+      "target_arrhythmia_signs": false,
+      "target_serotonin_syndrome_signs": false,
+      "target_seizure_state": "нет",
+      "new_seizures": false
+    },
+    "context": {
+      "diagnosis": "F32",
+      "drug": null,
+      "mode": "switch",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "selected_mode",
+      "from_drug": "сертралин",
+      "to_drug": "эсциталопрам",
+      "target_treatment_phase": "not_started"
+    },
+    "expected": {
+      "result_type": "clinician_choice",
+      "total_daily_dose_mg": null,
+      "dose_per_administration_mg": null,
+      "administrations_per_day": null,
+      "schedule": [],
+      "missing_fields": [],
+      "unconditional_future_stages": false,
+      "clinical_clearance": false,
+      "automatic_direct_switch": false,
+      "full_pair_calendar": null,
+      "next_drug_start_day": null,
+      "source_gap_scope": {
+        "full_pair_calendar": null,
+        "automatic_direct_switch": false,
+        "next_drug_start_day": null,
+        "patient_target_applicability": "not_assessed unless separately reported; never clearance",
+        "planning_data": "Reported only for this bounded source gap; current source actions retain their own known actor/phase requirements"
+      },
+      "unassessed_context": [
+        "last_dose_time"
+      ],
+      "confirmed_negatives": []
+    }
+  },
+  {
+    "case_id": "switch-ser-esc--current-last_dose_time-unknown",
+    "given": {
+      "from_form": {
+        "product": "Золофт",
+        "registration_number": "ЛП-№(002851)-(РГ-RU)",
+        "source_id": "RU-SER",
+        "source_version": "Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является датой содержания",
+        "dosage_form": "tablet",
+        "strengths_mg": [
+          50,
+          100
+        ],
+        "release": "immediate",
+        "route": "oral"
+      },
+      "to_form": {
+        "product": "Селектра",
+        "registration_number": "ЛП-№(012351)-(РГ-RU)",
+        "source_id": "RU-ESC",
+        "source_version": "РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; экспертный отчёт 31.10.2025 №27320, последовательность 0002; текущая опубликованная ОХЛП реестра получена 08.10.2026",
+        "dosage_form": "tablet",
+        "strengths_mg": [
+          5,
+          10,
+          15,
+          20
+        ],
+        "release": "immediate",
+        "route": "oral"
+      },
+      "current_dose": 100,
+      "duration": 24,
+      "last_dose_time": "unknown",
+      "withdrawal_symptoms": "нет",
+      "medicines": [],
+      "target_applicability": {
+        "status": "not_supported_for_full_pair",
+        "basis": "no verified source interval"
+      },
+      "mania_symptoms": false,
+      "target_arrhythmia_signs": false,
+      "target_serotonin_syndrome_signs": false,
+      "target_seizure_state": "нет",
+      "new_seizures": false
+    },
+    "context": {
+      "diagnosis": "F32",
+      "drug": null,
+      "mode": "switch",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "selected_mode",
+      "from_drug": "сертралин",
+      "to_drug": "эсциталопрам",
+      "target_treatment_phase": "not_started"
+    },
+    "expected": {
+      "result_type": "clinician_choice",
+      "total_daily_dose_mg": null,
+      "dose_per_administration_mg": null,
+      "administrations_per_day": null,
+      "schedule": [],
+      "missing_fields": [],
+      "unconditional_future_stages": false,
+      "clinical_clearance": false,
+      "automatic_direct_switch": false,
+      "full_pair_calendar": null,
+      "next_drug_start_day": null,
+      "source_gap_scope": {
+        "full_pair_calendar": null,
+        "automatic_direct_switch": false,
+        "next_drug_start_day": null,
+        "patient_target_applicability": "not_assessed unless separately reported; never clearance",
+        "planning_data": "Reported only for this bounded source gap; current source actions retain their own known actor/phase requirements"
+      },
+      "unassessed_context": [
+        "last_dose_time"
+      ],
+      "confirmed_negatives": []
+    }
+  },
+  {
+    "case_id": "switch-ser-esc--current-last_dose_time-not_assessed",
+    "given": {
+      "from_form": {
+        "product": "Золофт",
+        "registration_number": "ЛП-№(002851)-(РГ-RU)",
+        "source_id": "RU-SER",
+        "source_version": "Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является датой содержания",
+        "dosage_form": "tablet",
+        "strengths_mg": [
+          50,
+          100
+        ],
+        "release": "immediate",
+        "route": "oral"
+      },
+      "to_form": {
+        "product": "Селектра",
+        "registration_number": "ЛП-№(012351)-(РГ-RU)",
+        "source_id": "RU-ESC",
+        "source_version": "РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; экспертный отчёт 31.10.2025 №27320, последовательность 0002; текущая опубликованная ОХЛП реестра получена 08.10.2026",
+        "dosage_form": "tablet",
+        "strengths_mg": [
+          5,
+          10,
+          15,
+          20
+        ],
+        "release": "immediate",
+        "route": "oral"
+      },
+      "current_dose": 100,
+      "duration": 24,
+      "last_dose_time": "not_assessed",
+      "withdrawal_symptoms": "нет",
+      "medicines": [],
+      "target_applicability": {
+        "status": "not_supported_for_full_pair",
+        "basis": "no verified source interval"
+      },
+      "mania_symptoms": false,
+      "target_arrhythmia_signs": false,
+      "target_serotonin_syndrome_signs": false,
+      "target_seizure_state": "нет",
+      "new_seizures": false
+    },
+    "context": {
+      "diagnosis": "F32",
+      "drug": null,
+      "mode": "switch",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "selected_mode",
+      "from_drug": "сертралин",
+      "to_drug": "эсциталопрам",
+      "target_treatment_phase": "not_started"
+    },
+    "expected": {
+      "result_type": "clinician_choice",
+      "total_daily_dose_mg": null,
+      "dose_per_administration_mg": null,
+      "administrations_per_day": null,
+      "schedule": [],
+      "missing_fields": [],
+      "unconditional_future_stages": false,
+      "clinical_clearance": false,
+      "automatic_direct_switch": false,
+      "full_pair_calendar": null,
+      "next_drug_start_day": null,
+      "source_gap_scope": {
+        "full_pair_calendar": null,
+        "automatic_direct_switch": false,
+        "next_drug_start_day": null,
+        "patient_target_applicability": "not_assessed unless separately reported; never clearance",
+        "planning_data": "Reported only for this bounded source gap; current source actions retain their own known actor/phase requirements"
+      },
+      "unassessed_context": [
+        "last_dose_time"
+      ],
+      "confirmed_negatives": []
+    }
+  },
+  {
+    "case_id": "switch-ser-esc--current-withdrawal_symptoms-omitted",
+    "given": {
+      "from_form": {
+        "product": "Золофт",
+        "registration_number": "ЛП-№(002851)-(РГ-RU)",
+        "source_id": "RU-SER",
+        "source_version": "Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является датой содержания",
+        "dosage_form": "tablet",
+        "strengths_mg": [
+          50,
+          100
+        ],
+        "release": "immediate",
+        "route": "oral"
+      },
+      "to_form": {
+        "product": "Селектра",
+        "registration_number": "ЛП-№(012351)-(РГ-RU)",
+        "source_id": "RU-ESC",
+        "source_version": "РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; экспертный отчёт 31.10.2025 №27320, последовательность 0002; текущая опубликованная ОХЛП реестра получена 08.10.2026",
+        "dosage_form": "tablet",
+        "strengths_mg": [
+          5,
+          10,
+          15,
+          20
+        ],
+        "release": "immediate",
+        "route": "oral"
+      },
+      "current_dose": 100,
+      "duration": 24,
+      "last_dose_time": "2026-10-01T09:00:00+03:00",
+      "medicines": [],
+      "target_applicability": {
+        "status": "not_supported_for_full_pair",
+        "basis": "no verified source interval"
+      },
+      "mania_symptoms": false,
+      "target_arrhythmia_signs": false,
+      "target_serotonin_syndrome_signs": false,
+      "target_seizure_state": "нет",
+      "new_seizures": false
+    },
+    "context": {
+      "diagnosis": "F32",
+      "drug": null,
+      "mode": "switch",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "selected_mode",
+      "from_drug": "сертралин",
+      "to_drug": "эсциталопрам",
+      "target_treatment_phase": "not_started"
+    },
+    "expected": {
+      "result_type": "clinician_choice",
+      "total_daily_dose_mg": null,
+      "dose_per_administration_mg": null,
+      "administrations_per_day": null,
+      "schedule": [],
+      "missing_fields": [],
+      "unconditional_future_stages": false,
+      "clinical_clearance": false,
+      "automatic_direct_switch": false,
+      "full_pair_calendar": null,
+      "next_drug_start_day": null,
+      "source_gap_scope": {
+        "full_pair_calendar": null,
+        "automatic_direct_switch": false,
+        "next_drug_start_day": null,
+        "patient_target_applicability": "not_assessed unless separately reported; never clearance",
+        "planning_data": "Reported only for this bounded source gap; current source actions retain their own known actor/phase requirements"
+      },
+      "unassessed_context": [
+        "withdrawal_symptoms"
+      ],
+      "confirmed_negatives": []
+    }
+  },
+  {
+    "case_id": "switch-ser-esc--current-withdrawal_symptoms-unknown",
+    "given": {
+      "from_form": {
+        "product": "Золофт",
+        "registration_number": "ЛП-№(002851)-(РГ-RU)",
+        "source_id": "RU-SER",
+        "source_version": "Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является датой содержания",
+        "dosage_form": "tablet",
+        "strengths_mg": [
+          50,
+          100
+        ],
+        "release": "immediate",
+        "route": "oral"
+      },
+      "to_form": {
+        "product": "Селектра",
+        "registration_number": "ЛП-№(012351)-(РГ-RU)",
+        "source_id": "RU-ESC",
+        "source_version": "РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; экспертный отчёт 31.10.2025 №27320, последовательность 0002; текущая опубликованная ОХЛП реестра получена 08.10.2026",
+        "dosage_form": "tablet",
+        "strengths_mg": [
+          5,
+          10,
+          15,
+          20
+        ],
+        "release": "immediate",
+        "route": "oral"
+      },
+      "current_dose": 100,
+      "duration": 24,
+      "last_dose_time": "2026-10-01T09:00:00+03:00",
+      "withdrawal_symptoms": "unknown",
+      "medicines": [],
+      "target_applicability": {
+        "status": "not_supported_for_full_pair",
+        "basis": "no verified source interval"
+      },
+      "mania_symptoms": false,
+      "target_arrhythmia_signs": false,
+      "target_serotonin_syndrome_signs": false,
+      "target_seizure_state": "нет",
+      "new_seizures": false
+    },
+    "context": {
+      "diagnosis": "F32",
+      "drug": null,
+      "mode": "switch",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "selected_mode",
+      "from_drug": "сертралин",
+      "to_drug": "эсциталопрам",
+      "target_treatment_phase": "not_started"
+    },
+    "expected": {
+      "result_type": "clinician_choice",
+      "total_daily_dose_mg": null,
+      "dose_per_administration_mg": null,
+      "administrations_per_day": null,
+      "schedule": [],
+      "missing_fields": [],
+      "unconditional_future_stages": false,
+      "clinical_clearance": false,
+      "automatic_direct_switch": false,
+      "full_pair_calendar": null,
+      "next_drug_start_day": null,
+      "source_gap_scope": {
+        "full_pair_calendar": null,
+        "automatic_direct_switch": false,
+        "next_drug_start_day": null,
+        "patient_target_applicability": "not_assessed unless separately reported; never clearance",
+        "planning_data": "Reported only for this bounded source gap; current source actions retain their own known actor/phase requirements"
+      },
+      "unassessed_context": [
+        "withdrawal_symptoms"
+      ],
+      "confirmed_negatives": []
+    }
+  },
+  {
+    "case_id": "switch-ser-esc--current-withdrawal_symptoms-not_assessed",
+    "given": {
+      "from_form": {
+        "product": "Золофт",
+        "registration_number": "ЛП-№(002851)-(РГ-RU)",
+        "source_id": "RU-SER",
+        "source_version": "Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является датой содержания",
+        "dosage_form": "tablet",
+        "strengths_mg": [
+          50,
+          100
+        ],
+        "release": "immediate",
+        "route": "oral"
+      },
+      "to_form": {
+        "product": "Селектра",
+        "registration_number": "ЛП-№(012351)-(РГ-RU)",
+        "source_id": "RU-ESC",
+        "source_version": "РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; экспертный отчёт 31.10.2025 №27320, последовательность 0002; текущая опубликованная ОХЛП реестра получена 08.10.2026",
+        "dosage_form": "tablet",
+        "strengths_mg": [
+          5,
+          10,
+          15,
+          20
+        ],
+        "release": "immediate",
+        "route": "oral"
+      },
+      "current_dose": 100,
+      "duration": 24,
+      "last_dose_time": "2026-10-01T09:00:00+03:00",
+      "withdrawal_symptoms": "not_assessed",
+      "medicines": [],
+      "target_applicability": {
+        "status": "not_supported_for_full_pair",
+        "basis": "no verified source interval"
+      },
+      "mania_symptoms": false,
+      "target_arrhythmia_signs": false,
+      "target_serotonin_syndrome_signs": false,
+      "target_seizure_state": "нет",
+      "new_seizures": false
+    },
+    "context": {
+      "diagnosis": "F32",
+      "drug": null,
+      "mode": "switch",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "selected_mode",
+      "from_drug": "сертралин",
+      "to_drug": "эсциталопрам",
+      "target_treatment_phase": "not_started"
+    },
+    "expected": {
+      "result_type": "clinician_choice",
+      "total_daily_dose_mg": null,
+      "dose_per_administration_mg": null,
+      "administrations_per_day": null,
+      "schedule": [],
+      "missing_fields": [],
+      "unconditional_future_stages": false,
+      "clinical_clearance": false,
+      "automatic_direct_switch": false,
+      "full_pair_calendar": null,
+      "next_drug_start_day": null,
+      "source_gap_scope": {
+        "full_pair_calendar": null,
+        "automatic_direct_switch": false,
+        "next_drug_start_day": null,
+        "patient_target_applicability": "not_assessed unless separately reported; never clearance",
+        "planning_data": "Reported only for this bounded source gap; current source actions retain their own known actor/phase requirements"
+      },
+      "unassessed_context": [
+        "withdrawal_symptoms"
+      ],
+      "confirmed_negatives": []
+    }
+  },
+  {
+    "case_id": "switch-ser-esc--current-target_applicability-omitted",
+    "given": {
+      "from_form": {
+        "product": "Золофт",
+        "registration_number": "ЛП-№(002851)-(РГ-RU)",
+        "source_id": "RU-SER",
+        "source_version": "Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является датой содержания",
+        "dosage_form": "tablet",
+        "strengths_mg": [
+          50,
+          100
+        ],
+        "release": "immediate",
+        "route": "oral"
+      },
+      "to_form": {
+        "product": "Селектра",
+        "registration_number": "ЛП-№(012351)-(РГ-RU)",
+        "source_id": "RU-ESC",
+        "source_version": "РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; экспертный отчёт 31.10.2025 №27320, последовательность 0002; текущая опубликованная ОХЛП реестра получена 08.10.2026",
+        "dosage_form": "tablet",
+        "strengths_mg": [
+          5,
+          10,
+          15,
+          20
+        ],
+        "release": "immediate",
+        "route": "oral"
+      },
+      "current_dose": 100,
+      "duration": 24,
+      "last_dose_time": "2026-10-01T09:00:00+03:00",
+      "withdrawal_symptoms": "нет",
+      "medicines": [],
+      "mania_symptoms": false,
+      "target_arrhythmia_signs": false,
+      "target_serotonin_syndrome_signs": false,
+      "target_seizure_state": "нет",
+      "new_seizures": false
+    },
+    "context": {
+      "diagnosis": "F32",
+      "drug": null,
+      "mode": "switch",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "selected_mode",
+      "from_drug": "сертралин",
+      "to_drug": "эсциталопрам",
+      "target_treatment_phase": "not_started"
+    },
+    "expected": {
+      "result_type": "clinician_choice",
+      "total_daily_dose_mg": null,
+      "dose_per_administration_mg": null,
+      "administrations_per_day": null,
+      "schedule": [],
+      "missing_fields": [],
+      "unconditional_future_stages": false,
+      "clinical_clearance": false,
+      "automatic_direct_switch": false,
+      "full_pair_calendar": null,
+      "next_drug_start_day": null,
+      "source_gap_scope": {
+        "full_pair_calendar": null,
+        "automatic_direct_switch": false,
+        "next_drug_start_day": null,
+        "patient_target_applicability": "not_assessed unless separately reported; never clearance",
+        "planning_data": "Reported only for this bounded source gap; current source actions retain their own known actor/phase requirements"
+      },
+      "unassessed_context": [
+        "target_applicability"
+      ],
+      "confirmed_negatives": []
+    }
+  },
+  {
+    "case_id": "switch-ser-esc--current-target_applicability-unknown",
+    "given": {
+      "from_form": {
+        "product": "Золофт",
+        "registration_number": "ЛП-№(002851)-(РГ-RU)",
+        "source_id": "RU-SER",
+        "source_version": "Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является датой содержания",
+        "dosage_form": "tablet",
+        "strengths_mg": [
+          50,
+          100
+        ],
+        "release": "immediate",
+        "route": "oral"
+      },
+      "to_form": {
+        "product": "Селектра",
+        "registration_number": "ЛП-№(012351)-(РГ-RU)",
+        "source_id": "RU-ESC",
+        "source_version": "РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; экспертный отчёт 31.10.2025 №27320, последовательность 0002; текущая опубликованная ОХЛП реестра получена 08.10.2026",
+        "dosage_form": "tablet",
+        "strengths_mg": [
+          5,
+          10,
+          15,
+          20
+        ],
+        "release": "immediate",
+        "route": "oral"
+      },
+      "current_dose": 100,
+      "duration": 24,
+      "last_dose_time": "2026-10-01T09:00:00+03:00",
+      "withdrawal_symptoms": "нет",
+      "medicines": [],
+      "target_applicability": "unknown",
+      "mania_symptoms": false,
+      "target_arrhythmia_signs": false,
+      "target_serotonin_syndrome_signs": false,
+      "target_seizure_state": "нет",
+      "new_seizures": false
+    },
+    "context": {
+      "diagnosis": "F32",
+      "drug": null,
+      "mode": "switch",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "selected_mode",
+      "from_drug": "сертралин",
+      "to_drug": "эсциталопрам",
+      "target_treatment_phase": "not_started"
+    },
+    "expected": {
+      "result_type": "clinician_choice",
+      "total_daily_dose_mg": null,
+      "dose_per_administration_mg": null,
+      "administrations_per_day": null,
+      "schedule": [],
+      "missing_fields": [],
+      "unconditional_future_stages": false,
+      "clinical_clearance": false,
+      "automatic_direct_switch": false,
+      "full_pair_calendar": null,
+      "next_drug_start_day": null,
+      "source_gap_scope": {
+        "full_pair_calendar": null,
+        "automatic_direct_switch": false,
+        "next_drug_start_day": null,
+        "patient_target_applicability": "not_assessed unless separately reported; never clearance",
+        "planning_data": "Reported only for this bounded source gap; current source actions retain their own known actor/phase requirements"
+      },
+      "unassessed_context": [
+        "target_applicability"
+      ],
+      "confirmed_negatives": []
+    }
+  },
+  {
+    "case_id": "switch-ser-esc--current-target_applicability-not_assessed",
+    "given": {
+      "from_form": {
+        "product": "Золофт",
+        "registration_number": "ЛП-№(002851)-(РГ-RU)",
+        "source_id": "RU-SER",
+        "source_version": "Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является датой содержания",
+        "dosage_form": "tablet",
+        "strengths_mg": [
+          50,
+          100
+        ],
+        "release": "immediate",
+        "route": "oral"
+      },
+      "to_form": {
+        "product": "Селектра",
+        "registration_number": "ЛП-№(012351)-(РГ-RU)",
+        "source_id": "RU-ESC",
+        "source_version": "РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; экспертный отчёт 31.10.2025 №27320, последовательность 0002; текущая опубликованная ОХЛП реестра получена 08.10.2026",
+        "dosage_form": "tablet",
+        "strengths_mg": [
+          5,
+          10,
+          15,
+          20
+        ],
+        "release": "immediate",
+        "route": "oral"
+      },
+      "current_dose": 100,
+      "duration": 24,
+      "last_dose_time": "2026-10-01T09:00:00+03:00",
+      "withdrawal_symptoms": "нет",
+      "medicines": [],
+      "target_applicability": "not_assessed",
+      "mania_symptoms": false,
+      "target_arrhythmia_signs": false,
+      "target_serotonin_syndrome_signs": false,
+      "target_seizure_state": "нет",
+      "new_seizures": false
+    },
+    "context": {
+      "diagnosis": "F32",
+      "drug": null,
+      "mode": "switch",
+      "calculation_at": "2026-10-08T09:00:00+03:00",
+      "treatment_phase": "selected_mode",
+      "from_drug": "сертралин",
+      "to_drug": "эсциталопрам",
+      "target_treatment_phase": "not_started"
+    },
+    "expected": {
+      "result_type": "clinician_choice",
+      "total_daily_dose_mg": null,
+      "dose_per_administration_mg": null,
+      "administrations_per_day": null,
+      "schedule": [],
+      "missing_fields": [],
+      "unconditional_future_stages": false,
+      "clinical_clearance": false,
+      "automatic_direct_switch": false,
+      "full_pair_calendar": null,
+      "next_drug_start_day": null,
+      "source_gap_scope": {
+        "full_pair_calendar": null,
+        "automatic_direct_switch": false,
+        "next_drug_start_day": null,
+        "patient_target_applicability": "not_assessed unless separately reported; never clearance",
+        "planning_data": "Reported only for this bounded source gap; current source actions retain their own known actor/phase requirements"
+      },
+      "unassessed_context": [
+        "target_applicability"
+      ],
+      "confirmed_negatives": []
+    }
+  }
+]

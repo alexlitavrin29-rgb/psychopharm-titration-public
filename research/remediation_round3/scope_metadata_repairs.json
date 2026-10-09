@@ -1,0 +1,96 @@
+{
+  "rows": [
+    {
+      "case_id": "venla-xr-panic-form-limit--nested-renal_metric-metric-omitted",
+      "repair": "Named incomplete optional renal information"
+    },
+    {
+      "case_id": "venla-xr-panic-form-limit--nested-renal_metric-metric-unknown",
+      "repair": "Named incomplete optional renal information"
+    },
+    {
+      "case_id": "venla-xr-panic-form-limit--nested-renal_metric-metric-not_assessed",
+      "repair": "Named incomplete optional renal information"
+    },
+    {
+      "case_id": "venla-xr-panic-form-limit--nested-renal_metric-value-omitted",
+      "repair": "Named incomplete optional renal information"
+    },
+    {
+      "case_id": "venla-xr-panic-form-limit--nested-renal_metric-value-unknown",
+      "repair": "Named incomplete optional renal information"
+    },
+    {
+      "case_id": "venla-xr-panic-form-limit--nested-renal_metric-value-not_assessed",
+      "repair": "Named incomplete optional renal information"
+    },
+    {
+      "case_id": "venla-xr-panic-form-limit--nested-renal_metric-unit-omitted",
+      "repair": "Named incomplete optional renal information"
+    },
+    {
+      "case_id": "venla-xr-panic-form-limit--nested-renal_metric-unit-unknown",
+      "repair": "Named incomplete optional renal information"
+    },
+    {
+      "case_id": "venla-xr-panic-form-limit--nested-renal_metric-unit-not_assessed",
+      "repair": "Named incomplete optional renal information"
+    },
+    {
+      "case_id": "venla-xr-panic-form-limit--nested-renal_metric-method-omitted",
+      "repair": "Named incomplete optional renal information"
+    },
+    {
+      "case_id": "venla-xr-panic-form-limit--nested-renal_metric-method-unknown",
+      "repair": "Named incomplete optional renal information"
+    },
+    {
+      "case_id": "venla-xr-panic-form-limit--nested-renal_metric-method-not_assessed",
+      "repair": "Named incomplete optional renal information"
+    },
+    {
+      "case_id": "venla-xr-panic-form-limit--nested-renal_metric-assessment-omitted",
+      "repair": "Named incomplete optional renal information"
+    },
+    {
+      "case_id": "venla-xr-panic-form-limit--nested-renal_metric-assessment-unknown",
+      "repair": "Named incomplete optional renal information"
+    },
+    {
+      "case_id": "venla-xr-panic-form-limit--nested-renal_metric-assessment-not_assessed",
+      "repair": "Named incomplete optional renal information"
+    },
+    {
+      "case_id": "switch-parox-ago-selected-example--branch-selected40--audit-final-minimal-routine",
+      "repair": "Own omitted-context witness updated for new predicates; original supplied-context fixture kept separately",
+      "omitted": {
+        "ect": false,
+        "akathisia": false,
+        "glaucoma": false,
+        "qt_risk": false
+      }
+    },
+    {
+      "case_id": "switch-parox-ago-selected-example--confirmed-negative-fields--audit-final-minimal-routine",
+      "repair": "Own omitted-context witness updated for new predicates; original supplied-context fixture kept separately",
+      "omitted": {
+        "ect": false,
+        "akathisia": false,
+        "glaucoma": false,
+        "qt_risk": false
+      }
+    },
+    {
+      "case_id": "switch-parox-ago-selected-example--maoi-14days--audit-final-minimal-routine",
+      "repair": "Own omitted-context witness updated for new predicates; original supplied-context fixture kept separately",
+      "omitted": {
+        "ect": false,
+        "akathisia": false,
+        "glaucoma": false,
+        "qt_risk": false
+      }
+    }
+  ],
+  "taper_form_explanation": "Source identity selection, no dose feasibility calculation claimed",
+  "medical_values_changed": false
+}

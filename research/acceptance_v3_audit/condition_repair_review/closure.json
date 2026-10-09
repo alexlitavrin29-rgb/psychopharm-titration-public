@@ -1,0 +1,57 @@
+{
+  "snapshot": "8fe52f02f06299e87cae714e128d52cd86d2c13af213ddabf68587001fe8206e",
+  "scope": "Only copied77; no live core or all30/score acceptance",
+  "requirements": "V3; length>15 alone is allowed; necessity and honest counting remain",
+  "CC01": {
+    "status": "PARTIAL",
+    "closed": "Supplied optional positive/negative/unknown transmitted/countable; historical dose semantics",
+    "open": "RCR01:79 speculative MAOI type paths omit separate consumed fact"
+  },
+  "CC02": {
+    "status": "CLOSED_ORIGINAL24",
+    "open_separate": "RCR03:PHEN form physical page"
+  },
+  "CC03": {
+    "status": "CLOSED_IN_COPIED_SCOPE",
+    "evidence": "Three PREG numeric cards distinguish source form from whole-unit model policy"
+  },
+  "CC04": {
+    "status": "PARTIAL",
+    "closed": "All113 positive scopes present and independently source-reviewed;232 full cases examined with actor/unknown boundary",
+    "open": "RCR02:3 generic unknown references assert top-level overlap permission"
+  },
+  "CC05": {
+    "status": "CLOSED_IN_COPIED_SCOPE",
+    "evidence": "SER25→50 and ESC ChildA/B distinct fromC prose aligned"
+  },
+  "NR01": {
+    "status": "CLOSED_EXACT22_SCOPES",
+    "limit": "No global always necessity proof"
+  },
+  "NR02": {
+    "status": "CLOSED_F40_1_SCOPE",
+    "limit": "Panic clinical reassessment preserved; no automatic chosen increase from unknown action"
+  },
+  "NR03": {
+    "status": "CLOSED_BOUNDED_PLANNING_SCOPE",
+    "evidence": "Five planning fields demoted in each SSRI pair;30 omitted/unknown/not_assessed full countercases; counted source profile selection retained",
+    "limit": "No individual pair calendar/overlap/clinical clearance"
+  },
+  "NR04": {
+    "status": "SUBSTANTIVE_CLOSED_LOCATOR_OPEN",
+    "evidence": "Bounded adult source reference without individual unknown/child schedule; known urgent facts preserved",
+    "open": "RCR03 exact PHEN form locator"
+  },
+  "NR05": {
+    "status": "OPEN_OUTSIDE_LOCAL_CLOSURE",
+    "evidence": "Own22 copied legacy stop payloads from121; new232 urgent cases clean"
+  },
+  "NR08": {
+    "status": "OPEN_OUTSIDE_LOCAL_CLOSURE",
+    "limit": "No all-fields/per-result necessity proof"
+  },
+  "new_score_assigned": false,
+  "all30_acceptance_performed": false,
+  "clinical_validation": false,
+  "application_executed": false
+}

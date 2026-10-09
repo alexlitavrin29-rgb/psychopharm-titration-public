@@ -1,0 +1,86 @@
+{
+  "families": [
+    {
+      "source_id": "RU-AGO",
+      "primary_locator": "§4.2 физ.1–2; §4.3–4.4 физ.3–5; §4.5–4.6 физ.5–6",
+      "conditions_actually_compared": "25/50, bedtime once, higherBDR2/GAD4; strict ageGAD>65/BDR>=75; ALT/AST>3; (1,3]caution; hepatic cirrhosis/active/insufficiency; repeat48/monitor3,6,12,24; elderly dementia; 3 lactose exclusions; strong/moderateCYP1A2/hepatotoxic; historymania vs currentstop; injury/rising; renalcaution; pregnancy/lactation/suicide/ECT/alcohol; no mandatory taper; day1 SSRI/SNRI gradual taper B start",
+      "review_scope": "Source clauses and corresponding shared input/gate/action families, all 38cards; not exhaustive every-INN classifier or all combined patient states"
+    },
+    {
+      "source_id": "RU-DULOX",
+      "primary_locator": "§4.2 физ.2–3; §4.3 физ.3–4; §4.4 физ.4–7; §4.5–4.6 физ.7–10",
+      "conditions_actually_compared": "BDR60; GAD30/comorbidBDR60; elderly30 for2weeks before60; conditional60/90/120; CLcr30–80unchanged/<30contra; hepatic disease with insufficiency; uncontrolledHTN/closed-angle uncompensatedglaucoma; 3 sucrose exclusions; mania/seizure/akathisia/bleeding/hyponatremia/diabetes; strongCYP1A2/MAOI14after5before/noMOC-linezolid combo; 4 repairedclasses; pregnancy/lactation; taper§4.2 1–2 vs§4.4>=2 noceiling; BPevent and duplicate gap",
+      "review_scope": "Source clauses and corresponding shared input/gate/action families, all 38cards; not exhaustive every-INN classifier or all combined patient states"
+    },
+    {
+      "source_id": "RU-PAROX",
+      "primary_locator": "§4.2 физ.3–4; §4.3 физ.4–5; §4.4 физ.6–11; §4.5–4.6 физ.11–15",
+      "conditions_actually_compared": "panic10 weekly10/recommended40 andseveralweeks/max60; elderly40 max without agecutoff; renal<30/hepatic lower therapeutic unspecified;20halves10; trial taper10/week until20 hold1; bipolar screening7; SS/ЗНСstop+support7; epilepsy caution8/newseizurestop9; withdrawal slow/resume option10; akathisia/diabetes/glaucoma/bleeding/QT/ECT; MAOIirreversible14/reversible>=24h andbeforeMAOI7; pimozide/thioridazine; serotonergic/bleeding/CYP2D6 substrates; pregnancy/lactation. Inputs retain wrong physical references.",
+      "review_scope": "Source clauses and corresponding shared input/gate/action families, all 38cards; not exhaustive every-INN classifier or all combined patient states"
+    },
+    {
+      "source_id": "RU-FLUVOX",
+      "primary_locator": "§3 физ.1; §4.2–4.3 физ.2–3; §4.4–4.6 физ.4–11",
+      "conditions_actually_compared": "50or100 nightly options; review3–4wk; max300;>150 into2or3; equalhalves; renal/hepatic low unspecified; MAOI14/nextcalendar day/7before; allergy/lactation andnamedcontra; new ORincreasedseizures stop5; SSstop+symptom5; liverenzymeswithclinicalsigns stop5; mania stop7; history/diabetes/glaucoma/ECT/bleeding/pregnancy; CYPsubstrate andserotonergic cautions; taper1–2minimum choice noceil/withdrawalresume clause",
+      "review_scope": "Source clauses and corresponding shared input/gate/action families, all 38cards; not exhaustive every-INN classifier or all combined patient states"
+    },
+    {
+      "source_id": "RU-PREG",
+      "primary_locator": "§4.2 физ.3–5; §4.3 физ.6; §4.4 физ.6–10; §4.5–4.6 физ.11–13",
+      "conditions_actually_compared": "GAD150/300/450/600 weekly byresponse/tolerance;2or3; all renal Table1 rows15/30/60 and25–50 choice; separate dialysis25–100 after4h; published mmol formula blocked; age<18/allergy/3lactose; angioedema immediate stop; SCAR immediate+conditional alternative missing; respiratory/opioid/CNS caution; weightgain diabetes hypoglycaemicreview; misuse pretreatment9; reproductive contraceptive9/12; pregnancy/lactation; suicideevent8 missing; source gradual>=1wk independent indication; withdrawal doseassociation notnumeric ladder/resumption",
+      "review_scope": "Source clauses and corresponding shared input/gate/action families, all 38cards; not exhaustive every-INN classifier or all combined patient states"
+    },
+    {
+      "source_id": "RU-PHEN",
+      "primary_locator": "§3 физ.1; §4.2 физ.2–3; §4.4–4.6 физ.3–5",
+      "conditions_actually_compared": "ODT score not splitting; gradual cessation withoutpercent/ladder/duration; course2wk/up2mo nottaper; unusualreactions stop4; withdrawal warning/no published resumption clause; start pregnancy/lactation/child exclusions outside selected limited cessation",
+      "review_scope": "Source clauses and corresponding shared input/gate/action families, all 38cards; not exhaustive every-INN classifier or all combined patient states"
+    },
+    {
+      "source_id": "RU-ESC",
+      "primary_locator": "§3 физ.1–2; §4.2 физ.2–3; §4.3–4.6 физ.4–10",
+      "conditions_actually_compared": "5/10/15/20; equalhalves10/15/20only; adult10/max20; panic5wk1→10;strictly>65 5/max10; CLcr>30unchanged/<30caution/exact30gap; ChildPughA/B5for2wk→10/Cclosecontrol; weakCYP2C19same separate notmultiply; taper1–2+weeks/months noceil; allergy/MAOI/pimo/QT contraindication; knownmedcautions; unstableepilepsyavoid/newincreasedseizuresstop; maniastop; arrhythmiastop+ECG; SSstopSSRI+currentserotonergic+symptom; baselineECGifCAD/electrolyte correction; MAOI14after7before/MOC>=1day; phaseownership",
+      "review_scope": "Source clauses and corresponding shared input/gate/action families, all 38cards; not exhaustive every-INN classifier or all combined patient states"
+    },
+    {
+      "source_id": "RU-SER",
+      "primary_locator": "§3 физ.1; §4.2 физ.2–3; §4.3–4.4 физ.3–7; §4.5–4.6 физ.7–11",
+      "conditions_actually_compared": "panic/social25→50 after1week; selectedincrease50>=1wk max200; keepcurrent notincreasequestion;50tablethalfonly; hepatic lower/frequency unspecified severeavoid; renalnoadjust;adult anxiety<18notpediatricOCD; MAOI14after7before and reversibleunspecifiedless14; pimo; strongCYP3A4avoid10; currentmania/newseizurestop4/unstableavoid; akathisiaharmbyincrease6; SSsourceonlymonitor; symptomatic hyponatremia6missing; QT/bleeding/suicide/pregnancy/lactation monitoring",
+      "review_scope": "Source clauses and corresponding shared input/gate/action families, all 38cards; not exhaustive every-INN classifier or all combined patient states"
+    },
+    {
+      "source_id": "RU-VENLA-XR",
+      "primary_locator": "§4.2 физ.2–5; §4.3 физ.5; §4.4 физ.5–13; §4.5–4.6 физ.13–18",
+      "conditions_actually_compared": "GAD/social75/max225/increase>=2wk; panic37.5for7d then75/formgap75/150wholecapsfood; absoluteGFR>30unchanged10..30reduce50/<10contra/dialysisseparate; hepaticmild/mod50choice/severecontra; nojointproduct; pregnant/suspected/lactcontra vs4.6conflict;strictBP>100stop9/rashstop13; withdrawal1–2 andweeks/months; priorresume source4–5; MAOI14after7before/reversibleless14sourcechoice; QTavoid; CYP2D6/3A4/CNS/metoprolol caution gaps; precursor/weightlossnotrec gaps; suicidemonitor/risk; diabetes/glaucoma/cardiac/bleeding/renal/ECT/alcohol; suspectedSSconsider8missing",
+      "review_scope": "Source clauses and corresponding shared input/gate/action families, all 38cards; not exhaustive every-INN classifier or all combined patient states"
+    },
+    {
+      "source_id": "RU-VENLA-IR",
+      "primary_locator": "§1–3 физ.1; §4.2 физ.2–3",
+      "conditions_actually_compared": "Form dependency37.5/75tablet, immediate release; indexed GFR and25–50 renal contrast notactive XR factor. Correctownversion/SHA checked allnested. Other IR medical warnings notactive in38cards.",
+      "review_scope": "Source clauses and corresponding shared input/gate/action families, all 38cards; not exhaustive every-INN classifier or all combined patient states"
+    },
+    {
+      "source_id": "RU-PREG-RICHTER",
+      "primary_locator": "§4.2 физ.3; титул физ.1",
+      "conditions_actually_compared": "Auxiliary estimator valid micromol/L factor1.23 andwomen0.85, table/footnotes;25–50 notachievable fromRichter75/150/300. Not a silent correction ofLyrica mmol typo; remaining label warnings notactive estimator.",
+      "review_scope": "Source clauses and corresponding shared input/gate/action families, all 38cards; not exhaustive every-INN classifier or all combined patient states"
+    }
+  ],
+  "explicit_remaining_unverified": [
+    "All individual INN→interaction-class classification mappings; prepared synthetic source-class examples do not execute a classifier.",
+    "Every applicable field/result irreducibility and all present/missing/unknown counterexamples in236 authored decisions are not independently proved.",
+    "Opaque target_applicability clinical assessment does not prove all underlying independent target facts; no automatic target start allowed.",
+    "All source claims in full PIL and irrelevant4.8/5 sections were not audited.",
+    "All5086 full expected were structurally inspected, but not independently derived as5086 separate primary medical assertions."
+  ],
+  "new_source_clause_gaps": [
+    "R1-01",
+    "R1-02",
+    "R1-03",
+    "R1-04",
+    "R1-05",
+    "R1-06",
+    "R1-07"
+  ]
+}

@@ -1,0 +1,261 @@
+{
+  "baseline_errors": [],
+  "mutations": [
+    {
+      "mutation": "static_branch_default",
+      "rejected": true,
+      "matching_errors": [
+        "branch output has static default dose: dulox-gad-start"
+      ]
+    },
+    {
+      "mutation": "taper_ceiling",
+      "rejected": true,
+      "matching_errors": [
+        "minimum taper encoded as ceiling: ser-taper-limit"
+      ]
+    },
+    {
+      "mutation": "missing_ago_gate",
+      "rejected": true,
+      "matching_errors": [
+        "individual agomelatine result missing prerequisite: switch-parox-ago-selected-example"
+      ]
+    },
+    {
+      "mutation": "unknown_permits_dose",
+      "rejected": true,
+      "matching_errors": [
+        "missing field allows dose: dulox-gad-start--renal_metric-unknown"
+      ]
+    },
+    {
+      "mutation": "hidden_maoi_timestamp",
+      "rejected": true,
+      "matching_errors": [
+        "MAOI records/timestamps hidden: ser-panic-start"
+      ]
+    },
+    {
+      "mutation": "contradictory_dependency",
+      "rejected": true,
+      "matching_errors": [
+        "composite readiness/dependency contradiction"
+      ]
+    },
+    {
+      "mutation": "copy_unbound",
+      "rejected": true,
+      "matching_errors": [
+        "source copy without local_file: RU-AGO"
+      ]
+    },
+    {
+      "mutation": "esc_exact30_dose",
+      "rejected": true,
+      "matching_errors": [
+        "ESC exact30 source gap erased"
+      ]
+    },
+    {
+      "mutation": "unsupported_currency_claim",
+      "rejected": true,
+      "matching_errors": [
+        "currency claimed without registry document comparison: RU-AGO"
+      ]
+    },
+    {
+      "mutation": "gate_without_input",
+      "rejected": true,
+      "matching_errors": [
+        "source gate without declared input: ago-stop"
+      ]
+    },
+    {
+      "mutation": "wrong_renal_metric",
+      "rejected": true,
+      "matching_errors": [
+        "wrong renal metric permits dose: dulox-gad-start--wrong-renal-metric-renal_metric"
+      ]
+    },
+    {
+      "mutation": "hepatic_AB_owner",
+      "rejected": true,
+      "matching_errors": [
+        "target hepatic owner/action incorrect: switch-parox-ago-selected-example"
+      ]
+    },
+    {
+      "mutation": "missing_seizure_stop",
+      "rejected": true,
+      "matching_errors": [
+        "sertraline seizure stop missing: ser-panic-start"
+      ]
+    },
+    {
+      "mutation": "missing_ongoing_liver_stop",
+      "rejected": false,
+      "matching_errors": []
+    },
+    {
+      "mutation": "undeclared_medication_provenance",
+      "rejected": true,
+      "matching_errors": [
+        "undeclared/incomplete medication entry: ago-depression-start--medicine-RU-AGO-strong_CYP1A2",
+        "undeclared/incomplete medication entry: ago-depression-start--medicine-RU-AGO-moderate_CYP1A2",
+        "undeclared/incomplete medication entry: ago-depression-start--medicine-RU-AGO-hepatotoxic",
+        "undeclared/incomplete medication entry: ago-gad-start--medicine-RU-AGO-strong_CYP1A2"
+      ]
+    },
+    {
+      "mutation": "missing_switch_identity",
+      "rejected": true,
+      "matching_errors": [
+        "switch identity context missing: switch-parox-ago-selected-example--branch-selected40"
+      ]
+    },
+    {
+      "mutation": "unknown_conditional_timestamp",
+      "rejected": true,
+      "matching_errors": [
+        "missing field allows dose: ser-panic-start--maoi_stopped_at-M1-unknown"
+      ]
+    },
+    {
+      "mutation": "conditional_flag_collision",
+      "rejected": true,
+      "matching_errors": [
+        "conditional/unconditional collision: ser-adult-adjust/qt_risk"
+      ]
+    },
+    {
+      "mutation": "consistent_but_source_wrong_necessity",
+      "rejected": true,
+      "matching_errors": [
+        "primary necessity decision violated: ser-adult-adjust/qt_risk"
+      ]
+    },
+    {
+      "mutation": "monitor_unknown_normal",
+      "rejected": true,
+      "matching_errors": [
+        "unasked monitoring context silently normal: ser-adult-adjust--round2-minimal-selected-action"
+      ]
+    },
+    {
+      "mutation": "keep_requires_increase",
+      "rejected": true,
+      "matching_errors": [
+        "keep wrongly requires increase-only fields"
+      ]
+    },
+    {
+      "mutation": "active_mania_removed",
+      "rejected": true,
+      "matching_errors": [
+        "active sertraline mania stop missing"
+      ]
+    },
+    {
+      "mutation": "elderly65_special",
+      "rejected": true,
+      "matching_errors": [
+        "ESC elderly strict age erased"
+      ]
+    },
+    {
+      "mutation": "unknown_ESC_monitor_normal",
+      "rejected": true,
+      "matching_errors": [
+        "unasked monitoring context silently normal: esc-gad-start--current-unassessed-monitoring-context"
+      ]
+    },
+    {
+      "mutation": "uncompleted_ECG_permits_dose",
+      "rejected": true,
+      "matching_errors": [
+        "uncompleted ESC conditional source action permits dose: esc-gad-start--current-ecg_done-False"
+      ]
+    },
+    {
+      "mutation": "moclobemide23h_permits_dose",
+      "rejected": true,
+      "matching_errors": [
+        "ESC moclobemide minimum day erased"
+      ]
+    },
+    {
+      "mutation": "switch_A_mania_owner_lost",
+      "rejected": true,
+      "matching_errors": [
+        "switch active mania A owner missing: switch-ser-ago"
+      ]
+    },
+    {
+      "mutation": "ordinary_ESC_A_wrong_dose",
+      "rejected": true,
+      "matching_errors": [
+        "ordinary ESC current dose outside source range: switch-esc-ser--current-branch-pair_gap"
+      ]
+    },
+    {
+      "mutation": "ESC_nested_fixture_lost",
+      "rejected": true,
+      "matching_errors": [
+        "ESC nested prepared case missing: esc-gad-start/renal.value/unknown"
+      ]
+    },
+    {
+      "mutation": "ESC_ECG_stop_action_lost",
+      "rejected": true,
+      "matching_errors": [
+        "ESC arrhythmia ECG action missing: esc-gad-start--current-arrhythmia_signs-stop"
+      ]
+    },
+    {
+      "mutation": "ESC_serotonin_other_drugs_lost",
+      "rejected": true,
+      "matching_errors": [
+        "ESC serotonin complete source action missing: esc-gad-start--current-serotonin_syndrome_signs-stop"
+      ]
+    },
+    {
+      "mutation": "SSRI_pair_A_B_owner",
+      "rejected": true,
+      "matching_errors": [
+        "SSRI pair A/B form/dose owner drift: switch-esc-ser"
+      ]
+    },
+    {
+      "mutation": "unknown_B_allergy_permits_calendar",
+      "rejected": true,
+      "matching_errors": [
+        "missing field allows dose: switch-parox-ago-selected-example--branch-selected40"
+      ]
+    },
+    {
+      "mutation": "switch_allergy_single_boolean",
+      "rejected": true,
+      "matching_errors": [
+        "switch allergy A/B type/owner missing: switch-ser-ago"
+      ]
+    },
+    {
+      "mutation": "target_stop_phase_lost",
+      "rejected": true,
+      "matching_errors": [
+        "target AGO stop without target ongoing phase: switch-ser-ago--alt_ratio_uln-ongoing-above3"
+      ]
+    }
+  ],
+  "mutations_rejected": 34,
+  "mutation_total": 35,
+  "missed": [
+    "missing_ongoing_liver_stop"
+  ],
+  "graphs": 38,
+  "paths": 1907,
+  "graph_errors": [],
+  "old_root_mutation_error": "KeyError('count')",
+  "scope": "Actually repeated author validate/mutator functions on isolated in-memory frozen data and own graph-edge checks; root stale mutation failure reproduced on in-memory flows. Author report entry points were not called; not medical/app validation."
+}

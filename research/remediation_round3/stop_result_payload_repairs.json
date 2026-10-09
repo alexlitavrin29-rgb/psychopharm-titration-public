@@ -1,0 +1,975 @@
+{
+  "rows": [
+    {
+      "case_id": "fluvox-depression-start--r3-serotonin_syndrome_signs-positive",
+      "removed": {
+        "review_period_weeks": [
+          3,
+          4
+        ]
+      },
+      "source_condition": {
+        "input": "serotonin_syndrome_signs",
+        "source_ref": "RU-FLUVOX",
+        "source_locator": "§4.4 с.5"
+      },
+      "source_actions": [
+        {
+          "action": "discontinue_selected_medication",
+          "source_ref": "RU-FLUVOX",
+          "source_locator": "§4.4 с.5"
+        },
+        {
+          "action": "start_symptomatic_treatment_by_clinician",
+          "source_ref": "RU-FLUVOX",
+          "source_locator": "§4.4 с.5"
+        }
+      ],
+      "source_basis": [
+        {
+          "source_id": "RU-FLUVOX",
+          "version": "Официальная ОХЛП реестра: штамп регистрации 2026-08-19; экспертный отчёт 2026-08-14 №16133/0004; получена 08.10.2026",
+          "locator": "§4.1–4.3 PDF с.1–3; §4.4–4.6 с.4–11; §8–10 с.19",
+          "sha256": "01b6621adad68dfeaf1fbe00db21935b6df1edee141c67307a9b67ad177893f2"
+        },
+        {
+          "source_id": "RU-DEP",
+          "version": "2024; каталог: опубликовано 26.08.2024, применяется",
+          "locator": "§3.1–3.4 PDF с.24–40; таблица2 с.95–96; §3.6 с.45; Б5 с.105–106",
+          "sha256": "2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd"
+        }
+      ]
+    },
+    {
+      "case_id": "phen-taper-limit--r3-unusual_reactions-positive",
+      "removed": {
+        "duration_constraint": {}
+      },
+      "source_condition": {
+        "input": "unusual_reactions",
+        "source_ref": "RU-PHEN",
+        "source_locator": "§4.4 с.4"
+      },
+      "source_actions": [
+        {
+          "action": "discontinue_selected_medication",
+          "source_ref": "RU-PHEN",
+          "source_locator": "§4.4 с.4"
+        }
+      ],
+      "source_basis": [
+        {
+          "source_id": "RU-PHEN",
+          "version": "Официальная ОХЛП реестра: штамп регистрации 2026-05-07; экспертный отчёт 2026-05-05 №9041/0004; получена 08.10.2026",
+          "locator": "§1–3 с.1; §4.1–4.2 с.1–3; §4.3–4.4 с.3–4; §4.5–4.6 с.4–5",
+          "sha256": "850486408d225fc603f8f053765491c1e9fd688c5c3d765cdf80a34dd2b3cf1a"
+        },
+        {
+          "source_id": "RU-PANIC",
+          "version": "2024; каталог: опубликовано 19.09.2024, применяется",
+          "locator": "§3.1, PDF с.25–33; приложение А3, с.76–77",
+          "sha256": "a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d"
+        }
+      ]
+    },
+    {
+      "case_id": "venla-xr-gad-start--r3-current_allergic_reaction-positive",
+      "removed": {
+        "maximum_mg": 225,
+        "minimum_increase_interval_weeks": 2
+      },
+      "source_condition": {
+        "input": "current_allergic_reaction",
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.4 с.13"
+      },
+      "source_actions": [
+        {
+          "action": "discontinue_selected_medication",
+          "source_ref": "RU-VENLA-XR",
+          "source_locator": "§4.4 с.13"
+        }
+      ],
+      "source_basis": [
+        {
+          "source_id": "RU-VENLA-XR",
+          "version": "Официальная ОХЛП реестра: штамп регистрации 2026-06-25; экспертный отчёт 2026-06-11 №11677/0019; получена 08.10.2026",
+          "locator": "§1–3 с.1; §4.1–4.3 с.2–5; §4.4 с.5–13; §4.5 с.13–17; §4.6 с.17–18",
+          "sha256": "a21e90141db69d9be5ca44ac3c8c6059c8c82a880f34bbf15143348c36ef4666"
+        },
+        {
+          "source_id": "RU-GAD",
+          "version": "2024; каталог: опубликовано 19.09.2024, применяется",
+          "locator": "§3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78",
+          "sha256": "c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a"
+        }
+      ]
+    },
+    {
+      "case_id": "venla-xr-panic-form-limit--r3-current_allergic_reaction-positive",
+      "removed": {
+        "source_initial_mg": 37.5,
+        "initial_days": 7,
+        "source_next_mg": 75
+      },
+      "source_condition": {
+        "input": "current_allergic_reaction",
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.4 с.13"
+      },
+      "source_actions": [
+        {
+          "action": "discontinue_selected_medication",
+          "source_ref": "RU-VENLA-XR",
+          "source_locator": "§4.4 с.13"
+        }
+      ],
+      "source_basis": [
+        {
+          "source_id": "RU-VENLA-XR",
+          "version": "Официальная ОХЛП реестра: штамп регистрации 2026-06-25; экспертный отчёт 2026-06-11 №11677/0019; получена 08.10.2026",
+          "locator": "§1–3 с.1; §4.1–4.3 с.2–5; §4.4 с.5–13; §4.5 с.13–17; §4.6 с.17–18",
+          "sha256": "a21e90141db69d9be5ca44ac3c8c6059c8c82a880f34bbf15143348c36ef4666"
+        },
+        {
+          "source_id": "RU-PANIC",
+          "version": "2024; каталог: опубликовано 19.09.2024, применяется",
+          "locator": "§3.1, PDF с.25–33; приложение А3, с.76–77",
+          "sha256": "a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d"
+        },
+        {
+          "source_id": "RU-VENLA-IR",
+          "version": "Официальная ОХЛП реестра: штамп регистрации 2023-11-21; экспертный отчёт 2025-12-26 №32413/0009; получена 08.10.2026",
+          "locator": "§1–4.3 с.1–3; §4.4 с.3–7; §4.5 с.7–11",
+          "sha256": "b1e98ffb209390179385a56aa70b6b94eda4a395831464f347aecf721f8701af"
+        }
+      ]
+    },
+    {
+      "case_id": "venla-xr-social-start--r3-current_allergic_reaction-positive",
+      "removed": {
+        "maximum_mg": 225,
+        "minimum_increase_interval_weeks": 2
+      },
+      "source_condition": {
+        "input": "current_allergic_reaction",
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.4 с.13"
+      },
+      "source_actions": [
+        {
+          "action": "discontinue_selected_medication",
+          "source_ref": "RU-VENLA-XR",
+          "source_locator": "§4.4 с.13"
+        }
+      ],
+      "source_basis": [
+        {
+          "source_id": "RU-VENLA-XR",
+          "version": "Официальная ОХЛП реестра: штамп регистрации 2026-06-25; экспертный отчёт 2026-06-11 №11677/0019; получена 08.10.2026",
+          "locator": "§1–3 с.1; §4.1–4.3 с.2–5; §4.4 с.5–13; §4.5 с.13–17; §4.6 с.17–18",
+          "sha256": "a21e90141db69d9be5ca44ac3c8c6059c8c82a880f34bbf15143348c36ef4666"
+        },
+        {
+          "source_id": "RU-PHOB",
+          "version": "2024; каталог: опубликовано 21.10.2024, применяется",
+          "locator": "§1.4; §3.1 PDF с.32–38; приложение А3 с.93",
+          "sha256": "2a51982fb1919c0ef9115e5231f8ef9d65863306d2d5b95aa0aa7821a6f328b7"
+        }
+      ]
+    },
+    {
+      "case_id": "parox-panic-kr--audit-v2-serotonin_syndrome_signs-positive",
+      "removed": {
+        "recommended_mg": 40,
+        "maximum_mg": 60,
+        "optional_increment_mg": 10,
+        "minimum_interval_weeks": 1,
+        "beyond_recommended_requires": "inadequate response after several weeks, no fabricated exact interval"
+      },
+      "source_condition": {
+        "input": "serotonin_syndrome_signs",
+        "source_ref": "RU-PAROX",
+        "source_locator": "§4.4 с.7"
+      },
+      "source_actions": [
+        {
+          "action": "discontinue_selected_medication",
+          "source_ref": "RU-PAROX",
+          "source_locator": "§4.4 с.7"
+        },
+        {
+          "action": "start_supportive_symptomatic_treatment_by_clinician",
+          "source_ref": "RU-PAROX",
+          "source_locator": "§4.4 с.7"
+        }
+      ],
+      "source_basis": [
+        {
+          "source_id": "RU-PANIC",
+          "version": "2024; каталог: опубликовано 19.09.2024, применяется",
+          "locator": "§3.1, PDF с.25–33; приложение А3, с.76–77",
+          "sha256": "a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d"
+        },
+        {
+          "source_id": "RU-PAROX",
+          "version": "Официальная ОХЛП реестра: штамп регистрации 2025-02-14; экспертный отчёт 2025-02-12 №3370/0003; получена 08.10.2026",
+          "locator": "ОХЛП: PDF с.1–5 (§4.1–4.3), с.6–10 (§4.4), с.11–15 (§4.5–4.6), с.26 (§8–10)",
+          "sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069"
+        }
+      ]
+    },
+    {
+      "case_id": "parox-taper-example--audit-v2-serotonin_syndrome_signs-positive",
+      "removed": {
+        "hold_if": "withdrawal symptoms; clinician reassessment/prior-dose resumption then slower, unspecified steps"
+      },
+      "source_condition": {
+        "input": "serotonin_syndrome_signs",
+        "source_ref": "RU-PAROX",
+        "source_locator": "§4.4 с.7"
+      },
+      "source_actions": [
+        {
+          "action": "discontinue_selected_medication",
+          "source_ref": "RU-PAROX",
+          "source_locator": "§4.4 с.7"
+        },
+        {
+          "action": "start_supportive_symptomatic_treatment_by_clinician",
+          "source_ref": "RU-PAROX",
+          "source_locator": "§4.4 с.7"
+        }
+      ],
+      "source_basis": [
+        {
+          "source_id": "RU-DEP",
+          "version": "2024; каталог: опубликовано 26.08.2024, применяется",
+          "locator": "§3.1–3.4 PDF с.24–40; таблица2 с.95–96; §3.6 с.45; Б5 с.105–106",
+          "sha256": "2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd"
+        },
+        {
+          "source_id": "RU-PAROX",
+          "version": "Официальная ОХЛП реестра: штамп регистрации 2025-02-14; экспертный отчёт 2025-02-12 №3370/0003; получена 08.10.2026",
+          "locator": "ОХЛП: PDF с.1–5 (§4.1–4.3), с.6–10 (§4.4), с.11–15 (§4.5–4.6), с.26 (§8–10)",
+          "sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069"
+        },
+        {
+          "source_id": "RU-PANIC",
+          "version": "2024; каталог: опубликовано 19.09.2024, применяется",
+          "locator": "§3.1, PDF с.25–33; приложение А3, с.76–77",
+          "sha256": "a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d"
+        }
+      ]
+    },
+    {
+      "case_id": "switch-parox-ago--audit-v2-serotonin_syndrome_signs-positive",
+      "removed": {
+        "overlap_allowed_on_first_day_of_A_reduction": true,
+        "target_source_start_mg": 25,
+        "monitoring": {
+          "before_start": true,
+          "approximate_weeks_parameter": "liver_monitoring_weeks",
+          "restart_same_frequency_after_dose_increase": true,
+          "rising_repeat_hours_parameter": "repeat_liver_tests_hours",
+          "stop_signs_action": "immediate cessation; tests until normal",
+          "source_ref": "RU-AGO",
+          "source_locator": "§4.2 с.1; §4.4 с.3–4"
+        }
+      },
+      "source_condition": {
+        "input": "serotonin_syndrome_signs",
+        "source_ref": "RU-PAROX",
+        "source_locator": "§4.4 с.7"
+      },
+      "source_actions": [
+        {
+          "action": "discontinue_selected_medication",
+          "source_ref": "RU-PAROX",
+          "source_locator": "§4.4 с.7"
+        },
+        {
+          "action": "start_supportive_symptomatic_treatment_by_clinician",
+          "source_ref": "RU-PAROX",
+          "source_locator": "§4.4 с.7"
+        }
+      ],
+      "source_basis": [
+        {
+          "source_id": "RU-DEP",
+          "version": "2024; каталог: опубликовано 26.08.2024, применяется",
+          "locator": "§3.1–3.4 PDF с.24–40; таблица2 с.95–96; §3.6 с.45; Б5 с.105–106",
+          "sha256": "2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd"
+        },
+        {
+          "source_id": "RU-PAROX",
+          "version": "Официальная ОХЛП реестра: штамп регистрации 2025-02-14; экспертный отчёт 2025-02-12 №3370/0003; получена 08.10.2026",
+          "locator": "ОХЛП: PDF с.1–5 (§4.1–4.3), с.6–10 (§4.4), с.11–15 (§4.5–4.6), с.26 (§8–10)",
+          "sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069"
+        },
+        {
+          "source_id": "RU-AGO",
+          "version": "Официальная ОХЛП реестра: штамп регистрации 2024-12-28; экспертный отчёт 2024-12-23 №28427/0018; получена 08.10.2026",
+          "locator": "§4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16",
+          "sha256": "a98d383832688cee9a09588b1a908555d01ed8b659281cdeee2646c1115ce7c1"
+        }
+      ]
+    },
+    {
+      "case_id": "switch-parox-ago-selected-example--audit-v2-serotonin_syndrome_signs-positive",
+      "removed": {
+        "monitoring": {
+          "before_start": true,
+          "approximate_weeks_parameter": "liver_monitoring_weeks",
+          "restart_same_frequency_after_dose_increase": true,
+          "rising_repeat_hours_parameter": "repeat_liver_tests_hours",
+          "stop_signs_action": "immediate cessation; tests until normal",
+          "source_ref": "RU-AGO",
+          "source_locator": "§4.2 с.1; §4.4 с.3–4"
+        }
+      },
+      "source_condition": {
+        "input": "serotonin_syndrome_signs",
+        "source_ref": "RU-PAROX",
+        "source_locator": "§4.4 с.7"
+      },
+      "source_actions": [
+        {
+          "action": "discontinue_selected_medication",
+          "source_ref": "RU-PAROX",
+          "source_locator": "§4.4 с.7"
+        },
+        {
+          "action": "start_supportive_symptomatic_treatment_by_clinician",
+          "source_ref": "RU-PAROX",
+          "source_locator": "§4.4 с.7"
+        }
+      ],
+      "source_basis": [
+        {
+          "source_id": "RU-DEP",
+          "version": "2024; каталог: опубликовано 26.08.2024, применяется",
+          "locator": "§3.1–3.4 PDF с.24–40; таблица2 с.95–96; §3.6 с.45; Б5 с.105–106",
+          "sha256": "2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd"
+        },
+        {
+          "source_id": "RU-PAROX",
+          "version": "Официальная ОХЛП реестра: штамп регистрации 2025-02-14; экспертный отчёт 2025-02-12 №3370/0003; получена 08.10.2026",
+          "locator": "ОХЛП: PDF с.1–5 (§4.1–4.3), с.6–10 (§4.4), с.11–15 (§4.5–4.6), с.26 (§8–10)",
+          "sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069"
+        },
+        {
+          "source_id": "RU-AGO",
+          "version": "Официальная ОХЛП реестра: штамп регистрации 2024-12-28; экспертный отчёт 2024-12-23 №28427/0018; получена 08.10.2026",
+          "locator": "§4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16",
+          "sha256": "a98d383832688cee9a09588b1a908555d01ed8b659281cdeee2646c1115ce7c1"
+        }
+      ]
+    },
+    {
+      "case_id": "parox-taper-example--audit-v2-new_seizures-positive",
+      "removed": {
+        "hold_if": "withdrawal symptoms; clinician reassessment/prior-dose resumption then slower, unspecified steps"
+      },
+      "source_condition": {
+        "input": "new_seizures",
+        "source_ref": "RU-PAROX",
+        "source_locator": "§4.4 с.9"
+      },
+      "source_actions": [
+        {
+          "action": "discontinue_selected_medication",
+          "source_ref": "RU-PAROX",
+          "source_locator": "§4.4 с.9"
+        }
+      ],
+      "source_basis": [
+        {
+          "source_id": "RU-DEP",
+          "version": "2024; каталог: опубликовано 26.08.2024, применяется",
+          "locator": "§3.1–3.4 PDF с.24–40; таблица2 с.95–96; §3.6 с.45; Б5 с.105–106",
+          "sha256": "2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd"
+        },
+        {
+          "source_id": "RU-PAROX",
+          "version": "Официальная ОХЛП реестра: штамп регистрации 2025-02-14; экспертный отчёт 2025-02-12 №3370/0003; получена 08.10.2026",
+          "locator": "ОХЛП: PDF с.1–5 (§4.1–4.3), с.6–10 (§4.4), с.11–15 (§4.5–4.6), с.26 (§8–10)",
+          "sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069"
+        },
+        {
+          "source_id": "RU-PANIC",
+          "version": "2024; каталог: опубликовано 19.09.2024, применяется",
+          "locator": "§3.1, PDF с.25–33; приложение А3, с.76–77",
+          "sha256": "a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d"
+        }
+      ]
+    },
+    {
+      "case_id": "fluvox-taper-limit--audit-v2-serotonin_syndrome_signs-positive",
+      "removed": {
+        "duration_constraint": {
+          "operator": "minimum_choice",
+          "source_options_weeks": [
+            1,
+            2
+          ],
+          "chosen_minimum_weeks": null,
+          "hard_upper_limit_weeks": null,
+          "exact_taper_duration_weeks": null,
+          "slower_if_symptoms": true,
+          "source_ref": "RU-FLUVOX",
+          "source_locator": "§4.2 PDF с.2"
+        }
+      },
+      "source_condition": {
+        "input": "serotonin_syndrome_signs",
+        "source_ref": "RU-FLUVOX",
+        "source_locator": "§4.4 с.5"
+      },
+      "source_actions": [
+        {
+          "action": "discontinue_selected_medication",
+          "source_ref": "RU-FLUVOX",
+          "source_locator": "§4.4 с.5"
+        },
+        {
+          "action": "start_symptomatic_treatment_by_clinician",
+          "source_ref": "RU-FLUVOX",
+          "source_locator": "§4.4 с.5"
+        }
+      ],
+      "source_basis": [
+        {
+          "source_id": "RU-FLUVOX",
+          "version": "Официальная ОХЛП реестра: штамп регистрации 2026-08-19; экспертный отчёт 2026-08-14 №16133/0004; получена 08.10.2026",
+          "locator": "§4.1–4.3 PDF с.1–3; §4.4–4.6 с.4–11; §8–10 с.19",
+          "sha256": "01b6621adad68dfeaf1fbe00db21935b6df1edee141c67307a9b67ad177893f2"
+        },
+        {
+          "source_id": "RU-DEP",
+          "version": "2024; каталог: опубликовано 26.08.2024, применяется",
+          "locator": "§3.1–3.4 PDF с.24–40; таблица2 с.95–96; §3.6 с.45; Б5 с.105–106",
+          "sha256": "2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd"
+        }
+      ]
+    },
+    {
+      "case_id": "fluvox-taper-limit--audit-v2-new_or_increased_seizures-positive",
+      "removed": {
+        "duration_constraint": {
+          "operator": "minimum_choice",
+          "source_options_weeks": [
+            1,
+            2
+          ],
+          "chosen_minimum_weeks": null,
+          "hard_upper_limit_weeks": null,
+          "exact_taper_duration_weeks": null,
+          "slower_if_symptoms": true,
+          "source_ref": "RU-FLUVOX",
+          "source_locator": "§4.2 PDF с.2"
+        }
+      },
+      "source_condition": {
+        "input": "new_or_increased_seizures",
+        "source_ref": "RU-FLUVOX",
+        "source_locator": "§4.4 с.5"
+      },
+      "source_actions": [
+        {
+          "action": "discontinue_selected_medication",
+          "source_ref": "RU-FLUVOX",
+          "source_locator": "§4.4 с.5"
+        }
+      ],
+      "source_basis": [
+        {
+          "source_id": "RU-FLUVOX",
+          "version": "Официальная ОХЛП реестра: штамп регистрации 2026-08-19; экспертный отчёт 2026-08-14 №16133/0004; получена 08.10.2026",
+          "locator": "§4.1–4.3 PDF с.1–3; §4.4–4.6 с.4–11; §8–10 с.19",
+          "sha256": "01b6621adad68dfeaf1fbe00db21935b6df1edee141c67307a9b67ad177893f2"
+        },
+        {
+          "source_id": "RU-DEP",
+          "version": "2024; каталог: опубликовано 26.08.2024, применяется",
+          "locator": "§3.1–3.4 PDF с.24–40; таблица2 с.95–96; §3.6 с.45; Б5 с.105–106",
+          "sha256": "2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd"
+        }
+      ]
+    },
+    {
+      "case_id": "fluvox-taper-limit--audit-v2-liver_injury_signs-positive",
+      "removed": {
+        "duration_constraint": {
+          "operator": "minimum_choice",
+          "source_options_weeks": [
+            1,
+            2
+          ],
+          "chosen_minimum_weeks": null,
+          "hard_upper_limit_weeks": null,
+          "exact_taper_duration_weeks": null,
+          "slower_if_symptoms": true,
+          "source_ref": "RU-FLUVOX",
+          "source_locator": "§4.2 PDF с.2"
+        }
+      },
+      "source_condition": {
+        "input": "liver_injury_signs",
+        "source_ref": "RU-FLUVOX",
+        "source_locator": "§4.4 с.5"
+      },
+      "source_actions": [
+        {
+          "action": "discontinue_selected_medication",
+          "source_ref": "RU-FLUVOX",
+          "source_locator": "§4.4 с.5"
+        }
+      ],
+      "source_basis": [
+        {
+          "source_id": "RU-FLUVOX",
+          "version": "Официальная ОХЛП реестра: штамп регистрации 2026-08-19; экспертный отчёт 2026-08-14 №16133/0004; получена 08.10.2026",
+          "locator": "§4.1–4.3 PDF с.1–3; §4.4–4.6 с.4–11; §8–10 с.19",
+          "sha256": "01b6621adad68dfeaf1fbe00db21935b6df1edee141c67307a9b67ad177893f2"
+        },
+        {
+          "source_id": "RU-DEP",
+          "version": "2024; каталог: опубликовано 26.08.2024, применяется",
+          "locator": "§3.1–3.4 PDF с.24–40; таблица2 с.95–96; §3.6 с.45; Б5 с.105–106",
+          "sha256": "2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd"
+        }
+      ]
+    },
+    {
+      "case_id": "fluvox-taper-limit--audit-v2-mania_symptoms-positive",
+      "removed": {
+        "duration_constraint": {
+          "operator": "minimum_choice",
+          "source_options_weeks": [
+            1,
+            2
+          ],
+          "chosen_minimum_weeks": null,
+          "hard_upper_limit_weeks": null,
+          "exact_taper_duration_weeks": null,
+          "slower_if_symptoms": true,
+          "source_ref": "RU-FLUVOX",
+          "source_locator": "§4.2 PDF с.2"
+        }
+      },
+      "source_condition": {
+        "input": "mania_symptoms",
+        "source_ref": "RU-FLUVOX",
+        "source_locator": "§4.4 с.7"
+      },
+      "source_actions": [
+        {
+          "action": "discontinue_selected_medication",
+          "source_ref": "RU-FLUVOX",
+          "source_locator": "§4.4 с.7"
+        }
+      ],
+      "source_basis": [
+        {
+          "source_id": "RU-FLUVOX",
+          "version": "Официальная ОХЛП реестра: штамп регистрации 2026-08-19; экспертный отчёт 2026-08-14 №16133/0004; получена 08.10.2026",
+          "locator": "§4.1–4.3 PDF с.1–3; §4.4–4.6 с.4–11; §8–10 с.19",
+          "sha256": "01b6621adad68dfeaf1fbe00db21935b6df1edee141c67307a9b67ad177893f2"
+        },
+        {
+          "source_id": "RU-DEP",
+          "version": "2024; каталог: опубликовано 26.08.2024, применяется",
+          "locator": "§3.1–3.4 PDF с.24–40; таблица2 с.95–96; §3.6 с.45; Б5 с.105–106",
+          "sha256": "2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd"
+        }
+      ]
+    },
+    {
+      "case_id": "venla-xr-gad-start--audit-v2-diastolic_BP-positive",
+      "removed": {
+        "maximum_mg": 225,
+        "minimum_increase_interval_weeks": 2
+      },
+      "source_condition": {
+        "input": "diastolic_BP",
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.4 с.9"
+      },
+      "source_actions": [
+        {
+          "action": "discontinue_selected_medication",
+          "source_ref": "RU-VENLA-XR",
+          "source_locator": "§4.4 с.9"
+        }
+      ],
+      "source_basis": [
+        {
+          "source_id": "RU-VENLA-XR",
+          "version": "Официальная ОХЛП реестра: штамп регистрации 2026-06-25; экспертный отчёт 2026-06-11 №11677/0019; получена 08.10.2026",
+          "locator": "§1–3 с.1; §4.1–4.3 с.2–5; §4.4 с.5–13; §4.5 с.13–17; §4.6 с.17–18",
+          "sha256": "a21e90141db69d9be5ca44ac3c8c6059c8c82a880f34bbf15143348c36ef4666"
+        },
+        {
+          "source_id": "RU-GAD",
+          "version": "2024; каталог: опубликовано 19.09.2024, применяется",
+          "locator": "§3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78",
+          "sha256": "c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a"
+        }
+      ]
+    },
+    {
+      "case_id": "venla-xr-social-start--audit-v2-diastolic_BP-positive",
+      "removed": {
+        "maximum_mg": 225,
+        "minimum_increase_interval_weeks": 2
+      },
+      "source_condition": {
+        "input": "diastolic_BP",
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.4 с.9"
+      },
+      "source_actions": [
+        {
+          "action": "discontinue_selected_medication",
+          "source_ref": "RU-VENLA-XR",
+          "source_locator": "§4.4 с.9"
+        }
+      ],
+      "source_basis": [
+        {
+          "source_id": "RU-VENLA-XR",
+          "version": "Официальная ОХЛП реестра: штамп регистрации 2026-06-25; экспертный отчёт 2026-06-11 №11677/0019; получена 08.10.2026",
+          "locator": "§1–3 с.1; §4.1–4.3 с.2–5; §4.4 с.5–13; §4.5 с.13–17; §4.6 с.17–18",
+          "sha256": "a21e90141db69d9be5ca44ac3c8c6059c8c82a880f34bbf15143348c36ef4666"
+        },
+        {
+          "source_id": "RU-PHOB",
+          "version": "2024; каталог: опубликовано 21.10.2024, применяется",
+          "locator": "§1.4; §3.1 PDF с.32–38; приложение А3 с.93",
+          "sha256": "2a51982fb1919c0ef9115e5231f8ef9d65863306d2d5b95aa0aa7821a6f328b7"
+        }
+      ]
+    },
+    {
+      "case_id": "venla-xr-panic-form-limit--audit-v2-diastolic_BP-positive",
+      "removed": {
+        "source_initial_mg": 37.5,
+        "initial_days": 7,
+        "source_next_mg": 75
+      },
+      "source_condition": {
+        "input": "diastolic_BP",
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.4 с.9"
+      },
+      "source_actions": [
+        {
+          "action": "discontinue_selected_medication",
+          "source_ref": "RU-VENLA-XR",
+          "source_locator": "§4.4 с.9"
+        }
+      ],
+      "source_basis": [
+        {
+          "source_id": "RU-VENLA-XR",
+          "version": "Официальная ОХЛП реестра: штамп регистрации 2026-06-25; экспертный отчёт 2026-06-11 №11677/0019; получена 08.10.2026",
+          "locator": "§1–3 с.1; §4.1–4.3 с.2–5; §4.4 с.5–13; §4.5 с.13–17; §4.6 с.17–18",
+          "sha256": "a21e90141db69d9be5ca44ac3c8c6059c8c82a880f34bbf15143348c36ef4666"
+        },
+        {
+          "source_id": "RU-PANIC",
+          "version": "2024; каталог: опубликовано 19.09.2024, применяется",
+          "locator": "§3.1, PDF с.25–33; приложение А3, с.76–77",
+          "sha256": "a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d"
+        },
+        {
+          "source_id": "RU-VENLA-IR",
+          "version": "Официальная ОХЛП реестра: штамп регистрации 2023-11-21; экспертный отчёт 2025-12-26 №32413/0009; получена 08.10.2026",
+          "locator": "§1–4.3 с.1–3; §4.4 с.3–7; §4.5 с.7–11",
+          "sha256": "b1e98ffb209390179385a56aa70b6b94eda4a395831464f347aecf721f8701af"
+        }
+      ]
+    },
+    {
+      "case_id": "venla-xr-taper-limit--audit-v2-diastolic_BP-positive",
+      "removed": {
+        "duration_constraint": {
+          "operator": "minimum_choice",
+          "source_options_weeks": [
+            1,
+            2
+          ],
+          "chosen_minimum_weeks": null,
+          "hard_upper_limit_weeks": null,
+          "exact_taper_duration_weeks": null,
+          "slower_if_symptoms": true,
+          "source_ref": "RU-VENLA-XR",
+          "source_locator": "§4.2 с.4–5; §4.4 с.11–12"
+        }
+      },
+      "source_condition": {
+        "input": "diastolic_BP",
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.4 с.9"
+      },
+      "source_actions": [
+        {
+          "action": "discontinue_selected_medication",
+          "source_ref": "RU-VENLA-XR",
+          "source_locator": "§4.4 с.9"
+        }
+      ],
+      "source_basis": [
+        {
+          "source_id": "RU-VENLA-XR",
+          "version": "Официальная ОХЛП реестра: штамп регистрации 2026-06-25; экспертный отчёт 2026-06-11 №11677/0019; получена 08.10.2026",
+          "locator": "§1–3 с.1; §4.1–4.3 с.2–5; §4.4 с.5–13; §4.5 с.13–17; §4.6 с.17–18",
+          "sha256": "a21e90141db69d9be5ca44ac3c8c6059c8c82a880f34bbf15143348c36ef4666"
+        },
+        {
+          "source_id": "RU-GAD",
+          "version": "2024; каталог: опубликовано 19.09.2024, применяется",
+          "locator": "§3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78",
+          "sha256": "c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a"
+        }
+      ]
+    },
+    {
+      "case_id": "venla-xr-taper-limit--audit-v2-current_allergic_reaction-positive",
+      "removed": {
+        "duration_constraint": {
+          "operator": "minimum_choice",
+          "source_options_weeks": [
+            1,
+            2
+          ],
+          "chosen_minimum_weeks": null,
+          "hard_upper_limit_weeks": null,
+          "exact_taper_duration_weeks": null,
+          "slower_if_symptoms": true,
+          "source_ref": "RU-VENLA-XR",
+          "source_locator": "§4.2 с.4–5; §4.4 с.11–12"
+        }
+      },
+      "source_condition": {
+        "input": "current_allergic_reaction",
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.4 с.13"
+      },
+      "source_actions": [
+        {
+          "action": "discontinue_selected_medication",
+          "source_ref": "RU-VENLA-XR",
+          "source_locator": "§4.4 с.13"
+        }
+      ],
+      "source_basis": [
+        {
+          "source_id": "RU-VENLA-XR",
+          "version": "Официальная ОХЛП реестра: штамп регистрации 2026-06-25; экспертный отчёт 2026-06-11 №11677/0019; получена 08.10.2026",
+          "locator": "§1–3 с.1; §4.1–4.3 с.2–5; §4.4 с.5–13; §4.5 с.13–17; §4.6 с.17–18",
+          "sha256": "a21e90141db69d9be5ca44ac3c8c6059c8c82a880f34bbf15143348c36ef4666"
+        },
+        {
+          "source_id": "RU-GAD",
+          "version": "2024; каталог: опубликовано 19.09.2024, применяется",
+          "locator": "§3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78",
+          "sha256": "c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a"
+        }
+      ]
+    },
+    {
+      "case_id": "switch-esc-ago--audit-v2-arrhythmia_signs-positive",
+      "removed": {
+        "overlap_allowed_on_first_day_of_A_reduction": true,
+        "target_source_start_mg": 25,
+        "monitoring": {
+          "before_start": true,
+          "approximate_weeks_parameter": "liver_monitoring_weeks",
+          "restart_same_frequency_after_dose_increase": true,
+          "rising_repeat_hours_parameter": "repeat_liver_tests_hours",
+          "stop_signs_action": "immediate cessation; tests until normal",
+          "source_ref": "RU-AGO",
+          "source_locator": "§4.2 с.1; §4.4 с.3–4"
+        }
+      },
+      "source_condition": {
+        "input": "arrhythmia_signs",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.6"
+      },
+      "source_actions": [
+        {
+          "action": "discontinue_selected_medication",
+          "source_ref": "RU-ESC",
+          "source_locator": "§4.4 с.6"
+        },
+        {
+          "action": "obtain_ECG",
+          "source_ref": "RU-ESC",
+          "source_locator": "§4.4 с.6"
+        }
+      ],
+      "source_basis": [
+        {
+          "source_id": "RU-DEP",
+          "version": "2024; каталог: опубликовано 26.08.2024, применяется",
+          "locator": "§3.1–3.4 PDF с.24–40; таблица2 с.95–96; §3.6 с.45; Б5 с.105–106",
+          "sha256": "2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd"
+        },
+        {
+          "source_id": "RU-ESC",
+          "version": "РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; экспертный отчёт 31.10.2025 №27320, последовательность 0002; текущая опубликованная ОХЛП реестра получена 08.10.2026",
+          "locator": "§1–3 с.1–2; §4.1–4.2 с.2–3; §4.3–4.4 с.4–7; §4.5 с.7–9; §4.6 с.10; регистрационный и экспертный штампы с.1",
+          "sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6"
+        },
+        {
+          "source_id": "RU-AGO",
+          "version": "Официальная ОХЛП реестра: штамп регистрации 2024-12-28; экспертный отчёт 2024-12-23 №28427/0018; получена 08.10.2026",
+          "locator": "§4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16",
+          "sha256": "a98d383832688cee9a09588b1a908555d01ed8b659281cdeee2646c1115ce7c1"
+        }
+      ]
+    },
+    {
+      "case_id": "switch-esc-ago--audit-v2-serotonin_syndrome_signs-positive",
+      "removed": {
+        "overlap_allowed_on_first_day_of_A_reduction": true,
+        "target_source_start_mg": 25,
+        "monitoring": {
+          "before_start": true,
+          "approximate_weeks_parameter": "liver_monitoring_weeks",
+          "restart_same_frequency_after_dose_increase": true,
+          "rising_repeat_hours_parameter": "repeat_liver_tests_hours",
+          "stop_signs_action": "immediate cessation; tests until normal",
+          "source_ref": "RU-AGO",
+          "source_locator": "§4.2 с.1; §4.4 с.3–4"
+        }
+      },
+      "source_condition": {
+        "input": "serotonin_syndrome_signs",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.5–6"
+      },
+      "source_actions": [
+        {
+          "action": "immediately_discontinue_SSRI_and_current_serotonergic_drugs",
+          "source_ref": "RU-ESC",
+          "source_locator": "§4.4 с.5–6"
+        },
+        {
+          "action": "start_symptomatic_treatment_by_clinician",
+          "source_ref": "RU-ESC",
+          "source_locator": "§4.4 с.5–6"
+        }
+      ],
+      "source_basis": [
+        {
+          "source_id": "RU-DEP",
+          "version": "2024; каталог: опубликовано 26.08.2024, применяется",
+          "locator": "§3.1–3.4 PDF с.24–40; таблица2 с.95–96; §3.6 с.45; Б5 с.105–106",
+          "sha256": "2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd"
+        },
+        {
+          "source_id": "RU-ESC",
+          "version": "РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; экспертный отчёт 31.10.2025 №27320, последовательность 0002; текущая опубликованная ОХЛП реестра получена 08.10.2026",
+          "locator": "§1–3 с.1–2; §4.1–4.2 с.2–3; §4.3–4.4 с.4–7; §4.5 с.7–9; §4.6 с.10; регистрационный и экспертный штампы с.1",
+          "sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6"
+        },
+        {
+          "source_id": "RU-AGO",
+          "version": "Официальная ОХЛП реестра: штамп регистрации 2024-12-28; экспертный отчёт 2024-12-23 №28427/0018; получена 08.10.2026",
+          "locator": "§4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16",
+          "sha256": "a98d383832688cee9a09588b1a908555d01ed8b659281cdeee2646c1115ce7c1"
+        }
+      ]
+    },
+    {
+      "case_id": "switch-esc-ago--audit-v2-seizure_state-positive",
+      "removed": {
+        "overlap_allowed_on_first_day_of_A_reduction": true,
+        "target_source_start_mg": 25,
+        "monitoring": {
+          "before_start": true,
+          "approximate_weeks_parameter": "liver_monitoring_weeks",
+          "restart_same_frequency_after_dose_increase": true,
+          "rising_repeat_hours_parameter": "repeat_liver_tests_hours",
+          "stop_signs_action": "immediate cessation; tests until normal",
+          "source_ref": "RU-AGO",
+          "source_locator": "§4.2 с.1; §4.4 с.3–4"
+        }
+      },
+      "source_condition": {
+        "input": "seizure_state",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.4"
+      },
+      "source_actions": [
+        {
+          "action": "discontinue_selected_medication",
+          "source_ref": "RU-ESC",
+          "source_locator": "§4.4 с.4"
+        }
+      ],
+      "source_basis": [
+        {
+          "source_id": "RU-DEP",
+          "version": "2024; каталог: опубликовано 26.08.2024, применяется",
+          "locator": "§3.1–3.4 PDF с.24–40; таблица2 с.95–96; §3.6 с.45; Б5 с.105–106",
+          "sha256": "2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd"
+        },
+        {
+          "source_id": "RU-ESC",
+          "version": "РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; экспертный отчёт 31.10.2025 №27320, последовательность 0002; текущая опубликованная ОХЛП реестра получена 08.10.2026",
+          "locator": "§1–3 с.1–2; §4.1–4.2 с.2–3; §4.3–4.4 с.4–7; §4.5 с.7–9; §4.6 с.10; регистрационный и экспертный штампы с.1",
+          "sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6"
+        },
+        {
+          "source_id": "RU-AGO",
+          "version": "Официальная ОХЛП реестра: штамп регистрации 2024-12-28; экспертный отчёт 2024-12-23 №28427/0018; получена 08.10.2026",
+          "locator": "§4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16",
+          "sha256": "a98d383832688cee9a09588b1a908555d01ed8b659281cdeee2646c1115ce7c1"
+        }
+      ]
+    },
+    {
+      "case_id": "fluvox-depression-start--audit-v2-new_or_increased_seizures-positive",
+      "removed": {
+        "review_period_weeks": [
+          3,
+          4
+        ]
+      },
+      "source_condition": {
+        "input": "new_or_increased_seizures",
+        "source_ref": "RU-FLUVOX",
+        "source_locator": "§4.4 с.5"
+      },
+      "source_actions": [
+        {
+          "action": "discontinue_selected_medication",
+          "source_ref": "RU-FLUVOX",
+          "source_locator": "§4.4 с.5"
+        }
+      ],
+      "source_basis": [
+        {
+          "source_id": "RU-FLUVOX",
+          "version": "Официальная ОХЛП реестра: штамп регистрации 2026-08-19; экспертный отчёт 2026-08-14 №16133/0004; получена 08.10.2026",
+          "locator": "§4.1–4.3 PDF с.1–3; §4.4–4.6 с.4–11; §8–10 с.19",
+          "sha256": "01b6621adad68dfeaf1fbe00db21935b6df1edee141c67307a9b67ad177893f2"
+        },
+        {
+          "source_id": "RU-DEP",
+          "version": "2024; каталог: опубликовано 26.08.2024, применяется",
+          "locator": "§3.1–3.4 PDF с.24–40; таблица2 с.95–96; §3.6 с.45; Б5 с.105–106",
+          "sha256": "2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd"
+        }
+      ]
+    }
+  ],
+  "cases_with_removed_routine_payload": 23,
+  "all_stop_cases": 121,
+  "scope": "Current source cessation/urgent help retains its own primary actions and post-cessation followup. No inherited future dose, routine taper, target-start/overlap or pretreatment monitoring schedule. Independent acceptance pending."
+}

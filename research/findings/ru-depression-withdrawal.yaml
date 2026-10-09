@@ -1,0 +1,278 @@
+schema_version: '1.0'
+rule_id: ru-depression-withdrawal
+development_status: extracted_research_not_executable
+language: ru
+identity:
+  title: 'Российские КР депрессии: ведение симптомов отмены АД'
+  mode: taper
+  drug_inn: null
+  from_drug_inn: null
+  to_drug_inn: null
+  formulation: null
+  route: oral
+  diagnosis_label_ru: Депрессивный эпизод/рекуррентная депрессия у взрослых
+  classification_system: МКБ-10
+  diagnosis_code: F32/F33
+  jurisdiction: RU_versioned_sources
+applicability:
+  population_description: Взрослые; только показание и контекст указанных российских источников.
+  age_constraints: []
+  pregnancy: Отдельная оценка применимости; дозовые коэффициенты не извлечены.
+  lactation: Отдельная оценка применимости; дозовые коэффициенты не извлечены.
+  renal_constraints: []
+  hepatic_constraints: []
+  comorbidity_constraints: []
+  interacting_drugs: []
+  other_conditions:
+  - Общий алгоритм класса антидепрессантов, не самостоятельная числовая карточка конкретного МНН. При чистом тревожном
+    расстройстве нужна применимая КР этого показания.
+  exclusions: []
+  indication_status_in_russia: guideline_context_product_registration_requires_separate_check
+  source_refs: &id001
+  - RU-DEP
+inputs:
+- input_id: drug
+  question_ru: Какой антидепрессант отменяется?
+  data_type: medication
+  unit: null
+  allowed_values: []
+  required_when: для применения этой ветки
+  show_when: при выборе этой карточки
+  why_needed: Различия риска отмены и инструкции.
+  changes:
+  - applicability
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Назвать отсутствующее поле; не выдавать безусловную индивидуальную схему.
+  source_refs: *id001
+  input_role: dose_operand_or_applicability_gate
+- input_id: current_dose
+  question_ru: Какая текущая суточная доза?
+  data_type: number
+  unit: mg/day
+  allowed_values: []
+  required_when: для применения этой ветки
+  show_when: при выборе этой карточки
+  why_needed: Доза влияет на оценку риска, но числовой порог КР не задан.
+  changes:
+  - applicability
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Назвать отсутствующее поле; не выдавать безусловную индивидуальную схему.
+  source_refs: *id001
+  input_role: dose_operand_or_applicability_gate
+- input_id: duration
+  question_ru: Какова длительность приёма?
+  data_type: number
+  unit: day
+  allowed_values: []
+  required_when: для применения этой ветки
+  show_when: при выборе этой карточки
+  why_needed: Длительность учитывается при выборе темпа.
+  changes:
+  - applicability
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Назвать отсутствующее поле; не выдавать безусловную индивидуальную схему.
+  source_refs: *id001
+  input_role: dose_operand_or_applicability_gate
+- input_id: past_withdrawal
+  question_ru: Были ли симптомы при пропусках/снижении или неудачные попытки отмены?
+  data_type: clinical_assessment
+  unit: null
+  allowed_values: []
+  required_when: для применения этой ветки
+  show_when: при выборе этой карточки
+  why_needed: Критерии повышенного риска в Б5.
+  changes:
+  - applicability
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Назвать отсутствующее поле; не выдавать безусловную индивидуальную схему.
+  source_refs: *id001
+  input_role: dose_operand_or_applicability_gate
+- input_id: withdrawal_severity
+  question_ru: Есть ли симптомы отмены; какова их тяжесть по оценке врача?
+  data_type: clinical_assessment
+  unit: null
+  allowed_values: []
+  required_when: для применения этой ветки
+  show_when: при выборе этой карточки
+  why_needed: Разные действия при лёгких, умеренных и тяжёлых симптомах.
+  changes:
+  - applicability
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Назвать отсутствующее поле; не выдавать безусловную индивидуальную схему.
+  source_refs: *id001
+  input_role: dose_operand_or_applicability_gate
+- input_id: previous_tolerated_dose
+  question_ru: Известна ли прежняя доза без симптомов отмены?
+  data_type: number
+  unit: mg/day
+  allowed_values: []
+  required_when: для применения этой ветки
+  show_when: при выборе этой карточки
+  why_needed: Одна из врачебных опций при тяжёлых симптомах; не универсальная величина.
+  changes:
+  - applicability
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Назвать отсутствующее поле; не выдавать безусловную индивидуальную схему.
+  source_refs: *id001
+  input_role: dose_operand_or_applicability_gate
+clinical_parameters: []
+logic:
+  representation: narrative_only
+  conditions:
+  - Показание и стратегию выбрал врач; ограничения источника проверяются отдельно.
+  actions:
+  - При плановой отмене снижать дозу постепенно; при высоком риске выбирать максимально медленное снижение без единой
+    продолжительности и минимальной последней дозы.
+  - 'Лёгкие симптомы: информирование о временном характере; умеренные: симптоматическая терапия по решению врача.'
+  - При тяжёлых симптомах врач может возобновить АД в минимально эффективной или прежней дозе без симптомов, затем
+    снижать более дробно и медленно.
+  - Переход на флуоксетин при тяжёлой отмене СИОЗС/СИОЗСН — отдельная равноценная опция Б5 без числовой дозы и точного
+    календаря; не автоматическая смена и не схема следующего дня.
+  parameter_refs: []
+  source_refs: *id001
+  clinician_choices: &id002
+  - Определение риска и тяжести симптомов
+  - Каждая ступень и темп отмены
+  - Выбор одной из опций при тяжёлых симптомах
+  missing_data_behaviour: Назвать обязательные неизвестные поля; результат insufficient_data. Справочные этапы можно
+    показать как условные, без безусловной дозы пациенту.
+  unsupported_case_behaviour: not_applicable для этой карточки; указать конкретную отсутствующую ветку, не запретить
+    всё лечение.
+  contraindicated_case_behaviour: Не выдавать дозовую схему противопоказанного сочетания; отобразить источник и
+    причину.
+  conflicts: []
+  composite_rule_dependencies: []
+  combination_justification: Независимые правила не образуют автоматически полный клинический календарь.
+output:
+  result_type: clinician_choice
+  medication_inn: null
+  dose_per_administration: null
+  administrations_per_day: null
+  total_daily_dose: null
+  unit: mg
+  formulation: null
+  schedule: []
+  warnings:
+  - Частичное опубликованное правило; не индивидуальное назначение.
+  - Числовой вывод относится к указанным дозовым условиям. Неоценённые модулем клинические обстоятельства не считаются
+    отсутствующими; полный клинический допуск врач оценивает отдельно.
+  mandatory_checks: []
+  clinician_decisions_remaining: *id002
+  rounding_or_formulation_rule: Не округлять медицинскую дозу; использовать только разрешённую форму/деление. При
+    невозможности дозы формой — явно сообщить.
+  source_refs: *id001
+sources:
+- source_id: RU-DEP
+  title: Депрессивный эпизод, Рекуррентное депрессивное расстройство, КР 301_3
+  organization_or_authors: Минздрав РФ; Российское общество психиатров
+  url: https://apicr.minzdrav.gov.ru/api.ashx?id=301_3&op=GetClinrecPdf
+  doi_or_registry_id: '301_3'
+  publication_date: null
+  version_or_update_date: '2024; каталог: опубликовано 26.08.2024, применяется'
+  accessed_on: '2026-10-08'
+  source_type: guideline
+  jurisdiction: RU
+  access_status: full
+  exact_locator: §3.1–3.4 PDF с.24–40; таблица2 с.95–96; §3.6 с.45; Б5 с.105–106
+  evidence_status: Клиническая рекомендация; не валидация калькулятора
+  what_was_tested: Не исследовался создаваемый продукт. Содержание и ограничения описаны в evidence_limitations.
+  evidence_limitations: 'Взрослая депрессия: дополнительно прочитаны терапевтические разделы и таблица доз. Таблица
+    без форм/индивидуальных ограничений не автономный модуль. Концентрация лития с.36 имеет конфликт мкмоль/л против
+    ммоль/л; автоматическое исправление не разрешено.'
+  reuse_license_or_restriction: Открытый доступ не означает разрешение перераспространять полный документ. Сохранены
+    собственное извлечение фактических правил, локаторы и ссылки; код и большие цитаты не копируются.
+  document_fingerprint:
+    source_id: RU-DEP
+    url: https://apicr.minzdrav.gov.ru/api.ashx?id=301_3&op=GetClinrecPdf
+    sha256: 2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd
+    pages: 125
+  local_file: source_snapshots/depression-301_3.pdf
+  document_copies:
+  - source_id: RU-DEP
+    local_file: source_snapshots/depression-301_3.pdf
+    sha256: 2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd
+    version: '2024; каталог: опубликовано 26.08.2024, применяется'
+    url: https://apicr.minzdrav.gov.ru/api.ashx?id=301_3&op=GetClinrecPdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: false
+  - source_id: RU-DEP
+    local_file: audit/retrieved/RU-DEP.pdf
+    sha256: 2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd
+    version: '2024; каталог: опубликовано 26.08.2024, применяется'
+    url: https://apicr.minzdrav.gov.ru/api.ashx?id=301_3&op=GetClinrecPdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: false
+  - source_id: RU-DEP
+    local_file: remediation/retrieved/RU-DEP.pdf
+    sha256: 2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd
+    version: '2024; каталог: опубликовано 26.08.2024, применяется'
+    url: https://apicr.minzdrav.gov.ru/api.ashx?id=301_3&op=GetClinrecPdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: false
+  - source_id: RU-DEP
+    local_file: ../tmp_acceptance/DEP-KR.pdf
+    sha256: 2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd
+    version: '2024; каталог: опубликовано 26.08.2024, применяется'
+    url: https://apicr.minzdrav.gov.ru/api.ashx?id=301_3&op=GetClinrecPdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: false
+  dates:
+    registration: null
+    revision: null
+    publication: null
+    download: '2026-10-08'
+  latest_registration_revision_confirmed: false
+  current_guideline_status_evidence: remediation_round2/catalog_check.json; 08.10.2026; CodeVersion/ApplyStatusCalculated=1
+verification:
+  primary_source_checked: true
+  all_clinical_parameters_have_sources: true
+  population_and_indication_checked: true
+  russian_applicability_checked: false
+  formulation_feasibility_checked: false
+  combined_rules_justified: false
+  source_transfer_check: extraction_checked; calculator_not_implemented
+  clinical_review: not_performed
+  product_clinical_validation: not_performed
+  ready_for_technical_implementation: false
+  unresolved_items:
+  - Нет универсального процента, последней дозы или числового календаря.
+  - Общий принцип класса требует инструкции выбранного МНН.
+test_cases:
+- case_id: ru-depression-withdrawal__severe-withdrawal
+  synthetic: true
+  given:
+    diagnosis: F32
+    withdrawal_severity: тяжёлая
+    previous_tolerated_dose: null
+  expected:
+    result_type: clinician_choice
+    automatic_further_reduction: false
+    automatic_percent: null
+    resume_dose_mg: null
+    fluoxetine_bridge_calendar: null
+  source_refs: *id001
+  note: Ожидание переноса из источника; калькулятор не реализован, клиническая валидация не выполнена.
+- case_id: ru-depression-withdrawal__unknown-is-not-low-risk
+  synthetic: true
+  given:
+    past_withdrawal: неизвестно
+  expected:
+    assumed_low_risk: false
+    automatic_taper_percent: null
+  source_refs: *id001
+  note: Ожидание переноса из источника; калькулятор не реализован, клиническая валидация не выполнена.
+profile:
+  country: RU
+  selection_status: RU_guideline_finding_not_dose_module
+  foreign_fallback_allowed: false
+card_type: class_strategy_finding

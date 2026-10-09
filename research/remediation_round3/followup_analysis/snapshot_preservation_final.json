@@ -1,0 +1,25 @@
+{
+  "active_sha256": "ac33f61373c22b1c160de40057815b16c27bc67e4beb870a56057992f0b06148",
+  "active_files": 177,
+  "active_unchanged": true,
+  "historical_snapshots": [
+    {
+      "manifest": "final_manifest_review1.json",
+      "files": 122,
+      "sha256": "8c757d0c276bf7f308104dff910ae38dcb0196892c73ed6bf735ce6c972b5f56",
+      "preserved": true
+    },
+    {
+      "manifest": "final_manifest_recheck1.json",
+      "files": 164,
+      "sha256": "ff00118c08d144f1434869d25aba164234a443b4732f84fe8d481504622cf6ec",
+      "preserved": true
+    },
+    {
+      "manifest": "final_manifest_recheck2.json",
+      "files": 170,
+      "sha256": "8a17ae3f99839548742ee509a23d060ea451ed0018c48432dc73b9ba68de4359",
+      "preserved": true
+    }
+  ]
+}

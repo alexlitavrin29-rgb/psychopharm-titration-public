@@ -1,0 +1,86 @@
+{
+  "current_origin": "start + selected_mode explicitly means first administration of this product; ongoing is a separately selected significant branch, counted once; no inference of B phase from A",
+  "positive_event_cases_with_undefined_nonstart_mapping": [
+    {
+      "rule_id": "dulox-gad-adjust",
+      "case_id": "dulox-gad-adjust--audit-recheck-persistent_BP_increase-positive",
+      "condition_source_phase": "ongoing",
+      "phase_field": "treatment_phase",
+      "actual_value": "selected_mode",
+      "mode": "adjust",
+      "risk": "Mode-to-taking implication is not specified for nonstart selected_mode in schema; no numerical result granted."
+    },
+    {
+      "rule_id": "dulox-taper-limit",
+      "case_id": "dulox-taper-limit--audit-recheck-persistent_BP_increase-positive",
+      "condition_source_phase": "ongoing",
+      "phase_field": "treatment_phase",
+      "actual_value": "selected_mode",
+      "mode": "taper",
+      "risk": "Mode-to-taking implication is not specified for nonstart selected_mode in schema; no numerical result granted."
+    },
+    {
+      "rule_id": "preg-gad-adjust",
+      "case_id": "preg-gad-adjust--audit-recheck-current_suicidal_thoughts_or_behavior-positive",
+      "condition_source_phase": "ongoing",
+      "phase_field": "treatment_phase",
+      "actual_value": "selected_mode",
+      "mode": "adjust",
+      "risk": "Mode-to-taking implication is not specified for nonstart selected_mode in schema; no numerical result granted."
+    },
+    {
+      "rule_id": "preg-taper-limit",
+      "case_id": "preg-taper-limit--audit-recheck-current_suicidal_thoughts_or_behavior-positive",
+      "condition_source_phase": "ongoing",
+      "phase_field": "treatment_phase",
+      "actual_value": "selected_mode",
+      "mode": "taper",
+      "risk": "Mode-to-taking implication is not specified for nonstart selected_mode in schema; no numerical result granted."
+    },
+    {
+      "rule_id": "ser-adult-adjust",
+      "case_id": "ser-adult-adjust--audit-recheck-symptomatic_hyponatremia-positive",
+      "condition_source_phase": "ongoing",
+      "phase_field": "treatment_phase",
+      "actual_value": "selected_mode",
+      "mode": "adjust",
+      "risk": "Mode-to-taking implication is not specified for nonstart selected_mode in schema; no numerical result granted."
+    },
+    {
+      "rule_id": "ser-taper-limit",
+      "case_id": "ser-taper-limit--audit-recheck-symptomatic_hyponatremia-positive",
+      "condition_source_phase": "ongoing",
+      "phase_field": "treatment_phase",
+      "actual_value": "selected_mode",
+      "mode": "taper",
+      "risk": "Mode-to-taking implication is not specified for nonstart selected_mode in schema; no numerical result granted."
+    },
+    {
+      "rule_id": "switch-ser-ago",
+      "case_id": "switch-ser-ago--audit-recheck-symptomatic_hyponatremia-positive",
+      "condition_source_phase": "ongoing",
+      "phase_field": "treatment_phase",
+      "actual_value": "selected_mode",
+      "mode": "switch",
+      "risk": "Mode-to-taking implication is not specified for nonstart selected_mode in schema; no numerical result granted."
+    },
+    {
+      "rule_id": "switch-ser-esc",
+      "case_id": "switch-ser-esc--audit-recheck-symptomatic_hyponatremia-positive",
+      "condition_source_phase": "ongoing",
+      "phase_field": "treatment_phase",
+      "actual_value": "selected_mode",
+      "mode": "switch",
+      "risk": "Mode-to-taking implication is not specified for nonstart selected_mode in schema; no numerical result granted."
+    },
+    {
+      "rule_id": "venla-xr-taper-limit",
+      "case_id": "venla-xr-taper-limit--audit-recheck-suspected_serotonin_syndrome-positive",
+      "condition_source_phase": "ongoing",
+      "phase_field": "treatment_phase",
+      "actual_value": "selected_mode",
+      "mode": "taper",
+      "risk": "Mode-to-taking implication is not specified for nonstart selected_mode in schema; no numerical result granted."
+    }
+  ]
+}

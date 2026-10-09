@@ -1,0 +1,177 @@
+{
+  "checked_on": "2026-10-08",
+  "purpose": "Ссылки для получения документов; проверка доступности не равна проверке актуальности и применимости доз.",
+  "scope": "Документы, полученные для текущего извлечения; полная карта препаратов и пробелов — coverage.csv.",
+  "entries": [
+    {
+      "name": "Золофт — сертралин",
+      "url": "https://www.viatris.ru/-/media/project/common/viatrisru/pdf/product-catalog/0006_zoloft_smpc-eaeu_24-apr-2025_ru.pdf",
+      "format": "ОХЛП, PDF",
+      "checked_on": "2026-10-08",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "pages": 22,
+      "sha256": "3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba",
+      "limitation": "Прочитанная копия производителя; полный оригинал реестра отдельно сверяется."
+    },
+    {
+      "name": "Селектра — эсциталопрам",
+      "url": "https://s3.k2.cloud/static.abbottpro.ru/iblock/65e/65e594ed9b06b488eb136309c4567129/Selectra_PIL_14.01.2025-clean-_1_.pdf",
+      "format": "Инструкция, PDF",
+      "checked_on": "2026-10-08",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "pages": 17,
+      "sha256": "ea5d007a4026e850b514badeabfdb5d6e0ece163a1a84e6fa5453a8ff0c73497",
+      "limitation": "Историческая редакция 14.01.2025. Не заменяет реестровую ОХЛП от 05.11.2025."
+    },
+    {
+      "name": "Лирика — прегабалин",
+      "url": "https://www.viatris.ru/-/media/project/common/viatrisru/pdf/product-catalog/lyrica_eaeu_smpc_13-aug-2025_ru.pdf",
+      "format": "ОХЛП, PDF",
+      "checked_on": "2026-10-08",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "pages": 30,
+      "sha256": "1fcd653e7f3b6bf5b26b3276d0bce97880e74bf345bb69755a275bf8f7117083",
+      "limitation": "Актуальность последней редакции реестра отдельно сверяется."
+    },
+    {
+      "name": "Рексетин — пароксетин",
+      "url": "https://www.gedeonrichter.com/ru/-/media/sites/ru/russian-products/files/185/productinstruction_lvokhlpreksetin_pdf.pdf",
+      "format": "ЛВ + ОХЛП, PDF",
+      "checked_on": "2026-10-08",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "pages": 39,
+      "sha256": "9f6f2646e102956826997ca7e93d84e90c7528db5ceb61896a3d4092841edabe",
+      "limitation": "Короткий URL без параметров; байтовый отпечаток совпадает с прочитанной копией."
+    },
+    {
+      "name": "Вальдоксан — агомелатин",
+      "url": "https://servier.ru/wp-content/uploads/2023/09/20241228_spc-ru_valdoxan_rus.pdf",
+      "format": "ОХЛП, PDF",
+      "checked_on": "2026-10-08",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "pages": 16,
+      "sha256": "1cf8e71b5c27891e17b5b7ab4dd7c8c02697a1d44bb287a57a1ee9de0fb85bd6",
+      "limitation": "Актуальность последней редакции реестра отдельно сверяется."
+    },
+    {
+      "name": "Прегабалин-Рихтер — прегабалин",
+      "url": "https://www.gedeonrichter.com/ru/-/media/sites/ru/russian-products/files/174/productinstruction_lvokhlp-pregab-75mg150mg300mg-hcaps-eaeu-smpc-commruwpsusa2025_pdf.pdf",
+      "format": "ЛВ + ОХЛП, PDF",
+      "checked_on": "2026-10-08",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "pages": 33,
+      "sha256": "32bfe8b2ec435201b47cb652818af63a1e6a532669348dfe9110e92a73af7065",
+      "limitation": "Сверены новая формула мкмоль/л, таблица и форма 75/150/300 мг. Архивная формула мг/дл сохранена отдельно; идентичность последней реестровой редакции не заявлена."
+    },
+    {
+      "name": "Феварин — флувоксамин",
+      "url": "https://s3.k2.cloud/static.abbottpro.ru/iblock/1e1/1e119bb21898172a466b489db3ef4837/Fevarin-SmPC-0002_07.02.2025-_1_.pdf",
+      "format": "ОХЛП, PDF",
+      "checked_on": "2026-10-08",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "pages": 19,
+      "sha256": "ee988a504bf0e34d9562a5f606f8800c827214fc51f4994a4ab28de9c31ce1d6",
+      "limitation": "Дозовые разделы прочитаны; извлечены взрослый старт депрессии и ограничения отмены. РУ 07.02.2025 подтверждено строкой реестра; дата пересмотра PDF не заполнена."
+    },
+    {
+      "name": "Дулоксента — дулоксетин",
+      "url": "https://www.krka.ru/_assets/Duloxenta-CU_SmPC_18.07.2024.pdf",
+      "format": "ОХЛП, PDF",
+      "checked_on": "2026-10-08",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "pages": 35,
+      "sha256": "bcb5a8b9415f15fdae2ec8a8d00abe5788194c59893b6172294c4cf3db839786",
+      "limitation": "Дозовые разделы прочитаны; извлечены ГТР/депрессия/особые ветки/отмена. В оригинале указан пересмотр 18.07.2024."
+    },
+    {
+      "name": "Флуоксетин — Озон",
+      "url": "https://ozonpharm.ru/wp-content/uploads/2024/06/afc642ec60c8d98e2c7a70c8b891e9ab-3.pdf",
+      "format": "Инструкция, PDF-скан",
+      "checked_on": "2026-10-08",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "pages": 1,
+      "sha256": "dfcf4a185bb4474bfa7411de1d956be7d309bc9c3e350309f6ca1220fd4e32a3",
+      "limitation": "Весь одностраничный скан визуально прочитан. Архивная регистрация 2009; актуальность реестровой редакции не подтверждена."
+    },
+    {
+      "name": "Велаксин — венлафаксин, пролонгированные капсулы",
+      "url": "https://egispro.ru/medications/velaksin/instructions/velaksin_75_mg_28_sht/",
+      "format": "ОХЛП на странице",
+      "checked_on": "2026-10-08",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "pages": null,
+      "sha256": null,
+      "limitation": "Полная HTML-инструкция прочитана и сохранена с SHA-256. Формы XR 75/150 мг; 37,5 мг для паники этой формой не воспроизводятся."
+    },
+    {
+      "name": "Велаксин — венлафаксин, таблетки",
+      "url": "https://egispro.ru/medications/velaksin/instructions/velaksin_37_5_mg_28_sht/",
+      "format": "ОХЛП на странице",
+      "checked_on": "2026-10-08",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "pages": null,
+      "sha256": null,
+      "limitation": "Полная HTML-инструкция прочитана; отдельные форма/показание/почечные единицы. Не заменяет XR; снимок сохранён."
+    },
+    {
+      "name": "Мелипрамин — имипрамин",
+      "url": "https://egispro.ru/pdf-reader/?pdf-url=/upload/iblock/91e/rnyqi0klzm69hk7tp6kqgzd2ldldsph9.pdf",
+      "format": "Просмотрщик производителя",
+      "checked_on": "2026-10-08",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "pages": null,
+      "sha256": null,
+      "limitation": "URL перенаправляет в просмотрщик, а не отдаёт PDF напрямую. Документ визуально загружается в браузере; поверх появляется уведомление о cookies."
+    },
+    {
+      "name": "Циталопрам — Пранафарм",
+      "url": "https://pranapharm.ru/allfiles/202610/TSITALOPRAM_Listok_vkladyish-1791177827-TaAy0.docx",
+      "format": "Листок-вкладыш, DOCX",
+      "checked_on": "2026-10-08",
+      "http_status": 200,
+      "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "pages": null,
+      "sha256": null,
+      "limitation": "Полный DOCX прочитан. Конфликт максимумов 20/40 мг в §3 не разрешён произвольно; числовой модуль заблокирован."
+    },
+    {
+      "name": "Кломипрамин — раствор",
+      "url": "https://www.atompharm.ru/upload/iblock/942/7lzzhv4bo2ud591xeq7t6pt80d8lxzz3.pdf",
+      "format": "Инструкция, PDF-скан",
+      "checked_on": "2026-10-08",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "pages": 35,
+      "sha256": "81d40c49e7fa50aed75f8719c51f942f40f85a5ad74e1637a45673f0b57f1d33",
+      "limitation": "Визуально с.1: раствор для в/в и в/м введения, штамп 24.08.2017, ЛП-004429. Архивная копия; не заменяет инструкцию таблеток."
+    },
+    {
+      "name": "Феназепам — бромдигидрохлорфенилбензодиазепин",
+      "url": "https://www.valentapharm.com/upload/iblock/fec/juwc91mjfnc770nida6ni9syp92x00if.pdf",
+      "format": "Инструкция, PDF",
+      "checked_on": "2026-10-08",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "pages": 5,
+      "sha256": "e8e6303c10b7b9b31ae6b344eb49d209e148ba5584ac8f55954c8384cfe49a89",
+      "limitation": "Полная инструкция ородиспергируемых таблеток прочитана. Отмена постепенная; точные процент/срок не опубликованы. Идентичность последней реестровой копии не заявлена."
+    }
+  ],
+  "gaps": [
+    "Актуальная реестровая Селектра уже открыта в исходной вкладке 3; повторно открытая token-ссылка может дать 403. Публичная копия января 2025 старее.",
+    "Полная актуальная российская инструкция таблеток кломипрамина/Анафранила по стабильной публичной ссылке не подтверждена.",
+    "Актуальный российский первоисточник моклобемида не получен; зарубежная/старая инструкция не подставляется."
+  ]
+}

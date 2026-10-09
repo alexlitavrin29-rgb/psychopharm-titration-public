@@ -1,0 +1,19 @@
+{
+  "audit_artifact_counts": {
+    "02_findings.csv": 13,
+    "03_source_verification.csv": 30,
+    "06_card_review.csv": 38,
+    "06_parameter_review.csv": 195,
+    "07_case_contract_review.csv": 124
+  },
+  "acceptance_count": 30,
+  "acceptance_status_counts": {
+    "выполнено": 17,
+    "частично": 13
+  },
+  "local_links_valid": true,
+  "originals_preserved": true,
+  "weighted_raw_score": 6.275,
+  "capped_score": 6.0,
+  "medical_execution_or_clinical_validation": false
+}

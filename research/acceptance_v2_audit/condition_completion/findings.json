@@ -1,0 +1,81 @@
+[
+  {
+    "id": "CC01",
+    "status": "OPEN_FROZEN_CORE",
+    "category": "causal projection and count",
+    "scope": "187 input/rule occurrences with a positive material reported_context reason",
+    "evidence": "reported_context_defect_scope.json",
+    "source_evidence": "Each listed row carries its independently read primary norm, exact source SHA and physical pages.",
+    "defect": "build_graphs.py active omits reported_context even when supplied. Positive full expected can depend on this lost fact; the selected graph cannot consume or count the cause, and an absent optional fact is not the same as a supplied negative.",
+    "closure": "Consume/count every explicitly supplied positive/negative/unknown optional fact. Preserve absent as not_assessed. Add complete absent-context ordinary baselines without invented negatives; include positive result paths. Qualitative reported initial/last-course dose must not prove current use. Recheck full projected causes, actor phases and actual counts."
+  },
+  {
+    "id": "CC02",
+    "status": "OPEN_FROZEN_CORE",
+    "category": "exact primary locators",
+    "scope": "24 listed locator occurrences, not24 independent clinical errors",
+    "evidence": "locator_defects.json",
+    "defect": "PAR renal/hepatic/interaction prose retains old17/18 pages; DULOX pregnancy/lactation and sucrose/akathisia prose uses wrong physical pages; PHEN prose contra/pregnancy/lactation pages are imprecise; four SER adult-minimum locators omit explicit physical5 adult restriction.",
+    "closure": "Replace exact listed paths with correct physical pages of the same verified SHA. Do not change a registration date into a content edition date. Check input, logic, applicability, numeric and index chains together."
+  },
+  {
+    "id": "CC03",
+    "status": "OPEN_FROZEN_CORE",
+    "category": "primary norm versus computational form policy",
+    "scope": "Three PREG numeric card source_gates.other and related form prose",
+    "source_id": "RU-PREG",
+    "source_sha256": "b605c8b381c24d59a48bbab9bfa8621eb70f6ec16ad9e3679aa8457f811663e5",
+    "physical_pages": [
+      1,
+      2,
+      5,
+      6
+    ],
+    "evidence": "medical_prose_review.json#150; #151; #161",
+    "defect": "The current OHLP describes capsule forms and oral use; the read applicable text does not establish the categorical opening/splitting prohibition attributed to it. Whole registered-unit arithmetic is a defensible model boundary but must be labelled as that boundary.",
+    "closure": "Keep no rounding/fractional capsule-content measurement and no executable37.5 from available capsules. Distinguish registered forms, numeric feasibility and model policy from a claimed OHLP ban; do not copy the explicit XR capsule prohibition into PREG."
+  },
+  {
+    "id": "CC04",
+    "status": "OPEN_FROZEN_CORE",
+    "category": "complete source-derived positive/unknown expected coverage",
+    "scope": "114 literal occurrences; same seizure state can recur in typed/urgent clauses",
+    "evidence": "positive_expected_gaps_exact.json",
+    "defect": "A source gate or primary norm is not a same-card complete positive medical expected. Current classes in ESC cards, source-owner restrictions in SSRI pairs, B-AGO conditions in ESC→AGO and taper seizure clauses lack corresponding positive full witnesses in the frozen5430.",
+    "closure": "Provide full positive given/context/expected for each exact card/actor/value scope, plus unknown/boundary/phase countercases where needed. Do not inherit target dose/overlap/minimum taper into urgent/blocked outputs. Preserve first-dose versus ongoing action and independent B phase. Recheck from the cited originals, not merely author PASS."
+  },
+  {
+    "id": "CC05",
+    "status": "OPEN_FROZEN_CORE",
+    "category": "legacy prose versus typed source result",
+    "scope": "ser-adult-adjust logic/conditions/1 (and accompanying action text); esc-hepatic-start logic/conditions/1",
+    "source_evidence": [
+      {
+        "source_id": "RU-SER",
+        "sha256": "3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba",
+        "physical_pages": [
+          2,
+          3
+        ]
+      },
+      {
+        "source_id": "RU-ESC",
+        "sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+        "physical_pages": [
+          3
+        ]
+      }
+    ],
+    "defect": "SER prose redirects current25 to a start card while the checked template/expected correctly contains25→50 after a week. ESC hepatic legacy value \"нарушена\" should identify Child–Pugh A/B explicitly and keep C supervision separate; current typed C expected already gives no automatic numeric correction.",
+    "closure": "Align exact prose with the typed domains and checked special25→50 / A-B-versus-C results. This finding is not a newly wrong published dose."
+  },
+  {
+    "id": "CC06",
+    "status": "OPEN_RESULT_SPECIFIC_NECESSITY",
+    "category": "criteria17/18",
+    "scope": "Eight finite residue families,505 named always rows,190 rule/result scopes and71 early-terminal candidates",
+    "evidence": "necessity_remaining.json; always_necessity_rows.json; necessity_result_scope_matrix.json; early_terminal_candidates.json",
+    "defect": "Primary caution/source condition and ledger crossproduct do not prove each always field for each requested result. Social adherence, limited source-gap/qualitative results, later questions after decisive stops/exclusions, and ordinary long numeric paths remain specifically identified.",
+    "closure": "Address NR01..08 with primary prerequisites or same-result omitted/unknown counterexamples and complete actual counts. Do not erase supplied negatives, merge independent facts, hide phase/MAOI/stages, rename ordinary as complex, or infer clinical clearance. No global minimum or all ordinary<=15 is proved."
+  }
+]

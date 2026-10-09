@@ -1,0 +1,150 @@
+rule_id: ru-richter-clcr-estimator
+kind: auxiliary_renal_estimation_not_drug_dose
+country: RU
+source_ref: RU-PREG-RICHTER
+source_locator: §4.2 с.3 текущей ОХЛП; формула, таблица1 и сноска
+purpose: Отдельное воспроизведение формулы российского оригинала; не молчаливое исправление PDF Лирики. Результат
+  требует оценки врача перед дозовой таблицей.
+formula: CLcr = 1.23 * (140 - age_years) * mass_kg / serum_creatinine_umol_L; multiply by 0.85 for women as specified
+  in source
+output_unit: mL/min
+parameters:
+- name: age_constant
+  value: 140
+  unit: year
+  source_ref: RU-PREG-RICHTER
+  source_locator: §4.2 с.3
+- name: numerator_constant
+  value: 1.23
+  unit: published_formula_constant_with_creatinine_in_umol_per_L
+  source_ref: RU-PREG-RICHTER
+  source_locator: §4.2 с.3
+- name: female_multiplier
+  value: 0.85
+  unit: dimensionless
+  source_ref: RU-PREG-RICHTER
+  source_locator: §4.2 с.3
+inputs:
+- input_id: age_years
+  question_ru: Возраст пациента в полных годах для этой оценки CLcr?
+  data_type: integer
+  unit: year
+  allowed_values: []
+  required_when: только при отдельной оценке CLcr по этой формуле
+  show_when: врач выбрал этот метод оценки
+  why_needed: Возраст в числителе.
+  changes:
+  - renal_estimate
+  unknown_allowed: true
+  action_if_unknown: Назвать age_years; CLcr не вычислять.
+  source_refs:
+  - RU-PREG-RICHTER
+- input_id: mass_kg
+  question_ru: Какую массу в килограммах врач подтвердил для применения формулы?
+  data_type: number
+  unit: kg
+  allowed_values: []
+  required_when: только при отдельной оценке CLcr по этой формуле
+  show_when: врач выбрал этот метод оценки
+  why_needed: Масса в числителе; способ выбора массы при особом телосложении источник не задаёт.
+  changes:
+  - renal_estimate
+  unknown_allowed: true
+  action_if_unknown: Назвать mass_kg; не выбирать массу самостоятельно, CLcr не вычислять.
+  source_refs:
+  - RU-PREG-RICHTER
+- input_id: serum_creatinine_umol_L
+  question_ru: Подтверждённый креатинин сыворотки в мкмоль/л?
+  data_type: number
+  unit: µmol/L
+  allowed_values: []
+  required_when: только при отдельной оценке CLcr по этой формуле
+  show_when: врач выбрал этот метод оценки
+  why_needed: Единица знаменателя именно новой опубликованной формулы. Перевод единиц здесь не добавлен.
+  changes:
+  - renal_estimate
+  unknown_allowed: true
+  action_if_unknown: Назвать serum_creatinine_umol_L; результат не вычислять.
+  source_refs:
+  - RU-PREG-RICHTER
+- input_id: source_sex_category
+  question_ru: Какая категория исходной формулы для множителя подтверждена врачом?
+  data_type: enum
+  unit: null
+  allowed_values:
+  - мужчина по категории формулы
+  - женщина по категории формулы
+  - неизвестно
+  required_when: только при отдельной оценке CLcr по этой формуле
+  show_when: врач выбрал этот метод оценки
+  why_needed: Выбор опубликованного множителя; не выводить категорию из имени.
+  changes:
+  - renal_estimate
+  unknown_allowed: true
+  action_if_unknown: Назвать source_sex_category; множитель не выбирать, CLcr не вычислять.
+  source_refs:
+  - RU-PREG-RICHTER
+unknown_behaviour: Называть отсутствующий вход; CLcr не вычислять. eGFR не заменяет ни один вход.
+invalid_behaviour: Неположительный креатинин, неверная единица или неоднозначная масса — без автоматического результата.
+limitations:
+- Возрастная область ОХЛП — взрослые; не переносить на детей.
+- Острые изменения функции почек и выбор массы при особом телосложении не разрешены этим извлечением.
+- Число не является самостоятельным назначением прегабалина.
+- Капсулы Прегабалин-Рихтер 75/150/300 мг не обеспечивают дозы 25–50 мг, что прямо указано в сноске таблицы.
+- Использование оценки с таблицей другого продукта требует явной оценки метода врачом; не смешивать формы.
+- Архивная мг/дл формула сохранена отдельно; единицы и коэффициенты разных редакций не смешиваются.
+verification:
+  primary_source_checked: true
+  formula_and_units_visually_checked: true
+  clinical_review: not_performed
+  product_clinical_validation: not_performed
+  ready_for_clinical_automatic_use: false
+  calculator_execution: not_performed
+test_cases:
+- case_id: ru-richter-clcr-estimator__male
+  synthetic: true
+  given:
+    age_years: 40
+    mass_kg: 72
+    source_sex_category: мужчина по категории формулы
+    serum_creatinine_umol_L: 88.56
+  expected:
+    estimated_CLcr_mL_min: 100
+    automatic_drug_dose: null
+  source_refs:
+  - RU-PREG-RICHTER
+- case_id: ru-richter-clcr-estimator__female
+  synthetic: true
+  given:
+    age_years: 40
+    mass_kg: 72
+    source_sex_category: женщина по категории формулы
+    serum_creatinine_umol_L: 88.56
+  expected:
+    estimated_CLcr_mL_min: 85
+    automatic_drug_dose: null
+  source_refs:
+  - RU-PREG-RICHTER
+- case_id: ru-richter-clcr-estimator__wrong-unit
+  synthetic: true
+  given:
+    serum_creatinine: 1
+    unit: mg/dL
+  expected:
+    result_type: insufficient_data
+    unit_conversion_not_sourced_here: true
+    estimated_CLcr_mL_min: null
+  source_refs:
+  - RU-PREG-RICHTER
+- case_id: ru-richter-clcr-estimator__capsule-footnote
+  synthetic: true
+  given:
+    brand: Прегабалин-Рихтер
+    requested_single_dose_mg: 25
+  expected:
+    dose_feasible_with_documented_form: false
+    do_not_split_capsule: true
+  source_refs:
+  - RU-PREG-RICHTER
+source_version: 'Официальная ОХЛП реестра: штамп регистрации 2026-02-06; экспертный отчёт 2026-02-02 №1678/0014;
+  получена 08.10.2026'

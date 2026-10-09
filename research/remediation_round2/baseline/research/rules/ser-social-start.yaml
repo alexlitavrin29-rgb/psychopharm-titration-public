@@ -1,0 +1,852 @@
+schema_version: '1.0'
+rule_id: ser-social-start
+development_status: extracted_research_not_executable
+language: ru
+identity:
+  title: 'Сертралин: старт при социальной фобии'
+  mode: start
+  drug_inn: сертралин
+  from_drug_inn: null
+  to_drug_inn: null
+  formulation: 'Золофт: таблетки, покрытые плёночной оболочкой; 50/100 мг'
+  route: oral
+  diagnosis_label_ru: Социальная фобия
+  classification_system: МКБ-10
+  diagnosis_code: F40.1
+  jurisdiction: RU_versioned_copy
+applicability:
+  population_description: Взрослые. Только подтверждённые условия этой карточки; другие популяции не получают масштабированную
+    взрослую дозу.
+  age_constraints:
+  - minimum: 18
+    inclusive: true
+    unit: year
+    source_ref: RU-SER
+    source_locator: §4.1, PDF с.1
+  pregnancy: Решение по применимости/пользе и риску отдельно; без опубликованной числовой поправки. Стандартная
+    карточка не выдаёт автоматическую дозу при беременности.
+  lactation: Проверять отдельные ограничения источника. Стандартная карточка не выдаёт автоматическую дозу при кормлении.
+  renal_constraints:
+  - Коррекция при почечной недостаточности не требуется (§4.2, PDF с.2); CLcr не обязательный ввод.
+  hepatic_constraints:
+  - Нужна меньшая доза/кратность без точного числа; стандартная числовая ветка не применяется. При тяжёлом нарушении
+    не применять (§4.2 с.2).
+  comorbidity_constraints:
+  - 'Мания/гипомания, судороги/неконтролируемая эпилепсия, суицидальный риск, акатизия, риск кровотечения, гипонатремии
+    и удлинения QT: ограничения/наблюдение по инструкции; числовых множителей для них нет.'
+  interacting_drugs:
+  - 'ИМАО и пимозид: противопоказания/интервалы §4.3–4.5; прочие серотонинергические, влияющие на QT/кровотечения
+    — отдельная проверка.'
+  other_conditions: []
+  exclusions:
+  - Гиперчувствительность
+  - Непроверенные противопоказания/взаимодействия не считать отсутствующими
+  indication_status_in_russia: RU_indication_in_read_copy_registry_row_observed_latest_text_identity_not_asserted
+  source_refs: &id003
+  - RU-SER
+inputs:
+- input_id: age
+  question_ru: Возраст пациента, полных лет?
+  data_type: integer
+  unit: year
+  allowed_values: []
+  required_when: для индивидуального результата
+  show_when: при выборе этой карточки
+  why_needed: Возрастная применимость; для эсциталопрама особая пожилая ветка, для прегабалина возраст не заменяет
+    CLcr.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать
+    условно.
+  source_refs:
+  - RU-SER
+  input_role: dose_operand_or_applicability_gate
+  source_locator: §4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22
+  missing_states: &id001
+  - unknown
+  - not_assessed
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+- input_id: form
+  question_ru: Какая конкретная форма и сила дозы используются?
+  data_type: structured_form
+  unit: null
+  allowed_values: []
+  required_when: для индивидуального результата
+  show_when: при выборе этой карточки
+  why_needed: Исполнимость дозы и запрет произвольного деления форм.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать
+    условно.
+  source_refs:
+  - RU-SER
+  input_role: dose_operand_or_applicability_gate
+  source_locator: §4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22
+  missing_states: *id001
+  structure_ref: remediation/input_contracts.yaml#structures/structured_form
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+- input_id: pregnancy
+  question_ru: Беременность установлена или возможна?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: для индивидуального результата
+  show_when: при выборе этой карточки
+  why_needed: Отдельное решение о пользе и риске; числовой коэффициент не опубликован.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать
+    условно.
+  source_refs:
+  - RU-SER
+  input_role: dose_operand_or_applicability_gate
+  source_locator: §4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22
+  missing_states: *id001
+  value_aliases: &id002
+    да: true
+    нет: false
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+- input_id: lactation
+  question_ru: Есть грудное вскармливание?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: для индивидуального результата
+  show_when: при выборе этой карточки
+  why_needed: Ограничение инструкции, решение врача; не уменьшение дозы по выдуманному коэффициенту.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать
+    условно.
+  source_refs:
+  - RU-SER
+  input_role: dose_operand_or_applicability_gate
+  source_locator: §4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22
+  missing_states: *id001
+  value_aliases: *id002
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+- input_id: medicines
+  question_ru: Какие лекарства и значимые вещества сейчас принимаются или недавно отменены?
+  data_type: medication_list
+  unit: null
+  allowed_values: []
+  required_when: для индивидуального результата
+  show_when: при выборе этой карточки
+  why_needed: Выявление взаимодействий и интервалов после ИМАО; пустой список и непроверенный список различаются.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать
+    условно.
+  source_refs:
+  - RU-SER
+  input_role: dose_operand_or_applicability_gate
+  source_locator: §4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22
+  missing_states: *id001
+  structure_ref: remediation/input_contracts.yaml#structures/medication_list
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+- input_id: allergy
+  question_ru: Есть известная гиперчувствительность к препарату/компонентам?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: для индивидуального результата
+  show_when: при выборе этой карточки
+  why_needed: Противопоказание.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать
+    условно.
+  source_refs:
+  - RU-SER
+  input_role: dose_operand_or_applicability_gate
+  source_locator: §4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22
+  missing_states: *id001
+  value_aliases: *id002
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+- input_id: hepatic
+  question_ru: 'Как врач характеризует функцию печени: нарушения не известны, нарушена, тяжёлое нарушение, неизвестно?'
+  data_type: source_hepatic_category
+  unit: null
+  allowed_values: []
+  required_when: для индивидуального результата
+  show_when: при выборе этой карточки
+  why_needed: Выбор отдельного дозового правила; не вычислять степень по одному анализу.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать
+    условно.
+  source_refs:
+  - RU-SER
+  input_role: dose_operand_or_applicability_gate
+  source_locator: §4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22
+  missing_states: *id001
+  structure_ref: remediation/input_contracts.yaml#structures/source_hepatic_category
+  source_categories:
+  - no_impairment_after_assessment
+  - hepatic_impairment
+  - severe_hepatic_impairment
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+- input_id: mania
+  question_ru: Имеется мания/гипомания или её появление отмечено врачом?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: при известном соответствующем обстоятельстве/выявленном взаимодействии; для его клинического разбора
+  show_when: врач сообщил обстоятельство или выявлено релевантное взаимодействие
+  why_needed: Ограничение/пересмотр терапии; диагноз врача не перепроверяется.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Сохранить not_assessed/неизвестно; не считать отсутствием риска. Дозовый модуль не подтверждает
+    полный клинический допуск. При необходимости разбора — расширенная ветка.
+  source_refs:
+  - RU-SER
+  input_role: conditional_clinical_context
+  source_locator: §4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22
+  missing_states: *id001
+  value_aliases: *id002
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+- input_id: seizure_state
+  question_ru: 'Эпилепсия/судороги: отсутствуют по оценке, контролируемые, неконтролируемые, неизвестно?'
+  data_type: enum
+  unit: null
+  allowed_values:
+  - не отмечены
+  - контролируемые
+  - неконтролируемые
+  - unknown
+  - not_assessed
+  - новые приступы
+  required_when: при известном соответствующем обстоятельстве/выявленном взаимодействии; для его клинического разбора
+  show_when: врач сообщил обстоятельство или выявлено релевантное взаимодействие
+  why_needed: Осторожность/неприменимость короткой ветки.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Сохранить not_assessed/неизвестно; не считать отсутствием риска. Дозовый модуль не подтверждает
+    полный клинический допуск. При необходимости разбора — расширенная ветка.
+  source_refs:
+  - RU-SER
+  input_role: conditional_clinical_context
+  source_locator: '§4.4 с.4, судороги: прекращение при развитии приступов'
+  missing_states: *id001
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+- input_id: qt_risk
+  question_ru: Известен врачу риск удлинения QT/аритмии?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: при известном соответствующем обстоятельстве/выявленном взаимодействии; для его клинического разбора
+  show_when: врач сообщил обстоятельство или выявлено релевантное взаимодействие
+  why_needed: Требует отдельной оценки; нет опубликованного коэффициента дозы.
+  changes:
+  - applicability
+  - warning
+  unknown_allowed: true
+  action_if_unknown: Сохранить not_assessed/неизвестно; не считать отсутствием риска. Дозовый модуль не подтверждает
+    полный клинический допуск. При необходимости разбора — расширенная ветка.
+  source_refs:
+  - RU-SER
+  input_role: conditional_clinical_context
+  source_locator: §4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22
+  missing_states: *id001
+  value_aliases: *id002
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+- input_id: bleeding_risk
+  question_ru: Известна склонность к кровотечениям?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: при известном соответствующем обстоятельстве/выявленном взаимодействии; для его клинического разбора
+  show_when: врач сообщил обстоятельство или выявлено релевантное взаимодействие
+  why_needed: Взаимодействия/наблюдение; не автоматическое уменьшение дозы.
+  changes:
+  - applicability
+  - warning
+  unknown_allowed: true
+  action_if_unknown: Сохранить not_assessed/неизвестно; не считать отсутствием риска. Дозовый модуль не подтверждает
+    полный клинический допуск. При необходимости разбора — расширенная ветка.
+  source_refs:
+  - RU-SER
+  input_role: conditional_clinical_context
+  source_locator: §4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22
+  missing_states: *id001
+  value_aliases: *id002
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+- input_id: hyponatremia_risk
+  question_ru: Известны врачу гипонатремия или её повышенный риск?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: при известном соответствующем обстоятельстве/выявленном взаимодействии; для его клинического разбора
+  show_when: врач сообщил обстоятельство или выявлено релевантное взаимодействие
+  why_needed: Осторожность, особенно при соответствующих препаратах/возрасте; лаборатория не обязательна всем.
+  changes:
+  - applicability
+  - warning
+  unknown_allowed: true
+  action_if_unknown: Сохранить not_assessed/неизвестно; не считать отсутствием риска. Дозовый модуль не подтверждает
+    полный клинический допуск. При необходимости разбора — расширенная ветка.
+  source_refs:
+  - RU-SER
+  input_role: conditional_clinical_context
+  source_locator: §4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22
+  missing_states: *id001
+  value_aliases: *id002
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+- input_id: suicide_risk
+  question_ru: Выраженный суицидальный риск отмечен врачом?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: при известном соответствующем обстоятельстве/выявленном взаимодействии; для его клинического разбора
+  show_when: врач сообщил обстоятельство или выявлено релевантное взаимодействие
+  why_needed: Изменяет необходимое наблюдение и условия ведения, не числовую формулу.
+  changes:
+  - applicability
+  - warning
+  unknown_allowed: true
+  action_if_unknown: Сохранить not_assessed/неизвестно; не считать отсутствием риска. Дозовый модуль не подтверждает
+    полный клинический допуск. При необходимости разбора — расширенная ветка.
+  source_refs:
+  - RU-SER
+  input_role: conditional_clinical_context
+  source_locator: §4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22
+  missing_states: *id001
+  value_aliases: *id002
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+- input_id: maoi_type
+  question_ru: Тип каждого текущего/отменённого ИМАО?
+  data_type: record_map
+  unit: null
+  allowed_values:
+  - none_after_medication_history
+  - irreversible
+  - reversible_selective
+  - reversible_nonselective
+  - unknown
+  - not_assessed
+  required_when: если список medicines содержит ИМАО или его класс неясен; separate per relevant record
+  show_when: если список medicines содержит ИМАО или его класс неясен; separate per relevant record
+  why_needed: 'Изменяет применимость/действие: §4.3 с.3; §4.5 с.7–8.'
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; запросить maoi_type; числовой выход отсутствует.
+  source_refs:
+  - RU-SER
+  source_locator: §4.3 с.3; §4.5 с.7–8
+  input_role: applicability_gate
+  required_for_individual_result: medicines contains current/stopped MAOI or unidentified interaction class
+  missing_states: *id001
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  collection: per medication record_id
+  value_data_type: enum
+- input_id: maoi_stopped_at
+  question_ru: Дата и время последнего приёма каждого отменённого ИМАО?
+  data_type: record_map
+  unit: null
+  allowed_values: []
+  required_when: если ИМАО отменён; separate per relevant record
+  show_when: если ИМАО отменён; separate per relevant record
+  why_needed: 'Изменяет применимость/действие: §4.3 с.3; §4.5 с.7–8.'
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; запросить maoi_stopped_at; числовой выход отсутствует.
+  source_refs:
+  - RU-SER
+  source_locator: §4.3 с.3; §4.5 с.7–8
+  input_role: applicability_gate
+  required_for_individual_result: medicines contains stopped MAOI; per relevant record
+  missing_states: *id001
+  collection: per medication record_id
+  value_data_type: datetime
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+- input_id: akathisia
+  question_ru: Подтверждённое значение akathisia по §4.4 с.6?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: для индивидуального результата этой ветки
+  show_when: эта ветка
+  why_needed: Изменяет допуск/действие по RU-SER §4.4 с.6; не общий допуск врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; missing=[akathisia]; no individual dose
+  source_refs:
+  - RU-SER
+  source_locator: §4.4 с.6
+  required_for_individual_result: true
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+clinical_parameters:
+- parameter_id: start
+  meaning: Начальная суточная доза
+  value: 25
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: mg/day
+  source_ref: RU-SER
+  source_locator: §4.2, PDF с.2–3
+  source_meaning: предписание
+  derivation: null
+- parameter_id: after_week
+  meaning: Доза после первой недели
+  value: 50
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: mg/day
+  source_ref: RU-SER
+  source_locator: §4.2, PDF с.2–3
+  source_meaning: предписание
+  derivation: null
+- parameter_id: interval
+  meaning: Первый интервал
+  value: 1
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: week
+  source_ref: RU-SER
+  source_locator: §4.2, PDF с.2–3
+  source_meaning: предписание
+  derivation: null
+- parameter_id: frequency
+  meaning: Кратность
+  value: 1
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: administration/day
+  source_ref: RU-SER
+  source_locator: §4.2, PDF с.2–3
+  source_meaning: предписание
+  derivation: null
+- parameter_id: maximum
+  meaning: Максимальная суточная доза; не цель
+  value: 200
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: mg/day
+  source_ref: RU-SER
+  source_locator: §4.2, PDF с.2–3
+  source_meaning: предписание
+  derivation: null
+- parameter_id: adult_minimum
+  meaning: Нижняя возрастная граница этой инструкции
+  value: 18
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: year
+  source_ref: RU-SER
+  source_locator: §4.1, PDF с.1
+  source_meaning: предписание
+  derivation: null
+- parameter_id: source_form_strengths
+  meaning: Силы дозы выбранной формы; не дозовая рекомендация
+  value:
+  - 50
+  - 100
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: mg
+  source_ref: RU-SER
+  source_locator: §2–3, PDF с.1; деление таблетки 50 мг §4.2 с.2
+  source_meaning: предписание
+  derivation: null
+logic:
+  representation: schedule
+  conditions:
+  - Диагноз, препарат и режим выбрал врач. Соответствие популяции/форме и ограничения источника подтверждены.
+  actions:
+  - Старт start один раз/сут; после interval — after_week. Последующие повышения только по ser-adult-adjust.
+  parameter_refs:
+  - start
+  - after_week
+  - interval
+  - frequency
+  - maximum
+  - adult_minimum
+  - source_form_strengths
+  source_refs: *id003
+  clinician_choices:
+  - Применимость при особых состояниях и взаимодействиях
+  - Необходимость следующего условного шага
+  missing_data_behaviour: Назвать обязательные неизвестные поля; результат insufficient_data. Справочные этапы можно
+    показать как условные, без безусловной дозы пациенту.
+  unsupported_case_behaviour: not_applicable для этой карточки; указать конкретную отсутствующую ветку, не запретить
+    всё лечение.
+  contraindicated_case_behaviour: Не выдавать дозовую схему противопоказанного сочетания; отобразить источник и
+    причину.
+  conflicts: []
+  composite_rule_dependencies: []
+  combination_justification: Самостоятельные поправки не перемножаются. Совпадение числа не подтверждает применимость
+    их сочетания.
+  maoi_history_contract:
+    source_ref: RU-SER
+    source_locator: §4.3 с.3; §4.5 с.7–8
+    locator: §4.3 с.3; §4.5 с.7–8
+    irreversible_days: 14
+    to_maoi_days: 7
+    reversible: 'Источник допускает короче 14 дней, но не задаёт точный срок: clinician_choice без разрешения старта
+      по числу.'
+    concurrent:
+    - irreversible_maoi
+    - reversible_selective_maoi
+    - reversible_nonselective_maoi
+    - pimozide
+    fields:
+    - medicines
+    - maoi_type
+    - maoi_stopped_at
+    reference_time: external_context.calculation_at
+    required_timestamp_unknown: insufficient_data; missing maoi_stopped_at; start_allowed=false
+    current_maoi: not_applicable for standard branch; no numeric start
+    multiple_records: all applicable direction gates must be satisfied; no single last record shortcut
+    calendar_day: next calendar date; not elapsed 24 hours unless that specific source says 24 hours
+  result_contract_ref: remediation/result_contracts.yaml#rules/ser-social-start
+  individual_output_gate: All required typed inputs and applicable conditional inputs must be known; evaluate every
+    source-specific gate in result_contract. A caution has clinician_choice, not an invented coefficient. No blanket
+    clinical clearance.
+output:
+  result_type: branch_selected
+  medication_inn: сертралин
+  dose_per_administration: null
+  administrations_per_day: null
+  total_daily_dose: null
+  unit: mg
+  formulation: 'Золофт: таблетки, покрытые плёночной оболочкой; 50/100 мг'
+  schedule:
+  - stage_id: start
+    time_description: Исходный этап
+    minimum_interval: null
+    interval_unit: null
+    medication_steps:
+    - medication_inn: сертралин
+      dose_per_administration:
+        total_daily_parameter: start
+        divide_by: 1
+      administrations_per_day: 1
+      total_daily_dose:
+        parameter_ref: start
+      dose_unit: mg
+      action: принимать / условно повысить
+      source_refs: *id003
+    condition_to_proceed: Врач подтвердил применимость старта
+    condition_to_hold: Достаточный эффект, непереносимость, противопоказание, неизвестные обязательные данные или
+      врач не выбрал увеличение
+    source_refs: *id003
+  - stage_id: first_increase
+    time_description: Не ранее указанного интервала после предыдущего этапа; не дата визита
+    minimum_interval: 1
+    interval_unit: week
+    medication_steps:
+    - medication_inn: сертралин
+      dose_per_administration:
+        total_daily_parameter: after_week
+        divide_by: 1
+      administrations_per_day: 1
+      total_daily_dose:
+        parameter_ref: after_week
+      dose_unit: mg
+      action: принимать / условно повысить
+      source_refs: *id003
+    condition_to_proceed: После первой недели по инструкции; при непереносимости шаг не выполнять автоматически
+    condition_to_hold: Достаточный эффект, непереносимость, противопоказание, неизвестные обязательные данные или
+      врач не выбрал увеличение
+    source_refs: *id003
+  warnings:
+  - Условная схема источника, не автономное назначение. Максимум не является целью.
+  - Подтвердить противопоказания и взаимодействия исходной инструкции.
+  - Числовой вывод относится к указанным дозовым условиям. Неоценённые модулем клинические обстоятельства не считаются
+    отсутствующими; полный клинический допуск врач оценивает отдельно.
+  mandatory_checks:
+  - Проверить соответствие источнику, указанное в applicability и inputs.
+  clinician_decisions_remaining:
+  - Подтверждение применимости
+  - Решение о переходе к следующему этапу
+  rounding_or_formulation_rule: 25 мг = равная половина таблетки Золофт 50 мг; разрешено §4.2 с.2. Не переносить
+    делимость на любой дженерик.
+  source_refs: *id003
+  branches:
+  - branch_id: usual
+    when: all source gates clear
+    expected_output:
+      result_type: exact
+      total_daily_dose_mg: 25
+      dose_per_administration_mg: 25.0
+      administrations_per_day: 1
+      schedule:
+      - day: 1
+        total_daily_mg: 25
+        frequency: 1
+      - day: 8
+        total_daily_mg: 50
+        frequency: 1
+        conditional: true
+      missing_fields: []
+      unconditional_future_stages: false
+      maximum_mg: 200
+      future_increment_mg: 50
+      minimum_interval_weeks: 1
+    source_basis:
+    - source_id: RU-SER
+      version: Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является
+        датой содержания
+      locator: §4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22
+      sha256: 3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba
+  selection_contract:
+  - unavailable_source
+  - known immediate stop/exclusion
+  - invalid/missing applicable field
+  - unresolved source caution/modifier
+  - dose branch
+sources:
+- source_id: RU-SER
+  title: Золофт (сертралин), ОХЛП ЕАЭС, таблетки
+  organization_or_authors: Viatris / держатель регистрационного удостоверения
+  url: https://www.viatris.ru/-/media/project/common/viatrisru/pdf/product-catalog/0006_zoloft_smpc-eaeu_24-apr-2025_ru.pdf
+  doi_or_registry_id: ЛП-№(002851)-(РГ-RU), §8 PDF с.22
+  publication_date: null
+  version_or_update_date: Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025
+    не является датой содержания
+  accessed_on: '2026-10-08'
+  source_type: label
+  jurisdiction: RU/EAEU
+  access_status: full
+  exact_locator: §4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22
+  evidence_status: Инструкция/ОХЛП; не валидированная модель индивидуальной дозы
+  what_was_tested: Не исследовался создаваемый продукт. Содержание и ограничения описаны в evidence_limitations.
+  evidence_limitations: 'Российская запись и документ версии 2026 подтверждены в официальном реестре ОХЛП; визуально
+    с.1: РУ от 11.06.2026, штамп 29.05.2026 №10729, последовательность 0008. Копия производителя прочитана полностью.
+    Полная побайтовая идентичность файлов не заявлена; медицинские параметры привязаны к прочитанной копии.'
+  reuse_license_or_restriction: Открытый доступ не означает разрешение перераспространять полный документ. Сохранены
+    собственное извлечение фактических правил, локаторы и ссылки; код и большие цитаты не копируются.
+  document_fingerprint:
+    source_id: RU-SER
+    url: https://www.viatris.ru/-/media/project/common/viatrisru/pdf/product-catalog/0006_zoloft_smpc-eaeu_24-apr-2025_ru.pdf
+    sha256: 3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba
+    pages: 22
+    accessed_on: '2026-10-08'
+  manufacturer_page: https://www.viatris.ru/ru-ru/препараты/product-catalog/zoloft
+  registry_observation:
+    registry: https://lk.regmed.ru/Register/EAEU_SmPC
+    query: Золофт
+    registration_number: ЛП-№(002851)-(РГ-RU)
+    initial_registration_date: '2023-07-24'
+    latest_document_name: 1.3.1 Золофт ОХЛП 21.04.26_02002 (1817931491) [0008] штамп МЗ.pdf
+    document_url: https://lk.regmed.ru/Register/ViewPDFfromDAToken?Token=[REDACTED]
+    visual_page_1_registration_date: '2026-06-11'
+    expert_stamp: 29.05.2026 №10729, последовательность 0008
+    pages: 22
+    accessed_on: '2026-10-08'
+    read_part: Реестровая запись, список документов, визуально с.1. Полная побайтовая сверка с копией производителя
+      не выполнена.
+  local_file: source_downloads/Золофт — сертралин.pdf
+  document_copies:
+  - source_id: RU-SER
+    local_file: source_downloads/Золофт — сертралин.pdf
+    sha256: 3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba
+    version: Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является
+      датой содержания
+    url: https://www.viatris.ru/-/media/project/common/viatrisru/pdf/product-catalog/0006_zoloft_smpc-eaeu_24-apr-2025_ru.pdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: false
+  - source_id: RU-SER
+    local_file: audit/retrieved/RU-SER.pdf
+    sha256: 3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba
+    version: Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является
+      датой содержания
+    url: https://www.viatris.ru/-/media/project/common/viatrisru/pdf/product-catalog/0006_zoloft_smpc-eaeu_24-apr-2025_ru.pdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: false
+  - source_id: RU-SER
+    local_file: remediation/retrieved/RU-SER.pdf
+    sha256: 3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba
+    version: Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является
+      датой содержания
+    url: https://www.viatris.ru/-/media/project/common/viatrisru/pdf/product-catalog/0006_zoloft_smpc-eaeu_24-apr-2025_ru.pdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: false
+  dates:
+    registration: null
+    revision: null
+    publication: null
+    download: '2026-10-08'
+  latest_registration_revision_confirmed: false
+verification:
+  primary_source_checked: true
+  all_clinical_parameters_have_sources: true
+  population_and_indication_checked: true
+  russian_applicability_checked: false
+  formulation_feasibility_checked: true
+  combined_rules_justified: false
+  source_transfer_check: reviewed_available_original_sections_and_contract_consistency; calculator_not_implemented;
+    latest_registration_revision_not_confirmed
+  clinical_review: not_performed
+  product_clinical_validation: not_performed
+  ready_for_technical_implementation: true
+  unresolved_items:
+  - Последняя регистрационная редакция РФ не сверена; техническое воспроизведение зафиксированной версии не равно
+    разрешению для клинического применения.
+  transfer_scope: Only explicitly source-bound branch contracts and prepared expectations; medical currency limits
+    in sources.json remain open. No automatic clinical use.
+test_cases:
+- case_id: ser-social-start__usual-social
+  synthetic: true
+  given:
+    age: 40
+    pregnancy: false
+    lactation: false
+    hepatic: нарушения не известны после оценки
+  expected:
+    start_mg_per_day: 25
+    frequency: 1
+    after_first_week_mg_per_day: 50
+  source_refs:
+  - RU-SER
+  note: Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены.
+  scope: isolated_source_transfer_expectation_under_card_conditions
+  case_kind: parameter_or_constraint_fragment
+- case_id: ser-social-start__hepatic-unknown-social
+  synthetic: true
+  given:
+    hepatic: неизвестно
+  expected:
+    result_type: insufficient_data
+    missing:
+    - hepatic
+    unconditional_dose: null
+  source_refs:
+  - RU-SER
+  note: Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены.
+  case_kind: parameter_or_constraint_fragment
+profile:
+  country: RU
+  selection_status: RU_profile_research
+  foreign_fallback_allowed: false
+card_type: numeric_source_rule
+input_contract_ref: remediation/input_contracts.yaml#fragment_bindings/ser-social-start

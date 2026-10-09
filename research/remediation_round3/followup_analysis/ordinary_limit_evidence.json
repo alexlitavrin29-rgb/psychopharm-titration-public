@@ -1,0 +1,1862 @@
+{
+  "snapshot": "8a17ae3f99839548742ee509a23d060ea451ed0018c48432dc73b9ba68de4359",
+  "scope": "Executor extraction of exact current paths, source locators and existing rationale. Not independent acceptance or proof of globally necessary input count.",
+  "rows": [
+    {
+      "rule_id": "ago-depression-start",
+      "ordinary_counts": [
+        20
+      ],
+      "example_paths": [
+        {
+          "full_example": "ago-depression-start--branch-usual",
+          "count": 20,
+          "facts": [
+            {
+              "fact": "age",
+              "source_refs": [
+                "RU-AGO"
+              ],
+              "physical_locator": "§4.1 с.1; §4.2 с.2",
+              "current_result_justification": "Взрослая/пожилая применимость §4.1–4.2."
+            },
+            {
+              "fact": "hepatic",
+              "source_refs": [
+                "RU-AGO"
+              ],
+              "physical_locator": "§4.2 с.2; §4.3 с.3",
+              "current_result_justification": "Ограничения §4.2–4.3; из одного анализа не выводить категорию."
+            },
+            {
+              "fact": "pregnancy",
+              "source_refs": [
+                "RU-AGO"
+              ],
+              "physical_locator": "§4.6 с.6",
+              "current_result_justification": "Применимость §4.3/4.6."
+            },
+            {
+              "fact": "lactation",
+              "source_refs": [
+                "RU-AGO"
+              ],
+              "physical_locator": "§4.6 с.6",
+              "current_result_justification": "Применимость §4.3/4.6."
+            },
+            {
+              "fact": "medicines.confirmed_empty_or_unknown_list",
+              "source_refs": [
+                "RU-AGO"
+              ],
+              "physical_locator": "§4.3 с.3; §4.4–4.5 с.3,5–6",
+              "current_result_justification": "Взаимодействия и интервалы §4.3–4.5; последние даты при ИМАО отдельны."
+            },
+            {
+              "fact": "allergy",
+              "source_refs": [
+                "RU-AGO"
+              ],
+              "physical_locator": "§4.3 с.3",
+              "current_result_justification": "Противопоказание §4.3."
+            },
+            {
+              "fact": "ALT_ratio",
+              "source_refs": [
+                "RU-AGO"
+              ],
+              "physical_locator": "§4.3–4.4 с.3–4",
+              "current_result_justification": "Отдельная проба; >3 исключает начало, с.1/3."
+            },
+            {
+              "fact": "AST_ratio",
+              "source_refs": [
+                "RU-AGO"
+              ],
+              "physical_locator": "§4.3–4.4 с.3–4",
+              "current_result_justification": "Самостоятельная проба; не объединять с АЛТ."
+            },
+            {
+              "fact": "renal_state",
+              "source_refs": [
+                "RU-AGO"
+              ],
+              "physical_locator": "§4.2 с.2; §4.4 с.4",
+              "current_result_justification": "§4.2 с.2: осторожность при средней/тяжёлой недостаточности; источник не задаёт новый коэффициент."
+            },
+            {
+              "fact": "elderly_population",
+              "source_refs": [
+                "RU-AGO"
+              ],
+              "physical_locator": "§4.4 с.4; числовая граница категории не задана",
+              "current_result_justification": "Изменяет применимость/действие: §4.4 с.4; числовая граница категории не задана."
+            },
+            {
+              "fact": "galactose_intolerance",
+              "source_refs": [
+                "RU-AGO"
+              ],
+              "physical_locator": "§4.3 с.3; §4.4 с.5",
+              "current_result_justification": "Изменяет применимость/действие: §4.3 с.3; §4.4 с.5."
+            },
+            {
+              "fact": "complete_lactase_deficiency",
+              "source_refs": [
+                "RU-AGO"
+              ],
+              "physical_locator": "§4.3 с.3; §4.4 с.5",
+              "current_result_justification": "Изменяет применимость/действие: §4.3 с.3; §4.4 с.5."
+            },
+            {
+              "fact": "glucose_galactose_malabsorption",
+              "source_refs": [
+                "RU-AGO"
+              ],
+              "physical_locator": "§4.3 с.3; §4.4 с.5",
+              "current_result_justification": "Изменяет применимость/действие: §4.3 с.3; §4.4 с.5."
+            },
+            {
+              "fact": "overweight_obesity",
+              "source_refs": [
+                "RU-AGO"
+              ],
+              "physical_locator": "§4.4 с.3",
+              "current_result_justification": "Изменяет применимость/действие: §4.4 с.3."
+            },
+            {
+              "fact": "fatty_liver",
+              "source_refs": [
+                "RU-AGO"
+              ],
+              "physical_locator": "§4.4 с.3",
+              "current_result_justification": "Изменяет применимость/действие: §4.4 с.3."
+            },
+            {
+              "fact": "diabetes",
+              "source_refs": [
+                "RU-AGO"
+              ],
+              "physical_locator": "§4.4 с.3",
+              "current_result_justification": "Изменяет применимость/действие: §4.4 с.3."
+            },
+            {
+              "fact": "alcohol_abuse",
+              "source_refs": [
+                "RU-AGO"
+              ],
+              "physical_locator": "§4.4 с.3",
+              "current_result_justification": "Изменяет применимость/действие: §4.4 с.3."
+            }
+          ],
+          "initial_choices": [
+            "diagnosis",
+            "mode",
+            "identified_product_form_strength"
+          ]
+        }
+      ],
+      "status": "Current complete path; not proof of global impossibility or minimality"
+    },
+    {
+      "rule_id": "ago-gad-start",
+      "ordinary_counts": [
+        20
+      ],
+      "example_paths": [
+        {
+          "full_example": "ago-gad-start--branch-usual",
+          "count": 20,
+          "facts": [
+            {
+              "fact": "age",
+              "source_refs": [
+                "RU-AGO"
+              ],
+              "physical_locator": "§4.1 с.1; §4.2 с.2",
+              "current_result_justification": "Взрослая/пожилая применимость §4.1–4.2."
+            },
+            {
+              "fact": "hepatic",
+              "source_refs": [
+                "RU-AGO"
+              ],
+              "physical_locator": "§4.2 с.2; §4.3 с.3",
+              "current_result_justification": "Ограничения §4.2–4.3; из одного анализа не выводить категорию."
+            },
+            {
+              "fact": "pregnancy",
+              "source_refs": [
+                "RU-AGO"
+              ],
+              "physical_locator": "§4.6 с.6",
+              "current_result_justification": "Применимость §4.3/4.6."
+            },
+            {
+              "fact": "lactation",
+              "source_refs": [
+                "RU-AGO"
+              ],
+              "physical_locator": "§4.6 с.6",
+              "current_result_justification": "Применимость §4.3/4.6."
+            },
+            {
+              "fact": "medicines.confirmed_empty_or_unknown_list",
+              "source_refs": [
+                "RU-AGO"
+              ],
+              "physical_locator": "§4.3 с.3; §4.4–4.5 с.3,5–6",
+              "current_result_justification": "Взаимодействия и интервалы §4.3–4.5; последние даты при ИМАО отдельны."
+            },
+            {
+              "fact": "allergy",
+              "source_refs": [
+                "RU-AGO"
+              ],
+              "physical_locator": "§4.3 с.3",
+              "current_result_justification": "Противопоказание §4.3."
+            },
+            {
+              "fact": "ALT_ratio",
+              "source_refs": [
+                "RU-AGO"
+              ],
+              "physical_locator": "§4.3–4.4 с.3–4",
+              "current_result_justification": "Отдельная проба; >3 исключает начало, с.1/3."
+            },
+            {
+              "fact": "AST_ratio",
+              "source_refs": [
+                "RU-AGO"
+              ],
+              "physical_locator": "§4.3–4.4 с.3–4",
+              "current_result_justification": "Самостоятельная проба; не объединять с АЛТ."
+            },
+            {
+              "fact": "renal_state",
+              "source_refs": [
+                "RU-AGO"
+              ],
+              "physical_locator": "§4.2 с.2; §4.4 с.4",
+              "current_result_justification": "§4.2 с.2: осторожность при средней/тяжёлой недостаточности; источник не задаёт новый коэффициент."
+            },
+            {
+              "fact": "elderly_population",
+              "source_refs": [
+                "RU-AGO"
+              ],
+              "physical_locator": "§4.4 с.4; числовая граница категории не задана",
+              "current_result_justification": "Изменяет применимость/действие: §4.4 с.4; числовая граница категории не задана."
+            },
+            {
+              "fact": "galactose_intolerance",
+              "source_refs": [
+                "RU-AGO"
+              ],
+              "physical_locator": "§4.3 с.3; §4.4 с.5",
+              "current_result_justification": "Изменяет применимость/действие: §4.3 с.3; §4.4 с.5."
+            },
+            {
+              "fact": "complete_lactase_deficiency",
+              "source_refs": [
+                "RU-AGO"
+              ],
+              "physical_locator": "§4.3 с.3; §4.4 с.5",
+              "current_result_justification": "Изменяет применимость/действие: §4.3 с.3; §4.4 с.5."
+            },
+            {
+              "fact": "glucose_galactose_malabsorption",
+              "source_refs": [
+                "RU-AGO"
+              ],
+              "physical_locator": "§4.3 с.3; §4.4 с.5",
+              "current_result_justification": "Изменяет применимость/действие: §4.3 с.3; §4.4 с.5."
+            },
+            {
+              "fact": "overweight_obesity",
+              "source_refs": [
+                "RU-AGO"
+              ],
+              "physical_locator": "§4.4 с.3",
+              "current_result_justification": "Изменяет применимость/действие: §4.4 с.3."
+            },
+            {
+              "fact": "fatty_liver",
+              "source_refs": [
+                "RU-AGO"
+              ],
+              "physical_locator": "§4.4 с.3",
+              "current_result_justification": "Изменяет применимость/действие: §4.4 с.3."
+            },
+            {
+              "fact": "diabetes",
+              "source_refs": [
+                "RU-AGO"
+              ],
+              "physical_locator": "§4.4 с.3",
+              "current_result_justification": "Изменяет применимость/действие: §4.4 с.3."
+            },
+            {
+              "fact": "alcohol_abuse",
+              "source_refs": [
+                "RU-AGO"
+              ],
+              "physical_locator": "§4.4 с.3",
+              "current_result_justification": "Изменяет применимость/действие: §4.4 с.3."
+            }
+          ],
+          "initial_choices": [
+            "diagnosis",
+            "mode",
+            "identified_product_form_strength"
+          ]
+        }
+      ],
+      "status": "Current complete path; not proof of global impossibility or minimality"
+    },
+    {
+      "rule_id": "dulox-gad-start",
+      "ordinary_counts": [
+        17
+      ],
+      "example_paths": [
+        {
+          "full_example": "dulox-gad-start--branch-usual",
+          "count": 17,
+          "facts": [
+            {
+              "fact": "age",
+              "source_refs": [
+                "RU-DULOX"
+              ],
+              "physical_locator": "§4.1–4.3 с.1–4",
+              "current_result_justification": "Взрослая/пожилая применимость §4.1–4.2."
+            },
+            {
+              "fact": "hepatic",
+              "source_refs": [
+                "RU-DULOX"
+              ],
+              "physical_locator": "§4.2–4.3 с.3–4",
+              "current_result_justification": "Ограничения §4.2–4.3; из одного анализа не выводить категорию."
+            },
+            {
+              "fact": "pregnancy",
+              "source_refs": [
+                "RU-DULOX"
+              ],
+              "physical_locator": "§4.6 с.9–10",
+              "current_result_justification": "Применимость §4.3/4.6."
+            },
+            {
+              "fact": "lactation",
+              "source_refs": [
+                "RU-DULOX"
+              ],
+              "physical_locator": "§4.6 с.10",
+              "current_result_justification": "Применимость §4.3/4.6."
+            },
+            {
+              "fact": "medicines.confirmed_empty_or_unknown_list",
+              "source_refs": [
+                "RU-DULOX"
+              ],
+              "physical_locator": "§4.3 с.3–4; §4.5 с.7–9",
+              "current_result_justification": "Взаимодействия и интервалы §4.3–4.5; последние даты при ИМАО отдельны."
+            },
+            {
+              "fact": "allergy",
+              "source_refs": [
+                "RU-DULOX"
+              ],
+              "physical_locator": "§4.3 с.3",
+              "current_result_justification": "Противопоказание §4.3."
+            },
+            {
+              "fact": "renal_metric.clinician_confirmed_source_value",
+              "source_refs": [
+                "RU-DULOX"
+              ],
+              "physical_locator": "§4.2 с.3; §4.3 с.4",
+              "current_result_justification": "§4.2; eGFR/CLcr и нормированная/абсолютная СКФ не взаимозаменяемы."
+            },
+            {
+              "fact": "comorbid_depression",
+              "source_refs": [
+                "RU-DULOX"
+              ],
+              "physical_locator": "§4.2 с.2",
+              "current_result_justification": "При ГТР + депрессия старт 60 вместо 30 (§4.2 с.2). Диагноз вводит врач."
+            },
+            {
+              "fact": "elderly_population",
+              "source_refs": [
+                "RU-DULOX"
+              ],
+              "physical_locator": "§4.2 с.3",
+              "current_result_justification": "Источник задаёт пожилой этап без точного возрастного порога (§4.2 с.3); порог не придумать."
+            },
+            {
+              "fact": "uncontrolled_hypertension",
+              "source_refs": [
+                "RU-DULOX"
+              ],
+              "physical_locator": "§4.3 с.4",
+              "current_result_justification": "Противопоказание §4.3 с.4."
+            },
+            {
+              "fact": "closed_angle_glaucoma",
+              "source_refs": [
+                "RU-DULOX"
+              ],
+              "physical_locator": "§4.3 с.3",
+              "current_result_justification": "Противопоказание §4.3 с.3."
+            },
+            {
+              "fact": "fructose_intolerance",
+              "source_refs": [
+                "RU-DULOX"
+              ],
+              "physical_locator": "§4.4 с.7",
+              "current_result_justification": "Изменяет применимость/действие: §4.4 с.7."
+            },
+            {
+              "fact": "glucose_galactose_malabsorption",
+              "source_refs": [
+                "RU-DULOX"
+              ],
+              "physical_locator": "§4.4 с.7",
+              "current_result_justification": "Изменяет применимость/действие: §4.4 с.7."
+            },
+            {
+              "fact": "sucrase_isomaltase_deficiency",
+              "source_refs": [
+                "RU-DULOX"
+              ],
+              "physical_locator": "§4.4 с.7",
+              "current_result_justification": "Изменяет применимость/действие: §4.4 с.7."
+            }
+          ],
+          "initial_choices": [
+            "diagnosis",
+            "mode",
+            "identified_product_form_strength"
+          ]
+        },
+        {
+          "full_example": "dulox-gad-start--branch-comorbid",
+          "count": 17,
+          "facts": [
+            {
+              "fact": "age",
+              "source_refs": [
+                "RU-DULOX"
+              ],
+              "physical_locator": "§4.1–4.3 с.1–4",
+              "current_result_justification": "Взрослая/пожилая применимость §4.1–4.2."
+            },
+            {
+              "fact": "hepatic",
+              "source_refs": [
+                "RU-DULOX"
+              ],
+              "physical_locator": "§4.2–4.3 с.3–4",
+              "current_result_justification": "Ограничения §4.2–4.3; из одного анализа не выводить категорию."
+            },
+            {
+              "fact": "pregnancy",
+              "source_refs": [
+                "RU-DULOX"
+              ],
+              "physical_locator": "§4.6 с.9–10",
+              "current_result_justification": "Применимость §4.3/4.6."
+            },
+            {
+              "fact": "lactation",
+              "source_refs": [
+                "RU-DULOX"
+              ],
+              "physical_locator": "§4.6 с.10",
+              "current_result_justification": "Применимость §4.3/4.6."
+            },
+            {
+              "fact": "medicines.confirmed_empty_or_unknown_list",
+              "source_refs": [
+                "RU-DULOX"
+              ],
+              "physical_locator": "§4.3 с.3–4; §4.5 с.7–9",
+              "current_result_justification": "Взаимодействия и интервалы §4.3–4.5; последние даты при ИМАО отдельны."
+            },
+            {
+              "fact": "allergy",
+              "source_refs": [
+                "RU-DULOX"
+              ],
+              "physical_locator": "§4.3 с.3",
+              "current_result_justification": "Противопоказание §4.3."
+            },
+            {
+              "fact": "renal_metric.clinician_confirmed_source_value",
+              "source_refs": [
+                "RU-DULOX"
+              ],
+              "physical_locator": "§4.2 с.3; §4.3 с.4",
+              "current_result_justification": "§4.2; eGFR/CLcr и нормированная/абсолютная СКФ не взаимозаменяемы."
+            },
+            {
+              "fact": "comorbid_depression",
+              "source_refs": [
+                "RU-DULOX"
+              ],
+              "physical_locator": "§4.2 с.2",
+              "current_result_justification": "При ГТР + депрессия старт 60 вместо 30 (§4.2 с.2). Диагноз вводит врач."
+            },
+            {
+              "fact": "elderly_population",
+              "source_refs": [
+                "RU-DULOX"
+              ],
+              "physical_locator": "§4.2 с.3",
+              "current_result_justification": "Источник задаёт пожилой этап без точного возрастного порога (§4.2 с.3); порог не придумать."
+            },
+            {
+              "fact": "uncontrolled_hypertension",
+              "source_refs": [
+                "RU-DULOX"
+              ],
+              "physical_locator": "§4.3 с.4",
+              "current_result_justification": "Противопоказание §4.3 с.4."
+            },
+            {
+              "fact": "closed_angle_glaucoma",
+              "source_refs": [
+                "RU-DULOX"
+              ],
+              "physical_locator": "§4.3 с.3",
+              "current_result_justification": "Противопоказание §4.3 с.3."
+            },
+            {
+              "fact": "fructose_intolerance",
+              "source_refs": [
+                "RU-DULOX"
+              ],
+              "physical_locator": "§4.4 с.7",
+              "current_result_justification": "Изменяет применимость/действие: §4.4 с.7."
+            },
+            {
+              "fact": "glucose_galactose_malabsorption",
+              "source_refs": [
+                "RU-DULOX"
+              ],
+              "physical_locator": "§4.4 с.7",
+              "current_result_justification": "Изменяет применимость/действие: §4.4 с.7."
+            },
+            {
+              "fact": "sucrase_isomaltase_deficiency",
+              "source_refs": [
+                "RU-DULOX"
+              ],
+              "physical_locator": "§4.4 с.7",
+              "current_result_justification": "Изменяет применимость/действие: §4.4 с.7."
+            }
+          ],
+          "initial_choices": [
+            "diagnosis",
+            "mode",
+            "identified_product_form_strength"
+          ]
+        },
+        {
+          "full_example": "dulox-gad-start--branch-elderly",
+          "count": 17,
+          "facts": [
+            {
+              "fact": "age",
+              "source_refs": [
+                "RU-DULOX"
+              ],
+              "physical_locator": "§4.1–4.3 с.1–4",
+              "current_result_justification": "Взрослая/пожилая применимость §4.1–4.2."
+            },
+            {
+              "fact": "hepatic",
+              "source_refs": [
+                "RU-DULOX"
+              ],
+              "physical_locator": "§4.2–4.3 с.3–4",
+              "current_result_justification": "Ограничения §4.2–4.3; из одного анализа не выводить категорию."
+            },
+            {
+              "fact": "pregnancy",
+              "source_refs": [
+                "RU-DULOX"
+              ],
+              "physical_locator": "§4.6 с.9–10",
+              "current_result_justification": "Применимость §4.3/4.6."
+            },
+            {
+              "fact": "lactation",
+              "source_refs": [
+                "RU-DULOX"
+              ],
+              "physical_locator": "§4.6 с.10",
+              "current_result_justification": "Применимость §4.3/4.6."
+            },
+            {
+              "fact": "medicines.confirmed_empty_or_unknown_list",
+              "source_refs": [
+                "RU-DULOX"
+              ],
+              "physical_locator": "§4.3 с.3–4; §4.5 с.7–9",
+              "current_result_justification": "Взаимодействия и интервалы §4.3–4.5; последние даты при ИМАО отдельны."
+            },
+            {
+              "fact": "allergy",
+              "source_refs": [
+                "RU-DULOX"
+              ],
+              "physical_locator": "§4.3 с.3",
+              "current_result_justification": "Противопоказание §4.3."
+            },
+            {
+              "fact": "renal_metric.clinician_confirmed_source_value",
+              "source_refs": [
+                "RU-DULOX"
+              ],
+              "physical_locator": "§4.2 с.3; §4.3 с.4",
+              "current_result_justification": "§4.2; eGFR/CLcr и нормированная/абсолютная СКФ не взаимозаменяемы."
+            },
+            {
+              "fact": "comorbid_depression",
+              "source_refs": [
+                "RU-DULOX"
+              ],
+              "physical_locator": "§4.2 с.2",
+              "current_result_justification": "При ГТР + депрессия старт 60 вместо 30 (§4.2 с.2). Диагноз вводит врач."
+            },
+            {
+              "fact": "elderly_population",
+              "source_refs": [
+                "RU-DULOX"
+              ],
+              "physical_locator": "§4.2 с.3",
+              "current_result_justification": "Источник задаёт пожилой этап без точного возрастного порога (§4.2 с.3); порог не придумать."
+            },
+            {
+              "fact": "uncontrolled_hypertension",
+              "source_refs": [
+                "RU-DULOX"
+              ],
+              "physical_locator": "§4.3 с.4",
+              "current_result_justification": "Противопоказание §4.3 с.4."
+            },
+            {
+              "fact": "closed_angle_glaucoma",
+              "source_refs": [
+                "RU-DULOX"
+              ],
+              "physical_locator": "§4.3 с.3",
+              "current_result_justification": "Противопоказание §4.3 с.3."
+            },
+            {
+              "fact": "fructose_intolerance",
+              "source_refs": [
+                "RU-DULOX"
+              ],
+              "physical_locator": "§4.4 с.7",
+              "current_result_justification": "Изменяет применимость/действие: §4.4 с.7."
+            },
+            {
+              "fact": "glucose_galactose_malabsorption",
+              "source_refs": [
+                "RU-DULOX"
+              ],
+              "physical_locator": "§4.4 с.7",
+              "current_result_justification": "Изменяет применимость/действие: §4.4 с.7."
+            },
+            {
+              "fact": "sucrase_isomaltase_deficiency",
+              "source_refs": [
+                "RU-DULOX"
+              ],
+              "physical_locator": "§4.4 с.7",
+              "current_result_justification": "Изменяет применимость/действие: §4.4 с.7."
+            }
+          ],
+          "initial_choices": [
+            "diagnosis",
+            "mode",
+            "identified_product_form_strength"
+          ]
+        }
+      ],
+      "status": "Current complete path; not proof of global impossibility or minimality"
+    },
+    {
+      "rule_id": "preg-gad-start",
+      "ordinary_counts": [
+        17,
+        18
+      ],
+      "example_paths": [
+        {
+          "full_example": "preg-gad-start--branch-frequency2",
+          "count": 17,
+          "facts": [
+            {
+              "fact": "age",
+              "source_refs": [
+                "RU-PREG"
+              ],
+              "physical_locator": "§4.1 с.3; §4.2 с.5; §4.3 с.6",
+              "current_result_justification": "§4.1 с.3 и §4.3 с.6: взрослое показание и возрастное противопоказание; возраст не заменяет подтверждённый CLcr для дозовой таблицы."
+            },
+            {
+              "fact": "pregnancy",
+              "source_refs": [
+                "RU-PREG"
+              ],
+              "physical_locator": "§4.4 с.9; §4.6 с.12",
+              "current_result_justification": "Отдельное решение о пользе и риске; числовой коэффициент не опубликован."
+            },
+            {
+              "fact": "lactation",
+              "source_refs": [
+                "RU-PREG"
+              ],
+              "physical_locator": "§4.6 с.12–13",
+              "current_result_justification": "Ограничение инструкции, решение врача; не уменьшение дозы по выдуманному коэффициенту."
+            },
+            {
+              "fact": "medicines.confirmed_empty_or_unknown_list",
+              "source_refs": [
+                "RU-PREG"
+              ],
+              "physical_locator": "§4.4 с.7–8,10; §4.5 с.11–12",
+              "current_result_justification": "Выявление взаимодействий и интервалов после ИМАО; пустой список и непроверенный список различаются."
+            },
+            {
+              "fact": "allergy",
+              "source_refs": [
+                "RU-PREG"
+              ],
+              "physical_locator": "§4.3 с.6",
+              "current_result_justification": "Противопоказание."
+            },
+            {
+              "fact": "clcr",
+              "source_refs": [
+                "RU-PREG"
+              ],
+              "physical_locator": "§4.2 с.4–5, таблица 1 с.5; формула с.4 не исполняется",
+              "current_result_justification": "Определяет строку почечной таблицы; eGFR с нормированием на площадь тела не подставлять."
+            },
+            {
+              "fact": "dialysis",
+              "source_refs": [
+                "RU-PREG"
+              ],
+              "physical_locator": "§4.2 с.4–5, таблица 1",
+              "current_result_justification": "Дополнительная доза после сеанса; сложная ветка вне данного короткого расчёта."
+            },
+            {
+              "fact": "respiratory",
+              "source_refs": [
+                "RU-PREG"
+              ],
+              "physical_locator": "§4.4 с.7–8",
+              "current_result_justification": "Риск угнетения дыхания, особенно с депрессантами ЦНС."
+            },
+            {
+              "fact": "frequency",
+              "source_refs": [
+                "RU-PREG"
+              ],
+              "physical_locator": "§4.2 с.3,5",
+              "current_result_justification": "Опубликованы оба варианта; ни один не выбирать произвольно. Проверить капсулы."
+            },
+            {
+              "fact": "galactose_intolerance",
+              "source_refs": [
+                "RU-PREG"
+              ],
+              "physical_locator": "§4.4 с.10, вспомогательные вещества",
+              "current_result_justification": "Изменяет допуск/действие по RU-PREG §4.4 с.10, вспомогательные вещества; не общий допуск врача."
+            },
+            {
+              "fact": "complete_lactase_deficiency",
+              "source_refs": [
+                "RU-PREG"
+              ],
+              "physical_locator": "§4.4 с.10, вспомогательные вещества",
+              "current_result_justification": "Изменяет допуск/действие по RU-PREG §4.4 с.10, вспомогательные вещества; не общий допуск врача."
+            },
+            {
+              "fact": "glucose_galactose_malabsorption",
+              "source_refs": [
+                "RU-PREG"
+              ],
+              "physical_locator": "§4.4 с.10, вспомогательные вещества",
+              "current_result_justification": "Изменяет допуск/действие по RU-PREG §4.4 с.10, вспомогательные вещества; не общий допуск врача."
+            },
+            {
+              "fact": "misuse_risk_assessment",
+              "source_refs": [
+                "RU-PREG"
+              ],
+              "physical_locator": "§4.4 с.8–9",
+              "current_result_justification": "Источниковая оценка конкретного риска до назначения. Не подтверждает остальные противопоказания; исходные сведения не являются скрытыми операндами дозы. Неизвестная/незавершённая оценка блокирует индивидуальный результат."
+            },
+            {
+              "fact": "reproductive_population",
+              "source_refs": [
+                "RU-PREG"
+              ],
+              "physical_locator": "§4.4 с.9; §4.6 с.12",
+              "current_result_justification": "Отдельный триггер требования контрацепции; не выводить из pregnancy=false или возраста без данных."
+            }
+          ],
+          "initial_choices": [
+            "diagnosis",
+            "mode",
+            "identified_product_form_strength"
+          ]
+        },
+        {
+          "full_example": "preg-gad-start--branch-frequency3",
+          "count": 17,
+          "facts": [
+            {
+              "fact": "age",
+              "source_refs": [
+                "RU-PREG"
+              ],
+              "physical_locator": "§4.1 с.3; §4.2 с.5; §4.3 с.6",
+              "current_result_justification": "§4.1 с.3 и §4.3 с.6: взрослое показание и возрастное противопоказание; возраст не заменяет подтверждённый CLcr для дозовой таблицы."
+            },
+            {
+              "fact": "pregnancy",
+              "source_refs": [
+                "RU-PREG"
+              ],
+              "physical_locator": "§4.4 с.9; §4.6 с.12",
+              "current_result_justification": "Отдельное решение о пользе и риске; числовой коэффициент не опубликован."
+            },
+            {
+              "fact": "lactation",
+              "source_refs": [
+                "RU-PREG"
+              ],
+              "physical_locator": "§4.6 с.12–13",
+              "current_result_justification": "Ограничение инструкции, решение врача; не уменьшение дозы по выдуманному коэффициенту."
+            },
+            {
+              "fact": "medicines.confirmed_empty_or_unknown_list",
+              "source_refs": [
+                "RU-PREG"
+              ],
+              "physical_locator": "§4.4 с.7–8,10; §4.5 с.11–12",
+              "current_result_justification": "Выявление взаимодействий и интервалов после ИМАО; пустой список и непроверенный список различаются."
+            },
+            {
+              "fact": "allergy",
+              "source_refs": [
+                "RU-PREG"
+              ],
+              "physical_locator": "§4.3 с.6",
+              "current_result_justification": "Противопоказание."
+            },
+            {
+              "fact": "clcr",
+              "source_refs": [
+                "RU-PREG"
+              ],
+              "physical_locator": "§4.2 с.4–5, таблица 1 с.5; формула с.4 не исполняется",
+              "current_result_justification": "Определяет строку почечной таблицы; eGFR с нормированием на площадь тела не подставлять."
+            },
+            {
+              "fact": "dialysis",
+              "source_refs": [
+                "RU-PREG"
+              ],
+              "physical_locator": "§4.2 с.4–5, таблица 1",
+              "current_result_justification": "Дополнительная доза после сеанса; сложная ветка вне данного короткого расчёта."
+            },
+            {
+              "fact": "respiratory",
+              "source_refs": [
+                "RU-PREG"
+              ],
+              "physical_locator": "§4.4 с.7–8",
+              "current_result_justification": "Риск угнетения дыхания, особенно с депрессантами ЦНС."
+            },
+            {
+              "fact": "frequency",
+              "source_refs": [
+                "RU-PREG"
+              ],
+              "physical_locator": "§4.2 с.3,5",
+              "current_result_justification": "Опубликованы оба варианта; ни один не выбирать произвольно. Проверить капсулы."
+            },
+            {
+              "fact": "galactose_intolerance",
+              "source_refs": [
+                "RU-PREG"
+              ],
+              "physical_locator": "§4.4 с.10, вспомогательные вещества",
+              "current_result_justification": "Изменяет допуск/действие по RU-PREG §4.4 с.10, вспомогательные вещества; не общий допуск врача."
+            },
+            {
+              "fact": "complete_lactase_deficiency",
+              "source_refs": [
+                "RU-PREG"
+              ],
+              "physical_locator": "§4.4 с.10, вспомогательные вещества",
+              "current_result_justification": "Изменяет допуск/действие по RU-PREG §4.4 с.10, вспомогательные вещества; не общий допуск врача."
+            },
+            {
+              "fact": "glucose_galactose_malabsorption",
+              "source_refs": [
+                "RU-PREG"
+              ],
+              "physical_locator": "§4.4 с.10, вспомогательные вещества",
+              "current_result_justification": "Изменяет допуск/действие по RU-PREG §4.4 с.10, вспомогательные вещества; не общий допуск врача."
+            },
+            {
+              "fact": "misuse_risk_assessment",
+              "source_refs": [
+                "RU-PREG"
+              ],
+              "physical_locator": "§4.4 с.8–9",
+              "current_result_justification": "Источниковая оценка конкретного риска до назначения. Не подтверждает остальные противопоказания; исходные сведения не являются скрытыми операндами дозы. Неизвестная/незавершённая оценка блокирует индивидуальный результат."
+            },
+            {
+              "fact": "reproductive_population",
+              "source_refs": [
+                "RU-PREG"
+              ],
+              "physical_locator": "§4.4 с.9; §4.6 с.12",
+              "current_result_justification": "Отдельный триггер требования контрацепции; не выводить из pregnancy=false или возраста без данных."
+            }
+          ],
+          "initial_choices": [
+            "diagnosis",
+            "mode",
+            "identified_product_form_strength"
+          ]
+        }
+      ],
+      "status": "Current complete path; not proof of global impossibility or minimality"
+    },
+    {
+      "rule_id": "ser-adult-adjust",
+      "ordinary_counts": [
+        13,
+        15,
+        16
+      ],
+      "example_paths": [
+        {
+          "full_example": "ser-adult-adjust--branch-increase",
+          "count": 15,
+          "facts": [
+            {
+              "fact": "age",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.4 с.5, дети; §4.1 с.1",
+              "current_result_justification": "adult indication applicability"
+            },
+            {
+              "fact": "pregnancy",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.6 с.10–11",
+              "current_result_justification": "benefit/risk decision; action selection alone does not supply it"
+            },
+            {
+              "fact": "lactation",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.6 с.11",
+              "current_result_justification": "source-specific clinical decision; action selection alone does not supply it"
+            },
+            {
+              "fact": "medicines.confirmed_empty_or_unknown_list",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.3 с.3; §4.5 с.7–11",
+              "current_result_justification": "contraindicated combinations and each relevant MAOI interval"
+            },
+            {
+              "fact": "allergy",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.3 с.3",
+              "current_result_justification": "contraindication; dose action does not establish absence"
+            },
+            {
+              "fact": "hepatic",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.2 с.2; §4.4 с.6",
+              "current_result_justification": "lower dose/frequency unspecified or avoid severe impairment"
+            },
+            {
+              "fact": "seizure_state",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.4 с.4",
+              "current_result_justification": "uncontrolled epilepsy avoids standard branch; new seizure requires cessation"
+            },
+            {
+              "fact": "current_dose",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.2 с.2–3",
+              "current_result_justification": "dose arithmetic and maximum"
+            },
+            {
+              "fact": "time_at_dose",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.2 с.2",
+              "current_result_justification": "minimum interval before an increase; no new interval check for keep"
+            },
+            {
+              "fact": "akathisia",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.4 с.6",
+              "current_result_justification": "increasing dose may worsen symptoms; required before the increase branch"
+            },
+            {
+              "fact": "clinician_action",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22",
+              "current_result_justification": "Врач вправе указать действие напрямую; не заставлять повторно выбирать клиническую стратегию. ОХЛП §4.2 задаёт допустимый шаг/интервал повышения."
+            },
+            {
+              "fact": "mania_symptoms",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.4 с.4",
+              "current_result_justification": "active manic phase requires cessation of sertraline"
+            }
+          ],
+          "initial_choices": [
+            "diagnosis",
+            "mode",
+            "identified_product_form_strength"
+          ]
+        },
+        {
+          "full_example": "ser-adult-adjust--branch-keep",
+          "count": 13,
+          "facts": [
+            {
+              "fact": "age",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.4 с.5, дети; §4.1 с.1",
+              "current_result_justification": "adult indication applicability"
+            },
+            {
+              "fact": "pregnancy",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.6 с.10–11",
+              "current_result_justification": "benefit/risk decision; action selection alone does not supply it"
+            },
+            {
+              "fact": "lactation",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.6 с.11",
+              "current_result_justification": "source-specific clinical decision; action selection alone does not supply it"
+            },
+            {
+              "fact": "medicines.confirmed_empty_or_unknown_list",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.3 с.3; §4.5 с.7–11",
+              "current_result_justification": "contraindicated combinations and each relevant MAOI interval"
+            },
+            {
+              "fact": "allergy",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.3 с.3",
+              "current_result_justification": "contraindication; dose action does not establish absence"
+            },
+            {
+              "fact": "hepatic",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.2 с.2; §4.4 с.6",
+              "current_result_justification": "lower dose/frequency unspecified or avoid severe impairment"
+            },
+            {
+              "fact": "seizure_state",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.4 с.4",
+              "current_result_justification": "uncontrolled epilepsy avoids standard branch; new seizure requires cessation"
+            },
+            {
+              "fact": "current_dose",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.2 с.2–3",
+              "current_result_justification": "dose arithmetic and maximum"
+            },
+            {
+              "fact": "clinician_action",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22",
+              "current_result_justification": "Врач вправе указать действие напрямую; не заставлять повторно выбирать клиническую стратегию. ОХЛП §4.2 задаёт допустимый шаг/интервал повышения."
+            },
+            {
+              "fact": "mania_symptoms",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.4 с.4",
+              "current_result_justification": "active manic phase requires cessation of sertraline"
+            }
+          ],
+          "initial_choices": [
+            "diagnosis",
+            "mode",
+            "identified_product_form_strength"
+          ]
+        },
+        {
+          "full_example": "ser-adult-adjust--branch-increase-from50",
+          "count": 15,
+          "facts": [
+            {
+              "fact": "age",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.4 с.5, дети; §4.1 с.1",
+              "current_result_justification": "adult indication applicability"
+            },
+            {
+              "fact": "pregnancy",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.6 с.10–11",
+              "current_result_justification": "benefit/risk decision; action selection alone does not supply it"
+            },
+            {
+              "fact": "lactation",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.6 с.11",
+              "current_result_justification": "source-specific clinical decision; action selection alone does not supply it"
+            },
+            {
+              "fact": "medicines.confirmed_empty_or_unknown_list",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.3 с.3; §4.5 с.7–11",
+              "current_result_justification": "contraindicated combinations and each relevant MAOI interval"
+            },
+            {
+              "fact": "allergy",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.3 с.3",
+              "current_result_justification": "contraindication; dose action does not establish absence"
+            },
+            {
+              "fact": "hepatic",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.2 с.2; §4.4 с.6",
+              "current_result_justification": "lower dose/frequency unspecified or avoid severe impairment"
+            },
+            {
+              "fact": "seizure_state",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.4 с.4",
+              "current_result_justification": "uncontrolled epilepsy avoids standard branch; new seizure requires cessation"
+            },
+            {
+              "fact": "current_dose",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.2 с.2–3",
+              "current_result_justification": "dose arithmetic and maximum"
+            },
+            {
+              "fact": "time_at_dose",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.2 с.2",
+              "current_result_justification": "minimum interval before an increase; no new interval check for keep"
+            },
+            {
+              "fact": "akathisia",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.4 с.6",
+              "current_result_justification": "increasing dose may worsen symptoms; required before the increase branch"
+            },
+            {
+              "fact": "clinician_action",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22",
+              "current_result_justification": "Врач вправе указать действие напрямую; не заставлять повторно выбирать клиническую стратегию. ОХЛП §4.2 задаёт допустимый шаг/интервал повышения."
+            },
+            {
+              "fact": "mania_symptoms",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.4 с.4",
+              "current_result_justification": "active manic phase requires cessation of sertraline"
+            }
+          ],
+          "initial_choices": [
+            "diagnosis",
+            "mode",
+            "identified_product_form_strength"
+          ]
+        },
+        {
+          "full_example": "ser-adult-adjust--branch-increase-from150",
+          "count": 15,
+          "facts": [
+            {
+              "fact": "age",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.4 с.5, дети; §4.1 с.1",
+              "current_result_justification": "adult indication applicability"
+            },
+            {
+              "fact": "pregnancy",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.6 с.10–11",
+              "current_result_justification": "benefit/risk decision; action selection alone does not supply it"
+            },
+            {
+              "fact": "lactation",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.6 с.11",
+              "current_result_justification": "source-specific clinical decision; action selection alone does not supply it"
+            },
+            {
+              "fact": "medicines.confirmed_empty_or_unknown_list",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.3 с.3; §4.5 с.7–11",
+              "current_result_justification": "contraindicated combinations and each relevant MAOI interval"
+            },
+            {
+              "fact": "allergy",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.3 с.3",
+              "current_result_justification": "contraindication; dose action does not establish absence"
+            },
+            {
+              "fact": "hepatic",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.2 с.2; §4.4 с.6",
+              "current_result_justification": "lower dose/frequency unspecified or avoid severe impairment"
+            },
+            {
+              "fact": "seizure_state",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.4 с.4",
+              "current_result_justification": "uncontrolled epilepsy avoids standard branch; new seizure requires cessation"
+            },
+            {
+              "fact": "current_dose",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.2 с.2–3",
+              "current_result_justification": "dose arithmetic and maximum"
+            },
+            {
+              "fact": "time_at_dose",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.2 с.2",
+              "current_result_justification": "minimum interval before an increase; no new interval check for keep"
+            },
+            {
+              "fact": "akathisia",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.4 с.6",
+              "current_result_justification": "increasing dose may worsen symptoms; required before the increase branch"
+            },
+            {
+              "fact": "clinician_action",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22",
+              "current_result_justification": "Врач вправе указать действие напрямую; не заставлять повторно выбирать клиническую стратегию. ОХЛП §4.2 задаёт допустимый шаг/интервал повышения."
+            },
+            {
+              "fact": "mania_symptoms",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.4 с.4",
+              "current_result_justification": "active manic phase requires cessation of sertraline"
+            }
+          ],
+          "initial_choices": [
+            "diagnosis",
+            "mode",
+            "identified_product_form_strength"
+          ]
+        },
+        {
+          "full_example": "ser-adult-adjust--branch-keep50",
+          "count": 13,
+          "facts": [
+            {
+              "fact": "age",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.4 с.5, дети; §4.1 с.1",
+              "current_result_justification": "adult indication applicability"
+            },
+            {
+              "fact": "pregnancy",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.6 с.10–11",
+              "current_result_justification": "benefit/risk decision; action selection alone does not supply it"
+            },
+            {
+              "fact": "lactation",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.6 с.11",
+              "current_result_justification": "source-specific clinical decision; action selection alone does not supply it"
+            },
+            {
+              "fact": "medicines.confirmed_empty_or_unknown_list",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.3 с.3; §4.5 с.7–11",
+              "current_result_justification": "contraindicated combinations and each relevant MAOI interval"
+            },
+            {
+              "fact": "allergy",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.3 с.3",
+              "current_result_justification": "contraindication; dose action does not establish absence"
+            },
+            {
+              "fact": "hepatic",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.2 с.2; §4.4 с.6",
+              "current_result_justification": "lower dose/frequency unspecified or avoid severe impairment"
+            },
+            {
+              "fact": "seizure_state",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.4 с.4",
+              "current_result_justification": "uncontrolled epilepsy avoids standard branch; new seizure requires cessation"
+            },
+            {
+              "fact": "current_dose",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.2 с.2–3",
+              "current_result_justification": "dose arithmetic and maximum"
+            },
+            {
+              "fact": "clinician_action",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22",
+              "current_result_justification": "Врач вправе указать действие напрямую; не заставлять повторно выбирать клиническую стратегию. ОХЛП §4.2 задаёт допустимый шаг/интервал повышения."
+            },
+            {
+              "fact": "mania_symptoms",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.4 с.4",
+              "current_result_justification": "active manic phase requires cessation of sertraline"
+            }
+          ],
+          "initial_choices": [
+            "diagnosis",
+            "mode",
+            "identified_product_form_strength"
+          ]
+        },
+        {
+          "full_example": "ser-adult-adjust--branch-keep150",
+          "count": 13,
+          "facts": [
+            {
+              "fact": "age",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.4 с.5, дети; §4.1 с.1",
+              "current_result_justification": "adult indication applicability"
+            },
+            {
+              "fact": "pregnancy",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.6 с.10–11",
+              "current_result_justification": "benefit/risk decision; action selection alone does not supply it"
+            },
+            {
+              "fact": "lactation",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.6 с.11",
+              "current_result_justification": "source-specific clinical decision; action selection alone does not supply it"
+            },
+            {
+              "fact": "medicines.confirmed_empty_or_unknown_list",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.3 с.3; §4.5 с.7–11",
+              "current_result_justification": "contraindicated combinations and each relevant MAOI interval"
+            },
+            {
+              "fact": "allergy",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.3 с.3",
+              "current_result_justification": "contraindication; dose action does not establish absence"
+            },
+            {
+              "fact": "hepatic",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.2 с.2; §4.4 с.6",
+              "current_result_justification": "lower dose/frequency unspecified or avoid severe impairment"
+            },
+            {
+              "fact": "seizure_state",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.4 с.4",
+              "current_result_justification": "uncontrolled epilepsy avoids standard branch; new seizure requires cessation"
+            },
+            {
+              "fact": "current_dose",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.2 с.2–3",
+              "current_result_justification": "dose arithmetic and maximum"
+            },
+            {
+              "fact": "clinician_action",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22",
+              "current_result_justification": "Врач вправе указать действие напрямую; не заставлять повторно выбирать клиническую стратегию. ОХЛП §4.2 задаёт допустимый шаг/интервал повышения."
+            },
+            {
+              "fact": "mania_symptoms",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.4 с.4",
+              "current_result_justification": "active manic phase requires cessation of sertraline"
+            }
+          ],
+          "initial_choices": [
+            "diagnosis",
+            "mode",
+            "identified_product_form_strength"
+          ]
+        },
+        {
+          "full_example": "ser-adult-adjust--branch-keep200",
+          "count": 13,
+          "facts": [
+            {
+              "fact": "age",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.4 с.5, дети; §4.1 с.1",
+              "current_result_justification": "adult indication applicability"
+            },
+            {
+              "fact": "pregnancy",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.6 с.10–11",
+              "current_result_justification": "benefit/risk decision; action selection alone does not supply it"
+            },
+            {
+              "fact": "lactation",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.6 с.11",
+              "current_result_justification": "source-specific clinical decision; action selection alone does not supply it"
+            },
+            {
+              "fact": "medicines.confirmed_empty_or_unknown_list",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.3 с.3; §4.5 с.7–11",
+              "current_result_justification": "contraindicated combinations and each relevant MAOI interval"
+            },
+            {
+              "fact": "allergy",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.3 с.3",
+              "current_result_justification": "contraindication; dose action does not establish absence"
+            },
+            {
+              "fact": "hepatic",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.2 с.2; §4.4 с.6",
+              "current_result_justification": "lower dose/frequency unspecified or avoid severe impairment"
+            },
+            {
+              "fact": "seizure_state",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.4 с.4",
+              "current_result_justification": "uncontrolled epilepsy avoids standard branch; new seizure requires cessation"
+            },
+            {
+              "fact": "current_dose",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.2 с.2–3",
+              "current_result_justification": "dose arithmetic and maximum"
+            },
+            {
+              "fact": "clinician_action",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22",
+              "current_result_justification": "Врач вправе указать действие напрямую; не заставлять повторно выбирать клиническую стратегию. ОХЛП §4.2 задаёт допустимый шаг/интервал повышения."
+            },
+            {
+              "fact": "mania_symptoms",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.4 с.4",
+              "current_result_justification": "active manic phase requires cessation of sertraline"
+            }
+          ],
+          "initial_choices": [
+            "diagnosis",
+            "mode",
+            "identified_product_form_strength"
+          ]
+        },
+        {
+          "full_example": "ser-adult-adjust--branch-initial25",
+          "count": 15,
+          "facts": [
+            {
+              "fact": "age",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.4 с.5, дети; §4.1 с.1",
+              "current_result_justification": "adult indication applicability"
+            },
+            {
+              "fact": "pregnancy",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.6 с.10–11",
+              "current_result_justification": "benefit/risk decision; action selection alone does not supply it"
+            },
+            {
+              "fact": "lactation",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.6 с.11",
+              "current_result_justification": "source-specific clinical decision; action selection alone does not supply it"
+            },
+            {
+              "fact": "medicines.confirmed_empty_or_unknown_list",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.3 с.3; §4.5 с.7–11",
+              "current_result_justification": "contraindicated combinations and each relevant MAOI interval"
+            },
+            {
+              "fact": "allergy",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.3 с.3",
+              "current_result_justification": "contraindication; dose action does not establish absence"
+            },
+            {
+              "fact": "hepatic",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.2 с.2; §4.4 с.6",
+              "current_result_justification": "lower dose/frequency unspecified or avoid severe impairment"
+            },
+            {
+              "fact": "seizure_state",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.4 с.4",
+              "current_result_justification": "uncontrolled epilepsy avoids standard branch; new seizure requires cessation"
+            },
+            {
+              "fact": "current_dose",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.2 с.2–3",
+              "current_result_justification": "dose arithmetic and maximum"
+            },
+            {
+              "fact": "time_at_dose",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.2 с.2",
+              "current_result_justification": "minimum interval before an increase; no new interval check for keep"
+            },
+            {
+              "fact": "akathisia",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.4 с.6",
+              "current_result_justification": "increasing dose may worsen symptoms; required before the increase branch"
+            },
+            {
+              "fact": "clinician_action",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22",
+              "current_result_justification": "Врач вправе указать действие напрямую; не заставлять повторно выбирать клиническую стратегию. ОХЛП §4.2 задаёт допустимый шаг/интервал повышения."
+            },
+            {
+              "fact": "mania_symptoms",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.4 с.4",
+              "current_result_justification": "active manic phase requires cessation of sertraline"
+            }
+          ],
+          "initial_choices": [
+            "diagnosis",
+            "mode",
+            "identified_product_form_strength"
+          ]
+        },
+        {
+          "full_example": "ser-adult-adjust--branch-other-source-dose",
+          "count": 15,
+          "facts": [
+            {
+              "fact": "age",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.4 с.5, дети; §4.1 с.1",
+              "current_result_justification": "adult indication applicability"
+            },
+            {
+              "fact": "pregnancy",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.6 с.10–11",
+              "current_result_justification": "benefit/risk decision; action selection alone does not supply it"
+            },
+            {
+              "fact": "lactation",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.6 с.11",
+              "current_result_justification": "source-specific clinical decision; action selection alone does not supply it"
+            },
+            {
+              "fact": "medicines.confirmed_empty_or_unknown_list",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.3 с.3; §4.5 с.7–11",
+              "current_result_justification": "contraindicated combinations and each relevant MAOI interval"
+            },
+            {
+              "fact": "allergy",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.3 с.3",
+              "current_result_justification": "contraindication; dose action does not establish absence"
+            },
+            {
+              "fact": "hepatic",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.2 с.2; §4.4 с.6",
+              "current_result_justification": "lower dose/frequency unspecified or avoid severe impairment"
+            },
+            {
+              "fact": "seizure_state",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.4 с.4",
+              "current_result_justification": "uncontrolled epilepsy avoids standard branch; new seizure requires cessation"
+            },
+            {
+              "fact": "current_dose",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.2 с.2–3",
+              "current_result_justification": "dose arithmetic and maximum"
+            },
+            {
+              "fact": "time_at_dose",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.2 с.2",
+              "current_result_justification": "minimum interval before an increase; no new interval check for keep"
+            },
+            {
+              "fact": "akathisia",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.4 с.6",
+              "current_result_justification": "increasing dose may worsen symptoms; required before the increase branch"
+            },
+            {
+              "fact": "clinician_action",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22",
+              "current_result_justification": "Врач вправе указать действие напрямую; не заставлять повторно выбирать клиническую стратегию. ОХЛП §4.2 задаёт допустимый шаг/интервал повышения."
+            },
+            {
+              "fact": "mania_symptoms",
+              "source_refs": [
+                "RU-SER"
+              ],
+              "physical_locator": "§4.4 с.4",
+              "current_result_justification": "active manic phase requires cessation of sertraline"
+            }
+          ],
+          "initial_choices": [
+            "diagnosis",
+            "mode",
+            "identified_product_form_strength"
+          ]
+        }
+      ],
+      "status": "Current complete path; not proof of global impossibility or minimality"
+    }
+  ]
+}

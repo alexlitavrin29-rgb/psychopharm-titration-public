@@ -1,0 +1,48 @@
+{
+  "snapshot": "27ef14e77185b7b104d43199664a5b1ca42b73dd8b09f921ee539e97fae971f8",
+  "dimensions": [
+    {
+      "dimension": "Источники, версии, РФ",
+      "score": 9.5,
+      "weight_percent": 25,
+      "contribution": "2.375",
+      "reason": "Официальные originals и полный USED primary reading; sameSHA reuse и версии проверены. Неиспользуемый текстЛВ не объявлен проверенным."
+    },
+    {
+      "dimension": "Правила, ограничения, воспроизводимость",
+      "score": 9.6,
+      "weight_percent": 30,
+      "contribution": "2.88",
+      "reason": "Числа/условия/own actors/source gaps согласованы; все finite oldscope medical prerequisites независимо сверены.Нет критического числового дефекта."
+    },
+    {
+      "dimension": "Входы, unknown и пути",
+      "score": 9.1,
+      "weight_percent": 20,
+      "contribution": "1.82",
+      "reason": "Finite mandatory necessity исправлена предметно, honest count/provenance.22 population tags пока противоречат absent age; отсутствует индивидуальный результат."
+    },
+    {
+      "dimension": "Покрытие ТЗ и честность приёмки",
+      "score": 9.4,
+      "weight_percent": 15,
+      "contribution": "1.41",
+      "reason": "38 cards/all30 проверены в заявленной USED research области.29/1 и remaining22 явно указаны; не выдана полная приёмка."
+    },
+    {
+      "dimension": "Техническая согласованность и перенос",
+      "score": 9.3,
+      "weight_percent": 10,
+      "contribution": "0.93",
+      "reason": "22869+81616 own assertions; current35+5 isolated mutations повторены. Source scope counterchecks4591; minor bounded metadata residue требует guard."
+    }
+  ],
+  "raw_unrounded": "9.415",
+  "raw_one_decimal": 9.4,
+  "cap": null,
+  "final_score": 9.4,
+  "cap6_not_applied": "Материальное current mandatory requirement№17 исправлено и независимо проверено.Единственный остаток22 population tags находится в no-clearance/nonindividual bounded results и не меняет dose/action/phase.Он требует исправления для полной приёмки, но не назван существенным неподтверждённым дозовым основанием ради автоматическогоcap6.",
+  "cap4_not_applied": "Critical wrong dose/unit/interval or known contraindicated numerical permission not established.",
+  "clinical_validation": false,
+  "full_research_acceptance": false
+}

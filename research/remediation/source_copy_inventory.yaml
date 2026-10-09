@@ -1,0 +1,488 @@
+nature: Copy provenance, not medical currency
+copies:
+- source_id: RU-AGO
+  local_file: source_downloads/Вальдоксан — агомелатин.pdf
+  sha256: 1cf8e71b5c27891e17b5b7ab4dd7c8c02697a1d44bb287a57a1ee9de0fb85bd6
+  version: Копия производителя с именем 20241228; первичная регистрация 25.01.2022; поле пересмотра пустое
+  url: https://servier.ru/wp-content/uploads/2023/09/20241228_spc-ru_valdoxan_rus.pdf
+  download_date: '2026-10-08'
+  byte_identity_to_primary_snapshot: true
+  latest_registration_revision_confirmed: false
+- source_id: RU-DULOX
+  local_file: source_downloads/Дулоксента — дулоксетин.pdf
+  sha256: bcb5a8b9415f15fdae2ec8a8d00abe5788194c59893b6172294c4cf3db839786
+  version: Пересмотр 18.07.2024, §10 с.35; первая регистрация 02.04.2021
+  url: https://www.krka.ru/_assets/Duloxenta-CU_SmPC_18.07.2024.pdf
+  download_date: '2026-10-08'
+  byte_identity_to_primary_snapshot: true
+  latest_registration_revision_confirmed: false
+- source_id: RU-SER
+  local_file: source_downloads/Золофт — сертралин.pdf
+  sha256: 3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba
+  version: Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является
+    датой содержания
+  url: https://www.viatris.ru/-/media/project/common/viatrisru/pdf/product-catalog/0006_zoloft_smpc-eaeu_24-apr-2025_ru.pdf
+  download_date: '2026-10-08'
+  byte_identity_to_primary_snapshot: true
+  latest_registration_revision_confirmed: false
+- source_id: RU-CLOMI-IV-ARCHIVE
+  local_file: source_downloads/Кломипрамин — раствор.pdf
+  sha256: 81d40c49e7fa50aed75f8719c51f942f40f85a5ad74e1637a45673f0b57f1d33
+  version: Зафиксированная копия 08.10.2026; актуальность редакции не подтверждена
+  url: https://www.atompharm.ru/upload/iblock/942/7lzzhv4bo2ud591xeq7t6pt80d8lxzz3.pdf
+  download_date: '2026-10-08'
+  byte_identity_to_primary_snapshot: true
+  latest_registration_revision_confirmed: false
+- source_id: RU-PREG
+  local_file: source_downloads/Лирика — прегабалин.pdf
+  sha256: 1fcd653e7f3b6bf5b26b3276d0bce97880e74bf345bb69755a275bf8f7117083
+  version: Файл 13.08.2025; внутри штамп 26.01.2024 №1319, последовательность 0011
+  url: https://www.viatris.ru/-/media/project/common/viatrisru/pdf/product-catalog/lyrica_eaeu_smpc_13-aug-2025_ru.pdf
+  download_date: '2026-10-08'
+  byte_identity_to_primary_snapshot: true
+  latest_registration_revision_confirmed: false
+- source_id: RU-PREG-RICHTER
+  local_file: source_downloads/Прегабалин-Рихтер — прегабалин.pdf
+  sha256: 32bfe8b2ec435201b47cb652818af63a1e6a532669348dfe9110e92a73af7065
+  version: Снимок файла страницы производителя 08.10.2026; страница датирует файл 18.02.2026; дата пересмотра в
+    оригинале отсутствует
+  url: https://www.gedeonrichter.com/ru/-/media/sites/ru/russian-products/files/174/productinstruction_lvokhlp-pregab-75mg150mg300mg-hcaps-eaeu-smpc-commruwpsusa2025_pdf.pdf
+  download_date: '2026-10-08'
+  byte_identity_to_primary_snapshot: true
+  latest_registration_revision_confirmed: false
+- source_id: RU-PAROX
+  local_file: source_downloads/Рексетин — пароксетин.pdf
+  sha256: 9f6f2646e102956826997ca7e93d84e90c7528db5ceb61896a3d4092841edabe
+  version: 'Первичная регистрация 14.02.2025; страница производителя: файл 26.03.2025; поле пересмотра пустое'
+  url: https://www.gedeonrichter.com/ru/-/media/sites/ru/russian-products/files/185/productinstruction_lvokhlpreksetin_pdf.pdf?hash=F730A776EE3E7A92B2EA6A9EA56DCAC2&rev=a198bea8079541528614f6df7eee87fd
+  download_date: '2026-10-08'
+  byte_identity_to_primary_snapshot: true
+  latest_registration_revision_confirmed: false
+- source_id: RU-ESC-2025-JAN
+  local_file: source_downloads/Селектра — эсциталопрам.pdf
+  sha256: ea5d007a4026e850b514badeabfdb5d6e0ece163a1a84e6fa5453a8ff0c73497
+  version: Одобрено Минздравом 14.01.2025; файл производителя
+  url: https://s3.k2.cloud/static.abbottpro.ru/iblock/65e/65e594ed9b06b488eb136309c4567129/Selectra_PIL_14.01.2025-clean-_1_.pdf
+  download_date: '2026-10-08'
+  byte_identity_to_primary_snapshot: true
+  latest_registration_revision_confirmed: false
+- source_id: RU-FLUVOX
+  local_file: source_downloads/Феварин — флувоксамин.pdf
+  sha256: ee988a504bf0e34d9562a5f606f8800c827214fc51f4994a4ab28de9c31ce1d6
+  version: Имя опубликованной копии 07.02.2025/0002; поля §8–10 PDF пустые; РУ от 07.02.2025 подтверждено реестром
+  url: https://s3.k2.cloud/static.abbottpro.ru/iblock/1e1/1e119bb21898172a466b489db3ef4837/Fevarin-SmPC-0002_07.02.2025-_1_.pdf
+  download_date: '2026-10-08'
+  byte_identity_to_primary_snapshot: true
+  latest_registration_revision_confirmed: false
+- source_id: RU-PHEN
+  local_file: source_downloads/Феназепам — бромдигидрохлорфенилбензодиазепин.pdf
+  sha256: e8e6303c10b7b9b31ae6b344eb49d209e148ba5584ac8f55954c8384cfe49a89
+  version: Снимок текущей ссылки производителя 08.10.2026; дата пересмотра в PDF отсутствует
+  url: https://www.valentapharm.com/upload/iblock/fec/juwc91mjfnc770nida6ni9syp92x00if.pdf
+  download_date: '2026-10-08'
+  byte_identity_to_primary_snapshot: true
+  latest_registration_revision_confirmed: false
+- source_id: RU-FLUOX-ARCHIVE
+  local_file: source_downloads/Флуоксетин — Озон.pdf
+  sha256: dfcf4a185bb4474bfa7411de1d956be7d309bc9c3e350309f6ca1220fd4e32a3
+  version: Зафиксированная копия 08.10.2026; актуальность редакции не подтверждена
+  url: https://ozonpharm.ru/wp-content/uploads/2024/06/afc642ec60c8d98e2c7a70c8b891e9ab-3.pdf
+  download_date: '2026-10-08'
+  byte_identity_to_primary_snapshot: true
+  latest_registration_revision_confirmed: false
+- source_id: RU-CITAL-LV
+  local_file: source_downloads/Циталопрам — Пранафарм.docx
+  sha256: 5e10a0452aa6a432390878027d66309a93729250ae6015c2ec225a28be68fe00
+  version: Зафиксированная копия 08.10.2026; актуальность редакции не подтверждена
+  url: https://pranapharm.ru/allfiles/202610/TSITALOPRAM_Listok_vkladyish-1791177827-TaAy0.docx
+  download_date: '2026-10-08'
+  byte_identity_to_primary_snapshot: true
+  latest_registration_revision_confirmed: false
+- source_id: RU-DEP
+  local_file: source_snapshots/depression-301_3.pdf
+  sha256: 2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd
+  version: '2024; каталог: опубликовано 26.08.2024, применяется'
+  url: https://apicr.minzdrav.gov.ru/api.ashx?id=301_3&op=GetClinrecPdf
+  download_date: '2026-10-08'
+  byte_identity_to_primary_snapshot: true
+  latest_registration_revision_confirmed: false
+- source_id: RU-VENLA-IR
+  local_file: source_snapshots/velaxin-IR.html
+  sha256: ecad93859bf9c84daadfcc77bf765ed86d85c44ea4d27edc49903bf57dffca01
+  version: Версия HTML не датирована; снимок и SHA-256 от 08.10.2026; отдельное РУ формы подтверждено реестром
+  url: https://egispro.ru/medications/velaksin/instructions/velaksin_37_5_mg_28_sht/
+  download_date: '2026-10-08'
+  byte_identity_to_primary_snapshot: true
+  latest_registration_revision_confirmed: false
+- source_id: RU-VENLA-XR
+  local_file: source_snapshots/velaxin-XR.html
+  sha256: 3656aeeae0ef60f75fe0ea90e1a9f73ba3734e7b8825e163752d9e6e278bf838
+  version: Версия HTML не датирована; снимок и SHA-256 от 08.10.2026; отдельное РУ формы подтверждено реестром
+  url: https://egispro.ru/medications/velaksin/instructions/velaksin_75_mg_28_sht/
+  download_date: '2026-10-08'
+  byte_identity_to_primary_snapshot: true
+  latest_registration_revision_confirmed: false
+- source_id: EU-PREG
+  local_file: audit/retrieved/EU-PREG.pdf
+  sha256: 0f82f9dee99e4c6c1ec68a6f67072cf59e9a4dc3997dbe5f30cf806ee2cf3f99
+  version: Текущий PDF получен 08.10.2026; точная дата редакции §10 не указана
+  url: https://www.ema.europa.eu/en/documents/product-information/lyrica-epar-product-information_en.pdf
+  download_date: '2026-10-08'
+  byte_identity_to_primary_snapshot: true
+  latest_registration_revision_confirmed: false
+- source_id: RU-AGO
+  local_file: audit/retrieved/RU-AGO.pdf
+  sha256: 1cf8e71b5c27891e17b5b7ab4dd7c8c02697a1d44bb287a57a1ee9de0fb85bd6
+  version: Копия производителя с именем 20241228; первичная регистрация 25.01.2022; поле пересмотра пустое
+  url: https://servier.ru/wp-content/uploads/2023/09/20241228_spc-ru_valdoxan_rus.pdf
+  download_date: '2026-10-08'
+  byte_identity_to_primary_snapshot: true
+  latest_registration_revision_confirmed: false
+- source_id: RU-CITAL-LV
+  local_file: audit/retrieved/RU-CITAL-LV.docx
+  sha256: 5e10a0452aa6a432390878027d66309a93729250ae6015c2ec225a28be68fe00
+  version: Зафиксированная копия 08.10.2026; актуальность редакции не подтверждена
+  url: https://pranapharm.ru/allfiles/202610/TSITALOPRAM_Listok_vkladyish-1791177827-TaAy0.docx
+  download_date: '2026-10-08'
+  byte_identity_to_primary_snapshot: true
+  latest_registration_revision_confirmed: false
+- source_id: RU-CLOMI-IV-ARCHIVE
+  local_file: audit/retrieved/RU-CLOMI-IV-ARCHIVE.pdf
+  sha256: 81d40c49e7fa50aed75f8719c51f942f40f85a5ad74e1637a45673f0b57f1d33
+  version: Зафиксированная копия 08.10.2026; актуальность редакции не подтверждена
+  url: https://www.atompharm.ru/upload/iblock/942/7lzzhv4bo2ud591xeq7t6pt80d8lxzz3.pdf
+  download_date: '2026-10-08'
+  byte_identity_to_primary_snapshot: true
+  latest_registration_revision_confirmed: false
+- source_id: RU-DEP
+  local_file: audit/retrieved/RU-DEP.pdf
+  sha256: 2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd
+  version: '2024; каталог: опубликовано 26.08.2024, применяется'
+  url: https://apicr.minzdrav.gov.ru/api.ashx?id=301_3&op=GetClinrecPdf
+  download_date: '2026-10-08'
+  byte_identity_to_primary_snapshot: true
+  latest_registration_revision_confirmed: false
+- source_id: RU-DULOX
+  local_file: audit/retrieved/RU-DULOX.pdf
+  sha256: bcb5a8b9415f15fdae2ec8a8d00abe5788194c59893b6172294c4cf3db839786
+  version: Пересмотр 18.07.2024, §10 с.35; первая регистрация 02.04.2021
+  url: https://www.krka.ru/_assets/Duloxenta-CU_SmPC_18.07.2024.pdf
+  download_date: '2026-10-08'
+  byte_identity_to_primary_snapshot: true
+  latest_registration_revision_confirmed: false
+- source_id: RU-FLUOX-ARCHIVE
+  local_file: audit/retrieved/RU-FLUOX-ARCHIVE.pdf
+  sha256: dfcf4a185bb4474bfa7411de1d956be7d309bc9c3e350309f6ca1220fd4e32a3
+  version: Зафиксированная копия 08.10.2026; актуальность редакции не подтверждена
+  url: https://ozonpharm.ru/wp-content/uploads/2024/06/afc642ec60c8d98e2c7a70c8b891e9ab-3.pdf
+  download_date: '2026-10-08'
+  byte_identity_to_primary_snapshot: true
+  latest_registration_revision_confirmed: false
+- source_id: RU-FLUVOX
+  local_file: audit/retrieved/RU-FLUVOX.pdf
+  sha256: ee988a504bf0e34d9562a5f606f8800c827214fc51f4994a4ab28de9c31ce1d6
+  version: Имя опубликованной копии 07.02.2025/0002; поля §8–10 PDF пустые; РУ от 07.02.2025 подтверждено реестром
+  url: https://s3.k2.cloud/static.abbottpro.ru/iblock/1e1/1e119bb21898172a466b489db3ef4837/Fevarin-SmPC-0002_07.02.2025-_1_.pdf
+  download_date: '2026-10-08'
+  byte_identity_to_primary_snapshot: true
+  latest_registration_revision_confirmed: false
+- source_id: RU-GAD
+  local_file: audit/retrieved/RU-GAD.pdf
+  sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+  version: '2024; каталог: опубликовано 19.09.2024, применяется'
+  url: https://apicr.minzdrav.gov.ru/api.ashx?id=457_3&op=GetClinrecPdf
+  download_date: '2026-10-08'
+  byte_identity_to_primary_snapshot: true
+  latest_registration_revision_confirmed: false
+- source_id: RU-PANIC
+  local_file: audit/retrieved/RU-PANIC.pdf
+  sha256: a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d
+  version: '2024; каталог: опубликовано 19.09.2024, применяется'
+  url: https://apicr.minzdrav.gov.ru/api.ashx?id=456_3&op=GetClinrecPdf
+  download_date: '2026-10-08'
+  byte_identity_to_primary_snapshot: true
+  latest_registration_revision_confirmed: false
+- source_id: RU-PAROX
+  local_file: audit/retrieved/RU-PAROX.pdf
+  sha256: 9f6f2646e102956826997ca7e93d84e90c7528db5ceb61896a3d4092841edabe
+  version: 'Первичная регистрация 14.02.2025; страница производителя: файл 26.03.2025; поле пересмотра пустое'
+  url: https://www.gedeonrichter.com/ru/-/media/sites/ru/russian-products/files/185/productinstruction_lvokhlpreksetin_pdf.pdf?hash=F730A776EE3E7A92B2EA6A9EA56DCAC2&rev=a198bea8079541528614f6df7eee87fd
+  download_date: '2026-10-08'
+  byte_identity_to_primary_snapshot: true
+  latest_registration_revision_confirmed: false
+- source_id: RU-PHEN
+  local_file: audit/retrieved/RU-PHEN.pdf
+  sha256: e8e6303c10b7b9b31ae6b344eb49d209e148ba5584ac8f55954c8384cfe49a89
+  version: Снимок текущей ссылки производителя 08.10.2026; дата пересмотра в PDF отсутствует
+  url: https://www.valentapharm.com/upload/iblock/fec/juwc91mjfnc770nida6ni9syp92x00if.pdf
+  download_date: '2026-10-08'
+  byte_identity_to_primary_snapshot: true
+  latest_registration_revision_confirmed: false
+- source_id: RU-PHOB
+  local_file: audit/retrieved/RU-PHOB.pdf
+  sha256: 2a51982fb1919c0ef9115e5231f8ef9d65863306d2d5b95aa0aa7821a6f328b7
+  version: '2024; каталог: опубликовано 21.10.2024, применяется'
+  url: https://apicr.minzdrav.gov.ru/api.ashx?id=455_3&op=GetClinrecPdf
+  download_date: '2026-10-08'
+  byte_identity_to_primary_snapshot: true
+  latest_registration_revision_confirmed: false
+- source_id: RU-PREG-RICHTER-ARCHIVE
+  local_file: audit/retrieved/RU-PREG-RICHTER-ARCHIVE.pdf
+  sha256: c6c6b41dd339536ad1671193a6cd69a7c111d6a2c04c6db501ae85c3beba1ee1
+  version: Первая регистрация 25.05.2023, PDF с.33; поле даты пересмотра пустое; дата получения 08.10.2026
+  url: https://www.gedeonrichter.com/ru/-/media/sites/ru/russian-products/files/productinstruction_8a8628ec-2c00-4909-a91a-c85e0d0a08a8_pdf.pdf?hash=6A0B9A99FE97A62F26D5FFFBC5234CA7&rev=fab5a6cc7e4540a48f725203a9a7545e
+  download_date: '2026-10-08'
+  byte_identity_to_primary_snapshot: true
+  latest_registration_revision_confirmed: false
+- source_id: RU-PREG-RICHTER
+  local_file: audit/retrieved/RU-PREG-RICHTER.pdf
+  sha256: 32bfe8b2ec435201b47cb652818af63a1e6a532669348dfe9110e92a73af7065
+  version: Снимок файла страницы производителя 08.10.2026; страница датирует файл 18.02.2026; дата пересмотра в
+    оригинале отсутствует
+  url: https://www.gedeonrichter.com/ru/-/media/sites/ru/russian-products/files/174/productinstruction_lvokhlp-pregab-75mg150mg300mg-hcaps-eaeu-smpc-commruwpsusa2025_pdf.pdf
+  download_date: '2026-10-08'
+  byte_identity_to_primary_snapshot: true
+  latest_registration_revision_confirmed: false
+- source_id: RU-PREG
+  local_file: audit/retrieved/RU-PREG.pdf
+  sha256: 1fcd653e7f3b6bf5b26b3276d0bce97880e74bf345bb69755a275bf8f7117083
+  version: Файл 13.08.2025; внутри штамп 26.01.2024 №1319, последовательность 0011
+  url: https://www.viatris.ru/-/media/project/common/viatrisru/pdf/product-catalog/lyrica_eaeu_smpc_13-aug-2025_ru.pdf
+  download_date: '2026-10-08'
+  byte_identity_to_primary_snapshot: true
+  latest_registration_revision_confirmed: false
+- source_id: RU-SER-2023
+  local_file: audit/retrieved/RU-SER-2023.pdf
+  sha256: 640908909dc7109d614b4f03225d0c31ab2f5f9d6e39b9b8f65046873e9d722c
+  version: 'Копия производителя: файл 24-jul; штамп экспертного отчёта 20.07.2023'
+  url: https://www.viatris.ru/-/media/project/common/viatrisru/pdf/product-catalog/zoloft_smpc-eaeu_24-jul.pdf
+  download_date: '2026-10-08'
+  byte_identity_to_primary_snapshot: true
+  latest_registration_revision_confirmed: false
+- source_id: RU-SER
+  local_file: audit/retrieved/RU-SER.pdf
+  sha256: 3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba
+  version: Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является
+    датой содержания
+  url: https://www.viatris.ru/-/media/project/common/viatrisru/pdf/product-catalog/0006_zoloft_smpc-eaeu_24-apr-2025_ru.pdf
+  download_date: '2026-10-08'
+  byte_identity_to_primary_snapshot: true
+  latest_registration_revision_confirmed: false
+- source_id: RU-VENLA-IR
+  local_file: audit/retrieved/RU-VENLA-IR.html
+  sha256: 49ed1a29889de1aab24571f78d672b21ccc5fcf665e0c925ff47464207a5f7c9
+  version: byte-different snapshot; medical revision not independently established
+  url: https://egispro.ru/medications/velaksin/instructions/velaksin_37_5_mg_28_sht/
+  download_date: '2026-10-08'
+  byte_identity_to_primary_snapshot: false
+  latest_registration_revision_confirmed: false
+- source_id: RU-VENLA-XR
+  local_file: audit/retrieved/RU-VENLA-XR.html
+  sha256: 6f14f66f54d649836d17eff481e9538282539780cfa8d26810012a1941cf7550
+  version: byte-different snapshot; medical revision not independently established
+  url: https://egispro.ru/medications/velaksin/instructions/velaksin_75_mg_28_sht/
+  download_date: '2026-10-08'
+  byte_identity_to_primary_snapshot: false
+  latest_registration_revision_confirmed: false
+- source_id: UK-NICE222
+  local_file: audit/retrieved/UK-NICE222.pdf
+  sha256: 4f59bf752b49734b81244d1251d94a8fc2e984aac34577e295be243582a957de
+  version: Опубликовано 29.06.2022; официальный PDF ©2026, получен 08.10.2026
+  url: https://www.nice.org.uk/guidance/ng222/resources/depression-in-adults-treatment-and-management-pdf-66143832307909
+  download_date: '2026-10-08'
+  byte_identity_to_primary_snapshot: true
+  latest_registration_revision_confirmed: false
+- source_id: UK-PAX
+  local_file: audit/retrieved/UK-PAX.html
+  sha256: edb3301d0a8db4042e272d8f8f5006877f57c3dc2705c9229747106d89277c7d
+  version: byte-different snapshot; medical revision not independently established
+  url: https://www.medicines.org.uk/emc/product/7593/smpc
+  download_date: '2026-10-08'
+  byte_identity_to_primary_snapshot: false
+  latest_registration_revision_confirmed: false
+- source_id: UK-SPS-AGO
+  local_file: audit/retrieved/UK-SPS-AGO.html
+  sha256: 9eaf1ecb34ab384fb14a3eaf9042362bba43ef162efd9ba7461c9b25f14f5fe9
+  version: byte-different snapshot; medical revision not independently established
+  url: https://sps.nhs.uk/articles/agomelatine-to-other-antidepressants-switching-in-adults/
+  download_date: '2026-10-08'
+  byte_identity_to_primary_snapshot: false
+  latest_registration_revision_confirmed: false
+- source_id: UK-SPS-LACT
+  local_file: audit/retrieved/UK-SPS-LACT.html
+  sha256: 45a3a3b4adad455e09d404363a37f6a72164519e2177a84650df85a2adc723a5
+  version: byte-different snapshot; medical revision not independently established
+  url: https://sps.nhs.uk/articles/using-ssri-antidepressants-during-breastfeeding/
+  download_date: '2026-10-08'
+  byte_identity_to_primary_snapshot: false
+  latest_registration_revision_confirmed: false
+- source_id: UK-SPS-MOC
+  local_file: audit/retrieved/UK-SPS-MOC.html
+  sha256: b42b706dc9ee26685bcab8fe08f2ac164679c076b04e849933487d9d9daa93b7
+  version: byte-different snapshot; medical revision not independently established
+  url: https://sps.nhs.uk/articles/moclobemide-to-other-antidepressants-switching-in-adults/
+  download_date: '2026-10-08'
+  byte_identity_to_primary_snapshot: false
+  latest_registration_revision_confirmed: false
+- source_id: UK-SPS-SSRI
+  local_file: audit/retrieved/UK-SPS-SSRI.html
+  sha256: 467ba15c5034421e6aba99703d0140fdd009eb23327064302dd7418a6a043b99
+  version: byte-different snapshot; medical revision not independently established
+  url: https://sps.nhs.uk/articles/ssris-to-other-antidepressants-switching-in-adults/
+  download_date: '2026-10-08'
+  byte_identity_to_primary_snapshot: false
+  latest_registration_revision_confirmed: false
+- source_id: US-ASAM
+  local_file: audit/retrieved/US-ASAM.pdf
+  sha256: a9937c249d7a08658eb10c5b7805fce9bb6e975e4f4d5ac11507434708c4b5ec
+  version: Final approved version 28.02.2025
+  url: https://downloads.asam.org/sitefinity-production-blobs/docs/default-source/guidelines/benzodiazepine-tapering-2025/bzd-tapering-document---final-approved-version-for-distribution-02-28-25.pdf?sfvrsn=5bdf9c81_1
+  download_date: '2026-10-08'
+  byte_identity_to_primary_snapshot: true
+  latest_registration_revision_confirmed: false
+- source_id: WHO-F41
+  local_file: audit/retrieved/WHO-F41.html
+  sha256: 28852802c5d4771ce3d780d4c391a9b5f08e68b6937187fa1540606161996caf
+  version: '2016'
+  url: https://icd.who.int/browse10/2016/en/GetConcept?ConceptId=F41.2
+  download_date: '2026-10-08'
+  byte_identity_to_primary_snapshot: true
+  latest_registration_revision_confirmed: false
+- source_id: RU-AGO
+  local_file: remediation/retrieved/RU-AGO.pdf
+  sha256: 1cf8e71b5c27891e17b5b7ab4dd7c8c02697a1d44bb287a57a1ee9de0fb85bd6
+  version: Копия производителя с именем 20241228; первичная регистрация 25.01.2022; поле пересмотра пустое
+  url: https://servier.ru/wp-content/uploads/2023/09/20241228_spc-ru_valdoxan_rus.pdf
+  download_date: '2026-10-08'
+  byte_identity_to_primary_snapshot: true
+  latest_registration_revision_confirmed: false
+- source_id: RU-CITAL-LV
+  local_file: remediation/retrieved/RU-CITAL-LV.docx
+  sha256: 5e10a0452aa6a432390878027d66309a93729250ae6015c2ec225a28be68fe00
+  version: Зафиксированная копия 08.10.2026; актуальность редакции не подтверждена
+  url: https://pranapharm.ru/allfiles/202610/TSITALOPRAM_Listok_vkladyish-1791177827-TaAy0.docx
+  download_date: '2026-10-08'
+  byte_identity_to_primary_snapshot: true
+  latest_registration_revision_confirmed: false
+- source_id: RU-DEP
+  local_file: remediation/retrieved/RU-DEP.pdf
+  sha256: 2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd
+  version: '2024; каталог: опубликовано 26.08.2024, применяется'
+  url: https://apicr.minzdrav.gov.ru/api.ashx?id=301_3&op=GetClinrecPdf
+  download_date: '2026-10-08'
+  byte_identity_to_primary_snapshot: true
+  latest_registration_revision_confirmed: false
+- source_id: RU-DULOX
+  local_file: remediation/retrieved/RU-DULOX.pdf
+  sha256: bcb5a8b9415f15fdae2ec8a8d00abe5788194c59893b6172294c4cf3db839786
+  version: Пересмотр 18.07.2024, §10 с.35; первая регистрация 02.04.2021
+  url: https://www.krka.ru/_assets/Duloxenta-CU_SmPC_18.07.2024.pdf
+  download_date: '2026-10-08'
+  byte_identity_to_primary_snapshot: true
+  latest_registration_revision_confirmed: false
+- source_id: RU-GAD
+  local_file: remediation/retrieved/RU-GAD.pdf
+  sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+  version: '2024; каталог: опубликовано 19.09.2024, применяется'
+  url: https://apicr.minzdrav.gov.ru/api.ashx?id=457_3&op=GetClinrecPdf
+  download_date: '2026-10-08'
+  byte_identity_to_primary_snapshot: true
+  latest_registration_revision_confirmed: false
+- source_id: RU-PANIC
+  local_file: remediation/retrieved/RU-PANIC.pdf
+  sha256: a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d
+  version: '2024; каталог: опубликовано 19.09.2024, применяется'
+  url: https://apicr.minzdrav.gov.ru/api.ashx?id=456_3&op=GetClinrecPdf
+  download_date: '2026-10-08'
+  byte_identity_to_primary_snapshot: true
+  latest_registration_revision_confirmed: false
+- source_id: RU-PAROX
+  local_file: remediation/retrieved/RU-PAROX.pdf
+  sha256: 9f6f2646e102956826997ca7e93d84e90c7528db5ceb61896a3d4092841edabe
+  version: 'Первичная регистрация 14.02.2025; страница производителя: файл 26.03.2025; поле пересмотра пустое'
+  url: https://www.gedeonrichter.com/ru/-/media/sites/ru/russian-products/files/185/productinstruction_lvokhlpreksetin_pdf.pdf?hash=F730A776EE3E7A92B2EA6A9EA56DCAC2&rev=a198bea8079541528614f6df7eee87fd
+  download_date: '2026-10-08'
+  byte_identity_to_primary_snapshot: true
+  latest_registration_revision_confirmed: false
+- source_id: RU-PHEN
+  local_file: remediation/retrieved/RU-PHEN.pdf
+  sha256: e8e6303c10b7b9b31ae6b344eb49d209e148ba5584ac8f55954c8384cfe49a89
+  version: Снимок текущей ссылки производителя 08.10.2026; дата пересмотра в PDF отсутствует
+  url: https://www.valentapharm.com/upload/iblock/fec/juwc91mjfnc770nida6ni9syp92x00if.pdf
+  download_date: '2026-10-08'
+  byte_identity_to_primary_snapshot: true
+  latest_registration_revision_confirmed: false
+- source_id: RU-PHOB
+  local_file: remediation/retrieved/RU-PHOB.pdf
+  sha256: 2a51982fb1919c0ef9115e5231f8ef9d65863306d2d5b95aa0aa7821a6f328b7
+  version: '2024; каталог: опубликовано 21.10.2024, применяется'
+  url: https://apicr.minzdrav.gov.ru/api.ashx?id=455_3&op=GetClinrecPdf
+  download_date: '2026-10-08'
+  byte_identity_to_primary_snapshot: true
+  latest_registration_revision_confirmed: false
+- source_id: RU-PREG-RICHTER
+  local_file: remediation/retrieved/RU-PREG-RICHTER.pdf
+  sha256: 32bfe8b2ec435201b47cb652818af63a1e6a532669348dfe9110e92a73af7065
+  version: Снимок файла страницы производителя 08.10.2026; страница датирует файл 18.02.2026; дата пересмотра в
+    оригинале отсутствует
+  url: https://www.gedeonrichter.com/ru/-/media/sites/ru/russian-products/files/174/productinstruction_lvokhlp-pregab-75mg150mg300mg-hcaps-eaeu-smpc-commruwpsusa2025_pdf.pdf
+  download_date: '2026-10-08'
+  byte_identity_to_primary_snapshot: true
+  latest_registration_revision_confirmed: false
+- source_id: RU-PREG
+  local_file: remediation/retrieved/RU-PREG.pdf
+  sha256: 1fcd653e7f3b6bf5b26b3276d0bce97880e74bf345bb69755a275bf8f7117083
+  version: Файл 13.08.2025; внутри штамп 26.01.2024 №1319, последовательность 0011
+  url: https://www.viatris.ru/-/media/project/common/viatrisru/pdf/product-catalog/lyrica_eaeu_smpc_13-aug-2025_ru.pdf
+  download_date: '2026-10-08'
+  byte_identity_to_primary_snapshot: true
+  latest_registration_revision_confirmed: false
+- source_id: RU-SER
+  local_file: remediation/retrieved/RU-SER.pdf
+  sha256: 3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba
+  version: Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является
+    датой содержания
+  url: https://www.viatris.ru/-/media/project/common/viatrisru/pdf/product-catalog/0006_zoloft_smpc-eaeu_24-apr-2025_ru.pdf
+  download_date: '2026-10-08'
+  byte_identity_to_primary_snapshot: true
+  latest_registration_revision_confirmed: false
+- source_id: RU-VENLA-IR
+  local_file: remediation/retrieved/RU-VENLA-IR.html
+  sha256: d49b24495bebf9a85dd3018454a1f907596a92d6567fe85f62c1a0f0b43017b6
+  version: byte-different snapshot; medical revision not independently established
+  url: https://egispro.ru/medications/velaksin/instructions/velaksin_37_5_mg_28_sht/
+  download_date: '2026-10-08'
+  byte_identity_to_primary_snapshot: false
+  latest_registration_revision_confirmed: false
+- source_id: RU-VENLA-XR
+  local_file: remediation/retrieved/RU-VENLA-XR.html
+  sha256: 324991815c8cd2def4d644b47b1edaddb1c24ed7ee442d9bdc064b396fae6642
+  version: byte-different snapshot; medical revision not independently established
+  url: https://egispro.ru/medications/velaksin/instructions/velaksin_75_mg_28_sht/
+  download_date: '2026-10-08'
+  byte_identity_to_primary_snapshot: false
+  latest_registration_revision_confirmed: false
+- source_id: RU-AGO
+  local_file: ../tmp_acceptance/AGO.pdf
+  sha256: 1cf8e71b5c27891e17b5b7ab4dd7c8c02697a1d44bb287a57a1ee9de0fb85bd6
+  version: Копия производителя с именем 20241228; первичная регистрация 25.01.2022; поле пересмотра пустое
+  url: https://servier.ru/wp-content/uploads/2023/09/20241228_spc-ru_valdoxan_rus.pdf
+  download_date: '2026-10-08'
+  byte_identity_to_primary_snapshot: true
+  latest_registration_revision_confirmed: false
+- source_id: RU-DEP
+  local_file: ../tmp_acceptance/DEP-KR.pdf
+  sha256: 2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd
+  version: '2024; каталог: опубликовано 26.08.2024, применяется'
+  url: https://apicr.minzdrav.gov.ru/api.ashx?id=301_3&op=GetClinrecPdf
+  download_date: '2026-10-08'
+  byte_identity_to_primary_snapshot: true
+  latest_registration_revision_confirmed: false
+- source_id: RU-PAROX
+  local_file: ../tmp_acceptance/PAROX.pdf
+  sha256: 9f6f2646e102956826997ca7e93d84e90c7528db5ceb61896a3d4092841edabe
+  version: 'Первичная регистрация 14.02.2025; страница производителя: файл 26.03.2025; поле пересмотра пустое'
+  url: https://www.gedeonrichter.com/ru/-/media/sites/ru/russian-products/files/185/productinstruction_lvokhlpreksetin_pdf.pdf?hash=F730A776EE3E7A92B2EA6A9EA56DCAC2&rev=a198bea8079541528614f6df7eee87fd
+  download_date: '2026-10-08'
+  byte_identity_to_primary_snapshot: true
+  latest_registration_revision_confirmed: false

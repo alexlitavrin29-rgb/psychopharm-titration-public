@@ -1,0 +1,1182 @@
+{
+  "origin": "Independent final review IR2-01",
+  "cases": [
+    {
+      "case_id": "esc-adult-adjust--current-branch-response_decision",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-unassessed-monitoring-context",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-age-omitted",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-age-unknown",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-age-not_assessed",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-form-omitted",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-form-unknown",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-form-not_assessed",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-pregnancy-omitted",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-pregnancy-unknown",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-pregnancy-not_assessed",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-lactation-omitted",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-lactation-unknown",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-lactation-not_assessed",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-medicines-omitted",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-medicines-unknown",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-medicines-not_assessed",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-allergy-omitted",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-allergy-unknown",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-allergy-not_assessed",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-hepatic-omitted",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-hepatic-unknown",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-hepatic-not_assessed",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-seizure_state-omitted",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-seizure_state-unknown",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-seizure_state-not_assessed",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-renal-omitted",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-renal-unknown",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-renal-not_assessed",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-response-omitted",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-response-unknown",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-response-not_assessed",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-tolerability-omitted",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-tolerability-unknown",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-tolerability-not_assessed",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-akathisia-omitted",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-akathisia-unknown",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-akathisia-not_assessed",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-mania_symptoms-omitted",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-mania_symptoms-unknown",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-mania_symptoms-not_assessed",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-arrhythmia_signs-omitted",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-arrhythmia_signs-unknown",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-arrhythmia_signs-not_assessed",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-serotonin_syndrome_signs-omitted",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-serotonin_syndrome_signs-unknown",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-serotonin_syndrome_signs-not_assessed",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-clcr-29.99",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-clcr-30",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-clcr-30.01",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-wrong-renal-metric",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-age-17",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-age-65",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-age-66",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-hepatic-Child-Pugh_A",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-hepatic-Child-Pugh_B",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-hepatic-Child-Pugh_C",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-overlapping-modifiers",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-wrong-release",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-wrong-source-version",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-contra-pimozide",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-contra-QT_prolonging",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-contra-irreversible_maoi",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-maoi-13",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-maoi-14",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-moclobemide-23h",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-moclobemide-24h",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-maoi_type-omitted",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-maoi_type-unknown",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-maoi_type-not_assessed",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-maoi_stopped_at-omitted",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-maoi_stopped_at-unknown",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-maoi_stopped_at-not_assessed",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-mania_symptoms-stop",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-arrhythmia_signs-stop",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-adult-adjust--current-serotonin_syndrome_signs-stop",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-taper-limit--current-branch-source_limit",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-taper-limit--current-unassessed-monitoring-context",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-taper-limit--current-age-omitted",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-taper-limit--current-age-unknown",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-taper-limit--current-age-not_assessed",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-taper-limit--current-form-omitted",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-taper-limit--current-form-unknown",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-taper-limit--current-form-not_assessed",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-taper-limit--current-seizure_state-omitted",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-taper-limit--current-seizure_state-unknown",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-taper-limit--current-seizure_state-not_assessed",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-taper-limit--current-duration_of_use-omitted",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-taper-limit--current-duration_of_use-unknown",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-taper-limit--current-duration_of_use-not_assessed",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-taper-limit--current-prior_withdrawal-omitted",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-taper-limit--current-prior_withdrawal-unknown",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-taper-limit--current-prior_withdrawal-not_assessed",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-taper-limit--current-current_withdrawal-omitted",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-taper-limit--current-current_withdrawal-unknown",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-taper-limit--current-current_withdrawal-not_assessed",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-taper-limit--current-mania_symptoms-omitted",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-taper-limit--current-mania_symptoms-unknown",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-taper-limit--current-mania_symptoms-not_assessed",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-taper-limit--current-arrhythmia_signs-omitted",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-taper-limit--current-arrhythmia_signs-unknown",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-taper-limit--current-arrhythmia_signs-not_assessed",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-taper-limit--current-serotonin_syndrome_signs-omitted",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-taper-limit--current-serotonin_syndrome_signs-unknown",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-taper-limit--current-serotonin_syndrome_signs-not_assessed",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-taper-limit--current-mania_symptoms-stop",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-taper-limit--current-arrhythmia_signs-stop",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "esc-taper-limit--current-serotonin_syndrome_signs-stop",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-branch-class_overlap",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-from_form-omitted",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-from_form-unknown",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-from_form-not_assessed",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-to_form-omitted",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-to_form-unknown",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-to_form-not_assessed",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-age-omitted",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-age-unknown",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-age-not_assessed",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-from_taper_plan-omitted",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-from_taper_plan-unknown",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-from_taper_plan-not_assessed",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-hepatic-omitted",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-hepatic-unknown",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-hepatic-not_assessed",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-alt_ratio_uln-omitted",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-alt_ratio_uln-unknown",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-alt_ratio_uln-not_assessed",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-ast_ratio_uln-omitted",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-ast_ratio_uln-unknown",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-ast_ratio_uln-not_assessed",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-medicines-omitted",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-medicines-unknown",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-medicines-not_assessed",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-allergy-omitted",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-allergy-unknown",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-allergy-not_assessed",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-pregnancy-omitted",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-pregnancy-unknown",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-pregnancy-not_assessed",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-lactation-omitted",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-lactation-unknown",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-lactation-not_assessed",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-withdrawal_severity-omitted",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-withdrawal_severity-unknown",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-withdrawal_severity-not_assessed",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-elderly_population-omitted",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-elderly_population-unknown",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-elderly_population-not_assessed",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-dementia-omitted",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-dementia-unknown",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-dementia-not_assessed",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-galactose_intolerance-omitted",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-galactose_intolerance-unknown",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-galactose_intolerance-not_assessed",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-complete_lactase_deficiency-omitted",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-complete_lactase_deficiency-unknown",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-complete_lactase_deficiency-not_assessed",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-glucose_galactose_malabsorption-omitted",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-glucose_galactose_malabsorption-unknown",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-glucose_galactose_malabsorption-not_assessed",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-liver_injury_signs-omitted",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-liver_injury_signs-unknown",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-liver_injury_signs-not_assessed",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-transaminases_rising-omitted",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-transaminases_rising-unknown",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-transaminases_rising-not_assessed",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-overweight_obesity-omitted",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-overweight_obesity-unknown",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-overweight_obesity-not_assessed",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-fatty_liver-omitted",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-fatty_liver-unknown",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-fatty_liver-not_assessed",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-diabetes-omitted",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-diabetes-unknown",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-diabetes-not_assessed",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-alcohol_abuse-omitted",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-alcohol_abuse-unknown",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-alcohol_abuse-not_assessed",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-alcohol_use-omitted",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-alcohol_use-unknown",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-alcohol_use-not_assessed",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-mania-omitted",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-mania-unknown",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-mania-not_assessed",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-mania_symptoms-omitted",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-mania_symptoms-unknown",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-mania_symptoms-not_assessed",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-suicide_risk-omitted",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-suicide_risk-unknown",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-suicide_risk-not_assessed",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-ect-omitted",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-ect-unknown",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-ect-not_assessed",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-renal_state-omitted",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-renal_state-unknown",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-renal_state-not_assessed",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-from_hepatic-omitted",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-from_hepatic-unknown",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-from_hepatic-not_assessed",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-mania_symptoms-stop",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-alt_ratio_uln-3",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-alt_ratio_uln-3.01",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-alt_ratio_uln-ongoing-above3",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-ast_ratio_uln-3",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-ast_ratio_uln-3.01",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-ast_ratio_uln-ongoing-above3",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--current-target-contra-strong_CYP1A2",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ser--current-branch-pair_gap",
+      "old_current_dose": 100,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ser--current-from_form-omitted",
+      "old_current_dose": 100,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ser--current-from_form-unknown",
+      "old_current_dose": 100,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ser--current-from_form-not_assessed",
+      "old_current_dose": 100,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ser--current-to_form-omitted",
+      "old_current_dose": 100,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ser--current-to_form-unknown",
+      "old_current_dose": 100,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ser--current-to_form-not_assessed",
+      "old_current_dose": 100,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ser--current-duration-omitted",
+      "old_current_dose": 100,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ser--current-duration-unknown",
+      "old_current_dose": 100,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ser--current-duration-not_assessed",
+      "old_current_dose": 100,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ser--current-last_dose_time-omitted",
+      "old_current_dose": 100,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ser--current-last_dose_time-unknown",
+      "old_current_dose": 100,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ser--current-last_dose_time-not_assessed",
+      "old_current_dose": 100,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ser--current-withdrawal_symptoms-omitted",
+      "old_current_dose": 100,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ser--current-withdrawal_symptoms-unknown",
+      "old_current_dose": 100,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ser--current-withdrawal_symptoms-not_assessed",
+      "old_current_dose": 100,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ser--current-medicines-omitted",
+      "old_current_dose": 100,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ser--current-medicines-unknown",
+      "old_current_dose": 100,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ser--current-medicines-not_assessed",
+      "old_current_dose": 100,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ser--current-target_applicability-omitted",
+      "old_current_dose": 100,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ser--current-target_applicability-unknown",
+      "old_current_dose": 100,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ser--current-target_applicability-not_assessed",
+      "old_current_dose": 100,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--round2-A-active-mania-True",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--round2-A-active-mania-unknown",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ago--round2-A-active-mania-not_assessed",
+      "old_current_dose": 60,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ser--round2-A-active-mania-True",
+      "old_current_dose": 100,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ser--round2-A-active-mania-unknown",
+      "old_current_dose": 100,
+      "new_current_dose": 10
+    },
+    {
+      "case_id": "switch-esc-ser--round2-A-active-mania-not_assessed",
+      "old_current_dose": 100,
+      "new_current_dose": 10
+    }
+  ],
+  "source": "RU-ESC §4.2 с.2 maximum20; ordinary confirmed10; form half10 §3 с.1",
+  "clinical_claim": false
+}

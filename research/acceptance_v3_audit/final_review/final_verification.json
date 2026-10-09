@@ -1,0 +1,27 @@
+{
+  "snapshot": "b13033a0687a28b4da4299c171ac6b88a96667e2d6888ab8aecf5e9c85af0514",
+  "manifest_aggregate_sha256": "b13033a0687a28b4da4299c171ac6b88a96667e2d6888ab8aecf5e9c85af0514",
+  "archived_files_checked": 216,
+  "archive_changes": [],
+  "all_archived216_unchanged": true,
+  "initial_live_and_archive_check": "initial_preservation.json (216/0errors before live owner revisions)",
+  "final_live_core_checked_as_same_snapshot": false,
+  "reason": "Owner explicitly repaired live files after exact216 archive preservation; final review signed archive only.",
+  "reviewed_core_edited_by_reviewer": false,
+  "reviewer_output_directory": "research/acceptance_v3_audit/final_review",
+  "earlier_audits_edited_by_reviewer": false,
+  "source_originals_modified": false,
+  "old_protected_files_scope": "Not asserting a new hash audit of every historical file outside216; reviewer wrote only own new final_review directory.",
+  "report_links_missing": [],
+  "criteria_total": 30,
+  "statuses": {
+    "выполнено": 28,
+    "частично": 2
+  },
+  "scoring_arithmetic": "8.785",
+  "raw_one_decimal": 8.8,
+  "final_score": 6.0,
+  "full_research_acceptance": false,
+  "clinical_validation": false,
+  "app_execution": false
+}

@@ -1,0 +1,513 @@
+{
+  "snapshot": "8a17ae3f99839548742ee509a23d060ea451ed0018c48432dc73b9ba68de4359",
+  "canonical": "psychopharm_codex_pack/ACCEPTANCE_V2.md",
+  "criteria": [
+    {
+      "number": 1,
+      "literal_criterion": "Основной пользователь — психиатр, диагноз вводит врач; нет повторной диагностики и анкеты уверенности в диагнозе.",
+      "status": "выполнено",
+      "evidence": "Диагноз/режим выбирает психиатр; PAR bipolar screen — узкая источниковая оценка, без повторной диагностики.",
+      "finding_ids": [],
+      "files": [
+        "research/remediation_round3/rules/",
+        "research/remediation_round3/result_contracts.yaml",
+        "research/remediation_round3/full_scenarios.json",
+        "research/acceptance_v2_audit/recheck2/source_verification.json",
+        "research/acceptance_v2_audit/recheck2/independent_paths.json"
+      ],
+      "limits": "Самостоятельное первичное чтение/границы перечислены в source_verification и coverage. Не выполнена исчерпывающая клиническая рецензия всех источниковых предупреждений/каждого expected/всех INN→class mappings и всех result-specific necessity решений. Исследование без app/clinical validation.",
+      "effect": "Засчитан в указанном исследовательском scope; не снимает отдельные gaps"
+    },
+    {
+      "number": 2,
+      "literal_criterion": "Фокус остался на тревожных/тревожно-депрессивных состояниях и применимости в РФ.",
+      "status": "выполнено",
+      "evidence": "RF/EAEU labels и RU-GAD/PANIC/PHOB/DEP определяют область; иностранное сравнение не закрывает РФ пробел.",
+      "finding_ids": [],
+      "files": [
+        "research/remediation_round3/rules/",
+        "research/remediation_round3/result_contracts.yaml",
+        "research/remediation_round3/full_scenarios.json",
+        "research/acceptance_v2_audit/recheck2/source_verification.json",
+        "research/acceptance_v2_audit/recheck2/independent_paths.json"
+      ],
+      "limits": "Самостоятельное первичное чтение/границы перечислены в source_verification и coverage. Не выполнена исчерпывающая клиническая рецензия всех источниковых предупреждений/каждого expected/всех INN→class mappings и всех result-specific necessity решений. Исследование без app/clinical validation.",
+      "effect": "Засчитан в указанном исследовательском scope; не снимает отдельные gaps"
+    },
+    {
+      "number": 3,
+      "literal_criterion": "Основной сценарий — выбранный препарат → дозовая схема, не только выбор лекарства или прогноз концентрации.",
+      "status": "выполнено",
+      "evidence": "38 cards содержат выбранный препарат/форму и дозовые либо ограниченные qualitative результаты, а не только рейтинг лекарств.",
+      "finding_ids": [],
+      "files": [
+        "research/remediation_round3/rules/",
+        "research/remediation_round3/result_contracts.yaml",
+        "research/remediation_round3/full_scenarios.json",
+        "research/acceptance_v2_audit/recheck2/source_verification.json",
+        "research/acceptance_v2_audit/recheck2/independent_paths.json"
+      ],
+      "limits": "Самостоятельное первичное чтение/границы перечислены в source_verification и coverage. Не выполнена исчерпывающая клиническая рецензия всех источниковых предупреждений/каждого expected/всех INN→class mappings и всех result-specific necessity решений. Исследование без app/clinical validation.",
+      "effect": "Засчитан в указанном исследовательском scope; не снимает отдельные gaps"
+    },
+    {
+      "number": 4,
+      "literal_criterion": "Исследованы старт, титрование/коррекция, отмена и переключение. Непокрытые режимы явно обозначены, не удалены молча.",
+      "status": "выполнено",
+      "evidence": "Старт/коррекция/отмена/6направлений switch представлены; отсутствующие точные pair calendars явно clinician_choice/gap.",
+      "finding_ids": [],
+      "files": [
+        "research/remediation_round3/rules/",
+        "research/remediation_round3/result_contracts.yaml",
+        "research/remediation_round3/full_scenarios.json",
+        "research/acceptance_v2_audit/recheck2/source_verification.json",
+        "research/acceptance_v2_audit/recheck2/independent_paths.json"
+      ],
+      "limits": "Самостоятельное первичное чтение/границы перечислены в source_verification и coverage. Не выполнена исчерпывающая клиническая рецензия всех источниковых предупреждений/каждого expected/всех INN→class mappings и всех result-specific necessity решений. Исследование без app/clinical validation.",
+      "effect": "Засчитан в указанном исследовательском scope; не снимает отдельные gaps"
+    },
+    {
+      "number": 5,
+      "literal_criterion": "Дополнительный топ-3 опирается на КР; не создана собственная шкала индивидуального превосходства.",
+      "status": "выполнено",
+      "evidence": "Топ-3 как варианты линий RU КР; индивидуальная шкала превосходства не придумана.",
+      "finding_ids": [],
+      "files": [
+        "research/remediation_round3/rules/",
+        "research/remediation_round3/result_contracts.yaml",
+        "research/remediation_round3/full_scenarios.json",
+        "research/acceptance_v2_audit/recheck2/source_verification.json",
+        "research/acceptance_v2_audit/recheck2/independent_paths.json"
+      ],
+      "limits": "Самостоятельное первичное чтение/границы перечислены в source_verification и coverage. Не выполнена исчерпывающая клиническая рецензия всех источниковых предупреждений/каждого expected/всех INN→class mappings и всех result-specific necessity решений. Исследование без app/clinical validation.",
+      "effect": "Засчитан в указанном исследовательском scope; не снимает отдельные gaps"
+    },
+    {
+      "number": 6,
+      "literal_criterion": "Дети, пожилые, беременность и лактация присутствуют в карте покрытия; нет автоматического переноса взрослых доз.",
+      "status": "выполнено",
+      "evidence": "Карта детей/пожилых/беременности/лактации есть; известные детские и формовые ограничения не дают взрослую числовую схему.",
+      "finding_ids": [],
+      "files": [
+        "research/remediation_round3/rules/",
+        "research/remediation_round3/result_contracts.yaml",
+        "research/remediation_round3/full_scenarios.json",
+        "research/acceptance_v2_audit/recheck2/source_verification.json",
+        "research/acceptance_v2_audit/recheck2/independent_paths.json"
+      ],
+      "limits": "Самостоятельное первичное чтение/границы перечислены в source_verification и coverage. Не выполнена исчерпывающая клиническая рецензия всех источниковых предупреждений/каждого expected/всех INN→class mappings и всех result-specific necessity решений. Исследование без app/clinical validation.",
+      "effect": "Засчитан в указанном исследовательском scope; не снимает отдельные gaps"
+    },
+    {
+      "number": 7,
+      "literal_criterion": "Нет обязательной генетики, ML, истории пациентов, стоимости, профилей предпочтений и календаря визитов.",
+      "status": "выполнено",
+      "evidence": "Обязательных генетики/ML/истории/стоимости/профилей/визитов нет; laboratory monitoring не является календарём посещений.",
+      "finding_ids": [],
+      "files": [
+        "research/remediation_round3/rules/",
+        "research/remediation_round3/result_contracts.yaml",
+        "research/remediation_round3/full_scenarios.json",
+        "research/acceptance_v2_audit/recheck2/source_verification.json",
+        "research/acceptance_v2_audit/recheck2/independent_paths.json"
+      ],
+      "limits": "Самостоятельное первичное чтение/границы перечислены в source_verification и coverage. Не выполнена исчерпывающая клиническая рецензия всех источниковых предупреждений/каждого expected/всех INN→class mappings и всех result-specific necessity решений. Исследование без app/clinical validation.",
+      "effect": "Засчитан в указанном исследовательском scope; не снимает отдельные gaps"
+    },
+    {
+      "number": 8,
+      "literal_criterion": "Есть точные МНН, показание, код/классификация, форма, популяция и режим.",
+      "status": "выполнено",
+      "evidence": "INN/diagnosis/mode/population/identified product form present; current registration/form provenance reviewed.",
+      "finding_ids": [],
+      "files": [
+        "research/remediation_round3/rules/",
+        "research/remediation_round3/result_contracts.yaml",
+        "research/remediation_round3/full_scenarios.json",
+        "research/acceptance_v2_audit/recheck2/source_verification.json",
+        "research/acceptance_v2_audit/recheck2/independent_paths.json"
+      ],
+      "limits": "Самостоятельное первичное чтение/границы перечислены в source_verification и coverage. Не выполнена исчерпывающая клиническая рецензия всех источниковых предупреждений/каждого expected/всех INN→class mappings и всех result-specific necessity решений. Исследование без app/clinical validation.",
+      "effect": "Засчитан в указанном исследовательском scope; не снимает отдельные gaps"
+    },
+    {
+      "number": 9,
+      "literal_criterion": "Есть конкретный источник, версия и локатор, а не только ссылка на главную страницу реестра.",
+      "status": "частично",
+      "evidence": "Current 11 primary product files/SHA/versions available; nested11377bases consistent. PHEN locator/attribution residual R2-03.",
+      "finding_ids": [
+        "R2-03"
+      ],
+      "files": [
+        "research/remediation_round3/rules/",
+        "research/remediation_round3/result_contracts.yaml",
+        "research/remediation_round3/full_scenarios.json",
+        "research/acceptance_v2_audit/recheck2/source_verification.json",
+        "research/acceptance_v2_audit/recheck2/independent_paths.json"
+      ],
+      "limits": "Самостоятельное первичное чтение/границы перечислены в source_verification и coverage. Не выполнена исчерпывающая клиническая рецензия всех источниковых предупреждений/каждого expected/всех INN→class mappings и всех result-specific necessity решений. Исследование без app/clinical validation.",
+      "effect": "Материально незакрыто в указанном scope"
+    },
+    {
+      "number": 10,
+      "literal_criterion": "Каждая медицинская доза, граница, поправка, срок и условие имеют источник.",
+      "status": "частично",
+      "evidence": "211parameter rows/104distinct groups inspected; no numeric changes vs recheck1. Source-owned known actions corrected, but PREG/PHEN scope residual R2-03 and explicitly unverified completeness remain.",
+      "finding_ids": [
+        "R2-03"
+      ],
+      "files": [
+        "research/remediation_round3/rules/",
+        "research/remediation_round3/result_contracts.yaml",
+        "research/remediation_round3/full_scenarios.json",
+        "research/acceptance_v2_audit/recheck2/source_verification.json",
+        "research/acceptance_v2_audit/recheck2/independent_paths.json"
+      ],
+      "limits": "Самостоятельное первичное чтение/границы перечислены в source_verification и coverage. Не выполнена исчерпывающая клиническая рецензия всех источниковых предупреждений/каждого expected/всех INN→class mappings и всех result-specific necessity решений. Исследование без app/clinical validation.",
+      "effect": "Материально незакрыто в указанном scope"
+    },
+    {
+      "number": 11,
+      "literal_criterion": "Опубликованный диапазон не заменён произвольно выбранным числом; пример не превращён в обязательный протокол.",
+      "status": "выполнено",
+      "evidence": "Source alternatives/ranges preserved: FLUV50or100, PREG25–50 and frequency alternatives; PAR taper an optional selected example.",
+      "finding_ids": [],
+      "files": [
+        "research/remediation_round3/rules/",
+        "research/remediation_round3/result_contracts.yaml",
+        "research/remediation_round3/full_scenarios.json",
+        "research/acceptance_v2_audit/recheck2/source_verification.json",
+        "research/acceptance_v2_audit/recheck2/independent_paths.json"
+      ],
+      "limits": "Самостоятельное первичное чтение/границы перечислены в source_verification и coverage. Не выполнена исчерпывающая клиническая рецензия всех источниковых предупреждений/каждого expected/всех INN→class mappings и всех result-specific necessity решений. Исследование без app/clinical validation.",
+      "effect": "Засчитан в указанном исследовательском scope; не снимает отдельные gaps"
+    },
+    {
+      "number": 12,
+      "literal_criterion": "Различаются разовая/суточная доза, единицы, кратность и лекарственные формы.",
+      "status": "выполнено",
+      "evidence": "Daily/per-administration/frequency arithmetic consistent; CLcr/absoluteGFR/indexed units distinguished; form split/release bound to identified label.",
+      "finding_ids": [],
+      "files": [
+        "research/remediation_round3/rules/",
+        "research/remediation_round3/result_contracts.yaml",
+        "research/remediation_round3/full_scenarios.json",
+        "research/acceptance_v2_audit/recheck2/source_verification.json",
+        "research/acceptance_v2_audit/recheck2/independent_paths.json"
+      ],
+      "limits": "Самостоятельное первичное чтение/границы перечислены в source_verification и coverage. Не выполнена исчерпывающая клиническая рецензия всех источниковых предупреждений/каждого expected/всех INN→class mappings и всех result-specific necessity решений. Исследование без app/clinical validation.",
+      "effect": "Засчитан в указанном исследовательском scope; не снимает отдельные gaps"
+    },
+    {
+      "number": 13,
+      "literal_criterion": "Не перемножены самостоятельные поправки и не усреднены несовместимые источники.",
+      "status": "выполнено",
+      "evidence": "Independent renal/hepatic/CYP changes not multiplied; DULOX overlap and XR combination stay clinician_choice.",
+      "finding_ids": [],
+      "files": [
+        "research/remediation_round3/rules/",
+        "research/remediation_round3/result_contracts.yaml",
+        "research/remediation_round3/full_scenarios.json",
+        "research/acceptance_v2_audit/recheck2/source_verification.json",
+        "research/acceptance_v2_audit/recheck2/independent_paths.json"
+      ],
+      "limits": "Самостоятельное первичное чтение/границы перечислены в source_verification и coverage. Не выполнена исчерпывающая клиническая рецензия всех источниковых предупреждений/каждого expected/всех INN→class mappings и всех result-specific necessity решений. Исследование без app/clinical validation.",
+      "effect": "Засчитан в указанном исследовательском scope; не снимает отдельные gaps"
+    },
+    {
+      "number": 14,
+      "literal_criterion": "Для переключения проверено направление, оба препарата, допустимость перекрытия и необходимый интервал.",
+      "status": "частично",
+      "evidence": "Sources/roles and existing urgent A/B fixtures reviewed; new current-event nonstart A selected_mode→ongoing relation is not declared (R2-01). Full Russian pair calendar absent explicitly, not invented.",
+      "finding_ids": [
+        "R2-01"
+      ],
+      "files": [
+        "research/remediation_round3/rules/",
+        "research/remediation_round3/result_contracts.yaml",
+        "research/remediation_round3/full_scenarios.json",
+        "research/acceptance_v2_audit/recheck2/source_verification.json",
+        "research/acceptance_v2_audit/recheck2/independent_paths.json"
+      ],
+      "limits": "Самостоятельное первичное чтение/границы перечислены в source_verification и coverage. Не выполнена исчерпывающая клиническая рецензия всех источниковых предупреждений/каждого expected/всех INN→class mappings и всех result-specific necessity решений. Исследование без app/clinical validation.",
+      "effect": "Материально незакрыто в указанном scope"
+    },
+    {
+      "number": 15,
+      "literal_criterion": "Для отмены сохранены условия изменения темпа; нет единого придуманного процента/срока для всех.",
+      "status": "частично",
+      "evidence": "Published minima/conditional symptoms retained; PREG/PHEN null resumption gaps fixed but narrative source-scope residual R2-03 remains.",
+      "finding_ids": [
+        "R2-03"
+      ],
+      "files": [
+        "research/remediation_round3/rules/",
+        "research/remediation_round3/result_contracts.yaml",
+        "research/remediation_round3/full_scenarios.json",
+        "research/acceptance_v2_audit/recheck2/source_verification.json",
+        "research/acceptance_v2_audit/recheck2/independent_paths.json"
+      ],
+      "limits": "Самостоятельное первичное чтение/границы перечислены в source_verification и coverage. Не выполнена исчерпывающая клиническая рецензия всех источниковых предупреждений/каждого expected/всех INN→class mappings и всех result-specific necessity решений. Исследование без app/clinical validation.",
+      "effect": "Материально незакрыто в указанном scope"
+    },
+    {
+      "number": 16,
+      "literal_criterion": "Баллы шкалы влияют на дозовое действие только там, где это действительно задано найденным правилом.",
+      "status": "выполнено",
+      "evidence": "Scales provide monitoring where KR says so; no source-free dose coefficient or proprietary scoring.",
+      "finding_ids": [],
+      "files": [
+        "research/remediation_round3/rules/",
+        "research/remediation_round3/result_contracts.yaml",
+        "research/remediation_round3/full_scenarios.json",
+        "research/acceptance_v2_audit/recheck2/source_verification.json",
+        "research/acceptance_v2_audit/recheck2/independent_paths.json"
+      ],
+      "limits": "Самостоятельное первичное чтение/границы перечислены в source_verification и coverage. Не выполнена исчерпывающая клиническая рецензия всех источниковых предупреждений/каждого expected/всех INN→class mappings и всех result-specific necessity решений. Исследование без app/clinical validation.",
+      "effect": "Засчитан в указанном исследовательском scope; не снимает отдельные gaps"
+    },
+    {
+      "number": 17,
+      "literal_criterion": "Для каждого вопроса показано, какое правило использует ответ и почему его нельзя убрать.",
+      "status": "частично",
+      "evidence": "906input rows,2230ledger rows,265decisions structurally connected;511always values not all proved individually necessary. PAR qualitative witness and21SER backward dialogue dependencies remain.",
+      "finding_ids": [
+        "R2-01",
+        "R2-02",
+        "R2-04"
+      ],
+      "files": [
+        "research/remediation_round3/rules/",
+        "research/remediation_round3/result_contracts.yaml",
+        "research/remediation_round3/full_scenarios.json",
+        "research/acceptance_v2_audit/recheck2/source_verification.json",
+        "research/acceptance_v2_audit/recheck2/independent_paths.json"
+      ],
+      "limits": "Самостоятельное первичное чтение/границы перечислены в source_verification и coverage. Не выполнена исчерпывающая клиническая рецензия всех источниковых предупреждений/каждого expected/всех INN→class mappings и всех result-specific necessity решений. Исследование без app/clinical validation.",
+      "effect": "Материально незакрыто в указанном scope"
+    },
+    {
+      "number": 18,
+      "literal_criterion": "Для обычного индивидуального дозового расчёта 5–10 содержательных вопросов — целевой диапазон; допустимо до 15 включительно при обоснованной необходимости каждого вопроса. Начальные выборы и независимые сведения считаются отдельно; нагрузка не скрыта в подпунктах или предварительной анкете, необходимые ограничения не удалены ради лимита.",
+      "status": "частично",
+      "evidence": "Own531count checks confirm ordinary20/17/17–18/16; no full individual ordinary≤15 proof.11–15 not penalized for old limit.",
+      "finding_ids": [
+        "R2-05"
+      ],
+      "files": [
+        "research/remediation_round3/rules/",
+        "research/remediation_round3/result_contracts.yaml",
+        "research/remediation_round3/full_scenarios.json",
+        "research/acceptance_v2_audit/recheck2/source_verification.json",
+        "research/acceptance_v2_audit/recheck2/independent_paths.json"
+      ],
+      "limits": "Самостоятельное первичное чтение/границы перечислены в source_verification и coverage. Не выполнена исчерпывающая клиническая рецензия всех источниковых предупреждений/каждого expected/всех INN→class mappings и всех result-specific necessity решений. Исследование без app/clinical validation.",
+      "effect": "Материально незакрыто в указанном scope"
+    },
+    {
+      "number": 19,
+      "literal_criterion": "Для сложных веток зафиксирован предел короткого расчёта, а не удалены обязательные сведения.",
+      "status": "выполнено",
+      "evidence": "Actual ESC CAD/electrolyte, organ/MAOI/switch source triggers explicit; complexity not assigned just from count. Aplan stages/day/dose/frequency and A/B facts separate.",
+      "finding_ids": [],
+      "files": [
+        "research/remediation_round3/rules/",
+        "research/remediation_round3/result_contracts.yaml",
+        "research/remediation_round3/full_scenarios.json",
+        "research/acceptance_v2_audit/recheck2/source_verification.json",
+        "research/acceptance_v2_audit/recheck2/independent_paths.json"
+      ],
+      "limits": "Самостоятельное первичное чтение/границы перечислены в source_verification и coverage. Не выполнена исчерпывающая клиническая рецензия всех источниковых предупреждений/каждого expected/всех INN→class mappings и всех result-specific necessity решений. Исследование без app/clinical validation.",
+      "effect": "Засчитан в указанном исследовательском scope; не снимает отдельные gaps"
+    },
+    {
+      "number": 20,
+      "literal_criterion": "«Неизвестно/не исследовано/не помню» не интерпретируются как норма/нет.",
+      "status": "выполнено",
+      "evidence": "All531projections zero fabricated absent negatives / overlap; reported unknown/omitted no clinical clearance. A phase enum integration mismatch R2-01 does not turn unknown into normal.",
+      "finding_ids": [],
+      "files": [
+        "research/remediation_round3/rules/",
+        "research/remediation_round3/result_contracts.yaml",
+        "research/remediation_round3/full_scenarios.json",
+        "research/acceptance_v2_audit/recheck2/source_verification.json",
+        "research/acceptance_v2_audit/recheck2/independent_paths.json"
+      ],
+      "limits": "Самостоятельное первичное чтение/границы перечислены в source_verification и coverage. Не выполнена исчерпывающая клиническая рецензия всех источниковых предупреждений/каждого expected/всех INN→class mappings и всех result-specific necessity решений. Исследование без app/clinical validation.",
+      "effect": "Засчитан в указанном исследовательском scope; не снимает отдельные gaps"
+    },
+    {
+      "number": 21,
+      "literal_criterion": "Недостаток обязательного значения даёт конкретный запрос данных без безусловной дозы.",
+      "status": "выполнено",
+      "evidence": "Full typed missing/unknown scenarios request named necessary fields with no executable dose; A/B unknown event phases request phase explicitly. Domain A repair remains required before schema implementation.",
+      "finding_ids": [],
+      "files": [
+        "research/remediation_round3/rules/",
+        "research/remediation_round3/result_contracts.yaml",
+        "research/remediation_round3/full_scenarios.json",
+        "research/acceptance_v2_audit/recheck2/source_verification.json",
+        "research/acceptance_v2_audit/recheck2/independent_paths.json"
+      ],
+      "limits": "Самостоятельное первичное чтение/границы перечислены в source_verification и coverage. Не выполнена исчерпывающая клиническая рецензия всех источниковых предупреждений/каждого expected/всех INN→class mappings и всех result-specific necessity решений. Исследование без app/clinical validation.",
+      "effect": "Засчитан в указанном исследовательском scope; не снимает отдельные gaps"
+    },
+    {
+      "number": 22,
+      "literal_criterion": "Схема может быть выдана заранее, но последующие условные шаги не показаны как обязательные.",
+      "status": "выполнено",
+      "evidence": "Future stages are conditional; no guaranteed calendar or source-free taper percentages.",
+      "finding_ids": [],
+      "files": [
+        "research/remediation_round3/rules/",
+        "research/remediation_round3/result_contracts.yaml",
+        "research/remediation_round3/full_scenarios.json",
+        "research/acceptance_v2_audit/recheck2/source_verification.json",
+        "research/acceptance_v2_audit/recheck2/independent_paths.json"
+      ],
+      "limits": "Самостоятельное первичное чтение/границы перечислены в source_verification и coverage. Не выполнена исчерпывающая клиническая рецензия всех источниковых предупреждений/каждого expected/всех INN→class mappings и всех result-specific necessity решений. Исследование без app/clinical validation.",
+      "effect": "Засчитан в указанном исследовательском scope; не снимает отдельные gaps"
+    },
+    {
+      "number": 23,
+      "literal_criterion": "Минимальные интервалы изменения дозы не перепутаны с датами назначаемых врачом визитов.",
+      "status": "выполнено",
+      "evidence": "Dose minima/monitoring intervals separate from clinician visit timing; AGO approximate laboratory weeks remain approximate.",
+      "finding_ids": [],
+      "files": [
+        "research/remediation_round3/rules/",
+        "research/remediation_round3/result_contracts.yaml",
+        "research/remediation_round3/full_scenarios.json",
+        "research/acceptance_v2_audit/recheck2/source_verification.json",
+        "research/acceptance_v2_audit/recheck2/independent_paths.json"
+      ],
+      "limits": "Самостоятельное первичное чтение/границы перечислены в source_verification и coverage. Не выполнена исчерпывающая клиническая рецензия всех источниковых предупреждений/каждого expected/всех INN→class mappings и всех result-specific necessity решений. Исследование без app/clinical validation.",
+      "effect": "Засчитан в указанном исследовательском scope; не снимает отдельные gaps"
+    },
+    {
+      "number": 24,
+      "literal_criterion": "Доступность первоисточника проверена; сниппет/абстракт/перепечатка не названы прочитанным оригиналом.",
+      "status": "выполнено",
+      "evidence": "Actually accessible local official originals read; provided human registry download/stamp evidence distinct from own online click/download. Same prior PDF bytes verified before reuse; full PIL reading not claimed.",
+      "finding_ids": [],
+      "files": [
+        "research/remediation_round3/rules/",
+        "research/remediation_round3/result_contracts.yaml",
+        "research/remediation_round3/full_scenarios.json",
+        "research/acceptance_v2_audit/recheck2/source_verification.json",
+        "research/acceptance_v2_audit/recheck2/independent_paths.json"
+      ],
+      "limits": "Самостоятельное первичное чтение/границы перечислены в source_verification и coverage. Не выполнена исчерпывающая клиническая рецензия всех источниковых предупреждений/каждого expected/всех INN→class mappings и всех result-specific necessity решений. Исследование без app/clinical validation.",
+      "effect": "Засчитан в указанном исследовательском scope; не снимает отдельные gaps"
+    },
+    {
+      "number": 25,
+      "literal_criterion": "Российская регистрационная применимость не выведена из иностранного руководства.",
+      "status": "выполнено",
+      "evidence": "Russian registered forms/labels bind rules; foreign examples not registration evidence.",
+      "finding_ids": [],
+      "files": [
+        "research/remediation_round3/rules/",
+        "research/remediation_round3/result_contracts.yaml",
+        "research/remediation_round3/full_scenarios.json",
+        "research/acceptance_v2_audit/recheck2/source_verification.json",
+        "research/acceptance_v2_audit/recheck2/independent_paths.json"
+      ],
+      "limits": "Самостоятельное первичное чтение/границы перечислены в source_verification и coverage. Не выполнена исчерпывающая клиническая рецензия всех источниковых предупреждений/каждого expected/всех INN→class mappings и всех result-specific necessity решений. Исследование без app/clinical validation.",
+      "effect": "Засчитан в указанном исследовательском scope; не снимает отдельные gaps"
+    },
+    {
+      "number": 26,
+      "literal_criterion": "Источник/КР/экспертный протокол/исследованная модель имеют разные, точно описанные статусы.",
+      "status": "выполнено",
+      "evidence": "KR/label/expert interpretation/protocol/effectiveness study have different declared statuses.",
+      "finding_ids": [],
+      "files": [
+        "research/remediation_round3/rules/",
+        "research/remediation_round3/result_contracts.yaml",
+        "research/remediation_round3/full_scenarios.json",
+        "research/acceptance_v2_audit/recheck2/source_verification.json",
+        "research/acceptance_v2_audit/recheck2/independent_paths.json"
+      ],
+      "limits": "Самостоятельное первичное чтение/границы перечислены в source_verification и coverage. Не выполнена исчерпывающая клиническая рецензия всех источниковых предупреждений/каждого expected/всех INN→class mappings и всех result-specific necessity решений. Исследование без app/clinical validation.",
+      "effect": "Засчитан в указанном исследовательском scope; не снимает отдельные gaps"
+    },
+    {
+      "number": 27,
+      "literal_criterion": "Эффективность препарата не объявлена доказательством любой алгоритмической дозировки.",
+      "status": "выполнено",
+      "evidence": "Drug efficacy/PK percentage not proof of any algorithmic dose; current DULOX glycemia evidence not dose factor.",
+      "finding_ids": [],
+      "files": [
+        "research/remediation_round3/rules/",
+        "research/remediation_round3/result_contracts.yaml",
+        "research/remediation_round3/full_scenarios.json",
+        "research/acceptance_v2_audit/recheck2/source_verification.json",
+        "research/acceptance_v2_audit/recheck2/independent_paths.json"
+      ],
+      "limits": "Самостоятельное первичное чтение/границы перечислены в source_verification и coverage. Не выполнена исчерпывающая клиническая рецензия всех источниковых предупреждений/каждого expected/всех INN→class mappings и всех result-specific necessity решений. Исследование без app/clinical validation.",
+      "effect": "Засчитан в указанном исследовательском scope; не снимает отдельные gaps"
+    },
+    {
+      "number": 28,
+      "literal_criterion": "Технический перенос не объявлен клинической валидацией нового продукта.",
+      "status": "выполнено",
+      "evidence": "Static/graphs/prepared expected not executed app or clinical trial; clinical validation not performed.",
+      "finding_ids": [],
+      "files": [
+        "research/remediation_round3/rules/",
+        "research/remediation_round3/result_contracts.yaml",
+        "research/remediation_round3/full_scenarios.json",
+        "research/acceptance_v2_audit/recheck2/source_verification.json",
+        "research/acceptance_v2_audit/recheck2/independent_paths.json"
+      ],
+      "limits": "Самостоятельное первичное чтение/границы перечислены в source_verification и coverage. Не выполнена исчерпывающая клиническая рецензия всех источниковых предупреждений/каждого expected/всех INN→class mappings и всех result-specific necessity решений. Исследование без app/clinical validation.",
+      "effect": "Засчитан в указанном исследовательском scope; не снимает отдельные gaps"
+    },
+    {
+      "number": 29,
+      "literal_criterion": "Готовность к реализации не перепутана с готовностью к клиническому применению.",
+      "status": "выполнено",
+      "evidence": "Allowed technical transfer restricted to checked contracts/facts/gaps; no claim of clinical deployment readiness.",
+      "finding_ids": [],
+      "files": [
+        "research/remediation_round3/rules/",
+        "research/remediation_round3/result_contracts.yaml",
+        "research/remediation_round3/full_scenarios.json",
+        "research/acceptance_v2_audit/recheck2/source_verification.json",
+        "research/acceptance_v2_audit/recheck2/independent_paths.json"
+      ],
+      "limits": "Самостоятельное первичное чтение/границы перечислены в source_verification и coverage. Не выполнена исчерпывающая клиническая рецензия всех источниковых предупреждений/каждого expected/всех INN→class mappings и всех result-specific necessity решений. Исследование без app/clinical validation.",
+      "effect": "Засчитан в указанном исследовательском scope; не снимает отдельные gaps"
+    },
+    {
+      "number": 30,
+      "literal_criterion": "Все пробелы и конфликты перечислены; отсутствие найденного аналога не названо доказательством его отсутствия.",
+      "status": "частично",
+      "evidence": "Main indices reflect current ESC and protected history; new R2 enum/necessity/scope/order findings not yet repaired in frozen package; no absence-of-analogue proof.",
+      "finding_ids": [
+        "R2-01",
+        "R2-02",
+        "R2-03",
+        "R2-04",
+        "R2-05"
+      ],
+      "files": [
+        "research/remediation_round3/rules/",
+        "research/remediation_round3/result_contracts.yaml",
+        "research/remediation_round3/full_scenarios.json",
+        "research/acceptance_v2_audit/recheck2/source_verification.json",
+        "research/acceptance_v2_audit/recheck2/independent_paths.json"
+      ],
+      "limits": "Самостоятельное первичное чтение/границы перечислены в source_verification и coverage. Не выполнена исчерпывающая клиническая рецензия всех источниковых предупреждений/каждого expected/всех INN→class mappings и всех result-specific necessity решений. Исследование без app/clinical validation.",
+      "effect": "Материально незакрыто в указанном scope"
+    }
+  ],
+  "statuses": {
+    "выполнено": 23,
+    "частично": 7
+  },
+  "changed_criterion_only": 18,
+  "decision": "partial acceptance; research cap6",
+  "scope": "All38 active cards and published parameter inventory reviewed; not exhaustive medical validation of every source clause/application result."
+}

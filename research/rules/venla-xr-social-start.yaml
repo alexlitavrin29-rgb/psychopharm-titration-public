@@ -1,0 +1,1940 @@
+schema_version: '1.0'
+rule_id: venla-xr-social-start
+development_status: extracted_research_not_executable
+language: ru
+identity:
+  title: 'Венлафаксин XR: социальная тревога, старт'
+  mode: start
+  drug_inn: венлафаксин
+  from_drug_inn: null
+  to_drug_inn: null
+  formulation: Велаксин, капсулы пролонгированного высвобождения 75/150 мг
+  route: oral
+  diagnosis_label_ru: Социальное тревожное расстройство
+  classification_system: МКБ-10
+  diagnosis_code: F40.1
+  jurisdiction: RU_versioned_sources
+applicability:
+  population_description: Взрослые от 18 лет; показание и клиническое действие выбирает врач.
+  age_constraints:
+  - minimum: 18
+    inclusive: true
+    unit: year
+    source_ref: RU-VENLA-XR
+    source_locator: §1–3 с.1; §4.1–4.3 с.2–5; §4.4 с.5–13; §4.5 с.13–17; §4.6 с.17–18
+  pregnancy: Беременность/предполагаемая беременность противопоказаны, §4.3.
+  lactation: Лактация противопоказана, §4.3.
+  renal_constraints:
+  - 'Источник XR: абсолютная СКФ >30 мл/мин без коррекции; 10–30 снижение на 50%; <10 не рекомендуется/противопоказание.
+    Нормированную eGFR не подставлять.'
+  hepatic_constraints:
+  - 'Лёгкая/умеренная: рассмотреть -50%; тяжёлая не рекомендуется; §4.3 ПВ >18 с. Не выводить категорию из одного
+    анализа.'
+  comorbidity_constraints: []
+  interacting_drugs:
+  - ИМАО §4.3–4.5; список и даты отмены при необходимости отдельно.
+  other_conditions: []
+  exclusions: []
+  indication_status_in_russia: RU_indication_in_read_original_latest_registry_text_separate
+  source_refs:
+  - RU-VENLA-XR
+  - RU-PHOB
+inputs:
+- input_id: age
+  question_ru: Возраст, лет?
+  data_type: integer
+  unit: year
+  allowed_values: []
+  required_when: 'для выбранного индивидуального результата: числовой операнд или явно проверяемое источниковое
+    ограничение'
+  show_when: при выборе результата или использовании уже подтверждённого в этом расчёте факта
+  why_needed: Взрослая/пожилая применимость §4.1–4.2.
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; request this specific necessary fact; no individual dose
+  source_refs:
+  - RU-VENLA-XR
+  input_role: required_selected_result_operand_or_source_gate
+  source_locator: §4.2 с.4; §4.3 с.5
+  missing_states:
+  - unknown
+  - not_assessed
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: always
+  necessity_reason: Взрослая/пожилая применимость §4.1–4.2.
+  fact_origin: patient_fact
+- input_id: form
+  question_ru: Какая конкретная форма и дозировка?
+  data_type: structured_form
+  unit: null
+  allowed_values: []
+  required_when: 'для выбранного индивидуального результата: числовой операнд или явно проверяемое источниковое
+    ограничение'
+  show_when: при выборе результата или использовании уже подтверждённого в этом расчёте факта
+  why_needed: Не переносить форму; дозовая исполнимость §1–3/4.2.
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; request this specific necessary fact; no individual dose
+  source_refs:
+  - RU-VENLA-XR
+  input_role: required_selected_result_operand_or_source_gate
+  source_locator: §1–3 с.1; §4.2 с.5
+  missing_states:
+  - unknown
+  - not_assessed
+  structure_ref: remediation_round3/input_contracts.yaml#structures/structured_form
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: always
+  necessity_reason: Не переносить форму; дозовая исполнимость §1–3/4.2.
+  fact_origin: product_metadata
+- input_id: hepatic
+  question_ru: Подтверждённая функция печени?
+  data_type: source_hepatic_category
+  unit: null
+  allowed_values: []
+  required_when: 'для выбранного индивидуального результата: числовой операнд или явно проверяемое источниковое
+    ограничение'
+  show_when: при выборе результата или использовании уже подтверждённого в этом расчёте факта
+  why_needed: Ограничения §4.2–4.3; из одного анализа не выводить категорию.
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; request this specific necessary fact; no individual dose
+  source_refs:
+  - RU-VENLA-XR
+  input_role: required_selected_result_operand_or_source_gate
+  source_locator: §4.2 с.4; §4.3 с.5
+  missing_states:
+  - unknown
+  - not_assessed
+  structure_ref: remediation_round3/input_contracts.yaml#structures/source_hepatic_category
+  source_categories:
+  - no_impairment_after_assessment
+  - mild
+  - moderate
+  - severe
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: always
+  necessity_reason: Ограничения §4.2–4.3; из одного анализа не выводить категорию.
+  fact_origin: patient_fact
+- input_id: pregnancy
+  question_ru: Беременность подтверждена?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: 'для выбранного индивидуального результата: числовой операнд или явно проверяемое источниковое
+    ограничение'
+  show_when: при выборе результата или использовании уже подтверждённого в этом расчёте факта
+  why_needed: Применимость §4.3/4.6.
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; request this specific necessary fact; no individual dose
+  source_refs:
+  - RU-VENLA-XR
+  input_role: required_selected_result_operand_or_source_gate
+  source_locator: §4.3 с.5; §4.6 с.17–18 (противоречие формулировок, обычная ветка запрещена)
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    да: true
+    нет: false
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  requirement_predicate:
+    kind: always
+  necessity_reason: Применимость §4.3/4.6.
+  fact_origin: patient_fact
+- input_id: lactation
+  question_ru: Есть грудное вскармливание?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: 'для выбранного индивидуального результата: числовой операнд или явно проверяемое источниковое
+    ограничение'
+  show_when: при выборе результата или использовании уже подтверждённого в этом расчёте факта
+  why_needed: Применимость §4.3/4.6.
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; request this specific necessary fact; no individual dose
+  source_refs:
+  - RU-VENLA-XR
+  input_role: required_selected_result_operand_or_source_gate
+  source_locator: §4.3 с.5; §4.6 с.18
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    да: true
+    нет: false
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  requirement_predicate:
+    kind: always
+  necessity_reason: Применимость §4.3/4.6.
+  fact_origin: patient_fact
+- input_id: medicines
+  question_ru: Текущие и недавно отменённые препараты?
+  data_type: medication_list
+  unit: null
+  allowed_values: []
+  required_when: 'для выбранного индивидуального результата: числовой операнд или явно проверяемое источниковое
+    ограничение'
+  show_when: при выборе результата или использовании уже подтверждённого в этом расчёте факта
+  why_needed: Взаимодействия и интервалы §4.3–4.5; последние даты при ИМАО отдельны.
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; request this specific necessary fact; no individual dose
+  source_refs:
+  - RU-VENLA-XR
+  input_role: required_selected_result_operand_or_source_gate
+  source_locator: §4.3 с.5; §4.5 с.13–17
+  missing_states:
+  - unknown
+  - not_assessed
+  structure_ref: remediation_round3/input_contracts.yaml#structures/medication_list
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: always
+  necessity_reason: Взаимодействия и интервалы §4.3–4.5; последние даты при ИМАО отдельны.
+  fact_origin: patient_fact
+- input_id: allergy
+  question_ru: Гиперчувствительность к препарату/компонентам?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: 'для выбранного индивидуального результата: числовой операнд или явно проверяемое источниковое
+    ограничение'
+  show_when: при выборе результата или использовании уже подтверждённого в этом расчёте факта
+  why_needed: Противопоказание §4.3.
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; request this specific necessary fact; no individual dose
+  source_refs:
+  - RU-VENLA-XR
+  input_role: required_selected_result_operand_or_source_gate
+  source_locator: §4.3 с.5
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    да: true
+    нет: false
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  requirement_predicate:
+    kind: always
+  necessity_reason: Противопоказание §4.3.
+  fact_origin: patient_fact
+- input_id: renal_metric
+  question_ru: Подтверждённое врачом значение absolute_GFR в мл/мин? Индексированная СКФ не подходит; при отсутствии
+    применимой оценки выберите «неизвестно».
+  data_type: structured_renal
+  unit: null
+  allowed_values: []
+  required_when: 'для выбранного индивидуального результата: числовой операнд или явно проверяемое источниковое
+    ограничение'
+  show_when: при выборе результата или использовании уже подтверждённого в этом расчёте факта
+  why_needed: §4.2; eGFR/CLcr и нормированная/абсолютная СКФ не взаимозаменяемы.
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; request this specific necessary fact; no individual dose
+  source_refs:
+  - RU-VENLA-XR
+  input_role: required_selected_result_operand_or_source_gate
+  source_locator: §4.2 с.4; §4.3 с.5
+  missing_states:
+  - unknown
+  - not_assessed
+  structure_ref: remediation_round3/input_contracts.yaml#structures/structured_renal
+  required_metric: absolute_GFR
+  required_unit: mL/min
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: always
+  necessity_reason: §4.2; eGFR/CLcr и нормированная/абсолютная СКФ не взаимозаменяемы.
+  fact_origin: patient_fact
+  metric_origin: fixed_source_metadata
+  unit_origin: fixed_source_metadata
+  method_required_for_selected_result: false
+  counted_independent_facts:
+  - clinician_confirmed_source_renal_value
+- input_id: maoi_type
+  question_ru: Тип каждого текущего/отменённого ИМАО?
+  data_type: record_map
+  unit: null
+  allowed_values:
+  - none_after_medication_history
+  - irreversible
+  - reversible_selective
+  - reversible_nonselective
+  - unknown
+  - not_assessed
+  required_when: каждая текущая/отменённая запись ИМАО или неизвестный класс взаимодействия
+  show_when: каждая текущая/отменённая запись ИМАО или неизвестный класс взаимодействия
+  why_needed: 'Изменяет применимость/действие: HTML §4.3; §4.5 ИМАО.'
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; request this specific necessary fact; no individual dose
+  source_refs:
+  - RU-VENLA-XR
+  source_locator: §4.5 с.13–14
+  input_role: maoi_record
+  required_for_individual_result: false
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  collection: per medication record_id
+  value_data_type: enum
+  requirement_predicate:
+    kind: maoi_record
+  necessity_reason: Each relevant MAOI type, not one compound clearance answer.
+  fact_origin: patient_fact
+- input_id: maoi_stopped_at
+  question_ru: Дата и время последнего приёма каждого отменённого ИМАО?
+  data_type: record_map
+  unit: null
+  allowed_values: []
+  required_when: каждая отменённая запись ИМАО отдельно
+  show_when: каждая отменённая запись ИМАО отдельно
+  why_needed: 'Изменяет применимость/действие: HTML §4.3; §4.5 ИМАО.'
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; request this specific necessary fact; no individual dose
+  source_refs:
+  - RU-VENLA-XR
+  source_locator: §4.5 с.13–14
+  input_role: stopped_maoi_record
+  required_for_individual_result: false
+  missing_states:
+  - unknown
+  - not_assessed
+  collection: per medication record_id
+  value_data_type: datetime
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: stopped_maoi_record
+  necessity_reason: Timestamp of each stopped MAOI; no timestamp for an empty assessed history.
+  fact_origin: patient_fact
+- input_id: recent_infarction
+  question_ru: Подтверждённое значение recent_infarction по HTML §4.4 С осторожностью / Особые указания?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  show_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы. Сохранить
+    источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт полного клинического
+    допуска.'
+  why_needed: Изменяет допуск/действие по RU-VENLA-XR HTML §4.4 С осторожностью / Особые указания; не общий допуск
+    врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data only when exact predicate active; otherwise explicit not_assessed warning,
+    no clinical clearance
+  source_refs:
+  - RU-VENLA-XR
+  source_locator: §4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале
+  required_for_individual_result: false
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: reported_context
+  input_role: reported_context
+  necessity_reason: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  fact_origin: patient_fact
+- input_id: unstable_angina
+  question_ru: Подтверждённое значение unstable_angina по HTML §4.4 С осторожностью / Особые указания?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  show_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы. Сохранить
+    источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт полного клинического
+    допуска.'
+  why_needed: Изменяет допуск/действие по RU-VENLA-XR HTML §4.4 С осторожностью / Особые указания; не общий допуск
+    врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data only when exact predicate active; otherwise explicit not_assessed warning,
+    no clinical clearance
+  source_refs:
+  - RU-VENLA-XR
+  source_locator: §4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале
+  required_for_individual_result: false
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: reported_context
+  input_role: reported_context
+  necessity_reason: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  fact_origin: patient_fact
+- input_id: heart_failure
+  question_ru: Подтверждённое значение heart_failure по HTML §4.4 С осторожностью / Особые указания?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  show_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы. Сохранить
+    источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт полного клинического
+    допуска.'
+  why_needed: Изменяет допуск/действие по RU-VENLA-XR HTML §4.4 С осторожностью / Особые указания; не общий допуск
+    врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data only when exact predicate active; otherwise explicit not_assessed warning,
+    no clinical clearance
+  source_refs:
+  - RU-VENLA-XR
+  source_locator: §4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале
+  required_for_individual_result: false
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: reported_context
+  input_role: reported_context
+  necessity_reason: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  fact_origin: patient_fact
+- input_id: coronary_disease
+  question_ru: Подтверждённое значение coronary_disease по HTML §4.4 С осторожностью / Особые указания?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  show_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы. Сохранить
+    источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт полного клинического
+    допуска.'
+  why_needed: Изменяет допуск/действие по RU-VENLA-XR HTML §4.4 С осторожностью / Особые указания; не общий допуск
+    врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data only when exact predicate active; otherwise explicit not_assessed warning,
+    no clinical clearance
+  source_refs:
+  - RU-VENLA-XR
+  source_locator: §4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале
+  required_for_individual_result: false
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: reported_context
+  input_role: reported_context
+  necessity_reason: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  fact_origin: patient_fact
+- input_id: ecg_change
+  question_ru: Подтверждённое значение ecg_change по HTML §4.4 С осторожностью / Особые указания?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  show_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы. Сохранить
+    источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт полного клинического
+    допуска.'
+  why_needed: Изменяет допуск/действие по RU-VENLA-XR HTML §4.4 С осторожностью / Особые указания; не общий допуск
+    врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data only when exact predicate active; otherwise explicit not_assessed warning,
+    no clinical clearance
+  source_refs:
+  - RU-VENLA-XR
+  source_locator: §4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале
+  required_for_individual_result: false
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: reported_context
+  input_role: reported_context
+  necessity_reason: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  fact_origin: patient_fact
+- input_id: qt_risk
+  question_ru: Подтверждённое значение qt_risk по HTML §4.4 С осторожностью / Особые указания?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: 'для выбранного индивидуального результата: числовой операнд или явно проверяемое источниковое
+    ограничение'
+  show_when: при выборе результата или использовании уже подтверждённого в этом расчёте факта
+  why_needed: Изменяет допуск/действие по RU-VENLA-XR HTML §4.4 С осторожностью / Особые указания; не общий допуск
+    врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; request this specific necessary fact; no individual dose
+  source_refs:
+  - RU-VENLA-XR
+  source_locator: §4.4 с.10; §4.5 с.15–16
+  required_for_individual_result: true
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: always
+  input_role: required_selected_result_operand_or_source_gate
+  necessity_reason: Изменяет допуск/действие по RU-VENLA-XR HTML §4.4 С осторожностью / Особые указания; не общий
+    допуск врача.
+  fact_origin: patient_fact
+- input_id: electrolyte_imbalance
+  question_ru: Подтверждённое значение electrolyte_imbalance по HTML §4.4 С осторожностью / Особые указания?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  show_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы. Сохранить
+    источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт полного клинического
+    допуска.'
+  why_needed: Изменяет допуск/действие по RU-VENLA-XR HTML §4.4 С осторожностью / Особые указания; не общий допуск
+    врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data only when exact predicate active; otherwise explicit not_assessed warning,
+    no clinical clearance
+  source_refs:
+  - RU-VENLA-XR
+  source_locator: §4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале
+  required_for_individual_result: false
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: reported_context
+  input_role: reported_context
+  necessity_reason: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  fact_origin: patient_fact
+- input_id: hypertension
+  question_ru: Подтверждённое значение hypertension по HTML §4.4 С осторожностью / Особые указания?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  show_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы. Сохранить
+    источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт полного клинического
+    допуска.'
+  why_needed: Изменяет допуск/действие по RU-VENLA-XR HTML §4.4 С осторожностью / Особые указания; не общий допуск
+    врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data only when exact predicate active; otherwise explicit not_assessed warning,
+    no clinical clearance
+  source_refs:
+  - RU-VENLA-XR
+  source_locator: §4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале
+  required_for_individual_result: false
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: reported_context
+  input_role: reported_context
+  necessity_reason: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  fact_origin: patient_fact
+- input_id: tachycardia
+  question_ru: Подтверждённое значение tachycardia по HTML §4.4 С осторожностью / Особые указания?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  show_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы. Сохранить
+    источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт полного клинического
+    допуска.'
+  why_needed: Изменяет допуск/действие по RU-VENLA-XR HTML §4.4 С осторожностью / Особые указания; не общий допуск
+    врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data only when exact predicate active; otherwise explicit not_assessed warning,
+    no clinical clearance
+  source_refs:
+  - RU-VENLA-XR
+  source_locator: §4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале
+  required_for_individual_result: false
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: reported_context
+  input_role: reported_context
+  necessity_reason: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  fact_origin: patient_fact
+- input_id: seizure_history
+  question_ru: Подтверждённое значение seizure_history по HTML §4.4 С осторожностью / Особые указания?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  show_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы. Сохранить
+    источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт полного клинического
+    допуска.'
+  why_needed: Изменяет допуск/действие по RU-VENLA-XR HTML §4.4 С осторожностью / Особые указания; не общий допуск
+    врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data only when exact predicate active; otherwise explicit not_assessed warning,
+    no clinical clearance
+  source_refs:
+  - RU-VENLA-XR
+  source_locator: §4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале
+  required_for_individual_result: false
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: reported_context
+  input_role: reported_context
+  necessity_reason: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  fact_origin: patient_fact
+- input_id: glaucoma
+  question_ru: Подтверждённое значение glaucoma по HTML §4.4 С осторожностью / Особые указания?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  show_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы. Сохранить
+    источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт полного клинического
+    допуска.'
+  why_needed: Изменяет допуск/действие по RU-VENLA-XR HTML §4.4 С осторожностью / Особые указания; не общий допуск
+    врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data only when exact predicate active; otherwise explicit not_assessed warning,
+    no clinical clearance
+  source_refs:
+  - RU-VENLA-XR
+  source_locator: §4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале
+  required_for_individual_result: false
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: reported_context
+  input_role: reported_context
+  necessity_reason: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  fact_origin: patient_fact
+- input_id: mania
+  question_ru: Подтверждённое значение mania по HTML §4.4 С осторожностью / Особые указания?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  show_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы. Сохранить
+    источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт полного клинического
+    допуска.'
+  why_needed: Изменяет допуск/действие по RU-VENLA-XR HTML §4.4 С осторожностью / Особые указания; не общий допуск
+    врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data only when exact predicate active; otherwise explicit not_assessed warning,
+    no clinical clearance
+  source_refs:
+  - RU-VENLA-XR
+  source_locator: §4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале
+  required_for_individual_result: false
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: reported_context
+  input_role: reported_context
+  necessity_reason: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  fact_origin: patient_fact
+- input_id: bleeding_risk
+  question_ru: Подтверждённое значение bleeding_risk по HTML §4.4 С осторожностью / Особые указания?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  show_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы. Сохранить
+    источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт полного клинического
+    допуска.'
+  why_needed: Изменяет допуск/действие по RU-VENLA-XR HTML §4.4 С осторожностью / Особые указания; не общий допуск
+    врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data only when exact predicate active; otherwise explicit not_assessed warning,
+    no clinical clearance
+  source_refs:
+  - RU-VENLA-XR
+  source_locator: §4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале
+  required_for_individual_result: false
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: reported_context
+  input_role: reported_context
+  necessity_reason: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  fact_origin: patient_fact
+- input_id: low_body_mass
+  question_ru: Подтверждённое значение low_body_mass по HTML §4.4 С осторожностью / Особые указания?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  show_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы. Сохранить
+    источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт полного клинического
+    допуска.'
+  why_needed: Изменяет допуск/действие по RU-VENLA-XR HTML §4.4 С осторожностью / Особые указания; не общий допуск
+    врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data only when exact predicate active; otherwise explicit not_assessed warning,
+    no clinical clearance
+  source_refs:
+  - RU-VENLA-XR
+  source_locator: §4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале
+  required_for_individual_result: false
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: reported_context
+  input_role: reported_context
+  necessity_reason: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  fact_origin: patient_fact
+- input_id: urinary_impairment
+  question_ru: Подтверждённое значение urinary_impairment по HTML §4.4 С осторожностью / Особые указания?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  show_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы. Сохранить
+    источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт полного клинического
+    допуска.'
+  why_needed: Изменяет допуск/действие по RU-VENLA-XR HTML §4.4 С осторожностью / Особые указания; не общий допуск
+    врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data only when exact predicate active; otherwise explicit not_assessed warning,
+    no clinical clearance
+  source_refs:
+  - RU-VENLA-XR
+  source_locator: §4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале
+  required_for_individual_result: false
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: reported_context
+  input_role: reported_context
+  necessity_reason: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  fact_origin: patient_fact
+- input_id: low_blood_pressure
+  question_ru: Подтверждённое значение low_blood_pressure по HTML §4.4 С осторожностью / Особые указания?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  show_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы. Сохранить
+    источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт полного клинического
+    допуска.'
+  why_needed: Изменяет допуск/действие по RU-VENLA-XR HTML §4.4 С осторожностью / Особые указания; не общий допуск
+    врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data only when exact predicate active; otherwise explicit not_assessed warning,
+    no clinical clearance
+  source_refs:
+  - RU-VENLA-XR
+  source_locator: §4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале
+  required_for_individual_result: false
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: reported_context
+  input_role: reported_context
+  necessity_reason: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  fact_origin: patient_fact
+- input_id: diabetes
+  question_ru: Подтверждённое значение diabetes по HTML §4.4 С осторожностью / Особые указания?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  show_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы. Сохранить
+    источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт полного клинического
+    допуска.'
+  why_needed: Изменяет допуск/действие по RU-VENLA-XR HTML §4.4 С осторожностью / Особые указания; не общий допуск
+    врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data only when exact predicate active; otherwise explicit not_assessed warning,
+    no clinical clearance
+  source_refs:
+  - RU-VENLA-XR
+  source_locator: §4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале
+  required_for_individual_result: false
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: reported_context
+  input_role: reported_context
+  necessity_reason: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  fact_origin: patient_fact
+- input_id: recent_stroke
+  question_ru: Подтверждённое значение recent_stroke по HTML §4.4 С осторожностью / Особые указания?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  show_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы. Сохранить
+    источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт полного клинического
+    допуска.'
+  why_needed: Изменяет допуск/действие по RU-VENLA-XR HTML §4.4 С осторожностью / Особые указания; не общий допуск
+    врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data only when exact predicate active; otherwise explicit not_assessed warning,
+    no clinical clearance
+  source_refs:
+  - RU-VENLA-XR
+  source_locator: §4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале
+  required_for_individual_result: false
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: reported_context
+  input_role: reported_context
+  necessity_reason: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  fact_origin: patient_fact
+- input_id: hyponatremia_risk
+  question_ru: Подтверждённое значение hyponatremia_risk по HTML §4.4 С осторожностью / Особые указания?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  show_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы. Сохранить
+    источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт полного клинического
+    допуска.'
+  why_needed: Изменяет допуск/действие по RU-VENLA-XR HTML §4.4 С осторожностью / Особые указания; не общий допуск
+    врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data only when exact predicate active; otherwise explicit not_assessed warning,
+    no clinical clearance
+  source_refs:
+  - RU-VENLA-XR
+  source_locator: §4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале
+  required_for_individual_result: false
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: reported_context
+  input_role: reported_context
+  necessity_reason: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  fact_origin: patient_fact
+- input_id: ect
+  question_ru: Подтверждённое значение ect по HTML §4.4 С осторожностью / Особые указания?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  show_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы. Сохранить
+    источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт полного клинического
+    допуска.'
+  why_needed: Изменяет допуск/действие по RU-VENLA-XR HTML §4.4 С осторожностью / Особые указания; не общий допуск
+    врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data only when exact predicate active; otherwise explicit not_assessed warning,
+    no clinical clearance
+  source_refs:
+  - RU-VENLA-XR
+  source_locator: §4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале
+  required_for_individual_result: false
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: reported_context
+  input_role: reported_context
+  necessity_reason: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  fact_origin: patient_fact
+- input_id: hypercholesterolemia
+  question_ru: Подтверждённое значение hypercholesterolemia по HTML §4.4 С осторожностью / Особые указания?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  show_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы. Сохранить
+    источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт полного клинического
+    допуска.'
+  why_needed: Изменяет допуск/действие по RU-VENLA-XR HTML §4.4 С осторожностью / Особые указания; не общий допуск
+    врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data only when exact predicate active; otherwise explicit not_assessed warning,
+    no clinical clearance
+  source_refs:
+  - RU-VENLA-XR
+  source_locator: §4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале
+  required_for_individual_result: false
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: reported_context
+  input_role: reported_context
+  necessity_reason: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  fact_origin: patient_fact
+- input_id: alcohol_use
+  question_ru: Подтверждённое значение alcohol_use по HTML §4.4 С осторожностью / Особые указания?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  show_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы. Сохранить
+    источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт полного клинического
+    допуска.'
+  why_needed: Изменяет допуск/действие по RU-VENLA-XR HTML §4.4 С осторожностью / Особые указания; не общий допуск
+    врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data only when exact predicate active; otherwise explicit not_assessed warning,
+    no clinical clearance
+  source_refs:
+  - RU-VENLA-XR
+  source_locator: §4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале
+  required_for_individual_result: false
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: reported_context
+  input_role: reported_context
+  necessity_reason: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  fact_origin: patient_fact
+- input_id: suicide_risk
+  question_ru: Подтверждённое значение suicide_risk по HTML §4.4 С осторожностью / Особые указания?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  show_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы. Сохранить
+    источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт полного клинического
+    допуска.'
+  why_needed: Изменяет допуск/действие по RU-VENLA-XR HTML §4.4 С осторожностью / Особые указания; не общий допуск
+    врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data only when exact predicate active; otherwise explicit not_assessed warning,
+    no clinical clearance
+  source_refs:
+  - RU-VENLA-XR
+  source_locator: §4.4 с.5–13, осторожность/наблюдение; конкретный подпункт в первичном журнале
+  required_for_individual_result: false
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: reported_context
+  input_role: reported_context
+  necessity_reason: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  fact_origin: patient_fact
+- input_id: pregnancy_suspected
+  question_ru: Есть подозрение на беременность без её подтверждения?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: 'для выбранного индивидуального результата: числовой операнд или явно проверяемое источниковое
+    ограничение'
+  show_when: при выборе результата или использовании уже подтверждённого в этом расчёте факта
+  why_needed: Изменяет допуск/действие по RU-VENLA-XR HTML §4.3; не общий допуск врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; request this specific necessary fact; no individual dose
+  source_refs:
+  - RU-VENLA-XR
+  source_locator: §4.3 с.5
+  required_for_individual_result: true
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: always
+  input_role: required_selected_result_operand_or_source_gate
+  necessity_reason: Изменяет допуск/действие по RU-VENLA-XR HTML §4.3; не общий допуск врача.
+  fact_origin: patient_fact
+- input_id: diastolic_BP
+  question_ru: Текущее диастолическое АД при приёме ВелаксинаXR, мм рт.ст.?
+  data_type: number
+  unit: mmHg
+  allowed_values: []
+  required_when: Текущее источниковое условие меняет действие при приёме препарата; отмена/переключение не отменяют
+    его. При положительном ответе обычный календарь не исполняется; экстренный числовой темп не придуман.
+  show_when: Текущее источниковое условие меняет действие при приёме препарата; отмена/переключение не отменяют
+    его. При положительном ответе обычный календарь не исполняется; экстренный числовой темп не придуман.
+  why_needed: Текущее источниковое условие меняет действие при приёме препарата; отмена/переключение не отменяют
+    его. При положительном ответе обычный календарь не исполняется; экстренный числовой темп не придуман.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data when the exact phase/result predicate applies; otherwise explicit not_assessed,
+    no clinical clearance
+  source_refs:
+  - RU-VENLA-XR
+  source_locator: §4.4 с.9
+  required_for_individual_result: false
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: ongoing_selected_drug
+  input_role: ongoing_selected_drug
+  necessity_reason: Текущее источниковое условие меняет действие при приёме препарата; отмена/переключение не отменяют
+    его. При положительном ответе обычный календарь не исполняется; экстренный числовой темп не придуман.
+  fact_origin: patient_fact
+- input_id: current_allergic_reaction
+  question_ru: Во время терапии появилась сыпь, крапивница или другая аллергическая реакция?
+  data_type: boolean
+  unit: null
+  allowed_values: []
+  required_when: Подтверждённая реакция во время терапии требует прекращения венлафаксина; не делить с аллергией
+    в анамнезе.
+  show_when: Подтверждённая реакция во время терапии требует прекращения венлафаксина; не делить с аллергией в анамнезе.
+  why_needed: Подтверждённая реакция во время терапии требует прекращения венлафаксина; не делить с аллергией в
+    анамнезе.
+  changes:
+  - source_action_or_applicability
+  unknown_allowed: true
+  action_if_unknown: insufficient_data when active; explicit not_assessed when inactive
+  source_refs:
+  - RU-VENLA-XR
+  input_role: ongoing_selected_drug
+  source_locator: §4.4 с.13
+  required_for_individual_result: false
+  requirement_predicate:
+    kind: ongoing_selected_drug
+  necessity_reason: Подтверждённая реакция во время терапии требует прекращения венлафаксина; не делить с аллергией
+    в анамнезе.
+  fact_origin: explicit physician fact for this calculation; no inference from other negative answers
+- input_id: suspected_serotonin_syndrome
+  question_ru: При текущем приёме Велаксина XR врач подозревает серотониновый синдром?
+  data_type: boolean
+  unit: null
+  allowed_values: []
+  source_refs:
+  - RU-VENLA-XR
+  source_locator: §4.4 с.8
+  unknown_allowed: true
+  changes:
+  - source_clinician_action
+  requirement_predicate:
+    kind: reported_current_event
+  required_for_individual_result: false
+  input_role: reported_current_event
+  required_when: Not an unconditional required absence check; source event handling when explicitly reported
+  show_when: Если врач отдельно сообщает это текущее событие; фаза принимаемого A/B известна отдельно
+  why_needed: Обрабатывает отдельно сообщённое текущее источниковое событие при явном приёме соответствующего препарата.
+    Не универсальный обязательный скрининг и не отрицание события при отсутствии/unknown. Положительный известный
+    факт останавливает автоматический календарь и сохраняет опубликованный выбор врача; числовое снижение/немедленная
+    отмена не придуманы.
+  necessity_reason: Обрабатывает отдельно сообщённое текущее источниковое событие при явном приёме соответствующего
+    препарата. Не универсальный обязательный скрининг и не отрицание события при отсутствии/unknown. Положительный
+    известный факт останавливает автоматический календарь и сохраняет опубликованный выбор врача; числовое снижение/немедленная
+    отмена не придуманы.
+  action_if_unknown: Explicit not_assessed; no clinical clearance. A reported unknown current event needs clinician
+    assessment, not a confirmed negative or automatic calendar.
+  fact_origin: explicitly supplied current physician event, not hidden pre-screening
+clinical_parameters:
+- parameter_id: start
+  meaning: start
+  value: 75
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: mg/day
+  source_ref: RU-VENLA-XR
+  source_locator: §4.2 с.2–3
+  source_meaning: предписание
+  derivation: null
+- parameter_id: maximum
+  meaning: maximum
+  value: 225
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: mg/day
+  source_ref: RU-VENLA-XR
+  source_locator: §4.2 с.2–3
+  source_meaning: предписание
+  derivation: null
+- parameter_id: increase_min_interval
+  meaning: increase_min_interval
+  value: 2
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: week
+  source_ref: RU-VENLA-XR
+  source_locator: §4.2 с.2–3
+  source_meaning: предписание
+  derivation: null
+- parameter_id: frequency
+  meaning: frequency
+  value: 1
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: administration/day
+  source_ref: RU-VENLA-XR
+  source_locator: §4.2 с.5
+  source_meaning: предписание
+  derivation: null
+- parameter_id: diastolic_BP_stop_threshold
+  meaning: 'Строго выше порога: прекращение приёма'
+  value: 100
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: mmHg
+  source_ref: RU-VENLA-XR
+  source_locator: §4.4 с.9, прекращение при диастолическом АД >100 мм рт.ст.
+  source_meaning: предписание
+  derivation: null
+logic:
+  representation: conditional_source_rule
+  conditions:
+  - Применимость к указанному показанию/форме подтверждена в пределах дозового расчёта; это не полный клинический
+    допуск.
+  actions:
+  - 75 мг один раз в сутки с пищей, целая капсула.
+  - При недостаточном ответе врач может повысить до 225; между повышениями не менее 2 недель. Фиксированного шага
+    +75 при этих показаниях здесь нет.
+  - При социальной тревоге не доказана дополнительная польза более высокой дозы; рассматривать индивидуально.
+  - Органную поправку не умножать на другую; 37,5 мг XR этой формой не обеспечиваются.
+  parameter_refs:
+  - start
+  - maximum
+  - increase_min_interval
+  - frequency
+  - diastolic_BP_stop_threshold
+  source_refs:
+  - RU-VENLA-XR
+  - RU-PHOB
+  clinician_choices:
+  - Необходимость изменения лечения и неоценённые модулем клинические обстоятельства.
+  missing_data_behaviour: insufficient_data с конкретным отсутствующим полем, без безусловной дозы.
+  unsupported_case_behaviour: Назвать неприменимую ветку; не переносить другую форму/показание.
+  contraindicated_case_behaviour: Не выдавать схему противопоказанного сочетания, указать источник.
+  conflicts: []
+  composite_rule_dependencies: []
+  combination_justification: КР определяет клиническую область, инструкция — дозовые параметры; новые коэффициенты
+    не добавлены.
+  maoi_history_contract:
+    source_ref: RU-VENLA-XR
+    source_locator: §1–3 с.1; §4.1–4.3 с.2–5; §4.4 с.5–13; §4.5 с.13–17; §4.6 с.17–18
+    locator: §1–3 с.1; §4.1–4.3 с.2–5; §4.4 с.5–13; §4.5 с.13–17; §4.6 с.17–18
+    irreversible_days: 14
+    to_maoi_days: 7
+    reversible: 'Период может быть короче 14 дней, точный не извлечён: clinician_choice.'
+    concurrent:
+    - maoi
+    fields:
+    - medicines
+    - maoi_type
+    - maoi_stopped_at
+    reference_time: external_context.calculation_at
+    required_timestamp_unknown: insufficient_data; missing maoi_stopped_at; start_allowed=false
+    current_maoi: not_applicable for standard branch; no numeric start
+    multiple_records: all applicable direction gates must be satisfied; no single last record shortcut
+    calendar_day: next calendar date; not elapsed 24 hours unless that specific source says 24 hours
+  result_contract_ref: remediation_round3/result_contracts.yaml#rules/venla-xr-social-start
+  individual_output_gate: All required typed inputs and applicable conditional inputs must be known; evaluate every
+    source-specific gate in result_contract. A caution has clinician_choice, not an invented coefficient. No blanket
+    clinical clearance.
+  input_necessity_policy_ref: remediation_round3/necessity_decisions.json#venla-xr-social-start
+output:
+  result_type: branch_selected
+  medication_inn: венлафаксин
+  dose_per_administration: null
+  administrations_per_day: null
+  total_daily_dose: null
+  unit: mg
+  formulation: Велаксин, капсулы пролонгированного высвобождения 75/150 мг
+  schedule: []
+  warnings:
+  - Последующие этапы условны; максимум не является целью.
+  - Неоценённое клиническое обстоятельство не считается отсутствующим.
+  - Версия копии зафиксирована; последнее содержание реестрового документа проверяется перед клиническим внедрением.
+  mandatory_checks: []
+  clinician_decisions_remaining: []
+  rounding_or_formulation_rule: Не округлять медицинскую дозу; целые формы/разрешённое деление. Невозможная доза
+    — явный отказ формы.
+  source_refs:
+  - RU-VENLA-XR
+  - RU-PHOB
+  branches:
+  - branch_id: usual
+    when: absolute_GFR>30; no hepatic insufficiency; all gates clear
+    expected_output:
+      result_type: exact
+      total_daily_dose_mg: 75
+      dose_per_administration_mg: 75.0
+      administrations_per_day: 1
+      schedule: []
+      missing_fields: []
+      unconditional_future_stages: false
+      maximum_mg: 225
+      minimum_increase_interval_weeks: 2
+      automatic_increment: null
+      higher_social_benefit_proven: false
+      clinical_clearance: false
+    source_basis:
+    - source_id: RU-VENLA-XR
+      version: 'Официальная ОХЛП реестра: штамп регистрации 2026-06-25; экспертный отчёт 2026-06-11 №11677/0019;
+        получена 08.10.2026'
+      locator: §1–3 с.1; §4.1–4.3 с.2–5; §4.4 с.5–13; §4.5 с.13–17; §4.6 с.17–18
+      sha256: a21e90141db69d9be5ca44ac3c8c6059c8c82a880f34bbf15143348c36ef4666
+    - source_id: RU-PHOB
+      version: '2024; каталог: опубликовано 21.10.2024, применяется'
+      locator: §1.4; §3.1 PDF с.32–38; приложение А3 с.93
+      sha256: 2a51982fb1919c0ef9115e5231f8ef9d65863306d2d5b95aa0aa7821a6f328b7
+  - branch_id: renal_reduction
+    when: 10<=absolute_GFR<=30; liver clear
+    expected_output:
+      result_type: form_not_feasible
+      total_daily_dose_mg: null
+      dose_per_administration_mg: null
+      administrations_per_day: null
+      schedule: []
+      missing_fields: []
+      unconditional_future_stages: false
+      published_reduction_percent: 50
+      arithmetic_total_mg: 37.5
+      executable_dose: null
+      IR_substitution_allowed: false
+    source_basis:
+    - source_id: RU-VENLA-XR
+      version: 'Официальная ОХЛП реестра: штамп регистрации 2026-06-25; экспертный отчёт 2026-06-11 №11677/0019;
+        получена 08.10.2026'
+      locator: §1–3 с.1; §4.1–4.3 с.2–5; §4.4 с.5–13; §4.5 с.13–17; §4.6 с.17–18
+      sha256: a21e90141db69d9be5ca44ac3c8c6059c8c82a880f34bbf15143348c36ef4666
+    - source_id: RU-PHOB
+      version: '2024; каталог: опубликовано 21.10.2024, применяется'
+      locator: §1.4; §3.1 PDF с.32–38; приложение А3 с.93
+      sha256: 2a51982fb1919c0ef9115e5231f8ef9d65863306d2d5b95aa0aa7821a6f328b7
+  - branch_id: hepatic_reduction
+    when: mild/moderate hepatic insufficiency; renal clear
+    expected_output:
+      result_type: clinician_choice
+      total_daily_dose_mg: null
+      dose_per_administration_mg: null
+      administrations_per_day: null
+      schedule: []
+      missing_fields: []
+      unconditional_future_stages: false
+      published_reduction_percent: 50
+      arithmetic_total_mg: 37.5
+      executable_dose: null
+    source_basis:
+    - source_id: RU-VENLA-XR
+      version: 'Официальная ОХЛП реестра: штамп регистрации 2026-06-25; экспертный отчёт 2026-06-11 №11677/0019;
+        получена 08.10.2026'
+      locator: §1–3 с.1; §4.1–4.3 с.2–5; §4.4 с.5–13; §4.5 с.13–17; §4.6 с.17–18
+      sha256: a21e90141db69d9be5ca44ac3c8c6059c8c82a880f34bbf15143348c36ef4666
+    - source_id: RU-PHOB
+      version: '2024; каталог: опубликовано 21.10.2024, применяется'
+      locator: §1.4; §3.1 PDF с.32–38; приложение А3 с.93
+      sha256: 2a51982fb1919c0ef9115e5231f8ef9d65863306d2d5b95aa0aa7821a6f328b7
+  - branch_id: joint_modifiers
+    when: renal and hepatic modifier overlap
+    expected_output:
+      result_type: clinician_choice
+      total_daily_dose_mg: null
+      dose_per_administration_mg: null
+      administrations_per_day: null
+      schedule: []
+      missing_fields: []
+      unconditional_future_stages: false
+      product_of_reductions: null
+    source_basis:
+    - source_id: RU-VENLA-XR
+      version: 'Официальная ОХЛП реестра: штамп регистрации 2026-06-25; экспертный отчёт 2026-06-11 №11677/0019;
+        получена 08.10.2026'
+      locator: §1–3 с.1; §4.1–4.3 с.2–5; §4.4 с.5–13; §4.5 с.13–17; §4.6 с.17–18
+      sha256: a21e90141db69d9be5ca44ac3c8c6059c8c82a880f34bbf15143348c36ef4666
+    - source_id: RU-PHOB
+      version: '2024; каталог: опубликовано 21.10.2024, применяется'
+      locator: §1.4; §3.1 PDF с.32–38; приложение А3 с.93
+      sha256: 2a51982fb1919c0ef9115e5231f8ef9d65863306d2d5b95aa0aa7821a6f328b7
+  selection_contract:
+  - unavailable_source
+  - known immediate stop/exclusion
+  - invalid/missing applicable field
+  - unresolved source caution/modifier
+  - dose branch
+sources:
+- source_id: RU-VENLA-XR
+  title: Велаксин, ОХЛП пролонгированных капсул 75/150 мг
+  organization_or_authors: ЭГИС
+  url: https://lk.regmed.ru/Register/EAEU_SmPC
+  doi_or_registry_id: ЛП-№(002093)-(РГ-RU)
+  publication_date: null
+  version_or_update_date: 'Официальная ОХЛП реестра: штамп регистрации 2026-06-25; экспертный отчёт 2026-06-11 №11677/0019;
+    получена 08.10.2026'
+  accessed_on: '2026-10-08'
+  source_type: label
+  jurisdiction: RU/EAEU
+  access_status: full
+  exact_locator: §1–3 с.1; §4.1–4.3 с.2–5; §4.4 с.5–13; §4.5 с.13–17; §4.6 с.17–18
+  evidence_status: Инструкция/ОХЛП; не валидированная модель индивидуальной дозы
+  what_was_tested: Не исследовался создаваемый продукт. Содержание и ограничения описаны в evidence_limitations.
+  evidence_limitations: Предыдущая копия была HTML производителя. Активное основание — полученный текущий официальный
+    PDF реестра точного РУ/формы. XR и IR имеют разные показания, почечные единицы и поправки. Капсулы XR нельзя
+    делить; 37,5 мг XR в проверенной форме нет. Не переносить шаг +75 мг депрессии на ГТР. Новая первичная копия
+    получена из указанной строки реестра; старые копии сохранены как исторические. Даты штампов не подменяют незаполненное
+    поле пересмотра. Принадлежность версии и медицинский перенос проверяются раздельно.
+  reuse_license_or_restriction: Собственное извлечение фактических правил и короткие локаторы; лицензия на код/полное
+    руководство не предполагается.
+  document_fingerprint:
+    source_id: RU-VENLA-XR
+    url: https://lk.regmed.ru/Register/EAEU_SmPC
+    sha256: a21e90141db69d9be5ca44ac3c8c6059c8c82a880f34bbf15143348c36ef4666
+    pages: 30
+    accessed_on: '2026-10-08'
+  registry_observation:
+    registry: https://lk.regmed.ru/Register/EAEU_SmPC
+    query: Велаксин
+    registration_number: ЛП-№(002093)-(РГ-RU)
+    registration_date: '2023-04-03'
+    forms: капсулы с пролонгированным высвобождением75/150мг
+    accessed_on: '2026-10-08'
+    read_part: Exact RU/form row observed in official registry; user downloaded after CAPTCHA request; matching
+      title/form and stamps visually checked
+  local_file: remediation_round3/originals/RU-VENLA-XR_current.pdf
+  document_copies:
+  - source_id: RU-VENLA-XR
+    local_file: source_snapshots/velaxin-XR.html
+    sha256: 3656aeeae0ef60f75fe0ea90e1a9f73ba3734e7b8825e163752d9e6e278bf838
+    version: Версия HTML не датирована; снимок и SHA-256 от 08.10.2026; отдельное РУ формы подтверждено реестром
+    url: https://egispro.ru/medications/velaksin/instructions/velaksin_75_mg_28_sht/
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: false
+    latest_registration_revision_confirmed: false
+  - source_id: RU-VENLA-XR
+    local_file: audit/retrieved/RU-VENLA-XR.html
+    sha256: 6f14f66f54d649836d17eff481e9538282539780cfa8d26810012a1941cf7550
+    version: byte-different snapshot; medical revision not independently established
+    url: https://egispro.ru/medications/velaksin/instructions/velaksin_75_mg_28_sht/
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: false
+    latest_registration_revision_confirmed: false
+  - source_id: RU-VENLA-XR
+    local_file: remediation/retrieved/RU-VENLA-XR.html
+    sha256: 324991815c8cd2def4d644b47b1edaddb1c24ed7ee442d9bdc064b396fae6642
+    version: byte-different snapshot; medical revision not independently established
+    url: https://egispro.ru/medications/velaksin/instructions/velaksin_75_mg_28_sht/
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: false
+    latest_registration_revision_confirmed: false
+  - source_id: RU-VENLA-XR
+    local_file: remediation_round3/originals/RU-VENLA-XR_current.pdf
+    sha256: a21e90141db69d9be5ca44ac3c8c6059c8c82a880f34bbf15143348c36ef4666
+    version: 'Официальная ОХЛП реестра: штамп регистрации 2026-06-25; экспертный отчёт 2026-06-11 №11677/0019; получена
+      08.10.2026'
+    url: https://lk.regmed.ru/Register/EAEU_SmPC
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: true
+  dates:
+    registration: '2023-04-03'
+    revision: null
+    publication: null
+    download: '2026-10-08'
+    document_registration_stamp: '2026-06-25'
+    expert_report: '2026-06-11'
+  latest_registration_revision_confirmed: true
+  latest_registry_document_comparison:
+    record: remediation_round3/current_registry_documents.json#RU-VENLA-XR
+    original: remediation_round3/originals/RU-VENLA-XR_current.pdf
+    sha256: a21e90141db69d9be5ca44ac3c8c6059c8c82a880f34bbf15143348c36ef4666
+    authority_evidence: Exact RU/form row observed in official registry; user downloaded after CAPTCHA request;
+      matching title/form and stamps visually checked
+    comparison_scope: Listed primary sections and dependency review; no inference of byte identity to historical
+      copies
+  own_read_scope:
+    text_pages:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - 11
+    - 12
+    - 13
+    - 14
+    - 15
+    - 16
+    - 17
+    - 18
+    - 29
+    - 30
+    visual_pages:
+    - 1
+    - 4
+    remaining_sections_not_claimed_read: true
+- source_id: RU-PHOB
+  title: Тревожно-фобические расстройства, КР 455_3
+  organization_or_authors: Минздрав РФ; Российское общество психиатров
+  url: https://apicr.minzdrav.gov.ru/api.ashx?id=455_3&op=GetClinrecPdf
+  doi_or_registry_id: '455_3'
+  publication_date: null
+  version_or_update_date: '2024; каталог: опубликовано 21.10.2024, применяется'
+  accessed_on: '2026-10-08'
+  source_type: guideline
+  jurisdiction: RU
+  access_status: full
+  exact_locator: §1.4; §3.1 PDF с.32–38; приложение А3 с.93
+  evidence_status: Клиническая рекомендация; не валидация калькулятора
+  what_was_tested: Не исследовался создаваемый продукт. Содержание и ограничения описаны в evidence_limitations.
+  evidence_limitations: Взрослые F40. Доказательства для социальной фобии не переносятся на все специфические фобии.
+  reuse_license_or_restriction: Открытый доступ не означает разрешение перераспространять полный документ. Сохранены
+    собственное извлечение фактических правил, локаторы и ссылки; код и большие цитаты не копируются.
+  document_fingerprint:
+    source_id: RU-PHOB
+    url: https://apicr.minzdrav.gov.ru/api.ashx?id=455_3&op=GetClinrecPdf
+    sha256: 2a51982fb1919c0ef9115e5231f8ef9d65863306d2d5b95aa0aa7821a6f328b7
+    pages: 148
+  local_file: audit/retrieved/RU-PHOB.pdf
+  document_copies:
+  - source_id: RU-PHOB
+    local_file: audit/retrieved/RU-PHOB.pdf
+    sha256: 2a51982fb1919c0ef9115e5231f8ef9d65863306d2d5b95aa0aa7821a6f328b7
+    version: '2024; каталог: опубликовано 21.10.2024, применяется'
+    url: https://apicr.minzdrav.gov.ru/api.ashx?id=455_3&op=GetClinrecPdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: false
+  - source_id: RU-PHOB
+    local_file: remediation/retrieved/RU-PHOB.pdf
+    sha256: 2a51982fb1919c0ef9115e5231f8ef9d65863306d2d5b95aa0aa7821a6f328b7
+    version: '2024; каталог: опубликовано 21.10.2024, применяется'
+    url: https://apicr.minzdrav.gov.ru/api.ashx?id=455_3&op=GetClinrecPdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: false
+  dates:
+    registration: null
+    revision: null
+    publication: null
+    download: '2026-10-08'
+  latest_registration_revision_confirmed: false
+  current_guideline_status_evidence: remediation_round2/catalog_check.json; 08.10.2026; CodeVersion/ApplyStatusCalculated=1
+verification:
+  primary_source_checked: true
+  all_clinical_parameters_have_sources: true
+  population_and_indication_checked: true
+  russian_applicability_checked: true
+  formulation_feasibility_checked: true
+  combined_rules_justified: true
+  source_transfer_check: Current exact Russian product originals obtained and active owner/version/hash/locators
+    synchronized; listed primary sections reviewed. Full independent medical acceptance and question necessity remain
+    separate; calculator_not_implemented.
+  clinical_review: not_performed
+  product_clinical_validation: not_performed
+  ready_for_technical_implementation: true
+  unresolved_items:
+  - Минимальность входов/полные обычные пути и повторная независимая проверка медицинских исправлений остаются отдельными
+    условиями приёмки V2.
+  transfer_scope: Explicit source-bound branch contracts and prepared expectations only. Current originals obtained;
+    pending independent findings, result-specific necessity and V2 ordinary-question limit are not inferred complete
+    from download. No clinical validation.
+  round3_status: candidate_primary_transfer_and_necessity_review; independent acceptance pending
+  russian_applicability_scope: Identity of the exact registered Russian product/form and published indication scope;
+    does not grant patient clearance or prove every transferred condition.
+test_cases:
+- case_id: venla-xr-social-start__usual
+  synthetic: true
+  given:
+    form: XR 75 мг
+    renal_metric: СКФ >30 мл/мин
+    hepatic: без нарушения
+  expected:
+    start_mg_per_day: 75
+    frequency: 1
+    maximum_mg_per_day: 225
+    increase_min_interval_weeks: 2
+    automatic_increment: null
+  source_refs:
+  - RU-VENLA-XR
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+- case_id: venla-xr-social-start__wrong-form
+  synthetic: true
+  given:
+    form: Велаксин таблетка 37,5 мг IR
+  expected:
+    result_type: not_applicable
+    do_not_substitute_IR: true
+  source_refs:
+  - RU-VENLA-XR
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+- case_id: venla-xr-social-start__renal30
+  synthetic: true
+  given:
+    GFR_mL_min: 30
+    usual_dose_mg_per_day: 75
+  expected:
+    published_reduction_percent: 50
+    arithmetic_dose_mg_per_day: 37.5
+    feasible_with_XR_75_150: false
+  source_refs:
+  - RU-VENLA-XR
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+- case_id: venla-xr-social-start__double-modifier
+  synthetic: true
+  given:
+    renal_metric: СКФ 20 мл/мин
+    hepatic: умеренная недостаточность
+  expected:
+    automatic_product_of_reductions: false
+    result_type: clinician_choice
+  source_refs:
+  - RU-VENLA-XR
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+- case_id: venla-xr-social-start__wrong-unit
+  synthetic: true
+  given:
+    renal_metric: eGFR 45 мл/мин/1,73м2
+  expected:
+    result_type: insufficient_data
+    missing:
+    - absolute_GFR_mL_min
+    automatic_unit_equivalence: false
+  source_refs:
+  - RU-VENLA-XR
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+profile:
+  country: RU
+  selection_status: RU_profile_research
+  foreign_fallback_allowed: false
+card_type: numeric_source_rule
+input_contract_ref: remediation_round3/input_contracts.yaml#fragment_bindings/venla-xr-social-start

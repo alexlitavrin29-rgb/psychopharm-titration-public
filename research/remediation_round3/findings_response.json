@@ -1,0 +1,287 @@
+[
+  {
+    "finding_id": "V2-01",
+    "previous_independent_status": "closed in original scope",
+    "executor_status": "ранее закрыто независимым проверяющим в исходном объёме",
+    "response": "Прежнее исправление и его источник сохранены; новое заключение не предполагается автоматически.",
+    "evidence": [
+      "result_contracts.yaml#rules/venla-xr-panic-form-limit/branches/0/source_basis/2",
+      "full_scenarios.json:204 IR source_basis; source_version_mismatches.json"
+    ]
+  },
+  {
+    "finding_id": "V2-02",
+    "previous_independent_status": "closed in original scope",
+    "executor_status": "ранее закрыто независимым проверяющим в исходном объёме",
+    "response": "Прежнее исправление и его источник сохранены; новое заключение не предполагается автоматически.",
+    "evidence": [
+      "rules/parox-panic-kr.yaml#inputs/mania",
+      "full_scenarios.json:parox-panic-kr--mania-omitted/unknown/not_assessed"
+    ]
+  },
+  {
+    "finding_id": "V2-03",
+    "previous_independent_status": "closed in original scope",
+    "executor_status": "ранее закрыто независимым проверяющим в исходном объёме",
+    "response": "Прежнее исправление и его источник сохранены; новое заключение не предполагается автоматически.",
+    "evidence": [
+      "rules/parox-panic-kr.yaml",
+      "rules/parox-taper-example.yaml",
+      "rules/switch-parox-ago*.yaml",
+      "result_contracts.yaml"
+    ]
+  },
+  {
+    "finding_id": "V2-04",
+    "previous_independent_status": "closed in original scope",
+    "executor_status": "ранее закрыто независимым проверяющим в исходном объёме",
+    "response": "Прежнее исправление и его источник сохранены; новое заключение не предполагается автоматически.",
+    "evidence": [
+      "result_contracts.yaml#rules/ser-*/source_gates",
+      "rules/ser-*.yaml",
+      "rules/switch-ser-ago.yaml"
+    ]
+  },
+  {
+    "finding_id": "V2-05",
+    "previous_independent_status": "closed in original scope",
+    "executor_status": "ранее закрыто независимым проверяющим в исходном объёме",
+    "response": "Прежнее исправление и его источник сохранены; новое заключение не предполагается автоматически.",
+    "evidence": [
+      "result_contracts.yaml#rules/dulox-*/source_gates",
+      "rules/dulox-*.yaml"
+    ]
+  },
+  {
+    "finding_id": "V2-06",
+    "previous_independent_status": "closed in original scope",
+    "executor_status": "ранее закрыто независимым проверяющим в исходном объёме",
+    "response": "Прежнее исправление и его источник сохранены; новое заключение не предполагается автоматически.",
+    "evidence": [
+      "result_contracts.yaml#rules/fluvox-taper-limit",
+      "result_contracts.yaml#rules/parox-taper-example",
+      "result_contracts.yaml#rules/venla-xr-taper-limit"
+    ]
+  },
+  {
+    "finding_id": "V2-07",
+    "previous_independent_status": "closed in original scope",
+    "executor_status": "ранее закрыто независимым проверяющим в исходном объёме",
+    "response": "Прежнее исправление и его источник сохранены; новое заключение не предполагается автоматически.",
+    "evidence": [
+      "rules/switch-esc-ago.yaml",
+      "rules/switch-esc-ser.yaml",
+      "rules/switch-ser-esc.yaml",
+      "result_contracts.yaml"
+    ]
+  },
+  {
+    "finding_id": "V2-08",
+    "previous_independent_status": "closed in original scope",
+    "executor_status": "исправлено; независимая перепроверка ожидается",
+    "response": "Уточнены физические страницы PAR/DULOX и общие входы AGO/PREG; диабет DULOX — §4.8 с.11/14 без поправки психиатрической дозы.",
+    "evidence": [
+      "recheck_repairs.json",
+      "current_input_locator_repairs.json",
+      "recheck_repair_verification.json"
+    ]
+  },
+  {
+    "finding_id": "V2-09",
+    "previous_independent_status": "closed in original scope",
+    "executor_status": "ранее закрыто независимым проверяющим в исходном объёме",
+    "response": "Прежнее исправление и его источник сохранены; новое заключение не предполагается автоматически.",
+    "evidence": [
+      "result_contracts.yaml#rules/venla-xr-gad-start",
+      "result_contracts.yaml#rules/venla-xr-social-start",
+      "rules/venla-xr-*/logic"
+    ]
+  },
+  {
+    "finding_id": "V2-10",
+    "previous_independent_status": "closed in original scope",
+    "executor_status": "исправлено; независимая перепроверка ожидается",
+    "response": "Действительно сообщённый список medicines в качественной отмене потребляется и считается; источник положительного результата не теряется при проекции.",
+    "evidence": [
+      "recheck_repairs.json",
+      "current_input_locator_repairs.json",
+      "recheck_repair_verification.json"
+    ]
+  },
+  {
+    "finding_id": "V2-11",
+    "previous_independent_status": "closed in original scope",
+    "executor_status": "исправлено; независимая перепроверка ожидается",
+    "response": "01/09 больше не объявляют текущую Селектру недоступной; старые исходные тексты сохранены.",
+    "evidence": [
+      "recheck_repairs.json",
+      "current_input_locator_repairs.json",
+      "recheck_repair_verification.json"
+    ]
+  },
+  {
+    "finding_id": "V2-12",
+    "previous_independent_status": "partial/open",
+    "executor_status": "частично",
+    "response": "Дополнительно убраны три дозовых операнда из качественного результата PREG. Всего22, но необходимость всех оставшихся полей не доказана.",
+    "evidence": [
+      "recheck_repairs.json",
+      "current_input_locator_repairs.json",
+      "recheck_repair_verification.json"
+    ]
+  },
+  {
+    "finding_id": "V2-13",
+    "previous_independent_status": "partial/open",
+    "executor_status": "частично",
+    "response": "Обычные20/17/18 и дополнительно сообщённый отрицательный факт SER-adjust16 видимы. Лимит15 не достигнут и глобальная минимальность не заявлена.",
+    "evidence": [
+      "recheck_repairs.json",
+      "current_input_locator_repairs.json",
+      "recheck_repair_verification.json"
+    ]
+  },
+  {
+    "finding_id": "V2-14",
+    "previous_independent_status": "closed in original scope",
+    "executor_status": "ранее закрыто независимым проверяющим в исходном объёме",
+    "response": "Прежнее исправление и его источник сохранены; новое заключение не предполагается автоматически.",
+    "evidence": [
+      "rules/fluvox-depression-start.yaml#inputs/seizure_state",
+      "result_contracts.yaml#rules/fluvox-depression-start/typed_source_conditions"
+    ]
+  },
+  {
+    "finding_id": "R1-01",
+    "previous_independent_status": "partial: source actions checked, nonstart A phase mapping unresolved (R2-01)",
+    "executor_status": "исправлено; независимая перепроверка ожидается",
+    "response": "Сообщённые текущие события SER/PREG/DULOX/XR сохраняют точные consider/action и известную фазу соответствующего A/B; unknown/absence не подтверждают отрицание.",
+    "evidence": [
+      "recheck_repairs.json",
+      "current_input_locator_repairs.json",
+      "recheck_repair_verification.json"
+    ]
+  },
+  {
+    "finding_id": "R1-02",
+    "previous_independent_status": "closed in reviewed source/expected scope",
+    "executor_status": "исправлено; независимая перепроверка ожидается",
+    "response": "Добавлены XR CYP2D6/CYP3A4/CNS/metoprolol осторожность, QT avoid, serotonin precursor/weight loss not recommended. Качественная отмена не требует универсального нового старта.",
+    "evidence": [
+      "recheck_repairs.json",
+      "current_input_locator_repairs.json",
+      "recheck_repair_verification.json"
+    ]
+  },
+  {
+    "finding_id": "R1-03",
+    "previous_independent_status": "closed in reviewed source/expected scope",
+    "executor_status": "исправлено; независимая перепроверка ожидается",
+    "response": "У обоих SSRI направлений есть собственный SER лекарственный gate; полный парный календарь не придуман.",
+    "evidence": [
+      "recheck_repairs.json",
+      "current_input_locator_repairs.json",
+      "recheck_repair_verification.json"
+    ]
+  },
+  {
+    "finding_id": "R1-04",
+    "previous_independent_status": "closed in reviewed source/expected scope",
+    "executor_status": "исправлено; независимая перепроверка ожидается",
+    "response": "Отдельный факт additional_product подтверждает дополнительный продукт DULOX; одиночный выбранный продукт не дублируется, unknown требует этот факт.",
+    "evidence": [
+      "recheck_repairs.json",
+      "current_input_locator_repairs.json",
+      "recheck_repair_verification.json"
+    ]
+  },
+  {
+    "finding_id": "R1-05",
+    "previous_independent_status": "closed in reviewed source/expected scope",
+    "executor_status": "исправлено; независимая перепроверка ожидается",
+    "response": "PREG SCAR: немедленно прекратить и рассмотреть альтернативное лечение при необходимости, без выдуманной альтернативы/дозы.",
+    "evidence": [
+      "recheck_repairs.json",
+      "current_input_locator_repairs.json",
+      "recheck_repair_verification.json"
+    ]
+  },
+  {
+    "finding_id": "R1-06",
+    "previous_independent_status": "partial: expected fixed, narrative/necessity residual open",
+    "executor_status": "исправлено; независимая перепроверка ожидается",
+    "response": "Для PREG/PHEN prior_dose_resumption=null с отдельным явным источниковым пробелом; опубликованная постепенность сохранена.",
+    "evidence": [
+      "recheck_repairs.json",
+      "current_input_locator_repairs.json",
+      "recheck_repair_verification.json"
+    ]
+  },
+  {
+    "finding_id": "R1-07",
+    "previous_independent_status": "closed in reviewed source/expected scope",
+    "executor_status": "исправлено; независимая перепроверка ожидается",
+    "response": "У XR подтверждённая беременность и неподтверждённое подозрение имеют разные вопросы. Оба факта продолжают считаться.",
+    "evidence": [
+      "recheck_repairs.json",
+      "current_input_locator_repairs.json",
+      "recheck_repair_verification.json"
+    ]
+  },
+  {
+    "finding_id": "R2-01",
+    "previous_independent_status": "open_in_recheck2",
+    "executor_status": "исправлено; независимая recheck3 ожидается",
+    "response": "A/B enum; selected_mode только выбор; текущую фазу подтверждает потреблённая фактическая текущая доза или отдельный считаемый статус. Unknown/not_started/proposed/inactive/zero не дают current-use action.",
+    "evidence": [
+      "phase_provenance.py",
+      "phase_semantics_repairs.json",
+      "phase_enum_repair.json",
+      "verify_phase_types.py",
+      "verify_final_repairs.py"
+    ]
+  },
+  {
+    "finding_id": "R2-02",
+    "previous_independent_status": "open_in_recheck2",
+    "executor_status": "исправлено в найденном объёме; глобальный№17 открыт",
+    "response": "PAR история только для выбранного40мг примера; качественный иной результат без календаря. PREG/PHEN возраст — сообщённый контекст условной взрослой справки, без индивидуальных детских/unknown сроков.",
+    "evidence": [
+      "final_necessity_repairs.json",
+      "result_contracts.yaml",
+      "full_scenarios.json"
+    ]
+  },
+  {
+    "finding_id": "R2-03",
+    "previous_independent_status": "open_in_recheck2",
+    "executor_status": "исправлено; независимая recheck3 ожидается",
+    "response": "PHEN постепенность физ.2; PREG/PHEN не имеют опубликованного severity hold/restore/slower протокола. Убрана атрибуция отмены AD для PREG, оставлены product-only taper основания и отдельное решение врача.",
+    "evidence": [
+      "final_source_scope_repairs.json",
+      "rules/preg-taper-limit.yaml",
+      "rules/phen-taper-limit.yaml"
+    ]
+  },
+  {
+    "finding_id": "R2-04",
+    "previous_independent_status": "open_in_recheck2",
+    "executor_status": "исправлено; независимая recheck3 ожидается",
+    "response": "Контролирующий ответ предшествует зависимому check/ask, включая clinician_action, example_selected/current_dose, лекарства/ИМАО и CAD/электролиты.",
+    "evidence": [
+      "build_graphs.py",
+      "verify_graphs.py",
+      "verify_final_repairs.py"
+    ]
+  },
+  {
+    "finding_id": "R2-05",
+    "previous_independent_status": "open_in_recheck2",
+    "executor_status": "частично",
+    "response": "Сохранены реальные обычныеAGO20/DULOX-GAD17/PREG17–18/SER16 при отдельном событии. Потенциальные сокращения не объявлены доказанным полным≤15; неудалимость всех полей не доказана.",
+    "evidence": [
+      "ordinary_path_report.json",
+      "followup_analysis/ordinary_limit_options.md"
+    ]
+  }
+]

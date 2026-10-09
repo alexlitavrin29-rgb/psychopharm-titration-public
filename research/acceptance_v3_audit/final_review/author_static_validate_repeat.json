@@ -1,0 +1,4 @@
+{
+  "errors": [],
+  "scope": "Actual read-only invocation validate(d) on frozen structures. Source file dependencies verified at saved local paths. Policy path redirected to same frozen copy; run() not invoked and frozen output not written. Author static checker, not independent primary proof."
+}

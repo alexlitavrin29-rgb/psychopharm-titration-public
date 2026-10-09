@@ -1,0 +1,15 @@
+{
+  "status": "pass",
+  "snapshot": "8a17ae3f99839548742ee509a23d060ea451ed0018c48432dc73b9ba68de4359",
+  "protected_files": 575,
+  "original_source_files": 17,
+  "core_files": 170,
+  "prior_own_audit_files": 92,
+  "protected_changes": [],
+  "original_changes": [],
+  "core_changes": [],
+  "prior_own_audit_changes": [],
+  "other_tracked_noncore_changes": [],
+  "own_write_scope": "research/acceptance_v2_audit/recheck2 only",
+  "utc": "2026-10-08T19:57:27.155007+00:00"
+}

@@ -1,0 +1,1805 @@
+schema_version: '2.0'
+nature: Research input contract; not executed calculator
+missing_states:
+  omitted: missing
+  'null': missing
+  unknown: known to be unknown
+  not_assessed: not assessed; never normal
+boolean_aliases:
+  да: true
+  нет: false
+  неизвестно: unknown
+  не исследовано: not_assessed
+action_aliases:
+  сохранить: keep
+  повысить: increase
+  снизить: decrease
+  прекратить: stop
+  действие не выбрано: not_chosen
+units:
+  week_to_day:
+    factor: 7
+    basis: calendar unit conversion, not a treatment interval
+  CLcr: mL/min
+  absolute_GFR: mL/min
+  indexed_eGFR: mL/min/1.73m2
+  automatic_renal_conversion: false
+structures:
+  structured_form:
+    fields:
+      product: string
+      registration_number: string | null only if source prints no number; null does not confirm registration/currency
+        or individualized form clearance
+      source_id: string
+      dosage_form: 'enum: tablet | capsule | orodispersible_tablet'
+      strengths_mg: list[number]
+      release: 'enum: immediate | enteric | prolonged'
+      route: oral
+      source_version: exact sources.json version string
+    splitting: derived only from the identified source/form; never an unchecked physician checkbox
+  medication_list:
+    type: list
+    entry_fields:
+      inn: string
+      status: current | stopped
+      interaction_class: source-mapped class | unknown
+      record_id: string; matches separate MAOI fields
+      classification_basis: optional object {source_ref:string, source_locator:string}; provenance, unit=null, not
+        an additional clinical question
+      additional_product: 'Optional boolean | unknown. Required for an asserted duplicate_duloxetine_product class:
+        an independently supplied confirmation of an additional concurrent product, counted separately. A single
+        selected current product is not a duplicate.'
+    empty_list: confirmed none; unknown is not []
+    timestamps: Separate fields maoi_type/maoi_stopped_at per relevant record; counted separately
+  structured_renal:
+    fields:
+      metric: CLcr | absolute_GFR | indexed_eGFR
+      value: number
+      unit: string
+      method: string | unknown
+      assessment: known | unknown | not_assessed
+    not_interchangeable: true
+    implicit_normal_category_for_missing_value: false
+    optional_provenance_fields:
+    - method
+    fixed_metadata_fields:
+    - metric
+    - unit
+    entry_policy: Numeric physician-confirmed value for named source metric and fixed mL/min unit; method is optional
+      provenance, not a second/third patient question. Wrong/indexed metric or wrong unit must still be rejected.
+  source_hepatic_category:
+    fields:
+      category: source-specific string
+      assessment: known | unknown | not_assessed
+      classification: source-specific classification | not_specified
+      evidence: clinician supplied assessment
+    no_inference_from_single_enzyme: true
+  dose_schedule:
+    fields:
+      stages: list of day, total_daily_mg, frequency, proceed, hold, stop
+      basis: source and locator | clinician choice
+    unpublished_values: clinician choice, never engine defaults
+  clinical_assessment:
+    type: explicit clinician decision with source-specific category; not blanket safety clearance
+  paired_allergy:
+    fields:
+      A: boolean | unknown | not_assessed
+      B: boolean | unknown | not_assessed
+    owner: A/B refer to identified from_form/to_form; two independently supplied facts, counted2; source refs per
+      product
+    derived_any: May derive any confirmed positive for exclusion; unknown member never becomes false
+external_context:
+  diagnosis:
+    data_type: string
+    unit: null
+    origin: physician-selected diagnosis, no rediagnosis
+  drug:
+    data_type: string
+    unit: null
+    origin: physician-selected INN
+    nullable_when: mode=switch only; from_drug and to_drug are required instead
+  mode:
+    data_type: enum
+    unit: null
+    allowed_values:
+    - start
+    - adjust
+    - taper
+    - switch
+    - candidates
+    origin: physician action
+  from_drug:
+    data_type: string
+    unit: null
+    origin: physician switch selection
+  to_drug:
+    data_type: string
+    unit: null
+    origin: physician switch selection
+  requested_mg:
+    data_type: number
+    unit: mg
+    origin: form feasibility fixture; not prescribed dose
+  foreign_requested_strategy:
+    data_type: string
+    unit: null
+    origin: negative routing fixture
+  withdrawal_plan_duration_days:
+    data_type: number
+    unit: day
+    origin: physician-supplied plan; not washout evidence
+  usual_dose_mg_per_day:
+    data_type: number
+    unit: mg/day
+    origin: arithmetic fixture base; bound to source start parameter
+  unit:
+    data_type: string
+    unit: null
+    origin: unit-validation fragment for renal operand
+  eGFR:
+    data_type: number
+    unit: mL/min/1.73m2
+    origin: negative fixture, cannot populate CLcr
+  calculation_at:
+    data_type: datetime
+    unit: null
+    origin: calculation context, ISO8601 with UTC offset; not clinician question
+  treatment_phase:
+    data_type: enum
+    unit: null
+    allowed_values:
+    - selected_mode
+    - not_started
+    - ongoing
+    - unknown
+    origin: Explicit selected/A status. selected_mode is only desired mode; for start it means first administration.
+      For other modes, active consumed known positive actual current_dose may establish ongoing at the final action
+      gate after that input is received. Proposed/planned/unknown/zero or inactive dose cannot. Explicit unknown/not_started
+      overrides derivation and needs clinical clarification for a current-use action. B phase is never inferred
+      from A.
+  target_treatment_phase:
+    origin: Explicit clinician-selected target treatment stage in current calculation; never inferred from global
+      treatment_phase or from A dose
+    question_policy: If not already supplied and needed to distinguish B cessation from B start prohibition, request/count
+      as one separate complex-branch fact; no permanent patient history
+    data_type: enum
+    unit: null
+    allowed_values:
+    - not_started
+    - ongoing
+    - unknown
+    - not_assessed
+fragment_bindings:
+  ago-depression-start:
+    age:
+      target: inputs.age
+      data_type: integer
+      unit: year
+      original_fragment_representation:
+        data_types:
+        - integer
+        unit: year
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    ALT_ratio:
+      target: inputs.ALT_ratio
+      data_type: number
+      unit: xULN
+      original_fragment_representation:
+        data_types:
+        - integer
+        unit: xULN
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    AST_ratio:
+      target: inputs.AST_ratio
+      data_type: number
+      unit: xULN
+      original_fragment_representation:
+        data_types:
+        - integer
+        - number
+        - string
+        unit: xULN
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    form:
+      target: inputs.form
+      data_type: structured_form
+      unit: null
+      original_fragment_representation:
+        data_types:
+        - string
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    medicines:
+      target: inputs.medicines
+      data_type: medication_list
+      unit: null
+      original_fragment_representation:
+        data_types:
+        - list
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    renal_state:
+      target: inputs.renal_state
+      data_type: enum
+      unit: null
+      original_fragment_representation:
+        data_types:
+        - string
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+  ago-gad-start:
+    age:
+      target: inputs.age
+      data_type: integer
+      unit: year
+      original_fragment_representation:
+        data_types:
+        - integer
+        unit: year
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    ALT_ratio:
+      target: inputs.ALT_ratio
+      data_type: number
+      unit: xULN
+      original_fragment_representation:
+        data_types:
+        - integer
+        unit: xULN
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    AST_ratio:
+      target: inputs.AST_ratio
+      data_type: number
+      unit: xULN
+      original_fragment_representation:
+        data_types:
+        - integer
+        - number
+        - string
+        unit: xULN
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    form:
+      target: inputs.form
+      data_type: structured_form
+      unit: null
+      original_fragment_representation:
+        data_types:
+        - string
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    medicines:
+      target: inputs.medicines
+      data_type: medication_list
+      unit: null
+      original_fragment_representation:
+        data_types:
+        - list
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+  ago-stop:
+    current_dose:
+      target: inputs.current_dose
+      data_type: number
+      unit: mg/day
+      original_fragment_representation:
+        data_types:
+        - integer
+        unit: mg/day
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    clinician_action:
+      target: inputs.clinician_action
+      data_type: enum
+      unit: null
+      original_fragment_representation:
+        data_types:
+        - string
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+  dulox-depression-start:
+    form:
+      target: inputs.form
+      data_type: structured_form
+      unit: null
+      original_fragment_representation:
+        data_types:
+        - string
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    indication:
+      target: external_context.diagnosis
+      data_type: string
+      unit: null
+      original_fragment_representation:
+        data_types:
+        - string
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+    hepatic:
+      target: inputs.hepatic
+      data_type: source_hepatic_category
+      unit: null
+      original_fragment_representation:
+        data_types:
+        - string
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+  dulox-gad-adjust:
+    current_dose:
+      target: inputs.current_dose
+      data_type: number
+      unit: mg/day
+      original_fragment_representation:
+        data_types:
+        - integer
+        unit: mg/day
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    response:
+      target: inputs.response
+      data_type: enum
+      unit: null
+      original_fragment_representation:
+        data_types:
+        - string
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    tolerability:
+      target: inputs.tolerability
+      data_type: enum
+      unit: null
+      original_fragment_representation:
+        data_types:
+        - string
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+  dulox-gad-start:
+    comorbid_depression:
+      target: inputs.comorbid_depression
+      data_type: boolean
+      unit: null
+      original_fragment_representation:
+        data_types:
+        - boolean
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    elderly_population:
+      target: inputs.elderly_population
+      data_type: boolean
+      unit: null
+      original_fragment_representation:
+        data_types:
+        - boolean
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    form:
+      target: inputs.form
+      data_type: structured_form
+      unit: null
+      original_fragment_representation:
+        data_types:
+        - string
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    CLcr_mL_min:
+      target: inputs.renal_metric.value
+      data_type: number
+      unit: mL/min
+      metric: CLcr
+      original_fragment_representation:
+        data_types:
+        - integer
+        unit: mL/min
+        nature: Actual legacy given representation; not the complete target input type
+    renal_metric:
+      target: inputs.renal_metric
+      data_type: structured_renal
+      unit: null
+      original_fragment_representation:
+        data_types:
+        - string
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+  dulox-taper-limit:
+    current_dose:
+      target: inputs.current_dose
+      data_type: number
+      unit: mg/day
+      original_fragment_representation:
+        data_types:
+        - 'null'
+        unit: mg/day
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    withdrawal_severity:
+      target: inputs.withdrawal_severity
+      data_type: enum
+      unit: null
+      original_fragment_representation:
+        data_types:
+        - string
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+  esc-adult-adjust:
+    current_dose:
+      target: inputs.current_dose
+      data_type: number
+      unit: mg/day
+      original_fragment_representation:
+        data_types:
+        - integer
+        unit: mg/day
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    response:
+      target: inputs.response
+      data_type: enum
+      unit: null
+      original_fragment_representation:
+        data_types:
+        - string
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    tolerability:
+      target: inputs.tolerability
+      data_type: enum
+      unit: null
+      original_fragment_representation:
+        data_types:
+        - string
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    clcr_mL_min:
+      target: inputs.renal.value
+      data_type: number
+      unit: mL/min
+      metric: CLcr
+      original_fragment_representation:
+        data_types:
+        - integer
+        unit: mL/min
+        nature: Actual legacy given representation; not the complete target input type
+  esc-cyp2c19-start:
+    cyp2c19:
+      target: inputs.known_cyp2c19
+      data_type: enum
+      unit: null
+      original_fragment_representation:
+        data_types:
+        - string
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    clcr_mL_min:
+      target: inputs.renal.value
+      data_type: number
+      unit: mL/min
+      metric: CLcr
+      original_fragment_representation:
+        data_types:
+        - integer
+        unit: mL/min
+        nature: Actual legacy given representation; not the complete target input type
+  esc-elderly-start:
+    elderly:
+      target: inputs.age
+      data_type: integer
+      unit: year
+      note: legacy value is age, not elderly boolean
+      original_fragment_representation:
+        data_types:
+        - integer
+        unit: year
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    clcr_mL_min:
+      target: inputs.renal.value
+      data_type: number
+      unit: mL/min
+      metric: CLcr
+      original_fragment_representation:
+        data_types:
+        - integer
+        unit: mL/min
+        nature: Actual legacy given representation; not the complete target input type
+  esc-gad-start:
+    age:
+      target: inputs.age
+      data_type: integer
+      unit: year
+      original_fragment_representation:
+        data_types:
+        - integer
+        unit: year
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    known_cyp2c19:
+      target: inputs.known_cyp2c19
+      data_type: enum
+      unit: null
+      original_fragment_representation:
+        data_types:
+        - string
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    hepatic:
+      target: inputs.hepatic
+      data_type: source_hepatic_category
+      unit: null
+      original_fragment_representation:
+        data_types:
+        - string
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    pregnancy:
+      target: inputs.pregnancy
+      data_type: boolean
+      unit: null
+      original_fragment_representation:
+        data_types:
+        - boolean
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    requested_mg:
+      target: external_context.requested_mg
+      data_type: number
+      unit: mg
+      origin: form feasibility fixture; not prescribed dose
+      original_fragment_representation:
+        data_types:
+        - integer
+        unit: mg
+        nature: Actual legacy given representation; not the complete target input type
+    form:
+      target: inputs.form
+      data_type: structured_form
+      unit: null
+      original_fragment_representation:
+        data_types:
+        - string
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    clcr_mL_min:
+      target: inputs.renal.value
+      data_type: number
+      unit: mL/min
+      metric: CLcr
+      original_fragment_representation:
+        data_types:
+        - integer
+        unit: mL/min
+        nature: Actual legacy given representation; not the complete target input type
+  esc-hepatic-start:
+    hepatic:
+      target: inputs.hepatic
+      data_type: source_hepatic_category
+      unit: null
+      original_fragment_representation:
+        data_types:
+        - string
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    clcr_mL_min:
+      target: inputs.renal.value
+      data_type: number
+      unit: mL/min
+      metric: CLcr
+      original_fragment_representation:
+        data_types:
+        - integer
+        unit: mL/min
+        nature: Actual legacy given representation; not the complete target input type
+  esc-panic-start:
+    age:
+      target: inputs.age
+      data_type: integer
+      unit: year
+      original_fragment_representation:
+        data_types:
+        - integer
+        unit: year
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    known_cyp2c19:
+      target: inputs.known_cyp2c19
+      data_type: enum
+      unit: null
+      original_fragment_representation:
+        data_types:
+        - string
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    hepatic:
+      target: inputs.hepatic
+      data_type: source_hepatic_category
+      unit: null
+      original_fragment_representation:
+        data_types:
+        - string
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    clcr_mL_min:
+      target: inputs.renal.value
+      data_type: number
+      unit: mL/min
+      metric: CLcr
+      original_fragment_representation:
+        data_types:
+        - integer
+        unit: mL/min
+        nature: Actual legacy given representation; not the complete target input type
+  esc-social-start:
+    age:
+      target: inputs.age
+      data_type: integer
+      unit: year
+      original_fragment_representation:
+        data_types:
+        - integer
+        unit: year
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    known_cyp2c19:
+      target: inputs.known_cyp2c19
+      data_type: enum
+      unit: null
+      original_fragment_representation:
+        data_types:
+        - string
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    hepatic:
+      target: inputs.hepatic
+      data_type: source_hepatic_category
+      unit: null
+      original_fragment_representation:
+        data_types:
+        - string
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    clcr_mL_min:
+      target: inputs.renal.value
+      data_type: number
+      unit: mL/min
+      metric: CLcr
+      original_fragment_representation:
+        data_types:
+        - integer
+        unit: mL/min
+        nature: Actual legacy given representation; not the complete target input type
+  esc-taper-limit:
+    current_dose:
+      target: inputs.current_dose
+      data_type: number
+      unit: mg/day
+      original_fragment_representation:
+        data_types:
+        - integer
+        unit: mg/day
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    clcr_mL_min:
+      target: inputs.renal.value
+      data_type: number
+      unit: mL/min
+      metric: CLcr
+      original_fragment_representation:
+        data_types:
+        - integer
+        unit: mL/min
+        nature: Actual legacy given representation; not the complete target input type
+  fluvox-depression-start:
+    source_start_choice:
+      target: inputs.source_start_choice
+      data_type: enum
+      unit: mg/day
+      original_fragment_representation:
+        data_types:
+        - string
+        unit: mg/day
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    age:
+      target: inputs.age
+      data_type: integer
+      unit: year
+      original_fragment_representation:
+        data_types:
+        - integer
+        unit: year
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    indication:
+      target: external_context.diagnosis
+      data_type: string
+      unit: null
+      original_fragment_representation:
+        data_types:
+        - string
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+    lactation:
+      target: inputs.lactation
+      data_type: boolean
+      unit: null
+      original_fragment_representation:
+        data_types:
+        - string
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    last_maoi_type:
+      target: inputs.maoi_type
+      data_type: record_map
+      unit: null
+      value_map:
+        обратимый: reversible_selective
+        необратимый: irreversible
+      original_fragment_representation:
+        data_types:
+        - string
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    time_since_last_maoi:
+      target: derived elapsed from maoi_stopped_at + calculation_at
+      data_type: number
+      unit: day
+      not_user_question: true
+      calendar_next_day_cannot_be_replaced_by_elapsed_days: true
+      original_fragment_representation:
+        data_types:
+        - integer
+        - string
+        unit: day
+        nature: Actual legacy given representation; not the complete target input type
+    renal_metric:
+      target: inputs.renal_metric
+      data_type: enum
+      unit: null
+      original_fragment_representation:
+        data_types:
+        - string
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+  fluvox-taper-limit:
+    current_dose:
+      target: inputs.current_dose
+      data_type: number
+      unit: mg/day
+      original_fragment_representation:
+        data_types:
+        - 'null'
+        unit: mg/day
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    withdrawal_severity:
+      target: inputs.withdrawal_severity
+      data_type: enum
+      unit: null
+      original_fragment_representation:
+        data_types:
+        - string
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+  parox-panic-kr:
+    age:
+      target: inputs.age
+      data_type: integer
+      unit: year
+      original_fragment_representation:
+        data_types:
+        - integer
+        unit: year
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    form:
+      target: inputs.form
+      data_type: structured_form
+      unit: null
+      original_fragment_representation:
+        data_types:
+        - string
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    current_dose:
+      target: inputs.current_dose
+      data_type: number
+      unit: mg/day
+      original_fragment_representation:
+        data_types:
+        - integer
+        unit: mg/day
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    time_at_dose:
+      target: inputs.time_at_dose
+      data_type: number
+      unit: week
+      original_fragment_representation:
+        data_types:
+        - string
+        unit: week
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    population:
+      target: inputs.elderly_population
+      data_type: boolean
+      unit: null
+      value_map:
+        пожилой: true
+      numeric_age_threshold: null
+      original_fragment_representation:
+        data_types:
+        - string
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+  parox-taper-example:
+    age:
+      target: inputs.age
+      data_type: integer
+      unit: year
+      original_fragment_representation:
+        data_types:
+        - integer
+        unit: year
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    current_dose:
+      target: inputs.current_dose
+      data_type: number
+      unit: mg/day
+      original_fragment_representation:
+        data_types:
+        - integer
+        unit: mg/day
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    form:
+      target: inputs.form
+      data_type: structured_form
+      unit: null
+      original_fragment_representation:
+        data_types:
+        - string
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    example_selected:
+      target: inputs.example_selected
+      data_type: boolean
+      unit: null
+      original_fragment_representation:
+        data_types:
+        - boolean
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    withdrawal_severity:
+      target: inputs.withdrawal_severity
+      data_type: enum
+      unit: null
+      original_fragment_representation:
+        data_types:
+        - string
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    past_withdrawal:
+      target: inputs.past_withdrawal
+      data_type: boolean
+      unit: null
+      original_fragment_representation:
+        data_types:
+        - string
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+  phen-taper-limit:
+    current_dose:
+      target: inputs.current_dose
+      data_type: number
+      unit: mg/day
+      original_fragment_representation:
+        data_types:
+        - integer
+        unit: mg/day
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    duration:
+      target: inputs.duration
+      data_type: number
+      unit: week
+      original_fragment_representation:
+        data_types:
+        - integer
+        unit: week
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+  preg-gad-adjust:
+    current_dose:
+      target: inputs.current_dose
+      data_type: number
+      unit: mg/day
+      original_fragment_representation:
+        data_types:
+        - integer
+        unit: mg/day
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    time_at_dose:
+      target: inputs.time_at_dose
+      data_type: number
+      unit: week
+      original_fragment_representation:
+        data_types:
+        - integer
+        unit: week
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    response:
+      target: inputs.response
+      data_type: enum
+      unit: null
+      original_fragment_representation:
+        data_types:
+        - string
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    tolerability:
+      target: inputs.tolerability
+      data_type: enum
+      unit: null
+      original_fragment_representation:
+        data_types:
+        - string
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    adherence:
+      target: inputs.adherence
+      data_type: enum
+      unit: null
+      original_fragment_representation:
+        data_types:
+        - string
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    clcr:
+      target: inputs.clcr
+      data_type: number
+      unit: mL/min
+      original_fragment_representation:
+        data_types:
+        - integer
+        unit: mL/min
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    dialysis:
+      target: inputs.dialysis
+      data_type: boolean
+      unit: null
+      original_fragment_representation:
+        data_types:
+        - boolean
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    frequency:
+      target: inputs.frequency
+      data_type: enum
+      unit: administration/day
+      original_fragment_representation:
+        data_types:
+        - integer
+        unit: administration/day
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+  preg-gad-start:
+    clcr:
+      target: inputs.clcr
+      data_type: number
+      unit: mL/min
+      original_fragment_representation:
+        data_types:
+        - integer
+        - string
+        unit: mL/min
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    dialysis:
+      target: inputs.dialysis
+      data_type: boolean
+      unit: null
+      original_fragment_representation:
+        data_types:
+        - boolean
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    frequency:
+      target: inputs.frequency
+      data_type: enum
+      unit: administration/day
+      original_fragment_representation:
+        data_types:
+        - integer
+        unit: administration/day
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+  preg-renal-start:
+    clcr:
+      target: inputs.clcr
+      data_type: number
+      unit: mL/min
+      original_fragment_representation:
+        data_types:
+        - integer
+        unit: mL/min
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    dialysis:
+      target: inputs.dialysis
+      data_type: boolean
+      unit: null
+      original_fragment_representation:
+        data_types:
+        - boolean
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    eGFR:
+      target: external_context.eGFR
+      data_type: number
+      unit: mL/min/1.73m2
+      origin: negative fixture, cannot populate CLcr
+      original_fragment_representation:
+        data_types:
+        - integer
+        unit: mL/min/1.73m2
+        nature: Actual legacy given representation; not the complete target input type
+    unit:
+      target: external_context.unit
+      data_type: string
+      unit: null
+      origin: unit-validation fragment for renal operand
+      original_fragment_representation:
+        data_types:
+        - string
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+  preg-taper-limit:
+    current_dose:
+      target: inputs.current_dose
+      data_type: number
+      unit: mg/day
+      original_fragment_representation:
+        data_types:
+        - integer
+        unit: mg/day
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+  ser-adult-adjust:
+    current_dose:
+      target: inputs.current_dose
+      data_type: number
+      unit: mg/day
+      original_fragment_representation:
+        data_types:
+        - integer
+        unit: mg/day
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    time_at_dose:
+      target: inputs.time_at_dose
+      data_type: number
+      unit: week
+      original_fragment_representation:
+        data_types:
+        - integer
+        - number
+        unit: week
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    response:
+      target: inputs.response
+      data_type: enum
+      unit: null
+      original_fragment_representation:
+        data_types:
+        - string
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    tolerability:
+      target: inputs.tolerability
+      data_type: enum
+      unit: null
+      original_fragment_representation:
+        data_types:
+        - string
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    adherence:
+      target: inputs.adherence
+      data_type: enum
+      unit: null
+      original_fragment_representation:
+        data_types:
+        - string
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+  ser-panic-start:
+    age:
+      target: inputs.age
+      data_type: integer
+      unit: year
+      original_fragment_representation:
+        data_types:
+        - integer
+        unit: year
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    pregnancy:
+      target: inputs.pregnancy
+      data_type: boolean
+      unit: null
+      original_fragment_representation:
+        data_types:
+        - boolean
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    lactation:
+      target: inputs.lactation
+      data_type: boolean
+      unit: null
+      original_fragment_representation:
+        data_types:
+        - boolean
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    hepatic:
+      target: inputs.hepatic
+      data_type: source_hepatic_category
+      unit: null
+      original_fragment_representation:
+        data_types:
+        - string
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    diagnosis:
+      target: external_context.diagnosis
+      data_type: string
+      unit: null
+      original_fragment_representation:
+        data_types:
+        - string
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+    medicines:
+      target: inputs.medicines
+      data_type: medication_list
+      unit: null
+      original_fragment_representation:
+        data_types:
+        - list
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+  ser-social-start:
+    age:
+      target: inputs.age
+      data_type: integer
+      unit: year
+      original_fragment_representation:
+        data_types:
+        - integer
+        unit: year
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    pregnancy:
+      target: inputs.pregnancy
+      data_type: boolean
+      unit: null
+      original_fragment_representation:
+        data_types:
+        - boolean
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    lactation:
+      target: inputs.lactation
+      data_type: boolean
+      unit: null
+      original_fragment_representation:
+        data_types:
+        - boolean
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    hepatic:
+      target: inputs.hepatic
+      data_type: source_hepatic_category
+      unit: null
+      original_fragment_representation:
+        data_types:
+        - string
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+  ser-taper-limit:
+    current_dose:
+      target: inputs.current_dose
+      data_type: number
+      unit: mg/day
+      original_fragment_representation:
+        data_types:
+        - integer
+        unit: mg/day
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+  switch-esc-ago:
+    from_drug:
+      target: external_context.from_drug
+      data_type: string
+      unit: null
+      origin: physician switch selection
+      original_fragment_representation:
+        data_types:
+        - string
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+    to_drug:
+      target: external_context.to_drug
+      data_type: string
+      unit: null
+      origin: physician switch selection
+      original_fragment_representation:
+        data_types:
+        - string
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+    alt_ratio_uln:
+      target: inputs.alt_ratio_uln
+      data_type: number
+      unit: ratio_to_ULN
+      original_fragment_representation:
+        data_types:
+        - 'null'
+        - number
+        unit: ratio_to_ULN
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    ast_ratio_uln:
+      target: inputs.ast_ratio_uln
+      data_type: number
+      unit: ratio_to_ULN
+      original_fragment_representation:
+        data_types:
+        - 'null'
+        unit: ratio_to_ULN
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+  switch-esc-ser:
+    foreign_requested_strategy:
+      target: external_context.foreign_requested_strategy
+      data_type: string
+      unit: null
+      origin: negative routing fixture
+      original_fragment_representation:
+        data_types:
+        - string
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+    current_dose:
+      target: inputs.current_dose
+      data_type: number
+      unit: mg/day
+      original_fragment_representation:
+        data_types:
+        - integer
+        unit: mg/day
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    withdrawal_plan_duration_days:
+      target: external_context.withdrawal_plan_duration_days
+      data_type: number
+      unit: day
+      origin: physician-supplied plan; not washout evidence
+      original_fragment_representation:
+        data_types:
+        - integer
+        unit: day
+        nature: Actual legacy given representation; not the complete target input type
+  switch-parox-ago-selected-example:
+    current_dose:
+      target: inputs.current_dose
+      data_type: number
+      unit: mg/day
+      original_fragment_representation:
+        data_types:
+        - integer
+        unit: mg/day
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    example_selected:
+      target: inputs.example_selected
+      data_type: boolean
+      unit: null
+      original_fragment_representation:
+        data_types:
+        - boolean
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    withdrawal_severity:
+      target: inputs.withdrawal_severity
+      data_type: enum
+      unit: null
+      original_fragment_representation:
+        data_types:
+        - string
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    alt_ratio_uln:
+      target: inputs.alt_ratio_uln
+      data_type: number
+      unit: ratio_to_ULN
+      original_fragment_representation:
+        data_types:
+        - integer
+        unit: ratio_to_ULN
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    ast_ratio_uln:
+      target: inputs.ast_ratio_uln
+      data_type: number
+      unit: ratio_to_ULN
+      original_fragment_representation:
+        data_types:
+        - integer
+        unit: ratio_to_ULN
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+  switch-parox-ago:
+    from_drug:
+      target: external_context.from_drug
+      data_type: string
+      unit: null
+      origin: physician switch selection
+      original_fragment_representation:
+        data_types:
+        - string
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+    to_drug:
+      target: external_context.to_drug
+      data_type: string
+      unit: null
+      origin: physician switch selection
+      original_fragment_representation:
+        data_types:
+        - string
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+    alt_ratio_uln:
+      target: inputs.alt_ratio_uln
+      data_type: number
+      unit: ratio_to_ULN
+      original_fragment_representation:
+        data_types:
+        - 'null'
+        - number
+        unit: ratio_to_ULN
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    ast_ratio_uln:
+      target: inputs.ast_ratio_uln
+      data_type: number
+      unit: ratio_to_ULN
+      original_fragment_representation:
+        data_types:
+        - 'null'
+        unit: ratio_to_ULN
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+  switch-ser-ago:
+    from_drug:
+      target: external_context.from_drug
+      data_type: string
+      unit: null
+      origin: physician switch selection
+      original_fragment_representation:
+        data_types:
+        - string
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+    to_drug:
+      target: external_context.to_drug
+      data_type: string
+      unit: null
+      origin: physician switch selection
+      original_fragment_representation:
+        data_types:
+        - string
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+    alt_ratio_uln:
+      target: inputs.alt_ratio_uln
+      data_type: number
+      unit: ratio_to_ULN
+      original_fragment_representation:
+        data_types:
+        - 'null'
+        - number
+        unit: ratio_to_ULN
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    ast_ratio_uln:
+      target: inputs.ast_ratio_uln
+      data_type: number
+      unit: ratio_to_ULN
+      original_fragment_representation:
+        data_types:
+        - 'null'
+        unit: ratio_to_ULN
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+  switch-ser-esc:
+    foreign_requested_strategy:
+      target: external_context.foreign_requested_strategy
+      data_type: string
+      unit: null
+      origin: negative routing fixture
+      original_fragment_representation:
+        data_types:
+        - string
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+    current_dose:
+      target: inputs.current_dose
+      data_type: number
+      unit: mg/day
+      original_fragment_representation:
+        data_types:
+        - integer
+        unit: mg/day
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    withdrawal_plan_duration_days:
+      target: external_context.withdrawal_plan_duration_days
+      data_type: number
+      unit: day
+      origin: physician-supplied plan; not washout evidence
+      original_fragment_representation:
+        data_types:
+        - integer
+        unit: day
+        nature: Actual legacy given representation; not the complete target input type
+  venla-xr-gad-start:
+    form:
+      target: inputs.form
+      data_type: structured_form
+      unit: null
+      original_fragment_representation:
+        data_types:
+        - string
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    renal_metric:
+      target: inputs.renal_metric
+      data_type: structured_renal
+      unit: null
+      original_fragment_representation:
+        data_types:
+        - string
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    hepatic:
+      target: inputs.hepatic
+      data_type: source_hepatic_category
+      unit: null
+      original_fragment_representation:
+        data_types:
+        - string
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    GFR_mL_min:
+      target: inputs.renal_metric.value
+      data_type: number
+      unit: mL/min
+      metric: absolute_GFR
+      original_fragment_representation:
+        data_types:
+        - integer
+        unit: mL/min
+        nature: Actual legacy given representation; not the complete target input type
+    usual_dose_mg_per_day:
+      target: external_context.usual_dose_mg_per_day
+      data_type: number
+      unit: mg/day
+      origin: arithmetic fixture base; bound to source start parameter
+      original_fragment_representation:
+        data_types:
+        - integer
+        unit: mg/day
+        nature: Actual legacy given representation; not the complete target input type
+  venla-xr-panic-form-limit:
+    form:
+      target: inputs.form
+      data_type: structured_form
+      unit: null
+      original_fragment_representation:
+        data_types:
+        - string
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+  venla-xr-social-start:
+    form:
+      target: inputs.form
+      data_type: structured_form
+      unit: null
+      original_fragment_representation:
+        data_types:
+        - string
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    renal_metric:
+      target: inputs.renal_metric
+      data_type: structured_renal
+      unit: null
+      original_fragment_representation:
+        data_types:
+        - string
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    hepatic:
+      target: inputs.hepatic
+      data_type: source_hepatic_category
+      unit: null
+      original_fragment_representation:
+        data_types:
+        - string
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    GFR_mL_min:
+      target: inputs.renal_metric.value
+      data_type: number
+      unit: mL/min
+      metric: absolute_GFR
+      original_fragment_representation:
+        data_types:
+        - integer
+        unit: mL/min
+        nature: Actual legacy given representation; not the complete target input type
+    usual_dose_mg_per_day:
+      target: external_context.usual_dose_mg_per_day
+      data_type: number
+      unit: mg/day
+      origin: arithmetic fixture base; bound to source start parameter
+      original_fragment_representation:
+        data_types:
+        - integer
+        unit: mg/day
+        nature: Actual legacy given representation; not the complete target input type
+  venla-xr-taper-limit:
+    current_dose:
+      target: inputs.current_dose
+      data_type: number
+      unit: mg/day
+      original_fragment_representation:
+        data_types:
+        - 'null'
+        unit: mg/day
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+    withdrawal_severity:
+      target: inputs.withdrawal_severity
+      data_type: enum
+      unit: null
+      original_fragment_representation:
+        data_types:
+        - string
+        unit: null
+        nature: Actual legacy given representation; not the complete target input type
+      full_input_conversion: Explicit source-compatible structure required; fragment alone is not a complete input,
+        clinical category or medication-history clearance
+conditional_history_fields:
+  maoi_type: object keyed by relevant record_id; value in source-specific MAOI type enum
+  maoi_stopped_at: object keyed by stopped MAOI record_id; ISO8601 with UTC offset; each timestamp counted separately
+  empty_history: '[] confirms none; omit conditional fields; omission is not unknown because predicate is false'
+  source_interval: evaluate every record; do not infer interval after A from B-to-A interval
+fact_provenance:
+  scope: only within this calculation; no patient history
+  confirmed_patient_fact: explicit answer or supplied current source-specific assessment; action selection is not
+    evidence
+  derived_product_metadata: product/form/strength selection determines INN, release, registration and splitting
+    from the identified edition
+  unknown: retain verbatim missing state; never fabricate a prior assessment
+requirement_predicates:
+  always: Independent patient fact or identified form needed for the selected individual branch
+  increase: Required only for clinician_action=increase or not_chosen; not for keeping an already selected dose
+  action_choice: Required only when the psychiatrist has not selected an action
+  reported_context: 'Optional explicitly supplied source context: consumed and counted when present. Positive/negative/unknown
+    supplied values are never free. Missing stays not_assessed and does not establish a negative or clinical clearance.
+    If used in an expected reason, it must be included in the projected input.'
+  target_ongoing: Required for explicit target_treatment_phase=ongoing only; never infer B phase from A. Unknown
+    B phase is retained; a target cessation request needs explicit phase data and cannot stop a drug before its
+    first administration.
+  reported_current_event: 'Optional explicitly supplied current source-defined event: consumed and counted if present;
+    positive action requires explicit ongoing source/target phase; missing/unknown never confirms absence or clinical
+    clearance.'
+  reported_source_information: Optional explicitly supplied information for a source warning; count every consumed
+    fact/record. It is not an unconditional cessation/start prerequisite.
+  all_equals: 'Active only when every listed explicitly known field equals the supplied value. An unknown prerequisite
+    is never a confirmed mismatch: its own required input requests clarification; no calendar can be issued from
+    it.'
+  indication_action_choice: Mandatory only for the listed physician-selected diagnoses and action-choice states.
+    For other diagnoses, explicitly supplied information is consumed/counted; absence or unknown remains unassessed.
+    No mandatory prerequisite is borrowed from another indication.
+  maoi_record: Known interaction_class=maoi in a named medicine record. Unknown class requires class clarification
+    first; it is not treated as a negative and does not activate a speculative MAOI-type question.
+  stopped_maoi_record: Known interaction_class=maoi and status=stopped in the same named record; type and stop timestamp
+    are separate counted facts. Unknown class cannot establish a source clock.

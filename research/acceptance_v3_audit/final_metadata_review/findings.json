@@ -1,0 +1,16 @@
+{
+  "snapshot": "b66e9e0dadca7234ed1e66bc8c103047ff2f96e963313d07dd0075494695f0a4",
+  "open_findings": [],
+  "new_findings": [],
+  "closed_finding_ids": [
+    "V3-01",
+    "V3-02",
+    "V3-03",
+    "V3-04",
+    "V3-05",
+    "V3-06",
+    "V3-07",
+    "V3-RC01"
+  ],
+  "scope": "Finite final metadata correction plus reused completed full USED research review of38 cards; no claim of exhaustive unused label/PIL text or every patient combination."
+}

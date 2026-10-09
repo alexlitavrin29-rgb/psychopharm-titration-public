@@ -1,0 +1,286 @@
+{
+  "schema_version": "1.0",
+  "rule_id": "venla-xr-taper-limit",
+  "development_status": "extracted_research_not_executable",
+  "language": "ru",
+  "identity": {
+    "title": "венлафаксин: ограничения отмены",
+    "mode": "taper",
+    "drug_inn": "венлафаксин",
+    "from_drug_inn": null,
+    "to_drug_inn": null,
+    "formulation": "Велаксин XR 75/150 мг",
+    "route": "oral",
+    "diagnosis_label_ru": "Депрессия / указанная коморбидность",
+    "classification_system": "МКБ-10",
+    "diagnosis_code": "F41.1/F32/F33",
+    "jurisdiction": "RU_versioned_sources"
+  },
+  "applicability": {
+    "population_description": "Взрослые от 18 лет; показание и клиническое действие выбирает врач.",
+    "age_constraints": [
+      {
+        "minimum": 18,
+        "inclusive": true,
+        "unit": "year",
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "HTML §1–3, §4.1–4.3, §4.5–4.6, §8; заголовки формы/режима сохранены"
+      }
+    ],
+    "pregnancy": "Отдельная применимость по §4.6, без числового коэффициента.",
+    "lactation": "Отдельная применимость по §4.6, без числового коэффициента.",
+    "renal_constraints": [],
+    "hepatic_constraints": [],
+    "comorbidity_constraints": [],
+    "interacting_drugs": [],
+    "other_conditions": [],
+    "exclusions": [],
+    "indication_status_in_russia": "RU_indication_in_read_original_latest_registry_text_separate",
+    "source_refs": [
+      "RU-VENLA-XR",
+      "RU-GAD"
+    ]
+  },
+  "inputs": [
+    {
+      "input_id": "age",
+      "question_ru": "Возраст?",
+      "data_type": "number",
+      "unit": "year",
+      "allowed_values": [],
+      "required_when": "для выбранного расчёта",
+      "show_when": "для выбранного расчёта",
+      "why_needed": "Взрослая область источника.",
+      "changes": [
+        "dose_or_action"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Назвать age; не подставлять норму, без безусловной индивидуальной дозы.",
+      "source_refs": [
+        "RU-VENLA-XR"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "form",
+      "question_ru": "Форма и разрешённые дозировки?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [
+        "подтверждено врачом",
+        "неизвестно"
+      ],
+      "required_when": "для выбранного расчёта",
+      "show_when": "для выбранного расчёта",
+      "why_needed": "Исполнимость уменьшения дозы.",
+      "changes": [
+        "dose_or_action"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Назвать form; не подставлять норму, без безусловной индивидуальной дозы.",
+      "source_refs": [
+        "RU-VENLA-XR"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "current_dose",
+      "question_ru": "Текущая суточная доза?",
+      "data_type": "number",
+      "unit": "mg/day",
+      "allowed_values": [],
+      "required_when": "для выбранного расчёта",
+      "show_when": "для выбранного расчёта",
+      "why_needed": "Исходная точка отмены.",
+      "changes": [
+        "dose_or_action"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Назвать current_dose; не подставлять норму, без безусловной индивидуальной дозы.",
+      "source_refs": [
+        "RU-VENLA-XR"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "duration",
+      "question_ru": "Длительность лечения?",
+      "data_type": "number",
+      "unit": "week",
+      "allowed_values": [],
+      "required_when": "для выбранного расчёта",
+      "show_when": "для выбранного расчёта",
+      "why_needed": "Индивидуализация риска/темпа HTML §4.2 Синдром отмены",
+      "changes": [
+        "dose_or_action"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Назвать duration; не подставлять норму, без безусловной индивидуальной дозы.",
+      "source_refs": [
+        "RU-VENLA-XR"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "withdrawal_severity",
+      "question_ru": "Симптомы отмены по оценке врача?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [
+        "подтверждено врачом",
+        "неизвестно"
+      ],
+      "required_when": "для выбранного расчёта",
+      "show_when": "для выбранного расчёта",
+      "why_needed": "Условие удержания/возврата/замедления HTML §4.2 Синдром отмены",
+      "changes": [
+        "dose_or_action"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Назвать withdrawal_severity; не подставлять норму, без безусловной индивидуальной дозы.",
+      "source_refs": [
+        "RU-VENLA-XR"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "past_withdrawal",
+      "question_ru": "Были тяжёлые симптомы при прошлой отмене?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [
+        "подтверждено врачом",
+        "неизвестно"
+      ],
+      "required_when": "для выбранного расчёта",
+      "show_when": "для выбранного расчёта",
+      "why_needed": "КР депрессии Б5/продуктовая индивидуализация; не строить универсальный срок.",
+      "changes": [
+        "dose_or_action"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Назвать past_withdrawal; не подставлять норму, без безусловной индивидуальной дозы.",
+      "source_refs": [
+        "RU-VENLA-XR"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    }
+  ],
+  "clinical_parameters": [
+    {
+      "parameter_id": "source_minimum",
+      "meaning": "source_minimum",
+      "value": null,
+      "lower": 1,
+      "upper": 2,
+      "lower_inclusive": true,
+      "upper_inclusive": true,
+      "unit": "week",
+      "source_ref": "RU-VENLA-XR",
+      "source_locator": "HTML §4.2 Синдром отмены",
+      "source_meaning": "диапазон",
+      "derivation": null
+    }
+  ],
+  "logic": {
+    "representation": "conditional_source_rule",
+    "conditions": [
+      "Применимость к указанному показанию/форме подтверждена в пределах дозового расчёта; это не полный клинический допуск."
+    ],
+    "actions": [
+      "Снижать постепенно не менее 1–2 недель; некоторым нужны месяцы и более, по дозе/длительности/чувствительности.",
+      "Выраженные симптомы: рассмотреть прежнюю дозу, затем медленнее. Точные ступени не опубликованы. Не применять срок отмены IR к XR автоматически."
+    ],
+    "parameter_refs": [
+      "source_minimum"
+    ],
+    "source_refs": [
+      "RU-VENLA-XR",
+      "RU-GAD"
+    ],
+    "clinician_choices": [
+      "Необходимость изменения лечения и неоценённые модулем клинические обстоятельства."
+    ],
+    "missing_data_behaviour": "insufficient_data с конкретным отсутствующим полем, без безусловной дозы.",
+    "unsupported_case_behaviour": "Назвать неприменимую ветку; не переносить другую форму/показание.",
+    "contraindicated_case_behaviour": "Не выдавать схему противопоказанного сочетания, указать источник.",
+    "conflicts": [],
+    "composite_rule_dependencies": [],
+    "combination_justification": "КР определяет клиническую область, инструкция — дозовые параметры; новые коэффициенты не добавлены."
+  },
+  "output": {
+    "result_type": "clinician_choice",
+    "medication_inn": "венлафаксин",
+    "dose_per_administration": null,
+    "administrations_per_day": null,
+    "total_daily_dose": null,
+    "unit": "mg",
+    "formulation": "Велаксин XR 75/150 мг",
+    "schedule": [],
+    "warnings": [
+      "Последующие этапы условны; максимум не является целью.",
+      "Неоценённое клиническое обстоятельство не считается отсутствующим.",
+      "Версия копии зафиксирована; последнее содержание реестрового документа проверяется перед клиническим внедрением."
+    ],
+    "mandatory_checks": [],
+    "clinician_decisions_remaining": [],
+    "rounding_or_formulation_rule": "Не округлять медицинскую дозу; целые формы/разрешённое деление. Невозможная доза — явный отказ формы.",
+    "source_refs": [
+      "RU-VENLA-XR",
+      "RU-GAD"
+    ]
+  },
+  "verification": {
+    "primary_source_checked": true,
+    "all_clinical_parameters_have_sources": true,
+    "population_and_indication_checked": true,
+    "russian_applicability_checked": true,
+    "formulation_feasibility_checked": false,
+    "combined_rules_justified": true,
+    "source_transfer_check": "extraction_checked; calculator_not_implemented",
+    "clinical_review": "not_performed",
+    "product_clinical_validation": "not_performed",
+    "ready_for_technical_implementation": false,
+    "unresolved_items": [
+      "Полный календарь или исполнимость конкретной формы отсутствует; частичный результат не автосхема."
+    ]
+  },
+  "test_cases": [
+    {
+      "case_id": "venla-xr-taper-limit__no-invented-tail",
+      "synthetic": true,
+      "given": {
+        "current_dose": null
+      },
+      "expected": {
+        "automatic_full_taper_calendar": null,
+        "uniform_percentage": null
+      },
+      "source_refs": [
+        "RU-VENLA-XR"
+      ],
+      "note": "Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена."
+    },
+    {
+      "case_id": "venla-xr-taper-limit__symptoms",
+      "synthetic": true,
+      "given": {
+        "withdrawal_severity": "выраженные"
+      },
+      "expected": {
+        "automatic_next_reduction": false,
+        "clinician_reassessment": true
+      },
+      "source_refs": [
+        "RU-VENLA-XR"
+      ],
+      "note": "Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена."
+    }
+  ],
+  "profile": {
+    "country": "RU",
+    "selection_status": "RU_profile_research",
+    "foreign_fallback_allowed": false
+  },
+  "card_type": "partial_source_constraint"
+}

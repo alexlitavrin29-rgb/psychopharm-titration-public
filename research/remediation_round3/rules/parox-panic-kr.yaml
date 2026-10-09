@@ -1,0 +1,1557 @@
+schema_version: '1.0'
+rule_id: parox-panic-kr
+development_status: extracted_research_not_executable
+language: ru
+identity:
+  title: 'Пароксетин при паническом расстройстве: дозовые этапы российских КР'
+  mode: start
+  drug_inn: пароксетин
+  from_drug_inn: null
+  to_drug_inn: null
+  formulation: Рексетин, таблетки 20 мг, покрытые пленочной оболочкой; деление пополам на 10 мг
+  route: oral
+  diagnosis_label_ru: Паническое расстройство
+  classification_system: МКБ-10
+  diagnosis_code: F41.0
+  jurisdiction: RU_versioned_sources
+applicability:
+  population_description: Взрослые от 18 лет, паническое расстройство; пожилой/органный контекст разбирается отдельно.
+  age_constraints:
+  - minimum: 18
+    inclusive: true
+    unit: year
+    source_ref: RU-PAROX
+    source_locator: §4.1, PDF с.1
+  pregnancy: Отдельная оценка применимости; дозовые коэффициенты не извлечены.
+  lactation: Отдельная оценка применимости; дозовые коэффициенты не извлечены.
+  renal_constraints:
+  - При CLcr <30 мл/мин нижний край диапазона (§4.2 с.4); не делать автоматический коэффициент.
+  hepatic_constraints:
+  - При нарушении функции печени нижний край терапевтического диапазона; точная самостоятельная новая поправка не
+    задана (§4.2 с.4).
+  comorbidity_constraints: []
+  interacting_drugs:
+  - ИМАО, тиоридазин, пимозид — §4.3 с.4–5.
+  other_conditions:
+  - КР задаёт диапазон 40–60; инструкция отдельно выделяет рекомендуемые 40 и максимум 60 после недостаточного ответа
+    через несколько недель на 40. Максимум не является целью.
+  exclusions:
+  - Возраст менее 18 лет; гиперчувствительность; противопоказанное сочетание по §4.3.
+  indication_status_in_russia: RU_indication_present_in_original_registry_currency_separate
+  source_refs:
+  - RU-PANIC
+  - RU-PAROX
+inputs:
+- input_id: age
+  question_ru: Возраст, полных лет?
+  data_type: integer
+  unit: year
+  allowed_values: []
+  required_when: 'для выбранного индивидуального результата: числовой операнд или явно проверяемое источниковое
+    ограничение'
+  show_when: при выборе результата или использовании уже подтверждённого в этом расчёте факта
+  why_needed: Возрастная применимость; для пожилых максимум 40 мг по §4.2.
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; request this specific necessary fact; no individual dose
+  source_refs:
+  - RU-PAROX
+  input_role: required_selected_result_operand_or_source_gate
+  source_locator: RU-PAROX §4.1 с.1–2; §4.2 с.4; §4.3 с.5
+  missing_states:
+  - unknown
+  - not_assessed
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: always
+  necessity_reason: Возрастная применимость; для пожилых максимум 40 мг по §4.2.
+  fact_origin: patient_fact
+- input_id: form
+  question_ru: Какая конкретная форма Рексетина используется?
+  data_type: structured_form
+  unit: null
+  allowed_values: []
+  required_when: 'для выбранного индивидуального результата: числовой операнд или явно проверяемое источниковое
+    ограничение'
+  show_when: при выборе результата или использовании уже подтверждённого в этом расчёте факта
+  why_needed: 10 мг исполнимы половиной таблетки 20 мг; §4.2 с.4.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; request this specific necessary fact; no individual dose
+  source_refs:
+  - RU-PAROX
+  input_role: required_selected_result_operand_or_source_gate
+  source_locator: RU-PAROX §3 с.1; §4.2 с.4
+  missing_states:
+  - unknown
+  - not_assessed
+  structure_ref: remediation_round3/input_contracts.yaml#structures/structured_form
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: always
+  necessity_reason: 10 мг исполнимы половиной таблетки 20 мг; §4.2 с.4.
+  fact_origin: product_metadata
+- input_id: hepatic
+  question_ru: Какова подтверждённая функция печени?
+  data_type: source_hepatic_category
+  unit: null
+  allowed_values: []
+  required_when: 'для выбранного индивидуального результата: числовой операнд или явно проверяемое источниковое
+    ограничение'
+  show_when: при выборе результата или использовании уже подтверждённого в этом расчёте факта
+  why_needed: Ограничение диапазона §4.2 с.4.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; request this specific necessary fact; no individual dose
+  source_refs:
+  - RU-PAROX
+  input_role: required_selected_result_operand_or_source_gate
+  source_locator: RU-PAROX §4.2 с.4
+  missing_states:
+  - unknown
+  - not_assessed
+  structure_ref: remediation_round3/input_contracts.yaml#structures/source_hepatic_category
+  source_categories:
+  - no_impairment_after_assessment
+  - hepatic_impairment
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: always
+  necessity_reason: Ограничение диапазона §4.2 с.4.
+  fact_origin: patient_fact
+- input_id: renal
+  question_ru: Подтверждённое врачом значение CLcr в мл/мин? Индексированная СКФ не подходит; при отсутствии применимой
+    оценки выберите «неизвестно».
+  data_type: structured_renal
+  unit: null
+  allowed_values: []
+  required_when: 'для выбранного индивидуального результата: числовой операнд или явно проверяемое источниковое
+    ограничение'
+  show_when: при выборе результата или использовании уже подтверждённого в этом расчёте факта
+  why_needed: Если есть/неясно, уточнить CLcr в отдельной ветке; §4.2 с.4.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; request this specific necessary fact; no individual dose
+  source_refs:
+  - RU-PAROX
+  input_role: required_selected_result_operand_or_source_gate
+  source_locator: RU-PAROX §4.2 с.4
+  missing_states:
+  - unknown
+  - not_assessed
+  structure_ref: remediation_round3/input_contracts.yaml#structures/structured_renal
+  required_metric: CLcr
+  required_unit: mL/min
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: always
+  necessity_reason: Если есть/неясно, уточнить CLcr в отдельной ветке; §4.2 с.4.
+  fact_origin: patient_fact
+  metric_origin: fixed_source_metadata
+  unit_origin: fixed_source_metadata
+  method_required_for_selected_result: false
+  counted_independent_facts:
+  - clinician_confirmed_source_renal_value
+- input_id: pregnancy
+  question_ru: Беременность установлена или возможна?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: 'для выбранного индивидуального результата: числовой операнд или явно проверяемое источниковое
+    ограничение'
+  show_when: при выборе результата или использовании уже подтверждённого в этом расчёте факта
+  why_needed: Отдельное решение §4.6, без коэффициента.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; request this specific necessary fact; no individual dose
+  source_refs:
+  - RU-PAROX
+  input_role: required_selected_result_operand_or_source_gate
+  source_locator: RU-PAROX §4.6 с.14–15
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    да: true
+    нет: false
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  requirement_predicate:
+    kind: always
+  necessity_reason: Отдельное решение §4.6, без коэффициента.
+  fact_origin: patient_fact
+- input_id: lactation
+  question_ru: Есть грудное вскармливание?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: 'для выбранного индивидуального результата: числовой операнд или явно проверяемое источниковое
+    ограничение'
+  show_when: при выборе результата или использовании уже подтверждённого в этом расчёте факта
+  why_needed: Отдельное решение §4.6.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; request this specific necessary fact; no individual dose
+  source_refs:
+  - RU-PAROX
+  input_role: required_selected_result_operand_or_source_gate
+  source_locator: RU-PAROX §4.6 с.15
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    да: true
+    нет: false
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  requirement_predicate:
+    kind: always
+  necessity_reason: Отдельное решение §4.6.
+  fact_origin: patient_fact
+- input_id: medicines
+  question_ru: Какие лекарства сейчас принимаются или недавно отменены?
+  data_type: medication_list
+  unit: null
+  allowed_values: []
+  required_when: 'для выбранного индивидуального результата: числовой операнд или явно проверяемое источниковое
+    ограничение'
+  show_when: при выборе результата или использовании уже подтверждённого в этом расчёте факта
+  why_needed: Противопоказания/интервалы §4.3–4.5.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; request this specific necessary fact; no individual dose
+  source_refs:
+  - RU-PAROX
+  input_role: required_selected_result_operand_or_source_gate
+  source_locator: RU-PAROX §4.3 с.4–5; §4.5 с.11–14
+  missing_states:
+  - unknown
+  - not_assessed
+  structure_ref: remediation_round3/input_contracts.yaml#structures/medication_list
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: always
+  necessity_reason: Противопоказания/интервалы §4.3–4.5.
+  fact_origin: patient_fact
+- input_id: allergy
+  question_ru: Есть гиперчувствительность к препарату/компонентам?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: 'для выбранного индивидуального результата: числовой операнд или явно проверяемое источниковое
+    ограничение'
+  show_when: при выборе результата или использовании уже подтверждённого в этом расчёте факта
+  why_needed: Противопоказание §4.3.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; request this specific necessary fact; no individual dose
+  source_refs:
+  - RU-PAROX
+  input_role: required_selected_result_operand_or_source_gate
+  source_locator: RU-PAROX §4.3 с.4
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    да: true
+    нет: false
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  requirement_predicate:
+    kind: always
+  necessity_reason: Противопоказание §4.3.
+  fact_origin: patient_fact
+- input_id: response
+  question_ru: Как врач оценивает ответ?
+  data_type: enum
+  unit: null
+  allowed_values:
+  - достаточный
+  - недостаточный
+  - unknown
+  - not_assessed
+  required_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  show_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы. Сохранить
+    источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт полного клинического
+    допуска.'
+  why_needed: Будущие повышения условны; особенно после 40 мг несколько недель.
+  changes:
+  - applicability
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data only when exact predicate active; otherwise explicit not_assessed warning,
+    no clinical clearance
+  source_refs:
+  - RU-PAROX
+  input_role: reported_context
+  source_locator: RU-PAROX §4.2 с.3
+  missing_states:
+  - unknown
+  - not_assessed
+  required_for_individual_result: false
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: reported_context
+  necessity_reason: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  fact_origin: patient_fact
+- input_id: tolerability
+  question_ru: Какова переносимость?
+  data_type: enum
+  unit: null
+  allowed_values:
+  - достаточная
+  - неприемлемая
+  - unknown
+  - not_assessed
+  required_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  show_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы. Сохранить
+    источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт полного клинического
+    допуска.'
+  why_needed: Не выполнять повышение автоматически при нежелательных явлениях.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: insufficient_data only when exact predicate active; otherwise explicit not_assessed warning,
+    no clinical clearance
+  source_refs:
+  - RU-PAROX
+  input_role: reported_context
+  source_locator: RU-PAROX §4.2 с.3
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    приемлемая: достаточная
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  required_for_individual_result: false
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  requirement_predicate:
+    kind: reported_context
+  necessity_reason: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  fact_origin: patient_fact
+- input_id: current_dose
+  question_ru: Какова сообщённая исходная/последняя суточная доза курса (мг/сут) для контекста риска отмены? Она
+    не подтверждает фазу текущего приёма.
+  data_type: number
+  unit: mg/day
+  allowed_values: []
+  required_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  show_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы. Сохранить
+    источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт полного клинического
+    допуска.'
+  why_needed: Исходная точка коррекции.
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data only when exact predicate active; otherwise explicit not_assessed warning,
+    no clinical clearance
+  source_refs:
+  - RU-PAROX
+  input_role: reported_context
+  source_locator: RU-PAROX §4.2 с.3–4
+  missing_states:
+  - unknown
+  - not_assessed
+  required_for_individual_result: false
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: reported_context
+  necessity_reason: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  fact_origin: Explicitly reported initial/last daily course dose for source withdrawal context; no assertion of
+    ongoing use. Current-treatment source action needs a separately supplied counted treatment phase.
+  fact_semantics: reported_course_dose_without_current_use_confirmation
+- input_id: time_at_dose
+  question_ru: Сколько времени на этой дозе?
+  data_type: number
+  unit: week
+  allowed_values: []
+  required_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  show_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы. Сохранить
+    источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт полного клинического
+    допуска.'
+  why_needed: Недельное повышение; несколько недель на 40 перед более высокой дозой.
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data only when exact predicate active; otherwise explicit not_assessed warning,
+    no clinical clearance
+  source_refs:
+  - RU-PAROX
+  input_role: reported_context
+  source_locator: RU-PAROX §4.2 с.3
+  missing_states:
+  - unknown
+  - not_assessed
+  required_for_individual_result: false
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: reported_context
+  necessity_reason: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  fact_origin: patient_fact
+- input_id: maoi_type
+  question_ru: Тип каждого текущего/отменённого ИМАО?
+  data_type: record_map
+  unit: null
+  allowed_values:
+  - none_after_medication_history
+  - irreversible
+  - reversible_selective
+  - reversible_nonselective
+  - unknown
+  - not_assessed
+  required_when: каждая текущая/отменённая запись ИМАО или неизвестный класс взаимодействия
+  show_when: каждая текущая/отменённая запись ИМАО или неизвестный класс взаимодействия
+  why_needed: 'Изменяет применимость/действие: §4.3 с.4–5.'
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; request this specific necessary fact; no individual dose
+  source_refs:
+  - RU-PAROX
+  source_locator: RU-PAROX §4.3 с.4–5; §4.5 с.11
+  input_role: maoi_record
+  required_for_individual_result: false
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  collection: per medication record_id
+  value_data_type: enum
+  requirement_predicate:
+    kind: maoi_record
+  necessity_reason: Each relevant MAOI type, not one compound clearance answer.
+  fact_origin: patient_fact
+- input_id: maoi_stopped_at
+  question_ru: Дата и время последнего приёма каждого отменённого ИМАО?
+  data_type: record_map
+  unit: null
+  allowed_values: []
+  required_when: каждая отменённая запись ИМАО отдельно
+  show_when: каждая отменённая запись ИМАО отдельно
+  why_needed: 'Изменяет применимость/действие: §4.3 с.4–5.'
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; request this specific necessary fact; no individual dose
+  source_refs:
+  - RU-PAROX
+  source_locator: RU-PAROX §4.3 с.4–5; §4.5 с.11
+  input_role: stopped_maoi_record
+  required_for_individual_result: false
+  missing_states:
+  - unknown
+  - not_assessed
+  collection: per medication record_id
+  value_data_type: datetime
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: stopped_maoi_record
+  necessity_reason: Timestamp of each stopped MAOI; no timestamp for an empty assessed history.
+  fact_origin: patient_fact
+- input_id: elderly_population
+  question_ru: Пациент относится к пожилой популяции по решению врача?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: 'для выбранного индивидуального результата: числовой операнд или явно проверяемое источниковое
+    ограничение'
+  show_when: при выборе результата или использовании уже подтверждённого в этом расчёте факта
+  why_needed: 'Изменяет применимость/действие: §4.2 с.4; возрастная граница не задана.'
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; request this specific necessary fact; no individual dose
+  source_refs:
+  - RU-PAROX
+  source_locator: RU-PAROX §4.2 с.4
+  input_role: required_selected_result_operand_or_source_gate
+  required_for_individual_result: true
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    да: true
+    нет: false
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: always
+  necessity_reason: 'Изменяет применимость/действие: §4.2 с.4; возрастная граница не задана.'
+  fact_origin: patient_fact
+- input_id: mania
+  question_ru: Есть мания в анамнезе?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  show_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы. Сохранить
+    источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт полного клинического
+    допуска.'
+  why_needed: Изменяет допуск/действие по RU-PAROX §4.4 с.7–8; не общий допуск врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data only when exact predicate active; otherwise explicit not_assessed warning,
+    no clinical clearance
+  source_refs:
+  - RU-PAROX
+  source_locator: RU-PAROX §4.4 с.7–8
+  required_for_individual_result: false
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: reported_context
+  input_role: reported_context
+  necessity_reason: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  fact_origin: patient_fact
+- input_id: suicide_risk
+  question_ru: Врач выявил суицидальный риск или клиническое ухудшение?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  show_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы. Сохранить
+    источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт полного клинического
+    допуска.'
+  why_needed: Изменяет допуск/действие по RU-PAROX §4.4 с.5–7; не общий допуск врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data only when exact predicate active; otherwise explicit not_assessed warning,
+    no clinical clearance
+  source_refs:
+  - RU-PAROX
+  source_locator: RU-PAROX §4.4 с.5–7
+  required_for_individual_result: false
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: reported_context
+  input_role: reported_context
+  necessity_reason: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  fact_origin: patient_fact
+- input_id: akathisia
+  question_ru: Есть акатизия?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  show_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы. Сохранить
+    источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт полного клинического
+    допуска.'
+  why_needed: Изменяет допуск/действие по RU-PAROX §4.4 с.7–8; не общий допуск врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data only when exact predicate active; otherwise explicit not_assessed warning,
+    no clinical clearance
+  source_refs:
+  - RU-PAROX
+  source_locator: RU-PAROX §4.4 с.7
+  required_for_individual_result: false
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: reported_context
+  input_role: reported_context
+  necessity_reason: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  fact_origin: patient_fact
+- input_id: diabetes
+  question_ru: Есть сахарный диабет?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  show_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы. Сохранить
+    источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт полного клинического
+    допуска.'
+  why_needed: Изменяет допуск/действие по RU-PAROX §4.4 с.8–9; не общий допуск врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data only when exact predicate active; otherwise explicit not_assessed warning,
+    no clinical clearance
+  source_refs:
+  - RU-PAROX
+  source_locator: RU-PAROX §4.4 с.8
+  required_for_individual_result: false
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: reported_context
+  input_role: reported_context
+  necessity_reason: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  fact_origin: patient_fact
+- input_id: glaucoma
+  question_ru: Есть закрытоугольная глаукома?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  show_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы. Сохранить
+    источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт полного клинического
+    допуска.'
+  why_needed: Изменяет допуск/действие по RU-PAROX §4.4 с.9; не общий допуск врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data only when exact predicate active; otherwise explicit not_assessed warning,
+    no clinical clearance
+  source_refs:
+  - RU-PAROX
+  source_locator: RU-PAROX §4.4 с.9
+  required_for_individual_result: false
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: reported_context
+  input_role: reported_context
+  necessity_reason: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  fact_origin: patient_fact
+- input_id: bleeding_risk
+  question_ru: Есть известная склонность к кровотечениям?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  show_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы. Сохранить
+    источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт полного клинического
+    допуска.'
+  why_needed: Изменяет допуск/действие по RU-PAROX §4.4 с.9; не общий допуск врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data only when exact predicate active; otherwise explicit not_assessed warning,
+    no clinical clearance
+  source_refs:
+  - RU-PAROX
+  source_locator: RU-PAROX §4.4 с.9
+  required_for_individual_result: false
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: reported_context
+  input_role: reported_context
+  necessity_reason: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  fact_origin: patient_fact
+- input_id: qt_risk
+  question_ru: Есть известный риск удлинения QT?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  show_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы. Сохранить
+    источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт полного клинического
+    допуска.'
+  why_needed: Изменяет допуск/действие по RU-PAROX §4.4 с.9; не общий допуск врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data only when exact predicate active; otherwise explicit not_assessed warning,
+    no clinical clearance
+  source_refs:
+  - RU-PAROX
+  source_locator: RU-PAROX §4.4 с.9
+  required_for_individual_result: false
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: reported_context
+  input_role: reported_context
+  necessity_reason: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  fact_origin: patient_fact
+- input_id: ect
+  question_ru: Проводится ЭСТ?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  show_when: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы. Сохранить
+    источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт полного клинического
+    допуска.'
+  why_needed: Изменяет допуск/действие по RU-PAROX §4.4 с.9; не общий допуск врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data only when exact predicate active; otherwise explicit not_assessed warning,
+    no clinical clearance
+  source_refs:
+  - RU-PAROX
+  source_locator: RU-PAROX §4.4 с.9
+  required_for_individual_result: false
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: reported_context
+  input_role: reported_context
+  necessity_reason: 'Сообщённый контекст/наблюдение или данные будущего этапа: не операнд выбранной начальной дозы.
+    Сохранить источниковое предупреждение и результат при известном положительном ответе; неизвестность не даёт
+    полного клинического допуска.'
+  fact_origin: patient_fact
+- input_id: seizure_state
+  question_ru: Каково подтверждённое состояние эпилепсии/приступов, включая возникшие при приёме пароксетина?
+  data_type: enum
+  unit: null
+  allowed_values:
+  - не отмечены
+  - контролируемые
+  - неконтролируемые
+  - новые приступы
+  - unknown
+  - not_assessed
+  required_when: 'для выбранного индивидуального результата: числовой операнд или явно проверяемое источниковое
+    ограничение'
+  show_when: при выборе результата или использовании уже подтверждённого в этом расчёте факта
+  why_needed: Изменяет допуск/действие по RU-PAROX §4.4 с.8–9; не общий допуск врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; request this specific necessary fact; no individual dose
+  source_refs:
+  - RU-PAROX
+  source_locator: RU-PAROX §4.4 с.8–9
+  required_for_individual_result: true
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: always
+  input_role: required_selected_result_operand_or_source_gate
+  necessity_reason: Изменяет допуск/действие по RU-PAROX §4.4 с.8–9; не общий допуск врача.
+  fact_origin: patient_fact
+- input_id: serotonin_syndrome_signs
+  question_ru: Во время текущей терапии подтверждены признаки серотонинового синдрома или состояния, подобного ЗНС?
+  data_type: boolean
+  unit: null
+  allowed_values: []
+  source_refs:
+  - RU-PAROX
+  source_locator: RU-PAROX §4.4 с.7
+  unknown_allowed: true
+  changes:
+  - source_action_or_applicability
+  fact_origin: explicit physician fact for this calculation
+  requirement_predicate:
+    kind: ongoing_selected_drug
+  required_for_individual_result: false
+  input_role: ongoing_selected_drug
+  required_when: Текущее источниковое условие меняет действие при приёме препарата; отмена/переключение не отменяют
+    его. При положительном ответе обычный календарь не исполняется; экстренный числовой темп не придуман.
+  show_when: Текущее источниковое условие меняет действие при приёме препарата; отмена/переключение не отменяют
+    его. При положительном ответе обычный календарь не исполняется; экстренный числовой темп не придуман.
+  why_needed: Текущее источниковое условие меняет действие при приёме препарата; отмена/переключение не отменяют
+    его. При положительном ответе обычный календарь не исполняется; экстренный числовой темп не придуман.
+  necessity_reason: Текущее источниковое условие меняет действие при приёме препарата; отмена/переключение не отменяют
+    его. При положительном ответе обычный календарь не исполняется; экстренный числовой темп не придуман.
+  action_if_unknown: insufficient_data when the exact phase/result predicate applies; otherwise explicit not_assessed,
+    no clinical clearance
+- input_id: bipolar_risk_screening
+  question_ru: Выполнен тщательный скрининг рискаБАР по §4.4, и врач допускает выбранный режим пароксетина?
+  data_type: enum
+  unit: null
+  allowed_values:
+  - врач допускает выбранный режим
+  - требуется отдельное решение врача
+  source_refs:
+  - RU-PAROX
+  source_locator: RU-PAROX §4.4 с.7–8
+  unknown_allowed: true
+  changes:
+  - source_action_or_applicability
+  fact_origin: explicit physician fact for this calculation
+  requirement_predicate:
+    kind: always
+  required_for_individual_result: true
+  input_role: required_selected_result_operand_or_source_gate
+  required_when: §4.4 требует отдельного предлечебного скрининга рискаБАР. Принимается узкое заключение врача по
+    этому условию; оно не подтверждает другие ограничения и не заменяет диагноз.
+  show_when: §4.4 требует отдельного предлечебного скрининга рискаБАР. Принимается узкое заключение врача по этому
+    условию; оно не подтверждает другие ограничения и не заменяет диагноз.
+  why_needed: §4.4 требует отдельного предлечебного скрининга рискаБАР. Принимается узкое заключение врача по этому
+    условию; оно не подтверждает другие ограничения и не заменяет диагноз.
+  necessity_reason: §4.4 требует отдельного предлечебного скрининга рискаБАР. Принимается узкое заключение врача
+    по этому условию; оно не подтверждает другие ограничения и не заменяет диагноз.
+  action_if_unknown: insufficient_data when the exact phase/result predicate applies; otherwise explicit not_assessed,
+    no clinical clearance
+clinical_parameters:
+- parameter_id: start
+  meaning: Стартовая доза из КР
+  value: 10
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: mg/day
+  source_ref: RU-PANIC
+  source_locator: §3.1, PDF с.26
+  source_meaning: предписание
+  derivation: null
+- parameter_id: step
+  meaning: Недельное повышение суточной дозы в КР
+  value: 10
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: mg/day
+  source_ref: RU-PANIC
+  source_locator: §3.1, PDF с.26
+  source_meaning: предписание
+  derivation: null
+- parameter_id: interval
+  meaning: Интервал повышения
+  value: 1
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: week
+  source_ref: RU-PANIC
+  source_locator: §3.1, PDF с.26
+  source_meaning: предписание
+  derivation: null
+- parameter_id: therapeutic_range
+  meaning: Диапазон, до которого описано повышение в КР; не подтверждённый предел конкретной инструкции
+  value: null
+  lower: 40
+  upper: 60
+  lower_inclusive: true
+  upper_inclusive: true
+  unit: mg/day
+  source_ref: RU-PANIC
+  source_locator: §3.1, PDF с.26
+  source_meaning: диапазон
+  derivation: null
+- parameter_id: recommended_dose
+  meaning: recommended_dose
+  value: 40
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: mg/day
+  source_ref: RU-PAROX
+  source_locator: §4.2, PDF с.3
+  source_meaning: предписание
+  derivation: null
+- parameter_id: maximum
+  meaning: maximum
+  value: 60
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: mg/day
+  source_ref: RU-PAROX
+  source_locator: §4.2, PDF с.3
+  source_meaning: предписание
+  derivation: null
+- parameter_id: elderly_maximum
+  meaning: elderly_maximum
+  value: 40
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: mg/day
+  source_ref: RU-PAROX
+  source_locator: §4.2, PDF с.4
+  source_meaning: предписание
+  derivation: null
+- parameter_id: frequency
+  meaning: frequency
+  value: 1
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: administration/day
+  source_ref: RU-PAROX
+  source_locator: §4.2, PDF с.4
+  source_meaning: предписание
+  derivation: null
+- parameter_id: form_strength
+  meaning: form_strength
+  value: 20
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: mg
+  source_ref: RU-PAROX
+  source_locator: §1–3, PDF с.1
+  source_meaning: предписание
+  derivation: null
+- parameter_id: allowed_half_dose
+  meaning: allowed_half_dose
+  value: 10
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: mg
+  source_ref: RU-PAROX
+  source_locator: §4.2, PDF с.4
+  source_meaning: предписание
+  derivation: null
+logic:
+  representation: conditional_schedule
+  conditions:
+  - Показание/препарат выбраны врачом; взрослая применимость и форма подтверждены.
+  actions:
+  - Начало 10 мг один раз утром во время еды. По клиническому ответу повышение на 10 мг/сут не чаще одного раза
+    в неделю до рекомендуемых 40 мг/сут.
+  - Повышения выше 40 возможны при недостаточном ответе после нескольких недель на рекомендуемой дозе, до 60 мг/сут;
+    термин «несколько недель» не заменять точным произвольным сроком.
+  - У пожилых максимум 40 мг/сут; при тяжелой почечной/печеночной ветке не достраивать коэффициент.
+  parameter_refs:
+  - start
+  - step
+  - interval
+  - therapeutic_range
+  - recommended_dose
+  - maximum
+  - elderly_maximum
+  - frequency
+  - form_strength
+  - allowed_half_dose
+  source_refs:
+  - RU-PANIC
+  - RU-PAROX
+  clinician_choices:
+  - Необходимость каждого повышения по ответу/переносимости; несколько недель не превращать в фиксированное число.
+  - Применимость особых популяций и взаимодействий.
+  missing_data_behaviour: Назвать обязательные неизвестные поля; результат insufficient_data. Справочные этапы можно
+    показать как условные, без безусловной дозы пациенту.
+  unsupported_case_behaviour: not_applicable для этой карточки; указать конкретную отсутствующую ветку, не запретить
+    всё лечение.
+  contraindicated_case_behaviour: Не выдавать дозовую схему противопоказанного сочетания; отобразить источник и
+    причину.
+  conflicts: []
+  composite_rule_dependencies: []
+  combination_justification: 'Дозовые этапы КР сверены с конкретной российской ОХЛП: старт/шаг совпадают; дополнительное
+    условие инструкции для >40 сохраняется.'
+  maoi_history_contract:
+    source_ref: RU-PAROX
+    source_locator: §4.3 с.4–5
+    locator: §4.3 с.4–5
+    irreversible_days: 14
+    reversible_hours: 24
+    to_maoi_days: 7
+    concurrent:
+    - maoi
+    - pimozide
+    - thioridazine
+    exception: Линезолид только исключительная клиническая ветка при отсутствии альтернатив, доступном наблюдении
+      и оценке пользы/риска; обычный старт не разрешается.
+    fields:
+    - medicines
+    - maoi_type
+    - maoi_stopped_at
+    reference_time: external_context.calculation_at
+    required_timestamp_unknown: insufficient_data; missing maoi_stopped_at; start_allowed=false
+    current_maoi: not_applicable for standard branch; no numeric start
+    multiple_records: all applicable direction gates must be satisfied; no single last record shortcut
+    calendar_day: next calendar date; not elapsed 24 hours unless that specific source says 24 hours
+  result_contract_ref: remediation_round3/result_contracts.yaml#rules/parox-panic-kr
+  individual_output_gate: All required typed inputs and applicable conditional inputs must be known; evaluate every
+    source-specific gate in result_contract. A caution has clinician_choice, not an invented coefficient. No blanket
+    clinical clearance.
+  input_necessity_policy_ref: remediation_round3/necessity_decisions.json#parox-panic-kr
+output:
+  result_type: branch_selected
+  medication_inn: пароксетин
+  dose_per_administration: null
+  administrations_per_day: null
+  total_daily_dose: null
+  unit: mg
+  formulation: Рексетин, таблетки 20 мг, покрытые пленочной оболочкой; деление пополам на 10 мг
+  schedule:
+  - stage_id: start
+    time_description: Начало, утром во время еды
+    minimum_interval: null
+    interval_unit: null
+    medication_steps:
+    - medication_inn: пароксетин
+      dose_per_administration: 10
+      administrations_per_day: 1
+      total_daily_dose: 10
+      dose_unit: mg
+      action: старт
+      source_refs:
+      - RU-PANIC
+      - RU-PAROX
+    condition_to_proceed: Подтверждена применимость старта
+    condition_to_hold: Противопоказание или неизвестные обязательные значения
+    source_refs:
+    - RU-PANIC
+    - RU-PAROX
+  warnings:
+  - Все будущие повышения условны; 60 мг не автоматическая цель.
+  - Версия оригинала зафиксирована; новая регистрационная редакция отдельно проверяется.
+  - Числовой вывод относится к указанным дозовым условиям. Неоценённые модулем клинические обстоятельства не считаются
+    отсутствующими; полный клинический допуск врач оценивает отдельно.
+  mandatory_checks: []
+  clinician_decisions_remaining:
+  - Необходимость каждого повышения по ответу/переносимости; несколько недель не превращать в фиксированное число.
+  - Применимость особых популяций и взаимодействий.
+  rounding_or_formulation_rule: Не округлять медицинскую дозу; использовать только разрешённую форму/деление. При
+    невозможности дозы формой — явно сообщить.
+  source_refs:
+  - RU-PANIC
+  - RU-PAROX
+  branches:
+  - branch_id: usual
+    when: all gates clear; elderly_population=false; start
+    expected_output:
+      result_type: exact
+      total_daily_dose_mg: 10
+      dose_per_administration_mg: 10.0
+      administrations_per_day: 1
+      schedule: []
+      missing_fields: []
+      unconditional_future_stages: false
+      recommended_mg: 40
+      maximum_mg: 60
+      optional_increment_mg: 10
+      minimum_interval_weeks: 1
+      beyond_recommended_requires: inadequate response after several weeks, no fabricated exact interval
+      clinical_clearance: false
+    source_basis:
+    - source_id: RU-PANIC
+      version: '2024; каталог: опубликовано 19.09.2024, применяется'
+      locator: §3.1, PDF с.25–33; приложение А3, с.76–77
+      sha256: a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d
+    - source_id: RU-PAROX
+      version: 'Официальная ОХЛП реестра: штамп регистрации 2025-02-14; экспертный отчёт 2025-02-12 №3370/0003;
+        получена 08.10.2026'
+      locator: 'ОХЛП: PDF с.1–5 (§4.1–4.3), с.6–10 (§4.4), с.11–15 (§4.5–4.6), с.26 (§8–10)'
+      sha256: 521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069
+  - branch_id: elderly
+    when: elderly_population=true; organs clear
+    expected_output:
+      result_type: exact
+      total_daily_dose_mg: 10
+      dose_per_administration_mg: 10.0
+      administrations_per_day: 1
+      schedule: []
+      missing_fields: []
+      unconditional_future_stages: false
+      maximum_mg: 40
+      elderly_age_cutoff: null
+      clinical_clearance: false
+    source_basis:
+    - source_id: RU-PANIC
+      version: '2024; каталог: опубликовано 19.09.2024, применяется'
+      locator: §3.1, PDF с.25–33; приложение А3, с.76–77
+      sha256: a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d
+    - source_id: RU-PAROX
+      version: 'Официальная ОХЛП реестра: штамп регистрации 2025-02-14; экспертный отчёт 2025-02-12 №3370/0003;
+        получена 08.10.2026'
+      locator: 'ОХЛП: PDF с.1–5 (§4.1–4.3), с.6–10 (§4.4), с.11–15 (§4.5–4.6), с.26 (§8–10)'
+      sha256: 521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069
+  - branch_id: organ_caution
+    when: CLcr<30 or hepatic insufficiency
+    expected_output:
+      result_type: clinician_choice
+      total_daily_dose_mg: null
+      dose_per_administration_mg: null
+      administrations_per_day: null
+      schedule: []
+      missing_fields: []
+      unconditional_future_stages: false
+      published_lower_therapeutic_range_no_exact_start: true
+    source_basis:
+    - source_id: RU-PANIC
+      version: '2024; каталог: опубликовано 19.09.2024, применяется'
+      locator: §3.1, PDF с.25–33; приложение А3, с.76–77
+      sha256: a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d
+    - source_id: RU-PAROX
+      version: 'Официальная ОХЛП реестра: штамп регистрации 2025-02-14; экспертный отчёт 2025-02-12 №3370/0003;
+        получена 08.10.2026'
+      locator: 'ОХЛП: PDF с.1–5 (§4.1–4.3), с.6–10 (§4.4), с.11–15 (§4.5–4.6), с.26 (§8–10)'
+      sha256: 521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069
+  selection_contract:
+  - unavailable_source
+  - known immediate stop/exclusion
+  - invalid/missing applicable field
+  - unresolved source caution/modifier
+  - dose branch
+sources:
+- source_id: RU-PANIC
+  title: Паническое расстройство, КР 456_3
+  organization_or_authors: Минздрав РФ; Российское общество психиатров
+  url: https://apicr.minzdrav.gov.ru/api.ashx?id=456_3&op=GetClinrecPdf
+  doi_or_registry_id: '456_3'
+  publication_date: null
+  version_or_update_date: '2024; каталог: опубликовано 19.09.2024, применяется'
+  accessed_on: '2026-10-08'
+  source_type: guideline
+  jurisdiction: RU
+  access_status: full
+  exact_locator: §3.1, PDF с.25–33; приложение А3, с.76–77
+  evidence_status: Клиническая рекомендация; не валидация калькулятора
+  what_was_tested: Не исследовался создаваемый продукт. Содержание и ограничения описаны в evidence_limitations.
+  evidence_limitations: Взрослые F41.0. Терапевтический диапазон не равен стартовой дозе.
+  reuse_license_or_restriction: Открытый доступ не означает разрешение перераспространять полный документ. Сохранены
+    собственное извлечение фактических правил, локаторы и ссылки; код и большие цитаты не копируются.
+  document_fingerprint:
+    source_id: RU-PANIC
+    url: https://apicr.minzdrav.gov.ru/api.ashx?id=456_3&op=GetClinrecPdf
+    sha256: a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d
+    pages: 140
+  local_file: audit/retrieved/RU-PANIC.pdf
+  document_copies:
+  - source_id: RU-PANIC
+    local_file: audit/retrieved/RU-PANIC.pdf
+    sha256: a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d
+    version: '2024; каталог: опубликовано 19.09.2024, применяется'
+    url: https://apicr.minzdrav.gov.ru/api.ashx?id=456_3&op=GetClinrecPdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: false
+  - source_id: RU-PANIC
+    local_file: remediation/retrieved/RU-PANIC.pdf
+    sha256: a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d
+    version: '2024; каталог: опубликовано 19.09.2024, применяется'
+    url: https://apicr.minzdrav.gov.ru/api.ashx?id=456_3&op=GetClinrecPdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: false
+  dates:
+    registration: null
+    revision: null
+    publication: null
+    download: '2026-10-08'
+  latest_registration_revision_confirmed: false
+  current_guideline_status_evidence: remediation_round2/catalog_check.json; 08.10.2026; CodeVersion/ApplyStatusCalculated=1
+- source_id: RU-PAROX
+  title: Рексетин (пароксетин), ЛВ и ОХЛП, 20 мг
+  organization_or_authors: Гедеон Рихтер
+  url: https://lk.regmed.ru/Register/EAEU_SmPC
+  doi_or_registry_id: ЛП-№(008861)-(РГ-RU)
+  publication_date: null
+  version_or_update_date: 'Официальная ОХЛП реестра: штамп регистрации 2025-02-14; экспертный отчёт 2025-02-12 №3370/0003;
+    получена 08.10.2026'
+  accessed_on: '2026-10-08'
+  source_type: label
+  jurisdiction: RU/EAEU
+  access_status: full
+  exact_locator: §4.1–4.3 с.1–5; §4.4 с.5–11; §4.5 с.11–14; §4.6 с.14–15
+  evidence_status: Инструкция/ОХЛП; не валидированная модель индивидуальной дозы
+  what_was_tested: Не исследовался создаваемый продукт. Содержание и ограничения описаны в evidence_limitations.
+  evidence_limitations: Российская принадлежность указана в оригинале §8–9. Текущая регистрационная редакция отдельно
+    сверяется; дата публикации страницы не равна дате пересмотра. Взрослый пример отмены заканчивается на 20 мг;
+    детский пример 10 мг не переносить на взрослых. Новая первичная копия получена из указанной строки реестра;
+    старые копии сохранены как исторические. Даты штампов не подменяют незаполненное поле пересмотра. Принадлежность
+    версии и медицинский перенос проверяются раздельно.
+  reuse_license_or_restriction: Открытый доступ не означает разрешение перераспространять полный документ. Сохранены
+    собственное извлечение фактических правил, локаторы и ссылки; код и большие цитаты не копируются.
+  document_fingerprint:
+    source_id: RU-PAROX
+    url: https://lk.regmed.ru/Register/EAEU_SmPC
+    sha256: 521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069
+    pages: 26
+    accessed_on: '2026-10-08'
+  registry_observation:
+    registry: https://lk.regmed.ru/Register/EAEU_SmPC
+    query: Рексетин
+    registration_number: ЛП-№(008861)-(РГ-RU)
+    registration_date: '2025-02-14'
+    forms: текущая ОХЛП только таблетки20мг; строка реестра20/30мг
+    accessed_on: '2026-10-08'
+    read_part: Exact RU/form row observed in official registry; user downloaded after CAPTCHA request; matching
+      title/form and stamps visually checked
+  local_file: remediation_round3/originals/RU-PAROX_current.pdf
+  document_copies:
+  - source_id: RU-PAROX
+    local_file: source_downloads/Рексетин — пароксетин.pdf
+    sha256: 9f6f2646e102956826997ca7e93d84e90c7528db5ceb61896a3d4092841edabe
+    version: 'Первичная регистрация 14.02.2025; страница производителя: файл 26.03.2025; поле пересмотра пустое'
+    url: https://www.gedeonrichter.com/ru/-/media/sites/ru/russian-products/files/185/productinstruction_lvokhlpreksetin_pdf.pdf?hash=F730A776EE3E7A92B2EA6A9EA56DCAC2&rev=a198bea8079541528614f6df7eee87fd
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: false
+    latest_registration_revision_confirmed: false
+  - source_id: RU-PAROX
+    local_file: audit/retrieved/RU-PAROX.pdf
+    sha256: 9f6f2646e102956826997ca7e93d84e90c7528db5ceb61896a3d4092841edabe
+    version: 'Первичная регистрация 14.02.2025; страница производителя: файл 26.03.2025; поле пересмотра пустое'
+    url: https://www.gedeonrichter.com/ru/-/media/sites/ru/russian-products/files/185/productinstruction_lvokhlpreksetin_pdf.pdf?hash=F730A776EE3E7A92B2EA6A9EA56DCAC2&rev=a198bea8079541528614f6df7eee87fd
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: false
+    latest_registration_revision_confirmed: false
+  - source_id: RU-PAROX
+    local_file: remediation/retrieved/RU-PAROX.pdf
+    sha256: 9f6f2646e102956826997ca7e93d84e90c7528db5ceb61896a3d4092841edabe
+    version: 'Первичная регистрация 14.02.2025; страница производителя: файл 26.03.2025; поле пересмотра пустое'
+    url: https://www.gedeonrichter.com/ru/-/media/sites/ru/russian-products/files/185/productinstruction_lvokhlpreksetin_pdf.pdf?hash=F730A776EE3E7A92B2EA6A9EA56DCAC2&rev=a198bea8079541528614f6df7eee87fd
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: false
+    latest_registration_revision_confirmed: false
+  - source_id: RU-PAROX
+    local_file: ../tmp_acceptance/PAROX.pdf
+    sha256: 9f6f2646e102956826997ca7e93d84e90c7528db5ceb61896a3d4092841edabe
+    version: 'Первичная регистрация 14.02.2025; страница производителя: файл 26.03.2025; поле пересмотра пустое'
+    url: https://www.gedeonrichter.com/ru/-/media/sites/ru/russian-products/files/185/productinstruction_lvokhlpreksetin_pdf.pdf?hash=F730A776EE3E7A92B2EA6A9EA56DCAC2&rev=a198bea8079541528614f6df7eee87fd
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: false
+    latest_registration_revision_confirmed: false
+  - source_id: RU-PAROX
+    local_file: remediation_round3/originals/RU-PAROX_current.pdf
+    sha256: 521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069
+    version: 'Официальная ОХЛП реестра: штамп регистрации 2025-02-14; экспертный отчёт 2025-02-12 №3370/0003; получена
+      08.10.2026'
+    url: https://lk.regmed.ru/Register/EAEU_SmPC
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: true
+  dates:
+    registration: '2025-02-14'
+    revision: null
+    publication: null
+    download: '2026-10-08'
+    document_registration_stamp: '2025-02-14'
+    expert_report: '2025-02-12'
+  latest_registration_revision_confirmed: true
+  latest_registry_document_comparison:
+    record: remediation_round3/current_registry_documents.json#RU-PAROX
+    original: remediation_round3/originals/RU-PAROX_current.pdf
+    sha256: 521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069
+    authority_evidence: Exact RU/form row observed in official registry; user downloaded after CAPTCHA request;
+      matching title/form and stamps visually checked
+    comparison_scope: Listed primary sections and dependency review; no inference of byte identity to historical
+      copies
+  own_read_scope:
+    text_pages:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - 11
+    - 12
+    - 13
+    - 14
+    - 15
+    - 26
+    visual_pages:
+    - 1
+    - 3
+    - 4
+    remaining_sections_not_claimed_read: true
+verification:
+  primary_source_checked: true
+  all_clinical_parameters_have_sources: true
+  population_and_indication_checked: true
+  russian_applicability_checked: true
+  formulation_feasibility_checked: true
+  combined_rules_justified: true
+  source_transfer_check: Current exact Russian product originals obtained and active owner/version/hash/locators
+    synchronized; listed primary sections reviewed. Full independent medical acceptance and question necessity remain
+    separate; calculator_not_implemented.
+  clinical_review: not_performed
+  product_clinical_validation: not_performed
+  ready_for_technical_implementation: true
+  unresolved_items:
+  - Минимальность входов/полные обычные пути и повторная независимая проверка медицинских исправлений остаются отдельными
+    условиями приёмки V2.
+  transfer_scope: Explicit source-bound branch contracts and prepared expectations only. Current originals obtained;
+    pending independent findings, result-specific necessity and V2 ordinary-question limit are not inferred complete
+    from download. No clinical validation.
+  round3_status: candidate_primary_transfer_and_necessity_review; independent acceptance pending
+  russian_applicability_scope: Identity of the exact registered Russian product/form and published indication scope;
+    does not grant patient clearance or prove every transferred condition.
+test_cases:
+- case_id: parox-panic-kr__usual-start
+  synthetic: true
+  given:
+    age: 40
+    form: Рексетин 20 мг, деление разрешено
+  expected:
+    start_mg_per_day: 10
+    dose_per_administration_mg: 10
+    frequency: 1
+    tablet_fraction: 0.5
+    future_increases_conditional: true
+  source_refs:
+  - RU-PANIC
+  - RU-PAROX
+  note: Ожидание переноса источника; калькулятор не реализован, клиническая валидация не выполнена.
+  scope: isolated_source_transfer_expectation_under_card_conditions
+  case_kind: parameter_or_constraint_fragment
+- case_id: parox-panic-kr__at-40-not-automatic-50
+  synthetic: true
+  given:
+    current_dose: 40
+    time_at_dose: несколько недель не подтверждено
+  expected:
+    automatic_increase_to_50: false
+    result_type: clinician_choice
+  source_refs:
+  - RU-PANIC
+  - RU-PAROX
+  note: Ожидание переноса источника; калькулятор не реализован, клиническая валидация не выполнена.
+  case_kind: parameter_or_constraint_fragment
+- case_id: parox-panic-kr__elderly-limit
+  synthetic: true
+  given:
+    population: пожилой
+    current_dose: 40
+  expected:
+    maximum_mg_per_day: 40
+    automatic_increase: false
+  source_refs:
+  - RU-PANIC
+  - RU-PAROX
+  note: Ожидание переноса источника; калькулятор не реализован, клиническая валидация не выполнена.
+  case_kind: parameter_or_constraint_fragment
+- case_id: parox-panic-kr__unknown-form
+  synthetic: true
+  given:
+    form: неизвестно
+  expected:
+    result_type: insufficient_data
+    missing:
+    - form
+    unconditional_dose: null
+  source_refs:
+  - RU-PANIC
+  - RU-PAROX
+  note: Ожидание переноса источника; калькулятор не реализован, клиническая валидация не выполнена.
+  case_kind: parameter_or_constraint_fragment
+profile:
+  country: RU
+  selection_status: RU_profile_research
+  foreign_fallback_allowed: false
+card_type: numeric_source_rule
+input_contract_ref: remediation_round3/input_contracts.yaml#fragment_bindings/parox-panic-kr

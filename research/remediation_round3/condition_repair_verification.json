@@ -1,0 +1,51 @@
+{
+  "status": "pass",
+  "condition_scopes": 113,
+  "new_cases": 232,
+  "negative_mutations": [
+    {
+      "mutation": "missing_witness",
+      "rejected": true,
+      "evidence": [
+        "Missing source witness: esc-adult-adjust--audit-final-primary-RU-ESC-reversible_MAO_A-positive"
+      ]
+    },
+    {
+      "mutation": "unknown_drug_stop",
+      "rejected": true,
+      "evidence": [
+        "Unknown/not-started actor receives medication change: esc-adult-adjust--audit-final-primary-RU-ESC-reversible_MAO_A-unknown"
+      ]
+    },
+    {
+      "mutation": "invented_caution_dose",
+      "rejected": true,
+      "evidence": [
+        "Caution/unknown witness assigns a numerical regimen: esc-adult-adjust--audit-final-primary-RU-ESC-reversible_MAO_A-positive"
+      ]
+    },
+    {
+      "mutation": "wrong_witness_source",
+      "rejected": true,
+      "evidence": [
+        "Witness source owner/hash changed: esc-adult-adjust--audit-final-primary-RU-ESC-reversible_MAO_A-positive"
+      ]
+    },
+    {
+      "mutation": "changed_parameter",
+      "rejected": true,
+      "evidence": [
+        "Published numeric parameter changed: ser-panic-start"
+      ]
+    },
+    {
+      "mutation": "false_capsule_claim",
+      "rejected": true,
+      "evidence": [
+        "Unsupported capsule opening prohibition: preg-gad-start"
+      ]
+    }
+  ],
+  "scope": "Presence/provenance/null actions and unchanged numeric objects. Independent primary medical interpretation is a separate acceptance.",
+  "errors": []
+}

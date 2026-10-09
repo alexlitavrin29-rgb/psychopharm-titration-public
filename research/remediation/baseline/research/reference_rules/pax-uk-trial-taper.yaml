@@ -1,0 +1,313 @@
+schema_version: '1.0'
+rule_id: pax-uk-trial-taper
+development_status: extracted_research_not_executable
+language: ru
+identity:
+  title: 'Пароксетин: режим отмены, описанный в британской ОХЛП как использованный в испытаниях'
+  mode: taper
+  drug_inn: пароксетин
+  from_drug_inn: null
+  to_drug_inn: null
+  formulation: 'Seroxat: таблетки 20 мг с делением на равные половины'
+  route: oral
+  diagnosis_label_ru: Показание врача, в границах исходного документа
+  classification_system: МКБ-10
+  diagnosis_code: F41.0/F41.1/F40.1/F32/F33
+  jurisdiction: foreign_research
+applicability:
+  population_description: Взрослые. Только подтверждённые условия этой карточки; другие популяции не получают
+    масштабированную взрослую дозу.
+  age_constraints: []
+  pregnancy: Решение по применимости/пользе и риску отдельно; без опубликованной числовой поправки. Стандартная
+    карточка не выдаёт автоматическую дозу при беременности.
+  lactation: Проверять отдельные ограничения источника. Стандартная карточка не выдаёт автоматическую дозу
+    при кормлении.
+  renal_constraints: []
+  hepatic_constraints: []
+  comorbidity_constraints: []
+  interacting_drugs: []
+  other_conditions: []
+  exclusions:
+  - Гиперчувствительность
+  - Непроверенные противопоказания/взаимодействия не считать отсутствующими
+  indication_status_in_russia: foreign_only_not_verified
+  source_refs:
+  - UK-PAX
+inputs:
+- input_id: current_dose
+  question_ru: Текущая суточная доза пароксетина?
+  data_type: number
+  unit: mg/day
+  allowed_values: []
+  required_when: для индивидуального результата
+  show_when: при выборе этой карточки
+  why_needed: Для воспроизведения опубликованного шаблона.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно
+    показать условно.
+  source_refs:
+  - UK-PAX
+- input_id: form
+  question_ru: Подтверждена делимая форма Seroxat из этой ОХЛП?
+  data_type: enum
+  unit: null
+  allowed_values:
+  - да
+  - нет
+  - неизвестно
+  required_when: для индивидуального результата
+  show_when: при выборе этой карточки
+  why_needed: Делимость другой формы/наличие РФ не выводятся из британской копии.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно
+    показать условно.
+  source_refs:
+  - UK-PAX
+- input_id: clinician_template
+  question_ru: Врач явно выбрал этот режим после оценки риска отмены?
+  data_type: enum
+  unit: null
+  allowed_values:
+  - да
+  - нет
+  - неизвестно
+  required_when: для индивидуального результата
+  show_when: при выборе этой карточки
+  why_needed: Использованный в испытаниях шаблон не является оптимальным для любого пациента.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно
+    показать условно.
+  source_refs:
+  - UK-PAX
+- input_id: withdrawal
+  question_ru: Симптомы после последнего снижения переносимы?
+  data_type: enum
+  unit: null
+  allowed_values:
+  - да
+  - нет
+  - неизвестно
+  required_when: для индивидуального результата
+  show_when: при выборе этой карточки
+  why_needed: При непереносимости рассмотреть прежнюю дозу и затем более медленный темп.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно
+    показать условно.
+  source_refs:
+  - UK-PAX
+- input_id: duration_of_use
+  question_ru: Продолжительность приёма?
+  data_type: duration
+  unit: null
+  allowed_values: []
+  required_when: для индивидуального результата
+  show_when: при выборе этой карточки
+  why_needed: Оценка риска отмены.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно
+    показать условно.
+  source_refs:
+  - UK-PAX
+- input_id: previous_withdrawal
+  question_ru: Предыдущие симптомы отмены при пропуске/снижении?
+  data_type: enum
+  unit: null
+  allowed_values:
+  - да
+  - нет
+  - неизвестно
+  required_when: для индивидуального результата
+  show_when: при выборе этой карточки
+  why_needed: Контекст риска, влияющий на выбор темпа.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно
+    показать условно.
+  source_refs:
+  - UK-PAX
+clinical_parameters:
+- parameter_id: decrement
+  meaning: Снижение именно СУТОЧНОЙ дозы в режиме испытаний
+  value: 10
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: mg/day
+  source_ref: UK-PAX
+  source_locator: §4.2
+  source_meaning: пример
+  derivation: null
+- parameter_id: interval
+  meaning: Между снижениями в режиме испытаний
+  value: 1
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: week
+  source_ref: UK-PAX
+  source_locator: §4.2
+  source_meaning: пример
+  derivation: null
+- parameter_id: tablet
+  meaning: Сила таблетки
+  value: 20
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: mg
+  source_ref: UK-PAX
+  source_locator: §3
+  source_meaning: предписание
+  derivation: null
+- parameter_id: half
+  meaning: Разрешённая равная половина
+  value: 10
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: mg
+  source_ref: UK-PAX
+  source_locator: §3
+  source_meaning: предписание
+  derivation: null
+logic:
+  representation: schedule
+  conditions:
+  - Диагноз, препарат и режим выбрал врач. Соответствие популяции/форме и ограничения источника подтверждены.
+  actions:
+  - 'Только если врач выбрал опубликованный режим испытаний: уменьшать суточную дозу на decrement через interval;
+    не превращать шаблон в универсальную рекомендацию.'
+  - Для дозы не кратной шагу, непереносимости или невозможной формы точная следующая ступень здесь не определена.
+    Прекращение/последний этап выбирает врач.
+  - При непереносимых симптомах возможно возобновление прежней назначенной дозы с последующим более постепенным
+    снижением.
+  parameter_refs:
+  - decrement
+  - interval
+  - tablet
+  - half
+  source_refs:
+  - UK-PAX
+  clinician_choices:
+  - Применимость при особых состояниях и взаимодействиях
+  - Необходимость следующего условного шага
+  missing_data_behaviour: Назвать обязательные неизвестные поля; результат insufficient_data. Справочные этапы
+    можно показать как условные, без безусловной дозы пациенту.
+  unsupported_case_behaviour: not_applicable для этой карточки; указать конкретную отсутствующую ветку, не
+    запретить всё лечение.
+  contraindicated_case_behaviour: Не выдавать дозовую схему противопоказанного сочетания; отобразить источник
+    и причину.
+  conflicts: []
+  composite_rule_dependencies: []
+  combination_justification: Самостоятельные поправки не перемножаются. Совпадение числа не подтверждает применимость
+    их сочетания.
+output:
+  result_type: clinician_choice
+  medication_inn: пароксетин
+  dose_per_administration: null
+  administrations_per_day: null
+  total_daily_dose: null
+  unit: mg
+  formulation: 'Seroxat: таблетки 20 мг с делением на равные половины'
+  schedule: []
+  warnings:
+  - Условная схема источника, не автономное назначение. Максимум не является целью.
+  - Подтвердить противопоказания и взаимодействия исходной инструкции.
+  mandatory_checks:
+  - Проверить соответствие источнику, указанное в applicability и inputs.
+  clinician_decisions_remaining:
+  - Подтверждение применимости
+  - Решение о переходе к следующему этапу
+  rounding_or_formulation_rule: Не округлять медицинскую дозу; использовать только разрешённую форму/деление.
+    При невозможности дозы формой — явно сообщить.
+  source_refs:
+  - UK-PAX
+sources:
+- source_id: UK-PAX
+  title: Seroxat 20mg tablets, SmPC
+  organization_or_authors: GlaxoSmithKline UK / EMC
+  url: https://www.medicines.org.uk/emc/product/7593/smpc
+  doi_or_registry_id: null
+  publication_date: null
+  version_or_update_date: Текст пересмотрен 04.04.2025; EMC 08.04.2025; продукт Discontinued
+  accessed_on: '2026-10-08'
+  source_type: label
+  jurisdiction: UK
+  access_status: full
+  exact_locator: §3, §4.1–4.2 Withdrawal symptoms seen on discontinuation; §4.4
+  evidence_status: Инструкция/ОХЛП; не валидированная модель индивидуальной дозы
+  what_was_tested: Не исследовался создаваемый продукт. Содержание и ограничения описаны в evidence_limitations.
+  evidence_limitations: Режим −10 мг суточной дозы еженедельно описан как использованный в клинических испытаниях,
+    не оптимальный для любого пациента. Самостоятельный протокол испытания/исходы именно этого режима не получены.
+    Регистрация конкретной формы РФ не проверена.
+  reuse_license_or_restriction: Открытый доступ не означает разрешение перераспространять полный документ.
+    Сохранены собственное извлечение фактических правил, локаторы и ссылки; код и большие цитаты не копируются.
+  document_fingerprint:
+    url: https://www.medicines.org.uk/emc/product/7593/smpc
+    accessed_on: '2026-10-08'
+    sha256: f0f1b396d40ce9d0b4886c54bd9249a14ba6e6d4897db5511507d6eaeed59a32
+    status: 200
+verification:
+  primary_source_checked: true
+  all_clinical_parameters_have_sources: true
+  population_and_indication_checked: true
+  russian_applicability_checked: false
+  formulation_feasibility_checked: true
+  combined_rules_justified: false
+  source_transfer_check: extraction_checked; calculator_not_implemented
+  clinical_review: not_performed
+  product_clinical_validation: not_performed
+  ready_for_technical_implementation: false
+  unresolved_items:
+  - Иностранная рекомендация; применимость конкретного препарата/формы РФ не подтверждена.
+  - РФ-форма/инструкция не сверены; режим является примером испытаний; автоматическая индивидуальная отмена
+    не готова.
+test_cases:
+- case_id: pax-uk-trial-taper__pax-trial-40
+  synthetic: true
+  given:
+    current_dose: 40
+    clinician_template: true
+    withdrawal: переносимы
+    form: Seroxat 20mg equal halves
+  expected:
+    illustrative_next_daily_mg: 30
+    interval_week: 1
+    mandatory_for_all: false
+  source_refs:
+  - UK-PAX
+  note: 30 = введённые 40 − опубликованные 10. Это демонстрация выбранного врачом шаблона; не утверждение универсальной
+    клинической схемы.
+- case_id: pax-uk-trial-taper__pax-intolerable
+  synthetic: true
+  given:
+    current_dose: 30
+    previous_dose: 40
+    withdrawal: непереносимы
+  expected:
+    automatic_next_reduction: false
+    clinician_option: рассмотреть ранее назначенную дозу, затем медленнее
+  source_refs:
+  - UK-PAX
+  note: Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно
+    подтверждены.
+profile:
+  country: RU
+  selection_status: foreign_reference_only
+  auto_select_allowed: false
+  reason: Зарубежная стратегия сохранена для сравнения; исключена из основного профиля РФ.

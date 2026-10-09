@@ -1,0 +1,20 @@
+{
+  "snapshot": "b66e9e0dadca7234ed1e66bc8c103047ff2f96e963313d07dd0075494695f0a4",
+  "full_research_ready": true,
+  "decision": "Accepted full research specification of38 active cards within explicitly source-bound limited results; sufficient basis for subsequent implementation of this concrete scope.",
+  "allowed": [
+    "All211 unchanged source numerical parameters, boundaries/units/intervals and identified form constraints.",
+    "Typed input contracts/unknown/source identity, own A/B phase/currentdose provenance and separate MAOI clocks.",
+    "Finite bounded known exclusion/choice/form/action/conditional source-reference and explicitly nonselected example contracts with exact necessary facts.",
+    "Honest reported context and every supplied positive/negative/unknown count; no free other allergy actor/hidden MAOI type/date/phase.",
+    "Russian source gaps and published ranges/options, with no source-free next step, combined coefficient, default rounding or foreign fallback."
+  ],
+  "excluded": [
+    "Automatic universal Russian pair/taper protocol where source supports only individual components/reference/gap.",
+    "Clinical deployment or patient-specific clinical clearance from this research acceptance.",
+    "Unsupported combination coefficient, arbitrary range choice, rounding or IR/XR/form substitution.",
+    "Automatic inference of negative facts, drug current-use phase, organ classification or interaction class from absent/unknown input."
+  ],
+  "required_future_implementation": "Actually execute normal/boundary/unknown/unit/form/actor/source-clock/conditional-stage and cause-dependent dialogue checks in a future implementation; prepared expected are not application tests.",
+  "clinical_validation": false
+}

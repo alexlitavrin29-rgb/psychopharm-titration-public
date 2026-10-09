@@ -1,0 +1,4178 @@
+[
+  {
+    "case_id": "ago-depression-start--dementia-omitted",
+    "old_missing": [
+      "dementia"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "ago-depression-start--dementia-unknown",
+    "old_missing": [
+      "dementia"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "ago-depression-start--dementia-not_assessed",
+    "old_missing": [
+      "dementia"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "ago-depression-start--liver_injury_signs-omitted",
+    "old_missing": [
+      "liver_injury_signs"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "ago-depression-start--liver_injury_signs-unknown",
+    "old_missing": [
+      "liver_injury_signs"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "ago-depression-start--liver_injury_signs-not_assessed",
+    "old_missing": [
+      "liver_injury_signs"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "ago-depression-start--transaminases_rising-omitted",
+    "old_missing": [
+      "transaminases_rising"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "ago-depression-start--transaminases_rising-unknown",
+    "old_missing": [
+      "transaminases_rising"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "ago-depression-start--transaminases_rising-not_assessed",
+    "old_missing": [
+      "transaminases_rising"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "ago-depression-start--alcohol_use-omitted",
+    "old_missing": [
+      "alcohol_use"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "ago-depression-start--alcohol_use-unknown",
+    "old_missing": [
+      "alcohol_use"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "ago-depression-start--alcohol_use-not_assessed",
+    "old_missing": [
+      "alcohol_use"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "ago-depression-start--mania-omitted",
+    "old_missing": [
+      "mania"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "ago-depression-start--mania-unknown",
+    "old_missing": [
+      "mania"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "ago-depression-start--mania-not_assessed",
+    "old_missing": [
+      "mania"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "ago-depression-start--mania_symptoms-omitted",
+    "old_missing": [
+      "mania_symptoms"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "ago-depression-start--mania_symptoms-unknown",
+    "old_missing": [
+      "mania_symptoms"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "ago-depression-start--mania_symptoms-not_assessed",
+    "old_missing": [
+      "mania_symptoms"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "ago-depression-start--suicide_risk-omitted",
+    "old_missing": [
+      "suicide_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "ago-depression-start--suicide_risk-unknown",
+    "old_missing": [
+      "suicide_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "ago-depression-start--suicide_risk-not_assessed",
+    "old_missing": [
+      "suicide_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "ago-depression-start--ect-omitted",
+    "old_missing": [
+      "ect"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "ago-depression-start--ect-unknown",
+    "old_missing": [
+      "ect"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "ago-depression-start--ect-not_assessed",
+    "old_missing": [
+      "ect"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "ago-gad-start--dementia-omitted",
+    "old_missing": [
+      "dementia"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "ago-gad-start--dementia-unknown",
+    "old_missing": [
+      "dementia"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "ago-gad-start--dementia-not_assessed",
+    "old_missing": [
+      "dementia"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "ago-gad-start--liver_injury_signs-omitted",
+    "old_missing": [
+      "liver_injury_signs"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "ago-gad-start--liver_injury_signs-unknown",
+    "old_missing": [
+      "liver_injury_signs"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "ago-gad-start--liver_injury_signs-not_assessed",
+    "old_missing": [
+      "liver_injury_signs"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "ago-gad-start--transaminases_rising-omitted",
+    "old_missing": [
+      "transaminases_rising"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "ago-gad-start--transaminases_rising-unknown",
+    "old_missing": [
+      "transaminases_rising"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "ago-gad-start--transaminases_rising-not_assessed",
+    "old_missing": [
+      "transaminases_rising"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "ago-gad-start--alcohol_use-omitted",
+    "old_missing": [
+      "alcohol_use"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "ago-gad-start--alcohol_use-unknown",
+    "old_missing": [
+      "alcohol_use"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "ago-gad-start--alcohol_use-not_assessed",
+    "old_missing": [
+      "alcohol_use"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "ago-gad-start--mania-omitted",
+    "old_missing": [
+      "mania"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "ago-gad-start--mania-unknown",
+    "old_missing": [
+      "mania"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "ago-gad-start--mania-not_assessed",
+    "old_missing": [
+      "mania"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "ago-gad-start--mania_symptoms-omitted",
+    "old_missing": [
+      "mania_symptoms"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "ago-gad-start--mania_symptoms-unknown",
+    "old_missing": [
+      "mania_symptoms"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "ago-gad-start--mania_symptoms-not_assessed",
+    "old_missing": [
+      "mania_symptoms"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "ago-gad-start--suicide_risk-omitted",
+    "old_missing": [
+      "suicide_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "ago-gad-start--suicide_risk-unknown",
+    "old_missing": [
+      "suicide_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "ago-gad-start--suicide_risk-not_assessed",
+    "old_missing": [
+      "suicide_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "ago-gad-start--ect-omitted",
+    "old_missing": [
+      "ect"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "ago-gad-start--ect-unknown",
+    "old_missing": [
+      "ect"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "ago-gad-start--ect-not_assessed",
+    "old_missing": [
+      "ect"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-depression-start--akathisia-omitted",
+    "old_missing": [
+      "akathisia"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-depression-start--akathisia-unknown",
+    "old_missing": [
+      "akathisia"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-depression-start--akathisia-not_assessed",
+    "old_missing": [
+      "akathisia"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-depression-start--mania-omitted",
+    "old_missing": [
+      "mania"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-depression-start--mania-unknown",
+    "old_missing": [
+      "mania"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-depression-start--mania-not_assessed",
+    "old_missing": [
+      "mania"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-depression-start--suicide_risk-omitted",
+    "old_missing": [
+      "suicide_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-depression-start--suicide_risk-unknown",
+    "old_missing": [
+      "suicide_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-depression-start--suicide_risk-not_assessed",
+    "old_missing": [
+      "suicide_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-depression-start--bleeding_risk-omitted",
+    "old_missing": [
+      "bleeding_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-depression-start--bleeding_risk-unknown",
+    "old_missing": [
+      "bleeding_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-depression-start--bleeding_risk-not_assessed",
+    "old_missing": [
+      "bleeding_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-depression-start--hyponatremia_risk-omitted",
+    "old_missing": [
+      "hyponatremia_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-depression-start--hyponatremia_risk-unknown",
+    "old_missing": [
+      "hyponatremia_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-depression-start--hyponatremia_risk-not_assessed",
+    "old_missing": [
+      "hyponatremia_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-depression-start--diabetes-omitted",
+    "old_missing": [
+      "diabetes"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-depression-start--diabetes-unknown",
+    "old_missing": [
+      "diabetes"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-depression-start--diabetes-not_assessed",
+    "old_missing": [
+      "diabetes"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-depression-start--seizure_state-omitted",
+    "old_missing": [
+      "seizure_state"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-depression-start--seizure_state-unknown",
+    "old_missing": [
+      "seizure_state"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-depression-start--seizure_state-not_assessed",
+    "old_missing": [
+      "seizure_state"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-depression-start--nested-renal_metric-method-omitted",
+    "old_missing": [
+      "renal_metric.method"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-depression-start--nested-renal_metric-method-unknown",
+    "old_missing": [
+      "renal_metric.method"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-depression-start--nested-renal_metric-method-not_assessed",
+    "old_missing": [
+      "renal_metric.method"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-gad-adjust--mania-omitted",
+    "old_missing": [
+      "mania"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-gad-adjust--mania-unknown",
+    "old_missing": [
+      "mania"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-gad-adjust--mania-not_assessed",
+    "old_missing": [
+      "mania"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-gad-adjust--suicide_risk-omitted",
+    "old_missing": [
+      "suicide_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-gad-adjust--suicide_risk-unknown",
+    "old_missing": [
+      "suicide_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-gad-adjust--suicide_risk-not_assessed",
+    "old_missing": [
+      "suicide_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-gad-adjust--bleeding_risk-omitted",
+    "old_missing": [
+      "bleeding_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-gad-adjust--bleeding_risk-unknown",
+    "old_missing": [
+      "bleeding_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-gad-adjust--bleeding_risk-not_assessed",
+    "old_missing": [
+      "bleeding_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-gad-adjust--hyponatremia_risk-omitted",
+    "old_missing": [
+      "hyponatremia_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-gad-adjust--hyponatremia_risk-unknown",
+    "old_missing": [
+      "hyponatremia_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-gad-adjust--hyponatremia_risk-not_assessed",
+    "old_missing": [
+      "hyponatremia_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-gad-adjust--diabetes-omitted",
+    "old_missing": [
+      "diabetes"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-gad-adjust--diabetes-unknown",
+    "old_missing": [
+      "diabetes"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-gad-adjust--diabetes-not_assessed",
+    "old_missing": [
+      "diabetes"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-gad-adjust--seizure_state-omitted",
+    "old_missing": [
+      "seizure_state"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-gad-adjust--seizure_state-unknown",
+    "old_missing": [
+      "seizure_state"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-gad-adjust--seizure_state-not_assessed",
+    "old_missing": [
+      "seizure_state"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-gad-adjust--nested-renal_metric-method-omitted",
+    "old_missing": [
+      "renal_metric.method"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-gad-adjust--nested-renal_metric-method-unknown",
+    "old_missing": [
+      "renal_metric.method"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-gad-adjust--nested-renal_metric-method-not_assessed",
+    "old_missing": [
+      "renal_metric.method"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-gad-start--akathisia-omitted",
+    "old_missing": [
+      "akathisia"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-gad-start--akathisia-unknown",
+    "old_missing": [
+      "akathisia"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-gad-start--akathisia-not_assessed",
+    "old_missing": [
+      "akathisia"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-gad-start--mania-omitted",
+    "old_missing": [
+      "mania"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-gad-start--mania-unknown",
+    "old_missing": [
+      "mania"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-gad-start--mania-not_assessed",
+    "old_missing": [
+      "mania"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-gad-start--suicide_risk-omitted",
+    "old_missing": [
+      "suicide_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-gad-start--suicide_risk-unknown",
+    "old_missing": [
+      "suicide_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-gad-start--suicide_risk-not_assessed",
+    "old_missing": [
+      "suicide_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-gad-start--bleeding_risk-omitted",
+    "old_missing": [
+      "bleeding_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-gad-start--bleeding_risk-unknown",
+    "old_missing": [
+      "bleeding_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-gad-start--bleeding_risk-not_assessed",
+    "old_missing": [
+      "bleeding_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-gad-start--hyponatremia_risk-omitted",
+    "old_missing": [
+      "hyponatremia_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-gad-start--hyponatremia_risk-unknown",
+    "old_missing": [
+      "hyponatremia_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-gad-start--hyponatremia_risk-not_assessed",
+    "old_missing": [
+      "hyponatremia_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-gad-start--diabetes-omitted",
+    "old_missing": [
+      "diabetes"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-gad-start--diabetes-unknown",
+    "old_missing": [
+      "diabetes"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-gad-start--diabetes-not_assessed",
+    "old_missing": [
+      "diabetes"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-gad-start--seizure_state-omitted",
+    "old_missing": [
+      "seizure_state"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-gad-start--seizure_state-unknown",
+    "old_missing": [
+      "seizure_state"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-gad-start--seizure_state-not_assessed",
+    "old_missing": [
+      "seizure_state"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-gad-start--nested-renal_metric-method-omitted",
+    "old_missing": [
+      "renal_metric.method"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-gad-start--nested-renal_metric-method-unknown",
+    "old_missing": [
+      "renal_metric.method"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "dulox-gad-start--nested-renal_metric-method-not_assessed",
+    "old_missing": [
+      "renal_metric.method"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "fluvox-depression-start--mania-omitted",
+    "old_missing": [
+      "mania"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "fluvox-depression-start--mania-unknown",
+    "old_missing": [
+      "mania"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "fluvox-depression-start--mania-not_assessed",
+    "old_missing": [
+      "mania"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "fluvox-depression-start--mania_symptoms-omitted",
+    "old_missing": [
+      "mania_symptoms"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "fluvox-depression-start--mania_symptoms-unknown",
+    "old_missing": [
+      "mania_symptoms"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "fluvox-depression-start--mania_symptoms-not_assessed",
+    "old_missing": [
+      "mania_symptoms"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "fluvox-depression-start--akathisia-omitted",
+    "old_missing": [
+      "akathisia"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "fluvox-depression-start--akathisia-unknown",
+    "old_missing": [
+      "akathisia"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "fluvox-depression-start--akathisia-not_assessed",
+    "old_missing": [
+      "akathisia"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "fluvox-depression-start--bleeding_risk-omitted",
+    "old_missing": [
+      "bleeding_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "fluvox-depression-start--bleeding_risk-unknown",
+    "old_missing": [
+      "bleeding_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "fluvox-depression-start--bleeding_risk-not_assessed",
+    "old_missing": [
+      "bleeding_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "fluvox-depression-start--suicide_risk-omitted",
+    "old_missing": [
+      "suicide_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "fluvox-depression-start--suicide_risk-unknown",
+    "old_missing": [
+      "suicide_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "fluvox-depression-start--suicide_risk-not_assessed",
+    "old_missing": [
+      "suicide_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "fluvox-depression-start--diabetes-omitted",
+    "old_missing": [
+      "diabetes"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "fluvox-depression-start--diabetes-unknown",
+    "old_missing": [
+      "diabetes"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "fluvox-depression-start--diabetes-not_assessed",
+    "old_missing": [
+      "diabetes"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "fluvox-depression-start--glaucoma-omitted",
+    "old_missing": [
+      "glaucoma"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "fluvox-depression-start--glaucoma-unknown",
+    "old_missing": [
+      "glaucoma"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "fluvox-depression-start--glaucoma-not_assessed",
+    "old_missing": [
+      "glaucoma"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "fluvox-depression-start--ect-omitted",
+    "old_missing": [
+      "ect"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "fluvox-depression-start--ect-unknown",
+    "old_missing": [
+      "ect"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "fluvox-depression-start--ect-not_assessed",
+    "old_missing": [
+      "ect"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "fluvox-depression-start--liver_injury_signs-omitted",
+    "old_missing": [
+      "liver_injury_signs"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "fluvox-depression-start--liver_injury_signs-unknown",
+    "old_missing": [
+      "liver_injury_signs"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "fluvox-depression-start--liver_injury_signs-not_assessed",
+    "old_missing": [
+      "liver_injury_signs"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "parox-panic-kr--mania-omitted",
+    "old_missing": [
+      "mania"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "parox-panic-kr--mania-unknown",
+    "old_missing": [
+      "mania"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "parox-panic-kr--mania-not_assessed",
+    "old_missing": [
+      "mania"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "parox-panic-kr--suicide_risk-omitted",
+    "old_missing": [
+      "suicide_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "parox-panic-kr--suicide_risk-unknown",
+    "old_missing": [
+      "suicide_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "parox-panic-kr--suicide_risk-not_assessed",
+    "old_missing": [
+      "suicide_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "parox-panic-kr--akathisia-omitted",
+    "old_missing": [
+      "akathisia"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "parox-panic-kr--akathisia-unknown",
+    "old_missing": [
+      "akathisia"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "parox-panic-kr--akathisia-not_assessed",
+    "old_missing": [
+      "akathisia"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "parox-panic-kr--diabetes-omitted",
+    "old_missing": [
+      "diabetes"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "parox-panic-kr--diabetes-unknown",
+    "old_missing": [
+      "diabetes"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "parox-panic-kr--diabetes-not_assessed",
+    "old_missing": [
+      "diabetes"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "parox-panic-kr--glaucoma-omitted",
+    "old_missing": [
+      "glaucoma"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "parox-panic-kr--glaucoma-unknown",
+    "old_missing": [
+      "glaucoma"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "parox-panic-kr--glaucoma-not_assessed",
+    "old_missing": [
+      "glaucoma"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "parox-panic-kr--bleeding_risk-omitted",
+    "old_missing": [
+      "bleeding_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "parox-panic-kr--bleeding_risk-unknown",
+    "old_missing": [
+      "bleeding_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "parox-panic-kr--bleeding_risk-not_assessed",
+    "old_missing": [
+      "bleeding_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "parox-panic-kr--qt_risk-omitted",
+    "old_missing": [
+      "qt_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "parox-panic-kr--qt_risk-unknown",
+    "old_missing": [
+      "qt_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "parox-panic-kr--qt_risk-not_assessed",
+    "old_missing": [
+      "qt_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "parox-panic-kr--ect-omitted",
+    "old_missing": [
+      "ect"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "parox-panic-kr--ect-unknown",
+    "old_missing": [
+      "ect"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "parox-panic-kr--ect-not_assessed",
+    "old_missing": [
+      "ect"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "parox-panic-kr--nested-renal-method-omitted",
+    "old_missing": [
+      "renal.method"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "parox-panic-kr--nested-renal-method-unknown",
+    "old_missing": [
+      "renal.method"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "parox-panic-kr--nested-renal-method-not_assessed",
+    "old_missing": [
+      "renal.method"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "preg-gad-adjust--substance_use-omitted",
+    "old_missing": [
+      "substance_use"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "preg-gad-adjust--substance_use-unknown",
+    "old_missing": [
+      "substance_use"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "preg-gad-adjust--substance_use-not_assessed",
+    "old_missing": [
+      "substance_use"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "preg-gad-adjust--suicide_risk-omitted",
+    "old_missing": [
+      "suicide_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "preg-gad-adjust--suicide_risk-unknown",
+    "old_missing": [
+      "suicide_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "preg-gad-adjust--suicide_risk-not_assessed",
+    "old_missing": [
+      "suicide_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "preg-gad-adjust--heart_failure-omitted",
+    "old_missing": [
+      "heart_failure"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "preg-gad-adjust--heart_failure-unknown",
+    "old_missing": [
+      "heart_failure"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "preg-gad-adjust--heart_failure-not_assessed",
+    "old_missing": [
+      "heart_failure"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "preg-gad-adjust--diabetes_weight_gain-omitted",
+    "old_missing": [
+      "diabetes_weight_gain"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "preg-gad-adjust--diabetes_weight_gain-unknown",
+    "old_missing": [
+      "diabetes_weight_gain"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "preg-gad-adjust--diabetes_weight_gain-not_assessed",
+    "old_missing": [
+      "diabetes_weight_gain"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "preg-gad-start--substance_use-omitted",
+    "old_missing": [
+      "substance_use"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "preg-gad-start--substance_use-unknown",
+    "old_missing": [
+      "substance_use"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "preg-gad-start--substance_use-not_assessed",
+    "old_missing": [
+      "substance_use"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "preg-gad-start--angioedema-omitted",
+    "old_missing": [
+      "angioedema"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "preg-gad-start--angioedema-unknown",
+    "old_missing": [
+      "angioedema"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "preg-gad-start--angioedema-not_assessed",
+    "old_missing": [
+      "angioedema"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "preg-gad-start--severe_skin_reaction-omitted",
+    "old_missing": [
+      "severe_skin_reaction"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "preg-gad-start--severe_skin_reaction-unknown",
+    "old_missing": [
+      "severe_skin_reaction"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "preg-gad-start--severe_skin_reaction-not_assessed",
+    "old_missing": [
+      "severe_skin_reaction"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "preg-gad-start--suicide_risk-omitted",
+    "old_missing": [
+      "suicide_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "preg-gad-start--suicide_risk-unknown",
+    "old_missing": [
+      "suicide_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "preg-gad-start--suicide_risk-not_assessed",
+    "old_missing": [
+      "suicide_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "preg-gad-start--heart_failure-omitted",
+    "old_missing": [
+      "heart_failure"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "preg-gad-start--heart_failure-unknown",
+    "old_missing": [
+      "heart_failure"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "preg-gad-start--heart_failure-not_assessed",
+    "old_missing": [
+      "heart_failure"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "preg-gad-start--diabetes_weight_gain-omitted",
+    "old_missing": [
+      "diabetes_weight_gain"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "preg-gad-start--diabetes_weight_gain-unknown",
+    "old_missing": [
+      "diabetes_weight_gain"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "preg-gad-start--diabetes_weight_gain-not_assessed",
+    "old_missing": [
+      "diabetes_weight_gain"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "preg-renal-start--substance_use-omitted",
+    "old_missing": [
+      "substance_use"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "preg-renal-start--substance_use-unknown",
+    "old_missing": [
+      "substance_use"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "preg-renal-start--substance_use-not_assessed",
+    "old_missing": [
+      "substance_use"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "preg-renal-start--angioedema-omitted",
+    "old_missing": [
+      "angioedema"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "preg-renal-start--angioedema-unknown",
+    "old_missing": [
+      "angioedema"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "preg-renal-start--angioedema-not_assessed",
+    "old_missing": [
+      "angioedema"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "preg-renal-start--severe_skin_reaction-omitted",
+    "old_missing": [
+      "severe_skin_reaction"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "preg-renal-start--severe_skin_reaction-unknown",
+    "old_missing": [
+      "severe_skin_reaction"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "preg-renal-start--severe_skin_reaction-not_assessed",
+    "old_missing": [
+      "severe_skin_reaction"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "preg-renal-start--suicide_risk-omitted",
+    "old_missing": [
+      "suicide_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "preg-renal-start--suicide_risk-unknown",
+    "old_missing": [
+      "suicide_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "preg-renal-start--suicide_risk-not_assessed",
+    "old_missing": [
+      "suicide_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "preg-renal-start--heart_failure-omitted",
+    "old_missing": [
+      "heart_failure"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "preg-renal-start--heart_failure-unknown",
+    "old_missing": [
+      "heart_failure"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "preg-renal-start--heart_failure-not_assessed",
+    "old_missing": [
+      "heart_failure"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "preg-renal-start--diabetes_weight_gain-omitted",
+    "old_missing": [
+      "diabetes_weight_gain"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "preg-renal-start--diabetes_weight_gain-unknown",
+    "old_missing": [
+      "diabetes_weight_gain"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "preg-renal-start--diabetes_weight_gain-not_assessed",
+    "old_missing": [
+      "diabetes_weight_gain"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "switch-parox-ago-selected-example--nested-from_renal-method-omitted",
+    "old_missing": [
+      "from_renal.method"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "switch-parox-ago-selected-example--nested-from_renal-method-unknown",
+    "old_missing": [
+      "from_renal.method"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "switch-parox-ago-selected-example--nested-from_renal-method-not_assessed",
+    "old_missing": [
+      "from_renal.method"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "switch-parox-ago--nested-from_renal-method-omitted",
+    "old_missing": [
+      "from_renal.method"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "switch-parox-ago--nested-from_renal-method-unknown",
+    "old_missing": [
+      "from_renal.method"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "switch-parox-ago--nested-from_renal-method-not_assessed",
+    "old_missing": [
+      "from_renal.method"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--recent_infarction-omitted",
+    "old_missing": [
+      "recent_infarction"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--recent_infarction-unknown",
+    "old_missing": [
+      "recent_infarction"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--recent_infarction-not_assessed",
+    "old_missing": [
+      "recent_infarction"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--unstable_angina-omitted",
+    "old_missing": [
+      "unstable_angina"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--unstable_angina-unknown",
+    "old_missing": [
+      "unstable_angina"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--unstable_angina-not_assessed",
+    "old_missing": [
+      "unstable_angina"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--heart_failure-omitted",
+    "old_missing": [
+      "heart_failure"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--heart_failure-unknown",
+    "old_missing": [
+      "heart_failure"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--heart_failure-not_assessed",
+    "old_missing": [
+      "heart_failure"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--coronary_disease-omitted",
+    "old_missing": [
+      "coronary_disease"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--coronary_disease-unknown",
+    "old_missing": [
+      "coronary_disease"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--coronary_disease-not_assessed",
+    "old_missing": [
+      "coronary_disease"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--ecg_change-omitted",
+    "old_missing": [
+      "ecg_change"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--ecg_change-unknown",
+    "old_missing": [
+      "ecg_change"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--ecg_change-not_assessed",
+    "old_missing": [
+      "ecg_change"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--electrolyte_imbalance-omitted",
+    "old_missing": [
+      "electrolyte_imbalance"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--electrolyte_imbalance-unknown",
+    "old_missing": [
+      "electrolyte_imbalance"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--electrolyte_imbalance-not_assessed",
+    "old_missing": [
+      "electrolyte_imbalance"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--hypertension-omitted",
+    "old_missing": [
+      "hypertension"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--hypertension-unknown",
+    "old_missing": [
+      "hypertension"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--hypertension-not_assessed",
+    "old_missing": [
+      "hypertension"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--tachycardia-omitted",
+    "old_missing": [
+      "tachycardia"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--tachycardia-unknown",
+    "old_missing": [
+      "tachycardia"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--tachycardia-not_assessed",
+    "old_missing": [
+      "tachycardia"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--seizure_history-omitted",
+    "old_missing": [
+      "seizure_history"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--seizure_history-unknown",
+    "old_missing": [
+      "seizure_history"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--seizure_history-not_assessed",
+    "old_missing": [
+      "seizure_history"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--glaucoma-omitted",
+    "old_missing": [
+      "glaucoma"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--glaucoma-unknown",
+    "old_missing": [
+      "glaucoma"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--glaucoma-not_assessed",
+    "old_missing": [
+      "glaucoma"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--mania-omitted",
+    "old_missing": [
+      "mania"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--mania-unknown",
+    "old_missing": [
+      "mania"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--mania-not_assessed",
+    "old_missing": [
+      "mania"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--bleeding_risk-omitted",
+    "old_missing": [
+      "bleeding_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--bleeding_risk-unknown",
+    "old_missing": [
+      "bleeding_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--bleeding_risk-not_assessed",
+    "old_missing": [
+      "bleeding_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--low_body_mass-omitted",
+    "old_missing": [
+      "low_body_mass"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--low_body_mass-unknown",
+    "old_missing": [
+      "low_body_mass"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--low_body_mass-not_assessed",
+    "old_missing": [
+      "low_body_mass"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--urinary_impairment-omitted",
+    "old_missing": [
+      "urinary_impairment"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--urinary_impairment-unknown",
+    "old_missing": [
+      "urinary_impairment"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--urinary_impairment-not_assessed",
+    "old_missing": [
+      "urinary_impairment"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--low_blood_pressure-omitted",
+    "old_missing": [
+      "low_blood_pressure"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--low_blood_pressure-unknown",
+    "old_missing": [
+      "low_blood_pressure"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--low_blood_pressure-not_assessed",
+    "old_missing": [
+      "low_blood_pressure"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--diabetes-omitted",
+    "old_missing": [
+      "diabetes"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--diabetes-unknown",
+    "old_missing": [
+      "diabetes"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--diabetes-not_assessed",
+    "old_missing": [
+      "diabetes"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--recent_stroke-omitted",
+    "old_missing": [
+      "recent_stroke"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--recent_stroke-unknown",
+    "old_missing": [
+      "recent_stroke"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--recent_stroke-not_assessed",
+    "old_missing": [
+      "recent_stroke"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--hyponatremia_risk-omitted",
+    "old_missing": [
+      "hyponatremia_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--hyponatremia_risk-unknown",
+    "old_missing": [
+      "hyponatremia_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--hyponatremia_risk-not_assessed",
+    "old_missing": [
+      "hyponatremia_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--ect-omitted",
+    "old_missing": [
+      "ect"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--ect-unknown",
+    "old_missing": [
+      "ect"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--ect-not_assessed",
+    "old_missing": [
+      "ect"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--hypercholesterolemia-omitted",
+    "old_missing": [
+      "hypercholesterolemia"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--hypercholesterolemia-unknown",
+    "old_missing": [
+      "hypercholesterolemia"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--hypercholesterolemia-not_assessed",
+    "old_missing": [
+      "hypercholesterolemia"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--alcohol_use-omitted",
+    "old_missing": [
+      "alcohol_use"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--alcohol_use-unknown",
+    "old_missing": [
+      "alcohol_use"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--alcohol_use-not_assessed",
+    "old_missing": [
+      "alcohol_use"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--suicide_risk-omitted",
+    "old_missing": [
+      "suicide_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--suicide_risk-unknown",
+    "old_missing": [
+      "suicide_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--suicide_risk-not_assessed",
+    "old_missing": [
+      "suicide_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--diastolic_BP-omitted",
+    "old_missing": [
+      "diastolic_BP"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--diastolic_BP-unknown",
+    "old_missing": [
+      "diastolic_BP"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--diastolic_BP-not_assessed",
+    "old_missing": [
+      "diastolic_BP"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--nested-renal_metric-method-omitted",
+    "old_missing": [
+      "renal_metric.method"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--nested-renal_metric-method-unknown",
+    "old_missing": [
+      "renal_metric.method"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-gad-start--nested-renal_metric-method-not_assessed",
+    "old_missing": [
+      "renal_metric.method"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--recent_infarction-omitted",
+    "old_missing": [
+      "recent_infarction"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--recent_infarction-unknown",
+    "old_missing": [
+      "recent_infarction"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--recent_infarction-not_assessed",
+    "old_missing": [
+      "recent_infarction"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--unstable_angina-omitted",
+    "old_missing": [
+      "unstable_angina"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--unstable_angina-unknown",
+    "old_missing": [
+      "unstable_angina"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--unstable_angina-not_assessed",
+    "old_missing": [
+      "unstable_angina"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--heart_failure-omitted",
+    "old_missing": [
+      "heart_failure"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--heart_failure-unknown",
+    "old_missing": [
+      "heart_failure"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--heart_failure-not_assessed",
+    "old_missing": [
+      "heart_failure"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--coronary_disease-omitted",
+    "old_missing": [
+      "coronary_disease"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--coronary_disease-unknown",
+    "old_missing": [
+      "coronary_disease"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--coronary_disease-not_assessed",
+    "old_missing": [
+      "coronary_disease"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--ecg_change-omitted",
+    "old_missing": [
+      "ecg_change"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--ecg_change-unknown",
+    "old_missing": [
+      "ecg_change"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--ecg_change-not_assessed",
+    "old_missing": [
+      "ecg_change"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--electrolyte_imbalance-omitted",
+    "old_missing": [
+      "electrolyte_imbalance"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--electrolyte_imbalance-unknown",
+    "old_missing": [
+      "electrolyte_imbalance"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--electrolyte_imbalance-not_assessed",
+    "old_missing": [
+      "electrolyte_imbalance"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--hypertension-omitted",
+    "old_missing": [
+      "hypertension"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--hypertension-unknown",
+    "old_missing": [
+      "hypertension"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--hypertension-not_assessed",
+    "old_missing": [
+      "hypertension"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--tachycardia-omitted",
+    "old_missing": [
+      "tachycardia"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--tachycardia-unknown",
+    "old_missing": [
+      "tachycardia"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--tachycardia-not_assessed",
+    "old_missing": [
+      "tachycardia"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--seizure_history-omitted",
+    "old_missing": [
+      "seizure_history"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--seizure_history-unknown",
+    "old_missing": [
+      "seizure_history"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--seizure_history-not_assessed",
+    "old_missing": [
+      "seizure_history"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--glaucoma-omitted",
+    "old_missing": [
+      "glaucoma"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--glaucoma-unknown",
+    "old_missing": [
+      "glaucoma"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--glaucoma-not_assessed",
+    "old_missing": [
+      "glaucoma"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--mania-omitted",
+    "old_missing": [
+      "mania"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--mania-unknown",
+    "old_missing": [
+      "mania"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--mania-not_assessed",
+    "old_missing": [
+      "mania"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--bleeding_risk-omitted",
+    "old_missing": [
+      "bleeding_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--bleeding_risk-unknown",
+    "old_missing": [
+      "bleeding_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--bleeding_risk-not_assessed",
+    "old_missing": [
+      "bleeding_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--low_body_mass-omitted",
+    "old_missing": [
+      "low_body_mass"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--low_body_mass-unknown",
+    "old_missing": [
+      "low_body_mass"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--low_body_mass-not_assessed",
+    "old_missing": [
+      "low_body_mass"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--urinary_impairment-omitted",
+    "old_missing": [
+      "urinary_impairment"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--urinary_impairment-unknown",
+    "old_missing": [
+      "urinary_impairment"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--urinary_impairment-not_assessed",
+    "old_missing": [
+      "urinary_impairment"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--low_blood_pressure-omitted",
+    "old_missing": [
+      "low_blood_pressure"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--low_blood_pressure-unknown",
+    "old_missing": [
+      "low_blood_pressure"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--low_blood_pressure-not_assessed",
+    "old_missing": [
+      "low_blood_pressure"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--diabetes-omitted",
+    "old_missing": [
+      "diabetes"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--diabetes-unknown",
+    "old_missing": [
+      "diabetes"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--diabetes-not_assessed",
+    "old_missing": [
+      "diabetes"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--recent_stroke-omitted",
+    "old_missing": [
+      "recent_stroke"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--recent_stroke-unknown",
+    "old_missing": [
+      "recent_stroke"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--recent_stroke-not_assessed",
+    "old_missing": [
+      "recent_stroke"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--hyponatremia_risk-omitted",
+    "old_missing": [
+      "hyponatremia_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--hyponatremia_risk-unknown",
+    "old_missing": [
+      "hyponatremia_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--hyponatremia_risk-not_assessed",
+    "old_missing": [
+      "hyponatremia_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--ect-omitted",
+    "old_missing": [
+      "ect"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--ect-unknown",
+    "old_missing": [
+      "ect"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--ect-not_assessed",
+    "old_missing": [
+      "ect"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--hypercholesterolemia-omitted",
+    "old_missing": [
+      "hypercholesterolemia"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--hypercholesterolemia-unknown",
+    "old_missing": [
+      "hypercholesterolemia"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--hypercholesterolemia-not_assessed",
+    "old_missing": [
+      "hypercholesterolemia"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--alcohol_use-omitted",
+    "old_missing": [
+      "alcohol_use"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--alcohol_use-unknown",
+    "old_missing": [
+      "alcohol_use"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--alcohol_use-not_assessed",
+    "old_missing": [
+      "alcohol_use"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--suicide_risk-omitted",
+    "old_missing": [
+      "suicide_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--suicide_risk-unknown",
+    "old_missing": [
+      "suicide_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--suicide_risk-not_assessed",
+    "old_missing": [
+      "suicide_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--diastolic_BP-omitted",
+    "old_missing": [
+      "diastolic_BP"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--diastolic_BP-unknown",
+    "old_missing": [
+      "diastolic_BP"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--diastolic_BP-not_assessed",
+    "old_missing": [
+      "diastolic_BP"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--nested-renal_metric-method-omitted",
+    "old_missing": [
+      "renal_metric.method"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--nested-renal_metric-method-unknown",
+    "old_missing": [
+      "renal_metric.method"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--nested-renal_metric-method-not_assessed",
+    "old_missing": [
+      "renal_metric.method"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--recent_infarction-omitted",
+    "old_missing": [
+      "recent_infarction"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--recent_infarction-unknown",
+    "old_missing": [
+      "recent_infarction"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--recent_infarction-not_assessed",
+    "old_missing": [
+      "recent_infarction"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--unstable_angina-omitted",
+    "old_missing": [
+      "unstable_angina"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--unstable_angina-unknown",
+    "old_missing": [
+      "unstable_angina"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--unstable_angina-not_assessed",
+    "old_missing": [
+      "unstable_angina"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--heart_failure-omitted",
+    "old_missing": [
+      "heart_failure"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--heart_failure-unknown",
+    "old_missing": [
+      "heart_failure"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--heart_failure-not_assessed",
+    "old_missing": [
+      "heart_failure"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--coronary_disease-omitted",
+    "old_missing": [
+      "coronary_disease"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--coronary_disease-unknown",
+    "old_missing": [
+      "coronary_disease"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--coronary_disease-not_assessed",
+    "old_missing": [
+      "coronary_disease"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--ecg_change-omitted",
+    "old_missing": [
+      "ecg_change"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--ecg_change-unknown",
+    "old_missing": [
+      "ecg_change"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--ecg_change-not_assessed",
+    "old_missing": [
+      "ecg_change"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--electrolyte_imbalance-omitted",
+    "old_missing": [
+      "electrolyte_imbalance"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--electrolyte_imbalance-unknown",
+    "old_missing": [
+      "electrolyte_imbalance"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--electrolyte_imbalance-not_assessed",
+    "old_missing": [
+      "electrolyte_imbalance"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--hypertension-omitted",
+    "old_missing": [
+      "hypertension"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--hypertension-unknown",
+    "old_missing": [
+      "hypertension"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--hypertension-not_assessed",
+    "old_missing": [
+      "hypertension"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--tachycardia-omitted",
+    "old_missing": [
+      "tachycardia"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--tachycardia-unknown",
+    "old_missing": [
+      "tachycardia"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--tachycardia-not_assessed",
+    "old_missing": [
+      "tachycardia"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--seizure_history-omitted",
+    "old_missing": [
+      "seizure_history"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--seizure_history-unknown",
+    "old_missing": [
+      "seizure_history"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--seizure_history-not_assessed",
+    "old_missing": [
+      "seizure_history"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--glaucoma-omitted",
+    "old_missing": [
+      "glaucoma"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--glaucoma-unknown",
+    "old_missing": [
+      "glaucoma"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--glaucoma-not_assessed",
+    "old_missing": [
+      "glaucoma"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--mania-omitted",
+    "old_missing": [
+      "mania"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--mania-unknown",
+    "old_missing": [
+      "mania"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--mania-not_assessed",
+    "old_missing": [
+      "mania"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--bleeding_risk-omitted",
+    "old_missing": [
+      "bleeding_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--bleeding_risk-unknown",
+    "old_missing": [
+      "bleeding_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--bleeding_risk-not_assessed",
+    "old_missing": [
+      "bleeding_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--low_body_mass-omitted",
+    "old_missing": [
+      "low_body_mass"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--low_body_mass-unknown",
+    "old_missing": [
+      "low_body_mass"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--low_body_mass-not_assessed",
+    "old_missing": [
+      "low_body_mass"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--urinary_impairment-omitted",
+    "old_missing": [
+      "urinary_impairment"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--urinary_impairment-unknown",
+    "old_missing": [
+      "urinary_impairment"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--urinary_impairment-not_assessed",
+    "old_missing": [
+      "urinary_impairment"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--low_blood_pressure-omitted",
+    "old_missing": [
+      "low_blood_pressure"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--low_blood_pressure-unknown",
+    "old_missing": [
+      "low_blood_pressure"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--low_blood_pressure-not_assessed",
+    "old_missing": [
+      "low_blood_pressure"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--diabetes-omitted",
+    "old_missing": [
+      "diabetes"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--diabetes-unknown",
+    "old_missing": [
+      "diabetes"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--diabetes-not_assessed",
+    "old_missing": [
+      "diabetes"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--recent_stroke-omitted",
+    "old_missing": [
+      "recent_stroke"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--recent_stroke-unknown",
+    "old_missing": [
+      "recent_stroke"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--recent_stroke-not_assessed",
+    "old_missing": [
+      "recent_stroke"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--hyponatremia_risk-omitted",
+    "old_missing": [
+      "hyponatremia_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--hyponatremia_risk-unknown",
+    "old_missing": [
+      "hyponatremia_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--hyponatremia_risk-not_assessed",
+    "old_missing": [
+      "hyponatremia_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--ect-omitted",
+    "old_missing": [
+      "ect"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--ect-unknown",
+    "old_missing": [
+      "ect"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--ect-not_assessed",
+    "old_missing": [
+      "ect"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--hypercholesterolemia-omitted",
+    "old_missing": [
+      "hypercholesterolemia"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--hypercholesterolemia-unknown",
+    "old_missing": [
+      "hypercholesterolemia"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--hypercholesterolemia-not_assessed",
+    "old_missing": [
+      "hypercholesterolemia"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--alcohol_use-omitted",
+    "old_missing": [
+      "alcohol_use"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--alcohol_use-unknown",
+    "old_missing": [
+      "alcohol_use"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--alcohol_use-not_assessed",
+    "old_missing": [
+      "alcohol_use"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--suicide_risk-omitted",
+    "old_missing": [
+      "suicide_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--suicide_risk-unknown",
+    "old_missing": [
+      "suicide_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--suicide_risk-not_assessed",
+    "old_missing": [
+      "suicide_risk"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--diastolic_BP-omitted",
+    "old_missing": [
+      "diastolic_BP"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--diastolic_BP-unknown",
+    "old_missing": [
+      "diastolic_BP"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--diastolic_BP-not_assessed",
+    "old_missing": [
+      "diastolic_BP"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--nested-renal_metric-method-omitted",
+    "old_missing": [
+      "renal_metric.method"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--nested-renal_metric-method-unknown",
+    "old_missing": [
+      "renal_metric.method"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "venla-xr-social-start--nested-renal_metric-method-not_assessed",
+    "old_missing": [
+      "renal_metric.method"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "ser-panic-start--round2-mania-symptoms-omitted",
+    "old_missing": [
+      "mania_symptoms"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "ser-panic-start--round2-mania-symptoms-unknown",
+    "old_missing": [
+      "mania_symptoms"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "ser-panic-start--round2-mania-symptoms-not_assessed",
+    "old_missing": [
+      "mania_symptoms"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "ser-social-start--round2-mania-symptoms-omitted",
+    "old_missing": [
+      "mania_symptoms"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "ser-social-start--round2-mania-symptoms-unknown",
+    "old_missing": [
+      "mania_symptoms"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "ser-social-start--round2-mania-symptoms-not_assessed",
+    "old_missing": [
+      "mania_symptoms"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-cyp2c19-start--current-mania_symptoms-omitted",
+    "old_missing": [
+      "mania_symptoms"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-cyp2c19-start--current-mania_symptoms-unknown",
+    "old_missing": [
+      "mania_symptoms"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-cyp2c19-start--current-mania_symptoms-not_assessed",
+    "old_missing": [
+      "mania_symptoms"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-cyp2c19-start--current-arrhythmia_signs-omitted",
+    "old_missing": [
+      "arrhythmia_signs"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-cyp2c19-start--current-arrhythmia_signs-unknown",
+    "old_missing": [
+      "arrhythmia_signs"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-cyp2c19-start--current-arrhythmia_signs-not_assessed",
+    "old_missing": [
+      "arrhythmia_signs"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-cyp2c19-start--current-serotonin_syndrome_signs-omitted",
+    "old_missing": [
+      "serotonin_syndrome_signs"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-cyp2c19-start--current-serotonin_syndrome_signs-unknown",
+    "old_missing": [
+      "serotonin_syndrome_signs"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-cyp2c19-start--current-serotonin_syndrome_signs-not_assessed",
+    "old_missing": [
+      "serotonin_syndrome_signs"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-elderly-start--current-mania_symptoms-omitted",
+    "old_missing": [
+      "mania_symptoms"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-elderly-start--current-mania_symptoms-unknown",
+    "old_missing": [
+      "mania_symptoms"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-elderly-start--current-mania_symptoms-not_assessed",
+    "old_missing": [
+      "mania_symptoms"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-elderly-start--current-arrhythmia_signs-omitted",
+    "old_missing": [
+      "arrhythmia_signs"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-elderly-start--current-arrhythmia_signs-unknown",
+    "old_missing": [
+      "arrhythmia_signs"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-elderly-start--current-arrhythmia_signs-not_assessed",
+    "old_missing": [
+      "arrhythmia_signs"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-elderly-start--current-serotonin_syndrome_signs-omitted",
+    "old_missing": [
+      "serotonin_syndrome_signs"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-elderly-start--current-serotonin_syndrome_signs-unknown",
+    "old_missing": [
+      "serotonin_syndrome_signs"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-elderly-start--current-serotonin_syndrome_signs-not_assessed",
+    "old_missing": [
+      "serotonin_syndrome_signs"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-gad-start--current-mania_symptoms-omitted",
+    "old_missing": [
+      "mania_symptoms"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-gad-start--current-mania_symptoms-unknown",
+    "old_missing": [
+      "mania_symptoms"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-gad-start--current-mania_symptoms-not_assessed",
+    "old_missing": [
+      "mania_symptoms"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-gad-start--current-arrhythmia_signs-omitted",
+    "old_missing": [
+      "arrhythmia_signs"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-gad-start--current-arrhythmia_signs-unknown",
+    "old_missing": [
+      "arrhythmia_signs"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-gad-start--current-arrhythmia_signs-not_assessed",
+    "old_missing": [
+      "arrhythmia_signs"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-gad-start--current-serotonin_syndrome_signs-omitted",
+    "old_missing": [
+      "serotonin_syndrome_signs"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-gad-start--current-serotonin_syndrome_signs-unknown",
+    "old_missing": [
+      "serotonin_syndrome_signs"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-gad-start--current-serotonin_syndrome_signs-not_assessed",
+    "old_missing": [
+      "serotonin_syndrome_signs"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-hepatic-start--current-mania_symptoms-omitted",
+    "old_missing": [
+      "mania_symptoms"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-hepatic-start--current-mania_symptoms-unknown",
+    "old_missing": [
+      "mania_symptoms"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-hepatic-start--current-mania_symptoms-not_assessed",
+    "old_missing": [
+      "mania_symptoms"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-hepatic-start--current-arrhythmia_signs-omitted",
+    "old_missing": [
+      "arrhythmia_signs"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-hepatic-start--current-arrhythmia_signs-unknown",
+    "old_missing": [
+      "arrhythmia_signs"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-hepatic-start--current-arrhythmia_signs-not_assessed",
+    "old_missing": [
+      "arrhythmia_signs"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-hepatic-start--current-serotonin_syndrome_signs-omitted",
+    "old_missing": [
+      "serotonin_syndrome_signs"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-hepatic-start--current-serotonin_syndrome_signs-unknown",
+    "old_missing": [
+      "serotonin_syndrome_signs"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-hepatic-start--current-serotonin_syndrome_signs-not_assessed",
+    "old_missing": [
+      "serotonin_syndrome_signs"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-panic-start--current-mania_symptoms-omitted",
+    "old_missing": [
+      "mania_symptoms"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-panic-start--current-mania_symptoms-unknown",
+    "old_missing": [
+      "mania_symptoms"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-panic-start--current-mania_symptoms-not_assessed",
+    "old_missing": [
+      "mania_symptoms"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-panic-start--current-arrhythmia_signs-omitted",
+    "old_missing": [
+      "arrhythmia_signs"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-panic-start--current-arrhythmia_signs-unknown",
+    "old_missing": [
+      "arrhythmia_signs"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-panic-start--current-arrhythmia_signs-not_assessed",
+    "old_missing": [
+      "arrhythmia_signs"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-panic-start--current-serotonin_syndrome_signs-omitted",
+    "old_missing": [
+      "serotonin_syndrome_signs"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-panic-start--current-serotonin_syndrome_signs-unknown",
+    "old_missing": [
+      "serotonin_syndrome_signs"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-panic-start--current-serotonin_syndrome_signs-not_assessed",
+    "old_missing": [
+      "serotonin_syndrome_signs"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-social-start--current-mania_symptoms-omitted",
+    "old_missing": [
+      "mania_symptoms"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-social-start--current-mania_symptoms-unknown",
+    "old_missing": [
+      "mania_symptoms"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-social-start--current-mania_symptoms-not_assessed",
+    "old_missing": [
+      "mania_symptoms"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-social-start--current-arrhythmia_signs-omitted",
+    "old_missing": [
+      "arrhythmia_signs"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-social-start--current-arrhythmia_signs-unknown",
+    "old_missing": [
+      "arrhythmia_signs"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-social-start--current-arrhythmia_signs-not_assessed",
+    "old_missing": [
+      "arrhythmia_signs"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-social-start--current-serotonin_syndrome_signs-omitted",
+    "old_missing": [
+      "serotonin_syndrome_signs"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-social-start--current-serotonin_syndrome_signs-unknown",
+    "old_missing": [
+      "serotonin_syndrome_signs"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-social-start--current-serotonin_syndrome_signs-not_assessed",
+    "old_missing": [
+      "serotonin_syndrome_signs"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-adult-adjust--round2-nested-renal-method-omitted",
+    "old_missing": [
+      "renal.method"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-adult-adjust--round2-nested-renal-method-unknown",
+    "old_missing": [
+      "renal.method"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-adult-adjust--round2-nested-renal-method-not_assessed",
+    "old_missing": [
+      "renal.method"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-cyp2c19-start--round2-nested-renal-method-omitted",
+    "old_missing": [
+      "renal.method"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-cyp2c19-start--round2-nested-renal-method-unknown",
+    "old_missing": [
+      "renal.method"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-cyp2c19-start--round2-nested-renal-method-not_assessed",
+    "old_missing": [
+      "renal.method"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-elderly-start--round2-nested-renal-method-omitted",
+    "old_missing": [
+      "renal.method"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-elderly-start--round2-nested-renal-method-unknown",
+    "old_missing": [
+      "renal.method"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-elderly-start--round2-nested-renal-method-not_assessed",
+    "old_missing": [
+      "renal.method"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-gad-start--round2-nested-renal-method-omitted",
+    "old_missing": [
+      "renal.method"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-gad-start--round2-nested-renal-method-unknown",
+    "old_missing": [
+      "renal.method"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-gad-start--round2-nested-renal-method-not_assessed",
+    "old_missing": [
+      "renal.method"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-hepatic-start--round2-nested-renal-method-omitted",
+    "old_missing": [
+      "renal.method"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-hepatic-start--round2-nested-renal-method-unknown",
+    "old_missing": [
+      "renal.method"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-hepatic-start--round2-nested-renal-method-not_assessed",
+    "old_missing": [
+      "renal.method"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-panic-start--round2-nested-renal-method-omitted",
+    "old_missing": [
+      "renal.method"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-panic-start--round2-nested-renal-method-unknown",
+    "old_missing": [
+      "renal.method"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-panic-start--round2-nested-renal-method-not_assessed",
+    "old_missing": [
+      "renal.method"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-social-start--round2-nested-renal-method-omitted",
+    "old_missing": [
+      "renal.method"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-social-start--round2-nested-renal-method-unknown",
+    "old_missing": [
+      "renal.method"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  },
+  {
+    "case_id": "esc-social-start--round2-nested-renal-method-not_assessed",
+    "old_missing": [
+      "renal.method"
+    ],
+    "new_missing": [],
+    "reason": "inactive result-specific input or optional renal method; existing prepared parent expected reused, primary anchor review separate"
+  }
+]

@@ -1,0 +1,524 @@
+{
+  "snapshot": "8a17ae3f99839548742ee509a23d060ea451ed0018c48432dc73b9ba68de4359",
+  "cards": 38,
+  "parameter_rows": 211,
+  "distinct_parameter_value_unit_source_locator_groups": 104,
+  "parameters_changed_from_recheck1": 0,
+  "input_rows": 906,
+  "always_inputs": 511,
+  "source_contract_records": 215,
+  "typed_source_condition_records": 127,
+  "urgent_stop_records": 44,
+  "source_gate_records": 44,
+  "selected_paths": 531,
+  "prepared_cases": 5224,
+  "ledger_rows": 2230,
+  "necessity_decisions": 265,
+  "primary_numeric_assertions": 14,
+  "independently_reconstructed_new_case_properties": 144,
+  "case_properties_not_independent_medical_facts": true,
+  "primary_interpretations": [
+    "SER symptomatic hyponatremia consider cessation+medicalcare",
+    "PREG current suicidal event consider cessation+treatment/medicalhelp",
+    "DULOX persistent BP increase consider adjust/gradual stop",
+    "XR suspected SS severity-based reduce/stop",
+    "SCAR immediate+conditional alternative",
+    "XR seven interaction class actions",
+    "SER own CYP3A4 avoid in bothpairs",
+    "DULOX additional product identity",
+    "PREG/PHEN unsupported resumption gap"
+  ],
+  "safe_author_negative_mutations_reexecuted": 55,
+  "own_properties": 12,
+  "own_A_domain_negative_author_missed": true,
+  "static_errors": 0,
+  "whole_given_conflicting_expected_groups": 0,
+  "projection_conflicts": 0,
+  "causal_order_affected_paths": 21,
+  "causal_order_affected_rules": [
+    "ser-adult-adjust"
+  ],
+  "source_files_changed": [],
+  "not_completed": [
+    "Исчерпывающая независимая рецензия каждой фразы полных ОХЛП/ЛВ, всех4.8/5 и всех клинических дельт редакций.",
+    "Не все individual INN→source-class mappings/взаимодействия комбинаций проверены; synthetic class fixtures не исполненный классификатор.",
+    "Не доказана необходимость каждого always поля каждого результата и глобально минимальный путь.",
+    "531prepared traces не покрывают все возможные клинические/unknown комбинации и сами не исполняют medical evaluator; unknown interaction-class fullcases есть, но таких selected graph paths нет.",
+    "Не запускалось приложение/клиническая валидация; это не требование данного исследовательского этапа."
+  ],
+  "review_depth_by_card": [
+    {
+      "rule_id": "ago-depression-start",
+      "numeric_rows": 8,
+      "input_rows": 26,
+      "source_refs": [
+        "RU-AGO",
+        "RU-DEP"
+      ],
+      "depth": "Структура, опубликованные параметры и применимые семейства источниковых условий рассмотрены; all-condition exhaustiveness/necessity не заявляется",
+      "conditional_gap": [
+        "R2-05"
+      ]
+    },
+    {
+      "rule_id": "ago-gad-start",
+      "numeric_rows": 8,
+      "input_rows": 26,
+      "source_refs": [
+        "RU-AGO",
+        "RU-GAD"
+      ],
+      "depth": "Структура, опубликованные параметры и применимые семейства источниковых условий рассмотрены; all-condition exhaustiveness/necessity не заявляется",
+      "conditional_gap": [
+        "R2-05"
+      ]
+    },
+    {
+      "rule_id": "ago-stop",
+      "numeric_rows": 0,
+      "input_rows": 2,
+      "source_refs": [
+        "RU-AGO",
+        "RU-GAD"
+      ],
+      "depth": "Структура, опубликованные параметры и применимые семейства источниковых условий рассмотрены; all-condition exhaustiveness/necessity не заявляется",
+      "conditional_gap": []
+    },
+    {
+      "rule_id": "dulox-depression-start",
+      "numeric_rows": 2,
+      "input_rows": 23,
+      "source_refs": [
+        "RU-DULOX",
+        "RU-DEP"
+      ],
+      "depth": "Структура, опубликованные параметры и применимые семейства источниковых условий рассмотрены; all-condition exhaustiveness/necessity не заявляется",
+      "conditional_gap": [
+        "R2-01"
+      ]
+    },
+    {
+      "rule_id": "dulox-gad-adjust",
+      "numeric_rows": 3,
+      "input_rows": 28,
+      "source_refs": [
+        "RU-DULOX",
+        "RU-GAD"
+      ],
+      "depth": "Структура, опубликованные параметры и применимые семейства источниковых условий рассмотрены; all-condition exhaustiveness/necessity не заявляется",
+      "conditional_gap": [
+        "R2-01"
+      ]
+    },
+    {
+      "rule_id": "dulox-gad-start",
+      "numeric_rows": 5,
+      "input_rows": 25,
+      "source_refs": [
+        "RU-DULOX",
+        "RU-GAD"
+      ],
+      "depth": "Структура, опубликованные параметры и применимые семейства источниковых условий рассмотрены; all-condition exhaustiveness/necessity не заявляется",
+      "conditional_gap": [
+        "R2-01",
+        "R2-05"
+      ]
+    },
+    {
+      "rule_id": "dulox-taper-limit",
+      "numeric_rows": 2,
+      "input_rows": 8,
+      "source_refs": [
+        "RU-DULOX",
+        "RU-GAD"
+      ],
+      "depth": "Структура, опубликованные параметры и применимые семейства источниковых условий рассмотрены; all-condition exhaustiveness/necessity не заявляется",
+      "conditional_gap": [
+        "R2-01"
+      ]
+    },
+    {
+      "rule_id": "esc-adult-adjust",
+      "numeric_rows": 5,
+      "input_rows": 28,
+      "source_refs": [
+        "RU-GAD",
+        "RU-PANIC",
+        "RU-ESC"
+      ],
+      "depth": "Структура, опубликованные параметры и применимые семейства источниковых условий рассмотрены; all-condition exhaustiveness/necessity не заявляется",
+      "conditional_gap": []
+    },
+    {
+      "rule_id": "esc-cyp2c19-start",
+      "numeric_rows": 7,
+      "input_rows": 26,
+      "source_refs": [
+        "RU-ESC"
+      ],
+      "depth": "Структура, опубликованные параметры и применимые семейства источниковых условий рассмотрены; all-condition exhaustiveness/necessity не заявляется",
+      "conditional_gap": []
+    },
+    {
+      "rule_id": "esc-elderly-start",
+      "numeric_rows": 7,
+      "input_rows": 26,
+      "source_refs": [
+        "RU-ESC"
+      ],
+      "depth": "Структура, опубликованные параметры и применимые семейства источниковых условий рассмотрены; all-condition exhaustiveness/necessity не заявляется",
+      "conditional_gap": []
+    },
+    {
+      "rule_id": "esc-gad-start",
+      "numeric_rows": 7,
+      "input_rows": 26,
+      "source_refs": [
+        "RU-ESC"
+      ],
+      "depth": "Структура, опубликованные параметры и применимые семейства источниковых условий рассмотрены; all-condition exhaustiveness/necessity не заявляется",
+      "conditional_gap": []
+    },
+    {
+      "rule_id": "esc-hepatic-start",
+      "numeric_rows": 7,
+      "input_rows": 26,
+      "source_refs": [
+        "RU-ESC"
+      ],
+      "depth": "Структура, опубликованные параметры и применимые семейства источниковых условий рассмотрены; all-condition exhaustiveness/necessity не заявляется",
+      "conditional_gap": []
+    },
+    {
+      "rule_id": "esc-panic-start",
+      "numeric_rows": 9,
+      "input_rows": 26,
+      "source_refs": [
+        "RU-ESC"
+      ],
+      "depth": "Структура, опубликованные параметры и применимые семейства источниковых условий рассмотрены; all-condition exhaustiveness/necessity не заявляется",
+      "conditional_gap": []
+    },
+    {
+      "rule_id": "esc-social-start",
+      "numeric_rows": 7,
+      "input_rows": 26,
+      "source_refs": [
+        "RU-ESC"
+      ],
+      "depth": "Структура, опубликованные параметры и применимые семейства источниковых условий рассмотрены; all-condition exhaustiveness/necessity не заявляется",
+      "conditional_gap": []
+    },
+    {
+      "rule_id": "esc-taper-limit",
+      "numeric_rows": 4,
+      "input_rows": 24,
+      "source_refs": [
+        "RU-GAD",
+        "RU-ESC",
+        "RU-PANIC"
+      ],
+      "depth": "Структура, опубликованные параметры и применимые семейства источниковых условий рассмотрены; all-condition exhaustiveness/necessity не заявляется",
+      "conditional_gap": []
+    },
+    {
+      "rule_id": "fluvox-depression-start",
+      "numeric_rows": 7,
+      "input_rows": 23,
+      "source_refs": [
+        "RU-FLUVOX",
+        "RU-DEP"
+      ],
+      "depth": "Структура, опубликованные параметры и применимые семейства источниковых условий рассмотрены; all-condition exhaustiveness/necessity не заявляется",
+      "conditional_gap": []
+    },
+    {
+      "rule_id": "fluvox-taper-limit",
+      "numeric_rows": 1,
+      "input_rows": 11,
+      "source_refs": [
+        "RU-FLUVOX",
+        "RU-DEP"
+      ],
+      "depth": "Структура, опубликованные параметры и применимые семейства источниковых условий рассмотрены; all-condition exhaustiveness/necessity не заявляется",
+      "conditional_gap": []
+    },
+    {
+      "rule_id": "parox-panic-kr",
+      "numeric_rows": 10,
+      "input_rows": 26,
+      "source_refs": [
+        "RU-PANIC",
+        "RU-PAROX"
+      ],
+      "depth": "Структура, опубликованные параметры и применимые семейства источниковых условий рассмотрены; all-condition exhaustiveness/necessity не заявляется",
+      "conditional_gap": []
+    },
+    {
+      "rule_id": "parox-taper-example",
+      "numeric_rows": 4,
+      "input_rows": 9,
+      "source_refs": [
+        "RU-DEP",
+        "RU-PAROX",
+        "RU-PANIC"
+      ],
+      "depth": "Структура, опубликованные параметры и применимые семейства источниковых условий рассмотрены; all-condition exhaustiveness/necessity не заявляется",
+      "conditional_gap": [
+        "R2-02"
+      ]
+    },
+    {
+      "rule_id": "phen-taper-limit",
+      "numeric_rows": 0,
+      "input_rows": 8,
+      "source_refs": [
+        "RU-PHEN",
+        "RU-PANIC"
+      ],
+      "depth": "Структура, опубликованные параметры и применимые семейства источниковых условий рассмотрены; all-condition exhaustiveness/necessity не заявляется",
+      "conditional_gap": [
+        "R2-02",
+        "R2-03"
+      ]
+    },
+    {
+      "rule_id": "preg-gad-adjust",
+      "numeric_rows": 9,
+      "input_rows": 28,
+      "source_refs": [
+        "RU-GAD",
+        "RU-PANIC",
+        "RU-PREG"
+      ],
+      "depth": "Структура, опубликованные параметры и применимые семейства источниковых условий рассмотрены; all-condition exhaustiveness/necessity не заявляется",
+      "conditional_gap": [
+        "R2-01"
+      ]
+    },
+    {
+      "rule_id": "preg-gad-start",
+      "numeric_rows": 9,
+      "input_rows": 23,
+      "source_refs": [
+        "RU-GAD",
+        "RU-PREG"
+      ],
+      "depth": "Структура, опубликованные параметры и применимые семейства источниковых условий рассмотрены; all-condition exhaustiveness/necessity не заявляется",
+      "conditional_gap": [
+        "R2-01",
+        "R2-05"
+      ]
+    },
+    {
+      "rule_id": "preg-renal-start",
+      "numeric_rows": 14,
+      "input_rows": 22,
+      "source_refs": [
+        "RU-GAD",
+        "RU-PREG"
+      ],
+      "depth": "Структура, опубликованные параметры и применимые семейства источниковых условий рассмотрены; all-condition exhaustiveness/necessity не заявляется",
+      "conditional_gap": [
+        "R2-01"
+      ]
+    },
+    {
+      "rule_id": "preg-taper-limit",
+      "numeric_rows": 3,
+      "input_rows": 23,
+      "source_refs": [
+        "RU-GAD",
+        "RU-PREG"
+      ],
+      "depth": "Структура, опубликованные параметры и применимые семейства источниковых условий рассмотрены; all-condition exhaustiveness/necessity не заявляется",
+      "conditional_gap": [
+        "R2-01",
+        "R2-02",
+        "R2-03"
+      ]
+    },
+    {
+      "rule_id": "ser-adult-adjust",
+      "numeric_rows": 7,
+      "input_rows": 24,
+      "source_refs": [
+        "RU-GAD",
+        "RU-PANIC",
+        "RU-SER"
+      ],
+      "depth": "Структура, опубликованные параметры и применимые семейства источниковых условий рассмотрены; all-condition exhaustiveness/necessity не заявляется",
+      "conditional_gap": [
+        "R2-01",
+        "R2-04",
+        "R2-05"
+      ]
+    },
+    {
+      "rule_id": "ser-panic-start",
+      "numeric_rows": 7,
+      "input_rows": 18,
+      "source_refs": [
+        "RU-SER"
+      ],
+      "depth": "Структура, опубликованные параметры и применимые семейства источниковых условий рассмотрены; all-condition exhaustiveness/necessity не заявляется",
+      "conditional_gap": [
+        "R2-01"
+      ]
+    },
+    {
+      "rule_id": "ser-social-start",
+      "numeric_rows": 7,
+      "input_rows": 18,
+      "source_refs": [
+        "RU-SER"
+      ],
+      "depth": "Структура, опубликованные параметры и применимые семейства источниковых условий рассмотрены; all-condition exhaustiveness/necessity не заявляется",
+      "conditional_gap": [
+        "R2-01"
+      ]
+    },
+    {
+      "rule_id": "ser-taper-limit",
+      "numeric_rows": 3,
+      "input_rows": 19,
+      "source_refs": [
+        "RU-PANIC",
+        "RU-SER"
+      ],
+      "depth": "Структура, опубликованные параметры и применимые семейства источниковых условий рассмотрены; all-condition exhaustiveness/necessity не заявляется",
+      "conditional_gap": [
+        "R2-01"
+      ]
+    },
+    {
+      "rule_id": "switch-esc-ago",
+      "numeric_rows": 7,
+      "input_rows": 34,
+      "source_refs": [
+        "RU-DEP",
+        "RU-ESC",
+        "RU-AGO"
+      ],
+      "depth": "Структура, опубликованные параметры и применимые семейства источниковых условий рассмотрены; all-condition exhaustiveness/necessity не заявляется",
+      "conditional_gap": []
+    },
+    {
+      "rule_id": "switch-esc-ser",
+      "numeric_rows": 1,
+      "input_rows": 16,
+      "source_refs": [
+        "RU-DEP",
+        "RU-SER",
+        "RU-ESC"
+      ],
+      "depth": "Структура, опубликованные параметры и применимые семейства источниковых условий рассмотрены; all-condition exhaustiveness/necessity не заявляется",
+      "conditional_gap": []
+    },
+    {
+      "rule_id": "switch-parox-ago-selected-example",
+      "numeric_rows": 11,
+      "input_rows": 42,
+      "source_refs": [
+        "RU-DEP",
+        "RU-PAROX",
+        "RU-AGO"
+      ],
+      "depth": "Структура, опубликованные параметры и применимые семейства источниковых условий рассмотрены; all-condition exhaustiveness/necessity не заявляется",
+      "conditional_gap": []
+    },
+    {
+      "rule_id": "switch-parox-ago",
+      "numeric_rows": 7,
+      "input_rows": 40,
+      "source_refs": [
+        "RU-DEP",
+        "RU-PAROX",
+        "RU-AGO"
+      ],
+      "depth": "Структура, опубликованные параметры и применимые семейства источниковых условий рассмотрены; all-condition exhaustiveness/necessity не заявляется",
+      "conditional_gap": []
+    },
+    {
+      "rule_id": "switch-ser-ago",
+      "numeric_rows": 7,
+      "input_rows": 39,
+      "source_refs": [
+        "RU-DEP",
+        "RU-SER",
+        "RU-AGO"
+      ],
+      "depth": "Структура, опубликованные параметры и применимые семейства источниковых условий рассмотрены; all-condition exhaustiveness/necessity не заявляется",
+      "conditional_gap": [
+        "R2-01"
+      ]
+    },
+    {
+      "rule_id": "switch-ser-esc",
+      "numeric_rows": 1,
+      "input_rows": 16,
+      "source_refs": [
+        "RU-DEP",
+        "RU-SER",
+        "RU-ESC"
+      ],
+      "depth": "Структура, опубликованные параметры и применимые семейства источниковых условий рассмотрены; all-condition exhaustiveness/necessity не заявляется",
+      "conditional_gap": [
+        "R2-01"
+      ]
+    },
+    {
+      "rule_id": "venla-xr-gad-start",
+      "numeric_rows": 5,
+      "input_rows": 37,
+      "source_refs": [
+        "RU-VENLA-XR",
+        "RU-GAD"
+      ],
+      "depth": "Структура, опубликованные параметры и применимые семейства источниковых условий рассмотрены; all-condition exhaustiveness/necessity не заявляется",
+      "conditional_gap": [
+        "R2-01"
+      ]
+    },
+    {
+      "rule_id": "venla-xr-panic-form-limit",
+      "numeric_rows": 4,
+      "input_rows": 37,
+      "source_refs": [
+        "RU-VENLA-XR",
+        "RU-PANIC",
+        "RU-VENLA-IR"
+      ],
+      "depth": "Структура, опубликованные параметры и применимые семейства источниковых условий рассмотрены; all-condition exhaustiveness/necessity не заявляется",
+      "conditional_gap": [
+        "R2-01"
+      ]
+    },
+    {
+      "rule_id": "venla-xr-social-start",
+      "numeric_rows": 5,
+      "input_rows": 37,
+      "source_refs": [
+        "RU-VENLA-XR",
+        "RU-PHOB"
+      ],
+      "depth": "Структура, опубликованные параметры и применимые семейства источниковых условий рассмотрены; all-condition exhaustiveness/necessity не заявляется",
+      "conditional_gap": [
+        "R2-01"
+      ]
+    },
+    {
+      "rule_id": "venla-xr-taper-limit",
+      "numeric_rows": 1,
+      "input_rows": 10,
+      "source_refs": [
+        "RU-VENLA-XR",
+        "RU-GAD"
+      ],
+      "depth": "Структура, опубликованные параметры и применимые семейства источниковых условий рассмотрены; all-condition exhaustiveness/necessity не заявляется",
+      "conditional_gap": [
+        "R2-01"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "protected_files": 575,
+  "original_source_files": 17,
+  "changed_or_missing": [],
+  "core_file_count": 122,
+  "core_changes": [],
+  "status": "pass",
+  "own_writes_only": "research/acceptance_v2_audit/",
+  "initial_noncore_changes": [
+    "research/00_summary.md",
+    "research/01_scope_and_sources.md",
+    "research/02_rules.md",
+    "research/03_question_flows.md",
+    "research/04_switch_matrix.md",
+    "research/05_gaps_and_conflicts.md",
+    "research/06_implementation_brief.md",
+    "research/07_acceptance.md",
+    "research/08_russian_priority_update.md",
+    "research/09_download_links.md",
+    "research/10_source_audit.md",
+    "research/remediation_round3/align_main_verifier.py",
+    "research/remediation_round3/prepare_candidate.py",
+    "research/remediation_round3/promote_candidate.py",
+    "research/search_log.csv"
+  ]
+}

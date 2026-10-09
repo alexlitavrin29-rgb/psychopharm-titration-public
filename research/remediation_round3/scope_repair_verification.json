@@ -1,0 +1,50 @@
+{
+  "status": "pass",
+  "source_stop_cases": 234,
+  "bounded_action_cases": 229,
+  "reference_cases": 531,
+  "unknown_class_paths": 91,
+  "negative_mutations": [
+    {
+      "mutation": "stop_inherits_taper",
+      "rejected": true
+    },
+    {
+      "mutation": "reference_grants_overlap",
+      "rejected": true
+    },
+    {
+      "mutation": "hidden_unknown_maoi",
+      "rejected": true
+    },
+    {
+      "mutation": "PHEN_stale_locator",
+      "rejected": true
+    },
+    {
+      "mutation": "B_condition_uses_A_phase",
+      "rejected": true
+    },
+    {
+      "mutation": "dementia_without_elder_qualifier",
+      "rejected": true
+    },
+    {
+      "mutation": "unknown_cause",
+      "rejected": true
+    },
+    {
+      "mutation": "wrong_source_owner",
+      "rejected": true
+    },
+    {
+      "mutation": "unknown_actor_phase",
+      "rejected": true
+    }
+  ],
+  "criteria_changed": [
+    18
+  ],
+  "scope": "Finite primary source-action/referral and data-flow regression; no clinical engine, clinical validation or complete medical correctness proof",
+  "errors": []
+}

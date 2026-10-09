@@ -1,0 +1,683 @@
+schema_version: '1.0'
+rule_id: phen-taper-limit
+development_status: extracted_research_not_executable
+language: ru
+identity:
+  title: 'бромдигидрохлорфенилбензодиазепин: ограничения отмены'
+  mode: taper
+  drug_inn: бромдигидрохлорфенилбензодиазепин
+  from_drug_inn: null
+  to_drug_inn: null
+  formulation: Феназепам, ородисперсные таблетки 0,25/0,5/1 мг; риска не предназначена для деления (§3 с.1)
+  route: oral
+  diagnosis_label_ru: Паническое расстройство
+  classification_system: МКБ-10
+  diagnosis_code: F41.0
+  jurisdiction: RU_versioned_sources
+  registration_identity_source: Точная запись ЛП-№(005387)-(РГ-RU); текущая официальная ОХЛП §1–3 с.1, регистрационный
+    штамп07.05.2026, экспертный отчёт05.05.2026 №9041/0004. Ородисперсная форма0,25/0,5/1мг; риска не предназначена
+    для деления.
+applicability:
+  population_description: Взрослые от 18 лет; показание и клиническое действие выбирает врач.
+  age_constraints:
+  - minimum: 18
+    inclusive: true
+    unit: year
+    source_ref: RU-PHEN
+    source_locator: §1–3 с.1; §4.1–4.2 с.1–3; §4.3–4.4 с.3–4; §4.5–4.6 с.4–5
+  pregnancy: Применение при беременности противопоказано; инструкция с.3–5. Это не разрешение резкой отмены уже
+    принимаемого препарата.
+  lactation: Период грудного вскармливания — противопоказание; с.3–5. Прекращение/снижение требует отдельного решения
+    врача.
+  renal_constraints:
+  - При недостаточности функции почек — осторожность; при длительной терапии контроль, с.2/4. Числовой коэффициент
+    не задан.
+  hepatic_constraints:
+  - При печёночной недостаточности — осторожность; при длительной терапии контроль печёночных ферментов/крови, с.2/4.
+    Числовой коэффициент не задан.
+  comorbidity_constraints:
+  - Противопоказания включают миастению, острую дыхательную недостаточность, тяжёлую ХОБЛ, тяжёлую депрессию и острые
+    отравления перечисленными веществами; с.3–5. Это не автоматический календарь отмены.
+  interacting_drugs:
+  - Взаимное усиление действия с другими средствами, угнетающими ЦНС, и этанолом; клозапин может усиливать угнетение
+    дыхания; с.4. Требуется клинический разбор без выдуманной процентной поправки.
+  other_conditions: []
+  exclusions: []
+  indication_status_in_russia: RU_indication_in_read_original_latest_registry_text_separate
+  source_refs:
+  - RU-PHEN
+  - RU-PANIC
+inputs:
+- input_id: age
+  question_ru: Возраст?
+  data_type: integer
+  unit: year
+  allowed_values: []
+  required_when: Для этого качественного источникового результата возраст — отдельно сообщённый контекст. Применимость
+    взрослой инструкции остаётся условной; unknown не подтверждает возраст. Индивидуальный срок/календарь и детский
+    режим не рассчитываются. Для будущего индивидуального плана возраст станет отдельным обязательным входом.
+  show_when: Для этого качественного источникового результата возраст — отдельно сообщённый контекст. Применимость
+    взрослой инструкции остаётся условной; unknown не подтверждает возраст. Индивидуальный срок/календарь и детский
+    режим не рассчитываются. Для будущего индивидуального плана возраст станет отдельным обязательным входом.
+  why_needed: Для этого качественного источникового результата возраст — отдельно сообщённый контекст. Применимость
+    взрослой инструкции остаётся условной; unknown не подтверждает возраст. Индивидуальный срок/календарь и детский
+    режим не рассчитываются. Для будущего индивидуального плана возраст станет отдельным обязательным входом.
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Only an active required operand blocks its individual result; optional source-only context
+    stays explicitly not_assessed and never becomes a negative or clinical clearance
+  source_refs:
+  - RU-PHEN
+  input_role: reported_source_information
+  source_locator: §4.2 с.2–3; §4.3 с.3
+  missing_states:
+  - unknown
+  - not_assessed
+  required_for_individual_result: false
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: reported_source_information
+  necessity_reason: Для этого качественного источникового результата возраст — отдельно сообщённый контекст. Применимость
+    взрослой инструкции остаётся условной; unknown не подтверждает возраст. Индивидуальный срок/календарь и детский
+    режим не рассчитываются. Для будущего индивидуального плана возраст станет отдельным обязательным входом.
+  fact_origin: patient_fact
+- input_id: form
+  question_ru: Форма и разрешённые дозировки?
+  data_type: structured_form
+  unit: null
+  allowed_values: []
+  required_when: Exact predicate; otherwise only if explicitly supplied
+  show_when: Exact predicate; otherwise only if explicitly supplied
+  why_needed: 'Только качественная справка по выбранному взрослому источниковому профилю: индивидуальная доза/ступени/срок
+    не вычисляются. Фактическая форма и сообщённые симптомы сохраняются, но неизвестная форма/симптомы не препятствуют
+    показу условной источниковой справки. Они остаются not_assessed; применимость продукта пациенту не подтверждается.
+    Для исполнения индивидуального плана или источникового действия идентичность фактического препарата и текущая
+    фаза проверяются отдельно.'
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Named unassessed context; no normality or clinical clearance inferred
+  source_refs:
+  - RU-PHEN
+  input_role: reported_source_information
+  source_locator: §1–3 физ.с.1; §4.2 физ.с.2
+  missing_states:
+  - unknown
+  - not_assessed
+  structure_ref: remediation_round3/input_contracts.yaml#structures/structured_form
+  required_for_individual_result: false
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: reported_source_information
+  necessity_reason: 'Только качественная справка по выбранному взрослому источниковому профилю: индивидуальная доза/ступени/срок
+    не вычисляются. Фактическая форма и сообщённые симптомы сохраняются, но неизвестная форма/симптомы не препятствуют
+    показу условной источниковой справки. Они остаются not_assessed; применимость продукта пациенту не подтверждается.
+    Для исполнения индивидуального плана или источникового действия идентичность фактического препарата и текущая
+    фаза проверяются отдельно.'
+  fact_origin: product_metadata
+- input_id: current_dose
+  question_ru: Какова сообщённая исходная/последняя суточная доза курса (мг/сут) для контекста риска отмены? Она
+    не подтверждает фазу текущего приёма.
+  data_type: number
+  unit: mg/day
+  allowed_values: []
+  required_when: Результат содержит только опубликованное ограничение/выбор врача, без расчёта индивидуальных ступеней,
+    возобновляемой дозы или числового темпа. Текущая доза/длительность/прошлая отмена не операнды такого результата;
+    известный контекст сохраняется, неизвестный явно not_assessed. Для последующего индивидуального плана эти сведения
+    потребуются в отдельном контракте. Опубликованные условия срочного прекращения и текущие симптомы остаются обязательными.
+  show_when: Если врач сообщает контекст; не обязательный этап выдачи ограниченного источникового результата
+  why_needed: Результат содержит только опубликованное ограничение/выбор врача, без расчёта индивидуальных ступеней,
+    возобновляемой дозы или числового темпа. Текущая доза/длительность/прошлая отмена не операнды такого результата;
+    известный контекст сохраняется, неизвестный явно not_assessed. Для последующего индивидуального плана эти сведения
+    потребуются в отдельном контракте. Опубликованные условия срочного прекращения и текущие симптомы остаются обязательными.
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Show explicit not_assessed context warning; do not invent a numerical plan or grant clinical
+    clearance
+  source_refs:
+  - RU-PHEN
+  input_role: reported_context
+  source_locator: §4.2 с.2
+  missing_states:
+  - unknown
+  - not_assessed
+  required_for_individual_result: false
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: reported_context
+  necessity_reason: Результат содержит только опубликованное ограничение/выбор врача, без расчёта индивидуальных
+    ступеней, возобновляемой дозы или числового темпа. Текущая доза/длительность/прошлая отмена не операнды такого
+    результата; известный контекст сохраняется, неизвестный явно not_assessed. Для последующего индивидуального
+    плана эти сведения потребуются в отдельном контракте. Опубликованные условия срочного прекращения и текущие
+    симптомы остаются обязательными.
+  fact_origin: Explicitly reported initial/last daily course dose for source withdrawal context; no assertion of
+    ongoing use. Current-treatment source action needs a separately supplied counted treatment phase.
+  fact_semantics: reported_course_dose_without_current_use_confirmation
+- input_id: duration
+  question_ru: Длительность лечения?
+  data_type: number
+  unit: week
+  allowed_values: []
+  required_when: Результат содержит только опубликованное ограничение/выбор врача, без расчёта индивидуальных ступеней,
+    возобновляемой дозы или числового темпа. Текущая доза/длительность/прошлая отмена не операнды такого результата;
+    известный контекст сохраняется, неизвестный явно not_assessed. Для последующего индивидуального плана эти сведения
+    потребуются в отдельном контракте. Опубликованные условия срочного прекращения и текущие симптомы остаются обязательными.
+  show_when: Если врач сообщает контекст; не обязательный этап выдачи ограниченного источникового результата
+  why_needed: Результат содержит только опубликованное ограничение/выбор врача, без расчёта индивидуальных ступеней,
+    возобновляемой дозы или числового темпа. Текущая доза/длительность/прошлая отмена не операнды такого результата;
+    известный контекст сохраняется, неизвестный явно not_assessed. Для последующего индивидуального плана эти сведения
+    потребуются в отдельном контракте. Опубликованные условия срочного прекращения и текущие симптомы остаются обязательными.
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Show explicit not_assessed context warning; do not invent a numerical plan or grant clinical
+    clearance
+  source_refs:
+  - RU-PHEN
+  input_role: reported_context
+  source_locator: §4.2 с.2; §4.4 с.4
+  missing_states:
+  - unknown
+  - not_assessed
+  required_for_individual_result: false
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: reported_context
+  necessity_reason: Результат содержит только опубликованное ограничение/выбор врача, без расчёта индивидуальных
+    ступеней, возобновляемой дозы или числового темпа. Текущая доза/длительность/прошлая отмена не операнды такого
+    результата; известный контекст сохраняется, неизвестный явно not_assessed. Для последующего индивидуального
+    плана эти сведения потребуются в отдельном контракте. Опубликованные условия срочного прекращения и текущие
+    симптомы остаются обязательными.
+  fact_origin: patient_fact
+- input_id: withdrawal_severity
+  question_ru: Симптомы отмены по оценке врача?
+  data_type: enum
+  unit: null
+  allowed_values:
+  - нет
+  - лёгкие
+  - умеренные
+  - тяжёлые
+  - непереносимые
+  - выраженные
+  - unknown
+  - not_assessed
+  required_when: §4.4 с.4 описывает синдром отмены; сообщённые текущие симптомы требуют отдельной оценки врача.
+    PHEN-источник не устанавливает удержание/возврат/замедление по тяжести и не вычисляет индивидуальный темп. Необычные
+    реакции сохраняют отдельное опубликованное условие прекращения.
+  show_when: §4.4 с.4 описывает синдром отмены; сообщённые текущие симптомы требуют отдельной оценки врача. PHEN-источник
+    не устанавливает удержание/возврат/замедление по тяжести и не вычисляет индивидуальный темп. Необычные реакции
+    сохраняют отдельное опубликованное условие прекращения.
+  why_needed: §4.4 с.4 описывает синдром отмены; сообщённые текущие симптомы требуют отдельной оценки врача. PHEN-источник
+    не устанавливает удержание/возврат/замедление по тяжести и не вычисляет индивидуальный темп. Необычные реакции
+    сохраняют отдельное опубликованное условие прекращения.
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Only an active required operand blocks its individual result; optional source-only context
+    stays explicitly not_assessed and never becomes a negative or clinical clearance
+  source_refs:
+  - RU-PHEN
+  input_role: reported_source_information
+  source_locator: §4.4 с.4, синдром отмены; индивидуальное решение врача без опубликованного правила hold/resumption/slower
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+    симптомов отмены нет: нет
+  required_for_individual_result: false
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  requirement_predicate:
+    kind: reported_source_information
+  necessity_reason: §4.4 с.4 описывает синдром отмены; сообщённые текущие симптомы требуют отдельной оценки врача.
+    PHEN-источник не устанавливает удержание/возврат/замедление по тяжести и не вычисляет индивидуальный темп. Необычные
+    реакции сохраняют отдельное опубликованное условие прекращения.
+  fact_origin: patient_fact
+- input_id: past_withdrawal
+  question_ru: Были тяжёлые симптомы при прошлой отмене?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: Результат содержит только опубликованное ограничение/выбор врача, без расчёта индивидуальных ступеней,
+    возобновляемой дозы или числового темпа. Текущая доза/длительность/прошлая отмена не операнды такого результата;
+    известный контекст сохраняется, неизвестный явно not_assessed. Для последующего индивидуального плана эти сведения
+    потребуются в отдельном контракте. Опубликованные условия срочного прекращения и текущие симптомы остаются обязательными.
+  show_when: Если врач сообщает контекст; не обязательный этап выдачи ограниченного источникового результата
+  why_needed: Результат содержит только опубликованное ограничение/выбор врача, без расчёта индивидуальных ступеней,
+    возобновляемой дозы или числового темпа. Текущая доза/длительность/прошлая отмена не операнды такого результата;
+    известный контекст сохраняется, неизвестный явно not_assessed. Для последующего индивидуального плана эти сведения
+    потребуются в отдельном контракте. Опубликованные условия срочного прекращения и текущие симптомы остаются обязательными.
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Show explicit not_assessed context warning; do not invent a numerical plan or grant clinical
+    clearance
+  source_refs:
+  - RU-PHEN
+  input_role: reported_context
+  source_locator: §4.4 с.4
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    да: true
+    нет: false
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  required_for_individual_result: false
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  requirement_predicate:
+    kind: reported_context
+  necessity_reason: Результат содержит только опубликованное ограничение/выбор врача, без расчёта индивидуальных
+    ступеней, возобновляемой дозы или числового темпа. Текущая доза/длительность/прошлая отмена не операнды такого
+    результата; известный контекст сохраняется, неизвестный явно not_assessed. Для последующего индивидуального
+    плана эти сведения потребуются в отдельном контракте. Опубликованные условия срочного прекращения и текущие
+    симптомы остаются обязательными.
+  fact_origin: patient_fact
+- input_id: unusual_reactions
+  question_ru: Возникли необычные реакции, перечисленные в §4.4 (агрессивность, возбуждение, страх, суицидальные
+    мысли, галлюцинации, усиление судорог, нарушения сна)?
+  data_type: boolean
+  unit: null
+  allowed_values: []
+  required_when: Only when explicitly supplied for this bounded source result
+  show_when: Only when explicitly supplied
+  why_needed: Для этого ограниченного источникового результата индивидуальная доза/календарь/разрешение старта не
+    выдаются. Пациентское сведение не является обязательной предпосылкой чтения выбранной российской инструкции.
+    Явно сообщённые значения и источниковые ограничения сохраняются и считаются; отсутствие/unknown остаётся not_assessed.
+    Сообщённое текущее условие источникового прекращения получает приоритет только при подтверждённых идентичности
+    фактического препарата и фазе соответствующего A/B. Для отдельного индивидуального дозового/клинического действия
+    нужен его собственный контракт входов.
+  changes:
+  - source_action_or_applicability
+  unknown_allowed: true
+  action_if_unknown: Named unassessed context; no clinical clearance or automatic action
+  source_refs:
+  - RU-PHEN
+  input_role: reported_current_event
+  source_locator: §4.4 с.4
+  required_for_individual_result: false
+  requirement_predicate:
+    kind: reported_current_event
+  necessity_reason: Для этого ограниченного источникового результата индивидуальная доза/календарь/разрешение старта
+    не выдаются. Пациентское сведение не является обязательной предпосылкой чтения выбранной российской инструкции.
+    Явно сообщённые значения и источниковые ограничения сохраняются и считаются; отсутствие/unknown остаётся not_assessed.
+    Сообщённое текущее условие источникового прекращения получает приоритет только при подтверждённых идентичности
+    фактического препарата и фазе соответствующего A/B. Для отдельного индивидуального дозового/клинического действия
+    нужен его собственный контракт входов.
+  fact_origin: explicit physician fact for this calculation; no inference from other negative answers
+- input_id: medicines
+  question_ru: Сопутствующие препараты, если врач сообщает их для отдельного источникового предупреждения?
+  data_type: medication_list
+  unit: null
+  allowed_values: []
+  source_refs:
+  - RU-PHEN
+  source_locator: §1–3 с.1; §4.1–4.2 с.1–3; §4.3–4.4 с.3–4; §4.5–4.6 с.4–5
+  unknown_allowed: true
+  changes:
+  - source_interaction_warning
+  fact_origin: explicitly supplied current medicines; no hidden questionnaire
+  requirement_predicate:
+    kind: reported_source_information
+  input_role: reported_source_information
+  required_for_individual_result: false
+  required_when: Optional explicitly supplied medicines; not a routine prerequisite to the qualitative cessation
+    limit
+  show_when: Если врач сообщает сопутствующие лекарства для источникового предупреждения
+  necessity_reason: Известное избегаемое сочетание сохраняется с источником; unknown/непредоставленный список не
+    нормализуется. Это предупреждение при выбранной отмене, не клинический допуск и не запрет прекращения.
+  why_needed: Source warning for explicitly supplied current medicines; no new initiation clearance
+  action_if_unknown: Explicit unassessed interaction context; qualitative cessation limit remains source-bound,
+    no numerical plan
+clinical_parameters: []
+logic:
+  representation: conditional_source_rule
+  conditions:
+  - Применимость к указанному показанию/форме подтверждена в пределах дозового расчёта; это не полный клинический
+    допуск.
+  actions:
+  - Дозу при отмене уменьшают постепенно (§4.2 PDF с.2). Источник не задаёт числовой шаг/процент/период отмены.
+  - Длительность курса 2 недели, иногда до 2 месяцев — не длительность снижения и не обязательный календарь.
+  - При внезапной отмене возможен синдром отмены; зависимость/сложный случай требует отдельной клинической стратегии.
+    ASAM остаётся сравнением.
+  parameter_refs: []
+  source_refs:
+  - RU-PHEN
+  - RU-PANIC
+  clinician_choices:
+  - Необходимость изменения лечения и неоценённые модулем клинические обстоятельства.
+  missing_data_behaviour: insufficient_data с конкретным отсутствующим полем, без безусловной дозы.
+  unsupported_case_behaviour: Назвать неприменимую ветку; не переносить другую форму/показание.
+  contraindicated_case_behaviour: Не выдавать схему противопоказанного сочетания, указать источник.
+  conflicts: []
+  composite_rule_dependencies: []
+  combination_justification: КР определяет клиническую область, инструкция — дозовые параметры; новые коэффициенты
+    не добавлены.
+  result_contract_ref: remediation_round3/result_contracts.yaml#rules/phen-taper-limit
+  individual_output_gate: All required typed inputs and applicable conditional inputs must be known; evaluate every
+    source-specific gate in result_contract. A caution has clinician_choice, not an invented coefficient. No blanket
+    clinical clearance.
+  form_split_permitted: false
+  input_necessity_policy_ref: remediation_round3/necessity_decisions.json#phen-taper-limit
+output:
+  result_type: branch_selected
+  medication_inn: бромдигидрохлорфенилбензодиазепин
+  dose_per_administration: null
+  administrations_per_day: null
+  total_daily_dose: null
+  unit: mg
+  formulation: Феназепам, таблетки диспергируемые 0,25/0,5/1 мг
+  schedule: []
+  warnings:
+  - Последующие этапы условны; максимум не является целью.
+  - Неоценённое клиническое обстоятельство не считается отсутствующим.
+  - Версия копии зафиксирована; последнее содержание реестрового документа проверяется перед клиническим внедрением.
+  mandatory_checks: []
+  clinician_decisions_remaining: []
+  rounding_or_formulation_rule: Не округлять медицинскую дозу; целые формы/разрешённое деление. Невозможная доза
+    — явный отказ формы.
+  source_refs:
+  - RU-PHEN
+  - RU-PANIC
+  branches:
+  - branch_id: source_limit
+    when: Selected source product profile; bounded adult-source reference, no individual dose/calendar; known urgent
+      events have their own actor/phase contract
+    expected_output:
+      result_type: clinician_choice
+      total_daily_dose_mg: null
+      dose_per_administration_mg: null
+      administrations_per_day: null
+      schedule: []
+      missing_fields: []
+      unconditional_future_stages: false
+      duration_constraint: {}
+      full_taper_calendar: null
+      universal_percentage: null
+      clinical_clearance: false
+      individual_duration_weeks: null
+      individual_taper_schedule: null
+    source_basis:
+    - source_id: RU-PHEN
+      version: 'Официальная ОХЛП реестра: штамп регистрации 2026-05-07; экспертный отчёт 2026-05-05 №9041/0004;
+        получена 08.10.2026'
+      locator: §1–3 с.1; §4.1–4.2 с.1–3; §4.3–4.4 с.3–4; §4.5–4.6 с.4–5
+      sha256: 850486408d225fc603f8f053765491c1e9fd688c5c3d765cdf80a34dd2b3cf1a
+  - branch_id: withdrawal
+    when: withdrawal symptoms present
+    expected_output:
+      result_type: clinician_choice
+      total_daily_dose_mg: null
+      dose_per_administration_mg: null
+      administrations_per_day: null
+      schedule: []
+      missing_fields: []
+      unconditional_future_stages: false
+      automatic_next_reduction: false
+      slower_step: null
+      prior_dose_resumption: null
+      clinical_clearance: false
+      prior_dose_resumption_source_gap: Selected product source does not provide a universal prior-dose resumption
+        rule; separate physician decision, no automatic resumption dose.
+      individual_duration_weeks: null
+      individual_taper_schedule: null
+      withdrawal_management_source_gap: Current product source describes withdrawal risk, but provides no severity-based
+        hold/restore/slower algorithm. Any changed individual plan is a separate physician decision; no doses or
+        stages are calculated.
+    source_basis:
+    - source_id: RU-PHEN
+      version: 'Официальная ОХЛП реестра: штамп регистрации 2026-05-07; экспертный отчёт 2026-05-05 №9041/0004;
+        получена 08.10.2026'
+      locator: §1–3 с.1; §4.1–4.2 с.1–3; §4.3–4.4 с.3–4; §4.5–4.6 с.4–5
+      sha256: 850486408d225fc603f8f053765491c1e9fd688c5c3d765cdf80a34dd2b3cf1a
+  selection_contract:
+  - unavailable_source
+  - known immediate stop/exclusion
+  - invalid/missing applicable field
+  - unresolved source caution/modifier
+  - dose branch
+sources:
+- source_id: RU-PHEN
+  title: Феназепам, инструкция ородиспергируемых таблеток
+  organization_or_authors: Валента Фарм
+  url: https://lk.regmed.ru/Register/EAEU_SmPC
+  doi_or_registry_id: ЛП-№(005387)-(РГ-RU)
+  publication_date: null
+  version_or_update_date: 'Официальная ОХЛП реестра: штамп регистрации 2026-05-07; экспертный отчёт 2026-05-05 №9041/0004;
+    получена 08.10.2026'
+  accessed_on: '2026-10-08'
+  source_type: label
+  jurisdiction: RU/EAEU
+  access_status: full
+  exact_locator: §1–3 с.1; §4.1–4.2 с.1–3; §4.3–4.4 с.3–4; §4.5–4.6 с.4–5
+  evidence_status: Инструкция/ОХЛП; не валидированная модель индивидуальной дозы
+  what_was_tested: Не исследовался создаваемый продукт. Содержание и ограничения описаны в evidence_limitations.
+  evidence_limitations: Точный числовой темп отмены не задан. Проценты ASAM в РФ автоматически не переносятся. Текущий
+    официальный оригинал получен и сохранён со SHA; несовпадение со старой копией отделено от медицинского сравнения
+    содержания. Новая первичная копия получена из указанной строки реестра; старые копии сохранены как исторические.
+    Даты штампов не подменяют незаполненное поле пересмотра. Принадлежность версии и медицинский перенос проверяются
+    раздельно.
+  reuse_license_or_restriction: Собственное извлечение фактических правил и короткие локаторы; лицензия на код/полное
+    руководство не предполагается.
+  document_fingerprint:
+    source_id: RU-PHEN
+    url: https://lk.regmed.ru/Register/EAEU_SmPC
+    sha256: 850486408d225fc603f8f053765491c1e9fd688c5c3d765cdf80a34dd2b3cf1a
+    pages: 10
+    accessed_on: '2026-10-08'
+  local_file: remediation_round3/originals/RU-PHEN_current.pdf
+  document_copies:
+  - source_id: RU-PHEN
+    local_file: source_downloads/Феназепам — бромдигидрохлорфенилбензодиазепин.pdf
+    sha256: e8e6303c10b7b9b31ae6b344eb49d209e148ba5584ac8f55954c8384cfe49a89
+    version: Снимок текущей ссылки производителя 08.10.2026; дата пересмотра в PDF отсутствует
+    url: https://www.valentapharm.com/upload/iblock/fec/juwc91mjfnc770nida6ni9syp92x00if.pdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: false
+    latest_registration_revision_confirmed: false
+  - source_id: RU-PHEN
+    local_file: audit/retrieved/RU-PHEN.pdf
+    sha256: e8e6303c10b7b9b31ae6b344eb49d209e148ba5584ac8f55954c8384cfe49a89
+    version: Снимок текущей ссылки производителя 08.10.2026; дата пересмотра в PDF отсутствует
+    url: https://www.valentapharm.com/upload/iblock/fec/juwc91mjfnc770nida6ni9syp92x00if.pdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: false
+    latest_registration_revision_confirmed: false
+  - source_id: RU-PHEN
+    local_file: remediation/retrieved/RU-PHEN.pdf
+    sha256: e8e6303c10b7b9b31ae6b344eb49d209e148ba5584ac8f55954c8384cfe49a89
+    version: Снимок текущей ссылки производителя 08.10.2026; дата пересмотра в PDF отсутствует
+    url: https://www.valentapharm.com/upload/iblock/fec/juwc91mjfnc770nida6ni9syp92x00if.pdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: false
+    latest_registration_revision_confirmed: false
+  - source_id: RU-PHEN
+    local_file: remediation_round3/originals/RU-PHEN_current.pdf
+    sha256: 850486408d225fc603f8f053765491c1e9fd688c5c3d765cdf80a34dd2b3cf1a
+    version: 'Официальная ОХЛП реестра: штамп регистрации 2026-05-07; экспертный отчёт 2026-05-05 №9041/0004; получена
+      08.10.2026'
+    url: https://lk.regmed.ru/Register/EAEU_SmPC
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: true
+  dates:
+    registration: '2024-05-07'
+    revision: null
+    publication: null
+    download: '2026-10-08'
+    document_registration_stamp: '2026-05-07'
+    expert_report: '2026-05-05'
+  latest_registration_revision_confirmed: true
+  registry_observation_round2:
+    url: https://lk.regmed.ru/Register/EAEU_SmPC
+    search: Феназепам
+    observed_on: '2026-10-08'
+    registration_number: ЛП-№(005387)-(РГ-RU)
+    registration_date: '2024-05-07'
+    formulation: таблетки, диспергируемые в полости рта, 0.25/0.5/1 мг
+    holder: Валента Фарм
+    proves: Registration identity for the exact orodispersible form
+    does_not_prove: Identity of the downloaded PDF with the latest approved registry text
+  latest_registry_document_comparison:
+    record: remediation_round3/current_registry_documents.json#RU-PHEN
+    original: remediation_round3/originals/RU-PHEN_current.pdf
+    sha256: 850486408d225fc603f8f053765491c1e9fd688c5c3d765cdf80a34dd2b3cf1a
+    authority_evidence: Exact RU/form row observed in official registry; user downloaded after CAPTCHA request;
+      matching title/form and stamps visually checked
+    comparison_scope: Listed primary sections and dependency review; no inference of byte identity to historical
+      copies
+  registry_observation:
+    registry: https://lk.regmed.ru/Register/EAEU_SmPC
+    query: Феназепам
+    registration_number: ЛП-№(005387)-(РГ-RU)
+    registration_date: '2024-05-07'
+    forms: таблетки, диспергируемые в полости рта,0,25/0,5/1мг
+    accessed_on: '2026-10-08'
+    read_part: Exact RU/form row observed in official registry; user downloaded after CAPTCHA request; matching
+      title/form and stamps visually checked
+  own_read_scope:
+    text_pages:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 10
+    visual_pages:
+    - 1
+    - 2
+    remaining_sections_not_claimed_read: true
+- source_id: RU-PANIC
+  title: Паническое расстройство, КР 456_3
+  organization_or_authors: Минздрав РФ; Российское общество психиатров
+  url: https://apicr.minzdrav.gov.ru/api.ashx?id=456_3&op=GetClinrecPdf
+  doi_or_registry_id: '456_3'
+  publication_date: null
+  version_or_update_date: '2024; каталог: опубликовано 19.09.2024, применяется'
+  accessed_on: '2026-10-08'
+  source_type: guideline
+  jurisdiction: RU
+  access_status: full
+  exact_locator: §3.1, PDF с.25–33; приложение А3, с.76–77
+  evidence_status: Клиническая рекомендация; не валидация калькулятора
+  what_was_tested: Не исследовался создаваемый продукт. Содержание и ограничения описаны в evidence_limitations.
+  evidence_limitations: Взрослые F41.0. Терапевтический диапазон не равен стартовой дозе.
+  reuse_license_or_restriction: Открытый доступ не означает разрешение перераспространять полный документ. Сохранены
+    собственное извлечение фактических правил, локаторы и ссылки; код и большие цитаты не копируются.
+  document_fingerprint:
+    source_id: RU-PANIC
+    url: https://apicr.minzdrav.gov.ru/api.ashx?id=456_3&op=GetClinrecPdf
+    sha256: a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d
+    pages: 140
+  local_file: audit/retrieved/RU-PANIC.pdf
+  document_copies:
+  - source_id: RU-PANIC
+    local_file: audit/retrieved/RU-PANIC.pdf
+    sha256: a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d
+    version: '2024; каталог: опубликовано 19.09.2024, применяется'
+    url: https://apicr.minzdrav.gov.ru/api.ashx?id=456_3&op=GetClinrecPdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: false
+  - source_id: RU-PANIC
+    local_file: remediation/retrieved/RU-PANIC.pdf
+    sha256: a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d
+    version: '2024; каталог: опубликовано 19.09.2024, применяется'
+    url: https://apicr.minzdrav.gov.ru/api.ashx?id=456_3&op=GetClinrecPdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: false
+  dates:
+    registration: null
+    revision: null
+    publication: null
+    download: '2026-10-08'
+  latest_registration_revision_confirmed: false
+  current_guideline_status_evidence: remediation_round2/catalog_check.json; 08.10.2026; CodeVersion/ApplyStatusCalculated=1
+verification:
+  primary_source_checked: true
+  all_clinical_parameters_have_sources: true
+  population_and_indication_checked: true
+  russian_applicability_checked: true
+  formulation_feasibility_checked: false
+  combined_rules_justified: true
+  source_transfer_check: Current exact Russian product originals obtained and active owner/version/hash/locators
+    synchronized; listed primary sections reviewed. Full independent medical acceptance and question necessity remain
+    separate; calculator_not_implemented.
+  clinical_review: not_performed
+  product_clinical_validation: not_performed
+  ready_for_technical_implementation: false
+  unresolved_items:
+  - Полный календарь или исполнимость конкретной формы отсутствует; частичный результат не автосхема.
+  - Минимальность входов/полные обычные пути и повторная независимая проверка медицинских исправлений остаются отдельными
+    условиями приёмки V2.
+  transfer_scope: Explicit source-bound branch contracts and prepared expectations only. Current originals obtained;
+    pending independent findings, result-specific necessity and V2 ordinary-question limit are not inferred complete
+    from download. No clinical validation.
+  round3_status: candidate_primary_transfer_and_necessity_review; independent acceptance pending
+  russian_applicability_scope: Identity of the exact registered Russian product/form and published indication scope;
+    does not grant patient clearance or prove every transferred condition.
+test_cases:
+- case_id: phen-taper-limit__no-ASAM-default
+  synthetic: true
+  given:
+    current_dose: 1
+    duration: 12
+  expected:
+    automatic_taper_percentage: null
+    automatic_full_calendar: null
+    foreign_fallback_allowed: false
+  source_refs:
+  - RU-PHEN
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+- case_id: phen-taper-limit__course-not-taper
+  synthetic: true
+  given:
+    duration: 2
+  expected:
+    taper_duration_equals_course: false
+  source_refs:
+  - RU-PHEN
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+profile:
+  country: RU
+  selection_status: RU_profile_research
+  foreign_fallback_allowed: false
+card_type: partial_source_constraint
+input_contract_ref: remediation_round3/input_contracts.yaml#fragment_bindings/phen-taper-limit

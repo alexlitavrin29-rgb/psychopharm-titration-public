@@ -1,0 +1,53 @@
+{
+  "rule_id": "ago-depression-start",
+  "result": "adult individualized start dose from RU-AGO",
+  "initial_selections": [
+    "diagnosis",
+    "mode",
+    "identified_product_form_strength"
+  ],
+  "independent_facts": [
+    {
+      "field": "age",
+      "locator": "§4.2 с.2, adult/elderly applicability"
+    },
+    {
+      "field": "hepatic",
+      "locator": "§4.3 с.3, active disease/cirrhosis"
+    },
+    {
+      "field": "ALT_ratio",
+      "locator": "§4.4 с.3, each baseline liver test"
+    },
+    {
+      "field": "AST_ratio",
+      "locator": "§4.4 с.3, each baseline liver test"
+    },
+    {
+      "field": "medicines",
+      "locator": "§4.3 с.3; §4.5 с.5–6, CYP1A2"
+    },
+    {
+      "field": "allergy",
+      "locator": "§4.3 с.3"
+    },
+    {
+      "field": "galactose_intolerance",
+      "locator": "§4.3 с.3"
+    },
+    {
+      "field": "complete_lactase_deficiency",
+      "locator": "§4.3 с.3"
+    },
+    {
+      "field": "glucose_galactose_malabsorption",
+      "locator": "§4.3 с.3"
+    }
+  ],
+  "count": 12,
+  "lower_bound_not_full_clearance": true,
+  "source_ref": "RU-AGO",
+  "reason": "Even after excluding all observation-only, renal and pregnancy/lactation inputs, the unchanged source-specific individual applicability contract requires 12 independent selections/facts. No universal clearance checkbox; AST cannot be inferred from ALT; liver insufficiency cannot be inferred from enzymes.",
+  "remaining_requirement": "Criterion 18 remains partial; 12 is a sufficient lower bound for the conflict, not proof of a universal optimal questionnaire",
+  "proposed_requirement_change": "Allow 5–10 dose questions after a separately enumerated, source-specific applicability check; count and show its independent facts openly. Requires a separate user decision and reacceptance; not applied here."
+}

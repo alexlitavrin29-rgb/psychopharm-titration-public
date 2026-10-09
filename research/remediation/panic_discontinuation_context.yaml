@@ -1,0 +1,17 @@
+source_ref: RU-PANIC
+source_locator: 456_3 §3.1 PDF с.31–32, приложение Б4
+course:
+  minimum_months: 6
+  comment_alternative_months: 12
+  meaning: профилактика рецидива; сохранять достигнутую эффективную дозу
+discontinuation:
+  gradual: true
+  careful_observation: true
+  source_minimum_phrase_months:
+  - 2
+  - 3
+  taper_only_duration_months: null
+  observation_only_duration_months: null
+  interpretation: Фраза относится к постепенному снижению с тщательным контролем; источник не разделяет их длительности.
+    Не строить собственный точный календарь.
+guideline_algorithm: 'Б4: профилактика/ведение СОПА; не график универсальных доз'

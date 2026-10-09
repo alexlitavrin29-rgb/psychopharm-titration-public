@@ -1,0 +1,260 @@
+[
+  {
+    "id": "R2-01",
+    "status": "open",
+    "severity": "substantial integration defect",
+    "criteria": [
+      14,
+      17,
+      21
+    ],
+    "rule_ids": [
+      "ser-panic-start",
+      "ser-social-start",
+      "preg-gad-start",
+      "preg-renal-start",
+      "dulox-depression-start",
+      "dulox-gad-start",
+      "venla-xr-gad-start",
+      "venla-xr-social-start",
+      "venla-xr-panic-form-limit",
+      "dulox-gad-adjust",
+      "dulox-taper-limit",
+      "preg-gad-adjust",
+      "preg-taper-limit",
+      "ser-adult-adjust",
+      "ser-taper-limit",
+      "switch-ser-ago",
+      "switch-ser-esc",
+      "venla-xr-taper-limit"
+    ],
+    "file": "research/remediation_round3/input_contracts.yaml",
+    "line": 147,
+    "executor_claim": "Фазы первой дозы, текущей терапии и unknown типизированы и различаются.",
+    "fact": "Домен treatment_phase содержит только ongoing/selected_mode;18cases используют not_started/unknown. Graph отдельно считает unknown, а author validate принимает invalid_phase. Кроме этого schema явно определяет selected_mode только для start=first administration;9 новых positive current-event cases для nonstart A используют selected_mode при условии source_phase=ongoing. Вопросы событий говорят о текущем приёме, но show_when требует отдельно известную фазу A/B: необходимо согласовать происхождение этого факта. Одно желаемое дозовое действие не доказывает факт приёма.",
+    "source_basis": [
+      {
+        "source_id": "RU-SER",
+        "version": "Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является датой содержания",
+        "sha256": "3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba",
+        "path": "source_downloads/Золофт — сертралин.pdf",
+        "locator": "§4.4 физ.6"
+      },
+      {
+        "source_id": "RU-PREG",
+        "version": "Официальная ОХЛП реестра: штамп регистрации 2025-08-13; экспертный отчёт 2024-01-26 №1319/0011; получена 08.10.2026",
+        "sha256": "b605c8b381c24d59a48bbab9bfa8621eb70f6ec16ad9e3679aa8457f811663e5",
+        "path": "remediation_round3/originals/RU-PREG_current.pdf",
+        "locator": "§4.4 физ.8"
+      },
+      {
+        "source_id": "RU-DULOX",
+        "version": "Официальная ОХЛП реестра: штамп регистрации 2026-03-24; экспертный отчёт 2026-03-20 №5759/0015; получена 08.10.2026",
+        "sha256": "0551a7306ca4a56b552336bb63fa34905cf4e312702ba811a792221892a42ca1",
+        "path": "remediation_round3/originals/RU-DULOX_current.pdf",
+        "locator": "§4.4 физ.4"
+      },
+      {
+        "source_id": "RU-VENLA-XR",
+        "version": "Официальная ОХЛП реестра: штамп регистрации 2026-06-25; экспертный отчёт 2026-06-11 №11677/0019; получена 08.10.2026",
+        "sha256": "a21e90141db69d9be5ca44ac3c8c6059c8c82a880f34bbf15143348c36ef4666",
+        "path": "remediation_round3/originals/RU-VENLA-XR_current.pdf",
+        "locator": "§4.4 физ.8"
+      },
+      {
+        "source": "research schema / prepared cases, not a new medical value",
+        "locator": "input_contracts.yaml external_context.treatment_phase; recheck2_checks.json undeclared_A_phase_cases; A_phase_semantics.json"
+      }
+    ],
+    "impact": "Не менять источниковые числа; текущий enum A нельзя перенести как согласованный контракт. Unknown expected правильно запрашивает фазу, но этот input не принадлежит объявленному домену.",
+    "fix": "Согласовать домен и mode-specific origin A, проверить enum A наряду с B. Для current-event action нужна подтверждённая taking phase. Допустимо вывести ongoing у nonstart из активного, реально потреблённого current_dose с документированной семантикой фактически принимаемой сейчас дозы данного A/product, известным положительным значением и происхождением. Report-only/inactive/proposed/unknown/zero этого не подтверждают; явные unknown/not_started нельзя перекрывать таким выводом. При отсутствии подтверждённого current-treatment факта нужна явная A phase с отдельным count. Повторно не спрашивать уже подтверждённую фазу. Добавить unknown/not_started nonstart A fixtures и отрицательные мутации.",
+    "closure": "Новый SHA; все cases имеют объявленную фазу, invalid phase отвергнута, known/not_started/unknown actors/actions/count сохранены. Это допустимое условие закрытия ещё не применённого патча, не утверждение о проверке будущей версии."
+  },
+  {
+    "id": "R2-02",
+    "status": "open",
+    "severity": "substantial necessity gap",
+    "criteria": [
+      17
+    ],
+    "related": [
+      "V2-12"
+    ],
+    "rule_ids": [
+      "parox-taper-example",
+      "preg-taper-limit",
+      "phen-taper-limit"
+    ],
+    "file": "research/remediation_round3/rules/parox-taper-example.yaml",
+    "line": 107,
+    "executor_claim": "Каждое always поле необходимо именно выбранному результату.",
+    "fact": "Существующий branch other/current10 не вычисляет календарь, но duration/past_withdrawal всегда обязательны. Собственный допустимый example_selected=false также не использует current_dose; это логический witness, не существующий frozen fixture. Age в качественных PREG/PHEN ограничениях нуждается в отдельном доказательстве: запрет применения/взрослая область не равны запрету показать условное взрослое источниковое правило прекращения.",
+    "source_basis": [
+      {
+        "source_id": "RU-PAROX",
+        "version": "Официальная ОХЛП реестра: штамп регистрации 2025-02-14; экспертный отчёт 2025-02-12 №3370/0003; получена 08.10.2026",
+        "sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069",
+        "path": "remediation_round3/originals/RU-PAROX_current.pdf",
+        "locator": "§4.2 физ.3–4; §4.4 физ.9–10"
+      },
+      {
+        "source_id": "RU-DEP",
+        "version": "2024; каталог: опубликовано 26.08.2024, применяется",
+        "sha256": "2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd",
+        "path": "source_snapshots/depression-301_3.pdf",
+        "locator": "Б5 физ.105–106"
+      },
+      {
+        "source_id": "RU-PREG",
+        "version": "Официальная ОХЛП реестра: штамп регистрации 2025-08-13; экспертный отчёт 2024-01-26 №1319/0011; получена 08.10.2026",
+        "sha256": "b605c8b381c24d59a48bbab9bfa8621eb70f6ec16ad9e3679aa8457f811663e5",
+        "path": "remediation_round3/originals/RU-PREG_current.pdf",
+        "locator": "§4.2 физ.4–5; §4.3 физ.6"
+      },
+      {
+        "source_id": "RU-PHEN",
+        "version": "Официальная ОХЛП реестра: штамп регистрации 2026-05-07; экспертный отчёт 2026-05-05 №9041/0004; получена 08.10.2026",
+        "sha256": "850486408d225fc603f8f053765491c1e9fd688c5c3d765cdf80a34dd2b3cf1a",
+        "path": "remediation_round3/originals/RU-PHEN_current.pdf",
+        "locator": "§4.2 физ.2–3; §4.3–4.4 физ.3–4"
+      }
+    ],
+    "impact": "22 демоции полезны, но не доказывают неудалимость остальных 511 always входов по каждому исходу. Ни эти сведения, ни возраст нельзя незаметно считать нормальными.",
+    "fix": "Разделить необходимость numerical selected40 и qualitative other; зависимые вопросы после контролирующего выбора. Для population-unknown допускается только явно условная взрослая справка, без individual_duration/schedule/clinical clearance; child не получает взрослую схему.",
+    "closure": "Новый result-specific predicate/ledger/expected с missing/unknown/false выбора и current10, взрослым/неизвестным/детским возрастом; срочные source actions сохраняются. Все оставшиеся необходимости отдельно доказаны либо отмечены открытыми."
+  },
+  {
+    "id": "R2-03",
+    "status": "open",
+    "severity": "substantial source-scope residual",
+    "criteria": [
+      9,
+      10,
+      15,
+      30
+    ],
+    "related": [
+      "R1-06"
+    ],
+    "rule_ids": [
+      "phen-taper-limit",
+      "preg-taper-limit"
+    ],
+    "file": "research/remediation_round3/rules/phen-taper-limit.yaml",
+    "line": 212,
+    "executor_claim": "Неподтверждённое возобновление PREG/PHEN заменено null+gap и опубликованная постепенность сохранена.",
+    "fact": "Expected resumption действительно null+gap. Однако PHEN why_needed/necessity_reason приписывают источнику удержание/возврат/замедление; logic.actions ссылается на постепенность физ.3 вместо2. PREG logic.actions[1] приписывает КР более медленную индивидуальную отмену при длительном приёме/высоком риске: применимое найденное приложение RU-GAD Б2 физ.77–78 относится к АНТИДЕПРЕССАНТАМ, не PREG.",
+    "source_basis": [
+      {
+        "source_id": "RU-PHEN",
+        "version": "Официальная ОХЛП реестра: штамп регистрации 2026-05-07; экспертный отчёт 2026-05-05 №9041/0004; получена 08.10.2026",
+        "sha256": "850486408d225fc603f8f053765491c1e9fd688c5c3d765cdf80a34dd2b3cf1a",
+        "path": "remediation_round3/originals/RU-PHEN_current.pdf",
+        "locator": "§4.2 физ.2, постепенность; §4.4 физ.4, синдром/необычные реакции"
+      },
+      {
+        "source_id": "RU-PREG",
+        "version": "Официальная ОХЛП реестра: штамп регистрации 2025-08-13; экспертный отчёт 2024-01-26 №1319/0011; получена 08.10.2026",
+        "sha256": "b605c8b381c24d59a48bbab9bfa8621eb70f6ec16ad9e3679aa8457f811663e5",
+        "path": "remediation_round3/originals/RU-PREG_current.pdf",
+        "locator": "§4.2 физ.4; §4.4 физ.9"
+      },
+      {
+        "source_id": "RU-GAD",
+        "version": "2024; каталог: опубликовано 19.09.2024, применяется",
+        "sha256": "c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a",
+        "path": "audit/retrieved/RU-GAD.pdf",
+        "locator": "Приложение Б2 физ.77–78: синдром отмены антидепрессантов"
+      }
+    ],
+    "impact": "Новой ошибочной числовой ступени/возобновляемой дозы нет. Но опубликованное основание PREG/PHEN действия и necessity цепочки всё ещё неверно расширено.",
+    "fix": "Убрать неподтверждённую атрибуцию hold/restore/slower, указать индивидуальное решение врача и конкретный source gap. PHEN постепенность физ.2; AD алгоритм оставить в его области. Обновить card/ledger/reasons/projections/indices согласованно.",
+    "closure": "Новый SHA; первичный PHEN/PREG scope совпадает с narrative/why/necessity/expected; поиск остаточных generic restore/slow атрибуций и изолированная scope mutation проходят."
+  },
+  {
+    "id": "R2-04",
+    "status": "open",
+    "severity": "substantial dialogue-order gap",
+    "criteria": [
+      17
+    ],
+    "rule_ids": [
+      "ser-adult-adjust"
+    ],
+    "file": "research/remediation_round3/rules/ser-adult-adjust.yaml",
+    "line": 396,
+    "executor_claim": "Граф даёт адаптивный полный путь нового расчёта, без скрытого предварительного ввода.",
+    "fact": "21 selected traces проверяют условные time_at_dose/response/tolerability/adherence/akathisia до ask_clinician_action; этот контроллер отсутствует в initial_selections. branch-increase: checks27/30/31/32/37, ask controller41. branch-keep: ask37. Builder определяет active по уже полному future given.",
+    "source_basis": [
+      {
+        "source_id": "RU-SER",
+        "version": "Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является датой содержания",
+        "sha256": "3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba",
+        "path": "source_downloads/Золофт — сертралин.pdf",
+        "locator": "§4.2 физ.2–3; акатизия §4.4 физ.6"
+      },
+      {
+        "source": "dependency_order_check.json",
+        "locator": "All21 ser-adult-adjust selected traces; graph/check/ask chronology"
+      }
+    ],
+    "impact": "Конечный факт-набор и count правильны, но это не доказывает причинный порядок нового короткого диалога. Дозовой калькулятор не запускался.",
+    "fix": "Контроллер спрашивается/явно поступает раньше зависимого check; топологический порядок по объявленным dependencies. Повторное использование реально известных текущих фактов отдельно от полного нового набора.",
+    "closure": "Новый граф/SHA; causal dependency check без обратных зависимостей, complete path counts/unknown/keep/increase клинические expected неизменны."
+  },
+  {
+    "id": "R2-05",
+    "status": "open",
+    "severity": "substantial unmet requirement",
+    "criteria": [
+      18
+    ],
+    "related": [
+      "V2-13"
+    ],
+    "rule_ids": [
+      "ago-depression-start",
+      "ago-gad-start",
+      "dulox-gad-start",
+      "preg-gad-start",
+      "ser-adult-adjust"
+    ],
+    "file": "research/remediation_round3/actual_question_paths.json",
+    "line": 1,
+    "executor_claim": "Обычные длинные пути честно оставлены открытыми; глобальный минимум не объявлен.",
+    "fact": "Независимый пересчёт подтверждает ordinary AGO20, DULOX-GAD17, PREG17/18 и SER increase+explicit reported negative event16. Они не переименованы в сложные. Обоснованный общий вариант ordinary≤15 пока не доказан.",
+    "source_basis": [
+      {
+        "source_id": "RU-AGO",
+        "version": "Официальная ОХЛП реестра: штамп регистрации 2024-12-28; экспертный отчёт 2024-12-23 №28427/0018; получена 08.10.2026",
+        "sha256": "a98d383832688cee9a09588b1a908555d01ed8b659281cdeee2646c1115ce7c1",
+        "path": "remediation_round3/originals/RU-AGO_current.pdf",
+        "locator": "§4.2–4.4 физ.1–5"
+      },
+      {
+        "source_id": "RU-DULOX",
+        "version": "Официальная ОХЛП реестра: штамп регистрации 2026-03-24; экспертный отчёт 2026-03-20 №5759/0015; получена 08.10.2026",
+        "sha256": "0551a7306ca4a56b552336bb63fa34905cf4e312702ba811a792221892a42ca1",
+        "path": "remediation_round3/originals/RU-DULOX_current.pdf",
+        "locator": "§4.2 физ.2–3; §4.3–4.4 физ.3–7"
+      },
+      {
+        "source_id": "RU-PREG",
+        "version": "Официальная ОХЛП реестра: штамп регистрации 2025-08-13; экспертный отчёт 2024-01-26 №1319/0011; получена 08.10.2026",
+        "sha256": "b605c8b381c24d59a48bbab9bfa8621eb70f6ec16ad9e3679aa8457f811663e5",
+        "path": "remediation_round3/originals/RU-PREG_current.pdf",
+        "locator": "§4.2–4.4 физ.3–10; §4.6 физ.12"
+      },
+      {
+        "source_id": "RU-SER",
+        "version": "Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является датой содержания",
+        "sha256": "3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba",
+        "path": "source_downloads/Золофт — сертралин.pdf",
+        "locator": "§4.2 физ.2–3; §4.4 физ.4,6"
+      }
+    ],
+    "impact": "Материально незакрытый №18; cap≤6. Короткий пример или справочная альтернатива не закрывает индивидуальный числовой путь.",
+    "fix": "Доказать result-specific необходимость и весь реальный допустимый путь ≤15 либо честно сохранить предел/непокрытую обычную ветку. Не удалять срочные действия или склеивать независимые сведения.",
+    "closure": "Источник + полный given/expected + causal graph/count + unknown/conditional alternatives. Narrow hepatic AGO assessment даёт арифметически17; потенциальная дополнительная renal demotion16 ещё не закрывает≤15. PREG frequency options без выбора не точный индивидуальный результат."
+  }
+]

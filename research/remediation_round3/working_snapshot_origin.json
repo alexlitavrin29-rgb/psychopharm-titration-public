@@ -1,0 +1,26 @@
+[
+  {
+    "file": "research\\remediation_round3\\result_contracts.yaml",
+    "inherited_from": "research\\remediation_round2\\result_contracts.yaml",
+    "sha256_at_copy": "38e4ee5e528f3908ccd4b7ca8852966712f95f63d1b1766577c8ce24217b1b63",
+    "status": "inherited candidate, not rechecked in round3"
+  },
+  {
+    "file": "research\\remediation_round3\\input_contracts.yaml",
+    "inherited_from": "research\\remediation_round2\\input_contracts.yaml",
+    "sha256_at_copy": "0979f7ca0346a4990039772532511cc22825520c5da8f50db20524cd3dba859d",
+    "status": "inherited candidate, not rechecked in round3"
+  },
+  {
+    "file": "research\\remediation_round3\\full_scenarios.json",
+    "inherited_from": "research\\remediation_round2\\full_scenarios.json",
+    "sha256_at_copy": "e1e47edde753edbd5544af9570847ec439b47792073e3f7abbef2adcced8e33b",
+    "status": "inherited candidate, not rechecked in round3"
+  },
+  {
+    "file": "research\\remediation_round3\\necessity_policy.yaml",
+    "inherited_from": "research\\remediation_round2\\necessity_policy.yaml",
+    "sha256_at_copy": "45ae722717d8a69f5a4fabee63615e341af8da6b7c5f47cf4086fe5d77b3e73d",
+    "status": "inherited candidate, not rechecked in round3"
+  }
+]

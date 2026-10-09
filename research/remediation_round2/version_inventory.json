@@ -1,0 +1,808 @@
+{
+  "date": "2026-10-08",
+  "scope": "All active product bases, auxiliary renal estimator and switching dependencies",
+  "active_label_bases": 11,
+  "current_confirmed_count": 2,
+  "unconfirmed": [
+    "RU-AGO",
+    "RU-DULOX",
+    "RU-FLUVOX",
+    "RU-PAROX",
+    "RU-PHEN",
+    "RU-PREG",
+    "RU-PREG-RICHTER",
+    "RU-VENLA-IR",
+    "RU-VENLA-XR"
+  ],
+  "excluded": "Foreign reference labels and RU-SER-2023/RU-ESC-JAN/PREG-RICHTER-ARCHIVE/CITAL/FLUOX/CLOMI archives are not current numeric bases",
+  "products": [
+    {
+      "source_id": "RU-AGO",
+      "product": "Вальдоксан (агомелатин), российская ОХЛП, 25 мг",
+      "registration": "ЛП-№(000528)-(РГ-RU)",
+      "version": "Копия производителя с именем 20241228; первичная регистрация 25.01.2022; поле пересмотра пустое",
+      "dates": {
+        "registration": "2022-01-25",
+        "revision": null,
+        "publication": null,
+        "download": "2026-10-08"
+      },
+      "primary_file": "source_downloads/Вальдоксан — агомелатин.pdf",
+      "primary_sha256": "1cf8e71b5c27891e17b5b7ab4dd7c8c02697a1d44bb287a57a1ee9de0fb85bd6",
+      "read_scope": "§4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16",
+      "latest_edition_confirmed": false,
+      "official_comparison": null,
+      "registry_identity": {
+        "registry": "https://lk.regmed.ru/Register/EAEU_SmPC",
+        "query": "Вальдоксан",
+        "registration_number": "ЛП-№(000528)-(РГ-RU)",
+        "registration_date": "2022-01-25",
+        "forms": "таблетки 25 мг",
+        "accessed_on": "2026-10-08",
+        "read_part": "Видимая официальная строка результата поиска; наличие ОХЛП/ЛВ. Сам документ этой записи не скачан; идентичность копии не заявлена."
+      },
+      "copies": [
+        {
+          "source_id": "RU-AGO",
+          "local_file": "source_downloads/Вальдоксан — агомелатин.pdf",
+          "sha256": "1cf8e71b5c27891e17b5b7ab4dd7c8c02697a1d44bb287a57a1ee9de0fb85bd6",
+          "version": "Копия производителя с именем 20241228; первичная регистрация 25.01.2022; поле пересмотра пустое",
+          "url": "https://servier.ru/wp-content/uploads/2023/09/20241228_spc-ru_valdoxan_rus.pdf",
+          "download_date": "2026-10-08",
+          "byte_identity_to_primary_snapshot": true,
+          "latest_registration_revision_confirmed": false
+        },
+        {
+          "source_id": "RU-AGO",
+          "local_file": "audit/retrieved/RU-AGO.pdf",
+          "sha256": "1cf8e71b5c27891e17b5b7ab4dd7c8c02697a1d44bb287a57a1ee9de0fb85bd6",
+          "version": "Копия производителя с именем 20241228; первичная регистрация 25.01.2022; поле пересмотра пустое",
+          "url": "https://servier.ru/wp-content/uploads/2023/09/20241228_spc-ru_valdoxan_rus.pdf",
+          "download_date": "2026-10-08",
+          "byte_identity_to_primary_snapshot": true,
+          "latest_registration_revision_confirmed": false
+        },
+        {
+          "source_id": "RU-AGO",
+          "local_file": "remediation/retrieved/RU-AGO.pdf",
+          "sha256": "1cf8e71b5c27891e17b5b7ab4dd7c8c02697a1d44bb287a57a1ee9de0fb85bd6",
+          "version": "Копия производителя с именем 20241228; первичная регистрация 25.01.2022; поле пересмотра пустое",
+          "url": "https://servier.ru/wp-content/uploads/2023/09/20241228_spc-ru_valdoxan_rus.pdf",
+          "download_date": "2026-10-08",
+          "byte_identity_to_primary_snapshot": true,
+          "latest_registration_revision_confirmed": false
+        },
+        {
+          "source_id": "RU-AGO",
+          "local_file": "../tmp_acceptance/AGO.pdf",
+          "sha256": "1cf8e71b5c27891e17b5b7ab4dd7c8c02697a1d44bb287a57a1ee9de0fb85bd6",
+          "version": "Копия производителя с именем 20241228; первичная регистрация 25.01.2022; поле пересмотра пустое",
+          "url": "https://servier.ru/wp-content/uploads/2023/09/20241228_spc-ru_valdoxan_rus.pdf",
+          "download_date": "2026-10-08",
+          "byte_identity_to_primary_snapshot": true,
+          "latest_registration_revision_confirmed": false
+        }
+      ],
+      "affected_cards": [
+        "ago-depression-start",
+        "ago-gad-start",
+        "ago-stop",
+        "switch-esc-ago",
+        "switch-parox-ago-selected-example",
+        "switch-parox-ago",
+        "switch-ser-ago"
+      ],
+      "required_action": "Obtain current official SmPC for this exact RU/form and necessary change list; compare stamp/version and all affected medical sections, not just filename/date/SHA."
+    },
+    {
+      "source_id": "RU-DULOX",
+      "product": "Дулоксента, ОХЛП, кишечнорастворимые капсулы 30/60 мг",
+      "registration": "ЛП-№(000186)-(РГ-RU)",
+      "version": "Пересмотр 18.07.2024, §10 с.35; первая регистрация 02.04.2021",
+      "dates": {
+        "registration": "2021-04-02",
+        "revision": "2024-07-18",
+        "publication": null,
+        "download": "2026-10-08"
+      },
+      "primary_file": "source_downloads/Дулоксента — дулоксетин.pdf",
+      "primary_sha256": "bcb5a8b9415f15fdae2ec8a8d00abe5788194c59893b6172294c4cf3db839786",
+      "read_scope": "§4.1–4.3 с.1–4; §4.4 с.5–9; §4.5 с.9–12; §4.6 с.12–13; §8–10 с.35",
+      "latest_edition_confirmed": false,
+      "official_comparison": null,
+      "registry_identity": {
+        "registry": "https://lk.regmed.ru/Register/EAEU_SmPC",
+        "query": "Дулоксента",
+        "registration_number": "ЛП-№(000186)-(РГ-RU)",
+        "registration_date": "2021-04-02",
+        "forms": "капсулы кишечнорастворимые 30/60 мг",
+        "accessed_on": "2026-10-08",
+        "read_part": "Видимая официальная строка результата поиска; наличие ОХЛП/ЛВ. Сам документ этой записи не скачан; идентичность копии не заявлена."
+      },
+      "copies": [
+        {
+          "source_id": "RU-DULOX",
+          "local_file": "source_downloads/Дулоксента — дулоксетин.pdf",
+          "sha256": "bcb5a8b9415f15fdae2ec8a8d00abe5788194c59893b6172294c4cf3db839786",
+          "version": "Пересмотр 18.07.2024, §10 с.35; первая регистрация 02.04.2021",
+          "url": "https://www.krka.ru/_assets/Duloxenta-CU_SmPC_18.07.2024.pdf",
+          "download_date": "2026-10-08",
+          "byte_identity_to_primary_snapshot": true,
+          "latest_registration_revision_confirmed": false
+        },
+        {
+          "source_id": "RU-DULOX",
+          "local_file": "audit/retrieved/RU-DULOX.pdf",
+          "sha256": "bcb5a8b9415f15fdae2ec8a8d00abe5788194c59893b6172294c4cf3db839786",
+          "version": "Пересмотр 18.07.2024, §10 с.35; первая регистрация 02.04.2021",
+          "url": "https://www.krka.ru/_assets/Duloxenta-CU_SmPC_18.07.2024.pdf",
+          "download_date": "2026-10-08",
+          "byte_identity_to_primary_snapshot": true,
+          "latest_registration_revision_confirmed": false
+        },
+        {
+          "source_id": "RU-DULOX",
+          "local_file": "remediation/retrieved/RU-DULOX.pdf",
+          "sha256": "bcb5a8b9415f15fdae2ec8a8d00abe5788194c59893b6172294c4cf3db839786",
+          "version": "Пересмотр 18.07.2024, §10 с.35; первая регистрация 02.04.2021",
+          "url": "https://www.krka.ru/_assets/Duloxenta-CU_SmPC_18.07.2024.pdf",
+          "download_date": "2026-10-08",
+          "byte_identity_to_primary_snapshot": true,
+          "latest_registration_revision_confirmed": false
+        }
+      ],
+      "affected_cards": [
+        "dulox-depression-start",
+        "dulox-gad-adjust",
+        "dulox-gad-start",
+        "dulox-taper-limit"
+      ],
+      "required_action": "Obtain current official SmPC for this exact RU/form and necessary change list; compare stamp/version and all affected medical sections, not just filename/date/SHA."
+    },
+    {
+      "source_id": "RU-ESC",
+      "product": "Селектра (эсциталопрам), текущая официальная ОХЛП РУ ЛП-№(012351)-(РГ-RU), штамп 31.10.2025/0002",
+      "registration": "ЛП-№(012351)-(РГ-RU)",
+      "version": "РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; экспертный отчёт 31.10.2025 №27320, последовательность 0002; текущая опубликованная ОХЛП реестра получена 08.10.2026",
+      "dates": {
+        "registration": "2025-11-05",
+        "expert_report": "2025-10-31",
+        "approval": null,
+        "revision": null,
+        "publication": null,
+        "download": "2026-10-08",
+        "filename_date_not_used": "30092025"
+      },
+      "primary_file": "remediation_round2/Selectra_current_registry.pdf",
+      "primary_sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "read_scope": "§1–3 с.1–2; §4.1–4.2 с.2–3; §4.3–4.4 с.4–7; §4.5 с.7–9; §4.6 с.10; регистрационный и экспертный штампы с.1",
+      "latest_edition_confirmed": true,
+      "official_comparison": {
+        "registry_url": "https://lk.regmed.ru/Register/EAEU_SmPC",
+        "observed_on": "2026-10-08",
+        "currently_listed_document": "1.3.1 Selectra_SmPC_30092025 _0002_clean (1747204851) [0002] штамп МЗ.pdf",
+        "currently_listed_documents_count": 1,
+        "comparison": "Human downloaded this listed file after CAPTCHA; local PDF registration/form/strengths and stamp visually match the opened registry PDF. This establishes the currently published official edition; unknown revision/publication dates are not fabricated.",
+        "sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+        "local_file": "remediation_round2/Selectra_current_registry.pdf"
+      },
+      "registry_identity": {
+        "registry": "https://lk.regmed.ru/Register/EAEU_SmPC",
+        "query": "Селектра",
+        "registration_number": "ЛП-№(012351)-(РГ-RU)",
+        "registration_date": "2025-11-05",
+        "forms": "таблетки, покрытые пленочной оболочкой, 5/10/15/20 мг",
+        "accessed_on": "2026-10-08",
+        "read_part": "Current full official original provided by human in round2; stamp/form/version checked. Latest comparison and SHA evidence in latest_registry_document_comparison.",
+        "document_name": null,
+        "expert_stamp": null,
+        "remediation_observation": "08.10.2026: Селектра, ЛП-№(012351)-(РГ-RU), 05.11.2025, 5/10/15/20 мг; при нажатии Скачать показана CAPTCHA; не решалась.",
+        "historical_read_part_before_round2": "Текущая строка: название, РУ, дата регистрации и силы формы; полный документ/штамп/страницы независимо не получены. Историческое заявление вынесено отдельно."
+      },
+      "copies": [
+        {
+          "local_file": "remediation_round2/Selectra_current_registry.pdf",
+          "sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+          "url": "https://lk.regmed.ru/Register/ViewPDFfromDAToken?Token=[REDACTED]",
+          "download_date": "2026-10-08",
+          "version": "РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; экспертный отчёт 31.10.2025 №27320, последовательность 0002; текущая опубликованная ОХЛП реестра получена 08.10.2026",
+          "latest_registration_revision_confirmed": true,
+          "byte_identity_to_primary_snapshot": true
+        },
+        {
+          "local_file": "remediation_round2/Selectra_current_registry_PIL.pdf",
+          "sha256": "ecdced774ec0e4782bdcd75e42fd9e82a4f909584584209ddc1d4aa4b93ed195",
+          "download_date": "2026-10-08",
+          "document_type": "PIL",
+          "role": "Separate patient leaflet; not the SmPC dose basis",
+          "latest_registration_revision_confirmed": true
+        }
+      ],
+      "affected_cards": [
+        "esc-adult-adjust",
+        "esc-cyp2c19-start",
+        "esc-elderly-start",
+        "esc-gad-start",
+        "esc-hepatic-start",
+        "esc-panic-start",
+        "esc-social-start",
+        "esc-taper-limit",
+        "switch-esc-ago",
+        "switch-esc-ser",
+        "switch-ser-esc"
+      ],
+      "required_action": null
+    },
+    {
+      "source_id": "RU-FLUVOX",
+      "product": "Феварин, ОХЛП 50/100 мг",
+      "registration": "ЛП-№(008757)-(РГ-RU), запись реестра прочитана 08.10.2026",
+      "version": "Имя опубликованной копии 07.02.2025/0002; поля §8–10 PDF пустые; РУ от 07.02.2025 подтверждено реестром",
+      "dates": {
+        "registration": "2025-02-07",
+        "revision": null,
+        "publication": null,
+        "download": "2026-10-08"
+      },
+      "primary_file": "source_downloads/Феварин — флувоксамин.pdf",
+      "primary_sha256": "ee988a504bf0e34d9562a5f606f8800c827214fc51f4994a4ab28de9c31ce1d6",
+      "read_scope": "§4.1–4.3 PDF с.1–3; §4.4–4.6 с.4–11; §8–10 с.19",
+      "latest_edition_confirmed": false,
+      "official_comparison": null,
+      "registry_identity": {
+        "registry": "https://lk.regmed.ru/Register/EAEU_SmPC",
+        "query": "Феварин",
+        "registration_number": "ЛП-№(008757)-(РГ-RU)",
+        "registration_date": "2025-02-07",
+        "forms": "таблетки 50/100 мг",
+        "accessed_on": "2026-10-08",
+        "read_part": "Видимая официальная строка результата поиска; наличие ОХЛП/ЛВ. Сам документ этой записи не скачан; идентичность копии не заявлена."
+      },
+      "copies": [
+        {
+          "source_id": "RU-FLUVOX",
+          "local_file": "source_downloads/Феварин — флувоксамин.pdf",
+          "sha256": "ee988a504bf0e34d9562a5f606f8800c827214fc51f4994a4ab28de9c31ce1d6",
+          "version": "Имя опубликованной копии 07.02.2025/0002; поля §8–10 PDF пустые; РУ от 07.02.2025 подтверждено реестром",
+          "url": "https://s3.k2.cloud/static.abbottpro.ru/iblock/1e1/1e119bb21898172a466b489db3ef4837/Fevarin-SmPC-0002_07.02.2025-_1_.pdf",
+          "download_date": "2026-10-08",
+          "byte_identity_to_primary_snapshot": true,
+          "latest_registration_revision_confirmed": false
+        },
+        {
+          "source_id": "RU-FLUVOX",
+          "local_file": "audit/retrieved/RU-FLUVOX.pdf",
+          "sha256": "ee988a504bf0e34d9562a5f606f8800c827214fc51f4994a4ab28de9c31ce1d6",
+          "version": "Имя опубликованной копии 07.02.2025/0002; поля §8–10 PDF пустые; РУ от 07.02.2025 подтверждено реестром",
+          "url": "https://s3.k2.cloud/static.abbottpro.ru/iblock/1e1/1e119bb21898172a466b489db3ef4837/Fevarin-SmPC-0002_07.02.2025-_1_.pdf",
+          "download_date": "2026-10-08",
+          "byte_identity_to_primary_snapshot": true,
+          "latest_registration_revision_confirmed": false
+        }
+      ],
+      "affected_cards": [
+        "fluvox-depression-start",
+        "fluvox-taper-limit"
+      ],
+      "required_action": "Obtain current official SmPC for this exact RU/form and necessary change list; compare stamp/version and all affected medical sections, not just filename/date/SHA."
+    },
+    {
+      "source_id": "RU-PAROX",
+      "product": "Рексетин (пароксетин), ЛВ и ОХЛП, 20 мг",
+      "registration": "ЛП-№(008861)-(РГ-RU)",
+      "version": "Первичная регистрация 14.02.2025; страница производителя: файл 26.03.2025; поле пересмотра пустое",
+      "dates": {
+        "registration": "2025-02-14",
+        "revision": null,
+        "publication": null,
+        "download": "2026-10-08"
+      },
+      "primary_file": "source_downloads/Рексетин — пароксетин.pdf",
+      "primary_sha256": "9f6f2646e102956826997ca7e93d84e90c7528db5ceb61896a3d4092841edabe",
+      "read_scope": "ОХЛП: PDF с.14–18 (§4.1–4.3), с.19–23 (§4.4), с.24–28 (§4.5–4.6), с.39 (§8–10)",
+      "latest_edition_confirmed": false,
+      "official_comparison": null,
+      "registry_identity": {
+        "registry": "https://lk.regmed.ru/Register/EAEU_SmPC",
+        "query": "Рексетин",
+        "registration_number": "ЛП-№(008861)-(РГ-RU)",
+        "registration_date": "2025-02-14",
+        "forms": "таблетки20/30; прочитанная ОХЛП только20",
+        "accessed_on": "2026-10-08",
+        "read_part": "Видимая официальная строка; реестровый PDF не скачан. Копия производителя не объявлена побайтово тождественной."
+      },
+      "copies": [
+        {
+          "source_id": "RU-PAROX",
+          "local_file": "source_downloads/Рексетин — пароксетин.pdf",
+          "sha256": "9f6f2646e102956826997ca7e93d84e90c7528db5ceb61896a3d4092841edabe",
+          "version": "Первичная регистрация 14.02.2025; страница производителя: файл 26.03.2025; поле пересмотра пустое",
+          "url": "https://www.gedeonrichter.com/ru/-/media/sites/ru/russian-products/files/185/productinstruction_lvokhlpreksetin_pdf.pdf?hash=F730A776EE3E7A92B2EA6A9EA56DCAC2&rev=a198bea8079541528614f6df7eee87fd",
+          "download_date": "2026-10-08",
+          "byte_identity_to_primary_snapshot": true,
+          "latest_registration_revision_confirmed": false
+        },
+        {
+          "source_id": "RU-PAROX",
+          "local_file": "audit/retrieved/RU-PAROX.pdf",
+          "sha256": "9f6f2646e102956826997ca7e93d84e90c7528db5ceb61896a3d4092841edabe",
+          "version": "Первичная регистрация 14.02.2025; страница производителя: файл 26.03.2025; поле пересмотра пустое",
+          "url": "https://www.gedeonrichter.com/ru/-/media/sites/ru/russian-products/files/185/productinstruction_lvokhlpreksetin_pdf.pdf?hash=F730A776EE3E7A92B2EA6A9EA56DCAC2&rev=a198bea8079541528614f6df7eee87fd",
+          "download_date": "2026-10-08",
+          "byte_identity_to_primary_snapshot": true,
+          "latest_registration_revision_confirmed": false
+        },
+        {
+          "source_id": "RU-PAROX",
+          "local_file": "remediation/retrieved/RU-PAROX.pdf",
+          "sha256": "9f6f2646e102956826997ca7e93d84e90c7528db5ceb61896a3d4092841edabe",
+          "version": "Первичная регистрация 14.02.2025; страница производителя: файл 26.03.2025; поле пересмотра пустое",
+          "url": "https://www.gedeonrichter.com/ru/-/media/sites/ru/russian-products/files/185/productinstruction_lvokhlpreksetin_pdf.pdf?hash=F730A776EE3E7A92B2EA6A9EA56DCAC2&rev=a198bea8079541528614f6df7eee87fd",
+          "download_date": "2026-10-08",
+          "byte_identity_to_primary_snapshot": true,
+          "latest_registration_revision_confirmed": false
+        },
+        {
+          "source_id": "RU-PAROX",
+          "local_file": "../tmp_acceptance/PAROX.pdf",
+          "sha256": "9f6f2646e102956826997ca7e93d84e90c7528db5ceb61896a3d4092841edabe",
+          "version": "Первичная регистрация 14.02.2025; страница производителя: файл 26.03.2025; поле пересмотра пустое",
+          "url": "https://www.gedeonrichter.com/ru/-/media/sites/ru/russian-products/files/185/productinstruction_lvokhlpreksetin_pdf.pdf?hash=F730A776EE3E7A92B2EA6A9EA56DCAC2&rev=a198bea8079541528614f6df7eee87fd",
+          "download_date": "2026-10-08",
+          "byte_identity_to_primary_snapshot": true,
+          "latest_registration_revision_confirmed": false
+        }
+      ],
+      "affected_cards": [
+        "parox-panic-kr",
+        "parox-taper-example",
+        "switch-parox-ago-selected-example",
+        "switch-parox-ago"
+      ],
+      "required_action": "Obtain current official SmPC for this exact RU/form and necessary change list; compare stamp/version and all affected medical sections, not just filename/date/SHA."
+    },
+    {
+      "source_id": "RU-PHEN",
+      "product": "Феназепам, инструкция ородиспергируемых таблеток",
+      "registration": "ЛП-№(005387)-(РГ-RU) от07.05.2024; официальная строка exact orodispersible form; поле прочитанного PDF пустое",
+      "version": "Снимок текущей ссылки производителя 08.10.2026; дата пересмотра в PDF отсутствует",
+      "dates": {
+        "registration": "2024-05-07",
+        "revision": null,
+        "publication": null,
+        "download": "2026-10-08"
+      },
+      "primary_file": "source_downloads/Феназепам — бромдигидрохлорфенилбензодиазепин.pdf",
+      "primary_sha256": "e8e6303c10b7b9b31ae6b344eb49d209e148ba5584ac8f55954c8384cfe49a89",
+      "read_scope": "PDF с.2 показания/противопоказания; с.3 дозы/отмена; с.4–5 особые указания",
+      "latest_edition_confirmed": false,
+      "official_comparison": null,
+      "registry_identity": {
+        "url": "https://lk.regmed.ru/Register/EAEU_SmPC",
+        "search": "Феназепам",
+        "observed_on": "2026-10-08",
+        "registration_number": "ЛП-№(005387)-(РГ-RU)",
+        "registration_date": "2024-05-07",
+        "formulation": "таблетки, диспергируемые в полости рта, 0.25/0.5/1 мг",
+        "holder": "Валента Фарм",
+        "proves": "Registration identity for the exact orodispersible form",
+        "does_not_prove": "Identity of the downloaded PDF with the latest approved registry text"
+      },
+      "copies": [
+        {
+          "source_id": "RU-PHEN",
+          "local_file": "source_downloads/Феназепам — бромдигидрохлорфенилбензодиазепин.pdf",
+          "sha256": "e8e6303c10b7b9b31ae6b344eb49d209e148ba5584ac8f55954c8384cfe49a89",
+          "version": "Снимок текущей ссылки производителя 08.10.2026; дата пересмотра в PDF отсутствует",
+          "url": "https://www.valentapharm.com/upload/iblock/fec/juwc91mjfnc770nida6ni9syp92x00if.pdf",
+          "download_date": "2026-10-08",
+          "byte_identity_to_primary_snapshot": true,
+          "latest_registration_revision_confirmed": false
+        },
+        {
+          "source_id": "RU-PHEN",
+          "local_file": "audit/retrieved/RU-PHEN.pdf",
+          "sha256": "e8e6303c10b7b9b31ae6b344eb49d209e148ba5584ac8f55954c8384cfe49a89",
+          "version": "Снимок текущей ссылки производителя 08.10.2026; дата пересмотра в PDF отсутствует",
+          "url": "https://www.valentapharm.com/upload/iblock/fec/juwc91mjfnc770nida6ni9syp92x00if.pdf",
+          "download_date": "2026-10-08",
+          "byte_identity_to_primary_snapshot": true,
+          "latest_registration_revision_confirmed": false
+        },
+        {
+          "source_id": "RU-PHEN",
+          "local_file": "remediation/retrieved/RU-PHEN.pdf",
+          "sha256": "e8e6303c10b7b9b31ae6b344eb49d209e148ba5584ac8f55954c8384cfe49a89",
+          "version": "Снимок текущей ссылки производителя 08.10.2026; дата пересмотра в PDF отсутствует",
+          "url": "https://www.valentapharm.com/upload/iblock/fec/juwc91mjfnc770nida6ni9syp92x00if.pdf",
+          "download_date": "2026-10-08",
+          "byte_identity_to_primary_snapshot": true,
+          "latest_registration_revision_confirmed": false
+        }
+      ],
+      "affected_cards": [
+        "phen-taper-limit"
+      ],
+      "required_action": "Obtain current official SmPC for this exact RU/form and necessary change list; compare stamp/version and all affected medical sections, not just filename/date/SHA."
+    },
+    {
+      "source_id": "RU-PREG",
+      "product": "Лирика (прегабалин), ОХЛП ЕАЭС, капсулы",
+      "registration": null,
+      "version": "Файл 13.08.2025; внутри штамп 26.01.2024 №1319, последовательность 0011",
+      "dates": {
+        "registration": "2024-01-30",
+        "revision": null,
+        "publication": null,
+        "download": "2026-10-08"
+      },
+      "primary_file": "source_downloads/Лирика — прегабалин.pdf",
+      "primary_sha256": "1fcd653e7f3b6bf5b26b3276d0bce97880e74bf345bb69755a275bf8f7117083",
+      "read_scope": "§4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4",
+      "latest_edition_confirmed": false,
+      "official_comparison": null,
+      "registry_identity": {
+        "registry": "https://lk.regmed.ru/Register/EAEU_SmPC",
+        "query": "Лирика",
+        "registration_number": "ЛП-№(004450)-(РГ-RU)",
+        "registration_date": "2024-01-30",
+        "forms": "капсулы25/50/75/100/150/200/300",
+        "accessed_on": "2026-10-08",
+        "read_part": "Видимая официальная строка; реестровый PDF не скачан. Копия производителя не объявлена побайтово тождественной."
+      },
+      "copies": [
+        {
+          "source_id": "RU-PREG",
+          "local_file": "source_downloads/Лирика — прегабалин.pdf",
+          "sha256": "1fcd653e7f3b6bf5b26b3276d0bce97880e74bf345bb69755a275bf8f7117083",
+          "version": "Файл 13.08.2025; внутри штамп 26.01.2024 №1319, последовательность 0011",
+          "url": "https://www.viatris.ru/-/media/project/common/viatrisru/pdf/product-catalog/lyrica_eaeu_smpc_13-aug-2025_ru.pdf",
+          "download_date": "2026-10-08",
+          "byte_identity_to_primary_snapshot": true,
+          "latest_registration_revision_confirmed": false
+        },
+        {
+          "source_id": "RU-PREG",
+          "local_file": "audit/retrieved/RU-PREG.pdf",
+          "sha256": "1fcd653e7f3b6bf5b26b3276d0bce97880e74bf345bb69755a275bf8f7117083",
+          "version": "Файл 13.08.2025; внутри штамп 26.01.2024 №1319, последовательность 0011",
+          "url": "https://www.viatris.ru/-/media/project/common/viatrisru/pdf/product-catalog/lyrica_eaeu_smpc_13-aug-2025_ru.pdf",
+          "download_date": "2026-10-08",
+          "byte_identity_to_primary_snapshot": true,
+          "latest_registration_revision_confirmed": false
+        },
+        {
+          "source_id": "RU-PREG",
+          "local_file": "remediation/retrieved/RU-PREG.pdf",
+          "sha256": "1fcd653e7f3b6bf5b26b3276d0bce97880e74bf345bb69755a275bf8f7117083",
+          "version": "Файл 13.08.2025; внутри штамп 26.01.2024 №1319, последовательность 0011",
+          "url": "https://www.viatris.ru/-/media/project/common/viatrisru/pdf/product-catalog/lyrica_eaeu_smpc_13-aug-2025_ru.pdf",
+          "download_date": "2026-10-08",
+          "byte_identity_to_primary_snapshot": true,
+          "latest_registration_revision_confirmed": false
+        }
+      ],
+      "affected_cards": [
+        "preg-gad-adjust",
+        "preg-gad-start",
+        "preg-renal-start",
+        "preg-taper-limit"
+      ],
+      "required_action": "Obtain current official SmPC for this exact RU/form and necessary change list; compare stamp/version and all affected medical sections, not just filename/date/SHA."
+    },
+    {
+      "source_id": "RU-PREG-RICHTER",
+      "product": "Прегабалин-Рихтер, ЛВ и ОХЛП 75/150/300 мг, новая копия производителя",
+      "registration": "ЛП-№(002412)-(РГ-RU), §8 PDF с.32",
+      "version": "Снимок файла страницы производителя 08.10.2026; страница датирует файл 18.02.2026; дата пересмотра в оригинале отсутствует",
+      "dates": {
+        "registration": "2023-05-25",
+        "revision": null,
+        "publication": null,
+        "download": "2026-10-08"
+      },
+      "primary_file": "source_downloads/Прегабалин-Рихтер — прегабалин.pdf",
+      "primary_sha256": "32bfe8b2ec435201b47cb652818af63a1e6a532669348dfe9110e92a73af7065",
+      "read_scope": "§4.1–4.3 PDF с.14–17; формула/таблица/сноска с.16; §8 с.32",
+      "latest_edition_confirmed": false,
+      "official_comparison": null,
+      "registry_identity": {
+        "registry": "https://lk.regmed.ru/Register/EAEU_SmPC",
+        "query": "Прегабалин-Рихтер",
+        "registration_number": "ЛП-№(002412)-(РГ-RU)",
+        "registration_date": "2023-05-25",
+        "forms": "капсулы75/150/300",
+        "accessed_on": "2026-10-08",
+        "read_part": "Видимая официальная строка; реестровый PDF не скачан. Копия производителя не объявлена побайтово тождественной."
+      },
+      "copies": [
+        {
+          "source_id": "RU-PREG-RICHTER",
+          "local_file": "source_downloads/Прегабалин-Рихтер — прегабалин.pdf",
+          "sha256": "32bfe8b2ec435201b47cb652818af63a1e6a532669348dfe9110e92a73af7065",
+          "version": "Снимок файла страницы производителя 08.10.2026; страница датирует файл 18.02.2026; дата пересмотра в оригинале отсутствует",
+          "url": "https://www.gedeonrichter.com/ru/-/media/sites/ru/russian-products/files/174/productinstruction_lvokhlp-pregab-75mg150mg300mg-hcaps-eaeu-smpc-commruwpsusa2025_pdf.pdf",
+          "download_date": "2026-10-08",
+          "byte_identity_to_primary_snapshot": true,
+          "latest_registration_revision_confirmed": false
+        },
+        {
+          "source_id": "RU-PREG-RICHTER",
+          "local_file": "audit/retrieved/RU-PREG-RICHTER.pdf",
+          "sha256": "32bfe8b2ec435201b47cb652818af63a1e6a532669348dfe9110e92a73af7065",
+          "version": "Снимок файла страницы производителя 08.10.2026; страница датирует файл 18.02.2026; дата пересмотра в оригинале отсутствует",
+          "url": "https://www.gedeonrichter.com/ru/-/media/sites/ru/russian-products/files/174/productinstruction_lvokhlp-pregab-75mg150mg300mg-hcaps-eaeu-smpc-commruwpsusa2025_pdf.pdf",
+          "download_date": "2026-10-08",
+          "byte_identity_to_primary_snapshot": true,
+          "latest_registration_revision_confirmed": false
+        },
+        {
+          "source_id": "RU-PREG-RICHTER",
+          "local_file": "remediation/retrieved/RU-PREG-RICHTER.pdf",
+          "sha256": "32bfe8b2ec435201b47cb652818af63a1e6a532669348dfe9110e92a73af7065",
+          "version": "Снимок файла страницы производителя 08.10.2026; страница датирует файл 18.02.2026; дата пересмотра в оригинале отсутствует",
+          "url": "https://www.gedeonrichter.com/ru/-/media/sites/ru/russian-products/files/174/productinstruction_lvokhlp-pregab-75mg150mg300mg-hcaps-eaeu-smpc-commruwpsusa2025_pdf.pdf",
+          "download_date": "2026-10-08",
+          "byte_identity_to_primary_snapshot": true,
+          "latest_registration_revision_confirmed": false
+        }
+      ],
+      "affected_cards": [],
+      "required_action": "Obtain current official SmPC for this exact RU/form and necessary change list; compare stamp/version and all affected medical sections, not just filename/date/SHA."
+    },
+    {
+      "source_id": "RU-SER",
+      "product": "Золофт (сертралин), ОХЛП ЕАЭС, таблетки",
+      "registration": "ЛП-№(002851)-(РГ-RU), §8 PDF с.22",
+      "version": "Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является датой содержания",
+      "dates": {
+        "initial_registration": "2023-07-24",
+        "registration_stamp": "2026-06-11",
+        "expert_report": "2026-05-29",
+        "revision": null,
+        "approval": null,
+        "publication": null,
+        "download": "2026-10-08",
+        "filename_dates_not_used": [
+          "21.04.26",
+          "24-apr-2025"
+        ]
+      },
+      "primary_file": "source_downloads/Золофт — сертралин.pdf",
+      "primary_sha256": "3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba",
+      "read_scope": "§4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22",
+      "latest_edition_confirmed": true,
+      "official_comparison": {
+        "download_date": "2026-10-08",
+        "human_provided": true,
+        "registry_url": "https://lk.regmed.ru/Register/EAEU_SmPC",
+        "old_local_file": "source_downloads/Золофт — сертралин.pdf",
+        "old_sha256": "3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba",
+        "documents": [
+          {
+            "filename": "1.3.1 Золофт ОХЛП 21.04.26_02002 (1817931491) [0008] штамп МЗ.pdf",
+            "local_file": "remediation_round2/Zoloft_current_registry.pdf",
+            "sha256": "3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba",
+            "pages": 22,
+            "document_type": "SmPC",
+            "byte_identity_to_previously_read_original": true
+          },
+          {
+            "filename": "1.3.1 Золофт ЛВ 22.04.26_02001 (1817931561) [0008] штамп МЗ.pdf",
+            "local_file": "remediation_round2/Zoloft_current_registry_PIL.pdf",
+            "sha256": "eac44c60d0b40687cbe565a03d16679a82671e7ee13593648fc2beebfdcd61bd",
+            "pages": 13,
+            "document_type": "PIL"
+          }
+        ],
+        "confirmation_pending": null,
+        "confirmation": "Downloaded by the user in response to a specific request for the current official registry SmPC; filename and stamp match the previously observed registry edition. Complete bytes equal the read manufacturer original. Page1 visually verified again; initial registry date differs from current document stamp."
+      },
+      "registry_identity": {
+        "registry": "https://lk.regmed.ru/Register/EAEU_SmPC",
+        "query": "Золофт",
+        "registration_number": "ЛП-№(002851)-(РГ-RU)",
+        "initial_registration_date": "2023-07-24",
+        "latest_document_name": "1.3.1 Золофт ОХЛП 21.04.26_02002 (1817931491) [0008] штамп МЗ.pdf",
+        "document_url": "https://lk.regmed.ru/Register/ViewPDFfromDAToken?Token=[REDACTED]",
+        "visual_page_1_registration_date": "2026-06-11",
+        "expert_stamp": "29.05.2026 №10729, последовательность 0008",
+        "pages": 22,
+        "accessed_on": "2026-10-08",
+        "read_part": "Current full official original provided by human in round2; stamp/form/version checked. Latest comparison and SHA evidence in latest_registry_document_comparison.",
+        "historical_read_part_before_round2": "Реестровая запись, список документов, визуально с.1. Полная побайтовая сверка с копией производителя не выполнена."
+      },
+      "copies": [
+        {
+          "source_id": "RU-SER",
+          "local_file": "source_downloads/Золофт — сертралин.pdf",
+          "sha256": "3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba",
+          "version": "Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является датой содержания",
+          "url": "https://www.viatris.ru/-/media/project/common/viatrisru/pdf/product-catalog/0006_zoloft_smpc-eaeu_24-apr-2025_ru.pdf",
+          "download_date": "2026-10-08",
+          "byte_identity_to_primary_snapshot": true,
+          "latest_registration_revision_confirmed": true
+        },
+        {
+          "source_id": "RU-SER",
+          "local_file": "audit/retrieved/RU-SER.pdf",
+          "sha256": "3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba",
+          "version": "Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является датой содержания",
+          "url": "https://www.viatris.ru/-/media/project/common/viatrisru/pdf/product-catalog/0006_zoloft_smpc-eaeu_24-apr-2025_ru.pdf",
+          "download_date": "2026-10-08",
+          "byte_identity_to_primary_snapshot": true,
+          "latest_registration_revision_confirmed": true
+        },
+        {
+          "source_id": "RU-SER",
+          "local_file": "remediation/retrieved/RU-SER.pdf",
+          "sha256": "3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba",
+          "version": "Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является датой содержания",
+          "url": "https://www.viatris.ru/-/media/project/common/viatrisru/pdf/product-catalog/0006_zoloft_smpc-eaeu_24-apr-2025_ru.pdf",
+          "download_date": "2026-10-08",
+          "byte_identity_to_primary_snapshot": true,
+          "latest_registration_revision_confirmed": true
+        },
+        {
+          "filename": "1.3.1 Золофт ОХЛП 21.04.26_02002 (1817931491) [0008] штамп МЗ.pdf",
+          "local_file": "remediation_round2/Zoloft_current_registry.pdf",
+          "sha256": "3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba",
+          "pages": 22,
+          "document_type": "SmPC",
+          "byte_identity_to_previously_read_original": true,
+          "download_date": "2026-10-08",
+          "latest_registration_revision_confirmed": true,
+          "version": "Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является датой содержания",
+          "byte_identity_to_primary_snapshot": true
+        },
+        {
+          "filename": "1.3.1 Золофт ЛВ 22.04.26_02001 (1817931561) [0008] штамп МЗ.pdf",
+          "local_file": "remediation_round2/Zoloft_current_registry_PIL.pdf",
+          "sha256": "eac44c60d0b40687cbe565a03d16679a82671e7ee13593648fc2beebfdcd61bd",
+          "pages": 13,
+          "document_type": "PIL",
+          "download_date": "2026-10-08",
+          "latest_registration_revision_confirmed": true,
+          "role": "Patient leaflet, separate from the dose basis"
+        }
+      ],
+      "affected_cards": [
+        "ser-adult-adjust",
+        "ser-panic-start",
+        "ser-social-start",
+        "ser-taper-limit",
+        "switch-esc-ser",
+        "switch-ser-ago",
+        "switch-ser-esc"
+      ],
+      "required_action": null
+    },
+    {
+      "source_id": "RU-VENLA-IR",
+      "product": "Велаксин, ОХЛП таблеток 37,5/75 мг",
+      "registration": "ЛП-№(002276)-(РГ-RU)",
+      "version": "Версия HTML не датирована; снимок и SHA-256 от 08.10.2026; отдельное РУ формы подтверждено реестром",
+      "dates": {
+        "registration": "2023-05-02",
+        "revision": null,
+        "publication": null,
+        "download": "2026-10-08"
+      },
+      "primary_file": "source_snapshots/velaxin-IR.html",
+      "primary_sha256": "ecad93859bf9c84daadfcc77bf765ed86d85c44ea4d27edc49903bf57dffca01",
+      "read_scope": "HTML §1–3, §4.1–4.3, §4.5–4.6, §8; заголовки формы/режима сохранены",
+      "latest_edition_confirmed": false,
+      "official_comparison": null,
+      "registry_identity": {
+        "registry": "https://lk.regmed.ru/Register/EAEU_SmPC",
+        "query": "Велаксин",
+        "registration_number": "ЛП-№(002276)-(РГ-RU)",
+        "registration_date": "2023-05-02",
+        "forms": "таблетки 37,5/75 мг",
+        "accessed_on": "2026-10-08",
+        "read_part": "Видимая официальная строка результата поиска; наличие ОХЛП/ЛВ. Сам документ этой записи не скачан; идентичность копии не заявлена."
+      },
+      "copies": [
+        {
+          "source_id": "RU-VENLA-IR",
+          "local_file": "source_snapshots/velaxin-IR.html",
+          "sha256": "ecad93859bf9c84daadfcc77bf765ed86d85c44ea4d27edc49903bf57dffca01",
+          "version": "Версия HTML не датирована; снимок и SHA-256 от 08.10.2026; отдельное РУ формы подтверждено реестром",
+          "url": "https://egispro.ru/medications/velaksin/instructions/velaksin_37_5_mg_28_sht/",
+          "download_date": "2026-10-08",
+          "byte_identity_to_primary_snapshot": true,
+          "latest_registration_revision_confirmed": false
+        },
+        {
+          "source_id": "RU-VENLA-IR",
+          "local_file": "audit/retrieved/RU-VENLA-IR.html",
+          "sha256": "49ed1a29889de1aab24571f78d672b21ccc5fcf665e0c925ff47464207a5f7c9",
+          "version": "byte-different snapshot; medical revision not independently established",
+          "url": "https://egispro.ru/medications/velaksin/instructions/velaksin_37_5_mg_28_sht/",
+          "download_date": "2026-10-08",
+          "byte_identity_to_primary_snapshot": false,
+          "latest_registration_revision_confirmed": false
+        },
+        {
+          "source_id": "RU-VENLA-IR",
+          "local_file": "remediation/retrieved/RU-VENLA-IR.html",
+          "sha256": "d49b24495bebf9a85dd3018454a1f907596a92d6567fe85f62c1a0f0b43017b6",
+          "version": "byte-different snapshot; medical revision not independently established",
+          "url": "https://egispro.ru/medications/velaksin/instructions/velaksin_37_5_mg_28_sht/",
+          "download_date": "2026-10-08",
+          "byte_identity_to_primary_snapshot": false,
+          "latest_registration_revision_confirmed": false
+        }
+      ],
+      "affected_cards": [
+        "venla-xr-panic-form-limit"
+      ],
+      "required_action": "Obtain current official SmPC for this exact RU/form and necessary change list; compare stamp/version and all affected medical sections, not just filename/date/SHA."
+    },
+    {
+      "source_id": "RU-VENLA-XR",
+      "product": "Велаксин, ОХЛП пролонгированных капсул 75/150 мг",
+      "registration": "ЛП-№(002093)-(РГ-RU)",
+      "version": "Версия HTML не датирована; снимок и SHA-256 от 08.10.2026; отдельное РУ формы подтверждено реестром",
+      "dates": {
+        "registration": "2023-04-03",
+        "revision": null,
+        "publication": null,
+        "download": "2026-10-08"
+      },
+      "primary_file": "source_snapshots/velaxin-XR.html",
+      "primary_sha256": "3656aeeae0ef60f75fe0ea90e1a9f73ba3734e7b8825e163752d9e6e278bf838",
+      "read_scope": "HTML §1–3, §4.1–4.3, §4.5–4.6, §8; заголовки формы/режима сохранены",
+      "latest_edition_confirmed": false,
+      "official_comparison": null,
+      "registry_identity": {
+        "registry": "https://lk.regmed.ru/Register/EAEU_SmPC",
+        "query": "Велаксин",
+        "registration_number": "ЛП-№(002093)-(РГ-RU)",
+        "registration_date": "2023-04-03",
+        "forms": "капсулы пролонгированные 75/150 мг",
+        "accessed_on": "2026-10-08",
+        "read_part": "Видимая официальная строка результата поиска; наличие ОХЛП/ЛВ. Сам документ этой записи не скачан; идентичность копии не заявлена."
+      },
+      "copies": [
+        {
+          "source_id": "RU-VENLA-XR",
+          "local_file": "source_snapshots/velaxin-XR.html",
+          "sha256": "3656aeeae0ef60f75fe0ea90e1a9f73ba3734e7b8825e163752d9e6e278bf838",
+          "version": "Версия HTML не датирована; снимок и SHA-256 от 08.10.2026; отдельное РУ формы подтверждено реестром",
+          "url": "https://egispro.ru/medications/velaksin/instructions/velaksin_75_mg_28_sht/",
+          "download_date": "2026-10-08",
+          "byte_identity_to_primary_snapshot": true,
+          "latest_registration_revision_confirmed": false
+        },
+        {
+          "source_id": "RU-VENLA-XR",
+          "local_file": "audit/retrieved/RU-VENLA-XR.html",
+          "sha256": "6f14f66f54d649836d17eff481e9538282539780cfa8d26810012a1941cf7550",
+          "version": "byte-different snapshot; medical revision not independently established",
+          "url": "https://egispro.ru/medications/velaksin/instructions/velaksin_75_mg_28_sht/",
+          "download_date": "2026-10-08",
+          "byte_identity_to_primary_snapshot": false,
+          "latest_registration_revision_confirmed": false
+        },
+        {
+          "source_id": "RU-VENLA-XR",
+          "local_file": "remediation/retrieved/RU-VENLA-XR.html",
+          "sha256": "324991815c8cd2def4d644b47b1edaddb1c24ed7ee442d9bdc064b396fae6642",
+          "version": "byte-different snapshot; medical revision not independently established",
+          "url": "https://egispro.ru/medications/velaksin/instructions/velaksin_75_mg_28_sht/",
+          "download_date": "2026-10-08",
+          "byte_identity_to_primary_snapshot": false,
+          "latest_registration_revision_confirmed": false
+        }
+      ],
+      "affected_cards": [
+        "venla-xr-gad-start",
+        "venla-xr-panic-form-limit",
+        "venla-xr-social-start",
+        "venla-xr-taper-limit"
+      ],
+      "required_action": "Obtain current official SmPC for this exact RU/form and necessary change list; compare stamp/version and all affected medical sections, not just filename/date/SHA."
+    }
+  ]
+}

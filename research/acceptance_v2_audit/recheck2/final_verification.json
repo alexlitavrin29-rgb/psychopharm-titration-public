@@ -1,0 +1,60 @@
+{
+  "status": "pass",
+  "snapshot": "8a17ae3f99839548742ee509a23d060ea451ed0018c48432dc73b9ba68de4359",
+  "manifest_file_digest_recomputed": true,
+  "parsed_json_files": [
+    "A_phase_semantics.json",
+    "acceptance_recheck.json",
+    "additional_checks.json",
+    "complete_given_consistency.json",
+    "condition_inventory.json",
+    "coverage.json",
+    "dependency_order_check.json",
+    "finding_closure.json",
+    "findings.json",
+    "independent_checks.json",
+    "independent_paths.json",
+    "initial_manifest.json",
+    "input_inventory.json",
+    "locator_recheck.json",
+    "necessity_counterexamples.json",
+    "new_author_phrase_guards.json",
+    "numeric_inventory.json",
+    "preservation_check.json",
+    "primary_expected_checks.json",
+    "recheck2_checks.json",
+    "requirements_diff.json",
+    "scoring.json",
+    "source_verification.json"
+  ],
+  "criteria_count": 30,
+  "status_counts": {
+    "выполнено": 23,
+    "частично": 7
+  },
+  "finding_ids": [
+    "R2-01",
+    "R2-02",
+    "R2-03",
+    "R2-04",
+    "R2-05"
+  ],
+  "weights": [
+    25,
+    30,
+    20,
+    15,
+    10
+  ],
+  "uncapped_raw": "8.05",
+  "final": "6.0",
+  "safe_author_mutations_reexecuted": 55,
+  "own_rejection_properties": 12,
+  "declared_remaining_A_phase_counterexamples": 18,
+  "undefined_nonstart_positive_A_phases": 9,
+  "causal_order_affected_paths": 21,
+  "markdown_link_errors": [],
+  "clinical_validation": false,
+  "exhaustive_medical_review": false,
+  "utc": "2026-10-08T19:57:27.184699+00:00"
+}

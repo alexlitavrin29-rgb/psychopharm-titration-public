@@ -1,0 +1,61 @@
+{
+  "new_minimal_numeric_cases": 157,
+  "qualitative_course_dose_semantics": [
+    {
+      "rule_id": "ago-stop",
+      "input_id": "current_dose",
+      "fact_semantics": "reported_course_dose_without_current_use_confirmation"
+    },
+    {
+      "rule_id": "dulox-taper-limit",
+      "input_id": "current_dose",
+      "fact_semantics": "reported_course_dose_without_current_use_confirmation"
+    },
+    {
+      "rule_id": "esc-taper-limit",
+      "input_id": "current_dose",
+      "fact_semantics": "reported_course_dose_without_current_use_confirmation"
+    },
+    {
+      "rule_id": "fluvox-taper-limit",
+      "input_id": "current_dose",
+      "fact_semantics": "reported_course_dose_without_current_use_confirmation"
+    },
+    {
+      "rule_id": "parox-panic-kr",
+      "input_id": "current_dose",
+      "fact_semantics": "reported_course_dose_without_current_use_confirmation"
+    },
+    {
+      "rule_id": "phen-taper-limit",
+      "input_id": "current_dose",
+      "fact_semantics": "reported_course_dose_without_current_use_confirmation"
+    },
+    {
+      "rule_id": "preg-taper-limit",
+      "input_id": "current_dose",
+      "fact_semantics": "reported_course_dose_without_current_use_confirmation"
+    },
+    {
+      "rule_id": "ser-taper-limit",
+      "input_id": "current_dose",
+      "fact_semantics": "reported_course_dose_without_current_use_confirmation"
+    },
+    {
+      "rule_id": "switch-esc-ser",
+      "input_id": "current_dose",
+      "fact_semantics": "reported_course_dose_without_current_use_confirmation"
+    },
+    {
+      "rule_id": "switch-ser-esc",
+      "input_id": "current_dose",
+      "fact_semantics": "reported_course_dose_without_current_use_confirmation"
+    },
+    {
+      "rule_id": "venla-xr-taper-limit",
+      "input_id": "current_dose",
+      "fact_semantics": "reported_course_dose_without_current_use_confirmation"
+    }
+  ],
+  "scope": "All optional supplied context is consumed/counted; context-sensitive full positive reasons included in selected paths; no medical dose/condition removed or altered, no long ordinary case relabeled complex"
+}

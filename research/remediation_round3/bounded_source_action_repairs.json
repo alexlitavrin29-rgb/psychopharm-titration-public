@@ -1,0 +1,4335 @@
+{
+  "rows": [
+    {
+      "case_id": "ago-depression-start--ALT_ratio-ongoing-above3",
+      "rule_id": "ago-depression-start",
+      "required_cause_fields": [
+        "ALT_ratio",
+        "form"
+      ],
+      "provided_context_fields": [
+        "alcohol_use",
+        "ect",
+        "mania",
+        "renal_state",
+        "suicide_risk"
+      ],
+      "used_fields": [
+        "ALT_ratio",
+        "alcohol_use",
+        "ect",
+        "form",
+        "mania",
+        "renal_state",
+        "suicide_risk"
+      ],
+      "primary_cause": {
+        "input": "ALT_ratio",
+        "operator": ">",
+        "value": 3,
+        "source_ref": "RU-AGO",
+        "source_locator": "§4.4 с.4, прекращение лечения при АЛТ или АСТ >3 ВГН; регулярные пробы до нормы"
+      },
+      "source_owner_input": "form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "ago-depression-start--AST_ratio-ongoing-above3",
+      "rule_id": "ago-depression-start",
+      "required_cause_fields": [
+        "AST_ratio",
+        "form"
+      ],
+      "provided_context_fields": [
+        "alcohol_use",
+        "ect",
+        "mania",
+        "renal_state",
+        "suicide_risk"
+      ],
+      "used_fields": [
+        "AST_ratio",
+        "alcohol_use",
+        "ect",
+        "form",
+        "mania",
+        "renal_state",
+        "suicide_risk"
+      ],
+      "primary_cause": {
+        "input": "AST_ratio",
+        "operator": ">",
+        "value": 3,
+        "source_ref": "RU-AGO",
+        "source_locator": "§4.4 с.4, прекращение лечения при АЛТ или АСТ >3 ВГН; регулярные пробы до нормы"
+      },
+      "source_owner_input": "form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "ago-gad-start--ALT_ratio-ongoing-above3",
+      "rule_id": "ago-gad-start",
+      "required_cause_fields": [
+        "ALT_ratio",
+        "form"
+      ],
+      "provided_context_fields": [
+        "alcohol_use",
+        "ect",
+        "mania",
+        "renal_state",
+        "suicide_risk"
+      ],
+      "used_fields": [
+        "ALT_ratio",
+        "alcohol_use",
+        "ect",
+        "form",
+        "mania",
+        "renal_state",
+        "suicide_risk"
+      ],
+      "primary_cause": {
+        "input": "ALT_ratio",
+        "operator": ">",
+        "value": 3,
+        "source_ref": "RU-AGO",
+        "source_locator": "§4.4 с.4, прекращение лечения при АЛТ или АСТ >3 ВГН; регулярные пробы до нормы"
+      },
+      "source_owner_input": "form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "ago-gad-start--AST_ratio-ongoing-above3",
+      "rule_id": "ago-gad-start",
+      "required_cause_fields": [
+        "AST_ratio",
+        "form"
+      ],
+      "provided_context_fields": [
+        "alcohol_use",
+        "ect",
+        "mania",
+        "renal_state",
+        "suicide_risk"
+      ],
+      "used_fields": [
+        "AST_ratio",
+        "alcohol_use",
+        "ect",
+        "form",
+        "mania",
+        "renal_state",
+        "suicide_risk"
+      ],
+      "primary_cause": {
+        "input": "AST_ratio",
+        "operator": ">",
+        "value": 3,
+        "source_ref": "RU-AGO",
+        "source_locator": "§4.4 с.4, прекращение лечения при АЛТ или АСТ >3 ВГН; регулярные пробы до нормы"
+      },
+      "source_owner_input": "form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "fluvox-depression-start--condition-seizure_state-новые приступы",
+      "rule_id": "fluvox-depression-start",
+      "required_cause_fields": [
+        "form",
+        "seizure_state"
+      ],
+      "provided_context_fields": [
+        "akathisia",
+        "bleeding_risk",
+        "diabetes",
+        "ect",
+        "glaucoma",
+        "mania",
+        "suicide_risk"
+      ],
+      "used_fields": [
+        "akathisia",
+        "bleeding_risk",
+        "diabetes",
+        "ect",
+        "form",
+        "glaucoma",
+        "mania",
+        "seizure_state",
+        "suicide_risk"
+      ],
+      "primary_cause": {
+        "input": "seizure_state",
+        "operator": "equals",
+        "value": "новые приступы",
+        "action": "stop ongoing source medication",
+        "source_ref": "RU-FLUVOX",
+        "source_locator": "§4.4 с.5"
+      },
+      "source_owner_input": "form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "parox-panic-kr--condition-seizure_state-новые приступы",
+      "rule_id": "parox-panic-kr",
+      "required_cause_fields": [
+        "form",
+        "seizure_state"
+      ],
+      "provided_context_fields": [
+        "akathisia",
+        "bleeding_risk",
+        "current_dose",
+        "diabetes",
+        "ect",
+        "glaucoma",
+        "mania",
+        "qt_risk",
+        "response",
+        "suicide_risk",
+        "time_at_dose",
+        "tolerability"
+      ],
+      "used_fields": [
+        "akathisia",
+        "bleeding_risk",
+        "current_dose",
+        "diabetes",
+        "ect",
+        "form",
+        "glaucoma",
+        "mania",
+        "qt_risk",
+        "response",
+        "seizure_state",
+        "suicide_risk",
+        "time_at_dose",
+        "tolerability"
+      ],
+      "primary_cause": {
+        "input": "seizure_state",
+        "operator": "equals",
+        "value": "новые приступы",
+        "action": "stop ongoing source medication",
+        "source_ref": "RU-PAROX",
+        "source_locator": "§4.4 с.9"
+      },
+      "source_owner_input": "form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "ser-adult-adjust--condition-seizure_state-новые приступы",
+      "rule_id": "ser-adult-adjust",
+      "required_cause_fields": [
+        "form",
+        "seizure_state"
+      ],
+      "provided_context_fields": [
+        "adherence",
+        "bleeding_risk",
+        "hyponatremia_risk",
+        "mania",
+        "qt_risk",
+        "suicide_risk"
+      ],
+      "used_fields": [
+        "adherence",
+        "bleeding_risk",
+        "form",
+        "hyponatremia_risk",
+        "mania",
+        "qt_risk",
+        "seizure_state",
+        "suicide_risk"
+      ],
+      "primary_cause": {
+        "input": "seizure_state",
+        "operator": "equals",
+        "value": "новые приступы",
+        "action": "stop ongoing source medication",
+        "source_ref": "RU-SER",
+        "source_locator": "§4.4 с.4, судороги: прекращение при развитии приступов"
+      },
+      "source_owner_input": "form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "ser-panic-start--condition-seizure_state-новые приступы",
+      "rule_id": "ser-panic-start",
+      "required_cause_fields": [
+        "form",
+        "seizure_state"
+      ],
+      "provided_context_fields": [
+        "akathisia",
+        "bleeding_risk",
+        "hyponatremia_risk",
+        "mania",
+        "qt_risk",
+        "suicide_risk"
+      ],
+      "used_fields": [
+        "akathisia",
+        "bleeding_risk",
+        "form",
+        "hyponatremia_risk",
+        "mania",
+        "qt_risk",
+        "seizure_state",
+        "suicide_risk"
+      ],
+      "primary_cause": {
+        "input": "seizure_state",
+        "operator": "equals",
+        "value": "новые приступы",
+        "action": "stop ongoing source medication",
+        "source_ref": "RU-SER",
+        "source_locator": "§4.4 с.4, судороги: прекращение при развитии приступов"
+      },
+      "source_owner_input": "form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "ser-social-start--condition-seizure_state-новые приступы",
+      "rule_id": "ser-social-start",
+      "required_cause_fields": [
+        "form",
+        "seizure_state"
+      ],
+      "provided_context_fields": [
+        "akathisia",
+        "bleeding_risk",
+        "hyponatremia_risk",
+        "mania",
+        "qt_risk",
+        "suicide_risk"
+      ],
+      "used_fields": [
+        "akathisia",
+        "bleeding_risk",
+        "form",
+        "hyponatremia_risk",
+        "mania",
+        "qt_risk",
+        "seizure_state",
+        "suicide_risk"
+      ],
+      "primary_cause": {
+        "input": "seizure_state",
+        "operator": "equals",
+        "value": "новые приступы",
+        "action": "stop ongoing source medication",
+        "source_ref": "RU-SER",
+        "source_locator": "§4.4 с.4, судороги: прекращение при развитии приступов"
+      },
+      "source_owner_input": "form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "switch-parox-ago-selected-example--condition-seizure_state-новые приступы",
+      "rule_id": "switch-parox-ago-selected-example",
+      "required_cause_fields": [
+        "from_form",
+        "seizure_state"
+      ],
+      "provided_context_fields": [
+        "alcohol_use",
+        "bleeding_risk",
+        "mania",
+        "renal_state",
+        "suicide_risk"
+      ],
+      "used_fields": [
+        "alcohol_use",
+        "bleeding_risk",
+        "from_form",
+        "mania",
+        "renal_state",
+        "seizure_state",
+        "suicide_risk"
+      ],
+      "primary_cause": {
+        "input": "seizure_state",
+        "operator": "equals",
+        "value": "новые приступы",
+        "action": "stop ongoing source medication",
+        "source_ref": "RU-PAROX",
+        "source_locator": "§4.4 с.9"
+      },
+      "source_owner_input": "from_form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "switch-parox-ago-selected-example--alt_ratio_uln-ongoing-above3",
+      "rule_id": "switch-parox-ago-selected-example",
+      "required_cause_fields": [
+        "alt_ratio_uln",
+        "to_form"
+      ],
+      "provided_context_fields": [
+        "alcohol_use",
+        "bleeding_risk",
+        "mania",
+        "renal_state",
+        "suicide_risk"
+      ],
+      "used_fields": [
+        "alcohol_use",
+        "alt_ratio_uln",
+        "bleeding_risk",
+        "mania",
+        "renal_state",
+        "suicide_risk",
+        "to_form"
+      ],
+      "primary_cause": {
+        "input": "alt_ratio_uln",
+        "operator": ">",
+        "value": 3,
+        "source_ref": "RU-AGO",
+        "source_locator": "§4.4 с.4, прекращение лечения при АЛТ или АСТ >3 ВГН; регулярные пробы до нормы"
+      },
+      "source_owner_input": "to_form",
+      "actor_phase": "target_B ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "switch-parox-ago-selected-example--ast_ratio_uln-ongoing-above3",
+      "rule_id": "switch-parox-ago-selected-example",
+      "required_cause_fields": [
+        "ast_ratio_uln",
+        "to_form"
+      ],
+      "provided_context_fields": [
+        "alcohol_use",
+        "bleeding_risk",
+        "mania",
+        "renal_state",
+        "suicide_risk"
+      ],
+      "used_fields": [
+        "alcohol_use",
+        "ast_ratio_uln",
+        "bleeding_risk",
+        "mania",
+        "renal_state",
+        "suicide_risk",
+        "to_form"
+      ],
+      "primary_cause": {
+        "input": "ast_ratio_uln",
+        "operator": ">",
+        "value": 3,
+        "source_ref": "RU-AGO",
+        "source_locator": "§4.4 с.4, прекращение лечения при АЛТ или АСТ >3 ВГН; регулярные пробы до нормы"
+      },
+      "source_owner_input": "to_form",
+      "actor_phase": "target_B ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "switch-parox-ago--condition-seizure_state-новые приступы",
+      "rule_id": "switch-parox-ago",
+      "required_cause_fields": [
+        "from_form",
+        "seizure_state"
+      ],
+      "provided_context_fields": [
+        "age",
+        "akathisia",
+        "alcohol_abuse",
+        "alcohol_use",
+        "allergy",
+        "alt_ratio_uln",
+        "ast_ratio_uln",
+        "bleeding_risk",
+        "complete_lactase_deficiency",
+        "current_dose",
+        "dementia",
+        "diabetes",
+        "ect",
+        "elderly_population",
+        "fatty_liver",
+        "from_hepatic",
+        "from_renal",
+        "from_taper_plan",
+        "galactose_intolerance",
+        "glaucoma",
+        "glucose_galactose_malabsorption",
+        "hepatic",
+        "lactation",
+        "liver_injury_signs",
+        "mania",
+        "mania_symptoms",
+        "medicines",
+        "overweight_obesity",
+        "pregnancy",
+        "qt_risk",
+        "renal_state",
+        "serotonin_syndrome_signs",
+        "suicide_risk",
+        "transaminases_rising",
+        "withdrawal_severity"
+      ],
+      "used_fields": [
+        "age",
+        "akathisia",
+        "alcohol_abuse",
+        "alcohol_use",
+        "allergy",
+        "alt_ratio_uln",
+        "ast_ratio_uln",
+        "bleeding_risk",
+        "complete_lactase_deficiency",
+        "current_dose",
+        "dementia",
+        "diabetes",
+        "ect",
+        "elderly_population",
+        "fatty_liver",
+        "from_form",
+        "from_hepatic",
+        "from_renal",
+        "from_taper_plan",
+        "galactose_intolerance",
+        "glaucoma",
+        "glucose_galactose_malabsorption",
+        "hepatic",
+        "lactation",
+        "liver_injury_signs",
+        "mania",
+        "mania_symptoms",
+        "medicines",
+        "overweight_obesity",
+        "pregnancy",
+        "qt_risk",
+        "renal_state",
+        "seizure_state",
+        "serotonin_syndrome_signs",
+        "suicide_risk",
+        "transaminases_rising",
+        "withdrawal_severity"
+      ],
+      "primary_cause": {
+        "input": "seizure_state",
+        "operator": "equals",
+        "value": "новые приступы",
+        "action": "stop ongoing source medication",
+        "source_ref": "RU-PAROX",
+        "source_locator": "§4.4 с.9"
+      },
+      "source_owner_input": "from_form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "switch-parox-ago--alt_ratio_uln-ongoing-above3",
+      "rule_id": "switch-parox-ago",
+      "required_cause_fields": [
+        "alt_ratio_uln",
+        "to_form"
+      ],
+      "provided_context_fields": [
+        "age",
+        "akathisia",
+        "alcohol_abuse",
+        "alcohol_use",
+        "allergy",
+        "ast_ratio_uln",
+        "bleeding_risk",
+        "complete_lactase_deficiency",
+        "current_dose",
+        "dementia",
+        "diabetes",
+        "ect",
+        "elderly_population",
+        "fatty_liver",
+        "from_hepatic",
+        "from_renal",
+        "from_taper_plan",
+        "galactose_intolerance",
+        "glaucoma",
+        "glucose_galactose_malabsorption",
+        "hepatic",
+        "lactation",
+        "liver_injury_signs",
+        "mania",
+        "mania_symptoms",
+        "medicines",
+        "overweight_obesity",
+        "pregnancy",
+        "qt_risk",
+        "renal_state",
+        "seizure_state",
+        "serotonin_syndrome_signs",
+        "suicide_risk",
+        "transaminases_rising",
+        "withdrawal_severity"
+      ],
+      "used_fields": [
+        "age",
+        "akathisia",
+        "alcohol_abuse",
+        "alcohol_use",
+        "allergy",
+        "alt_ratio_uln",
+        "ast_ratio_uln",
+        "bleeding_risk",
+        "complete_lactase_deficiency",
+        "current_dose",
+        "dementia",
+        "diabetes",
+        "ect",
+        "elderly_population",
+        "fatty_liver",
+        "from_hepatic",
+        "from_renal",
+        "from_taper_plan",
+        "galactose_intolerance",
+        "glaucoma",
+        "glucose_galactose_malabsorption",
+        "hepatic",
+        "lactation",
+        "liver_injury_signs",
+        "mania",
+        "mania_symptoms",
+        "medicines",
+        "overweight_obesity",
+        "pregnancy",
+        "qt_risk",
+        "renal_state",
+        "seizure_state",
+        "serotonin_syndrome_signs",
+        "suicide_risk",
+        "to_form",
+        "transaminases_rising",
+        "withdrawal_severity"
+      ],
+      "primary_cause": {
+        "input": "alt_ratio_uln",
+        "operator": ">",
+        "value": 3,
+        "source_ref": "RU-AGO",
+        "source_locator": "§4.4 с.4, прекращение лечения при АЛТ или АСТ >3 ВГН; регулярные пробы до нормы"
+      },
+      "source_owner_input": "to_form",
+      "actor_phase": "target_B ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "switch-parox-ago--ast_ratio_uln-ongoing-above3",
+      "rule_id": "switch-parox-ago",
+      "required_cause_fields": [
+        "ast_ratio_uln",
+        "to_form"
+      ],
+      "provided_context_fields": [
+        "age",
+        "akathisia",
+        "alcohol_abuse",
+        "alcohol_use",
+        "allergy",
+        "alt_ratio_uln",
+        "bleeding_risk",
+        "complete_lactase_deficiency",
+        "current_dose",
+        "dementia",
+        "diabetes",
+        "ect",
+        "elderly_population",
+        "fatty_liver",
+        "from_hepatic",
+        "from_renal",
+        "from_taper_plan",
+        "galactose_intolerance",
+        "glaucoma",
+        "glucose_galactose_malabsorption",
+        "hepatic",
+        "lactation",
+        "liver_injury_signs",
+        "mania",
+        "mania_symptoms",
+        "medicines",
+        "overweight_obesity",
+        "pregnancy",
+        "qt_risk",
+        "renal_state",
+        "seizure_state",
+        "serotonin_syndrome_signs",
+        "suicide_risk",
+        "transaminases_rising",
+        "withdrawal_severity"
+      ],
+      "used_fields": [
+        "age",
+        "akathisia",
+        "alcohol_abuse",
+        "alcohol_use",
+        "allergy",
+        "alt_ratio_uln",
+        "ast_ratio_uln",
+        "bleeding_risk",
+        "complete_lactase_deficiency",
+        "current_dose",
+        "dementia",
+        "diabetes",
+        "ect",
+        "elderly_population",
+        "fatty_liver",
+        "from_hepatic",
+        "from_renal",
+        "from_taper_plan",
+        "galactose_intolerance",
+        "glaucoma",
+        "glucose_galactose_malabsorption",
+        "hepatic",
+        "lactation",
+        "liver_injury_signs",
+        "mania",
+        "mania_symptoms",
+        "medicines",
+        "overweight_obesity",
+        "pregnancy",
+        "qt_risk",
+        "renal_state",
+        "seizure_state",
+        "serotonin_syndrome_signs",
+        "suicide_risk",
+        "to_form",
+        "transaminases_rising",
+        "withdrawal_severity"
+      ],
+      "primary_cause": {
+        "input": "ast_ratio_uln",
+        "operator": ">",
+        "value": 3,
+        "source_ref": "RU-AGO",
+        "source_locator": "§4.4 с.4, прекращение лечения при АЛТ или АСТ >3 ВГН; регулярные пробы до нормы"
+      },
+      "source_owner_input": "to_form",
+      "actor_phase": "target_B ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "switch-ser-ago--stop-RU-AGO-mania_symptoms",
+      "rule_id": "switch-ser-ago",
+      "required_cause_fields": [
+        "from_form",
+        "mania_symptoms"
+      ],
+      "provided_context_fields": [
+        "age",
+        "akathisia",
+        "alcohol_abuse",
+        "alcohol_use",
+        "allergy",
+        "alt_ratio_uln",
+        "ast_ratio_uln",
+        "bleeding_risk",
+        "complete_lactase_deficiency",
+        "current_dose",
+        "dementia",
+        "diabetes",
+        "ect",
+        "elderly_population",
+        "fatty_liver",
+        "from_hepatic",
+        "from_taper_plan",
+        "galactose_intolerance",
+        "glucose_galactose_malabsorption",
+        "hepatic",
+        "hyponatremia_risk",
+        "lactation",
+        "liver_injury_signs",
+        "mania",
+        "medicines",
+        "overweight_obesity",
+        "pregnancy",
+        "qt_risk",
+        "renal_state",
+        "seizure_state",
+        "suicide_risk",
+        "transaminases_rising",
+        "withdrawal_severity"
+      ],
+      "used_fields": [
+        "age",
+        "akathisia",
+        "alcohol_abuse",
+        "alcohol_use",
+        "allergy",
+        "alt_ratio_uln",
+        "ast_ratio_uln",
+        "bleeding_risk",
+        "complete_lactase_deficiency",
+        "current_dose",
+        "dementia",
+        "diabetes",
+        "ect",
+        "elderly_population",
+        "fatty_liver",
+        "from_form",
+        "from_hepatic",
+        "from_taper_plan",
+        "galactose_intolerance",
+        "glucose_galactose_malabsorption",
+        "hepatic",
+        "hyponatremia_risk",
+        "lactation",
+        "liver_injury_signs",
+        "mania",
+        "mania_symptoms",
+        "medicines",
+        "overweight_obesity",
+        "pregnancy",
+        "qt_risk",
+        "renal_state",
+        "seizure_state",
+        "suicide_risk",
+        "transaminases_rising",
+        "withdrawal_severity"
+      ],
+      "primary_cause": {
+        "input": "mania_symptoms",
+        "equals": true,
+        "action": "source_stop_action",
+        "source_ref": "RU-SER",
+        "source_locator": "RU-SER §4.4 с.4",
+        "scope": "stop currently administered A; no automatic B start"
+      },
+      "source_owner_input": "from_form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "switch-ser-ago--condition-seizure_state-новые приступы",
+      "rule_id": "switch-ser-ago",
+      "required_cause_fields": [
+        "from_form",
+        "seizure_state"
+      ],
+      "provided_context_fields": [
+        "age",
+        "akathisia",
+        "alcohol_abuse",
+        "alcohol_use",
+        "allergy",
+        "alt_ratio_uln",
+        "ast_ratio_uln",
+        "bleeding_risk",
+        "complete_lactase_deficiency",
+        "current_dose",
+        "dementia",
+        "diabetes",
+        "ect",
+        "elderly_population",
+        "fatty_liver",
+        "from_hepatic",
+        "from_taper_plan",
+        "galactose_intolerance",
+        "glucose_galactose_malabsorption",
+        "hepatic",
+        "hyponatremia_risk",
+        "lactation",
+        "liver_injury_signs",
+        "mania",
+        "mania_symptoms",
+        "medicines",
+        "overweight_obesity",
+        "pregnancy",
+        "qt_risk",
+        "renal_state",
+        "suicide_risk",
+        "transaminases_rising",
+        "withdrawal_severity"
+      ],
+      "used_fields": [
+        "age",
+        "akathisia",
+        "alcohol_abuse",
+        "alcohol_use",
+        "allergy",
+        "alt_ratio_uln",
+        "ast_ratio_uln",
+        "bleeding_risk",
+        "complete_lactase_deficiency",
+        "current_dose",
+        "dementia",
+        "diabetes",
+        "ect",
+        "elderly_population",
+        "fatty_liver",
+        "from_form",
+        "from_hepatic",
+        "from_taper_plan",
+        "galactose_intolerance",
+        "glucose_galactose_malabsorption",
+        "hepatic",
+        "hyponatremia_risk",
+        "lactation",
+        "liver_injury_signs",
+        "mania",
+        "mania_symptoms",
+        "medicines",
+        "overweight_obesity",
+        "pregnancy",
+        "qt_risk",
+        "renal_state",
+        "seizure_state",
+        "suicide_risk",
+        "transaminases_rising",
+        "withdrawal_severity"
+      ],
+      "primary_cause": {
+        "input": "seizure_state",
+        "operator": "equals",
+        "value": "новые приступы",
+        "action": "stop ongoing source medication",
+        "source_ref": "RU-SER",
+        "source_locator": "§4.4 с.4, судороги: прекращение при развитии приступов"
+      },
+      "source_owner_input": "from_form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "switch-ser-ago--alt_ratio_uln-ongoing-above3",
+      "rule_id": "switch-ser-ago",
+      "required_cause_fields": [
+        "alt_ratio_uln",
+        "to_form"
+      ],
+      "provided_context_fields": [
+        "age",
+        "akathisia",
+        "alcohol_abuse",
+        "alcohol_use",
+        "allergy",
+        "ast_ratio_uln",
+        "bleeding_risk",
+        "complete_lactase_deficiency",
+        "current_dose",
+        "dementia",
+        "diabetes",
+        "ect",
+        "elderly_population",
+        "fatty_liver",
+        "from_hepatic",
+        "from_taper_plan",
+        "galactose_intolerance",
+        "glucose_galactose_malabsorption",
+        "hepatic",
+        "hyponatremia_risk",
+        "lactation",
+        "liver_injury_signs",
+        "mania",
+        "mania_symptoms",
+        "medicines",
+        "overweight_obesity",
+        "pregnancy",
+        "qt_risk",
+        "renal_state",
+        "seizure_state",
+        "suicide_risk",
+        "transaminases_rising",
+        "withdrawal_severity"
+      ],
+      "used_fields": [
+        "age",
+        "akathisia",
+        "alcohol_abuse",
+        "alcohol_use",
+        "allergy",
+        "alt_ratio_uln",
+        "ast_ratio_uln",
+        "bleeding_risk",
+        "complete_lactase_deficiency",
+        "current_dose",
+        "dementia",
+        "diabetes",
+        "ect",
+        "elderly_population",
+        "fatty_liver",
+        "from_hepatic",
+        "from_taper_plan",
+        "galactose_intolerance",
+        "glucose_galactose_malabsorption",
+        "hepatic",
+        "hyponatremia_risk",
+        "lactation",
+        "liver_injury_signs",
+        "mania",
+        "mania_symptoms",
+        "medicines",
+        "overweight_obesity",
+        "pregnancy",
+        "qt_risk",
+        "renal_state",
+        "seizure_state",
+        "suicide_risk",
+        "to_form",
+        "transaminases_rising",
+        "withdrawal_severity"
+      ],
+      "primary_cause": {
+        "input": "alt_ratio_uln",
+        "operator": ">",
+        "value": 3,
+        "source_ref": "RU-AGO",
+        "source_locator": "§4.4 с.4, прекращение лечения при АЛТ или АСТ >3 ВГН; регулярные пробы до нормы"
+      },
+      "source_owner_input": "to_form",
+      "actor_phase": "target_B ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "switch-ser-ago--ast_ratio_uln-ongoing-above3",
+      "rule_id": "switch-ser-ago",
+      "required_cause_fields": [
+        "ast_ratio_uln",
+        "to_form"
+      ],
+      "provided_context_fields": [
+        "age",
+        "akathisia",
+        "alcohol_abuse",
+        "alcohol_use",
+        "allergy",
+        "alt_ratio_uln",
+        "bleeding_risk",
+        "complete_lactase_deficiency",
+        "current_dose",
+        "dementia",
+        "diabetes",
+        "ect",
+        "elderly_population",
+        "fatty_liver",
+        "from_hepatic",
+        "from_taper_plan",
+        "galactose_intolerance",
+        "glucose_galactose_malabsorption",
+        "hepatic",
+        "hyponatremia_risk",
+        "lactation",
+        "liver_injury_signs",
+        "mania",
+        "mania_symptoms",
+        "medicines",
+        "overweight_obesity",
+        "pregnancy",
+        "qt_risk",
+        "renal_state",
+        "seizure_state",
+        "suicide_risk",
+        "transaminases_rising",
+        "withdrawal_severity"
+      ],
+      "used_fields": [
+        "age",
+        "akathisia",
+        "alcohol_abuse",
+        "alcohol_use",
+        "allergy",
+        "alt_ratio_uln",
+        "ast_ratio_uln",
+        "bleeding_risk",
+        "complete_lactase_deficiency",
+        "current_dose",
+        "dementia",
+        "diabetes",
+        "ect",
+        "elderly_population",
+        "fatty_liver",
+        "from_hepatic",
+        "from_taper_plan",
+        "galactose_intolerance",
+        "glucose_galactose_malabsorption",
+        "hepatic",
+        "hyponatremia_risk",
+        "lactation",
+        "liver_injury_signs",
+        "mania",
+        "mania_symptoms",
+        "medicines",
+        "overweight_obesity",
+        "pregnancy",
+        "qt_risk",
+        "renal_state",
+        "seizure_state",
+        "suicide_risk",
+        "to_form",
+        "transaminases_rising",
+        "withdrawal_severity"
+      ],
+      "primary_cause": {
+        "input": "ast_ratio_uln",
+        "operator": ">",
+        "value": 3,
+        "source_ref": "RU-AGO",
+        "source_locator": "§4.4 с.4, прекращение лечения при АЛТ или АСТ >3 ВГН; регулярные пробы до нормы"
+      },
+      "source_owner_input": "to_form",
+      "actor_phase": "target_B ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "venla-xr-gad-start--diastolic-BP-100.01",
+      "rule_id": "venla-xr-gad-start",
+      "required_cause_fields": [
+        "diastolic_BP",
+        "form"
+      ],
+      "provided_context_fields": [
+        "alcohol_use",
+        "bleeding_risk",
+        "coronary_disease",
+        "diabetes",
+        "ecg_change",
+        "ect",
+        "electrolyte_imbalance",
+        "glaucoma",
+        "heart_failure",
+        "hypercholesterolemia",
+        "hypertension",
+        "hyponatremia_risk",
+        "low_blood_pressure",
+        "low_body_mass",
+        "mania",
+        "recent_infarction",
+        "recent_stroke",
+        "seizure_history",
+        "suicide_risk",
+        "tachycardia",
+        "unstable_angina",
+        "urinary_impairment"
+      ],
+      "used_fields": [
+        "alcohol_use",
+        "bleeding_risk",
+        "coronary_disease",
+        "diabetes",
+        "diastolic_BP",
+        "ecg_change",
+        "ect",
+        "electrolyte_imbalance",
+        "form",
+        "glaucoma",
+        "heart_failure",
+        "hypercholesterolemia",
+        "hypertension",
+        "hyponatremia_risk",
+        "low_blood_pressure",
+        "low_body_mass",
+        "mania",
+        "recent_infarction",
+        "recent_stroke",
+        "seizure_history",
+        "suicide_risk",
+        "tachycardia",
+        "unstable_angina",
+        "urinary_impairment"
+      ],
+      "primary_cause": {
+        "input": "diastolic_BP",
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.4 с.9"
+      },
+      "source_owner_input": "form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "venla-xr-social-start--diastolic-BP-100.01",
+      "rule_id": "venla-xr-social-start",
+      "required_cause_fields": [
+        "diastolic_BP",
+        "form"
+      ],
+      "provided_context_fields": [
+        "alcohol_use",
+        "bleeding_risk",
+        "coronary_disease",
+        "diabetes",
+        "ecg_change",
+        "ect",
+        "electrolyte_imbalance",
+        "glaucoma",
+        "heart_failure",
+        "hypercholesterolemia",
+        "hypertension",
+        "hyponatremia_risk",
+        "low_blood_pressure",
+        "low_body_mass",
+        "mania",
+        "recent_infarction",
+        "recent_stroke",
+        "seizure_history",
+        "suicide_risk",
+        "tachycardia",
+        "unstable_angina",
+        "urinary_impairment"
+      ],
+      "used_fields": [
+        "alcohol_use",
+        "bleeding_risk",
+        "coronary_disease",
+        "diabetes",
+        "diastolic_BP",
+        "ecg_change",
+        "ect",
+        "electrolyte_imbalance",
+        "form",
+        "glaucoma",
+        "heart_failure",
+        "hypercholesterolemia",
+        "hypertension",
+        "hyponatremia_risk",
+        "low_blood_pressure",
+        "low_body_mass",
+        "mania",
+        "recent_infarction",
+        "recent_stroke",
+        "seizure_history",
+        "suicide_risk",
+        "tachycardia",
+        "unstable_angina",
+        "urinary_impairment"
+      ],
+      "primary_cause": {
+        "input": "diastolic_BP",
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.4 с.9"
+      },
+      "source_owner_input": "form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "ser-adult-adjust--round2-active-mania-stop",
+      "rule_id": "ser-adult-adjust",
+      "required_cause_fields": [
+        "form",
+        "mania_symptoms"
+      ],
+      "provided_context_fields": [
+        "adherence",
+        "bleeding_risk",
+        "hyponatremia_risk",
+        "mania",
+        "qt_risk",
+        "suicide_risk"
+      ],
+      "used_fields": [
+        "adherence",
+        "bleeding_risk",
+        "form",
+        "hyponatremia_risk",
+        "mania",
+        "mania_symptoms",
+        "qt_risk",
+        "suicide_risk"
+      ],
+      "primary_cause": {
+        "input": "mania_symptoms",
+        "operator": "equals",
+        "value": true,
+        "action": "source_stop_action",
+        "stop_medication": "RU-SER",
+        "source_ref": "RU-SER",
+        "source_locator": "§4.4 с.4"
+      },
+      "source_owner_input": "form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "ser-panic-start--round2-active-mania-stop",
+      "rule_id": "ser-panic-start",
+      "required_cause_fields": [
+        "form",
+        "mania_symptoms"
+      ],
+      "provided_context_fields": [
+        "akathisia",
+        "bleeding_risk",
+        "hyponatremia_risk",
+        "mania",
+        "qt_risk",
+        "suicide_risk"
+      ],
+      "used_fields": [
+        "akathisia",
+        "bleeding_risk",
+        "form",
+        "hyponatremia_risk",
+        "mania",
+        "mania_symptoms",
+        "qt_risk",
+        "suicide_risk"
+      ],
+      "primary_cause": {
+        "input": "mania_symptoms",
+        "operator": "equals",
+        "value": true,
+        "action": "source_stop_action",
+        "stop_medication": "RU-SER",
+        "source_ref": "RU-SER",
+        "source_locator": "§4.4 с.4"
+      },
+      "source_owner_input": "form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "ser-social-start--round2-active-mania-stop",
+      "rule_id": "ser-social-start",
+      "required_cause_fields": [
+        "form",
+        "mania_symptoms"
+      ],
+      "provided_context_fields": [
+        "akathisia",
+        "bleeding_risk",
+        "hyponatremia_risk",
+        "mania",
+        "qt_risk",
+        "suicide_risk"
+      ],
+      "used_fields": [
+        "akathisia",
+        "bleeding_risk",
+        "form",
+        "hyponatremia_risk",
+        "mania",
+        "mania_symptoms",
+        "qt_risk",
+        "suicide_risk"
+      ],
+      "primary_cause": {
+        "input": "mania_symptoms",
+        "operator": "equals",
+        "value": true,
+        "action": "source_stop_action",
+        "stop_medication": "RU-SER",
+        "source_ref": "RU-SER",
+        "source_locator": "§4.4 с.4"
+      },
+      "source_owner_input": "form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "ser-taper-limit--round2-active-mania-stop",
+      "rule_id": "ser-taper-limit",
+      "required_cause_fields": [
+        "form",
+        "mania_symptoms"
+      ],
+      "provided_context_fields": [
+        "current_dose",
+        "duration_of_use",
+        "medicines",
+        "prior_withdrawal"
+      ],
+      "used_fields": [
+        "current_dose",
+        "duration_of_use",
+        "form",
+        "mania_symptoms",
+        "medicines",
+        "prior_withdrawal"
+      ],
+      "primary_cause": {
+        "input": "mania_symptoms",
+        "operator": "equals",
+        "value": true,
+        "action": "source_stop_action",
+        "stop_medication": "RU-SER",
+        "source_ref": "RU-SER",
+        "source_locator": "§4.4 с.4"
+      },
+      "source_owner_input": "form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "esc-adult-adjust--current-mania_symptoms-stop",
+      "rule_id": "esc-adult-adjust",
+      "required_cause_fields": [
+        "form",
+        "mania_symptoms"
+      ],
+      "provided_context_fields": [
+        "adherence",
+        "bleeding_risk",
+        "diabetes",
+        "glaucoma",
+        "hyponatremia_risk",
+        "known_cyp2c19",
+        "mania",
+        "qt_risk",
+        "suicide_risk",
+        "time_at_dose"
+      ],
+      "used_fields": [
+        "adherence",
+        "bleeding_risk",
+        "diabetes",
+        "form",
+        "glaucoma",
+        "hyponatremia_risk",
+        "known_cyp2c19",
+        "mania",
+        "mania_symptoms",
+        "qt_risk",
+        "suicide_risk",
+        "time_at_dose"
+      ],
+      "primary_cause": {
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.4–6",
+        "input": "mania_symptoms"
+      },
+      "source_owner_input": "form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "esc-adult-adjust--current-arrhythmia_signs-stop",
+      "rule_id": "esc-adult-adjust",
+      "required_cause_fields": [
+        "arrhythmia_signs",
+        "form"
+      ],
+      "provided_context_fields": [
+        "adherence",
+        "bleeding_risk",
+        "diabetes",
+        "glaucoma",
+        "hyponatremia_risk",
+        "known_cyp2c19",
+        "mania",
+        "qt_risk",
+        "suicide_risk",
+        "time_at_dose"
+      ],
+      "used_fields": [
+        "adherence",
+        "arrhythmia_signs",
+        "bleeding_risk",
+        "diabetes",
+        "form",
+        "glaucoma",
+        "hyponatremia_risk",
+        "known_cyp2c19",
+        "mania",
+        "qt_risk",
+        "suicide_risk",
+        "time_at_dose"
+      ],
+      "primary_cause": {
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.4–6",
+        "input": "arrhythmia_signs"
+      },
+      "source_owner_input": "form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "esc-adult-adjust--current-serotonin_syndrome_signs-stop",
+      "rule_id": "esc-adult-adjust",
+      "required_cause_fields": [
+        "form",
+        "serotonin_syndrome_signs"
+      ],
+      "provided_context_fields": [
+        "adherence",
+        "bleeding_risk",
+        "diabetes",
+        "glaucoma",
+        "hyponatremia_risk",
+        "known_cyp2c19",
+        "mania",
+        "qt_risk",
+        "suicide_risk",
+        "time_at_dose"
+      ],
+      "used_fields": [
+        "adherence",
+        "bleeding_risk",
+        "diabetes",
+        "form",
+        "glaucoma",
+        "hyponatremia_risk",
+        "known_cyp2c19",
+        "mania",
+        "qt_risk",
+        "serotonin_syndrome_signs",
+        "suicide_risk",
+        "time_at_dose"
+      ],
+      "primary_cause": {
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.4–6",
+        "input": "serotonin_syndrome_signs"
+      },
+      "source_owner_input": "form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "esc-cyp2c19-start--current-mania_symptoms-stop",
+      "rule_id": "esc-cyp2c19-start",
+      "required_cause_fields": [
+        "form",
+        "mania_symptoms"
+      ],
+      "provided_context_fields": [
+        "bleeding_risk",
+        "diabetes",
+        "glaucoma",
+        "hyponatremia_risk",
+        "mania",
+        "qt_risk",
+        "suicide_risk"
+      ],
+      "used_fields": [
+        "bleeding_risk",
+        "diabetes",
+        "form",
+        "glaucoma",
+        "hyponatremia_risk",
+        "mania",
+        "mania_symptoms",
+        "qt_risk",
+        "suicide_risk"
+      ],
+      "primary_cause": {
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.4–6",
+        "input": "mania_symptoms"
+      },
+      "source_owner_input": "form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "esc-cyp2c19-start--current-arrhythmia_signs-stop",
+      "rule_id": "esc-cyp2c19-start",
+      "required_cause_fields": [
+        "arrhythmia_signs",
+        "form"
+      ],
+      "provided_context_fields": [
+        "bleeding_risk",
+        "diabetes",
+        "glaucoma",
+        "hyponatremia_risk",
+        "mania",
+        "qt_risk",
+        "suicide_risk"
+      ],
+      "used_fields": [
+        "arrhythmia_signs",
+        "bleeding_risk",
+        "diabetes",
+        "form",
+        "glaucoma",
+        "hyponatremia_risk",
+        "mania",
+        "qt_risk",
+        "suicide_risk"
+      ],
+      "primary_cause": {
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.4–6",
+        "input": "arrhythmia_signs"
+      },
+      "source_owner_input": "form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "esc-cyp2c19-start--current-serotonin_syndrome_signs-stop",
+      "rule_id": "esc-cyp2c19-start",
+      "required_cause_fields": [
+        "form",
+        "serotonin_syndrome_signs"
+      ],
+      "provided_context_fields": [
+        "bleeding_risk",
+        "diabetes",
+        "glaucoma",
+        "hyponatremia_risk",
+        "mania",
+        "qt_risk",
+        "suicide_risk"
+      ],
+      "used_fields": [
+        "bleeding_risk",
+        "diabetes",
+        "form",
+        "glaucoma",
+        "hyponatremia_risk",
+        "mania",
+        "qt_risk",
+        "serotonin_syndrome_signs",
+        "suicide_risk"
+      ],
+      "primary_cause": {
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.4–6",
+        "input": "serotonin_syndrome_signs"
+      },
+      "source_owner_input": "form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "esc-elderly-start--current-mania_symptoms-stop",
+      "rule_id": "esc-elderly-start",
+      "required_cause_fields": [
+        "form",
+        "mania_symptoms"
+      ],
+      "provided_context_fields": [
+        "bleeding_risk",
+        "diabetes",
+        "glaucoma",
+        "hyponatremia_risk",
+        "known_cyp2c19",
+        "mania",
+        "qt_risk",
+        "suicide_risk"
+      ],
+      "used_fields": [
+        "bleeding_risk",
+        "diabetes",
+        "form",
+        "glaucoma",
+        "hyponatremia_risk",
+        "known_cyp2c19",
+        "mania",
+        "mania_symptoms",
+        "qt_risk",
+        "suicide_risk"
+      ],
+      "primary_cause": {
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.4–6",
+        "input": "mania_symptoms"
+      },
+      "source_owner_input": "form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "esc-elderly-start--current-arrhythmia_signs-stop",
+      "rule_id": "esc-elderly-start",
+      "required_cause_fields": [
+        "arrhythmia_signs",
+        "form"
+      ],
+      "provided_context_fields": [
+        "bleeding_risk",
+        "diabetes",
+        "glaucoma",
+        "hyponatremia_risk",
+        "known_cyp2c19",
+        "mania",
+        "qt_risk",
+        "suicide_risk"
+      ],
+      "used_fields": [
+        "arrhythmia_signs",
+        "bleeding_risk",
+        "diabetes",
+        "form",
+        "glaucoma",
+        "hyponatremia_risk",
+        "known_cyp2c19",
+        "mania",
+        "qt_risk",
+        "suicide_risk"
+      ],
+      "primary_cause": {
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.4–6",
+        "input": "arrhythmia_signs"
+      },
+      "source_owner_input": "form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "esc-elderly-start--current-serotonin_syndrome_signs-stop",
+      "rule_id": "esc-elderly-start",
+      "required_cause_fields": [
+        "form",
+        "serotonin_syndrome_signs"
+      ],
+      "provided_context_fields": [
+        "bleeding_risk",
+        "diabetes",
+        "glaucoma",
+        "hyponatremia_risk",
+        "known_cyp2c19",
+        "mania",
+        "qt_risk",
+        "suicide_risk"
+      ],
+      "used_fields": [
+        "bleeding_risk",
+        "diabetes",
+        "form",
+        "glaucoma",
+        "hyponatremia_risk",
+        "known_cyp2c19",
+        "mania",
+        "qt_risk",
+        "serotonin_syndrome_signs",
+        "suicide_risk"
+      ],
+      "primary_cause": {
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.4–6",
+        "input": "serotonin_syndrome_signs"
+      },
+      "source_owner_input": "form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "esc-gad-start--current-mania_symptoms-stop",
+      "rule_id": "esc-gad-start",
+      "required_cause_fields": [
+        "form",
+        "mania_symptoms"
+      ],
+      "provided_context_fields": [
+        "bleeding_risk",
+        "diabetes",
+        "glaucoma",
+        "hyponatremia_risk",
+        "known_cyp2c19",
+        "mania",
+        "qt_risk",
+        "suicide_risk"
+      ],
+      "used_fields": [
+        "bleeding_risk",
+        "diabetes",
+        "form",
+        "glaucoma",
+        "hyponatremia_risk",
+        "known_cyp2c19",
+        "mania",
+        "mania_symptoms",
+        "qt_risk",
+        "suicide_risk"
+      ],
+      "primary_cause": {
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.4–6",
+        "input": "mania_symptoms"
+      },
+      "source_owner_input": "form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "esc-gad-start--current-arrhythmia_signs-stop",
+      "rule_id": "esc-gad-start",
+      "required_cause_fields": [
+        "arrhythmia_signs",
+        "form"
+      ],
+      "provided_context_fields": [
+        "bleeding_risk",
+        "diabetes",
+        "glaucoma",
+        "hyponatremia_risk",
+        "known_cyp2c19",
+        "mania",
+        "qt_risk",
+        "suicide_risk"
+      ],
+      "used_fields": [
+        "arrhythmia_signs",
+        "bleeding_risk",
+        "diabetes",
+        "form",
+        "glaucoma",
+        "hyponatremia_risk",
+        "known_cyp2c19",
+        "mania",
+        "qt_risk",
+        "suicide_risk"
+      ],
+      "primary_cause": {
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.4–6",
+        "input": "arrhythmia_signs"
+      },
+      "source_owner_input": "form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "esc-gad-start--current-serotonin_syndrome_signs-stop",
+      "rule_id": "esc-gad-start",
+      "required_cause_fields": [
+        "form",
+        "serotonin_syndrome_signs"
+      ],
+      "provided_context_fields": [
+        "bleeding_risk",
+        "diabetes",
+        "glaucoma",
+        "hyponatremia_risk",
+        "known_cyp2c19",
+        "mania",
+        "qt_risk",
+        "suicide_risk"
+      ],
+      "used_fields": [
+        "bleeding_risk",
+        "diabetes",
+        "form",
+        "glaucoma",
+        "hyponatremia_risk",
+        "known_cyp2c19",
+        "mania",
+        "qt_risk",
+        "serotonin_syndrome_signs",
+        "suicide_risk"
+      ],
+      "primary_cause": {
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.4–6",
+        "input": "serotonin_syndrome_signs"
+      },
+      "source_owner_input": "form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "esc-hepatic-start--current-mania_symptoms-stop",
+      "rule_id": "esc-hepatic-start",
+      "required_cause_fields": [
+        "form",
+        "mania_symptoms"
+      ],
+      "provided_context_fields": [
+        "bleeding_risk",
+        "diabetes",
+        "glaucoma",
+        "hyponatremia_risk",
+        "known_cyp2c19",
+        "mania",
+        "qt_risk",
+        "suicide_risk"
+      ],
+      "used_fields": [
+        "bleeding_risk",
+        "diabetes",
+        "form",
+        "glaucoma",
+        "hyponatremia_risk",
+        "known_cyp2c19",
+        "mania",
+        "mania_symptoms",
+        "qt_risk",
+        "suicide_risk"
+      ],
+      "primary_cause": {
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.4–6",
+        "input": "mania_symptoms"
+      },
+      "source_owner_input": "form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "esc-hepatic-start--current-arrhythmia_signs-stop",
+      "rule_id": "esc-hepatic-start",
+      "required_cause_fields": [
+        "arrhythmia_signs",
+        "form"
+      ],
+      "provided_context_fields": [
+        "bleeding_risk",
+        "diabetes",
+        "glaucoma",
+        "hyponatremia_risk",
+        "known_cyp2c19",
+        "mania",
+        "qt_risk",
+        "suicide_risk"
+      ],
+      "used_fields": [
+        "arrhythmia_signs",
+        "bleeding_risk",
+        "diabetes",
+        "form",
+        "glaucoma",
+        "hyponatremia_risk",
+        "known_cyp2c19",
+        "mania",
+        "qt_risk",
+        "suicide_risk"
+      ],
+      "primary_cause": {
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.4–6",
+        "input": "arrhythmia_signs"
+      },
+      "source_owner_input": "form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "esc-hepatic-start--current-serotonin_syndrome_signs-stop",
+      "rule_id": "esc-hepatic-start",
+      "required_cause_fields": [
+        "form",
+        "serotonin_syndrome_signs"
+      ],
+      "provided_context_fields": [
+        "bleeding_risk",
+        "diabetes",
+        "glaucoma",
+        "hyponatremia_risk",
+        "known_cyp2c19",
+        "mania",
+        "qt_risk",
+        "suicide_risk"
+      ],
+      "used_fields": [
+        "bleeding_risk",
+        "diabetes",
+        "form",
+        "glaucoma",
+        "hyponatremia_risk",
+        "known_cyp2c19",
+        "mania",
+        "qt_risk",
+        "serotonin_syndrome_signs",
+        "suicide_risk"
+      ],
+      "primary_cause": {
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.4–6",
+        "input": "serotonin_syndrome_signs"
+      },
+      "source_owner_input": "form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "esc-panic-start--current-mania_symptoms-stop",
+      "rule_id": "esc-panic-start",
+      "required_cause_fields": [
+        "form",
+        "mania_symptoms"
+      ],
+      "provided_context_fields": [
+        "bleeding_risk",
+        "diabetes",
+        "glaucoma",
+        "hyponatremia_risk",
+        "known_cyp2c19",
+        "mania",
+        "qt_risk",
+        "suicide_risk"
+      ],
+      "used_fields": [
+        "bleeding_risk",
+        "diabetes",
+        "form",
+        "glaucoma",
+        "hyponatremia_risk",
+        "known_cyp2c19",
+        "mania",
+        "mania_symptoms",
+        "qt_risk",
+        "suicide_risk"
+      ],
+      "primary_cause": {
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.4–6",
+        "input": "mania_symptoms"
+      },
+      "source_owner_input": "form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "esc-panic-start--current-arrhythmia_signs-stop",
+      "rule_id": "esc-panic-start",
+      "required_cause_fields": [
+        "arrhythmia_signs",
+        "form"
+      ],
+      "provided_context_fields": [
+        "bleeding_risk",
+        "diabetes",
+        "glaucoma",
+        "hyponatremia_risk",
+        "known_cyp2c19",
+        "mania",
+        "qt_risk",
+        "suicide_risk"
+      ],
+      "used_fields": [
+        "arrhythmia_signs",
+        "bleeding_risk",
+        "diabetes",
+        "form",
+        "glaucoma",
+        "hyponatremia_risk",
+        "known_cyp2c19",
+        "mania",
+        "qt_risk",
+        "suicide_risk"
+      ],
+      "primary_cause": {
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.4–6",
+        "input": "arrhythmia_signs"
+      },
+      "source_owner_input": "form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "esc-panic-start--current-serotonin_syndrome_signs-stop",
+      "rule_id": "esc-panic-start",
+      "required_cause_fields": [
+        "form",
+        "serotonin_syndrome_signs"
+      ],
+      "provided_context_fields": [
+        "bleeding_risk",
+        "diabetes",
+        "glaucoma",
+        "hyponatremia_risk",
+        "known_cyp2c19",
+        "mania",
+        "qt_risk",
+        "suicide_risk"
+      ],
+      "used_fields": [
+        "bleeding_risk",
+        "diabetes",
+        "form",
+        "glaucoma",
+        "hyponatremia_risk",
+        "known_cyp2c19",
+        "mania",
+        "qt_risk",
+        "serotonin_syndrome_signs",
+        "suicide_risk"
+      ],
+      "primary_cause": {
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.4–6",
+        "input": "serotonin_syndrome_signs"
+      },
+      "source_owner_input": "form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "esc-social-start--current-mania_symptoms-stop",
+      "rule_id": "esc-social-start",
+      "required_cause_fields": [
+        "form",
+        "mania_symptoms"
+      ],
+      "provided_context_fields": [
+        "bleeding_risk",
+        "diabetes",
+        "glaucoma",
+        "hyponatremia_risk",
+        "known_cyp2c19",
+        "mania",
+        "qt_risk",
+        "suicide_risk"
+      ],
+      "used_fields": [
+        "bleeding_risk",
+        "diabetes",
+        "form",
+        "glaucoma",
+        "hyponatremia_risk",
+        "known_cyp2c19",
+        "mania",
+        "mania_symptoms",
+        "qt_risk",
+        "suicide_risk"
+      ],
+      "primary_cause": {
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.4–6",
+        "input": "mania_symptoms"
+      },
+      "source_owner_input": "form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "esc-social-start--current-arrhythmia_signs-stop",
+      "rule_id": "esc-social-start",
+      "required_cause_fields": [
+        "arrhythmia_signs",
+        "form"
+      ],
+      "provided_context_fields": [
+        "bleeding_risk",
+        "diabetes",
+        "glaucoma",
+        "hyponatremia_risk",
+        "known_cyp2c19",
+        "mania",
+        "qt_risk",
+        "suicide_risk"
+      ],
+      "used_fields": [
+        "arrhythmia_signs",
+        "bleeding_risk",
+        "diabetes",
+        "form",
+        "glaucoma",
+        "hyponatremia_risk",
+        "known_cyp2c19",
+        "mania",
+        "qt_risk",
+        "suicide_risk"
+      ],
+      "primary_cause": {
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.4–6",
+        "input": "arrhythmia_signs"
+      },
+      "source_owner_input": "form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "esc-social-start--current-serotonin_syndrome_signs-stop",
+      "rule_id": "esc-social-start",
+      "required_cause_fields": [
+        "form",
+        "serotonin_syndrome_signs"
+      ],
+      "provided_context_fields": [
+        "bleeding_risk",
+        "diabetes",
+        "glaucoma",
+        "hyponatremia_risk",
+        "known_cyp2c19",
+        "mania",
+        "qt_risk",
+        "suicide_risk"
+      ],
+      "used_fields": [
+        "bleeding_risk",
+        "diabetes",
+        "form",
+        "glaucoma",
+        "hyponatremia_risk",
+        "known_cyp2c19",
+        "mania",
+        "qt_risk",
+        "serotonin_syndrome_signs",
+        "suicide_risk"
+      ],
+      "primary_cause": {
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.4–6",
+        "input": "serotonin_syndrome_signs"
+      },
+      "source_owner_input": "form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "esc-taper-limit--current-mania_symptoms-stop",
+      "rule_id": "esc-taper-limit",
+      "required_cause_fields": [
+        "form",
+        "mania_symptoms"
+      ],
+      "provided_context_fields": [
+        "current_dose",
+        "duration_of_use",
+        "medicines",
+        "prior_withdrawal"
+      ],
+      "used_fields": [
+        "current_dose",
+        "duration_of_use",
+        "form",
+        "mania_symptoms",
+        "medicines",
+        "prior_withdrawal"
+      ],
+      "primary_cause": {
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.4–6",
+        "input": "mania_symptoms"
+      },
+      "source_owner_input": "form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "esc-taper-limit--current-arrhythmia_signs-stop",
+      "rule_id": "esc-taper-limit",
+      "required_cause_fields": [
+        "arrhythmia_signs",
+        "form"
+      ],
+      "provided_context_fields": [
+        "current_dose",
+        "duration_of_use",
+        "medicines",
+        "prior_withdrawal"
+      ],
+      "used_fields": [
+        "arrhythmia_signs",
+        "current_dose",
+        "duration_of_use",
+        "form",
+        "medicines",
+        "prior_withdrawal"
+      ],
+      "primary_cause": {
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.4–6",
+        "input": "arrhythmia_signs"
+      },
+      "source_owner_input": "form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "esc-taper-limit--current-serotonin_syndrome_signs-stop",
+      "rule_id": "esc-taper-limit",
+      "required_cause_fields": [
+        "form",
+        "serotonin_syndrome_signs"
+      ],
+      "provided_context_fields": [
+        "current_dose",
+        "duration_of_use",
+        "medicines",
+        "prior_withdrawal"
+      ],
+      "used_fields": [
+        "current_dose",
+        "duration_of_use",
+        "form",
+        "medicines",
+        "prior_withdrawal",
+        "serotonin_syndrome_signs"
+      ],
+      "primary_cause": {
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.4–6",
+        "input": "serotonin_syndrome_signs"
+      },
+      "source_owner_input": "form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "switch-esc-ago--current-mania_symptoms-stop",
+      "rule_id": "switch-esc-ago",
+      "required_cause_fields": [
+        "from_form",
+        "mania_symptoms"
+      ],
+      "provided_context_fields": [
+        "age",
+        "alcohol_abuse",
+        "alcohol_use",
+        "allergy",
+        "alt_ratio_uln",
+        "arrhythmia_signs",
+        "ast_ratio_uln",
+        "complete_lactase_deficiency",
+        "current_dose",
+        "dementia",
+        "diabetes",
+        "ect",
+        "elderly_population",
+        "fatty_liver",
+        "from_hepatic",
+        "from_taper_plan",
+        "galactose_intolerance",
+        "glucose_galactose_malabsorption",
+        "hepatic",
+        "lactation",
+        "liver_injury_signs",
+        "mania",
+        "medicines",
+        "overweight_obesity",
+        "pregnancy",
+        "renal_state",
+        "seizure_state",
+        "serotonin_syndrome_signs",
+        "suicide_risk",
+        "transaminases_rising",
+        "withdrawal_severity"
+      ],
+      "used_fields": [
+        "age",
+        "alcohol_abuse",
+        "alcohol_use",
+        "allergy",
+        "alt_ratio_uln",
+        "arrhythmia_signs",
+        "ast_ratio_uln",
+        "complete_lactase_deficiency",
+        "current_dose",
+        "dementia",
+        "diabetes",
+        "ect",
+        "elderly_population",
+        "fatty_liver",
+        "from_form",
+        "from_hepatic",
+        "from_taper_plan",
+        "galactose_intolerance",
+        "glucose_galactose_malabsorption",
+        "hepatic",
+        "lactation",
+        "liver_injury_signs",
+        "mania",
+        "mania_symptoms",
+        "medicines",
+        "overweight_obesity",
+        "pregnancy",
+        "renal_state",
+        "seizure_state",
+        "serotonin_syndrome_signs",
+        "suicide_risk",
+        "transaminases_rising",
+        "withdrawal_severity"
+      ],
+      "primary_cause": {
+        "input": "mania_symptoms",
+        "equals": true,
+        "action": "source_stop_action",
+        "source_ref": "RU-ESC",
+        "source_locator": "RU-ESC §4.4 с.4",
+        "scope": "stop currently administered A; no automatic B start"
+      },
+      "source_owner_input": "from_form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "switch-ser-ago--round2-A-active-mania-True",
+      "rule_id": "switch-ser-ago",
+      "required_cause_fields": [
+        "from_form",
+        "mania_symptoms"
+      ],
+      "provided_context_fields": [
+        "age",
+        "akathisia",
+        "alcohol_abuse",
+        "alcohol_use",
+        "allergy",
+        "alt_ratio_uln",
+        "ast_ratio_uln",
+        "bleeding_risk",
+        "complete_lactase_deficiency",
+        "current_dose",
+        "dementia",
+        "diabetes",
+        "ect",
+        "elderly_population",
+        "fatty_liver",
+        "from_hepatic",
+        "from_taper_plan",
+        "galactose_intolerance",
+        "glucose_galactose_malabsorption",
+        "hepatic",
+        "hyponatremia_risk",
+        "lactation",
+        "liver_injury_signs",
+        "mania",
+        "medicines",
+        "overweight_obesity",
+        "pregnancy",
+        "qt_risk",
+        "renal_state",
+        "seizure_state",
+        "suicide_risk",
+        "transaminases_rising",
+        "withdrawal_severity"
+      ],
+      "used_fields": [
+        "age",
+        "akathisia",
+        "alcohol_abuse",
+        "alcohol_use",
+        "allergy",
+        "alt_ratio_uln",
+        "ast_ratio_uln",
+        "bleeding_risk",
+        "complete_lactase_deficiency",
+        "current_dose",
+        "dementia",
+        "diabetes",
+        "ect",
+        "elderly_population",
+        "fatty_liver",
+        "from_form",
+        "from_hepatic",
+        "from_taper_plan",
+        "galactose_intolerance",
+        "glucose_galactose_malabsorption",
+        "hepatic",
+        "hyponatremia_risk",
+        "lactation",
+        "liver_injury_signs",
+        "mania",
+        "mania_symptoms",
+        "medicines",
+        "overweight_obesity",
+        "pregnancy",
+        "qt_risk",
+        "renal_state",
+        "seizure_state",
+        "suicide_risk",
+        "transaminases_rising",
+        "withdrawal_severity"
+      ],
+      "primary_cause": {
+        "input": "mania_symptoms",
+        "equals": true,
+        "action": "source_stop_action",
+        "source_ref": "RU-SER",
+        "source_locator": "RU-SER §4.4 с.4",
+        "scope": "stop currently administered A; no automatic B start"
+      },
+      "source_owner_input": "from_form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "switch-esc-ago--round2-A-active-mania-True",
+      "rule_id": "switch-esc-ago",
+      "required_cause_fields": [
+        "from_form",
+        "mania_symptoms"
+      ],
+      "provided_context_fields": [
+        "age",
+        "alcohol_abuse",
+        "alcohol_use",
+        "allergy",
+        "alt_ratio_uln",
+        "arrhythmia_signs",
+        "ast_ratio_uln",
+        "complete_lactase_deficiency",
+        "current_dose",
+        "dementia",
+        "diabetes",
+        "ect",
+        "elderly_population",
+        "fatty_liver",
+        "from_hepatic",
+        "from_taper_plan",
+        "galactose_intolerance",
+        "glucose_galactose_malabsorption",
+        "hepatic",
+        "lactation",
+        "liver_injury_signs",
+        "mania",
+        "medicines",
+        "overweight_obesity",
+        "pregnancy",
+        "renal_state",
+        "seizure_state",
+        "serotonin_syndrome_signs",
+        "suicide_risk",
+        "transaminases_rising",
+        "withdrawal_severity"
+      ],
+      "used_fields": [
+        "age",
+        "alcohol_abuse",
+        "alcohol_use",
+        "allergy",
+        "alt_ratio_uln",
+        "arrhythmia_signs",
+        "ast_ratio_uln",
+        "complete_lactase_deficiency",
+        "current_dose",
+        "dementia",
+        "diabetes",
+        "ect",
+        "elderly_population",
+        "fatty_liver",
+        "from_form",
+        "from_hepatic",
+        "from_taper_plan",
+        "galactose_intolerance",
+        "glucose_galactose_malabsorption",
+        "hepatic",
+        "lactation",
+        "liver_injury_signs",
+        "mania",
+        "mania_symptoms",
+        "medicines",
+        "overweight_obesity",
+        "pregnancy",
+        "renal_state",
+        "seizure_state",
+        "serotonin_syndrome_signs",
+        "suicide_risk",
+        "transaminases_rising",
+        "withdrawal_severity"
+      ],
+      "primary_cause": {
+        "input": "mania_symptoms",
+        "equals": true,
+        "action": "source_stop_action",
+        "source_ref": "RU-ESC",
+        "source_locator": "RU-ESC §4.4 с.4",
+        "scope": "stop currently administered A; no automatic B start"
+      },
+      "source_owner_input": "from_form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "switch-ser-esc--round2-A-active-mania-True",
+      "rule_id": "switch-ser-esc",
+      "required_cause_fields": [
+        "from_form",
+        "mania_symptoms"
+      ],
+      "provided_context_fields": [
+        "current_dose",
+        "duration",
+        "last_dose_time",
+        "medicines",
+        "new_seizures",
+        "target_applicability",
+        "target_arrhythmia_signs",
+        "target_seizure_state",
+        "target_serotonin_syndrome_signs",
+        "withdrawal_symptoms"
+      ],
+      "used_fields": [
+        "current_dose",
+        "duration",
+        "from_form",
+        "last_dose_time",
+        "mania_symptoms",
+        "medicines",
+        "new_seizures",
+        "target_applicability",
+        "target_arrhythmia_signs",
+        "target_seizure_state",
+        "target_serotonin_syndrome_signs",
+        "withdrawal_symptoms"
+      ],
+      "primary_cause": {
+        "input": "mania_symptoms",
+        "equals": true,
+        "action": "source_stop_action",
+        "source_ref": "RU-SER",
+        "source_locator": "RU-SER §4.4 с.4",
+        "scope": "stop currently administered A; no automatic B start"
+      },
+      "source_owner_input": "from_form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "switch-esc-ser--round2-A-active-mania-True",
+      "rule_id": "switch-esc-ser",
+      "required_cause_fields": [
+        "from_form",
+        "mania_symptoms"
+      ],
+      "provided_context_fields": [
+        "arrhythmia_signs",
+        "current_dose",
+        "duration",
+        "last_dose_time",
+        "medicines",
+        "seizure_state",
+        "serotonin_syndrome_signs",
+        "target_applicability",
+        "target_new_seizures",
+        "withdrawal_symptoms"
+      ],
+      "used_fields": [
+        "arrhythmia_signs",
+        "current_dose",
+        "duration",
+        "from_form",
+        "last_dose_time",
+        "mania_symptoms",
+        "medicines",
+        "seizure_state",
+        "serotonin_syndrome_signs",
+        "target_applicability",
+        "target_new_seizures",
+        "withdrawal_symptoms"
+      ],
+      "primary_cause": {
+        "input": "mania_symptoms",
+        "equals": true,
+        "action": "source_stop_action",
+        "source_ref": "RU-ESC",
+        "source_locator": "RU-ESC §4.4 с.4",
+        "scope": "stop currently administered A; no automatic B start"
+      },
+      "source_owner_input": "from_form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "fluvox-depression-start--r3-serotonin_syndrome_signs-positive",
+      "rule_id": "fluvox-depression-start",
+      "required_cause_fields": [
+        "form",
+        "serotonin_syndrome_signs"
+      ],
+      "provided_context_fields": [
+        "akathisia",
+        "bleeding_risk",
+        "diabetes",
+        "ect",
+        "glaucoma",
+        "mania",
+        "suicide_risk"
+      ],
+      "used_fields": [
+        "akathisia",
+        "bleeding_risk",
+        "diabetes",
+        "ect",
+        "form",
+        "glaucoma",
+        "mania",
+        "serotonin_syndrome_signs",
+        "suicide_risk"
+      ],
+      "primary_cause": {
+        "input": "serotonin_syndrome_signs",
+        "source_ref": "RU-FLUVOX",
+        "source_locator": "§4.4 с.5"
+      },
+      "source_owner_input": "form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "phen-taper-limit--r3-unusual_reactions-positive",
+      "rule_id": "phen-taper-limit",
+      "required_cause_fields": [
+        "form",
+        "unusual_reactions"
+      ],
+      "provided_context_fields": [
+        "age",
+        "current_dose",
+        "duration",
+        "past_withdrawal",
+        "withdrawal_severity"
+      ],
+      "used_fields": [
+        "age",
+        "current_dose",
+        "duration",
+        "form",
+        "past_withdrawal",
+        "unusual_reactions",
+        "withdrawal_severity"
+      ],
+      "primary_cause": {
+        "input": "unusual_reactions",
+        "source_ref": "RU-PHEN",
+        "source_locator": "§4.4 с.4"
+      },
+      "source_owner_input": "form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "venla-xr-gad-start--r3-current_allergic_reaction-positive",
+      "rule_id": "venla-xr-gad-start",
+      "required_cause_fields": [
+        "current_allergic_reaction",
+        "form"
+      ],
+      "provided_context_fields": [
+        "alcohol_use",
+        "bleeding_risk",
+        "coronary_disease",
+        "diabetes",
+        "ecg_change",
+        "ect",
+        "electrolyte_imbalance",
+        "glaucoma",
+        "heart_failure",
+        "hypercholesterolemia",
+        "hypertension",
+        "hyponatremia_risk",
+        "low_blood_pressure",
+        "low_body_mass",
+        "mania",
+        "recent_infarction",
+        "recent_stroke",
+        "seizure_history",
+        "suicide_risk",
+        "tachycardia",
+        "unstable_angina",
+        "urinary_impairment"
+      ],
+      "used_fields": [
+        "alcohol_use",
+        "bleeding_risk",
+        "coronary_disease",
+        "current_allergic_reaction",
+        "diabetes",
+        "ecg_change",
+        "ect",
+        "electrolyte_imbalance",
+        "form",
+        "glaucoma",
+        "heart_failure",
+        "hypercholesterolemia",
+        "hypertension",
+        "hyponatremia_risk",
+        "low_blood_pressure",
+        "low_body_mass",
+        "mania",
+        "recent_infarction",
+        "recent_stroke",
+        "seizure_history",
+        "suicide_risk",
+        "tachycardia",
+        "unstable_angina",
+        "urinary_impairment"
+      ],
+      "primary_cause": {
+        "input": "current_allergic_reaction",
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.4 с.13"
+      },
+      "source_owner_input": "form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "venla-xr-panic-form-limit--r3-current_allergic_reaction-positive",
+      "rule_id": "venla-xr-panic-form-limit",
+      "required_cause_fields": [
+        "current_allergic_reaction",
+        "form"
+      ],
+      "provided_context_fields": [
+        "alcohol_use",
+        "bleeding_risk",
+        "coronary_disease",
+        "diabetes",
+        "ecg_change",
+        "ect",
+        "electrolyte_imbalance",
+        "glaucoma",
+        "heart_failure",
+        "hypercholesterolemia",
+        "hypertension",
+        "hyponatremia_risk",
+        "low_blood_pressure",
+        "low_body_mass",
+        "mania",
+        "recent_infarction",
+        "recent_stroke",
+        "seizure_history",
+        "suicide_risk",
+        "tachycardia",
+        "unstable_angina",
+        "urinary_impairment"
+      ],
+      "used_fields": [
+        "alcohol_use",
+        "bleeding_risk",
+        "coronary_disease",
+        "current_allergic_reaction",
+        "diabetes",
+        "ecg_change",
+        "ect",
+        "electrolyte_imbalance",
+        "form",
+        "glaucoma",
+        "heart_failure",
+        "hypercholesterolemia",
+        "hypertension",
+        "hyponatremia_risk",
+        "low_blood_pressure",
+        "low_body_mass",
+        "mania",
+        "recent_infarction",
+        "recent_stroke",
+        "seizure_history",
+        "suicide_risk",
+        "tachycardia",
+        "unstable_angina",
+        "urinary_impairment"
+      ],
+      "primary_cause": {
+        "input": "current_allergic_reaction",
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.4 с.13"
+      },
+      "source_owner_input": "form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "venla-xr-social-start--r3-current_allergic_reaction-positive",
+      "rule_id": "venla-xr-social-start",
+      "required_cause_fields": [
+        "current_allergic_reaction",
+        "form"
+      ],
+      "provided_context_fields": [
+        "alcohol_use",
+        "bleeding_risk",
+        "coronary_disease",
+        "diabetes",
+        "ecg_change",
+        "ect",
+        "electrolyte_imbalance",
+        "glaucoma",
+        "heart_failure",
+        "hypercholesterolemia",
+        "hypertension",
+        "hyponatremia_risk",
+        "low_blood_pressure",
+        "low_body_mass",
+        "mania",
+        "recent_infarction",
+        "recent_stroke",
+        "seizure_history",
+        "suicide_risk",
+        "tachycardia",
+        "unstable_angina",
+        "urinary_impairment"
+      ],
+      "used_fields": [
+        "alcohol_use",
+        "bleeding_risk",
+        "coronary_disease",
+        "current_allergic_reaction",
+        "diabetes",
+        "ecg_change",
+        "ect",
+        "electrolyte_imbalance",
+        "form",
+        "glaucoma",
+        "heart_failure",
+        "hypercholesterolemia",
+        "hypertension",
+        "hyponatremia_risk",
+        "low_blood_pressure",
+        "low_body_mass",
+        "mania",
+        "recent_infarction",
+        "recent_stroke",
+        "seizure_history",
+        "suicide_risk",
+        "tachycardia",
+        "unstable_angina",
+        "urinary_impairment"
+      ],
+      "primary_cause": {
+        "input": "current_allergic_reaction",
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.4 с.13"
+      },
+      "source_owner_input": "form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "parox-panic-kr--audit-v2-serotonin_syndrome_signs-positive",
+      "rule_id": "parox-panic-kr",
+      "required_cause_fields": [
+        "form",
+        "serotonin_syndrome_signs"
+      ],
+      "provided_context_fields": [
+        "akathisia",
+        "bleeding_risk",
+        "current_dose",
+        "diabetes",
+        "ect",
+        "glaucoma",
+        "mania",
+        "qt_risk",
+        "response",
+        "suicide_risk",
+        "time_at_dose",
+        "tolerability"
+      ],
+      "used_fields": [
+        "akathisia",
+        "bleeding_risk",
+        "current_dose",
+        "diabetes",
+        "ect",
+        "form",
+        "glaucoma",
+        "mania",
+        "qt_risk",
+        "response",
+        "serotonin_syndrome_signs",
+        "suicide_risk",
+        "time_at_dose",
+        "tolerability"
+      ],
+      "primary_cause": {
+        "input": "serotonin_syndrome_signs",
+        "source_ref": "RU-PAROX",
+        "source_locator": "§4.4 с.7"
+      },
+      "source_owner_input": "form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "parox-taper-example--audit-v2-serotonin_syndrome_signs-positive",
+      "rule_id": "parox-taper-example",
+      "required_cause_fields": [
+        "current_dose",
+        "example_selected",
+        "form",
+        "serotonin_syndrome_signs"
+      ],
+      "provided_context_fields": [],
+      "used_fields": [
+        "current_dose",
+        "example_selected",
+        "form",
+        "serotonin_syndrome_signs"
+      ],
+      "primary_cause": {
+        "input": "serotonin_syndrome_signs",
+        "source_ref": "RU-PAROX",
+        "source_locator": "§4.4 с.7"
+      },
+      "source_owner_input": "form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "switch-parox-ago--audit-v2-serotonin_syndrome_signs-positive",
+      "rule_id": "switch-parox-ago",
+      "required_cause_fields": [
+        "from_form",
+        "serotonin_syndrome_signs"
+      ],
+      "provided_context_fields": [
+        "age",
+        "akathisia",
+        "alcohol_abuse",
+        "alcohol_use",
+        "allergy",
+        "alt_ratio_uln",
+        "ast_ratio_uln",
+        "bleeding_risk",
+        "complete_lactase_deficiency",
+        "current_dose",
+        "dementia",
+        "diabetes",
+        "ect",
+        "elderly_population",
+        "fatty_liver",
+        "from_hepatic",
+        "from_renal",
+        "from_taper_plan",
+        "galactose_intolerance",
+        "glaucoma",
+        "glucose_galactose_malabsorption",
+        "hepatic",
+        "lactation",
+        "liver_injury_signs",
+        "mania",
+        "mania_symptoms",
+        "medicines",
+        "overweight_obesity",
+        "pregnancy",
+        "qt_risk",
+        "renal_state",
+        "seizure_state",
+        "suicide_risk",
+        "transaminases_rising",
+        "withdrawal_severity"
+      ],
+      "used_fields": [
+        "age",
+        "akathisia",
+        "alcohol_abuse",
+        "alcohol_use",
+        "allergy",
+        "alt_ratio_uln",
+        "ast_ratio_uln",
+        "bleeding_risk",
+        "complete_lactase_deficiency",
+        "current_dose",
+        "dementia",
+        "diabetes",
+        "ect",
+        "elderly_population",
+        "fatty_liver",
+        "from_form",
+        "from_hepatic",
+        "from_renal",
+        "from_taper_plan",
+        "galactose_intolerance",
+        "glaucoma",
+        "glucose_galactose_malabsorption",
+        "hepatic",
+        "lactation",
+        "liver_injury_signs",
+        "mania",
+        "mania_symptoms",
+        "medicines",
+        "overweight_obesity",
+        "pregnancy",
+        "qt_risk",
+        "renal_state",
+        "seizure_state",
+        "serotonin_syndrome_signs",
+        "suicide_risk",
+        "transaminases_rising",
+        "withdrawal_severity"
+      ],
+      "primary_cause": {
+        "input": "serotonin_syndrome_signs",
+        "source_ref": "RU-PAROX",
+        "source_locator": "§4.4 с.7"
+      },
+      "source_owner_input": "from_form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "switch-parox-ago-selected-example--audit-v2-serotonin_syndrome_signs-positive",
+      "rule_id": "switch-parox-ago-selected-example",
+      "required_cause_fields": [
+        "current_dose",
+        "from_form",
+        "serotonin_syndrome_signs"
+      ],
+      "provided_context_fields": [
+        "alcohol_use",
+        "bleeding_risk",
+        "mania",
+        "renal_state",
+        "suicide_risk"
+      ],
+      "used_fields": [
+        "alcohol_use",
+        "bleeding_risk",
+        "current_dose",
+        "from_form",
+        "mania",
+        "renal_state",
+        "serotonin_syndrome_signs",
+        "suicide_risk"
+      ],
+      "primary_cause": {
+        "input": "serotonin_syndrome_signs",
+        "source_ref": "RU-PAROX",
+        "source_locator": "§4.4 с.7"
+      },
+      "source_owner_input": "from_form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "parox-taper-example--audit-v2-new_seizures-positive",
+      "rule_id": "parox-taper-example",
+      "required_cause_fields": [
+        "current_dose",
+        "example_selected",
+        "form",
+        "new_seizures"
+      ],
+      "provided_context_fields": [],
+      "used_fields": [
+        "current_dose",
+        "example_selected",
+        "form",
+        "new_seizures"
+      ],
+      "primary_cause": {
+        "input": "new_seizures",
+        "source_ref": "RU-PAROX",
+        "source_locator": "§4.4 с.9"
+      },
+      "source_owner_input": "form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "fluvox-taper-limit--audit-v2-serotonin_syndrome_signs-positive",
+      "rule_id": "fluvox-taper-limit",
+      "required_cause_fields": [
+        "form",
+        "serotonin_syndrome_signs"
+      ],
+      "provided_context_fields": [
+        "current_dose",
+        "duration",
+        "past_withdrawal"
+      ],
+      "used_fields": [
+        "current_dose",
+        "duration",
+        "form",
+        "past_withdrawal",
+        "serotonin_syndrome_signs"
+      ],
+      "primary_cause": {
+        "input": "serotonin_syndrome_signs",
+        "source_ref": "RU-FLUVOX",
+        "source_locator": "§4.4 с.5"
+      },
+      "source_owner_input": "form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "fluvox-taper-limit--audit-v2-new_or_increased_seizures-positive",
+      "rule_id": "fluvox-taper-limit",
+      "required_cause_fields": [
+        "form",
+        "new_or_increased_seizures"
+      ],
+      "provided_context_fields": [
+        "current_dose",
+        "duration",
+        "past_withdrawal"
+      ],
+      "used_fields": [
+        "current_dose",
+        "duration",
+        "form",
+        "new_or_increased_seizures",
+        "past_withdrawal"
+      ],
+      "primary_cause": {
+        "input": "new_or_increased_seizures",
+        "source_ref": "RU-FLUVOX",
+        "source_locator": "§4.4 с.5"
+      },
+      "source_owner_input": "form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "fluvox-taper-limit--audit-v2-liver_injury_signs-positive",
+      "rule_id": "fluvox-taper-limit",
+      "required_cause_fields": [
+        "form",
+        "liver_injury_signs"
+      ],
+      "provided_context_fields": [
+        "current_dose",
+        "duration",
+        "past_withdrawal"
+      ],
+      "used_fields": [
+        "current_dose",
+        "duration",
+        "form",
+        "liver_injury_signs",
+        "past_withdrawal"
+      ],
+      "primary_cause": {
+        "input": "liver_injury_signs",
+        "source_ref": "RU-FLUVOX",
+        "source_locator": "§4.4 с.5"
+      },
+      "source_owner_input": "form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "fluvox-taper-limit--audit-v2-mania_symptoms-positive",
+      "rule_id": "fluvox-taper-limit",
+      "required_cause_fields": [
+        "form",
+        "mania_symptoms"
+      ],
+      "provided_context_fields": [
+        "current_dose",
+        "duration",
+        "past_withdrawal"
+      ],
+      "used_fields": [
+        "current_dose",
+        "duration",
+        "form",
+        "mania_symptoms",
+        "past_withdrawal"
+      ],
+      "primary_cause": {
+        "input": "mania_symptoms",
+        "source_ref": "RU-FLUVOX",
+        "source_locator": "§4.4 с.7"
+      },
+      "source_owner_input": "form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "venla-xr-gad-start--audit-v2-diastolic_BP-positive",
+      "rule_id": "venla-xr-gad-start",
+      "required_cause_fields": [
+        "diastolic_BP",
+        "form"
+      ],
+      "provided_context_fields": [
+        "alcohol_use",
+        "bleeding_risk",
+        "coronary_disease",
+        "diabetes",
+        "ecg_change",
+        "ect",
+        "electrolyte_imbalance",
+        "glaucoma",
+        "heart_failure",
+        "hypercholesterolemia",
+        "hypertension",
+        "hyponatremia_risk",
+        "low_blood_pressure",
+        "low_body_mass",
+        "mania",
+        "recent_infarction",
+        "recent_stroke",
+        "seizure_history",
+        "suicide_risk",
+        "tachycardia",
+        "unstable_angina",
+        "urinary_impairment"
+      ],
+      "used_fields": [
+        "alcohol_use",
+        "bleeding_risk",
+        "coronary_disease",
+        "diabetes",
+        "diastolic_BP",
+        "ecg_change",
+        "ect",
+        "electrolyte_imbalance",
+        "form",
+        "glaucoma",
+        "heart_failure",
+        "hypercholesterolemia",
+        "hypertension",
+        "hyponatremia_risk",
+        "low_blood_pressure",
+        "low_body_mass",
+        "mania",
+        "recent_infarction",
+        "recent_stroke",
+        "seizure_history",
+        "suicide_risk",
+        "tachycardia",
+        "unstable_angina",
+        "urinary_impairment"
+      ],
+      "primary_cause": {
+        "input": "diastolic_BP",
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.4 с.9"
+      },
+      "source_owner_input": "form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "venla-xr-social-start--audit-v2-diastolic_BP-positive",
+      "rule_id": "venla-xr-social-start",
+      "required_cause_fields": [
+        "diastolic_BP",
+        "form"
+      ],
+      "provided_context_fields": [
+        "alcohol_use",
+        "bleeding_risk",
+        "coronary_disease",
+        "diabetes",
+        "ecg_change",
+        "ect",
+        "electrolyte_imbalance",
+        "glaucoma",
+        "heart_failure",
+        "hypercholesterolemia",
+        "hypertension",
+        "hyponatremia_risk",
+        "low_blood_pressure",
+        "low_body_mass",
+        "mania",
+        "recent_infarction",
+        "recent_stroke",
+        "seizure_history",
+        "suicide_risk",
+        "tachycardia",
+        "unstable_angina",
+        "urinary_impairment"
+      ],
+      "used_fields": [
+        "alcohol_use",
+        "bleeding_risk",
+        "coronary_disease",
+        "diabetes",
+        "diastolic_BP",
+        "ecg_change",
+        "ect",
+        "electrolyte_imbalance",
+        "form",
+        "glaucoma",
+        "heart_failure",
+        "hypercholesterolemia",
+        "hypertension",
+        "hyponatremia_risk",
+        "low_blood_pressure",
+        "low_body_mass",
+        "mania",
+        "recent_infarction",
+        "recent_stroke",
+        "seizure_history",
+        "suicide_risk",
+        "tachycardia",
+        "unstable_angina",
+        "urinary_impairment"
+      ],
+      "primary_cause": {
+        "input": "diastolic_BP",
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.4 с.9"
+      },
+      "source_owner_input": "form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "venla-xr-panic-form-limit--audit-v2-diastolic_BP-positive",
+      "rule_id": "venla-xr-panic-form-limit",
+      "required_cause_fields": [
+        "diastolic_BP",
+        "form"
+      ],
+      "provided_context_fields": [
+        "alcohol_use",
+        "bleeding_risk",
+        "coronary_disease",
+        "diabetes",
+        "ecg_change",
+        "ect",
+        "electrolyte_imbalance",
+        "glaucoma",
+        "heart_failure",
+        "hypercholesterolemia",
+        "hypertension",
+        "hyponatremia_risk",
+        "low_blood_pressure",
+        "low_body_mass",
+        "mania",
+        "recent_infarction",
+        "recent_stroke",
+        "seizure_history",
+        "suicide_risk",
+        "tachycardia",
+        "unstable_angina",
+        "urinary_impairment"
+      ],
+      "used_fields": [
+        "alcohol_use",
+        "bleeding_risk",
+        "coronary_disease",
+        "diabetes",
+        "diastolic_BP",
+        "ecg_change",
+        "ect",
+        "electrolyte_imbalance",
+        "form",
+        "glaucoma",
+        "heart_failure",
+        "hypercholesterolemia",
+        "hypertension",
+        "hyponatremia_risk",
+        "low_blood_pressure",
+        "low_body_mass",
+        "mania",
+        "recent_infarction",
+        "recent_stroke",
+        "seizure_history",
+        "suicide_risk",
+        "tachycardia",
+        "unstable_angina",
+        "urinary_impairment"
+      ],
+      "primary_cause": {
+        "input": "diastolic_BP",
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.4 с.9"
+      },
+      "source_owner_input": "form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "venla-xr-taper-limit--audit-v2-diastolic_BP-positive",
+      "rule_id": "venla-xr-taper-limit",
+      "required_cause_fields": [
+        "diastolic_BP",
+        "form"
+      ],
+      "provided_context_fields": [
+        "current_dose",
+        "duration",
+        "past_withdrawal"
+      ],
+      "used_fields": [
+        "current_dose",
+        "diastolic_BP",
+        "duration",
+        "form",
+        "past_withdrawal"
+      ],
+      "primary_cause": {
+        "input": "diastolic_BP",
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.4 с.9"
+      },
+      "source_owner_input": "form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "venla-xr-taper-limit--audit-v2-current_allergic_reaction-positive",
+      "rule_id": "venla-xr-taper-limit",
+      "required_cause_fields": [
+        "current_allergic_reaction",
+        "form"
+      ],
+      "provided_context_fields": [
+        "current_dose",
+        "duration",
+        "past_withdrawal"
+      ],
+      "used_fields": [
+        "current_allergic_reaction",
+        "current_dose",
+        "duration",
+        "form",
+        "past_withdrawal"
+      ],
+      "primary_cause": {
+        "input": "current_allergic_reaction",
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.4 с.13"
+      },
+      "source_owner_input": "form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "switch-esc-ago--audit-v2-arrhythmia_signs-positive",
+      "rule_id": "switch-esc-ago",
+      "required_cause_fields": [
+        "arrhythmia_signs",
+        "from_form"
+      ],
+      "provided_context_fields": [
+        "age",
+        "alcohol_abuse",
+        "alcohol_use",
+        "allergy",
+        "alt_ratio_uln",
+        "ast_ratio_uln",
+        "complete_lactase_deficiency",
+        "current_dose",
+        "dementia",
+        "diabetes",
+        "ect",
+        "elderly_population",
+        "fatty_liver",
+        "from_hepatic",
+        "from_taper_plan",
+        "galactose_intolerance",
+        "glucose_galactose_malabsorption",
+        "hepatic",
+        "lactation",
+        "liver_injury_signs",
+        "mania",
+        "mania_symptoms",
+        "medicines",
+        "overweight_obesity",
+        "pregnancy",
+        "renal_state",
+        "seizure_state",
+        "serotonin_syndrome_signs",
+        "suicide_risk",
+        "transaminases_rising",
+        "withdrawal_severity"
+      ],
+      "used_fields": [
+        "age",
+        "alcohol_abuse",
+        "alcohol_use",
+        "allergy",
+        "alt_ratio_uln",
+        "arrhythmia_signs",
+        "ast_ratio_uln",
+        "complete_lactase_deficiency",
+        "current_dose",
+        "dementia",
+        "diabetes",
+        "ect",
+        "elderly_population",
+        "fatty_liver",
+        "from_form",
+        "from_hepatic",
+        "from_taper_plan",
+        "galactose_intolerance",
+        "glucose_galactose_malabsorption",
+        "hepatic",
+        "lactation",
+        "liver_injury_signs",
+        "mania",
+        "mania_symptoms",
+        "medicines",
+        "overweight_obesity",
+        "pregnancy",
+        "renal_state",
+        "seizure_state",
+        "serotonin_syndrome_signs",
+        "suicide_risk",
+        "transaminases_rising",
+        "withdrawal_severity"
+      ],
+      "primary_cause": {
+        "input": "arrhythmia_signs",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.6"
+      },
+      "source_owner_input": "from_form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "switch-esc-ago--audit-v2-serotonin_syndrome_signs-positive",
+      "rule_id": "switch-esc-ago",
+      "required_cause_fields": [
+        "from_form",
+        "serotonin_syndrome_signs"
+      ],
+      "provided_context_fields": [
+        "age",
+        "alcohol_abuse",
+        "alcohol_use",
+        "allergy",
+        "alt_ratio_uln",
+        "arrhythmia_signs",
+        "ast_ratio_uln",
+        "complete_lactase_deficiency",
+        "current_dose",
+        "dementia",
+        "diabetes",
+        "ect",
+        "elderly_population",
+        "fatty_liver",
+        "from_hepatic",
+        "from_taper_plan",
+        "galactose_intolerance",
+        "glucose_galactose_malabsorption",
+        "hepatic",
+        "lactation",
+        "liver_injury_signs",
+        "mania",
+        "mania_symptoms",
+        "medicines",
+        "overweight_obesity",
+        "pregnancy",
+        "renal_state",
+        "seizure_state",
+        "suicide_risk",
+        "transaminases_rising",
+        "withdrawal_severity"
+      ],
+      "used_fields": [
+        "age",
+        "alcohol_abuse",
+        "alcohol_use",
+        "allergy",
+        "alt_ratio_uln",
+        "arrhythmia_signs",
+        "ast_ratio_uln",
+        "complete_lactase_deficiency",
+        "current_dose",
+        "dementia",
+        "diabetes",
+        "ect",
+        "elderly_population",
+        "fatty_liver",
+        "from_form",
+        "from_hepatic",
+        "from_taper_plan",
+        "galactose_intolerance",
+        "glucose_galactose_malabsorption",
+        "hepatic",
+        "lactation",
+        "liver_injury_signs",
+        "mania",
+        "mania_symptoms",
+        "medicines",
+        "overweight_obesity",
+        "pregnancy",
+        "renal_state",
+        "seizure_state",
+        "serotonin_syndrome_signs",
+        "suicide_risk",
+        "transaminases_rising",
+        "withdrawal_severity"
+      ],
+      "primary_cause": {
+        "input": "serotonin_syndrome_signs",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.5–6"
+      },
+      "source_owner_input": "from_form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "switch-esc-ago--audit-v2-seizure_state-positive",
+      "rule_id": "switch-esc-ago",
+      "required_cause_fields": [
+        "from_form",
+        "seizure_state"
+      ],
+      "provided_context_fields": [
+        "age",
+        "alcohol_abuse",
+        "alcohol_use",
+        "allergy",
+        "alt_ratio_uln",
+        "arrhythmia_signs",
+        "ast_ratio_uln",
+        "complete_lactase_deficiency",
+        "current_dose",
+        "dementia",
+        "diabetes",
+        "ect",
+        "elderly_population",
+        "fatty_liver",
+        "from_hepatic",
+        "from_taper_plan",
+        "galactose_intolerance",
+        "glucose_galactose_malabsorption",
+        "hepatic",
+        "lactation",
+        "liver_injury_signs",
+        "mania",
+        "mania_symptoms",
+        "medicines",
+        "overweight_obesity",
+        "pregnancy",
+        "renal_state",
+        "serotonin_syndrome_signs",
+        "suicide_risk",
+        "transaminases_rising",
+        "withdrawal_severity"
+      ],
+      "used_fields": [
+        "age",
+        "alcohol_abuse",
+        "alcohol_use",
+        "allergy",
+        "alt_ratio_uln",
+        "arrhythmia_signs",
+        "ast_ratio_uln",
+        "complete_lactase_deficiency",
+        "current_dose",
+        "dementia",
+        "diabetes",
+        "ect",
+        "elderly_population",
+        "fatty_liver",
+        "from_form",
+        "from_hepatic",
+        "from_taper_plan",
+        "galactose_intolerance",
+        "glucose_galactose_malabsorption",
+        "hepatic",
+        "lactation",
+        "liver_injury_signs",
+        "mania",
+        "mania_symptoms",
+        "medicines",
+        "overweight_obesity",
+        "pregnancy",
+        "renal_state",
+        "seizure_state",
+        "serotonin_syndrome_signs",
+        "suicide_risk",
+        "transaminases_rising",
+        "withdrawal_severity"
+      ],
+      "primary_cause": {
+        "input": "seizure_state",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.4"
+      },
+      "source_owner_input": "from_form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "switch-esc-ser--audit-v2-arrhythmia_signs-positive",
+      "rule_id": "switch-esc-ser",
+      "required_cause_fields": [
+        "arrhythmia_signs",
+        "from_form"
+      ],
+      "provided_context_fields": [
+        "current_dose",
+        "duration",
+        "last_dose_time",
+        "mania_symptoms",
+        "medicines",
+        "seizure_state",
+        "serotonin_syndrome_signs",
+        "target_applicability",
+        "target_new_seizures",
+        "withdrawal_symptoms"
+      ],
+      "used_fields": [
+        "arrhythmia_signs",
+        "current_dose",
+        "duration",
+        "from_form",
+        "last_dose_time",
+        "mania_symptoms",
+        "medicines",
+        "seizure_state",
+        "serotonin_syndrome_signs",
+        "target_applicability",
+        "target_new_seizures",
+        "withdrawal_symptoms"
+      ],
+      "primary_cause": {
+        "input": "arrhythmia_signs",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.6"
+      },
+      "source_owner_input": "from_form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "switch-esc-ser--audit-v2-serotonin_syndrome_signs-positive",
+      "rule_id": "switch-esc-ser",
+      "required_cause_fields": [
+        "from_form",
+        "serotonin_syndrome_signs"
+      ],
+      "provided_context_fields": [
+        "arrhythmia_signs",
+        "current_dose",
+        "duration",
+        "last_dose_time",
+        "mania_symptoms",
+        "medicines",
+        "seizure_state",
+        "target_applicability",
+        "target_new_seizures",
+        "withdrawal_symptoms"
+      ],
+      "used_fields": [
+        "arrhythmia_signs",
+        "current_dose",
+        "duration",
+        "from_form",
+        "last_dose_time",
+        "mania_symptoms",
+        "medicines",
+        "seizure_state",
+        "serotonin_syndrome_signs",
+        "target_applicability",
+        "target_new_seizures",
+        "withdrawal_symptoms"
+      ],
+      "primary_cause": {
+        "input": "serotonin_syndrome_signs",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.5–6"
+      },
+      "source_owner_input": "from_form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "switch-esc-ser--audit-v2-seizure_state-positive",
+      "rule_id": "switch-esc-ser",
+      "required_cause_fields": [
+        "from_form",
+        "seizure_state"
+      ],
+      "provided_context_fields": [
+        "arrhythmia_signs",
+        "current_dose",
+        "duration",
+        "last_dose_time",
+        "mania_symptoms",
+        "medicines",
+        "serotonin_syndrome_signs",
+        "target_applicability",
+        "target_new_seizures",
+        "withdrawal_symptoms"
+      ],
+      "used_fields": [
+        "arrhythmia_signs",
+        "current_dose",
+        "duration",
+        "from_form",
+        "last_dose_time",
+        "mania_symptoms",
+        "medicines",
+        "seizure_state",
+        "serotonin_syndrome_signs",
+        "target_applicability",
+        "target_new_seizures",
+        "withdrawal_symptoms"
+      ],
+      "primary_cause": {
+        "input": "seizure_state",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.4"
+      },
+      "source_owner_input": "from_form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "switch-ser-esc--audit-v2-target_arrhythmia_signs-positive",
+      "rule_id": "switch-ser-esc",
+      "required_cause_fields": [
+        "target_arrhythmia_signs",
+        "to_form"
+      ],
+      "provided_context_fields": [
+        "current_dose",
+        "duration",
+        "last_dose_time",
+        "mania_symptoms",
+        "medicines",
+        "new_seizures",
+        "target_applicability",
+        "target_seizure_state",
+        "target_serotonin_syndrome_signs",
+        "withdrawal_symptoms"
+      ],
+      "used_fields": [
+        "current_dose",
+        "duration",
+        "last_dose_time",
+        "mania_symptoms",
+        "medicines",
+        "new_seizures",
+        "target_applicability",
+        "target_arrhythmia_signs",
+        "target_seizure_state",
+        "target_serotonin_syndrome_signs",
+        "to_form",
+        "withdrawal_symptoms"
+      ],
+      "primary_cause": {
+        "input": "target_arrhythmia_signs",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.6"
+      },
+      "source_owner_input": "to_form",
+      "actor_phase": "target_B ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "switch-ser-esc--audit-v2-target_serotonin_syndrome_signs-positive",
+      "rule_id": "switch-ser-esc",
+      "required_cause_fields": [
+        "target_serotonin_syndrome_signs",
+        "to_form"
+      ],
+      "provided_context_fields": [
+        "current_dose",
+        "duration",
+        "last_dose_time",
+        "mania_symptoms",
+        "medicines",
+        "new_seizures",
+        "target_applicability",
+        "target_arrhythmia_signs",
+        "target_seizure_state",
+        "withdrawal_symptoms"
+      ],
+      "used_fields": [
+        "current_dose",
+        "duration",
+        "last_dose_time",
+        "mania_symptoms",
+        "medicines",
+        "new_seizures",
+        "target_applicability",
+        "target_arrhythmia_signs",
+        "target_seizure_state",
+        "target_serotonin_syndrome_signs",
+        "to_form",
+        "withdrawal_symptoms"
+      ],
+      "primary_cause": {
+        "input": "target_serotonin_syndrome_signs",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.5–6"
+      },
+      "source_owner_input": "to_form",
+      "actor_phase": "target_B ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "switch-ser-esc--audit-v2-target_seizure_state-positive",
+      "rule_id": "switch-ser-esc",
+      "required_cause_fields": [
+        "target_seizure_state",
+        "to_form"
+      ],
+      "provided_context_fields": [
+        "current_dose",
+        "duration",
+        "last_dose_time",
+        "mania_symptoms",
+        "medicines",
+        "new_seizures",
+        "target_applicability",
+        "target_arrhythmia_signs",
+        "target_serotonin_syndrome_signs",
+        "withdrawal_symptoms"
+      ],
+      "used_fields": [
+        "current_dose",
+        "duration",
+        "last_dose_time",
+        "mania_symptoms",
+        "medicines",
+        "new_seizures",
+        "target_applicability",
+        "target_arrhythmia_signs",
+        "target_seizure_state",
+        "target_serotonin_syndrome_signs",
+        "to_form",
+        "withdrawal_symptoms"
+      ],
+      "primary_cause": {
+        "input": "target_seizure_state",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.4"
+      },
+      "source_owner_input": "to_form",
+      "actor_phase": "target_B ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "fluvox-depression-start--audit-v2-new_or_increased_seizures-positive",
+      "rule_id": "fluvox-depression-start",
+      "required_cause_fields": [
+        "form",
+        "new_or_increased_seizures"
+      ],
+      "provided_context_fields": [
+        "akathisia",
+        "bleeding_risk",
+        "diabetes",
+        "ect",
+        "glaucoma",
+        "mania",
+        "suicide_risk"
+      ],
+      "used_fields": [
+        "akathisia",
+        "bleeding_risk",
+        "diabetes",
+        "ect",
+        "form",
+        "glaucoma",
+        "mania",
+        "new_or_increased_seizures",
+        "suicide_risk"
+      ],
+      "primary_cause": {
+        "input": "new_or_increased_seizures",
+        "source_ref": "RU-FLUVOX",
+        "source_locator": "§4.4 с.5"
+      },
+      "source_owner_input": "form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "switch-ser-esc--audit-v2-new_seizures-positive",
+      "rule_id": "switch-ser-esc",
+      "required_cause_fields": [
+        "from_form",
+        "new_seizures"
+      ],
+      "provided_context_fields": [
+        "current_dose",
+        "duration",
+        "last_dose_time",
+        "mania_symptoms",
+        "medicines",
+        "target_applicability",
+        "target_arrhythmia_signs",
+        "target_seizure_state",
+        "target_serotonin_syndrome_signs",
+        "withdrawal_symptoms"
+      ],
+      "used_fields": [
+        "current_dose",
+        "duration",
+        "from_form",
+        "last_dose_time",
+        "mania_symptoms",
+        "medicines",
+        "new_seizures",
+        "target_applicability",
+        "target_arrhythmia_signs",
+        "target_seizure_state",
+        "target_serotonin_syndrome_signs",
+        "withdrawal_symptoms"
+      ],
+      "primary_cause": {
+        "input": "new_seizures",
+        "source_ref": "RU-SER",
+        "source_locator": "§4.4 с.4"
+      },
+      "source_owner_input": "from_form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "switch-esc-ser--audit-v2-target_new_seizures-positive",
+      "rule_id": "switch-esc-ser",
+      "required_cause_fields": [
+        "target_new_seizures",
+        "to_form"
+      ],
+      "provided_context_fields": [
+        "arrhythmia_signs",
+        "current_dose",
+        "duration",
+        "last_dose_time",
+        "mania_symptoms",
+        "medicines",
+        "seizure_state",
+        "serotonin_syndrome_signs",
+        "target_applicability",
+        "withdrawal_symptoms"
+      ],
+      "used_fields": [
+        "arrhythmia_signs",
+        "current_dose",
+        "duration",
+        "last_dose_time",
+        "mania_symptoms",
+        "medicines",
+        "seizure_state",
+        "serotonin_syndrome_signs",
+        "target_applicability",
+        "target_new_seizures",
+        "to_form",
+        "withdrawal_symptoms"
+      ],
+      "primary_cause": {
+        "input": "target_new_seizures",
+        "source_ref": "RU-SER",
+        "source_locator": "§4.4 с.4"
+      },
+      "source_owner_input": "to_form",
+      "actor_phase": "target_B ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "esc-taper-limit--audit-final-primary-RU-ESC-seizure_state-первичные/участившиеся приступы-positive",
+      "rule_id": "esc-taper-limit",
+      "required_cause_fields": [
+        "form",
+        "seizure_state"
+      ],
+      "provided_context_fields": [
+        "current_dose",
+        "duration_of_use",
+        "medicines",
+        "prior_withdrawal"
+      ],
+      "used_fields": [
+        "current_dose",
+        "duration_of_use",
+        "form",
+        "medicines",
+        "prior_withdrawal",
+        "seizure_state"
+      ],
+      "primary_cause": {
+        "input": "seizure_state",
+        "source_ref": "RU-ESC",
+        "source_locator": "Физ. с.4",
+        "actor": "selected",
+        "action": "published_ongoing_cessation",
+        "primary_norm": "Нестабильнаяэпилепсия не применять, контролируемая наблюдение; новые/участившиесяприступы отмена."
+      },
+      "source_owner_input": "form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "ser-taper-limit--audit-final-primary-RU-SER-seizure_state-новые приступы-positive",
+      "rule_id": "ser-taper-limit",
+      "required_cause_fields": [
+        "form",
+        "seizure_state"
+      ],
+      "provided_context_fields": [
+        "current_dose",
+        "duration_of_use",
+        "medicines",
+        "prior_withdrawal"
+      ],
+      "used_fields": [
+        "current_dose",
+        "duration_of_use",
+        "form",
+        "medicines",
+        "prior_withdrawal",
+        "seizure_state"
+      ],
+      "primary_cause": {
+        "input": "seizure_state",
+        "source_ref": "RU-SER",
+        "source_locator": "Физ. с.4",
+        "actor": "selected",
+        "action": "published_ongoing_cessation",
+        "primary_norm": "Нестабильнуюэпилепсиюизбегать,контролируемуюнаблюдать;новыеприступыпрекратитьSER."
+      },
+      "source_owner_input": "form",
+      "actor_phase": "selected/A ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    },
+    {
+      "case_id": "switch-esc-ago--audit-final-primary-RU-AGO-liver_injury_signs-positive",
+      "rule_id": "switch-esc-ago",
+      "required_cause_fields": [
+        "liver_injury_signs",
+        "to_form"
+      ],
+      "provided_context_fields": [
+        "age",
+        "alcohol_abuse",
+        "alcohol_use",
+        "allergy",
+        "alt_ratio_uln",
+        "arrhythmia_signs",
+        "ast_ratio_uln",
+        "complete_lactase_deficiency",
+        "current_dose",
+        "dementia",
+        "diabetes",
+        "ect",
+        "elderly_population",
+        "fatty_liver",
+        "from_hepatic",
+        "from_taper_plan",
+        "galactose_intolerance",
+        "glucose_galactose_malabsorption",
+        "hepatic",
+        "lactation",
+        "mania",
+        "mania_symptoms",
+        "medicines",
+        "overweight_obesity",
+        "pregnancy",
+        "renal_state",
+        "seizure_state",
+        "serotonin_syndrome_signs",
+        "suicide_risk",
+        "transaminases_rising",
+        "withdrawal_severity"
+      ],
+      "used_fields": [
+        "age",
+        "alcohol_abuse",
+        "alcohol_use",
+        "allergy",
+        "alt_ratio_uln",
+        "arrhythmia_signs",
+        "ast_ratio_uln",
+        "complete_lactase_deficiency",
+        "current_dose",
+        "dementia",
+        "diabetes",
+        "ect",
+        "elderly_population",
+        "fatty_liver",
+        "from_hepatic",
+        "from_taper_plan",
+        "galactose_intolerance",
+        "glucose_galactose_malabsorption",
+        "hepatic",
+        "lactation",
+        "liver_injury_signs",
+        "mania",
+        "mania_symptoms",
+        "medicines",
+        "overweight_obesity",
+        "pregnancy",
+        "renal_state",
+        "seizure_state",
+        "serotonin_syndrome_signs",
+        "suicide_risk",
+        "to_form",
+        "transaminases_rising",
+        "withdrawal_severity"
+      ],
+      "primary_cause": {
+        "input": "liver_injury_signs",
+        "source_ref": "RU-AGO",
+        "source_locator": "Физ. с.4",
+        "actor": "B",
+        "action": "published_ongoing_cessation",
+        "primary_norm": "Тёмная моча/светлый стул/желтуха/боль справа/стойкая необъяснимая усталость как признаки поражения печени: немедленно прекратить, контроль до нормы."
+      },
+      "source_owner_input": "to_form",
+      "actor_phase": "target_B ongoing",
+      "scope": "Only this published current-treatment source action; other dose/planning gates are unassessed, no dose/calendar/target permission or clinical clearance"
+    }
+  ],
+  "new_cases": [
+    "ago-depression-start--ALT_ratio-ongoing-above3--audit-final-bounded-action",
+    "ago-depression-start--AST_ratio-ongoing-above3--audit-final-bounded-action",
+    "ago-gad-start--ALT_ratio-ongoing-above3--audit-final-bounded-action",
+    "ago-gad-start--AST_ratio-ongoing-above3--audit-final-bounded-action",
+    "fluvox-depression-start--condition-seizure_state-новые приступы--audit-final-bounded-action",
+    "parox-panic-kr--condition-seizure_state-новые приступы--audit-final-bounded-action",
+    "ser-adult-adjust--condition-seizure_state-новые приступы--audit-final-bounded-action",
+    "ser-panic-start--condition-seizure_state-новые приступы--audit-final-bounded-action",
+    "ser-social-start--condition-seizure_state-новые приступы--audit-final-bounded-action",
+    "switch-parox-ago-selected-example--condition-seizure_state-новые приступы--audit-final-bounded-action",
+    "switch-parox-ago-selected-example--alt_ratio_uln-ongoing-above3--audit-final-bounded-action",
+    "switch-parox-ago-selected-example--ast_ratio_uln-ongoing-above3--audit-final-bounded-action",
+    "switch-parox-ago--condition-seizure_state-новые приступы--audit-final-bounded-action",
+    "switch-parox-ago--alt_ratio_uln-ongoing-above3--audit-final-bounded-action",
+    "switch-parox-ago--ast_ratio_uln-ongoing-above3--audit-final-bounded-action",
+    "switch-ser-ago--stop-RU-AGO-mania_symptoms--audit-final-bounded-action",
+    "switch-ser-ago--condition-seizure_state-новые приступы--audit-final-bounded-action",
+    "switch-ser-ago--alt_ratio_uln-ongoing-above3--audit-final-bounded-action",
+    "switch-ser-ago--ast_ratio_uln-ongoing-above3--audit-final-bounded-action",
+    "venla-xr-gad-start--diastolic-BP-100.01--audit-final-bounded-action",
+    "venla-xr-social-start--diastolic-BP-100.01--audit-final-bounded-action",
+    "ser-adult-adjust--round2-active-mania-stop--audit-final-bounded-action",
+    "ser-panic-start--round2-active-mania-stop--audit-final-bounded-action",
+    "ser-social-start--round2-active-mania-stop--audit-final-bounded-action",
+    "ser-taper-limit--round2-active-mania-stop--audit-final-bounded-action",
+    "esc-adult-adjust--current-mania_symptoms-stop--audit-final-bounded-action",
+    "esc-adult-adjust--current-arrhythmia_signs-stop--audit-final-bounded-action",
+    "esc-adult-adjust--current-serotonin_syndrome_signs-stop--audit-final-bounded-action",
+    "esc-cyp2c19-start--current-mania_symptoms-stop--audit-final-bounded-action",
+    "esc-cyp2c19-start--current-arrhythmia_signs-stop--audit-final-bounded-action",
+    "esc-cyp2c19-start--current-serotonin_syndrome_signs-stop--audit-final-bounded-action",
+    "esc-elderly-start--current-mania_symptoms-stop--audit-final-bounded-action",
+    "esc-elderly-start--current-arrhythmia_signs-stop--audit-final-bounded-action",
+    "esc-elderly-start--current-serotonin_syndrome_signs-stop--audit-final-bounded-action",
+    "esc-gad-start--current-mania_symptoms-stop--audit-final-bounded-action",
+    "esc-gad-start--current-arrhythmia_signs-stop--audit-final-bounded-action",
+    "esc-gad-start--current-serotonin_syndrome_signs-stop--audit-final-bounded-action",
+    "esc-hepatic-start--current-mania_symptoms-stop--audit-final-bounded-action",
+    "esc-hepatic-start--current-arrhythmia_signs-stop--audit-final-bounded-action",
+    "esc-hepatic-start--current-serotonin_syndrome_signs-stop--audit-final-bounded-action",
+    "esc-panic-start--current-mania_symptoms-stop--audit-final-bounded-action",
+    "esc-panic-start--current-arrhythmia_signs-stop--audit-final-bounded-action",
+    "esc-panic-start--current-serotonin_syndrome_signs-stop--audit-final-bounded-action",
+    "esc-social-start--current-mania_symptoms-stop--audit-final-bounded-action",
+    "esc-social-start--current-arrhythmia_signs-stop--audit-final-bounded-action",
+    "esc-social-start--current-serotonin_syndrome_signs-stop--audit-final-bounded-action",
+    "esc-taper-limit--current-mania_symptoms-stop--audit-final-bounded-action",
+    "esc-taper-limit--current-arrhythmia_signs-stop--audit-final-bounded-action",
+    "esc-taper-limit--current-serotonin_syndrome_signs-stop--audit-final-bounded-action",
+    "switch-esc-ago--current-mania_symptoms-stop--audit-final-bounded-action",
+    "switch-ser-ago--round2-A-active-mania-True--audit-final-bounded-action",
+    "switch-ser-esc--round2-A-active-mania-True--audit-final-bounded-action",
+    "switch-esc-ser--round2-A-active-mania-True--audit-final-bounded-action",
+    "fluvox-depression-start--r3-serotonin_syndrome_signs-positive--audit-final-bounded-action",
+    "phen-taper-limit--r3-unusual_reactions-positive--audit-final-bounded-action",
+    "venla-xr-gad-start--r3-current_allergic_reaction-positive--audit-final-bounded-action",
+    "venla-xr-panic-form-limit--r3-current_allergic_reaction-positive--audit-final-bounded-action",
+    "venla-xr-social-start--r3-current_allergic_reaction-positive--audit-final-bounded-action",
+    "parox-panic-kr--audit-v2-serotonin_syndrome_signs-positive--audit-final-bounded-action",
+    "parox-taper-example--audit-v2-serotonin_syndrome_signs-positive--audit-final-bounded-action",
+    "switch-parox-ago--audit-v2-serotonin_syndrome_signs-positive--audit-final-bounded-action",
+    "switch-parox-ago-selected-example--audit-v2-serotonin_syndrome_signs-positive--audit-final-bounded-action",
+    "parox-taper-example--audit-v2-new_seizures-positive--audit-final-bounded-action",
+    "fluvox-taper-limit--audit-v2-serotonin_syndrome_signs-positive--audit-final-bounded-action",
+    "fluvox-taper-limit--audit-v2-new_or_increased_seizures-positive--audit-final-bounded-action",
+    "fluvox-taper-limit--audit-v2-liver_injury_signs-positive--audit-final-bounded-action",
+    "fluvox-taper-limit--audit-v2-mania_symptoms-positive--audit-final-bounded-action",
+    "venla-xr-panic-form-limit--audit-v2-diastolic_BP-positive--audit-final-bounded-action",
+    "venla-xr-taper-limit--audit-v2-diastolic_BP-positive--audit-final-bounded-action",
+    "venla-xr-taper-limit--audit-v2-current_allergic_reaction-positive--audit-final-bounded-action",
+    "switch-esc-ago--audit-v2-arrhythmia_signs-positive--audit-final-bounded-action",
+    "switch-esc-ago--audit-v2-serotonin_syndrome_signs-positive--audit-final-bounded-action",
+    "switch-esc-ago--audit-v2-seizure_state-positive--audit-final-bounded-action",
+    "switch-esc-ser--audit-v2-arrhythmia_signs-positive--audit-final-bounded-action",
+    "switch-esc-ser--audit-v2-serotonin_syndrome_signs-positive--audit-final-bounded-action",
+    "switch-esc-ser--audit-v2-seizure_state-positive--audit-final-bounded-action",
+    "switch-ser-esc--audit-v2-target_arrhythmia_signs-positive--audit-final-bounded-action",
+    "switch-ser-esc--audit-v2-target_serotonin_syndrome_signs-positive--audit-final-bounded-action",
+    "switch-ser-esc--audit-v2-target_seizure_state-positive--audit-final-bounded-action",
+    "fluvox-depression-start--audit-v2-new_or_increased_seizures-positive--audit-final-bounded-action",
+    "switch-ser-esc--audit-v2-new_seizures-positive--audit-final-bounded-action",
+    "switch-esc-ser--audit-v2-target_new_seizures-positive--audit-final-bounded-action",
+    "esc-taper-limit--audit-final-primary-RU-ESC-seizure_state-первичные/участившиеся приступы-positive--audit-final-bounded-action",
+    "ser-taper-limit--audit-final-primary-RU-SER-seizure_state-новые приступы-positive--audit-final-bounded-action",
+    "switch-esc-ago--audit-final-primary-RU-AGO-liver_injury_signs-positive--audit-final-bounded-action"
+  ],
+  "scope": "Finite source cause/identity/phase certificates, not a claim of clinical exhaustive routing; independent acceptance pending"
+}

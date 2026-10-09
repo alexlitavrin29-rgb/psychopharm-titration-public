@@ -1,0 +1,318 @@
+schema_version: '1.0'
+rule_id: switch-ser-moc
+development_status: extracted_research_not_executable
+language: ru
+identity:
+  title: 'сертралин → моклобемид: ограничения российских источников'
+  mode: switch
+  drug_inn: null
+  from_drug_inn: сертралин
+  to_drug_inn: моклобемид
+  formulation: null
+  route: oral
+  diagnosis_label_ru: Самостоятельный депрессивный эпизод/рекуррентная депрессия у взрослых
+  classification_system: МКБ-10
+  diagnosis_code: F32/F33
+  jurisdiction: RU_versioned_sources
+applicability:
+  population_description: Взрослые; только показание и контекст указанных российских источников.
+  age_constraints: []
+  pregnancy: Отдельная оценка применимости; дозовые коэффициенты не извлечены.
+  lactation: Отдельная оценка применимости; дозовые коэффициенты не извлечены.
+  renal_constraints: []
+  hepatic_constraints: []
+  comorbidity_constraints: []
+  interacting_drugs:
+  - Проверять оба препарата и недавние отмены; ограничения ИМАО по ОХЛП сертралина §4.3/4.5, с.3/7–8.
+  other_conditions: []
+  exclusions: []
+  indication_status_in_russia: guideline_context_product_registration_requires_separate_check
+  source_refs: &id001
+  - RU-SER
+  - RU-DEP
+inputs:
+- input_id: from_form
+  question_ru: Какая форма исходного препарата?
+  data_type: structured_form
+  unit: null
+  allowed_values: []
+  required_when: для применения этой ветки
+  show_when: при выборе этой карточки
+  why_needed: Исполнимость ступеней прекращения A.
+  changes:
+  - applicability
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Назвать отсутствующее поле; не выдавать безусловную индивидуальную схему.
+  source_refs: *id001
+  input_role: dose_operand_or_applicability_gate
+- input_id: to_form
+  question_ru: Какая форма целевого препарата?
+  data_type: structured_form
+  unit: null
+  allowed_values: []
+  required_when: для применения этой ветки
+  show_when: при выборе этой карточки
+  why_needed: Применимость инструкции B.
+  changes:
+  - applicability
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Назвать отсутствующее поле; не выдавать безусловную индивидуальную схему.
+  source_refs: *id001
+  input_role: dose_operand_or_applicability_gate
+- input_id: current_dose
+  question_ru: Текущая суточная доза исходного препарата?
+  data_type: number
+  unit: mg/day
+  allowed_values: []
+  required_when: для применения этой ветки
+  show_when: при выборе этой карточки
+  why_needed: Исходная точка снижения; не эквивалент дозы B.
+  changes:
+  - applicability
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Назвать отсутствующее поле; не выдавать безусловную индивидуальную схему.
+  source_refs: *id001
+  input_role: dose_operand_or_applicability_gate
+- input_id: duration
+  question_ru: Как долго принимается исходный препарат?
+  data_type: number
+  unit: day
+  allowed_values: []
+  required_when: для применения этой ветки
+  show_when: при выборе этой карточки
+  why_needed: Риск отмены и индивидуальный темп.
+  changes:
+  - applicability
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Назвать отсутствующее поле; не выдавать безусловную индивидуальную схему.
+  source_refs: *id001
+  input_role: dose_operand_or_applicability_gate
+- input_id: last_dose_time
+  question_ru: Время подтверждённого последнего приёма A?
+  data_type: datetime
+  unit: null
+  allowed_values: []
+  required_when: для применения этой ветки
+  show_when: при выборе этой карточки
+  why_needed: Начало отсчёта опубликованного интервала, если он есть.
+  changes:
+  - applicability
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Назвать отсутствующее поле; не выдавать безусловную индивидуальную схему.
+  source_refs: *id001
+  input_role: dose_operand_or_applicability_gate
+- input_id: withdrawal_symptoms
+  question_ru: Какие симптомы отмены и их тяжесть оценил врач?
+  data_type: clinical_assessment
+  unit: null
+  allowed_values: []
+  required_when: для применения этой ветки
+  show_when: при выборе этой карточки
+  why_needed: Выбор более медленного снижения или другой тактики.
+  changes:
+  - applicability
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Назвать отсутствующее поле; не выдавать безусловную индивидуальную схему.
+  source_refs: *id001
+  input_role: dose_operand_or_applicability_gate
+- input_id: medicines
+  question_ru: Текущие и недавно отменённые лекарства?
+  data_type: medication_list
+  unit: null
+  allowed_values: []
+  required_when: для применения этой ветки
+  show_when: при выборе этой карточки
+  why_needed: Ограничения взаимодействий обоих препаратов.
+  changes:
+  - applicability
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Назвать отсутствующее поле; не выдавать безусловную индивидуальную схему.
+  source_refs: *id001
+  input_role: dose_operand_or_applicability_gate
+- input_id: target_applicability
+  question_ru: Какие условия применимости целевой инструкции подтверждены, а какие неизвестны?
+  data_type: clinical_assessment
+  unit: null
+  allowed_values: []
+  required_when: для применения этой ветки
+  show_when: при выборе этой карточки
+  why_needed: Не заменяет проверку целевой дозовой карточки.
+  changes:
+  - applicability
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Назвать отсутствующее поле; не выдавать безусловную индивидуальную схему.
+  source_refs: *id001
+  input_role: dose_operand_or_applicability_gate
+clinical_parameters:
+- parameter_id: minimum_after_sertraline_stop
+  meaning: Минимум после прекращения сертралина до обратимого ИМАО
+  value: 7
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: day
+  source_ref: RU-SER
+  source_locator: §4.5, PDF с.8, обратимые селективные ИМАО
+  source_meaning: предписание
+  derivation: null
+logic:
+  representation: narrative_only
+  conditions:
+  - Показание и стратегию выбрал врач; ограничения источника проверяются отдельно.
+  actions:
+  - Учитывать постепенное прекращение A по российским источникам; точные ступени исходной дозы источник
+    не задаёт.
+  - Время начала B и возможность перекрытия не выводить из срока отмены A. Если точного российского правила
+    нет, результат clinician_choice без календаря.
+  - После последнего приёма сертралина выдерживать как минимум 7 дней до моклобемида; не добавлять верхнюю
+    границу 13 дней из SPS. Перекрытие не рекомендуется российской ОХЛП.
+  parameter_refs:
+  - minimum_after_sertraline_stop
+  source_refs: *id001
+  clinician_choices: &id002
+  - Размер и темп снижения A
+  - Условия старта и доза B по его применимой инструкции
+  - Время начала B; точная парная стратегия не завершена
+  missing_data_behaviour: Назвать обязательные неизвестные поля; результат insufficient_data. Справочные
+    этапы можно показать как условные, без безусловной дозы пациенту.
+  unsupported_case_behaviour: not_applicable для этой карточки; указать конкретную отсутствующую ветку,
+    не запретить всё лечение.
+  contraindicated_case_behaviour: Не выдавать дозовую схему противопоказанного сочетания; отобразить источник
+    и причину.
+  conflicts: []
+  composite_rule_dependencies: []
+  combination_justification: Независимые правила не образуют автоматически полный клинический календарь.
+output:
+  result_type: clinician_choice
+  medication_inn: моклобемид
+  dose_per_administration: null
+  administrations_per_day: null
+  total_daily_dose: null
+  unit: mg
+  formulation: null
+  schedule: []
+  warnings:
+  - Частичное опубликованное правило; не индивидуальное назначение.
+  - Числовой вывод относится к указанным дозовым условиям. Неоценённые модулем клинические обстоятельства
+    не считаются отсутствующими; полный клинический допуск врач оценивает отдельно.
+  mandatory_checks: []
+  clinician_decisions_remaining: *id002
+  rounding_or_formulation_rule: Не округлять медицинскую дозу; использовать только разрешённую форму/деление.
+    При невозможности дозы формой — явно сообщить.
+  source_refs: *id001
+sources:
+- source_id: RU-DEP
+  title: Депрессивный эпизод, Рекуррентное депрессивное расстройство, КР 301_3
+  organization_or_authors: Минздрав РФ; Российское общество психиатров
+  url: https://apicr.minzdrav.gov.ru/api.ashx?id=301_3&op=GetClinrecPdf
+  doi_or_registry_id: '301_3'
+  publication_date: null
+  version_or_update_date: '2024; каталог: опубликовано 26.08.2024, применяется'
+  accessed_on: '2026-10-08'
+  source_type: guideline
+  jurisdiction: RU
+  access_status: full
+  exact_locator: §3.1–3.4 PDF с.24–40; таблица2 с.95–96; §3.6 с.45; Б5 с.105–106
+  evidence_status: Клиническая рекомендация; не валидация калькулятора
+  what_was_tested: Не исследовался создаваемый продукт. Содержание и ограничения описаны в evidence_limitations.
+  evidence_limitations: 'Взрослая депрессия: дополнительно прочитаны терапевтические разделы и таблица
+    доз. Таблица без форм/индивидуальных ограничений не автономный модуль. Концентрация лития с.36 имеет
+    конфликт мкмоль/л против ммоль/л; автоматическое исправление не разрешено.'
+  reuse_license_or_restriction: Открытый доступ не означает разрешение перераспространять полный документ.
+    Сохранены собственное извлечение фактических правил, локаторы и ссылки; код и большие цитаты не копируются.
+  document_fingerprint:
+    source_id: RU-DEP
+    url: https://apicr.minzdrav.gov.ru/api.ashx?id=301_3&op=GetClinrecPdf
+    sha256: 2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd
+    pages: 125
+  local_file: source_snapshots/depression-301_3.pdf
+- source_id: RU-SER
+  title: Золофт (сертралин), ОХЛП ЕАЭС, таблетки
+  organization_or_authors: Viatris / держатель регистрационного удостоверения
+  url: https://www.viatris.ru/-/media/project/common/viatrisru/pdf/product-catalog/0006_zoloft_smpc-eaeu_24-apr-2025_ru.pdf
+  doi_or_registry_id: ЛП-№(002851)-(РГ-RU), §8 PDF с.22
+  publication_date: null
+  version_or_update_date: Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла
+    24-apr-2025 не является датой содержания
+  accessed_on: '2026-10-08'
+  source_type: label
+  jurisdiction: RU/EAEU
+  access_status: full
+  exact_locator: §4.1 с.1; §4.2 с.2–3; §4.3 с.3; §4.4 с.3–7; §4.5 с.7–10; §4.6 с.10–11; §8 с.22
+  evidence_status: Инструкция/ОХЛП; не валидированная модель индивидуальной дозы
+  what_was_tested: Не исследовался создаваемый продукт. Содержание и ограничения описаны в evidence_limitations.
+  evidence_limitations: 'Российская запись и документ версии 2026 подтверждены в официальном реестре ОХЛП;
+    визуально с.1: РУ от 11.06.2026, штамп 29.05.2026 №10729, последовательность 0008. Копия производителя
+    прочитана полностью. Полная побайтовая идентичность файлов не заявлена; медицинские параметры привязаны
+    к прочитанной копии.'
+  reuse_license_or_restriction: Открытый доступ не означает разрешение перераспространять полный документ.
+    Сохранены собственное извлечение фактических правил, локаторы и ссылки; код и большие цитаты не копируются.
+  document_fingerprint:
+    source_id: RU-SER
+    url: https://www.viatris.ru/-/media/project/common/viatrisru/pdf/product-catalog/0006_zoloft_smpc-eaeu_24-apr-2025_ru.pdf
+    sha256: 3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba
+    pages: 22
+    accessed_on: '2026-10-08'
+  manufacturer_page: https://www.viatris.ru/ru-ru/препараты/product-catalog/zoloft
+  registry_observation:
+    registry: https://lk.regmed.ru/Register/EAEU_SmPC
+    query: Золофт
+    registration_number: ЛП-№(002851)-(РГ-RU)
+    initial_registration_date: '2023-07-24'
+    latest_document_name: 1.3.1 Золофт ОХЛП 21.04.26_02002 (1817931491) [0008] штамп МЗ.pdf
+    document_url: https://lk.regmed.ru/Register/ViewPDFfromDAToken?Token=[REDACTED]
+    visual_page_1_registration_date: '2026-06-11'
+    expert_stamp: 29.05.2026 №10729, последовательность 0008
+    pages: 22
+    accessed_on: '2026-10-08'
+    read_part: Реестровая запись, список документов, визуально с.1. Полная побайтовая сверка с копией
+      производителя не выполнена.
+verification:
+  primary_source_checked: true
+  all_clinical_parameters_have_sources: true
+  population_and_indication_checked: true
+  russian_applicability_checked: false
+  formulation_feasibility_checked: false
+  combined_rules_justified: false
+  source_transfer_check: extraction_checked; calculator_not_implemented
+  clinical_review: not_performed
+  product_clinical_validation: not_performed
+  ready_for_technical_implementation: false
+  unresolved_items:
+  - Полный российский календарь доз A и B не найден.
+  - Последняя регистрационная редакция и применимость обеих форм не сверены.
+test_cases:
+- case_id: switch-ser-moc__too-early
+  synthetic: true
+  given:
+    days_after_sertraline: 6
+  expected:
+    start_moclobemide_allowed_by_interval: false
+    minimum_days: 7
+    target_dose_mg: null
+  source_refs: *id001
+  note: Ожидание переноса из источника; калькулятор не реализован, клиническая валидация не выполнена.
+- case_id: switch-ser-moc__interval-not-complete-regimen
+  synthetic: true
+  given:
+    days_after_sertraline: 7
+  expected:
+    interval_condition_met: true
+    automatic_target_start: false
+    complete_schedule: null
+  source_refs: *id001
+  note: Ожидание переноса из источника; калькулятор не реализован, клиническая валидация не выполнена.
+profile:
+  country: RU
+  selection_status: RU_finding_not_dose_module
+  foreign_fallback_allowed: false
+card_type: directed_constraint_with_missing_drug_source

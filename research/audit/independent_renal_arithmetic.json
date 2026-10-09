@@ -1,0 +1,58 @@
+[
+  {
+    "file": "renal_estimator.yaml",
+    "case_id": "ru-richter-clcr-estimator__male",
+    "calculated": 100.0,
+    "expected": 100,
+    "arithmetic_matches": true,
+    "executed_calculator": false
+  },
+  {
+    "file": "renal_estimator.yaml",
+    "case_id": "ru-richter-clcr-estimator__female",
+    "calculated": 85.0,
+    "expected": 85,
+    "arithmetic_matches": true,
+    "executed_calculator": false
+  },
+  {
+    "file": "renal_estimator.yaml",
+    "case_id": "ru-richter-clcr-estimator__wrong-unit",
+    "review": "не числовой полный пример; ограничение неверной единицы/формы подтверждено оригиналом",
+    "executed_calculator": false
+  },
+  {
+    "file": "renal_estimator.yaml",
+    "case_id": "ru-richter-clcr-estimator__capsule-footnote",
+    "review": "не числовой полный пример; ограничение неверной единицы/формы подтверждено оригиналом",
+    "executed_calculator": false
+  },
+  {
+    "file": "renal_estimator_archive.yaml",
+    "case_id": "ru-richter-clcr-estimator__male",
+    "calculated": 100.0,
+    "expected": 100,
+    "arithmetic_matches": true,
+    "executed_calculator": false
+  },
+  {
+    "file": "renal_estimator_archive.yaml",
+    "case_id": "ru-richter-clcr-estimator__female",
+    "calculated": 85.0,
+    "expected": 85,
+    "arithmetic_matches": true,
+    "executed_calculator": false
+  },
+  {
+    "file": "renal_estimator_archive.yaml",
+    "case_id": "ru-richter-clcr-estimator__wrong-unit",
+    "review": "не числовой полный пример; ограничение неверной единицы/формы подтверждено оригиналом",
+    "executed_calculator": false
+  },
+  {
+    "file": "renal_estimator_archive.yaml",
+    "case_id": "ru-richter-clcr-estimator__capsule-footnote",
+    "review": "не числовой полный пример; ограничение неверной единицы/формы подтверждено оригиналом",
+    "executed_calculator": false
+  }
+]

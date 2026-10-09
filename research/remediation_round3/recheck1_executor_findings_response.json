@@ -1,0 +1,121 @@
+[
+  {
+    "finding_id": "V2-01",
+    "executor_status": "исправлено; повторная независимая проверка ожидается",
+    "response": "Вложенные версии/SHA привязаны к владельцу source_id; IR не наследует XR.",
+    "evidence": [
+      "source_binding_repairs.json"
+    ]
+  },
+  {
+    "finding_id": "V2-02",
+    "executor_status": "исправлено; повторная независимая проверка ожидается",
+    "response": "Узкий скрининг БАР перед стартом PAR; unknown/missing не дают исполнения старта.",
+    "evidence": [
+      "medical_condition_repairs.json"
+    ]
+  },
+  {
+    "finding_id": "V2-03",
+    "executor_status": "исправлено; повторная независимая проверка ожидается",
+    "response": "PAR: прекращение текущего препарата и поддерживающее симптоматическое лечение; календарь B не начинается автоматически.",
+    "evidence": [
+      "medical_condition_repairs.json"
+    ]
+  },
+  {
+    "finding_id": "V2-04",
+    "executor_status": "исправлено; повторная независимая проверка ожидается",
+    "response": "SER: опубликованное избегание мощных ингибиторов CYP3A4; без нового коэффициента дозы.",
+    "evidence": [
+      "medical_condition_repairs.json"
+    ]
+  },
+  {
+    "finding_id": "V2-05",
+    "executor_status": "исправлено; повторная независимая проверка ожидается",
+    "response": "DULOX: CNS/CYP1A2/CYP2D6-субстраты/гепатотоксичность; для качественной отмены не добавлен допуск нового старта.",
+    "evidence": [
+      "medical_condition_repairs.json"
+    ]
+  },
+  {
+    "finding_id": "V2-06",
+    "executor_status": "исправлено; повторная независимая проверка ожидается",
+    "response": "Условия опубликованного прекращения при уже начатой FLUV/PAR/XR терапии перенесены и имеют prepared expected.",
+    "evidence": [
+      "medical_condition_repairs.json"
+    ]
+  },
+  {
+    "finding_id": "V2-07",
+    "executor_status": "исправлено; повторная независимая проверка ожидается",
+    "response": "ESC действия A/B раздельны; прекращение принимаемого ESC, ЭКГ/симптоматическое лечение; фаза B не выводится из A.",
+    "evidence": [
+      "medical_condition_repairs.json",
+      "input_contracts.yaml"
+    ]
+  },
+  {
+    "finding_id": "V2-08",
+    "executor_status": "исправлено; повторная независимая проверка ожидается",
+    "response": "Владелец/страница PAR, текущая идентичность PHEN ODT, ограниченный статус проверенной применимости согласованы.",
+    "evidence": [
+      "source_binding_repairs.json",
+      "medical_condition_repairs.json"
+    ]
+  },
+  {
+    "finding_id": "V2-09",
+    "executor_status": "исправлено; повторная независимая проверка ожидается",
+    "response": "XR: явный строгий предикат >100 мм рт.ст. только ongoing; граничные 100/100.01 и фазовые сценарии.",
+    "evidence": [
+      "medical_condition_repairs.json"
+    ]
+  },
+  {
+    "finding_id": "V2-10",
+    "executor_status": "исправлено; повторная независимая проверка ожидается",
+    "response": "Отрицательные факты и unassessed пересчитаны из именно заданных projected inputs для всех типов результата.",
+    "evidence": [
+      "build_graphs.py",
+      "audit_repair_verification.json"
+    ]
+  },
+  {
+    "finding_id": "V2-11",
+    "executor_status": "исправлено; повторная независимая проверка ожидается",
+    "response": "Активные Markdown/индексы согласованы; исторические тексты сохранены отдельными копиями.",
+    "evidence": [
+      "previous_main_documents/",
+      "ordinary_path_report.json"
+    ]
+  },
+  {
+    "finding_id": "V2-12",
+    "executor_status": "частично",
+    "response": "19 полей качественных результатов перестали быть обязательными. Полная необходимость всех оставшихся полей по каждому результату не доказана.",
+    "evidence": [
+      "qualitative_necessity_repairs.json",
+      "input_necessity.csv",
+      "necessity_decisions.json"
+    ]
+  },
+  {
+    "finding_id": "V2-13",
+    "executor_status": "частично",
+    "response": "CAD/electrolyte сложность ESC имеет источник и триггер; ordinary CYP14. AGO20/DULOX-GAD17/PREG17–18 сохраняются честно.",
+    "evidence": [
+      "actual_question_paths.json",
+      "ordinary_path_report.json"
+    ]
+  },
+  {
+    "finding_id": "V2-14",
+    "executor_status": "исправлено; повторная независимая проверка ожидается",
+    "response": "FLUV прекращение при первичных либо участившихся приступах, включая выбранную отмену.",
+    "evidence": [
+      "medical_condition_repairs.json"
+    ]
+  }
+]

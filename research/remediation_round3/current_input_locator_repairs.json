@@ -1,0 +1,674 @@
+[
+  {
+    "rule_id": "ago-depression-start",
+    "input_id": "age",
+    "old_locator": "§4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16",
+    "new_locator": "§4.1 с.1; §4.2 с.2",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "ago-depression-start",
+    "input_id": "form",
+    "old_locator": "§4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16",
+    "new_locator": "§1–3 с.1; §4.2 с.2",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "ago-depression-start",
+    "input_id": "hepatic",
+    "old_locator": "§4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16",
+    "new_locator": "§4.2 с.2; §4.3 с.3",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "ago-depression-start",
+    "input_id": "pregnancy",
+    "old_locator": "§4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16",
+    "new_locator": "§4.6 с.6",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "ago-depression-start",
+    "input_id": "lactation",
+    "old_locator": "§4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16",
+    "new_locator": "§4.6 с.6",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "ago-depression-start",
+    "input_id": "medicines",
+    "old_locator": "§4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16",
+    "new_locator": "§4.3 с.3; §4.4–4.5 с.3,5–6",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "ago-depression-start",
+    "input_id": "allergy",
+    "old_locator": "§4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16",
+    "new_locator": "§4.3 с.3",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "ago-depression-start",
+    "input_id": "ALT_ratio",
+    "old_locator": "§4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16",
+    "new_locator": "§4.3–4.4 с.3–4",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "ago-depression-start",
+    "input_id": "AST_ratio",
+    "old_locator": "§4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16",
+    "new_locator": "§4.3–4.4 с.3–4",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "ago-depression-start",
+    "input_id": "renal_state",
+    "old_locator": "§4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16",
+    "new_locator": "§4.2 с.2; §4.4 с.4",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "ago-gad-start",
+    "input_id": "age",
+    "old_locator": "§4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16",
+    "new_locator": "§4.1 с.1; §4.2 с.2",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "ago-gad-start",
+    "input_id": "form",
+    "old_locator": "§4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16",
+    "new_locator": "§1–3 с.1; §4.2 с.2",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "ago-gad-start",
+    "input_id": "hepatic",
+    "old_locator": "§4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16",
+    "new_locator": "§4.2 с.2; §4.3 с.3",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "ago-gad-start",
+    "input_id": "pregnancy",
+    "old_locator": "§4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16",
+    "new_locator": "§4.6 с.6",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "ago-gad-start",
+    "input_id": "lactation",
+    "old_locator": "§4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16",
+    "new_locator": "§4.6 с.6",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "ago-gad-start",
+    "input_id": "medicines",
+    "old_locator": "§4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16",
+    "new_locator": "§4.3 с.3; §4.4–4.5 с.3,5–6",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "ago-gad-start",
+    "input_id": "allergy",
+    "old_locator": "§4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16",
+    "new_locator": "§4.3 с.3",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "ago-gad-start",
+    "input_id": "ALT_ratio",
+    "old_locator": "§4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16",
+    "new_locator": "§4.3–4.4 с.3–4",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "ago-gad-start",
+    "input_id": "AST_ratio",
+    "old_locator": "§4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16",
+    "new_locator": "§4.3–4.4 с.3–4",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "ago-gad-start",
+    "input_id": "renal_state",
+    "old_locator": "§4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16",
+    "new_locator": "§4.2 с.2; §4.4 с.4",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "dulox-depression-start",
+    "input_id": "closed_angle_glaucoma",
+    "old_locator": "§4.3 с.3",
+    "new_locator": "§4.3 с.3",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "dulox-depression-start",
+    "input_id": "maoi_type",
+    "old_locator": "§4.5 с.7",
+    "new_locator": "§4.5 с.7",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "dulox-depression-start",
+    "input_id": "maoi_stopped_at",
+    "old_locator": "§4.5 с.7",
+    "new_locator": "§4.5 с.7",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "dulox-depression-start",
+    "input_id": "fructose_intolerance",
+    "old_locator": "§4.4 с.7",
+    "new_locator": "§4.4 с.7",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "dulox-depression-start",
+    "input_id": "glucose_galactose_malabsorption",
+    "old_locator": "§4.4 с.7",
+    "new_locator": "§4.4 с.7",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "dulox-depression-start",
+    "input_id": "sucrase_isomaltase_deficiency",
+    "old_locator": "§4.4 с.7",
+    "new_locator": "§4.4 с.7",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "dulox-depression-start",
+    "input_id": "akathisia",
+    "old_locator": "§4.4 с.7",
+    "new_locator": "§4.4 с.7",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "dulox-gad-adjust",
+    "input_id": "elderly_population",
+    "old_locator": "§4.2 с.3",
+    "new_locator": "§4.2 с.3",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "dulox-gad-adjust",
+    "input_id": "closed_angle_glaucoma",
+    "old_locator": "§4.3 с.3",
+    "new_locator": "§4.3 с.3",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "dulox-gad-adjust",
+    "input_id": "maoi_type",
+    "old_locator": "§4.5 с.7",
+    "new_locator": "§4.5 с.7",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "dulox-gad-adjust",
+    "input_id": "maoi_stopped_at",
+    "old_locator": "§4.5 с.7",
+    "new_locator": "§4.5 с.7",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "dulox-gad-adjust",
+    "input_id": "fructose_intolerance",
+    "old_locator": "§4.4 с.7",
+    "new_locator": "§4.4 с.7",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "dulox-gad-adjust",
+    "input_id": "glucose_galactose_malabsorption",
+    "old_locator": "§4.4 с.7",
+    "new_locator": "§4.4 с.7",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "dulox-gad-adjust",
+    "input_id": "sucrase_isomaltase_deficiency",
+    "old_locator": "§4.4 с.7",
+    "new_locator": "§4.4 с.7",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "dulox-gad-adjust",
+    "input_id": "akathisia",
+    "old_locator": "§4.4 с.7",
+    "new_locator": "§4.4 с.7",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "dulox-gad-start",
+    "input_id": "elderly_population",
+    "old_locator": "§4.2 с.3",
+    "new_locator": "§4.2 с.3",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "dulox-gad-start",
+    "input_id": "closed_angle_glaucoma",
+    "old_locator": "§4.3 с.3",
+    "new_locator": "§4.3 с.3",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "dulox-gad-start",
+    "input_id": "maoi_type",
+    "old_locator": "§4.5 с.7",
+    "new_locator": "§4.5 с.7",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "dulox-gad-start",
+    "input_id": "maoi_stopped_at",
+    "old_locator": "§4.5 с.7",
+    "new_locator": "§4.5 с.7",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "dulox-gad-start",
+    "input_id": "fructose_intolerance",
+    "old_locator": "§4.4 с.7",
+    "new_locator": "§4.4 с.7",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "dulox-gad-start",
+    "input_id": "glucose_galactose_malabsorption",
+    "old_locator": "§4.4 с.7",
+    "new_locator": "§4.4 с.7",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "dulox-gad-start",
+    "input_id": "sucrase_isomaltase_deficiency",
+    "old_locator": "§4.4 с.7",
+    "new_locator": "§4.4 с.7",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "dulox-gad-start",
+    "input_id": "akathisia",
+    "old_locator": "§4.4 с.7",
+    "new_locator": "§4.4 с.7",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "preg-gad-adjust",
+    "input_id": "age",
+    "old_locator": "§4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4",
+    "new_locator": "§4.1 с.3; §4.2 с.5; §4.3 с.6",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "preg-gad-adjust",
+    "input_id": "form",
+    "old_locator": "§4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4",
+    "new_locator": "§1–3 с.1–2; §4.2 с.3,5",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "preg-gad-adjust",
+    "input_id": "pregnancy",
+    "old_locator": "§4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4",
+    "new_locator": "§4.4 с.9; §4.6 с.12",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "preg-gad-adjust",
+    "input_id": "lactation",
+    "old_locator": "§4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4",
+    "new_locator": "§4.6 с.12–13",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "preg-gad-adjust",
+    "input_id": "medicines",
+    "old_locator": "§4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4",
+    "new_locator": "§4.4 с.7–8,10; §4.5 с.11–12",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "preg-gad-adjust",
+    "input_id": "allergy",
+    "old_locator": "§4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4",
+    "new_locator": "§4.3 с.6",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "preg-gad-adjust",
+    "input_id": "clcr",
+    "old_locator": "§4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4",
+    "new_locator": "§4.2 с.4–5, таблица 1 с.5; формула с.4 не исполняется",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "preg-gad-adjust",
+    "input_id": "dialysis",
+    "old_locator": "§4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4",
+    "new_locator": "§4.2 с.4–5, таблица 1",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "preg-gad-adjust",
+    "input_id": "respiratory",
+    "old_locator": "§4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4",
+    "new_locator": "§4.4 с.7–8",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "preg-gad-adjust",
+    "input_id": "frequency",
+    "old_locator": "§4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4",
+    "new_locator": "§4.2 с.3,5",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "preg-gad-adjust",
+    "input_id": "current_dose",
+    "old_locator": "§4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4",
+    "new_locator": "§4.2 с.3–5; §4.4 с.9",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "preg-gad-adjust",
+    "input_id": "time_at_dose",
+    "old_locator": "§4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4",
+    "new_locator": "§4.2 с.3, ГТР",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "preg-gad-adjust",
+    "input_id": "response",
+    "old_locator": "§4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4",
+    "new_locator": "§4.2 с.3, ГТР",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "preg-gad-adjust",
+    "input_id": "tolerability",
+    "old_locator": "§4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4",
+    "new_locator": "§4.2 с.3, ГТР",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "preg-gad-start",
+    "input_id": "age",
+    "old_locator": "§4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4",
+    "new_locator": "§4.1 с.3; §4.2 с.5; §4.3 с.6",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "preg-gad-start",
+    "input_id": "form",
+    "old_locator": "§4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4",
+    "new_locator": "§1–3 с.1–2; §4.2 с.3,5",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "preg-gad-start",
+    "input_id": "pregnancy",
+    "old_locator": "§4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4",
+    "new_locator": "§4.4 с.9; §4.6 с.12",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "preg-gad-start",
+    "input_id": "lactation",
+    "old_locator": "§4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4",
+    "new_locator": "§4.6 с.12–13",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "preg-gad-start",
+    "input_id": "medicines",
+    "old_locator": "§4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4",
+    "new_locator": "§4.4 с.7–8,10; §4.5 с.11–12",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "preg-gad-start",
+    "input_id": "allergy",
+    "old_locator": "§4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4",
+    "new_locator": "§4.3 с.6",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "preg-gad-start",
+    "input_id": "clcr",
+    "old_locator": "§4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4",
+    "new_locator": "§4.2 с.4–5, таблица 1 с.5; формула с.4 не исполняется",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "preg-gad-start",
+    "input_id": "dialysis",
+    "old_locator": "§4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4",
+    "new_locator": "§4.2 с.4–5, таблица 1",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "preg-gad-start",
+    "input_id": "respiratory",
+    "old_locator": "§4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4",
+    "new_locator": "§4.4 с.7–8",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "preg-gad-start",
+    "input_id": "frequency",
+    "old_locator": "§4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4",
+    "new_locator": "§4.2 с.3,5",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "preg-renal-start",
+    "input_id": "age",
+    "old_locator": "§4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4",
+    "new_locator": "§4.1 с.3; §4.2 с.5; §4.3 с.6",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "preg-renal-start",
+    "input_id": "form",
+    "old_locator": "§4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4",
+    "new_locator": "§1–3 с.1–2; §4.2 с.3,5",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "preg-renal-start",
+    "input_id": "pregnancy",
+    "old_locator": "§4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4",
+    "new_locator": "§4.4 с.9; §4.6 с.12",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "preg-renal-start",
+    "input_id": "lactation",
+    "old_locator": "§4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4",
+    "new_locator": "§4.6 с.12–13",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "preg-renal-start",
+    "input_id": "medicines",
+    "old_locator": "§4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4",
+    "new_locator": "§4.4 с.7–8,10; §4.5 с.11–12",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "preg-renal-start",
+    "input_id": "allergy",
+    "old_locator": "§4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4",
+    "new_locator": "§4.3 с.6",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "preg-renal-start",
+    "input_id": "clcr",
+    "old_locator": "§4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4",
+    "new_locator": "§4.2 с.4–5, таблица 1 с.5; формула с.4 не исполняется",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "preg-renal-start",
+    "input_id": "dialysis",
+    "old_locator": "§4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4",
+    "new_locator": "§4.2 с.4–5, таблица 1",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "preg-renal-start",
+    "input_id": "respiratory",
+    "old_locator": "§4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4",
+    "new_locator": "§4.4 с.7–8",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "preg-taper-limit",
+    "input_id": "age",
+    "old_locator": "§4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4",
+    "new_locator": "§4.1 с.3; §4.2 с.5; §4.3 с.6",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "preg-taper-limit",
+    "input_id": "form",
+    "old_locator": "§4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4",
+    "new_locator": "§1–3 с.1–2; §4.2 с.3,5",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "preg-taper-limit",
+    "input_id": "pregnancy",
+    "old_locator": "§4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4",
+    "new_locator": "§4.4 с.9; §4.6 с.12",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "preg-taper-limit",
+    "input_id": "lactation",
+    "old_locator": "§4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4",
+    "new_locator": "§4.6 с.12–13",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "preg-taper-limit",
+    "input_id": "medicines",
+    "old_locator": "§4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4",
+    "new_locator": "§4.4 с.7–8,10; §4.5 с.11–12",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "preg-taper-limit",
+    "input_id": "allergy",
+    "old_locator": "§4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4",
+    "new_locator": "§4.3 с.6",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "preg-taper-limit",
+    "input_id": "clcr",
+    "old_locator": "§4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4",
+    "new_locator": "§4.2 с.4–5, таблица 1 с.5; формула с.4 не исполняется",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "preg-taper-limit",
+    "input_id": "dialysis",
+    "old_locator": "§4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4",
+    "new_locator": "§4.2 с.4–5, таблица 1",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "preg-taper-limit",
+    "input_id": "respiratory",
+    "old_locator": "§4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4",
+    "new_locator": "§4.4 с.7–8",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "preg-taper-limit",
+    "input_id": "current_dose",
+    "old_locator": "§4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4",
+    "new_locator": "§4.2 с.3–5; §4.4 с.9",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "preg-taper-limit",
+    "input_id": "duration_of_use",
+    "old_locator": "§4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4",
+    "new_locator": "§4.4 с.9",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "preg-taper-limit",
+    "input_id": "current_withdrawal",
+    "old_locator": "§4.1–4.6; PDF с.1–13, таблица 1 с.5; формула с.4",
+    "new_locator": "§4.2 с.4; §4.4 с.9",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "switch-esc-ago",
+    "input_id": "hepatic",
+    "old_locator": "RU-AGO §4.3 с.3",
+    "new_locator": "§4.2 с.2; §4.3 с.3",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "switch-esc-ago",
+    "input_id": "renal_state",
+    "old_locator": "§4.2 с.2, почечная недостаточность",
+    "new_locator": "§4.2 с.2; §4.4 с.4",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "switch-parox-ago-selected-example",
+    "input_id": "hepatic",
+    "old_locator": "§4.3 с.3, печёночная недостаточность (цирроз или активное заболевание печени)",
+    "new_locator": "§4.2 с.2; §4.3 с.3",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "switch-parox-ago-selected-example",
+    "input_id": "renal_state",
+    "old_locator": "§4.2 с.2, почечная недостаточность",
+    "new_locator": "§4.2 с.2; §4.4 с.4",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "switch-parox-ago",
+    "input_id": "hepatic",
+    "old_locator": "§4.3 с.3, печёночная недостаточность (цирроз или активное заболевание печени)",
+    "new_locator": "§4.2 с.2; §4.3 с.3",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "switch-parox-ago",
+    "input_id": "renal_state",
+    "old_locator": "§4.2 с.2, почечная недостаточность",
+    "new_locator": "§4.2 с.2; §4.4 с.4",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "switch-ser-ago",
+    "input_id": "hepatic",
+    "old_locator": "§4.3 с.3, печёночная недостаточность (цирроз или активное заболевание печени)",
+    "new_locator": "§4.2 с.2; §4.3 с.3",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  },
+  {
+    "rule_id": "switch-ser-ago",
+    "input_id": "renal_state",
+    "old_locator": "§4.2 с.2, почечная недостаточность",
+    "new_locator": "§4.2 с.2; §4.4 с.4",
+    "scope": "Current input/necessity metadata only; medical expected and mandatory predicates unchanged"
+  }
+]

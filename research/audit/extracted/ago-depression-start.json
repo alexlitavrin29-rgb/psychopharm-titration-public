@@ -1,0 +1,565 @@
+{
+  "schema_version": "1.0",
+  "rule_id": "ago-depression-start",
+  "development_status": "extracted_research_not_executable",
+  "language": "ru",
+  "identity": {
+    "title": "Агомелатин: БДР, старт и условное повышение",
+    "mode": "start",
+    "drug_inn": "агомелатин",
+    "from_drug_inn": null,
+    "to_drug_inn": null,
+    "formulation": "Вальдоксан, целые таблетки 25 мг",
+    "route": "oral",
+    "diagnosis_label_ru": "Депрессия / указанная коморбидность",
+    "classification_system": "МКБ-10",
+    "diagnosis_code": "F32/F33",
+    "jurisdiction": "RU_versioned_sources"
+  },
+  "applicability": {
+    "population_description": "Взрослые от 18 лет; показание и клиническое действие выбирает врач.",
+    "age_constraints": [
+      {
+        "minimum": 18,
+        "inclusive": true,
+        "unit": "year",
+        "source_ref": "RU-AGO",
+        "source_locator": "§4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16"
+      }
+    ],
+    "pregnancy": "Рекомендуется избегать назначения во время беременности; §4.6 PDF с.6. Числовой поправки нет.",
+    "lactation": "Риск для ребёнка не исключён; врач выбирает прекращение грудного вскармливания либо приёма препарата, §4.6 с.6. Не числовой коэффициент.",
+    "renal_constraints": [
+      "При средней/тяжёлой почечной недостаточности опыт ограничен, соблюдать осторожность; §4.2 Вальдоксан с.2. Точной числовой поправки нет."
+    ],
+    "hepatic_constraints": [
+      "Печёночная недостаточность/активная болезнь; АЛТ или АСТ >3 ВГН — противопоказание. При 1–3 ВГН осторожность, не считать нормой."
+    ],
+    "comorbidity_constraints": [
+      "Мания/гипомания, суицидальный риск и факторы повреждения печени требуют отдельной клинической оценки/наблюдения; §4.4 с.3–5. Не числовые множители."
+    ],
+    "interacting_drugs": [
+      "Флувоксамин/ципрофлоксацин — сильные CYP1A2, противопоказаны."
+    ],
+    "other_conditions": [
+      "Печёночные пробы всем до начала; контроль приблизительно 3/6/12/24 недели и после повышения. Это лабораторный мониторинг, не календарь визитов."
+    ],
+    "exclusions": [],
+    "indication_status_in_russia": "RU_indication_in_read_original_latest_registry_text_separate",
+    "source_refs": [
+      "RU-AGO",
+      "RU-DEP"
+    ]
+  },
+  "inputs": [
+    {
+      "input_id": "age",
+      "question_ru": "Возраст, лет?",
+      "data_type": "number",
+      "unit": "year",
+      "allowed_values": [],
+      "required_when": "для выбранного расчёта",
+      "show_when": "для выбранного расчёта",
+      "why_needed": "Взрослая/пожилая применимость §4.1–4.2.",
+      "changes": [
+        "dose_or_action"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Назвать age; не подставлять норму, без безусловной индивидуальной дозы.",
+      "source_refs": [
+        "RU-AGO"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "form",
+      "question_ru": "Какая конкретная форма и дозировка?",
+      "data_type": "structured_form",
+      "unit": null,
+      "allowed_values": [
+        "подтверждено врачом",
+        "неизвестно"
+      ],
+      "required_when": "для выбранного расчёта",
+      "show_when": "для выбранного расчёта",
+      "why_needed": "Не переносить форму; дозовая исполнимость §1–3/4.2.",
+      "changes": [
+        "dose_or_action"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Назвать form; не подставлять норму, без безусловной индивидуальной дозы.",
+      "source_refs": [
+        "RU-AGO"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "hepatic",
+      "question_ru": "Подтверждённая функция печени?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [
+        "подтверждено врачом",
+        "неизвестно"
+      ],
+      "required_when": "для выбранного расчёта",
+      "show_when": "для выбранного расчёта",
+      "why_needed": "Ограничения §4.2–4.3; из одного анализа не выводить категорию.",
+      "changes": [
+        "dose_or_action"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Назвать hepatic; не подставлять норму, без безусловной индивидуальной дозы.",
+      "source_refs": [
+        "RU-AGO"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "pregnancy",
+      "question_ru": "Беременность установлена или возможна?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [
+        "подтверждено врачом",
+        "неизвестно"
+      ],
+      "required_when": "для выбранного расчёта",
+      "show_when": "для выбранного расчёта",
+      "why_needed": "Применимость §4.3/4.6.",
+      "changes": [
+        "dose_or_action"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Назвать pregnancy; не подставлять норму, без безусловной индивидуальной дозы.",
+      "source_refs": [
+        "RU-AGO"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "lactation",
+      "question_ru": "Есть грудное вскармливание?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [
+        "подтверждено врачом",
+        "неизвестно"
+      ],
+      "required_when": "для выбранного расчёта",
+      "show_when": "для выбранного расчёта",
+      "why_needed": "Применимость §4.3/4.6.",
+      "changes": [
+        "dose_or_action"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Назвать lactation; не подставлять норму, без безусловной индивидуальной дозы.",
+      "source_refs": [
+        "RU-AGO"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "medicines",
+      "question_ru": "Текущие и недавно отменённые препараты?",
+      "data_type": "medication_list",
+      "unit": null,
+      "allowed_values": [
+        "подтверждено врачом",
+        "неизвестно"
+      ],
+      "required_when": "для выбранного расчёта",
+      "show_when": "для выбранного расчёта",
+      "why_needed": "Взаимодействия и интервалы §4.3–4.5; последние даты при ИМАО отдельны.",
+      "changes": [
+        "dose_or_action"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Назвать medicines; не подставлять норму, без безусловной индивидуальной дозы.",
+      "source_refs": [
+        "RU-AGO"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "allergy",
+      "question_ru": "Гиперчувствительность к препарату/компонентам?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [
+        "подтверждено врачом",
+        "неизвестно"
+      ],
+      "required_when": "для выбранного расчёта",
+      "show_when": "для выбранного расчёта",
+      "why_needed": "Противопоказание §4.3.",
+      "changes": [
+        "dose_or_action"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Назвать allergy; не подставлять норму, без безусловной индивидуальной дозы.",
+      "source_refs": [
+        "RU-AGO"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "ALT_ratio",
+      "question_ru": "Подтверждённое отношение АЛТ к ВГН?",
+      "data_type": "number",
+      "unit": "xULN",
+      "allowed_values": [],
+      "required_when": "для выбранного расчёта",
+      "show_when": "для выбранного расчёта",
+      "why_needed": "Отдельная проба; >3 исключает начало, с.1/3.",
+      "changes": [
+        "dose_or_action"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Назвать ALT_ratio; не подставлять норму, без безусловной индивидуальной дозы.",
+      "source_refs": [
+        "RU-AGO"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "AST_ratio",
+      "question_ru": "Подтверждённое отношение АСТ к ВГН?",
+      "data_type": "number",
+      "unit": "xULN",
+      "allowed_values": [],
+      "required_when": "для выбранного расчёта",
+      "show_when": "для выбранного расчёта",
+      "why_needed": "Самостоятельная проба; не объединять с АЛТ.",
+      "changes": [
+        "dose_or_action"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Назвать AST_ratio; не подставлять норму, без безусловной индивидуальной дозы.",
+      "source_refs": [
+        "RU-AGO"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "renal_state",
+      "question_ru": "Какова известная степень почечной недостаточности по оценке врача?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [
+        "недостаточность не выявлена после оценки",
+        "лёгкая",
+        "средняя",
+        "тяжёлая",
+        "неизвестно"
+      ],
+      "required_when": "при выявленном соответствующем обстоятельстве",
+      "show_when": "при выявленном соответствующем обстоятельстве",
+      "why_needed": "§4.2 с.2: осторожность при средней/тяжёлой недостаточности; источник не задаёт новый коэффициент.",
+      "changes": [
+        "applicability"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Указать конкретное недостающее поле; не считать отсутствие оценки нормой. Для выбранной ветки безусловная индивидуальная доза не выдаётся.",
+      "source_refs": [
+        "RU-AGO"
+      ],
+      "input_role": "conditional_clinical_applicability_context"
+    }
+  ],
+  "clinical_parameters": [
+    {
+      "parameter_id": "start",
+      "meaning": "start",
+      "value": 25,
+      "lower": null,
+      "upper": null,
+      "lower_inclusive": null,
+      "upper_inclusive": null,
+      "unit": "mg/day",
+      "source_ref": "RU-AGO",
+      "source_locator": "§4.2 PDF с.1–2",
+      "source_meaning": "предписание",
+      "derivation": null
+    },
+    {
+      "parameter_id": "frequency",
+      "meaning": "frequency",
+      "value": 1,
+      "lower": null,
+      "upper": null,
+      "lower_inclusive": null,
+      "upper_inclusive": null,
+      "unit": "administration/day",
+      "source_ref": "RU-AGO",
+      "source_locator": "§4.2 PDF с.1–2",
+      "source_meaning": "предписание",
+      "derivation": null
+    },
+    {
+      "parameter_id": "conditional_higher_dose",
+      "meaning": "conditional_higher_dose",
+      "value": 50,
+      "lower": null,
+      "upper": null,
+      "lower_inclusive": null,
+      "upper_inclusive": null,
+      "unit": "mg/day",
+      "source_ref": "RU-AGO",
+      "source_locator": "§4.2 PDF с.1–2",
+      "source_meaning": "предписание",
+      "derivation": null
+    },
+    {
+      "parameter_id": "earliest_higher_stage",
+      "meaning": "earliest_higher_stage",
+      "value": 2,
+      "lower": null,
+      "upper": null,
+      "lower_inclusive": null,
+      "upper_inclusive": null,
+      "unit": "week",
+      "source_ref": "RU-AGO",
+      "source_locator": "§4.2 PDF с.1–2",
+      "source_meaning": "предписание",
+      "derivation": null
+    },
+    {
+      "parameter_id": "age_limit",
+      "meaning": "age_limit",
+      "value": 75,
+      "lower": null,
+      "upper": null,
+      "lower_inclusive": null,
+      "upper_inclusive": null,
+      "unit": "year",
+      "source_ref": "RU-AGO",
+      "source_locator": "§4.2 PDF с.1–2",
+      "source_meaning": "предписание",
+      "derivation": null
+    },
+    {
+      "parameter_id": "transaminase_limit",
+      "meaning": "transaminase_limit",
+      "value": 3,
+      "lower": null,
+      "upper": null,
+      "lower_inclusive": null,
+      "upper_inclusive": null,
+      "unit": "xULN",
+      "source_ref": "RU-AGO",
+      "source_locator": "§4.2–4.3 с.1–3",
+      "source_meaning": "предписание",
+      "derivation": null
+    }
+  ],
+  "logic": {
+    "representation": "conditional_source_rule",
+    "conditions": [
+      "Применимость к указанному показанию/форме подтверждена в пределах дозового расчёта; это не полный клинический допуск."
+    ],
+    "actions": [
+      "25 мг один раз перед сном. При отсутствии положительной динамики через 2 недели возможно 50 мг; решение врача по пользе/риску и строгий контроль печёночных проб.",
+      "Возрастная граница: ГТР строго старше 65; БДР 75 и старше — не применять. Эти условия не взаимозаменяемы.",
+      "Перед стартом проверяются АЛТ и АСТ отдельно. >3 ВГН хотя бы одной пробы исключает начало; ровно 3 требует осторожности, не разрешение без прочих условий.",
+      "Сообщённая средняя/тяжёлая почечная недостаточность раскрывает отдельную ветку осторожности; не рассчитывать неизвестную числовую поправку и не считать неоценённое состояние нормой."
+    ],
+    "parameter_refs": [
+      "start",
+      "frequency",
+      "conditional_higher_dose",
+      "earliest_higher_stage",
+      "age_limit",
+      "transaminase_limit"
+    ],
+    "source_refs": [
+      "RU-AGO",
+      "RU-DEP"
+    ],
+    "clinician_choices": [
+      "Необходимость изменения лечения и неоценённые модулем клинические обстоятельства."
+    ],
+    "missing_data_behaviour": "insufficient_data с конкретным отсутствующим полем, без безусловной дозы.",
+    "unsupported_case_behaviour": "Назвать неприменимую ветку; не переносить другую форму/показание.",
+    "contraindicated_case_behaviour": "Не выдавать схему противопоказанного сочетания, указать источник.",
+    "conflicts": [],
+    "composite_rule_dependencies": [],
+    "combination_justification": "КР определяет клиническую область, инструкция — дозовые параметры; новые коэффициенты не добавлены."
+  },
+  "output": {
+    "result_type": "exact",
+    "medication_inn": "агомелатин",
+    "dose_per_administration": 25,
+    "administrations_per_day": 1,
+    "total_daily_dose": 25,
+    "unit": "mg",
+    "formulation": "Вальдоксан, целые таблетки 25 мг",
+    "schedule": [],
+    "warnings": [
+      "Последующие этапы условны; максимум не является целью.",
+      "Неоценённое клиническое обстоятельство не считается отсутствующим.",
+      "Версия копии зафиксирована; последнее содержание реестрового документа проверяется перед клиническим внедрением."
+    ],
+    "mandatory_checks": [],
+    "clinician_decisions_remaining": [],
+    "rounding_or_formulation_rule": "Не округлять медицинскую дозу; целые формы/разрешённое деление. Невозможная доза — явный отказ формы.",
+    "source_refs": [
+      "RU-AGO",
+      "RU-DEP"
+    ]
+  },
+  "verification": {
+    "primary_source_checked": true,
+    "all_clinical_parameters_have_sources": true,
+    "population_and_indication_checked": true,
+    "russian_applicability_checked": true,
+    "formulation_feasibility_checked": true,
+    "combined_rules_justified": true,
+    "source_transfer_check": "extraction_checked; calculator_not_implemented",
+    "clinical_review": "not_performed",
+    "product_clinical_validation": "not_performed",
+    "ready_for_technical_implementation": true,
+    "unresolved_items": []
+  },
+  "test_cases": [
+    {
+      "case_id": "ago-depression-start__usual",
+      "synthetic": true,
+      "given": {
+        "age": 40,
+        "ALT_ratio": 1,
+        "AST_ratio": 1,
+        "form": "Вальдоксан 25"
+      },
+      "expected": {
+        "start_mg_per_day": 25,
+        "frequency": 1,
+        "earliest_conditional_increase_weeks": 2,
+        "higher_dose_mg_per_day": 50
+      },
+      "source_refs": [
+        "RU-AGO"
+      ],
+      "note": "Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена."
+    },
+    {
+      "case_id": "ago-depression-start__age-before-limit",
+      "synthetic": true,
+      "given": {
+        "age": 74
+      },
+      "expected": {
+        "age_alone_excludes": false
+      },
+      "source_refs": [
+        "RU-AGO"
+      ],
+      "note": "Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена."
+    },
+    {
+      "case_id": "ago-depression-start__age-exclusion",
+      "synthetic": true,
+      "given": {
+        "age": 75
+      },
+      "expected": {
+        "result_type": "not_applicable",
+        "age_excludes": true
+      },
+      "source_refs": [
+        "RU-AGO"
+      ],
+      "note": "Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена."
+    },
+    {
+      "case_id": "ago-depression-start__ALT3",
+      "synthetic": true,
+      "given": {
+        "ALT_ratio": 3,
+        "AST_ratio": 1
+      },
+      "expected": {
+        "transaminase_threshold_alone_excludes": false,
+        "caution_required": true
+      },
+      "source_refs": [
+        "RU-AGO"
+      ],
+      "note": "Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена."
+    },
+    {
+      "case_id": "ago-depression-start__AST-over3",
+      "synthetic": true,
+      "given": {
+        "ALT_ratio": 1,
+        "AST_ratio": 3.1
+      },
+      "expected": {
+        "result_type": "not_applicable",
+        "unconditional_dose": null
+      },
+      "source_refs": [
+        "RU-AGO"
+      ],
+      "note": "Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена."
+    },
+    {
+      "case_id": "ago-depression-start__AST-unknown",
+      "synthetic": true,
+      "given": {
+        "ALT_ratio": 1,
+        "AST_ratio": "неизвестно"
+      },
+      "expected": {
+        "result_type": "insufficient_data",
+        "missing": [
+          "AST_ratio"
+        ],
+        "unconditional_dose": null
+      },
+      "source_refs": [
+        "RU-AGO"
+      ],
+      "note": "Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена."
+    },
+    {
+      "case_id": "ago-depression-start__fluvox-combination",
+      "synthetic": true,
+      "given": {
+        "medicines": [
+          "флувоксамин"
+        ]
+      },
+      "expected": {
+        "result_type": "not_applicable",
+        "contraindicated_overlap": true
+      },
+      "source_refs": [
+        "RU-AGO"
+      ],
+      "note": "Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена."
+    },
+    {
+      "case_id": "ago-depression-start__renal-caution",
+      "synthetic": true,
+      "given": {
+        "renal_state": "средняя"
+      },
+      "expected": {
+        "result_type": "clinician_choice",
+        "new_numeric_renal_coefficient": null,
+        "caution_required": true
+      },
+      "source_refs": [
+        "RU-AGO"
+      ],
+      "note": "Ожидаемый перенос опубликованного ограничения; не выполнение калькулятора и не клиническая валидация."
+    }
+  ],
+  "profile": {
+    "country": "RU",
+    "selection_status": "RU_profile_research",
+    "foreign_fallback_allowed": false
+  },
+  "card_type": "numeric_source_rule"
+}

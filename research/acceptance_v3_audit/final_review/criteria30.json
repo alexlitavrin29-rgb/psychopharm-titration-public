@@ -1,0 +1,410 @@
+{
+  "snapshot": "b13033a0687a28b4da4299c171ac6b88a96667e2d6888ab8aecf5e9c85af0514",
+  "canonical": "psychopharm_codex_pack/ACCEPTANCE_V3.md",
+  "rows": [
+    {
+      "number": 1,
+      "literal_criterion": "Основной пользователь — психиатр, диагноз вводит врач; нет повторной диагностики и анкеты уверенности в диагнозе.",
+      "status": "выполнено",
+      "independent_evidence": "38 выбранных карточек используют диагноз и действие психиатра; PAR bipolar screen — источниковая узкая оценка, не повторная диагностика.",
+      "evidence_files": [
+        "main_alignment_checks.json",
+        "source_read_registry.json"
+      ],
+      "finding_ids": [],
+      "limit": "Приёмка используемых исследовательских контрактов; не clinical clearance, не исполнение медицинского selector/app, не exhaustive неиспользуемый текст всех ЛВ."
+    },
+    {
+      "number": 2,
+      "literal_criterion": "Фокус остался на тревожных/тревожно-депрессивных состояниях и применимости в РФ.",
+      "status": "выполнено",
+      "independent_evidence": "Российские КР GAD/PANIC/PHOB/DEP и регистрационные источники задают основной профиль; зарубежные сравнения не заполняют российский пробел.",
+      "evidence_files": [
+        "main_alignment_checks.json",
+        "source_read_registry.json"
+      ],
+      "finding_ids": [],
+      "limit": "Приёмка используемых исследовательских контрактов; не clinical clearance, не исполнение медицинского selector/app, не exhaustive неиспользуемый текст всех ЛВ."
+    },
+    {
+      "number": 3,
+      "literal_criterion": "Основной сценарий — выбранный препарат → дозовая схема, не только выбор лекарства или прогноз концентрации.",
+      "status": "выполнено",
+      "independent_evidence": "Карточки дают source-bound дозовые действия выбранного препарата или явно ограниченный gap/choice, а не только рейтинг или прогноз концентрации.",
+      "evidence_files": [
+        "main_alignment_checks.json",
+        "source_read_registry.json"
+      ],
+      "finding_ids": [],
+      "limit": "Приёмка используемых исследовательских контрактов; не clinical clearance, не исполнение медицинского selector/app, не exhaustive неиспользуемый текст всех ЛВ."
+    },
+    {
+      "number": 4,
+      "literal_criterion": "Исследованы старт, титрование/коррекция, отмена и переключение. Непокрытые режимы явно обозначены, не удалены молча.",
+      "status": "выполнено",
+      "independent_evidence": "Старт, коррекция, отмена и направления переключения представлены; отсутствующие российские calendars явно сохранены как gaps.",
+      "evidence_files": [
+        "main_alignment_checks.json",
+        "source_read_registry.json"
+      ],
+      "finding_ids": [],
+      "limit": "Приёмка используемых исследовательских контрактов; не clinical clearance, не исполнение медицинского selector/app, не exhaustive неиспользуемый текст всех ЛВ."
+    },
+    {
+      "number": 5,
+      "literal_criterion": "Дополнительный топ-3 опирается на КР; не создана собственная шкала индивидуального превосходства.",
+      "status": "выполнено",
+      "independent_evidence": "Топ-3 основан на линиях КР; собственной шкалы индивидуального превосходства нет.",
+      "evidence_files": [
+        "main_alignment_checks.json",
+        "source_read_registry.json"
+      ],
+      "finding_ids": [],
+      "limit": "Приёмка используемых исследовательских контрактов; не clinical clearance, не исполнение медицинского selector/app, не exhaustive неиспользуемый текст всех ЛВ."
+    },
+    {
+      "number": 6,
+      "literal_criterion": "Дети, пожилые, беременность и лактация присутствуют в карте покрытия; нет автоматического переноса взрослых доз.",
+      "status": "выполнено",
+      "independent_evidence": "Возрастные/детские, пожилые, pregnancy/lactation области присутствуют. Known child/unknown population не получают взрослую индивидуальную схему.",
+      "evidence_files": [
+        "main_alignment_checks.json",
+        "source_read_registry.json"
+      ],
+      "finding_ids": [],
+      "limit": "Приёмка используемых исследовательских контрактов; не clinical clearance, не исполнение медицинского selector/app, не exhaustive неиспользуемый текст всех ЛВ."
+    },
+    {
+      "number": 7,
+      "literal_criterion": "Нет обязательной генетики, ML, истории пациентов, стоимости, профилей предпочтений и календаря визитов.",
+      "status": "выполнено",
+      "independent_evidence": "Генетика, ML, patient history database, стоимость, preference profiles и календарь визитов не обязательны. Лабораторные source monitoring сроки не выданы за визиты.",
+      "evidence_files": [
+        "main_alignment_checks.json",
+        "source_read_registry.json"
+      ],
+      "finding_ids": [],
+      "limit": "Приёмка используемых исследовательских контрактов; не clinical clearance, не исполнение медицинского selector/app, не exhaustive неиспользуемый текст всех ЛВ."
+    },
+    {
+      "number": 8,
+      "literal_criterion": "Есть точные МНН, показание, код/классификация, форма, популяция и режим.",
+      "status": "выполнено",
+      "independent_evidence": "Main и round3 содержат38 идентичных активных карточек с INN/indication/code/mode/population/own product/form.906 active inputs отделены от26 дополнительных каталоговых зависимостей.",
+      "evidence_files": [
+        "main_alignment_checks.json",
+        "source_read_registry.json"
+      ],
+      "finding_ids": [],
+      "limit": "Приёмка используемых исследовательских контрактов; не clinical clearance, не исполнение медицинского selector/app, не exhaustive неиспользуемый текст всех ЛВ."
+    },
+    {
+      "number": 9,
+      "literal_criterion": "Есть конкретный источник, версия и локатор, а не только ссылка на главную страницу реестра.",
+      "status": "выполнено",
+      "independent_evidence": "13503 nested source bindings соответствуют собственному owner/version/SHA; текущие originals и physical locators сверены. PHEN physical form locator, IR version, SER/ESC provenance исправлены. SHA, регистрация и редакция различаются.",
+      "evidence_files": [
+        "main_alignment_checks.json",
+        "source_read_registry.json"
+      ],
+      "finding_ids": [],
+      "limit": "Приёмка используемых исследовательских контрактов; не clinical clearance, не исполнение медицинского selector/app, не exhaustive неиспользуемый текст всех ЛВ."
+    },
+    {
+      "number": 10,
+      "literal_criterion": "Каждая медицинская доза, граница, поправка, срок и условие имеют источник.",
+      "status": "выполнено",
+      "independent_evidence": "Завершённый USED первичный инвентарь391 norm-key records/6241 old occurrences/906 bindings повторно привязан по той же SHA.211 numeric objects,249 prose groups и все уникальные используемые условия были первично прочитаны; текущие изменённые action/result scopes и1867 used causes/actions проверены. Непереносимые источник-пробелы не заполнены числами.",
+      "evidence_files": [
+        "used_expected_condition_checks.json",
+        "all_expected_check_results.json",
+        "source_scope_review.json"
+      ],
+      "finding_ids": [],
+      "limit": "Приёмка используемых исследовательских контрактов; не clinical clearance, не исполнение медицинского selector/app, не exhaustive неиспользуемый текст всех ЛВ."
+    },
+    {
+      "number": 11,
+      "literal_criterion": "Опубликованный диапазон не заменён произвольно выбранным числом; пример не превращён в обязательный протокол.",
+      "status": "выполнено",
+      "independent_evidence": "Диапазоны/physician options FLUV50or100, PREG25–50/frequencies и optional selectedPAR40 сохранены; пример не превращён в обязательный ladder.",
+      "evidence_files": [
+        "used_expected_condition_checks.json",
+        "all_expected_check_results.json",
+        "source_scope_review.json"
+      ],
+      "finding_ids": [],
+      "limit": "Приёмка используемых исследовательских контрактов; не clinical clearance, не исполнение медицинского selector/app, не exhaustive неиспользуемый текст всех ЛВ."
+    },
+    {
+      "number": 12,
+      "literal_criterion": "Различаются разовая/суточная доза, единицы, кратность и лекарственные формы.",
+      "status": "выполнено",
+      "independent_evidence": "20647 own prepared assertions проверяют total/per-administration/frequency, units/renal metric и формы. Нет автоматического IR/XR переноса, деления запрещённой формы или исполнения ошибочной printed renal unit.",
+      "evidence_files": [
+        "used_expected_condition_checks.json",
+        "all_expected_check_results.json",
+        "source_scope_review.json"
+      ],
+      "finding_ids": [],
+      "limit": "Приёмка используемых исследовательских контрактов; не clinical clearance, не исполнение медицинского selector/app, не exhaustive неиспользуемый текст всех ЛВ."
+    },
+    {
+      "number": 13,
+      "literal_criterion": "Не перемножены самостоятельные поправки и не усреднены несовместимые источники.",
+      "status": "выполнено",
+      "independent_evidence": "Independent hepatic/renal/CYP adjustments не перемножены; DULOX combined modifiers и XR overlap остаются physician_choice/gap.",
+      "evidence_files": [
+        "used_expected_condition_checks.json",
+        "all_expected_check_results.json",
+        "source_scope_review.json"
+      ],
+      "finding_ids": [],
+      "limit": "Приёмка используемых исследовательских контрактов; не clinical clearance, не исполнение медицинского selector/app, не exhaustive неиспользуемый текст всех ЛВ."
+    },
+    {
+      "number": 14,
+      "literal_criterion": "Для переключения проверено направление, оба препарата, допустимость перекрытия и необходимый интервал.",
+      "status": "выполнено",
+      "independent_evidence": "Own A/B forms, source clocks, direction и phase проверены.87 no-auto/source-reference guards сохраняют опубликованный AGO25/overlap как справку, не patient-specific permission. Selected PAR40 composition ограничена явно выбранным примером; полный generic calendar не заявлен.",
+      "evidence_files": [
+        "used_expected_condition_checks.json",
+        "all_expected_check_results.json",
+        "source_scope_review.json"
+      ],
+      "finding_ids": [],
+      "limit": "Приёмка используемых исследовательских контрактов; не clinical clearance, не исполнение медицинского selector/app, не exhaustive неиспользуемый текст всех ЛВ."
+    },
+    {
+      "number": 15,
+      "literal_criterion": "Для отмены сохранены условия изменения темпа; нет единого придуманного процента/срока для всех.",
+      "status": "выполнено",
+      "independent_evidence": "Дозовой общий процент отмены не придуман. DULOX обычный минимум2weeks без потолка учитывает обе нормы; SSRI/XR variation и symptoms source actions сохранены, PREG/PHEN не заимствуют AD hold/restore/slower.",
+      "evidence_files": [
+        "used_expected_condition_checks.json",
+        "all_expected_check_results.json",
+        "source_scope_review.json"
+      ],
+      "finding_ids": [],
+      "limit": "Приёмка используемых исследовательских контрактов; не clinical clearance, не исполнение медицинского selector/app, не exhaustive неиспользуемый текст всех ЛВ."
+    },
+    {
+      "number": 16,
+      "literal_criterion": "Баллы шкалы влияют на дозовое действие только там, где это действительно задано найденным правилом.",
+      "status": "выполнено",
+      "independent_evidence": "Ни monitoring scale, ни efficacy/PK data не создают coefficient без source rule.",
+      "evidence_files": [
+        "used_expected_condition_checks.json",
+        "all_expected_check_results.json",
+        "source_scope_review.json"
+      ],
+      "finding_ids": [],
+      "limit": "Приёмка используемых исследовательских контрактов; не clinical clearance, не исполнение медицинского selector/app, не exhaustive неиспользуемый текст всех ЛВ."
+    },
+    {
+      "number": 17,
+      "literal_criterion": "Для каждого вопроса показано, какое правило использует ответ и почему его нельзя убрать.",
+      "status": "частично",
+      "independent_evidence": "906 полей и сохраняемые mandatory/result scopes рассмотрены по собственным первичным нормам. Для numeric outputs прямые source gates/operands сохранены. Но finite V3-01/02/03/04/07 показывают unrelated always после достаточного bounded cause/reference/refusal; таблица906 и witnesses не доказывают эти crossproducts.",
+      "evidence_files": [
+        "necessity_906_review.json",
+        "counts_independent.json",
+        "independent_data_results.json",
+        "findings.json"
+      ],
+      "finding_ids": [
+        "V3-01",
+        "V3-02",
+        "V3-03",
+        "V3-04",
+        "V3-07"
+      ],
+      "limit": "Конечный обязательный остаток перечислен exact lists. Глобальный математический минимум не требуется и не заявлен."
+    },
+    {
+      "number": 18,
+      "literal_criterion": "Для обычного индивидуального дозового расчёта 5–10 содержательных вопросов — цель удобства, до 15 — желательный ориентир; более 15 допустимо при обоснованной необходимости обязательных вопросов для конкретного результата. Само превышение числа вопросов не является нарушением или основанием снижения оценки. Начальные выборы и независимые сведения считаются открыто; нагрузка не скрыта в подпунктах или предварительной анкете, необходимые ограничения не удалены ради краткости, длинная обычная ветка не переименована в сложную.",
+      "status": "выполнено",
+      "independent_evidence": "Самостоятельно восстановлены1907 selected paths, в том числе96 обычных числовых10–34. Начальные выборы и supplied independent optional positive/negative/unknown считаются. Ни одного lower_bound; длинный обычный путь не переименован в сложный. V3 снимает upper limit; необходимость отдельный№17, длина сама не штрафуется.",
+      "evidence_files": [
+        "necessity_906_review.json",
+        "counts_independent.json",
+        "independent_data_results.json",
+        "findings.json"
+      ],
+      "finding_ids": [],
+      "limit": "Приёмка используемых исследовательских контрактов; не clinical clearance, не исполнение медицинского selector/app, не exhaustive неиспользуемый текст всех ЛВ."
+    },
+    {
+      "number": 19,
+      "literal_criterion": "Для сложных веток зафиксирован предел короткого расчёта, а не удалены обязательные сведения.",
+      "status": "выполнено",
+      "independent_evidence": "Source-triggered CAD/electrolyte/MAOI/organ/switch complexity явна. Own actor, stages/day/dose/frequency и independent clocks считаются отдельно; счёт сложного пути не скрыт.",
+      "evidence_files": [
+        "necessity_906_review.json",
+        "counts_independent.json",
+        "independent_data_results.json",
+        "findings.json"
+      ],
+      "finding_ids": [],
+      "limit": "Приёмка используемых исследовательских контрактов; не clinical clearance, не исполнение медицинского selector/app, не exhaustive неиспользуемый текст всех ЛВ."
+    },
+    {
+      "number": 20,
+      "literal_criterion": "«Неизвестно/не исследовано/не помню» не интерпретируются как норма/нет.",
+      "status": "частично",
+      "independent_evidence": "Typed unknown/units/phase/medicine classification в projected paths корректны. Однако24 raw expected в PAR→AGO сохраняют неизвестные optional поля в confirmed_negatives. Это конкретное несоответствие полных эталонов; нет нового подтверждённого критического numeric допуска.",
+      "evidence_files": [
+        "necessity_906_review.json",
+        "counts_independent.json",
+        "independent_data_results.json",
+        "findings.json"
+      ],
+      "finding_ids": [
+        "V3-05"
+      ],
+      "limit": "Приёмка используемых исследовательских контрактов; не clinical clearance, не исполнение медицинского selector/app, не exhaustive неиспользуемый текст всех ЛВ."
+    },
+    {
+      "number": 21,
+      "literal_criterion": "Недостаток обязательного значения даёт конкретный запрос данных без безусловной дозы.",
+      "status": "выполнено",
+      "independent_evidence": "Missing mandatory operands дают named request без unconditional dose. Unknown class запрашивает classification передMAOItype/time, own actor unknown/not_started не создаёт automatic stop/start.",
+      "evidence_files": [
+        "necessity_906_review.json",
+        "counts_independent.json",
+        "independent_data_results.json",
+        "findings.json"
+      ],
+      "finding_ids": [],
+      "limit": "Приёмка используемых исследовательских контрактов; не clinical clearance, не исполнение медицинского selector/app, не exhaustive неиспользуемый текст всех ЛВ."
+    },
+    {
+      "number": 22,
+      "literal_criterion": "Схема может быть выдана заранее, но последующие условные шаги не показаны как обязательные.",
+      "status": "выполнено",
+      "independent_evidence": "Future stages имеют условия повторного выбора/оценки; stop/choice/gap не наследуют executable future dose/overlap/calendar. Печатный source reference отдельно от индивидуального действия.",
+      "evidence_files": [
+        "necessity_906_review.json",
+        "counts_independent.json",
+        "independent_data_results.json",
+        "findings.json"
+      ],
+      "finding_ids": [],
+      "limit": "Приёмка используемых исследовательских контрактов; не clinical clearance, не исполнение медицинского selector/app, не exhaustive неиспользуемый текст всех ЛВ."
+    },
+    {
+      "number": 23,
+      "literal_criterion": "Минимальные интервалы изменения дозы не перепутаны с датами назначаемых врачом визитов.",
+      "status": "выполнено",
+      "independent_evidence": "Minimum interval, approximate laboratory monitoring и physician visit timing не смешаны.",
+      "evidence_files": [
+        "necessity_906_review.json",
+        "counts_independent.json",
+        "independent_data_results.json",
+        "findings.json"
+      ],
+      "finding_ids": [],
+      "limit": "Приёмка используемых исследовательских контрактов; не clinical clearance, не исполнение медицинского selector/app, не exhaustive неиспользуемый текст всех ЛВ."
+    },
+    {
+      "number": 24,
+      "literal_criterion": "Доступность первоисточника проверена; сниппет/абстракт/перепечатка не названы прочитанным оригиналом.",
+      "status": "выполнено",
+      "independent_evidence": "Own actual primary reading receipts доступны.16 source registry records повторно SHA-checked; старое чтение same bytes зачтено как reuse, не заявлено новым чтением. Human registry originals/CAPTCHA evidence не приписаны самостоятельному сетевому скачиванию.",
+      "evidence_files": [
+        "source_read_registry.json",
+        "transfer_decision.json",
+        "findings.json"
+      ],
+      "finding_ids": [],
+      "limit": "Приёмка используемых исследовательских контрактов; не clinical clearance, не исполнение медицинского selector/app, не exhaustive неиспользуемый текст всех ЛВ."
+    },
+    {
+      "number": 25,
+      "literal_criterion": "Российская регистрационная применимость не выведена из иностранного руководства.",
+      "status": "выполнено",
+      "independent_evidence": "Российская применимость определена own current registered product/form и КР; иностранные руководства не заменяют её.",
+      "evidence_files": [
+        "source_read_registry.json",
+        "transfer_decision.json",
+        "findings.json"
+      ],
+      "finding_ids": [],
+      "limit": "Приёмка используемых исследовательских контрактов; не clinical clearance, не исполнение медицинского selector/app, не exhaustive неиспользуемый текст всех ЛВ."
+    },
+    {
+      "number": 26,
+      "literal_criterion": "Источник/КР/экспертный протокол/исследованная модель имеют разные, точно описанные статусы.",
+      "status": "выполнено",
+      "independent_evidence": "КР/label/expert composition/form policy/source reference/model/effectiveness study имеют разные статусы. PREG source table и model whole-form policy явно различены.",
+      "evidence_files": [
+        "source_read_registry.json",
+        "transfer_decision.json",
+        "findings.json"
+      ],
+      "finding_ids": [],
+      "limit": "Приёмка используемых исследовательских контрактов; не clinical clearance, не исполнение медицинского selector/app, не exhaustive неиспользуемый текст всех ЛВ."
+    },
+    {
+      "number": 27,
+      "literal_criterion": "Эффективность препарата не объявлена доказательством любой алгоритмической дозировки.",
+      "status": "выполнено",
+      "independent_evidence": "Efficacy не доказательство algorithmic dosage. DULOX diabetes adverse-reaction context не коэффициент; medication class fixtures не объявлены исполненным INN classifier.",
+      "evidence_files": [
+        "source_read_registry.json",
+        "transfer_decision.json",
+        "findings.json"
+      ],
+      "finding_ids": [],
+      "limit": "Приёмка используемых исследовательских контрактов; не clinical clearance, не исполнение медицинского selector/app, не exhaustive неиспользуемый текст всех ЛВ."
+    },
+    {
+      "number": 28,
+      "literal_criterion": "Технический перенос не объявлен клинической валидацией нового продукта.",
+      "status": "выполнено",
+      "independent_evidence": "Static checks, prepared expectations и graph traces не названы запуском приложения или клинической валидацией.",
+      "evidence_files": [
+        "source_read_registry.json",
+        "transfer_decision.json",
+        "findings.json"
+      ],
+      "finding_ids": [],
+      "limit": "Приёмка используемых исследовательских контрактов; не clinical clearance, не исполнение медицинского selector/app, не exhaustive неиспользуемый текст всех ЛВ."
+    },
+    {
+      "number": 29,
+      "literal_criterion": "Готовность к реализации не перепутана с готовностью к клиническому применению.",
+      "status": "выполнено",
+      "independent_evidence": "Допустимый технический перенос конкретно ограничен проверенными values/forms/conditions/contracts; patient deployment clearance и весь current mandatory dialogue не приняты.",
+      "evidence_files": [
+        "source_read_registry.json",
+        "transfer_decision.json",
+        "findings.json"
+      ],
+      "finding_ids": [],
+      "limit": "Приёмка используемых исследовательских контрактов; не clinical clearance, не исполнение медицинского selector/app, не exhaustive неиспользуемый текст всех ЛВ."
+    },
+    {
+      "number": 30,
+      "literal_criterion": "Все пробелы и конфликты перечислены; отсутствие найденного аналога не названо доказательством его отсутствия.",
+      "status": "выполнено",
+      "independent_evidence": "Известные source conflicts/gaps и finite current necessity/metadata/technical остатки перечислены. Отсутствие найденного российского полного pair/taper protocol не объявлено его доказанным отсутствием.",
+      "evidence_files": [
+        "source_read_registry.json",
+        "transfer_decision.json",
+        "findings.json"
+      ],
+      "finding_ids": [],
+      "limit": "Приёмка используемых исследовательских контрактов; не clinical clearance, не исполнение медицинского selector/app, не exhaustive неиспользуемый текст всех ЛВ."
+    }
+  ],
+  "statuses": {
+    "выполнено": 28,
+    "частично": 2
+  },
+  "changed_from_v2": [
+    18
+  ],
+  "full_acceptance": false
+}

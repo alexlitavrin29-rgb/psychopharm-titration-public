@@ -1,0 +1,527 @@
+[
+  {
+    "file": "00_summary.md",
+    "bytes": 5684,
+    "sha256": "0dc6590feb6f8d540ac0c1a10dfdf5d94446f562dfc6a928faeea164195b24c2"
+  },
+  {
+    "file": "01_scope_and_sources.md",
+    "bytes": 18922,
+    "sha256": "e15120fc3bb2bc24cfd7c48cf66b4d6b17cced8b04622f0dff2bb758e8454872"
+  },
+  {
+    "file": "02_rules.md",
+    "bytes": 13209,
+    "sha256": "5c73a158b4ff8640740535a7a38e2ca7e9446f34572bb5d3ba039c01c06f0780"
+  },
+  {
+    "file": "03_question_flows.md",
+    "bytes": 6764,
+    "sha256": "177db872141d56bb788ae2bdf8bfdf2f429a27f5f601b5b38a6a3085ef202576"
+  },
+  {
+    "file": "04_switch_matrix.md",
+    "bytes": 7062,
+    "sha256": "f23d15284b2beaf037cad17f441d4abe7b032dc0c002fc73d9e6fe4967f51b92"
+  },
+  {
+    "file": "05_gaps_and_conflicts.md",
+    "bytes": 10935,
+    "sha256": "be3da20d1fdf54927ee88d3760d97ef6a2e3713c605894143d61f4ed2c278843"
+  },
+  {
+    "file": "06_implementation_brief.md",
+    "bytes": 5982,
+    "sha256": "70b6c80b3f10fc0e3a3e059819fd462c5117e9c46368d72a295145a295204dce"
+  },
+  {
+    "file": "07_acceptance.md",
+    "bytes": 18541,
+    "sha256": "8d46feda190627e4d12512ef6a38511b1782a75b70ddbcc9e289e835593faa0a"
+  },
+  {
+    "file": "08_russian_priority_update.md",
+    "bytes": 2947,
+    "sha256": "b27684a69edd886b62ec568be10306158104d49e8c467606d5abd2631e90d2ae"
+  },
+  {
+    "file": "09_download_links.md",
+    "bytes": 7635,
+    "sha256": "6d7301af6ed77cbf1886f6df171549d59eed345ccddc9d86e06b727884a96192"
+  },
+  {
+    "file": "10_source_audit.md",
+    "bytes": 6401,
+    "sha256": "e97989b3446000a02fc1ae3120ec863ca63c4dfb8a23dd4407f2c9d8e987636f"
+  },
+  {
+    "file": "acceptance_audit.json",
+    "bytes": 17593,
+    "sha256": "905f3c3492b82a43fb3009963b3be2fea9e83dca8d678376981d96cdc36b1556"
+  },
+  {
+    "file": "coverage.csv",
+    "bytes": 38981,
+    "sha256": "4ff074f4a47919b2d5c473cfee6e9042ae35e0f9e671dd5c4318d18843ba432a"
+  },
+  {
+    "file": "depression_dose_table.csv",
+    "bytes": 3023,
+    "sha256": "3dc4fc30b360a49b4341d7838a36b6a44928a1742c72228c9b47a3d5db8bd992"
+  },
+  {
+    "file": "download_links.json",
+    "bytes": 11189,
+    "sha256": "6ffbad98ca9c0414f18446a244acf5cede6880f054675675f219eefcb23d02d0"
+  },
+  {
+    "file": "finding_cases.yaml",
+    "bytes": 2573,
+    "sha256": "29f96784ad85474e9bce614e327874270fe1f3f4616b21d7cb22d49bf800e071"
+  },
+  {
+    "file": "findings\\ru-depression-withdrawal.yaml",
+    "bytes": 13729,
+    "sha256": "8da3a4f10e8f61ee5aa67de4ec17fab8610e9f729be1703abf972c43366e99f8"
+  },
+  {
+    "file": "findings\\switch-moc-ser.yaml",
+    "bytes": 17376,
+    "sha256": "c765cb6209ff257b6c2bea9fd6b27b7951501425a0db5890b3e5c42a4740d6d0"
+  },
+  {
+    "file": "findings\\switch-ser-moc.yaml",
+    "bytes": 18463,
+    "sha256": "211a1eeb624fa765b95eaa68a5c6c595eef35fb8cc3140a9d79e918699d50e2e"
+  },
+  {
+    "file": "input_catalog.csv",
+    "bytes": 325195,
+    "sha256": "a3d12572bf5b2889c672fbda4cb14febe60c1c4534fdb0fefdd6eba77d7fa94f"
+  },
+  {
+    "file": "minzdrav_catalog_snapshot.json",
+    "bytes": 6671,
+    "sha256": "14b2e1664256453707f0374f79e7a12b21aa42d9ebe1eb4ff21984f27c8bdbc2"
+  },
+  {
+    "file": "question_counts.json",
+    "bytes": 11608,
+    "sha256": "724b6186d783db07a00ac01e48177dab92fdda116d2bb6104ecd3723abf20c97"
+  },
+  {
+    "file": "question_flows.yaml",
+    "bytes": 8920,
+    "sha256": "5b2d9f653a5ee3acd42a708a13d733ad1dde85cdb1c8be6d92c693be593eac16"
+  },
+  {
+    "file": "reference_rules\\diazepam-asam-initial-taper.yaml",
+    "bytes": 17379,
+    "sha256": "b05d4d925078e4322e750e1f7cc3466ed42a910b2793970920e482c2bed180fe"
+  },
+  {
+    "file": "reference_rules\\nice-ad-taper-principles.yaml",
+    "bytes": 12937,
+    "sha256": "eb473b211e4d13fedf39ae91e39f24d4603043e93a9d0ae50b5bc9bb71b03fef"
+  },
+  {
+    "file": "reference_rules\\pax-uk-trial-taper.yaml",
+    "bytes": 15631,
+    "sha256": "37a262f62c78d67f2814e4f3ad5d93f8ff06d18afe16eedececf2a1014e5f9ab"
+  },
+  {
+    "file": "reference_rules\\README.md",
+    "bytes": 1604,
+    "sha256": "61950ede1947e5eca35d434bdcf6f629d3186fa555c5348de280e67abbccc4c6"
+  },
+  {
+    "file": "reference_rules\\switch-ago-fluvox.yaml",
+    "bytes": 16196,
+    "sha256": "c514cb12687398de8b0e3bbb57d3f8f92199b4660abf10fdca8afd73c9fbc64b"
+  },
+  {
+    "file": "reference_rules\\switch-esc-ser.yaml",
+    "bytes": 30601,
+    "sha256": "5a15476c1fd5c474b2a2e36f6f5694fb8d27262d0393cf74b1bbf47359805c92"
+  },
+  {
+    "file": "reference_rules\\switch-fluox-ser.yaml",
+    "bytes": 17446,
+    "sha256": "b10d5d970abe24b32ead15bfa87ad2a71036457b0e0ad523d8382a9919101c98"
+  },
+  {
+    "file": "reference_rules\\switch-fluvox-ago.yaml",
+    "bytes": 16259,
+    "sha256": "3e85806d47845b3c7960f7dd63b2d9d9c222ee71de30c4b8ea7576a2eb077ca3"
+  },
+  {
+    "file": "reference_rules\\switch-moc-ser.yaml",
+    "bytes": 16241,
+    "sha256": "3ea91bdbf6c444f3fec523e7673b820cfbf1ac8760ea9c6dfcfcf1d7f76817ca"
+  },
+  {
+    "file": "reference_rules\\switch-ser-esc.yaml",
+    "bytes": 33432,
+    "sha256": "02745f8b372861d220ad76278e6cfd48d29e79a8fbc3b65c8e404ee17f17bf9c"
+  },
+  {
+    "file": "reference_rules\\switch-ser-fluox.yaml",
+    "bytes": 16609,
+    "sha256": "69847b2736fcb28efe68f40f8f414aa92050d59d5444ec2ea3d37f293676998b"
+  },
+  {
+    "file": "reference_rules\\switch-ser-moc.yaml",
+    "bytes": 19516,
+    "sha256": "67a937e67681adc94306cab852bbbfc69fee7bfb32d4265eee19f144b096c8fa"
+  },
+  {
+    "file": "reference_test_cases.yaml",
+    "bytes": 8840,
+    "sha256": "7b4a31bb0f8af8a67c1e94f0170a8bb1a1908a9ca0fea6309a9a67763576e2f7"
+  },
+  {
+    "file": "renal_estimator.yaml",
+    "bytes": 7034,
+    "sha256": "0b2e264681577022d9b67743f8e69043ccda584fe59e8bcf7abac615c9dcff83"
+  },
+  {
+    "file": "renal_estimator_archive.yaml",
+    "bytes": 7011,
+    "sha256": "727c821462a164d601505275d3e4400ce501b1b58dbe6627e91e5385c020c809"
+  },
+  {
+    "file": "ru_source_policy.yaml",
+    "bytes": 1702,
+    "sha256": "ca4fae0c90df189dcc8281bb7d353061d7229f0a2dbb356bcabf61b11cfe9255"
+  },
+  {
+    "file": "rules\\ago-depression-start.yaml",
+    "bytes": 24728,
+    "sha256": "d4aadfee113af239a2eef8357e10b5fc8e2e74b8fc571c8a7ad801fe34961ccb"
+  },
+  {
+    "file": "rules\\ago-gad-start.yaml",
+    "bytes": 23765,
+    "sha256": "1fed6b4e6bb7e01e1c6f8ef2bc19112ca83e0e4bb71aa3cc15dfc9ba103439af"
+  },
+  {
+    "file": "rules\\ago-stop.yaml",
+    "bytes": 12074,
+    "sha256": "a71b2a722409ae266ebc87124127e892fd61779c68c26d5eacc88a78c22a5641"
+  },
+  {
+    "file": "rules\\dulox-depression-start.yaml",
+    "bytes": 20594,
+    "sha256": "0a8a10e08841276abcca100af283ea4caab452f2cacfbf6618b830de33e7f588"
+  },
+  {
+    "file": "rules\\dulox-gad-adjust.yaml",
+    "bytes": 22888,
+    "sha256": "bd421c515785d5c3b981b4322b1313eaac3b9613f4352b4619baef1e195b4881"
+  },
+  {
+    "file": "rules\\dulox-gad-start.yaml",
+    "bytes": 23797,
+    "sha256": "3078cdeb8471de8299c968dca9ceb21afaa12121a4a9c4c44e4739d5c8c6a0f5"
+  },
+  {
+    "file": "rules\\dulox-taper-limit.yaml",
+    "bytes": 14880,
+    "sha256": "aee3cae81135ba9a79ff4453288e1cd5b45452bcad3d412c5d7674d69623e873"
+  },
+  {
+    "file": "rules\\esc-adult-adjust.yaml",
+    "bytes": 40823,
+    "sha256": "6ccbf4d1a1ad4e262c13f3341a3879ec78801c44c40e4b423686b93d0171acba"
+  },
+  {
+    "file": "rules\\esc-cyp2c19-start.yaml",
+    "bytes": 35019,
+    "sha256": "c14759999e48bccd4eac5346e248ab692330c91fd712df06c01b44326ad08a80"
+  },
+  {
+    "file": "rules\\esc-elderly-start.yaml",
+    "bytes": 33714,
+    "sha256": "f8da8f1e4e6e4f4e15ffaed90679c7c115b76582d29e43bb25018fbb24cefbac"
+  },
+  {
+    "file": "rules\\esc-gad-start.yaml",
+    "bytes": 36045,
+    "sha256": "00c4a3eb2c33b9176625c17c5978cf008250fdb9294c0914e7414f00fc76b4a1"
+  },
+  {
+    "file": "rules\\esc-hepatic-start.yaml",
+    "bytes": 34885,
+    "sha256": "bfd4b79947bbfa5424bd7a23d6d2e85f99ebd1556747904c3292d2d081bc222e"
+  },
+  {
+    "file": "rules\\esc-panic-start.yaml",
+    "bytes": 35406,
+    "sha256": "382b6378957b16c1af2688dd0bcba6f7f8f6621938f40c86364567cfd981a7f9"
+  },
+  {
+    "file": "rules\\esc-social-start.yaml",
+    "bytes": 33705,
+    "sha256": "8fe79af34b524cfb26749f3b18689de13cdb86ec7e64e7ce8c518adcf2864d2e"
+  },
+  {
+    "file": "rules\\esc-taper-limit.yaml",
+    "bytes": 37149,
+    "sha256": "780e23ce401e88f391c543efe30f1a0323d109ee2107190ad0e26782acec63a0"
+  },
+  {
+    "file": "rules\\fluvox-depression-start.yaml",
+    "bytes": 27002,
+    "sha256": "f2da710a05ecd65cfb23f01b1d526afd76bc2de42f2a0348709b676a45944e89"
+  },
+  {
+    "file": "rules\\fluvox-taper-limit.yaml",
+    "bytes": 15791,
+    "sha256": "70d4a2ef9499a0877445870af3d5772719e83e4fc4d22a74e9d1cd102d8f6932"
+  },
+  {
+    "file": "rules\\parox-panic-kr.yaml",
+    "bytes": 26003,
+    "sha256": "b14f178fc6cf8f748b4ee2a57058d44ca4a0f8dfe04ae8c550b291210e402283"
+  },
+  {
+    "file": "rules\\parox-taper-example.yaml",
+    "bytes": 19835,
+    "sha256": "92d5b6189a5a4205a9e630b3d72ffb39cba4812cb36c07adcc2141e5203fc852"
+  },
+  {
+    "file": "rules\\phen-taper-limit.yaml",
+    "bytes": 15633,
+    "sha256": "fe22a770512d84b290810316467b0ec24bfc260fb9af225930f1179240234d79"
+  },
+  {
+    "file": "rules\\preg-gad-adjust.yaml",
+    "bytes": 35004,
+    "sha256": "3faccb1ce0b97e8bc4fd93a418d7be3a273452cd7a9f5a63920da06978877164"
+  },
+  {
+    "file": "rules\\preg-gad-start.yaml",
+    "bytes": 30214,
+    "sha256": "f1f33d094eab9f5e1dd53bc4a473346a1579c47ae784dd5f1d457cba80f672d7"
+  },
+  {
+    "file": "rules\\preg-renal-start.yaml",
+    "bytes": 29330,
+    "sha256": "80b679a4f8ea1ab59eb12e203421e9ecaff2a36045df301d466feab3e273c09f"
+  },
+  {
+    "file": "rules\\preg-taper-limit.yaml",
+    "bytes": 25139,
+    "sha256": "5d19fc16bdb3defa7e54fb3859e1865b840273ec2331627b813d76ce1d1001d6"
+  },
+  {
+    "file": "rules\\ser-adult-adjust.yaml",
+    "bytes": 42839,
+    "sha256": "820fee74095f8ee3d08470a945d0ed9d25bb20c7269272868accf07768c53067"
+  },
+  {
+    "file": "rules\\ser-panic-start.yaml",
+    "bytes": 30927,
+    "sha256": "e2c3dde07d20f8100f834c7db69dedb2376d65cc8c8ba561df5080b0d70989e8"
+  },
+  {
+    "file": "rules\\ser-social-start.yaml",
+    "bytes": 29510,
+    "sha256": "1706d124c73a931bcfb84ff3db1323b5ef18edce9d4f7d8bffd8a68e5927452c"
+  },
+  {
+    "file": "rules\\ser-taper-limit.yaml",
+    "bytes": 31872,
+    "sha256": "a845a514d2f33536755e229ca6ada5fc61e7b58c770e2daf6e37e5574a79f168"
+  },
+  {
+    "file": "rules\\switch-esc-ago.yaml",
+    "bytes": 28644,
+    "sha256": "6165dd984a46460892a69473cadac4bcf73842b1e1ccaed8fda1aa878bae808f"
+  },
+  {
+    "file": "rules\\switch-esc-ser.yaml",
+    "bytes": 22958,
+    "sha256": "c051e96c937fb499418580a02e87cdc638a26372df53355632f802bc5a0a20e2"
+  },
+  {
+    "file": "rules\\switch-parox-ago-selected-example.yaml",
+    "bytes": 37169,
+    "sha256": "8ec207f2ca273a43c340099e44d898a00dbb0731fd1454b643a133a575833408"
+  },
+  {
+    "file": "rules\\switch-parox-ago.yaml",
+    "bytes": 28415,
+    "sha256": "8291c59d2969c7695765a5af1ff3b6a3a709a96315f5a9a85f2992c674daec61"
+  },
+  {
+    "file": "rules\\switch-ser-ago.yaml",
+    "bytes": 28618,
+    "sha256": "a315e0b5d595b2fcb5d2492ee450e60866e442cc41b3c29851a0a67d9c7cccf2"
+  },
+  {
+    "file": "rules\\switch-ser-esc.yaml",
+    "bytes": 23005,
+    "sha256": "38a4b7b38f8647f3124860f0f349d9d3abd95a8e603927f4166652c66cc24142"
+  },
+  {
+    "file": "rules\\venla-xr-gad-start.yaml",
+    "bytes": 19883,
+    "sha256": "615db81e038b605fba8b3f4bcd220ac19a116f7d45dc930cb50cc40f92c606e2"
+  },
+  {
+    "file": "rules\\venla-xr-panic-form-limit.yaml",
+    "bytes": 20298,
+    "sha256": "33867c5294be42dcbd5f45f800b209bea2cc3650c0819e4791a2dc9ea3a6273e"
+  },
+  {
+    "file": "rules\\venla-xr-social-start.yaml",
+    "bytes": 19944,
+    "sha256": "dcf6550c8717b39f2f70db7744a25612783778507fcb09305449c068d824aaca"
+  },
+  {
+    "file": "rules\\venla-xr-taper-limit.yaml",
+    "bytes": 14855,
+    "sha256": "f9d6c9d655d84f1810d9ff79b57134fa2a1e601216cdd23ce2049b369edd623a"
+  },
+  {
+    "file": "russian_source_recheck.json",
+    "bytes": 5381,
+    "sha256": "b9ae8f655aa90a1af3c1e7c3c4cebfca72141f9bf626a3f965f10209c228ece1"
+  },
+  {
+    "file": "search_log.csv",
+    "bytes": 79095,
+    "sha256": "a485940441968f22642f1d3b429a23efb10060a62a6a4f6fd3cc25c58e191440"
+  },
+  {
+    "file": "source_downloads\\manifest.json",
+    "bytes": 10043,
+    "sha256": "52b1f5bae34ec329b0fc275824b312a8709084f9575628b63849f384afc4daf4"
+  },
+  {
+    "file": "source_downloads\\README.md",
+    "bytes": 7154,
+    "sha256": "7f0fc88593a6109f5a328ef51526503f8d97167d4ec90e88305c146f0c7063cf"
+  },
+  {
+    "file": "source_downloads\\Вальдоксан — агомелатин.pdf",
+    "bytes": 330296,
+    "sha256": "1cf8e71b5c27891e17b5b7ab4dd7c8c02697a1d44bb287a57a1ee9de0fb85bd6"
+  },
+  {
+    "file": "source_downloads\\Дулоксента — дулоксетин.pdf",
+    "bytes": 428340,
+    "sha256": "bcb5a8b9415f15fdae2ec8a8d00abe5788194c59893b6172294c4cf3db839786"
+  },
+  {
+    "file": "source_downloads\\Золофт — сертралин.pdf",
+    "bytes": 657140,
+    "sha256": "3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba"
+  },
+  {
+    "file": "source_downloads\\Кломипрамин — раствор.pdf",
+    "bytes": 13210980,
+    "sha256": "81d40c49e7fa50aed75f8719c51f942f40f85a5ad74e1637a45673f0b57f1d33"
+  },
+  {
+    "file": "source_downloads\\Лирика — прегабалин.pdf",
+    "bytes": 790368,
+    "sha256": "1fcd653e7f3b6bf5b26b3276d0bce97880e74bf345bb69755a275bf8f7117083"
+  },
+  {
+    "file": "source_downloads\\Прегабалин-Рихтер — прегабалин.pdf",
+    "bytes": 519913,
+    "sha256": "32bfe8b2ec435201b47cb652818af63a1e6a532669348dfe9110e92a73af7065"
+  },
+  {
+    "file": "source_downloads\\Рексетин — пароксетин.pdf",
+    "bytes": 792911,
+    "sha256": "9f6f2646e102956826997ca7e93d84e90c7528db5ceb61896a3d4092841edabe"
+  },
+  {
+    "file": "source_downloads\\Селектра — эсциталопрам.pdf",
+    "bytes": 773853,
+    "sha256": "ea5d007a4026e850b514badeabfdb5d6e0ece163a1a84e6fa5453a8ff0c73497"
+  },
+  {
+    "file": "source_downloads\\Феварин — флувоксамин.pdf",
+    "bytes": 462804,
+    "sha256": "ee988a504bf0e34d9562a5f606f8800c827214fc51f4994a4ab28de9c31ce1d6"
+  },
+  {
+    "file": "source_downloads\\Феназепам — бромдигидрохлорфенилбензодиазепин.pdf",
+    "bytes": 460294,
+    "sha256": "e8e6303c10b7b9b31ae6b344eb49d209e148ba5584ac8f55954c8384cfe49a89"
+  },
+  {
+    "file": "source_downloads\\Флуоксетин — Озон.pdf",
+    "bytes": 1871666,
+    "sha256": "dfcf4a185bb4474bfa7411de1d956be7d309bc9c3e350309f6ca1220fd4e32a3"
+  },
+  {
+    "file": "source_downloads\\Циталопрам — Пранафарм.docx",
+    "bytes": 78333,
+    "sha256": "5e10a0452aa6a432390878027d66309a93729250ae6015c2ec225a28be68fe00"
+  },
+  {
+    "file": "source_snapshots\\depression-301_3.pdf",
+    "bytes": 2148711,
+    "sha256": "2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd"
+  },
+  {
+    "file": "source_snapshots\\velaxin-IR.html",
+    "bytes": 516142,
+    "sha256": "ecad93859bf9c84daadfcc77bf765ed86d85c44ea4d27edc49903bf57dffca01"
+  },
+  {
+    "file": "source_snapshots\\velaxin-XR.html",
+    "bytes": 535064,
+    "sha256": "3656aeeae0ef60f75fe0ea90e1a9f73ba3734e7b8825e163752d9e6e278bf838"
+  },
+  {
+    "file": "source_transfer_audit.yaml",
+    "bytes": 37766,
+    "sha256": "37aa0baf0f1ceb562503791a682d62780f0ac62dd961921afc2884b3d895f8ad"
+  },
+  {
+    "file": "sources.json",
+    "bytes": 74243,
+    "sha256": "b84c4a03117dc6ebe73249408be7388449e302a98baee3ea0af28abbc02803f1"
+  },
+  {
+    "file": "switch_matrix.yaml",
+    "bytes": 9446,
+    "sha256": "94892caec299724e5d7329b043e77cefc47ac48586dcbc63c2416711242cf45a"
+  },
+  {
+    "file": "test_cases.yaml",
+    "bytes": 63566,
+    "sha256": "c23b3acc7e2c9c51b2d0567d3acbbc8b573786f76fef6cdb5402b6b52230b2d0"
+  },
+  {
+    "file": "verification_negative_checks.json",
+    "bytes": 1108,
+    "sha256": "b13f918881f5202401fe1dc3760800c4548b2a4f1b931f6ef61d25f4894950b0"
+  },
+  {
+    "file": "verification_report.json",
+    "bytes": 1993,
+    "sha256": "1c71b3bdfe6a628a4d2b01f198575a0979ed4c2421ba15d4c3c1de2d50cb7461"
+  },
+  {
+    "file": "verify_negative_checks.py",
+    "bytes": 3668,
+    "sha256": "452dc6fe7c2de87e1644100b19f07cb077efa466c4785eac72511d9428a0fac2"
+  },
+  {
+    "file": "verify_research.py",
+    "bytes": 21315,
+    "sha256": "66ab380f8d31e019f9940835c90c47e714ca04412a5e4479f3e224559e726414"
+  },
+  {
+    "file": "Документы_для_сверки_2026-10-08.zip",
+    "bytes": 18980795,
+    "sha256": "31a3bd5c120722f2ea468b2ab43fb329639419fa85f5e37f68dd629c63c1fb68"
+  }
+]

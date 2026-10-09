@@ -1,0 +1,4852 @@
+{
+  "all_cards_examined": 38,
+  "clinical_parameter_occurrences": 211,
+  "distinct_source_parameter_value_unit_tuples": 104,
+  "cards": [
+    {
+      "rule_id": "ago-depression-start",
+      "identity": {
+        "title": "Агомелатин: БДР, старт и условное повышение",
+        "mode": "start",
+        "drug_inn": "агомелатин",
+        "from_drug_inn": null,
+        "to_drug_inn": null,
+        "formulation": "Вальдоксан, целые таблетки 25 мг",
+        "route": "oral",
+        "diagnosis_label_ru": "Депрессия / указанная коморбидность",
+        "classification_system": "МКБ-10",
+        "diagnosis_code": "F32/F33",
+        "jurisdiction": "RU_versioned_sources"
+      },
+      "source_ids": [
+        "RU-AGO",
+        "RU-DEP"
+      ],
+      "parameters_reviewed": 8,
+      "branches_inspected": [
+        "usual",
+        "liver_caution",
+        "renal_caution",
+        "repeat_tests"
+      ],
+      "prepared_case_count": 156,
+      "inputs_inventory_inspected": [
+        "age",
+        "form",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "ALT_ratio",
+        "AST_ratio",
+        "renal_state",
+        "elderly_population",
+        "dementia",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "liver_injury_signs",
+        "transaminases_rising",
+        "overweight_obesity",
+        "fatty_liver",
+        "diabetes",
+        "alcohol_abuse",
+        "alcohol_use",
+        "mania",
+        "mania_symptoms",
+        "suicide_risk",
+        "ect"
+      ],
+      "full_independent_medical_conditions_review_complete": false,
+      "scope": "Все clinical parameter occurrences и ветки карточки просмотрены; основные уникальные числа сопоставлены с оригиналами. Все4953 случаи проверены структурно, ключевые результаты первично; каждый клинический предикат/взаимодействие не сертифицирован исчерпывающе.",
+      "findings": [
+        "V2-08",
+        "V2-10",
+        "V2-12",
+        "V2-13"
+      ],
+      "unverified": "Полная per-condition necessity/counterexample sufficiency и все уникальные safety/interactions; отмеченные дефекты требуют исправления и новой первичной проверки.",
+      "recheck_findings": []
+    },
+    {
+      "rule_id": "ago-gad-start",
+      "identity": {
+        "title": "Агомелатин: ГТР, старт и условное повышение",
+        "mode": "start",
+        "drug_inn": "агомелатин",
+        "from_drug_inn": null,
+        "to_drug_inn": null,
+        "formulation": "Вальдоксан, целые таблетки 25 мг",
+        "route": "oral",
+        "diagnosis_label_ru": "ГТР",
+        "classification_system": "МКБ-10",
+        "diagnosis_code": "F41.1",
+        "jurisdiction": "RU_versioned_sources"
+      },
+      "source_ids": [
+        "RU-AGO",
+        "RU-GAD"
+      ],
+      "parameters_reviewed": 8,
+      "branches_inspected": [
+        "usual",
+        "liver_caution",
+        "renal_caution",
+        "repeat_tests"
+      ],
+      "prepared_case_count": 156,
+      "inputs_inventory_inspected": [
+        "age",
+        "form",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "ALT_ratio",
+        "AST_ratio",
+        "renal_state",
+        "elderly_population",
+        "dementia",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "liver_injury_signs",
+        "transaminases_rising",
+        "overweight_obesity",
+        "fatty_liver",
+        "diabetes",
+        "alcohol_abuse",
+        "alcohol_use",
+        "mania",
+        "mania_symptoms",
+        "suicide_risk",
+        "ect"
+      ],
+      "full_independent_medical_conditions_review_complete": false,
+      "scope": "Все clinical parameter occurrences и ветки карточки просмотрены; основные уникальные числа сопоставлены с оригиналами. Все4953 случаи проверены структурно, ключевые результаты первично; каждый клинический предикат/взаимодействие не сертифицирован исчерпывающе.",
+      "findings": [
+        "V2-08",
+        "V2-10",
+        "V2-12",
+        "V2-13"
+      ],
+      "unverified": "Полная per-condition necessity/counterexample sufficiency и все уникальные safety/interactions; отмеченные дефекты требуют исправления и новой первичной проверки.",
+      "recheck_findings": []
+    },
+    {
+      "rule_id": "ago-stop",
+      "identity": {
+        "title": "Агомелатин: прекращение без обязательного снижения дозы",
+        "mode": "taper",
+        "drug_inn": "агомелатин",
+        "from_drug_inn": null,
+        "to_drug_inn": null,
+        "formulation": "Вальдоксан, целые таблетки 25 мг",
+        "route": "oral",
+        "diagnosis_label_ru": "Депрессия / указанная коморбидность",
+        "classification_system": "МКБ-10",
+        "diagnosis_code": "F41.1/F32/F33",
+        "jurisdiction": "RU_versioned_sources"
+      },
+      "source_ids": [
+        "RU-AGO",
+        "RU-GAD"
+      ],
+      "parameters_reviewed": 0,
+      "branches_inspected": [
+        "chosen_stop"
+      ],
+      "prepared_case_count": 8,
+      "inputs_inventory_inspected": [
+        "current_dose",
+        "clinician_action"
+      ],
+      "full_independent_medical_conditions_review_complete": false,
+      "scope": "Все clinical parameter occurrences и ветки карточки просмотрены; основные уникальные числа сопоставлены с оригиналами. Все4953 случаи проверены структурно, ключевые результаты первично; каждый клинический предикат/взаимодействие не сертифицирован исчерпывающе.",
+      "findings": [
+        "V2-08",
+        "V2-12"
+      ],
+      "unverified": "Полная per-condition necessity/counterexample sufficiency и все уникальные safety/interactions; отмеченные дефекты требуют исправления и новой первичной проверки.",
+      "recheck_findings": []
+    },
+    {
+      "rule_id": "dulox-depression-start",
+      "identity": {
+        "title": "Дулоксетин: депрессия, старт",
+        "mode": "start",
+        "drug_inn": "дулоксетин",
+        "from_drug_inn": null,
+        "to_drug_inn": null,
+        "formulation": "Дулоксента, целые капсулы 60 мг",
+        "route": "oral",
+        "diagnosis_label_ru": "Депрессия / указанная коморбидность",
+        "classification_system": "МКБ-10",
+        "diagnosis_code": "F32/F33",
+        "jurisdiction": "RU_versioned_sources"
+      },
+      "source_ids": [
+        "RU-DULOX",
+        "RU-DEP"
+      ],
+      "parameters_reviewed": 2,
+      "branches_inspected": [
+        "usual"
+      ],
+      "prepared_case_count": 153,
+      "inputs_inventory_inspected": [
+        "age",
+        "form",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "uncontrolled_hypertension",
+        "closed_angle_glaucoma",
+        "maoi_type",
+        "maoi_stopped_at",
+        "fructose_intolerance",
+        "glucose_galactose_malabsorption",
+        "sucrase_isomaltase_deficiency",
+        "akathisia",
+        "mania",
+        "suicide_risk",
+        "bleeding_risk",
+        "hyponatremia_risk",
+        "diabetes",
+        "seizure_state"
+      ],
+      "full_independent_medical_conditions_review_complete": false,
+      "scope": "Все clinical parameter occurrences и ветки карточки просмотрены; основные уникальные числа сопоставлены с оригиналами. Все4953 случаи проверены структурно, ключевые результаты первично; каждый клинический предикат/взаимодействие не сертифицирован исчерпывающе.",
+      "findings": [
+        "V2-05",
+        "V2-08",
+        "V2-10",
+        "V2-12"
+      ],
+      "unverified": "Полная per-condition necessity/counterexample sufficiency и все уникальные safety/interactions; отмеченные дефекты требуют исправления и новой первичной проверки.",
+      "recheck_findings": []
+    },
+    {
+      "rule_id": "dulox-gad-adjust",
+      "identity": {
+        "title": "Дулоксетин: ГТР, коррекция по ответу",
+        "mode": "adjust",
+        "drug_inn": "дулоксетин",
+        "from_drug_inn": null,
+        "to_drug_inn": null,
+        "formulation": "Дулоксента, целые капсулы 30/60 мг",
+        "route": "oral",
+        "diagnosis_label_ru": "ГТР",
+        "classification_system": "МКБ-10",
+        "diagnosis_code": "F41.1",
+        "jurisdiction": "RU_versioned_sources"
+      },
+      "source_ids": [
+        "RU-DULOX",
+        "RU-GAD"
+      ],
+      "parameters_reviewed": 3,
+      "branches_inspected": [
+        "at30",
+        "at60",
+        "other"
+      ],
+      "prepared_case_count": 170,
+      "inputs_inventory_inspected": [
+        "age",
+        "form",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "comorbid_depression",
+        "elderly_population",
+        "uncontrolled_hypertension",
+        "closed_angle_glaucoma",
+        "current_dose",
+        "response",
+        "tolerability",
+        "maoi_type",
+        "maoi_stopped_at",
+        "fructose_intolerance",
+        "glucose_galactose_malabsorption",
+        "sucrase_isomaltase_deficiency",
+        "akathisia",
+        "mania",
+        "suicide_risk",
+        "bleeding_risk",
+        "hyponatremia_risk",
+        "diabetes",
+        "seizure_state"
+      ],
+      "full_independent_medical_conditions_review_complete": false,
+      "scope": "Все clinical parameter occurrences и ветки карточки просмотрены; основные уникальные числа сопоставлены с оригиналами. Все4953 случаи проверены структурно, ключевые результаты первично; каждый клинический предикат/взаимодействие не сертифицирован исчерпывающе.",
+      "findings": [
+        "V2-05",
+        "V2-08",
+        "V2-10",
+        "V2-12"
+      ],
+      "unverified": "Полная per-condition necessity/counterexample sufficiency и все уникальные safety/interactions; отмеченные дефекты требуют исправления и новой первичной проверки.",
+      "recheck_findings": []
+    },
+    {
+      "rule_id": "dulox-gad-start",
+      "identity": {
+        "title": "Дулоксетин: ГТР, старт и отдельные модификаторы",
+        "mode": "start",
+        "drug_inn": "дулоксетин",
+        "from_drug_inn": null,
+        "to_drug_inn": null,
+        "formulation": "Дулоксента, кишечнорастворимые капсулы 30/60 мг",
+        "route": "oral",
+        "diagnosis_label_ru": "ГТР",
+        "classification_system": "МКБ-10",
+        "diagnosis_code": "F41.1",
+        "jurisdiction": "RU_versioned_sources"
+      },
+      "source_ids": [
+        "RU-DULOX",
+        "RU-GAD"
+      ],
+      "parameters_reviewed": 5,
+      "branches_inspected": [
+        "usual",
+        "comorbid",
+        "elderly",
+        "overlap"
+      ],
+      "prepared_case_count": 165,
+      "inputs_inventory_inspected": [
+        "age",
+        "form",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "comorbid_depression",
+        "elderly_population",
+        "uncontrolled_hypertension",
+        "closed_angle_glaucoma",
+        "maoi_type",
+        "maoi_stopped_at",
+        "fructose_intolerance",
+        "glucose_galactose_malabsorption",
+        "sucrase_isomaltase_deficiency",
+        "akathisia",
+        "mania",
+        "suicide_risk",
+        "bleeding_risk",
+        "hyponatremia_risk",
+        "diabetes",
+        "seizure_state"
+      ],
+      "full_independent_medical_conditions_review_complete": false,
+      "scope": "Все clinical parameter occurrences и ветки карточки просмотрены; основные уникальные числа сопоставлены с оригиналами. Все4953 случаи проверены структурно, ключевые результаты первично; каждый клинический предикат/взаимодействие не сертифицирован исчерпывающе.",
+      "findings": [
+        "V2-05",
+        "V2-08",
+        "V2-10",
+        "V2-12",
+        "V2-13"
+      ],
+      "unverified": "Полная per-condition necessity/counterexample sufficiency и все уникальные safety/interactions; отмеченные дефекты требуют исправления и новой первичной проверки.",
+      "recheck_findings": []
+    },
+    {
+      "rule_id": "dulox-taper-limit",
+      "identity": {
+        "title": "дулоксетин: ограничения отмены",
+        "mode": "taper",
+        "drug_inn": "дулоксетин",
+        "from_drug_inn": null,
+        "to_drug_inn": null,
+        "formulation": "Дулоксента, капсулы 30/60 мг",
+        "route": "oral",
+        "diagnosis_label_ru": "Депрессия / указанная коморбидность",
+        "classification_system": "МКБ-10",
+        "diagnosis_code": "F41.1/F32/F33",
+        "jurisdiction": "RU_versioned_sources"
+      },
+      "source_ids": [
+        "RU-DULOX",
+        "RU-GAD"
+      ],
+      "parameters_reviewed": 2,
+      "branches_inspected": [
+        "source_limit",
+        "withdrawal"
+      ],
+      "prepared_case_count": 46,
+      "inputs_inventory_inspected": [
+        "age",
+        "form",
+        "current_dose",
+        "duration",
+        "withdrawal_severity",
+        "past_withdrawal"
+      ],
+      "full_independent_medical_conditions_review_complete": false,
+      "scope": "Все clinical parameter occurrences и ветки карточки просмотрены; основные уникальные числа сопоставлены с оригиналами. Все4953 случаи проверены структурно, ключевые результаты первично; каждый клинический предикат/взаимодействие не сертифицирован исчерпывающе.",
+      "findings": [
+        "V2-08",
+        "V2-12"
+      ],
+      "unverified": "Полная per-condition necessity/counterexample sufficiency и все уникальные safety/interactions; отмеченные дефекты требуют исправления и новой первичной проверки.",
+      "recheck_findings": []
+    },
+    {
+      "rule_id": "esc-adult-adjust",
+      "identity": {
+        "title": "Эсциталопрам: коррекция по ответу без фиксированного шага",
+        "mode": "adjust",
+        "drug_inn": "эсциталопрам",
+        "from_drug_inn": null,
+        "to_drug_inn": null,
+        "formulation": "Селектра: таблетки, покрытые плёночной оболочкой; 5/10/15/20 мг; 10/15/20 делятся на равные дозы (§3 с.1–2)",
+        "route": "oral",
+        "diagnosis_label_ru": "Показание врача, в границах исходного документа",
+        "classification_system": "МКБ-10",
+        "diagnosis_code": "F41.1/F41.0/F40.1",
+        "jurisdiction": "RU_registry_original_2025-11-05",
+        "formulation_confirmation": "§3 с.1–2: equal halves for 10/15/20 mg; no half-dose claim for 5 mg"
+      },
+      "source_ids": [
+        "RU-GAD",
+        "RU-PANIC",
+        "RU-ESC"
+      ],
+      "parameters_reviewed": 5,
+      "branches_inspected": [
+        "response_decision"
+      ],
+      "prepared_case_count": 142,
+      "inputs_inventory_inspected": [
+        "age",
+        "form",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "hepatic",
+        "mania",
+        "seizure_state",
+        "known_cyp2c19",
+        "renal",
+        "current_dose",
+        "time_at_dose",
+        "response",
+        "tolerability",
+        "adherence",
+        "qt_risk",
+        "bleeding_risk",
+        "hyponatremia_risk",
+        "suicide_risk",
+        "akathisia",
+        "diabetes",
+        "glaucoma",
+        "mania_symptoms",
+        "arrhythmia_signs",
+        "serotonin_syndrome_signs",
+        "maoi_type",
+        "maoi_stopped_at"
+      ],
+      "full_independent_medical_conditions_review_complete": false,
+      "scope": "Все clinical parameter occurrences и ветки карточки просмотрены; основные уникальные числа сопоставлены с оригиналами. Все4953 случаи проверены структурно, ключевые результаты первично; каждый клинический предикат/взаимодействие не сертифицирован исчерпывающе.",
+      "findings": [
+        "V2-08",
+        "V2-12"
+      ],
+      "unverified": "Полная per-condition necessity/counterexample sufficiency и все уникальные safety/interactions; отмеченные дефекты требуют исправления и новой первичной проверки.",
+      "recheck_findings": []
+    },
+    {
+      "rule_id": "esc-cyp2c19-start",
+      "identity": {
+        "title": "Эсциталопрам при ГТР: Известная слабая активность CYP2C19",
+        "mode": "start",
+        "drug_inn": "эсциталопрам",
+        "from_drug_inn": null,
+        "to_drug_inn": null,
+        "formulation": "Селектра: таблетки, покрытые плёночной оболочкой; 5/10/15/20 мг; 10/15/20 делятся на равные дозы (§3 с.1–2)",
+        "route": "oral",
+        "diagnosis_label_ru": "Генерализованное тревожное расстройство",
+        "classification_system": "МКБ-10",
+        "diagnosis_code": "F41.1",
+        "jurisdiction": "RU_registry_original_2025-11-05",
+        "formulation_confirmation": "§3 с.1–2: equal halves for 10/15/20 mg; no half-dose claim for 5 mg"
+      },
+      "source_ids": [
+        "RU-ESC"
+      ],
+      "parameters_reviewed": 7,
+      "branches_inspected": [
+        "special"
+      ],
+      "prepared_case_count": 145,
+      "inputs_inventory_inspected": [
+        "age",
+        "form",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "hepatic",
+        "mania",
+        "seizure_state",
+        "known_cyp2c19",
+        "renal",
+        "qt_risk",
+        "bleeding_risk",
+        "hyponatremia_risk",
+        "suicide_risk",
+        "diabetes",
+        "glaucoma",
+        "mania_symptoms",
+        "arrhythmia_signs",
+        "serotonin_syndrome_signs",
+        "coronary_disease",
+        "electrolyte_disturbance",
+        "ecg_done",
+        "electrolytes_corrected",
+        "maoi_type",
+        "maoi_stopped_at"
+      ],
+      "full_independent_medical_conditions_review_complete": false,
+      "scope": "Все clinical parameter occurrences и ветки карточки просмотрены; основные уникальные числа сопоставлены с оригиналами. Все4953 случаи проверены структурно, ключевые результаты первично; каждый клинический предикат/взаимодействие не сертифицирован исчерпывающе.",
+      "findings": [
+        "V2-08",
+        "V2-10",
+        "V2-12",
+        "V2-13"
+      ],
+      "unverified": "Полная per-condition necessity/counterexample sufficiency и все уникальные safety/interactions; отмеченные дефекты требуют исправления и новой первичной проверки.",
+      "recheck_findings": []
+    },
+    {
+      "rule_id": "esc-elderly-start",
+      "identity": {
+        "title": "Эсциталопрам при ГТР: Пожилой возраст",
+        "mode": "start",
+        "drug_inn": "эсциталопрам",
+        "from_drug_inn": null,
+        "to_drug_inn": null,
+        "formulation": "Селектра: таблетки, покрытые плёночной оболочкой; 5/10/15/20 мг; 10/15/20 делятся на равные дозы (§3 с.1–2)",
+        "route": "oral",
+        "diagnosis_label_ru": "Генерализованное тревожное расстройство",
+        "classification_system": "МКБ-10",
+        "diagnosis_code": "F41.1",
+        "jurisdiction": "RU_registry_original_2025-11-05",
+        "formulation_confirmation": "§3 с.1–2: equal halves for 10/15/20 mg; no half-dose claim for 5 mg"
+      },
+      "source_ids": [
+        "RU-ESC"
+      ],
+      "parameters_reviewed": 7,
+      "branches_inspected": [
+        "elderly"
+      ],
+      "prepared_case_count": 143,
+      "inputs_inventory_inspected": [
+        "age",
+        "form",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "hepatic",
+        "mania",
+        "seizure_state",
+        "known_cyp2c19",
+        "renal",
+        "qt_risk",
+        "bleeding_risk",
+        "hyponatremia_risk",
+        "suicide_risk",
+        "diabetes",
+        "glaucoma",
+        "mania_symptoms",
+        "arrhythmia_signs",
+        "serotonin_syndrome_signs",
+        "coronary_disease",
+        "electrolyte_disturbance",
+        "ecg_done",
+        "electrolytes_corrected",
+        "maoi_type",
+        "maoi_stopped_at"
+      ],
+      "full_independent_medical_conditions_review_complete": false,
+      "scope": "Все clinical parameter occurrences и ветки карточки просмотрены; основные уникальные числа сопоставлены с оригиналами. Все4953 случаи проверены структурно, ключевые результаты первично; каждый клинический предикат/взаимодействие не сертифицирован исчерпывающе.",
+      "findings": [
+        "V2-08",
+        "V2-10",
+        "V2-12"
+      ],
+      "unverified": "Полная per-condition necessity/counterexample sufficiency и все уникальные safety/interactions; отмеченные дефекты требуют исправления и новой первичной проверки.",
+      "recheck_findings": []
+    },
+    {
+      "rule_id": "esc-gad-start",
+      "identity": {
+        "title": "Эсциталопрам: стандартный старт F41.1",
+        "mode": "start",
+        "drug_inn": "эсциталопрам",
+        "from_drug_inn": null,
+        "to_drug_inn": null,
+        "formulation": "Селектра: таблетки, покрытые плёночной оболочкой; 5/10/15/20 мг; 10/15/20 делятся на равные дозы (§3 с.1–2)",
+        "route": "oral",
+        "diagnosis_label_ru": "Генерализованное тревожное расстройство",
+        "classification_system": "МКБ-10",
+        "diagnosis_code": "F41.1",
+        "jurisdiction": "RU_registry_original_2025-11-05",
+        "formulation_confirmation": "§3 с.1–2: equal halves for 10/15/20 mg; no half-dose claim for 5 mg"
+      },
+      "source_ids": [
+        "RU-ESC"
+      ],
+      "parameters_reviewed": 7,
+      "branches_inspected": [
+        "usual"
+      ],
+      "prepared_case_count": 143,
+      "inputs_inventory_inspected": [
+        "age",
+        "form",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "hepatic",
+        "mania",
+        "seizure_state",
+        "known_cyp2c19",
+        "renal",
+        "qt_risk",
+        "bleeding_risk",
+        "hyponatremia_risk",
+        "suicide_risk",
+        "diabetes",
+        "glaucoma",
+        "mania_symptoms",
+        "arrhythmia_signs",
+        "serotonin_syndrome_signs",
+        "coronary_disease",
+        "electrolyte_disturbance",
+        "ecg_done",
+        "electrolytes_corrected",
+        "maoi_type",
+        "maoi_stopped_at"
+      ],
+      "full_independent_medical_conditions_review_complete": false,
+      "scope": "Все clinical parameter occurrences и ветки карточки просмотрены; основные уникальные числа сопоставлены с оригиналами. Все4953 случаи проверены структурно, ключевые результаты первично; каждый клинический предикат/взаимодействие не сертифицирован исчерпывающе.",
+      "findings": [
+        "V2-08",
+        "V2-10",
+        "V2-12"
+      ],
+      "unverified": "Полная per-condition necessity/counterexample sufficiency и все уникальные safety/interactions; отмеченные дефекты требуют исправления и новой первичной проверки.",
+      "recheck_findings": []
+    },
+    {
+      "rule_id": "esc-hepatic-start",
+      "identity": {
+        "title": "Эсциталопрам при ГТР: Сниженная функция печени",
+        "mode": "start",
+        "drug_inn": "эсциталопрам",
+        "from_drug_inn": null,
+        "to_drug_inn": null,
+        "formulation": "Селектра: таблетки, покрытые плёночной оболочкой; 5/10/15/20 мг; 10/15/20 делятся на равные дозы (§3 с.1–2)",
+        "route": "oral",
+        "diagnosis_label_ru": "Генерализованное тревожное расстройство",
+        "classification_system": "МКБ-10",
+        "diagnosis_code": "F41.1",
+        "jurisdiction": "RU_registry_original_2025-11-05",
+        "formulation_confirmation": "§3 с.1–2: equal halves for 10/15/20 mg; no half-dose claim for 5 mg"
+      },
+      "source_ids": [
+        "RU-ESC"
+      ],
+      "parameters_reviewed": 7,
+      "branches_inspected": [
+        "special"
+      ],
+      "prepared_case_count": 143,
+      "inputs_inventory_inspected": [
+        "age",
+        "form",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "hepatic",
+        "mania",
+        "seizure_state",
+        "known_cyp2c19",
+        "renal",
+        "qt_risk",
+        "bleeding_risk",
+        "hyponatremia_risk",
+        "suicide_risk",
+        "diabetes",
+        "glaucoma",
+        "mania_symptoms",
+        "arrhythmia_signs",
+        "serotonin_syndrome_signs",
+        "coronary_disease",
+        "electrolyte_disturbance",
+        "ecg_done",
+        "electrolytes_corrected",
+        "maoi_type",
+        "maoi_stopped_at"
+      ],
+      "full_independent_medical_conditions_review_complete": false,
+      "scope": "Все clinical parameter occurrences и ветки карточки просмотрены; основные уникальные числа сопоставлены с оригиналами. Все4953 случаи проверены структурно, ключевые результаты первично; каждый клинический предикат/взаимодействие не сертифицирован исчерпывающе.",
+      "findings": [
+        "V2-08",
+        "V2-10",
+        "V2-12"
+      ],
+      "unverified": "Полная per-condition necessity/counterexample sufficiency и все уникальные safety/interactions; отмеченные дефекты требуют исправления и новой первичной проверки.",
+      "recheck_findings": []
+    },
+    {
+      "rule_id": "esc-panic-start",
+      "identity": {
+        "title": "Эсциталопрам: стандартный старт F41.0",
+        "mode": "start",
+        "drug_inn": "эсциталопрам",
+        "from_drug_inn": null,
+        "to_drug_inn": null,
+        "formulation": "Селектра: таблетки, покрытые плёночной оболочкой; 5/10/15/20 мг; 10/15/20 делятся на равные дозы (§3 с.1–2)",
+        "route": "oral",
+        "diagnosis_label_ru": "Паническое расстройство",
+        "classification_system": "МКБ-10",
+        "diagnosis_code": "F41.0",
+        "jurisdiction": "RU_registry_original_2025-11-05",
+        "formulation_confirmation": "§3 с.1–2: equal halves for 10/15/20 mg; no half-dose claim for 5 mg"
+      },
+      "source_ids": [
+        "RU-ESC"
+      ],
+      "parameters_reviewed": 9,
+      "branches_inspected": [
+        "usual"
+      ],
+      "prepared_case_count": 143,
+      "inputs_inventory_inspected": [
+        "age",
+        "form",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "hepatic",
+        "mania",
+        "seizure_state",
+        "known_cyp2c19",
+        "renal",
+        "qt_risk",
+        "bleeding_risk",
+        "hyponatremia_risk",
+        "suicide_risk",
+        "diabetes",
+        "glaucoma",
+        "mania_symptoms",
+        "arrhythmia_signs",
+        "serotonin_syndrome_signs",
+        "coronary_disease",
+        "electrolyte_disturbance",
+        "ecg_done",
+        "electrolytes_corrected",
+        "maoi_type",
+        "maoi_stopped_at"
+      ],
+      "full_independent_medical_conditions_review_complete": false,
+      "scope": "Все clinical parameter occurrences и ветки карточки просмотрены; основные уникальные числа сопоставлены с оригиналами. Все4953 случаи проверены структурно, ключевые результаты первично; каждый клинический предикат/взаимодействие не сертифицирован исчерпывающе.",
+      "findings": [
+        "V2-08",
+        "V2-10",
+        "V2-12"
+      ],
+      "unverified": "Полная per-condition necessity/counterexample sufficiency и все уникальные safety/interactions; отмеченные дефекты требуют исправления и новой первичной проверки.",
+      "recheck_findings": []
+    },
+    {
+      "rule_id": "esc-social-start",
+      "identity": {
+        "title": "Эсциталопрам: стандартный старт F40.1",
+        "mode": "start",
+        "drug_inn": "эсциталопрам",
+        "from_drug_inn": null,
+        "to_drug_inn": null,
+        "formulation": "Селектра: таблетки, покрытые плёночной оболочкой; 5/10/15/20 мг; 10/15/20 делятся на равные дозы (§3 с.1–2)",
+        "route": "oral",
+        "diagnosis_label_ru": "Социальная фобия",
+        "classification_system": "МКБ-10",
+        "diagnosis_code": "F40.1",
+        "jurisdiction": "RU_registry_original_2025-11-05",
+        "formulation_confirmation": "§3 с.1–2: equal halves for 10/15/20 mg; no half-dose claim for 5 mg"
+      },
+      "source_ids": [
+        "RU-ESC"
+      ],
+      "parameters_reviewed": 7,
+      "branches_inspected": [
+        "usual"
+      ],
+      "prepared_case_count": 143,
+      "inputs_inventory_inspected": [
+        "age",
+        "form",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "hepatic",
+        "mania",
+        "seizure_state",
+        "known_cyp2c19",
+        "renal",
+        "qt_risk",
+        "bleeding_risk",
+        "hyponatremia_risk",
+        "suicide_risk",
+        "diabetes",
+        "glaucoma",
+        "mania_symptoms",
+        "arrhythmia_signs",
+        "serotonin_syndrome_signs",
+        "coronary_disease",
+        "electrolyte_disturbance",
+        "ecg_done",
+        "electrolytes_corrected",
+        "maoi_type",
+        "maoi_stopped_at"
+      ],
+      "full_independent_medical_conditions_review_complete": false,
+      "scope": "Все clinical parameter occurrences и ветки карточки просмотрены; основные уникальные числа сопоставлены с оригиналами. Все4953 случаи проверены структурно, ключевые результаты первично; каждый клинический предикат/взаимодействие не сертифицирован исчерпывающе.",
+      "findings": [
+        "V2-08",
+        "V2-10",
+        "V2-12"
+      ],
+      "unverified": "Полная per-condition necessity/counterexample sufficiency и все уникальные safety/interactions; отмеченные дефекты требуют исправления и новой первичной проверки.",
+      "recheck_findings": []
+    },
+    {
+      "rule_id": "esc-taper-limit",
+      "identity": {
+        "title": "Эсциталопрам: опубликованные ограничения отмены",
+        "mode": "taper",
+        "drug_inn": "эсциталопрам",
+        "from_drug_inn": null,
+        "to_drug_inn": null,
+        "formulation": "Селектра: таблетки, покрытые плёночной оболочкой; 5/10/15/20 мг; 10/15/20 делятся на равные дозы (§3 с.1–2)",
+        "route": "oral",
+        "diagnosis_label_ru": "Показание врача, в границах исходного документа",
+        "classification_system": "МКБ-10",
+        "diagnosis_code": "F41.1/F41.0/F40.1",
+        "jurisdiction": "RU_registry_original_2025-11-05",
+        "formulation_confirmation": "§3 с.1–2: equal halves for 10/15/20 mg; no half-dose claim for 5 mg"
+      },
+      "source_ids": [
+        "RU-GAD",
+        "RU-ESC",
+        "RU-PANIC"
+      ],
+      "parameters_reviewed": 4,
+      "branches_inspected": [
+        "source_limit"
+      ],
+      "prepared_case_count": 59,
+      "inputs_inventory_inspected": [
+        "age",
+        "form",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "hepatic",
+        "mania",
+        "seizure_state",
+        "known_cyp2c19",
+        "renal",
+        "current_dose",
+        "duration_of_use",
+        "prior_withdrawal",
+        "current_withdrawal",
+        "qt_risk",
+        "bleeding_risk",
+        "hyponatremia_risk",
+        "suicide_risk",
+        "diabetes",
+        "glaucoma",
+        "mania_symptoms",
+        "arrhythmia_signs",
+        "serotonin_syndrome_signs"
+      ],
+      "full_independent_medical_conditions_review_complete": false,
+      "scope": "Все clinical parameter occurrences и ветки карточки просмотрены; основные уникальные числа сопоставлены с оригиналами. Все4953 случаи проверены структурно, ключевые результаты первично; каждый клинический предикат/взаимодействие не сертифицирован исчерпывающе.",
+      "findings": [
+        "V2-08",
+        "V2-12"
+      ],
+      "unverified": "Полная per-condition necessity/counterexample sufficiency и все уникальные safety/interactions; отмеченные дефекты требуют исправления и новой первичной проверки.",
+      "recheck_findings": []
+    },
+    {
+      "rule_id": "fluvox-depression-start",
+      "identity": {
+        "title": "Флувоксамин: взрослая депрессия, выбор стартовой дозы",
+        "mode": "start",
+        "drug_inn": "флувоксамин",
+        "from_drug_inn": null,
+        "to_drug_inn": null,
+        "formulation": "Феварин, таблетки 50/100 мг; две равные части разрешены",
+        "route": "oral",
+        "diagnosis_label_ru": "Депрессия / указанная коморбидность",
+        "classification_system": "МКБ-10",
+        "diagnosis_code": "F32/F33",
+        "jurisdiction": "RU_versioned_sources"
+      },
+      "source_ids": [
+        "RU-FLUVOX",
+        "RU-DEP"
+      ],
+      "parameters_reviewed": 7,
+      "branches_inspected": [
+        "selected50",
+        "selected100",
+        "choice"
+      ],
+      "prepared_case_count": 146,
+      "inputs_inventory_inspected": [
+        "age",
+        "form",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "source_start_choice",
+        "maoi_type",
+        "maoi_stopped_at",
+        "mania",
+        "mania_symptoms",
+        "akathisia",
+        "bleeding_risk",
+        "suicide_risk",
+        "diabetes",
+        "glaucoma",
+        "ect",
+        "liver_injury_signs",
+        "seizure_state",
+        "serotonin_syndrome_signs",
+        "new_or_increased_seizures"
+      ],
+      "full_independent_medical_conditions_review_complete": false,
+      "scope": "Все clinical parameter occurrences и ветки карточки просмотрены; основные уникальные числа сопоставлены с оригиналами. Все4953 случаи проверены структурно, ключевые результаты первично; каждый клинический предикат/взаимодействие не сертифицирован исчерпывающе.",
+      "findings": [
+        "V2-08",
+        "V2-10",
+        "V2-12",
+        "V2-14"
+      ],
+      "unverified": "Полная per-condition necessity/counterexample sufficiency и все уникальные safety/interactions; отмеченные дефекты требуют исправления и новой первичной проверки.",
+      "recheck_findings": []
+    },
+    {
+      "rule_id": "fluvox-taper-limit",
+      "identity": {
+        "title": "флувоксамин: ограничения отмены",
+        "mode": "taper",
+        "drug_inn": "флувоксамин",
+        "from_drug_inn": null,
+        "to_drug_inn": null,
+        "formulation": "Феварин 50/100 мг; разрешены две равные половины (§3 с.1; §4.2 с.3 текущей ОХЛП)",
+        "route": "oral",
+        "diagnosis_label_ru": "Депрессия / указанная коморбидность",
+        "classification_system": "МКБ-10",
+        "diagnosis_code": "F32/F33",
+        "jurisdiction": "RU_versioned_sources"
+      },
+      "source_ids": [
+        "RU-FLUVOX",
+        "RU-DEP"
+      ],
+      "parameters_reviewed": 1,
+      "branches_inspected": [
+        "source_limit",
+        "withdrawal"
+      ],
+      "prepared_case_count": 62,
+      "inputs_inventory_inspected": [
+        "age",
+        "form",
+        "current_dose",
+        "duration",
+        "withdrawal_severity",
+        "past_withdrawal",
+        "serotonin_syndrome_signs",
+        "new_or_increased_seizures",
+        "liver_injury_signs",
+        "mania_symptoms"
+      ],
+      "full_independent_medical_conditions_review_complete": false,
+      "scope": "Все clinical parameter occurrences и ветки карточки просмотрены; основные уникальные числа сопоставлены с оригиналами. Все4953 случаи проверены структурно, ключевые результаты первично; каждый клинический предикат/взаимодействие не сертифицирован исчерпывающе.",
+      "findings": [
+        "V2-06",
+        "V2-08",
+        "V2-12"
+      ],
+      "unverified": "Полная per-condition necessity/counterexample sufficiency и все уникальные safety/interactions; отмеченные дефекты требуют исправления и новой первичной проверки.",
+      "recheck_findings": []
+    },
+    {
+      "rule_id": "parox-panic-kr",
+      "identity": {
+        "title": "Пароксетин при паническом расстройстве: дозовые этапы российских КР",
+        "mode": "start",
+        "drug_inn": "пароксетин",
+        "from_drug_inn": null,
+        "to_drug_inn": null,
+        "formulation": "Рексетин, таблетки 20 мг, покрытые пленочной оболочкой; деление пополам на 10 мг",
+        "route": "oral",
+        "diagnosis_label_ru": "Паническое расстройство",
+        "classification_system": "МКБ-10",
+        "diagnosis_code": "F41.0",
+        "jurisdiction": "RU_versioned_sources"
+      },
+      "source_ids": [
+        "RU-PANIC",
+        "RU-PAROX"
+      ],
+      "parameters_reviewed": 10,
+      "branches_inspected": [
+        "usual",
+        "elderly",
+        "organ_caution"
+      ],
+      "prepared_case_count": 167,
+      "inputs_inventory_inspected": [
+        "age",
+        "form",
+        "hepatic",
+        "renal",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "response",
+        "tolerability",
+        "current_dose",
+        "time_at_dose",
+        "maoi_type",
+        "maoi_stopped_at",
+        "elderly_population",
+        "mania",
+        "suicide_risk",
+        "akathisia",
+        "diabetes",
+        "glaucoma",
+        "bleeding_risk",
+        "qt_risk",
+        "ect",
+        "seizure_state",
+        "serotonin_syndrome_signs",
+        "bipolar_risk_screening"
+      ],
+      "full_independent_medical_conditions_review_complete": false,
+      "scope": "Все clinical parameter occurrences и ветки карточки просмотрены; основные уникальные числа сопоставлены с оригиналами. Все4953 случаи проверены структурно, ключевые результаты первично; каждый клинический предикат/взаимодействие не сертифицирован исчерпывающе.",
+      "findings": [
+        "V2-02",
+        "V2-03",
+        "V2-08",
+        "V2-10",
+        "V2-12"
+      ],
+      "unverified": "Полная per-condition necessity/counterexample sufficiency и все уникальные safety/interactions; отмеченные дефекты требуют исправления и новой первичной проверки.",
+      "recheck_findings": [
+        "V2-08"
+      ]
+    },
+    {
+      "rule_id": "parox-taper-example",
+      "identity": {
+        "title": "Пароксетин: российский взрослый исследовательский пример отмены",
+        "mode": "taper",
+        "drug_inn": "пароксетин",
+        "from_drug_inn": null,
+        "to_drug_inn": null,
+        "formulation": "Рексетин, таблетки 20 мг; разрешена половина 10 мг",
+        "route": "oral",
+        "diagnosis_label_ru": "Депрессивный эпизод/рекуррентная депрессия у взрослых",
+        "classification_system": "МКБ-10",
+        "diagnosis_code": "F32/F33",
+        "jurisdiction": "RU_versioned_sources"
+      },
+      "source_ids": [
+        "RU-DEP",
+        "RU-PAROX",
+        "RU-PANIC"
+      ],
+      "parameters_reviewed": 4,
+      "branches_inspected": [
+        "selected40",
+        "other"
+      ],
+      "prepared_case_count": 57,
+      "inputs_inventory_inspected": [
+        "age",
+        "form",
+        "current_dose",
+        "duration",
+        "past_withdrawal",
+        "withdrawal_severity",
+        "example_selected",
+        "serotonin_syndrome_signs",
+        "new_seizures"
+      ],
+      "full_independent_medical_conditions_review_complete": false,
+      "scope": "Все clinical parameter occurrences и ветки карточки просмотрены; основные уникальные числа сопоставлены с оригиналами. Все4953 случаи проверены структурно, ключевые результаты первично; каждый клинический предикат/взаимодействие не сертифицирован исчерпывающе.",
+      "findings": [
+        "V2-03",
+        "V2-06",
+        "V2-08",
+        "V2-12"
+      ],
+      "unverified": "Полная per-condition necessity/counterexample sufficiency и все уникальные safety/interactions; отмеченные дефекты требуют исправления и новой первичной проверки.",
+      "recheck_findings": []
+    },
+    {
+      "rule_id": "phen-taper-limit",
+      "identity": {
+        "title": "бромдигидрохлорфенилбензодиазепин: ограничения отмены",
+        "mode": "taper",
+        "drug_inn": "бромдигидрохлорфенилбензодиазепин",
+        "from_drug_inn": null,
+        "to_drug_inn": null,
+        "formulation": "Феназепам, ородисперсные таблетки 0,25/0,5/1 мг; риска не предназначена для деления (§3 с.1)",
+        "route": "oral",
+        "diagnosis_label_ru": "Паническое расстройство",
+        "classification_system": "МКБ-10",
+        "diagnosis_code": "F41.0",
+        "jurisdiction": "RU_versioned_sources",
+        "registration_identity_source": "RU-PHEN.registry_observation_round2; latest PDF edition remains unconfirmed"
+      },
+      "source_ids": [
+        "RU-PHEN",
+        "RU-PANIC"
+      ],
+      "parameters_reviewed": 0,
+      "branches_inspected": [
+        "source_limit",
+        "withdrawal"
+      ],
+      "prepared_case_count": 50,
+      "inputs_inventory_inspected": [
+        "age",
+        "form",
+        "current_dose",
+        "duration",
+        "withdrawal_severity",
+        "past_withdrawal",
+        "unusual_reactions"
+      ],
+      "full_independent_medical_conditions_review_complete": false,
+      "scope": "Все clinical parameter occurrences и ветки карточки просмотрены; основные уникальные числа сопоставлены с оригиналами. Все4953 случаи проверены структурно, ключевые результаты первично; каждый клинический предикат/взаимодействие не сертифицирован исчерпывающе.",
+      "findings": [
+        "V2-08",
+        "V2-12"
+      ],
+      "unverified": "Полная per-condition necessity/counterexample sufficiency и все уникальные safety/interactions; отмеченные дефекты требуют исправления и новой первичной проверки.",
+      "recheck_findings": [
+        "V2-08",
+        "R1-06"
+      ]
+    },
+    {
+      "rule_id": "preg-gad-adjust",
+      "identity": {
+        "title": "Прегабалин при ГТР: переход между опубликованными этапами",
+        "mode": "adjust",
+        "drug_inn": "прегабалин",
+        "from_drug_inn": null,
+        "to_drug_inn": null,
+        "formulation": "Лирика: капсулы; 25/50/75/100/150/200/300 мг",
+        "route": "oral",
+        "diagnosis_label_ru": "Генерализованное тревожное расстройство",
+        "classification_system": "МКБ-10",
+        "diagnosis_code": "F41.1",
+        "jurisdiction": "RU_versioned_copy"
+      },
+      "source_ids": [
+        "RU-GAD",
+        "RU-PANIC",
+        "RU-PREG"
+      ],
+      "parameters_reviewed": 9,
+      "branches_inspected": [
+        "from150-frequency2",
+        "from300-frequency2",
+        "from450-frequency2",
+        "from150-frequency3",
+        "from300-frequency3",
+        "from450-frequency3",
+        "other"
+      ],
+      "prepared_case_count": 135,
+      "inputs_inventory_inspected": [
+        "age",
+        "form",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "clcr",
+        "dialysis",
+        "substance_use",
+        "respiratory",
+        "frequency",
+        "current_dose",
+        "time_at_dose",
+        "response",
+        "tolerability",
+        "adherence",
+        "angioedema",
+        "severe_skin_reaction",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "suicide_risk",
+        "heart_failure",
+        "diabetes_weight_gain",
+        "misuse_risk_assessment",
+        "reproductive_population",
+        "effective_contraception"
+      ],
+      "full_independent_medical_conditions_review_complete": false,
+      "scope": "Все clinical parameter occurrences и ветки карточки просмотрены; основные уникальные числа сопоставлены с оригиналами. Все4953 случаи проверены структурно, ключевые результаты первично; каждый клинический предикат/взаимодействие не сертифицирован исчерпывающе.",
+      "findings": [
+        "V2-08",
+        "V2-10",
+        "V2-12"
+      ],
+      "unverified": "Полная per-condition necessity/counterexample sufficiency и все уникальные safety/interactions; отмеченные дефекты требуют исправления и новой первичной проверки.",
+      "recheck_findings": [
+        "R1-06"
+      ]
+    },
+    {
+      "rule_id": "preg-gad-start",
+      "identity": {
+        "title": "Прегабалин при ГТР: условная недельная схема",
+        "mode": "start",
+        "drug_inn": "прегабалин",
+        "from_drug_inn": null,
+        "to_drug_inn": null,
+        "formulation": "Лирика: капсулы; 25/50/75/100/150/200/300 мг",
+        "route": "oral",
+        "diagnosis_label_ru": "Генерализованное тревожное расстройство",
+        "classification_system": "МКБ-10",
+        "diagnosis_code": "F41.1",
+        "jurisdiction": "RU_versioned_copy"
+      },
+      "source_ids": [
+        "RU-GAD",
+        "RU-PREG"
+      ],
+      "parameters_reviewed": 9,
+      "branches_inspected": [
+        "frequency2",
+        "frequency3"
+      ],
+      "prepared_case_count": 115,
+      "inputs_inventory_inspected": [
+        "age",
+        "form",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "clcr",
+        "dialysis",
+        "substance_use",
+        "respiratory",
+        "frequency",
+        "angioedema",
+        "severe_skin_reaction",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "suicide_risk",
+        "heart_failure",
+        "diabetes_weight_gain",
+        "misuse_risk_assessment",
+        "reproductive_population",
+        "effective_contraception"
+      ],
+      "full_independent_medical_conditions_review_complete": false,
+      "scope": "Все clinical parameter occurrences и ветки карточки просмотрены; основные уникальные числа сопоставлены с оригиналами. Все4953 случаи проверены структурно, ключевые результаты первично; каждый клинический предикат/взаимодействие не сертифицирован исчерпывающе.",
+      "findings": [
+        "V2-08",
+        "V2-10",
+        "V2-12",
+        "V2-13"
+      ],
+      "unverified": "Полная per-condition necessity/counterexample sufficiency и все уникальные safety/interactions; отмеченные дефекты требуют исправления и новой первичной проверки.",
+      "recheck_findings": [
+        "R1-06"
+      ]
+    },
+    {
+      "rule_id": "preg-renal-start",
+      "identity": {
+        "title": "Прегабалин: начальная доза и предел по CLcr",
+        "mode": "start",
+        "drug_inn": "прегабалин",
+        "from_drug_inn": null,
+        "to_drug_inn": null,
+        "formulation": "Лирика: капсулы; 25/50/75/100/150/200/300 мг",
+        "route": "oral",
+        "diagnosis_label_ru": "Генерализованное тревожное расстройство",
+        "classification_system": "МКБ-10",
+        "diagnosis_code": "F41.1",
+        "jurisdiction": "RU_versioned_copy"
+      },
+      "source_ids": [
+        "RU-GAD",
+        "RU-PREG"
+      ],
+      "parameters_reviewed": 14,
+      "branches_inspected": [
+        "ge60",
+        "30_60",
+        "15_30",
+        "lt15"
+      ],
+      "prepared_case_count": 123,
+      "inputs_inventory_inspected": [
+        "age",
+        "form",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "clcr",
+        "dialysis",
+        "substance_use",
+        "respiratory",
+        "angioedema",
+        "severe_skin_reaction",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "suicide_risk",
+        "heart_failure",
+        "diabetes_weight_gain",
+        "misuse_risk_assessment",
+        "reproductive_population",
+        "effective_contraception"
+      ],
+      "full_independent_medical_conditions_review_complete": false,
+      "scope": "Все clinical parameter occurrences и ветки карточки просмотрены; основные уникальные числа сопоставлены с оригиналами. Все4953 случаи проверены структурно, ключевые результаты первично; каждый клинический предикат/взаимодействие не сертифицирован исчерпывающе.",
+      "findings": [
+        "V2-08",
+        "V2-12"
+      ],
+      "unverified": "Полная per-condition necessity/counterexample sufficiency и все уникальные safety/interactions; отмеченные дефекты требуют исправления и новой первичной проверки.",
+      "recheck_findings": [
+        "R1-06"
+      ]
+    },
+    {
+      "rule_id": "preg-taper-limit",
+      "identity": {
+        "title": "Прегабалин: опубликованные ограничения отмены",
+        "mode": "taper",
+        "drug_inn": "прегабалин",
+        "from_drug_inn": null,
+        "to_drug_inn": null,
+        "formulation": "Лирика: капсулы; 25/50/75/100/150/200/300 мг",
+        "route": "oral",
+        "diagnosis_label_ru": "Генерализованное тревожное расстройство",
+        "classification_system": "МКБ-10",
+        "diagnosis_code": "F41.1",
+        "jurisdiction": "RU_versioned_copy"
+      },
+      "source_ids": [
+        "RU-GAD",
+        "RU-PREG"
+      ],
+      "parameters_reviewed": 3,
+      "branches_inspected": [
+        "source_limit",
+        "withdrawal"
+      ],
+      "prepared_case_count": 97,
+      "inputs_inventory_inspected": [
+        "age",
+        "form",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "clcr",
+        "dialysis",
+        "substance_use",
+        "respiratory",
+        "current_dose",
+        "duration_of_use",
+        "prior_withdrawal",
+        "current_withdrawal",
+        "angioedema",
+        "severe_skin_reaction",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "suicide_risk",
+        "heart_failure",
+        "diabetes_weight_gain"
+      ],
+      "full_independent_medical_conditions_review_complete": false,
+      "scope": "Все clinical parameter occurrences и ветки карточки просмотрены; основные уникальные числа сопоставлены с оригиналами. Все4953 случаи проверены структурно, ключевые результаты первично; каждый клинический предикат/взаимодействие не сертифицирован исчерпывающе.",
+      "findings": [
+        "V2-08",
+        "V2-10",
+        "V2-12"
+      ],
+      "unverified": "Полная per-condition necessity/counterexample sufficiency и все уникальные safety/interactions; отмеченные дефекты требуют исправления и новой первичной проверки.",
+      "recheck_findings": [
+        "R1-06"
+      ]
+    },
+    {
+      "rule_id": "ser-adult-adjust",
+      "identity": {
+        "title": "Сертралин: условное повышение у взрослого",
+        "mode": "adjust",
+        "drug_inn": "сертралин",
+        "from_drug_inn": null,
+        "to_drug_inn": null,
+        "formulation": "Золофт: таблетки, покрытые плёночной оболочкой; 50/100 мг",
+        "route": "oral",
+        "diagnosis_label_ru": "Показание врача, в границах исходного документа",
+        "classification_system": "МКБ-10",
+        "diagnosis_code": "F41.0/F40.1",
+        "jurisdiction": "RU_versioned_copy"
+      },
+      "source_ids": [
+        "RU-GAD",
+        "RU-PANIC",
+        "RU-SER"
+      ],
+      "parameters_reviewed": 7,
+      "branches_inspected": [
+        "increase",
+        "keep",
+        "increase-from50",
+        "increase-from150",
+        "keep50",
+        "keep150",
+        "keep200",
+        "initial25",
+        "other-source-dose",
+        "ceiling",
+        "early",
+        "decrease",
+        "clinical_option"
+      ],
+      "prepared_case_count": 139,
+      "inputs_inventory_inspected": [
+        "age",
+        "form",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "hepatic",
+        "mania",
+        "seizure_state",
+        "current_dose",
+        "time_at_dose",
+        "response",
+        "tolerability",
+        "adherence",
+        "qt_risk",
+        "bleeding_risk",
+        "hyponatremia_risk",
+        "suicide_risk",
+        "akathisia",
+        "clinician_action",
+        "maoi_type",
+        "maoi_stopped_at",
+        "mania_symptoms"
+      ],
+      "full_independent_medical_conditions_review_complete": false,
+      "scope": "Все clinical parameter occurrences и ветки карточки просмотрены; основные уникальные числа сопоставлены с оригиналами. Все4953 случаи проверены структурно, ключевые результаты первично; каждый клинический предикат/взаимодействие не сертифицирован исчерпывающе.",
+      "findings": [
+        "V2-04",
+        "V2-08",
+        "V2-10",
+        "V2-12"
+      ],
+      "unverified": "Полная per-condition necessity/counterexample sufficiency и все уникальные safety/interactions; отмеченные дефекты требуют исправления и новой первичной проверки.",
+      "recheck_findings": []
+    },
+    {
+      "rule_id": "ser-panic-start",
+      "identity": {
+        "title": "Сертралин: старт при паническом расстройстве",
+        "mode": "start",
+        "drug_inn": "сертралин",
+        "from_drug_inn": null,
+        "to_drug_inn": null,
+        "formulation": "Золофт: таблетки, покрытые плёночной оболочкой; 50/100 мг",
+        "route": "oral",
+        "diagnosis_label_ru": "Паническое расстройство",
+        "classification_system": "МКБ-10",
+        "diagnosis_code": "F41.0",
+        "jurisdiction": "RU_versioned_copy"
+      },
+      "source_ids": [
+        "RU-SER"
+      ],
+      "parameters_reviewed": 7,
+      "branches_inspected": [
+        "usual"
+      ],
+      "prepared_case_count": 117,
+      "inputs_inventory_inspected": [
+        "age",
+        "form",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "hepatic",
+        "mania",
+        "seizure_state",
+        "qt_risk",
+        "bleeding_risk",
+        "hyponatremia_risk",
+        "suicide_risk",
+        "maoi_type",
+        "maoi_stopped_at",
+        "akathisia",
+        "mania_symptoms"
+      ],
+      "full_independent_medical_conditions_review_complete": false,
+      "scope": "Все clinical parameter occurrences и ветки карточки просмотрены; основные уникальные числа сопоставлены с оригиналами. Все4953 случаи проверены структурно, ключевые результаты первично; каждый клинический предикат/взаимодействие не сертифицирован исчерпывающе.",
+      "findings": [
+        "V2-04",
+        "V2-08",
+        "V2-10",
+        "V2-12"
+      ],
+      "unverified": "Полная per-condition necessity/counterexample sufficiency и все уникальные safety/interactions; отмеченные дефекты требуют исправления и новой первичной проверки.",
+      "recheck_findings": []
+    },
+    {
+      "rule_id": "ser-social-start",
+      "identity": {
+        "title": "Сертралин: старт при социальной фобии",
+        "mode": "start",
+        "drug_inn": "сертралин",
+        "from_drug_inn": null,
+        "to_drug_inn": null,
+        "formulation": "Золофт: таблетки, покрытые плёночной оболочкой; 50/100 мг",
+        "route": "oral",
+        "diagnosis_label_ru": "Социальная фобия",
+        "classification_system": "МКБ-10",
+        "diagnosis_code": "F40.1",
+        "jurisdiction": "RU_versioned_copy"
+      },
+      "source_ids": [
+        "RU-SER"
+      ],
+      "parameters_reviewed": 7,
+      "branches_inspected": [
+        "usual"
+      ],
+      "prepared_case_count": 117,
+      "inputs_inventory_inspected": [
+        "age",
+        "form",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "hepatic",
+        "mania",
+        "seizure_state",
+        "qt_risk",
+        "bleeding_risk",
+        "hyponatremia_risk",
+        "suicide_risk",
+        "maoi_type",
+        "maoi_stopped_at",
+        "akathisia",
+        "mania_symptoms"
+      ],
+      "full_independent_medical_conditions_review_complete": false,
+      "scope": "Все clinical parameter occurrences и ветки карточки просмотрены; основные уникальные числа сопоставлены с оригиналами. Все4953 случаи проверены структурно, ключевые результаты первично; каждый клинический предикат/взаимодействие не сертифицирован исчерпывающе.",
+      "findings": [
+        "V2-04",
+        "V2-08",
+        "V2-10",
+        "V2-12"
+      ],
+      "unverified": "Полная per-condition necessity/counterexample sufficiency и все уникальные safety/interactions; отмеченные дефекты требуют исправления и новой первичной проверки.",
+      "recheck_findings": []
+    },
+    {
+      "rule_id": "ser-taper-limit",
+      "identity": {
+        "title": "Сертралин: опубликованные ограничения отмены",
+        "mode": "taper",
+        "drug_inn": "сертралин",
+        "from_drug_inn": null,
+        "to_drug_inn": null,
+        "formulation": "Золофт: таблетки, покрытые плёночной оболочкой; 50/100 мг",
+        "route": "oral",
+        "diagnosis_label_ru": "Показание врача, в границах исходного документа",
+        "classification_system": "МКБ-10",
+        "diagnosis_code": "F41.0/F40.1",
+        "jurisdiction": "RU_versioned_copy"
+      },
+      "source_ids": [
+        "RU-PANIC",
+        "RU-SER"
+      ],
+      "parameters_reviewed": 3,
+      "branches_inspected": [
+        "source_limit",
+        "withdrawal"
+      ],
+      "prepared_case_count": 97,
+      "inputs_inventory_inspected": [
+        "age",
+        "form",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "hepatic",
+        "mania",
+        "seizure_state",
+        "current_dose",
+        "duration_of_use",
+        "prior_withdrawal",
+        "current_withdrawal",
+        "qt_risk",
+        "bleeding_risk",
+        "hyponatremia_risk",
+        "suicide_risk",
+        "mania_symptoms"
+      ],
+      "full_independent_medical_conditions_review_complete": false,
+      "scope": "Все clinical parameter occurrences и ветки карточки просмотрены; основные уникальные числа сопоставлены с оригиналами. Все4953 случаи проверены структурно, ключевые результаты первично; каждый клинический предикат/взаимодействие не сертифицирован исчерпывающе.",
+      "findings": [
+        "V2-04",
+        "V2-08",
+        "V2-10",
+        "V2-12"
+      ],
+      "unverified": "Полная per-condition necessity/counterexample sufficiency и все уникальные safety/interactions; отмеченные дефекты требуют исправления и новой первичной проверки.",
+      "recheck_findings": []
+    },
+    {
+      "rule_id": "switch-esc-ago",
+      "identity": {
+        "title": "эсциталопрам → агомелатин: старт B с первого дня снижения A",
+        "mode": "switch",
+        "drug_inn": null,
+        "from_drug_inn": "эсциталопрам",
+        "to_drug_inn": "агомелатин",
+        "formulation": {
+          "from": "Селектра, таблетки 5/10/15/20 мг; зарегистрированная версия 05.11.2025",
+          "to": "Вальдоксан, таблетки 25 мг, покрытые пленочной оболочкой"
+        },
+        "route": "oral",
+        "diagnosis_label_ru": "Депрессивный эпизод/рекуррентная депрессия у взрослых",
+        "classification_system": "МКБ-10",
+        "diagnosis_code": "F32/F33",
+        "jurisdiction": "RU_versioned_sources",
+        "formulation_confirmation": "§3 с.1–2: equal halves for 10/15/20 mg; no half-dose claim for 5 mg"
+      },
+      "source_ids": [
+        "RU-DEP",
+        "RU-ESC",
+        "RU-AGO"
+      ],
+      "parameters_reviewed": 7,
+      "branches_inspected": [
+        "class_overlap"
+      ],
+      "prepared_case_count": 125,
+      "inputs_inventory_inspected": [
+        "from_form",
+        "to_form",
+        "age",
+        "current_dose",
+        "from_taper_plan",
+        "hepatic",
+        "alt_ratio_uln",
+        "ast_ratio_uln",
+        "medicines",
+        "allergy",
+        "pregnancy",
+        "lactation",
+        "withdrawal_severity",
+        "elderly_population",
+        "dementia",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "liver_injury_signs",
+        "transaminases_rising",
+        "overweight_obesity",
+        "fatty_liver",
+        "diabetes",
+        "alcohol_abuse",
+        "alcohol_use",
+        "mania",
+        "mania_symptoms",
+        "suicide_risk",
+        "ect",
+        "renal_state",
+        "from_hepatic",
+        "arrhythmia_signs",
+        "serotonin_syndrome_signs",
+        "seizure_state"
+      ],
+      "full_independent_medical_conditions_review_complete": false,
+      "scope": "Все clinical parameter occurrences и ветки карточки просмотрены; основные уникальные числа сопоставлены с оригиналами. Все4953 случаи проверены структурно, ключевые результаты первично; каждый клинический предикат/взаимодействие не сертифицирован исчерпывающе.",
+      "findings": [
+        "V2-07",
+        "V2-08",
+        "V2-12"
+      ],
+      "unverified": "Полная per-condition necessity/counterexample sufficiency и все уникальные safety/interactions; отмеченные дефекты требуют исправления и новой первичной проверки.",
+      "recheck_findings": []
+    },
+    {
+      "rule_id": "switch-esc-ser",
+      "identity": {
+        "title": "эсциталопрам → сертралин: ограничения российских источников",
+        "mode": "switch",
+        "drug_inn": null,
+        "from_drug_inn": "эсциталопрам",
+        "to_drug_inn": "сертралин",
+        "formulation": {
+          "from": "Селектра, таблетки 5/10/15/20 мг, ОХЛП 05.11.2025",
+          "to": "Золофт, таблетки 50/100 мг"
+        },
+        "route": "oral",
+        "diagnosis_label_ru": "Самостоятельный депрессивный эпизод/рекуррентная депрессия у взрослых",
+        "classification_system": "МКБ-10",
+        "diagnosis_code": "F32/F33",
+        "jurisdiction": "RU_versioned_sources",
+        "formulation_confirmation": "§3 с.1–2: equal halves for 10/15/20 mg; no half-dose claim for 5 mg"
+      },
+      "source_ids": [
+        "RU-DEP",
+        "RU-SER",
+        "RU-ESC"
+      ],
+      "parameters_reviewed": 1,
+      "branches_inspected": [
+        "pair_gap"
+      ],
+      "prepared_case_count": 46,
+      "inputs_inventory_inspected": [
+        "from_form",
+        "to_form",
+        "current_dose",
+        "duration",
+        "last_dose_time",
+        "withdrawal_symptoms",
+        "medicines",
+        "target_applicability",
+        "maoi_type",
+        "maoi_stopped_at",
+        "mania_symptoms",
+        "arrhythmia_signs",
+        "serotonin_syndrome_signs",
+        "seizure_state",
+        "target_new_seizures"
+      ],
+      "full_independent_medical_conditions_review_complete": false,
+      "scope": "Все clinical parameter occurrences и ветки карточки просмотрены; основные уникальные числа сопоставлены с оригиналами. Все4953 случаи проверены структурно, ключевые результаты первично; каждый клинический предикат/взаимодействие не сертифицирован исчерпывающе.",
+      "findings": [
+        "V2-07",
+        "V2-08",
+        "V2-12"
+      ],
+      "unverified": "Полная per-condition necessity/counterexample sufficiency и все уникальные safety/interactions; отмеченные дефекты требуют исправления и новой первичной проверки.",
+      "recheck_findings": [
+        "R1-03"
+      ]
+    },
+    {
+      "rule_id": "switch-parox-ago-selected-example",
+      "identity": {
+        "title": "Пароксетин 40 мг → агомелатин: выбранный взрослый пример",
+        "mode": "switch",
+        "drug_inn": null,
+        "from_drug_inn": "пароксетин",
+        "to_drug_inn": "агомелатин",
+        "formulation": {
+          "from": "Рексетин, таблетки 20 мг; половина 10 мг",
+          "to": "Вальдоксан, таблетки 25 мг, покрытые пленочной оболочкой"
+        },
+        "route": "oral",
+        "diagnosis_label_ru": "Депрессивный эпизод/рекуррентная депрессия у взрослых",
+        "classification_system": "МКБ-10",
+        "diagnosis_code": "F32/F33",
+        "jurisdiction": "RU_versioned_sources"
+      },
+      "source_ids": [
+        "RU-DEP",
+        "RU-PAROX",
+        "RU-AGO"
+      ],
+      "parameters_reviewed": 11,
+      "branches_inspected": [
+        "selected40",
+        "withdrawal_hold",
+        "not_selected"
+      ],
+      "prepared_case_count": 290,
+      "inputs_inventory_inspected": [
+        "from_form",
+        "to_form",
+        "age",
+        "current_dose",
+        "hepatic",
+        "alt_ratio_uln",
+        "ast_ratio_uln",
+        "medicines",
+        "allergy",
+        "pregnancy",
+        "lactation",
+        "withdrawal_severity",
+        "duration",
+        "past_withdrawal",
+        "example_selected",
+        "renal_state",
+        "maoi_type",
+        "maoi_stopped_at",
+        "elderly_population",
+        "dementia",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "liver_injury_signs",
+        "transaminases_rising",
+        "overweight_obesity",
+        "fatty_liver",
+        "diabetes",
+        "alcohol_abuse",
+        "alcohol_use",
+        "mania",
+        "mania_symptoms",
+        "suicide_risk",
+        "ect",
+        "from_renal",
+        "from_hepatic",
+        "akathisia",
+        "glaucoma",
+        "bleeding_risk",
+        "qt_risk",
+        "seizure_state",
+        "serotonin_syndrome_signs"
+      ],
+      "full_independent_medical_conditions_review_complete": false,
+      "scope": "Все clinical parameter occurrences и ветки карточки просмотрены; основные уникальные числа сопоставлены с оригиналами. Все4953 случаи проверены структурно, ключевые результаты первично; каждый клинический предикат/взаимодействие не сертифицирован исчерпывающе.",
+      "findings": [
+        "V2-08",
+        "V2-12"
+      ],
+      "unverified": "Полная per-condition necessity/counterexample sufficiency и все уникальные safety/interactions; отмеченные дефекты требуют исправления и новой первичной проверки.",
+      "recheck_findings": [
+        "V2-08"
+      ]
+    },
+    {
+      "rule_id": "switch-parox-ago",
+      "identity": {
+        "title": "пароксетин → агомелатин: старт B с первого дня снижения A",
+        "mode": "switch",
+        "drug_inn": null,
+        "from_drug_inn": "пароксетин",
+        "to_drug_inn": "агомелатин",
+        "formulation": {
+          "from": "Рексетин, таблетки 20 мг; половина 10 мг",
+          "to": "Вальдоксан, таблетки 25 мг, покрытые пленочной оболочкой"
+        },
+        "route": "oral",
+        "diagnosis_label_ru": "Депрессивный эпизод/рекуррентная депрессия у взрослых",
+        "classification_system": "МКБ-10",
+        "diagnosis_code": "F32/F33",
+        "jurisdiction": "RU_versioned_sources"
+      },
+      "source_ids": [
+        "RU-DEP",
+        "RU-PAROX",
+        "RU-AGO"
+      ],
+      "parameters_reviewed": 7,
+      "branches_inspected": [
+        "source_class_overlap"
+      ],
+      "prepared_case_count": 282,
+      "inputs_inventory_inspected": [
+        "from_form",
+        "to_form",
+        "age",
+        "current_dose",
+        "from_taper_plan",
+        "hepatic",
+        "alt_ratio_uln",
+        "ast_ratio_uln",
+        "medicines",
+        "allergy",
+        "pregnancy",
+        "lactation",
+        "withdrawal_severity",
+        "maoi_type",
+        "maoi_stopped_at",
+        "elderly_population",
+        "dementia",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "liver_injury_signs",
+        "transaminases_rising",
+        "overweight_obesity",
+        "fatty_liver",
+        "diabetes",
+        "alcohol_abuse",
+        "alcohol_use",
+        "mania",
+        "mania_symptoms",
+        "suicide_risk",
+        "ect",
+        "renal_state",
+        "from_hepatic",
+        "from_renal",
+        "akathisia",
+        "glaucoma",
+        "bleeding_risk",
+        "qt_risk",
+        "seizure_state",
+        "serotonin_syndrome_signs"
+      ],
+      "full_independent_medical_conditions_review_complete": false,
+      "scope": "Все clinical parameter occurrences и ветки карточки просмотрены; основные уникальные числа сопоставлены с оригиналами. Все4953 случаи проверены структурно, ключевые результаты первично; каждый клинический предикат/взаимодействие не сертифицирован исчерпывающе.",
+      "findings": [
+        "V2-03",
+        "V2-08",
+        "V2-12"
+      ],
+      "unverified": "Полная per-condition necessity/counterexample sufficiency и все уникальные safety/interactions; отмеченные дефекты требуют исправления и новой первичной проверки.",
+      "recheck_findings": [
+        "V2-08"
+      ]
+    },
+    {
+      "rule_id": "switch-ser-ago",
+      "identity": {
+        "title": "сертралин → агомелатин: старт B с первого дня снижения A",
+        "mode": "switch",
+        "drug_inn": null,
+        "from_drug_inn": "сертралин",
+        "to_drug_inn": "агомелатин",
+        "formulation": {
+          "from": "Золофт, таблетки 50/100 мг; 50 мг делится на равные дозы",
+          "to": "Вальдоксан, таблетки 25 мг, покрытые пленочной оболочкой"
+        },
+        "route": "oral",
+        "diagnosis_label_ru": "Депрессивный эпизод/рекуррентная депрессия у взрослых",
+        "classification_system": "МКБ-10",
+        "diagnosis_code": "F32/F33",
+        "jurisdiction": "RU_versioned_sources"
+      },
+      "source_ids": [
+        "RU-DEP",
+        "RU-SER",
+        "RU-AGO"
+      ],
+      "parameters_reviewed": 7,
+      "branches_inspected": [
+        "source_class_overlap"
+      ],
+      "prepared_case_count": 260,
+      "inputs_inventory_inspected": [
+        "from_form",
+        "to_form",
+        "age",
+        "current_dose",
+        "from_taper_plan",
+        "hepatic",
+        "alt_ratio_uln",
+        "ast_ratio_uln",
+        "medicines",
+        "allergy",
+        "pregnancy",
+        "lactation",
+        "withdrawal_severity",
+        "maoi_type",
+        "maoi_stopped_at",
+        "elderly_population",
+        "dementia",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "liver_injury_signs",
+        "transaminases_rising",
+        "overweight_obesity",
+        "fatty_liver",
+        "diabetes",
+        "alcohol_abuse",
+        "alcohol_use",
+        "mania",
+        "mania_symptoms",
+        "suicide_risk",
+        "ect",
+        "renal_state",
+        "from_hepatic",
+        "akathisia",
+        "qt_risk",
+        "bleeding_risk",
+        "hyponatremia_risk",
+        "seizure_state"
+      ],
+      "full_independent_medical_conditions_review_complete": false,
+      "scope": "Все clinical parameter occurrences и ветки карточки просмотрены; основные уникальные числа сопоставлены с оригиналами. Все4953 случаи проверены структурно, ключевые результаты первично; каждый клинический предикат/взаимодействие не сертифицирован исчерпывающе.",
+      "findings": [
+        "V2-04",
+        "V2-08",
+        "V2-12"
+      ],
+      "unverified": "Полная per-condition necessity/counterexample sufficiency и все уникальные safety/interactions; отмеченные дефекты требуют исправления и новой первичной проверки.",
+      "recheck_findings": []
+    },
+    {
+      "rule_id": "switch-ser-esc",
+      "identity": {
+        "title": "сертралин → эсциталопрам: ограничения российских источников",
+        "mode": "switch",
+        "drug_inn": null,
+        "from_drug_inn": "сертралин",
+        "to_drug_inn": "эсциталопрам",
+        "formulation": {
+          "from": "Золофт, таблетки 50/100 мг",
+          "to": "Селектра, таблетки 5/10/15/20 мг, ОХЛП 05.11.2025"
+        },
+        "route": "oral",
+        "diagnosis_label_ru": "Самостоятельный депрессивный эпизод/рекуррентная депрессия у взрослых",
+        "classification_system": "МКБ-10",
+        "diagnosis_code": "F32/F33",
+        "jurisdiction": "RU_versioned_sources",
+        "formulation_confirmation": "§3 с.1–2: equal halves for 10/15/20 mg; no half-dose claim for 5 mg"
+      },
+      "source_ids": [
+        "RU-DEP",
+        "RU-SER",
+        "RU-ESC"
+      ],
+      "parameters_reviewed": 1,
+      "branches_inspected": [
+        "pair_gap"
+      ],
+      "prepared_case_count": 50,
+      "inputs_inventory_inspected": [
+        "from_form",
+        "to_form",
+        "current_dose",
+        "duration",
+        "last_dose_time",
+        "withdrawal_symptoms",
+        "medicines",
+        "target_applicability",
+        "maoi_type",
+        "maoi_stopped_at",
+        "mania_symptoms",
+        "target_arrhythmia_signs",
+        "target_serotonin_syndrome_signs",
+        "target_seizure_state",
+        "new_seizures"
+      ],
+      "full_independent_medical_conditions_review_complete": false,
+      "scope": "Все clinical parameter occurrences и ветки карточки просмотрены; основные уникальные числа сопоставлены с оригиналами. Все4953 случаи проверены структурно, ключевые результаты первично; каждый клинический предикат/взаимодействие не сертифицирован исчерпывающе.",
+      "findings": [
+        "V2-07",
+        "V2-08",
+        "V2-12"
+      ],
+      "unverified": "Полная per-condition necessity/counterexample sufficiency и все уникальные safety/interactions; отмеченные дефекты требуют исправления и новой первичной проверки.",
+      "recheck_findings": [
+        "R1-03"
+      ]
+    },
+    {
+      "rule_id": "venla-xr-gad-start",
+      "identity": {
+        "title": "Венлафаксин XR: ГТР, старт",
+        "mode": "start",
+        "drug_inn": "венлафаксин",
+        "from_drug_inn": null,
+        "to_drug_inn": null,
+        "formulation": "Велаксин, капсулы пролонгированного высвобождения 75/150 мг",
+        "route": "oral",
+        "diagnosis_label_ru": "ГТР",
+        "classification_system": "МКБ-10",
+        "diagnosis_code": "F41.1",
+        "jurisdiction": "RU_versioned_sources"
+      },
+      "source_ids": [
+        "RU-VENLA-XR",
+        "RU-GAD"
+      ],
+      "parameters_reviewed": 5,
+      "branches_inspected": [
+        "usual",
+        "renal_reduction",
+        "hepatic_reduction",
+        "joint_modifiers"
+      ],
+      "prepared_case_count": 217,
+      "inputs_inventory_inspected": [
+        "age",
+        "form",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "maoi_type",
+        "maoi_stopped_at",
+        "recent_infarction",
+        "unstable_angina",
+        "heart_failure",
+        "coronary_disease",
+        "ecg_change",
+        "qt_risk",
+        "electrolyte_imbalance",
+        "hypertension",
+        "tachycardia",
+        "seizure_history",
+        "glaucoma",
+        "mania",
+        "bleeding_risk",
+        "low_body_mass",
+        "urinary_impairment",
+        "low_blood_pressure",
+        "diabetes",
+        "recent_stroke",
+        "hyponatremia_risk",
+        "ect",
+        "hypercholesterolemia",
+        "alcohol_use",
+        "suicide_risk",
+        "pregnancy_suspected",
+        "diastolic_BP",
+        "current_allergic_reaction"
+      ],
+      "full_independent_medical_conditions_review_complete": false,
+      "scope": "Все clinical parameter occurrences и ветки карточки просмотрены; основные уникальные числа сопоставлены с оригиналами. Все4953 случаи проверены структурно, ключевые результаты первично; каждый клинический предикат/взаимодействие не сертифицирован исчерпывающе.",
+      "findings": [
+        "V2-08",
+        "V2-09",
+        "V2-10",
+        "V2-12"
+      ],
+      "unverified": "Полная per-condition necessity/counterexample sufficiency и все уникальные safety/interactions; отмеченные дефекты требуют исправления и новой первичной проверки.",
+      "recheck_findings": [
+        "R1-02"
+      ]
+    },
+    {
+      "rule_id": "venla-xr-panic-form-limit",
+      "identity": {
+        "title": "Венлафаксин XR: панический старт, ограничение формы",
+        "mode": "start",
+        "drug_inn": "венлафаксин",
+        "from_drug_inn": null,
+        "to_drug_inn": null,
+        "formulation": "Велаксин, XR 75/150 мг; 37,5 мг XR в этой форме отсутствует",
+        "route": "oral",
+        "diagnosis_label_ru": "Паническое расстройство",
+        "classification_system": "МКБ-10",
+        "diagnosis_code": "F41.0",
+        "jurisdiction": "RU_versioned_sources"
+      },
+      "source_ids": [
+        "RU-VENLA-XR",
+        "RU-PANIC",
+        "RU-VENLA-IR"
+      ],
+      "parameters_reviewed": 4,
+      "branches_inspected": [
+        "form_limit"
+      ],
+      "prepared_case_count": 208,
+      "inputs_inventory_inspected": [
+        "age",
+        "form",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "maoi_type",
+        "maoi_stopped_at",
+        "recent_infarction",
+        "unstable_angina",
+        "heart_failure",
+        "coronary_disease",
+        "ecg_change",
+        "qt_risk",
+        "electrolyte_imbalance",
+        "hypertension",
+        "tachycardia",
+        "seizure_history",
+        "glaucoma",
+        "mania",
+        "bleeding_risk",
+        "low_body_mass",
+        "urinary_impairment",
+        "low_blood_pressure",
+        "diabetes",
+        "recent_stroke",
+        "hyponatremia_risk",
+        "ect",
+        "hypercholesterolemia",
+        "alcohol_use",
+        "suicide_risk",
+        "pregnancy_suspected",
+        "diastolic_BP",
+        "current_allergic_reaction"
+      ],
+      "full_independent_medical_conditions_review_complete": false,
+      "scope": "Все clinical parameter occurrences и ветки карточки просмотрены; основные уникальные числа сопоставлены с оригиналами. Все4953 случаи проверены структурно, ключевые результаты первично; каждый клинический предикат/взаимодействие не сертифицирован исчерпывающе.",
+      "findings": [
+        "V2-01",
+        "V2-08",
+        "V2-09",
+        "V2-10",
+        "V2-12"
+      ],
+      "unverified": "Полная per-condition necessity/counterexample sufficiency и все уникальные safety/interactions; отмеченные дефекты требуют исправления и новой первичной проверки.",
+      "recheck_findings": []
+    },
+    {
+      "rule_id": "venla-xr-social-start",
+      "identity": {
+        "title": "Венлафаксин XR: социальная тревога, старт",
+        "mode": "start",
+        "drug_inn": "венлафаксин",
+        "from_drug_inn": null,
+        "to_drug_inn": null,
+        "formulation": "Велаксин, капсулы пролонгированного высвобождения 75/150 мг",
+        "route": "oral",
+        "diagnosis_label_ru": "Социальное тревожное расстройство",
+        "classification_system": "МКБ-10",
+        "diagnosis_code": "F40.1",
+        "jurisdiction": "RU_versioned_sources"
+      },
+      "source_ids": [
+        "RU-VENLA-XR",
+        "RU-PHOB"
+      ],
+      "parameters_reviewed": 5,
+      "branches_inspected": [
+        "usual",
+        "renal_reduction",
+        "hepatic_reduction",
+        "joint_modifiers"
+      ],
+      "prepared_case_count": 217,
+      "inputs_inventory_inspected": [
+        "age",
+        "form",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "maoi_type",
+        "maoi_stopped_at",
+        "recent_infarction",
+        "unstable_angina",
+        "heart_failure",
+        "coronary_disease",
+        "ecg_change",
+        "qt_risk",
+        "electrolyte_imbalance",
+        "hypertension",
+        "tachycardia",
+        "seizure_history",
+        "glaucoma",
+        "mania",
+        "bleeding_risk",
+        "low_body_mass",
+        "urinary_impairment",
+        "low_blood_pressure",
+        "diabetes",
+        "recent_stroke",
+        "hyponatremia_risk",
+        "ect",
+        "hypercholesterolemia",
+        "alcohol_use",
+        "suicide_risk",
+        "pregnancy_suspected",
+        "diastolic_BP",
+        "current_allergic_reaction"
+      ],
+      "full_independent_medical_conditions_review_complete": false,
+      "scope": "Все clinical parameter occurrences и ветки карточки просмотрены; основные уникальные числа сопоставлены с оригиналами. Все4953 случаи проверены структурно, ключевые результаты первично; каждый клинический предикат/взаимодействие не сертифицирован исчерпывающе.",
+      "findings": [
+        "V2-08",
+        "V2-09",
+        "V2-10",
+        "V2-12"
+      ],
+      "unverified": "Полная per-condition necessity/counterexample sufficiency и все уникальные safety/interactions; отмеченные дефекты требуют исправления и новой первичной проверки.",
+      "recheck_findings": []
+    },
+    {
+      "rule_id": "venla-xr-taper-limit",
+      "identity": {
+        "title": "венлафаксин: ограничения отмены",
+        "mode": "taper",
+        "drug_inn": "венлафаксин",
+        "from_drug_inn": null,
+        "to_drug_inn": null,
+        "formulation": "Велаксин XR 75/150 мг",
+        "route": "oral",
+        "diagnosis_label_ru": "Депрессия / указанная коморбидность",
+        "classification_system": "МКБ-10",
+        "diagnosis_code": "F41.1/F32/F33",
+        "jurisdiction": "RU_versioned_sources"
+      },
+      "source_ids": [
+        "RU-VENLA-XR",
+        "RU-GAD"
+      ],
+      "parameters_reviewed": 1,
+      "branches_inspected": [
+        "source_limit",
+        "withdrawal"
+      ],
+      "prepared_case_count": 54,
+      "inputs_inventory_inspected": [
+        "age",
+        "form",
+        "current_dose",
+        "duration",
+        "withdrawal_severity",
+        "past_withdrawal",
+        "diastolic_BP",
+        "current_allergic_reaction"
+      ],
+      "full_independent_medical_conditions_review_complete": false,
+      "scope": "Все clinical parameter occurrences и ветки карточки просмотрены; основные уникальные числа сопоставлены с оригиналами. Все4953 случаи проверены структурно, ключевые результаты первично; каждый клинический предикат/взаимодействие не сертифицирован исчерпывающе.",
+      "findings": [
+        "V2-06",
+        "V2-08",
+        "V2-12"
+      ],
+      "unverified": "Полная per-condition necessity/counterexample sufficiency и все уникальные safety/interactions; отмеченные дефекты требуют исправления и новой первичной проверки.",
+      "recheck_findings": []
+    }
+  ],
+  "parameters": [
+    {
+      "rule_id": "ago-depression-start",
+      "parameter_id": "start",
+      "value": 25,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-AGO",
+      "declared_locator": "§4.2 PDF с.1–2",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "ago-depression-start",
+      "parameter_id": "frequency",
+      "value": 1,
+      "lower": null,
+      "upper": null,
+      "unit": "administration/day",
+      "source_ref": "RU-AGO",
+      "declared_locator": "§4.2 PDF с.1–2",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "ago-depression-start",
+      "parameter_id": "conditional_higher_dose",
+      "value": 50,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-AGO",
+      "declared_locator": "§4.2 PDF с.1–2",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "ago-depression-start",
+      "parameter_id": "earliest_higher_stage",
+      "value": 2,
+      "lower": null,
+      "upper": null,
+      "unit": "week",
+      "source_ref": "RU-AGO",
+      "declared_locator": "§4.2 PDF с.1–2",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "ago-depression-start",
+      "parameter_id": "age_limit",
+      "value": 75,
+      "lower": null,
+      "upper": null,
+      "unit": "year",
+      "source_ref": "RU-AGO",
+      "declared_locator": "§4.2 PDF с.1–2",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "ago-depression-start",
+      "parameter_id": "transaminase_limit",
+      "value": 3,
+      "lower": null,
+      "upper": null,
+      "unit": "xULN",
+      "source_ref": "RU-AGO",
+      "declared_locator": "§4.2–4.3 с.1–3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "ago-depression-start",
+      "parameter_id": "repeat_liver_tests_hours",
+      "value": 48,
+      "lower": null,
+      "upper": null,
+      "unit": "hour",
+      "source_ref": "RU-AGO",
+      "declared_locator": "§4.4 PDF с.4",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "ago-depression-start",
+      "parameter_id": "liver_monitoring_weeks",
+      "value": [
+        3,
+        6,
+        12,
+        24
+      ],
+      "lower": null,
+      "upper": null,
+      "unit": "week",
+      "source_ref": "RU-AGO",
+      "declared_locator": "§4.2 с.1; §4.4 с.3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "ago-gad-start",
+      "parameter_id": "start",
+      "value": 25,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-AGO",
+      "declared_locator": "§4.2 PDF с.1–2",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "ago-gad-start",
+      "parameter_id": "frequency",
+      "value": 1,
+      "lower": null,
+      "upper": null,
+      "unit": "administration/day",
+      "source_ref": "RU-AGO",
+      "declared_locator": "§4.2 PDF с.1–2",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "ago-gad-start",
+      "parameter_id": "conditional_higher_dose",
+      "value": 50,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-AGO",
+      "declared_locator": "§4.2 PDF с.1–2",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "ago-gad-start",
+      "parameter_id": "earliest_higher_stage",
+      "value": 4,
+      "lower": null,
+      "upper": null,
+      "unit": "week",
+      "source_ref": "RU-AGO",
+      "declared_locator": "§4.2 PDF с.1–2",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "ago-gad-start",
+      "parameter_id": "age_limit",
+      "value": 65,
+      "lower": null,
+      "upper": null,
+      "unit": "year",
+      "source_ref": "RU-AGO",
+      "declared_locator": "§4.2 PDF с.1–2",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "ago-gad-start",
+      "parameter_id": "transaminase_limit",
+      "value": 3,
+      "lower": null,
+      "upper": null,
+      "unit": "xULN",
+      "source_ref": "RU-AGO",
+      "declared_locator": "§4.2–4.3 с.1–3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "ago-gad-start",
+      "parameter_id": "repeat_liver_tests_hours",
+      "value": 48,
+      "lower": null,
+      "upper": null,
+      "unit": "hour",
+      "source_ref": "RU-AGO",
+      "declared_locator": "§4.4 PDF с.4",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "ago-gad-start",
+      "parameter_id": "liver_monitoring_weeks",
+      "value": [
+        3,
+        6,
+        12,
+        24
+      ],
+      "lower": null,
+      "upper": null,
+      "unit": "week",
+      "source_ref": "RU-AGO",
+      "declared_locator": "§4.2 с.1; §4.4 с.3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "dulox-depression-start",
+      "parameter_id": "start",
+      "value": 60,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-DULOX",
+      "declared_locator": "§4.2 с.2",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "dulox-depression-start",
+      "parameter_id": "frequency",
+      "value": 1,
+      "lower": null,
+      "upper": null,
+      "unit": "administration/day",
+      "source_ref": "RU-DULOX",
+      "declared_locator": "§4.2 с.2",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "dulox-gad-adjust",
+      "parameter_id": "usual_maintenance",
+      "value": 60,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-DULOX",
+      "declared_locator": "§4.2 с.2",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "dulox-gad-adjust",
+      "parameter_id": "higher_choice_1",
+      "value": 90,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-DULOX",
+      "declared_locator": "§4.2 с.2",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "dulox-gad-adjust",
+      "parameter_id": "higher_choice_2",
+      "value": 120,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-DULOX",
+      "declared_locator": "§4.2 с.2",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "dulox-gad-start",
+      "parameter_id": "usual_start",
+      "value": 30,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-DULOX",
+      "declared_locator": "§4.2 с.2",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "dulox-gad-start",
+      "parameter_id": "with_depression_start",
+      "value": 60,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-DULOX",
+      "declared_locator": "§4.2 с.2",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "dulox-gad-start",
+      "parameter_id": "elderly_initial_period",
+      "value": 2,
+      "lower": null,
+      "upper": null,
+      "unit": "week",
+      "source_ref": "RU-DULOX",
+      "declared_locator": "§4.2 с.3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "dulox-gad-start",
+      "parameter_id": "usual_maintenance",
+      "value": 60,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-DULOX",
+      "declared_locator": "§4.2 с.2",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "dulox-gad-start",
+      "parameter_id": "renal_no_adjust_lower",
+      "value": 30,
+      "lower": null,
+      "upper": null,
+      "unit": "mL/min",
+      "source_ref": "RU-DULOX",
+      "declared_locator": "§4.2 с.3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "dulox-taper-limit",
+      "parameter_id": "source_taper_period",
+      "value": [
+        1,
+        2
+      ],
+      "lower": null,
+      "upper": null,
+      "unit": "week",
+      "source_ref": "RU-DULOX",
+      "declared_locator": "§4.2 с.3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "dulox-taper-limit",
+      "parameter_id": "source_minimum_weeks_4_4",
+      "value": 2,
+      "lower": null,
+      "upper": null,
+      "unit": "week",
+      "source_ref": "RU-DULOX",
+      "declared_locator": "§4.4 с.6, Отмена лечения",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "esc-adult-adjust",
+      "parameter_id": "maximum",
+      "value": 20,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-ESC",
+      "declared_locator": "§4.2, PDF с.2–3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "esc-adult-adjust",
+      "parameter_id": "frequency",
+      "value": 1,
+      "lower": null,
+      "upper": null,
+      "unit": "administration/day",
+      "source_ref": "RU-ESC",
+      "declared_locator": "§4.2, PDF с.2–3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "esc-adult-adjust",
+      "parameter_id": "adult_minimum",
+      "value": 18,
+      "lower": null,
+      "upper": null,
+      "unit": "year",
+      "source_ref": "RU-ESC",
+      "declared_locator": "§4.1, PDF с.2",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "esc-adult-adjust",
+      "parameter_id": "source_form_strengths",
+      "value": [
+        5,
+        10,
+        15,
+        20
+      ],
+      "lower": null,
+      "upper": null,
+      "unit": "mg",
+      "source_ref": "RU-ESC",
+      "declared_locator": "§1–3, PDF с.1–2",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "esc-adult-adjust",
+      "parameter_id": "renal_caution_threshold",
+      "value": 30,
+      "lower": null,
+      "upper": null,
+      "unit": "mL/min",
+      "source_ref": "RU-ESC",
+      "declared_locator": "§4.2 с.3, почечная недостаточность",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "esc-cyp2c19-start",
+      "parameter_id": "start",
+      "value": 5,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-ESC",
+      "declared_locator": "§4.2, PDF с.2–3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "esc-cyp2c19-start",
+      "parameter_id": "after",
+      "value": 10,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-ESC",
+      "declared_locator": "§4.2, PDF с.2–3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "esc-cyp2c19-start",
+      "parameter_id": "frequency",
+      "value": 1,
+      "lower": null,
+      "upper": null,
+      "unit": "administration/day",
+      "source_ref": "RU-ESC",
+      "declared_locator": "§4.2, PDF с.2–3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "esc-cyp2c19-start",
+      "parameter_id": "interval",
+      "value": 2,
+      "lower": null,
+      "upper": null,
+      "unit": "week",
+      "source_ref": "RU-ESC",
+      "declared_locator": "§4.2, PDF с.2–3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "esc-cyp2c19-start",
+      "parameter_id": "adult_minimum",
+      "value": 18,
+      "lower": null,
+      "upper": null,
+      "unit": "year",
+      "source_ref": "RU-ESC",
+      "declared_locator": "§4.1, PDF с.2",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "esc-cyp2c19-start",
+      "parameter_id": "source_form_strengths",
+      "value": [
+        5,
+        10,
+        15,
+        20
+      ],
+      "lower": null,
+      "upper": null,
+      "unit": "mg",
+      "source_ref": "RU-ESC",
+      "declared_locator": "§1–3, PDF с.1–2",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "esc-cyp2c19-start",
+      "parameter_id": "renal_caution_threshold",
+      "value": 30,
+      "lower": null,
+      "upper": null,
+      "unit": "mL/min",
+      "source_ref": "RU-ESC",
+      "declared_locator": "§4.2 с.3, почечная недостаточность",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "esc-elderly-start",
+      "parameter_id": "start",
+      "value": 5,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-ESC",
+      "declared_locator": "§4.2, PDF с.2–3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "esc-elderly-start",
+      "parameter_id": "after",
+      "value": 10,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-ESC",
+      "declared_locator": "§4.2, PDF с.2–3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "esc-elderly-start",
+      "parameter_id": "frequency",
+      "value": 1,
+      "lower": null,
+      "upper": null,
+      "unit": "administration/day",
+      "source_ref": "RU-ESC",
+      "declared_locator": "§4.2, PDF с.2–3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "esc-elderly-start",
+      "parameter_id": "elderly_threshold",
+      "value": 65,
+      "lower": null,
+      "upper": null,
+      "unit": "year",
+      "source_ref": "RU-ESC",
+      "declared_locator": "§4.2 с.3, лица пожилого возраста",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "esc-elderly-start",
+      "parameter_id": "adult_minimum",
+      "value": 18,
+      "lower": null,
+      "upper": null,
+      "unit": "year",
+      "source_ref": "RU-ESC",
+      "declared_locator": "§4.1, PDF с.2",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "esc-elderly-start",
+      "parameter_id": "source_form_strengths",
+      "value": [
+        5,
+        10,
+        15,
+        20
+      ],
+      "lower": null,
+      "upper": null,
+      "unit": "mg",
+      "source_ref": "RU-ESC",
+      "declared_locator": "§1–3, PDF с.1–2",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "esc-elderly-start",
+      "parameter_id": "renal_caution_threshold",
+      "value": 30,
+      "lower": null,
+      "upper": null,
+      "unit": "mL/min",
+      "source_ref": "RU-ESC",
+      "declared_locator": "§4.2 с.3, почечная недостаточность",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "esc-gad-start",
+      "parameter_id": "start",
+      "value": 10,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-ESC",
+      "declared_locator": "§4.2, PDF с.2–3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "esc-gad-start",
+      "parameter_id": "maximum",
+      "value": 20,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-ESC",
+      "declared_locator": "§4.2, PDF с.2–3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "esc-gad-start",
+      "parameter_id": "frequency",
+      "value": 1,
+      "lower": null,
+      "upper": null,
+      "unit": "administration/day",
+      "source_ref": "RU-ESC",
+      "declared_locator": "§4.2, PDF с.2–3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "esc-gad-start",
+      "parameter_id": "elderly_threshold",
+      "value": 65,
+      "lower": null,
+      "upper": null,
+      "unit": "year",
+      "source_ref": "RU-ESC",
+      "declared_locator": "§4.2 с.3, лица пожилого возраста",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "esc-gad-start",
+      "parameter_id": "adult_minimum",
+      "value": 18,
+      "lower": null,
+      "upper": null,
+      "unit": "year",
+      "source_ref": "RU-ESC",
+      "declared_locator": "§4.1, PDF с.2",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "esc-gad-start",
+      "parameter_id": "source_form_strengths",
+      "value": [
+        5,
+        10,
+        15,
+        20
+      ],
+      "lower": null,
+      "upper": null,
+      "unit": "mg",
+      "source_ref": "RU-ESC",
+      "declared_locator": "§1–3, PDF с.1–2",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "esc-gad-start",
+      "parameter_id": "renal_caution_threshold",
+      "value": 30,
+      "lower": null,
+      "upper": null,
+      "unit": "mL/min",
+      "source_ref": "RU-ESC",
+      "declared_locator": "§4.2 с.3, почечная недостаточность",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "esc-hepatic-start",
+      "parameter_id": "start",
+      "value": 5,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-ESC",
+      "declared_locator": "§4.2, PDF с.2–3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "esc-hepatic-start",
+      "parameter_id": "after",
+      "value": 10,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-ESC",
+      "declared_locator": "§4.2, PDF с.2–3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "esc-hepatic-start",
+      "parameter_id": "frequency",
+      "value": 1,
+      "lower": null,
+      "upper": null,
+      "unit": "administration/day",
+      "source_ref": "RU-ESC",
+      "declared_locator": "§4.2, PDF с.2–3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "esc-hepatic-start",
+      "parameter_id": "interval",
+      "value": 2,
+      "lower": null,
+      "upper": null,
+      "unit": "week",
+      "source_ref": "RU-ESC",
+      "declared_locator": "§4.2, PDF с.2–3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "esc-hepatic-start",
+      "parameter_id": "adult_minimum",
+      "value": 18,
+      "lower": null,
+      "upper": null,
+      "unit": "year",
+      "source_ref": "RU-ESC",
+      "declared_locator": "§4.1, PDF с.2",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "esc-hepatic-start",
+      "parameter_id": "source_form_strengths",
+      "value": [
+        5,
+        10,
+        15,
+        20
+      ],
+      "lower": null,
+      "upper": null,
+      "unit": "mg",
+      "source_ref": "RU-ESC",
+      "declared_locator": "§1–3, PDF с.1–2",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "esc-hepatic-start",
+      "parameter_id": "renal_caution_threshold",
+      "value": 30,
+      "lower": null,
+      "upper": null,
+      "unit": "mL/min",
+      "source_ref": "RU-ESC",
+      "declared_locator": "§4.2 с.3, почечная недостаточность",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "esc-panic-start",
+      "parameter_id": "start",
+      "value": 5,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-ESC",
+      "declared_locator": "§4.2, PDF с.2–3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "esc-panic-start",
+      "parameter_id": "maximum",
+      "value": 20,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-ESC",
+      "declared_locator": "§4.2, PDF с.2–3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "esc-panic-start",
+      "parameter_id": "frequency",
+      "value": 1,
+      "lower": null,
+      "upper": null,
+      "unit": "administration/day",
+      "source_ref": "RU-ESC",
+      "declared_locator": "§4.2, PDF с.2–3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "esc-panic-start",
+      "parameter_id": "elderly_threshold",
+      "value": 65,
+      "lower": null,
+      "upper": null,
+      "unit": "year",
+      "source_ref": "RU-ESC",
+      "declared_locator": "§4.2 с.3, лица пожилого возраста",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "esc-panic-start",
+      "parameter_id": "after_week",
+      "value": 10,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-ESC",
+      "declared_locator": "§4.2, PDF с.2–3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "esc-panic-start",
+      "parameter_id": "interval",
+      "value": 1,
+      "lower": null,
+      "upper": null,
+      "unit": "week",
+      "source_ref": "RU-ESC",
+      "declared_locator": "§4.2, PDF с.2–3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "esc-panic-start",
+      "parameter_id": "adult_minimum",
+      "value": 18,
+      "lower": null,
+      "upper": null,
+      "unit": "year",
+      "source_ref": "RU-ESC",
+      "declared_locator": "§4.1, PDF с.2",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "esc-panic-start",
+      "parameter_id": "source_form_strengths",
+      "value": [
+        5,
+        10,
+        15,
+        20
+      ],
+      "lower": null,
+      "upper": null,
+      "unit": "mg",
+      "source_ref": "RU-ESC",
+      "declared_locator": "§1–3, PDF с.1–2",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "esc-panic-start",
+      "parameter_id": "renal_caution_threshold",
+      "value": 30,
+      "lower": null,
+      "upper": null,
+      "unit": "mL/min",
+      "source_ref": "RU-ESC",
+      "declared_locator": "§4.2 с.3, почечная недостаточность",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "esc-social-start",
+      "parameter_id": "start",
+      "value": 10,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-ESC",
+      "declared_locator": "§4.2, PDF с.2–3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "esc-social-start",
+      "parameter_id": "maximum",
+      "value": 20,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-ESC",
+      "declared_locator": "§4.2, PDF с.2–3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "esc-social-start",
+      "parameter_id": "frequency",
+      "value": 1,
+      "lower": null,
+      "upper": null,
+      "unit": "administration/day",
+      "source_ref": "RU-ESC",
+      "declared_locator": "§4.2, PDF с.2–3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "esc-social-start",
+      "parameter_id": "elderly_threshold",
+      "value": 65,
+      "lower": null,
+      "upper": null,
+      "unit": "year",
+      "source_ref": "RU-ESC",
+      "declared_locator": "§4.2 с.3, лица пожилого возраста",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "esc-social-start",
+      "parameter_id": "adult_minimum",
+      "value": 18,
+      "lower": null,
+      "upper": null,
+      "unit": "year",
+      "source_ref": "RU-ESC",
+      "declared_locator": "§4.1, PDF с.2",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "esc-social-start",
+      "parameter_id": "source_form_strengths",
+      "value": [
+        5,
+        10,
+        15,
+        20
+      ],
+      "lower": null,
+      "upper": null,
+      "unit": "mg",
+      "source_ref": "RU-ESC",
+      "declared_locator": "§1–3, PDF с.1–2",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "esc-social-start",
+      "parameter_id": "renal_caution_threshold",
+      "value": 30,
+      "lower": null,
+      "upper": null,
+      "unit": "mL/min",
+      "source_ref": "RU-ESC",
+      "declared_locator": "§4.2 с.3, почечная недостаточность",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "esc-taper-limit",
+      "parameter_id": "reported_duration",
+      "value": null,
+      "lower": 1,
+      "upper": null,
+      "unit": "week",
+      "source_ref": "RU-ESC",
+      "declared_locator": "§4.2 с.3; §4.4 с.6",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "esc-taper-limit",
+      "parameter_id": "adult_minimum",
+      "value": 18,
+      "lower": null,
+      "upper": null,
+      "unit": "year",
+      "source_ref": "RU-ESC",
+      "declared_locator": "§4.1, PDF с.2",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "esc-taper-limit",
+      "parameter_id": "source_form_strengths",
+      "value": [
+        5,
+        10,
+        15,
+        20
+      ],
+      "lower": null,
+      "upper": null,
+      "unit": "mg",
+      "source_ref": "RU-ESC",
+      "declared_locator": "§1–3, PDF с.1–2",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "esc-taper-limit",
+      "parameter_id": "renal_caution_threshold",
+      "value": 30,
+      "lower": null,
+      "upper": null,
+      "unit": "mL/min",
+      "source_ref": "RU-ESC",
+      "declared_locator": "§4.2 с.3, почечная недостаточность",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "fluvox-depression-start",
+      "parameter_id": "start_options",
+      "value": [
+        50,
+        100
+      ],
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-FLUVOX",
+      "declared_locator": "§4.2 PDF с.1–3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "fluvox-depression-start",
+      "parameter_id": "maximum",
+      "value": 300,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-FLUVOX",
+      "declared_locator": "§4.2 PDF с.1–3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "fluvox-depression-start",
+      "parameter_id": "review_time",
+      "value": null,
+      "lower": 3,
+      "upper": 4,
+      "unit": "week",
+      "source_ref": "RU-FLUVOX",
+      "declared_locator": "§4.2 PDF с.1–3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "fluvox-depression-start",
+      "parameter_id": "divided_dose_threshold",
+      "value": 150,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-FLUVOX",
+      "declared_locator": "§4.2 PDF с.1–3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "fluvox-depression-start",
+      "parameter_id": "irreversible_maoi_wait",
+      "value": 2,
+      "lower": null,
+      "upper": null,
+      "unit": "week",
+      "source_ref": "RU-FLUVOX",
+      "declared_locator": "§4.3 PDF с.3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "fluvox-depression-start",
+      "parameter_id": "reversible_maoi_next_day",
+      "value": 1,
+      "lower": null,
+      "upper": null,
+      "unit": "day",
+      "source_ref": "RU-FLUVOX",
+      "declared_locator": "§4.3 PDF с.3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "fluvox-depression-start",
+      "parameter_id": "to_maoi_wait",
+      "value": 1,
+      "lower": null,
+      "upper": null,
+      "unit": "week",
+      "source_ref": "RU-FLUVOX",
+      "declared_locator": "§4.3 PDF с.3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "fluvox-taper-limit",
+      "parameter_id": "source_minimum",
+      "value": [
+        1,
+        2
+      ],
+      "lower": null,
+      "upper": null,
+      "unit": "week",
+      "source_ref": "RU-FLUVOX",
+      "declared_locator": "§4.2 PDF с.2",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "parox-panic-kr",
+      "parameter_id": "start",
+      "value": 10,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-PANIC",
+      "declared_locator": "§3.1, PDF с.26",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "parox-panic-kr",
+      "parameter_id": "step",
+      "value": 10,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-PANIC",
+      "declared_locator": "§3.1, PDF с.26",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "parox-panic-kr",
+      "parameter_id": "interval",
+      "value": 1,
+      "lower": null,
+      "upper": null,
+      "unit": "week",
+      "source_ref": "RU-PANIC",
+      "declared_locator": "§3.1, PDF с.26",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "parox-panic-kr",
+      "parameter_id": "therapeutic_range",
+      "value": null,
+      "lower": 40,
+      "upper": 60,
+      "unit": "mg/day",
+      "source_ref": "RU-PANIC",
+      "declared_locator": "§3.1, PDF с.26",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "parox-panic-kr",
+      "parameter_id": "recommended_dose",
+      "value": 40,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-PAROX",
+      "declared_locator": "§4.2, PDF с.3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "parox-panic-kr",
+      "parameter_id": "maximum",
+      "value": 60,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-PAROX",
+      "declared_locator": "§4.2, PDF с.3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "parox-panic-kr",
+      "parameter_id": "elderly_maximum",
+      "value": 40,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-PAROX",
+      "declared_locator": "§4.2, PDF с.4",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "parox-panic-kr",
+      "parameter_id": "frequency",
+      "value": 1,
+      "lower": null,
+      "upper": null,
+      "unit": "administration/day",
+      "source_ref": "RU-PAROX",
+      "declared_locator": "§4.2, PDF с.4",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "parox-panic-kr",
+      "parameter_id": "form_strength",
+      "value": 20,
+      "lower": null,
+      "upper": null,
+      "unit": "mg",
+      "source_ref": "RU-PAROX",
+      "declared_locator": "§1–3, PDF с.1",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "parox-panic-kr",
+      "parameter_id": "allowed_half_dose",
+      "value": 10,
+      "lower": null,
+      "upper": null,
+      "unit": "mg",
+      "source_ref": "RU-PAROX",
+      "declared_locator": "§4.2, PDF с.4",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "parox-taper-example",
+      "parameter_id": "weekly_decrement",
+      "value": 10,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-PAROX",
+      "declared_locator": "§4.2, PDF с.3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "parox-taper-example",
+      "parameter_id": "decrement_interval",
+      "value": 1,
+      "lower": null,
+      "upper": null,
+      "unit": "week",
+      "source_ref": "RU-PAROX",
+      "declared_locator": "§4.2, PDF с.3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "parox-taper-example",
+      "parameter_id": "last_source_dose",
+      "value": 20,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-PAROX",
+      "declared_locator": "§4.2, PDF с.4",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "parox-taper-example",
+      "parameter_id": "last_hold",
+      "value": 1,
+      "lower": null,
+      "upper": null,
+      "unit": "week",
+      "source_ref": "RU-PAROX",
+      "declared_locator": "§4.2, PDF с.4",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "preg-gad-adjust",
+      "parameter_id": "d150",
+      "value": 150,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-PREG",
+      "declared_locator": "§4.2 ГТР, с.3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "preg-gad-adjust",
+      "parameter_id": "d300",
+      "value": 300,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-PREG",
+      "declared_locator": "§4.2 ГТР, с.3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "preg-gad-adjust",
+      "parameter_id": "d450",
+      "value": 450,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-PREG",
+      "declared_locator": "§4.2 ГТР, с.3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "preg-gad-adjust",
+      "parameter_id": "d600",
+      "value": 600,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-PREG",
+      "declared_locator": "§4.2 ГТР, с.3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "preg-gad-adjust",
+      "parameter_id": "interval",
+      "value": 1,
+      "lower": null,
+      "upper": null,
+      "unit": "week",
+      "source_ref": "RU-PREG",
+      "declared_locator": "§4.2 ГТР с.3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "preg-gad-adjust",
+      "parameter_id": "frequency",
+      "value": [
+        2,
+        3
+      ],
+      "lower": null,
+      "upper": null,
+      "unit": "administration/day",
+      "source_ref": "RU-PREG",
+      "declared_locator": "§4.2 с.3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "preg-gad-adjust",
+      "parameter_id": "clcr_normal",
+      "value": 60,
+      "lower": null,
+      "upper": null,
+      "unit": "mL/min",
+      "source_ref": "RU-PREG",
+      "declared_locator": "табл.1 с.5",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "preg-gad-adjust",
+      "parameter_id": "adult_minimum",
+      "value": 18,
+      "lower": null,
+      "upper": null,
+      "unit": "year",
+      "source_ref": "RU-PREG",
+      "declared_locator": "RU-PREG §4.1 с.3; §4.2–4.3 с.5–6",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "preg-gad-adjust",
+      "parameter_id": "source_form_strengths",
+      "value": [
+        25,
+        50,
+        75,
+        100,
+        150,
+        200,
+        300
+      ],
+      "lower": null,
+      "upper": null,
+      "unit": "mg",
+      "source_ref": "RU-PREG",
+      "declared_locator": "Состав/описание: PDF с.1–2",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "preg-gad-start",
+      "parameter_id": "d150",
+      "value": 150,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-PREG",
+      "declared_locator": "§4.2 ГТР, с.3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "preg-gad-start",
+      "parameter_id": "d300",
+      "value": 300,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-PREG",
+      "declared_locator": "§4.2 ГТР, с.3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "preg-gad-start",
+      "parameter_id": "d450",
+      "value": 450,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-PREG",
+      "declared_locator": "§4.2 ГТР, с.3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "preg-gad-start",
+      "parameter_id": "d600",
+      "value": 600,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-PREG",
+      "declared_locator": "§4.2 ГТР, с.3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "preg-gad-start",
+      "parameter_id": "interval",
+      "value": 1,
+      "lower": null,
+      "upper": null,
+      "unit": "week",
+      "source_ref": "RU-PREG",
+      "declared_locator": "§4.2 ГТР с.3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "preg-gad-start",
+      "parameter_id": "frequency",
+      "value": [
+        2,
+        3
+      ],
+      "lower": null,
+      "upper": null,
+      "unit": "administration/day",
+      "source_ref": "RU-PREG",
+      "declared_locator": "§4.2 с.3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "preg-gad-start",
+      "parameter_id": "clcr_normal",
+      "value": 60,
+      "lower": null,
+      "upper": null,
+      "unit": "mL/min",
+      "source_ref": "RU-PREG",
+      "declared_locator": "табл.1 с.5",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "preg-gad-start",
+      "parameter_id": "adult_minimum",
+      "value": 18,
+      "lower": null,
+      "upper": null,
+      "unit": "year",
+      "source_ref": "RU-PREG",
+      "declared_locator": "RU-PREG §4.1 с.3; §4.2–4.3 с.5–6",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "preg-gad-start",
+      "parameter_id": "source_form_strengths",
+      "value": [
+        25,
+        50,
+        75,
+        100,
+        150,
+        200,
+        300
+      ],
+      "lower": null,
+      "upper": null,
+      "unit": "mg",
+      "source_ref": "RU-PREG",
+      "declared_locator": "Состав/описание: PDF с.1–2",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "preg-renal-start",
+      "parameter_id": "clcr_cutoffs",
+      "value": [
+        15,
+        30,
+        60
+      ],
+      "lower": null,
+      "upper": null,
+      "unit": "mL/min",
+      "source_ref": "RU-PREG",
+      "declared_locator": "табл.1 с.5",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "preg-renal-start",
+      "parameter_id": "start_ge60",
+      "value": 150,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-PREG",
+      "declared_locator": "табл.1 с.5",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "preg-renal-start",
+      "parameter_id": "max_ge60",
+      "value": 600,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-PREG",
+      "declared_locator": "табл.1 с.5",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "preg-renal-start",
+      "parameter_id": "start_30_60",
+      "value": 75,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-PREG",
+      "declared_locator": "табл.1 с.5",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "preg-renal-start",
+      "parameter_id": "max_30_60",
+      "value": 300,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-PREG",
+      "declared_locator": "табл.1 с.5",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "preg-renal-start",
+      "parameter_id": "start_15_30",
+      "value": null,
+      "lower": 25,
+      "upper": 50,
+      "unit": "mg/day",
+      "source_ref": "RU-PREG",
+      "declared_locator": "табл.1 с.5",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "preg-renal-start",
+      "parameter_id": "max_15_30",
+      "value": 150,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-PREG",
+      "declared_locator": "табл.1 с.5",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "preg-renal-start",
+      "parameter_id": "start_lt15",
+      "value": 25,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-PREG",
+      "declared_locator": "табл.1 с.5",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "preg-renal-start",
+      "parameter_id": "max_lt15",
+      "value": 75,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-PREG",
+      "declared_locator": "табл.1 с.5",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "preg-renal-start",
+      "parameter_id": "freq_ge30",
+      "value": [
+        2,
+        3
+      ],
+      "lower": null,
+      "upper": null,
+      "unit": "administration/day",
+      "source_ref": "RU-PREG",
+      "declared_locator": "табл.1 с.5",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "preg-renal-start",
+      "parameter_id": "freq_15_30",
+      "value": [
+        1,
+        2
+      ],
+      "lower": null,
+      "upper": null,
+      "unit": "administration/day",
+      "source_ref": "RU-PREG",
+      "declared_locator": "табл.1 с.5",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "preg-renal-start",
+      "parameter_id": "freq_lt15",
+      "value": 1,
+      "lower": null,
+      "upper": null,
+      "unit": "administration/day",
+      "source_ref": "RU-PREG",
+      "declared_locator": "табл.1 с.5",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "preg-renal-start",
+      "parameter_id": "adult_minimum",
+      "value": 18,
+      "lower": null,
+      "upper": null,
+      "unit": "year",
+      "source_ref": "RU-PREG",
+      "declared_locator": "RU-PREG §4.1 с.3; §4.2–4.3 с.5–6",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "preg-renal-start",
+      "parameter_id": "source_form_strengths",
+      "value": [
+        25,
+        50,
+        75,
+        100,
+        150,
+        200,
+        300
+      ],
+      "lower": null,
+      "upper": null,
+      "unit": "mg",
+      "source_ref": "RU-PREG",
+      "declared_locator": "Состав/описание: PDF с.1–2",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "preg-taper-limit",
+      "parameter_id": "reported_duration",
+      "value": null,
+      "lower": 1,
+      "upper": null,
+      "unit": "week",
+      "source_ref": "RU-PREG",
+      "declared_locator": "§4.2 PDF с.4; §4.4 с.9",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "preg-taper-limit",
+      "parameter_id": "adult_minimum",
+      "value": 18,
+      "lower": null,
+      "upper": null,
+      "unit": "year",
+      "source_ref": "RU-PREG",
+      "declared_locator": "RU-PREG §4.1 с.3; §4.2–4.3 с.5–6",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "preg-taper-limit",
+      "parameter_id": "source_form_strengths",
+      "value": [
+        25,
+        50,
+        75,
+        100,
+        150,
+        200,
+        300
+      ],
+      "lower": null,
+      "upper": null,
+      "unit": "mg",
+      "source_ref": "RU-PREG",
+      "declared_locator": "Состав/описание: PDF с.1–2",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "ser-adult-adjust",
+      "parameter_id": "step",
+      "value": 50,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-SER",
+      "declared_locator": "§4.2, PDF с.2–3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "ser-adult-adjust",
+      "parameter_id": "interval",
+      "value": 1,
+      "lower": null,
+      "upper": null,
+      "unit": "week",
+      "source_ref": "RU-SER",
+      "declared_locator": "§4.2, PDF с.2–3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "ser-adult-adjust",
+      "parameter_id": "maximum",
+      "value": 200,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-SER",
+      "declared_locator": "§4.2, PDF с.2–3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "ser-adult-adjust",
+      "parameter_id": "first_standard_dose",
+      "value": 50,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-SER",
+      "declared_locator": "§4.2, PDF с.2–3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "ser-adult-adjust",
+      "parameter_id": "frequency",
+      "value": 1,
+      "lower": null,
+      "upper": null,
+      "unit": "administration/day",
+      "source_ref": "RU-SER",
+      "declared_locator": "§4.2, PDF с.2–3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "ser-adult-adjust",
+      "parameter_id": "adult_minimum",
+      "value": 18,
+      "lower": null,
+      "upper": null,
+      "unit": "year",
+      "source_ref": "RU-SER",
+      "declared_locator": "§4.1, PDF с.1",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "ser-adult-adjust",
+      "parameter_id": "source_form_strengths",
+      "value": [
+        50,
+        100
+      ],
+      "lower": null,
+      "upper": null,
+      "unit": "mg",
+      "source_ref": "RU-SER",
+      "declared_locator": "§2–3, PDF с.1; деление таблетки 50 мг §4.2 с.2",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "ser-panic-start",
+      "parameter_id": "start",
+      "value": 25,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-SER",
+      "declared_locator": "§4.2, PDF с.2–3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "ser-panic-start",
+      "parameter_id": "after_week",
+      "value": 50,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-SER",
+      "declared_locator": "§4.2, PDF с.2–3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "ser-panic-start",
+      "parameter_id": "interval",
+      "value": 1,
+      "lower": null,
+      "upper": null,
+      "unit": "week",
+      "source_ref": "RU-SER",
+      "declared_locator": "§4.2, PDF с.2–3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "ser-panic-start",
+      "parameter_id": "frequency",
+      "value": 1,
+      "lower": null,
+      "upper": null,
+      "unit": "administration/day",
+      "source_ref": "RU-SER",
+      "declared_locator": "§4.2, PDF с.2–3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "ser-panic-start",
+      "parameter_id": "maximum",
+      "value": 200,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-SER",
+      "declared_locator": "§4.2, PDF с.2–3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "ser-panic-start",
+      "parameter_id": "adult_minimum",
+      "value": 18,
+      "lower": null,
+      "upper": null,
+      "unit": "year",
+      "source_ref": "RU-SER",
+      "declared_locator": "§4.1, PDF с.1",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "ser-panic-start",
+      "parameter_id": "source_form_strengths",
+      "value": [
+        50,
+        100
+      ],
+      "lower": null,
+      "upper": null,
+      "unit": "mg",
+      "source_ref": "RU-SER",
+      "declared_locator": "§2–3, PDF с.1; деление таблетки 50 мг §4.2 с.2",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "ser-social-start",
+      "parameter_id": "start",
+      "value": 25,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-SER",
+      "declared_locator": "§4.2, PDF с.2–3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "ser-social-start",
+      "parameter_id": "after_week",
+      "value": 50,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-SER",
+      "declared_locator": "§4.2, PDF с.2–3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "ser-social-start",
+      "parameter_id": "interval",
+      "value": 1,
+      "lower": null,
+      "upper": null,
+      "unit": "week",
+      "source_ref": "RU-SER",
+      "declared_locator": "§4.2, PDF с.2–3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "ser-social-start",
+      "parameter_id": "frequency",
+      "value": 1,
+      "lower": null,
+      "upper": null,
+      "unit": "administration/day",
+      "source_ref": "RU-SER",
+      "declared_locator": "§4.2, PDF с.2–3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "ser-social-start",
+      "parameter_id": "maximum",
+      "value": 200,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-SER",
+      "declared_locator": "§4.2, PDF с.2–3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "ser-social-start",
+      "parameter_id": "adult_minimum",
+      "value": 18,
+      "lower": null,
+      "upper": null,
+      "unit": "year",
+      "source_ref": "RU-SER",
+      "declared_locator": "§4.1, PDF с.1",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "ser-social-start",
+      "parameter_id": "source_form_strengths",
+      "value": [
+        50,
+        100
+      ],
+      "lower": null,
+      "upper": null,
+      "unit": "mg",
+      "source_ref": "RU-SER",
+      "declared_locator": "§2–3, PDF с.1; деление таблетки 50 мг §4.2 с.2",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "ser-taper-limit",
+      "parameter_id": "reported_duration",
+      "value": [
+        1,
+        2
+      ],
+      "lower": null,
+      "upper": null,
+      "unit": "week",
+      "source_ref": "RU-SER",
+      "declared_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "ser-taper-limit",
+      "parameter_id": "adult_minimum",
+      "value": 18,
+      "lower": null,
+      "upper": null,
+      "unit": "year",
+      "source_ref": "RU-SER",
+      "declared_locator": "§4.1, PDF с.1",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "ser-taper-limit",
+      "parameter_id": "source_form_strengths",
+      "value": [
+        50,
+        100
+      ],
+      "lower": null,
+      "upper": null,
+      "unit": "mg",
+      "source_ref": "RU-SER",
+      "declared_locator": "§2–3, PDF с.1; деление таблетки 50 мг §4.2 с.2",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "switch-esc-ago",
+      "parameter_id": "target_start",
+      "value": 25,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-AGO",
+      "declared_locator": "§4.2, PDF с.1",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "switch-esc-ago",
+      "parameter_id": "target_frequency",
+      "value": 1,
+      "lower": null,
+      "upper": null,
+      "unit": "administration/day",
+      "source_ref": "RU-AGO",
+      "declared_locator": "§4.2, PDF с.1",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "switch-esc-ago",
+      "parameter_id": "start_taper_day",
+      "value": 1,
+      "lower": null,
+      "upper": null,
+      "unit": "day_of_A_taper",
+      "source_ref": "RU-AGO",
+      "declared_locator": "§4.2, PDF с.2",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "switch-esc-ago",
+      "parameter_id": "hepatic_cutoff",
+      "value": 3,
+      "lower": null,
+      "upper": null,
+      "unit": "ratio_to_ULN",
+      "source_ref": "RU-AGO",
+      "declared_locator": "§4.2–4.4, PDF с.1/3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "switch-esc-ago",
+      "parameter_id": "depression_age_exclusion",
+      "value": 75,
+      "lower": null,
+      "upper": null,
+      "unit": "year",
+      "source_ref": "RU-AGO",
+      "declared_locator": "§4.2, PDF с.2",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "switch-esc-ago",
+      "parameter_id": "repeat_liver_tests_hours",
+      "value": 48,
+      "lower": null,
+      "upper": null,
+      "unit": "hour",
+      "source_ref": "RU-AGO",
+      "declared_locator": "§4.4 PDF с.4",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "switch-esc-ago",
+      "parameter_id": "liver_monitoring_weeks",
+      "value": [
+        3,
+        6,
+        12,
+        24
+      ],
+      "lower": null,
+      "upper": null,
+      "unit": "week",
+      "source_ref": "RU-AGO",
+      "declared_locator": "§4.2 с.1; §4.4 с.3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "switch-esc-ser",
+      "parameter_id": "target_depression_start",
+      "value": 50,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-SER",
+      "declared_locator": "§4.2, PDF с.2, депрессия",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "switch-parox-ago-selected-example",
+      "parameter_id": "target_start",
+      "value": 25,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-AGO",
+      "declared_locator": "§4.2, PDF с.1",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "switch-parox-ago-selected-example",
+      "parameter_id": "target_frequency",
+      "value": 1,
+      "lower": null,
+      "upper": null,
+      "unit": "administration/day",
+      "source_ref": "RU-AGO",
+      "declared_locator": "§4.2, PDF с.1",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "switch-parox-ago-selected-example",
+      "parameter_id": "start_taper_day",
+      "value": 1,
+      "lower": null,
+      "upper": null,
+      "unit": "day_of_A_taper",
+      "source_ref": "RU-AGO",
+      "declared_locator": "§4.2, PDF с.2",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "switch-parox-ago-selected-example",
+      "parameter_id": "hepatic_cutoff",
+      "value": 3,
+      "lower": null,
+      "upper": null,
+      "unit": "ratio_to_ULN",
+      "source_ref": "RU-AGO",
+      "declared_locator": "§4.2–4.4, PDF с.1/3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "switch-parox-ago-selected-example",
+      "parameter_id": "depression_age_exclusion",
+      "value": 75,
+      "lower": null,
+      "upper": null,
+      "unit": "year",
+      "source_ref": "RU-AGO",
+      "declared_locator": "§4.2, PDF с.2",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "switch-parox-ago-selected-example",
+      "parameter_id": "weekly_decrement",
+      "value": 10,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-PAROX",
+      "declared_locator": "§4.2, PDF с.3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "switch-parox-ago-selected-example",
+      "parameter_id": "decrement_interval",
+      "value": 1,
+      "lower": null,
+      "upper": null,
+      "unit": "week",
+      "source_ref": "RU-PAROX",
+      "declared_locator": "§4.2, PDF с.3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "switch-parox-ago-selected-example",
+      "parameter_id": "last_source_dose",
+      "value": 20,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-PAROX",
+      "declared_locator": "§4.2, PDF с.4",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "switch-parox-ago-selected-example",
+      "parameter_id": "last_hold",
+      "value": 1,
+      "lower": null,
+      "upper": null,
+      "unit": "week",
+      "source_ref": "RU-PAROX",
+      "declared_locator": "§4.2, PDF с.4",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "switch-parox-ago-selected-example",
+      "parameter_id": "repeat_liver_tests_hours",
+      "value": 48,
+      "lower": null,
+      "upper": null,
+      "unit": "hour",
+      "source_ref": "RU-AGO",
+      "declared_locator": "§4.4 PDF с.4",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "switch-parox-ago-selected-example",
+      "parameter_id": "liver_monitoring_weeks",
+      "value": [
+        3,
+        6,
+        12,
+        24
+      ],
+      "lower": null,
+      "upper": null,
+      "unit": "week",
+      "source_ref": "RU-AGO",
+      "declared_locator": "§4.2 с.1; §4.4 с.3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "switch-parox-ago",
+      "parameter_id": "target_start",
+      "value": 25,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-AGO",
+      "declared_locator": "§4.2, PDF с.1",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "switch-parox-ago",
+      "parameter_id": "target_frequency",
+      "value": 1,
+      "lower": null,
+      "upper": null,
+      "unit": "administration/day",
+      "source_ref": "RU-AGO",
+      "declared_locator": "§4.2, PDF с.1",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "switch-parox-ago",
+      "parameter_id": "start_taper_day",
+      "value": 1,
+      "lower": null,
+      "upper": null,
+      "unit": "day_of_A_taper",
+      "source_ref": "RU-AGO",
+      "declared_locator": "§4.2, PDF с.2",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "switch-parox-ago",
+      "parameter_id": "hepatic_cutoff",
+      "value": 3,
+      "lower": null,
+      "upper": null,
+      "unit": "ratio_to_ULN",
+      "source_ref": "RU-AGO",
+      "declared_locator": "§4.2–4.4, PDF с.1/3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "switch-parox-ago",
+      "parameter_id": "depression_age_exclusion",
+      "value": 75,
+      "lower": null,
+      "upper": null,
+      "unit": "year",
+      "source_ref": "RU-AGO",
+      "declared_locator": "§4.2, PDF с.2",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "switch-parox-ago",
+      "parameter_id": "repeat_liver_tests_hours",
+      "value": 48,
+      "lower": null,
+      "upper": null,
+      "unit": "hour",
+      "source_ref": "RU-AGO",
+      "declared_locator": "§4.4 PDF с.4",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "switch-parox-ago",
+      "parameter_id": "liver_monitoring_weeks",
+      "value": [
+        3,
+        6,
+        12,
+        24
+      ],
+      "lower": null,
+      "upper": null,
+      "unit": "week",
+      "source_ref": "RU-AGO",
+      "declared_locator": "§4.2 с.1; §4.4 с.3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "switch-ser-ago",
+      "parameter_id": "target_start",
+      "value": 25,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-AGO",
+      "declared_locator": "§4.2, PDF с.1",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "switch-ser-ago",
+      "parameter_id": "target_frequency",
+      "value": 1,
+      "lower": null,
+      "upper": null,
+      "unit": "administration/day",
+      "source_ref": "RU-AGO",
+      "declared_locator": "§4.2, PDF с.1",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "switch-ser-ago",
+      "parameter_id": "start_taper_day",
+      "value": 1,
+      "lower": null,
+      "upper": null,
+      "unit": "day_of_A_taper",
+      "source_ref": "RU-AGO",
+      "declared_locator": "§4.2, PDF с.2",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "switch-ser-ago",
+      "parameter_id": "hepatic_cutoff",
+      "value": 3,
+      "lower": null,
+      "upper": null,
+      "unit": "ratio_to_ULN",
+      "source_ref": "RU-AGO",
+      "declared_locator": "§4.2–4.4, PDF с.1/3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "switch-ser-ago",
+      "parameter_id": "depression_age_exclusion",
+      "value": 75,
+      "lower": null,
+      "upper": null,
+      "unit": "year",
+      "source_ref": "RU-AGO",
+      "declared_locator": "§4.2, PDF с.2",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "switch-ser-ago",
+      "parameter_id": "repeat_liver_tests_hours",
+      "value": 48,
+      "lower": null,
+      "upper": null,
+      "unit": "hour",
+      "source_ref": "RU-AGO",
+      "declared_locator": "§4.4 PDF с.4",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "switch-ser-ago",
+      "parameter_id": "liver_monitoring_weeks",
+      "value": [
+        3,
+        6,
+        12,
+        24
+      ],
+      "lower": null,
+      "upper": null,
+      "unit": "week",
+      "source_ref": "RU-AGO",
+      "declared_locator": "§4.2 с.1; §4.4 с.3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "switch-ser-esc",
+      "parameter_id": "target_depression_start",
+      "value": 10,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-ESC",
+      "declared_locator": "§4.2 PDF с.2, депрессивные эпизоды, ОХЛП 05.11.2025",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "venla-xr-gad-start",
+      "parameter_id": "start",
+      "value": 75,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-VENLA-XR",
+      "declared_locator": "§4.2 с.2–3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "venla-xr-gad-start",
+      "parameter_id": "maximum",
+      "value": 225,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-VENLA-XR",
+      "declared_locator": "§4.2 с.2–3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "venla-xr-gad-start",
+      "parameter_id": "increase_min_interval",
+      "value": 2,
+      "lower": null,
+      "upper": null,
+      "unit": "week",
+      "source_ref": "RU-VENLA-XR",
+      "declared_locator": "§4.2 с.2–3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "venla-xr-gad-start",
+      "parameter_id": "frequency",
+      "value": 1,
+      "lower": null,
+      "upper": null,
+      "unit": "administration/day",
+      "source_ref": "RU-VENLA-XR",
+      "declared_locator": "§4.2 с.5",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "venla-xr-gad-start",
+      "parameter_id": "diastolic_BP_stop_threshold",
+      "value": 100,
+      "lower": null,
+      "upper": null,
+      "unit": "mmHg",
+      "source_ref": "RU-VENLA-XR",
+      "declared_locator": "§4.4 с.9, прекращение при диастолическом АД >100 мм рт.ст.",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "venla-xr-panic-form-limit",
+      "parameter_id": "initial_dose",
+      "value": 37.5,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-VENLA-XR",
+      "declared_locator": "§4.2 с.3; §4.2 с.5 (целые капсулы)",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "venla-xr-panic-form-limit",
+      "parameter_id": "initial_duration",
+      "value": 7,
+      "lower": null,
+      "upper": null,
+      "unit": "day",
+      "source_ref": "RU-VENLA-XR",
+      "declared_locator": "§4.2 с.3; §4.2 с.5 (целые капсулы)",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "venla-xr-panic-form-limit",
+      "parameter_id": "next_dose",
+      "value": 75,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-VENLA-XR",
+      "declared_locator": "§4.2 с.3; §4.2 с.5 (целые капсулы)",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "venla-xr-panic-form-limit",
+      "parameter_id": "diastolic_BP_stop_threshold",
+      "value": 100,
+      "lower": null,
+      "upper": null,
+      "unit": "mmHg",
+      "source_ref": "RU-VENLA-XR",
+      "declared_locator": "§4.4 с.9, прекращение при диастолическом АД >100 мм рт.ст.",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "venla-xr-social-start",
+      "parameter_id": "start",
+      "value": 75,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-VENLA-XR",
+      "declared_locator": "§4.2 с.2–3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "venla-xr-social-start",
+      "parameter_id": "maximum",
+      "value": 225,
+      "lower": null,
+      "upper": null,
+      "unit": "mg/day",
+      "source_ref": "RU-VENLA-XR",
+      "declared_locator": "§4.2 с.2–3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "venla-xr-social-start",
+      "parameter_id": "increase_min_interval",
+      "value": 2,
+      "lower": null,
+      "upper": null,
+      "unit": "week",
+      "source_ref": "RU-VENLA-XR",
+      "declared_locator": "§4.2 с.2–3",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "venla-xr-social-start",
+      "parameter_id": "frequency",
+      "value": 1,
+      "lower": null,
+      "upper": null,
+      "unit": "administration/day",
+      "source_ref": "RU-VENLA-XR",
+      "declared_locator": "§4.2 с.5",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "venla-xr-social-start",
+      "parameter_id": "diastolic_BP_stop_threshold",
+      "value": 100,
+      "lower": null,
+      "upper": null,
+      "unit": "mmHg",
+      "source_ref": "RU-VENLA-XR",
+      "declared_locator": "§4.4 с.9, прекращение при диастолическом АД >100 мм рт.ст.",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    },
+    {
+      "rule_id": "venla-xr-taper-limit",
+      "parameter_id": "source_minimum",
+      "value": [
+        1,
+        2
+      ],
+      "lower": null,
+      "upper": null,
+      "unit": "week",
+      "source_ref": "RU-VENLA-XR",
+      "declared_locator": "§4.2 с.4–5; §4.4 с.11–12",
+      "review": "Числовая величина независимо сопоставлена с прочитанным исходным разделом; интерпретация/границы/форма дополнительно ограничены findings и primary_expected_checks. Это не проверка всех source conditions карточки."
+    }
+  ],
+  "full_medical_audit_all_conditions_completed": false,
+  "medical_expected_reconstructed_independently": "14 автоматизированных основных первичных assertions плюс ручное сопоставление веток и источниковые находки; не4953 независимых медицинских испытания.",
+  "snapshot": "ff00118c08d144f1434869d25aba164234a443b4732f84fe8d481504622cf6ec",
+  "scope_limit": "Расширенное чтение всех активных источниковых семей и исправлений; остаётся непроверенная исчерпывающая result-specific necessity/INN-class mapping. Нельзя назвать полный медицинский аудит всех5086expected завершённым."
+}

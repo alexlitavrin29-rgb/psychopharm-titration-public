@@ -1,0 +1,360 @@
+{
+  "schema_version": "1.0",
+  "rule_id": "switch-ser-esc",
+  "development_status": "extracted_research_not_executable",
+  "language": "ru",
+  "identity": {
+    "title": "сертралин → эсциталопрам: ограничения российских источников",
+    "mode": "switch",
+    "drug_inn": null,
+    "from_drug_inn": "сертралин",
+    "to_drug_inn": "эсциталопрам",
+    "formulation": {
+      "from": "Золофт, таблетки 50/100 мг",
+      "to": "Селектра, таблетки 5/10/15/20 мг, ОХЛП 05.11.2025"
+    },
+    "route": "oral",
+    "diagnosis_label_ru": "Самостоятельный депрессивный эпизод/рекуррентная депрессия у взрослых",
+    "classification_system": "МКБ-10",
+    "diagnosis_code": "F32/F33",
+    "jurisdiction": "RU_versioned_sources"
+  },
+  "applicability": {
+    "population_description": "Взрослые; только показание и контекст указанных российских источников.",
+    "age_constraints": [],
+    "pregnancy": "Отдельная оценка применимости; дозовые коэффициенты не извлечены.",
+    "lactation": "Отдельная оценка применимости; дозовые коэффициенты не извлечены.",
+    "renal_constraints": [],
+    "hepatic_constraints": [],
+    "comorbidity_constraints": [],
+    "interacting_drugs": [
+      "Проверять оба препарата и недавние отмены; ограничения ИМАО по ОХЛП сертралина §4.3/4.5, с.3/7–8."
+    ],
+    "other_conditions": [],
+    "exclusions": [],
+    "indication_status_in_russia": "guideline_context_product_registration_requires_separate_check",
+    "source_refs": [
+      "RU-SER",
+      "RU-ESC",
+      "RU-DEP"
+    ]
+  },
+  "inputs": [
+    {
+      "input_id": "from_form",
+      "question_ru": "Какая форма исходного препарата?",
+      "data_type": "structured_form",
+      "unit": null,
+      "allowed_values": [],
+      "required_when": "для применения этой ветки",
+      "show_when": "при выборе этой карточки",
+      "why_needed": "Исполнимость ступеней прекращения A.",
+      "changes": [
+        "applicability",
+        "dose_or_action"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Назвать отсутствующее поле; не выдавать безусловную индивидуальную схему.",
+      "source_refs": [
+        "RU-SER",
+        "RU-ESC",
+        "RU-DEP"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "to_form",
+      "question_ru": "Какая форма целевого препарата?",
+      "data_type": "structured_form",
+      "unit": null,
+      "allowed_values": [],
+      "required_when": "для применения этой ветки",
+      "show_when": "при выборе этой карточки",
+      "why_needed": "Применимость инструкции B.",
+      "changes": [
+        "applicability",
+        "dose_or_action"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Назвать отсутствующее поле; не выдавать безусловную индивидуальную схему.",
+      "source_refs": [
+        "RU-SER",
+        "RU-ESC",
+        "RU-DEP"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "current_dose",
+      "question_ru": "Текущая суточная доза исходного препарата?",
+      "data_type": "number",
+      "unit": "mg/day",
+      "allowed_values": [],
+      "required_when": "для применения этой ветки",
+      "show_when": "при выборе этой карточки",
+      "why_needed": "Исходная точка снижения; не эквивалент дозы B.",
+      "changes": [
+        "applicability",
+        "dose_or_action"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Назвать отсутствующее поле; не выдавать безусловную индивидуальную схему.",
+      "source_refs": [
+        "RU-SER",
+        "RU-ESC",
+        "RU-DEP"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "duration",
+      "question_ru": "Как долго принимается исходный препарат?",
+      "data_type": "number",
+      "unit": "day",
+      "allowed_values": [],
+      "required_when": "для применения этой ветки",
+      "show_when": "при выборе этой карточки",
+      "why_needed": "Риск отмены и индивидуальный темп.",
+      "changes": [
+        "applicability",
+        "dose_or_action"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Назвать отсутствующее поле; не выдавать безусловную индивидуальную схему.",
+      "source_refs": [
+        "RU-SER",
+        "RU-ESC",
+        "RU-DEP"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "last_dose_time",
+      "question_ru": "Время подтверждённого последнего приёма A?",
+      "data_type": "datetime",
+      "unit": null,
+      "allowed_values": [],
+      "required_when": "для применения этой ветки",
+      "show_when": "при выборе этой карточки",
+      "why_needed": "Начало отсчёта опубликованного интервала, если он есть.",
+      "changes": [
+        "applicability",
+        "dose_or_action"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Назвать отсутствующее поле; не выдавать безусловную индивидуальную схему.",
+      "source_refs": [
+        "RU-SER",
+        "RU-ESC",
+        "RU-DEP"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "withdrawal_symptoms",
+      "question_ru": "Какие симптомы отмены и их тяжесть оценил врач?",
+      "data_type": "clinical_assessment",
+      "unit": null,
+      "allowed_values": [],
+      "required_when": "для применения этой ветки",
+      "show_when": "при выборе этой карточки",
+      "why_needed": "Выбор более медленного снижения или другой тактики.",
+      "changes": [
+        "applicability",
+        "dose_or_action"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Назвать отсутствующее поле; не выдавать безусловную индивидуальную схему.",
+      "source_refs": [
+        "RU-SER",
+        "RU-ESC",
+        "RU-DEP"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "medicines",
+      "question_ru": "Текущие и недавно отменённые лекарства?",
+      "data_type": "medication_list",
+      "unit": null,
+      "allowed_values": [],
+      "required_when": "для применения этой ветки",
+      "show_when": "при выборе этой карточки",
+      "why_needed": "Ограничения взаимодействий обоих препаратов.",
+      "changes": [
+        "applicability",
+        "dose_or_action"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Назвать отсутствующее поле; не выдавать безусловную индивидуальную схему.",
+      "source_refs": [
+        "RU-SER",
+        "RU-ESC",
+        "RU-DEP"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "target_applicability",
+      "question_ru": "Какие условия применимости целевой инструкции подтверждены, а какие неизвестны?",
+      "data_type": "clinical_assessment",
+      "unit": null,
+      "allowed_values": [],
+      "required_when": "для применения этой ветки",
+      "show_when": "при выборе этой карточки",
+      "why_needed": "Не заменяет проверку целевой дозовой карточки.",
+      "changes": [
+        "applicability",
+        "dose_or_action"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Назвать отсутствующее поле; не выдавать безусловную индивидуальную схему.",
+      "source_refs": [
+        "RU-SER",
+        "RU-ESC",
+        "RU-DEP"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    }
+  ],
+  "clinical_parameters": [
+    {
+      "parameter_id": "target_depression_start",
+      "meaning": "Справочная обычная стартовая суточная доза B при взрослой депрессии; не доза перехода",
+      "value": 10,
+      "lower": null,
+      "upper": null,
+      "lower_inclusive": null,
+      "upper_inclusive": null,
+      "unit": "mg/day",
+      "source_ref": "RU-ESC",
+      "source_locator": "§4.2 PDF с.2, депрессивные эпизоды, ОХЛП 05.11.2025",
+      "source_meaning": "предписание",
+      "derivation": null
+    }
+  ],
+  "logic": {
+    "representation": "narrative_only",
+    "conditions": [
+      "Показание и стратегию выбрал врач; ограничения источника проверяются отдельно."
+    ],
+    "actions": [
+      "Учитывать постепенное прекращение A по российским источникам; точные ступени исходной дозы источник не задаёт.",
+      "Время начала B и возможность перекрытия не выводить из срока отмены A. Если точного российского правила нет, результат clinician_choice без календаря.",
+      "Зарубежный direct switch на следующий день исключён из профиля РФ. Российская начальная доза B сама по себе не определяет время перехода."
+    ],
+    "parameter_refs": [
+      "target_depression_start"
+    ],
+    "source_refs": [
+      "RU-SER",
+      "RU-ESC",
+      "RU-DEP"
+    ],
+    "clinician_choices": [
+      "Размер и темп снижения A",
+      "Условия старта и доза B по его применимой инструкции",
+      "Время начала B; точная парная стратегия не завершена"
+    ],
+    "missing_data_behaviour": "Назвать обязательные неизвестные поля; результат insufficient_data. Справочные этапы можно показать как условные, без безусловной дозы пациенту.",
+    "unsupported_case_behaviour": "not_applicable для этой карточки; указать конкретную отсутствующую ветку, не запретить всё лечение.",
+    "contraindicated_case_behaviour": "Не выдавать дозовую схему противопоказанного сочетания; отобразить источник и причину.",
+    "conflicts": [
+      "Приоритет источника решён в пользу РФ; недостающий календарь остаётся пробелом, а не конфликтом выбора юрисдикции."
+    ],
+    "composite_rule_dependencies": [],
+    "combination_justification": "Независимые правила не образуют автоматически полный клинический календарь."
+  },
+  "output": {
+    "result_type": "clinician_choice",
+    "medication_inn": "эсциталопрам",
+    "dose_per_administration": null,
+    "administrations_per_day": null,
+    "total_daily_dose": null,
+    "unit": "mg",
+    "formulation": {
+      "from": "Золофт, таблетки 50/100 мг",
+      "to": "Селектра, таблетки 5/10/15/20 мг, ОХЛП 05.11.2025"
+    },
+    "schedule": [],
+    "warnings": [
+      "Частичное опубликованное правило; не индивидуальное назначение.",
+      "Числовой вывод относится к указанным дозовым условиям. Неоценённые модулем клинические обстоятельства не считаются отсутствующими; полный клинический допуск врач оценивает отдельно."
+    ],
+    "mandatory_checks": [],
+    "clinician_decisions_remaining": [
+      "Размер и темп снижения A",
+      "Условия старта и доза B по его применимой инструкции",
+      "Время начала B; точная парная стратегия не завершена"
+    ],
+    "rounding_or_formulation_rule": "Не округлять медицинскую дозу; использовать только разрешённую форму/деление. При невозможности дозы формой — явно сообщить.",
+    "source_refs": [
+      "RU-SER",
+      "RU-ESC",
+      "RU-DEP"
+    ]
+  },
+  "verification": {
+    "primary_source_checked": true,
+    "all_clinical_parameters_have_sources": true,
+    "population_and_indication_checked": true,
+    "russian_applicability_checked": false,
+    "formulation_feasibility_checked": false,
+    "combined_rules_justified": false,
+    "source_transfer_check": "extraction_checked; calculator_not_implemented",
+    "clinical_review": "not_performed",
+    "product_clinical_validation": "not_performed",
+    "ready_for_technical_implementation": false,
+    "unresolved_items": [
+      "Полный российский календарь доз A и B не найден.",
+      "Последняя регистрационная редакция и применимость обеих форм не сверены."
+    ]
+  },
+  "test_cases": [
+    {
+      "case_id": "switch-ser-esc__foreign-next-day-excluded",
+      "synthetic": true,
+      "given": {
+        "foreign_requested_strategy": "direct_next_day",
+        "current_dose": 50
+      },
+      "expected": {
+        "result_type": "clinician_choice",
+        "source_priority": "RU",
+        "automatic_direct_switch": false,
+        "target_start_time": null,
+        "complete_schedule": null
+      },
+      "source_refs": [
+        "RU-SER",
+        "RU-ESC",
+        "RU-DEP"
+      ],
+      "note": "Ожидание переноса из источника; калькулятор не реализован, клиническая валидация не выполнена."
+    },
+    {
+      "case_id": "switch-ser-esc__gradual-is-not-washout",
+      "synthetic": true,
+      "given": {
+        "withdrawal_plan_duration_days": 14
+      },
+      "expected": {
+        "invented_washout_days": null,
+        "automatic_overlap_permission": false,
+        "automatic_overlap_prohibition": false
+      },
+      "source_refs": [
+        "RU-SER",
+        "RU-ESC",
+        "RU-DEP"
+      ],
+      "note": "Ожидание переноса из источника; калькулятор не реализован, клиническая валидация не выполнена."
+    }
+  ],
+  "profile": {
+    "country": "RU",
+    "selection_status": "RU_profile_research",
+    "foreign_fallback_allowed": false
+  },
+  "card_type": "partial_source_constraint"
+}

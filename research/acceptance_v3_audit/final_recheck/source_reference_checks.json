@@ -1,0 +1,5656 @@
+{
+  "taper_rows": [
+    {
+      "case_id": "fluvox-taper-limit--branch-source_limit",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-FLUVOX",
+        "source_locator": "§4.2 PDF с.2"
+      }
+    },
+    {
+      "case_id": "fluvox-taper-limit--branch-withdrawal",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "fluvox-taper-limit--age-omitted",
+      "rule_id": "fluvox-taper-limit",
+      "age": null,
+      "population": "not_assessed",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-FLUVOX",
+        "source_locator": "§4.2 PDF с.2"
+      }
+    },
+    {
+      "case_id": "fluvox-taper-limit--age-unknown",
+      "rule_id": "fluvox-taper-limit",
+      "age": "unknown",
+      "population": "not_assessed",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-FLUVOX",
+        "source_locator": "§4.2 PDF с.2"
+      }
+    },
+    {
+      "case_id": "fluvox-taper-limit--age-not_assessed",
+      "rule_id": "fluvox-taper-limit",
+      "age": "not_assessed",
+      "population": "not_assessed",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-FLUVOX",
+        "source_locator": "§4.2 PDF с.2"
+      }
+    },
+    {
+      "case_id": "fluvox-taper-limit--form-omitted",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "fluvox-taper-limit--form-unknown",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "fluvox-taper-limit--form-not_assessed",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "fluvox-taper-limit--current_dose-omitted",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-FLUVOX",
+        "source_locator": "§4.2 PDF с.2"
+      }
+    },
+    {
+      "case_id": "fluvox-taper-limit--current_dose-unknown",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-FLUVOX",
+        "source_locator": "§4.2 PDF с.2"
+      }
+    },
+    {
+      "case_id": "fluvox-taper-limit--current_dose-not_assessed",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-FLUVOX",
+        "source_locator": "§4.2 PDF с.2"
+      }
+    },
+    {
+      "case_id": "fluvox-taper-limit--duration-omitted",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-FLUVOX",
+        "source_locator": "§4.2 PDF с.2"
+      }
+    },
+    {
+      "case_id": "fluvox-taper-limit--duration-unknown",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-FLUVOX",
+        "source_locator": "§4.2 PDF с.2"
+      }
+    },
+    {
+      "case_id": "fluvox-taper-limit--duration-not_assessed",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-FLUVOX",
+        "source_locator": "§4.2 PDF с.2"
+      }
+    },
+    {
+      "case_id": "fluvox-taper-limit--withdrawal_severity-omitted",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-FLUVOX",
+        "source_locator": "§4.2 PDF с.2"
+      }
+    },
+    {
+      "case_id": "fluvox-taper-limit--withdrawal_severity-unknown",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-FLUVOX",
+        "source_locator": "§4.2 PDF с.2"
+      }
+    },
+    {
+      "case_id": "fluvox-taper-limit--withdrawal_severity-not_assessed",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-FLUVOX",
+        "source_locator": "§4.2 PDF с.2"
+      }
+    },
+    {
+      "case_id": "fluvox-taper-limit--past_withdrawal-omitted",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-FLUVOX",
+        "source_locator": "§4.2 PDF с.2"
+      }
+    },
+    {
+      "case_id": "fluvox-taper-limit--past_withdrawal-unknown",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-FLUVOX",
+        "source_locator": "§4.2 PDF с.2"
+      }
+    },
+    {
+      "case_id": "fluvox-taper-limit--past_withdrawal-not_assessed",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-FLUVOX",
+        "source_locator": "§4.2 PDF с.2"
+      }
+    },
+    {
+      "case_id": "fluvox-taper-limit--confirmed-negative-fields",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-FLUVOX",
+        "source_locator": "§4.2 PDF с.2"
+      }
+    },
+    {
+      "case_id": "fluvox-taper-limit--nested-form-product-omitted",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "fluvox-taper-limit--nested-form-product-unknown",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "fluvox-taper-limit--nested-form-product-not_assessed",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "fluvox-taper-limit--nested-form-registration_number-omitted",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "fluvox-taper-limit--nested-form-registration_number-unknown",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "fluvox-taper-limit--nested-form-registration_number-not_assessed",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "fluvox-taper-limit--nested-form-source_id-omitted",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "fluvox-taper-limit--nested-form-source_id-unknown",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "fluvox-taper-limit--nested-form-source_id-not_assessed",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "fluvox-taper-limit--nested-form-dosage_form-omitted",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "fluvox-taper-limit--nested-form-dosage_form-unknown",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "fluvox-taper-limit--nested-form-dosage_form-not_assessed",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "fluvox-taper-limit--nested-form-strengths_mg-omitted",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "fluvox-taper-limit--nested-form-strengths_mg-unknown",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "fluvox-taper-limit--nested-form-strengths_mg-not_assessed",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "fluvox-taper-limit--nested-form-release-omitted",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "fluvox-taper-limit--nested-form-release-unknown",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "fluvox-taper-limit--nested-form-release-not_assessed",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "fluvox-taper-limit--nested-form-route-omitted",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "fluvox-taper-limit--nested-form-route-unknown",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "fluvox-taper-limit--nested-form-route-not_assessed",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "fluvox-taper-limit--nested-form-source_version-omitted",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "fluvox-taper-limit--nested-form-source_version-unknown",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "fluvox-taper-limit--nested-form-source_version-not_assessed",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "fluvox-taper-limit--wrong-release-form",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "fluvox-taper-limit--audit-v2-serotonin_syndrome_signs-positive",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "fluvox-taper-limit--audit-v2-serotonin_syndrome_signs-negative",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-FLUVOX",
+        "source_locator": "§4.2 PDF с.2"
+      }
+    },
+    {
+      "case_id": "fluvox-taper-limit--audit-v2-serotonin_syndrome_signs-omitted",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-FLUVOX",
+        "source_locator": "§4.2 PDF с.2"
+      }
+    },
+    {
+      "case_id": "fluvox-taper-limit--audit-v2-serotonin_syndrome_signs-unknown",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-FLUVOX",
+        "source_locator": "§4.2 PDF с.2"
+      }
+    },
+    {
+      "case_id": "fluvox-taper-limit--audit-v2-new_or_increased_seizures-positive",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "fluvox-taper-limit--audit-v2-new_or_increased_seizures-negative",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-FLUVOX",
+        "source_locator": "§4.2 PDF с.2"
+      }
+    },
+    {
+      "case_id": "fluvox-taper-limit--audit-v2-new_or_increased_seizures-omitted",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-FLUVOX",
+        "source_locator": "§4.2 PDF с.2"
+      }
+    },
+    {
+      "case_id": "fluvox-taper-limit--audit-v2-new_or_increased_seizures-unknown",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-FLUVOX",
+        "source_locator": "§4.2 PDF с.2"
+      }
+    },
+    {
+      "case_id": "fluvox-taper-limit--audit-v2-liver_injury_signs-positive",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "fluvox-taper-limit--audit-v2-liver_injury_signs-negative",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-FLUVOX",
+        "source_locator": "§4.2 PDF с.2"
+      }
+    },
+    {
+      "case_id": "fluvox-taper-limit--audit-v2-liver_injury_signs-omitted",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-FLUVOX",
+        "source_locator": "§4.2 PDF с.2"
+      }
+    },
+    {
+      "case_id": "fluvox-taper-limit--audit-v2-liver_injury_signs-unknown",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-FLUVOX",
+        "source_locator": "§4.2 PDF с.2"
+      }
+    },
+    {
+      "case_id": "fluvox-taper-limit--audit-v2-mania_symptoms-positive",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "fluvox-taper-limit--audit-v2-mania_symptoms-negative",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-FLUVOX",
+        "source_locator": "§4.2 PDF с.2"
+      }
+    },
+    {
+      "case_id": "fluvox-taper-limit--audit-v2-mania_symptoms-omitted",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-FLUVOX",
+        "source_locator": "§4.2 PDF с.2"
+      }
+    },
+    {
+      "case_id": "fluvox-taper-limit--audit-v2-mania_symptoms-unknown",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-FLUVOX",
+        "source_locator": "§4.2 PDF с.2"
+      }
+    },
+    {
+      "case_id": "fluvox-taper-limit--audit-v2-serotonin_syndrome_signs-positive--audit-final-A-phase-unknown",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-FLUVOX",
+        "source_locator": "§4.2 PDF с.2"
+      }
+    },
+    {
+      "case_id": "fluvox-taper-limit--audit-v2-serotonin_syndrome_signs-positive--audit-final-A-phase-not_started",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-FLUVOX",
+        "source_locator": "§4.2 PDF с.2"
+      }
+    },
+    {
+      "case_id": "fluvox-taper-limit--audit-v2-new_or_increased_seizures-positive--audit-final-A-phase-unknown",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-FLUVOX",
+        "source_locator": "§4.2 PDF с.2"
+      }
+    },
+    {
+      "case_id": "fluvox-taper-limit--audit-v2-new_or_increased_seizures-positive--audit-final-A-phase-not_started",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-FLUVOX",
+        "source_locator": "§4.2 PDF с.2"
+      }
+    },
+    {
+      "case_id": "fluvox-taper-limit--audit-v2-liver_injury_signs-positive--audit-final-A-phase-unknown",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-FLUVOX",
+        "source_locator": "§4.2 PDF с.2"
+      }
+    },
+    {
+      "case_id": "fluvox-taper-limit--audit-v2-liver_injury_signs-positive--audit-final-A-phase-not_started",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-FLUVOX",
+        "source_locator": "§4.2 PDF с.2"
+      }
+    },
+    {
+      "case_id": "fluvox-taper-limit--audit-v2-mania_symptoms-positive--audit-final-A-phase-unknown",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-FLUVOX",
+        "source_locator": "§4.2 PDF с.2"
+      }
+    },
+    {
+      "case_id": "fluvox-taper-limit--audit-v2-mania_symptoms-positive--audit-final-A-phase-not_started",
+      "rule_id": "fluvox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-FLUVOX",
+        "source_locator": "§4.2 PDF с.2"
+      }
+    },
+    {
+      "case_id": "fluvox-taper-limit--audit-v2-serotonin_syndrome_signs-positive--audit-final-bounded-action",
+      "rule_id": "fluvox-taper-limit",
+      "age": null,
+      "population": "not_assessed",
+      "source_constraint": null
+    },
+    {
+      "case_id": "fluvox-taper-limit--audit-v2-new_or_increased_seizures-positive--audit-final-bounded-action",
+      "rule_id": "fluvox-taper-limit",
+      "age": null,
+      "population": "not_assessed",
+      "source_constraint": null
+    },
+    {
+      "case_id": "fluvox-taper-limit--audit-v2-liver_injury_signs-positive--audit-final-bounded-action",
+      "rule_id": "fluvox-taper-limit",
+      "age": null,
+      "population": "not_assessed",
+      "source_constraint": null
+    },
+    {
+      "case_id": "fluvox-taper-limit--audit-v2-mania_symptoms-positive--audit-final-bounded-action",
+      "rule_id": "fluvox-taper-limit",
+      "age": null,
+      "population": "not_assessed",
+      "source_constraint": null
+    },
+    {
+      "case_id": "fluvox-taper-limit--audit-final-conditional-adult-reference",
+      "rule_id": "fluvox-taper-limit",
+      "age": null,
+      "population": "not_assessed",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-FLUVOX",
+        "source_locator": "§4.2 PDF с.2"
+      }
+    },
+    {
+      "case_id": "fluvox-taper-limit--wrong-release-form--audit-final-known-terminal",
+      "rule_id": "fluvox-taper-limit",
+      "age": null,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "ser-taper-limit--branch-source_limit",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--branch-withdrawal",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "ser-taper-limit--age-omitted",
+      "rule_id": "ser-taper-limit",
+      "age": null,
+      "population": "not_assessed",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--age-unknown",
+      "rule_id": "ser-taper-limit",
+      "age": "unknown",
+      "population": "not_assessed",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--age-not_assessed",
+      "rule_id": "ser-taper-limit",
+      "age": "not_assessed",
+      "population": "not_assessed",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--form-omitted",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "ser-taper-limit--form-unknown",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "ser-taper-limit--form-not_assessed",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "ser-taper-limit--pregnancy-omitted",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--pregnancy-unknown",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--pregnancy-not_assessed",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--lactation-omitted",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--lactation-unknown",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--lactation-not_assessed",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--medicines-omitted",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--medicines-unknown",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--medicines-not_assessed",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--allergy-omitted",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--allergy-unknown",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--allergy-not_assessed",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--hepatic-omitted",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--hepatic-unknown",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--hepatic-not_assessed",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--mania-omitted",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--mania-unknown",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--mania-not_assessed",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--seizure_state-omitted",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--seizure_state-unknown",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--seizure_state-not_assessed",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--current_dose-omitted",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--current_dose-unknown",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--current_dose-not_assessed",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--duration_of_use-omitted",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--duration_of_use-unknown",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--duration_of_use-not_assessed",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--prior_withdrawal-omitted",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--prior_withdrawal-unknown",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--prior_withdrawal-not_assessed",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--current_withdrawal-omitted",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--current_withdrawal-unknown",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--current_withdrawal-not_assessed",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--qt_risk-omitted",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--qt_risk-unknown",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--qt_risk-not_assessed",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--bleeding_risk-omitted",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--bleeding_risk-unknown",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--bleeding_risk-not_assessed",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--hyponatremia_risk-omitted",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--hyponatremia_risk-unknown",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--hyponatremia_risk-not_assessed",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--suicide_risk-omitted",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--suicide_risk-unknown",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--suicide_risk-not_assessed",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--confirmed-negative-fields",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--medicine-class-unknown",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--nested-form-product-omitted",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "ser-taper-limit--nested-form-product-unknown",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "ser-taper-limit--nested-form-product-not_assessed",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "ser-taper-limit--nested-form-registration_number-omitted",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "ser-taper-limit--nested-form-registration_number-unknown",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "ser-taper-limit--nested-form-registration_number-not_assessed",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "ser-taper-limit--nested-form-source_id-omitted",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "ser-taper-limit--nested-form-source_id-unknown",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "ser-taper-limit--nested-form-source_id-not_assessed",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "ser-taper-limit--nested-form-dosage_form-omitted",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "ser-taper-limit--nested-form-dosage_form-unknown",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "ser-taper-limit--nested-form-dosage_form-not_assessed",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "ser-taper-limit--nested-form-strengths_mg-omitted",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "ser-taper-limit--nested-form-strengths_mg-unknown",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "ser-taper-limit--nested-form-strengths_mg-not_assessed",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "ser-taper-limit--nested-form-release-omitted",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "ser-taper-limit--nested-form-release-unknown",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "ser-taper-limit--nested-form-release-not_assessed",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "ser-taper-limit--nested-form-route-omitted",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "ser-taper-limit--nested-form-route-unknown",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "ser-taper-limit--nested-form-route-not_assessed",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "ser-taper-limit--nested-form-source_version-omitted",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "ser-taper-limit--nested-form-source_version-unknown",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "ser-taper-limit--nested-form-source_version-not_assessed",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "ser-taper-limit--wrong-release-form",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "ser-taper-limit--nested-hepatic-category-omitted",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--nested-hepatic-category-unknown",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--nested-hepatic-category-not_assessed",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--nested-hepatic-assessment-omitted",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--nested-hepatic-assessment-unknown",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--nested-hepatic-assessment-not_assessed",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--nested-hepatic-classification-omitted",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--nested-hepatic-classification-unknown",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--nested-hepatic-classification-not_assessed",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--nested-hepatic-evidence-omitted",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--nested-hepatic-evidence-unknown",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--nested-hepatic-evidence-not_assessed",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--round2-mania-symptoms-omitted",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--round2-mania-symptoms-unknown",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--round2-mania-symptoms-not_assessed",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--round2-active-mania-stop",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "ser-taper-limit--audit-v2-interaction-strong_CYP3A4",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--audit-recheck-symptomatic_hyponatremia-positive",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--audit-recheck-symptomatic_hyponatremia-negative",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--audit-recheck-symptomatic_hyponatremia-unknown",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--audit-recheck-symptomatic_hyponatremia-omitted",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--round2-active-mania-stop--audit-final-A-phase-unknown",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "ser-taper-limit--round2-active-mania-stop--audit-final-A-phase-not_started",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "ser-taper-limit--audit-recheck-symptomatic_hyponatremia-positive--audit-final-A-phase-unknown",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--audit-recheck-symptomatic_hyponatremia-positive--audit-final-A-phase-not_started",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--audit-final-primary-RU-SER-seizure_state-контролируемые-positive",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "ser-taper-limit--audit-final-primary-RU-SER-seizure_state-контролируемые-unknown",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--audit-final-primary-RU-SER-seizure_state-неконтролируемые-positive",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "ser-taper-limit--audit-final-primary-RU-SER-seizure_state-неконтролируемые-unknown",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--audit-final-primary-RU-SER-seizure_state-новые приступы-positive",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "ser-taper-limit--audit-final-primary-RU-SER-seizure_state-новые приступы-unknown",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--audit-final-primary-RU-SER-seizure_state-новые приступы-phase-unknown",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "ser-taper-limit--audit-final-primary-RU-SER-seizure_state-новые приступы-phase-not_started",
+      "rule_id": "ser-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "ser-taper-limit--round2-active-mania-stop--audit-final-bounded-action",
+      "rule_id": "ser-taper-limit",
+      "age": null,
+      "population": "not_assessed",
+      "source_constraint": null
+    },
+    {
+      "case_id": "ser-taper-limit--audit-final-primary-RU-SER-seizure_state-новые приступы-positive--audit-final-bounded-action",
+      "rule_id": "ser-taper-limit",
+      "age": null,
+      "population": "not_assessed",
+      "source_constraint": null
+    },
+    {
+      "case_id": "ser-taper-limit--audit-final-conditional-adult-reference",
+      "rule_id": "ser-taper-limit",
+      "age": null,
+      "population": "not_assessed",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--audit-v2-interaction-strong_CYP3A4--audit-final-source-caution",
+      "rule_id": "ser-taper-limit",
+      "age": null,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--audit-recheck-symptomatic_hyponatremia-positive--audit-final-source-caution",
+      "rule_id": "ser-taper-limit",
+      "age": null,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--audit-recheck-symptomatic_hyponatremia-unknown--audit-final-source-caution",
+      "rule_id": "ser-taper-limit",
+      "age": null,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-SER",
+        "source_locator": "§4.2, PDF с.3; индивидуальное замедление §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "ser-taper-limit--audit-final-primary-RU-SER-seizure_state-контролируемые-positive--audit-final-source-caution",
+      "rule_id": "ser-taper-limit",
+      "age": null,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "ser-taper-limit--audit-final-primary-RU-SER-seizure_state-неконтролируемые-positive--audit-final-source-caution",
+      "rule_id": "ser-taper-limit",
+      "age": null,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "ser-taper-limit--wrong-release-form--audit-final-known-terminal",
+      "rule_id": "ser-taper-limit",
+      "age": null,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "esc-taper-limit--current-branch-source_limit",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "source_reported_period_weeks": [
+          1,
+          2
+        ],
+        "hard_upper_limit_weeks": null,
+        "source_adjustment": "several weeks/months by patient state",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.2 с.3; §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "esc-taper-limit--current-unassessed-monitoring-context",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "source_reported_period_weeks": [
+          1,
+          2
+        ],
+        "hard_upper_limit_weeks": null,
+        "source_adjustment": "several weeks/months by patient state",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.2 с.3; §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "esc-taper-limit--current-age-omitted",
+      "rule_id": "esc-taper-limit",
+      "age": null,
+      "population": "not_assessed",
+      "source_constraint": {
+        "source_reported_period_weeks": [
+          1,
+          2
+        ],
+        "hard_upper_limit_weeks": null,
+        "source_adjustment": "several weeks/months by patient state",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.2 с.3; §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "esc-taper-limit--current-age-unknown",
+      "rule_id": "esc-taper-limit",
+      "age": "unknown",
+      "population": "not_assessed",
+      "source_constraint": {
+        "source_reported_period_weeks": [
+          1,
+          2
+        ],
+        "hard_upper_limit_weeks": null,
+        "source_adjustment": "several weeks/months by patient state",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.2 с.3; §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "esc-taper-limit--current-age-not_assessed",
+      "rule_id": "esc-taper-limit",
+      "age": "not_assessed",
+      "population": "not_assessed",
+      "source_constraint": {
+        "source_reported_period_weeks": [
+          1,
+          2
+        ],
+        "hard_upper_limit_weeks": null,
+        "source_adjustment": "several weeks/months by patient state",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.2 с.3; §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "esc-taper-limit--current-form-omitted",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "esc-taper-limit--current-form-unknown",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "esc-taper-limit--current-form-not_assessed",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "esc-taper-limit--current-seizure_state-omitted",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "source_reported_period_weeks": [
+          1,
+          2
+        ],
+        "hard_upper_limit_weeks": null,
+        "source_adjustment": "several weeks/months by patient state",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.2 с.3; §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "esc-taper-limit--current-seizure_state-unknown",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "source_reported_period_weeks": [
+          1,
+          2
+        ],
+        "hard_upper_limit_weeks": null,
+        "source_adjustment": "several weeks/months by patient state",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.2 с.3; §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "esc-taper-limit--current-seizure_state-not_assessed",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "source_reported_period_weeks": [
+          1,
+          2
+        ],
+        "hard_upper_limit_weeks": null,
+        "source_adjustment": "several weeks/months by patient state",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.2 с.3; §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "esc-taper-limit--current-current_dose-omitted",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "source_reported_period_weeks": [
+          1,
+          2
+        ],
+        "hard_upper_limit_weeks": null,
+        "source_adjustment": "several weeks/months by patient state",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.2 с.3; §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "esc-taper-limit--current-current_dose-unknown",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "source_reported_period_weeks": [
+          1,
+          2
+        ],
+        "hard_upper_limit_weeks": null,
+        "source_adjustment": "several weeks/months by patient state",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.2 с.3; §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "esc-taper-limit--current-current_dose-not_assessed",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "source_reported_period_weeks": [
+          1,
+          2
+        ],
+        "hard_upper_limit_weeks": null,
+        "source_adjustment": "several weeks/months by patient state",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.2 с.3; §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "esc-taper-limit--current-duration_of_use-omitted",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "source_reported_period_weeks": [
+          1,
+          2
+        ],
+        "hard_upper_limit_weeks": null,
+        "source_adjustment": "several weeks/months by patient state",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.2 с.3; §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "esc-taper-limit--current-duration_of_use-unknown",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "source_reported_period_weeks": [
+          1,
+          2
+        ],
+        "hard_upper_limit_weeks": null,
+        "source_adjustment": "several weeks/months by patient state",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.2 с.3; §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "esc-taper-limit--current-duration_of_use-not_assessed",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "source_reported_period_weeks": [
+          1,
+          2
+        ],
+        "hard_upper_limit_weeks": null,
+        "source_adjustment": "several weeks/months by patient state",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.2 с.3; §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "esc-taper-limit--current-prior_withdrawal-omitted",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "source_reported_period_weeks": [
+          1,
+          2
+        ],
+        "hard_upper_limit_weeks": null,
+        "source_adjustment": "several weeks/months by patient state",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.2 с.3; §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "esc-taper-limit--current-prior_withdrawal-unknown",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "source_reported_period_weeks": [
+          1,
+          2
+        ],
+        "hard_upper_limit_weeks": null,
+        "source_adjustment": "several weeks/months by patient state",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.2 с.3; §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "esc-taper-limit--current-prior_withdrawal-not_assessed",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "source_reported_period_weeks": [
+          1,
+          2
+        ],
+        "hard_upper_limit_weeks": null,
+        "source_adjustment": "several weeks/months by patient state",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.2 с.3; §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "esc-taper-limit--current-current_withdrawal-omitted",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "source_reported_period_weeks": [
+          1,
+          2
+        ],
+        "hard_upper_limit_weeks": null,
+        "source_adjustment": "several weeks/months by patient state",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.2 с.3; §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "esc-taper-limit--current-current_withdrawal-unknown",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "source_reported_period_weeks": [
+          1,
+          2
+        ],
+        "hard_upper_limit_weeks": null,
+        "source_adjustment": "several weeks/months by patient state",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.2 с.3; §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "esc-taper-limit--current-current_withdrawal-not_assessed",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "source_reported_period_weeks": [
+          1,
+          2
+        ],
+        "hard_upper_limit_weeks": null,
+        "source_adjustment": "several weeks/months by patient state",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.2 с.3; §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "esc-taper-limit--current-mania_symptoms-omitted",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "source_reported_period_weeks": [
+          1,
+          2
+        ],
+        "hard_upper_limit_weeks": null,
+        "source_adjustment": "several weeks/months by patient state",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.2 с.3; §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "esc-taper-limit--current-mania_symptoms-unknown",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "source_reported_period_weeks": [
+          1,
+          2
+        ],
+        "hard_upper_limit_weeks": null,
+        "source_adjustment": "several weeks/months by patient state",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.2 с.3; §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "esc-taper-limit--current-mania_symptoms-not_assessed",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "source_reported_period_weeks": [
+          1,
+          2
+        ],
+        "hard_upper_limit_weeks": null,
+        "source_adjustment": "several weeks/months by patient state",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.2 с.3; §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "esc-taper-limit--current-arrhythmia_signs-omitted",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "source_reported_period_weeks": [
+          1,
+          2
+        ],
+        "hard_upper_limit_weeks": null,
+        "source_adjustment": "several weeks/months by patient state",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.2 с.3; §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "esc-taper-limit--current-arrhythmia_signs-unknown",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "source_reported_period_weeks": [
+          1,
+          2
+        ],
+        "hard_upper_limit_weeks": null,
+        "source_adjustment": "several weeks/months by patient state",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.2 с.3; §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "esc-taper-limit--current-arrhythmia_signs-not_assessed",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "source_reported_period_weeks": [
+          1,
+          2
+        ],
+        "hard_upper_limit_weeks": null,
+        "source_adjustment": "several weeks/months by patient state",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.2 с.3; §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "esc-taper-limit--current-serotonin_syndrome_signs-omitted",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "source_reported_period_weeks": [
+          1,
+          2
+        ],
+        "hard_upper_limit_weeks": null,
+        "source_adjustment": "several weeks/months by patient state",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.2 с.3; §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "esc-taper-limit--current-serotonin_syndrome_signs-unknown",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "source_reported_period_weeks": [
+          1,
+          2
+        ],
+        "hard_upper_limit_weeks": null,
+        "source_adjustment": "several weeks/months by patient state",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.2 с.3; §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "esc-taper-limit--current-serotonin_syndrome_signs-not_assessed",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "source_reported_period_weeks": [
+          1,
+          2
+        ],
+        "hard_upper_limit_weeks": null,
+        "source_adjustment": "several weeks/months by patient state",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.2 с.3; §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "esc-taper-limit--current-mania_symptoms-stop",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "esc-taper-limit--current-arrhythmia_signs-stop",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "esc-taper-limit--current-serotonin_syndrome_signs-stop",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "esc-taper-limit--round2-nested-form-product-omitted",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "esc-taper-limit--round2-nested-form-product-unknown",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "esc-taper-limit--round2-nested-form-product-not_assessed",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "esc-taper-limit--round2-nested-form-registration_number-omitted",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "esc-taper-limit--round2-nested-form-registration_number-unknown",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "esc-taper-limit--round2-nested-form-registration_number-not_assessed",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "esc-taper-limit--round2-nested-form-source_id-omitted",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "esc-taper-limit--round2-nested-form-source_id-unknown",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "esc-taper-limit--round2-nested-form-source_id-not_assessed",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "esc-taper-limit--round2-nested-form-dosage_form-omitted",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "esc-taper-limit--round2-nested-form-dosage_form-unknown",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "esc-taper-limit--round2-nested-form-dosage_form-not_assessed",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "esc-taper-limit--round2-nested-form-strengths_mg-omitted",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "esc-taper-limit--round2-nested-form-strengths_mg-unknown",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "esc-taper-limit--round2-nested-form-strengths_mg-not_assessed",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "esc-taper-limit--round2-nested-form-release-omitted",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "esc-taper-limit--round2-nested-form-release-unknown",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "esc-taper-limit--round2-nested-form-release-not_assessed",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "esc-taper-limit--round2-nested-form-route-omitted",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "esc-taper-limit--round2-nested-form-route-unknown",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "esc-taper-limit--round2-nested-form-route-not_assessed",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "esc-taper-limit--round2-nested-form-source_version-omitted",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "esc-taper-limit--round2-nested-form-source_version-unknown",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "esc-taper-limit--round2-nested-form-source_version-not_assessed",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "esc-taper-limit--current-mania_symptoms-stop--audit-final-A-phase-unknown",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "esc-taper-limit--current-mania_symptoms-stop--audit-final-A-phase-not_started",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "esc-taper-limit--current-arrhythmia_signs-stop--audit-final-A-phase-unknown",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "esc-taper-limit--current-arrhythmia_signs-stop--audit-final-A-phase-not_started",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "esc-taper-limit--current-serotonin_syndrome_signs-stop--audit-final-A-phase-unknown",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "esc-taper-limit--current-serotonin_syndrome_signs-stop--audit-final-A-phase-not_started",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "esc-taper-limit--audit-final-primary-RU-ESC-seizure_state-неконтролируемые-positive",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "esc-taper-limit--audit-final-primary-RU-ESC-seizure_state-неконтролируемые-unknown",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "source_reported_period_weeks": [
+          1,
+          2
+        ],
+        "hard_upper_limit_weeks": null,
+        "source_adjustment": "several weeks/months by patient state",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.2 с.3; §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "esc-taper-limit--audit-final-primary-RU-ESC-seizure_state-первичные/участившиеся приступы-positive",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "esc-taper-limit--audit-final-primary-RU-ESC-seizure_state-первичные/участившиеся приступы-unknown",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "source_reported_period_weeks": [
+          1,
+          2
+        ],
+        "hard_upper_limit_weeks": null,
+        "source_adjustment": "several weeks/months by patient state",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.2 с.3; §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "esc-taper-limit--audit-final-primary-RU-ESC-seizure_state-первичные/участившиеся приступы-phase-unknown",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "esc-taper-limit--audit-final-primary-RU-ESC-seizure_state-первичные/участившиеся приступы-phase-not_started",
+      "rule_id": "esc-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "esc-taper-limit--current-mania_symptoms-stop--audit-final-bounded-action",
+      "rule_id": "esc-taper-limit",
+      "age": null,
+      "population": "not_assessed",
+      "source_constraint": null
+    },
+    {
+      "case_id": "esc-taper-limit--current-arrhythmia_signs-stop--audit-final-bounded-action",
+      "rule_id": "esc-taper-limit",
+      "age": null,
+      "population": "not_assessed",
+      "source_constraint": null
+    },
+    {
+      "case_id": "esc-taper-limit--current-serotonin_syndrome_signs-stop--audit-final-bounded-action",
+      "rule_id": "esc-taper-limit",
+      "age": null,
+      "population": "not_assessed",
+      "source_constraint": null
+    },
+    {
+      "case_id": "esc-taper-limit--audit-final-primary-RU-ESC-seizure_state-первичные/участившиеся приступы-positive--audit-final-bounded-action",
+      "rule_id": "esc-taper-limit",
+      "age": null,
+      "population": "not_assessed",
+      "source_constraint": null
+    },
+    {
+      "case_id": "esc-taper-limit--audit-final-conditional-adult-reference",
+      "rule_id": "esc-taper-limit",
+      "age": null,
+      "population": "not_assessed",
+      "source_constraint": {
+        "source_reported_period_weeks": [
+          1,
+          2
+        ],
+        "hard_upper_limit_weeks": null,
+        "source_adjustment": "several weeks/months by patient state",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.2 с.3; §4.4 с.6"
+      }
+    },
+    {
+      "case_id": "esc-taper-limit--audit-final-primary-RU-ESC-seizure_state-неконтролируемые-positive--audit-final-source-caution",
+      "rule_id": "esc-taper-limit",
+      "age": null,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "venla-xr-taper-limit--branch-source_limit",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.2 с.4–5; §4.4 с.11–12"
+      }
+    },
+    {
+      "case_id": "venla-xr-taper-limit--branch-withdrawal",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "venla-xr-taper-limit--age-omitted",
+      "rule_id": "venla-xr-taper-limit",
+      "age": null,
+      "population": "not_assessed",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.2 с.4–5; §4.4 с.11–12"
+      }
+    },
+    {
+      "case_id": "venla-xr-taper-limit--age-unknown",
+      "rule_id": "venla-xr-taper-limit",
+      "age": "unknown",
+      "population": "not_assessed",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.2 с.4–5; §4.4 с.11–12"
+      }
+    },
+    {
+      "case_id": "venla-xr-taper-limit--age-not_assessed",
+      "rule_id": "venla-xr-taper-limit",
+      "age": "not_assessed",
+      "population": "not_assessed",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.2 с.4–5; §4.4 с.11–12"
+      }
+    },
+    {
+      "case_id": "venla-xr-taper-limit--form-omitted",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "venla-xr-taper-limit--form-unknown",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "venla-xr-taper-limit--form-not_assessed",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "venla-xr-taper-limit--current_dose-omitted",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.2 с.4–5; §4.4 с.11–12"
+      }
+    },
+    {
+      "case_id": "venla-xr-taper-limit--current_dose-unknown",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.2 с.4–5; §4.4 с.11–12"
+      }
+    },
+    {
+      "case_id": "venla-xr-taper-limit--current_dose-not_assessed",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.2 с.4–5; §4.4 с.11–12"
+      }
+    },
+    {
+      "case_id": "venla-xr-taper-limit--duration-omitted",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.2 с.4–5; §4.4 с.11–12"
+      }
+    },
+    {
+      "case_id": "venla-xr-taper-limit--duration-unknown",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.2 с.4–5; §4.4 с.11–12"
+      }
+    },
+    {
+      "case_id": "venla-xr-taper-limit--duration-not_assessed",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.2 с.4–5; §4.4 с.11–12"
+      }
+    },
+    {
+      "case_id": "venla-xr-taper-limit--withdrawal_severity-omitted",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.2 с.4–5; §4.4 с.11–12"
+      }
+    },
+    {
+      "case_id": "venla-xr-taper-limit--withdrawal_severity-unknown",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.2 с.4–5; §4.4 с.11–12"
+      }
+    },
+    {
+      "case_id": "venla-xr-taper-limit--withdrawal_severity-not_assessed",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.2 с.4–5; §4.4 с.11–12"
+      }
+    },
+    {
+      "case_id": "venla-xr-taper-limit--past_withdrawal-omitted",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.2 с.4–5; §4.4 с.11–12"
+      }
+    },
+    {
+      "case_id": "venla-xr-taper-limit--past_withdrawal-unknown",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.2 с.4–5; §4.4 с.11–12"
+      }
+    },
+    {
+      "case_id": "venla-xr-taper-limit--past_withdrawal-not_assessed",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.2 с.4–5; §4.4 с.11–12"
+      }
+    },
+    {
+      "case_id": "venla-xr-taper-limit--confirmed-negative-fields",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.2 с.4–5; §4.4 с.11–12"
+      }
+    },
+    {
+      "case_id": "venla-xr-taper-limit--nested-form-product-omitted",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "venla-xr-taper-limit--nested-form-product-unknown",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "venla-xr-taper-limit--nested-form-product-not_assessed",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "venla-xr-taper-limit--nested-form-registration_number-omitted",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "venla-xr-taper-limit--nested-form-registration_number-unknown",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "venla-xr-taper-limit--nested-form-registration_number-not_assessed",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "venla-xr-taper-limit--nested-form-source_id-omitted",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "venla-xr-taper-limit--nested-form-source_id-unknown",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "venla-xr-taper-limit--nested-form-source_id-not_assessed",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "venla-xr-taper-limit--nested-form-dosage_form-omitted",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "venla-xr-taper-limit--nested-form-dosage_form-unknown",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "venla-xr-taper-limit--nested-form-dosage_form-not_assessed",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "venla-xr-taper-limit--nested-form-strengths_mg-omitted",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "venla-xr-taper-limit--nested-form-strengths_mg-unknown",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "venla-xr-taper-limit--nested-form-strengths_mg-not_assessed",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "venla-xr-taper-limit--nested-form-release-omitted",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "venla-xr-taper-limit--nested-form-release-unknown",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "venla-xr-taper-limit--nested-form-release-not_assessed",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "venla-xr-taper-limit--nested-form-route-omitted",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "venla-xr-taper-limit--nested-form-route-unknown",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "venla-xr-taper-limit--nested-form-route-not_assessed",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "venla-xr-taper-limit--nested-form-source_version-omitted",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "venla-xr-taper-limit--nested-form-source_version-unknown",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "venla-xr-taper-limit--nested-form-source_version-not_assessed",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "venla-xr-taper-limit--wrong-release-form",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "venla-xr-taper-limit--audit-v2-diastolic_BP-positive",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "venla-xr-taper-limit--audit-v2-diastolic_BP-negative",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.2 с.4–5; §4.4 с.11–12"
+      }
+    },
+    {
+      "case_id": "venla-xr-taper-limit--audit-v2-diastolic_BP-omitted",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.2 с.4–5; §4.4 с.11–12"
+      }
+    },
+    {
+      "case_id": "venla-xr-taper-limit--audit-v2-diastolic_BP-unknown",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.2 с.4–5; §4.4 с.11–12"
+      }
+    },
+    {
+      "case_id": "venla-xr-taper-limit--audit-v2-current_allergic_reaction-positive",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "venla-xr-taper-limit--audit-v2-current_allergic_reaction-negative",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.2 с.4–5; §4.4 с.11–12"
+      }
+    },
+    {
+      "case_id": "venla-xr-taper-limit--audit-v2-current_allergic_reaction-omitted",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.2 с.4–5; §4.4 с.11–12"
+      }
+    },
+    {
+      "case_id": "venla-xr-taper-limit--audit-v2-current_allergic_reaction-unknown",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.2 с.4–5; §4.4 с.11–12"
+      }
+    },
+    {
+      "case_id": "venla-xr-taper-limit--audit-recheck-suspected_serotonin_syndrome-positive",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.2 с.4–5; §4.4 с.11–12"
+      }
+    },
+    {
+      "case_id": "venla-xr-taper-limit--audit-recheck-suspected_serotonin_syndrome-negative",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.2 с.4–5; §4.4 с.11–12"
+      }
+    },
+    {
+      "case_id": "venla-xr-taper-limit--audit-recheck-suspected_serotonin_syndrome-unknown",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.2 с.4–5; §4.4 с.11–12"
+      }
+    },
+    {
+      "case_id": "venla-xr-taper-limit--audit-recheck-suspected_serotonin_syndrome-omitted",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.2 с.4–5; §4.4 с.11–12"
+      }
+    },
+    {
+      "case_id": "venla-xr-taper-limit--audit-recheck-interaction-CYP2D6_inhibitor",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.2 с.4–5; §4.4 с.11–12"
+      }
+    },
+    {
+      "case_id": "venla-xr-taper-limit--audit-recheck-interaction-CYP3A4_inhibitor",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.2 с.4–5; §4.4 с.11–12"
+      }
+    },
+    {
+      "case_id": "venla-xr-taper-limit--audit-recheck-interaction-QT_prolonging",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.2 с.4–5; §4.4 с.11–12"
+      }
+    },
+    {
+      "case_id": "venla-xr-taper-limit--audit-recheck-interaction-CNS_active",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.2 с.4–5; §4.4 с.11–12"
+      }
+    },
+    {
+      "case_id": "venla-xr-taper-limit--audit-recheck-interaction-metoprolol",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.2 с.4–5; §4.4 с.11–12"
+      }
+    },
+    {
+      "case_id": "venla-xr-taper-limit--audit-recheck-interaction-serotonin_precursor",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.2 с.4–5; §4.4 с.11–12"
+      }
+    },
+    {
+      "case_id": "venla-xr-taper-limit--audit-recheck-interaction-weight_loss_agent",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.2 с.4–5; §4.4 с.11–12"
+      }
+    },
+    {
+      "case_id": "venla-xr-taper-limit--audit-v2-diastolic_BP-positive--audit-final-A-phase-unknown",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.2 с.4–5; §4.4 с.11–12"
+      }
+    },
+    {
+      "case_id": "venla-xr-taper-limit--audit-v2-diastolic_BP-positive--audit-final-A-phase-not_started",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.2 с.4–5; §4.4 с.11–12"
+      }
+    },
+    {
+      "case_id": "venla-xr-taper-limit--audit-v2-current_allergic_reaction-positive--audit-final-A-phase-unknown",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.2 с.4–5; §4.4 с.11–12"
+      }
+    },
+    {
+      "case_id": "venla-xr-taper-limit--audit-v2-current_allergic_reaction-positive--audit-final-A-phase-not_started",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.2 с.4–5; §4.4 с.11–12"
+      }
+    },
+    {
+      "case_id": "venla-xr-taper-limit--audit-recheck-suspected_serotonin_syndrome-positive--audit-final-A-phase-unknown",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.2 с.4–5; §4.4 с.11–12"
+      }
+    },
+    {
+      "case_id": "venla-xr-taper-limit--audit-recheck-suspected_serotonin_syndrome-positive--audit-final-A-phase-not_started",
+      "rule_id": "venla-xr-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.2 с.4–5; §4.4 с.11–12"
+      }
+    },
+    {
+      "case_id": "venla-xr-taper-limit--audit-v2-diastolic_BP-positive--audit-final-bounded-action",
+      "rule_id": "venla-xr-taper-limit",
+      "age": null,
+      "population": "not_assessed",
+      "source_constraint": null
+    },
+    {
+      "case_id": "venla-xr-taper-limit--audit-v2-current_allergic_reaction-positive--audit-final-bounded-action",
+      "rule_id": "venla-xr-taper-limit",
+      "age": null,
+      "population": "not_assessed",
+      "source_constraint": null
+    },
+    {
+      "case_id": "venla-xr-taper-limit--audit-final-conditional-adult-reference",
+      "rule_id": "venla-xr-taper-limit",
+      "age": null,
+      "population": "not_assessed",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.2 с.4–5; §4.4 с.11–12"
+      }
+    },
+    {
+      "case_id": "venla-xr-taper-limit--audit-recheck-suspected_serotonin_syndrome-positive--audit-final-source-caution",
+      "rule_id": "venla-xr-taper-limit",
+      "age": null,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.2 с.4–5; §4.4 с.11–12"
+      }
+    },
+    {
+      "case_id": "venla-xr-taper-limit--audit-recheck-suspected_serotonin_syndrome-unknown--audit-final-source-caution",
+      "rule_id": "venla-xr-taper-limit",
+      "age": null,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.2 с.4–5; §4.4 с.11–12"
+      }
+    },
+    {
+      "case_id": "venla-xr-taper-limit--audit-recheck-interaction-CYP2D6_inhibitor--audit-final-source-caution",
+      "rule_id": "venla-xr-taper-limit",
+      "age": null,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.2 с.4–5; §4.4 с.11–12"
+      }
+    },
+    {
+      "case_id": "venla-xr-taper-limit--audit-recheck-interaction-CYP3A4_inhibitor--audit-final-source-caution",
+      "rule_id": "venla-xr-taper-limit",
+      "age": null,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.2 с.4–5; §4.4 с.11–12"
+      }
+    },
+    {
+      "case_id": "venla-xr-taper-limit--audit-recheck-interaction-QT_prolonging--audit-final-source-caution",
+      "rule_id": "venla-xr-taper-limit",
+      "age": null,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.2 с.4–5; §4.4 с.11–12"
+      }
+    },
+    {
+      "case_id": "venla-xr-taper-limit--audit-recheck-interaction-CNS_active--audit-final-source-caution",
+      "rule_id": "venla-xr-taper-limit",
+      "age": null,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.2 с.4–5; §4.4 с.11–12"
+      }
+    },
+    {
+      "case_id": "venla-xr-taper-limit--audit-recheck-interaction-metoprolol--audit-final-source-caution",
+      "rule_id": "venla-xr-taper-limit",
+      "age": null,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.2 с.4–5; §4.4 с.11–12"
+      }
+    },
+    {
+      "case_id": "venla-xr-taper-limit--audit-recheck-interaction-serotonin_precursor--audit-final-source-caution",
+      "rule_id": "venla-xr-taper-limit",
+      "age": null,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.2 с.4–5; §4.4 с.11–12"
+      }
+    },
+    {
+      "case_id": "venla-xr-taper-limit--audit-recheck-interaction-weight_loss_agent--audit-final-source-caution",
+      "rule_id": "venla-xr-taper-limit",
+      "age": null,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum_choice",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": null,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.2 с.4–5; §4.4 с.11–12"
+      }
+    },
+    {
+      "case_id": "venla-xr-taper-limit--wrong-release-form--audit-final-known-terminal",
+      "rule_id": "venla-xr-taper-limit",
+      "age": null,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "dulox-taper-limit--branch-source_limit",
+      "rule_id": "dulox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": 2,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-DULOX",
+        "source_locator": "§4.2 с.3; §4.4 с.6",
+        "note": "§4.2 указывает 1–2 недели, §4.4 отдельно рекомендует не менее 2 недель. Обычный план менее 2 недель не подтверждён. Точный срок/ступени не задаются."
+      }
+    },
+    {
+      "case_id": "dulox-taper-limit--branch-withdrawal",
+      "rule_id": "dulox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "dulox-taper-limit--age-omitted",
+      "rule_id": "dulox-taper-limit",
+      "age": null,
+      "population": "not_assessed",
+      "source_constraint": {
+        "operator": "minimum",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": 2,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-DULOX",
+        "source_locator": "§4.2 с.3; §4.4 с.6",
+        "note": "§4.2 указывает 1–2 недели, §4.4 отдельно рекомендует не менее 2 недель. Обычный план менее 2 недель не подтверждён. Точный срок/ступени не задаются."
+      }
+    },
+    {
+      "case_id": "dulox-taper-limit--age-unknown",
+      "rule_id": "dulox-taper-limit",
+      "age": "unknown",
+      "population": "not_assessed",
+      "source_constraint": {
+        "operator": "minimum",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": 2,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-DULOX",
+        "source_locator": "§4.2 с.3; §4.4 с.6",
+        "note": "§4.2 указывает 1–2 недели, §4.4 отдельно рекомендует не менее 2 недель. Обычный план менее 2 недель не подтверждён. Точный срок/ступени не задаются."
+      }
+    },
+    {
+      "case_id": "dulox-taper-limit--age-not_assessed",
+      "rule_id": "dulox-taper-limit",
+      "age": "not_assessed",
+      "population": "not_assessed",
+      "source_constraint": {
+        "operator": "minimum",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": 2,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-DULOX",
+        "source_locator": "§4.2 с.3; §4.4 с.6",
+        "note": "§4.2 указывает 1–2 недели, §4.4 отдельно рекомендует не менее 2 недель. Обычный план менее 2 недель не подтверждён. Точный срок/ступени не задаются."
+      }
+    },
+    {
+      "case_id": "dulox-taper-limit--form-omitted",
+      "rule_id": "dulox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "dulox-taper-limit--form-unknown",
+      "rule_id": "dulox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "dulox-taper-limit--form-not_assessed",
+      "rule_id": "dulox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "dulox-taper-limit--current_dose-omitted",
+      "rule_id": "dulox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": 2,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-DULOX",
+        "source_locator": "§4.2 с.3; §4.4 с.6",
+        "note": "§4.2 указывает 1–2 недели, §4.4 отдельно рекомендует не менее 2 недель. Обычный план менее 2 недель не подтверждён. Точный срок/ступени не задаются."
+      }
+    },
+    {
+      "case_id": "dulox-taper-limit--current_dose-unknown",
+      "rule_id": "dulox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": 2,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-DULOX",
+        "source_locator": "§4.2 с.3; §4.4 с.6",
+        "note": "§4.2 указывает 1–2 недели, §4.4 отдельно рекомендует не менее 2 недель. Обычный план менее 2 недель не подтверждён. Точный срок/ступени не задаются."
+      }
+    },
+    {
+      "case_id": "dulox-taper-limit--current_dose-not_assessed",
+      "rule_id": "dulox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": 2,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-DULOX",
+        "source_locator": "§4.2 с.3; §4.4 с.6",
+        "note": "§4.2 указывает 1–2 недели, §4.4 отдельно рекомендует не менее 2 недель. Обычный план менее 2 недель не подтверждён. Точный срок/ступени не задаются."
+      }
+    },
+    {
+      "case_id": "dulox-taper-limit--duration-omitted",
+      "rule_id": "dulox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": 2,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-DULOX",
+        "source_locator": "§4.2 с.3; §4.4 с.6",
+        "note": "§4.2 указывает 1–2 недели, §4.4 отдельно рекомендует не менее 2 недель. Обычный план менее 2 недель не подтверждён. Точный срок/ступени не задаются."
+      }
+    },
+    {
+      "case_id": "dulox-taper-limit--duration-unknown",
+      "rule_id": "dulox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": 2,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-DULOX",
+        "source_locator": "§4.2 с.3; §4.4 с.6",
+        "note": "§4.2 указывает 1–2 недели, §4.4 отдельно рекомендует не менее 2 недель. Обычный план менее 2 недель не подтверждён. Точный срок/ступени не задаются."
+      }
+    },
+    {
+      "case_id": "dulox-taper-limit--duration-not_assessed",
+      "rule_id": "dulox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": 2,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-DULOX",
+        "source_locator": "§4.2 с.3; §4.4 с.6",
+        "note": "§4.2 указывает 1–2 недели, §4.4 отдельно рекомендует не менее 2 недель. Обычный план менее 2 недель не подтверждён. Точный срок/ступени не задаются."
+      }
+    },
+    {
+      "case_id": "dulox-taper-limit--withdrawal_severity-omitted",
+      "rule_id": "dulox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": 2,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-DULOX",
+        "source_locator": "§4.2 с.3; §4.4 с.6",
+        "note": "§4.2 указывает 1–2 недели, §4.4 отдельно рекомендует не менее 2 недель. Обычный план менее 2 недель не подтверждён. Точный срок/ступени не задаются."
+      }
+    },
+    {
+      "case_id": "dulox-taper-limit--withdrawal_severity-unknown",
+      "rule_id": "dulox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": 2,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-DULOX",
+        "source_locator": "§4.2 с.3; §4.4 с.6",
+        "note": "§4.2 указывает 1–2 недели, §4.4 отдельно рекомендует не менее 2 недель. Обычный план менее 2 недель не подтверждён. Точный срок/ступени не задаются."
+      }
+    },
+    {
+      "case_id": "dulox-taper-limit--withdrawal_severity-not_assessed",
+      "rule_id": "dulox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": 2,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-DULOX",
+        "source_locator": "§4.2 с.3; §4.4 с.6",
+        "note": "§4.2 указывает 1–2 недели, §4.4 отдельно рекомендует не менее 2 недель. Обычный план менее 2 недель не подтверждён. Точный срок/ступени не задаются."
+      }
+    },
+    {
+      "case_id": "dulox-taper-limit--past_withdrawal-omitted",
+      "rule_id": "dulox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": 2,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-DULOX",
+        "source_locator": "§4.2 с.3; §4.4 с.6",
+        "note": "§4.2 указывает 1–2 недели, §4.4 отдельно рекомендует не менее 2 недель. Обычный план менее 2 недель не подтверждён. Точный срок/ступени не задаются."
+      }
+    },
+    {
+      "case_id": "dulox-taper-limit--past_withdrawal-unknown",
+      "rule_id": "dulox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": 2,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-DULOX",
+        "source_locator": "§4.2 с.3; §4.4 с.6",
+        "note": "§4.2 указывает 1–2 недели, §4.4 отдельно рекомендует не менее 2 недель. Обычный план менее 2 недель не подтверждён. Точный срок/ступени не задаются."
+      }
+    },
+    {
+      "case_id": "dulox-taper-limit--past_withdrawal-not_assessed",
+      "rule_id": "dulox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": 2,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-DULOX",
+        "source_locator": "§4.2 с.3; §4.4 с.6",
+        "note": "§4.2 указывает 1–2 недели, §4.4 отдельно рекомендует не менее 2 недель. Обычный план менее 2 недель не подтверждён. Точный срок/ступени не задаются."
+      }
+    },
+    {
+      "case_id": "dulox-taper-limit--confirmed-negative-fields",
+      "rule_id": "dulox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": 2,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-DULOX",
+        "source_locator": "§4.2 с.3; §4.4 с.6",
+        "note": "§4.2 указывает 1–2 недели, §4.4 отдельно рекомендует не менее 2 недель. Обычный план менее 2 недель не подтверждён. Точный срок/ступени не задаются."
+      }
+    },
+    {
+      "case_id": "dulox-taper-limit--nested-form-product-omitted",
+      "rule_id": "dulox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "dulox-taper-limit--nested-form-product-unknown",
+      "rule_id": "dulox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "dulox-taper-limit--nested-form-product-not_assessed",
+      "rule_id": "dulox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "dulox-taper-limit--nested-form-registration_number-omitted",
+      "rule_id": "dulox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "dulox-taper-limit--nested-form-registration_number-unknown",
+      "rule_id": "dulox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "dulox-taper-limit--nested-form-registration_number-not_assessed",
+      "rule_id": "dulox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "dulox-taper-limit--nested-form-source_id-omitted",
+      "rule_id": "dulox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "dulox-taper-limit--nested-form-source_id-unknown",
+      "rule_id": "dulox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "dulox-taper-limit--nested-form-source_id-not_assessed",
+      "rule_id": "dulox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "dulox-taper-limit--nested-form-dosage_form-omitted",
+      "rule_id": "dulox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "dulox-taper-limit--nested-form-dosage_form-unknown",
+      "rule_id": "dulox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "dulox-taper-limit--nested-form-dosage_form-not_assessed",
+      "rule_id": "dulox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "dulox-taper-limit--nested-form-strengths_mg-omitted",
+      "rule_id": "dulox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "dulox-taper-limit--nested-form-strengths_mg-unknown",
+      "rule_id": "dulox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "dulox-taper-limit--nested-form-strengths_mg-not_assessed",
+      "rule_id": "dulox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "dulox-taper-limit--nested-form-release-omitted",
+      "rule_id": "dulox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "dulox-taper-limit--nested-form-release-unknown",
+      "rule_id": "dulox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "dulox-taper-limit--nested-form-release-not_assessed",
+      "rule_id": "dulox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "dulox-taper-limit--nested-form-route-omitted",
+      "rule_id": "dulox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "dulox-taper-limit--nested-form-route-unknown",
+      "rule_id": "dulox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "dulox-taper-limit--nested-form-route-not_assessed",
+      "rule_id": "dulox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "dulox-taper-limit--nested-form-source_version-omitted",
+      "rule_id": "dulox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "dulox-taper-limit--nested-form-source_version-unknown",
+      "rule_id": "dulox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "dulox-taper-limit--nested-form-source_version-not_assessed",
+      "rule_id": "dulox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "dulox-taper-limit--wrong-release-form",
+      "rule_id": "dulox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": null
+    },
+    {
+      "case_id": "dulox-taper-limit--audit-recheck-persistent_BP_increase-positive",
+      "rule_id": "dulox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": 2,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-DULOX",
+        "source_locator": "§4.2 с.3; §4.4 с.6",
+        "note": "§4.2 указывает 1–2 недели, §4.4 отдельно рекомендует не менее 2 недель. Обычный план менее 2 недель не подтверждён. Точный срок/ступени не задаются."
+      }
+    },
+    {
+      "case_id": "dulox-taper-limit--audit-recheck-persistent_BP_increase-negative",
+      "rule_id": "dulox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": 2,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-DULOX",
+        "source_locator": "§4.2 с.3; §4.4 с.6",
+        "note": "§4.2 указывает 1–2 недели, §4.4 отдельно рекомендует не менее 2 недель. Обычный план менее 2 недель не подтверждён. Точный срок/ступени не задаются."
+      }
+    },
+    {
+      "case_id": "dulox-taper-limit--audit-recheck-persistent_BP_increase-unknown",
+      "rule_id": "dulox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": 2,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-DULOX",
+        "source_locator": "§4.2 с.3; §4.4 с.6",
+        "note": "§4.2 указывает 1–2 недели, §4.4 отдельно рекомендует не менее 2 недель. Обычный план менее 2 недель не подтверждён. Точный срок/ступени не задаются."
+      }
+    },
+    {
+      "case_id": "dulox-taper-limit--audit-recheck-persistent_BP_increase-omitted",
+      "rule_id": "dulox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": 2,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-DULOX",
+        "source_locator": "§4.2 с.3; §4.4 с.6",
+        "note": "§4.2 указывает 1–2 недели, §4.4 отдельно рекомендует не менее 2 недель. Обычный план менее 2 недель не подтверждён. Точный срок/ступени не задаются."
+      }
+    },
+    {
+      "case_id": "dulox-taper-limit--audit-recheck-duplicate-duloxetine-positive",
+      "rule_id": "dulox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": 2,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-DULOX",
+        "source_locator": "§4.2 с.3; §4.4 с.6",
+        "note": "§4.2 указывает 1–2 недели, §4.4 отдельно рекомендует не менее 2 недель. Обычный план менее 2 недель не подтверждён. Точный срок/ступени не задаются."
+      }
+    },
+    {
+      "case_id": "dulox-taper-limit--audit-recheck-duplicate-duloxetine-selected_product_only",
+      "rule_id": "dulox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": 2,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-DULOX",
+        "source_locator": "§4.2 с.3; §4.4 с.6",
+        "note": "§4.2 указывает 1–2 недели, §4.4 отдельно рекомендует не менее 2 недель. Обычный план менее 2 недель не подтверждён. Точный срок/ступени не задаются."
+      }
+    },
+    {
+      "case_id": "dulox-taper-limit--audit-recheck-duplicate-duloxetine-unknown_additional_product",
+      "rule_id": "dulox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": 2,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-DULOX",
+        "source_locator": "§4.2 с.3; §4.4 с.6",
+        "note": "§4.2 указывает 1–2 недели, §4.4 отдельно рекомендует не менее 2 недель. Обычный план менее 2 недель не подтверждён. Точный срок/ступени не задаются."
+      }
+    },
+    {
+      "case_id": "dulox-taper-limit--audit-recheck-persistent_BP_increase-positive--audit-final-A-phase-unknown",
+      "rule_id": "dulox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": 2,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-DULOX",
+        "source_locator": "§4.2 с.3; §4.4 с.6",
+        "note": "§4.2 указывает 1–2 недели, §4.4 отдельно рекомендует не менее 2 недель. Обычный план менее 2 недель не подтверждён. Точный срок/ступени не задаются."
+      }
+    },
+    {
+      "case_id": "dulox-taper-limit--audit-recheck-persistent_BP_increase-positive--audit-final-A-phase-not_started",
+      "rule_id": "dulox-taper-limit",
+      "age": 40,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": 2,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-DULOX",
+        "source_locator": "§4.2 с.3; §4.4 с.6",
+        "note": "§4.2 указывает 1–2 недели, §4.4 отдельно рекомендует не менее 2 недель. Обычный план менее 2 недель не подтверждён. Точный срок/ступени не задаются."
+      }
+    },
+    {
+      "case_id": "dulox-taper-limit--audit-final-conditional-adult-reference",
+      "rule_id": "dulox-taper-limit",
+      "age": null,
+      "population": "not_assessed",
+      "source_constraint": {
+        "operator": "minimum",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": 2,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-DULOX",
+        "source_locator": "§4.2 с.3; §4.4 с.6",
+        "note": "§4.2 указывает 1–2 недели, §4.4 отдельно рекомендует не менее 2 недель. Обычный план менее 2 недель не подтверждён. Точный срок/ступени не задаются."
+      }
+    },
+    {
+      "case_id": "dulox-taper-limit--audit-recheck-persistent_BP_increase-positive--audit-final-source-caution",
+      "rule_id": "dulox-taper-limit",
+      "age": null,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": 2,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-DULOX",
+        "source_locator": "§4.2 с.3; §4.4 с.6",
+        "note": "§4.2 указывает 1–2 недели, §4.4 отдельно рекомендует не менее 2 недель. Обычный план менее 2 недель не подтверждён. Точный срок/ступени не задаются."
+      }
+    },
+    {
+      "case_id": "dulox-taper-limit--audit-recheck-persistent_BP_increase-unknown--audit-final-source-caution",
+      "rule_id": "dulox-taper-limit",
+      "age": null,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": 2,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-DULOX",
+        "source_locator": "§4.2 с.3; §4.4 с.6",
+        "note": "§4.2 указывает 1–2 недели, §4.4 отдельно рекомендует не менее 2 недель. Обычный план менее 2 недель не подтверждён. Точный срок/ступени не задаются."
+      }
+    },
+    {
+      "case_id": "dulox-taper-limit--audit-recheck-duplicate-duloxetine-positive--audit-final-source-caution",
+      "rule_id": "dulox-taper-limit",
+      "age": null,
+      "population": "adult_source_population",
+      "source_constraint": {
+        "operator": "minimum",
+        "source_options_weeks": [
+          1,
+          2
+        ],
+        "chosen_minimum_weeks": 2,
+        "hard_upper_limit_weeks": null,
+        "exact_taper_duration_weeks": null,
+        "slower_if_symptoms": true,
+        "source_ref": "RU-DULOX",
+        "source_locator": "§4.2 с.3; §4.4 с.6",
+        "note": "§4.2 указывает 1–2 недели, §4.4 отдельно рекомендует не менее 2 недель. Обычный план менее 2 недель не подтверждён. Точный срок/ступени не задаются."
+      }
+    },
+    {
+      "case_id": "dulox-taper-limit--wrong-release-form--audit-final-known-terminal",
+      "rule_id": "dulox-taper-limit",
+      "age": null,
+      "population": "adult_source_population",
+      "source_constraint": null
+    }
+  ],
+  "clarification_cases": [
+    "ser-adult-adjust--audit-recheck-symptomatic_hyponatremia-unknown",
+    "ser-panic-start--audit-recheck-symptomatic_hyponatremia-unknown",
+    "ser-social-start--audit-recheck-symptomatic_hyponatremia-unknown",
+    "ser-taper-limit--audit-recheck-symptomatic_hyponatremia-unknown",
+    "preg-gad-start--audit-recheck-current_suicidal_thoughts_or_behavior-unknown",
+    "dulox-depression-start--audit-recheck-persistent_BP_increase-unknown",
+    "dulox-gad-start--audit-recheck-persistent_BP_increase-unknown",
+    "dulox-taper-limit--audit-recheck-persistent_BP_increase-unknown",
+    "venla-xr-gad-start--audit-recheck-suspected_serotonin_syndrome-unknown",
+    "venla-xr-social-start--audit-recheck-suspected_serotonin_syndrome-unknown",
+    "venla-xr-taper-limit--audit-recheck-suspected_serotonin_syndrome-unknown",
+    "ser-adult-adjust--audit-recheck-symptomatic_hyponatremia-unknown--audit-final-source-caution",
+    "ser-panic-start--audit-recheck-symptomatic_hyponatremia-unknown--audit-final-source-caution",
+    "ser-social-start--audit-recheck-symptomatic_hyponatremia-unknown--audit-final-source-caution",
+    "ser-taper-limit--audit-recheck-symptomatic_hyponatremia-unknown--audit-final-source-caution",
+    "preg-gad-start--audit-recheck-current_suicidal_thoughts_or_behavior-unknown--audit-final-source-caution",
+    "dulox-depression-start--audit-recheck-persistent_BP_increase-unknown--audit-final-source-caution",
+    "dulox-gad-start--audit-recheck-persistent_BP_increase-unknown--audit-final-source-caution",
+    "dulox-taper-limit--audit-recheck-persistent_BP_increase-unknown--audit-final-source-caution",
+    "venla-xr-gad-start--audit-recheck-suspected_serotonin_syndrome-unknown--audit-final-source-caution",
+    "venla-xr-social-start--audit-recheck-suspected_serotonin_syndrome-unknown--audit-final-source-caution",
+    "venla-xr-taper-limit--audit-recheck-suspected_serotonin_syndrome-unknown--audit-final-source-caution"
+  ],
+  "scope": "Source-only adult references, known nonselected example and unknown event are bounded, not individual treatment."
+}

@@ -1,0 +1,772 @@
+[
+  {
+    "rule_id": "dulox-depression-start",
+    "input_id": "mania",
+    "fields": {
+      "question_ru": "Подтверждённое значение mania по §4.4 с.5?",
+      "source_locator": "§4.4 с.4"
+    },
+    "issue": "Question retains old pages while primary locator changed. Diabetes also needs clinical text/label specificity rather than an invented coefficient.",
+    "input_line": 618
+  },
+  {
+    "rule_id": "dulox-depression-start",
+    "input_id": "suicide_risk",
+    "fields": {
+      "question_ru": "Подтверждённое значение suicide_risk по §4.4 с.7–8?",
+      "source_locator": "§4.4 с.5–6"
+    },
+    "issue": "Question retains old pages while primary locator changed. Diabetes also needs clinical text/label specificity rather than an invented coefficient.",
+    "input_line": 658
+  },
+  {
+    "rule_id": "dulox-depression-start",
+    "input_id": "bleeding_risk",
+    "fields": {
+      "question_ru": "Подтверждённое значение bleeding_risk по §4.4 с.8?",
+      "source_locator": "§4.4 с.6"
+    },
+    "issue": "Question retains old pages while primary locator changed. Diabetes also needs clinical text/label specificity rather than an invented coefficient.",
+    "input_line": 698
+  },
+  {
+    "rule_id": "dulox-depression-start",
+    "input_id": "hyponatremia_risk",
+    "fields": {
+      "question_ru": "Подтверждённое значение hyponatremia_risk по §4.4 с.8?",
+      "source_locator": "§4.4 с.6"
+    },
+    "issue": "Question retains old pages while primary locator changed. Diabetes also needs clinical text/label specificity rather than an invented coefficient.",
+    "input_line": 738
+  },
+  {
+    "rule_id": "dulox-depression-start",
+    "input_id": "diabetes",
+    "fields": {
+      "question_ru": "Подтверждённое значение diabetes по §4.4 с.5?",
+      "source_locator": "§4.4 с.4"
+    },
+    "issue": "Question retains old pages while primary locator changed. Diabetes also needs clinical text/label specificity rather than an invented coefficient.",
+    "input_line": 778
+  },
+  {
+    "rule_id": "dulox-depression-start",
+    "input_id": "seizure_state",
+    "fields": {
+      "question_ru": "Подтверждённое значение seizure_state по §4.4 с.5?",
+      "source_locator": "§4.4 с.4"
+    },
+    "issue": "Question retains old pages while primary locator changed. Diabetes also needs clinical text/label specificity rather than an invented coefficient.",
+    "input_line": 818
+  },
+  {
+    "rule_id": "dulox-gad-adjust",
+    "input_id": "mania",
+    "fields": {
+      "question_ru": "Подтверждённое значение mania по §4.4 с.5?",
+      "source_locator": "§4.4 с.4"
+    },
+    "issue": "Question retains old pages while primary locator changed. Diabetes also needs clinical text/label specificity rather than an invented coefficient.",
+    "input_line": 788
+  },
+  {
+    "rule_id": "dulox-gad-adjust",
+    "input_id": "suicide_risk",
+    "fields": {
+      "question_ru": "Подтверждённое значение suicide_risk по §4.4 с.7–8?",
+      "source_locator": "§4.4 с.5–6"
+    },
+    "issue": "Question retains old pages while primary locator changed. Diabetes also needs clinical text/label specificity rather than an invented coefficient.",
+    "input_line": 828
+  },
+  {
+    "rule_id": "dulox-gad-adjust",
+    "input_id": "bleeding_risk",
+    "fields": {
+      "question_ru": "Подтверждённое значение bleeding_risk по §4.4 с.8?",
+      "source_locator": "§4.4 с.6"
+    },
+    "issue": "Question retains old pages while primary locator changed. Diabetes also needs clinical text/label specificity rather than an invented coefficient.",
+    "input_line": 868
+  },
+  {
+    "rule_id": "dulox-gad-adjust",
+    "input_id": "hyponatremia_risk",
+    "fields": {
+      "question_ru": "Подтверждённое значение hyponatremia_risk по §4.4 с.8?",
+      "source_locator": "§4.4 с.6"
+    },
+    "issue": "Question retains old pages while primary locator changed. Diabetes also needs clinical text/label specificity rather than an invented coefficient.",
+    "input_line": 908
+  },
+  {
+    "rule_id": "dulox-gad-adjust",
+    "input_id": "diabetes",
+    "fields": {
+      "question_ru": "Подтверждённое значение diabetes по §4.4 с.5?",
+      "source_locator": "§4.4 с.4"
+    },
+    "issue": "Question retains old pages while primary locator changed. Diabetes also needs clinical text/label specificity rather than an invented coefficient.",
+    "input_line": 948
+  },
+  {
+    "rule_id": "dulox-gad-adjust",
+    "input_id": "seizure_state",
+    "fields": {
+      "question_ru": "Подтверждённое значение seizure_state по §4.4 с.5?",
+      "source_locator": "§4.4 с.4"
+    },
+    "issue": "Question retains old pages while primary locator changed. Diabetes also needs clinical text/label specificity rather than an invented coefficient.",
+    "input_line": 988
+  },
+  {
+    "rule_id": "dulox-gad-start",
+    "input_id": "mania",
+    "fields": {
+      "question_ru": "Подтверждённое значение mania по §4.4 с.5?",
+      "source_locator": "§4.4 с.4"
+    },
+    "issue": "Question retains old pages while primary locator changed. Diabetes also needs clinical text/label specificity rather than an invented coefficient.",
+    "input_line": 692
+  },
+  {
+    "rule_id": "dulox-gad-start",
+    "input_id": "suicide_risk",
+    "fields": {
+      "question_ru": "Подтверждённое значение suicide_risk по §4.4 с.7–8?",
+      "source_locator": "§4.4 с.5–6"
+    },
+    "issue": "Question retains old pages while primary locator changed. Diabetes also needs clinical text/label specificity rather than an invented coefficient.",
+    "input_line": 732
+  },
+  {
+    "rule_id": "dulox-gad-start",
+    "input_id": "bleeding_risk",
+    "fields": {
+      "question_ru": "Подтверждённое значение bleeding_risk по §4.4 с.8?",
+      "source_locator": "§4.4 с.6"
+    },
+    "issue": "Question retains old pages while primary locator changed. Diabetes also needs clinical text/label specificity rather than an invented coefficient.",
+    "input_line": 772
+  },
+  {
+    "rule_id": "dulox-gad-start",
+    "input_id": "hyponatremia_risk",
+    "fields": {
+      "question_ru": "Подтверждённое значение hyponatremia_risk по §4.4 с.8?",
+      "source_locator": "§4.4 с.6"
+    },
+    "issue": "Question retains old pages while primary locator changed. Diabetes also needs clinical text/label specificity rather than an invented coefficient.",
+    "input_line": 812
+  },
+  {
+    "rule_id": "dulox-gad-start",
+    "input_id": "diabetes",
+    "fields": {
+      "question_ru": "Подтверждённое значение diabetes по §4.4 с.5?",
+      "source_locator": "§4.4 с.4"
+    },
+    "issue": "Question retains old pages while primary locator changed. Diabetes also needs clinical text/label specificity rather than an invented coefficient.",
+    "input_line": 852
+  },
+  {
+    "rule_id": "dulox-gad-start",
+    "input_id": "seizure_state",
+    "fields": {
+      "question_ru": "Подтверждённое значение seizure_state по §4.4 с.5?",
+      "source_locator": "§4.4 с.4"
+    },
+    "issue": "Question retains old pages while primary locator changed. Diabetes also needs clinical text/label specificity rather than an invented coefficient.",
+    "input_line": 892
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "input_id": "form",
+    "fields": {
+      "why_needed": "10 мг исполнимы половиной таблетки 20 мг; §4.2 с.17.",
+      "necessity_reason": "10 мг исполнимы половиной таблетки 20 мг; §4.2 с.17."
+    },
+    "primary_file": "remediation_round3/originals/RU-PAROX_current.pdf",
+    "primary_sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069",
+    "actual_pages": "§4.2 physical3–4; §4.3 physical4–5; §4.4 physical6–11; §4.5 physical11–14; seizures stop9, epilepsy caution8",
+    "input_line": 77
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "input_id": "hepatic",
+    "fields": {
+      "why_needed": "Ограничение диапазона §4.2 с.17.",
+      "necessity_reason": "Ограничение диапазона §4.2 с.17."
+    },
+    "primary_file": "remediation_round3/originals/RU-PAROX_current.pdf",
+    "primary_sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069",
+    "actual_pages": "§4.2 physical3–4; §4.3 physical4–5; §4.4 physical6–11; §4.5 physical11–14; seizures stop9, epilepsy caution8",
+    "input_line": 110
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "input_id": "renal",
+    "fields": {
+      "why_needed": "Если есть/неясно, уточнить CLcr в отдельной ветке; §4.2 с.17.",
+      "necessity_reason": "Если есть/неясно, уточнить CLcr в отдельной ветке; §4.2 с.17."
+    },
+    "primary_file": "remediation_round3/originals/RU-PAROX_current.pdf",
+    "primary_sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069",
+    "actual_pages": "§4.2 physical3–4; §4.3 physical4–5; §4.4 physical6–11; §4.5 physical11–14; seizures stop9, epilepsy caution8",
+    "input_line": 146
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "input_id": "response",
+    "fields": {
+      "source_locator": "§4.2 с.16, паническое расстройство: старт и последующее повышение"
+    },
+    "primary_file": "remediation_round3/originals/RU-PAROX_current.pdf",
+    "primary_sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069",
+    "actual_pages": "§4.2 physical3–4; §4.3 physical4–5; §4.4 physical6–11; §4.5 physical11–14; seizures stop9, epilepsy caution8",
+    "input_line": 334
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "input_id": "tolerability",
+    "fields": {
+      "source_locator": "§4.2 с.16, паническое расстройство: старт и последующее повышение"
+    },
+    "primary_file": "remediation_round3/originals/RU-PAROX_current.pdf",
+    "primary_sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069",
+    "actual_pages": "§4.2 physical3–4; §4.3 physical4–5; §4.4 physical6–11; §4.5 physical11–14; seizures stop9, epilepsy caution8",
+    "input_line": 377
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "input_id": "current_dose",
+    "fields": {
+      "source_locator": "§4.2 с.16, паническое расстройство: старт и последующее повышение"
+    },
+    "primary_file": "remediation_round3/originals/RU-PAROX_current.pdf",
+    "primary_sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069",
+    "actual_pages": "§4.2 physical3–4; §4.3 physical4–5; §4.4 physical6–11; §4.5 physical11–14; seizures stop9, epilepsy caution8",
+    "input_line": 420
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "input_id": "time_at_dose",
+    "fields": {
+      "source_locator": "§4.2 с.16, паническое расстройство: старт и последующее повышение"
+    },
+    "primary_file": "remediation_round3/originals/RU-PAROX_current.pdf",
+    "primary_sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069",
+    "actual_pages": "§4.2 physical3–4; §4.3 physical4–5; §4.4 physical6–11; §4.5 physical11–14; seizures stop9, epilepsy caution8",
+    "input_line": 458
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "input_id": "maoi_type",
+    "fields": {
+      "why_needed": "Изменяет применимость/действие: §4.3 с.17–18."
+    },
+    "primary_file": "remediation_round3/originals/RU-PAROX_current.pdf",
+    "primary_sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069",
+    "actual_pages": "§4.2 physical3–4; §4.3 physical4–5; §4.4 physical6–11; §4.5 physical11–14; seizures stop9, epilepsy caution8",
+    "input_line": 496
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "input_id": "maoi_stopped_at",
+    "fields": {
+      "why_needed": "Изменяет применимость/действие: §4.3 с.17–18."
+    },
+    "primary_file": "remediation_round3/originals/RU-PAROX_current.pdf",
+    "primary_sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069",
+    "actual_pages": "§4.2 physical3–4; §4.3 physical4–5; §4.4 physical6–11; §4.5 physical11–14; seizures stop9, epilepsy caution8",
+    "input_line": 533
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "input_id": "elderly_population",
+    "fields": {
+      "why_needed": "Изменяет применимость/действие: §4.2 с.17; возрастная граница не задана.",
+      "necessity_reason": "Изменяет применимость/действие: §4.2 с.17; возрастная граница не задана."
+    },
+    "primary_file": "remediation_round3/originals/RU-PAROX_current.pdf",
+    "primary_sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069",
+    "actual_pages": "§4.2 physical3–4; §4.3 physical4–5; §4.4 physical6–11; §4.5 physical11–14; seizures stop9, epilepsy caution8",
+    "input_line": 564
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "input_id": "mania",
+    "fields": {
+      "question_ru": "Подтверждённое значение mania по §4.4 с.20?",
+      "why_needed": "Изменяет допуск/действие по RU-PAROX §4.4 с.20; не общий допуск врача."
+    },
+    "primary_file": "remediation_round3/originals/RU-PAROX_current.pdf",
+    "primary_sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069",
+    "actual_pages": "§4.2 physical3–4; §4.3 physical4–5; §4.4 physical6–11; §4.5 physical11–14; seizures stop9, epilepsy caution8",
+    "input_line": 600
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "input_id": "suicide_risk",
+    "fields": {
+      "question_ru": "Подтверждённое значение suicide_risk по §4.4 с.18–20?",
+      "why_needed": "Изменяет допуск/действие по RU-PAROX §4.4 с.18–20; не общий допуск врача."
+    },
+    "primary_file": "remediation_round3/originals/RU-PAROX_current.pdf",
+    "primary_sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069",
+    "actual_pages": "§4.2 physical3–4; §4.3 physical4–5; §4.4 physical6–11; §4.5 physical11–14; seizures stop9, epilepsy caution8",
+    "input_line": 640
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "input_id": "akathisia",
+    "fields": {
+      "question_ru": "Подтверждённое значение akathisia по §4.4 с.20?",
+      "why_needed": "Изменяет допуск/действие по RU-PAROX §4.4 с.20; не общий допуск врача."
+    },
+    "primary_file": "remediation_round3/originals/RU-PAROX_current.pdf",
+    "primary_sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069",
+    "actual_pages": "§4.2 physical3–4; §4.3 physical4–5; §4.4 physical6–11; §4.5 physical11–14; seizures stop9, epilepsy caution8",
+    "input_line": 680
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "input_id": "diabetes",
+    "fields": {
+      "question_ru": "Подтверждённое значение diabetes по §4.4 с.21?",
+      "why_needed": "Изменяет допуск/действие по RU-PAROX §4.4 с.21; не общий допуск врача."
+    },
+    "primary_file": "remediation_round3/originals/RU-PAROX_current.pdf",
+    "primary_sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069",
+    "actual_pages": "§4.2 physical3–4; §4.3 physical4–5; §4.4 physical6–11; §4.5 physical11–14; seizures stop9, epilepsy caution8",
+    "input_line": 720
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "input_id": "glaucoma",
+    "fields": {
+      "question_ru": "Подтверждённое значение glaucoma по §4.4 с.22?",
+      "why_needed": "Изменяет допуск/действие по RU-PAROX §4.4 с.22; не общий допуск врача."
+    },
+    "primary_file": "remediation_round3/originals/RU-PAROX_current.pdf",
+    "primary_sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069",
+    "actual_pages": "§4.2 physical3–4; §4.3 physical4–5; §4.4 physical6–11; §4.5 physical11–14; seizures stop9, epilepsy caution8",
+    "input_line": 760
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "input_id": "bleeding_risk",
+    "fields": {
+      "question_ru": "Подтверждённое значение bleeding_risk по §4.4 с.22?",
+      "why_needed": "Изменяет допуск/действие по RU-PAROX §4.4 с.22; не общий допуск врача."
+    },
+    "primary_file": "remediation_round3/originals/RU-PAROX_current.pdf",
+    "primary_sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069",
+    "actual_pages": "§4.2 physical3–4; §4.3 physical4–5; §4.4 physical6–11; §4.5 physical11–14; seizures stop9, epilepsy caution8",
+    "input_line": 800
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "input_id": "qt_risk",
+    "fields": {
+      "question_ru": "Подтверждённое значение qt_risk по §4.4 с.22?",
+      "why_needed": "Изменяет допуск/действие по RU-PAROX §4.4 с.22; не общий допуск врача."
+    },
+    "primary_file": "remediation_round3/originals/RU-PAROX_current.pdf",
+    "primary_sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069",
+    "actual_pages": "§4.2 physical3–4; §4.3 physical4–5; §4.4 physical6–11; §4.5 physical11–14; seizures stop9, epilepsy caution8",
+    "input_line": 840
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "input_id": "ect",
+    "fields": {
+      "question_ru": "Подтверждённое значение ect по §4.4 с.22?",
+      "why_needed": "Изменяет допуск/действие по RU-PAROX §4.4 с.22; не общий допуск врача."
+    },
+    "primary_file": "remediation_round3/originals/RU-PAROX_current.pdf",
+    "primary_sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069",
+    "actual_pages": "§4.2 physical3–4; §4.3 physical4–5; §4.4 physical6–11; §4.5 physical11–14; seizures stop9, epilepsy caution8",
+    "input_line": 880
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "input_id": "seizure_state",
+    "fields": {
+      "question_ru": "Подтверждённое значение seizure_state по §4.4 с.21?",
+      "why_needed": "Изменяет допуск/действие по RU-PAROX §4.4 с.21; не общий допуск врача.",
+      "necessity_reason": "Изменяет допуск/действие по RU-PAROX §4.4 с.21; не общий допуск врача.",
+      "source_locator": "§4.4 с.8"
+    },
+    "primary_file": "remediation_round3/originals/RU-PAROX_current.pdf",
+    "primary_sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069",
+    "actual_pages": "§4.2 physical3–4; §4.3 physical4–5; §4.4 physical6–11; §4.5 physical11–14; seizures stop9, epilepsy caution8",
+    "input_line": 920
+  },
+  {
+    "rule_id": "parox-taper-example",
+    "input_id": "age",
+    "fields": {
+      "source_locator": "ОХЛП: PDF с.14–18 (§4.1–4.3), с.19–23 (§4.4), с.24–28 (§4.5–4.6), с.39 (§8–10)"
+    },
+    "primary_file": "remediation_round3/originals/RU-PAROX_current.pdf",
+    "primary_sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069",
+    "actual_pages": "§4.2 physical3–4; §4.3 physical4–5; §4.4 physical6–11; §4.5 physical11–14; seizures stop9, epilepsy caution8",
+    "input_line": 44
+  },
+  {
+    "rule_id": "parox-taper-example",
+    "input_id": "form",
+    "fields": {
+      "source_locator": "ОХЛП: PDF с.14–18 (§4.1–4.3), с.19–23 (§4.4), с.24–28 (§4.5–4.6), с.39 (§8–10)"
+    },
+    "primary_file": "remediation_round3/originals/RU-PAROX_current.pdf",
+    "primary_sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069",
+    "actual_pages": "§4.2 physical3–4; §4.3 physical4–5; §4.4 physical6–11; §4.5 physical11–14; seizures stop9, epilepsy caution8",
+    "input_line": 77
+  },
+  {
+    "rule_id": "parox-taper-example",
+    "input_id": "current_dose",
+    "fields": {
+      "source_locator": "ОХЛП: PDF с.14–18 (§4.1–4.3), с.19–23 (§4.4), с.24–28 (§4.5–4.6), с.39 (§8–10)"
+    },
+    "primary_file": "remediation_round3/originals/RU-PAROX_current.pdf",
+    "primary_sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069",
+    "actual_pages": "§4.2 physical3–4; §4.3 physical4–5; §4.4 physical6–11; §4.5 physical11–14; seizures stop9, epilepsy caution8",
+    "input_line": 111
+  },
+  {
+    "rule_id": "parox-taper-example",
+    "input_id": "duration",
+    "fields": {
+      "source_locator": "ОХЛП: PDF с.14–18 (§4.1–4.3), с.19–23 (§4.4), с.24–28 (§4.5–4.6), с.39 (§8–10)"
+    },
+    "primary_file": "remediation_round3/originals/RU-PAROX_current.pdf",
+    "primary_sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069",
+    "actual_pages": "§4.2 physical3–4; §4.3 physical4–5; §4.4 physical6–11; §4.5 physical11–14; seizures stop9, epilepsy caution8",
+    "input_line": 144
+  },
+  {
+    "rule_id": "parox-taper-example",
+    "input_id": "past_withdrawal",
+    "fields": {
+      "source_locator": "ОХЛП: PDF с.14–18 (§4.1–4.3), с.19–23 (§4.4), с.24–28 (§4.5–4.6), с.39 (§8–10)"
+    },
+    "primary_file": "remediation_round3/originals/RU-PAROX_current.pdf",
+    "primary_sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069",
+    "actual_pages": "§4.2 physical3–4; §4.3 physical4–5; §4.4 physical6–11; §4.5 physical11–14; seizures stop9, epilepsy caution8",
+    "input_line": 177
+  },
+  {
+    "rule_id": "parox-taper-example",
+    "input_id": "withdrawal_severity",
+    "fields": {
+      "source_locator": "ОХЛП: PDF с.14–18 (§4.1–4.3), с.19–23 (§4.4), с.24–28 (§4.5–4.6), с.39 (§8–10)"
+    },
+    "primary_file": "remediation_round3/originals/RU-PAROX_current.pdf",
+    "primary_sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069",
+    "actual_pages": "§4.2 physical3–4; §4.3 physical4–5; §4.4 physical6–11; §4.5 physical11–14; seizures stop9, epilepsy caution8",
+    "input_line": 216
+  },
+  {
+    "rule_id": "parox-taper-example",
+    "input_id": "example_selected",
+    "fields": {
+      "source_locator": "ОХЛП: PDF с.14–18 (§4.1–4.3), с.19–23 (§4.4), с.24–28 (§4.5–4.6), с.39 (§8–10)"
+    },
+    "primary_file": "remediation_round3/originals/RU-PAROX_current.pdf",
+    "primary_sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069",
+    "actual_pages": "§4.2 physical3–4; §4.3 physical4–5; §4.4 physical6–11; §4.5 physical11–14; seizures stop9, epilepsy caution8",
+    "input_line": 258
+  },
+  {
+    "rule_id": "switch-parox-ago-selected-example",
+    "input_id": "age",
+    "fields": {
+      "source_locator": "RU-PAROX: §4.2 с.17; §4.4 с.18; RU-AGO: §4.2 с.2, возрастная применимость"
+    },
+    "primary_file": "remediation_round3/originals/RU-PAROX_current.pdf",
+    "primary_sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069",
+    "actual_pages": "§4.2 physical3–4; §4.3 physical4–5; §4.4 physical6–11; §4.5 physical11–14; seizures stop9, epilepsy caution8",
+    "input_line": 123
+  },
+  {
+    "rule_id": "switch-parox-ago-selected-example",
+    "input_id": "medicines",
+    "fields": {
+      "source_locator": "RU-PAROX: §4.3 с.17–18; §4.5 с.24–26; RU-AGO: §4.3 с.3; §4.5 с.5–6"
+    },
+    "primary_file": "remediation_round3/originals/RU-PAROX_current.pdf",
+    "primary_sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069",
+    "actual_pages": "§4.2 physical3–4; §4.3 physical4–5; §4.4 physical6–11; §4.5 physical11–14; seizures stop9, epilepsy caution8",
+    "input_line": 293
+  },
+  {
+    "rule_id": "switch-parox-ago-selected-example",
+    "input_id": "allergy",
+    "fields": {
+      "source_locator": "RU-PAROX: §4.3 с.17; RU-AGO: §4.3 с.3"
+    },
+    "primary_file": "remediation_round3/originals/RU-PAROX_current.pdf",
+    "primary_sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069",
+    "actual_pages": "§4.2 physical3–4; §4.3 physical4–5; §4.4 physical6–11; §4.5 physical11–14; seizures stop9, epilepsy caution8",
+    "input_line": 330
+  },
+  {
+    "rule_id": "switch-parox-ago-selected-example",
+    "input_id": "maoi_type",
+    "fields": {
+      "why_needed": "Изменяет применимость/действие: §4.3 с.17–18."
+    },
+    "primary_file": "remediation_round3/originals/RU-PAROX_current.pdf",
+    "primary_sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069",
+    "actual_pages": "§4.2 physical3–4; §4.3 physical4–5; §4.4 physical6–11; §4.5 physical11–14; seizures stop9, epilepsy caution8",
+    "input_line": 644
+  },
+  {
+    "rule_id": "switch-parox-ago-selected-example",
+    "input_id": "maoi_stopped_at",
+    "fields": {
+      "why_needed": "Изменяет применимость/действие: §4.3 с.17–18."
+    },
+    "primary_file": "remediation_round3/originals/RU-PAROX_current.pdf",
+    "primary_sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069",
+    "actual_pages": "§4.2 physical3–4; §4.3 physical4–5; §4.4 physical6–11; §4.5 physical11–14; seizures stop9, epilepsy caution8",
+    "input_line": 682
+  },
+  {
+    "rule_id": "switch-parox-ago-selected-example",
+    "input_id": "from_renal",
+    "fields": {
+      "why_needed": "Изменяет применимость/действие: §4.2 с.17.",
+      "necessity_reason": "Изменяет применимость/действие: §4.2 с.17."
+    },
+    "primary_file": "remediation_round3/originals/RU-PAROX_current.pdf",
+    "primary_sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069",
+    "actual_pages": "§4.2 physical3–4; §4.3 physical4–5; §4.4 physical6–11; §4.5 physical11–14; seizures stop9, epilepsy caution8",
+    "input_line": 1309
+  },
+  {
+    "rule_id": "switch-parox-ago-selected-example",
+    "input_id": "from_hepatic",
+    "fields": {
+      "why_needed": "Изменяет применимость/действие: §4.2 с.17.",
+      "necessity_reason": "Изменяет применимость/действие: §4.2 с.17."
+    },
+    "primary_file": "remediation_round3/originals/RU-PAROX_current.pdf",
+    "primary_sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069",
+    "actual_pages": "§4.2 physical3–4; §4.3 physical4–5; §4.4 physical6–11; §4.5 physical11–14; seizures stop9, epilepsy caution8",
+    "input_line": 1349
+  },
+  {
+    "rule_id": "switch-parox-ago-selected-example",
+    "input_id": "akathisia",
+    "fields": {
+      "question_ru": "Подтверждённое значение akathisia по §4.4 с.20?",
+      "why_needed": "Изменяет допуск/действие по RU-PAROX §4.4 с.20; не общий допуск врача.",
+      "necessity_reason": "Изменяет допуск/действие по RU-PAROX §4.4 с.20; не общий допуск врача."
+    },
+    "primary_file": "remediation_round3/originals/RU-PAROX_current.pdf",
+    "primary_sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069",
+    "actual_pages": "§4.2 physical3–4; §4.3 physical4–5; §4.4 physical6–11; §4.5 physical11–14; seizures stop9, epilepsy caution8",
+    "input_line": 1384
+  },
+  {
+    "rule_id": "switch-parox-ago-selected-example",
+    "input_id": "glaucoma",
+    "fields": {
+      "question_ru": "Подтверждённое значение glaucoma по §4.4 с.22?",
+      "why_needed": "Изменяет допуск/действие по RU-PAROX §4.4 с.22; не общий допуск врача.",
+      "necessity_reason": "Изменяет допуск/действие по RU-PAROX §4.4 с.22; не общий допуск врача."
+    },
+    "primary_file": "remediation_round3/originals/RU-PAROX_current.pdf",
+    "primary_sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069",
+    "actual_pages": "§4.2 physical3–4; §4.3 physical4–5; §4.4 physical6–11; §4.5 physical11–14; seizures stop9, epilepsy caution8",
+    "input_line": 1419
+  },
+  {
+    "rule_id": "switch-parox-ago-selected-example",
+    "input_id": "bleeding_risk",
+    "fields": {
+      "question_ru": "Подтверждённое значение bleeding_risk по §4.4 с.22?",
+      "why_needed": "Изменяет допуск/действие по RU-PAROX §4.4 с.22; не общий допуск врача.",
+      "necessity_reason": "Изменяет допуск/действие по RU-PAROX §4.4 с.22; не общий допуск врача."
+    },
+    "primary_file": "remediation_round3/originals/RU-PAROX_current.pdf",
+    "primary_sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069",
+    "actual_pages": "§4.2 physical3–4; §4.3 physical4–5; §4.4 physical6–11; §4.5 physical11–14; seizures stop9, epilepsy caution8",
+    "input_line": 1454
+  },
+  {
+    "rule_id": "switch-parox-ago-selected-example",
+    "input_id": "qt_risk",
+    "fields": {
+      "question_ru": "Подтверждённое значение qt_risk по §4.4 с.22?",
+      "why_needed": "Изменяет допуск/действие по RU-PAROX §4.4 с.22; не общий допуск врача.",
+      "necessity_reason": "Изменяет допуск/действие по RU-PAROX §4.4 с.22; не общий допуск врача."
+    },
+    "primary_file": "remediation_round3/originals/RU-PAROX_current.pdf",
+    "primary_sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069",
+    "actual_pages": "§4.2 physical3–4; §4.3 physical4–5; §4.4 physical6–11; §4.5 physical11–14; seizures stop9, epilepsy caution8",
+    "input_line": 1489
+  },
+  {
+    "rule_id": "switch-parox-ago-selected-example",
+    "input_id": "seizure_state",
+    "fields": {
+      "question_ru": "Подтверждённое значение seizure_state по §4.4 с.21?",
+      "why_needed": "Изменяет допуск/действие по RU-PAROX §4.4 с.21; не общий допуск врача.",
+      "necessity_reason": "Изменяет допуск/действие по RU-PAROX §4.4 с.21; не общий допуск врача."
+    },
+    "primary_file": "remediation_round3/originals/RU-PAROX_current.pdf",
+    "primary_sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069",
+    "actual_pages": "§4.2 physical3–4; §4.3 physical4–5; §4.4 physical6–11; §4.5 physical11–14; seizures stop9, epilepsy caution8",
+    "input_line": 1524
+  },
+  {
+    "rule_id": "switch-parox-ago",
+    "input_id": "age",
+    "fields": {
+      "source_locator": "RU-PAROX: §4.2 с.17; §4.4 с.18; RU-AGO: §4.2 с.2, возрастная применимость"
+    },
+    "primary_file": "remediation_round3/originals/RU-PAROX_current.pdf",
+    "primary_sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069",
+    "actual_pages": "§4.2 physical3–4; §4.3 physical4–5; §4.4 physical6–11; §4.5 physical11–14; seizures stop9, epilepsy caution8",
+    "input_line": 120
+  },
+  {
+    "rule_id": "switch-parox-ago",
+    "input_id": "medicines",
+    "fields": {
+      "source_locator": "RU-PAROX: §4.3 с.17–18; §4.5 с.24–26; RU-AGO: §4.3 с.3; §4.5 с.5–6"
+    },
+    "primary_file": "remediation_round3/originals/RU-PAROX_current.pdf",
+    "primary_sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069",
+    "actual_pages": "§4.2 physical3–4; §4.3 physical4–5; §4.4 physical6–11; §4.5 physical11–14; seizures stop9, epilepsy caution8",
+    "input_line": 323
+  },
+  {
+    "rule_id": "switch-parox-ago",
+    "input_id": "allergy",
+    "fields": {
+      "source_locator": "RU-PAROX: §4.3 с.17; RU-AGO: §4.3 с.3"
+    },
+    "primary_file": "remediation_round3/originals/RU-PAROX_current.pdf",
+    "primary_sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069",
+    "actual_pages": "§4.2 physical3–4; §4.3 physical4–5; §4.4 physical6–11; §4.5 physical11–14; seizures stop9, epilepsy caution8",
+    "input_line": 360
+  },
+  {
+    "rule_id": "switch-parox-ago",
+    "input_id": "maoi_type",
+    "fields": {
+      "why_needed": "Изменяет применимость/действие: §4.3 с.17–18."
+    },
+    "primary_file": "remediation_round3/originals/RU-PAROX_current.pdf",
+    "primary_sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069",
+    "actual_pages": "§4.2 physical3–4; §4.3 physical4–5; §4.4 physical6–11; §4.5 physical11–14; seizures stop9, epilepsy caution8",
+    "input_line": 527
+  },
+  {
+    "rule_id": "switch-parox-ago",
+    "input_id": "maoi_stopped_at",
+    "fields": {
+      "why_needed": "Изменяет применимость/действие: §4.3 с.17–18."
+    },
+    "primary_file": "remediation_round3/originals/RU-PAROX_current.pdf",
+    "primary_sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069",
+    "actual_pages": "§4.2 physical3–4; §4.3 physical4–5; §4.4 physical6–11; §4.5 physical11–14; seizures stop9, epilepsy caution8",
+    "input_line": 565
+  },
+  {
+    "rule_id": "switch-parox-ago",
+    "input_id": "from_hepatic",
+    "fields": {
+      "question_ru": "Подтверждённое значение from_hepatic по §4.2 с.17?",
+      "why_needed": "Изменяет допуск/действие по RU-PAROX §4.2 с.17; не общий допуск врача.",
+      "necessity_reason": "Изменяет допуск/действие по RU-PAROX §4.2 с.17; не общий допуск врача."
+    },
+    "primary_file": "remediation_round3/originals/RU-PAROX_current.pdf",
+    "primary_sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069",
+    "actual_pages": "§4.2 physical3–4; §4.3 physical4–5; §4.4 physical6–11; §4.5 physical11–14; seizures stop9, epilepsy caution8",
+    "input_line": 1229
+  },
+  {
+    "rule_id": "switch-parox-ago",
+    "input_id": "from_renal",
+    "fields": {
+      "why_needed": "Изменяет допуск/действие по RU-PAROX §4.2 с.17; не общий допуск врача.",
+      "necessity_reason": "Изменяет допуск/действие по RU-PAROX §4.2 с.17; не общий допуск врача."
+    },
+    "primary_file": "remediation_round3/originals/RU-PAROX_current.pdf",
+    "primary_sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069",
+    "actual_pages": "§4.2 physical3–4; §4.3 physical4–5; §4.4 physical6–11; §4.5 physical11–14; seizures stop9, epilepsy caution8",
+    "input_line": 1264
+  },
+  {
+    "rule_id": "switch-parox-ago",
+    "input_id": "akathisia",
+    "fields": {
+      "question_ru": "Подтверждённое значение akathisia по §4.4 с.20?",
+      "why_needed": "Изменяет допуск/действие по RU-PAROX §4.4 с.20; не общий допуск врача.",
+      "necessity_reason": "Изменяет допуск/действие по RU-PAROX §4.4 с.20; не общий допуск врача."
+    },
+    "primary_file": "remediation_round3/originals/RU-PAROX_current.pdf",
+    "primary_sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069",
+    "actual_pages": "§4.2 physical3–4; §4.3 physical4–5; §4.4 physical6–11; §4.5 physical11–14; seizures stop9, epilepsy caution8",
+    "input_line": 1304
+  },
+  {
+    "rule_id": "switch-parox-ago",
+    "input_id": "glaucoma",
+    "fields": {
+      "question_ru": "Подтверждённое значение glaucoma по §4.4 с.22?",
+      "why_needed": "Изменяет допуск/действие по RU-PAROX §4.4 с.22; не общий допуск врача.",
+      "necessity_reason": "Изменяет допуск/действие по RU-PAROX §4.4 с.22; не общий допуск врача."
+    },
+    "primary_file": "remediation_round3/originals/RU-PAROX_current.pdf",
+    "primary_sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069",
+    "actual_pages": "§4.2 physical3–4; §4.3 physical4–5; §4.4 physical6–11; §4.5 physical11–14; seizures stop9, epilepsy caution8",
+    "input_line": 1339
+  },
+  {
+    "rule_id": "switch-parox-ago",
+    "input_id": "bleeding_risk",
+    "fields": {
+      "question_ru": "Подтверждённое значение bleeding_risk по §4.4 с.22?",
+      "why_needed": "Изменяет допуск/действие по RU-PAROX §4.4 с.22; не общий допуск врача.",
+      "necessity_reason": "Изменяет допуск/действие по RU-PAROX §4.4 с.22; не общий допуск врача."
+    },
+    "primary_file": "remediation_round3/originals/RU-PAROX_current.pdf",
+    "primary_sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069",
+    "actual_pages": "§4.2 physical3–4; §4.3 physical4–5; §4.4 physical6–11; §4.5 physical11–14; seizures stop9, epilepsy caution8",
+    "input_line": 1374
+  },
+  {
+    "rule_id": "switch-parox-ago",
+    "input_id": "qt_risk",
+    "fields": {
+      "question_ru": "Подтверждённое значение qt_risk по §4.4 с.22?",
+      "why_needed": "Изменяет допуск/действие по RU-PAROX §4.4 с.22; не общий допуск врача.",
+      "necessity_reason": "Изменяет допуск/действие по RU-PAROX §4.4 с.22; не общий допуск врача."
+    },
+    "primary_file": "remediation_round3/originals/RU-PAROX_current.pdf",
+    "primary_sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069",
+    "actual_pages": "§4.2 physical3–4; §4.3 physical4–5; §4.4 physical6–11; §4.5 physical11–14; seizures stop9, epilepsy caution8",
+    "input_line": 1409
+  },
+  {
+    "rule_id": "switch-parox-ago",
+    "input_id": "seizure_state",
+    "fields": {
+      "question_ru": "Подтверждённое значение seizure_state по §4.4 с.21?",
+      "why_needed": "Изменяет допуск/действие по RU-PAROX §4.4 с.21; не общий допуск врача.",
+      "necessity_reason": "Изменяет допуск/действие по RU-PAROX §4.4 с.21; не общий допуск врача."
+    },
+    "primary_file": "remediation_round3/originals/RU-PAROX_current.pdf",
+    "primary_sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069",
+    "actual_pages": "§4.2 physical3–4; §4.3 physical4–5; §4.4 physical6–11; §4.5 physical11–14; seizures stop9, epilepsy caution8",
+    "input_line": 1444
+  }
+]

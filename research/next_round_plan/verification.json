@@ -1,0 +1,22 @@
+{
+  "checked_on": "2026-10-08",
+  "scope": "Prompt and requirements preparation; no new medical source review or calculator execution",
+  "original_criteria": 30,
+  "revised_criteria": 30,
+  "changed_criteria": [
+    18
+  ],
+  "unchanged_criteria": 29,
+  "protected_files": 342,
+  "protected_changed": [],
+  "markdown_files": 5,
+  "broken_local_links": [],
+  "prepared_paths": 124,
+  "plain_usual_paths": 12,
+  "plain_usual_over15": 10,
+  "usual_branch_paths": 28,
+  "usual_branch_over15": 24,
+  "path_count_formula_errors": 0,
+  "clinical_validation": "not_performed",
+  "status": "pass"
+}

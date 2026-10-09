@@ -1,0 +1,225 @@
+{
+  "date": "2026-10-08",
+  "stage": "research_only",
+  "acceptance_file": "psychopharm_codex_pack/ACCEPTANCE.md",
+  "acceptance_sha256": "c4ca3ea82b949a1b9d985df8bdc8bf25ce9489d1e75ab0230717d69bc698628b",
+  "criteria_count": 30,
+  "satisfied_count": 27,
+  "partial_count": 3,
+  "not_satisfied_count": 0,
+  "application_implemented": false,
+  "clinical_validation": "not_performed",
+  "evaluation_type": "New manual evidence-limited recheck; literal criteria unchanged; independent final review follows",
+  "criteria": [
+    {
+      "number": 1,
+      "id": "A1",
+      "original_criterion": "Основной пользователь — психиатр, диагноз вводит врач; нет повторной диагностики и анкеты уверенности в диагнозе.",
+      "status": "satisfied_for_research_stage",
+      "evidence": "PROJECT_BRIEF.md; input_contracts.yaml:external_context. Врач вводит диагноз/действие; диагностической анкеты нет."
+    },
+    {
+      "number": 2,
+      "id": "A2",
+      "original_criterion": "Фокус остался на тревожных/тревожно-депрессивных состояниях и применимости в РФ.",
+      "status": "satisfied_for_research_stage",
+      "evidence": "ru_source_policy.yaml; coverage.csv; catalog_check.json. РФ и тревожные/тревожно-депрессивные контексты сохранены."
+    },
+    {
+      "number": 3,
+      "id": "A3",
+      "original_criterion": "Основной сценарий — выбранный препарат → дозовая схема, не только выбор лекарства или прогноз концентрации.",
+      "status": "satisfied_for_research_stage",
+      "evidence": "38 rules/ + result_contracts.yaml: выбранный продукт/форма и веточный дозовый результат либо обоснованный пробел."
+    },
+    {
+      "number": 4,
+      "id": "A4",
+      "original_criterion": "Исследованы старт, титрование/коррекция, отмена и переключение. Непокрытые режимы явно обозначены, не удалены молча.",
+      "status": "satisfied_for_research_stage",
+      "evidence": "card_review.csv; coverage.csv; switch_matrix.yaml. Четыре режима исследованы; неподдержанные ветви явны."
+    },
+    {
+      "number": 5,
+      "id": "A5",
+      "original_criterion": "Дополнительный топ-3 опирается на КР; не создана собственная шкала индивидуального превосходства.",
+      "status": "satisfied_for_research_stage",
+      "evidence": "01_scope_and_sources.md; действующие КР457_3/456_3/455_3 и каталожная проверка. До трёх кандидатов по КР, собственного рейтинга нет."
+    },
+    {
+      "number": 6,
+      "id": "A6",
+      "original_criterion": "Дети, пожилые, беременность и лактация присутствуют в карте покрытия; нет автоматического переноса взрослых доз.",
+      "status": "satisfied_for_research_stage",
+      "evidence": "coverage.csv; applicability и полные under18/elderly/pregnancy/lactation expected. Масштабирования взрослой дозы нет."
+    },
+    {
+      "number": 7,
+      "id": "A7",
+      "original_criterion": "Нет обязательной генетики, ML, истории пациентов, стоимости, профилей предпочтений и календаря визитов.",
+      "status": "satisfied_for_research_stage",
+      "evidence": "PROJECT_BRIEF.md; inputs. Нет обязательной генетики/ML/истории пациентов/стоимости/визитов; известный CYP отдельная применимая ветка."
+    },
+    {
+      "number": 8,
+      "id": "B1",
+      "original_criterion": "Есть точные МНН, показание, код/классификация, форма, популяция и режим.",
+      "status": "satisfied_for_research_stage",
+      "evidence": "rules/:identity/applicability; RU-ESC текущие форма/деление/классификация подтверждены; RU-PHEN точное РУ ородисперсной формы установлено. Редакционная актуальность отдельно №9."
+    },
+    {
+      "number": 9,
+      "id": "B2",
+      "original_criterion": "Есть конкретный источник, версия и локатор, а не только ссылка на главную страницу реестра.",
+      "status": "partial",
+      "evidence": "version_inventory.json; sources.json; parameter_review.csv. Конкретные прочитанные версии/локаторы есть; последние редакции девяти активных оснований ещё не сопоставлены. F12."
+    },
+    {
+      "number": 10,
+      "id": "B3",
+      "original_criterion": "Каждая медицинская доза, граница, поправка, срок и условие имеют источник.",
+      "status": "satisfied_for_research_stage",
+      "evidence": "parameter_review.csv 210 параметров; input_necessity.csv; текущий ESC §1–4.6. Числа/условия имеют первичные локаторы; наследованный первичный review явно отделён от новых проверок."
+    },
+    {
+      "number": 11,
+      "id": "B4",
+      "original_criterion": "Опубликованный диапазон не заменён произвольно выбранным числом; пример не превращён в обязательный протокол.",
+      "status": "satisfied_for_research_stage",
+      "evidence": "result_contracts.yaml: exact/range/choice/selected_source_example; диапазоны не превращены в произвольные числа, PAROX-композиция явный выбранный пример."
+    },
+    {
+      "number": 12,
+      "id": "B5",
+      "original_criterion": "Различаются разовая/суточная доза, единицы, кратность и лекарственные формы.",
+      "status": "satisfied_for_research_stage",
+      "evidence": "structured_form/renal; result_contracts.yaml и prepared expected: суточная/разовая доза, кратность, единицы, release, недостижимые формы."
+    },
+    {
+      "number": 13,
+      "id": "B6",
+      "original_criterion": "Не перемножены самостоятельные поправки и не усреднены несовместимые источники.",
+      "status": "satisfied_for_research_stage",
+      "evidence": "full_scenarios.json:overlapping-modifiers; RU-source policy. Нет произведения независимых поправок или среднего несовместимых источников."
+    },
+    {
+      "number": 14,
+      "id": "B7",
+      "original_criterion": "Для переключения проверено направление, оба препарата, допустимость перекрытия и необходимый интервал.",
+      "status": "satisfied_for_research_stage",
+      "evidence": "switch_matrix.yaml 12 направлений; current ESC + A/B source gates/mania; проверенные ограничения перекрытия и интервалы отдельны. Ненайденные российские парные календари/основание MOC явно сохранены; их отсутствие допускается ТЗ."
+    },
+    {
+      "number": 15,
+      "id": "B8",
+      "original_criterion": "Для отмены сохранены условия изменения темпа; нет единого придуманного процента/срока для всех.",
+      "status": "satisfied_for_research_stage",
+      "evidence": "result_contracts.yaml; parameter_review.csv; текущий ESC §4.2/4.4; симптомы/изменение темпа сохранены, единого процента/верхнего предела нет."
+    },
+    {
+      "number": 16,
+      "id": "B9",
+      "original_criterion": "Баллы шкалы влияют на дозовое действие только там, где это действительно задано найденным правилом.",
+      "status": "satisfied_for_research_stage",
+      "evidence": "inputs response/clinical_assessment; КР/label branch conditions. Шкала не преобразована в мг без опубликованного основания."
+    },
+    {
+      "number": 17,
+      "id": "C1",
+      "original_criterion": "Для каждого вопроса показано, какое правило использует ответ и почему его нельзя убрать.",
+      "status": "partial",
+      "evidence": "input_necessity.csv и necessity_policy.yaml разрешают SER и неправильные режимные поля. Для остальных карт консервативные источниковые условия раскрыты, но ещё не обоснована неудалимость каждого вопроса по конкретному результату. №17 частично."
+    },
+    {
+      "number": 18,
+      "id": "C2",
+      "original_criterion": "Обычный путь действительно укладывается в 5–10 содержательных вопросов; нагрузка не спрятана в подпунктах.",
+      "status": "partial",
+      "evidence": "96 фактических branch paths; question_limit_conflict.json. Обычный AGO требует не менее12 независимых выборов/фактов даже без всех наблюдательных cautions. Исходный лимит5–10 не выполнен и не изменён."
+    },
+    {
+      "number": 19,
+      "id": "C3",
+      "original_criterion": "Для сложных веток зафиксирован предел короткого расчёта, а не удалены обязательные сведения.",
+      "status": "satisfied_for_research_stage",
+      "evidence": "question_graphs.yaml; actual_question_paths.json: независимые renal, A/B, MAOI-поля и сложные ветки не удалены ради лимита."
+    },
+    {
+      "number": 20,
+      "id": "C4",
+      "original_criterion": "«Неизвестно/не исследовано/не помню» не интерпретируются как норма/нет.",
+      "status": "satisfied_for_research_stage",
+      "evidence": "contract_verification.json; full_scenarios.json; new_negative_checks.json: known false отдельно от unknown/not_assessed; непройденный мониторинг явно сохранён."
+    },
+    {
+      "number": 21,
+      "id": "C5",
+      "original_criterion": "Недостаток обязательного значения даёт конкретный запрос данных без безусловной дозы.",
+      "status": "satisfied_for_research_stage",
+      "evidence": "Все applicable missing fields → insufficient_data без дозы. Вложенные органы/формы/ИМАО; изолированные негативные мутации проверяют отказ."
+    },
+    {
+      "number": 22,
+      "id": "C6",
+      "original_criterion": "Схема может быть выдана заранее, но последующие условные шаги не показаны как обязательные.",
+      "status": "satisfied_for_research_stage",
+      "evidence": "result_contracts.yaml: будущие этапы условны; no automatic_next_stage/hold/stop. Подготовленные ожидания, не исполнение приложения."
+    },
+    {
+      "number": 23,
+      "id": "C7",
+      "original_criterion": "Минимальные интервалы изменения дозы не перепутаны с датами назначаемых врачом визитов.",
+      "status": "satisfied_for_research_stage",
+      "evidence": "Минимальные интервалы источника отдельно от визитов; MOC ESC минимум суток отдельно от календарного дня FLUVOX; мониторинг AGO не придуманные визиты."
+    },
+    {
+      "number": 24,
+      "id": "D1",
+      "original_criterion": "Доступность первоисточника проверена; сниппет/абстракт/перепечатка не названы прочитанным оригиналом.",
+      "status": "satisfied_for_research_stage",
+      "evidence": "Оригиналы доступных оснований прочитаны; current ESC/SER PDF предоставлены человеком и сохранены с SHA/штампами. Ограниченный доступ/архивы помечены; сниппет не первичная дозовая основа."
+    },
+    {
+      "number": 25,
+      "id": "D2",
+      "original_criterion": "Российская регистрационная применимость не выведена из иностранного руководства.",
+      "status": "satisfied_for_research_stage",
+      "evidence": "Политика РФ; exact RU/forms; reference_rules исключены из routing. Зарубежное руководство не доказывает российское показание или регистрацию."
+    },
+    {
+      "number": 26,
+      "id": "D3",
+      "original_criterion": "Источник/КР/экспертный протокол/исследованная модель имеют разные, точно описанные статусы.",
+      "status": "satisfied_for_research_stage",
+      "evidence": "sources.json:source_type/access_status/evidence_status; правила, КР и исследование/модель имеют разные статусы."
+    },
+    {
+      "number": 27,
+      "id": "D4",
+      "original_criterion": "Эффективность препарата не объявлена доказательством любой алгоритмической дозировки.",
+      "status": "satisfied_for_research_stage",
+      "evidence": "coverage.csv; gaps. Эффективность/упоминание препарата не доказательство любой лестницы или переключения."
+    },
+    {
+      "number": 28,
+      "id": "D5",
+      "original_criterion": "Технический перенос не объявлен клинической валидацией нового продукта.",
+      "status": "satisfied_for_research_stage",
+      "evidence": "verification_results.json: prepared expectations, calculator_tests_executed=false, clinical_validation=not_performed. Техническая проверка не клиническая."
+    },
+    {
+      "number": 29,
+      "id": "D6",
+      "original_criterion": "Готовность к реализации не перепутана с готовностью к клиническому применению.",
+      "status": "satisfied_for_research_stage",
+      "evidence": "summary.md; limitations.md; технический перенос фиксированных копий отделён от актуальности/внедрения; общая клиническая готовность не заявлена."
+    },
+    {
+      "number": 30,
+      "id": "D7",
+      "original_criterion": "Все пробелы и конфликты перечислены; отсутствие найденного аналога не названо доказательством его отсутствия.",
+      "status": "satisfied_for_research_stage",
+      "evidence": "findings_log.csv; version_inventory.json; limitations.md. Открытые F12/минимальность/лимит раскрыты; отсутствие найденного аналога не доказательство отсутствия."
+    }
+  ]
+}

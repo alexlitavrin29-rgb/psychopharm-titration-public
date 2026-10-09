@@ -1,0 +1,575 @@
+{
+  "schema_version": "1.0",
+  "rule_id": "dulox-gad-start",
+  "development_status": "extracted_research_not_executable",
+  "language": "ru",
+  "identity": {
+    "title": "Дулоксетин: ГТР, старт и отдельные модификаторы",
+    "mode": "start",
+    "drug_inn": "дулоксетин",
+    "from_drug_inn": null,
+    "to_drug_inn": null,
+    "formulation": "Дулоксента, кишечнорастворимые капсулы 30/60 мг",
+    "route": "oral",
+    "diagnosis_label_ru": "ГТР",
+    "classification_system": "МКБ-10",
+    "diagnosis_code": "F41.1",
+    "jurisdiction": "RU_versioned_sources"
+  },
+  "applicability": {
+    "population_description": "Взрослые от 18 лет; показание и клиническое действие выбирает врач.",
+    "age_constraints": [
+      {
+        "minimum": 18,
+        "inclusive": true,
+        "unit": "year",
+        "source_ref": "RU-DULOX",
+        "source_locator": "§4.1–4.3 с.1–4; §4.4 с.5–9; §4.5 с.9–12; §4.6 с.12–13; §8–10 с.35"
+      }
+    ],
+    "pregnancy": "Назначать только если потенциальная польза для матери значительно превышает риск для плода; §4.6 с.12. Автоматической дозовой поправки нет.",
+    "lactation": "Не рекомендуется кормление грудью во время терапии; §4.6 с.13. Отдельное решение врача, не коэффициент.",
+    "renal_constraints": [
+      "КК 30–80 мл/мин: без поправки; <30 противопоказано, §4.2–4.3 с.3–4."
+    ],
+    "hepatic_constraints": [
+      "Заболевание печени с недостаточностью: не назначать §4.2–4.3."
+    ],
+    "comorbidity_constraints": [
+      "Неконтролируемая АГ, некомпенсированная закрытоугольная глаукома §4.3."
+    ],
+    "interacting_drugs": [
+      "ИМАО; сильные CYP1A2 флувоксамин/ципрофлоксацин/эноксацин §4.3–4.5."
+    ],
+    "other_conditions": [],
+    "exclusions": [],
+    "indication_status_in_russia": "RU_indication_in_read_original_latest_registry_text_separate",
+    "source_refs": [
+      "RU-DULOX",
+      "RU-GAD"
+    ]
+  },
+  "inputs": [
+    {
+      "input_id": "age",
+      "question_ru": "Возраст, лет?",
+      "data_type": "number",
+      "unit": "year",
+      "allowed_values": [],
+      "required_when": "для выбранного расчёта",
+      "show_when": "для выбранного расчёта",
+      "why_needed": "Взрослая/пожилая применимость §4.1–4.2.",
+      "changes": [
+        "dose_or_action"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Назвать age; не подставлять норму, без безусловной индивидуальной дозы.",
+      "source_refs": [
+        "RU-DULOX"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "form",
+      "question_ru": "Какая конкретная форма и дозировка?",
+      "data_type": "structured_form",
+      "unit": null,
+      "allowed_values": [
+        "подтверждено врачом",
+        "неизвестно"
+      ],
+      "required_when": "для выбранного расчёта",
+      "show_when": "для выбранного расчёта",
+      "why_needed": "Не переносить форму; дозовая исполнимость §1–3/4.2.",
+      "changes": [
+        "dose_or_action"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Назвать form; не подставлять норму, без безусловной индивидуальной дозы.",
+      "source_refs": [
+        "RU-DULOX"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "hepatic",
+      "question_ru": "Подтверждённая функция печени?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [
+        "подтверждено врачом",
+        "неизвестно"
+      ],
+      "required_when": "для выбранного расчёта",
+      "show_when": "для выбранного расчёта",
+      "why_needed": "Ограничения §4.2–4.3; из одного анализа не выводить категорию.",
+      "changes": [
+        "dose_or_action"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Назвать hepatic; не подставлять норму, без безусловной индивидуальной дозы.",
+      "source_refs": [
+        "RU-DULOX"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "pregnancy",
+      "question_ru": "Беременность установлена или возможна?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [
+        "подтверждено врачом",
+        "неизвестно"
+      ],
+      "required_when": "для выбранного расчёта",
+      "show_when": "для выбранного расчёта",
+      "why_needed": "Применимость §4.3/4.6.",
+      "changes": [
+        "dose_or_action"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Назвать pregnancy; не подставлять норму, без безусловной индивидуальной дозы.",
+      "source_refs": [
+        "RU-DULOX"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "lactation",
+      "question_ru": "Есть грудное вскармливание?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [
+        "подтверждено врачом",
+        "неизвестно"
+      ],
+      "required_when": "для выбранного расчёта",
+      "show_when": "для выбранного расчёта",
+      "why_needed": "Применимость §4.3/4.6.",
+      "changes": [
+        "dose_or_action"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Назвать lactation; не подставлять норму, без безусловной индивидуальной дозы.",
+      "source_refs": [
+        "RU-DULOX"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "medicines",
+      "question_ru": "Текущие и недавно отменённые препараты?",
+      "data_type": "medication_list",
+      "unit": null,
+      "allowed_values": [
+        "подтверждено врачом",
+        "неизвестно"
+      ],
+      "required_when": "для выбранного расчёта",
+      "show_when": "для выбранного расчёта",
+      "why_needed": "Взаимодействия и интервалы §4.3–4.5; последние даты при ИМАО отдельны.",
+      "changes": [
+        "dose_or_action"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Назвать medicines; не подставлять норму, без безусловной индивидуальной дозы.",
+      "source_refs": [
+        "RU-DULOX"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "allergy",
+      "question_ru": "Гиперчувствительность к препарату/компонентам?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [
+        "подтверждено врачом",
+        "неизвестно"
+      ],
+      "required_when": "для выбранного расчёта",
+      "show_when": "для выбранного расчёта",
+      "why_needed": "Противопоказание §4.3.",
+      "changes": [
+        "dose_or_action"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Назвать allergy; не подставлять норму, без безусловной индивидуальной дозы.",
+      "source_refs": [
+        "RU-DULOX"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "renal_metric",
+      "question_ru": "Подтверждённый почечный показатель с методом и единицей?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [
+        "подтверждено врачом",
+        "неизвестно"
+      ],
+      "required_when": "для органной ветки",
+      "show_when": "для органной ветки",
+      "why_needed": "§4.2; eGFR/CLcr и нормированная/абсолютная СКФ не взаимозаменяемы.",
+      "changes": [
+        "dose_or_action"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Назвать renal_metric; не подставлять норму, без безусловной индивидуальной дозы.",
+      "source_refs": [
+        "RU-DULOX"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "comorbid_depression",
+      "question_ru": "Есть самостоятельная сопутствующая депрессия?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [
+        "подтверждено врачом",
+        "неизвестно"
+      ],
+      "required_when": "для выбранного расчёта",
+      "show_when": "для выбранного расчёта",
+      "why_needed": "При ГТР + депрессия старт 60 вместо 30 (§4.2 с.2). Диагноз вводит врач.",
+      "changes": [
+        "dose_or_action"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Назвать comorbid_depression; не подставлять норму, без безусловной индивидуальной дозы.",
+      "source_refs": [
+        "RU-DULOX"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "elderly_population",
+      "question_ru": "Врач относит пациента к пожилым?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [
+        "подтверждено врачом",
+        "неизвестно"
+      ],
+      "required_when": "для выбранного расчёта",
+      "show_when": "для выбранного расчёта",
+      "why_needed": "Источник задаёт пожилой этап без точного возрастного порога (§4.2 с.4); порог не придумать.",
+      "changes": [
+        "dose_or_action"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Назвать elderly_population; не подставлять норму, без безусловной индивидуальной дозы.",
+      "source_refs": [
+        "RU-DULOX"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "uncontrolled_hypertension",
+      "question_ru": "Есть неконтролируемая артериальная гипертензия?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [
+        "подтверждено врачом",
+        "неизвестно"
+      ],
+      "required_when": "для выбранного расчёта",
+      "show_when": "для выбранного расчёта",
+      "why_needed": "Противопоказание §4.3 с.4.",
+      "changes": [
+        "dose_or_action"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Назвать uncontrolled_hypertension; не подставлять норму, без безусловной индивидуальной дозы.",
+      "source_refs": [
+        "RU-DULOX"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "closed_angle_glaucoma",
+      "question_ru": "Есть некомпенсированная закрытоугольная глаукома?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [
+        "подтверждено врачом",
+        "неизвестно"
+      ],
+      "required_when": "для выбранного расчёта",
+      "show_when": "для выбранного расчёта",
+      "why_needed": "Противопоказание §4.3 с.4.",
+      "changes": [
+        "dose_or_action"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Назвать closed_angle_glaucoma; не подставлять норму, без безусловной индивидуальной дозы.",
+      "source_refs": [
+        "RU-DULOX"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    }
+  ],
+  "clinical_parameters": [
+    {
+      "parameter_id": "usual_start",
+      "meaning": "usual_start",
+      "value": 30,
+      "lower": null,
+      "upper": null,
+      "lower_inclusive": null,
+      "upper_inclusive": null,
+      "unit": "mg/day",
+      "source_ref": "RU-DULOX",
+      "source_locator": "§4.2 PDF с.2–4",
+      "source_meaning": "предписание",
+      "derivation": null
+    },
+    {
+      "parameter_id": "with_depression_start",
+      "meaning": "with_depression_start",
+      "value": 60,
+      "lower": null,
+      "upper": null,
+      "lower_inclusive": null,
+      "upper_inclusive": null,
+      "unit": "mg/day",
+      "source_ref": "RU-DULOX",
+      "source_locator": "§4.2 PDF с.2–4",
+      "source_meaning": "предписание",
+      "derivation": null
+    },
+    {
+      "parameter_id": "elderly_initial_period",
+      "meaning": "elderly_initial_period",
+      "value": 2,
+      "lower": null,
+      "upper": null,
+      "lower_inclusive": null,
+      "upper_inclusive": null,
+      "unit": "week",
+      "source_ref": "RU-DULOX",
+      "source_locator": "§4.2 PDF с.2–4",
+      "source_meaning": "предписание",
+      "derivation": null
+    },
+    {
+      "parameter_id": "usual_maintenance",
+      "meaning": "usual_maintenance",
+      "value": 60,
+      "lower": null,
+      "upper": null,
+      "lower_inclusive": null,
+      "upper_inclusive": null,
+      "unit": "mg/day",
+      "source_ref": "RU-DULOX",
+      "source_locator": "§4.2 PDF с.2–4",
+      "source_meaning": "предписание",
+      "derivation": null
+    },
+    {
+      "parameter_id": "renal_no_adjust_lower",
+      "meaning": "renal_no_adjust_lower",
+      "value": 30,
+      "lower": null,
+      "upper": null,
+      "lower_inclusive": null,
+      "upper_inclusive": null,
+      "unit": "mL/min",
+      "source_ref": "RU-DULOX",
+      "source_locator": "§4.2 PDF с.2–4",
+      "source_meaning": "предписание",
+      "derivation": null
+    }
+  ],
+  "logic": {
+    "representation": "conditional_source_rule",
+    "conditions": [
+      "Применимость к указанному показанию/форме подтверждена в пределах дозового расчёта; это не полный клинический допуск."
+    ],
+    "actions": [
+      "ГТР без сопутствующей депрессии: 30 мг/сут; при недостаточном ответе возможно 60 мг/сут, фиксированный день повышения не опубликован.",
+      "ГТР с самостоятельной депрессией: начало/поддержание 60 мг/сут.",
+      "Пожилой ГТР: 30 мг/сут 2 недели до 60. Совпадение пожилой ветки и коморбидной депрессии не решать автоматически.",
+      "Капсулы целые; при старте 30 одна целая капсула 30 в сутки, арифметика формы. Не переносить недельный режим болевого показания."
+    ],
+    "parameter_refs": [
+      "usual_start",
+      "with_depression_start",
+      "elderly_initial_period",
+      "usual_maintenance",
+      "renal_no_adjust_lower"
+    ],
+    "source_refs": [
+      "RU-DULOX",
+      "RU-GAD"
+    ],
+    "clinician_choices": [
+      "Необходимость изменения лечения и неоценённые модулем клинические обстоятельства."
+    ],
+    "missing_data_behaviour": "insufficient_data с конкретным отсутствующим полем, без безусловной дозы.",
+    "unsupported_case_behaviour": "Назвать неприменимую ветку; не переносить другую форму/показание.",
+    "contraindicated_case_behaviour": "Не выдавать схему противопоказанного сочетания, указать источник.",
+    "conflicts": [],
+    "composite_rule_dependencies": [],
+    "combination_justification": "КР определяет клиническую область, инструкция — дозовые параметры; новые коэффициенты не добавлены."
+  },
+  "output": {
+    "result_type": "exact",
+    "medication_inn": "дулоксетин",
+    "dose_per_administration": null,
+    "administrations_per_day": null,
+    "total_daily_dose": 30,
+    "unit": "mg",
+    "formulation": "Дулоксента, кишечнорастворимые капсулы 30/60 мг",
+    "schedule": [],
+    "warnings": [
+      "Последующие этапы условны; максимум не является целью.",
+      "Неоценённое клиническое обстоятельство не считается отсутствующим.",
+      "Версия копии зафиксирована; последнее содержание реестрового документа проверяется перед клиническим внедрением."
+    ],
+    "mandatory_checks": [],
+    "clinician_decisions_remaining": [],
+    "rounding_or_formulation_rule": "Не округлять медицинскую дозу; целые формы/разрешённое деление. Невозможная доза — явный отказ формы.",
+    "source_refs": [
+      "RU-DULOX",
+      "RU-GAD"
+    ]
+  },
+  "verification": {
+    "primary_source_checked": true,
+    "all_clinical_parameters_have_sources": true,
+    "population_and_indication_checked": true,
+    "russian_applicability_checked": true,
+    "formulation_feasibility_checked": true,
+    "combined_rules_justified": true,
+    "source_transfer_check": "extraction_checked; calculator_not_implemented",
+    "clinical_review": "not_performed",
+    "product_clinical_validation": "not_performed",
+    "ready_for_technical_implementation": true,
+    "unresolved_items": []
+  },
+  "test_cases": [
+    {
+      "case_id": "dulox-gad-start__usual",
+      "synthetic": true,
+      "given": {
+        "comorbid_depression": false,
+        "elderly_population": false,
+        "form": "30 мг целая капсула"
+      },
+      "expected": {
+        "start_mg_per_day": 30,
+        "capsules_30_mg_per_day": 1,
+        "automatic_day_for_60": null
+      },
+      "source_refs": [
+        "RU-DULOX"
+      ],
+      "note": "Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена."
+    },
+    {
+      "case_id": "dulox-gad-start__with-depression",
+      "synthetic": true,
+      "given": {
+        "comorbid_depression": true,
+        "elderly_population": false
+      },
+      "expected": {
+        "start_mg_per_day": 60
+      },
+      "source_refs": [
+        "RU-DULOX"
+      ],
+      "note": "Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена."
+    },
+    {
+      "case_id": "dulox-gad-start__elderly",
+      "synthetic": true,
+      "given": {
+        "elderly_population": true,
+        "comorbid_depression": false
+      },
+      "expected": {
+        "start_mg_per_day": 30,
+        "initial_weeks": 2,
+        "conditional_next_mg_per_day": 60
+      },
+      "source_refs": [
+        "RU-DULOX"
+      ],
+      "note": "Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена."
+    },
+    {
+      "case_id": "dulox-gad-start__overlapping-modifiers",
+      "synthetic": true,
+      "given": {
+        "elderly_population": true,
+        "comorbid_depression": true
+      },
+      "expected": {
+        "result_type": "clinician_choice",
+        "automatic_combined_start": null
+      },
+      "source_refs": [
+        "RU-DULOX"
+      ],
+      "note": "Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена."
+    },
+    {
+      "case_id": "dulox-gad-start__clcr30",
+      "synthetic": true,
+      "given": {
+        "CLcr_mL_min": 30
+      },
+      "expected": {
+        "renal_dose_adjustment": false
+      },
+      "source_refs": [
+        "RU-DULOX"
+      ],
+      "note": "Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена."
+    },
+    {
+      "case_id": "dulox-gad-start__clcr29",
+      "synthetic": true,
+      "given": {
+        "CLcr_mL_min": 29
+      },
+      "expected": {
+        "result_type": "not_applicable",
+        "contraindication": true
+      },
+      "source_refs": [
+        "RU-DULOX"
+      ],
+      "note": "Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена."
+    },
+    {
+      "case_id": "dulox-gad-start__unknown-renal",
+      "synthetic": true,
+      "given": {
+        "renal_metric": "неизвестно"
+      },
+      "expected": {
+        "result_type": "insufficient_data",
+        "missing": [
+          "renal_metric"
+        ],
+        "unconditional_dose": null
+      },
+      "source_refs": [
+        "RU-DULOX"
+      ],
+      "note": "Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена."
+    }
+  ],
+  "profile": {
+    "country": "RU",
+    "selection_status": "RU_profile_research",
+    "foreign_fallback_allowed": false
+  },
+  "card_type": "numeric_source_rule"
+}

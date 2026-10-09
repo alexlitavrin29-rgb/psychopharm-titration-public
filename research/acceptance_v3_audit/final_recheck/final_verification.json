@@ -1,0 +1,21 @@
+{
+  "snapshot": "27ef14e77185b7b104d43199664a5b1ca42b73dd8b09f921ee539e97fae971f8",
+  "manifest_aggregate_sha256": "27ef14e77185b7b104d43199664a5b1ca42b73dd8b09f921ee539e97fae971f8",
+  "core_files": 227,
+  "core_changes": [],
+  "reviewer_core_edits": false,
+  "output_directory": "research/acceptance_v3_audit/final_recheck",
+  "earlier_audits_changed_by_reviewer": false,
+  "source_sha_reverified": 16,
+  "criteria": {
+    "выполнено": 29,
+    "частично": 1
+  },
+  "full_acceptance": false,
+  "remaining": "V3-RC01 population metadata22 only",
+  "raw_score": "9.415",
+  "final_score": 9.4,
+  "clinical_validation": false,
+  "application_executed": false,
+  "report_links_missing": []
+}

@@ -1,0 +1,566 @@
+{
+  "schema_version": "1.0",
+  "rule_id": "switch-parox-ago",
+  "development_status": "extracted_research_not_executable",
+  "language": "ru",
+  "identity": {
+    "title": "пароксетин → агомелатин: старт B с первого дня снижения A",
+    "mode": "switch",
+    "drug_inn": null,
+    "from_drug_inn": "пароксетин",
+    "to_drug_inn": "агомелатин",
+    "formulation": {
+      "from": "Рексетин, таблетки 20 мг; половина 10 мг",
+      "to": "Вальдоксан, таблетки 25 мг, покрытые пленочной оболочкой"
+    },
+    "route": "oral",
+    "diagnosis_label_ru": "Депрессивный эпизод/рекуррентная депрессия у взрослых",
+    "classification_system": "МКБ-10",
+    "diagnosis_code": "F32/F33",
+    "jurisdiction": "RU_versioned_sources"
+  },
+  "applicability": {
+    "population_description": "Взрослые с самостоятельным депрессивным расстройством; B не применять от 75 лет по ОХЛП.",
+    "age_constraints": [
+      {
+        "minimum": 18,
+        "inclusive": true,
+        "unit": "year",
+        "source_ref": "RU-AGO",
+        "source_locator": "§4.1–4.2, PDF с.1–2"
+      }
+    ],
+    "pregnancy": "ОХЛП B рекомендует избегать назначения при беременности (§4.6 с.6); отдельное решение врача по A/B, без коэффициента.",
+    "lactation": "ОХЛП B требует решения прекратить вскармливание или терапию (§4.6 с.6); без коэффициента.",
+    "renal_constraints": [
+      "Средняя/тяжёлая почечная недостаточность B требует осторожности, без отдельного числа."
+    ],
+    "hepatic_constraints": [
+      "B противопоказан при печеночной недостаточности и АЛТ/АСТ >3 ВГН. До начала печёночные пробы обязательны всем."
+    ],
+    "comorbidity_constraints": [],
+    "interacting_drugs": [
+      "B противопоказан с флувоксамином/ципрофлоксацином (сильные CYP1A2-ингибиторы); проверять оба препарата, §4.3–4.5."
+    ],
+    "other_conditions": [
+      "ОХЛП B прямо разрешает начало с 1-го дня постепенного снижения СИОЗС/СИОЗСН. Это классовое разрешение, применённое к явно указанному СИОЗС A; не исследование каждой пары.",
+      "Нет полного обязательного календаря доз A. Нужен выбор темпа врачом, а для пароксетина доступен отдельно маркированный взрослый пример."
+    ],
+    "exclusions": [
+      "Печеночная недостаточность B; АЛТ или АСТ >3 ВГН; противопоказанный ингибитор CYP1A2; возрастная неприменимость; гиперчувствительность."
+    ],
+    "indication_status_in_russia": "RU_indication_present_in_original_registry_currency_separate",
+    "source_refs": [
+      "RU-PAROX",
+      "RU-AGO",
+      "RU-DEP"
+    ]
+  },
+  "inputs": [
+    {
+      "input_id": "from_form",
+      "question_ru": "Какая форма A?",
+      "data_type": "structured_form",
+      "unit": null,
+      "allowed_values": [],
+      "required_when": "для этой ветки",
+      "show_when": "для этой ветки",
+      "why_needed": "Исполнимость снижения по инструкции A.",
+      "changes": [
+        "applicability"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Назвать отсутствующее поле; не подставлять норму и не выдавать безусловную индивидуальную схему.",
+      "source_refs": [
+        "RU-PAROX",
+        "RU-AGO",
+        "RU-DEP"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "to_form",
+      "question_ru": "Какая форма B?",
+      "data_type": "structured_form",
+      "unit": null,
+      "allowed_values": [],
+      "required_when": "для этой ветки",
+      "show_when": "для этой ветки",
+      "why_needed": "Вальдоксан 25 мг, целая таблетка.",
+      "changes": [
+        "applicability"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Назвать отсутствующее поле; не подставлять норму и не выдавать безусловную индивидуальную схему.",
+      "source_refs": [
+        "RU-PAROX",
+        "RU-AGO",
+        "RU-DEP"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "age",
+      "question_ru": "Возраст, полных лет?",
+      "data_type": "integer",
+      "unit": "year",
+      "allowed_values": [],
+      "required_when": "для этой ветки",
+      "show_when": "для этой ветки",
+      "why_needed": "Взрослая популяция; исключение B >=75 при депрессии.",
+      "changes": [
+        "dose_or_action"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Назвать отсутствующее поле; не подставлять норму и не выдавать безусловную индивидуальную схему.",
+      "source_refs": [
+        "RU-PAROX",
+        "RU-AGO",
+        "RU-DEP"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "current_dose",
+      "question_ru": "Текущая доза A?",
+      "data_type": "number",
+      "unit": "mg/day",
+      "allowed_values": [],
+      "required_when": "для этой ветки",
+      "show_when": "для этой ветки",
+      "why_needed": "Исходная точка снижения, не эквивалент B.",
+      "changes": [
+        "dose_or_action"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Назвать отсутствующее поле; не подставлять норму и не выдавать безусловную индивидуальную схему.",
+      "source_refs": [
+        "RU-PAROX",
+        "RU-AGO",
+        "RU-DEP"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "from_taper_plan",
+      "question_ru": "Какие конкретные ступени/темп A выбрал врач?",
+      "data_type": "dose_schedule",
+      "unit": null,
+      "allowed_values": [],
+      "required_when": "для этой ветки",
+      "show_when": "для этой ветки",
+      "why_needed": "Источник B отсылает к инструкции A; сам не задаёт календарь A.",
+      "changes": [
+        "applicability"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Назвать отсутствующее поле; не подставлять норму и не выдавать безусловную индивидуальную схему.",
+      "source_refs": [
+        "RU-PAROX",
+        "RU-AGO",
+        "RU-DEP"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "hepatic",
+      "question_ru": "Есть нарушение функции печени?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [],
+      "required_when": "для этой ветки",
+      "show_when": "для этой ветки",
+      "why_needed": "Противопоказание B, отдельное от анализов.",
+      "changes": [
+        "applicability"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Назвать отсутствующее поле; не подставлять норму и не выдавать безусловную индивидуальную схему.",
+      "source_refs": [
+        "RU-PAROX",
+        "RU-AGO",
+        "RU-DEP"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "alt_ratio_uln",
+      "question_ru": "АЛТ относительно ВГН?",
+      "data_type": "number",
+      "unit": "ratio_to_ULN",
+      "allowed_values": [],
+      "required_when": "для этой ветки",
+      "show_when": "для этой ветки",
+      "why_needed": "Обязательная проба B; не заменять одним показателем категорию печени.",
+      "changes": [
+        "dose_or_action"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Назвать отсутствующее поле; не подставлять норму и не выдавать безусловную индивидуальную схему.",
+      "source_refs": [
+        "RU-PAROX",
+        "RU-AGO",
+        "RU-DEP"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "ast_ratio_uln",
+      "question_ru": "АСТ относительно ВГН?",
+      "data_type": "number",
+      "unit": "ratio_to_ULN",
+      "allowed_values": [],
+      "required_when": "для этой ветки",
+      "show_when": "для этой ветки",
+      "why_needed": "Самостоятельная обязательная проба B.",
+      "changes": [
+        "dose_or_action"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Назвать отсутствующее поле; не подставлять норму и не выдавать безусловную индивидуальную схему.",
+      "source_refs": [
+        "RU-PAROX",
+        "RU-AGO",
+        "RU-DEP"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "medicines",
+      "question_ru": "Текущие/недавно отменённые лекарства?",
+      "data_type": "medication_list",
+      "unit": null,
+      "allowed_values": [],
+      "required_when": "для этой ветки",
+      "show_when": "для этой ветки",
+      "why_needed": "Взаимодействия обоих препаратов.",
+      "changes": [
+        "applicability"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Назвать отсутствующее поле; не подставлять норму и не выдавать безусловную индивидуальную схему.",
+      "source_refs": [
+        "RU-PAROX",
+        "RU-AGO",
+        "RU-DEP"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "allergy",
+      "question_ru": "Есть гиперчувствительность к A/B или компонентам?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [],
+      "required_when": "для этой ветки",
+      "show_when": "для этой ветки",
+      "why_needed": "Противопоказания обоих препаратов.",
+      "changes": [
+        "applicability"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Назвать отсутствующее поле; не подставлять норму и не выдавать безусловную индивидуальную схему.",
+      "source_refs": [
+        "RU-PAROX",
+        "RU-AGO",
+        "RU-DEP"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "pregnancy",
+      "question_ru": "Беременность установлена или возможна?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [],
+      "required_when": "для этой ветки",
+      "show_when": "для этой ветки",
+      "why_needed": "Отдельная оценка; B рекомендуется избегать.",
+      "changes": [
+        "applicability"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Назвать отсутствующее поле; не подставлять норму и не выдавать безусловную индивидуальную схему.",
+      "source_refs": [
+        "RU-PAROX",
+        "RU-AGO",
+        "RU-DEP"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "lactation",
+      "question_ru": "Есть грудное вскармливание?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [],
+      "required_when": "для этой ветки",
+      "show_when": "для этой ветки",
+      "why_needed": "Отдельное решение B: вскармливание/терапия.",
+      "changes": [
+        "applicability"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Назвать отсутствующее поле; не подставлять норму и не выдавать безусловную индивидуальную схему.",
+      "source_refs": [
+        "RU-PAROX",
+        "RU-AGO",
+        "RU-DEP"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "withdrawal_severity",
+      "question_ru": "Текущие симптомы отмены A по оценке врача?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [],
+      "required_when": "для этой ветки",
+      "show_when": "для этой ветки",
+      "why_needed": "Следующую ступень A при симптомах пересматривают.",
+      "changes": [
+        "applicability"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Назвать отсутствующее поле; не подставлять норму и не выдавать безусловную индивидуальную схему.",
+      "source_refs": [
+        "RU-PAROX",
+        "RU-AGO",
+        "RU-DEP"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    }
+  ],
+  "clinical_parameters": [
+    {
+      "parameter_id": "target_start",
+      "meaning": "target_start",
+      "value": 25,
+      "lower": null,
+      "upper": null,
+      "lower_inclusive": null,
+      "upper_inclusive": null,
+      "unit": "mg/day",
+      "source_ref": "RU-AGO",
+      "source_locator": "§4.2, PDF с.1",
+      "source_meaning": "предписание",
+      "derivation": null
+    },
+    {
+      "parameter_id": "target_frequency",
+      "meaning": "target_frequency",
+      "value": 1,
+      "lower": null,
+      "upper": null,
+      "lower_inclusive": null,
+      "upper_inclusive": null,
+      "unit": "administration/day",
+      "source_ref": "RU-AGO",
+      "source_locator": "§4.2, PDF с.1",
+      "source_meaning": "предписание",
+      "derivation": null
+    },
+    {
+      "parameter_id": "start_taper_day",
+      "meaning": "start_taper_day",
+      "value": 1,
+      "lower": null,
+      "upper": null,
+      "lower_inclusive": null,
+      "upper_inclusive": null,
+      "unit": "day_of_A_taper",
+      "source_ref": "RU-AGO",
+      "source_locator": "§4.2, PDF с.2",
+      "source_meaning": "предписание",
+      "derivation": null
+    },
+    {
+      "parameter_id": "hepatic_cutoff",
+      "meaning": "hepatic_cutoff",
+      "value": 3,
+      "lower": null,
+      "upper": null,
+      "lower_inclusive": null,
+      "upper_inclusive": null,
+      "unit": "ratio_to_ULN",
+      "source_ref": "RU-AGO",
+      "source_locator": "§4.2–4.4, PDF с.1/3",
+      "source_meaning": "предписание",
+      "derivation": null
+    },
+    {
+      "parameter_id": "depression_age_exclusion",
+      "meaning": "depression_age_exclusion",
+      "value": 75,
+      "lower": null,
+      "upper": null,
+      "lower_inclusive": null,
+      "upper_inclusive": null,
+      "unit": "year",
+      "source_ref": "RU-AGO",
+      "source_locator": "§4.2, PDF с.2",
+      "source_meaning": "предписание",
+      "derivation": null
+    }
+  ],
+  "logic": {
+    "representation": "directed_switch_strategy",
+    "conditions": [
+      "Показание/препарат выбраны врачом; взрослая применимость и форма подтверждены."
+    ],
+    "actions": [
+      "A постепенно снижать по собственной инструкции и выбранному врачом плану.",
+      "B можно начать с первого дня снижения A: 25 мг однократно перед сном. Опубликовано разрешение перекрытия; ожидание последней дозы A не требуется этим способом перехода.",
+      "Не вычислять универсальный washout из полувыведения. Не применять разрешение к флувоксамину: его сочетание с B противопоказано."
+    ],
+    "parameter_refs": [
+      "target_start",
+      "target_frequency",
+      "start_taper_day",
+      "hepatic_cutoff",
+      "depression_age_exclusion"
+    ],
+    "source_refs": [
+      "RU-PAROX",
+      "RU-AGO",
+      "RU-DEP"
+    ],
+    "clinician_choices": [
+      "Индивидуальные ступени снижения A, оценка риска отмены и решение о начале B.",
+      "Применимость B и обязательный контроль печёночных проб."
+    ],
+    "missing_data_behaviour": "Назвать обязательные неизвестные поля; результат insufficient_data. Справочные этапы можно показать как условные, без безусловной дозы пациенту.",
+    "unsupported_case_behaviour": "not_applicable для этой карточки; указать конкретную отсутствующую ветку, не запретить всё лечение.",
+    "contraindicated_case_behaviour": "Не выдавать дозовую схему противопоказанного сочетания; отобразить источник и причину.",
+    "conflicts": [],
+    "composite_rule_dependencies": [
+      "parox-taper-example"
+    ],
+    "combination_justification": "Опубликованное правило B прямо отсылает к инструкции A. Классовое разрешение СИОЗС применяется к конкретной названной паре; точные дозы/темп A не выводятся из этого разрешения."
+  },
+  "output": {
+    "result_type": "clinician_choice",
+    "medication_inn": "агомелатин",
+    "dose_per_administration": null,
+    "administrations_per_day": null,
+    "total_daily_dose": null,
+    "unit": "mg",
+    "formulation": {
+      "from": "Рексетин, таблетки 20 мг; половина 10 мг",
+      "to": "Вальдоксан, таблетки 25 мг, покрытые пленочной оболочкой"
+    },
+    "schedule": [],
+    "warnings": [
+      "Переход требует расширенной ветки; 5–10 вопросов не обещаны.",
+      "25 мг B — опубликованный старт, индивидуальный выход только после обязательных данных и плана A.",
+      "Числовой вывод относится к указанным дозовым условиям. Неоценённые модулем клинические обстоятельства не считаются отсутствующими; полный клинический допуск врач оценивает отдельно."
+    ],
+    "mandatory_checks": [
+      "Печёночные пробы до старта; контроль примерно через 3/6/12/24 недели и после повышения по ОХЛП."
+    ],
+    "clinician_decisions_remaining": [
+      "Индивидуальные ступени снижения A, оценка риска отмены и решение о начале B.",
+      "Применимость B и обязательный контроль печёночных проб."
+    ],
+    "rounding_or_formulation_rule": "Не округлять медицинскую дозу; использовать только разрешённую форму/деление. При невозможности дозы формой — явно сообщить.",
+    "source_refs": [
+      "RU-PAROX",
+      "RU-AGO",
+      "RU-DEP"
+    ]
+  },
+  "verification": {
+    "primary_source_checked": true,
+    "all_clinical_parameters_have_sources": true,
+    "population_and_indication_checked": true,
+    "russian_applicability_checked": false,
+    "formulation_feasibility_checked": true,
+    "combined_rules_justified": false,
+    "source_transfer_check": "extraction_checked; calculator_not_implemented",
+    "clinical_review": "not_performed",
+    "product_clinical_validation": "not_performed",
+    "ready_for_technical_implementation": false,
+    "unresolved_items": [
+      "Полные обязательные ступени A не опубликованы; без выбранного плана не создавать календарь.",
+      "Последняя регистрационная редакция B сверяется отдельно."
+    ]
+  },
+  "test_cases": [
+    {
+      "case_id": "switch-parox-ago__overlap-permission",
+      "synthetic": true,
+      "given": {
+        "from_drug": "пароксетин",
+        "to_drug": "агомелатин"
+      },
+      "expected": {
+        "target_start_mg_per_day": 25,
+        "frequency": 1,
+        "target_start": "первый день постепенного снижения A",
+        "overlap_allowed": true,
+        "invented_washout_days": null,
+        "complete_schedule": null
+      },
+      "source_refs": [
+        "RU-PAROX",
+        "RU-AGO",
+        "RU-DEP"
+      ],
+      "note": "Ожидание переноса источника; калькулятор не реализован, клиническая валидация не выполнена."
+    },
+    {
+      "case_id": "switch-parox-ago__missing-liver-tests",
+      "synthetic": true,
+      "given": {
+        "alt_ratio_uln": null,
+        "ast_ratio_uln": null
+      },
+      "expected": {
+        "result_type": "insufficient_data",
+        "missing": [
+          "alt_ratio_uln",
+          "ast_ratio_uln"
+        ],
+        "unconditional_target_dose": null
+      },
+      "source_refs": [
+        "RU-PAROX",
+        "RU-AGO",
+        "RU-DEP"
+      ],
+      "note": "Ожидание переноса источника; калькулятор не реализован, клиническая валидация не выполнена."
+    },
+    {
+      "case_id": "switch-parox-ago__alt-above-cutoff",
+      "synthetic": true,
+      "given": {
+        "alt_ratio_uln": 3.1
+      },
+      "expected": {
+        "result_type": "not_applicable",
+        "target_start_allowed": false
+      },
+      "source_refs": [
+        "RU-PAROX",
+        "RU-AGO",
+        "RU-DEP"
+      ],
+      "note": "Ожидание переноса источника; калькулятор не реализован, клиническая валидация не выполнена."
+    }
+  ],
+  "profile": {
+    "country": "RU",
+    "selection_status": "RU_profile_research",
+    "foreign_fallback_allowed": false
+  },
+  "switch_assessment": {
+    "from_action": "gradual_taper_from_own_RU_label",
+    "to_action": "25 mg once at bedtime from first day of A taper",
+    "overlap": "explicitly_allowed_for_SSRI_to_agomelatine",
+    "interval_after_last_A": "not_required_for_this_overlap_strategy",
+    "interval_value_days": null,
+    "pair_specific_trial_claimed": false,
+    "full_numeric_A_calendar_published": false
+  },
+  "card_type": "partial_source_constraint"
+}

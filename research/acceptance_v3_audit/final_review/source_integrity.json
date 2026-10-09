@@ -1,0 +1,80 @@
+[
+  {
+    "file": "research/remediation_round3/originals/RU-AGO_current.pdf",
+    "expected": "a98d383832688cee9a09588b1a908555d01ed8b659281cdeee2646c1115ce7c1",
+    "actual": "a98d383832688cee9a09588b1a908555d01ed8b659281cdeee2646c1115ce7c1",
+    "pass_": true
+  },
+  {
+    "file": "research/remediation_round3/originals/RU-DULOX_current.pdf",
+    "expected": "0551a7306ca4a56b552336bb63fa34905cf4e312702ba811a792221892a42ca1",
+    "actual": "0551a7306ca4a56b552336bb63fa34905cf4e312702ba811a792221892a42ca1",
+    "pass_": true
+  },
+  {
+    "file": "research/remediation_round2/Selectra_current_registry.pdf",
+    "expected": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+    "actual": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+    "pass_": true
+  },
+  {
+    "file": "research/remediation_round3/originals/RU-FLUVOX_current.pdf",
+    "expected": "01b6621adad68dfeaf1fbe00db21935b6df1edee141c67307a9b67ad177893f2",
+    "actual": "01b6621adad68dfeaf1fbe00db21935b6df1edee141c67307a9b67ad177893f2",
+    "pass_": true
+  },
+  {
+    "file": "research/remediation_round3/originals/RU-PAROX_current.pdf",
+    "expected": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069",
+    "actual": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069",
+    "pass_": true
+  },
+  {
+    "file": "research/source_downloads/Золофт — сертралин.pdf",
+    "expected": "3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba",
+    "actual": "3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba",
+    "pass_": true
+  },
+  {
+    "file": "research/remediation_round3/originals/RU-PREG_current.pdf",
+    "expected": "b605c8b381c24d59a48bbab9bfa8621eb70f6ec16ad9e3679aa8457f811663e5",
+    "actual": "b605c8b381c24d59a48bbab9bfa8621eb70f6ec16ad9e3679aa8457f811663e5",
+    "pass_": true
+  },
+  {
+    "file": "research/remediation_round3/originals/RU-VENLA-XR_current.pdf",
+    "expected": "a21e90141db69d9be5ca44ac3c8c6059c8c82a880f34bbf15143348c36ef4666",
+    "actual": "a21e90141db69d9be5ca44ac3c8c6059c8c82a880f34bbf15143348c36ef4666",
+    "pass_": true
+  },
+  {
+    "file": "research/remediation_round3/originals/RU-PHEN_current.pdf",
+    "expected": "850486408d225fc603f8f053765491c1e9fd688c5c3d765cdf80a34dd2b3cf1a",
+    "actual": "850486408d225fc603f8f053765491c1e9fd688c5c3d765cdf80a34dd2b3cf1a",
+    "pass_": true
+  },
+  {
+    "file": "research/audit/retrieved/RU-PANIC.pdf",
+    "expected": "a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d",
+    "actual": "a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d",
+    "pass_": true
+  },
+  {
+    "file": "research/audit/retrieved/RU-GAD.pdf",
+    "expected": "c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a",
+    "actual": "c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a",
+    "pass_": true
+  },
+  {
+    "file": "research/source_snapshots/depression-301_3.pdf",
+    "expected": "2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd",
+    "actual": "2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd",
+    "pass_": true
+  },
+  {
+    "file": "research/audit/retrieved/RU-PHOB.pdf",
+    "expected": "2a51982fb1919c0ef9115e5231f8ef9d65863306d2d5b95aa0aa7821a6f328b7",
+    "actual": "2a51982fb1919c0ef9115e5231f8ef9d65863306d2d5b95aa0aa7821a6f328b7",
+    "pass_": true
+  }
+]

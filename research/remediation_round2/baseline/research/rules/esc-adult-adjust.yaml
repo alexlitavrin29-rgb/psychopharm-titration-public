@@ -1,0 +1,1035 @@
+schema_version: '1.0'
+rule_id: esc-adult-adjust
+development_status: extracted_research_not_executable
+language: ru
+identity:
+  title: 'Эсциталопрам: коррекция по ответу без фиксированного шага'
+  mode: adjust
+  drug_inn: эсциталопрам
+  from_drug_inn: null
+  to_drug_inn: null
+  formulation: 'Селектра: таблетки, покрытые плёночной оболочкой; 5/10/15/20 мг; 10/15/20 делятся на равные дозы
+    (§3 с.1–2)'
+  route: oral
+  diagnosis_label_ru: Показание врача, в границах исходного документа
+  classification_system: МКБ-10
+  diagnosis_code: F41.1/F41.0/F40.1
+  jurisdiction: RU_registry_original_2025-11-05
+  formulation_confirmation: registry strengths observed; splitting and dose predicates unverified
+applicability:
+  population_description: Взрослые. Только подтверждённые условия этой карточки; другие популяции не получают масштабированную
+    взрослую дозу.
+  age_constraints:
+  - minimum: 18
+    inclusive: true
+    unit: year
+    source_ref: RU-ESC
+    source_locator: §4.1 с.2; §4.2 с.3
+  pregnancy: Решение по применимости/пользе и риску отдельно; без опубликованной числовой поправки. Стандартная
+    карточка не выдаёт автоматическую дозу при беременности.
+  lactation: Проверять отдельные ограничения источника. Стандартная карточка не выдаёт автоматическую дозу при кормлении.
+  renal_constraints:
+  - Знак источниковой границы не подтверждён; опубликованную копию другой редакции не подставлять. F02 открыт.
+  hepatic_constraints:
+  - 'Лёгкая/средняя недостаточность, классы A/B Чайлд–Пью: 5 мг/сут первые две недели, затем по реакции до 10 мг.
+    Тяжёлая C: пристальный контроль врача, без самостоятельного числового переноса (§4.2 с.3).'
+  comorbidity_constraints:
+  - 'Мания/гипомания, судороги/неконтролируемая эпилепсия, суицидальный риск, акатизия, риск кровотечения, гипонатремии
+    и удлинения QT: ограничения/наблюдение по инструкции; числовых множителей для них нет. Для эсциталопрама дополнительно
+    диабет и закрытоугольная глаукома.'
+  interacting_drugs: []
+  other_conditions: []
+  exclusions:
+  - Гиперчувствительность
+  - Непроверенные противопоказания/взаимодействия не считать отсутствующими
+  indication_status_in_russia: unverified_current_original
+  source_refs: &id003
+  - RU-ESC
+inputs:
+- input_id: age
+  question_ru: Возраст пациента, полных лет?
+  data_type: integer
+  unit: year
+  allowed_values: []
+  required_when: для индивидуального результата
+  show_when: при выборе этой карточки
+  why_needed: Возрастная применимость; для эсциталопрама особая пожилая ветка, для прегабалина возраст не заменяет
+    CLcr.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать
+    условно.
+  source_refs:
+  - RU-ESC
+  input_role: dose_operand_or_applicability_gate
+  source_locator: §1–3 PDF с.1–2; §4.1 с.2; §4.2 с.2–3; §4.3 с.4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.10
+  missing_states: &id001
+  - unknown
+  - not_assessed
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+- input_id: form
+  question_ru: Какая конкретная форма и сила дозы используются?
+  data_type: structured_form
+  unit: null
+  allowed_values: []
+  required_when: для индивидуального результата
+  show_when: при выборе этой карточки
+  why_needed: Исполнимость дозы и запрет произвольного деления форм.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать
+    условно.
+  source_refs:
+  - RU-ESC
+  input_role: dose_operand_or_applicability_gate
+  source_locator: §1–3 PDF с.1–2; §4.1 с.2; §4.2 с.2–3; §4.3 с.4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.10
+  missing_states: *id001
+  structure_ref: remediation/input_contracts.yaml#structures/structured_form
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+- input_id: pregnancy
+  question_ru: Беременность установлена или возможна?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: для индивидуального результата
+  show_when: при выборе этой карточки
+  why_needed: Отдельное решение о пользе и риске; числовой коэффициент не опубликован.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать
+    условно.
+  source_refs:
+  - RU-ESC
+  input_role: dose_operand_or_applicability_gate
+  source_locator: §1–3 PDF с.1–2; §4.1 с.2; §4.2 с.2–3; §4.3 с.4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.10
+  missing_states: *id001
+  value_aliases: &id002
+    да: true
+    нет: false
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+- input_id: lactation
+  question_ru: Есть грудное вскармливание?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: для индивидуального результата
+  show_when: при выборе этой карточки
+  why_needed: Ограничение инструкции, решение врача; не уменьшение дозы по выдуманному коэффициенту.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать
+    условно.
+  source_refs:
+  - RU-ESC
+  input_role: dose_operand_or_applicability_gate
+  source_locator: §1–3 PDF с.1–2; §4.1 с.2; §4.2 с.2–3; §4.3 с.4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.10
+  missing_states: *id001
+  value_aliases: *id002
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+- input_id: medicines
+  question_ru: Какие лекарства и значимые вещества сейчас принимаются или недавно отменены?
+  data_type: medication_list
+  unit: null
+  allowed_values: []
+  required_when: для индивидуального результата
+  show_when: при выборе этой карточки
+  why_needed: Выявление взаимодействий и интервалов после ИМАО; пустой список и непроверенный список различаются.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать
+    условно.
+  source_refs:
+  - RU-ESC
+  input_role: dose_operand_or_applicability_gate
+  source_locator: §1–3 PDF с.1–2; §4.1 с.2; §4.2 с.2–3; §4.3 с.4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.10
+  missing_states: *id001
+  structure_ref: remediation/input_contracts.yaml#structures/medication_list
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+- input_id: allergy
+  question_ru: Есть известная гиперчувствительность к препарату/компонентам?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: для индивидуального результата
+  show_when: при выборе этой карточки
+  why_needed: Противопоказание.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать
+    условно.
+  source_refs:
+  - RU-ESC
+  input_role: dose_operand_or_applicability_gate
+  source_locator: §1–3 PDF с.1–2; §4.1 с.2; §4.2 с.2–3; §4.3 с.4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.10
+  missing_states: *id001
+  value_aliases: *id002
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+- input_id: hepatic
+  question_ru: 'Как врач характеризует функцию печени: нарушения не известны, нарушена, тяжёлое нарушение, неизвестно?'
+  data_type: source_hepatic_category
+  unit: null
+  allowed_values: []
+  required_when: для индивидуального результата
+  show_when: при выборе этой карточки
+  why_needed: Выбор отдельного дозового правила; не вычислять степень по одному анализу.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать
+    условно.
+  source_refs:
+  - RU-ESC
+  input_role: dose_operand_or_applicability_gate
+  source_locator: §1–3 PDF с.1–2; §4.1 с.2; §4.2 с.2–3; §4.3 с.4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.10
+  missing_states: *id001
+  structure_ref: remediation/input_contracts.yaml#structures/source_hepatic_category
+  category_mapping_status: unverified_current_original; no automatic A/B/C mapping
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  source_categories:
+  - нет недостаточности после оценки
+  - 'недостаточность: степень по источнику'
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+- input_id: mania
+  question_ru: Имеется мания/гипомания или её появление отмечено врачом?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: при известном соответствующем обстоятельстве/выявленном взаимодействии; для его клинического разбора
+  show_when: врач сообщил обстоятельство или выявлено релевантное взаимодействие
+  why_needed: Ограничение/пересмотр терапии; диагноз врача не перепроверяется.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Сохранить not_assessed/неизвестно; не считать отсутствием риска. Дозовый модуль не подтверждает
+    полный клинический допуск. При необходимости разбора — расширенная ветка.
+  source_refs:
+  - RU-ESC
+  input_role: conditional_clinical_context
+  source_locator: §1–3 PDF с.1–2; §4.1 с.2; §4.2 с.2–3; §4.3 с.4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.10
+  missing_states: *id001
+  value_aliases: *id002
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+- input_id: seizure_state
+  question_ru: 'Эпилепсия/судороги: отсутствуют по оценке, контролируемые, неконтролируемые, неизвестно?'
+  data_type: enum
+  unit: null
+  allowed_values:
+  - не отмечены
+  - контролируемые
+  - неконтролируемые
+  - unknown
+  - not_assessed
+  required_when: при известном соответствующем обстоятельстве/выявленном взаимодействии; для его клинического разбора
+  show_when: врач сообщил обстоятельство или выявлено релевантное взаимодействие
+  why_needed: Осторожность/неприменимость короткой ветки.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Сохранить not_assessed/неизвестно; не считать отсутствием риска. Дозовый модуль не подтверждает
+    полный клинический допуск. При необходимости разбора — расширенная ветка.
+  source_refs:
+  - RU-ESC
+  input_role: conditional_clinical_context
+  source_locator: §1–3 PDF с.1–2; §4.1 с.2; §4.2 с.2–3; §4.3 с.4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.10
+  missing_states: *id001
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+- input_id: known_cyp2c19
+  question_ru: Уже известно о слабой активности CYP2C19?
+  data_type: enum
+  unit: null
+  allowed_values:
+  - известная слабая активность
+  - другой известный результат
+  - не исследовано
+  - unknown
+  - not_assessed
+  required_when: если фенотип уже известен; исследование не обязательно
+  show_when: если врач предоставляет уже известный низкий CYP2C19
+  why_needed: Только известный результат открывает отдельную ветку; тест всем не требуется.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Сохранить не исследовано/неизвестно; не объявлять нормальным фенотипом и не требовать генетическое
+    исследование всем.
+  source_refs:
+  - RU-ESC
+  input_role: conditional_dose_modifier
+  source_locator: §1–3 PDF с.1–2; §4.1 с.2; §4.2 с.2–3; §4.3 с.4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.10
+  missing_states: *id001
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+- input_id: renal
+  question_ru: Известно выраженное нарушение функции почек? Если да, каков подтверждённый CLcr?
+  data_type: structured_renal
+  unit: null
+  allowed_values: []
+  required_when: при известном нарушении почек или необходимости его оценки
+  show_when: врач сообщил известное нарушение/сомнение о функции почек
+  why_needed: При выраженном нарушении — осторожность; точной числовой поправки нет.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Не считать нормой; числовой почечной поправки в источнике нет. При клинической необходимости
+    уточнить КК отдельно; при <=30 осторожность.
+  source_refs:
+  - RU-ESC
+  input_role: conditional_clinical_context
+  source_locator: §1–3 PDF с.1–2; §4.1 с.2; §4.2 с.2–3; §4.3 с.4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.10
+  missing_states: *id001
+  structure_ref: remediation/input_contracts.yaml#structures/structured_renal
+  required_metric: CLcr
+  required_unit: mL/min
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+- input_id: current_dose
+  question_ru: Фактическая суточная доза сейчас?
+  data_type: number
+  unit: mg/day
+  allowed_values: []
+  required_when: для индивидуального результата
+  show_when: при выборе этой карточки
+  why_needed: Определяет допустимый следующий шаг и превышение предела.
+  changes:
+  - applicability
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать
+    условно.
+  source_refs:
+  - RU-ESC
+  input_role: dose_operand_or_applicability_gate
+  source_locator: §1–3 PDF с.1–2; §4.1 с.2; §4.2 с.2–3; §4.3 с.4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.10
+  missing_states: *id001
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+- input_id: time_at_dose
+  question_ru: Сколько времени принимается именно эта доза?
+  data_type: number
+  unit: week
+  allowed_values: []
+  required_when: для индивидуального результата
+  show_when: при выборе этой карточки
+  why_needed: Проверяет минимальный интервал, если он опубликован.
+  changes:
+  - applicability
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать
+    условно.
+  source_refs:
+  - RU-ESC
+  input_role: dose_operand_or_applicability_gate
+  source_locator: §1–3 PDF с.1–2; §4.1 с.2; §4.2 с.2–3; §4.3 с.4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.10
+  missing_states: *id001
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+- input_id: response
+  question_ru: Как врач оценивает ответ на лечение?
+  data_type: enum
+  unit: null
+  allowed_values:
+  - достаточный
+  - недостаточный
+  - unknown
+  - not_assessed
+  required_when: для индивидуального результата
+  show_when: при выборе этой карточки
+  why_needed: Без недостаточного ответа повышение не следует из источника.
+  changes:
+  - applicability
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать
+    условно.
+  source_refs:
+  - RU-ESC
+  input_role: dose_operand_or_applicability_gate
+  source_locator: §1–3 PDF с.1–2; §4.1 с.2; §4.2 с.2–3; §4.3 с.4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.10
+  missing_states: *id001
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+- input_id: tolerability
+  question_ru: Как врач оценивает переносимость?
+  data_type: enum
+  unit: null
+  allowed_values:
+  - достаточная
+  - неприемлемая
+  - unknown
+  - not_assessed
+  required_when: для индивидуального результата
+  show_when: при выборе этой карточки
+  why_needed: Условие повышения/остановки; шкала без связи с действием не требуется.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать
+    условно.
+  source_refs:
+  - RU-ESC
+  input_role: dose_operand_or_applicability_gate
+  source_locator: §1–3 PDF с.1–2; §4.1 с.2; §4.2 с.2–3; §4.3 с.4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.10
+  missing_states: *id001
+  value_aliases:
+    приемлемая: достаточная
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+- input_id: adherence
+  question_ru: Подтверждён ли фактический приём назначенной дозы?
+  data_type: enum
+  unit: null
+  allowed_values:
+  - подтверждён
+  - не подтверждён
+  - unknown
+  - not_assessed
+  required_when: для индивидуального результата
+  show_when: при выборе этой карточки
+  why_needed: Не считать отсутствие эффекта при неприверженности основанием автоматического повышения.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать
+    условно.
+  source_refs:
+  - RU-ESC
+  - RU-GAD
+  - RU-PANIC
+  input_role: dose_operand_or_applicability_gate
+  source_locator: §1–3 PDF с.1–2; §4.1 с.2; §4.2 с.2–3; §4.3 с.4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.10
+  missing_states: *id001
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+- input_id: qt_risk
+  question_ru: Известен врачу риск удлинения QT/аритмии?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: при известном соответствующем обстоятельстве/выявленном взаимодействии; для его клинического разбора
+  show_when: врач сообщил обстоятельство или выявлено релевантное взаимодействие
+  why_needed: Требует отдельной оценки; нет опубликованного коэффициента дозы.
+  changes:
+  - applicability
+  - warning
+  unknown_allowed: true
+  action_if_unknown: Сохранить not_assessed/неизвестно; не считать отсутствием риска. Дозовый модуль не подтверждает
+    полный клинический допуск. При необходимости разбора — расширенная ветка.
+  source_refs:
+  - RU-ESC
+  input_role: conditional_clinical_context
+  source_locator: §1–3 PDF с.1–2; §4.1 с.2; §4.2 с.2–3; §4.3 с.4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.10
+  missing_states: *id001
+  value_aliases: *id002
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+- input_id: bleeding_risk
+  question_ru: Известна склонность к кровотечениям?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: при известном соответствующем обстоятельстве/выявленном взаимодействии; для его клинического разбора
+  show_when: врач сообщил обстоятельство или выявлено релевантное взаимодействие
+  why_needed: Взаимодействия/наблюдение; не автоматическое уменьшение дозы.
+  changes:
+  - applicability
+  - warning
+  unknown_allowed: true
+  action_if_unknown: Сохранить not_assessed/неизвестно; не считать отсутствием риска. Дозовый модуль не подтверждает
+    полный клинический допуск. При необходимости разбора — расширенная ветка.
+  source_refs:
+  - RU-ESC
+  input_role: conditional_clinical_context
+  source_locator: §1–3 PDF с.1–2; §4.1 с.2; §4.2 с.2–3; §4.3 с.4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.10
+  missing_states: *id001
+  value_aliases: *id002
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+- input_id: hyponatremia_risk
+  question_ru: Известны врачу гипонатремия или её повышенный риск?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: при известном соответствующем обстоятельстве/выявленном взаимодействии; для его клинического разбора
+  show_when: врач сообщил обстоятельство или выявлено релевантное взаимодействие
+  why_needed: Осторожность, особенно при соответствующих препаратах/возрасте; лаборатория не обязательна всем.
+  changes:
+  - applicability
+  - warning
+  unknown_allowed: true
+  action_if_unknown: Сохранить not_assessed/неизвестно; не считать отсутствием риска. Дозовый модуль не подтверждает
+    полный клинический допуск. При необходимости разбора — расширенная ветка.
+  source_refs:
+  - RU-ESC
+  input_role: conditional_clinical_context
+  source_locator: §1–3 PDF с.1–2; §4.1 с.2; §4.2 с.2–3; §4.3 с.4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.10
+  missing_states: *id001
+  value_aliases: *id002
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+- input_id: suicide_risk
+  question_ru: Выраженный суицидальный риск отмечен врачом?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: при известном соответствующем обстоятельстве/выявленном взаимодействии; для его клинического разбора
+  show_when: врач сообщил обстоятельство или выявлено релевантное взаимодействие
+  why_needed: Изменяет необходимое наблюдение и условия ведения, не числовую формулу.
+  changes:
+  - applicability
+  - warning
+  unknown_allowed: true
+  action_if_unknown: Сохранить not_assessed/неизвестно; не считать отсутствием риска. Дозовый модуль не подтверждает
+    полный клинический допуск. При необходимости разбора — расширенная ветка.
+  source_refs:
+  - RU-ESC
+  input_role: conditional_clinical_context
+  source_locator: §1–3 PDF с.1–2; §4.1 с.2; §4.2 с.2–3; §4.3 с.4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.10
+  missing_states: *id001
+  value_aliases: *id002
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+- input_id: akathisia
+  question_ru: Акатизия/психомоторное беспокойство на текущей дозе отмечены врачом?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: при известном соответствующем обстоятельстве/выявленном взаимодействии; для его клинического разбора
+  show_when: врач сообщил обстоятельство или выявлено релевантное взаимодействие
+  why_needed: Повышение может ухудшить состояние; не выполнять автоматически.
+  changes:
+  - dose
+  - warning
+  unknown_allowed: true
+  action_if_unknown: Сохранить not_assessed/неизвестно; не считать отсутствием риска. Дозовый модуль не подтверждает
+    полный клинический допуск. При необходимости разбора — расширенная ветка.
+  source_refs:
+  - RU-ESC
+  input_role: conditional_clinical_context
+  source_locator: §1–3 PDF с.1–2; §4.1 с.2; §4.2 с.2–3; §4.3 с.4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.10
+  missing_states: *id001
+  value_aliases: *id002
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+- input_id: diabetes
+  question_ru: Сахарный диабет отмечен врачом?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: при известном соответствующем обстоятельстве/выявленном взаимодействии; для его клинического разбора
+  show_when: врач сообщил обстоятельство или выявлено релевантное взаимодействие
+  why_needed: Осторожность/возможная коррекция сахароснижающей терапии, не коэффициент эсциталопрама.
+  changes:
+  - warning
+  unknown_allowed: true
+  action_if_unknown: Сохранить not_assessed/неизвестно; не считать отсутствием риска. Дозовый модуль не подтверждает
+    полный клинический допуск. При необходимости разбора — расширенная ветка.
+  source_refs:
+  - RU-ESC
+  input_role: conditional_clinical_context
+  source_locator: §1–3 PDF с.1–2; §4.1 с.2; §4.2 с.2–3; §4.3 с.4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.10
+  missing_states: *id001
+  value_aliases: *id002
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+- input_id: glaucoma
+  question_ru: Закрытоугольная глаукома/её анамнез отмечены врачом?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: при известном соответствующем обстоятельстве/выявленном взаимодействии; для его клинического разбора
+  show_when: врач сообщил обстоятельство или выявлено релевантное взаимодействие
+  why_needed: Осторожность по инструкции, не дозовая поправка.
+  changes:
+  - applicability
+  - warning
+  unknown_allowed: true
+  action_if_unknown: Сохранить not_assessed/неизвестно; не считать отсутствием риска. Дозовый модуль не подтверждает
+    полный клинический допуск. При необходимости разбора — расширенная ветка.
+  source_refs:
+  - RU-ESC
+  input_role: conditional_clinical_context
+  source_locator: §1–3 PDF с.1–2; §4.1 с.2; §4.2 с.2–3; §4.3 с.4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.10
+  missing_states: *id001
+  value_aliases: *id002
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+clinical_parameters:
+- parameter_id: maximum
+  meaning: Предел стандартной ветки
+  value: 20
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: mg/day
+  source_ref: RU-ESC
+  source_locator: §4.2, PDF с.2–3
+  source_meaning: предписание
+  derivation: null
+  confirmation_status: unverified_current_original
+- parameter_id: frequency
+  meaning: Кратность
+  value: 1
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: administration/day
+  source_ref: RU-ESC
+  source_locator: §4.2, PDF с.2–3
+  source_meaning: предписание
+  derivation: null
+  confirmation_status: unverified_current_original
+- parameter_id: adult_minimum
+  meaning: Нижняя возрастная граница этой инструкции
+  value: 18
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: year
+  source_ref: RU-ESC
+  source_locator: §4.1, PDF с.2
+  source_meaning: предписание
+  derivation: null
+  confirmation_status: unverified_current_original
+- parameter_id: source_form_strengths
+  meaning: Силы дозы выбранной формы; не дозовая рекомендация
+  value:
+  - 5
+  - 10
+  - 15
+  - 20
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: mg
+  source_ref: RU-ESC
+  source_locator: §1–3, PDF с.1–2
+  source_meaning: предписание
+  derivation: null
+  confirmation_status: unverified_current_original
+- parameter_id: renal_caution_threshold
+  meaning: Заявленный порог; знак < или <= не установлен по доступному актуальному оригиналу
+  value: 30
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: mL/min
+  source_ref: RU-ESC
+  source_locator: §4.2, PDF с.2–3
+  source_meaning: предписание
+  derivation: null
+  confirmation_status: unverified_current_original
+  boundary_operator: null
+logic:
+  representation: narrative_only
+  conditions:
+  - Диагноз, препарат и режим выбрал врач. Соответствие популяции/форме и ограничения источника подтверждены.
+  actions:
+  - При недостаточном ответе врач может увеличить дозу до maximum; величина следующего шага и срок этим правилом
+    не определены. Не вычислять их из GAD-7/PHQ-9.
+  - Для пожилых/печени/CYP использовать отдельную применимую ветку; этот максимум не переносить туда автоматически.
+  parameter_refs:
+  - maximum
+  - frequency
+  - adult_minimum
+  - source_form_strengths
+  - renal_caution_threshold
+  source_refs: *id003
+  clinician_choices:
+  - Применимость при особых состояниях и взаимодействиях
+  - Необходимость следующего условного шага
+  missing_data_behaviour: Назвать обязательные неизвестные поля; результат insufficient_data. Справочные этапы можно
+    показать как условные, без безусловной дозы пациенту.
+  unsupported_case_behaviour: not_applicable для этой карточки; указать конкретную отсутствующую ветку, не запретить
+    всё лечение.
+  contraindicated_case_behaviour: Не выдавать дозовую схему противопоказанного сочетания; отобразить источник и
+    причину.
+  conflicts: []
+  composite_rule_dependencies: []
+  combination_justification: Самостоятельные поправки не перемножаются. Совпадение числа не подтверждает применимость
+    их сочетания.
+  source_blocker:
+    source_ref: RU-ESC
+    medical_predicates_confirmed: false
+    renal_boundary_operator: null
+    hepatic_class_mapping: null
+    action: source_unavailable; no individualized numeric or combined result
+  result_contract_ref: remediation/result_contracts.yaml#rules/esc-adult-adjust
+  individual_output_gate: All required typed inputs and applicable conditional inputs must be known; evaluate every
+    source-specific gate in result_contract. A caution has clinician_choice, not an invented coefficient. No blanket
+    clinical clearance.
+output:
+  result_type: source_unavailable
+  medication_inn: эсциталопрам
+  dose_per_administration: null
+  administrations_per_day: null
+  total_daily_dose: null
+  unit: mg
+  formulation: 'Селектра: таблетки, покрытые плёночной оболочкой; 5/10/15/20 мг; 10/15/20 делятся на равные дозы
+    (§3 с.1–2)'
+  schedule: []
+  warnings:
+  - Условная схема источника, не автономное назначение. Максимум не является целью.
+  - Подтвердить противопоказания и взаимодействия исходной инструкции.
+  - Числовой вывод относится к указанным дозовым условиям. Неоценённые модулем клинические обстоятельства не считаются
+    отсутствующими; полный клинический допуск врач оценивает отдельно.
+  mandatory_checks:
+  - Проверить соответствие источнику, указанное в applicability и inputs.
+  clinician_decisions_remaining:
+  - Подтверждение применимости
+  - Решение о переходе к следующему этапу
+  rounding_or_formulation_rule: Не округлять медицинскую дозу; использовать только разрешённую форму/деление. При
+    невозможности дозы формой — явно сообщить.
+  source_refs: *id003
+  source_blocker: F01/F02/F13; no executable numeric result
+sources:
+- source_id: RU-GAD
+  title: Генерализованное тревожное расстройство, КР 457_3
+  organization_or_authors: Минздрав РФ; Российское общество психиатров
+  url: https://apicr.minzdrav.gov.ru/api.ashx?id=457_3&op=GetClinrecPdf
+  doi_or_registry_id: '457_3'
+  publication_date: null
+  version_or_update_date: '2024; каталог: опубликовано 19.09.2024, применяется'
+  accessed_on: '2026-10-08'
+  source_type: guideline
+  jurisdiction: RU
+  access_status: full
+  exact_locator: §3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78
+  evidence_status: Клиническая рекомендация; не валидация калькулятора
+  what_was_tested: Не исследовался создаваемый продукт. Содержание и ограничения описаны в evidence_limitations.
+  evidence_limitations: Взрослые F41.1. УУР/УДД относятся к конкретным рекомендациям, а не к точности индивидуального
+    дозирования.
+  reuse_license_or_restriction: Открытый доступ не означает разрешение перераспространять полный документ. Сохранены
+    собственное извлечение фактических правил, локаторы и ссылки; код и большие цитаты не копируются.
+  document_fingerprint:
+    source_id: RU-GAD
+    url: https://apicr.minzdrav.gov.ru/api.ashx?id=457_3&op=GetClinrecPdf
+    sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+    pages: 121
+  local_file: audit/retrieved/RU-GAD.pdf
+  document_copies:
+  - source_id: RU-GAD
+    local_file: audit/retrieved/RU-GAD.pdf
+    sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+    version: '2024; каталог: опубликовано 19.09.2024, применяется'
+    url: https://apicr.minzdrav.gov.ru/api.ashx?id=457_3&op=GetClinrecPdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: false
+  - source_id: RU-GAD
+    local_file: remediation/retrieved/RU-GAD.pdf
+    sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+    version: '2024; каталог: опубликовано 19.09.2024, применяется'
+    url: https://apicr.minzdrav.gov.ru/api.ashx?id=457_3&op=GetClinrecPdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: false
+  dates:
+    registration: null
+    revision: null
+    publication: null
+    download: '2026-10-08'
+  latest_registration_revision_confirmed: false
+  current_guideline_status_evidence: remediation/catalog_check.json + remediation/current_minzdrav_catalog.json;
+    2026-10-08; CodeVersion/ApplyStatusCalculated=1
+- source_id: RU-PANIC
+  title: Паническое расстройство, КР 456_3
+  organization_or_authors: Минздрав РФ; Российское общество психиатров
+  url: https://apicr.minzdrav.gov.ru/api.ashx?id=456_3&op=GetClinrecPdf
+  doi_or_registry_id: '456_3'
+  publication_date: null
+  version_or_update_date: '2024; каталог: опубликовано 19.09.2024, применяется'
+  accessed_on: '2026-10-08'
+  source_type: guideline
+  jurisdiction: RU
+  access_status: full
+  exact_locator: §3.1, PDF с.25–33; приложение А3, с.76–77
+  evidence_status: Клиническая рекомендация; не валидация калькулятора
+  what_was_tested: Не исследовался создаваемый продукт. Содержание и ограничения описаны в evidence_limitations.
+  evidence_limitations: Взрослые F41.0. Терапевтический диапазон не равен стартовой дозе.
+  reuse_license_or_restriction: Открытый доступ не означает разрешение перераспространять полный документ. Сохранены
+    собственное извлечение фактических правил, локаторы и ссылки; код и большие цитаты не копируются.
+  document_fingerprint:
+    source_id: RU-PANIC
+    url: https://apicr.minzdrav.gov.ru/api.ashx?id=456_3&op=GetClinrecPdf
+    sha256: a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d
+    pages: 140
+  local_file: audit/retrieved/RU-PANIC.pdf
+  document_copies:
+  - source_id: RU-PANIC
+    local_file: audit/retrieved/RU-PANIC.pdf
+    sha256: a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d
+    version: '2024; каталог: опубликовано 19.09.2024, применяется'
+    url: https://apicr.minzdrav.gov.ru/api.ashx?id=456_3&op=GetClinrecPdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: false
+  - source_id: RU-PANIC
+    local_file: remediation/retrieved/RU-PANIC.pdf
+    sha256: a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d
+    version: '2024; каталог: опубликовано 19.09.2024, применяется'
+    url: https://apicr.minzdrav.gov.ru/api.ashx?id=456_3&op=GetClinrecPdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: false
+  dates:
+    registration: null
+    revision: null
+    publication: null
+    download: '2026-10-08'
+  latest_registration_revision_confirmed: false
+  current_guideline_status_evidence: remediation/catalog_check.json + remediation/current_minzdrav_catalog.json;
+    2026-10-08; CodeVersion/ApplyStatusCalculated=1
+- source_id: RU-ESC
+  title: Селектра (эсциталопрам), РУ ЛП-№(012351)-(РГ-RU), регистрация 05.11.2025; текущий полный оригинал недоступен
+  organization_or_authors: Эбботт Продактс Оперейшнз ЭйДжи; официальный реестр ОХЛП ЕАЭС
+  url: https://lk.regmed.ru/Register/ViewPDFfromDAToken?Token=[REDACTED]
+  doi_or_registry_id: ЛП-№(012351)-(РГ-RU) от 05.11.2025
+  publication_date: null
+  version_or_update_date: Текущий полный оригинал недоступен; наблюдался РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; прежние
+    дата/штамп документа не воспроизведены
+  accessed_on: '2026-10-08'
+  source_type: label
+  jurisdiction: RU
+  access_status: unavailable_current_original
+  exact_locator: Прежние заявленные разделы/страницы — historical_unreproduced_claim.locator; не текущий подтверждённый
+    локатор
+  evidence_status: Инструкция/ОХЛП; не валидированная модель индивидуальной дозы
+  what_was_tested: Не исследовался создаваемый продукт. Содержание и ограничения описаны в evidence_limitations.
+  evidence_limitations: ОХЛП нужного РУ не сохранена и не воспроизведена. 08.10.2026 официальный поиск подтвердил
+    РУ и формы, скачивание потребовало CAPTCHA. Token-ссылка не дала оригинала. Архив RU-ESC-2025-JAN не заменяет
+    эту версию; F01/F02/F13 открыты.
+  reuse_license_or_restriction: Открытый доступ не означает разрешение перераспространять полный документ. Сохранены
+    собственное извлечение фактических правил, локаторы и ссылки; код и большие цитаты не копируются.
+  document_fingerprint:
+    url: https://lk.regmed.ru/Register/ViewPDFfromDAToken?Token=[REDACTED]
+    pages: null
+    sha256: null
+    verification: unavailable_current_original; former page/stamp claim retained separately as unreproduced history
+    accessed_on: '2026-10-08'
+  registry_observation:
+    registry: https://lk.regmed.ru/Register/EAEU_SmPC
+    query: Селектра
+    registration_number: ЛП-№(012351)-(РГ-RU)
+    registration_date: '2025-11-05'
+    forms: таблетки, покрытые пленочной оболочкой, 5/10/15/20 мг
+    accessed_on: '2026-10-08'
+    read_part: 'Текущая строка: название, РУ, дата регистрации и силы формы; полный документ/штамп/страницы независимо
+      не получены. Историческое заявление вынесено отдельно.'
+    document_name: null
+    expert_stamp: null
+    remediation_observation: '08.10.2026: Селектра, ЛП-№(012351)-(РГ-RU), 05.11.2025, 5/10/15/20 мг; при нажатии
+      Скачать показана CAPTCHA; не решалась.'
+  document_copies: []
+  dates:
+    registration: '2025-11-05'
+    revision: null
+    publication: null
+    download: null
+    download_attempt: '2026-10-08'
+  latest_registration_revision_confirmed: false
+  historical_unreproduced_claim:
+    version: ОХЛП 30.09.2025, штамп 31.10.2025 №27320, последовательность 0002; РУ 05.11.2025
+    locator: §1–3 PDF с.1–2; §4.1 с.2; §4.2 с.2–3; §4.3 с.4; §4.4 с.4–7; §4.5 с.7–9; §4.6 с.10
+    fingerprint:
+      url: https://lk.regmed.ru/Register/ViewPDFfromDAToken?Token=[REDACTED]
+      pages: 17
+      sha256: null
+      verification: visual_registry_original_sections
+      accessed_on: '2026-10-08'
+    registry_read_part: Официальная запись, список документов и визуально страницы 1–10 ОХЛП; числовой раздел 4.2
+      целиком сверён на с.2–3.
+    expert_stamp: 31.10.2025 №27320, последовательность 0002
+    document_name: 1.3.1 Selectra_SmPC_30092025 _0002_clean (1747204851) [0002] штамп МЗ.pdf
+verification:
+  primary_source_checked: false
+  all_clinical_parameters_have_sources: false
+  population_and_indication_checked: false
+  russian_applicability_checked: true
+  formulation_feasibility_checked: true
+  combined_rules_justified: false
+  source_transfer_check: reviewed_available_original_sections_and_contract_consistency; calculator_not_implemented;
+    latest_registration_revision_not_confirmed
+  clinical_review: not_performed
+  product_clinical_validation: not_performed
+  ready_for_technical_implementation: false
+  unresolved_items:
+  - 'F01/F02/F13: полный актуальный RU-ESC недоступен; все числа, знаки, формы, деление и органные категории требуют
+    повторной проверки.'
+  transfer_scope: Only explicitly source-bound branch contracts and prepared expectations; medical currency limits
+    in sources.json remain open. No automatic clinical use.
+test_cases:
+- case_id: esc-adult-adjust__esc-adjust-not-fixed
+  synthetic: true
+  given:
+    current_dose: 10
+    response: недостаточный
+    tolerability: достаточная
+  expected:
+    result_type: clinician_choice
+    upper_standard_mg_per_day: 20
+    exact_next_dose: null
+    exact_next_day: null
+  source_refs:
+  - RU-ESC
+  note: Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены.
+  scope: isolated_source_transfer_expectation_under_card_conditions
+  case_kind: unverified_source_fragment
+  transfer_allowed: false
+  source_confirmation: current RU-ESC original unavailable
+- case_id: esc-adult-adjust__clcr-exact-30-current-label
+  synthetic: true
+  given:
+    clcr_mL_min: 30
+  expected:
+    result_type: source_unavailable
+    renal_caution: null
+    renal_boundary_operator: null
+    unconditional_dose: null
+  source_refs:
+  - RU-ESC
+  note: Граница <=30 визуально проверена в текущей ОХЛП §4.2 с.3; не калькулятор и не клиническая валидация.
+  case_kind: unverified_source_fragment
+  transfer_allowed: false
+  source_confirmation: current RU-ESC original unavailable
+profile:
+  country: RU
+  selection_status: blocked_unverified_current_original
+  foreign_fallback_allowed: false
+card_type: numeric_source_rule
+input_contract_ref: remediation/input_contracts.yaml#fragment_bindings/esc-adult-adjust

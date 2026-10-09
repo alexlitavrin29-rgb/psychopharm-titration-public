@@ -1,0 +1,2656 @@
+{
+  "rows": [
+    {
+      "case_id": "ago-depression-start--wrong-release-form",
+      "rule_id": "ago-depression-start",
+      "given_forms": {
+        "form": {
+          "product": "Вальдоксан",
+          "registration_number": "ЛП-№(000528)-(РГ-RU)",
+          "source_id": "RU-AGO",
+          "source_version": "Официальная ОХЛП реестра: штамп регистрации 2024-12-28; экспертный отчёт 2024-12-23 №28427/0018; получена 08.10.2026",
+          "dosage_form": "tablet",
+          "strengths_mg": [
+            25
+          ],
+          "release": "prolonged",
+          "route": "oral"
+        }
+      },
+      "external_context": {
+        "diagnosis": "F32",
+        "drug": "агомелатин",
+        "mode": "start",
+        "calculation_at": "2026-10-08T09:00:00+03:00",
+        "treatment_phase": "selected_mode"
+      },
+      "expected": {
+        "result_type": "form_not_feasible",
+        "total_daily_dose_mg": null,
+        "dose_per_administration_mg": null,
+        "administrations_per_day": null,
+        "schedule": [],
+        "missing_fields": [],
+        "unconditional_future_stages": false,
+        "reason_ids": [
+          "form.release"
+        ],
+        "automatic_form_substitution": false,
+        "clinical_clearance": false,
+        "confirmed_negatives": [
+          "pregnancy",
+          "lactation",
+          "allergy",
+          "elderly_population",
+          "dementia",
+          "galactose_intolerance",
+          "complete_lactase_deficiency",
+          "glucose_galactose_malabsorption",
+          "liver_injury_signs",
+          "transaminases_rising",
+          "overweight_obesity",
+          "fatty_liver",
+          "diabetes",
+          "alcohol_abuse",
+          "alcohol_use",
+          "mania",
+          "mania_symptoms",
+          "suicide_risk",
+          "ect"
+        ],
+        "unassessed_context": []
+      },
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "ALT_ratio",
+        "AST_ratio",
+        "elderly_population",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "overweight_obesity",
+        "fatty_liver",
+        "diabetes",
+        "alcohol_abuse"
+      ]
+    },
+    {
+      "case_id": "ago-gad-start--wrong-release-form",
+      "rule_id": "ago-gad-start",
+      "given_forms": {
+        "form": {
+          "product": "Вальдоксан",
+          "registration_number": "ЛП-№(000528)-(РГ-RU)",
+          "source_id": "RU-AGO",
+          "source_version": "Официальная ОХЛП реестра: штамп регистрации 2024-12-28; экспертный отчёт 2024-12-23 №28427/0018; получена 08.10.2026",
+          "dosage_form": "tablet",
+          "strengths_mg": [
+            25
+          ],
+          "release": "prolonged",
+          "route": "oral"
+        }
+      },
+      "external_context": {
+        "diagnosis": "F41.1",
+        "drug": "агомелатин",
+        "mode": "start",
+        "calculation_at": "2026-10-08T09:00:00+03:00",
+        "treatment_phase": "selected_mode"
+      },
+      "expected": {
+        "result_type": "form_not_feasible",
+        "total_daily_dose_mg": null,
+        "dose_per_administration_mg": null,
+        "administrations_per_day": null,
+        "schedule": [],
+        "missing_fields": [],
+        "unconditional_future_stages": false,
+        "reason_ids": [
+          "form.release"
+        ],
+        "automatic_form_substitution": false,
+        "clinical_clearance": false,
+        "confirmed_negatives": [
+          "pregnancy",
+          "lactation",
+          "allergy",
+          "elderly_population",
+          "dementia",
+          "galactose_intolerance",
+          "complete_lactase_deficiency",
+          "glucose_galactose_malabsorption",
+          "liver_injury_signs",
+          "transaminases_rising",
+          "overweight_obesity",
+          "fatty_liver",
+          "diabetes",
+          "alcohol_abuse",
+          "alcohol_use",
+          "mania",
+          "mania_symptoms",
+          "suicide_risk",
+          "ect"
+        ],
+        "unassessed_context": []
+      },
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "ALT_ratio",
+        "AST_ratio",
+        "elderly_population",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "overweight_obesity",
+        "fatty_liver",
+        "diabetes",
+        "alcohol_abuse"
+      ]
+    },
+    {
+      "case_id": "dulox-depression-start--wrong-release-form",
+      "rule_id": "dulox-depression-start",
+      "given_forms": {
+        "form": {
+          "product": "Дулоксента",
+          "registration_number": "ЛП-№(000186)-(РГ-RU)",
+          "source_id": "RU-DULOX",
+          "source_version": "Официальная ОХЛП реестра: штамп регистрации 2026-03-24; экспертный отчёт 2026-03-20 №5759/0015; получена 08.10.2026",
+          "dosage_form": "capsule",
+          "strengths_mg": [
+            30,
+            60
+          ],
+          "release": "prolonged",
+          "route": "oral"
+        }
+      },
+      "external_context": {
+        "diagnosis": "F32",
+        "drug": "дулоксетин",
+        "mode": "start",
+        "calculation_at": "2026-10-08T09:00:00+03:00",
+        "treatment_phase": "selected_mode"
+      },
+      "expected": {
+        "result_type": "form_not_feasible",
+        "total_daily_dose_mg": null,
+        "dose_per_administration_mg": null,
+        "administrations_per_day": null,
+        "schedule": [],
+        "missing_fields": [],
+        "unconditional_future_stages": false,
+        "reason_ids": [
+          "form.release"
+        ],
+        "automatic_form_substitution": false,
+        "clinical_clearance": false,
+        "confirmed_negatives": [
+          "pregnancy",
+          "lactation",
+          "allergy",
+          "uncontrolled_hypertension",
+          "closed_angle_glaucoma",
+          "fructose_intolerance",
+          "glucose_galactose_malabsorption",
+          "sucrase_isomaltase_deficiency",
+          "akathisia",
+          "mania",
+          "suicide_risk",
+          "bleeding_risk",
+          "hyponatremia_risk",
+          "diabetes"
+        ],
+        "unassessed_context": [
+          "persistent_BP_increase"
+        ]
+      },
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "uncontrolled_hypertension",
+        "closed_angle_glaucoma",
+        "fructose_intolerance",
+        "glucose_galactose_malabsorption",
+        "sucrase_isomaltase_deficiency"
+      ]
+    },
+    {
+      "case_id": "dulox-gad-adjust--wrong-release-form",
+      "rule_id": "dulox-gad-adjust",
+      "given_forms": {
+        "form": {
+          "product": "Дулоксента",
+          "registration_number": "ЛП-№(000186)-(РГ-RU)",
+          "source_id": "RU-DULOX",
+          "source_version": "Официальная ОХЛП реестра: штамп регистрации 2026-03-24; экспертный отчёт 2026-03-20 №5759/0015; получена 08.10.2026",
+          "dosage_form": "capsule",
+          "strengths_mg": [
+            30,
+            60
+          ],
+          "release": "prolonged",
+          "route": "oral"
+        }
+      },
+      "external_context": {
+        "diagnosis": "F41.1",
+        "drug": "дулоксетин",
+        "mode": "adjust",
+        "calculation_at": "2026-10-08T09:00:00+03:00",
+        "treatment_phase": "selected_mode"
+      },
+      "expected": {
+        "result_type": "form_not_feasible",
+        "total_daily_dose_mg": null,
+        "dose_per_administration_mg": null,
+        "administrations_per_day": null,
+        "schedule": [],
+        "missing_fields": [],
+        "unconditional_future_stages": false,
+        "reason_ids": [
+          "form.release"
+        ],
+        "automatic_form_substitution": false,
+        "clinical_clearance": false,
+        "confirmed_negatives": [
+          "pregnancy",
+          "lactation",
+          "allergy",
+          "comorbid_depression",
+          "elderly_population",
+          "uncontrolled_hypertension",
+          "closed_angle_glaucoma",
+          "fructose_intolerance",
+          "glucose_galactose_malabsorption",
+          "sucrase_isomaltase_deficiency",
+          "akathisia",
+          "mania",
+          "suicide_risk",
+          "bleeding_risk",
+          "hyponatremia_risk",
+          "diabetes"
+        ],
+        "unassessed_context": [
+          "persistent_BP_increase"
+        ]
+      },
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "comorbid_depression",
+        "elderly_population",
+        "uncontrolled_hypertension",
+        "closed_angle_glaucoma",
+        "current_dose",
+        "response",
+        "tolerability",
+        "fructose_intolerance",
+        "glucose_galactose_malabsorption",
+        "sucrase_isomaltase_deficiency",
+        "akathisia"
+      ]
+    },
+    {
+      "case_id": "dulox-gad-start--wrong-release-form",
+      "rule_id": "dulox-gad-start",
+      "given_forms": {
+        "form": {
+          "product": "Дулоксента",
+          "registration_number": "ЛП-№(000186)-(РГ-RU)",
+          "source_id": "RU-DULOX",
+          "source_version": "Официальная ОХЛП реестра: штамп регистрации 2026-03-24; экспертный отчёт 2026-03-20 №5759/0015; получена 08.10.2026",
+          "dosage_form": "capsule",
+          "strengths_mg": [
+            30,
+            60
+          ],
+          "release": "prolonged",
+          "route": "oral"
+        }
+      },
+      "external_context": {
+        "diagnosis": "F41.1",
+        "drug": "дулоксетин",
+        "mode": "start",
+        "calculation_at": "2026-10-08T09:00:00+03:00",
+        "treatment_phase": "selected_mode"
+      },
+      "expected": {
+        "result_type": "form_not_feasible",
+        "total_daily_dose_mg": null,
+        "dose_per_administration_mg": null,
+        "administrations_per_day": null,
+        "schedule": [],
+        "missing_fields": [],
+        "unconditional_future_stages": false,
+        "reason_ids": [
+          "form.release"
+        ],
+        "automatic_form_substitution": false,
+        "clinical_clearance": false,
+        "confirmed_negatives": [
+          "pregnancy",
+          "lactation",
+          "allergy",
+          "comorbid_depression",
+          "elderly_population",
+          "uncontrolled_hypertension",
+          "closed_angle_glaucoma",
+          "fructose_intolerance",
+          "glucose_galactose_malabsorption",
+          "sucrase_isomaltase_deficiency",
+          "akathisia",
+          "mania",
+          "suicide_risk",
+          "bleeding_risk",
+          "hyponatremia_risk",
+          "diabetes"
+        ],
+        "unassessed_context": [
+          "persistent_BP_increase"
+        ]
+      },
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "comorbid_depression",
+        "elderly_population",
+        "uncontrolled_hypertension",
+        "closed_angle_glaucoma",
+        "fructose_intolerance",
+        "glucose_galactose_malabsorption",
+        "sucrase_isomaltase_deficiency"
+      ]
+    },
+    {
+      "case_id": "dulox-taper-limit--wrong-release-form",
+      "rule_id": "dulox-taper-limit",
+      "given_forms": {
+        "form": {
+          "product": "Дулоксента",
+          "registration_number": "ЛП-№(000186)-(РГ-RU)",
+          "source_id": "RU-DULOX",
+          "source_version": "Официальная ОХЛП реестра: штамп регистрации 2026-03-24; экспертный отчёт 2026-03-20 №5759/0015; получена 08.10.2026",
+          "dosage_form": "capsule",
+          "strengths_mg": [
+            30,
+            60
+          ],
+          "release": "prolonged",
+          "route": "oral"
+        }
+      },
+      "external_context": {
+        "diagnosis": "F41.1",
+        "drug": "дулоксетин",
+        "mode": "taper",
+        "calculation_at": "2026-10-08T09:00:00+03:00",
+        "treatment_phase": "selected_mode"
+      },
+      "expected": {
+        "result_type": "form_not_feasible",
+        "total_daily_dose_mg": null,
+        "dose_per_administration_mg": null,
+        "administrations_per_day": null,
+        "schedule": [],
+        "missing_fields": [],
+        "unconditional_future_stages": false,
+        "reason_ids": [
+          "form.release"
+        ],
+        "automatic_form_substitution": false,
+        "clinical_clearance": false,
+        "confirmed_negatives": [
+          "past_withdrawal"
+        ],
+        "unassessed_context": [
+          "medicines",
+          "persistent_BP_increase"
+        ]
+      },
+      "late_fields": [
+        "age",
+        "withdrawal_severity"
+      ]
+    },
+    {
+      "case_id": "fluvox-depression-start--wrong-release-form",
+      "rule_id": "fluvox-depression-start",
+      "given_forms": {
+        "form": {
+          "product": "Феварин",
+          "registration_number": "ЛП-№(008757)-(РГ-RU)",
+          "source_id": "RU-FLUVOX",
+          "source_version": "Официальная ОХЛП реестра: штамп регистрации 2026-08-19; экспертный отчёт 2026-08-14 №16133/0004; получена 08.10.2026",
+          "dosage_form": "tablet",
+          "strengths_mg": [
+            50,
+            100
+          ],
+          "release": "prolonged",
+          "route": "oral"
+        }
+      },
+      "external_context": {
+        "diagnosis": "F32",
+        "drug": "флувоксамин",
+        "mode": "start",
+        "calculation_at": "2026-10-08T09:00:00+03:00",
+        "treatment_phase": "selected_mode"
+      },
+      "expected": {
+        "result_type": "form_not_feasible",
+        "total_daily_dose_mg": null,
+        "dose_per_administration_mg": null,
+        "administrations_per_day": null,
+        "schedule": [],
+        "missing_fields": [],
+        "unconditional_future_stages": false,
+        "reason_ids": [
+          "form.release"
+        ],
+        "automatic_form_substitution": false,
+        "clinical_clearance": false,
+        "confirmed_negatives": [
+          "pregnancy",
+          "lactation",
+          "allergy",
+          "mania",
+          "mania_symptoms",
+          "akathisia",
+          "bleeding_risk",
+          "suicide_risk",
+          "diabetes",
+          "glaucoma",
+          "ect",
+          "liver_injury_signs",
+          "serotonin_syndrome_signs",
+          "new_or_increased_seizures"
+        ],
+        "unassessed_context": []
+      },
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "source_start_choice",
+        "seizure_state"
+      ]
+    },
+    {
+      "case_id": "fluvox-taper-limit--wrong-release-form",
+      "rule_id": "fluvox-taper-limit",
+      "given_forms": {
+        "form": {
+          "product": "Феварин",
+          "registration_number": "ЛП-№(008757)-(РГ-RU)",
+          "source_id": "RU-FLUVOX",
+          "source_version": "Официальная ОХЛП реестра: штамп регистрации 2026-08-19; экспертный отчёт 2026-08-14 №16133/0004; получена 08.10.2026",
+          "dosage_form": "tablet",
+          "strengths_mg": [
+            50,
+            100
+          ],
+          "release": "prolonged",
+          "route": "oral"
+        }
+      },
+      "external_context": {
+        "diagnosis": "F32",
+        "drug": "флувоксамин",
+        "mode": "taper",
+        "calculation_at": "2026-10-08T09:00:00+03:00",
+        "treatment_phase": "selected_mode"
+      },
+      "expected": {
+        "result_type": "form_not_feasible",
+        "total_daily_dose_mg": null,
+        "dose_per_administration_mg": null,
+        "administrations_per_day": null,
+        "schedule": [],
+        "missing_fields": [],
+        "unconditional_future_stages": false,
+        "reason_ids": [
+          "form.release"
+        ],
+        "automatic_form_substitution": false,
+        "clinical_clearance": false,
+        "confirmed_negatives": [
+          "past_withdrawal",
+          "serotonin_syndrome_signs",
+          "new_or_increased_seizures",
+          "liver_injury_signs",
+          "mania_symptoms"
+        ],
+        "unassessed_context": [
+          "medicines"
+        ]
+      },
+      "late_fields": [
+        "age",
+        "withdrawal_severity",
+        "serotonin_syndrome_signs",
+        "new_or_increased_seizures",
+        "liver_injury_signs",
+        "mania_symptoms"
+      ]
+    },
+    {
+      "case_id": "parox-panic-kr--wrong-release-form",
+      "rule_id": "parox-panic-kr",
+      "given_forms": {
+        "form": {
+          "product": "Рексетин",
+          "registration_number": "ЛП-№(008861)-(РГ-RU)",
+          "source_id": "RU-PAROX",
+          "source_version": "Официальная ОХЛП реестра: штамп регистрации 2025-02-14; экспертный отчёт 2025-02-12 №3370/0003; получена 08.10.2026",
+          "dosage_form": "tablet",
+          "strengths_mg": [
+            20
+          ],
+          "release": "prolonged",
+          "route": "oral"
+        }
+      },
+      "external_context": {
+        "diagnosis": "F41.0",
+        "drug": "пароксетин",
+        "mode": "start",
+        "calculation_at": "2026-10-08T09:00:00+03:00",
+        "treatment_phase": "selected_mode"
+      },
+      "expected": {
+        "result_type": "form_not_feasible",
+        "total_daily_dose_mg": null,
+        "dose_per_administration_mg": null,
+        "administrations_per_day": null,
+        "schedule": [],
+        "missing_fields": [],
+        "unconditional_future_stages": false,
+        "reason_ids": [
+          "form.release"
+        ],
+        "automatic_form_substitution": false,
+        "clinical_clearance": false,
+        "confirmed_negatives": [
+          "pregnancy",
+          "lactation",
+          "allergy",
+          "elderly_population",
+          "mania",
+          "suicide_risk",
+          "akathisia",
+          "diabetes",
+          "glaucoma",
+          "bleeding_risk",
+          "qt_risk",
+          "ect",
+          "serotonin_syndrome_signs"
+        ],
+        "unassessed_context": []
+      },
+      "late_fields": [
+        "age",
+        "hepatic",
+        "renal",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "elderly_population",
+        "seizure_state",
+        "bipolar_risk_screening"
+      ]
+    },
+    {
+      "case_id": "parox-taper-example--wrong-release-form",
+      "rule_id": "parox-taper-example",
+      "given_forms": {
+        "form": {
+          "product": "Рексетин",
+          "registration_number": "ЛП-№(008861)-(РГ-RU)",
+          "source_id": "RU-PAROX",
+          "source_version": "Официальная ОХЛП реестра: штамп регистрации 2025-02-14; экспертный отчёт 2025-02-12 №3370/0003; получена 08.10.2026",
+          "dosage_form": "tablet",
+          "strengths_mg": [
+            20
+          ],
+          "release": "prolonged",
+          "route": "oral"
+        }
+      },
+      "external_context": {
+        "diagnosis": "F32",
+        "drug": "пароксетин",
+        "mode": "taper",
+        "calculation_at": "2026-10-08T09:00:00+03:00",
+        "treatment_phase": "selected_mode"
+      },
+      "expected": {
+        "result_type": "form_not_feasible",
+        "total_daily_dose_mg": null,
+        "dose_per_administration_mg": null,
+        "administrations_per_day": null,
+        "schedule": [],
+        "missing_fields": [],
+        "unconditional_future_stages": false,
+        "reason_ids": [
+          "form.release"
+        ],
+        "automatic_form_substitution": false,
+        "clinical_clearance": false,
+        "confirmed_negatives": [
+          "past_withdrawal",
+          "serotonin_syndrome_signs",
+          "new_seizures"
+        ],
+        "unassessed_context": []
+      },
+      "late_fields": [
+        "age",
+        "withdrawal_severity",
+        "example_selected",
+        "serotonin_syndrome_signs",
+        "new_seizures"
+      ]
+    },
+    {
+      "case_id": "preg-gad-adjust--wrong-release-form",
+      "rule_id": "preg-gad-adjust",
+      "given_forms": {
+        "form": {
+          "product": "Лирика",
+          "registration_number": "ЛП-№(004450)-(РГ-RU)",
+          "source_id": "RU-PREG",
+          "source_version": "Официальная ОХЛП реестра: штамп регистрации 2025-08-13; экспертный отчёт 2024-01-26 №1319/0011; получена 08.10.2026",
+          "dosage_form": "capsule",
+          "strengths_mg": [
+            25,
+            50,
+            75,
+            100,
+            150,
+            200,
+            300
+          ],
+          "release": "prolonged",
+          "route": "oral"
+        }
+      },
+      "external_context": {
+        "diagnosis": "F41.1",
+        "drug": "прегабалин",
+        "mode": "adjust",
+        "calculation_at": "2026-10-08T09:00:00+03:00",
+        "treatment_phase": "selected_mode"
+      },
+      "expected": {
+        "result_type": "form_not_feasible",
+        "total_daily_dose_mg": null,
+        "dose_per_administration_mg": null,
+        "administrations_per_day": null,
+        "schedule": [],
+        "missing_fields": [],
+        "unconditional_future_stages": false,
+        "reason_ids": [
+          "form.release"
+        ],
+        "automatic_form_substitution": false,
+        "clinical_clearance": false,
+        "confirmed_negatives": [
+          "pregnancy",
+          "lactation",
+          "allergy",
+          "dialysis",
+          "substance_use",
+          "respiratory",
+          "angioedema",
+          "severe_skin_reaction",
+          "galactose_intolerance",
+          "complete_lactase_deficiency",
+          "glucose_galactose_malabsorption",
+          "suicide_risk",
+          "heart_failure",
+          "diabetes_weight_gain",
+          "reproductive_population",
+          "effective_contraception"
+        ],
+        "unassessed_context": [
+          "current_suicidal_thoughts_or_behavior"
+        ]
+      },
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "clcr",
+        "dialysis",
+        "respiratory",
+        "frequency",
+        "current_dose",
+        "time_at_dose",
+        "response",
+        "tolerability",
+        "adherence",
+        "angioedema",
+        "severe_skin_reaction",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "misuse_risk_assessment",
+        "reproductive_population"
+      ]
+    },
+    {
+      "case_id": "preg-gad-start--wrong-release-form",
+      "rule_id": "preg-gad-start",
+      "given_forms": {
+        "form": {
+          "product": "Лирика",
+          "registration_number": "ЛП-№(004450)-(РГ-RU)",
+          "source_id": "RU-PREG",
+          "source_version": "Официальная ОХЛП реестра: штамп регистрации 2025-08-13; экспертный отчёт 2024-01-26 №1319/0011; получена 08.10.2026",
+          "dosage_form": "capsule",
+          "strengths_mg": [
+            25,
+            50,
+            75,
+            100,
+            150,
+            200,
+            300
+          ],
+          "release": "prolonged",
+          "route": "oral"
+        }
+      },
+      "external_context": {
+        "diagnosis": "F41.1",
+        "drug": "прегабалин",
+        "mode": "start",
+        "calculation_at": "2026-10-08T09:00:00+03:00",
+        "treatment_phase": "selected_mode"
+      },
+      "expected": {
+        "result_type": "form_not_feasible",
+        "total_daily_dose_mg": null,
+        "dose_per_administration_mg": null,
+        "administrations_per_day": null,
+        "schedule": [],
+        "missing_fields": [],
+        "unconditional_future_stages": false,
+        "reason_ids": [
+          "form.release"
+        ],
+        "automatic_form_substitution": false,
+        "clinical_clearance": false,
+        "confirmed_negatives": [
+          "pregnancy",
+          "lactation",
+          "allergy",
+          "dialysis",
+          "substance_use",
+          "respiratory",
+          "angioedema",
+          "severe_skin_reaction",
+          "galactose_intolerance",
+          "complete_lactase_deficiency",
+          "glucose_galactose_malabsorption",
+          "suicide_risk",
+          "heart_failure",
+          "diabetes_weight_gain",
+          "reproductive_population",
+          "effective_contraception"
+        ],
+        "unassessed_context": [
+          "current_suicidal_thoughts_or_behavior"
+        ]
+      },
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "clcr",
+        "dialysis",
+        "respiratory",
+        "frequency",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "misuse_risk_assessment",
+        "reproductive_population"
+      ]
+    },
+    {
+      "case_id": "preg-renal-start--wrong-release-form",
+      "rule_id": "preg-renal-start",
+      "given_forms": {
+        "form": {
+          "product": "Лирика",
+          "registration_number": "ЛП-№(004450)-(РГ-RU)",
+          "source_id": "RU-PREG",
+          "source_version": "Официальная ОХЛП реестра: штамп регистрации 2025-08-13; экспертный отчёт 2024-01-26 №1319/0011; получена 08.10.2026",
+          "dosage_form": "capsule",
+          "strengths_mg": [
+            25,
+            50,
+            75,
+            100,
+            150,
+            200,
+            300
+          ],
+          "release": "prolonged",
+          "route": "oral"
+        }
+      },
+      "external_context": {
+        "diagnosis": "F41.1",
+        "drug": "прегабалин",
+        "mode": "start",
+        "calculation_at": "2026-10-08T09:00:00+03:00",
+        "treatment_phase": "selected_mode"
+      },
+      "expected": {
+        "result_type": "form_not_feasible",
+        "total_daily_dose_mg": null,
+        "dose_per_administration_mg": null,
+        "administrations_per_day": null,
+        "schedule": [],
+        "missing_fields": [],
+        "unconditional_future_stages": false,
+        "reason_ids": [
+          "form.release"
+        ],
+        "automatic_form_substitution": false,
+        "clinical_clearance": false,
+        "confirmed_negatives": [
+          "pregnancy",
+          "lactation",
+          "allergy",
+          "dialysis",
+          "substance_use",
+          "respiratory",
+          "angioedema",
+          "severe_skin_reaction",
+          "galactose_intolerance",
+          "complete_lactase_deficiency",
+          "glucose_galactose_malabsorption",
+          "suicide_risk",
+          "heart_failure",
+          "diabetes_weight_gain",
+          "reproductive_population",
+          "effective_contraception"
+        ],
+        "unassessed_context": [
+          "current_suicidal_thoughts_or_behavior"
+        ]
+      },
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "clcr",
+        "dialysis",
+        "respiratory",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "misuse_risk_assessment",
+        "reproductive_population"
+      ]
+    },
+    {
+      "case_id": "ser-adult-adjust--wrong-release-form",
+      "rule_id": "ser-adult-adjust",
+      "given_forms": {
+        "form": {
+          "product": "Золофт",
+          "registration_number": "ЛП-№(002851)-(РГ-RU)",
+          "source_id": "RU-SER",
+          "source_version": "Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является датой содержания",
+          "dosage_form": "tablet",
+          "strengths_mg": [
+            50,
+            100
+          ],
+          "release": "prolonged",
+          "route": "oral"
+        }
+      },
+      "external_context": {
+        "diagnosis": "F41.0",
+        "drug": "сертралин",
+        "mode": "adjust",
+        "calculation_at": "2026-10-08T09:00:00+03:00",
+        "treatment_phase": "selected_mode"
+      },
+      "expected": {
+        "result_type": "form_not_feasible",
+        "total_daily_dose_mg": null,
+        "dose_per_administration_mg": null,
+        "administrations_per_day": null,
+        "schedule": [],
+        "missing_fields": [],
+        "unconditional_future_stages": false,
+        "reason_ids": [
+          "form.release"
+        ],
+        "automatic_form_substitution": false,
+        "clinical_clearance": false,
+        "unassessed_context": [
+          "symptomatic_hyponatremia"
+        ],
+        "monitoring_warning_source": "RU-SER §4.4 с.4–6; full clinical review remains separate",
+        "confirmed_negatives": [
+          "pregnancy",
+          "lactation",
+          "allergy",
+          "mania",
+          "qt_risk",
+          "bleeding_risk",
+          "hyponatremia_risk",
+          "suicide_risk",
+          "akathisia",
+          "mania_symptoms"
+        ]
+      },
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "hepatic",
+        "seizure_state",
+        "current_dose",
+        "clinician_action",
+        "mania_symptoms"
+      ]
+    },
+    {
+      "case_id": "ser-panic-start--wrong-release-form",
+      "rule_id": "ser-panic-start",
+      "given_forms": {
+        "form": {
+          "product": "Золофт",
+          "registration_number": "ЛП-№(002851)-(РГ-RU)",
+          "source_id": "RU-SER",
+          "source_version": "Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является датой содержания",
+          "dosage_form": "tablet",
+          "strengths_mg": [
+            50,
+            100
+          ],
+          "release": "prolonged",
+          "route": "oral"
+        }
+      },
+      "external_context": {
+        "diagnosis": "F41.0",
+        "drug": "сертралин",
+        "mode": "start",
+        "calculation_at": "2026-10-08T09:00:00+03:00",
+        "treatment_phase": "selected_mode"
+      },
+      "expected": {
+        "result_type": "form_not_feasible",
+        "total_daily_dose_mg": null,
+        "dose_per_administration_mg": null,
+        "administrations_per_day": null,
+        "schedule": [],
+        "missing_fields": [],
+        "unconditional_future_stages": false,
+        "reason_ids": [
+          "form.release"
+        ],
+        "automatic_form_substitution": false,
+        "clinical_clearance": false,
+        "unassessed_context": [
+          "symptomatic_hyponatremia"
+        ],
+        "monitoring_warning_source": "RU-SER §4.4 с.4–6; full clinical review remains separate",
+        "confirmed_negatives": [
+          "pregnancy",
+          "lactation",
+          "allergy",
+          "mania",
+          "qt_risk",
+          "bleeding_risk",
+          "hyponatremia_risk",
+          "suicide_risk",
+          "akathisia",
+          "mania_symptoms"
+        ]
+      },
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "hepatic",
+        "seizure_state"
+      ]
+    },
+    {
+      "case_id": "ser-social-start--wrong-release-form",
+      "rule_id": "ser-social-start",
+      "given_forms": {
+        "form": {
+          "product": "Золофт",
+          "registration_number": "ЛП-№(002851)-(РГ-RU)",
+          "source_id": "RU-SER",
+          "source_version": "Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является датой содержания",
+          "dosage_form": "tablet",
+          "strengths_mg": [
+            50,
+            100
+          ],
+          "release": "prolonged",
+          "route": "oral"
+        }
+      },
+      "external_context": {
+        "diagnosis": "F40.1",
+        "drug": "сертралин",
+        "mode": "start",
+        "calculation_at": "2026-10-08T09:00:00+03:00",
+        "treatment_phase": "selected_mode"
+      },
+      "expected": {
+        "result_type": "form_not_feasible",
+        "total_daily_dose_mg": null,
+        "dose_per_administration_mg": null,
+        "administrations_per_day": null,
+        "schedule": [],
+        "missing_fields": [],
+        "unconditional_future_stages": false,
+        "reason_ids": [
+          "form.release"
+        ],
+        "automatic_form_substitution": false,
+        "clinical_clearance": false,
+        "unassessed_context": [
+          "symptomatic_hyponatremia"
+        ],
+        "monitoring_warning_source": "RU-SER §4.4 с.4–6; full clinical review remains separate",
+        "confirmed_negatives": [
+          "pregnancy",
+          "lactation",
+          "allergy",
+          "mania",
+          "qt_risk",
+          "bleeding_risk",
+          "hyponatremia_risk",
+          "suicide_risk",
+          "akathisia",
+          "mania_symptoms"
+        ]
+      },
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "hepatic",
+        "seizure_state"
+      ]
+    },
+    {
+      "case_id": "ser-taper-limit--wrong-release-form",
+      "rule_id": "ser-taper-limit",
+      "given_forms": {
+        "form": {
+          "product": "Золофт",
+          "registration_number": "ЛП-№(002851)-(РГ-RU)",
+          "source_id": "RU-SER",
+          "source_version": "Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является датой содержания",
+          "dosage_form": "tablet",
+          "strengths_mg": [
+            50,
+            100
+          ],
+          "release": "prolonged",
+          "route": "oral"
+        }
+      },
+      "external_context": {
+        "diagnosis": "F41.0",
+        "drug": "сертралин",
+        "mode": "taper",
+        "calculation_at": "2026-10-08T09:00:00+03:00",
+        "treatment_phase": "selected_mode"
+      },
+      "expected": {
+        "result_type": "form_not_feasible",
+        "total_daily_dose_mg": null,
+        "dose_per_administration_mg": null,
+        "administrations_per_day": null,
+        "schedule": [],
+        "missing_fields": [],
+        "unconditional_future_stages": false,
+        "reason_ids": [
+          "form.release"
+        ],
+        "automatic_form_substitution": false,
+        "clinical_clearance": false,
+        "unassessed_context": [
+          "symptomatic_hyponatremia"
+        ],
+        "monitoring_warning_source": "RU-SER §4.4 с.4–6; full clinical review remains separate",
+        "confirmed_negatives": [
+          "pregnancy",
+          "lactation",
+          "allergy",
+          "mania",
+          "prior_withdrawal",
+          "qt_risk",
+          "bleeding_risk",
+          "hyponatremia_risk",
+          "suicide_risk",
+          "mania_symptoms"
+        ]
+      },
+      "late_fields": [
+        "age",
+        "seizure_state",
+        "current_withdrawal",
+        "mania_symptoms"
+      ]
+    },
+    {
+      "case_id": "switch-parox-ago-selected-example--wrong-release-from_form",
+      "rule_id": "switch-parox-ago-selected-example",
+      "given_forms": {
+        "from_form": {
+          "product": "Рексетин",
+          "registration_number": "ЛП-№(008861)-(РГ-RU)",
+          "source_id": "RU-PAROX",
+          "source_version": "Официальная ОХЛП реестра: штамп регистрации 2025-02-14; экспертный отчёт 2025-02-12 №3370/0003; получена 08.10.2026",
+          "dosage_form": "tablet",
+          "strengths_mg": [
+            20
+          ],
+          "release": "prolonged",
+          "route": "oral"
+        },
+        "to_form": {
+          "product": "Вальдоксан",
+          "registration_number": "ЛП-№(000528)-(РГ-RU)",
+          "source_id": "RU-AGO",
+          "source_version": "Официальная ОХЛП реестра: штамп регистрации 2024-12-28; экспертный отчёт 2024-12-23 №28427/0018; получена 08.10.2026",
+          "dosage_form": "tablet",
+          "strengths_mg": [
+            25
+          ],
+          "release": "immediate",
+          "route": "oral"
+        }
+      },
+      "external_context": {
+        "diagnosis": "F32",
+        "drug": null,
+        "mode": "switch",
+        "calculation_at": "2026-10-08T09:00:00+03:00",
+        "treatment_phase": "selected_mode",
+        "from_drug": "пароксетин",
+        "to_drug": "агомелатин",
+        "target_treatment_phase": "not_started"
+      },
+      "expected": {
+        "result_type": "form_not_feasible",
+        "total_daily_dose_mg": null,
+        "dose_per_administration_mg": null,
+        "administrations_per_day": null,
+        "schedule": [],
+        "missing_fields": [],
+        "unconditional_future_stages": false,
+        "reason_ids": [
+          "from_form.release"
+        ],
+        "automatic_form_substitution": false,
+        "clinical_clearance": false,
+        "confirmed_negatives": [
+          "pregnancy",
+          "lactation",
+          "past_withdrawal",
+          "elderly_population",
+          "dementia",
+          "galactose_intolerance",
+          "complete_lactase_deficiency",
+          "glucose_galactose_malabsorption",
+          "liver_injury_signs",
+          "transaminases_rising",
+          "overweight_obesity",
+          "fatty_liver",
+          "diabetes",
+          "alcohol_abuse",
+          "alcohol_use",
+          "mania",
+          "mania_symptoms",
+          "suicide_risk",
+          "ect",
+          "akathisia",
+          "glaucoma",
+          "bleeding_risk",
+          "qt_risk",
+          "serotonin_syndrome_signs"
+        ],
+        "unassessed_context": []
+      },
+      "late_fields": [
+        "age",
+        "current_dose",
+        "hepatic",
+        "alt_ratio_uln",
+        "ast_ratio_uln",
+        "medicines",
+        "allergy",
+        "pregnancy",
+        "lactation",
+        "withdrawal_severity",
+        "duration",
+        "past_withdrawal",
+        "example_selected",
+        "elderly_population",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "overweight_obesity",
+        "fatty_liver",
+        "diabetes",
+        "alcohol_abuse",
+        "from_renal",
+        "from_hepatic",
+        "seizure_state",
+        "serotonin_syndrome_signs"
+      ]
+    },
+    {
+      "case_id": "switch-parox-ago-selected-example--wrong-release-to_form",
+      "rule_id": "switch-parox-ago-selected-example",
+      "given_forms": {
+        "from_form": {
+          "product": "Рексетин",
+          "registration_number": "ЛП-№(008861)-(РГ-RU)",
+          "source_id": "RU-PAROX",
+          "source_version": "Официальная ОХЛП реестра: штамп регистрации 2025-02-14; экспертный отчёт 2025-02-12 №3370/0003; получена 08.10.2026",
+          "dosage_form": "tablet",
+          "strengths_mg": [
+            20
+          ],
+          "release": "immediate",
+          "route": "oral"
+        },
+        "to_form": {
+          "product": "Вальдоксан",
+          "registration_number": "ЛП-№(000528)-(РГ-RU)",
+          "source_id": "RU-AGO",
+          "source_version": "Официальная ОХЛП реестра: штамп регистрации 2024-12-28; экспертный отчёт 2024-12-23 №28427/0018; получена 08.10.2026",
+          "dosage_form": "tablet",
+          "strengths_mg": [
+            25
+          ],
+          "release": "prolonged",
+          "route": "oral"
+        }
+      },
+      "external_context": {
+        "diagnosis": "F32",
+        "drug": null,
+        "mode": "switch",
+        "calculation_at": "2026-10-08T09:00:00+03:00",
+        "treatment_phase": "selected_mode",
+        "from_drug": "пароксетин",
+        "to_drug": "агомелатин",
+        "target_treatment_phase": "not_started"
+      },
+      "expected": {
+        "result_type": "form_not_feasible",
+        "total_daily_dose_mg": null,
+        "dose_per_administration_mg": null,
+        "administrations_per_day": null,
+        "schedule": [],
+        "missing_fields": [],
+        "unconditional_future_stages": false,
+        "reason_ids": [
+          "to_form.release"
+        ],
+        "automatic_form_substitution": false,
+        "clinical_clearance": false,
+        "confirmed_negatives": [
+          "pregnancy",
+          "lactation",
+          "past_withdrawal",
+          "elderly_population",
+          "dementia",
+          "galactose_intolerance",
+          "complete_lactase_deficiency",
+          "glucose_galactose_malabsorption",
+          "liver_injury_signs",
+          "transaminases_rising",
+          "overweight_obesity",
+          "fatty_liver",
+          "diabetes",
+          "alcohol_abuse",
+          "alcohol_use",
+          "mania",
+          "mania_symptoms",
+          "suicide_risk",
+          "ect",
+          "akathisia",
+          "glaucoma",
+          "bleeding_risk",
+          "qt_risk",
+          "serotonin_syndrome_signs"
+        ],
+        "unassessed_context": []
+      },
+      "late_fields": [
+        "age",
+        "current_dose",
+        "hepatic",
+        "alt_ratio_uln",
+        "ast_ratio_uln",
+        "medicines",
+        "allergy",
+        "pregnancy",
+        "lactation",
+        "withdrawal_severity",
+        "duration",
+        "past_withdrawal",
+        "example_selected",
+        "elderly_population",
+        "galactose_intolerance",
+        "complete_lactase_deficiency",
+        "glucose_galactose_malabsorption",
+        "overweight_obesity",
+        "fatty_liver",
+        "diabetes",
+        "alcohol_abuse",
+        "from_renal",
+        "from_hepatic",
+        "seizure_state",
+        "serotonin_syndrome_signs"
+      ]
+    },
+    {
+      "case_id": "venla-xr-gad-start--branch-renal_reduction",
+      "rule_id": "venla-xr-gad-start",
+      "given_forms": {
+        "form": {
+          "product": "Велаксин",
+          "registration_number": "ЛП-№(002093)-(РГ-RU)",
+          "source_id": "RU-VENLA-XR",
+          "source_version": "Официальная ОХЛП реестра: штамп регистрации 2026-06-25; экспертный отчёт 2026-06-11 №11677/0019; получена 08.10.2026",
+          "dosage_form": "capsule",
+          "strengths_mg": [
+            75,
+            150
+          ],
+          "release": "prolonged",
+          "route": "oral"
+        }
+      },
+      "external_context": {
+        "diagnosis": "F41.1",
+        "drug": "венлафаксин",
+        "mode": "start",
+        "calculation_at": "2026-10-08T09:00:00+03:00",
+        "treatment_phase": "selected_mode"
+      },
+      "expected": {
+        "result_type": "form_not_feasible",
+        "total_daily_dose_mg": null,
+        "dose_per_administration_mg": null,
+        "administrations_per_day": null,
+        "schedule": [],
+        "missing_fields": [],
+        "unconditional_future_stages": false,
+        "published_reduction_percent": 50,
+        "arithmetic_total_mg": 37.5,
+        "executable_dose": null,
+        "IR_substitution_allowed": false,
+        "clinical_clearance": false,
+        "confirmed_negatives": [
+          "pregnancy",
+          "lactation",
+          "allergy",
+          "recent_infarction",
+          "unstable_angina",
+          "heart_failure",
+          "coronary_disease",
+          "ecg_change",
+          "qt_risk",
+          "electrolyte_imbalance",
+          "hypertension",
+          "tachycardia",
+          "seizure_history",
+          "glaucoma",
+          "mania",
+          "bleeding_risk",
+          "low_body_mass",
+          "urinary_impairment",
+          "low_blood_pressure",
+          "diabetes",
+          "recent_stroke",
+          "hyponatremia_risk",
+          "ect",
+          "hypercholesterolemia",
+          "alcohol_use",
+          "suicide_risk",
+          "pregnancy_suspected",
+          "current_allergic_reaction"
+        ],
+        "unassessed_context": [
+          "suspected_serotonin_syndrome"
+        ]
+      },
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "qt_risk",
+        "pregnancy_suspected"
+      ]
+    },
+    {
+      "case_id": "venla-xr-gad-start--absolute-GFR-10",
+      "rule_id": "venla-xr-gad-start",
+      "given_forms": {
+        "form": {
+          "product": "Велаксин",
+          "registration_number": "ЛП-№(002093)-(РГ-RU)",
+          "source_id": "RU-VENLA-XR",
+          "source_version": "Официальная ОХЛП реестра: штамп регистрации 2026-06-25; экспертный отчёт 2026-06-11 №11677/0019; получена 08.10.2026",
+          "dosage_form": "capsule",
+          "strengths_mg": [
+            75,
+            150
+          ],
+          "release": "prolonged",
+          "route": "oral"
+        }
+      },
+      "external_context": {
+        "diagnosis": "F41.1",
+        "drug": "венлафаксин",
+        "mode": "start",
+        "calculation_at": "2026-10-08T09:00:00+03:00",
+        "treatment_phase": "selected_mode"
+      },
+      "expected": {
+        "result_type": "form_not_feasible",
+        "total_daily_dose_mg": null,
+        "dose_per_administration_mg": null,
+        "administrations_per_day": null,
+        "schedule": [],
+        "missing_fields": [],
+        "unconditional_future_stages": false,
+        "published_reduction_percent": 50,
+        "arithmetic_total_mg": 37.5,
+        "executable_dose": null,
+        "IR_substitution_allowed": false,
+        "clinical_clearance": false,
+        "confirmed_negatives": [
+          "pregnancy",
+          "lactation",
+          "allergy",
+          "recent_infarction",
+          "unstable_angina",
+          "heart_failure",
+          "coronary_disease",
+          "ecg_change",
+          "qt_risk",
+          "electrolyte_imbalance",
+          "hypertension",
+          "tachycardia",
+          "seizure_history",
+          "glaucoma",
+          "mania",
+          "bleeding_risk",
+          "low_body_mass",
+          "urinary_impairment",
+          "low_blood_pressure",
+          "diabetes",
+          "recent_stroke",
+          "hyponatremia_risk",
+          "ect",
+          "hypercholesterolemia",
+          "alcohol_use",
+          "suicide_risk",
+          "pregnancy_suspected",
+          "current_allergic_reaction"
+        ],
+        "unassessed_context": [
+          "suspected_serotonin_syndrome"
+        ]
+      },
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "qt_risk",
+        "pregnancy_suspected"
+      ]
+    },
+    {
+      "case_id": "venla-xr-gad-start--absolute-GFR-30",
+      "rule_id": "venla-xr-gad-start",
+      "given_forms": {
+        "form": {
+          "product": "Велаксин",
+          "registration_number": "ЛП-№(002093)-(РГ-RU)",
+          "source_id": "RU-VENLA-XR",
+          "source_version": "Официальная ОХЛП реестра: штамп регистрации 2026-06-25; экспертный отчёт 2026-06-11 №11677/0019; получена 08.10.2026",
+          "dosage_form": "capsule",
+          "strengths_mg": [
+            75,
+            150
+          ],
+          "release": "prolonged",
+          "route": "oral"
+        }
+      },
+      "external_context": {
+        "diagnosis": "F41.1",
+        "drug": "венлафаксин",
+        "mode": "start",
+        "calculation_at": "2026-10-08T09:00:00+03:00",
+        "treatment_phase": "selected_mode"
+      },
+      "expected": {
+        "result_type": "form_not_feasible",
+        "total_daily_dose_mg": null,
+        "dose_per_administration_mg": null,
+        "administrations_per_day": null,
+        "schedule": [],
+        "missing_fields": [],
+        "unconditional_future_stages": false,
+        "published_reduction_percent": 50,
+        "arithmetic_total_mg": 37.5,
+        "executable_dose": null,
+        "IR_substitution_allowed": false,
+        "clinical_clearance": false,
+        "confirmed_negatives": [
+          "pregnancy",
+          "lactation",
+          "allergy",
+          "recent_infarction",
+          "unstable_angina",
+          "heart_failure",
+          "coronary_disease",
+          "ecg_change",
+          "qt_risk",
+          "electrolyte_imbalance",
+          "hypertension",
+          "tachycardia",
+          "seizure_history",
+          "glaucoma",
+          "mania",
+          "bleeding_risk",
+          "low_body_mass",
+          "urinary_impairment",
+          "low_blood_pressure",
+          "diabetes",
+          "recent_stroke",
+          "hyponatremia_risk",
+          "ect",
+          "hypercholesterolemia",
+          "alcohol_use",
+          "suicide_risk",
+          "pregnancy_suspected",
+          "current_allergic_reaction"
+        ],
+        "unassessed_context": [
+          "suspected_serotonin_syndrome"
+        ]
+      },
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "qt_risk",
+        "pregnancy_suspected"
+      ]
+    },
+    {
+      "case_id": "venla-xr-gad-start--wrong-release-form",
+      "rule_id": "venla-xr-gad-start",
+      "given_forms": {
+        "form": {
+          "product": "Велаксин",
+          "registration_number": "ЛП-№(002093)-(РГ-RU)",
+          "source_id": "RU-VENLA-XR",
+          "source_version": "Официальная ОХЛП реестра: штамп регистрации 2026-06-25; экспертный отчёт 2026-06-11 №11677/0019; получена 08.10.2026",
+          "dosage_form": "capsule",
+          "strengths_mg": [
+            75,
+            150
+          ],
+          "release": "immediate",
+          "route": "oral"
+        }
+      },
+      "external_context": {
+        "diagnosis": "F41.1",
+        "drug": "венлафаксин",
+        "mode": "start",
+        "calculation_at": "2026-10-08T09:00:00+03:00",
+        "treatment_phase": "selected_mode"
+      },
+      "expected": {
+        "result_type": "form_not_feasible",
+        "total_daily_dose_mg": null,
+        "dose_per_administration_mg": null,
+        "administrations_per_day": null,
+        "schedule": [],
+        "missing_fields": [],
+        "unconditional_future_stages": false,
+        "reason_ids": [
+          "form.release"
+        ],
+        "automatic_form_substitution": false,
+        "clinical_clearance": false,
+        "confirmed_negatives": [
+          "pregnancy",
+          "lactation",
+          "allergy",
+          "recent_infarction",
+          "unstable_angina",
+          "heart_failure",
+          "coronary_disease",
+          "ecg_change",
+          "qt_risk",
+          "electrolyte_imbalance",
+          "hypertension",
+          "tachycardia",
+          "seizure_history",
+          "glaucoma",
+          "mania",
+          "bleeding_risk",
+          "low_body_mass",
+          "urinary_impairment",
+          "low_blood_pressure",
+          "diabetes",
+          "recent_stroke",
+          "hyponatremia_risk",
+          "ect",
+          "hypercholesterolemia",
+          "alcohol_use",
+          "suicide_risk",
+          "pregnancy_suspected",
+          "current_allergic_reaction"
+        ],
+        "unassessed_context": [
+          "suspected_serotonin_syndrome"
+        ]
+      },
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "qt_risk",
+        "pregnancy_suspected"
+      ]
+    },
+    {
+      "case_id": "venla-xr-social-start--branch-renal_reduction",
+      "rule_id": "venla-xr-social-start",
+      "given_forms": {
+        "form": {
+          "product": "Велаксин",
+          "registration_number": "ЛП-№(002093)-(РГ-RU)",
+          "source_id": "RU-VENLA-XR",
+          "source_version": "Официальная ОХЛП реестра: штамп регистрации 2026-06-25; экспертный отчёт 2026-06-11 №11677/0019; получена 08.10.2026",
+          "dosage_form": "capsule",
+          "strengths_mg": [
+            75,
+            150
+          ],
+          "release": "prolonged",
+          "route": "oral"
+        }
+      },
+      "external_context": {
+        "diagnosis": "F40.1",
+        "drug": "венлафаксин",
+        "mode": "start",
+        "calculation_at": "2026-10-08T09:00:00+03:00",
+        "treatment_phase": "selected_mode"
+      },
+      "expected": {
+        "result_type": "form_not_feasible",
+        "total_daily_dose_mg": null,
+        "dose_per_administration_mg": null,
+        "administrations_per_day": null,
+        "schedule": [],
+        "missing_fields": [],
+        "unconditional_future_stages": false,
+        "published_reduction_percent": 50,
+        "arithmetic_total_mg": 37.5,
+        "executable_dose": null,
+        "IR_substitution_allowed": false,
+        "clinical_clearance": false,
+        "confirmed_negatives": [
+          "pregnancy",
+          "lactation",
+          "allergy",
+          "recent_infarction",
+          "unstable_angina",
+          "heart_failure",
+          "coronary_disease",
+          "ecg_change",
+          "qt_risk",
+          "electrolyte_imbalance",
+          "hypertension",
+          "tachycardia",
+          "seizure_history",
+          "glaucoma",
+          "mania",
+          "bleeding_risk",
+          "low_body_mass",
+          "urinary_impairment",
+          "low_blood_pressure",
+          "diabetes",
+          "recent_stroke",
+          "hyponatremia_risk",
+          "ect",
+          "hypercholesterolemia",
+          "alcohol_use",
+          "suicide_risk",
+          "pregnancy_suspected",
+          "current_allergic_reaction"
+        ],
+        "unassessed_context": [
+          "suspected_serotonin_syndrome"
+        ]
+      },
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "qt_risk",
+        "pregnancy_suspected"
+      ]
+    },
+    {
+      "case_id": "venla-xr-social-start--absolute-GFR-10",
+      "rule_id": "venla-xr-social-start",
+      "given_forms": {
+        "form": {
+          "product": "Велаксин",
+          "registration_number": "ЛП-№(002093)-(РГ-RU)",
+          "source_id": "RU-VENLA-XR",
+          "source_version": "Официальная ОХЛП реестра: штамп регистрации 2026-06-25; экспертный отчёт 2026-06-11 №11677/0019; получена 08.10.2026",
+          "dosage_form": "capsule",
+          "strengths_mg": [
+            75,
+            150
+          ],
+          "release": "prolonged",
+          "route": "oral"
+        }
+      },
+      "external_context": {
+        "diagnosis": "F40.1",
+        "drug": "венлафаксин",
+        "mode": "start",
+        "calculation_at": "2026-10-08T09:00:00+03:00",
+        "treatment_phase": "selected_mode"
+      },
+      "expected": {
+        "result_type": "form_not_feasible",
+        "total_daily_dose_mg": null,
+        "dose_per_administration_mg": null,
+        "administrations_per_day": null,
+        "schedule": [],
+        "missing_fields": [],
+        "unconditional_future_stages": false,
+        "published_reduction_percent": 50,
+        "arithmetic_total_mg": 37.5,
+        "executable_dose": null,
+        "IR_substitution_allowed": false,
+        "clinical_clearance": false,
+        "confirmed_negatives": [
+          "pregnancy",
+          "lactation",
+          "allergy",
+          "recent_infarction",
+          "unstable_angina",
+          "heart_failure",
+          "coronary_disease",
+          "ecg_change",
+          "qt_risk",
+          "electrolyte_imbalance",
+          "hypertension",
+          "tachycardia",
+          "seizure_history",
+          "glaucoma",
+          "mania",
+          "bleeding_risk",
+          "low_body_mass",
+          "urinary_impairment",
+          "low_blood_pressure",
+          "diabetes",
+          "recent_stroke",
+          "hyponatremia_risk",
+          "ect",
+          "hypercholesterolemia",
+          "alcohol_use",
+          "suicide_risk",
+          "pregnancy_suspected",
+          "current_allergic_reaction"
+        ],
+        "unassessed_context": [
+          "suspected_serotonin_syndrome"
+        ]
+      },
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "qt_risk",
+        "pregnancy_suspected"
+      ]
+    },
+    {
+      "case_id": "venla-xr-social-start--absolute-GFR-30",
+      "rule_id": "venla-xr-social-start",
+      "given_forms": {
+        "form": {
+          "product": "Велаксин",
+          "registration_number": "ЛП-№(002093)-(РГ-RU)",
+          "source_id": "RU-VENLA-XR",
+          "source_version": "Официальная ОХЛП реестра: штамп регистрации 2026-06-25; экспертный отчёт 2026-06-11 №11677/0019; получена 08.10.2026",
+          "dosage_form": "capsule",
+          "strengths_mg": [
+            75,
+            150
+          ],
+          "release": "prolonged",
+          "route": "oral"
+        }
+      },
+      "external_context": {
+        "diagnosis": "F40.1",
+        "drug": "венлафаксин",
+        "mode": "start",
+        "calculation_at": "2026-10-08T09:00:00+03:00",
+        "treatment_phase": "selected_mode"
+      },
+      "expected": {
+        "result_type": "form_not_feasible",
+        "total_daily_dose_mg": null,
+        "dose_per_administration_mg": null,
+        "administrations_per_day": null,
+        "schedule": [],
+        "missing_fields": [],
+        "unconditional_future_stages": false,
+        "published_reduction_percent": 50,
+        "arithmetic_total_mg": 37.5,
+        "executable_dose": null,
+        "IR_substitution_allowed": false,
+        "clinical_clearance": false,
+        "confirmed_negatives": [
+          "pregnancy",
+          "lactation",
+          "allergy",
+          "recent_infarction",
+          "unstable_angina",
+          "heart_failure",
+          "coronary_disease",
+          "ecg_change",
+          "qt_risk",
+          "electrolyte_imbalance",
+          "hypertension",
+          "tachycardia",
+          "seizure_history",
+          "glaucoma",
+          "mania",
+          "bleeding_risk",
+          "low_body_mass",
+          "urinary_impairment",
+          "low_blood_pressure",
+          "diabetes",
+          "recent_stroke",
+          "hyponatremia_risk",
+          "ect",
+          "hypercholesterolemia",
+          "alcohol_use",
+          "suicide_risk",
+          "pregnancy_suspected",
+          "current_allergic_reaction"
+        ],
+        "unassessed_context": [
+          "suspected_serotonin_syndrome"
+        ]
+      },
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "qt_risk",
+        "pregnancy_suspected"
+      ]
+    },
+    {
+      "case_id": "venla-xr-social-start--wrong-release-form",
+      "rule_id": "venla-xr-social-start",
+      "given_forms": {
+        "form": {
+          "product": "Велаксин",
+          "registration_number": "ЛП-№(002093)-(РГ-RU)",
+          "source_id": "RU-VENLA-XR",
+          "source_version": "Официальная ОХЛП реестра: штамп регистрации 2026-06-25; экспертный отчёт 2026-06-11 №11677/0019; получена 08.10.2026",
+          "dosage_form": "capsule",
+          "strengths_mg": [
+            75,
+            150
+          ],
+          "release": "immediate",
+          "route": "oral"
+        }
+      },
+      "external_context": {
+        "diagnosis": "F40.1",
+        "drug": "венлафаксин",
+        "mode": "start",
+        "calculation_at": "2026-10-08T09:00:00+03:00",
+        "treatment_phase": "selected_mode"
+      },
+      "expected": {
+        "result_type": "form_not_feasible",
+        "total_daily_dose_mg": null,
+        "dose_per_administration_mg": null,
+        "administrations_per_day": null,
+        "schedule": [],
+        "missing_fields": [],
+        "unconditional_future_stages": false,
+        "reason_ids": [
+          "form.release"
+        ],
+        "automatic_form_substitution": false,
+        "clinical_clearance": false,
+        "confirmed_negatives": [
+          "pregnancy",
+          "lactation",
+          "allergy",
+          "recent_infarction",
+          "unstable_angina",
+          "heart_failure",
+          "coronary_disease",
+          "ecg_change",
+          "qt_risk",
+          "electrolyte_imbalance",
+          "hypertension",
+          "tachycardia",
+          "seizure_history",
+          "glaucoma",
+          "mania",
+          "bleeding_risk",
+          "low_body_mass",
+          "urinary_impairment",
+          "low_blood_pressure",
+          "diabetes",
+          "recent_stroke",
+          "hyponatremia_risk",
+          "ect",
+          "hypercholesterolemia",
+          "alcohol_use",
+          "suicide_risk",
+          "pregnancy_suspected",
+          "current_allergic_reaction"
+        ],
+        "unassessed_context": [
+          "suspected_serotonin_syndrome"
+        ]
+      },
+      "late_fields": [
+        "age",
+        "hepatic",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "renal_metric",
+        "qt_risk",
+        "pregnancy_suspected"
+      ]
+    },
+    {
+      "case_id": "venla-xr-taper-limit--wrong-release-form",
+      "rule_id": "venla-xr-taper-limit",
+      "given_forms": {
+        "form": {
+          "product": "Велаксин",
+          "registration_number": "ЛП-№(002093)-(РГ-RU)",
+          "source_id": "RU-VENLA-XR",
+          "source_version": "Официальная ОХЛП реестра: штамп регистрации 2026-06-25; экспертный отчёт 2026-06-11 №11677/0019; получена 08.10.2026",
+          "dosage_form": "capsule",
+          "strengths_mg": [
+            75,
+            150
+          ],
+          "release": "immediate",
+          "route": "oral"
+        }
+      },
+      "external_context": {
+        "diagnosis": "F41.1",
+        "drug": "венлафаксин",
+        "mode": "taper",
+        "calculation_at": "2026-10-08T09:00:00+03:00",
+        "treatment_phase": "selected_mode"
+      },
+      "expected": {
+        "result_type": "form_not_feasible",
+        "total_daily_dose_mg": null,
+        "dose_per_administration_mg": null,
+        "administrations_per_day": null,
+        "schedule": [],
+        "missing_fields": [],
+        "unconditional_future_stages": false,
+        "reason_ids": [
+          "form.release"
+        ],
+        "automatic_form_substitution": false,
+        "clinical_clearance": false,
+        "confirmed_negatives": [
+          "past_withdrawal",
+          "current_allergic_reaction"
+        ],
+        "unassessed_context": [
+          "medicines",
+          "suspected_serotonin_syndrome"
+        ]
+      },
+      "late_fields": [
+        "age",
+        "withdrawal_severity",
+        "diastolic_BP",
+        "current_allergic_reaction"
+      ]
+    },
+    {
+      "case_id": "esc-adult-adjust--current-wrong-release",
+      "rule_id": "esc-adult-adjust",
+      "given_forms": {
+        "form": {
+          "product": "Селектра",
+          "registration_number": "ЛП-№(012351)-(РГ-RU)",
+          "source_id": "RU-ESC",
+          "source_version": "РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; экспертный отчёт 31.10.2025 №27320, последовательность 0002; текущая опубликованная ОХЛП реестра получена 08.10.2026",
+          "dosage_form": "tablet",
+          "strengths_mg": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "release": "prolonged",
+          "route": "oral"
+        }
+      },
+      "external_context": {
+        "diagnosis": "F41.1",
+        "drug": "эсциталопрам",
+        "mode": "adjust",
+        "calculation_at": "2026-10-08T09:00:00+03:00",
+        "treatment_phase": "selected_mode"
+      },
+      "expected": {
+        "result_type": "form_not_feasible",
+        "total_daily_dose_mg": null,
+        "dose_per_administration_mg": null,
+        "administrations_per_day": null,
+        "schedule": [],
+        "missing_fields": [],
+        "unconditional_future_stages": false,
+        "clinical_clearance": false,
+        "automatic_form_substitution": false,
+        "confirmed_negatives": [
+          "pregnancy",
+          "lactation",
+          "allergy",
+          "mania",
+          "qt_risk",
+          "bleeding_risk",
+          "hyponatremia_risk",
+          "suicide_risk",
+          "akathisia",
+          "diabetes",
+          "glaucoma",
+          "mania_symptoms",
+          "arrhythmia_signs",
+          "serotonin_syndrome_signs"
+        ],
+        "unassessed_context": [
+          "known_cyp2c19"
+        ]
+      },
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "hepatic",
+        "seizure_state",
+        "renal",
+        "current_dose",
+        "response",
+        "tolerability",
+        "akathisia",
+        "mania_symptoms",
+        "arrhythmia_signs",
+        "serotonin_syndrome_signs"
+      ]
+    },
+    {
+      "case_id": "esc-cyp2c19-start--current-wrong-release",
+      "rule_id": "esc-cyp2c19-start",
+      "given_forms": {
+        "form": {
+          "product": "Селектра",
+          "registration_number": "ЛП-№(012351)-(РГ-RU)",
+          "source_id": "RU-ESC",
+          "source_version": "РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; экспертный отчёт 31.10.2025 №27320, последовательность 0002; текущая опубликованная ОХЛП реестра получена 08.10.2026",
+          "dosage_form": "tablet",
+          "strengths_mg": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "release": "prolonged",
+          "route": "oral"
+        }
+      },
+      "external_context": {
+        "diagnosis": "F41.1",
+        "drug": "эсциталопрам",
+        "mode": "start",
+        "calculation_at": "2026-10-08T09:00:00+03:00",
+        "treatment_phase": "selected_mode"
+      },
+      "expected": {
+        "result_type": "form_not_feasible",
+        "total_daily_dose_mg": null,
+        "dose_per_administration_mg": null,
+        "administrations_per_day": null,
+        "schedule": [],
+        "missing_fields": [],
+        "unconditional_future_stages": false,
+        "clinical_clearance": false,
+        "automatic_form_substitution": false,
+        "confirmed_negatives": [
+          "pregnancy",
+          "lactation",
+          "allergy",
+          "mania",
+          "qt_risk",
+          "bleeding_risk",
+          "hyponatremia_risk",
+          "suicide_risk",
+          "diabetes",
+          "glaucoma",
+          "mania_symptoms",
+          "arrhythmia_signs",
+          "serotonin_syndrome_signs",
+          "coronary_disease",
+          "electrolyte_disturbance",
+          "ecg_done",
+          "electrolytes_corrected"
+        ],
+        "unassessed_context": []
+      },
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "hepatic",
+        "seizure_state",
+        "known_cyp2c19",
+        "renal",
+        "coronary_disease",
+        "electrolyte_disturbance"
+      ]
+    },
+    {
+      "case_id": "esc-elderly-start--current-wrong-release",
+      "rule_id": "esc-elderly-start",
+      "given_forms": {
+        "form": {
+          "product": "Селектра",
+          "registration_number": "ЛП-№(012351)-(РГ-RU)",
+          "source_id": "RU-ESC",
+          "source_version": "РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; экспертный отчёт 31.10.2025 №27320, последовательность 0002; текущая опубликованная ОХЛП реестра получена 08.10.2026",
+          "dosage_form": "tablet",
+          "strengths_mg": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "release": "prolonged",
+          "route": "oral"
+        }
+      },
+      "external_context": {
+        "diagnosis": "F41.1",
+        "drug": "эсциталопрам",
+        "mode": "start",
+        "calculation_at": "2026-10-08T09:00:00+03:00",
+        "treatment_phase": "selected_mode"
+      },
+      "expected": {
+        "result_type": "form_not_feasible",
+        "total_daily_dose_mg": null,
+        "dose_per_administration_mg": null,
+        "administrations_per_day": null,
+        "schedule": [],
+        "missing_fields": [],
+        "unconditional_future_stages": false,
+        "clinical_clearance": false,
+        "automatic_form_substitution": false,
+        "confirmed_negatives": [
+          "pregnancy",
+          "lactation",
+          "allergy",
+          "mania",
+          "qt_risk",
+          "bleeding_risk",
+          "hyponatremia_risk",
+          "suicide_risk",
+          "diabetes",
+          "glaucoma",
+          "mania_symptoms",
+          "arrhythmia_signs",
+          "serotonin_syndrome_signs",
+          "coronary_disease",
+          "electrolyte_disturbance",
+          "ecg_done",
+          "electrolytes_corrected"
+        ],
+        "unassessed_context": [
+          "known_cyp2c19"
+        ]
+      },
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "hepatic",
+        "seizure_state",
+        "renal",
+        "coronary_disease",
+        "electrolyte_disturbance"
+      ]
+    },
+    {
+      "case_id": "esc-gad-start--current-wrong-release",
+      "rule_id": "esc-gad-start",
+      "given_forms": {
+        "form": {
+          "product": "Селектра",
+          "registration_number": "ЛП-№(012351)-(РГ-RU)",
+          "source_id": "RU-ESC",
+          "source_version": "РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; экспертный отчёт 31.10.2025 №27320, последовательность 0002; текущая опубликованная ОХЛП реестра получена 08.10.2026",
+          "dosage_form": "tablet",
+          "strengths_mg": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "release": "prolonged",
+          "route": "oral"
+        }
+      },
+      "external_context": {
+        "diagnosis": "F41.1",
+        "drug": "эсциталопрам",
+        "mode": "start",
+        "calculation_at": "2026-10-08T09:00:00+03:00",
+        "treatment_phase": "selected_mode"
+      },
+      "expected": {
+        "result_type": "form_not_feasible",
+        "total_daily_dose_mg": null,
+        "dose_per_administration_mg": null,
+        "administrations_per_day": null,
+        "schedule": [],
+        "missing_fields": [],
+        "unconditional_future_stages": false,
+        "clinical_clearance": false,
+        "automatic_form_substitution": false,
+        "confirmed_negatives": [
+          "pregnancy",
+          "lactation",
+          "allergy",
+          "mania",
+          "qt_risk",
+          "bleeding_risk",
+          "hyponatremia_risk",
+          "suicide_risk",
+          "diabetes",
+          "glaucoma",
+          "mania_symptoms",
+          "arrhythmia_signs",
+          "serotonin_syndrome_signs",
+          "coronary_disease",
+          "electrolyte_disturbance",
+          "ecg_done",
+          "electrolytes_corrected"
+        ],
+        "unassessed_context": [
+          "known_cyp2c19"
+        ]
+      },
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "hepatic",
+        "seizure_state",
+        "renal",
+        "coronary_disease",
+        "electrolyte_disturbance"
+      ]
+    },
+    {
+      "case_id": "esc-hepatic-start--current-wrong-release",
+      "rule_id": "esc-hepatic-start",
+      "given_forms": {
+        "form": {
+          "product": "Селектра",
+          "registration_number": "ЛП-№(012351)-(РГ-RU)",
+          "source_id": "RU-ESC",
+          "source_version": "РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; экспертный отчёт 31.10.2025 №27320, последовательность 0002; текущая опубликованная ОХЛП реестра получена 08.10.2026",
+          "dosage_form": "tablet",
+          "strengths_mg": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "release": "prolonged",
+          "route": "oral"
+        }
+      },
+      "external_context": {
+        "diagnosis": "F41.1",
+        "drug": "эсциталопрам",
+        "mode": "start",
+        "calculation_at": "2026-10-08T09:00:00+03:00",
+        "treatment_phase": "selected_mode"
+      },
+      "expected": {
+        "result_type": "form_not_feasible",
+        "total_daily_dose_mg": null,
+        "dose_per_administration_mg": null,
+        "administrations_per_day": null,
+        "schedule": [],
+        "missing_fields": [],
+        "unconditional_future_stages": false,
+        "clinical_clearance": false,
+        "automatic_form_substitution": false,
+        "confirmed_negatives": [
+          "pregnancy",
+          "lactation",
+          "allergy",
+          "mania",
+          "qt_risk",
+          "bleeding_risk",
+          "hyponatremia_risk",
+          "suicide_risk",
+          "diabetes",
+          "glaucoma",
+          "mania_symptoms",
+          "arrhythmia_signs",
+          "serotonin_syndrome_signs",
+          "coronary_disease",
+          "electrolyte_disturbance",
+          "ecg_done",
+          "electrolytes_corrected"
+        ],
+        "unassessed_context": [
+          "known_cyp2c19"
+        ]
+      },
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "hepatic",
+        "seizure_state",
+        "renal",
+        "coronary_disease",
+        "electrolyte_disturbance"
+      ]
+    },
+    {
+      "case_id": "esc-panic-start--current-wrong-release",
+      "rule_id": "esc-panic-start",
+      "given_forms": {
+        "form": {
+          "product": "Селектра",
+          "registration_number": "ЛП-№(012351)-(РГ-RU)",
+          "source_id": "RU-ESC",
+          "source_version": "РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; экспертный отчёт 31.10.2025 №27320, последовательность 0002; текущая опубликованная ОХЛП реестра получена 08.10.2026",
+          "dosage_form": "tablet",
+          "strengths_mg": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "release": "prolonged",
+          "route": "oral"
+        }
+      },
+      "external_context": {
+        "diagnosis": "F41.0",
+        "drug": "эсциталопрам",
+        "mode": "start",
+        "calculation_at": "2026-10-08T09:00:00+03:00",
+        "treatment_phase": "selected_mode"
+      },
+      "expected": {
+        "result_type": "form_not_feasible",
+        "total_daily_dose_mg": null,
+        "dose_per_administration_mg": null,
+        "administrations_per_day": null,
+        "schedule": [],
+        "missing_fields": [],
+        "unconditional_future_stages": false,
+        "clinical_clearance": false,
+        "automatic_form_substitution": false,
+        "confirmed_negatives": [
+          "pregnancy",
+          "lactation",
+          "allergy",
+          "mania",
+          "qt_risk",
+          "bleeding_risk",
+          "hyponatremia_risk",
+          "suicide_risk",
+          "diabetes",
+          "glaucoma",
+          "mania_symptoms",
+          "arrhythmia_signs",
+          "serotonin_syndrome_signs",
+          "coronary_disease",
+          "electrolyte_disturbance",
+          "ecg_done",
+          "electrolytes_corrected"
+        ],
+        "unassessed_context": [
+          "known_cyp2c19"
+        ]
+      },
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "hepatic",
+        "seizure_state",
+        "renal",
+        "coronary_disease",
+        "electrolyte_disturbance"
+      ]
+    },
+    {
+      "case_id": "esc-social-start--current-wrong-release",
+      "rule_id": "esc-social-start",
+      "given_forms": {
+        "form": {
+          "product": "Селектра",
+          "registration_number": "ЛП-№(012351)-(РГ-RU)",
+          "source_id": "RU-ESC",
+          "source_version": "РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; экспертный отчёт 31.10.2025 №27320, последовательность 0002; текущая опубликованная ОХЛП реестра получена 08.10.2026",
+          "dosage_form": "tablet",
+          "strengths_mg": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "release": "prolonged",
+          "route": "oral"
+        }
+      },
+      "external_context": {
+        "diagnosis": "F40.1",
+        "drug": "эсциталопрам",
+        "mode": "start",
+        "calculation_at": "2026-10-08T09:00:00+03:00",
+        "treatment_phase": "selected_mode"
+      },
+      "expected": {
+        "result_type": "form_not_feasible",
+        "total_daily_dose_mg": null,
+        "dose_per_administration_mg": null,
+        "administrations_per_day": null,
+        "schedule": [],
+        "missing_fields": [],
+        "unconditional_future_stages": false,
+        "clinical_clearance": false,
+        "automatic_form_substitution": false,
+        "confirmed_negatives": [
+          "pregnancy",
+          "lactation",
+          "allergy",
+          "mania",
+          "qt_risk",
+          "bleeding_risk",
+          "hyponatremia_risk",
+          "suicide_risk",
+          "diabetes",
+          "glaucoma",
+          "mania_symptoms",
+          "arrhythmia_signs",
+          "serotonin_syndrome_signs",
+          "coronary_disease",
+          "electrolyte_disturbance",
+          "ecg_done",
+          "electrolytes_corrected"
+        ],
+        "unassessed_context": [
+          "known_cyp2c19"
+        ]
+      },
+      "late_fields": [
+        "age",
+        "pregnancy",
+        "lactation",
+        "medicines",
+        "allergy",
+        "hepatic",
+        "seizure_state",
+        "renal",
+        "coronary_disease",
+        "electrolyte_disturbance"
+      ]
+    }
+  ],
+  "scope": "Different fields/source-derived arithmetic needs preserved; not all180 form results require repair"
+}

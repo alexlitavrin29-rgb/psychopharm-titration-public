@@ -1,0 +1,2767 @@
+{
+  "checks": [
+    {
+      "check": "exact locator correction materialized",
+      "pass_": true,
+      "detail": "rules/dulox-depression-start.yaml/applicability/pregnancy"
+    },
+    {
+      "check": "correct physical page included",
+      "pass_": true,
+      "detail": "rules/dulox-depression-start.yaml/applicability/pregnancy"
+    },
+    {
+      "check": "exact locator correction materialized",
+      "pass_": true,
+      "detail": "rules/dulox-depression-start.yaml/applicability/lactation"
+    },
+    {
+      "check": "correct physical page included",
+      "pass_": true,
+      "detail": "rules/dulox-depression-start.yaml/applicability/lactation"
+    },
+    {
+      "check": "exact locator correction materialized",
+      "pass_": true,
+      "detail": "rules/dulox-depression-start.yaml/applicability/exclusions/0"
+    },
+    {
+      "check": "correct physical page included",
+      "pass_": true,
+      "detail": "rules/dulox-depression-start.yaml/applicability/exclusions/0"
+    },
+    {
+      "check": "exact locator correction materialized",
+      "pass_": true,
+      "detail": "rules/dulox-depression-start.yaml/logic/actions/1"
+    },
+    {
+      "check": "correct physical page included",
+      "pass_": true,
+      "detail": "rules/dulox-depression-start.yaml/logic/actions/1"
+    },
+    {
+      "check": "exact locator correction materialized",
+      "pass_": true,
+      "detail": "rules/dulox-gad-adjust.yaml/applicability/pregnancy"
+    },
+    {
+      "check": "correct physical page included",
+      "pass_": true,
+      "detail": "rules/dulox-gad-adjust.yaml/applicability/pregnancy"
+    },
+    {
+      "check": "exact locator correction materialized",
+      "pass_": true,
+      "detail": "rules/dulox-gad-adjust.yaml/applicability/lactation"
+    },
+    {
+      "check": "correct physical page included",
+      "pass_": true,
+      "detail": "rules/dulox-gad-adjust.yaml/applicability/lactation"
+    },
+    {
+      "check": "exact locator correction materialized",
+      "pass_": true,
+      "detail": "rules/dulox-gad-adjust.yaml/applicability/exclusions/0"
+    },
+    {
+      "check": "correct physical page included",
+      "pass_": true,
+      "detail": "rules/dulox-gad-adjust.yaml/applicability/exclusions/0"
+    },
+    {
+      "check": "exact locator correction materialized",
+      "pass_": true,
+      "detail": "rules/dulox-gad-adjust.yaml/logic/actions/2"
+    },
+    {
+      "check": "correct physical page included",
+      "pass_": true,
+      "detail": "rules/dulox-gad-adjust.yaml/logic/actions/2"
+    },
+    {
+      "check": "exact locator correction materialized",
+      "pass_": true,
+      "detail": "rules/dulox-gad-start.yaml/applicability/pregnancy"
+    },
+    {
+      "check": "correct physical page included",
+      "pass_": true,
+      "detail": "rules/dulox-gad-start.yaml/applicability/pregnancy"
+    },
+    {
+      "check": "exact locator correction materialized",
+      "pass_": true,
+      "detail": "rules/dulox-gad-start.yaml/applicability/lactation"
+    },
+    {
+      "check": "correct physical page included",
+      "pass_": true,
+      "detail": "rules/dulox-gad-start.yaml/applicability/lactation"
+    },
+    {
+      "check": "exact locator correction materialized",
+      "pass_": true,
+      "detail": "rules/dulox-gad-start.yaml/applicability/exclusions/0"
+    },
+    {
+      "check": "correct physical page included",
+      "pass_": true,
+      "detail": "rules/dulox-gad-start.yaml/applicability/exclusions/0"
+    },
+    {
+      "check": "exact locator correction materialized",
+      "pass_": true,
+      "detail": "rules/dulox-gad-start.yaml/logic/actions/4"
+    },
+    {
+      "check": "correct physical page included",
+      "pass_": true,
+      "detail": "rules/dulox-gad-start.yaml/logic/actions/4"
+    },
+    {
+      "check": "exact locator correction materialized",
+      "pass_": true,
+      "detail": "rules/dulox-taper-limit.yaml/applicability/pregnancy"
+    },
+    {
+      "check": "correct physical page included",
+      "pass_": true,
+      "detail": "rules/dulox-taper-limit.yaml/applicability/pregnancy"
+    },
+    {
+      "check": "exact locator correction materialized",
+      "pass_": true,
+      "detail": "rules/dulox-taper-limit.yaml/applicability/lactation"
+    },
+    {
+      "check": "correct physical page included",
+      "pass_": true,
+      "detail": "rules/dulox-taper-limit.yaml/applicability/lactation"
+    },
+    {
+      "check": "exact locator correction materialized",
+      "pass_": true,
+      "detail": "rules/parox-panic-kr.yaml/applicability/renal_constraints/0"
+    },
+    {
+      "check": "correct physical page included",
+      "pass_": true,
+      "detail": "rules/parox-panic-kr.yaml/applicability/renal_constraints/0"
+    },
+    {
+      "check": "exact locator correction materialized",
+      "pass_": true,
+      "detail": "rules/parox-panic-kr.yaml/applicability/hepatic_constraints/0"
+    },
+    {
+      "check": "correct physical page included",
+      "pass_": true,
+      "detail": "rules/parox-panic-kr.yaml/applicability/hepatic_constraints/0"
+    },
+    {
+      "check": "exact locator correction materialized",
+      "pass_": true,
+      "detail": "rules/parox-panic-kr.yaml/applicability/interacting_drugs/0"
+    },
+    {
+      "check": "correct physical page included",
+      "pass_": true,
+      "detail": "rules/parox-panic-kr.yaml/applicability/interacting_drugs/0"
+    },
+    {
+      "check": "exact locator correction materialized",
+      "pass_": true,
+      "detail": "rules/phen-taper-limit.yaml/applicability/pregnancy"
+    },
+    {
+      "check": "correct physical page included",
+      "pass_": true,
+      "detail": "rules/phen-taper-limit.yaml/applicability/pregnancy"
+    },
+    {
+      "check": "exact locator correction materialized",
+      "pass_": true,
+      "detail": "rules/phen-taper-limit.yaml/applicability/lactation"
+    },
+    {
+      "check": "correct physical page included",
+      "pass_": true,
+      "detail": "rules/phen-taper-limit.yaml/applicability/lactation"
+    },
+    {
+      "check": "exact locator correction materialized",
+      "pass_": true,
+      "detail": "rules/phen-taper-limit.yaml/applicability/comorbidity_constraints/0"
+    },
+    {
+      "check": "correct physical page included",
+      "pass_": true,
+      "detail": "rules/phen-taper-limit.yaml/applicability/comorbidity_constraints/0"
+    },
+    {
+      "check": "exact locator correction materialized",
+      "pass_": true,
+      "detail": "clinical_parameters/adult_minimum/source_locator"
+    },
+    {
+      "check": "correct physical page included",
+      "pass_": true,
+      "detail": "clinical_parameters/adult_minimum/source_locator"
+    },
+    {
+      "check": "exact locator correction materialized",
+      "pass_": true,
+      "detail": "clinical_parameters/adult_minimum/source_locator"
+    },
+    {
+      "check": "correct physical page included",
+      "pass_": true,
+      "detail": "clinical_parameters/adult_minimum/source_locator"
+    },
+    {
+      "check": "exact locator correction materialized",
+      "pass_": true,
+      "detail": "clinical_parameters/adult_minimum/source_locator"
+    },
+    {
+      "check": "correct physical page included",
+      "pass_": true,
+      "detail": "clinical_parameters/adult_minimum/source_locator"
+    },
+    {
+      "check": "exact locator correction materialized",
+      "pass_": true,
+      "detail": "clinical_parameters/adult_minimum/source_locator"
+    },
+    {
+      "check": "correct physical page included",
+      "pass_": true,
+      "detail": "clinical_parameters/adult_minimum/source_locator"
+    },
+    {
+      "check": "previous independently read numeric claims unchanged",
+      "pass_": true,
+      "detail": "ago-depression-start"
+    },
+    {
+      "check": "previous independently read numeric claims unchanged",
+      "pass_": true,
+      "detail": "ago-gad-start"
+    },
+    {
+      "check": "previous independently read numeric claims unchanged",
+      "pass_": true,
+      "detail": "ago-stop"
+    },
+    {
+      "check": "previous independently read numeric claims unchanged",
+      "pass_": true,
+      "detail": "dulox-depression-start"
+    },
+    {
+      "check": "previous independently read numeric claims unchanged",
+      "pass_": true,
+      "detail": "dulox-gad-adjust"
+    },
+    {
+      "check": "previous independently read numeric claims unchanged",
+      "pass_": true,
+      "detail": "dulox-gad-start"
+    },
+    {
+      "check": "previous independently read numeric claims unchanged",
+      "pass_": true,
+      "detail": "dulox-taper-limit"
+    },
+    {
+      "check": "previous independently read numeric claims unchanged",
+      "pass_": true,
+      "detail": "esc-adult-adjust"
+    },
+    {
+      "check": "previous independently read numeric claims unchanged",
+      "pass_": true,
+      "detail": "esc-cyp2c19-start"
+    },
+    {
+      "check": "previous independently read numeric claims unchanged",
+      "pass_": true,
+      "detail": "esc-elderly-start"
+    },
+    {
+      "check": "previous independently read numeric claims unchanged",
+      "pass_": true,
+      "detail": "esc-gad-start"
+    },
+    {
+      "check": "previous independently read numeric claims unchanged",
+      "pass_": true,
+      "detail": "esc-hepatic-start"
+    },
+    {
+      "check": "previous independently read numeric claims unchanged",
+      "pass_": true,
+      "detail": "esc-panic-start"
+    },
+    {
+      "check": "previous independently read numeric claims unchanged",
+      "pass_": true,
+      "detail": "esc-social-start"
+    },
+    {
+      "check": "previous independently read numeric claims unchanged",
+      "pass_": true,
+      "detail": "esc-taper-limit"
+    },
+    {
+      "check": "previous independently read numeric claims unchanged",
+      "pass_": true,
+      "detail": "fluvox-depression-start"
+    },
+    {
+      "check": "previous independently read numeric claims unchanged",
+      "pass_": true,
+      "detail": "fluvox-taper-limit"
+    },
+    {
+      "check": "previous independently read numeric claims unchanged",
+      "pass_": true,
+      "detail": "parox-panic-kr"
+    },
+    {
+      "check": "previous independently read numeric claims unchanged",
+      "pass_": true,
+      "detail": "parox-taper-example"
+    },
+    {
+      "check": "previous independently read numeric claims unchanged",
+      "pass_": true,
+      "detail": "phen-taper-limit"
+    },
+    {
+      "check": "previous independently read numeric claims unchanged",
+      "pass_": true,
+      "detail": "preg-gad-adjust"
+    },
+    {
+      "check": "previous independently read numeric claims unchanged",
+      "pass_": true,
+      "detail": "preg-gad-start"
+    },
+    {
+      "check": "previous independently read numeric claims unchanged",
+      "pass_": true,
+      "detail": "preg-renal-start"
+    },
+    {
+      "check": "previous independently read numeric claims unchanged",
+      "pass_": true,
+      "detail": "preg-taper-limit"
+    },
+    {
+      "check": "previous independently read numeric claims unchanged",
+      "pass_": true,
+      "detail": "ser-adult-adjust"
+    },
+    {
+      "check": "previous independently read numeric claims unchanged",
+      "pass_": true,
+      "detail": "ser-panic-start"
+    },
+    {
+      "check": "previous independently read numeric claims unchanged",
+      "pass_": true,
+      "detail": "ser-social-start"
+    },
+    {
+      "check": "previous independently read numeric claims unchanged",
+      "pass_": true,
+      "detail": "ser-taper-limit"
+    },
+    {
+      "check": "previous independently read numeric claims unchanged",
+      "pass_": true,
+      "detail": "switch-esc-ago"
+    },
+    {
+      "check": "previous independently read numeric claims unchanged",
+      "pass_": true,
+      "detail": "switch-esc-ser"
+    },
+    {
+      "check": "previous independently read numeric claims unchanged",
+      "pass_": true,
+      "detail": "switch-parox-ago-selected-example"
+    },
+    {
+      "check": "previous independently read numeric claims unchanged",
+      "pass_": true,
+      "detail": "switch-parox-ago"
+    },
+    {
+      "check": "previous independently read numeric claims unchanged",
+      "pass_": true,
+      "detail": "switch-ser-ago"
+    },
+    {
+      "check": "previous independently read numeric claims unchanged",
+      "pass_": true,
+      "detail": "switch-ser-esc"
+    },
+    {
+      "check": "previous independently read numeric claims unchanged",
+      "pass_": true,
+      "detail": "venla-xr-gad-start"
+    },
+    {
+      "check": "previous independently read numeric claims unchanged",
+      "pass_": true,
+      "detail": "venla-xr-panic-form-limit"
+    },
+    {
+      "check": "previous independently read numeric claims unchanged",
+      "pass_": true,
+      "detail": "venla-xr-social-start"
+    },
+    {
+      "check": "previous independently read numeric claims unchanged",
+      "pass_": true,
+      "detail": "venla-xr-taper-limit"
+    },
+    {
+      "check": "SER25 special first step prose",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "check": "ESC hepatic prose A/B distinct from C",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "check": "PREG form model distinguished from source ban",
+      "pass_": true,
+      "detail": "preg-gad-start"
+    },
+    {
+      "check": "PREG form model distinguished from source ban",
+      "pass_": true,
+      "detail": "preg-gad-adjust"
+    },
+    {
+      "check": "PREG form model distinguished from source ban",
+      "pass_": true,
+      "detail": "preg-renal-start"
+    },
+    {
+      "check": "exact22 generic cautions optional not deleted",
+      "pass_": true,
+      "detail": "I-ago-depression-start-renal_state"
+    },
+    {
+      "check": "exact22 generic cautions optional not deleted",
+      "pass_": true,
+      "detail": "I-ago-gad-start-renal_state"
+    },
+    {
+      "check": "exact22 generic cautions optional not deleted",
+      "pass_": true,
+      "detail": "I-switch-esc-ago-alcohol_use"
+    },
+    {
+      "check": "exact22 generic cautions optional not deleted",
+      "pass_": true,
+      "detail": "I-switch-esc-ago-mania"
+    },
+    {
+      "check": "exact22 generic cautions optional not deleted",
+      "pass_": true,
+      "detail": "I-switch-esc-ago-suicide_risk"
+    },
+    {
+      "check": "exact22 generic cautions optional not deleted",
+      "pass_": true,
+      "detail": "I-switch-esc-ago-renal_state"
+    },
+    {
+      "check": "exact22 generic cautions optional not deleted",
+      "pass_": true,
+      "detail": "I-switch-parox-ago-selected-example-renal_state"
+    },
+    {
+      "check": "exact22 generic cautions optional not deleted",
+      "pass_": true,
+      "detail": "I-switch-parox-ago-selected-example-alcohol_use"
+    },
+    {
+      "check": "exact22 generic cautions optional not deleted",
+      "pass_": true,
+      "detail": "I-switch-parox-ago-selected-example-mania"
+    },
+    {
+      "check": "exact22 generic cautions optional not deleted",
+      "pass_": true,
+      "detail": "I-switch-parox-ago-selected-example-suicide_risk"
+    },
+    {
+      "check": "exact22 generic cautions optional not deleted",
+      "pass_": true,
+      "detail": "I-switch-parox-ago-selected-example-bleeding_risk"
+    },
+    {
+      "check": "exact22 generic cautions optional not deleted",
+      "pass_": true,
+      "detail": "I-switch-parox-ago-alcohol_use"
+    },
+    {
+      "check": "exact22 generic cautions optional not deleted",
+      "pass_": true,
+      "detail": "I-switch-parox-ago-mania"
+    },
+    {
+      "check": "exact22 generic cautions optional not deleted",
+      "pass_": true,
+      "detail": "I-switch-parox-ago-suicide_risk"
+    },
+    {
+      "check": "exact22 generic cautions optional not deleted",
+      "pass_": true,
+      "detail": "I-switch-parox-ago-renal_state"
+    },
+    {
+      "check": "exact22 generic cautions optional not deleted",
+      "pass_": true,
+      "detail": "I-switch-parox-ago-bleeding_risk"
+    },
+    {
+      "check": "exact22 generic cautions optional not deleted",
+      "pass_": true,
+      "detail": "I-switch-ser-ago-alcohol_use"
+    },
+    {
+      "check": "exact22 generic cautions optional not deleted",
+      "pass_": true,
+      "detail": "I-switch-ser-ago-mania"
+    },
+    {
+      "check": "exact22 generic cautions optional not deleted",
+      "pass_": true,
+      "detail": "I-switch-ser-ago-suicide_risk"
+    },
+    {
+      "check": "exact22 generic cautions optional not deleted",
+      "pass_": true,
+      "detail": "I-switch-ser-ago-renal_state"
+    },
+    {
+      "check": "exact22 generic cautions optional not deleted",
+      "pass_": true,
+      "detail": "I-switch-ser-ago-bleeding_risk"
+    },
+    {
+      "check": "exact22 generic cautions optional not deleted",
+      "pass_": true,
+      "detail": "I-switch-ser-ago-hyponatremia_risk"
+    },
+    {
+      "check": "pair-gap planning demoted with historical dose semantics",
+      "pass_": true,
+      "detail": [
+        "switch-esc-ser",
+        "current_dose"
+      ]
+    },
+    {
+      "check": "pair-gap planning demoted with historical dose semantics",
+      "pass_": true,
+      "detail": [
+        "switch-esc-ser",
+        "duration"
+      ]
+    },
+    {
+      "check": "pair-gap planning demoted with historical dose semantics",
+      "pass_": true,
+      "detail": [
+        "switch-esc-ser",
+        "last_dose_time"
+      ]
+    },
+    {
+      "check": "pair-gap planning demoted with historical dose semantics",
+      "pass_": true,
+      "detail": [
+        "switch-esc-ser",
+        "withdrawal_symptoms"
+      ]
+    },
+    {
+      "check": "pair-gap planning demoted with historical dose semantics",
+      "pass_": true,
+      "detail": [
+        "switch-esc-ser",
+        "target_applicability"
+      ]
+    },
+    {
+      "check": "bounded pair retains counted exact source profile, no clinical clearance claim",
+      "pass_": true,
+      "detail": [
+        "switch-esc-ser",
+        "from_form"
+      ]
+    },
+    {
+      "check": "bounded pair retains counted exact source profile, no clinical clearance claim",
+      "pass_": true,
+      "detail": [
+        "switch-esc-ser",
+        "to_form"
+      ]
+    },
+    {
+      "check": "pair source gap no calendar/start/overlap",
+      "pass_": true,
+      "detail": "switch-esc-ser"
+    },
+    {
+      "check": "pair planning omitted/unknown full source-gap countercase",
+      "pass_": true,
+      "detail": "switch-esc-ser--current-current_dose-omitted"
+    },
+    {
+      "check": "pair planning omitted/unknown full source-gap countercase",
+      "pass_": true,
+      "detail": "switch-esc-ser--current-current_dose-unknown"
+    },
+    {
+      "check": "pair planning omitted/unknown full source-gap countercase",
+      "pass_": true,
+      "detail": "switch-esc-ser--current-current_dose-not_assessed"
+    },
+    {
+      "check": "pair planning omitted/unknown full source-gap countercase",
+      "pass_": true,
+      "detail": "switch-esc-ser--current-duration-omitted"
+    },
+    {
+      "check": "pair planning omitted/unknown full source-gap countercase",
+      "pass_": true,
+      "detail": "switch-esc-ser--current-duration-unknown"
+    },
+    {
+      "check": "pair planning omitted/unknown full source-gap countercase",
+      "pass_": true,
+      "detail": "switch-esc-ser--current-duration-not_assessed"
+    },
+    {
+      "check": "pair planning omitted/unknown full source-gap countercase",
+      "pass_": true,
+      "detail": "switch-esc-ser--current-last_dose_time-omitted"
+    },
+    {
+      "check": "pair planning omitted/unknown full source-gap countercase",
+      "pass_": true,
+      "detail": "switch-esc-ser--current-last_dose_time-unknown"
+    },
+    {
+      "check": "pair planning omitted/unknown full source-gap countercase",
+      "pass_": true,
+      "detail": "switch-esc-ser--current-last_dose_time-not_assessed"
+    },
+    {
+      "check": "pair planning omitted/unknown full source-gap countercase",
+      "pass_": true,
+      "detail": "switch-esc-ser--current-withdrawal_symptoms-omitted"
+    },
+    {
+      "check": "pair planning omitted/unknown full source-gap countercase",
+      "pass_": true,
+      "detail": "switch-esc-ser--current-withdrawal_symptoms-unknown"
+    },
+    {
+      "check": "pair planning omitted/unknown full source-gap countercase",
+      "pass_": true,
+      "detail": "switch-esc-ser--current-withdrawal_symptoms-not_assessed"
+    },
+    {
+      "check": "pair planning omitted/unknown full source-gap countercase",
+      "pass_": true,
+      "detail": "switch-esc-ser--current-target_applicability-omitted"
+    },
+    {
+      "check": "pair planning omitted/unknown full source-gap countercase",
+      "pass_": true,
+      "detail": "switch-esc-ser--current-target_applicability-unknown"
+    },
+    {
+      "check": "pair planning omitted/unknown full source-gap countercase",
+      "pass_": true,
+      "detail": "switch-esc-ser--current-target_applicability-not_assessed"
+    },
+    {
+      "check": "pair-gap planning demoted with historical dose semantics",
+      "pass_": true,
+      "detail": [
+        "switch-ser-esc",
+        "current_dose"
+      ]
+    },
+    {
+      "check": "pair-gap planning demoted with historical dose semantics",
+      "pass_": true,
+      "detail": [
+        "switch-ser-esc",
+        "duration"
+      ]
+    },
+    {
+      "check": "pair-gap planning demoted with historical dose semantics",
+      "pass_": true,
+      "detail": [
+        "switch-ser-esc",
+        "last_dose_time"
+      ]
+    },
+    {
+      "check": "pair-gap planning demoted with historical dose semantics",
+      "pass_": true,
+      "detail": [
+        "switch-ser-esc",
+        "withdrawal_symptoms"
+      ]
+    },
+    {
+      "check": "pair-gap planning demoted with historical dose semantics",
+      "pass_": true,
+      "detail": [
+        "switch-ser-esc",
+        "target_applicability"
+      ]
+    },
+    {
+      "check": "bounded pair retains counted exact source profile, no clinical clearance claim",
+      "pass_": true,
+      "detail": [
+        "switch-ser-esc",
+        "from_form"
+      ]
+    },
+    {
+      "check": "bounded pair retains counted exact source profile, no clinical clearance claim",
+      "pass_": true,
+      "detail": [
+        "switch-ser-esc",
+        "to_form"
+      ]
+    },
+    {
+      "check": "pair source gap no calendar/start/overlap",
+      "pass_": true,
+      "detail": "switch-ser-esc"
+    },
+    {
+      "check": "pair planning omitted/unknown full source-gap countercase",
+      "pass_": true,
+      "detail": "switch-ser-esc--current-current_dose-omitted"
+    },
+    {
+      "check": "pair planning omitted/unknown full source-gap countercase",
+      "pass_": true,
+      "detail": "switch-ser-esc--current-current_dose-unknown"
+    },
+    {
+      "check": "pair planning omitted/unknown full source-gap countercase",
+      "pass_": true,
+      "detail": "switch-ser-esc--current-current_dose-not_assessed"
+    },
+    {
+      "check": "pair planning omitted/unknown full source-gap countercase",
+      "pass_": true,
+      "detail": "switch-ser-esc--current-duration-omitted"
+    },
+    {
+      "check": "pair planning omitted/unknown full source-gap countercase",
+      "pass_": true,
+      "detail": "switch-ser-esc--current-duration-unknown"
+    },
+    {
+      "check": "pair planning omitted/unknown full source-gap countercase",
+      "pass_": true,
+      "detail": "switch-ser-esc--current-duration-not_assessed"
+    },
+    {
+      "check": "pair planning omitted/unknown full source-gap countercase",
+      "pass_": true,
+      "detail": "switch-ser-esc--current-last_dose_time-omitted"
+    },
+    {
+      "check": "pair planning omitted/unknown full source-gap countercase",
+      "pass_": true,
+      "detail": "switch-ser-esc--current-last_dose_time-unknown"
+    },
+    {
+      "check": "pair planning omitted/unknown full source-gap countercase",
+      "pass_": true,
+      "detail": "switch-ser-esc--current-last_dose_time-not_assessed"
+    },
+    {
+      "check": "pair planning omitted/unknown full source-gap countercase",
+      "pass_": true,
+      "detail": "switch-ser-esc--current-withdrawal_symptoms-omitted"
+    },
+    {
+      "check": "pair planning omitted/unknown full source-gap countercase",
+      "pass_": true,
+      "detail": "switch-ser-esc--current-withdrawal_symptoms-unknown"
+    },
+    {
+      "check": "pair planning omitted/unknown full source-gap countercase",
+      "pass_": true,
+      "detail": "switch-ser-esc--current-withdrawal_symptoms-not_assessed"
+    },
+    {
+      "check": "pair planning omitted/unknown full source-gap countercase",
+      "pass_": true,
+      "detail": "switch-ser-esc--current-target_applicability-omitted"
+    },
+    {
+      "check": "pair planning omitted/unknown full source-gap countercase",
+      "pass_": true,
+      "detail": "switch-ser-esc--current-target_applicability-unknown"
+    },
+    {
+      "check": "pair planning omitted/unknown full source-gap countercase",
+      "pass_": true,
+      "detail": "switch-ser-esc--current-target_applicability-not_assessed"
+    },
+    {
+      "check": "social adherence omitted/unknown no automatic increase",
+      "pass_": true,
+      "detail": "ser-adult-adjust--audit-final-social-adherence-omitted"
+    },
+    {
+      "check": "social adherence omitted/unknown no automatic increase",
+      "pass_": true,
+      "detail": "ser-adult-adjust--audit-final-social-adherence-unknown"
+    },
+    {
+      "check": "bounded adult reference unknown form/population no individual plan",
+      "pass_": true,
+      "detail": "preg-taper-limit--audit-final-bounded-source-reference-omitted"
+    },
+    {
+      "check": "PREG one week only conditional adult reference",
+      "pass_": true,
+      "detail": "preg-taper-limit--audit-final-bounded-source-reference-omitted"
+    },
+    {
+      "check": "bounded adult reference unknown form/population no individual plan",
+      "pass_": true,
+      "detail": "preg-taper-limit--audit-final-bounded-source-reference-unknown"
+    },
+    {
+      "check": "PREG one week only conditional adult reference",
+      "pass_": true,
+      "detail": "preg-taper-limit--audit-final-bounded-source-reference-unknown"
+    },
+    {
+      "check": "bounded adult reference unknown form/population no individual plan",
+      "pass_": true,
+      "detail": "phen-taper-limit--audit-final-bounded-source-reference-omitted"
+    },
+    {
+      "check": "bounded adult reference unknown form/population no individual plan",
+      "pass_": true,
+      "detail": "phen-taper-limit--audit-final-bounded-source-reference-unknown"
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "ago-stop",
+        50,
+        "selected_mode",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "ago-stop",
+        50,
+        "ongoing",
+        "ongoing"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "ago-stop",
+        50,
+        "unknown",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "ago-stop",
+        50,
+        "not_started",
+        "not_started"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "ago-stop",
+        0,
+        "selected_mode",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "ago-stop",
+        0,
+        "ongoing",
+        "ongoing"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "ago-stop",
+        0,
+        "unknown",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "ago-stop",
+        0,
+        "not_started",
+        "not_started"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "ago-stop",
+        "unknown",
+        "selected_mode",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "ago-stop",
+        "unknown",
+        "ongoing",
+        "ongoing"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "ago-stop",
+        "unknown",
+        "unknown",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "ago-stop",
+        "unknown",
+        "not_started",
+        "not_started"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "ago-stop",
+        {
+          "proposed": 50
+        },
+        "selected_mode",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "ago-stop",
+        {
+          "proposed": 50
+        },
+        "ongoing",
+        "ongoing"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "ago-stop",
+        {
+          "proposed": 50
+        },
+        "unknown",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "ago-stop",
+        {
+          "proposed": 50
+        },
+        "not_started",
+        "not_started"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "dulox-taper-limit",
+        50,
+        "selected_mode",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "dulox-taper-limit",
+        50,
+        "ongoing",
+        "ongoing"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "dulox-taper-limit",
+        50,
+        "unknown",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "dulox-taper-limit",
+        50,
+        "not_started",
+        "not_started"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "dulox-taper-limit",
+        0,
+        "selected_mode",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "dulox-taper-limit",
+        0,
+        "ongoing",
+        "ongoing"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "dulox-taper-limit",
+        0,
+        "unknown",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "dulox-taper-limit",
+        0,
+        "not_started",
+        "not_started"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "dulox-taper-limit",
+        "unknown",
+        "selected_mode",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "dulox-taper-limit",
+        "unknown",
+        "ongoing",
+        "ongoing"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "dulox-taper-limit",
+        "unknown",
+        "unknown",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "dulox-taper-limit",
+        "unknown",
+        "not_started",
+        "not_started"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "dulox-taper-limit",
+        {
+          "proposed": 50
+        },
+        "selected_mode",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "dulox-taper-limit",
+        {
+          "proposed": 50
+        },
+        "ongoing",
+        "ongoing"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "dulox-taper-limit",
+        {
+          "proposed": 50
+        },
+        "unknown",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "dulox-taper-limit",
+        {
+          "proposed": 50
+        },
+        "not_started",
+        "not_started"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "esc-taper-limit",
+        50,
+        "selected_mode",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "esc-taper-limit",
+        50,
+        "ongoing",
+        "ongoing"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "esc-taper-limit",
+        50,
+        "unknown",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "esc-taper-limit",
+        50,
+        "not_started",
+        "not_started"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "esc-taper-limit",
+        0,
+        "selected_mode",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "esc-taper-limit",
+        0,
+        "ongoing",
+        "ongoing"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "esc-taper-limit",
+        0,
+        "unknown",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "esc-taper-limit",
+        0,
+        "not_started",
+        "not_started"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "esc-taper-limit",
+        "unknown",
+        "selected_mode",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "esc-taper-limit",
+        "unknown",
+        "ongoing",
+        "ongoing"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "esc-taper-limit",
+        "unknown",
+        "unknown",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "esc-taper-limit",
+        "unknown",
+        "not_started",
+        "not_started"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "esc-taper-limit",
+        {
+          "proposed": 50
+        },
+        "selected_mode",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "esc-taper-limit",
+        {
+          "proposed": 50
+        },
+        "ongoing",
+        "ongoing"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "esc-taper-limit",
+        {
+          "proposed": 50
+        },
+        "unknown",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "esc-taper-limit",
+        {
+          "proposed": 50
+        },
+        "not_started",
+        "not_started"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "fluvox-taper-limit",
+        50,
+        "selected_mode",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "fluvox-taper-limit",
+        50,
+        "ongoing",
+        "ongoing"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "fluvox-taper-limit",
+        50,
+        "unknown",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "fluvox-taper-limit",
+        50,
+        "not_started",
+        "not_started"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "fluvox-taper-limit",
+        0,
+        "selected_mode",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "fluvox-taper-limit",
+        0,
+        "ongoing",
+        "ongoing"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "fluvox-taper-limit",
+        0,
+        "unknown",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "fluvox-taper-limit",
+        0,
+        "not_started",
+        "not_started"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "fluvox-taper-limit",
+        "unknown",
+        "selected_mode",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "fluvox-taper-limit",
+        "unknown",
+        "ongoing",
+        "ongoing"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "fluvox-taper-limit",
+        "unknown",
+        "unknown",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "fluvox-taper-limit",
+        "unknown",
+        "not_started",
+        "not_started"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "fluvox-taper-limit",
+        {
+          "proposed": 50
+        },
+        "selected_mode",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "fluvox-taper-limit",
+        {
+          "proposed": 50
+        },
+        "ongoing",
+        "ongoing"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "fluvox-taper-limit",
+        {
+          "proposed": 50
+        },
+        "unknown",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "fluvox-taper-limit",
+        {
+          "proposed": 50
+        },
+        "not_started",
+        "not_started"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "parox-panic-kr",
+        50,
+        "selected_mode",
+        "not_started"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "parox-panic-kr",
+        50,
+        "ongoing",
+        "ongoing"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "parox-panic-kr",
+        50,
+        "unknown",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "parox-panic-kr",
+        50,
+        "not_started",
+        "not_started"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "parox-panic-kr",
+        0,
+        "selected_mode",
+        "not_started"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "parox-panic-kr",
+        0,
+        "ongoing",
+        "ongoing"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "parox-panic-kr",
+        0,
+        "unknown",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "parox-panic-kr",
+        0,
+        "not_started",
+        "not_started"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "parox-panic-kr",
+        "unknown",
+        "selected_mode",
+        "not_started"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "parox-panic-kr",
+        "unknown",
+        "ongoing",
+        "ongoing"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "parox-panic-kr",
+        "unknown",
+        "unknown",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "parox-panic-kr",
+        "unknown",
+        "not_started",
+        "not_started"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "parox-panic-kr",
+        {
+          "proposed": 50
+        },
+        "selected_mode",
+        "not_started"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "parox-panic-kr",
+        {
+          "proposed": 50
+        },
+        "ongoing",
+        "ongoing"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "parox-panic-kr",
+        {
+          "proposed": 50
+        },
+        "unknown",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "parox-panic-kr",
+        {
+          "proposed": 50
+        },
+        "not_started",
+        "not_started"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "phen-taper-limit",
+        50,
+        "selected_mode",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "phen-taper-limit",
+        50,
+        "ongoing",
+        "ongoing"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "phen-taper-limit",
+        50,
+        "unknown",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "phen-taper-limit",
+        50,
+        "not_started",
+        "not_started"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "phen-taper-limit",
+        0,
+        "selected_mode",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "phen-taper-limit",
+        0,
+        "ongoing",
+        "ongoing"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "phen-taper-limit",
+        0,
+        "unknown",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "phen-taper-limit",
+        0,
+        "not_started",
+        "not_started"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "phen-taper-limit",
+        "unknown",
+        "selected_mode",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "phen-taper-limit",
+        "unknown",
+        "ongoing",
+        "ongoing"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "phen-taper-limit",
+        "unknown",
+        "unknown",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "phen-taper-limit",
+        "unknown",
+        "not_started",
+        "not_started"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "phen-taper-limit",
+        {
+          "proposed": 50
+        },
+        "selected_mode",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "phen-taper-limit",
+        {
+          "proposed": 50
+        },
+        "ongoing",
+        "ongoing"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "phen-taper-limit",
+        {
+          "proposed": 50
+        },
+        "unknown",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "phen-taper-limit",
+        {
+          "proposed": 50
+        },
+        "not_started",
+        "not_started"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "preg-taper-limit",
+        50,
+        "selected_mode",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "preg-taper-limit",
+        50,
+        "ongoing",
+        "ongoing"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "preg-taper-limit",
+        50,
+        "unknown",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "preg-taper-limit",
+        50,
+        "not_started",
+        "not_started"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "preg-taper-limit",
+        0,
+        "selected_mode",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "preg-taper-limit",
+        0,
+        "ongoing",
+        "ongoing"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "preg-taper-limit",
+        0,
+        "unknown",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "preg-taper-limit",
+        0,
+        "not_started",
+        "not_started"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "preg-taper-limit",
+        "unknown",
+        "selected_mode",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "preg-taper-limit",
+        "unknown",
+        "ongoing",
+        "ongoing"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "preg-taper-limit",
+        "unknown",
+        "unknown",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "preg-taper-limit",
+        "unknown",
+        "not_started",
+        "not_started"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "preg-taper-limit",
+        {
+          "proposed": 50
+        },
+        "selected_mode",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "preg-taper-limit",
+        {
+          "proposed": 50
+        },
+        "ongoing",
+        "ongoing"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "preg-taper-limit",
+        {
+          "proposed": 50
+        },
+        "unknown",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "preg-taper-limit",
+        {
+          "proposed": 50
+        },
+        "not_started",
+        "not_started"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "ser-taper-limit",
+        50,
+        "selected_mode",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "ser-taper-limit",
+        50,
+        "ongoing",
+        "ongoing"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "ser-taper-limit",
+        50,
+        "unknown",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "ser-taper-limit",
+        50,
+        "not_started",
+        "not_started"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "ser-taper-limit",
+        0,
+        "selected_mode",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "ser-taper-limit",
+        0,
+        "ongoing",
+        "ongoing"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "ser-taper-limit",
+        0,
+        "unknown",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "ser-taper-limit",
+        0,
+        "not_started",
+        "not_started"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "ser-taper-limit",
+        "unknown",
+        "selected_mode",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "ser-taper-limit",
+        "unknown",
+        "ongoing",
+        "ongoing"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "ser-taper-limit",
+        "unknown",
+        "unknown",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "ser-taper-limit",
+        "unknown",
+        "not_started",
+        "not_started"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "ser-taper-limit",
+        {
+          "proposed": 50
+        },
+        "selected_mode",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "ser-taper-limit",
+        {
+          "proposed": 50
+        },
+        "ongoing",
+        "ongoing"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "ser-taper-limit",
+        {
+          "proposed": 50
+        },
+        "unknown",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "ser-taper-limit",
+        {
+          "proposed": 50
+        },
+        "not_started",
+        "not_started"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "switch-esc-ser",
+        50,
+        "selected_mode",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "switch-esc-ser",
+        50,
+        "ongoing",
+        "ongoing"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "switch-esc-ser",
+        50,
+        "unknown",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "switch-esc-ser",
+        50,
+        "not_started",
+        "not_started"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "switch-esc-ser",
+        0,
+        "selected_mode",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "switch-esc-ser",
+        0,
+        "ongoing",
+        "ongoing"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "switch-esc-ser",
+        0,
+        "unknown",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "switch-esc-ser",
+        0,
+        "not_started",
+        "not_started"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "switch-esc-ser",
+        "unknown",
+        "selected_mode",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "switch-esc-ser",
+        "unknown",
+        "ongoing",
+        "ongoing"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "switch-esc-ser",
+        "unknown",
+        "unknown",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "switch-esc-ser",
+        "unknown",
+        "not_started",
+        "not_started"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "switch-esc-ser",
+        {
+          "proposed": 50
+        },
+        "selected_mode",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "switch-esc-ser",
+        {
+          "proposed": 50
+        },
+        "ongoing",
+        "ongoing"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "switch-esc-ser",
+        {
+          "proposed": 50
+        },
+        "unknown",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "switch-esc-ser",
+        {
+          "proposed": 50
+        },
+        "not_started",
+        "not_started"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "switch-ser-esc",
+        50,
+        "selected_mode",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "switch-ser-esc",
+        50,
+        "ongoing",
+        "ongoing"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "switch-ser-esc",
+        50,
+        "unknown",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "switch-ser-esc",
+        50,
+        "not_started",
+        "not_started"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "switch-ser-esc",
+        0,
+        "selected_mode",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "switch-ser-esc",
+        0,
+        "ongoing",
+        "ongoing"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "switch-ser-esc",
+        0,
+        "unknown",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "switch-ser-esc",
+        0,
+        "not_started",
+        "not_started"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "switch-ser-esc",
+        "unknown",
+        "selected_mode",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "switch-ser-esc",
+        "unknown",
+        "ongoing",
+        "ongoing"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "switch-ser-esc",
+        "unknown",
+        "unknown",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "switch-ser-esc",
+        "unknown",
+        "not_started",
+        "not_started"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "switch-ser-esc",
+        {
+          "proposed": 50
+        },
+        "selected_mode",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "switch-ser-esc",
+        {
+          "proposed": 50
+        },
+        "ongoing",
+        "ongoing"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "switch-ser-esc",
+        {
+          "proposed": 50
+        },
+        "unknown",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "switch-ser-esc",
+        {
+          "proposed": 50
+        },
+        "not_started",
+        "not_started"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "venla-xr-taper-limit",
+        50,
+        "selected_mode",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "venla-xr-taper-limit",
+        50,
+        "ongoing",
+        "ongoing"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "venla-xr-taper-limit",
+        50,
+        "unknown",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "venla-xr-taper-limit",
+        50,
+        "not_started",
+        "not_started"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "venla-xr-taper-limit",
+        0,
+        "selected_mode",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "venla-xr-taper-limit",
+        0,
+        "ongoing",
+        "ongoing"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "venla-xr-taper-limit",
+        0,
+        "unknown",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "venla-xr-taper-limit",
+        0,
+        "not_started",
+        "not_started"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "venla-xr-taper-limit",
+        "unknown",
+        "selected_mode",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "venla-xr-taper-limit",
+        "unknown",
+        "ongoing",
+        "ongoing"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "venla-xr-taper-limit",
+        "unknown",
+        "unknown",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "venla-xr-taper-limit",
+        "unknown",
+        "not_started",
+        "not_started"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "venla-xr-taper-limit",
+        {
+          "proposed": 50
+        },
+        "selected_mode",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "venla-xr-taper-limit",
+        {
+          "proposed": 50
+        },
+        "ongoing",
+        "ongoing"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "venla-xr-taper-limit",
+        {
+          "proposed": 50
+        },
+        "unknown",
+        "unknown"
+      ]
+    },
+    {
+      "check": "historical/proposed/zero dose cannot establish current use",
+      "pass_": true,
+      "detail": [
+        "venla-xr-taper-limit",
+        {
+          "proposed": 50
+        },
+        "not_started",
+        "not_started"
+      ]
+    },
+    {
+      "check": "six independent negative controls rejected",
+      "pass_": true,
+      "detail": null
+    }
+  ],
+  "errors": [],
+  "numeric_objects": 211,
+  "locator_corrections": 24,
+  "generic_cautions": 22,
+  "historical_phase_countercases": 176,
+  "negative_controls": [
+    {
+      "mutation": "invented_caution_dose",
+      "rejected": true
+    },
+    {
+      "mutation": "invented_schedule",
+      "rejected": true
+    },
+    {
+      "mutation": "false_clinical_clearance",
+      "rejected": true
+    },
+    {
+      "mutation": "unknown_B_stop",
+      "rejected": true
+    },
+    {
+      "mutation": "nonstarted_B_stop",
+      "rejected": true
+    },
+    {
+      "mutation": "free_known_MAOI_type",
+      "rejected": true,
+      "missing_fact": "maoi_type.M1"
+    }
+  ],
+  "scope": "Finite changes only; neither all30 acceptance nor global necessity proof."
+}

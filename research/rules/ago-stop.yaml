@@ -1,0 +1,418 @@
+schema_version: '1.0'
+rule_id: ago-stop
+development_status: extracted_research_not_executable
+language: ru
+identity:
+  title: 'Агомелатин: прекращение без обязательного снижения дозы'
+  mode: taper
+  drug_inn: агомелатин
+  from_drug_inn: null
+  to_drug_inn: null
+  formulation: Вальдоксан, целые таблетки 25 мг
+  route: oral
+  diagnosis_label_ru: Депрессия / указанная коморбидность
+  classification_system: МКБ-10
+  diagnosis_code: F41.1/F32/F33
+  jurisdiction: RU_versioned_sources
+applicability:
+  population_description: Взрослые от 18 лет; показание и клиническое действие выбирает врач.
+  age_constraints:
+  - minimum: 18
+    inclusive: true
+    unit: year
+    source_ref: RU-AGO
+    source_locator: §4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16
+  pregnancy: Рекомендуется избегать назначения во время беременности; §4.6 PDF с.6. Числовой поправки нет.
+  lactation: Риск для ребёнка не исключён; врач выбирает прекращение грудного вскармливания либо приёма препарата,
+    §4.6 с.6. Не числовой коэффициент.
+  renal_constraints: []
+  hepatic_constraints: []
+  comorbidity_constraints: []
+  interacting_drugs: []
+  other_conditions: []
+  exclusions: []
+  indication_status_in_russia: RU_indication_in_read_original_latest_registry_text_separate
+  source_refs:
+  - RU-AGO
+  - RU-GAD
+inputs:
+- input_id: current_dose
+  question_ru: Какова сообщённая исходная/последняя суточная доза курса (мг/сут) для контекста риска отмены? Она
+    не подтверждает фазу текущего приёма.
+  data_type: number
+  unit: mg/day
+  allowed_values: []
+  required_when: Результат содержит только опубликованное ограничение/выбор врача, без расчёта индивидуальных ступеней,
+    возобновляемой дозы или числового темпа. Текущая доза/длительность/прошлая отмена не операнды такого результата;
+    известный контекст сохраняется, неизвестный явно not_assessed. Для последующего индивидуального плана эти сведения
+    потребуются в отдельном контракте. Опубликованные условия срочного прекращения и текущие симптомы остаются обязательными.
+  show_when: Если врач сообщает контекст; не обязательный этап выдачи ограниченного источникового результата
+  why_needed: Результат содержит только опубликованное ограничение/выбор врача, без расчёта индивидуальных ступеней,
+    возобновляемой дозы или числового темпа. Текущая доза/длительность/прошлая отмена не операнды такого результата;
+    известный контекст сохраняется, неизвестный явно not_assessed. Для последующего индивидуального плана эти сведения
+    потребуются в отдельном контракте. Опубликованные условия срочного прекращения и текущие симптомы остаются обязательными.
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Show explicit not_assessed context warning; do not invent a numerical plan or grant clinical
+    clearance
+  source_refs:
+  - RU-AGO
+  input_role: reported_context
+  source_locator: §4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16
+  missing_states:
+  - unknown
+  - not_assessed
+  required_for_individual_result: false
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  requirement_predicate:
+    kind: reported_context
+  necessity_reason: Результат содержит только опубликованное ограничение/выбор врача, без расчёта индивидуальных
+    ступеней, возобновляемой дозы или числового темпа. Текущая доза/длительность/прошлая отмена не операнды такого
+    результата; известный контекст сохраняется, неизвестный явно not_assessed. Для последующего индивидуального
+    плана эти сведения потребуются в отдельном контракте. Опубликованные условия срочного прекращения и текущие
+    симптомы остаются обязательными.
+  fact_origin: Explicitly reported initial/last daily course dose for source withdrawal context; no assertion of
+    ongoing use. Current-treatment source action needs a separately supplied counted treatment phase.
+  fact_semantics: reported_course_dose_without_current_use_confirmation
+- input_id: clinician_action
+  question_ru: Врач решил прекратить агомелатин?
+  data_type: enum
+  unit: null
+  allowed_values:
+  - keep
+  - increase
+  - decrease
+  - stop
+  - not_chosen
+  - unknown
+  - not_assessed
+  required_when: 'для выбранного индивидуального результата: числовой операнд или явно проверяемое источниковое
+    ограничение'
+  show_when: при выборе результата или использовании уже подтверждённого в этом расчёте факта
+  why_needed: Калькулятор не выбирает клиническую стратегию.
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; request this specific necessary fact; no individual dose
+  source_refs:
+  - RU-AGO
+  input_role: required_selected_result_operand_or_source_gate
+  source_locator: §4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    сохранить: keep
+    повысить: increase
+    снизить: decrease
+    прекратить: stop
+    действие не выбрано: not_chosen
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  requirement_predicate:
+    kind: always
+  necessity_reason: Калькулятор не выбирает клиническую стратегию.
+  fact_origin: patient_fact
+clinical_parameters: []
+logic:
+  representation: conditional_source_rule
+  conditions:
+  - Применимость к указанному показанию/форме подтверждена в пределах дозового расчёта; это не полный клинический
+    допуск.
+  actions:
+  - '§4.2 с.2: для прекращения самого агомелатина постепенное снижение не требуется.'
+  - Это не разрешение следующего антидепрессанта в тот же день и не правило отмены других препаратов.
+  parameter_refs: []
+  source_refs:
+  - RU-AGO
+  - RU-GAD
+  clinician_choices:
+  - Необходимость изменения лечения и неоценённые модулем клинические обстоятельства.
+  missing_data_behaviour: insufficient_data с конкретным отсутствующим полем, без безусловной дозы.
+  unsupported_case_behaviour: Назвать неприменимую ветку; не переносить другую форму/показание.
+  contraindicated_case_behaviour: Не выдавать схему противопоказанного сочетания, указать источник.
+  conflicts: []
+  composite_rule_dependencies: []
+  combination_justification: КР определяет клиническую область, инструкция — дозовые параметры; новые коэффициенты
+    не добавлены.
+  result_contract_ref: remediation_round3/result_contracts.yaml#rules/ago-stop
+  individual_output_gate: All required typed inputs and applicable conditional inputs must be known; evaluate every
+    source-specific gate in result_contract. A caution has clinician_choice, not an invented coefficient. No blanket
+    clinical clearance.
+  input_necessity_policy_ref: remediation_round3/necessity_decisions.json#ago-stop
+output:
+  result_type: branch_selected
+  medication_inn: агомелатин
+  dose_per_administration: null
+  administrations_per_day: null
+  total_daily_dose: null
+  unit: mg
+  formulation: Вальдоксан, целые таблетки 25 мг
+  schedule: []
+  warnings:
+  - Последующие этапы условны; максимум не является целью.
+  - Неоценённое клиническое обстоятельство не считается отсутствующим.
+  - Версия копии зафиксирована; последнее содержание реестрового документа проверяется перед клиническим внедрением.
+  - Условие не задано как нулевая длительность washout; интервал до B проверять отдельно.
+  mandatory_checks: []
+  clinician_decisions_remaining: []
+  rounding_or_formulation_rule: Не округлять медицинскую дозу; целые формы/разрешённое деление. Невозможная доза
+    — явный отказ формы.
+  source_refs:
+  - RU-AGO
+  - RU-GAD
+  branches:
+  - branch_id: chosen_stop
+    when: clinician_action=stop; identified current drug; physician chose stop
+    expected_output:
+      result_type: source_stop_action
+      total_daily_dose_mg: null
+      dose_per_administration_mg: null
+      administrations_per_day: null
+      schedule: []
+      missing_fields: []
+      unconditional_future_stages: false
+      mandatory_taper: false
+      next_drug_start_day: null
+      clinical_clearance: false
+    source_basis:
+    - source_id: RU-AGO
+      version: 'Официальная ОХЛП реестра: штамп регистрации 2024-12-28; экспертный отчёт 2024-12-23 №28427/0018;
+        получена 08.10.2026'
+      locator: §4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16
+      sha256: a98d383832688cee9a09588b1a908555d01ed8b659281cdeee2646c1115ce7c1
+    - source_id: RU-GAD
+      version: '2024; каталог: опубликовано 19.09.2024, применяется'
+      locator: §3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78
+      sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+  selection_contract:
+  - unavailable_source
+  - known immediate stop/exclusion
+  - invalid/missing applicable field
+  - unresolved source caution/modifier
+  - dose branch
+sources:
+- source_id: RU-AGO
+  title: Вальдоксан (агомелатин), российская ОХЛП, 25 мг
+  organization_or_authors: Сервье
+  url: https://lk.regmed.ru/Register/EAEU_SmPC
+  doi_or_registry_id: ЛП-№(000528)-(РГ-RU)
+  publication_date: null
+  version_or_update_date: 'Официальная ОХЛП реестра: штамп регистрации 2024-12-28; экспертный отчёт 2024-12-23 №28427/0018;
+    получена 08.10.2026'
+  accessed_on: '2026-10-08'
+  source_type: label
+  jurisdiction: RU/EAEU
+  access_status: full
+  exact_locator: §4.1–4.6 с.1–6; §8–10 с.16
+  evidence_status: Инструкция/ОХЛП; не валидированная модель индивидуальной дозы
+  what_was_tested: Не исследовался создаваемый продукт. Содержание и ограничения описаны в evidence_limitations.
+  evidence_limitations: Полный оригинал производителя прочитан; принадлежность РФ указана §8–9. Актуальность последней
+    регистрационной редакции не выводится из имени файла. Момент начала B опубликован для класса СИОЗС/СИОЗСН; ступени
+    отмены A берутся из его собственного источника, не из исследования эффективности агомелатина. Новая первичная
+    копия получена из указанной строки реестра; старые копии сохранены как исторические. Даты штампов не подменяют
+    незаполненное поле пересмотра. Принадлежность версии и медицинский перенос проверяются раздельно.
+  reuse_license_or_restriction: Открытый доступ не означает разрешение перераспространять полный документ. Сохранены
+    собственное извлечение фактических правил, локаторы и ссылки; код и большие цитаты не копируются.
+  document_fingerprint:
+    source_id: RU-AGO
+    url: https://lk.regmed.ru/Register/EAEU_SmPC
+    sha256: a98d383832688cee9a09588b1a908555d01ed8b659281cdeee2646c1115ce7c1
+    pages: 16
+    accessed_on: '2026-10-08'
+  registry_observation:
+    registry: https://lk.regmed.ru/Register/EAEU_SmPC
+    query: Вальдоксан
+    registration_number: ЛП-№(000528)-(РГ-RU)
+    registration_date: '2022-01-25'
+    forms: таблетки25мг
+    accessed_on: '2026-10-08'
+    read_part: Exact RU/form row observed in official registry; user downloaded after CAPTCHA request; matching
+      title/form and stamps visually checked
+  local_file: remediation_round3/originals/RU-AGO_current.pdf
+  document_copies:
+  - source_id: RU-AGO
+    local_file: source_downloads/Вальдоксан — агомелатин.pdf
+    sha256: 1cf8e71b5c27891e17b5b7ab4dd7c8c02697a1d44bb287a57a1ee9de0fb85bd6
+    version: Копия производителя с именем 20241228; первичная регистрация 25.01.2022; поле пересмотра пустое
+    url: https://servier.ru/wp-content/uploads/2023/09/20241228_spc-ru_valdoxan_rus.pdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: false
+    latest_registration_revision_confirmed: false
+  - source_id: RU-AGO
+    local_file: audit/retrieved/RU-AGO.pdf
+    sha256: 1cf8e71b5c27891e17b5b7ab4dd7c8c02697a1d44bb287a57a1ee9de0fb85bd6
+    version: Копия производителя с именем 20241228; первичная регистрация 25.01.2022; поле пересмотра пустое
+    url: https://servier.ru/wp-content/uploads/2023/09/20241228_spc-ru_valdoxan_rus.pdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: false
+    latest_registration_revision_confirmed: false
+  - source_id: RU-AGO
+    local_file: remediation/retrieved/RU-AGO.pdf
+    sha256: 1cf8e71b5c27891e17b5b7ab4dd7c8c02697a1d44bb287a57a1ee9de0fb85bd6
+    version: Копия производителя с именем 20241228; первичная регистрация 25.01.2022; поле пересмотра пустое
+    url: https://servier.ru/wp-content/uploads/2023/09/20241228_spc-ru_valdoxan_rus.pdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: false
+    latest_registration_revision_confirmed: false
+  - source_id: RU-AGO
+    local_file: ../tmp_acceptance/AGO.pdf
+    sha256: 1cf8e71b5c27891e17b5b7ab4dd7c8c02697a1d44bb287a57a1ee9de0fb85bd6
+    version: Копия производителя с именем 20241228; первичная регистрация 25.01.2022; поле пересмотра пустое
+    url: https://servier.ru/wp-content/uploads/2023/09/20241228_spc-ru_valdoxan_rus.pdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: false
+    latest_registration_revision_confirmed: false
+  - source_id: RU-AGO
+    local_file: remediation_round3/originals/RU-AGO_current.pdf
+    sha256: a98d383832688cee9a09588b1a908555d01ed8b659281cdeee2646c1115ce7c1
+    version: 'Официальная ОХЛП реестра: штамп регистрации 2024-12-28; экспертный отчёт 2024-12-23 №28427/0018; получена
+      08.10.2026'
+    url: https://lk.regmed.ru/Register/EAEU_SmPC
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: true
+  dates:
+    registration: '2022-01-25'
+    revision: null
+    publication: null
+    download: '2026-10-08'
+    document_registration_stamp: '2024-12-28'
+    expert_report: '2024-12-23'
+  latest_registration_revision_confirmed: true
+  latest_registry_document_comparison:
+    record: remediation_round3/current_registry_documents.json#RU-AGO
+    original: remediation_round3/originals/RU-AGO_current.pdf
+    sha256: a98d383832688cee9a09588b1a908555d01ed8b659281cdeee2646c1115ce7c1
+    authority_evidence: Exact RU/form row observed in official registry; user downloaded after CAPTCHA request;
+      matching title/form and stamps visually checked
+    comparison_scope: Listed primary sections and dependency review; no inference of byte identity to historical
+      copies
+  own_read_scope:
+    text_pages:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 16
+    visual_pages:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    remaining_sections_not_claimed_read: true
+- source_id: RU-GAD
+  title: Генерализованное тревожное расстройство, КР 457_3
+  organization_or_authors: Минздрав РФ; Российское общество психиатров
+  url: https://apicr.minzdrav.gov.ru/api.ashx?id=457_3&op=GetClinrecPdf
+  doi_or_registry_id: '457_3'
+  publication_date: null
+  version_or_update_date: '2024; каталог: опубликовано 19.09.2024, применяется'
+  accessed_on: '2026-10-08'
+  source_type: guideline
+  jurisdiction: RU
+  access_status: full
+  exact_locator: §3.2, PDF с.21–30; приложение Б1 с.76; Б2 с.77–78
+  evidence_status: Клиническая рекомендация; не валидация калькулятора
+  what_was_tested: Не исследовался создаваемый продукт. Содержание и ограничения описаны в evidence_limitations.
+  evidence_limitations: Взрослые F41.1. УУР/УДД относятся к конкретным рекомендациям, а не к точности индивидуального
+    дозирования.
+  reuse_license_or_restriction: Открытый доступ не означает разрешение перераспространять полный документ. Сохранены
+    собственное извлечение фактических правил, локаторы и ссылки; код и большие цитаты не копируются.
+  document_fingerprint:
+    source_id: RU-GAD
+    url: https://apicr.minzdrav.gov.ru/api.ashx?id=457_3&op=GetClinrecPdf
+    sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+    pages: 121
+  local_file: audit/retrieved/RU-GAD.pdf
+  document_copies:
+  - source_id: RU-GAD
+    local_file: audit/retrieved/RU-GAD.pdf
+    sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+    version: '2024; каталог: опубликовано 19.09.2024, применяется'
+    url: https://apicr.minzdrav.gov.ru/api.ashx?id=457_3&op=GetClinrecPdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: false
+  - source_id: RU-GAD
+    local_file: remediation/retrieved/RU-GAD.pdf
+    sha256: c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a
+    version: '2024; каталог: опубликовано 19.09.2024, применяется'
+    url: https://apicr.minzdrav.gov.ru/api.ashx?id=457_3&op=GetClinrecPdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: false
+  dates:
+    registration: null
+    revision: null
+    publication: null
+    download: '2026-10-08'
+  latest_registration_revision_confirmed: false
+  current_guideline_status_evidence: remediation_round2/catalog_check.json; 08.10.2026; CodeVersion/ApplyStatusCalculated=1
+verification:
+  primary_source_checked: true
+  all_clinical_parameters_have_sources: true
+  population_and_indication_checked: true
+  russian_applicability_checked: true
+  formulation_feasibility_checked: true
+  combined_rules_justified: true
+  source_transfer_check: Current exact Russian product originals obtained and active owner/version/hash/locators
+    synchronized; listed primary sections reviewed. Full independent medical acceptance and question necessity remain
+    separate; calculator_not_implemented.
+  clinical_review: not_performed
+  product_clinical_validation: not_performed
+  ready_for_technical_implementation: true
+  unresolved_items:
+  - Минимальность входов/полные обычные пути и повторная независимая проверка медицинских исправлений остаются отдельными
+    условиями приёмки V2.
+  transfer_scope: Explicit source-bound branch contracts and prepared expectations only. Current originals obtained;
+    pending independent findings, result-specific necessity and V2 ordinary-question limit are not inferred complete
+    from download. No clinical validation.
+  round3_status: candidate_primary_transfer_and_necessity_review; independent acceptance pending
+  russian_applicability_scope: Identity of the exact registered Russian product/form and published indication scope;
+    does not grant patient clearance or prove every transferred condition.
+test_cases:
+- case_id: ago-stop__stop50
+  synthetic: true
+  given:
+    current_dose: 50
+    clinician_action: прекратить
+  expected:
+    mandatory_taper: false
+    next_drug_start_day: null
+  source_refs:
+  - RU-AGO
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+- case_id: ago-stop__unknown-action
+  synthetic: true
+  given:
+    clinician_action: неизвестно
+  expected:
+    result_type: insufficient_data
+    missing:
+    - clinician_action
+  source_refs:
+  - RU-AGO
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+profile:
+  country: RU
+  selection_status: RU_profile_research
+  foreign_fallback_allowed: false
+card_type: numeric_source_rule
+input_contract_ref: remediation_round3/input_contracts.yaml#fragment_bindings/ago-stop

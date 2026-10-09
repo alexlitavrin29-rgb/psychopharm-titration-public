@@ -1,0 +1,24 @@
+{
+  "groups": 5718,
+  "conflicts": [],
+  "fields": [
+    "result_type",
+    "total_daily_dose_mg",
+    "dose_per_administration_mg",
+    "administrations_per_day",
+    "schedule",
+    "stop_medication",
+    "stop_medications",
+    "source_actions",
+    "full_pair_calendar",
+    "target_start_allowed",
+    "target_source_start_mg",
+    "overlap_allowed_on_first_day_of_A_reduction",
+    "duration_constraint",
+    "published_option_mg",
+    "recommended_mg",
+    "arithmetic_total_mg",
+    "source_initial_mg"
+  ],
+  "scope": "Raw payload differences, require semantic reading; source action synonyms or missing vs source-condition action are not automatically contradictory."
+}

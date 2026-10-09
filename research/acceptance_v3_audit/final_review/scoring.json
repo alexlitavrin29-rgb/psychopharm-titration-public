@@ -1,0 +1,50 @@
+{
+  "snapshot": "b13033a0687a28b4da4299c171ac6b88a96667e2d6888ab8aecf5e9c85af0514",
+  "method": "Independent expert dimensions, not fraction of fulfilled criteria",
+  "dimensions": [
+    {
+      "dimension": "Источники, версии, применимость РФ",
+      "score": 9.5,
+      "weight_percent": 25,
+      "contribution": 2.375,
+      "reason": "Current official originals, sameSHA primary reading/precise owners; human registry provenance distinguished from own download. No source-unavailable active medical basis. Unused source/PIL text not certified."
+    },
+    {
+      "dimension": "Правила, ограничения, воспроизводимость",
+      "score": 9.3,
+      "weight_percent": 30,
+      "contribution": 2.79,
+      "reason": "All active used numeric/condition norms checked; own boundary/actions/phase results coherent. Raw24 negative metadata and bounded-result/dialogue contract residue prevent full score."
+    },
+    {
+      "dimension": "Входы, unknown и пути",
+      "score": 7.4,
+      "weight_percent": 20,
+      "contribution": 1.48,
+      "reason": "Honest complete independent counts/provenance; unknown no dose/phase/class invention. Exact finite mandatory crossproducts after decisive bound remain material. No penalty for >15."
+    },
+    {
+      "dimension": "Покрытие ТЗ и честность приёмки",
+      "score": 8.8,
+      "weight_percent": 15,
+      "contribution": 1.32,
+      "reason": "All38 cards/all30 criteria examined, USED primary condition inventory complete.28 fulfilled/2 partial, explicit transfer and gaps; full accepted research not yet complete."
+    },
+    {
+      "dimension": "Техническая согласованность и перенос",
+      "score": 8.2,
+      "weight_percent": 10,
+      "contribution": 0.82,
+      "reason": "Read-only baseline and graph assertions repeat; same-given coherent.24 raw metadata errors, stale V2 pointers,34/35 obsolete family mutation and legacy KeyError reduce reproducibility."
+    }
+  ],
+  "raw_unrounded": "8.785",
+  "raw_one_decimal": 8.8,
+  "cap": 6,
+  "cap_reason": "Существенный незакрытый№17: finite V3-01/02/03/04/07 current mandatory/result scope defects. Не превышение15 и не отсутствие глобального математического минимума.",
+  "cap4_applied": false,
+  "cap4_reason": "В фактически переносимых проверенных outputs не установлена критическая erroneous dose/unit/interval или однозначный known contraindicated numerical permission.",
+  "final_score": 6.0,
+  "source_cap_method": "INDEPENDENT_AUDIT_PROMPT.md; research/audit/04_scoring.md; V3 modifies only criterion18",
+  "clinical_validation": false
+}

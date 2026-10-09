@@ -1,0 +1,120 @@
+{
+  "status": "pass",
+  "active_source_binding_and_projected_fact_checks": true,
+  "primary_condition_guards": [
+    {
+      "source_id": "RU-PAROX",
+      "physical_page": 7,
+      "sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069",
+      "source_phrases_present": true,
+      "scope": "Specific independently selected source condition/action, not full document review or calculator execution"
+    },
+    {
+      "source_id": "RU-PAROX",
+      "physical_page": 9,
+      "sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069",
+      "source_phrases_present": true,
+      "scope": "Specific independently selected source condition/action, not full document review or calculator execution"
+    },
+    {
+      "source_id": "RU-FLUVOX",
+      "physical_page": 5,
+      "sha256": "01b6621adad68dfeaf1fbe00db21935b6df1edee141c67307a9b67ad177893f2",
+      "source_phrases_present": true,
+      "scope": "Specific independently selected source condition/action, not full document review or calculator execution"
+    },
+    {
+      "source_id": "RU-FLUVOX",
+      "physical_page": 7,
+      "sha256": "01b6621adad68dfeaf1fbe00db21935b6df1edee141c67307a9b67ad177893f2",
+      "source_phrases_present": true,
+      "scope": "Specific independently selected source condition/action, not full document review or calculator execution"
+    },
+    {
+      "source_id": "RU-VENLA-XR",
+      "physical_page": 9,
+      "sha256": "a21e90141db69d9be5ca44ac3c8c6059c8c82a880f34bbf15143348c36ef4666",
+      "source_phrases_present": true,
+      "scope": "Specific independently selected source condition/action, not full document review or calculator execution"
+    },
+    {
+      "source_id": "RU-VENLA-XR",
+      "physical_page": 13,
+      "sha256": "a21e90141db69d9be5ca44ac3c8c6059c8c82a880f34bbf15143348c36ef4666",
+      "source_phrases_present": true,
+      "scope": "Specific independently selected source condition/action, not full document review or calculator execution"
+    },
+    {
+      "source_id": "RU-SER",
+      "physical_page": 10,
+      "sha256": "3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba",
+      "source_phrases_present": true,
+      "scope": "Specific independently selected source condition/action, not full document review or calculator execution"
+    },
+    {
+      "source_id": "RU-DULOX",
+      "physical_page": 8,
+      "sha256": "0551a7306ca4a56b552336bb63fa34905cf4e312702ba811a792221892a42ca1",
+      "source_phrases_present": true,
+      "scope": "Specific independently selected source condition/action, not full document review or calculator execution"
+    },
+    {
+      "source_id": "RU-DULOX",
+      "physical_page": 7,
+      "sha256": "0551a7306ca4a56b552336bb63fa34905cf4e312702ba811a792221892a42ca1",
+      "source_phrases_present": true,
+      "scope": "Specific independently selected source condition/action, not full document review or calculator execution"
+    },
+    {
+      "source_id": "RU-ESC",
+      "physical_page": 4,
+      "sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "source_phrases_present": true,
+      "scope": "Specific independently selected source condition/action, not full document review or calculator execution"
+    },
+    {
+      "source_id": "RU-ESC",
+      "physical_page": 6,
+      "sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "source_phrases_present": true,
+      "scope": "Specific independently selected source condition/action, not full document review or calculator execution"
+    }
+  ],
+  "negative_mutations": [
+    {
+      "mutation": "source version bound to wrong owner",
+      "detected": true
+    },
+    {
+      "mutation": "PAROX screening gate removed",
+      "detected": true
+    },
+    {
+      "mutation": "SER CYP3A4 class removed",
+      "detected": true
+    },
+    {
+      "mutation": "DULOX CYP2D6 substrate lost",
+      "detected": true
+    },
+    {
+      "mutation": "XR BP greater_than changed to inclusive",
+      "detected": true
+    },
+    {
+      "mutation": "unasked value confirmed negative",
+      "detected": true
+    },
+    {
+      "mutation": "ESC arrhythmia ECG action removed",
+      "detected": true
+    },
+    {
+      "mutation": "PAROX syndrome supportive action removed",
+      "detected": true
+    }
+  ],
+  "calculator_executed": false,
+  "clinical_validation": "not_performed",
+  "errors": []
+}

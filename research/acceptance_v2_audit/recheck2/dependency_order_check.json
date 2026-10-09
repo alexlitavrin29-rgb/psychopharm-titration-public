@@ -1,0 +1,911 @@
+{
+  "scope": "New-calculation dialogue dependency order. This does not change final full-given fact counts or execute medical logic. Facts are not considered available before their ask unless explicitly in initial selections.",
+  "affected_paths": [
+    {
+      "rule_id": "ser-adult-adjust",
+      "case_id": "ser-adult-adjust--branch-increase",
+      "problems": [
+        {
+          "input": "time_at_dose",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 27
+        },
+        {
+          "input": "response",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 30
+        },
+        {
+          "input": "tolerability",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 31
+        },
+        {
+          "input": "adherence",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 32
+        },
+        {
+          "input": "akathisia",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 37
+        }
+      ],
+      "count": 15,
+      "ordinary": true
+    },
+    {
+      "rule_id": "ser-adult-adjust",
+      "case_id": "ser-adult-adjust--branch-keep",
+      "problems": [
+        {
+          "input": "time_at_dose",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 37,
+          "dependent_check_index": 27
+        },
+        {
+          "input": "response",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 37,
+          "dependent_check_index": 28
+        },
+        {
+          "input": "tolerability",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 37,
+          "dependent_check_index": 29
+        },
+        {
+          "input": "adherence",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 37,
+          "dependent_check_index": 30
+        },
+        {
+          "input": "akathisia",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 37,
+          "dependent_check_index": 35
+        }
+      ],
+      "count": 13,
+      "ordinary": true
+    },
+    {
+      "rule_id": "ser-adult-adjust",
+      "case_id": "ser-adult-adjust--branch-increase-from50",
+      "problems": [
+        {
+          "input": "time_at_dose",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 27
+        },
+        {
+          "input": "response",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 30
+        },
+        {
+          "input": "tolerability",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 31
+        },
+        {
+          "input": "adherence",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 32
+        },
+        {
+          "input": "akathisia",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 37
+        }
+      ],
+      "count": 15,
+      "ordinary": true
+    },
+    {
+      "rule_id": "ser-adult-adjust",
+      "case_id": "ser-adult-adjust--branch-increase-from150",
+      "problems": [
+        {
+          "input": "time_at_dose",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 27
+        },
+        {
+          "input": "response",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 30
+        },
+        {
+          "input": "tolerability",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 31
+        },
+        {
+          "input": "adherence",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 32
+        },
+        {
+          "input": "akathisia",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 37
+        }
+      ],
+      "count": 15,
+      "ordinary": true
+    },
+    {
+      "rule_id": "ser-adult-adjust",
+      "case_id": "ser-adult-adjust--branch-keep50",
+      "problems": [
+        {
+          "input": "time_at_dose",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 37,
+          "dependent_check_index": 27
+        },
+        {
+          "input": "response",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 37,
+          "dependent_check_index": 28
+        },
+        {
+          "input": "tolerability",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 37,
+          "dependent_check_index": 29
+        },
+        {
+          "input": "adherence",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 37,
+          "dependent_check_index": 30
+        },
+        {
+          "input": "akathisia",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 37,
+          "dependent_check_index": 35
+        }
+      ],
+      "count": 13,
+      "ordinary": true
+    },
+    {
+      "rule_id": "ser-adult-adjust",
+      "case_id": "ser-adult-adjust--branch-keep150",
+      "problems": [
+        {
+          "input": "time_at_dose",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 37,
+          "dependent_check_index": 27
+        },
+        {
+          "input": "response",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 37,
+          "dependent_check_index": 28
+        },
+        {
+          "input": "tolerability",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 37,
+          "dependent_check_index": 29
+        },
+        {
+          "input": "adherence",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 37,
+          "dependent_check_index": 30
+        },
+        {
+          "input": "akathisia",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 37,
+          "dependent_check_index": 35
+        }
+      ],
+      "count": 13,
+      "ordinary": true
+    },
+    {
+      "rule_id": "ser-adult-adjust",
+      "case_id": "ser-adult-adjust--branch-keep200",
+      "problems": [
+        {
+          "input": "time_at_dose",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 37,
+          "dependent_check_index": 27
+        },
+        {
+          "input": "response",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 37,
+          "dependent_check_index": 28
+        },
+        {
+          "input": "tolerability",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 37,
+          "dependent_check_index": 29
+        },
+        {
+          "input": "adherence",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 37,
+          "dependent_check_index": 30
+        },
+        {
+          "input": "akathisia",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 37,
+          "dependent_check_index": 35
+        }
+      ],
+      "count": 13,
+      "ordinary": true
+    },
+    {
+      "rule_id": "ser-adult-adjust",
+      "case_id": "ser-adult-adjust--branch-initial25",
+      "problems": [
+        {
+          "input": "time_at_dose",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 27
+        },
+        {
+          "input": "response",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 30
+        },
+        {
+          "input": "tolerability",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 31
+        },
+        {
+          "input": "adherence",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 32
+        },
+        {
+          "input": "akathisia",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 37
+        }
+      ],
+      "count": 15,
+      "ordinary": true
+    },
+    {
+      "rule_id": "ser-adult-adjust",
+      "case_id": "ser-adult-adjust--branch-other-source-dose",
+      "problems": [
+        {
+          "input": "time_at_dose",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 27
+        },
+        {
+          "input": "response",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 30
+        },
+        {
+          "input": "tolerability",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 31
+        },
+        {
+          "input": "adherence",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 32
+        },
+        {
+          "input": "akathisia",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 37
+        }
+      ],
+      "count": 15,
+      "ordinary": true
+    },
+    {
+      "rule_id": "ser-adult-adjust",
+      "case_id": "ser-adult-adjust--branch-ceiling",
+      "problems": [
+        {
+          "input": "time_at_dose",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 27
+        },
+        {
+          "input": "response",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 30
+        },
+        {
+          "input": "tolerability",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 31
+        },
+        {
+          "input": "adherence",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 32
+        },
+        {
+          "input": "akathisia",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 37
+        }
+      ],
+      "count": 15,
+      "ordinary": false
+    },
+    {
+      "rule_id": "ser-adult-adjust",
+      "case_id": "ser-adult-adjust--branch-early",
+      "problems": [
+        {
+          "input": "time_at_dose",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 27
+        },
+        {
+          "input": "response",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 30
+        },
+        {
+          "input": "tolerability",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 31
+        },
+        {
+          "input": "adherence",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 32
+        },
+        {
+          "input": "akathisia",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 37
+        }
+      ],
+      "count": 15,
+      "ordinary": false
+    },
+    {
+      "rule_id": "ser-adult-adjust",
+      "case_id": "ser-adult-adjust--branch-decrease",
+      "problems": [
+        {
+          "input": "time_at_dose",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 37,
+          "dependent_check_index": 27
+        },
+        {
+          "input": "response",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 37,
+          "dependent_check_index": 28
+        },
+        {
+          "input": "tolerability",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 37,
+          "dependent_check_index": 29
+        },
+        {
+          "input": "adherence",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 37,
+          "dependent_check_index": 30
+        },
+        {
+          "input": "akathisia",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 37,
+          "dependent_check_index": 35
+        }
+      ],
+      "count": 13,
+      "ordinary": false
+    },
+    {
+      "rule_id": "ser-adult-adjust",
+      "case_id": "ser-adult-adjust--branch-clinical_option",
+      "problems": [
+        {
+          "input": "time_at_dose",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 47,
+          "dependent_check_index": 27
+        },
+        {
+          "input": "response",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 47,
+          "dependent_check_index": 30
+        },
+        {
+          "input": "tolerability",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 47,
+          "dependent_check_index": 33
+        },
+        {
+          "input": "adherence",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 47,
+          "dependent_check_index": 36
+        },
+        {
+          "input": "akathisia",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 47,
+          "dependent_check_index": 43
+        }
+      ],
+      "count": 18,
+      "ordinary": false
+    },
+    {
+      "rule_id": "ser-adult-adjust",
+      "case_id": "ser-adult-adjust--condition-seizure_state-новые приступы",
+      "problems": [
+        {
+          "input": "time_at_dose",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 27
+        },
+        {
+          "input": "response",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 30
+        },
+        {
+          "input": "tolerability",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 31
+        },
+        {
+          "input": "adherence",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 32
+        },
+        {
+          "input": "akathisia",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 37
+        }
+      ],
+      "count": 15,
+      "ordinary": false
+    },
+    {
+      "rule_id": "ser-adult-adjust",
+      "case_id": "ser-adult-adjust--maoi-14days",
+      "problems": [
+        {
+          "input": "time_at_dose",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 27
+        },
+        {
+          "input": "response",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 30
+        },
+        {
+          "input": "tolerability",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 31
+        },
+        {
+          "input": "adherence",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 32
+        },
+        {
+          "input": "akathisia",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 37
+        }
+      ],
+      "count": 18,
+      "ordinary": false
+    },
+    {
+      "rule_id": "ser-adult-adjust",
+      "case_id": "ser-adult-adjust--round2-active-mania-stop",
+      "problems": [
+        {
+          "input": "time_at_dose",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 27
+        },
+        {
+          "input": "response",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 30
+        },
+        {
+          "input": "tolerability",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 31
+        },
+        {
+          "input": "adherence",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 32
+        },
+        {
+          "input": "akathisia",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 37
+        }
+      ],
+      "count": 15,
+      "ordinary": false
+    },
+    {
+      "rule_id": "ser-adult-adjust",
+      "case_id": "ser-adult-adjust--audit-v2-interaction-strong_CYP3A4",
+      "problems": [
+        {
+          "input": "time_at_dose",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 27
+        },
+        {
+          "input": "response",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 30
+        },
+        {
+          "input": "tolerability",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 31
+        },
+        {
+          "input": "adherence",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 32
+        },
+        {
+          "input": "akathisia",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 37
+        }
+      ],
+      "count": 16,
+      "ordinary": false
+    },
+    {
+      "rule_id": "ser-adult-adjust",
+      "case_id": "ser-adult-adjust--audit-recheck-symptomatic_hyponatremia-positive",
+      "problems": [
+        {
+          "input": "time_at_dose",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 27
+        },
+        {
+          "input": "response",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 30
+        },
+        {
+          "input": "tolerability",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 31
+        },
+        {
+          "input": "adherence",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 32
+        },
+        {
+          "input": "akathisia",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 37
+        }
+      ],
+      "count": 16,
+      "ordinary": false
+    },
+    {
+      "rule_id": "ser-adult-adjust",
+      "case_id": "ser-adult-adjust--audit-recheck-symptomatic_hyponatremia-negative",
+      "problems": [
+        {
+          "input": "time_at_dose",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 27
+        },
+        {
+          "input": "response",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 30
+        },
+        {
+          "input": "tolerability",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 31
+        },
+        {
+          "input": "adherence",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 32
+        },
+        {
+          "input": "akathisia",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 37
+        }
+      ],
+      "count": 16,
+      "ordinary": true
+    },
+    {
+      "rule_id": "ser-adult-adjust",
+      "case_id": "ser-adult-adjust--audit-recheck-symptomatic_hyponatremia-unknown",
+      "problems": [
+        {
+          "input": "time_at_dose",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 27
+        },
+        {
+          "input": "response",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 30
+        },
+        {
+          "input": "tolerability",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 31
+        },
+        {
+          "input": "adherence",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 32
+        },
+        {
+          "input": "akathisia",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 37
+        }
+      ],
+      "count": 16,
+      "ordinary": false
+    },
+    {
+      "rule_id": "ser-adult-adjust",
+      "case_id": "ser-adult-adjust--audit-recheck-symptomatic_hyponatremia-omitted",
+      "problems": [
+        {
+          "input": "time_at_dose",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 27
+        },
+        {
+          "input": "response",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 30
+        },
+        {
+          "input": "tolerability",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 31
+        },
+        {
+          "input": "adherence",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 32
+        },
+        {
+          "input": "akathisia",
+          "controller": "clinician_action",
+          "controller_asked": true,
+          "controller_ask_index": 41,
+          "dependent_check_index": 37
+        }
+      ],
+      "count": 15,
+      "ordinary": true
+    }
+  ],
+  "affected_rules": [
+    "ser-adult-adjust"
+  ]
+}

@@ -1,0 +1,335 @@
+schema_version: '1.0'
+rule_id: switch-fluox-ser
+development_status: extracted_research_not_executable
+language: ru
+identity:
+  title: 'флуоксетин → сертралин: направленный переход'
+  mode: switch
+  drug_inn: сертралин
+  from_drug_inn: флуоксетин
+  to_drug_inn: сертралин
+  formulation: Оба конкретных продукта и формы проверяются отдельно
+  route: oral
+  diagnosis_label_ru: Депрессивный эпизод / рекуррентное депрессивное расстройство
+  classification_system: МКБ-10
+  diagnosis_code: F32/F33
+  jurisdiction: foreign_research
+applicability:
+  population_description: Взрослые с депрессией, для которых врач выбрал смену. Чистое тревожное показание,
+    дети, беременность/лактация не получают автоматически этот иностранный протокол.
+  age_constraints:
+  - population: взрослые
+    source_ref: UK-SPS-SSRI
+    source_locator: Название страницы и Advice for all antidepressants
+  pregnancy: Решение по применимости/пользе и риску отдельно; без опубликованной числовой поправки. Стандартная
+    карточка не выдаёт автоматическую дозу при беременности.
+  lactation: Проверять отдельные ограничения источника. Стандартная карточка не выдаёт автоматическую дозу
+    при кормлении.
+  renal_constraints: []
+  hepatic_constraints: []
+  comorbidity_constraints: []
+  interacting_drugs: []
+  other_conditions: []
+  exclusions:
+  - Гиперчувствительность
+  - Непроверенные противопоказания/взаимодействия не считать отсутствующими
+  indication_status_in_russia: foreign_only_not_verified
+  source_refs:
+  - UK-SPS-SSRI
+inputs:
+- input_id: age
+  question_ru: Возраст?
+  data_type: integer
+  unit: year
+  allowed_values: []
+  required_when: для индивидуального результата
+  show_when: при выборе этой карточки
+  why_needed: Область применения взрослого источника.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно
+    показать условно.
+  source_refs:
+  - UK-SPS-SSRI
+- input_id: from_dose
+  question_ru: Фактическая суточная доза исходного препарата?
+  data_type: number
+  unit: mg/day
+  allowed_values: []
+  required_when: для индивидуального результата
+  show_when: при выборе этой карточки
+  why_needed: Контекст отмены/необходимость предшествующего снижения.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно
+    показать условно.
+  source_refs:
+  - UK-SPS-SSRI
+- input_id: last_dose
+  question_ru: Когда принят последний приём исходного препарата?
+  data_type: datetime
+  unit: null
+  allowed_values: []
+  required_when: для индивидуального результата
+  show_when: при выборе этой карточки
+  why_needed: От него отсчитывается интервал без препарата.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно
+    показать условно.
+  source_refs:
+  - UK-SPS-SSRI
+- input_id: other_medicines
+  question_ru: Другие препараты, недавно отменённые препараты и текущие сочетания?
+  data_type: medication_list
+  unit: null
+  allowed_values: []
+  required_when: для индивидуального результата
+  show_when: при выборе этой карточки
+  why_needed: Исключить противопоказанное перекрытие/взаимодействие.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно
+    показать условно.
+  source_refs:
+  - UK-SPS-SSRI
+- input_id: forms
+  question_ru: Какие формы обоих препаратов подтверждены?
+  data_type: two_drug_forms
+  unit: null
+  allowed_values: []
+  required_when: для индивидуального результата
+  show_when: при выборе этой карточки
+  why_needed: Нет универсальной взаимозаменяемости/эквивалентности.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно
+    показать условно.
+  source_refs:
+  - UK-SPS-SSRI
+- input_id: pregnancy
+  question_ru: Беременность установлена/возможна?
+  data_type: enum
+  unit: null
+  allowed_values:
+  - да
+  - нет
+  - неизвестно
+  required_when: для индивидуального результата
+  show_when: при выборе этой карточки
+  why_needed: Самостоятельная популяционная оценка.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно
+    показать условно.
+  source_refs:
+  - UK-SPS-SSRI
+- input_id: lactation
+  question_ru: Есть кормление грудью?
+  data_type: enum
+  unit: null
+  allowed_values:
+  - да
+  - нет
+  - неизвестно
+  required_when: для индивидуального результата
+  show_when: при выборе этой карточки
+  why_needed: Самостоятельная популяционная оценка.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно
+    показать условно.
+  source_refs:
+  - UK-SPS-SSRI
+- input_id: withdrawal_risk
+  question_ru: Имеются значимые симптомы отмены/предшествующей непереносимости по оценке врача?
+  data_type: enum
+  unit: null
+  allowed_values:
+  - да
+  - нет
+  - неизвестно
+  required_when: для индивидуального результата
+  show_when: при выборе этой карточки
+  why_needed: Прямой переход normally possible не безусловен.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно
+    показать условно.
+  source_refs:
+  - UK-SPS-SSRI
+- input_id: clinician_strategy
+  question_ru: Врач выбрал именно опубликованную стратегию для этого направления?
+  data_type: enum
+  unit: null
+  allowed_values:
+  - да
+  - нет
+  - неизвестно
+  required_when: для индивидуального результата
+  show_when: при выборе этой карточки
+  why_needed: Калькулятор не выбирает переход автоматически и не выводит эквивалентную дозу.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно
+    показать условно.
+  source_refs:
+  - UK-SPS-SSRI
+clinical_parameters:
+- parameter_id: before_stop
+  meaning: Суточная доза, до которой постепенно снизить перед прекращением
+  value: 20
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: mg/day
+  source_ref: UK-SPS-SSRI
+  source_locator: Another SSRI → From fluoxetine
+  source_meaning: предписание
+  derivation: null
+- parameter_id: washout
+  meaning: Интервал без препарата выбирает врач индивидуально
+  value: null
+  lower: 4
+  upper: 7
+  lower_inclusive: true
+  upper_inclusive: true
+  unit: day
+  source_ref: UK-SPS-SSRI
+  source_locator: Another SSRI → From fluoxetine
+  source_meaning: диапазон
+  derivation: null
+- parameter_id: residual
+  meaning: Возможное сохранение взаимодействий после прекращения
+  value: null
+  lower: 5
+  upper: 6
+  lower_inclusive: true
+  upper_inclusive: true
+  unit: week
+  source_ref: UK-SPS-SSRI
+  source_locator: Another SSRI → From fluoxetine
+  source_meaning: диапазон
+  derivation: null
+logic:
+  representation: schedule
+  conditions:
+  - Диагноз, препарат и режим выбрал врач. Соответствие популяции/форме и ограничения источника подтверждены.
+  actions:
+  - Постепенно снизить флуоксетин до before_stop и прекратить. Дозовых ступеней/сроков снижения к этой дозе
+    страница не даёт.
+  - После прекращения выдержать washout; конкретную длительность выбирает врач. Затем начать low dose SSRI;
+    точное значение для сертралина этим переходом не задано.
+  - Учитывать residual взаимодействия; 4 дня не означают полного исчезновения флуоксетина. Не заменять все
+    переходы интервалом 4–7 дней.
+  parameter_refs:
+  - before_stop
+  - washout
+  - residual
+  source_refs:
+  - UK-SPS-SSRI
+  clinician_choices:
+  - Применимость при особых состояниях и взаимодействиях
+  - Необходимость следующего условного шага
+  missing_data_behaviour: Назвать обязательные неизвестные поля; результат insufficient_data. Справочные этапы
+    можно показать как условные, без безусловной дозы пациенту.
+  unsupported_case_behaviour: not_applicable для этой карточки; указать конкретную отсутствующую ветку, не
+    запретить всё лечение.
+  contraindicated_case_behaviour: Не выдавать дозовую схему противопоказанного сочетания; отобразить источник
+    и причину.
+  conflicts: []
+  composite_rule_dependencies: []
+  combination_justification: Самостоятельные поправки не перемножаются. Совпадение числа не подтверждает применимость
+    их сочетания.
+output:
+  result_type: clinician_choice
+  medication_inn: сертралин
+  dose_per_administration: null
+  administrations_per_day: null
+  total_daily_dose: null
+  unit: mg
+  formulation: 'Золофт: таблетки, покрытые плёночной оболочкой; 50/100 мг'
+  schedule: []
+  warnings:
+  - Условная схема источника, не автономное назначение. Максимум не является целью.
+  - Подтвердить противопоказания и взаимодействия исходной инструкции.
+  mandatory_checks:
+  - Проверить соответствие источнику, указанное в applicability и inputs.
+  clinician_decisions_remaining:
+  - Допустимость перехода в данном случае
+  - Недостающие дозовые ступени отмены/целевая доза, если источник их не задаёт
+  rounding_or_formulation_rule: Не округлять медицинскую дозу; использовать только разрешённую форму/деление.
+    При невозможности дозы формой — явно сообщить.
+  source_refs:
+  - UK-SPS-SSRI
+sources:
+- source_id: UK-SPS-SSRI
+  title: 'SSRIs to other antidepressants: switching in adults'
+  organization_or_authors: NHS Specialist Pharmacy Service
+  url: https://sps.nhs.uk/articles/ssris-to-other-antidepressants-switching-in-adults/
+  doi_or_registry_id: null
+  publication_date: '2023-02-17'
+  version_or_update_date: 17.02.2023; обновлено 11.04.2024; история 31.05.2024 — ссылка
+  accessed_on: '2026-10-08'
+  source_type: expert_protocol
+  jurisdiction: UK
+  access_status: full
+  exact_locator: Specific advice when switching from SSRIs → Another SSRI / Agomelatine / Moclobemide / Clomipramine
+    / SNRIs
+  evidence_status: Профессиональная рекомендация по стратегии; не испытание нового калькулятора
+  what_was_tested: Не исследовался создаваемый продукт. Содержание и ограничения описаны в evidence_limitations.
+  evidence_limitations: Взрослые, контекст лечения депрессии. Normally possible — не безусловный приказ. Нет
+    универсальной эквивалентности доз и полного расписания всех снижений.
+  reuse_license_or_restriction: Открытый доступ не означает разрешение перераспространять полный документ.
+    Сохранены собственное извлечение фактических правил, локаторы и ссылки; код и большие цитаты не копируются.
+  document_fingerprint:
+    url: https://sps.nhs.uk/articles/ssris-to-other-antidepressants-switching-in-adults/
+    accessed_on: '2026-10-08'
+    sha256: 2d5608f9f61e7a465074b3202e7f16f433542dfa29cb15533fe7019dcfdd7da3
+    status: 200
+verification:
+  primary_source_checked: true
+  all_clinical_parameters_have_sources: true
+  population_and_indication_checked: true
+  russian_applicability_checked: false
+  formulation_feasibility_checked: false
+  combined_rules_justified: false
+  source_transfer_check: extraction_checked; calculator_not_implemented
+  clinical_review: not_performed
+  product_clinical_validation: not_performed
+  ready_for_technical_implementation: false
+  unresolved_items:
+  - Иностранная рекомендация; применимость конкретного препарата/формы РФ не подтверждена.
+  - Переход — иностранная рекомендация для взрослой депрессии; для тревожного показания и иных популяций требуется
+    отдельное обоснование.
+test_cases:
+- case_id: switch-fluox-ser__fluox-not-lowest
+  synthetic: true
+  given:
+    from_dose: 40
+  expected:
+    prestop_target_daily_mg: 20
+    washout_days_range:
+    - 4
+    - 7
+    automatic_selected_washout: null
+    exact_target_sertraline_mg: null
+  source_refs:
+  - UK-SPS-SSRI
+  note: Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно
+    подтверждены.
+profile:
+  country: RU
+  selection_status: foreign_reference_only
+  auto_select_allowed: false
+  reason: Зарубежная стратегия сохранена для сравнения; исключена из основного профиля РФ.

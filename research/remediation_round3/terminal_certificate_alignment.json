@@ -1,0 +1,263 @@
+{
+  "rows": [
+    {
+      "case_id": "ser-adult-adjust--audit-recheck-symptomatic_hyponatremia-unknown",
+      "change": "Unknown current event remains named/unassessed; explicitly clarification only",
+      "fields": [
+        "symptomatic_hyponatremia"
+      ]
+    },
+    {
+      "case_id": "ser-panic-start--audit-recheck-symptomatic_hyponatremia-unknown",
+      "change": "Unknown current event remains named/unassessed; explicitly clarification only",
+      "fields": [
+        "symptomatic_hyponatremia"
+      ]
+    },
+    {
+      "case_id": "ser-social-start--audit-recheck-symptomatic_hyponatremia-unknown",
+      "change": "Unknown current event remains named/unassessed; explicitly clarification only",
+      "fields": [
+        "symptomatic_hyponatremia"
+      ]
+    },
+    {
+      "case_id": "ser-taper-limit--audit-recheck-symptomatic_hyponatremia-unknown",
+      "change": "Unknown current event remains named/unassessed; explicitly clarification only",
+      "fields": [
+        "symptomatic_hyponatremia"
+      ]
+    },
+    {
+      "case_id": "preg-gad-start--audit-recheck-current_suicidal_thoughts_or_behavior-unknown",
+      "change": "Unknown current event remains named/unassessed; explicitly clarification only",
+      "fields": [
+        "current_suicidal_thoughts_or_behavior"
+      ]
+    },
+    {
+      "case_id": "dulox-depression-start--audit-recheck-persistent_BP_increase-unknown",
+      "change": "Unknown current event remains named/unassessed; explicitly clarification only",
+      "fields": [
+        "persistent_BP_increase"
+      ]
+    },
+    {
+      "case_id": "dulox-gad-start--audit-recheck-persistent_BP_increase-unknown",
+      "change": "Unknown current event remains named/unassessed; explicitly clarification only",
+      "fields": [
+        "persistent_BP_increase"
+      ]
+    },
+    {
+      "case_id": "dulox-taper-limit--audit-recheck-persistent_BP_increase-unknown",
+      "change": "Unknown current event remains named/unassessed; explicitly clarification only",
+      "fields": [
+        "persistent_BP_increase"
+      ]
+    },
+    {
+      "case_id": "venla-xr-gad-start--audit-recheck-suspected_serotonin_syndrome-unknown",
+      "change": "Unknown current event remains named/unassessed; explicitly clarification only",
+      "fields": [
+        "suspected_serotonin_syndrome"
+      ]
+    },
+    {
+      "case_id": "venla-xr-social-start--audit-recheck-suspected_serotonin_syndrome-unknown",
+      "change": "Unknown current event remains named/unassessed; explicitly clarification only",
+      "fields": [
+        "suspected_serotonin_syndrome"
+      ]
+    },
+    {
+      "case_id": "venla-xr-taper-limit--audit-recheck-suspected_serotonin_syndrome-unknown",
+      "change": "Unknown current event remains named/unassessed; explicitly clarification only",
+      "fields": [
+        "suspected_serotonin_syndrome"
+      ]
+    },
+    {
+      "case_id": "ser-adult-adjust--audit-recheck-symptomatic_hyponatremia-unknown--audit-final-source-caution",
+      "change": "Unknown current event remains named/unassessed; explicitly clarification only",
+      "fields": [
+        "symptomatic_hyponatremia"
+      ]
+    },
+    {
+      "case_id": "ser-panic-start--audit-recheck-symptomatic_hyponatremia-unknown--audit-final-source-caution",
+      "change": "Unknown current event remains named/unassessed; explicitly clarification only",
+      "fields": [
+        "symptomatic_hyponatremia"
+      ]
+    },
+    {
+      "case_id": "ser-social-start--audit-recheck-symptomatic_hyponatremia-unknown--audit-final-source-caution",
+      "change": "Unknown current event remains named/unassessed; explicitly clarification only",
+      "fields": [
+        "symptomatic_hyponatremia"
+      ]
+    },
+    {
+      "case_id": "ser-taper-limit--audit-recheck-symptomatic_hyponatremia-unknown--audit-final-source-caution",
+      "change": "Unknown current event remains named/unassessed; explicitly clarification only",
+      "fields": [
+        "symptomatic_hyponatremia"
+      ]
+    },
+    {
+      "case_id": "preg-gad-start--audit-recheck-current_suicidal_thoughts_or_behavior-unknown--audit-final-source-caution",
+      "change": "Unknown current event remains named/unassessed; explicitly clarification only",
+      "fields": [
+        "current_suicidal_thoughts_or_behavior"
+      ]
+    },
+    {
+      "case_id": "dulox-depression-start--audit-recheck-persistent_BP_increase-unknown--audit-final-source-caution",
+      "change": "Unknown current event remains named/unassessed; explicitly clarification only",
+      "fields": [
+        "persistent_BP_increase"
+      ]
+    },
+    {
+      "case_id": "dulox-gad-start--audit-recheck-persistent_BP_increase-unknown--audit-final-source-caution",
+      "change": "Unknown current event remains named/unassessed; explicitly clarification only",
+      "fields": [
+        "persistent_BP_increase"
+      ]
+    },
+    {
+      "case_id": "dulox-taper-limit--audit-recheck-persistent_BP_increase-unknown--audit-final-source-caution",
+      "change": "Unknown current event remains named/unassessed; explicitly clarification only",
+      "fields": [
+        "persistent_BP_increase"
+      ]
+    },
+    {
+      "case_id": "venla-xr-gad-start--audit-recheck-suspected_serotonin_syndrome-unknown--audit-final-source-caution",
+      "change": "Unknown current event remains named/unassessed; explicitly clarification only",
+      "fields": [
+        "suspected_serotonin_syndrome"
+      ]
+    },
+    {
+      "case_id": "venla-xr-social-start--audit-recheck-suspected_serotonin_syndrome-unknown--audit-final-source-caution",
+      "change": "Unknown current event remains named/unassessed; explicitly clarification only",
+      "fields": [
+        "suspected_serotonin_syndrome"
+      ]
+    },
+    {
+      "case_id": "venla-xr-taper-limit--audit-recheck-suspected_serotonin_syndrome-unknown--audit-final-source-caution",
+      "change": "Unknown current event remains named/unassessed; explicitly clarification only",
+      "fields": [
+        "suspected_serotonin_syndrome"
+      ]
+    },
+    {
+      "case_id": "switch-parox-ago-selected-example--exclude-RU-AGO-allergy",
+      "change": "Same typed input/context has identical limited result; alternate sufficient source causes remain explicit, no changed medical action/dose"
+    },
+    {
+      "case_id": "switch-parox-ago-selected-example--exclude-RU-PAROX-allergy",
+      "change": "Same typed input/context has identical limited result; alternate sufficient source causes remain explicit, no changed medical action/dose"
+    },
+    {
+      "case_id": "switch-parox-ago-selected-example--caution-RU-AGO-pregnancy",
+      "change": "Same typed input/context has identical limited result; alternate sufficient source causes remain explicit, no changed medical action/dose"
+    },
+    {
+      "case_id": "switch-parox-ago-selected-example--caution-RU-PAROX-pregnancy",
+      "change": "Same typed input/context has identical limited result; alternate sufficient source causes remain explicit, no changed medical action/dose"
+    },
+    {
+      "case_id": "switch-parox-ago-selected-example--caution-RU-AGO-lactation",
+      "change": "Same typed input/context has identical limited result; alternate sufficient source causes remain explicit, no changed medical action/dose"
+    },
+    {
+      "case_id": "switch-parox-ago-selected-example--caution-RU-PAROX-lactation",
+      "change": "Same typed input/context has identical limited result; alternate sufficient source causes remain explicit, no changed medical action/dose"
+    },
+    {
+      "case_id": "switch-parox-ago--exclude-RU-AGO-allergy",
+      "change": "Same typed input/context has identical limited result; alternate sufficient source causes remain explicit, no changed medical action/dose"
+    },
+    {
+      "case_id": "switch-parox-ago--exclude-RU-PAROX-allergy",
+      "change": "Same typed input/context has identical limited result; alternate sufficient source causes remain explicit, no changed medical action/dose"
+    },
+    {
+      "case_id": "switch-ser-ago--exclude-RU-AGO-allergy",
+      "change": "Same typed input/context has identical limited result; alternate sufficient source causes remain explicit, no changed medical action/dose"
+    },
+    {
+      "case_id": "switch-ser-ago--exclude-RU-SER-allergy",
+      "change": "Same typed input/context has identical limited result; alternate sufficient source causes remain explicit, no changed medical action/dose"
+    },
+    {
+      "case_id": "switch-parox-ago-selected-example--exclude-RU-AGO-allergy--audit-final-source-exclusion",
+      "change": "Same typed input/context has identical limited result; alternate sufficient source causes remain explicit, no changed medical action/dose"
+    },
+    {
+      "case_id": "switch-parox-ago-selected-example--round2-allergy-B-True--audit-final-source-exclusion",
+      "change": "Same typed input/context has identical limited result; alternate sufficient source causes remain explicit, no changed medical action/dose"
+    },
+    {
+      "case_id": "switch-parox-ago-selected-example--exclude-RU-PAROX-allergy--audit-final-source-exclusion",
+      "change": "Same typed input/context has identical limited result; alternate sufficient source causes remain explicit, no changed medical action/dose"
+    },
+    {
+      "case_id": "switch-parox-ago-selected-example--round2-allergy-A-True--audit-final-source-exclusion",
+      "change": "Same typed input/context has identical limited result; alternate sufficient source causes remain explicit, no changed medical action/dose"
+    },
+    {
+      "case_id": "switch-parox-ago--exclude-RU-AGO-allergy--audit-final-source-exclusion",
+      "change": "Same typed input/context has identical limited result; alternate sufficient source causes remain explicit, no changed medical action/dose"
+    },
+    {
+      "case_id": "switch-parox-ago--round2-allergy-B-True--audit-final-source-exclusion",
+      "change": "Same typed input/context has identical limited result; alternate sufficient source causes remain explicit, no changed medical action/dose"
+    },
+    {
+      "case_id": "switch-parox-ago--exclude-RU-PAROX-allergy--audit-final-source-exclusion",
+      "change": "Same typed input/context has identical limited result; alternate sufficient source causes remain explicit, no changed medical action/dose"
+    },
+    {
+      "case_id": "switch-parox-ago--round2-allergy-A-True--audit-final-source-exclusion",
+      "change": "Same typed input/context has identical limited result; alternate sufficient source causes remain explicit, no changed medical action/dose"
+    },
+    {
+      "case_id": "switch-ser-ago--exclude-RU-AGO-allergy--audit-final-source-exclusion",
+      "change": "Same typed input/context has identical limited result; alternate sufficient source causes remain explicit, no changed medical action/dose"
+    },
+    {
+      "case_id": "switch-ser-ago--round2-allergy-B-True--audit-final-source-exclusion",
+      "change": "Same typed input/context has identical limited result; alternate sufficient source causes remain explicit, no changed medical action/dose"
+    },
+    {
+      "case_id": "switch-ser-ago--exclude-RU-SER-allergy--audit-final-source-exclusion",
+      "change": "Same typed input/context has identical limited result; alternate sufficient source causes remain explicit, no changed medical action/dose"
+    },
+    {
+      "case_id": "switch-ser-ago--round2-allergy-A-True--audit-final-source-exclusion",
+      "change": "Same typed input/context has identical limited result; alternate sufficient source causes remain explicit, no changed medical action/dose"
+    },
+    {
+      "case_id": "switch-parox-ago-selected-example--caution-RU-AGO-pregnancy--audit-final-known-terminal",
+      "change": "Same typed input/context has identical limited result; alternate sufficient source causes remain explicit, no changed medical action/dose"
+    },
+    {
+      "case_id": "switch-parox-ago-selected-example--caution-RU-PAROX-pregnancy--audit-final-known-terminal",
+      "change": "Same typed input/context has identical limited result; alternate sufficient source causes remain explicit, no changed medical action/dose"
+    },
+    {
+      "case_id": "switch-parox-ago-selected-example--caution-RU-AGO-lactation--audit-final-known-terminal",
+      "change": "Same typed input/context has identical limited result; alternate sufficient source causes remain explicit, no changed medical action/dose"
+    },
+    {
+      "case_id": "switch-parox-ago-selected-example--caution-RU-PAROX-lactation--audit-final-known-terminal",
+      "change": "Same typed input/context has identical limited result; alternate sufficient source causes remain explicit, no changed medical action/dose"
+    }
+  ],
+  "medical_action_or_numerical_dose_changed": false
+}

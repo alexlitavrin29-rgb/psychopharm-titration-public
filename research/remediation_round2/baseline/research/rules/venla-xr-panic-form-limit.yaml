@@ -1,0 +1,1411 @@
+schema_version: '1.0'
+rule_id: venla-xr-panic-form-limit
+development_status: extracted_research_not_executable
+language: ru
+identity:
+  title: 'Венлафаксин XR: панический старт, ограничение формы'
+  mode: start
+  drug_inn: венлафаксин
+  from_drug_inn: null
+  to_drug_inn: null
+  formulation: Велаксин, XR 75/150 мг; 37,5 мг XR в этой форме отсутствует
+  route: oral
+  diagnosis_label_ru: Паническое расстройство
+  classification_system: МКБ-10
+  diagnosis_code: F41.0
+  jurisdiction: RU_versioned_sources
+applicability:
+  population_description: Взрослые от 18 лет; показание и клиническое действие выбирает врач.
+  age_constraints:
+  - minimum: 18
+    inclusive: true
+    unit: year
+    source_ref: RU-VENLA-XR
+    source_locator: HTML §1–3, §4.1–4.3, §4.5–4.6, §8; заголовки формы/режима сохранены
+  pregnancy: Беременность/предполагаемая беременность противопоказаны, §4.3.
+  lactation: Лактация противопоказана, §4.3.
+  renal_constraints:
+  - 'Источник XR: абсолютная СКФ >30 мл/мин без коррекции; 10–30 снижение на 50%; <10 не рекомендуется/противопоказание.
+    Нормированную eGFR не подставлять.'
+  hepatic_constraints:
+  - 'Лёгкая/умеренная: рассмотреть -50%; тяжёлая не рекомендуется; §4.3 ПВ >18 с. Не выводить категорию из одного
+    анализа.'
+  comorbidity_constraints: []
+  interacting_drugs:
+  - ИМАО §4.3–4.5; список и даты отмены при необходимости отдельно.
+  other_conditions: []
+  exclusions: []
+  indication_status_in_russia: RU_indication_in_read_original_latest_registry_text_separate
+  source_refs: &id003
+  - RU-VENLA-XR
+  - RU-PANIC
+inputs:
+- input_id: age
+  question_ru: Возраст, лет?
+  data_type: integer
+  unit: year
+  allowed_values: []
+  required_when: для выбранного расчёта
+  show_when: для выбранного расчёта
+  why_needed: Взрослая/пожилая применимость §4.1–4.2.
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Назвать age; не подставлять норму, без безусловной индивидуальной дозы.
+  source_refs:
+  - RU-VENLA-XR
+  input_role: dose_operand_or_applicability_gate
+  source_locator: HTML §1–3, §4.1–4.3, §4.5–4.6, §8; заголовки формы/режима сохранены
+  missing_states: &id001
+  - unknown
+  - not_assessed
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+- input_id: form
+  question_ru: Какая конкретная форма и дозировка?
+  data_type: structured_form
+  unit: null
+  allowed_values: []
+  required_when: для выбранного расчёта
+  show_when: для выбранного расчёта
+  why_needed: Не переносить форму; дозовая исполнимость §1–3/4.2.
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Назвать form; не подставлять норму, без безусловной индивидуальной дозы.
+  source_refs:
+  - RU-VENLA-XR
+  input_role: dose_operand_or_applicability_gate
+  source_locator: HTML §1–3, §4.1–4.3, §4.5–4.6, §8; заголовки формы/режима сохранены
+  missing_states: *id001
+  structure_ref: remediation/input_contracts.yaml#structures/structured_form
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+- input_id: hepatic
+  question_ru: Подтверждённая функция печени?
+  data_type: source_hepatic_category
+  unit: null
+  allowed_values: []
+  required_when: для выбранного расчёта
+  show_when: для выбранного расчёта
+  why_needed: Ограничения §4.2–4.3; из одного анализа не выводить категорию.
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Назвать hepatic; не подставлять норму, без безусловной индивидуальной дозы.
+  source_refs:
+  - RU-VENLA-XR
+  input_role: dose_operand_or_applicability_gate
+  source_locator: HTML §1–3, §4.1–4.3, §4.5–4.6, §8; заголовки формы/режима сохранены
+  missing_states: *id001
+  structure_ref: remediation/input_contracts.yaml#structures/source_hepatic_category
+  source_categories:
+  - no_impairment_after_assessment
+  - mild
+  - moderate
+  - severe
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+- input_id: pregnancy
+  question_ru: Беременность установлена или возможна?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: для выбранного расчёта
+  show_when: для выбранного расчёта
+  why_needed: Применимость §4.3/4.6.
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Назвать pregnancy; не подставлять норму, без безусловной индивидуальной дозы.
+  source_refs:
+  - RU-VENLA-XR
+  input_role: dose_operand_or_applicability_gate
+  source_locator: HTML §1–3, §4.1–4.3, §4.5–4.6, §8; заголовки формы/режима сохранены
+  missing_states: *id001
+  value_aliases: &id002
+    да: true
+    нет: false
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+- input_id: lactation
+  question_ru: Есть грудное вскармливание?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: для выбранного расчёта
+  show_when: для выбранного расчёта
+  why_needed: Применимость §4.3/4.6.
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Назвать lactation; не подставлять норму, без безусловной индивидуальной дозы.
+  source_refs:
+  - RU-VENLA-XR
+  input_role: dose_operand_or_applicability_gate
+  source_locator: HTML §1–3, §4.1–4.3, §4.5–4.6, §8; заголовки формы/режима сохранены
+  missing_states: *id001
+  value_aliases: *id002
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+- input_id: medicines
+  question_ru: Текущие и недавно отменённые препараты?
+  data_type: medication_list
+  unit: null
+  allowed_values: []
+  required_when: для выбранного расчёта
+  show_when: для выбранного расчёта
+  why_needed: Взаимодействия и интервалы §4.3–4.5; последние даты при ИМАО отдельны.
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Назвать medicines; не подставлять норму, без безусловной индивидуальной дозы.
+  source_refs:
+  - RU-VENLA-XR
+  input_role: dose_operand_or_applicability_gate
+  source_locator: HTML §1–3, §4.1–4.3, §4.5–4.6, §8; заголовки формы/режима сохранены
+  missing_states: *id001
+  structure_ref: remediation/input_contracts.yaml#structures/medication_list
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+- input_id: allergy
+  question_ru: Гиперчувствительность к препарату/компонентам?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: для выбранного расчёта
+  show_when: для выбранного расчёта
+  why_needed: Противопоказание §4.3.
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Назвать allergy; не подставлять норму, без безусловной индивидуальной дозы.
+  source_refs:
+  - RU-VENLA-XR
+  input_role: dose_operand_or_applicability_gate
+  source_locator: HTML §1–3, §4.1–4.3, §4.5–4.6, §8; заголовки формы/режима сохранены
+  missing_states: *id001
+  value_aliases: *id002
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+- input_id: renal_metric
+  question_ru: Подтверждённый почечный показатель с методом и единицей?
+  data_type: structured_renal
+  unit: null
+  allowed_values: []
+  required_when: для органной ветки
+  show_when: для органной ветки
+  why_needed: §4.2; eGFR/CLcr и нормированная/абсолютная СКФ не взаимозаменяемы.
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Назвать renal_metric; не подставлять норму, без безусловной индивидуальной дозы.
+  source_refs:
+  - RU-VENLA-XR
+  input_role: dose_operand_or_applicability_gate
+  source_locator: HTML §1–3, §4.1–4.3, §4.5–4.6, §8; заголовки формы/режима сохранены
+  missing_states: *id001
+  structure_ref: remediation/input_contracts.yaml#structures/structured_renal
+  required_metric: absolute_GFR
+  required_unit: mL/min
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+- input_id: maoi_type
+  question_ru: Тип каждого текущего/отменённого ИМАО?
+  data_type: record_map
+  unit: null
+  allowed_values:
+  - none_after_medication_history
+  - irreversible
+  - reversible_selective
+  - reversible_nonselective
+  - unknown
+  - not_assessed
+  required_when: если список medicines содержит ИМАО или его класс неясен; separate per relevant record
+  show_when: если список medicines содержит ИМАО или его класс неясен; separate per relevant record
+  why_needed: 'Изменяет применимость/действие: HTML §4.3; §4.5 ИМАО.'
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; запросить maoi_type; числовой выход отсутствует.
+  source_refs:
+  - RU-VENLA-XR
+  source_locator: HTML §4.3; §4.5 ИМАО
+  input_role: applicability_gate
+  required_for_individual_result: medicines contains current/stopped MAOI or unidentified interaction class
+  missing_states: *id001
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  collection: per medication record_id
+  value_data_type: enum
+- input_id: maoi_stopped_at
+  question_ru: Дата и время последнего приёма каждого отменённого ИМАО?
+  data_type: record_map
+  unit: null
+  allowed_values: []
+  required_when: если ИМАО отменён; separate per relevant record
+  show_when: если ИМАО отменён; separate per relevant record
+  why_needed: 'Изменяет применимость/действие: HTML §4.3; §4.5 ИМАО.'
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; запросить maoi_stopped_at; числовой выход отсутствует.
+  source_refs:
+  - RU-VENLA-XR
+  source_locator: HTML §4.3; §4.5 ИМАО
+  input_role: applicability_gate
+  required_for_individual_result: medicines contains stopped MAOI; per relevant record
+  missing_states: *id001
+  collection: per medication record_id
+  value_data_type: datetime
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+- input_id: recent_infarction
+  question_ru: Подтверждённое значение recent_infarction по HTML §4.4 С осторожностью / Особые указания?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: для индивидуального результата этой ветки
+  show_when: эта ветка
+  why_needed: Изменяет допуск/действие по RU-VENLA-XR HTML §4.4 С осторожностью / Особые указания; не общий допуск
+    врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; missing=[recent_infarction]; no individual dose
+  source_refs:
+  - RU-VENLA-XR
+  source_locator: HTML §4.4 С осторожностью / Особые указания
+  required_for_individual_result: true
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+- input_id: unstable_angina
+  question_ru: Подтверждённое значение unstable_angina по HTML §4.4 С осторожностью / Особые указания?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: для индивидуального результата этой ветки
+  show_when: эта ветка
+  why_needed: Изменяет допуск/действие по RU-VENLA-XR HTML §4.4 С осторожностью / Особые указания; не общий допуск
+    врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; missing=[unstable_angina]; no individual dose
+  source_refs:
+  - RU-VENLA-XR
+  source_locator: HTML §4.4 С осторожностью / Особые указания
+  required_for_individual_result: true
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+- input_id: heart_failure
+  question_ru: Подтверждённое значение heart_failure по HTML §4.4 С осторожностью / Особые указания?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: для индивидуального результата этой ветки
+  show_when: эта ветка
+  why_needed: Изменяет допуск/действие по RU-VENLA-XR HTML §4.4 С осторожностью / Особые указания; не общий допуск
+    врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; missing=[heart_failure]; no individual dose
+  source_refs:
+  - RU-VENLA-XR
+  source_locator: HTML §4.4 С осторожностью / Особые указания
+  required_for_individual_result: true
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+- input_id: coronary_disease
+  question_ru: Подтверждённое значение coronary_disease по HTML §4.4 С осторожностью / Особые указания?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: для индивидуального результата этой ветки
+  show_when: эта ветка
+  why_needed: Изменяет допуск/действие по RU-VENLA-XR HTML §4.4 С осторожностью / Особые указания; не общий допуск
+    врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; missing=[coronary_disease]; no individual dose
+  source_refs:
+  - RU-VENLA-XR
+  source_locator: HTML §4.4 С осторожностью / Особые указания
+  required_for_individual_result: true
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+- input_id: ecg_change
+  question_ru: Подтверждённое значение ecg_change по HTML §4.4 С осторожностью / Особые указания?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: для индивидуального результата этой ветки
+  show_when: эта ветка
+  why_needed: Изменяет допуск/действие по RU-VENLA-XR HTML §4.4 С осторожностью / Особые указания; не общий допуск
+    врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; missing=[ecg_change]; no individual dose
+  source_refs:
+  - RU-VENLA-XR
+  source_locator: HTML §4.4 С осторожностью / Особые указания
+  required_for_individual_result: true
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+- input_id: qt_risk
+  question_ru: Подтверждённое значение qt_risk по HTML §4.4 С осторожностью / Особые указания?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: для индивидуального результата этой ветки
+  show_when: эта ветка
+  why_needed: Изменяет допуск/действие по RU-VENLA-XR HTML §4.4 С осторожностью / Особые указания; не общий допуск
+    врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; missing=[qt_risk]; no individual dose
+  source_refs:
+  - RU-VENLA-XR
+  source_locator: HTML §4.4 С осторожностью / Особые указания
+  required_for_individual_result: true
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+- input_id: electrolyte_imbalance
+  question_ru: Подтверждённое значение electrolyte_imbalance по HTML §4.4 С осторожностью / Особые указания?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: для индивидуального результата этой ветки
+  show_when: эта ветка
+  why_needed: Изменяет допуск/действие по RU-VENLA-XR HTML §4.4 С осторожностью / Особые указания; не общий допуск
+    врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; missing=[electrolyte_imbalance]; no individual dose
+  source_refs:
+  - RU-VENLA-XR
+  source_locator: HTML §4.4 С осторожностью / Особые указания
+  required_for_individual_result: true
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+- input_id: hypertension
+  question_ru: Подтверждённое значение hypertension по HTML §4.4 С осторожностью / Особые указания?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: для индивидуального результата этой ветки
+  show_when: эта ветка
+  why_needed: Изменяет допуск/действие по RU-VENLA-XR HTML §4.4 С осторожностью / Особые указания; не общий допуск
+    врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; missing=[hypertension]; no individual dose
+  source_refs:
+  - RU-VENLA-XR
+  source_locator: HTML §4.4 С осторожностью / Особые указания
+  required_for_individual_result: true
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+- input_id: tachycardia
+  question_ru: Подтверждённое значение tachycardia по HTML §4.4 С осторожностью / Особые указания?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: для индивидуального результата этой ветки
+  show_when: эта ветка
+  why_needed: Изменяет допуск/действие по RU-VENLA-XR HTML §4.4 С осторожностью / Особые указания; не общий допуск
+    врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; missing=[tachycardia]; no individual dose
+  source_refs:
+  - RU-VENLA-XR
+  source_locator: HTML §4.4 С осторожностью / Особые указания
+  required_for_individual_result: true
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+- input_id: seizure_history
+  question_ru: Подтверждённое значение seizure_history по HTML §4.4 С осторожностью / Особые указания?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: для индивидуального результата этой ветки
+  show_when: эта ветка
+  why_needed: Изменяет допуск/действие по RU-VENLA-XR HTML §4.4 С осторожностью / Особые указания; не общий допуск
+    врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; missing=[seizure_history]; no individual dose
+  source_refs:
+  - RU-VENLA-XR
+  source_locator: HTML §4.4 С осторожностью / Особые указания
+  required_for_individual_result: true
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+- input_id: glaucoma
+  question_ru: Подтверждённое значение glaucoma по HTML §4.4 С осторожностью / Особые указания?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: для индивидуального результата этой ветки
+  show_when: эта ветка
+  why_needed: Изменяет допуск/действие по RU-VENLA-XR HTML §4.4 С осторожностью / Особые указания; не общий допуск
+    врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; missing=[glaucoma]; no individual dose
+  source_refs:
+  - RU-VENLA-XR
+  source_locator: HTML §4.4 С осторожностью / Особые указания
+  required_for_individual_result: true
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+- input_id: mania
+  question_ru: Подтверждённое значение mania по HTML §4.4 С осторожностью / Особые указания?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: для индивидуального результата этой ветки
+  show_when: эта ветка
+  why_needed: Изменяет допуск/действие по RU-VENLA-XR HTML §4.4 С осторожностью / Особые указания; не общий допуск
+    врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; missing=[mania]; no individual dose
+  source_refs:
+  - RU-VENLA-XR
+  source_locator: HTML §4.4 С осторожностью / Особые указания
+  required_for_individual_result: true
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+- input_id: bleeding_risk
+  question_ru: Подтверждённое значение bleeding_risk по HTML §4.4 С осторожностью / Особые указания?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: для индивидуального результата этой ветки
+  show_when: эта ветка
+  why_needed: Изменяет допуск/действие по RU-VENLA-XR HTML §4.4 С осторожностью / Особые указания; не общий допуск
+    врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; missing=[bleeding_risk]; no individual dose
+  source_refs:
+  - RU-VENLA-XR
+  source_locator: HTML §4.4 С осторожностью / Особые указания
+  required_for_individual_result: true
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+- input_id: low_body_mass
+  question_ru: Подтверждённое значение low_body_mass по HTML §4.4 С осторожностью / Особые указания?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: для индивидуального результата этой ветки
+  show_when: эта ветка
+  why_needed: Изменяет допуск/действие по RU-VENLA-XR HTML §4.4 С осторожностью / Особые указания; не общий допуск
+    врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; missing=[low_body_mass]; no individual dose
+  source_refs:
+  - RU-VENLA-XR
+  source_locator: HTML §4.4 С осторожностью / Особые указания
+  required_for_individual_result: true
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+- input_id: urinary_impairment
+  question_ru: Подтверждённое значение urinary_impairment по HTML §4.4 С осторожностью / Особые указания?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: для индивидуального результата этой ветки
+  show_when: эта ветка
+  why_needed: Изменяет допуск/действие по RU-VENLA-XR HTML §4.4 С осторожностью / Особые указания; не общий допуск
+    врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; missing=[urinary_impairment]; no individual dose
+  source_refs:
+  - RU-VENLA-XR
+  source_locator: HTML §4.4 С осторожностью / Особые указания
+  required_for_individual_result: true
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+- input_id: low_blood_pressure
+  question_ru: Подтверждённое значение low_blood_pressure по HTML §4.4 С осторожностью / Особые указания?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: для индивидуального результата этой ветки
+  show_when: эта ветка
+  why_needed: Изменяет допуск/действие по RU-VENLA-XR HTML §4.4 С осторожностью / Особые указания; не общий допуск
+    врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; missing=[low_blood_pressure]; no individual dose
+  source_refs:
+  - RU-VENLA-XR
+  source_locator: HTML §4.4 С осторожностью / Особые указания
+  required_for_individual_result: true
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+- input_id: diabetes
+  question_ru: Подтверждённое значение diabetes по HTML §4.4 С осторожностью / Особые указания?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: для индивидуального результата этой ветки
+  show_when: эта ветка
+  why_needed: Изменяет допуск/действие по RU-VENLA-XR HTML §4.4 С осторожностью / Особые указания; не общий допуск
+    врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; missing=[diabetes]; no individual dose
+  source_refs:
+  - RU-VENLA-XR
+  source_locator: HTML §4.4 С осторожностью / Особые указания
+  required_for_individual_result: true
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+- input_id: recent_stroke
+  question_ru: Подтверждённое значение recent_stroke по HTML §4.4 С осторожностью / Особые указания?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: для индивидуального результата этой ветки
+  show_when: эта ветка
+  why_needed: Изменяет допуск/действие по RU-VENLA-XR HTML §4.4 С осторожностью / Особые указания; не общий допуск
+    врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; missing=[recent_stroke]; no individual dose
+  source_refs:
+  - RU-VENLA-XR
+  source_locator: HTML §4.4 С осторожностью / Особые указания
+  required_for_individual_result: true
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+- input_id: hyponatremia_risk
+  question_ru: Подтверждённое значение hyponatremia_risk по HTML §4.4 С осторожностью / Особые указания?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: для индивидуального результата этой ветки
+  show_when: эта ветка
+  why_needed: Изменяет допуск/действие по RU-VENLA-XR HTML §4.4 С осторожностью / Особые указания; не общий допуск
+    врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; missing=[hyponatremia_risk]; no individual dose
+  source_refs:
+  - RU-VENLA-XR
+  source_locator: HTML §4.4 С осторожностью / Особые указания
+  required_for_individual_result: true
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+- input_id: ect
+  question_ru: Подтверждённое значение ect по HTML §4.4 С осторожностью / Особые указания?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: для индивидуального результата этой ветки
+  show_when: эта ветка
+  why_needed: Изменяет допуск/действие по RU-VENLA-XR HTML §4.4 С осторожностью / Особые указания; не общий допуск
+    врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; missing=[ect]; no individual dose
+  source_refs:
+  - RU-VENLA-XR
+  source_locator: HTML §4.4 С осторожностью / Особые указания
+  required_for_individual_result: true
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+- input_id: hypercholesterolemia
+  question_ru: Подтверждённое значение hypercholesterolemia по HTML §4.4 С осторожностью / Особые указания?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: для индивидуального результата этой ветки
+  show_when: эта ветка
+  why_needed: Изменяет допуск/действие по RU-VENLA-XR HTML §4.4 С осторожностью / Особые указания; не общий допуск
+    врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; missing=[hypercholesterolemia]; no individual dose
+  source_refs:
+  - RU-VENLA-XR
+  source_locator: HTML §4.4 С осторожностью / Особые указания
+  required_for_individual_result: true
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+- input_id: alcohol_use
+  question_ru: Подтверждённое значение alcohol_use по HTML §4.4 С осторожностью / Особые указания?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: для индивидуального результата этой ветки
+  show_when: эта ветка
+  why_needed: Изменяет допуск/действие по RU-VENLA-XR HTML §4.4 С осторожностью / Особые указания; не общий допуск
+    врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; missing=[alcohol_use]; no individual dose
+  source_refs:
+  - RU-VENLA-XR
+  source_locator: HTML §4.4 С осторожностью / Особые указания
+  required_for_individual_result: true
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+- input_id: suicide_risk
+  question_ru: Подтверждённое значение suicide_risk по HTML §4.4 С осторожностью / Особые указания?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: для индивидуального результата этой ветки
+  show_when: эта ветка
+  why_needed: Изменяет допуск/действие по RU-VENLA-XR HTML §4.4 С осторожностью / Особые указания; не общий допуск
+    врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; missing=[suicide_risk]; no individual dose
+  source_refs:
+  - RU-VENLA-XR
+  source_locator: HTML §4.4 С осторожностью / Особые указания
+  required_for_individual_result: true
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+- input_id: pregnancy_suspected
+  question_ru: Подтверждённое значение pregnancy_suspected по HTML §4.3?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: для индивидуального результата этой ветки
+  show_when: эта ветка
+  why_needed: Изменяет допуск/действие по RU-VENLA-XR HTML §4.3; не общий допуск врача.
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; missing=[pregnancy_suspected]; no individual dose
+  source_refs:
+  - RU-VENLA-XR
+  source_locator: HTML §4.3
+  required_for_individual_result: true
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+- input_id: diastolic_BP
+  question_ru: 'Подтверждённое значение diastolic_BP по HTML §4.4: контроль АД, прекращение при диастолическом АД
+    выше 100 мм рт.ст.?'
+  data_type: number
+  unit: mmHg
+  allowed_values: []
+  required_when: для индивидуального результата этой ветки
+  show_when: эта ветка
+  why_needed: 'Изменяет допуск/действие по RU-VENLA-XR HTML §4.4: контроль АД, прекращение при диастолическом АД
+    выше 100 мм рт.ст.; не общий допуск врача.'
+  changes:
+  - applicability
+  - action
+  unknown_allowed: true
+  action_if_unknown: insufficient_data; missing=[diastolic_BP]; no individual dose
+  source_refs:
+  - RU-VENLA-XR
+  source_locator: 'HTML §4.4: контроль АД, прекращение при диастолическом АД выше 100 мм рт.ст.'
+  required_for_individual_result: true
+  missing_states:
+  - unknown
+  - not_assessed
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+clinical_parameters:
+- parameter_id: initial_dose
+  meaning: initial_dose
+  value: 37.5
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: mg/day
+  source_ref: RU-VENLA-XR
+  source_locator: HTML §4.2 Панические расстройства
+  source_meaning: предписание
+  derivation: null
+- parameter_id: initial_duration
+  meaning: initial_duration
+  value: 7
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: day
+  source_ref: RU-VENLA-XR
+  source_locator: HTML §4.2 Панические расстройства
+  source_meaning: предписание
+  derivation: null
+- parameter_id: next_dose
+  meaning: next_dose
+  value: 75
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: mg/day
+  source_ref: RU-VENLA-XR
+  source_locator: HTML §4.2 Панические расстройства
+  source_meaning: предписание
+  derivation: null
+- parameter_id: diastolic_BP_stop_threshold
+  meaning: 'Строго выше порога: прекращение приёма'
+  value: 100
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: mmHg
+  source_ref: RU-VENLA-XR
+  source_locator: HTML §4.4 контроль АД
+  source_meaning: предписание
+  derivation: null
+logic:
+  representation: conditional_source_rule
+  conditions:
+  - Применимость к указанному показанию/форме подтверждена в пределах дозового расчёта; это не полный клинический
+    допуск.
+  actions:
+  - Опубликовано 37,5 мг/сут 7 дней, затем 75 мг/сут.
+  - Проверенный продукт имеет только XR 75/150 и запрещает делить капсулу. Нужна другая подтверждённая форма XR
+    37,5; IR 37,5 не подставляется.
+  parameter_refs:
+  - initial_dose
+  - initial_duration
+  - next_dose
+  - diastolic_BP_stop_threshold
+  source_refs: *id003
+  clinician_choices:
+  - Необходимость изменения лечения и неоценённые модулем клинические обстоятельства.
+  missing_data_behaviour: insufficient_data с конкретным отсутствующим полем, без безусловной дозы.
+  unsupported_case_behaviour: Назвать неприменимую ветку; не переносить другую форму/показание.
+  contraindicated_case_behaviour: Не выдавать схему противопоказанного сочетания, указать источник.
+  conflicts: []
+  composite_rule_dependencies: []
+  combination_justification: КР определяет клиническую область, инструкция — дозовые параметры; новые коэффициенты
+    не добавлены.
+  maoi_history_contract:
+    source_ref: RU-VENLA-XR
+    source_locator: HTML §4.3; §4.5 ИМАО
+    locator: HTML §4.3; §4.5 ИМАО
+    irreversible_days: 14
+    to_maoi_days: 7
+    reversible: 'Период может быть короче 14 дней, точный не извлечён: clinician_choice.'
+    concurrent:
+    - maoi
+    fields:
+    - medicines
+    - maoi_type
+    - maoi_stopped_at
+    reference_time: external_context.calculation_at
+    required_timestamp_unknown: insufficient_data; missing maoi_stopped_at; start_allowed=false
+    current_maoi: not_applicable for standard branch; no numeric start
+    multiple_records: all applicable direction gates must be satisfied; no single last record shortcut
+    calendar_day: next calendar date; not elapsed 24 hours unless that specific source says 24 hours
+  result_contract_ref: remediation/result_contracts.yaml#rules/venla-xr-panic-form-limit
+  individual_output_gate: All required typed inputs and applicable conditional inputs must be known; evaluate every
+    source-specific gate in result_contract. A caution has clinician_choice, not an invented coefficient. No blanket
+    clinical clearance.
+output:
+  result_type: branch_selected
+  medication_inn: венлафаксин
+  dose_per_administration: null
+  administrations_per_day: null
+  total_daily_dose: null
+  unit: mg
+  formulation: Велаксин, XR 75/150 мг; 37,5 мг XR в этой форме отсутствует
+  schedule: []
+  warnings:
+  - Последующие этапы условны; максимум не является целью.
+  - Неоценённое клиническое обстоятельство не считается отсутствующим.
+  - Версия копии зафиксирована; последнее содержание реестрового документа проверяется перед клиническим внедрением.
+  mandatory_checks: []
+  clinician_decisions_remaining: []
+  rounding_or_formulation_rule: Не округлять медицинскую дозу; целые формы/разрешённое деление. Невозможная доза
+    — явный отказ формы.
+  source_refs: *id003
+  branches:
+  - branch_id: form_limit
+    when: identified Velaxin XR 75/150
+    expected_output:
+      result_type: form_not_feasible
+      total_daily_dose_mg: null
+      dose_per_administration_mg: null
+      administrations_per_day: null
+      schedule: []
+      missing_fields: []
+      unconditional_future_stages: false
+      source_initial_mg: 37.5
+      initial_days: 7
+      source_next_mg: 75
+      IR_substitution_allowed: false
+    source_basis:
+    - source_id: RU-VENLA-XR
+      version: Версия HTML не датирована; снимок и SHA-256 от 08.10.2026; отдельное РУ формы подтверждено реестром
+      locator: HTML §1–3, §4.1–4.3, §4.5–4.6, §8; заголовки формы/режима сохранены
+      sha256: 3656aeeae0ef60f75fe0ea90e1a9f73ba3734e7b8825e163752d9e6e278bf838
+    - source_id: RU-PANIC
+      version: '2024; каталог: опубликовано 19.09.2024, применяется'
+      locator: §3.1, PDF с.25–33; приложение А3, с.76–77
+      sha256: a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d
+    - source_id: RU-VENLA-IR
+      version: Версия HTML не датирована; снимок и SHA-256 от 08.10.2026; отдельное РУ формы подтверждено реестром
+      locator: HTML §1–3, §4.1–4.3, §4.5–4.6, §8; заголовки формы/режима сохранены
+      sha256: ecad93859bf9c84daadfcc77bf765ed86d85c44ea4d27edc49903bf57dffca01
+  selection_contract:
+  - unavailable_source
+  - known immediate stop/exclusion
+  - invalid/missing applicable field
+  - unresolved source caution/modifier
+  - dose branch
+sources:
+- source_id: RU-VENLA-XR
+  title: Велаксин, ОХЛП пролонгированных капсул 75/150 мг
+  organization_or_authors: ЭГИС
+  url: https://egispro.ru/medications/velaksin/instructions/velaksin_75_mg_28_sht/
+  doi_or_registry_id: ЛП-№(002093)-(РГ-RU)
+  publication_date: null
+  version_or_update_date: Версия HTML не датирована; снимок и SHA-256 от 08.10.2026; отдельное РУ формы подтверждено
+    реестром
+  accessed_on: '2026-10-08'
+  source_type: label
+  jurisdiction: RU/EAEU
+  access_status: full
+  exact_locator: HTML §1–3, §4.1–4.3, §4.5–4.6, §8; заголовки формы/режима сохранены
+  evidence_status: Инструкция/ОХЛП; не валидированная модель индивидуальной дозы
+  what_was_tested: Не исследовался создаваемый продукт. Содержание и ограничения описаны в evidence_limitations.
+  evidence_limitations: Снимок оригинальной страницы производителя, не PDF реестра. XR и IR имеют разные показания,
+    почечные единицы и поправки. Капсулы XR нельзя делить; 37,5 мг XR в проверенной форме нет. Не переносить шаг
+    +75 мг депрессии на ГТР.
+  reuse_license_or_restriction: Собственное извлечение фактических правил и короткие локаторы; лицензия на код/полное
+    руководство не предполагается.
+  document_fingerprint:
+    source_id: RU-VENLA-XR
+    url: https://egispro.ru/medications/velaksin/instructions/velaksin_75_mg_28_sht/
+    status: 200
+    sha256: 3656aeeae0ef60f75fe0ea90e1a9f73ba3734e7b8825e163752d9e6e278bf838
+    accessed_on: '2026-10-08'
+    format: HTML snapshot; revision date not stated
+  registry_observation:
+    registry: https://lk.regmed.ru/Register/EAEU_SmPC
+    query: Велаксин
+    registration_number: ЛП-№(002093)-(РГ-RU)
+    registration_date: '2023-04-03'
+    forms: капсулы пролонгированные 75/150 мг
+    accessed_on: '2026-10-08'
+    read_part: Видимая официальная строка результата поиска; наличие ОХЛП/ЛВ. Сам документ этой записи не скачан;
+      идентичность копии не заявлена.
+  local_file: source_snapshots/velaxin-XR.html
+  document_copies:
+  - source_id: RU-VENLA-XR
+    local_file: source_snapshots/velaxin-XR.html
+    sha256: 3656aeeae0ef60f75fe0ea90e1a9f73ba3734e7b8825e163752d9e6e278bf838
+    version: Версия HTML не датирована; снимок и SHA-256 от 08.10.2026; отдельное РУ формы подтверждено реестром
+    url: https://egispro.ru/medications/velaksin/instructions/velaksin_75_mg_28_sht/
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: false
+  - source_id: RU-VENLA-XR
+    local_file: audit/retrieved/RU-VENLA-XR.html
+    sha256: 6f14f66f54d649836d17eff481e9538282539780cfa8d26810012a1941cf7550
+    version: byte-different snapshot; medical revision not independently established
+    url: https://egispro.ru/medications/velaksin/instructions/velaksin_75_mg_28_sht/
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: false
+    latest_registration_revision_confirmed: false
+  - source_id: RU-VENLA-XR
+    local_file: remediation/retrieved/RU-VENLA-XR.html
+    sha256: 324991815c8cd2def4d644b47b1edaddb1c24ed7ee442d9bdc064b396fae6642
+    version: byte-different snapshot; medical revision not independently established
+    url: https://egispro.ru/medications/velaksin/instructions/velaksin_75_mg_28_sht/
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: false
+    latest_registration_revision_confirmed: false
+  dates:
+    registration: '2023-04-03'
+    revision: null
+    publication: null
+    download: '2026-10-08'
+  latest_registration_revision_confirmed: false
+- source_id: RU-PANIC
+  title: Паническое расстройство, КР 456_3
+  organization_or_authors: Минздрав РФ; Российское общество психиатров
+  url: https://apicr.minzdrav.gov.ru/api.ashx?id=456_3&op=GetClinrecPdf
+  doi_or_registry_id: '456_3'
+  publication_date: null
+  version_or_update_date: '2024; каталог: опубликовано 19.09.2024, применяется'
+  accessed_on: '2026-10-08'
+  source_type: guideline
+  jurisdiction: RU
+  access_status: full
+  exact_locator: §3.1, PDF с.25–33; приложение А3, с.76–77
+  evidence_status: Клиническая рекомендация; не валидация калькулятора
+  what_was_tested: Не исследовался создаваемый продукт. Содержание и ограничения описаны в evidence_limitations.
+  evidence_limitations: Взрослые F41.0. Терапевтический диапазон не равен стартовой дозе.
+  reuse_license_or_restriction: Открытый доступ не означает разрешение перераспространять полный документ. Сохранены
+    собственное извлечение фактических правил, локаторы и ссылки; код и большие цитаты не копируются.
+  document_fingerprint:
+    source_id: RU-PANIC
+    url: https://apicr.minzdrav.gov.ru/api.ashx?id=456_3&op=GetClinrecPdf
+    sha256: a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d
+    pages: 140
+  local_file: audit/retrieved/RU-PANIC.pdf
+  document_copies:
+  - source_id: RU-PANIC
+    local_file: audit/retrieved/RU-PANIC.pdf
+    sha256: a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d
+    version: '2024; каталог: опубликовано 19.09.2024, применяется'
+    url: https://apicr.minzdrav.gov.ru/api.ashx?id=456_3&op=GetClinrecPdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: false
+  - source_id: RU-PANIC
+    local_file: remediation/retrieved/RU-PANIC.pdf
+    sha256: a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d
+    version: '2024; каталог: опубликовано 19.09.2024, применяется'
+    url: https://apicr.minzdrav.gov.ru/api.ashx?id=456_3&op=GetClinrecPdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: false
+  dates:
+    registration: null
+    revision: null
+    publication: null
+    download: '2026-10-08'
+  latest_registration_revision_confirmed: false
+  current_guideline_status_evidence: remediation/catalog_check.json + remediation/current_minzdrav_catalog.json;
+    2026-10-08; CodeVersion/ApplyStatusCalculated=1
+- source_id: RU-VENLA-IR
+  title: Велаксин, ОХЛП таблеток 37,5/75 мг
+  organization_or_authors: ЭГИС
+  url: https://egispro.ru/medications/velaksin/instructions/velaksin_37_5_mg_28_sht/
+  doi_or_registry_id: ЛП-№(002276)-(РГ-RU)
+  publication_date: null
+  version_or_update_date: Версия HTML не датирована; снимок и SHA-256 от 08.10.2026; отдельное РУ формы подтверждено
+    реестром
+  accessed_on: '2026-10-08'
+  source_type: label
+  jurisdiction: RU/EAEU
+  access_status: full
+  exact_locator: HTML §1–3, §4.1–4.3, §4.5–4.6, §8; заголовки формы/режима сохранены
+  evidence_status: Инструкция/ОХЛП; не валидированная модель индивидуальной дозы
+  what_was_tested: Не исследовался создаваемый продукт. Содержание и ограничения описаны в evidence_limitations.
+  evidence_limitations: Снимок оригинальной страницы производителя, не PDF реестра. XR и IR имеют разные показания,
+    почечные единицы и поправки. Капсулы XR нельзя делить; 37,5 мг XR в проверенной форме нет. Не переносить шаг
+    +75 мг депрессии на ГТР.
+  reuse_license_or_restriction: Собственное извлечение фактических правил и короткие локаторы; лицензия на код/полное
+    руководство не предполагается.
+  document_fingerprint:
+    source_id: RU-VENLA-IR
+    url: https://egispro.ru/medications/velaksin/instructions/velaksin_37_5_mg_28_sht/
+    status: 200
+    sha256: ecad93859bf9c84daadfcc77bf765ed86d85c44ea4d27edc49903bf57dffca01
+    accessed_on: '2026-10-08'
+    format: HTML snapshot; revision date not stated
+  registry_observation:
+    registry: https://lk.regmed.ru/Register/EAEU_SmPC
+    query: Велаксин
+    registration_number: ЛП-№(002276)-(РГ-RU)
+    registration_date: '2023-05-02'
+    forms: таблетки 37,5/75 мг
+    accessed_on: '2026-10-08'
+    read_part: Видимая официальная строка результата поиска; наличие ОХЛП/ЛВ. Сам документ этой записи не скачан;
+      идентичность копии не заявлена.
+  local_file: source_snapshots/velaxin-IR.html
+  document_copies:
+  - source_id: RU-VENLA-IR
+    local_file: source_snapshots/velaxin-IR.html
+    sha256: ecad93859bf9c84daadfcc77bf765ed86d85c44ea4d27edc49903bf57dffca01
+    version: Версия HTML не датирована; снимок и SHA-256 от 08.10.2026; отдельное РУ формы подтверждено реестром
+    url: https://egispro.ru/medications/velaksin/instructions/velaksin_37_5_mg_28_sht/
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: false
+  - source_id: RU-VENLA-IR
+    local_file: audit/retrieved/RU-VENLA-IR.html
+    sha256: 49ed1a29889de1aab24571f78d672b21ccc5fcf665e0c925ff47464207a5f7c9
+    version: byte-different snapshot; medical revision not independently established
+    url: https://egispro.ru/medications/velaksin/instructions/velaksin_37_5_mg_28_sht/
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: false
+    latest_registration_revision_confirmed: false
+  - source_id: RU-VENLA-IR
+    local_file: remediation/retrieved/RU-VENLA-IR.html
+    sha256: d49b24495bebf9a85dd3018454a1f907596a92d6567fe85f62c1a0f0b43017b6
+    version: byte-different snapshot; medical revision not independently established
+    url: https://egispro.ru/medications/velaksin/instructions/velaksin_37_5_mg_28_sht/
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: false
+    latest_registration_revision_confirmed: false
+  dates:
+    registration: '2023-05-02'
+    revision: null
+    publication: null
+    download: '2026-10-08'
+  latest_registration_revision_confirmed: false
+verification:
+  primary_source_checked: true
+  all_clinical_parameters_have_sources: true
+  population_and_indication_checked: true
+  russian_applicability_checked: true
+  formulation_feasibility_checked: false
+  combined_rules_justified: true
+  source_transfer_check: reviewed_available_original_sections_and_contract_consistency; calculator_not_implemented;
+    latest_registration_revision_not_confirmed
+  clinical_review: not_performed
+  product_clinical_validation: not_performed
+  ready_for_technical_implementation: false
+  unresolved_items:
+  - Полный календарь или исполнимость конкретной формы отсутствует; частичный результат не автосхема.
+  transfer_scope: Only explicitly source-bound branch contracts and prepared expectations; medical currency limits
+    in sources.json remain open. No automatic clinical use.
+test_cases:
+- case_id: venla-xr-panic-form-limit__capsule75
+  synthetic: true
+  given:
+    form: Велаксин XR75
+  expected:
+    published_start_mg_per_day: 37.5
+    dose_feasible: false
+    split_capsule_allowed: false
+    unconditional_dose: null
+  source_refs:
+  - RU-VENLA-XR
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+- case_id: venla-xr-panic-form-limit__IR-substitution
+  synthetic: true
+  given:
+    form: Велаксин IR37,5
+  expected:
+    dose_form_substitution_allowed: false
+  source_refs:
+  - RU-VENLA-XR
+  - RU-VENLA-IR
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+profile:
+  country: RU
+  selection_status: RU_profile_research
+  foreign_fallback_allowed: false
+card_type: partial_source_constraint
+input_contract_ref: remediation/input_contracts.yaml#fragment_bindings/venla-xr-panic-form-limit

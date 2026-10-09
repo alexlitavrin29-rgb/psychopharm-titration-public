@@ -1,0 +1,792 @@
+[
+  {
+    "case_id": "esc-adult-adjust--audit-final-primary-RU-ESC-reversible_MAO_A-unknown",
+    "rule_id": "esc-adult-adjust",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 29,
+    "corrected_fact_count": 30
+  },
+  {
+    "case_id": "esc-adult-adjust--audit-final-primary-RU-ESC-linezolid-unknown",
+    "rule_id": "esc-adult-adjust",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 29,
+    "corrected_fact_count": 30
+  },
+  {
+    "case_id": "esc-adult-adjust--audit-final-primary-RU-ESC-selective_MAO_B-unknown",
+    "rule_id": "esc-adult-adjust",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 29,
+    "corrected_fact_count": 30
+  },
+  {
+    "case_id": "esc-adult-adjust--audit-final-primary-RU-ESC-serotonergic-unknown",
+    "rule_id": "esc-adult-adjust",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 29,
+    "corrected_fact_count": 30
+  },
+  {
+    "case_id": "esc-adult-adjust--audit-final-primary-RU-ESC-CYP2C19_inhibitor-unknown",
+    "rule_id": "esc-adult-adjust",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 29,
+    "corrected_fact_count": 30
+  },
+  {
+    "case_id": "esc-adult-adjust--audit-final-primary-RU-ESC-cimetidine-unknown",
+    "rule_id": "esc-adult-adjust",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 29,
+    "corrected_fact_count": 30
+  },
+  {
+    "case_id": "esc-adult-adjust--audit-final-primary-RU-ESC-bleeding-unknown",
+    "rule_id": "esc-adult-adjust",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 29,
+    "corrected_fact_count": 30
+  },
+  {
+    "case_id": "esc-cyp2c19-start--audit-final-primary-RU-ESC-reversible_MAO_A-unknown",
+    "rule_id": "esc-cyp2c19-start",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 22,
+    "corrected_fact_count": 23
+  },
+  {
+    "case_id": "esc-cyp2c19-start--audit-final-primary-RU-ESC-linezolid-unknown",
+    "rule_id": "esc-cyp2c19-start",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 22,
+    "corrected_fact_count": 23
+  },
+  {
+    "case_id": "esc-cyp2c19-start--audit-final-primary-RU-ESC-selective_MAO_B-unknown",
+    "rule_id": "esc-cyp2c19-start",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 22,
+    "corrected_fact_count": 23
+  },
+  {
+    "case_id": "esc-cyp2c19-start--audit-final-primary-RU-ESC-serotonergic-unknown",
+    "rule_id": "esc-cyp2c19-start",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 22,
+    "corrected_fact_count": 23
+  },
+  {
+    "case_id": "esc-cyp2c19-start--audit-final-primary-RU-ESC-CYP2C19_inhibitor-unknown",
+    "rule_id": "esc-cyp2c19-start",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 22,
+    "corrected_fact_count": 23
+  },
+  {
+    "case_id": "esc-cyp2c19-start--audit-final-primary-RU-ESC-cimetidine-unknown",
+    "rule_id": "esc-cyp2c19-start",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 22,
+    "corrected_fact_count": 23
+  },
+  {
+    "case_id": "esc-cyp2c19-start--audit-final-primary-RU-ESC-bleeding-unknown",
+    "rule_id": "esc-cyp2c19-start",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 22,
+    "corrected_fact_count": 23
+  },
+  {
+    "case_id": "esc-elderly-start--audit-final-primary-RU-ESC-reversible_MAO_A-unknown",
+    "rule_id": "esc-elderly-start",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 22,
+    "corrected_fact_count": 23
+  },
+  {
+    "case_id": "esc-elderly-start--audit-final-primary-RU-ESC-linezolid-unknown",
+    "rule_id": "esc-elderly-start",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 22,
+    "corrected_fact_count": 23
+  },
+  {
+    "case_id": "esc-elderly-start--audit-final-primary-RU-ESC-selective_MAO_B-unknown",
+    "rule_id": "esc-elderly-start",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 22,
+    "corrected_fact_count": 23
+  },
+  {
+    "case_id": "esc-elderly-start--audit-final-primary-RU-ESC-serotonergic-unknown",
+    "rule_id": "esc-elderly-start",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 22,
+    "corrected_fact_count": 23
+  },
+  {
+    "case_id": "esc-elderly-start--audit-final-primary-RU-ESC-CYP2C19_inhibitor-unknown",
+    "rule_id": "esc-elderly-start",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 22,
+    "corrected_fact_count": 23
+  },
+  {
+    "case_id": "esc-elderly-start--audit-final-primary-RU-ESC-cimetidine-unknown",
+    "rule_id": "esc-elderly-start",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 22,
+    "corrected_fact_count": 23
+  },
+  {
+    "case_id": "esc-elderly-start--audit-final-primary-RU-ESC-bleeding-unknown",
+    "rule_id": "esc-elderly-start",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 22,
+    "corrected_fact_count": 23
+  },
+  {
+    "case_id": "esc-gad-start--audit-final-primary-RU-ESC-reversible_MAO_A-unknown",
+    "rule_id": "esc-gad-start",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 22,
+    "corrected_fact_count": 23
+  },
+  {
+    "case_id": "esc-gad-start--audit-final-primary-RU-ESC-linezolid-unknown",
+    "rule_id": "esc-gad-start",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 22,
+    "corrected_fact_count": 23
+  },
+  {
+    "case_id": "esc-gad-start--audit-final-primary-RU-ESC-selective_MAO_B-unknown",
+    "rule_id": "esc-gad-start",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 22,
+    "corrected_fact_count": 23
+  },
+  {
+    "case_id": "esc-gad-start--audit-final-primary-RU-ESC-serotonergic-unknown",
+    "rule_id": "esc-gad-start",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 22,
+    "corrected_fact_count": 23
+  },
+  {
+    "case_id": "esc-gad-start--audit-final-primary-RU-ESC-CYP2C19_inhibitor-unknown",
+    "rule_id": "esc-gad-start",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 22,
+    "corrected_fact_count": 23
+  },
+  {
+    "case_id": "esc-gad-start--audit-final-primary-RU-ESC-cimetidine-unknown",
+    "rule_id": "esc-gad-start",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 22,
+    "corrected_fact_count": 23
+  },
+  {
+    "case_id": "esc-gad-start--audit-final-primary-RU-ESC-bleeding-unknown",
+    "rule_id": "esc-gad-start",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 22,
+    "corrected_fact_count": 23
+  },
+  {
+    "case_id": "esc-hepatic-start--audit-final-primary-RU-ESC-reversible_MAO_A-unknown",
+    "rule_id": "esc-hepatic-start",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 22,
+    "corrected_fact_count": 23
+  },
+  {
+    "case_id": "esc-hepatic-start--audit-final-primary-RU-ESC-linezolid-unknown",
+    "rule_id": "esc-hepatic-start",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 22,
+    "corrected_fact_count": 23
+  },
+  {
+    "case_id": "esc-hepatic-start--audit-final-primary-RU-ESC-selective_MAO_B-unknown",
+    "rule_id": "esc-hepatic-start",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 22,
+    "corrected_fact_count": 23
+  },
+  {
+    "case_id": "esc-hepatic-start--audit-final-primary-RU-ESC-serotonergic-unknown",
+    "rule_id": "esc-hepatic-start",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 22,
+    "corrected_fact_count": 23
+  },
+  {
+    "case_id": "esc-hepatic-start--audit-final-primary-RU-ESC-CYP2C19_inhibitor-unknown",
+    "rule_id": "esc-hepatic-start",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 22,
+    "corrected_fact_count": 23
+  },
+  {
+    "case_id": "esc-hepatic-start--audit-final-primary-RU-ESC-cimetidine-unknown",
+    "rule_id": "esc-hepatic-start",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 22,
+    "corrected_fact_count": 23
+  },
+  {
+    "case_id": "esc-hepatic-start--audit-final-primary-RU-ESC-bleeding-unknown",
+    "rule_id": "esc-hepatic-start",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 22,
+    "corrected_fact_count": 23
+  },
+  {
+    "case_id": "esc-panic-start--audit-final-primary-RU-ESC-reversible_MAO_A-unknown",
+    "rule_id": "esc-panic-start",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 22,
+    "corrected_fact_count": 23
+  },
+  {
+    "case_id": "esc-panic-start--audit-final-primary-RU-ESC-linezolid-unknown",
+    "rule_id": "esc-panic-start",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 22,
+    "corrected_fact_count": 23
+  },
+  {
+    "case_id": "esc-panic-start--audit-final-primary-RU-ESC-selective_MAO_B-unknown",
+    "rule_id": "esc-panic-start",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 22,
+    "corrected_fact_count": 23
+  },
+  {
+    "case_id": "esc-panic-start--audit-final-primary-RU-ESC-serotonergic-unknown",
+    "rule_id": "esc-panic-start",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 22,
+    "corrected_fact_count": 23
+  },
+  {
+    "case_id": "esc-panic-start--audit-final-primary-RU-ESC-CYP2C19_inhibitor-unknown",
+    "rule_id": "esc-panic-start",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 22,
+    "corrected_fact_count": 23
+  },
+  {
+    "case_id": "esc-panic-start--audit-final-primary-RU-ESC-cimetidine-unknown",
+    "rule_id": "esc-panic-start",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 22,
+    "corrected_fact_count": 23
+  },
+  {
+    "case_id": "esc-panic-start--audit-final-primary-RU-ESC-bleeding-unknown",
+    "rule_id": "esc-panic-start",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 22,
+    "corrected_fact_count": 23
+  },
+  {
+    "case_id": "esc-social-start--audit-final-primary-RU-ESC-reversible_MAO_A-unknown",
+    "rule_id": "esc-social-start",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 22,
+    "corrected_fact_count": 23
+  },
+  {
+    "case_id": "esc-social-start--audit-final-primary-RU-ESC-linezolid-unknown",
+    "rule_id": "esc-social-start",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 22,
+    "corrected_fact_count": 23
+  },
+  {
+    "case_id": "esc-social-start--audit-final-primary-RU-ESC-selective_MAO_B-unknown",
+    "rule_id": "esc-social-start",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 22,
+    "corrected_fact_count": 23
+  },
+  {
+    "case_id": "esc-social-start--audit-final-primary-RU-ESC-serotonergic-unknown",
+    "rule_id": "esc-social-start",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 22,
+    "corrected_fact_count": 23
+  },
+  {
+    "case_id": "esc-social-start--audit-final-primary-RU-ESC-CYP2C19_inhibitor-unknown",
+    "rule_id": "esc-social-start",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 22,
+    "corrected_fact_count": 23
+  },
+  {
+    "case_id": "esc-social-start--audit-final-primary-RU-ESC-cimetidine-unknown",
+    "rule_id": "esc-social-start",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 22,
+    "corrected_fact_count": 23
+  },
+  {
+    "case_id": "esc-social-start--audit-final-primary-RU-ESC-bleeding-unknown",
+    "rule_id": "esc-social-start",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 22,
+    "corrected_fact_count": 23
+  },
+  {
+    "case_id": "switch-esc-ser--audit-final-primary-RU-ESC-irreversible_maoi-unknown",
+    "rule_id": "switch-esc-ser",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 16,
+    "corrected_fact_count": 17
+  },
+  {
+    "case_id": "switch-esc-ser--audit-final-primary-RU-ESC-pimozide-unknown",
+    "rule_id": "switch-esc-ser",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 16,
+    "corrected_fact_count": 17
+  },
+  {
+    "case_id": "switch-esc-ser--audit-final-primary-RU-ESC-QT_prolonging-unknown",
+    "rule_id": "switch-esc-ser",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 16,
+    "corrected_fact_count": 17
+  },
+  {
+    "case_id": "switch-esc-ser--audit-final-primary-RU-ESC-reversible_MAO_A-unknown",
+    "rule_id": "switch-esc-ser",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 16,
+    "corrected_fact_count": 17
+  },
+  {
+    "case_id": "switch-esc-ser--audit-final-primary-RU-ESC-linezolid-unknown",
+    "rule_id": "switch-esc-ser",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 16,
+    "corrected_fact_count": 17
+  },
+  {
+    "case_id": "switch-esc-ser--audit-final-primary-RU-ESC-selective_MAO_B-unknown",
+    "rule_id": "switch-esc-ser",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 16,
+    "corrected_fact_count": 17
+  },
+  {
+    "case_id": "switch-esc-ser--audit-final-primary-RU-ESC-serotonergic-unknown",
+    "rule_id": "switch-esc-ser",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 16,
+    "corrected_fact_count": 17
+  },
+  {
+    "case_id": "switch-esc-ser--audit-final-primary-RU-ESC-CYP2C19_inhibitor-unknown",
+    "rule_id": "switch-esc-ser",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 16,
+    "corrected_fact_count": 17
+  },
+  {
+    "case_id": "switch-esc-ser--audit-final-primary-RU-ESC-cimetidine-unknown",
+    "rule_id": "switch-esc-ser",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 16,
+    "corrected_fact_count": 17
+  },
+  {
+    "case_id": "switch-esc-ser--audit-final-primary-RU-ESC-bleeding-unknown",
+    "rule_id": "switch-esc-ser",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 16,
+    "corrected_fact_count": 17
+  },
+  {
+    "case_id": "switch-esc-ser--audit-final-primary-RU-SER-maoi-unknown",
+    "rule_id": "switch-esc-ser",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 16,
+    "corrected_fact_count": 17
+  },
+  {
+    "case_id": "switch-esc-ser--audit-final-primary-RU-SER-pimozide-unknown",
+    "rule_id": "switch-esc-ser",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 16,
+    "corrected_fact_count": 17
+  },
+  {
+    "case_id": "switch-esc-ser--audit-final-primary-RU-SER-serotonergic-unknown",
+    "rule_id": "switch-esc-ser",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 16,
+    "corrected_fact_count": 17
+  },
+  {
+    "case_id": "switch-esc-ser--audit-final-primary-RU-SER-QT_prolonging-unknown",
+    "rule_id": "switch-esc-ser",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 16,
+    "corrected_fact_count": 17
+  },
+  {
+    "case_id": "switch-esc-ser--audit-final-primary-RU-SER-bleeding-unknown",
+    "rule_id": "switch-esc-ser",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 16,
+    "corrected_fact_count": 17
+  },
+  {
+    "case_id": "switch-ser-esc--audit-final-primary-RU-ESC-irreversible_maoi-unknown",
+    "rule_id": "switch-ser-esc",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 14,
+    "corrected_fact_count": 15
+  },
+  {
+    "case_id": "switch-ser-esc--audit-final-primary-RU-ESC-pimozide-unknown",
+    "rule_id": "switch-ser-esc",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 14,
+    "corrected_fact_count": 15
+  },
+  {
+    "case_id": "switch-ser-esc--audit-final-primary-RU-ESC-QT_prolonging-unknown",
+    "rule_id": "switch-ser-esc",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 14,
+    "corrected_fact_count": 15
+  },
+  {
+    "case_id": "switch-ser-esc--audit-final-primary-RU-ESC-reversible_MAO_A-unknown",
+    "rule_id": "switch-ser-esc",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 14,
+    "corrected_fact_count": 15
+  },
+  {
+    "case_id": "switch-ser-esc--audit-final-primary-RU-ESC-linezolid-unknown",
+    "rule_id": "switch-ser-esc",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 14,
+    "corrected_fact_count": 15
+  },
+  {
+    "case_id": "switch-ser-esc--audit-final-primary-RU-ESC-selective_MAO_B-unknown",
+    "rule_id": "switch-ser-esc",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 14,
+    "corrected_fact_count": 15
+  },
+  {
+    "case_id": "switch-ser-esc--audit-final-primary-RU-ESC-serotonergic-unknown",
+    "rule_id": "switch-ser-esc",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 14,
+    "corrected_fact_count": 15
+  },
+  {
+    "case_id": "switch-ser-esc--audit-final-primary-RU-ESC-CYP2C19_inhibitor-unknown",
+    "rule_id": "switch-ser-esc",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 14,
+    "corrected_fact_count": 15
+  },
+  {
+    "case_id": "switch-ser-esc--audit-final-primary-RU-ESC-cimetidine-unknown",
+    "rule_id": "switch-ser-esc",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 14,
+    "corrected_fact_count": 15
+  },
+  {
+    "case_id": "switch-ser-esc--audit-final-primary-RU-ESC-bleeding-unknown",
+    "rule_id": "switch-ser-esc",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 14,
+    "corrected_fact_count": 15
+  },
+  {
+    "case_id": "switch-ser-esc--audit-final-primary-RU-SER-maoi-unknown",
+    "rule_id": "switch-ser-esc",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 14,
+    "corrected_fact_count": 15
+  },
+  {
+    "case_id": "switch-ser-esc--audit-final-primary-RU-SER-pimozide-unknown",
+    "rule_id": "switch-ser-esc",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 14,
+    "corrected_fact_count": 15
+  },
+  {
+    "case_id": "switch-ser-esc--audit-final-primary-RU-SER-serotonergic-unknown",
+    "rule_id": "switch-ser-esc",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 14,
+    "corrected_fact_count": 15
+  },
+  {
+    "case_id": "switch-ser-esc--audit-final-primary-RU-SER-QT_prolonging-unknown",
+    "rule_id": "switch-ser-esc",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 14,
+    "corrected_fact_count": 15
+  },
+  {
+    "case_id": "switch-ser-esc--audit-final-primary-RU-SER-bleeding-unknown",
+    "rule_id": "switch-ser-esc",
+    "missing_counted_facts": [
+      "maoi_type.primary_class"
+    ],
+    "extra_counted_facts": [],
+    "current_count": 14,
+    "corrected_fact_count": 15
+  }
+]

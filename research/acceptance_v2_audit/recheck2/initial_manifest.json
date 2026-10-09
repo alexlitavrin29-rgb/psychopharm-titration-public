@@ -1,0 +1,1245 @@
+{
+  "utc": "2026-10-08T19:15:12.716590+00:00",
+  "snapshot": "8a17ae3f99839548742ee509a23d060ea451ed0018c48432dc73b9ba68de4359",
+  "core_files": 170,
+  "core_mismatches": [],
+  "protected_files": 575,
+  "original_source_files": 17,
+  "protected_mismatches": [],
+  "prior_own_audit_files": [
+    {
+      "path": "research\\acceptance_v2_audit\\acceptance_recheck.json",
+      "sha256": "e9debc7008801f757cdf0ffe7869aeebe9c4fe24800e4f88f4320074ab586db9"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\acceptance_recheck.md",
+      "sha256": "de9f58a34f68aa3b99a09c22e5e2ef4686eb654aaf6e255f051c7c182767eb91"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\card_inventory_initial.json",
+      "sha256": "0598a642d5b708f722c58e52c11a9ecd4d1a20dd6960d9dbc5c13b89897b6454"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\complete_given_consistency.json",
+      "sha256": "a67a21173f60083d6abf79d35b5d5172db09038b057f63be2b0b6da0b3445cd1"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\coverage.json",
+      "sha256": "f58d58f857c5c1044a1e00b0daf8e30f88765f83add11c1d4ef29d721715f291"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\coverage.md",
+      "sha256": "ed7da5d3e1c1ca604babb2d51ba372634c83e4c5553b48a96f2eb238a89fd509"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\final_manifest.json",
+      "sha256": "7bf033eb5137484ddb0e3d74edda8d541c81c55f2f8f23e78fa6cbebcc81e356"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\findings.json",
+      "sha256": "245220f4758ed425756cd4f9996f65f1796c2fd1f1aa8d30ea9738ddf5e5e3bc"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\findings.md",
+      "sha256": "8dd839a027d32f2076824a00841524a98e8f35cb5c50ef9c3092ee7d0c40403f"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\independent_checks.json",
+      "sha256": "685cc041be5c62dbbfc67a3e1de8c3169fb63d2b7a58de5f023488920dd888fd"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\independent_paths.json",
+      "sha256": "54622750fdd91f4081ee5823a8f06158aa82f2c32e81f2ff27ac5d8ee922057b"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\initial_manifest.json",
+      "sha256": "50cc1428bbec400f490be206a871a681cba0fa3d65f0a5ee5817aab13eadc9a5"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\preservation_check.json",
+      "sha256": "b0314f4a87f849320ed6a4c9d6d191ab37b559aa6d542c37f55bf64cc7eead2c"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\preservation_initial.json",
+      "sha256": "dcae52a129d232ace034c0b7be6d9a345ba138b3099ddec3f02c987bf099dc18"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\primary_expected_checks.json",
+      "sha256": "b59e677df18201b36e338250e624ee210d5663f1a3f1f2812a6c09d5e88b55ac"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\required_fixes.md",
+      "sha256": "3d778acffe28d74bee9717ca8e0800497294dc81789d6c8efb972954139315fa"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\requirements_diff.json",
+      "sha256": "01c47f6aaf0fcf3fc8926e2ab40f9730077223a7a7f8ee704302b0268ba2f1ed"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\scoring.json",
+      "sha256": "3191cf2be60ffba2f78fcfc28251dc6d28fd6748d571394040abd884e96a8887"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\scoring.md",
+      "sha256": "5aa077a0ff2b18340d42c247cfceacc24df1ee3cd599d81489d3aa96a4aa394c"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\source_inventory_initial.json",
+      "sha256": "576910834aa4af74705f697c710ab6ce0a68499239247643aa529435c9266c5e"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\source_verification.json",
+      "sha256": "1ca4ce52707ddad50545952a7223bc06d6e63b68a857eb83280b17fec3757d0c"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\source_verification.md",
+      "sha256": "b4889803e331b8eb6570c1c30995100635dfeabb20ffc48b23615624734ddacb"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\source_version_mismatches.json",
+      "sha256": "6c76203b1e4d49c9c18efa026d85528714a3eae6b770dc37097cad885c0c4dd4"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\summary.md",
+      "sha256": "b238effdedcb35e7de263474311400e8a4be088aaf2899becb2d3edc605a6c50"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\verify_independent.py",
+      "sha256": "4303e9fbeb3aaaccf4e651840a818e041accde18c3efad050d7e8f70fd1bcaab"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\write_reports.py",
+      "sha256": "fd3231d71713d35cdfac04326d6dd693e856f623ab94740e2203562793a4145a"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\recheck1\\acceptance_recheck.json",
+      "sha256": "41d893c8004c37ac80dd18293f5de0f0fda956571adae43e9490f70900916ca8"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\recheck1\\acceptance_recheck.md",
+      "sha256": "f9b679c2e06c0a58ceef80148951eff97b9ff1d8e083832f888ac8d61aa963d8"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\recheck1\\additional_checks.json",
+      "sha256": "53fdf575fbe44d9443d2772e57e61955abb530b8b9a4597f446eb03b91de3b82"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\recheck1\\additional_checks.py",
+      "sha256": "1b946cd63605713cae9c0479fc175e5a7bd9ed48ec2943261057f76149ed2b39"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\recheck1\\complete_given_consistency.json",
+      "sha256": "a67a21173f60083d6abf79d35b5d5172db09038b057f63be2b0b6da0b3445cd1"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\recheck1\\condition_inventory.json",
+      "sha256": "4b040f773f9fe1cad1b8dddae4f46731b6eb63d84721f7efc48d13e8c00aa42b"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\recheck1\\condition_inventory.md",
+      "sha256": "c7f9ed0ac415bdfccb2b2b49d9af347ab0b16165173c9f49b93381e257d58309"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\recheck1\\coverage.json",
+      "sha256": "654df86a9e7912526b643f409167969b2ea28b06d16cdb2bfc30dbfaea0be32b"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\recheck1\\coverage.md",
+      "sha256": "95f86bf4e3ed1e991184292bdd231759ac8b78a448a51e7d8f84f589fd47858c"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\recheck1\\final_manifest.json",
+      "sha256": "133b4d18ddc1643e576785e557ff3f6c7391952e5a726b405e702e43e9ef3095"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\recheck1\\findings.json",
+      "sha256": "0d1a3223f590828b1e2145ac90930b3447e8eb0662c132d327acce32d6dcb3e7"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\recheck1\\findings.md",
+      "sha256": "3351c21e371096418f909253301b8aa7c98717de7f5a021f2ac4a09268052a21"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\recheck1\\independent_checks.json",
+      "sha256": "4608462f18b8193ba31758117d2d619f82dff6caf99a5ac3c98ceaf3f3f138a3"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\recheck1\\independent_paths.json",
+      "sha256": "daf12cb2c02e3e772c86f2af29559d70ff563399295d56ea3f138c091f3d021d"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\recheck1\\initial_manifest.json",
+      "sha256": "5985a0002ff32d44ab202c483a7e36af2755354739f71d67a6a621dc322f5387"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\recheck1\\input_inventory.json",
+      "sha256": "573cf614037493e2487e231818411fe5a43fc1e208cda0905009a93477126eed"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\recheck1\\locator_residuals.json",
+      "sha256": "ab6b2b722efafea1e514815b8da84f1c7a8e3738956265adfb9ba0e157d73eff"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\recheck1\\necessity_counterexamples.json",
+      "sha256": "2d5537be99b0a78dd6cdd82befa5445dce78cf83956fac7ebd96ba66a4a4a760"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\recheck1\\polish_reports.py",
+      "sha256": "bce7837bb7ab6e7a80cb447ce0d9719dc67f38b924f34e0fd9ce3761bd67dc49"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\recheck1\\preservation_check.json",
+      "sha256": "5a0a298f6a2d9598a5723595c8a5ed31c14b9ccd825955ea77e3187ce18e3208"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\recheck1\\primary_expected_checks.json",
+      "sha256": "e75978f41c275deef4127d693b480b511dade4c93210bea759d6199d68f2bc26"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\recheck1\\required_fixes.md",
+      "sha256": "3932854e32f1246ba015d9ecff4a8a26411d7587af2f54ae7d8a5ff1b66d4b97"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\recheck1\\requirements_diff.json",
+      "sha256": "01c47f6aaf0fcf3fc8926e2ab40f9730077223a7a7f8ee704302b0268ba2f1ed"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\recheck1\\scoring.json",
+      "sha256": "50fe84acc0719610e2ccf1e192d9f4dce0660198b53e00511fa7a0659d8b36c6"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\recheck1\\scoring.md",
+      "sha256": "20c3ad8c0aa8238d1515b6321f4aa7b5233aa27d058c9c6c18c9da9a12f23bbe"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\recheck1\\source_verification.json",
+      "sha256": "2afd0d9dc31fe674804765bf03db34e1d62388d9d59e43c1b2f01692fbe17829"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\recheck1\\source_verification.md",
+      "sha256": "434744e1cda8a3627121aa3152a0bacc82e76419ea5c6e17358697e3864aa024"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\recheck1\\summary.md",
+      "sha256": "c2a583d1fe079bf46e13408aa0758879563efa5ca8b733c1803e83dd337aaf28"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\recheck1\\verify_independent.py",
+      "sha256": "ee0f33a829d8ceafb3d7eef3a72fb9e0d0d796a745a07f2b4a8cc029bfe93c41"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\recheck1\\write_reports.py",
+      "sha256": "3a468fee0fe4069c12d661829ee6fbb223bcaf8359acade55ef6f74e15a2d5d7"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\rendered\\RU-AGO_page1.png",
+      "sha256": "19c157c1326390c72ad56ff52477664284dd82325758ea7152fe6bc173e35d2e"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\rendered\\RU-DEP-p36.png",
+      "sha256": "0be5cfebfe44002b36308c66c9800218d97592cbe4136fb6a4a3c02823aeacda"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\rendered\\RU-DEP-p45.png",
+      "sha256": "2826616d6f41b900acc50f4e1719fa41a9003f33e5f10ad836e5442a8269e5f9"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\rendered\\RU-DEP-p95.png",
+      "sha256": "554912a6a99a4ab801a0e28fac3f98eb4626688417c8e08263df9d53d9846977"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\rendered\\RU-DEP-p96.png",
+      "sha256": "ff19d9e6957ea458465a8ea1c513b17a25811f40a4cd0ff148066b0438abf398"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\rendered\\RU-DULOX_page1.png",
+      "sha256": "0d678288b74636dfcf27fd096b8d4fae16f6020ae45d2bd8b0ad58004b4889da"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\rendered\\RU-ESC-p2.png",
+      "sha256": "cd76f3b97411cee2cf5d5b8690c6166b77dbc2db6915dda87f57e8e92c57b0ba"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\rendered\\RU-ESC-p3.png",
+      "sha256": "869f1f02929a706c77650ce32a54076c75ab08e81d7f8ec46187e8a72ba7bb8d"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\rendered\\RU-ESC-p4.png",
+      "sha256": "808a00c43457b947760a77ea56b90979bbb99649805f757c054d525787ae2230"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\rendered\\RU-ESC-p6.png",
+      "sha256": "844d6152dab00fb0a798811186743c8a2a12f90a640c2a36ead0a071416b2a1a"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\rendered\\RU-ESC_page1.png",
+      "sha256": "9d04624c93087da563618ec3a056fa5cf63bdef31ff1fa29fc2587f8c28d61d5"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\rendered\\RU-FLUVOX_page1.png",
+      "sha256": "c7e01d4b6f0e65b8f11bf4e2b2cb4a9678f711391d0d51aaf1282f88c85348aa"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\rendered\\RU-PANIC-p25.png",
+      "sha256": "98613f424efd3401bbd188894aa206b386870eb646023cecfa0e34e0455282f9"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\rendered\\RU-PANIC-p26.png",
+      "sha256": "19ed3626f77658524a0560625b61950121162846497f2c620c66bc532c6a7bd7"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\rendered\\RU-PANIC-p27.png",
+      "sha256": "1449eb981bc6fa7a40a38803498a6e63de787b3a0c3e945c21a71902d374bd6a"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\rendered\\RU-PANIC-p28.png",
+      "sha256": "0233d70a4f496aac1c3d1b829d2c1ac9647b5e2c6f0aa68f92555302eb6feac1"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\rendered\\RU-PAROX-p3.png",
+      "sha256": "154c181dc18d24e9500f47c0ded1d7eb7dff4571dd48b6639e68a664c469857b"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\rendered\\RU-PAROX-p4.png",
+      "sha256": "ce19979bb1e334496444f3e27c3e6dc26302665b1d4f0801882f85acffbf9c52"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\rendered\\RU-PAROX_page1.png",
+      "sha256": "02691e6a7ccc36a03e68a9cb59c3e4524f419ab1d264a22b0936aa724fbdaddb"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\rendered\\RU-PHEN_page1.png",
+      "sha256": "69fa72a919541991a3f98b2911fd6bb51eda542eeaacf7fb6cad9962d15d70ee"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\rendered\\RU-PREG-p4.png",
+      "sha256": "dd1b73af42184e39046873b4cb6e4269f06c000e0ccc0d0a9d2598b4afb6a269"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\rendered\\RU-PREG-p5.png",
+      "sha256": "4783b49c2bc5386c8503299ef1fe93247c98b2e33d10efe7aa79f727bfa8e5f7"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\rendered\\RU-PREG-RICHTER-p3.png",
+      "sha256": "c74f539a34fb149aef7de1f68e98f6635f893864ffea7e9522a8324035a8e2a9"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\rendered\\RU-PREG-RICHTER_page1.png",
+      "sha256": "e4dd91b2725459f65f9c6f3be95426efc2ed8f4894b33c87ca847c14c54d99c5"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\rendered\\RU-PREG_page1.png",
+      "sha256": "6da7165b0599a427d5d9bade45e2e747a57dc7bedf7c87e28fe3bd3c5863b139"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\rendered\\RU-SER-p2.png",
+      "sha256": "912871f7428e69ae5eeb0052cb3a7e675f120599174ad9b71b4304201ded9585"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\rendered\\RU-SER-p3.png",
+      "sha256": "e730f74a312ecbbace02dd1a3049d00a6303e0664823913884cc401f1f27dc70"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\rendered\\RU-SER-p4.png",
+      "sha256": "4d5110558d19a06524a5e1bd637c357f2ef99a3287d4809fc70b24839df5a985"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\rendered\\RU-SER_page1.png",
+      "sha256": "10c348a7ec8b8c1532ceb673fe5b890e1a5e626ccb4eb5a3345abfbf5a25d0c6"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\rendered\\RU-VENLA-IR_page1.png",
+      "sha256": "978f047bcfaf00e29e2a556bb6e4faee5707890a0e5d15f0bd45de9e23d4a576"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\rendered\\RU-VENLA-XR-p2.png",
+      "sha256": "c663133ecc721a243526d020dda36fba3893fbd349d901e2ce99c843e297e20f"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\rendered\\RU-VENLA-XR-p3.png",
+      "sha256": "8bead065af387bbc3eb36d5ffc47ca8e0929440e22f48c63041a4a794587b90f"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\rendered\\RU-VENLA-XR-p4.png",
+      "sha256": "c07c20676f5422251d4e855349a65597d5d800afe833c0168adaba12a0e00cf2"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\rendered\\RU-VENLA-XR-p5.png",
+      "sha256": "8315fc7ad1c99d4eafe6ca16e5a1b0dcbf0d6e860673f7373706499e69aa97d5"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\rendered\\RU-VENLA-XR-p9.png",
+      "sha256": "72d5c8508e0288413b2b9460ec6ac4ec857484b6fb1ae0f10e0d8144b4ac7d2c"
+    },
+    {
+      "path": "research\\acceptance_v2_audit\\rendered\\RU-VENLA-XR_page1.png",
+      "sha256": "08aea288a751e5b87968160ff077c4cb63bb4877d215c93f5da57736c4be9660"
+    }
+  ],
+  "files": [
+    {
+      "path": "research/remediation_round3/sources.json",
+      "sha256": "af8a195dbf4ca9cf6d979cfb5d32f973b142d63e6261c6bc5a48d51a513f482c"
+    },
+    {
+      "path": "research/remediation_round3/input_contracts.yaml",
+      "sha256": "81c7b8cea122d5258aa753846d0e2ebc3d4a1df1d0a45584c9842d3257439e15"
+    },
+    {
+      "path": "research/remediation_round3/result_contracts.yaml",
+      "sha256": "3336e95bc4c1a2c68d5db8b55b36e9d00213d3906f921daa68a9e2cff20d44b3"
+    },
+    {
+      "path": "research/remediation_round3/full_scenarios.json",
+      "sha256": "79c86665a0baab4156ac75818f95609215d9be17aeb956e4e8b9ceb75d5bfd6c"
+    },
+    {
+      "path": "research/remediation_round3/necessity_decisions.json",
+      "sha256": "91451aca594f5f3f77cf6e054f8f345e68d0022b05709fe0f9c14f9761ded709"
+    },
+    {
+      "path": "research/remediation_round3/necessity_policy.yaml",
+      "sha256": "e427803a2c542c9660c46276927a4cb9ff116912654aa419c67fb77b73c7a23d"
+    },
+    {
+      "path": "research/remediation_round3/question_graphs.yaml",
+      "sha256": "61a7111437867616b9d9d84ddd2c9663a39c331f56109fdfc41cd203d9c42bc0"
+    },
+    {
+      "path": "research/remediation_round3/actual_question_paths.json",
+      "sha256": "5a24a7d1b4178f55d8276576ff701fe9b99ad24da9cdc51b67e4aff90a219c33"
+    },
+    {
+      "path": "research/remediation_round3/input_necessity.csv",
+      "sha256": "4b74d78eb37acb775df4764afaadb92b442ea15f59d238a5a86197bb41abbdb7"
+    },
+    {
+      "path": "research/remediation_round3/renal_estimator.yaml",
+      "sha256": "0dd5df39c38632874fe0558e1de6d9fbfbabaa4f894a686ffa138964d7c3df3c"
+    },
+    {
+      "path": "research/remediation_round3/current_registry_documents.json",
+      "sha256": "777ab2ebc65907b9333d52b75be57ec1f7260834839f966a6437a90da7bb657d"
+    },
+    {
+      "path": "research/remediation_round3/requirements_diff.json",
+      "sha256": "8a20c5c56135c60440ba061fec9358139744c9a8db150d6ccb8e3e14a3aa5d20"
+    },
+    {
+      "path": "research/remediation_round3/version_inventory.json",
+      "sha256": "989da9709b16f3a23b02b6327571e8514d2ff63f4511167b7beeef767668b1ef"
+    },
+    {
+      "path": "research/remediation_round3/coverage_map.json",
+      "sha256": "108c2b90cb351bc3bb61891153c83a6cf616bf8a4f7a397b07df7d706caf7105"
+    },
+    {
+      "path": "research/remediation_round3/verify_contracts.py",
+      "sha256": "b0227bb4fb12fabf4afccdcc79e087689a435ab49a312c7b279c4ba8407f6076"
+    },
+    {
+      "path": "research/remediation_round3/verify_v2_negatives.py",
+      "sha256": "5aa736a05837cdbf9043904e1e9565005811e0d3f41a9671a6c10d4c7e61f35c"
+    },
+    {
+      "path": "research/remediation_round3/verify_graphs.py",
+      "sha256": "82d44fa30d75a4cc215d5da568667cb55d0477c54e3667046da2b51bc8fe699c"
+    },
+    {
+      "path": "research/remediation_round3/verify_new_negative_checks.py",
+      "sha256": "398195fe84caee6da362f0a97533941198fec354d3ebfde71a3b0b2812162321"
+    },
+    {
+      "path": "research/remediation_round3/verify_audit_repairs.py",
+      "sha256": "aa74dacf7f2d76722cf46fef1b4d0baf2b8336163ee51d4f6ee9ea6be0e5d47c"
+    },
+    {
+      "path": "research/remediation_round3/primary_expected_checks.py",
+      "sha256": "08dcd096cac86bfe566616adbc080dadb33749c56bc47aee9780bc09e5ebf30d"
+    },
+    {
+      "path": "research/remediation_round3/primary_current_expected_checks.py",
+      "sha256": "e9028923b89036dc8d9123ba41985ce973a2bb2ffb233d1fe7fc3e101ef3d6d0"
+    },
+    {
+      "path": "research/remediation_round3/build_graphs.py",
+      "sha256": "900b8793194b536ee351474faf1dd6c358857d2750a9e538dd120e21fedaade6"
+    },
+    {
+      "path": "research/remediation_round3/ordinary_path_report.json",
+      "sha256": "d67a1ca1715bcd754e90f304e20800ffe7d437f5bbdceeedc4d8a48e33f9e418"
+    },
+    {
+      "path": "research/remediation_round3/source_binding_repairs.json",
+      "sha256": "3aaa5ea83066bd7a4252f7ddd89e678e9ae098d51670e9981d5485ceb02ef251"
+    },
+    {
+      "path": "research/remediation_round3/medical_condition_repairs.json",
+      "sha256": "47718a7b7a46f53eee5b17cb622859953dab4038bcb0118a2f82eab943712afd"
+    },
+    {
+      "path": "research/remediation_round3/qualitative_necessity_repairs.json",
+      "sha256": "8c75df386ea7330ed7bc69f759a5b2bce4cdb8d93327bfec7c53199654f966ee"
+    },
+    {
+      "path": "research/remediation_round3/findings_response.json",
+      "sha256": "7f6b0dc153285dab98c44e1d6d32b7a73e8d92448399bb2123db2f59d97de7c9"
+    },
+    {
+      "path": "research/remediation_round3/primary_review_notes.md",
+      "sha256": "048e78e9c5db9fffc5f13aed416ac33a016778d6efc980c31ab7228742bd3015"
+    },
+    {
+      "path": "research/remediation_round3/README.md",
+      "sha256": "11af11aa874b384afa50f9720ab1977e585958af62f0e186a0552b8142957993"
+    },
+    {
+      "path": "research/remediation_round3/limitations.md",
+      "sha256": "bf1aa3e6bd7742abd822706c480f454c1882569e88b8ad8889c0b884d51368e7"
+    },
+    {
+      "path": "research/remediation_round3/rules/ago-depression-start.yaml",
+      "sha256": "0c528650b193932429c7ce93583cd94e12f1c26673a0a8f8a9cce9ff5da07ce5"
+    },
+    {
+      "path": "research/remediation_round3/rules/ago-gad-start.yaml",
+      "sha256": "d8c57278d3595c75efffe81ba34a2c9e9bca167e96bad2c318e48695dd35278e"
+    },
+    {
+      "path": "research/remediation_round3/rules/ago-stop.yaml",
+      "sha256": "44d99b28661a4fc0ee0c114b39445b6e9f368e229983e15d78aa2f97a783a1c6"
+    },
+    {
+      "path": "research/remediation_round3/rules/dulox-depression-start.yaml",
+      "sha256": "178b250ceff35db66ed53265edc3622962cec94bc6c7ad9effe3edce25564b6e"
+    },
+    {
+      "path": "research/remediation_round3/rules/dulox-gad-adjust.yaml",
+      "sha256": "0cf556f34af6ae89a0666f627c3d4bc51fbb4fcec544b18033b906dc1a68521e"
+    },
+    {
+      "path": "research/remediation_round3/rules/dulox-gad-start.yaml",
+      "sha256": "6a75d2a9047b362d83e218223be86e2a2f797aacee3a5bea97df0519578e631f"
+    },
+    {
+      "path": "research/remediation_round3/rules/dulox-taper-limit.yaml",
+      "sha256": "48a22acf7ae3f5b5bbd32db9831dca7137fba97d82ac7652837d2706d09fe3c3"
+    },
+    {
+      "path": "research/remediation_round3/rules/esc-adult-adjust.yaml",
+      "sha256": "4995b5ad6e0c19e01d09898f4486fd122f88094a86649a330fa9ffbb0d83df5e"
+    },
+    {
+      "path": "research/remediation_round3/rules/esc-cyp2c19-start.yaml",
+      "sha256": "820e41c05939e73ef3b4f498287d5b628eca7df662250b02ecde8e6355014252"
+    },
+    {
+      "path": "research/remediation_round3/rules/esc-elderly-start.yaml",
+      "sha256": "37738bcc631cdb088947df5ad1392bfde25b69471e0e54df08d0f4982ae14731"
+    },
+    {
+      "path": "research/remediation_round3/rules/esc-gad-start.yaml",
+      "sha256": "c2a519e61fa41195b615c86a8a0a1140df3e4ce39390084a774407d495772f0b"
+    },
+    {
+      "path": "research/remediation_round3/rules/esc-hepatic-start.yaml",
+      "sha256": "e199908bbebfcbd041713b52a07cee643154fdf54c2da4b18f1bd9b42c9b2946"
+    },
+    {
+      "path": "research/remediation_round3/rules/esc-panic-start.yaml",
+      "sha256": "f901b39898887c9a53055f051ef41d687ab7aef72785094d32a5185690b405f9"
+    },
+    {
+      "path": "research/remediation_round3/rules/esc-social-start.yaml",
+      "sha256": "6d80f415da7751699b53926fa1eab806b6faac77e0584db580ac3d59eeed4789"
+    },
+    {
+      "path": "research/remediation_round3/rules/esc-taper-limit.yaml",
+      "sha256": "bd65be194a30a3bf0f5396b4f99c21540488772ef4797fd52c0a402870ee6569"
+    },
+    {
+      "path": "research/remediation_round3/rules/fluvox-depression-start.yaml",
+      "sha256": "95b294348e218de59975c5fbaea8f088b1e8e7d8d6b2c77f50d1808386e4dcb3"
+    },
+    {
+      "path": "research/remediation_round3/rules/fluvox-taper-limit.yaml",
+      "sha256": "6e120b373328cafe798c25f5b4cfbf6428fec7cf3b99f4aa770a42b3e8f846e2"
+    },
+    {
+      "path": "research/remediation_round3/rules/parox-panic-kr.yaml",
+      "sha256": "4d30ab66db2dcf9fced2ef869c490197d90c1f8d6ae8defa5eb2fbe6313c4e96"
+    },
+    {
+      "path": "research/remediation_round3/rules/parox-taper-example.yaml",
+      "sha256": "209792b2ebef9150d7e6ce8b4ca30b99226add568551938783082b4de87af825"
+    },
+    {
+      "path": "research/remediation_round3/rules/phen-taper-limit.yaml",
+      "sha256": "4584d4d277e31a29afb6b727a3b5165c53c8b45653db47e0b9afac7be7458ae6"
+    },
+    {
+      "path": "research/remediation_round3/rules/preg-gad-adjust.yaml",
+      "sha256": "2e8545c24765a9f3a9d1ca481303a033d498978fa7429c58177438e7e15954d2"
+    },
+    {
+      "path": "research/remediation_round3/rules/preg-gad-start.yaml",
+      "sha256": "03aaa2e2d5669789717df016e6a554a9b3745d1f3a85192f52f01d6660fd1200"
+    },
+    {
+      "path": "research/remediation_round3/rules/preg-renal-start.yaml",
+      "sha256": "0c67db2df49a01343e83ca692a9a319def1155d16d9f19a60127e28e4149be56"
+    },
+    {
+      "path": "research/remediation_round3/rules/preg-taper-limit.yaml",
+      "sha256": "c5a2a939d41e0e6c1c82a22fb1332657e4ce91242a710195a5af73b1197409f0"
+    },
+    {
+      "path": "research/remediation_round3/rules/ser-adult-adjust.yaml",
+      "sha256": "6968fe4dfc4c6d7ad6fb1bf1eaf6332cee7f05ff35f414c0a6c885d680531f1e"
+    },
+    {
+      "path": "research/remediation_round3/rules/ser-panic-start.yaml",
+      "sha256": "367fce3723239e651bcd29b6ebe14f8cdaf2752f6566cdc792c52d86655a0f4d"
+    },
+    {
+      "path": "research/remediation_round3/rules/ser-social-start.yaml",
+      "sha256": "bd32382a668eae02723b72f711510affa203a42ffc60a1668f88e57a7ae332f4"
+    },
+    {
+      "path": "research/remediation_round3/rules/ser-taper-limit.yaml",
+      "sha256": "6de81b9de7f3e21ce8e0993d55dd1f0c5bd6600685ad451921dfe003fa73c23d"
+    },
+    {
+      "path": "research/remediation_round3/rules/switch-esc-ago.yaml",
+      "sha256": "0f135993bc678bb1afafee40e51cca077be847bc9859b3fe7276a27bf70a73c3"
+    },
+    {
+      "path": "research/remediation_round3/rules/switch-esc-ser.yaml",
+      "sha256": "afa9a579591f3d61429bf8918aca1833a3d6dd02d8f49e658dae0eecd7e4c6bb"
+    },
+    {
+      "path": "research/remediation_round3/rules/switch-parox-ago-selected-example.yaml",
+      "sha256": "9ab4ee9de7dd44780ea3e83c4759db629c8dc84cc9077e5b9b9d777533db7c51"
+    },
+    {
+      "path": "research/remediation_round3/rules/switch-parox-ago.yaml",
+      "sha256": "a40329e3d063e25009ef3d40eba055f0e61eb8f61ccaa42c2c360e7a1560d0cd"
+    },
+    {
+      "path": "research/remediation_round3/rules/switch-ser-ago.yaml",
+      "sha256": "b4f6027fdad6cc6273ffa1da24d43dabbb16fa005919c43c4cdd2796dd92d6f9"
+    },
+    {
+      "path": "research/remediation_round3/rules/switch-ser-esc.yaml",
+      "sha256": "92a9f0c037be6dbe1314fb7ff999d8b7976b641fc835b4c749c0ea058b7d1a1e"
+    },
+    {
+      "path": "research/remediation_round3/rules/venla-xr-gad-start.yaml",
+      "sha256": "ff6b40e7ba286d4ee02bd9b13893a7a1387280efb40c9dfddabe6981fdbc6f75"
+    },
+    {
+      "path": "research/remediation_round3/rules/venla-xr-panic-form-limit.yaml",
+      "sha256": "be8c8d382d9af974847c72bbe2dedf9353d87e13fe2cfb8a4aec3ae0599c8ade"
+    },
+    {
+      "path": "research/remediation_round3/rules/venla-xr-social-start.yaml",
+      "sha256": "3cec8b2e252e2f3bb05aea900a08cfb9fbe18c40fc4a4958c8ed8f8d27f76fd7"
+    },
+    {
+      "path": "research/remediation_round3/rules/venla-xr-taper-limit.yaml",
+      "sha256": "af855ebdb20df60a464adbb735d23d3210d46e3091bf966658b2b6abf46d658e"
+    },
+    {
+      "path": "research/remediation_round3/originals/RU-AGO_current.pdf",
+      "sha256": "a98d383832688cee9a09588b1a908555d01ed8b659281cdeee2646c1115ce7c1"
+    },
+    {
+      "path": "research/remediation_round3/originals/RU-AGO_current_PIL.pdf",
+      "sha256": "720bf4e1b9ca3131f7ee844a8f731cb9872d8c545cbae32e9b2936d5d563b18b"
+    },
+    {
+      "path": "research/remediation_round3/originals/RU-DULOX_current.pdf",
+      "sha256": "0551a7306ca4a56b552336bb63fa34905cf4e312702ba811a792221892a42ca1"
+    },
+    {
+      "path": "research/remediation_round3/originals/RU-DULOX_current_PIL.pdf",
+      "sha256": "2668b290164ad40af2b92af2d8724c839770c9b58f339186e5e4175bccdf8a88"
+    },
+    {
+      "path": "research/remediation_round3/originals/RU-FLUVOX_current.pdf",
+      "sha256": "01b6621adad68dfeaf1fbe00db21935b6df1edee141c67307a9b67ad177893f2"
+    },
+    {
+      "path": "research/remediation_round3/originals/RU-FLUVOX_current_PIL.pdf",
+      "sha256": "76d4eef8f34f35fd1917671399cb105187ae3c65cd0835dc633015d733a450fe"
+    },
+    {
+      "path": "research/remediation_round3/originals/RU-GERIATRIC_613_2.pdf",
+      "sha256": "431d916605b0e7a2ee7e124dcef7975bd6db46121a4853271cfb59c20b3ea719"
+    },
+    {
+      "path": "research/remediation_round3/originals/RU-PAROX_current.pdf",
+      "sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069"
+    },
+    {
+      "path": "research/remediation_round3/originals/RU-PAROX_current_PIL.pdf",
+      "sha256": "b9efb47bcc396ef6a0419a590d4dabe8e01ce91d208ad2300db18c01df57275c"
+    },
+    {
+      "path": "research/remediation_round3/originals/RU-PHEN_current.pdf",
+      "sha256": "850486408d225fc603f8f053765491c1e9fd688c5c3d765cdf80a34dd2b3cf1a"
+    },
+    {
+      "path": "research/remediation_round3/originals/RU-PHEN_current_PIL.pdf",
+      "sha256": "87f96baff17663cdeb4ef9a5b02c18e2277fc2bcfec28712843df2564828c609"
+    },
+    {
+      "path": "research/remediation_round3/originals/RU-PREG-RICHTER_current.pdf",
+      "sha256": "8b6240d17e311c9468373c451ad7b4addff096594baf7041097e688ae27ae42f"
+    },
+    {
+      "path": "research/remediation_round3/originals/RU-PREG-RICHTER_current_PIL.pdf",
+      "sha256": "bd0a7106e2703d206ddafa986b817fa1daa57eb4c1d87d5ed244dbdd1b4afb17"
+    },
+    {
+      "path": "research/remediation_round3/originals/RU-PREG_current.pdf",
+      "sha256": "b605c8b381c24d59a48bbab9bfa8621eb70f6ec16ad9e3679aa8457f811663e5"
+    },
+    {
+      "path": "research/remediation_round3/originals/RU-PREG_current_PIL.pdf",
+      "sha256": "465238d72bb90bbf03d850fe53e6d7c249bcbd2037308c7213b452dff42e55d7"
+    },
+    {
+      "path": "research/remediation_round3/originals/RU-VENLA-IR_current.pdf",
+      "sha256": "b1e98ffb209390179385a56aa70b6b94eda4a395831464f347aecf721f8701af"
+    },
+    {
+      "path": "research/remediation_round3/originals/RU-VENLA-IR_current_PIL.pdf",
+      "sha256": "0db67cdfc698abea7a563e619e9068ef8a9e74c722b4f29d6a12ef4c73e1ef97"
+    },
+    {
+      "path": "research/remediation_round3/originals/RU-VENLA-XR_current.pdf",
+      "sha256": "a21e90141db69d9be5ca44ac3c8c6059c8c82a880f34bbf15143348c36ef4666"
+    },
+    {
+      "path": "research/remediation_round3/originals/RU-VENLA-XR_current_PIL.pdf",
+      "sha256": "a28a53108a7d031d763bec1b4b0faa626076038745b2e2e0feb0e9fe592fdb7d"
+    },
+    {
+      "path": "psychopharm_codex_pack/ACCEPTANCE_V2.md",
+      "sha256": "799ea55256a726c8a9c7964073d45e45baf69a7e379fa4ad0cadd110da9585de"
+    },
+    {
+      "path": "REQUIREMENTS_UPDATE_2026-10-08.md",
+      "sha256": "4caa4c8f0d69562a31818a6706ac41867f2bff0c0efda5fe103babd8b6734dbb"
+    },
+    {
+      "path": "research/sources.json",
+      "sha256": "af8a195dbf4ca9cf6d979cfb5d32f973b142d63e6261c6bc5a48d51a513f482c"
+    },
+    {
+      "path": "research/input_catalog.csv",
+      "sha256": "050860fc9e34fe36ca571ae5add7b173016522f784053c63d1436e43ace6a93a"
+    },
+    {
+      "path": "research/question_counts.json",
+      "sha256": "ff86a0cc10e71efe3eadf5c6e33939d9b4aa16eb307e879cd0423793821820ea"
+    },
+    {
+      "path": "research/question_flows.yaml",
+      "sha256": "f28047be49bfacb9ea81542f56f05a08436c084fa69a811dc5b16e0792dc3094"
+    },
+    {
+      "path": "research/switch_matrix.yaml",
+      "sha256": "2f7a53c895b4fa123d80cc7bfa7c5a8206fa79b8a746a3fad61ea4630c23e0df"
+    },
+    {
+      "path": "research/test_cases.yaml",
+      "sha256": "f27db031c71f4cca592f866af5fc3655c43ea24c67f52aaa8fa8f629ea73839d"
+    },
+    {
+      "path": "research/renal_estimator.yaml",
+      "sha256": "0dd5df39c38632874fe0558e1de6d9fbfbabaa4f894a686ffa138964d7c3df3c"
+    },
+    {
+      "path": "research/source_transfer_audit.yaml",
+      "sha256": "3610f3c134f27fb1e88d17eb59b9767556473b55bc3200d0cea85c9170f1ee2f"
+    },
+    {
+      "path": "research/verify_research.py",
+      "sha256": "4cf0084f0c2a5ec5439ad57e24175f9630ed4f4ca6118b61000b568e57798a45"
+    },
+    {
+      "path": "research/rules/ago-depression-start.yaml",
+      "sha256": "0c528650b193932429c7ce93583cd94e12f1c26673a0a8f8a9cce9ff5da07ce5"
+    },
+    {
+      "path": "research/rules/ago-gad-start.yaml",
+      "sha256": "d8c57278d3595c75efffe81ba34a2c9e9bca167e96bad2c318e48695dd35278e"
+    },
+    {
+      "path": "research/rules/ago-stop.yaml",
+      "sha256": "44d99b28661a4fc0ee0c114b39445b6e9f368e229983e15d78aa2f97a783a1c6"
+    },
+    {
+      "path": "research/rules/dulox-depression-start.yaml",
+      "sha256": "178b250ceff35db66ed53265edc3622962cec94bc6c7ad9effe3edce25564b6e"
+    },
+    {
+      "path": "research/rules/dulox-gad-adjust.yaml",
+      "sha256": "0cf556f34af6ae89a0666f627c3d4bc51fbb4fcec544b18033b906dc1a68521e"
+    },
+    {
+      "path": "research/rules/dulox-gad-start.yaml",
+      "sha256": "6a75d2a9047b362d83e218223be86e2a2f797aacee3a5bea97df0519578e631f"
+    },
+    {
+      "path": "research/rules/dulox-taper-limit.yaml",
+      "sha256": "48a22acf7ae3f5b5bbd32db9831dca7137fba97d82ac7652837d2706d09fe3c3"
+    },
+    {
+      "path": "research/rules/esc-adult-adjust.yaml",
+      "sha256": "4995b5ad6e0c19e01d09898f4486fd122f88094a86649a330fa9ffbb0d83df5e"
+    },
+    {
+      "path": "research/rules/esc-cyp2c19-start.yaml",
+      "sha256": "820e41c05939e73ef3b4f498287d5b628eca7df662250b02ecde8e6355014252"
+    },
+    {
+      "path": "research/rules/esc-elderly-start.yaml",
+      "sha256": "37738bcc631cdb088947df5ad1392bfde25b69471e0e54df08d0f4982ae14731"
+    },
+    {
+      "path": "research/rules/esc-gad-start.yaml",
+      "sha256": "c2a519e61fa41195b615c86a8a0a1140df3e4ce39390084a774407d495772f0b"
+    },
+    {
+      "path": "research/rules/esc-hepatic-start.yaml",
+      "sha256": "e199908bbebfcbd041713b52a07cee643154fdf54c2da4b18f1bd9b42c9b2946"
+    },
+    {
+      "path": "research/rules/esc-panic-start.yaml",
+      "sha256": "f901b39898887c9a53055f051ef41d687ab7aef72785094d32a5185690b405f9"
+    },
+    {
+      "path": "research/rules/esc-social-start.yaml",
+      "sha256": "6d80f415da7751699b53926fa1eab806b6faac77e0584db580ac3d59eeed4789"
+    },
+    {
+      "path": "research/rules/esc-taper-limit.yaml",
+      "sha256": "bd65be194a30a3bf0f5396b4f99c21540488772ef4797fd52c0a402870ee6569"
+    },
+    {
+      "path": "research/rules/fluvox-depression-start.yaml",
+      "sha256": "95b294348e218de59975c5fbaea8f088b1e8e7d8d6b2c77f50d1808386e4dcb3"
+    },
+    {
+      "path": "research/rules/fluvox-taper-limit.yaml",
+      "sha256": "6e120b373328cafe798c25f5b4cfbf6428fec7cf3b99f4aa770a42b3e8f846e2"
+    },
+    {
+      "path": "research/rules/parox-panic-kr.yaml",
+      "sha256": "4d30ab66db2dcf9fced2ef869c490197d90c1f8d6ae8defa5eb2fbe6313c4e96"
+    },
+    {
+      "path": "research/rules/parox-taper-example.yaml",
+      "sha256": "209792b2ebef9150d7e6ce8b4ca30b99226add568551938783082b4de87af825"
+    },
+    {
+      "path": "research/rules/phen-taper-limit.yaml",
+      "sha256": "4584d4d277e31a29afb6b727a3b5165c53c8b45653db47e0b9afac7be7458ae6"
+    },
+    {
+      "path": "research/rules/preg-gad-adjust.yaml",
+      "sha256": "2e8545c24765a9f3a9d1ca481303a033d498978fa7429c58177438e7e15954d2"
+    },
+    {
+      "path": "research/rules/preg-gad-start.yaml",
+      "sha256": "03aaa2e2d5669789717df016e6a554a9b3745d1f3a85192f52f01d6660fd1200"
+    },
+    {
+      "path": "research/rules/preg-renal-start.yaml",
+      "sha256": "0c67db2df49a01343e83ca692a9a319def1155d16d9f19a60127e28e4149be56"
+    },
+    {
+      "path": "research/rules/preg-taper-limit.yaml",
+      "sha256": "c5a2a939d41e0e6c1c82a22fb1332657e4ce91242a710195a5af73b1197409f0"
+    },
+    {
+      "path": "research/rules/ser-adult-adjust.yaml",
+      "sha256": "6968fe4dfc4c6d7ad6fb1bf1eaf6332cee7f05ff35f414c0a6c885d680531f1e"
+    },
+    {
+      "path": "research/rules/ser-panic-start.yaml",
+      "sha256": "367fce3723239e651bcd29b6ebe14f8cdaf2752f6566cdc792c52d86655a0f4d"
+    },
+    {
+      "path": "research/rules/ser-social-start.yaml",
+      "sha256": "bd32382a668eae02723b72f711510affa203a42ffc60a1668f88e57a7ae332f4"
+    },
+    {
+      "path": "research/rules/ser-taper-limit.yaml",
+      "sha256": "6de81b9de7f3e21ce8e0993d55dd1f0c5bd6600685ad451921dfe003fa73c23d"
+    },
+    {
+      "path": "research/rules/switch-esc-ago.yaml",
+      "sha256": "0f135993bc678bb1afafee40e51cca077be847bc9859b3fe7276a27bf70a73c3"
+    },
+    {
+      "path": "research/rules/switch-esc-ser.yaml",
+      "sha256": "afa9a579591f3d61429bf8918aca1833a3d6dd02d8f49e658dae0eecd7e4c6bb"
+    },
+    {
+      "path": "research/rules/switch-parox-ago-selected-example.yaml",
+      "sha256": "9ab4ee9de7dd44780ea3e83c4759db629c8dc84cc9077e5b9b9d777533db7c51"
+    },
+    {
+      "path": "research/rules/switch-parox-ago.yaml",
+      "sha256": "a40329e3d063e25009ef3d40eba055f0e61eb8f61ccaa42c2c360e7a1560d0cd"
+    },
+    {
+      "path": "research/rules/switch-ser-ago.yaml",
+      "sha256": "b4f6027fdad6cc6273ffa1da24d43dabbb16fa005919c43c4cdd2796dd92d6f9"
+    },
+    {
+      "path": "research/rules/switch-ser-esc.yaml",
+      "sha256": "92a9f0c037be6dbe1314fb7ff999d8b7976b641fc835b4c749c0ea058b7d1a1e"
+    },
+    {
+      "path": "research/rules/venla-xr-gad-start.yaml",
+      "sha256": "ff6b40e7ba286d4ee02bd9b13893a7a1387280efb40c9dfddabe6981fdbc6f75"
+    },
+    {
+      "path": "research/rules/venla-xr-panic-form-limit.yaml",
+      "sha256": "be8c8d382d9af974847c72bbe2dedf9353d87e13fe2cfb8a4aec3ae0599c8ade"
+    },
+    {
+      "path": "research/rules/venla-xr-social-start.yaml",
+      "sha256": "3cec8b2e252e2f3bb05aea900a08cfb9fbe18c40fc4a4958c8ed8f8d27f76fd7"
+    },
+    {
+      "path": "research/rules/venla-xr-taper-limit.yaml",
+      "sha256": "af855ebdb20df60a464adbb735d23d3210d46e3091bf966658b2b6abf46d658e"
+    },
+    {
+      "path": "research/remediation_round3/verify_recheck_repairs.py",
+      "sha256": "7d4b98d10a19352d4fdc1ba9005045e8757a14bfd4f93705b0e30a1a8650ca85"
+    },
+    {
+      "path": "research/remediation_round3/repair_recheck_findings.py",
+      "sha256": "0511eeaf75e668af629e615a41f3c9bcde150029e274b0c876994fa9c8be914a"
+    },
+    {
+      "path": "research/remediation_round3/align_current_input_locators.py",
+      "sha256": "178c0e6780bfa71883a75b25285b0d2f54758ad38743634f0733b7114476fc6e"
+    },
+    {
+      "path": "research/remediation_round3/recheck_repairs.json",
+      "sha256": "57d95d677165b4c70881a98366830dc791264bc4f240bfb74bea491337d423f0"
+    },
+    {
+      "path": "research/remediation_round3/current_input_locator_repairs.json",
+      "sha256": "30119c95a9a5cde7267701126b4500cefb01c3654245840d1e5417ee1f888fe4"
+    },
+    {
+      "path": "research/remediation_round3/recheck_primary_read_notes.md",
+      "sha256": "580c9f26929f48f9218455bd94c6c75defe0bbcee5e27525b854b64cafbaeec3"
+    },
+    {
+      "path": "research/00_summary.md",
+      "sha256": "97be643d0485c5c6d89e88a0e05a62e6502e82c2b9ca330b75c6f3cf94d2e35a"
+    },
+    {
+      "path": "research/01_scope_and_sources.md",
+      "sha256": "5b815affe03b35dcd07922f319fa988a1db30f123ff31175cf7f28df3dc10d2b"
+    },
+    {
+      "path": "research/02_rules.md",
+      "sha256": "bafde3058c43518f8f6d77bd7bb9a993f9f8f46ddda937089646c852f6726e00"
+    },
+    {
+      "path": "research/03_question_flows.md",
+      "sha256": "4cb4c7ed468c132730b1da9c3ee4c3b89d8745eb8aedcd0341ca4ec3862ee8f8"
+    },
+    {
+      "path": "research/04_switch_matrix.md",
+      "sha256": "6e2b1b514dd74cab2db30e62a106484ca12f21746febae936520986e04965999"
+    },
+    {
+      "path": "research/05_gaps_and_conflicts.md",
+      "sha256": "2760061fef75a91097e7e0a1ac891a29fa2d62ec5657d2d4ae80127ed55aeef4"
+    },
+    {
+      "path": "research/06_implementation_brief.md",
+      "sha256": "548fe5006a08f14a1d993af35688a4dca359030467ec6f8dac5a1fb34fb717e5"
+    },
+    {
+      "path": "research/07_acceptance.md",
+      "sha256": "d72af7ce0e54e01cabf2996970989217c0f7f0f4b6ba9653c7638aad87a656a5"
+    },
+    {
+      "path": "research/08_russian_priority_update.md",
+      "sha256": "c3846c0294ed962206c6d03fc9e5b6bc183393819693e5d0c31492467189ab86"
+    },
+    {
+      "path": "research/09_download_links.md",
+      "sha256": "14dff695f4160ef77e83a2e5a64721e2db3b0ca86ae8d2ab433ceb6fe6f9b5c4"
+    },
+    {
+      "path": "research/10_source_audit.md",
+      "sha256": "7756a2928734943591c90a90a860425f6dddfa71063891e20fb03561c2c2249c"
+    },
+    {
+      "path": "research/search_log.csv",
+      "sha256": "0913be93c457a558846112a454b309d6d1324ea14014c6b91d33a8432b9a1fea"
+    },
+    {
+      "path": "research/audit/retrieved/RU-GAD.pdf",
+      "sha256": "c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a"
+    },
+    {
+      "path": "research/audit/retrieved/RU-PANIC.pdf",
+      "sha256": "a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d"
+    },
+    {
+      "path": "research/audit/retrieved/RU-PHOB.pdf",
+      "sha256": "2a51982fb1919c0ef9115e5231f8ef9d65863306d2d5b95aa0aa7821a6f328b7"
+    },
+    {
+      "path": "research/source_snapshots/depression-301_3.pdf",
+      "sha256": "2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd"
+    },
+    {
+      "path": "research/source_downloads/Золофт — сертралин.pdf",
+      "sha256": "3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba"
+    },
+    {
+      "path": "research/remediation_round2/Selectra_current_registry.pdf",
+      "sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6"
+    },
+    {
+      "path": "research/audit/retrieved/EU-PREG.pdf",
+      "sha256": "0f82f9dee99e4c6c1ec68a6f67072cf59e9a4dc3997dbe5f30cf806ee2cf3f99"
+    },
+    {
+      "path": "research/audit/retrieved/UK-NICE222.pdf",
+      "sha256": "4f59bf752b49734b81244d1251d94a8fc2e984aac34577e295be243582a957de"
+    },
+    {
+      "path": "research/audit/retrieved/US-ASAM.pdf",
+      "sha256": "a9937c249d7a08658eb10c5b7805fce9bb6e975e4f4d5ac11507434708c4b5ec"
+    },
+    {
+      "path": "research/audit/retrieved/WHO-F41.html",
+      "sha256": "28852802c5d4771ce3d780d4c391a9b5f08e68b6937187fa1540606161996caf"
+    },
+    {
+      "path": "research/audit/retrieved/RU-SER-2023.pdf",
+      "sha256": "640908909dc7109d614b4f03225d0c31ab2f5f9d6e39b9b8f65046873e9d722c"
+    },
+    {
+      "path": "research/source_downloads/Селектра — эсциталопрам.pdf",
+      "sha256": "ea5d007a4026e850b514badeabfdb5d6e0ece163a1a84e6fa5453a8ff0c73497"
+    },
+    {
+      "path": "research/audit/retrieved/RU-PREG-RICHTER-ARCHIVE.pdf",
+      "sha256": "c6c6b41dd339536ad1671193a6cd69a7c111d6a2c04c6db501ae85c3beba1ee1"
+    },
+    {
+      "path": "research/source_downloads/Циталопрам — Пранафарм.docx",
+      "sha256": "5e10a0452aa6a432390878027d66309a93729250ae6015c2ec225a28be68fe00"
+    },
+    {
+      "path": "research/source_downloads/Флуоксетин — Озон.pdf",
+      "sha256": "dfcf4a185bb4474bfa7411de1d956be7d309bc9c3e350309f6ca1220fd4e32a3"
+    },
+    {
+      "path": "research/source_downloads/Кломипрамин — раствор.pdf",
+      "sha256": "81d40c49e7fa50aed75f8719c51f942f40f85a5ad74e1637a45673f0b57f1d33"
+    },
+    {
+      "path": "research\\00_summary.md",
+      "sha256": "97be643d0485c5c6d89e88a0e05a62e6502e82c2b9ca330b75c6f3cf94d2e35a"
+    },
+    {
+      "path": "research\\01_scope_and_sources.md",
+      "sha256": "5b815affe03b35dcd07922f319fa988a1db30f123ff31175cf7f28df3dc10d2b"
+    },
+    {
+      "path": "research\\02_rules.md",
+      "sha256": "bafde3058c43518f8f6d77bd7bb9a993f9f8f46ddda937089646c852f6726e00"
+    },
+    {
+      "path": "research\\03_question_flows.md",
+      "sha256": "4cb4c7ed468c132730b1da9c3ee4c3b89d8745eb8aedcd0341ca4ec3862ee8f8"
+    },
+    {
+      "path": "research\\04_switch_matrix.md",
+      "sha256": "6e2b1b514dd74cab2db30e62a106484ca12f21746febae936520986e04965999"
+    },
+    {
+      "path": "research\\05_gaps_and_conflicts.md",
+      "sha256": "2760061fef75a91097e7e0a1ac891a29fa2d62ec5657d2d4ae80127ed55aeef4"
+    },
+    {
+      "path": "research\\06_implementation_brief.md",
+      "sha256": "548fe5006a08f14a1d993af35688a4dca359030467ec6f8dac5a1fb34fb717e5"
+    },
+    {
+      "path": "research\\07_acceptance.md",
+      "sha256": "d72af7ce0e54e01cabf2996970989217c0f7f0f4b6ba9653c7638aad87a656a5"
+    },
+    {
+      "path": "research\\08_russian_priority_update.md",
+      "sha256": "c3846c0294ed962206c6d03fc9e5b6bc183393819693e5d0c31492467189ab86"
+    },
+    {
+      "path": "research\\09_download_links.md",
+      "sha256": "14dff695f4160ef77e83a2e5a64721e2db3b0ca86ae8d2ab433ceb6fe6f9b5c4"
+    },
+    {
+      "path": "research\\10_source_audit.md",
+      "sha256": "7756a2928734943591c90a90a860425f6dddfa71063891e20fb03561c2c2249c"
+    },
+    {
+      "path": "research\\remediation_round3\\adapt_checks.py",
+      "sha256": "338220753dc6661b8aab09122079fbb5643a9e962542ad123cb138806ccd4fd7"
+    },
+    {
+      "path": "research\\remediation_round3\\align_current_input_locators.py",
+      "sha256": "178c0e6780bfa71883a75b25285b0d2f54758ad38743634f0733b7114476fc6e"
+    },
+    {
+      "path": "research\\remediation_round3\\align_main_verifier.py",
+      "sha256": "5451815c89c7e0c7013cde4623ad9e3aab63e9f5104dc86d5ee022628db818cf"
+    },
+    {
+      "path": "research\\remediation_round3\\build_graphs.py",
+      "sha256": "900b8793194b536ee351474faf1dd6c358857d2750a9e538dd120e21fedaade6"
+    },
+    {
+      "path": "research\\remediation_round3\\check_preservation.py",
+      "sha256": "7a45ae55c2253485cd51b6d59cb206abda12291aca55fc0ee66c456f74fa8240"
+    },
+    {
+      "path": "research\\remediation_round3\\compare_smpc.py",
+      "sha256": "7f6235b363fe0173a6967301dcfa76e7dc1c495d83d292eb25e462318089139f"
+    },
+    {
+      "path": "research\\remediation_round3\\complete_dependencies.py",
+      "sha256": "119d26592cd3989184dc99885dfaa3514104dad631d948334a8b1c50d496b0b4"
+    },
+    {
+      "path": "research\\remediation_round3\\fix_staged_recheck.py",
+      "sha256": "f68511b3f9ec7711a3875e669ee48ae7fa315240cfb4f92e061ac5babad05f05"
+    },
+    {
+      "path": "research\\remediation_round3\\freeze_snapshot.py",
+      "sha256": "3d765289cdc68cbc49a81aa1c4ca71f6abb167ffc4da851b684812815f78ccff"
+    },
+    {
+      "path": "research\\remediation_round3\\ingest_pdf.py",
+      "sha256": "8bc2b2a85fadbad8eff8800df79890228d5b21dc8b87b0b95bc66a33222233dc"
+    },
+    {
+      "path": "research\\remediation_round3\\inspect_snapshot.py",
+      "sha256": "5de82faea4ccc449a4c4f5e7922bc05a848d927bebf42bde47f83b79a17a4303"
+    },
+    {
+      "path": "research\\remediation_round3\\preflight_recheck.py",
+      "sha256": "8787dd228ac303952a496e2bbfa1e9d1671c0dc4ab8116f0b48a04441e86cd90"
+    },
+    {
+      "path": "research\\remediation_round3\\prepare_candidate.py",
+      "sha256": "b973d5887798a6e7c31b6367c9685451dfce53c305d7fe00813b0ee4fcd93018"
+    },
+    {
+      "path": "research\\remediation_round3\\prepare_projection_fix.py",
+      "sha256": "412625e813c957948d42217a6d48cf82717365a0f8411fbe058d76ffc8d2d9d7"
+    },
+    {
+      "path": "research\\remediation_round3\\prepare_recheck.py",
+      "sha256": "416b320a0538acec1f46f61dcd4a4452a7dd74344019cedaba29dac452efa24b"
+    },
+    {
+      "path": "research\\remediation_round3\\primary_current_expected_checks.py",
+      "sha256": "e9028923b89036dc8d9123ba41985ce973a2bb2ffb233d1fe7fc3e101ef3d6d0"
+    },
+    {
+      "path": "research\\remediation_round3\\primary_expected_checks.py",
+      "sha256": "08dcd096cac86bfe566616adbc080dadb33749c56bc47aee9780bc09e5ebf30d"
+    },
+    {
+      "path": "research\\remediation_round3\\promote_candidate.py",
+      "sha256": "f839dfd7e90fa747d62f46d67d5d981cf9262dcdc7acb421356b30d61bf73698"
+    },
+    {
+      "path": "research\\remediation_round3\\refine_necessity.py",
+      "sha256": "698fee9adcd75d7eec1afbf614b4e1f80cd031198bfa38ae4a6fdf23a19374ee"
+    },
+    {
+      "path": "research\\remediation_round3\\registry_documents.py",
+      "sha256": "e5d5e14b782644ddf40e22502101d1206a4066871750135f6c1e4a6d22ba33bf"
+    },
+    {
+      "path": "research\\remediation_round3\\repair_active_indices.py",
+      "sha256": "522cb00fd1ae4c97d9c0c3f20175ddfdc8c6cf0b8779d70335c2bd15f5dde3e4"
+    },
+    {
+      "path": "research\\remediation_round3\\repair_candidate.py",
+      "sha256": "1a5430b8c7209e99070e7eec4ff51cf788db2ce1e4d9e6f958334a41463d06d0"
+    },
+    {
+      "path": "research\\remediation_round3\\repair_medical_conditions.py",
+      "sha256": "a56f6824f6a1f3f0be2bc2916eefe3dcfd29933141d89a72b26ea059e57469fc"
+    },
+    {
+      "path": "research\\remediation_round3\\repair_qualitative_necessity.py",
+      "sha256": "5bcc7c06748dc8913c27b9e8fc1d0d335ba72d7b1cca74aa575b71864270075a"
+    },
+    {
+      "path": "research\\remediation_round3\\repair_recheck_findings.py",
+      "sha256": "0511eeaf75e668af629e615a41f3c9bcde150029e274b0c876994fa9c8be914a"
+    },
+    {
+      "path": "research\\remediation_round3\\repair_source_bindings.py",
+      "sha256": "6d25eeffdf2e9cdf060afc1f8b1eb34e55cf9cdad69ee348856d039891bf91bc"
+    },
+    {
+      "path": "research\\remediation_round3\\run_checks.py",
+      "sha256": "dc30f6ae961348a92067f586b39d096c02f89dd8d46efc894af3e8bccc354627"
+    },
+    {
+      "path": "research\\remediation_round3\\update_documentation.py",
+      "sha256": "7dc3c23b222bc5adcd390f3387729bca5deedadb923c6fa9b679bc6fff31915c"
+    },
+    {
+      "path": "research\\remediation_round3\\verify_audit_repairs.py",
+      "sha256": "aa74dacf7f2d76722cf46fef1b4d0baf2b8336163ee51d4f6ee9ea6be0e5d47c"
+    },
+    {
+      "path": "research\\remediation_round3\\verify_contracts.py",
+      "sha256": "b0227bb4fb12fabf4afccdcc79e087689a435ab49a312c7b279c4ba8407f6076"
+    },
+    {
+      "path": "research\\remediation_round3\\verify_graphs.py",
+      "sha256": "82d44fa30d75a4cc215d5da568667cb55d0477c54e3667046da2b51bc8fe699c"
+    },
+    {
+      "path": "research\\remediation_round3\\verify_new_negative_checks.py",
+      "sha256": "398195fe84caee6da362f0a97533941198fec354d3ebfde71a3b0b2812162321"
+    },
+    {
+      "path": "research\\remediation_round3\\verify_recheck_repairs.py",
+      "sha256": "7d4b98d10a19352d4fdc1ba9005045e8757a14bfd4f93705b0e30a1a8650ca85"
+    },
+    {
+      "path": "research\\remediation_round3\\verify_v2_negatives.py",
+      "sha256": "5aa736a05837cdbf9043904e1e9565005811e0d3f41a9671a6c10d4c7e61f35c"
+    },
+    {
+      "path": "research\\remediation_round3\\write_progress_report.py",
+      "sha256": "a21a8d96b4cf8bd755de70780a97df4bcf0756dc1add300c77d368847b068177"
+    }
+  ]
+}

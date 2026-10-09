@@ -1,0 +1,2063 @@
+[
+  {
+    "case_id": "ago-depression-start--stop-RU-AGO-liver_injury_signs",
+    "source": "RU-AGO",
+    "cause": "liver_injury_signs",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4: темная моча, обесцвеченный стул, желтуха, боль справа вверху живота, новая необъяснимая постоянная утомляемость"
+  },
+  {
+    "case_id": "ago-depression-start--stop-RU-AGO-mania_symptoms",
+    "source": "RU-AGO",
+    "cause": "mania_symptoms",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4"
+  },
+  {
+    "case_id": "ago-depression-start--ALT_ratio-ongoing-above3",
+    "source": "RU-AGO",
+    "cause": "ALT_ratio",
+    "value": 3.01,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4, прекращение лечения при АЛТ или АСТ >3 ВГН; регулярные пробы до нормы"
+  },
+  {
+    "case_id": "ago-depression-start--AST_ratio-ongoing-above3",
+    "source": "RU-AGO",
+    "cause": "AST_ratio",
+    "value": 3.01,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4, прекращение лечения при АЛТ или АСТ >3 ВГН; регулярные пробы до нормы"
+  },
+  {
+    "case_id": "ago-gad-start--stop-RU-AGO-liver_injury_signs",
+    "source": "RU-AGO",
+    "cause": "liver_injury_signs",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4: темная моча, обесцвеченный стул, желтуха, боль справа вверху живота, новая необъяснимая постоянная утомляемость"
+  },
+  {
+    "case_id": "ago-gad-start--stop-RU-AGO-mania_symptoms",
+    "source": "RU-AGO",
+    "cause": "mania_symptoms",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4"
+  },
+  {
+    "case_id": "ago-gad-start--ALT_ratio-ongoing-above3",
+    "source": "RU-AGO",
+    "cause": "ALT_ratio",
+    "value": 3.01,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4, прекращение лечения при АЛТ или АСТ >3 ВГН; регулярные пробы до нормы"
+  },
+  {
+    "case_id": "ago-gad-start--AST_ratio-ongoing-above3",
+    "source": "RU-AGO",
+    "cause": "AST_ratio",
+    "value": 3.01,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4, прекращение лечения при АЛТ или АСТ >3 ВГН; регулярные пробы до нормы"
+  },
+  {
+    "case_id": "fluvox-depression-start--stop-RU-FLUVOX-mania_symptoms",
+    "source": "RU-FLUVOX",
+    "cause": "mania_symptoms",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.7"
+  },
+  {
+    "case_id": "fluvox-depression-start--stop-RU-FLUVOX-liver_injury_signs",
+    "source": "RU-FLUVOX",
+    "cause": "liver_injury_signs",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.5"
+  },
+  {
+    "case_id": "fluvox-depression-start--condition-seizure_state-новые приступы",
+    "source": "RU-FLUVOX",
+    "cause": "seizure_state",
+    "value": "новые приступы",
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.5"
+  },
+  {
+    "case_id": "parox-panic-kr--condition-seizure_state-новые приступы",
+    "source": "RU-PAROX",
+    "cause": "seizure_state",
+    "value": "новые приступы",
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.9"
+  },
+  {
+    "case_id": "preg-gad-adjust--stop-RU-PREG-angioedema",
+    "source": "RU-PREG",
+    "cause": "angioedema",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.6"
+  },
+  {
+    "case_id": "preg-gad-adjust--stop-RU-PREG-severe_skin_reaction",
+    "source": "RU-PREG",
+    "cause": "severe_skin_reaction",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.6"
+  },
+  {
+    "case_id": "preg-gad-start--stop-RU-PREG-angioedema",
+    "source": "RU-PREG",
+    "cause": "angioedema",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.6"
+  },
+  {
+    "case_id": "preg-gad-start--stop-RU-PREG-severe_skin_reaction",
+    "source": "RU-PREG",
+    "cause": "severe_skin_reaction",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.6"
+  },
+  {
+    "case_id": "preg-renal-start--stop-RU-PREG-angioedema",
+    "source": "RU-PREG",
+    "cause": "angioedema",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.6"
+  },
+  {
+    "case_id": "preg-renal-start--stop-RU-PREG-severe_skin_reaction",
+    "source": "RU-PREG",
+    "cause": "severe_skin_reaction",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.6"
+  },
+  {
+    "case_id": "preg-taper-limit--stop-RU-PREG-angioedema",
+    "source": "RU-PREG",
+    "cause": "angioedema",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.6"
+  },
+  {
+    "case_id": "preg-taper-limit--stop-RU-PREG-severe_skin_reaction",
+    "source": "RU-PREG",
+    "cause": "severe_skin_reaction",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.6"
+  },
+  {
+    "case_id": "ser-adult-adjust--condition-seizure_state-новые приступы",
+    "source": "RU-SER",
+    "cause": "seizure_state",
+    "value": "новые приступы",
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4, судороги: прекращение при развитии приступов"
+  },
+  {
+    "case_id": "ser-panic-start--condition-seizure_state-новые приступы",
+    "source": "RU-SER",
+    "cause": "seizure_state",
+    "value": "новые приступы",
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4, судороги: прекращение при развитии приступов"
+  },
+  {
+    "case_id": "ser-social-start--condition-seizure_state-новые приступы",
+    "source": "RU-SER",
+    "cause": "seizure_state",
+    "value": "новые приступы",
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4, судороги: прекращение при развитии приступов"
+  },
+  {
+    "case_id": "switch-parox-ago-selected-example--stop-RU-AGO-liver_injury_signs",
+    "source": "RU-AGO",
+    "cause": "liver_injury_signs",
+    "value": true,
+    "owner": "to_form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4: темная моча, обесцвеченный стул, желтуха, боль справа вверху живота, новая необъяснимая постоянная утомляемость"
+  },
+  {
+    "case_id": "switch-parox-ago-selected-example--stop-RU-AGO-mania_symptoms",
+    "source": "RU-AGO",
+    "cause": "mania_symptoms",
+    "value": true,
+    "owner": "to_form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4"
+  },
+  {
+    "case_id": "switch-parox-ago-selected-example--condition-seizure_state-новые приступы",
+    "source": "RU-PAROX",
+    "cause": "seizure_state",
+    "value": "новые приступы",
+    "owner": "from_form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.9"
+  },
+  {
+    "case_id": "switch-parox-ago-selected-example--alt_ratio_uln-ongoing-above3",
+    "source": "RU-AGO",
+    "cause": "alt_ratio_uln",
+    "value": 3.01,
+    "owner": "to_form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4, прекращение лечения при АЛТ или АСТ >3 ВГН; регулярные пробы до нормы"
+  },
+  {
+    "case_id": "switch-parox-ago-selected-example--ast_ratio_uln-ongoing-above3",
+    "source": "RU-AGO",
+    "cause": "ast_ratio_uln",
+    "value": 3.01,
+    "owner": "to_form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4, прекращение лечения при АЛТ или АСТ >3 ВГН; регулярные пробы до нормы"
+  },
+  {
+    "case_id": "switch-parox-ago--stop-RU-AGO-liver_injury_signs",
+    "source": "RU-AGO",
+    "cause": "liver_injury_signs",
+    "value": true,
+    "owner": "to_form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4: темная моча, обесцвеченный стул, желтуха, боль справа вверху живота, новая необъяснимая постоянная утомляемость"
+  },
+  {
+    "case_id": "switch-parox-ago--stop-RU-AGO-mania_symptoms",
+    "source": "RU-AGO",
+    "cause": "mania_symptoms",
+    "value": true,
+    "owner": "to_form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4"
+  },
+  {
+    "case_id": "switch-parox-ago--condition-seizure_state-новые приступы",
+    "source": "RU-PAROX",
+    "cause": "seizure_state",
+    "value": "новые приступы",
+    "owner": "from_form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.9"
+  },
+  {
+    "case_id": "switch-parox-ago--alt_ratio_uln-ongoing-above3",
+    "source": "RU-AGO",
+    "cause": "alt_ratio_uln",
+    "value": 3.01,
+    "owner": "to_form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4, прекращение лечения при АЛТ или АСТ >3 ВГН; регулярные пробы до нормы"
+  },
+  {
+    "case_id": "switch-parox-ago--ast_ratio_uln-ongoing-above3",
+    "source": "RU-AGO",
+    "cause": "ast_ratio_uln",
+    "value": 3.01,
+    "owner": "to_form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4, прекращение лечения при АЛТ или АСТ >3 ВГН; регулярные пробы до нормы"
+  },
+  {
+    "case_id": "switch-ser-ago--stop-RU-AGO-liver_injury_signs",
+    "source": "RU-AGO",
+    "cause": "liver_injury_signs",
+    "value": true,
+    "owner": "to_form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4: темная моча, обесцвеченный стул, желтуха, боль справа вверху живота, новая необъяснимая постоянная утомляемость"
+  },
+  {
+    "case_id": "switch-ser-ago--stop-RU-AGO-mania_symptoms",
+    "source": "RU-SER",
+    "cause": "mania_symptoms",
+    "value": true,
+    "owner": "from_form",
+    "phase": "ongoing",
+    "locator": "RU-SER §4.4 с.4"
+  },
+  {
+    "case_id": "switch-ser-ago--condition-seizure_state-новые приступы",
+    "source": "RU-SER",
+    "cause": "seizure_state",
+    "value": "новые приступы",
+    "owner": "from_form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4, судороги: прекращение при развитии приступов"
+  },
+  {
+    "case_id": "switch-ser-ago--alt_ratio_uln-ongoing-above3",
+    "source": "RU-AGO",
+    "cause": "alt_ratio_uln",
+    "value": 3.01,
+    "owner": "to_form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4, прекращение лечения при АЛТ или АСТ >3 ВГН; регулярные пробы до нормы"
+  },
+  {
+    "case_id": "switch-ser-ago--ast_ratio_uln-ongoing-above3",
+    "source": "RU-AGO",
+    "cause": "ast_ratio_uln",
+    "value": 3.01,
+    "owner": "to_form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4, прекращение лечения при АЛТ или АСТ >3 ВГН; регулярные пробы до нормы"
+  },
+  {
+    "case_id": "venla-xr-gad-start--diastolic-BP-100.01",
+    "source": "RU-VENLA-XR",
+    "cause": "diastolic_BP",
+    "value": 100.01,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.9"
+  },
+  {
+    "case_id": "venla-xr-social-start--diastolic-BP-100.01",
+    "source": "RU-VENLA-XR",
+    "cause": "diastolic_BP",
+    "value": 100.01,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.9"
+  },
+  {
+    "case_id": "ser-adult-adjust--round2-active-mania-stop",
+    "source": "RU-SER",
+    "cause": "mania_symptoms",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4"
+  },
+  {
+    "case_id": "ser-panic-start--round2-active-mania-stop",
+    "source": "RU-SER",
+    "cause": "mania_symptoms",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4"
+  },
+  {
+    "case_id": "ser-social-start--round2-active-mania-stop",
+    "source": "RU-SER",
+    "cause": "mania_symptoms",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4"
+  },
+  {
+    "case_id": "ser-taper-limit--round2-active-mania-stop",
+    "source": "RU-SER",
+    "cause": "mania_symptoms",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4"
+  },
+  {
+    "case_id": "esc-adult-adjust--current-mania_symptoms-stop",
+    "source": "RU-ESC",
+    "cause": "mania_symptoms",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4–6"
+  },
+  {
+    "case_id": "esc-adult-adjust--current-arrhythmia_signs-stop",
+    "source": "RU-ESC",
+    "cause": "arrhythmia_signs",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4–6"
+  },
+  {
+    "case_id": "esc-adult-adjust--current-serotonin_syndrome_signs-stop",
+    "source": "RU-ESC",
+    "cause": "serotonin_syndrome_signs",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4–6"
+  },
+  {
+    "case_id": "esc-cyp2c19-start--current-mania_symptoms-stop",
+    "source": "RU-ESC",
+    "cause": "mania_symptoms",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4–6"
+  },
+  {
+    "case_id": "esc-cyp2c19-start--current-arrhythmia_signs-stop",
+    "source": "RU-ESC",
+    "cause": "arrhythmia_signs",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4–6"
+  },
+  {
+    "case_id": "esc-cyp2c19-start--current-serotonin_syndrome_signs-stop",
+    "source": "RU-ESC",
+    "cause": "serotonin_syndrome_signs",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4–6"
+  },
+  {
+    "case_id": "esc-elderly-start--current-mania_symptoms-stop",
+    "source": "RU-ESC",
+    "cause": "mania_symptoms",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4–6"
+  },
+  {
+    "case_id": "esc-elderly-start--current-arrhythmia_signs-stop",
+    "source": "RU-ESC",
+    "cause": "arrhythmia_signs",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4–6"
+  },
+  {
+    "case_id": "esc-elderly-start--current-serotonin_syndrome_signs-stop",
+    "source": "RU-ESC",
+    "cause": "serotonin_syndrome_signs",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4–6"
+  },
+  {
+    "case_id": "esc-gad-start--current-mania_symptoms-stop",
+    "source": "RU-ESC",
+    "cause": "mania_symptoms",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4–6"
+  },
+  {
+    "case_id": "esc-gad-start--current-arrhythmia_signs-stop",
+    "source": "RU-ESC",
+    "cause": "arrhythmia_signs",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4–6"
+  },
+  {
+    "case_id": "esc-gad-start--current-serotonin_syndrome_signs-stop",
+    "source": "RU-ESC",
+    "cause": "serotonin_syndrome_signs",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4–6"
+  },
+  {
+    "case_id": "esc-hepatic-start--current-mania_symptoms-stop",
+    "source": "RU-ESC",
+    "cause": "mania_symptoms",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4–6"
+  },
+  {
+    "case_id": "esc-hepatic-start--current-arrhythmia_signs-stop",
+    "source": "RU-ESC",
+    "cause": "arrhythmia_signs",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4–6"
+  },
+  {
+    "case_id": "esc-hepatic-start--current-serotonin_syndrome_signs-stop",
+    "source": "RU-ESC",
+    "cause": "serotonin_syndrome_signs",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4–6"
+  },
+  {
+    "case_id": "esc-panic-start--current-mania_symptoms-stop",
+    "source": "RU-ESC",
+    "cause": "mania_symptoms",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4–6"
+  },
+  {
+    "case_id": "esc-panic-start--current-arrhythmia_signs-stop",
+    "source": "RU-ESC",
+    "cause": "arrhythmia_signs",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4–6"
+  },
+  {
+    "case_id": "esc-panic-start--current-serotonin_syndrome_signs-stop",
+    "source": "RU-ESC",
+    "cause": "serotonin_syndrome_signs",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4–6"
+  },
+  {
+    "case_id": "esc-social-start--current-mania_symptoms-stop",
+    "source": "RU-ESC",
+    "cause": "mania_symptoms",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4–6"
+  },
+  {
+    "case_id": "esc-social-start--current-arrhythmia_signs-stop",
+    "source": "RU-ESC",
+    "cause": "arrhythmia_signs",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4–6"
+  },
+  {
+    "case_id": "esc-social-start--current-serotonin_syndrome_signs-stop",
+    "source": "RU-ESC",
+    "cause": "serotonin_syndrome_signs",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4–6"
+  },
+  {
+    "case_id": "esc-taper-limit--current-mania_symptoms-stop",
+    "source": "RU-ESC",
+    "cause": "mania_symptoms",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4–6"
+  },
+  {
+    "case_id": "esc-taper-limit--current-arrhythmia_signs-stop",
+    "source": "RU-ESC",
+    "cause": "arrhythmia_signs",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4–6"
+  },
+  {
+    "case_id": "esc-taper-limit--current-serotonin_syndrome_signs-stop",
+    "source": "RU-ESC",
+    "cause": "serotonin_syndrome_signs",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4–6"
+  },
+  {
+    "case_id": "switch-esc-ago--current-mania_symptoms-stop",
+    "source": "RU-ESC",
+    "cause": "mania_symptoms",
+    "value": true,
+    "owner": "from_form",
+    "phase": "ongoing",
+    "locator": "RU-ESC §4.4 с.4"
+  },
+  {
+    "case_id": "switch-esc-ago--current-alt_ratio_uln-ongoing-above3",
+    "source": "RU-AGO",
+    "cause": "alt_ratio_uln",
+    "value": 3.01,
+    "owner": "to_form",
+    "phase": "ongoing",
+    "locator": "§4.3 с.3; §4.4 с.3–4, АЛТ отдельно"
+  },
+  {
+    "case_id": "switch-esc-ago--current-ast_ratio_uln-ongoing-above3",
+    "source": "RU-AGO",
+    "cause": "ast_ratio_uln",
+    "value": 3.01,
+    "owner": "to_form",
+    "phase": "ongoing",
+    "locator": "§4.3 с.3; §4.4 с.3–4, АСТ отдельно"
+  },
+  {
+    "case_id": "switch-ser-ago--round2-A-active-mania-True",
+    "source": "RU-SER",
+    "cause": "mania_symptoms",
+    "value": true,
+    "owner": "from_form",
+    "phase": "ongoing",
+    "locator": "RU-SER §4.4 с.4"
+  },
+  {
+    "case_id": "switch-esc-ago--round2-A-active-mania-True",
+    "source": "RU-ESC",
+    "cause": "mania_symptoms",
+    "value": true,
+    "owner": "from_form",
+    "phase": "ongoing",
+    "locator": "RU-ESC §4.4 с.4"
+  },
+  {
+    "case_id": "switch-ser-esc--round2-A-active-mania-True",
+    "source": "RU-SER",
+    "cause": "mania_symptoms",
+    "value": true,
+    "owner": "from_form",
+    "phase": "ongoing",
+    "locator": "RU-SER §4.4 с.4"
+  },
+  {
+    "case_id": "switch-esc-ser--round2-A-active-mania-True",
+    "source": "RU-ESC",
+    "cause": "mania_symptoms",
+    "value": true,
+    "owner": "from_form",
+    "phase": "ongoing",
+    "locator": "RU-ESC §4.4 с.4"
+  },
+  {
+    "case_id": "esc-adult-adjust--round2-seizure-первичные/участившиеся приступы",
+    "source": "RU-ESC",
+    "cause": "seizure_state",
+    "value": "первичные/участившиеся приступы",
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4"
+  },
+  {
+    "case_id": "esc-cyp2c19-start--round2-seizure-первичные/участившиеся приступы",
+    "source": "RU-ESC",
+    "cause": "seizure_state",
+    "value": "первичные/участившиеся приступы",
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4"
+  },
+  {
+    "case_id": "esc-elderly-start--round2-seizure-первичные/участившиеся приступы",
+    "source": "RU-ESC",
+    "cause": "seizure_state",
+    "value": "первичные/участившиеся приступы",
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4"
+  },
+  {
+    "case_id": "esc-gad-start--round2-seizure-первичные/участившиеся приступы",
+    "source": "RU-ESC",
+    "cause": "seizure_state",
+    "value": "первичные/участившиеся приступы",
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4"
+  },
+  {
+    "case_id": "esc-hepatic-start--round2-seizure-первичные/участившиеся приступы",
+    "source": "RU-ESC",
+    "cause": "seizure_state",
+    "value": "первичные/участившиеся приступы",
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4"
+  },
+  {
+    "case_id": "esc-panic-start--round2-seizure-первичные/участившиеся приступы",
+    "source": "RU-ESC",
+    "cause": "seizure_state",
+    "value": "первичные/участившиеся приступы",
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4"
+  },
+  {
+    "case_id": "esc-social-start--round2-seizure-первичные/участившиеся приступы",
+    "source": "RU-ESC",
+    "cause": "seizure_state",
+    "value": "первичные/участившиеся приступы",
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4"
+  },
+  {
+    "case_id": "fluvox-depression-start--r3-serotonin_syndrome_signs-positive",
+    "source": "RU-FLUVOX",
+    "cause": "serotonin_syndrome_signs",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.5"
+  },
+  {
+    "case_id": "phen-taper-limit--r3-unusual_reactions-positive",
+    "source": "RU-PHEN",
+    "cause": "unusual_reactions",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4"
+  },
+  {
+    "case_id": "venla-xr-gad-start--r3-current_allergic_reaction-positive",
+    "source": "RU-VENLA-XR",
+    "cause": "current_allergic_reaction",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.13"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--r3-current_allergic_reaction-positive",
+    "source": "RU-VENLA-XR",
+    "cause": "current_allergic_reaction",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.13"
+  },
+  {
+    "case_id": "venla-xr-social-start--r3-current_allergic_reaction-positive",
+    "source": "RU-VENLA-XR",
+    "cause": "current_allergic_reaction",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.13"
+  },
+  {
+    "case_id": "parox-panic-kr--audit-v2-serotonin_syndrome_signs-positive",
+    "source": "RU-PAROX",
+    "cause": "serotonin_syndrome_signs",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.7"
+  },
+  {
+    "case_id": "parox-taper-example--audit-v2-serotonin_syndrome_signs-positive",
+    "source": "RU-PAROX",
+    "cause": "serotonin_syndrome_signs",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.7"
+  },
+  {
+    "case_id": "switch-parox-ago--audit-v2-serotonin_syndrome_signs-positive",
+    "source": "RU-PAROX",
+    "cause": "serotonin_syndrome_signs",
+    "value": true,
+    "owner": "from_form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.7"
+  },
+  {
+    "case_id": "switch-parox-ago-selected-example--audit-v2-serotonin_syndrome_signs-positive",
+    "source": "RU-PAROX",
+    "cause": "serotonin_syndrome_signs",
+    "value": true,
+    "owner": "from_form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.7"
+  },
+  {
+    "case_id": "parox-taper-example--audit-v2-new_seizures-positive",
+    "source": "RU-PAROX",
+    "cause": "new_seizures",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.9"
+  },
+  {
+    "case_id": "fluvox-taper-limit--audit-v2-serotonin_syndrome_signs-positive",
+    "source": "RU-FLUVOX",
+    "cause": "serotonin_syndrome_signs",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.5"
+  },
+  {
+    "case_id": "fluvox-taper-limit--audit-v2-new_or_increased_seizures-positive",
+    "source": "RU-FLUVOX",
+    "cause": "new_or_increased_seizures",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.5"
+  },
+  {
+    "case_id": "fluvox-taper-limit--audit-v2-liver_injury_signs-positive",
+    "source": "RU-FLUVOX",
+    "cause": "liver_injury_signs",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.5"
+  },
+  {
+    "case_id": "fluvox-taper-limit--audit-v2-mania_symptoms-positive",
+    "source": "RU-FLUVOX",
+    "cause": "mania_symptoms",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.7"
+  },
+  {
+    "case_id": "venla-xr-gad-start--audit-v2-diastolic_BP-positive",
+    "source": "RU-VENLA-XR",
+    "cause": "diastolic_BP",
+    "value": 100.01,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.9"
+  },
+  {
+    "case_id": "venla-xr-social-start--audit-v2-diastolic_BP-positive",
+    "source": "RU-VENLA-XR",
+    "cause": "diastolic_BP",
+    "value": 100.01,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.9"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--audit-v2-diastolic_BP-positive",
+    "source": "RU-VENLA-XR",
+    "cause": "diastolic_BP",
+    "value": 100.01,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.9"
+  },
+  {
+    "case_id": "venla-xr-taper-limit--audit-v2-diastolic_BP-positive",
+    "source": "RU-VENLA-XR",
+    "cause": "diastolic_BP",
+    "value": 100.01,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.9"
+  },
+  {
+    "case_id": "venla-xr-taper-limit--audit-v2-current_allergic_reaction-positive",
+    "source": "RU-VENLA-XR",
+    "cause": "current_allergic_reaction",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.13"
+  },
+  {
+    "case_id": "switch-esc-ago--audit-v2-arrhythmia_signs-positive",
+    "source": "RU-ESC",
+    "cause": "arrhythmia_signs",
+    "value": true,
+    "owner": "from_form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.6"
+  },
+  {
+    "case_id": "switch-esc-ago--audit-v2-serotonin_syndrome_signs-positive",
+    "source": "RU-ESC",
+    "cause": "serotonin_syndrome_signs",
+    "value": true,
+    "owner": "from_form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.5–6"
+  },
+  {
+    "case_id": "switch-esc-ago--audit-v2-seizure_state-positive",
+    "source": "RU-ESC",
+    "cause": "seizure_state",
+    "value": "первичные/участившиеся приступы",
+    "owner": "from_form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4"
+  },
+  {
+    "case_id": "switch-esc-ser--audit-v2-arrhythmia_signs-positive",
+    "source": "RU-ESC",
+    "cause": "arrhythmia_signs",
+    "value": true,
+    "owner": "from_form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.6"
+  },
+  {
+    "case_id": "switch-esc-ser--audit-v2-serotonin_syndrome_signs-positive",
+    "source": "RU-ESC",
+    "cause": "serotonin_syndrome_signs",
+    "value": true,
+    "owner": "from_form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.5–6"
+  },
+  {
+    "case_id": "switch-esc-ser--audit-v2-seizure_state-positive",
+    "source": "RU-ESC",
+    "cause": "seizure_state",
+    "value": "первичные/участившиеся приступы",
+    "owner": "from_form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4"
+  },
+  {
+    "case_id": "switch-ser-esc--audit-v2-target_arrhythmia_signs-positive",
+    "source": "RU-ESC",
+    "cause": "target_arrhythmia_signs",
+    "value": true,
+    "owner": "to_form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.6"
+  },
+  {
+    "case_id": "switch-ser-esc--audit-v2-target_serotonin_syndrome_signs-positive",
+    "source": "RU-ESC",
+    "cause": "target_serotonin_syndrome_signs",
+    "value": true,
+    "owner": "to_form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.5–6"
+  },
+  {
+    "case_id": "switch-ser-esc--audit-v2-target_seizure_state-positive",
+    "source": "RU-ESC",
+    "cause": "target_seizure_state",
+    "value": "первичные/участившиеся приступы",
+    "owner": "to_form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4"
+  },
+  {
+    "case_id": "fluvox-depression-start--audit-v2-new_or_increased_seizures-positive",
+    "source": "RU-FLUVOX",
+    "cause": "new_or_increased_seizures",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.5"
+  },
+  {
+    "case_id": "switch-ser-esc--audit-v2-new_seizures-positive",
+    "source": "RU-SER",
+    "cause": "new_seizures",
+    "value": true,
+    "owner": "from_form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4"
+  },
+  {
+    "case_id": "switch-esc-ser--audit-v2-target_new_seizures-positive",
+    "source": "RU-SER",
+    "cause": "target_new_seizures",
+    "value": true,
+    "owner": "to_form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4"
+  },
+  {
+    "case_id": "esc-taper-limit--audit-final-primary-RU-ESC-seizure_state-первичные/участившиеся приступы-positive",
+    "source": "RU-ESC",
+    "cause": "seizure_state",
+    "value": "первичные/участившиеся приступы",
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "Физ. с.4"
+  },
+  {
+    "case_id": "ser-taper-limit--audit-final-primary-RU-SER-seizure_state-новые приступы-positive",
+    "source": "RU-SER",
+    "cause": "seizure_state",
+    "value": "новые приступы",
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "Физ. с.4"
+  },
+  {
+    "case_id": "switch-esc-ago--audit-final-primary-RU-AGO-liver_injury_signs-positive",
+    "source": "RU-AGO",
+    "cause": "liver_injury_signs",
+    "value": true,
+    "owner": "to_form",
+    "phase": "ongoing",
+    "locator": "Физ. с.4"
+  },
+  {
+    "case_id": "ago-depression-start--ALT_ratio-ongoing-above3--audit-final-bounded-action",
+    "source": "RU-AGO",
+    "cause": "ALT_ratio",
+    "value": 3.01,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4, прекращение лечения при АЛТ или АСТ >3 ВГН; регулярные пробы до нормы"
+  },
+  {
+    "case_id": "ago-depression-start--AST_ratio-ongoing-above3--audit-final-bounded-action",
+    "source": "RU-AGO",
+    "cause": "AST_ratio",
+    "value": 3.01,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4, прекращение лечения при АЛТ или АСТ >3 ВГН; регулярные пробы до нормы"
+  },
+  {
+    "case_id": "ago-gad-start--ALT_ratio-ongoing-above3--audit-final-bounded-action",
+    "source": "RU-AGO",
+    "cause": "ALT_ratio",
+    "value": 3.01,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4, прекращение лечения при АЛТ или АСТ >3 ВГН; регулярные пробы до нормы"
+  },
+  {
+    "case_id": "ago-gad-start--AST_ratio-ongoing-above3--audit-final-bounded-action",
+    "source": "RU-AGO",
+    "cause": "AST_ratio",
+    "value": 3.01,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4, прекращение лечения при АЛТ или АСТ >3 ВГН; регулярные пробы до нормы"
+  },
+  {
+    "case_id": "fluvox-depression-start--condition-seizure_state-новые приступы--audit-final-bounded-action",
+    "source": "RU-FLUVOX",
+    "cause": "seizure_state",
+    "value": "новые приступы",
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.5"
+  },
+  {
+    "case_id": "parox-panic-kr--condition-seizure_state-новые приступы--audit-final-bounded-action",
+    "source": "RU-PAROX",
+    "cause": "seizure_state",
+    "value": "новые приступы",
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.9"
+  },
+  {
+    "case_id": "ser-adult-adjust--condition-seizure_state-новые приступы--audit-final-bounded-action",
+    "source": "RU-SER",
+    "cause": "seizure_state",
+    "value": "новые приступы",
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4, судороги: прекращение при развитии приступов"
+  },
+  {
+    "case_id": "ser-panic-start--condition-seizure_state-новые приступы--audit-final-bounded-action",
+    "source": "RU-SER",
+    "cause": "seizure_state",
+    "value": "новые приступы",
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4, судороги: прекращение при развитии приступов"
+  },
+  {
+    "case_id": "ser-social-start--condition-seizure_state-новые приступы--audit-final-bounded-action",
+    "source": "RU-SER",
+    "cause": "seizure_state",
+    "value": "новые приступы",
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4, судороги: прекращение при развитии приступов"
+  },
+  {
+    "case_id": "switch-parox-ago-selected-example--condition-seizure_state-новые приступы--audit-final-bounded-action",
+    "source": "RU-PAROX",
+    "cause": "seizure_state",
+    "value": "новые приступы",
+    "owner": "from_form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.9"
+  },
+  {
+    "case_id": "switch-parox-ago-selected-example--alt_ratio_uln-ongoing-above3--audit-final-bounded-action",
+    "source": "RU-AGO",
+    "cause": "alt_ratio_uln",
+    "value": 3.01,
+    "owner": "to_form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4, прекращение лечения при АЛТ или АСТ >3 ВГН; регулярные пробы до нормы"
+  },
+  {
+    "case_id": "switch-parox-ago-selected-example--ast_ratio_uln-ongoing-above3--audit-final-bounded-action",
+    "source": "RU-AGO",
+    "cause": "ast_ratio_uln",
+    "value": 3.01,
+    "owner": "to_form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4, прекращение лечения при АЛТ или АСТ >3 ВГН; регулярные пробы до нормы"
+  },
+  {
+    "case_id": "switch-parox-ago--condition-seizure_state-новые приступы--audit-final-bounded-action",
+    "source": "RU-PAROX",
+    "cause": "seizure_state",
+    "value": "новые приступы",
+    "owner": "from_form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.9"
+  },
+  {
+    "case_id": "switch-parox-ago--alt_ratio_uln-ongoing-above3--audit-final-bounded-action",
+    "source": "RU-AGO",
+    "cause": "alt_ratio_uln",
+    "value": 3.01,
+    "owner": "to_form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4, прекращение лечения при АЛТ или АСТ >3 ВГН; регулярные пробы до нормы"
+  },
+  {
+    "case_id": "switch-parox-ago--ast_ratio_uln-ongoing-above3--audit-final-bounded-action",
+    "source": "RU-AGO",
+    "cause": "ast_ratio_uln",
+    "value": 3.01,
+    "owner": "to_form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4, прекращение лечения при АЛТ или АСТ >3 ВГН; регулярные пробы до нормы"
+  },
+  {
+    "case_id": "switch-ser-ago--stop-RU-AGO-mania_symptoms--audit-final-bounded-action",
+    "source": "RU-SER",
+    "cause": "mania_symptoms",
+    "value": true,
+    "owner": "from_form",
+    "phase": "ongoing",
+    "locator": "RU-SER §4.4 с.4"
+  },
+  {
+    "case_id": "switch-ser-ago--condition-seizure_state-новые приступы--audit-final-bounded-action",
+    "source": "RU-SER",
+    "cause": "seizure_state",
+    "value": "новые приступы",
+    "owner": "from_form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4, судороги: прекращение при развитии приступов"
+  },
+  {
+    "case_id": "switch-ser-ago--alt_ratio_uln-ongoing-above3--audit-final-bounded-action",
+    "source": "RU-AGO",
+    "cause": "alt_ratio_uln",
+    "value": 3.01,
+    "owner": "to_form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4, прекращение лечения при АЛТ или АСТ >3 ВГН; регулярные пробы до нормы"
+  },
+  {
+    "case_id": "switch-ser-ago--ast_ratio_uln-ongoing-above3--audit-final-bounded-action",
+    "source": "RU-AGO",
+    "cause": "ast_ratio_uln",
+    "value": 3.01,
+    "owner": "to_form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4, прекращение лечения при АЛТ или АСТ >3 ВГН; регулярные пробы до нормы"
+  },
+  {
+    "case_id": "venla-xr-gad-start--diastolic-BP-100.01--audit-final-bounded-action",
+    "source": "RU-VENLA-XR",
+    "cause": "diastolic_BP",
+    "value": 100.01,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.9"
+  },
+  {
+    "case_id": "venla-xr-social-start--diastolic-BP-100.01--audit-final-bounded-action",
+    "source": "RU-VENLA-XR",
+    "cause": "diastolic_BP",
+    "value": 100.01,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.9"
+  },
+  {
+    "case_id": "ser-adult-adjust--round2-active-mania-stop--audit-final-bounded-action",
+    "source": "RU-SER",
+    "cause": "mania_symptoms",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4"
+  },
+  {
+    "case_id": "ser-panic-start--round2-active-mania-stop--audit-final-bounded-action",
+    "source": "RU-SER",
+    "cause": "mania_symptoms",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4"
+  },
+  {
+    "case_id": "ser-social-start--round2-active-mania-stop--audit-final-bounded-action",
+    "source": "RU-SER",
+    "cause": "mania_symptoms",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4"
+  },
+  {
+    "case_id": "ser-taper-limit--round2-active-mania-stop--audit-final-bounded-action",
+    "source": "RU-SER",
+    "cause": "mania_symptoms",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4"
+  },
+  {
+    "case_id": "esc-adult-adjust--current-mania_symptoms-stop--audit-final-bounded-action",
+    "source": "RU-ESC",
+    "cause": "mania_symptoms",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4–6"
+  },
+  {
+    "case_id": "esc-adult-adjust--current-arrhythmia_signs-stop--audit-final-bounded-action",
+    "source": "RU-ESC",
+    "cause": "arrhythmia_signs",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4–6"
+  },
+  {
+    "case_id": "esc-adult-adjust--current-serotonin_syndrome_signs-stop--audit-final-bounded-action",
+    "source": "RU-ESC",
+    "cause": "serotonin_syndrome_signs",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4–6"
+  },
+  {
+    "case_id": "esc-cyp2c19-start--current-mania_symptoms-stop--audit-final-bounded-action",
+    "source": "RU-ESC",
+    "cause": "mania_symptoms",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4–6"
+  },
+  {
+    "case_id": "esc-cyp2c19-start--current-arrhythmia_signs-stop--audit-final-bounded-action",
+    "source": "RU-ESC",
+    "cause": "arrhythmia_signs",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4–6"
+  },
+  {
+    "case_id": "esc-cyp2c19-start--current-serotonin_syndrome_signs-stop--audit-final-bounded-action",
+    "source": "RU-ESC",
+    "cause": "serotonin_syndrome_signs",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4–6"
+  },
+  {
+    "case_id": "esc-elderly-start--current-mania_symptoms-stop--audit-final-bounded-action",
+    "source": "RU-ESC",
+    "cause": "mania_symptoms",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4–6"
+  },
+  {
+    "case_id": "esc-elderly-start--current-arrhythmia_signs-stop--audit-final-bounded-action",
+    "source": "RU-ESC",
+    "cause": "arrhythmia_signs",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4–6"
+  },
+  {
+    "case_id": "esc-elderly-start--current-serotonin_syndrome_signs-stop--audit-final-bounded-action",
+    "source": "RU-ESC",
+    "cause": "serotonin_syndrome_signs",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4–6"
+  },
+  {
+    "case_id": "esc-gad-start--current-mania_symptoms-stop--audit-final-bounded-action",
+    "source": "RU-ESC",
+    "cause": "mania_symptoms",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4–6"
+  },
+  {
+    "case_id": "esc-gad-start--current-arrhythmia_signs-stop--audit-final-bounded-action",
+    "source": "RU-ESC",
+    "cause": "arrhythmia_signs",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4–6"
+  },
+  {
+    "case_id": "esc-gad-start--current-serotonin_syndrome_signs-stop--audit-final-bounded-action",
+    "source": "RU-ESC",
+    "cause": "serotonin_syndrome_signs",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4–6"
+  },
+  {
+    "case_id": "esc-hepatic-start--current-mania_symptoms-stop--audit-final-bounded-action",
+    "source": "RU-ESC",
+    "cause": "mania_symptoms",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4–6"
+  },
+  {
+    "case_id": "esc-hepatic-start--current-arrhythmia_signs-stop--audit-final-bounded-action",
+    "source": "RU-ESC",
+    "cause": "arrhythmia_signs",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4–6"
+  },
+  {
+    "case_id": "esc-hepatic-start--current-serotonin_syndrome_signs-stop--audit-final-bounded-action",
+    "source": "RU-ESC",
+    "cause": "serotonin_syndrome_signs",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4–6"
+  },
+  {
+    "case_id": "esc-panic-start--current-mania_symptoms-stop--audit-final-bounded-action",
+    "source": "RU-ESC",
+    "cause": "mania_symptoms",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4–6"
+  },
+  {
+    "case_id": "esc-panic-start--current-arrhythmia_signs-stop--audit-final-bounded-action",
+    "source": "RU-ESC",
+    "cause": "arrhythmia_signs",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4–6"
+  },
+  {
+    "case_id": "esc-panic-start--current-serotonin_syndrome_signs-stop--audit-final-bounded-action",
+    "source": "RU-ESC",
+    "cause": "serotonin_syndrome_signs",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4–6"
+  },
+  {
+    "case_id": "esc-social-start--current-mania_symptoms-stop--audit-final-bounded-action",
+    "source": "RU-ESC",
+    "cause": "mania_symptoms",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4–6"
+  },
+  {
+    "case_id": "esc-social-start--current-arrhythmia_signs-stop--audit-final-bounded-action",
+    "source": "RU-ESC",
+    "cause": "arrhythmia_signs",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4–6"
+  },
+  {
+    "case_id": "esc-social-start--current-serotonin_syndrome_signs-stop--audit-final-bounded-action",
+    "source": "RU-ESC",
+    "cause": "serotonin_syndrome_signs",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4–6"
+  },
+  {
+    "case_id": "esc-taper-limit--current-mania_symptoms-stop--audit-final-bounded-action",
+    "source": "RU-ESC",
+    "cause": "mania_symptoms",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4–6"
+  },
+  {
+    "case_id": "esc-taper-limit--current-arrhythmia_signs-stop--audit-final-bounded-action",
+    "source": "RU-ESC",
+    "cause": "arrhythmia_signs",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4–6"
+  },
+  {
+    "case_id": "esc-taper-limit--current-serotonin_syndrome_signs-stop--audit-final-bounded-action",
+    "source": "RU-ESC",
+    "cause": "serotonin_syndrome_signs",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4–6"
+  },
+  {
+    "case_id": "switch-esc-ago--current-mania_symptoms-stop--audit-final-bounded-action",
+    "source": "RU-ESC",
+    "cause": "mania_symptoms",
+    "value": true,
+    "owner": "from_form",
+    "phase": "ongoing",
+    "locator": "RU-ESC §4.4 с.4"
+  },
+  {
+    "case_id": "switch-ser-ago--round2-A-active-mania-True--audit-final-bounded-action",
+    "source": "RU-SER",
+    "cause": "mania_symptoms",
+    "value": true,
+    "owner": "from_form",
+    "phase": "ongoing",
+    "locator": "RU-SER §4.4 с.4"
+  },
+  {
+    "case_id": "switch-ser-esc--round2-A-active-mania-True--audit-final-bounded-action",
+    "source": "RU-SER",
+    "cause": "mania_symptoms",
+    "value": true,
+    "owner": "from_form",
+    "phase": "ongoing",
+    "locator": "RU-SER §4.4 с.4"
+  },
+  {
+    "case_id": "switch-esc-ser--round2-A-active-mania-True--audit-final-bounded-action",
+    "source": "RU-ESC",
+    "cause": "mania_symptoms",
+    "value": true,
+    "owner": "from_form",
+    "phase": "ongoing",
+    "locator": "RU-ESC §4.4 с.4"
+  },
+  {
+    "case_id": "fluvox-depression-start--r3-serotonin_syndrome_signs-positive--audit-final-bounded-action",
+    "source": "RU-FLUVOX",
+    "cause": "serotonin_syndrome_signs",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.5"
+  },
+  {
+    "case_id": "phen-taper-limit--r3-unusual_reactions-positive--audit-final-bounded-action",
+    "source": "RU-PHEN",
+    "cause": "unusual_reactions",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4"
+  },
+  {
+    "case_id": "venla-xr-gad-start--r3-current_allergic_reaction-positive--audit-final-bounded-action",
+    "source": "RU-VENLA-XR",
+    "cause": "current_allergic_reaction",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.13"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--r3-current_allergic_reaction-positive--audit-final-bounded-action",
+    "source": "RU-VENLA-XR",
+    "cause": "current_allergic_reaction",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.13"
+  },
+  {
+    "case_id": "venla-xr-social-start--r3-current_allergic_reaction-positive--audit-final-bounded-action",
+    "source": "RU-VENLA-XR",
+    "cause": "current_allergic_reaction",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.13"
+  },
+  {
+    "case_id": "parox-panic-kr--audit-v2-serotonin_syndrome_signs-positive--audit-final-bounded-action",
+    "source": "RU-PAROX",
+    "cause": "serotonin_syndrome_signs",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.7"
+  },
+  {
+    "case_id": "parox-taper-example--audit-v2-serotonin_syndrome_signs-positive--audit-final-bounded-action",
+    "source": "RU-PAROX",
+    "cause": "serotonin_syndrome_signs",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.7"
+  },
+  {
+    "case_id": "switch-parox-ago--audit-v2-serotonin_syndrome_signs-positive--audit-final-bounded-action",
+    "source": "RU-PAROX",
+    "cause": "serotonin_syndrome_signs",
+    "value": true,
+    "owner": "from_form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.7"
+  },
+  {
+    "case_id": "switch-parox-ago-selected-example--audit-v2-serotonin_syndrome_signs-positive--audit-final-bounded-action",
+    "source": "RU-PAROX",
+    "cause": "serotonin_syndrome_signs",
+    "value": true,
+    "owner": "from_form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.7"
+  },
+  {
+    "case_id": "parox-taper-example--audit-v2-new_seizures-positive--audit-final-bounded-action",
+    "source": "RU-PAROX",
+    "cause": "new_seizures",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.9"
+  },
+  {
+    "case_id": "fluvox-taper-limit--audit-v2-serotonin_syndrome_signs-positive--audit-final-bounded-action",
+    "source": "RU-FLUVOX",
+    "cause": "serotonin_syndrome_signs",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.5"
+  },
+  {
+    "case_id": "fluvox-taper-limit--audit-v2-new_or_increased_seizures-positive--audit-final-bounded-action",
+    "source": "RU-FLUVOX",
+    "cause": "new_or_increased_seizures",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.5"
+  },
+  {
+    "case_id": "fluvox-taper-limit--audit-v2-liver_injury_signs-positive--audit-final-bounded-action",
+    "source": "RU-FLUVOX",
+    "cause": "liver_injury_signs",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.5"
+  },
+  {
+    "case_id": "fluvox-taper-limit--audit-v2-mania_symptoms-positive--audit-final-bounded-action",
+    "source": "RU-FLUVOX",
+    "cause": "mania_symptoms",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.7"
+  },
+  {
+    "case_id": "venla-xr-panic-form-limit--audit-v2-diastolic_BP-positive--audit-final-bounded-action",
+    "source": "RU-VENLA-XR",
+    "cause": "diastolic_BP",
+    "value": 100.01,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.9"
+  },
+  {
+    "case_id": "venla-xr-taper-limit--audit-v2-diastolic_BP-positive--audit-final-bounded-action",
+    "source": "RU-VENLA-XR",
+    "cause": "diastolic_BP",
+    "value": 100.01,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.9"
+  },
+  {
+    "case_id": "venla-xr-taper-limit--audit-v2-current_allergic_reaction-positive--audit-final-bounded-action",
+    "source": "RU-VENLA-XR",
+    "cause": "current_allergic_reaction",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.13"
+  },
+  {
+    "case_id": "switch-esc-ago--audit-v2-arrhythmia_signs-positive--audit-final-bounded-action",
+    "source": "RU-ESC",
+    "cause": "arrhythmia_signs",
+    "value": true,
+    "owner": "from_form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.6"
+  },
+  {
+    "case_id": "switch-esc-ago--audit-v2-serotonin_syndrome_signs-positive--audit-final-bounded-action",
+    "source": "RU-ESC",
+    "cause": "serotonin_syndrome_signs",
+    "value": true,
+    "owner": "from_form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.5–6"
+  },
+  {
+    "case_id": "switch-esc-ago--audit-v2-seizure_state-positive--audit-final-bounded-action",
+    "source": "RU-ESC",
+    "cause": "seizure_state",
+    "value": "первичные/участившиеся приступы",
+    "owner": "from_form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4"
+  },
+  {
+    "case_id": "switch-esc-ser--audit-v2-arrhythmia_signs-positive--audit-final-bounded-action",
+    "source": "RU-ESC",
+    "cause": "arrhythmia_signs",
+    "value": true,
+    "owner": "from_form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.6"
+  },
+  {
+    "case_id": "switch-esc-ser--audit-v2-serotonin_syndrome_signs-positive--audit-final-bounded-action",
+    "source": "RU-ESC",
+    "cause": "serotonin_syndrome_signs",
+    "value": true,
+    "owner": "from_form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.5–6"
+  },
+  {
+    "case_id": "switch-esc-ser--audit-v2-seizure_state-positive--audit-final-bounded-action",
+    "source": "RU-ESC",
+    "cause": "seizure_state",
+    "value": "первичные/участившиеся приступы",
+    "owner": "from_form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4"
+  },
+  {
+    "case_id": "switch-ser-esc--audit-v2-target_arrhythmia_signs-positive--audit-final-bounded-action",
+    "source": "RU-ESC",
+    "cause": "target_arrhythmia_signs",
+    "value": true,
+    "owner": "to_form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.6"
+  },
+  {
+    "case_id": "switch-ser-esc--audit-v2-target_serotonin_syndrome_signs-positive--audit-final-bounded-action",
+    "source": "RU-ESC",
+    "cause": "target_serotonin_syndrome_signs",
+    "value": true,
+    "owner": "to_form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.5–6"
+  },
+  {
+    "case_id": "switch-ser-esc--audit-v2-target_seizure_state-positive--audit-final-bounded-action",
+    "source": "RU-ESC",
+    "cause": "target_seizure_state",
+    "value": "первичные/участившиеся приступы",
+    "owner": "to_form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4"
+  },
+  {
+    "case_id": "fluvox-depression-start--audit-v2-new_or_increased_seizures-positive--audit-final-bounded-action",
+    "source": "RU-FLUVOX",
+    "cause": "new_or_increased_seizures",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.5"
+  },
+  {
+    "case_id": "switch-ser-esc--audit-v2-new_seizures-positive--audit-final-bounded-action",
+    "source": "RU-SER",
+    "cause": "new_seizures",
+    "value": true,
+    "owner": "from_form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4"
+  },
+  {
+    "case_id": "switch-esc-ser--audit-v2-target_new_seizures-positive--audit-final-bounded-action",
+    "source": "RU-SER",
+    "cause": "target_new_seizures",
+    "value": true,
+    "owner": "to_form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4"
+  },
+  {
+    "case_id": "esc-taper-limit--audit-final-primary-RU-ESC-seizure_state-первичные/участившиеся приступы-positive--audit-final-bounded-action",
+    "source": "RU-ESC",
+    "cause": "seizure_state",
+    "value": "первичные/участившиеся приступы",
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "Физ. с.4"
+  },
+  {
+    "case_id": "ser-taper-limit--audit-final-primary-RU-SER-seizure_state-новые приступы-positive--audit-final-bounded-action",
+    "source": "RU-SER",
+    "cause": "seizure_state",
+    "value": "новые приступы",
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "Физ. с.4"
+  },
+  {
+    "case_id": "switch-esc-ago--audit-final-primary-RU-AGO-liver_injury_signs-positive--audit-final-bounded-action",
+    "source": "RU-AGO",
+    "cause": "liver_injury_signs",
+    "value": true,
+    "owner": "to_form",
+    "phase": "ongoing",
+    "locator": "Физ. с.4"
+  },
+  {
+    "case_id": "ago-depression-start--stop-RU-AGO-liver_injury_signs--audit-final-bounded-action-legacy",
+    "source": "RU-AGO",
+    "cause": "liver_injury_signs",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4: темная моча, обесцвеченный стул, желтуха, боль справа вверху живота, новая необъяснимая постоянная утомляемость"
+  },
+  {
+    "case_id": "ago-depression-start--stop-RU-AGO-mania_symptoms--audit-final-bounded-action-legacy",
+    "source": "RU-AGO",
+    "cause": "mania_symptoms",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4"
+  },
+  {
+    "case_id": "ago-gad-start--stop-RU-AGO-liver_injury_signs--audit-final-bounded-action-legacy",
+    "source": "RU-AGO",
+    "cause": "liver_injury_signs",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4: темная моча, обесцвеченный стул, желтуха, боль справа вверху живота, новая необъяснимая постоянная утомляемость"
+  },
+  {
+    "case_id": "ago-gad-start--stop-RU-AGO-mania_symptoms--audit-final-bounded-action-legacy",
+    "source": "RU-AGO",
+    "cause": "mania_symptoms",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4"
+  },
+  {
+    "case_id": "fluvox-depression-start--stop-RU-FLUVOX-mania_symptoms--audit-final-bounded-action-legacy",
+    "source": "RU-FLUVOX",
+    "cause": "mania_symptoms",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.7"
+  },
+  {
+    "case_id": "fluvox-depression-start--stop-RU-FLUVOX-liver_injury_signs--audit-final-bounded-action-legacy",
+    "source": "RU-FLUVOX",
+    "cause": "liver_injury_signs",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.5"
+  },
+  {
+    "case_id": "preg-gad-adjust--stop-RU-PREG-angioedema--audit-final-bounded-action-legacy",
+    "source": "RU-PREG",
+    "cause": "angioedema",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.6"
+  },
+  {
+    "case_id": "preg-gad-adjust--stop-RU-PREG-severe_skin_reaction--audit-final-bounded-action-legacy",
+    "source": "RU-PREG",
+    "cause": "severe_skin_reaction",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.6"
+  },
+  {
+    "case_id": "preg-gad-start--stop-RU-PREG-angioedema--audit-final-bounded-action-legacy",
+    "source": "RU-PREG",
+    "cause": "angioedema",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.6"
+  },
+  {
+    "case_id": "preg-gad-start--stop-RU-PREG-severe_skin_reaction--audit-final-bounded-action-legacy",
+    "source": "RU-PREG",
+    "cause": "severe_skin_reaction",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.6"
+  },
+  {
+    "case_id": "preg-renal-start--stop-RU-PREG-angioedema--audit-final-bounded-action-legacy",
+    "source": "RU-PREG",
+    "cause": "angioedema",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.6"
+  },
+  {
+    "case_id": "preg-renal-start--stop-RU-PREG-severe_skin_reaction--audit-final-bounded-action-legacy",
+    "source": "RU-PREG",
+    "cause": "severe_skin_reaction",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.6"
+  },
+  {
+    "case_id": "preg-taper-limit--stop-RU-PREG-angioedema--audit-final-bounded-action-legacy",
+    "source": "RU-PREG",
+    "cause": "angioedema",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.6"
+  },
+  {
+    "case_id": "preg-taper-limit--stop-RU-PREG-severe_skin_reaction--audit-final-bounded-action-legacy",
+    "source": "RU-PREG",
+    "cause": "severe_skin_reaction",
+    "value": true,
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.6"
+  },
+  {
+    "case_id": "switch-parox-ago-selected-example--stop-RU-AGO-liver_injury_signs--audit-final-bounded-action-legacy",
+    "source": "RU-AGO",
+    "cause": "liver_injury_signs",
+    "value": true,
+    "owner": "to_form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4: темная моча, обесцвеченный стул, желтуха, боль справа вверху живота, новая необъяснимая постоянная утомляемость"
+  },
+  {
+    "case_id": "switch-parox-ago-selected-example--stop-RU-AGO-mania_symptoms--audit-final-bounded-action-legacy",
+    "source": "RU-AGO",
+    "cause": "mania_symptoms",
+    "value": true,
+    "owner": "to_form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4"
+  },
+  {
+    "case_id": "switch-parox-ago--stop-RU-AGO-liver_injury_signs--audit-final-bounded-action-legacy",
+    "source": "RU-AGO",
+    "cause": "liver_injury_signs",
+    "value": true,
+    "owner": "to_form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4: темная моча, обесцвеченный стул, желтуха, боль справа вверху живота, новая необъяснимая постоянная утомляемость"
+  },
+  {
+    "case_id": "switch-parox-ago--stop-RU-AGO-mania_symptoms--audit-final-bounded-action-legacy",
+    "source": "RU-AGO",
+    "cause": "mania_symptoms",
+    "value": true,
+    "owner": "to_form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4"
+  },
+  {
+    "case_id": "switch-ser-ago--stop-RU-AGO-liver_injury_signs--audit-final-bounded-action-legacy",
+    "source": "RU-AGO",
+    "cause": "liver_injury_signs",
+    "value": true,
+    "owner": "to_form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4: темная моча, обесцвеченный стул, желтуха, боль справа вверху живота, новая необъяснимая постоянная утомляемость"
+  },
+  {
+    "case_id": "switch-esc-ago--current-alt_ratio_uln-ongoing-above3--audit-final-bounded-action-legacy",
+    "source": "RU-AGO",
+    "cause": "alt_ratio_uln",
+    "value": 3.01,
+    "owner": "to_form",
+    "phase": "ongoing",
+    "locator": "§4.3 с.3; §4.4 с.3–4, АЛТ отдельно"
+  },
+  {
+    "case_id": "switch-esc-ago--current-ast_ratio_uln-ongoing-above3--audit-final-bounded-action-legacy",
+    "source": "RU-AGO",
+    "cause": "ast_ratio_uln",
+    "value": 3.01,
+    "owner": "to_form",
+    "phase": "ongoing",
+    "locator": "§4.3 с.3; §4.4 с.3–4, АСТ отдельно"
+  },
+  {
+    "case_id": "esc-adult-adjust--round2-seizure-первичные/участившиеся приступы--audit-final-bounded-action-legacy",
+    "source": "RU-ESC",
+    "cause": "seizure_state",
+    "value": "первичные/участившиеся приступы",
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4"
+  },
+  {
+    "case_id": "esc-cyp2c19-start--round2-seizure-первичные/участившиеся приступы--audit-final-bounded-action-legacy",
+    "source": "RU-ESC",
+    "cause": "seizure_state",
+    "value": "первичные/участившиеся приступы",
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4"
+  },
+  {
+    "case_id": "esc-elderly-start--round2-seizure-первичные/участившиеся приступы--audit-final-bounded-action-legacy",
+    "source": "RU-ESC",
+    "cause": "seizure_state",
+    "value": "первичные/участившиеся приступы",
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4"
+  },
+  {
+    "case_id": "esc-gad-start--round2-seizure-первичные/участившиеся приступы--audit-final-bounded-action-legacy",
+    "source": "RU-ESC",
+    "cause": "seizure_state",
+    "value": "первичные/участившиеся приступы",
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4"
+  },
+  {
+    "case_id": "esc-hepatic-start--round2-seizure-первичные/участившиеся приступы--audit-final-bounded-action-legacy",
+    "source": "RU-ESC",
+    "cause": "seizure_state",
+    "value": "первичные/участившиеся приступы",
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4"
+  },
+  {
+    "case_id": "esc-panic-start--round2-seizure-первичные/участившиеся приступы--audit-final-bounded-action-legacy",
+    "source": "RU-ESC",
+    "cause": "seizure_state",
+    "value": "первичные/участившиеся приступы",
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4"
+  },
+  {
+    "case_id": "esc-social-start--round2-seizure-первичные/участившиеся приступы--audit-final-bounded-action-legacy",
+    "source": "RU-ESC",
+    "cause": "seizure_state",
+    "value": "первичные/участившиеся приступы",
+    "owner": "form",
+    "phase": "ongoing",
+    "locator": "§4.4 с.4"
+  }
+]

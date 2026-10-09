@@ -1,0 +1,716 @@
+{
+  "changes": [
+    {
+      "case_id": "esc-adult-adjust--audit-final-primary-RU-ESC-reversible_MAO_A-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "esc-adult-adjust--audit-final-primary-RU-ESC-linezolid-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "esc-adult-adjust--audit-final-primary-RU-ESC-selective_MAO_B-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "esc-adult-adjust--audit-final-primary-RU-ESC-serotonergic-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "esc-adult-adjust--audit-final-primary-RU-ESC-CYP2C19_inhibitor-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "esc-adult-adjust--audit-final-primary-RU-ESC-cimetidine-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "esc-adult-adjust--audit-final-primary-RU-ESC-bleeding-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "esc-cyp2c19-start--audit-final-primary-RU-ESC-reversible_MAO_A-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "esc-cyp2c19-start--audit-final-primary-RU-ESC-linezolid-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "esc-cyp2c19-start--audit-final-primary-RU-ESC-selective_MAO_B-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "esc-cyp2c19-start--audit-final-primary-RU-ESC-serotonergic-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "esc-cyp2c19-start--audit-final-primary-RU-ESC-CYP2C19_inhibitor-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "esc-cyp2c19-start--audit-final-primary-RU-ESC-cimetidine-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "esc-cyp2c19-start--audit-final-primary-RU-ESC-bleeding-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "esc-elderly-start--audit-final-primary-RU-ESC-reversible_MAO_A-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "esc-elderly-start--audit-final-primary-RU-ESC-linezolid-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "esc-elderly-start--audit-final-primary-RU-ESC-selective_MAO_B-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "esc-elderly-start--audit-final-primary-RU-ESC-serotonergic-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "esc-elderly-start--audit-final-primary-RU-ESC-CYP2C19_inhibitor-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "esc-elderly-start--audit-final-primary-RU-ESC-cimetidine-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "esc-elderly-start--audit-final-primary-RU-ESC-bleeding-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "esc-gad-start--audit-final-primary-RU-ESC-reversible_MAO_A-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "esc-gad-start--audit-final-primary-RU-ESC-linezolid-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "esc-gad-start--audit-final-primary-RU-ESC-selective_MAO_B-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "esc-gad-start--audit-final-primary-RU-ESC-serotonergic-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "esc-gad-start--audit-final-primary-RU-ESC-CYP2C19_inhibitor-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "esc-gad-start--audit-final-primary-RU-ESC-cimetidine-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "esc-gad-start--audit-final-primary-RU-ESC-bleeding-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "esc-hepatic-start--audit-final-primary-RU-ESC-reversible_MAO_A-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "esc-hepatic-start--audit-final-primary-RU-ESC-linezolid-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "esc-hepatic-start--audit-final-primary-RU-ESC-selective_MAO_B-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "esc-hepatic-start--audit-final-primary-RU-ESC-serotonergic-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "esc-hepatic-start--audit-final-primary-RU-ESC-CYP2C19_inhibitor-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "esc-hepatic-start--audit-final-primary-RU-ESC-cimetidine-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "esc-hepatic-start--audit-final-primary-RU-ESC-bleeding-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "esc-panic-start--audit-final-primary-RU-ESC-reversible_MAO_A-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "esc-panic-start--audit-final-primary-RU-ESC-linezolid-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "esc-panic-start--audit-final-primary-RU-ESC-selective_MAO_B-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "esc-panic-start--audit-final-primary-RU-ESC-serotonergic-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "esc-panic-start--audit-final-primary-RU-ESC-CYP2C19_inhibitor-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "esc-panic-start--audit-final-primary-RU-ESC-cimetidine-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "esc-panic-start--audit-final-primary-RU-ESC-bleeding-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "esc-social-start--audit-final-primary-RU-ESC-reversible_MAO_A-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "esc-social-start--audit-final-primary-RU-ESC-linezolid-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "esc-social-start--audit-final-primary-RU-ESC-selective_MAO_B-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "esc-social-start--audit-final-primary-RU-ESC-serotonergic-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "esc-social-start--audit-final-primary-RU-ESC-CYP2C19_inhibitor-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "esc-social-start--audit-final-primary-RU-ESC-cimetidine-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "esc-social-start--audit-final-primary-RU-ESC-bleeding-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "switch-esc-ser--audit-final-primary-RU-ESC-irreversible_maoi-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "switch-esc-ser--audit-final-primary-RU-ESC-pimozide-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "switch-esc-ser--audit-final-primary-RU-ESC-QT_prolonging-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "switch-esc-ser--audit-final-primary-RU-ESC-reversible_MAO_A-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "switch-esc-ser--audit-final-primary-RU-ESC-linezolid-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "switch-esc-ser--audit-final-primary-RU-ESC-selective_MAO_B-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "switch-esc-ser--audit-final-primary-RU-ESC-serotonergic-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "switch-esc-ser--audit-final-primary-RU-ESC-CYP2C19_inhibitor-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "switch-esc-ser--audit-final-primary-RU-ESC-cimetidine-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "switch-esc-ser--audit-final-primary-RU-ESC-bleeding-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "switch-esc-ser--audit-final-primary-RU-SER-maoi-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "switch-esc-ser--audit-final-primary-RU-SER-pimozide-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "switch-esc-ser--audit-final-primary-RU-SER-serotonergic-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "switch-esc-ser--audit-final-primary-RU-SER-QT_prolonging-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "switch-esc-ser--audit-final-primary-RU-SER-bleeding-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "switch-ser-esc--audit-final-primary-RU-ESC-irreversible_maoi-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "switch-ser-esc--audit-final-primary-RU-ESC-pimozide-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "switch-ser-esc--audit-final-primary-RU-ESC-QT_prolonging-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "switch-ser-esc--audit-final-primary-RU-ESC-reversible_MAO_A-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "switch-ser-esc--audit-final-primary-RU-ESC-linezolid-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "switch-ser-esc--audit-final-primary-RU-ESC-selective_MAO_B-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "switch-ser-esc--audit-final-primary-RU-ESC-serotonergic-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "switch-ser-esc--audit-final-primary-RU-ESC-CYP2C19_inhibitor-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "switch-ser-esc--audit-final-primary-RU-ESC-cimetidine-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "switch-ser-esc--audit-final-primary-RU-ESC-bleeding-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "switch-ser-esc--audit-final-primary-RU-SER-maoi-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "switch-ser-esc--audit-final-primary-RU-SER-pimozide-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "switch-ser-esc--audit-final-primary-RU-SER-serotonergic-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "switch-ser-esc--audit-final-primary-RU-SER-QT_prolonging-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    },
+    {
+      "case_id": "switch-ser-esc--audit-final-primary-RU-SER-bleeding-unknown",
+      "unknown_records": [
+        "primary_class"
+      ],
+      "removed_premature_requests": [
+        "maoi_type.primary_class"
+      ]
+    }
+  ],
+  "scope": "Question ordering and explicit unknown-class handling; known MAOI type, timestamps, directions and published source intervals unchanged"
+}

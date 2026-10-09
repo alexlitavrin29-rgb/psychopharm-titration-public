@@ -1,0 +1,216 @@
+[
+  {
+    "rule_id": "ago-depression-start",
+    "ordinary_counts": [
+      20
+    ],
+    "maximum": 20,
+    "examples": [
+      "ago-depression-start--branch-usual"
+    ]
+  },
+  {
+    "rule_id": "ago-gad-start",
+    "ordinary_counts": [
+      20
+    ],
+    "maximum": 20,
+    "examples": [
+      "ago-gad-start--branch-usual"
+    ]
+  },
+  {
+    "rule_id": "dulox-depression-start",
+    "ordinary_counts": [
+      15
+    ],
+    "maximum": 15,
+    "examples": [
+      "dulox-depression-start--branch-usual"
+    ]
+  },
+  {
+    "rule_id": "dulox-gad-start",
+    "ordinary_counts": [
+      17
+    ],
+    "maximum": 17,
+    "examples": [
+      "dulox-gad-start--branch-usual",
+      "dulox-gad-start--branch-comorbid",
+      "dulox-gad-start--branch-elderly"
+    ]
+  },
+  {
+    "rule_id": "esc-cyp2c19-start",
+    "ordinary_counts": [
+      14
+    ],
+    "maximum": 14,
+    "examples": [
+      "esc-cyp2c19-start--current-branch-special"
+    ]
+  },
+  {
+    "rule_id": "esc-elderly-start",
+    "ordinary_counts": [
+      13
+    ],
+    "maximum": 13,
+    "examples": [
+      "esc-elderly-start--current-branch-elderly"
+    ]
+  },
+  {
+    "rule_id": "esc-gad-start",
+    "ordinary_counts": [
+      13
+    ],
+    "maximum": 13,
+    "examples": [
+      "esc-gad-start--current-branch-usual"
+    ]
+  },
+  {
+    "rule_id": "esc-hepatic-start",
+    "ordinary_counts": [
+      13
+    ],
+    "maximum": 13,
+    "examples": [
+      "esc-hepatic-start--current-branch-special"
+    ]
+  },
+  {
+    "rule_id": "esc-panic-start",
+    "ordinary_counts": [
+      13
+    ],
+    "maximum": 13,
+    "examples": [
+      "esc-panic-start--current-branch-usual"
+    ]
+  },
+  {
+    "rule_id": "esc-social-start",
+    "ordinary_counts": [
+      13
+    ],
+    "maximum": 13,
+    "examples": [
+      "esc-social-start--current-branch-usual"
+    ]
+  },
+  {
+    "rule_id": "fluvox-depression-start",
+    "ordinary_counts": [
+      12
+    ],
+    "maximum": 12,
+    "examples": [
+      "fluvox-depression-start--branch-selected50",
+      "fluvox-depression-start--branch-selected100"
+    ]
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "ordinary_counts": [
+      13
+    ],
+    "maximum": 13,
+    "examples": [
+      "parox-panic-kr--branch-usual",
+      "parox-panic-kr--branch-elderly",
+      "parox-panic-kr--audit-v2-bipolar_risk_screening-negative"
+    ]
+  },
+  {
+    "rule_id": "parox-taper-example",
+    "ordinary_counts": [
+      11
+    ],
+    "maximum": 11,
+    "examples": [
+      "parox-taper-example--branch-selected40",
+      "parox-taper-example--audit-v2-serotonin_syndrome_signs-negative",
+      "parox-taper-example--audit-v2-new_seizures-negative"
+    ]
+  },
+  {
+    "rule_id": "preg-gad-start",
+    "ordinary_counts": [
+      17,
+      18
+    ],
+    "maximum": 18,
+    "examples": [
+      "preg-gad-start--branch-frequency2",
+      "preg-gad-start--branch-frequency3",
+      "preg-gad-start--r3-misuse_risk_assessment-negative",
+      "preg-gad-start--r3-reproductive_population-negative",
+      "preg-gad-start--r3-effective_contraception-positive"
+    ]
+  },
+  {
+    "rule_id": "ser-adult-adjust",
+    "ordinary_counts": [
+      13,
+      15,
+      16
+    ],
+    "maximum": 16,
+    "examples": [
+      "ser-adult-adjust--branch-increase",
+      "ser-adult-adjust--branch-keep",
+      "ser-adult-adjust--branch-increase-from50",
+      "ser-adult-adjust--branch-increase-from150",
+      "ser-adult-adjust--branch-keep50",
+      "ser-adult-adjust--branch-keep150",
+      "ser-adult-adjust--branch-keep200",
+      "ser-adult-adjust--branch-initial25",
+      "ser-adult-adjust--branch-other-source-dose",
+      "ser-adult-adjust--audit-recheck-symptomatic_hyponatremia-negative",
+      "ser-adult-adjust--audit-recheck-symptomatic_hyponatremia-omitted"
+    ]
+  },
+  {
+    "rule_id": "ser-panic-start",
+    "ordinary_counts": [
+      10
+    ],
+    "maximum": 10,
+    "examples": [
+      "ser-panic-start--branch-usual"
+    ]
+  },
+  {
+    "rule_id": "ser-social-start",
+    "ordinary_counts": [
+      10
+    ],
+    "maximum": 10,
+    "examples": [
+      "ser-social-start--branch-usual"
+    ]
+  },
+  {
+    "rule_id": "venla-xr-gad-start",
+    "ordinary_counts": [
+      12
+    ],
+    "maximum": 12,
+    "examples": [
+      "venla-xr-gad-start--branch-usual"
+    ]
+  },
+  {
+    "rule_id": "venla-xr-social-start",
+    "ordinary_counts": [
+      12
+    ],
+    "maximum": 12,
+    "examples": [
+      "venla-xr-social-start--branch-usual"
+    ]
+  }
+]

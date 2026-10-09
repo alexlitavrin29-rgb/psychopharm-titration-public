@@ -1,0 +1,751 @@
+schema_version: '1.0'
+rule_id: switch-parox-ago-selected-example
+development_status: extracted_research_not_executable
+language: ru
+identity:
+  title: 'Пароксетин 40 мг → агомелатин: выбранный взрослый пример'
+  mode: switch
+  drug_inn: null
+  from_drug_inn: пароксетин
+  to_drug_inn: агомелатин
+  formulation: &id002
+    from: Рексетин, таблетки 20 мг; половина 10 мг
+    to: Вальдоксан, таблетки 25 мг, покрытые пленочной оболочкой
+  route: oral
+  diagnosis_label_ru: Депрессивный эпизод/рекуррентная депрессия у взрослых
+  classification_system: МКБ-10
+  diagnosis_code: F32/F33
+  jurisdiction: RU_versioned_sources
+applicability:
+  population_description: Взрослые с самостоятельным депрессивным расстройством; B не применять от 75
+    лет по ОХЛП.
+  age_constraints:
+  - minimum: 18
+    inclusive: true
+    unit: year
+    source_ref: RU-AGO
+    source_locator: §4.1–4.2, PDF с.1–2
+  pregnancy: ОХЛП B рекомендует избегать назначения при беременности (§4.6 с.6); отдельное решение врача
+    по A/B, без коэффициента.
+  lactation: ОХЛП B требует решения прекратить вскармливание или терапию (§4.6 с.6); без коэффициента.
+  renal_constraints:
+  - При средней/тяжёлой почечной недостаточности опыт ограничен, соблюдать осторожность; §4.2 Вальдоксан
+    с.2. Точной числовой поправки нет.
+  hepatic_constraints:
+  - B противопоказан при печеночной недостаточности и АЛТ/АСТ >3 ВГН. До начала печёночные пробы обязательны
+    всем.
+  comorbidity_constraints:
+  - Мания/гипомания, суицидальный риск и факторы повреждения печени требуют отдельной клинической оценки/наблюдения;
+    §4.4 с.3–5. Не числовые множители.
+  interacting_drugs:
+  - B противопоказан с флувоксамином/ципрофлоксацином (сильные CYP1A2-ингибиторы); проверять оба препарата,
+    §4.3–4.5.
+  other_conditions:
+  - ОХЛП B прямо разрешает начало с 1-го дня постепенного снижения СИОЗС/СИОЗСН. Это классовое разрешение,
+    применённое к явно указанному СИОЗС A; не исследование каждой пары.
+  - Нет полного обязательного календаря доз A. Нужен выбор темпа врачом, а для пароксетина доступен отдельно
+    маркированный взрослый пример.
+  exclusions:
+  - Печеночная недостаточность B; АЛТ или АСТ >3 ВГН; противопоказанный ингибитор CYP1A2; возрастная неприменимость;
+    гиперчувствительность.
+  indication_status_in_russia: RU_indication_present_in_original_registry_currency_separate
+  source_refs: &id001
+  - RU-PAROX
+  - RU-AGO
+  - RU-DEP
+inputs:
+- input_id: from_form
+  question_ru: Какая форма A?
+  data_type: structured_form
+  unit: null
+  allowed_values: []
+  required_when: для этой ветки
+  show_when: для этой ветки
+  why_needed: Исполнимость снижения по инструкции A.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Назвать отсутствующее поле; не подставлять норму и не выдавать безусловную индивидуальную
+    схему.
+  source_refs: *id001
+  input_role: dose_operand_or_applicability_gate
+- input_id: to_form
+  question_ru: Какая форма B?
+  data_type: structured_form
+  unit: null
+  allowed_values: []
+  required_when: для этой ветки
+  show_when: для этой ветки
+  why_needed: Вальдоксан 25 мг, целая таблетка.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Назвать отсутствующее поле; не подставлять норму и не выдавать безусловную индивидуальную
+    схему.
+  source_refs: *id001
+  input_role: dose_operand_or_applicability_gate
+- input_id: age
+  question_ru: Возраст, полных лет?
+  data_type: integer
+  unit: year
+  allowed_values: []
+  required_when: для этой ветки
+  show_when: для этой ветки
+  why_needed: Взрослая популяция; исключение B >=75 при депрессии.
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Назвать отсутствующее поле; не подставлять норму и не выдавать безусловную индивидуальную
+    схему.
+  source_refs: *id001
+  input_role: dose_operand_or_applicability_gate
+- input_id: current_dose
+  question_ru: Текущая доза A?
+  data_type: number
+  unit: mg/day
+  allowed_values: []
+  required_when: для этой ветки
+  show_when: для этой ветки
+  why_needed: Исходная точка снижения, не эквивалент B.
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Назвать отсутствующее поле; не подставлять норму и не выдавать безусловную индивидуальную
+    схему.
+  source_refs: *id001
+  input_role: dose_operand_or_applicability_gate
+- input_id: hepatic
+  question_ru: Есть нарушение функции печени?
+  data_type: enum
+  unit: null
+  allowed_values: []
+  required_when: для этой ветки
+  show_when: для этой ветки
+  why_needed: Противопоказание B, отдельное от анализов.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Назвать отсутствующее поле; не подставлять норму и не выдавать безусловную индивидуальную
+    схему.
+  source_refs: *id001
+  input_role: dose_operand_or_applicability_gate
+- input_id: alt_ratio_uln
+  question_ru: АЛТ относительно ВГН?
+  data_type: number
+  unit: ratio_to_ULN
+  allowed_values: []
+  required_when: для этой ветки
+  show_when: для этой ветки
+  why_needed: Обязательная проба B; не заменять одним показателем категорию печени.
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Назвать отсутствующее поле; не подставлять норму и не выдавать безусловную индивидуальную
+    схему.
+  source_refs: *id001
+  input_role: dose_operand_or_applicability_gate
+- input_id: ast_ratio_uln
+  question_ru: АСТ относительно ВГН?
+  data_type: number
+  unit: ratio_to_ULN
+  allowed_values: []
+  required_when: для этой ветки
+  show_when: для этой ветки
+  why_needed: Самостоятельная обязательная проба B.
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Назвать отсутствующее поле; не подставлять норму и не выдавать безусловную индивидуальную
+    схему.
+  source_refs: *id001
+  input_role: dose_operand_or_applicability_gate
+- input_id: medicines
+  question_ru: Текущие/недавно отменённые лекарства?
+  data_type: medication_list
+  unit: null
+  allowed_values: []
+  required_when: для этой ветки
+  show_when: для этой ветки
+  why_needed: Взаимодействия обоих препаратов.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Назвать отсутствующее поле; не подставлять норму и не выдавать безусловную индивидуальную
+    схему.
+  source_refs: *id001
+  input_role: dose_operand_or_applicability_gate
+- input_id: allergy
+  question_ru: Есть гиперчувствительность к A/B или компонентам?
+  data_type: enum
+  unit: null
+  allowed_values: []
+  required_when: для этой ветки
+  show_when: для этой ветки
+  why_needed: Противопоказания обоих препаратов.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Назвать отсутствующее поле; не подставлять норму и не выдавать безусловную индивидуальную
+    схему.
+  source_refs: *id001
+  input_role: dose_operand_or_applicability_gate
+- input_id: pregnancy
+  question_ru: Беременность установлена или возможна?
+  data_type: enum
+  unit: null
+  allowed_values: []
+  required_when: для этой ветки
+  show_when: для этой ветки
+  why_needed: Отдельная оценка; B рекомендуется избегать.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Назвать отсутствующее поле; не подставлять норму и не выдавать безусловную индивидуальную
+    схему.
+  source_refs: *id001
+  input_role: dose_operand_or_applicability_gate
+- input_id: lactation
+  question_ru: Есть грудное вскармливание?
+  data_type: enum
+  unit: null
+  allowed_values: []
+  required_when: для этой ветки
+  show_when: для этой ветки
+  why_needed: 'Отдельное решение B: вскармливание/терапия.'
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Назвать отсутствующее поле; не подставлять норму и не выдавать безусловную индивидуальную
+    схему.
+  source_refs: *id001
+  input_role: dose_operand_or_applicability_gate
+- input_id: withdrawal_severity
+  question_ru: Текущие симптомы отмены A по оценке врача?
+  data_type: enum
+  unit: null
+  allowed_values: []
+  required_when: для этой ветки
+  show_when: для этой ветки
+  why_needed: Следующую ступень A при симптомах пересматривают.
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Назвать отсутствующее поле; не подставлять норму и не выдавать безусловную индивидуальную
+    схему.
+  source_refs: *id001
+  input_role: dose_operand_or_applicability_gate
+- input_id: duration
+  question_ru: Как долго принимается препарат?
+  data_type: number
+  unit: week
+  allowed_values: []
+  required_when: для этой ветки
+  show_when: для этой ветки
+  why_needed: Фактор риска отмены КР Б5, не числовой коэффициент.
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Назвать отсутствующее поле; не подставлять норму и не выдавать безусловную индивидуальную
+    схему.
+  source_refs:
+  - RU-PAROX
+  - RU-DEP
+  input_role: dose_operand_or_applicability_gate
+- input_id: past_withdrawal
+  question_ru: Были трудности при пропусках/снижении?
+  data_type: enum
+  unit: null
+  allowed_values: []
+  required_when: для этой ветки
+  show_when: для этой ветки
+  why_needed: 'КР Б5: высокий риск требует более медленного плана.'
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Назвать отсутствующее поле; не подставлять норму и не выдавать безусловную индивидуальную
+    схему.
+  source_refs:
+  - RU-PAROX
+  - RU-DEP
+  input_role: dose_operand_or_applicability_gate
+- input_id: example_selected
+  question_ru: Врач выбрал опубликованный пример для этого случая?
+  data_type: enum
+  unit: null
+  allowed_values: []
+  required_when: для этой ветки
+  show_when: для этой ветки
+  why_needed: Без выбора пример не становится назначением.
+  changes:
+  - applicability
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Назвать отсутствующее поле; не подставлять норму и не выдавать безусловную индивидуальную
+    схему.
+  source_refs:
+  - RU-PAROX
+  - RU-DEP
+  input_role: dose_operand_or_applicability_gate
+- input_id: renal_state
+  question_ru: Какова известная степень почечной недостаточности по оценке врача?
+  data_type: enum
+  unit: null
+  allowed_values:
+  - недостаточность не выявлена после оценки
+  - лёгкая
+  - средняя
+  - тяжёлая
+  - неизвестно
+  required_when: при выявленном соответствующем обстоятельстве
+  show_when: при выявленном соответствующем обстоятельстве
+  why_needed: '§4.2 с.2: осторожность при средней/тяжёлой недостаточности; источник не задаёт новый коэффициент.'
+  changes:
+  - applicability
+  unknown_allowed: true
+  action_if_unknown: Указать конкретное недостающее поле; не считать отсутствие оценки нормой. Для выбранной
+    ветки безусловная индивидуальная доза не выдаётся.
+  source_refs:
+  - RU-AGO
+  input_role: conditional_clinical_applicability_context
+clinical_parameters:
+- parameter_id: target_start
+  meaning: target_start
+  value: 25
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: mg/day
+  source_ref: RU-AGO
+  source_locator: §4.2, PDF с.1
+  source_meaning: предписание
+  derivation: null
+- parameter_id: target_frequency
+  meaning: target_frequency
+  value: 1
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: administration/day
+  source_ref: RU-AGO
+  source_locator: §4.2, PDF с.1
+  source_meaning: предписание
+  derivation: null
+- parameter_id: start_taper_day
+  meaning: start_taper_day
+  value: 1
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: day_of_A_taper
+  source_ref: RU-AGO
+  source_locator: §4.2, PDF с.2
+  source_meaning: предписание
+  derivation: null
+- parameter_id: hepatic_cutoff
+  meaning: hepatic_cutoff
+  value: 3
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: ratio_to_ULN
+  source_ref: RU-AGO
+  source_locator: §4.2–4.4, PDF с.1/3
+  source_meaning: предписание
+  derivation: null
+- parameter_id: depression_age_exclusion
+  meaning: depression_age_exclusion
+  value: 75
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: year
+  source_ref: RU-AGO
+  source_locator: §4.2, PDF с.2
+  source_meaning: предписание
+  derivation: null
+- parameter_id: weekly_decrement
+  meaning: weekly_decrement
+  value: 10
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: mg/day
+  source_ref: RU-PAROX
+  source_locator: §4.2, PDF с.16
+  source_meaning: пример
+  derivation: null
+- parameter_id: decrement_interval
+  meaning: decrement_interval
+  value: 1
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: week
+  source_ref: RU-PAROX
+  source_locator: §4.2, PDF с.16
+  source_meaning: пример
+  derivation: null
+- parameter_id: last_source_dose
+  meaning: last_source_dose
+  value: 20
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: mg/day
+  source_ref: RU-PAROX
+  source_locator: §4.2, PDF с.17
+  source_meaning: пример
+  derivation: null
+- parameter_id: last_hold
+  meaning: last_hold
+  value: 1
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: week
+  source_ref: RU-PAROX
+  source_locator: §4.2, PDF с.17
+  source_meaning: пример
+  derivation: null
+logic:
+  representation: selected_conditional_source_example
+  conditions:
+  - Врач выбрал опубликованный взрослый пример отмены; исходная доза пароксетина именно 40 мг/сут, разрешённая
+    форма подтверждена.
+  - Показание БДР F32/F33, применимость агомелатина проверена отдельно, включая АЛТ и АСТ.
+  - Нет тяжёлых симптомов/индивидуального основания замедлить этот пример; в противном случае календарь
+    прекращает быть воспроизводимым этим модулем.
+  actions:
+  - 'День 1: пароксетин 30 мг/сут и агомелатин 25 мг перед сном.'
+  - 'После недели на 30, день 8: пароксетин 20 мг/сут; агомелатин 25 мг перед сном.'
+  - 'После недели на 20, день 15: прекратить пароксетин; агомелатин остаётся 25 мг до отдельного решения
+    врача.'
+  - Повышение B до 50 через 2 недели не автоматический этап этого примера. Симптомы отмены/неприменимость
+    прекращают автоматический дальнейший календарь.
+  - Сообщённая средняя/тяжёлая почечная недостаточность раскрывает отдельную ветку осторожности; не рассчитывать
+    неизвестную числовую поправку и не считать неоценённое состояние нормой.
+  parameter_refs:
+  - target_start
+  - target_frequency
+  - start_taper_day
+  - hepatic_cutoff
+  - depression_age_exclusion
+  - weekly_decrement
+  - decrement_interval
+  - last_source_dose
+  - last_hold
+  source_refs: *id001
+  clinician_choices: &id003
+  - Индивидуальные ступени снижения A, оценка риска отмены и решение о начале B.
+  - Применимость B и обязательный контроль печёночных проб.
+  missing_data_behaviour: Назвать обязательные неизвестные поля; результат insufficient_data. Справочные
+    этапы можно показать как условные, без безусловной дозы пациенту.
+  unsupported_case_behaviour: not_applicable для этой карточки; указать конкретную отсутствующую ветку,
+    не запретить всё лечение.
+  contraindicated_case_behaviour: Не выдавать дозовую схему противопоказанного сочетания; отобразить источник
+    и причину.
+  conflicts: []
+  composite_rule_dependencies:
+  - parox-taper-example
+  - ago-depression-start
+  combination_justification: ОХЛП A задаёт взрослый исследовательский пример -10 мг/нед до20 и неделю20;
+    ОХЛП B явно разрешает старт в первый день постепенного снижения СИОЗС. Дни8/15 — арифметика недель.
+    Это составное воспроизведение выбранного примера, не отдельный парный испытанный протокол.
+output:
+  result_type: selected_source_example
+  medication_inn: агомелатин
+  dose_per_administration: null
+  administrations_per_day: null
+  total_daily_dose: null
+  unit: mg
+  formulation: *id002
+  schedule:
+  - stage_id: day1
+    time_description: День 1 выбранного примера
+    minimum_interval: null
+    interval_unit: day
+    medication_steps:
+    - medication_inn: пароксетин
+      dose_per_administration: 30
+      administrations_per_day: 1
+      total_daily_dose: 30
+      dose_unit: mg
+      action: снизить
+      source_refs:
+      - RU-PAROX
+    - medication_inn: агомелатин
+      dose_per_administration: 25
+      administrations_per_day: 1
+      total_daily_dose: 25
+      dose_unit: mg
+      action: начать
+      source_refs:
+      - RU-AGO
+    condition_to_proceed: Врач сохранил выбранный пример и подтвердил применимость; нет основания замедлить/остановить.
+    condition_to_hold: Симптомы отмены, изменённая применимость, неизвестные обязательные входы.
+    source_refs:
+    - RU-PAROX
+    - RU-AGO
+  - stage_id: day8
+    time_description: День 8 выбранного примера
+    minimum_interval: 7
+    interval_unit: day
+    medication_steps:
+    - medication_inn: пароксетин
+      dose_per_administration: 20
+      administrations_per_day: 1
+      total_daily_dose: 20
+      dose_unit: mg
+      action: снизить
+      source_refs:
+      - RU-PAROX
+    - medication_inn: агомелатин
+      dose_per_administration: 25
+      administrations_per_day: 1
+      total_daily_dose: 25
+      dose_unit: mg
+      action: сохранить до решения врача
+      source_refs:
+      - RU-AGO
+    condition_to_proceed: Врач сохранил выбранный пример и подтвердил применимость; нет основания замедлить/остановить.
+    condition_to_hold: Симптомы отмены, изменённая применимость, неизвестные обязательные входы.
+    source_refs:
+    - RU-PAROX
+    - RU-AGO
+  - stage_id: day15
+    time_description: День 15 выбранного примера
+    minimum_interval: 7
+    interval_unit: day
+    medication_steps:
+    - medication_inn: пароксетин
+      dose_per_administration: 0
+      administrations_per_day: 1
+      total_daily_dose: 0
+      dose_unit: mg
+      action: прекратить
+      source_refs:
+      - RU-PAROX
+    - medication_inn: агомелатин
+      dose_per_administration: 25
+      administrations_per_day: 1
+      total_daily_dose: 25
+      dose_unit: mg
+      action: сохранить до решения врача
+      source_refs:
+      - RU-AGO
+    condition_to_proceed: Врач сохранил выбранный пример и подтвердил применимость; нет основания замедлить/остановить.
+    condition_to_hold: Симптомы отмены, изменённая применимость, неизвестные обязательные входы.
+    source_refs:
+    - RU-PAROX
+    - RU-AGO
+  warnings:
+  - Переход требует расширенной ветки; 5–10 вопросов не обещаны.
+  - 25 мг B — опубликованный старт, индивидуальный выход только после обязательных данных и плана A.
+  - Числовой вывод относится к указанным дозовым условиям. Неоценённые модулем клинические обстоятельства
+    не считаются отсутствующими; полный клинический допуск врач оценивает отдельно.
+  mandatory_checks:
+  - Печёночные пробы до старта; контроль примерно через 3/6/12/24 недели и после повышения по ОХЛП.
+  clinician_decisions_remaining: *id003
+  rounding_or_formulation_rule: Не округлять медицинскую дозу; использовать только разрешённую форму/деление.
+    При невозможности дозы формой — явно сообщить.
+  source_refs: *id001
+sources:
+- source_id: RU-DEP
+  title: Депрессивный эпизод, Рекуррентное депрессивное расстройство, КР 301_3
+  organization_or_authors: Минздрав РФ; Российское общество психиатров
+  url: https://apicr.minzdrav.gov.ru/api.ashx?id=301_3&op=GetClinrecPdf
+  doi_or_registry_id: '301_3'
+  publication_date: null
+  version_or_update_date: '2024; каталог: опубликовано 26.08.2024, применяется'
+  accessed_on: '2026-10-08'
+  source_type: guideline
+  jurisdiction: RU
+  access_status: full
+  exact_locator: §3.1–3.4 PDF с.24–40; таблица2 с.95–96; §3.6 с.45; Б5 с.105–106
+  evidence_status: Клиническая рекомендация; не валидация калькулятора
+  what_was_tested: Не исследовался создаваемый продукт. Содержание и ограничения описаны в evidence_limitations.
+  evidence_limitations: 'Взрослая депрессия: дополнительно прочитаны терапевтические разделы и таблица
+    доз. Таблица без форм/индивидуальных ограничений не автономный модуль. Концентрация лития с.36 имеет
+    конфликт мкмоль/л против ммоль/л; автоматическое исправление не разрешено.'
+  reuse_license_or_restriction: Открытый доступ не означает разрешение перераспространять полный документ.
+    Сохранены собственное извлечение фактических правил, локаторы и ссылки; код и большие цитаты не копируются.
+  document_fingerprint:
+    source_id: RU-DEP
+    url: https://apicr.minzdrav.gov.ru/api.ashx?id=301_3&op=GetClinrecPdf
+    sha256: 2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd
+    pages: 125
+  local_file: source_snapshots/depression-301_3.pdf
+- source_id: RU-PAROX
+  title: Рексетин (пароксетин), ЛВ и ОХЛП, 20 мг
+  organization_or_authors: Гедеон Рихтер
+  url: https://www.gedeonrichter.com/ru/-/media/sites/ru/russian-products/files/185/productinstruction_lvokhlpreksetin_pdf.pdf?hash=F730A776EE3E7A92B2EA6A9EA56DCAC2&rev=a198bea8079541528614f6df7eee87fd
+  doi_or_registry_id: ЛП-№(008861)-(РГ-RU)
+  publication_date: null
+  version_or_update_date: 'Первичная регистрация 14.02.2025; страница производителя: файл 26.03.2025;
+    поле пересмотра пустое'
+  accessed_on: '2026-10-08'
+  source_type: label
+  jurisdiction: RU/EAEU
+  access_status: full
+  exact_locator: 'ОХЛП: PDF с.14–18 (§4.1–4.3), с.19–23 (§4.4), с.24–28 (§4.5–4.6), с.39 (§8–10)'
+  evidence_status: Инструкция/ОХЛП; не валидированная модель индивидуальной дозы
+  what_was_tested: Не исследовался создаваемый продукт. Содержание и ограничения описаны в evidence_limitations.
+  evidence_limitations: Российская принадлежность указана в оригинале §8–9. Текущая регистрационная редакция
+    отдельно сверяется; дата публикации страницы не равна дате пересмотра. Взрослый пример отмены заканчивается
+    на 20 мг; детский пример 10 мг не переносить на взрослых.
+  reuse_license_or_restriction: Открытый доступ не означает разрешение перераспространять полный документ.
+    Сохранены собственное извлечение фактических правил, локаторы и ссылки; код и большие цитаты не копируются.
+  document_fingerprint:
+    url: https://www.gedeonrichter.com/ru/-/media/sites/ru/russian-products/files/185/productinstruction_lvokhlpreksetin_pdf.pdf?hash=F730A776EE3E7A92B2EA6A9EA56DCAC2&rev=a198bea8079541528614f6df7eee87fd
+    final_url: https://www.gedeonrichter.com/ru/-/media/sites/ru/russian-products/files/185/productinstruction_lvokhlpreksetin_pdf.pdf?hash=F730A776EE3E7A92B2EA6A9EA56DCAC2&rev=a198bea8079541528614f6df7eee87fd
+    status: 200
+    sha256: 9f6f2646e102956826997ca7e93d84e90c7528db5ceb61896a3d4092841edabe
+    pages: 39
+    source_id: RU-PAROX
+    accessed_on: '2026-10-08'
+  registry_observation:
+    registry: https://lk.regmed.ru/Register/EAEU_SmPC
+    query: Рексетин
+    registration_number: ЛП-№(008861)-(РГ-RU)
+    registration_date: '2025-02-14'
+    forms: таблетки20/30; прочитанная ОХЛП только20
+    accessed_on: '2026-10-08'
+    read_part: Видимая официальная строка; реестровый PDF не скачан. Копия производителя не объявлена
+      побайтово тождественной.
+- source_id: RU-AGO
+  title: Вальдоксан (агомелатин), российская ОХЛП, 25 мг
+  organization_or_authors: Сервье
+  url: https://servier.ru/wp-content/uploads/2023/09/20241228_spc-ru_valdoxan_rus.pdf
+  doi_or_registry_id: ЛП-№(000528)-(РГ-RU)
+  publication_date: null
+  version_or_update_date: Копия производителя с именем 20241228; первичная регистрация 25.01.2022; поле
+    пересмотра пустое
+  accessed_on: '2026-10-08'
+  source_type: label
+  jurisdiction: RU/EAEU
+  access_status: full
+  exact_locator: §4.1–4.2 PDF с.1–2; §4.3–4.4 с.3–5; §4.5–4.6 с.5–6; §8–10 с.16
+  evidence_status: Инструкция/ОХЛП; не валидированная модель индивидуальной дозы
+  what_was_tested: Не исследовался создаваемый продукт. Содержание и ограничения описаны в evidence_limitations.
+  evidence_limitations: Полный оригинал производителя прочитан; принадлежность РФ указана §8–9. Актуальность
+    последней регистрационной редакции не выводится из имени файла. Момент начала B опубликован для класса
+    СИОЗС/СИОЗСН; ступени отмены A берутся из его собственного источника, не из исследования эффективности
+    агомелатина.
+  reuse_license_or_restriction: Открытый доступ не означает разрешение перераспространять полный документ.
+    Сохранены собственное извлечение фактических правил, локаторы и ссылки; код и большие цитаты не копируются.
+  document_fingerprint:
+    url: https://servier.ru/wp-content/uploads/2023/09/20241228_spc-ru_valdoxan_rus.pdf
+    final_url: https://servier.ru/wp-content/uploads/2023/09/20241228_spc-ru_valdoxan_rus.pdf
+    status: 200
+    sha256: 1cf8e71b5c27891e17b5b7ab4dd7c8c02697a1d44bb287a57a1ee9de0fb85bd6
+    pages: 16
+    source_id: RU-AGO
+    accessed_on: '2026-10-08'
+  registry_observation:
+    registry: https://lk.regmed.ru/Register/EAEU_SmPC
+    query: Вальдоксан
+    registration_number: ЛП-№(000528)-(РГ-RU)
+    registration_date: '2022-01-25'
+    forms: таблетки 25 мг
+    accessed_on: '2026-10-08'
+    read_part: Видимая официальная строка результата поиска; наличие ОХЛП/ЛВ. Сам документ этой записи
+      не скачан; идентичность копии не заявлена.
+verification:
+  primary_source_checked: true
+  all_clinical_parameters_have_sources: true
+  population_and_indication_checked: true
+  russian_applicability_checked: false
+  formulation_feasibility_checked: true
+  combined_rules_justified: false
+  source_transfer_check: extraction_checked; calculator_not_implemented
+  clinical_review: not_performed
+  product_clinical_validation: not_performed
+  ready_for_technical_implementation: true
+  unresolved_items:
+  - Только выбранный пример при исходных 40; не универсальный переход. Неоценённые клинические обстоятельства
+    остаются у врача.
+test_cases:
+- case_id: switch-parox-ago-selected-example__selected40
+  synthetic: true
+  given:
+    current_dose: 40
+    example_selected: true
+    withdrawal_severity: нет требующих замедления симптомов
+    alt_ratio_uln: 1
+    ast_ratio_uln: 1
+  expected:
+    days:
+    - 1
+    - 8
+    - 15
+    paroxetine_mg_per_day:
+    - 30
+    - 20
+    - 0
+    agomelatine_mg_per_day:
+    - 25
+    - 25
+    - 25
+    mandatory_for_all: false
+    automatic_increase_B: false
+  source_refs:
+  - RU-PAROX
+  - RU-AGO
+  note: Составной условный пример; проверка исполнения/клиническая валидация не выполнены.
+- case_id: switch-parox-ago-selected-example__symptoms
+  synthetic: true
+  given:
+    withdrawal_severity: тяжёлые
+  expected:
+    automatic_calendar_allowed: false
+    result_type: clinician_choice
+  source_refs:
+  - RU-PAROX
+  - RU-AGO
+  note: Врач переоценивает темп.
+- case_id: switch-parox-ago-selected-example__not-selected
+  synthetic: true
+  given:
+    example_selected: false
+  expected:
+    automatic_calendar_allowed: false
+    result_type: clinician_choice
+  source_refs:
+  - RU-PAROX
+  - RU-AGO
+  note: Пример не назначается всем.
+- case_id: switch-parox-ago-selected-example__other-baseline
+  synthetic: true
+  given:
+    current_dose: 10
+    example_selected: true
+  expected:
+    automatic_calendar_allowed: false
+    result_type: not_applicable
+    invented_last_step: null
+  source_refs:
+  - RU-PAROX
+  - RU-AGO
+  note: Нет переноса чужого последнего шага.
+profile:
+  country: RU
+  selection_status: RU_profile_research
+  foreign_fallback_allowed: false
+switch_assessment:
+  from_action: gradual_taper_from_own_RU_label
+  to_action: 25 mg once at bedtime from first day of A taper
+  overlap: explicitly_allowed_for_SSRI_to_agomelatine
+  interval_after_last_A: not_required_for_this_overlap_strategy
+  interval_value_days: null
+  pair_specific_trial_claimed: false
+  full_numeric_A_calendar_published: false
+card_type: selected_composite_source_example

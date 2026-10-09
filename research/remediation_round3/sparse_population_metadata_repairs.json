@@ -1,0 +1,138 @@
+{
+  "rows": [
+    {
+      "case_id": "ser-taper-limit--audit-v2-interaction-strong_CYP3A4--audit-final-source-caution",
+      "old": "adult_source_population",
+      "new": "not_assessed",
+      "reason": "Source population does not confirm this absent/unknown patient age"
+    },
+    {
+      "case_id": "ser-taper-limit--audit-recheck-symptomatic_hyponatremia-positive--audit-final-source-caution",
+      "old": "adult_source_population",
+      "new": "not_assessed",
+      "reason": "Source population does not confirm this absent/unknown patient age"
+    },
+    {
+      "case_id": "ser-taper-limit--audit-recheck-symptomatic_hyponatremia-unknown--audit-final-source-caution",
+      "old": "adult_source_population",
+      "new": "not_assessed",
+      "reason": "Source population does not confirm this absent/unknown patient age"
+    },
+    {
+      "case_id": "dulox-taper-limit--audit-recheck-persistent_BP_increase-positive--audit-final-source-caution",
+      "old": "adult_source_population",
+      "new": "not_assessed",
+      "reason": "Source population does not confirm this absent/unknown patient age"
+    },
+    {
+      "case_id": "dulox-taper-limit--audit-recheck-persistent_BP_increase-unknown--audit-final-source-caution",
+      "old": "adult_source_population",
+      "new": "not_assessed",
+      "reason": "Source population does not confirm this absent/unknown patient age"
+    },
+    {
+      "case_id": "venla-xr-taper-limit--audit-recheck-suspected_serotonin_syndrome-positive--audit-final-source-caution",
+      "old": "adult_source_population",
+      "new": "not_assessed",
+      "reason": "Source population does not confirm this absent/unknown patient age"
+    },
+    {
+      "case_id": "venla-xr-taper-limit--audit-recheck-suspected_serotonin_syndrome-unknown--audit-final-source-caution",
+      "old": "adult_source_population",
+      "new": "not_assessed",
+      "reason": "Source population does not confirm this absent/unknown patient age"
+    },
+    {
+      "case_id": "venla-xr-taper-limit--audit-recheck-interaction-CYP2D6_inhibitor--audit-final-source-caution",
+      "old": "adult_source_population",
+      "new": "not_assessed",
+      "reason": "Source population does not confirm this absent/unknown patient age"
+    },
+    {
+      "case_id": "venla-xr-taper-limit--audit-recheck-interaction-CYP3A4_inhibitor--audit-final-source-caution",
+      "old": "adult_source_population",
+      "new": "not_assessed",
+      "reason": "Source population does not confirm this absent/unknown patient age"
+    },
+    {
+      "case_id": "venla-xr-taper-limit--audit-recheck-interaction-QT_prolonging--audit-final-source-caution",
+      "old": "adult_source_population",
+      "new": "not_assessed",
+      "reason": "Source population does not confirm this absent/unknown patient age"
+    },
+    {
+      "case_id": "venla-xr-taper-limit--audit-recheck-interaction-CNS_active--audit-final-source-caution",
+      "old": "adult_source_population",
+      "new": "not_assessed",
+      "reason": "Source population does not confirm this absent/unknown patient age"
+    },
+    {
+      "case_id": "venla-xr-taper-limit--audit-recheck-interaction-metoprolol--audit-final-source-caution",
+      "old": "adult_source_population",
+      "new": "not_assessed",
+      "reason": "Source population does not confirm this absent/unknown patient age"
+    },
+    {
+      "case_id": "venla-xr-taper-limit--audit-recheck-interaction-serotonin_precursor--audit-final-source-caution",
+      "old": "adult_source_population",
+      "new": "not_assessed",
+      "reason": "Source population does not confirm this absent/unknown patient age"
+    },
+    {
+      "case_id": "venla-xr-taper-limit--audit-recheck-interaction-weight_loss_agent--audit-final-source-caution",
+      "old": "adult_source_population",
+      "new": "not_assessed",
+      "reason": "Source population does not confirm this absent/unknown patient age"
+    },
+    {
+      "case_id": "dulox-taper-limit--audit-recheck-duplicate-duloxetine-positive--audit-final-source-caution",
+      "old": "adult_source_population",
+      "new": "not_assessed",
+      "reason": "Source population does not confirm this absent/unknown patient age"
+    },
+    {
+      "case_id": "esc-taper-limit--audit-final-primary-RU-ESC-seizure_state-неконтролируемые-positive--audit-final-source-caution",
+      "old": "adult_source_population",
+      "new": "not_assessed",
+      "reason": "Source population does not confirm this absent/unknown patient age"
+    },
+    {
+      "case_id": "ser-taper-limit--audit-final-primary-RU-SER-seizure_state-контролируемые-positive--audit-final-source-caution",
+      "old": "adult_source_population",
+      "new": "not_assessed",
+      "reason": "Source population does not confirm this absent/unknown patient age"
+    },
+    {
+      "case_id": "ser-taper-limit--audit-final-primary-RU-SER-seizure_state-неконтролируемые-positive--audit-final-source-caution",
+      "old": "adult_source_population",
+      "new": "not_assessed",
+      "reason": "Source population does not confirm this absent/unknown patient age"
+    },
+    {
+      "case_id": "dulox-taper-limit--wrong-release-form--audit-final-known-terminal",
+      "old": "adult_source_population",
+      "new": "not_assessed",
+      "reason": "Source population does not confirm this absent/unknown patient age"
+    },
+    {
+      "case_id": "fluvox-taper-limit--wrong-release-form--audit-final-known-terminal",
+      "old": "adult_source_population",
+      "new": "not_assessed",
+      "reason": "Source population does not confirm this absent/unknown patient age"
+    },
+    {
+      "case_id": "ser-taper-limit--wrong-release-form--audit-final-known-terminal",
+      "old": "adult_source_population",
+      "new": "not_assessed",
+      "reason": "Source population does not confirm this absent/unknown patient age"
+    },
+    {
+      "case_id": "venla-xr-taper-limit--wrong-release-form--audit-final-known-terminal",
+      "old": "adult_source_population",
+      "new": "not_assessed",
+      "reason": "Source population does not confirm this absent/unknown patient age"
+    }
+  ],
+  "medical_numbers_or_actions_changed": false,
+  "scope": "Only patient applicability metadata/unassessed age in22 independently named sparse witnesses"
+}

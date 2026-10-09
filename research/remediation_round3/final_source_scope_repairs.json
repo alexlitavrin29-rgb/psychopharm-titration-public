@@ -1,0 +1,12 @@
+[
+  {
+    "rule_id": "preg-taper-limit",
+    "input_id": "current_withdrawal",
+    "change": "Remove unsupported slowing alias/attribution; product-only taper basis, explicit physician-management gap"
+  },
+  {
+    "rule_id": "phen-taper-limit",
+    "input_id": "withdrawal_severity",
+    "change": "Remove unsupported slowing alias/attribution; product-only taper basis, explicit physician-management gap"
+  }
+]

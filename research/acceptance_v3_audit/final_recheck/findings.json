@@ -1,0 +1,70 @@
+{
+  "snapshot": "27ef14e77185b7b104d43199664a5b1ca42b73dd8b09f921ee539e97fae971f8",
+  "findings": [
+    {
+      "id": "V3-RC01",
+      "status": "open_in_227",
+      "severity": "bounded-result population metadata inconsistency",
+      "criterion": 20,
+      "field": "expected.population_applicability",
+      "exact_cases": [
+        "fluvox-taper-limit--wrong-release-form--audit-final-known-terminal",
+        "ser-taper-limit--audit-v2-interaction-strong_CYP3A4--audit-final-source-caution",
+        "ser-taper-limit--audit-recheck-symptomatic_hyponatremia-positive--audit-final-source-caution",
+        "ser-taper-limit--audit-recheck-symptomatic_hyponatremia-unknown--audit-final-source-caution",
+        "ser-taper-limit--audit-final-primary-RU-SER-seizure_state-контролируемые-positive--audit-final-source-caution",
+        "ser-taper-limit--audit-final-primary-RU-SER-seizure_state-неконтролируемые-positive--audit-final-source-caution",
+        "ser-taper-limit--wrong-release-form--audit-final-known-terminal",
+        "esc-taper-limit--audit-final-primary-RU-ESC-seizure_state-неконтролируемые-positive--audit-final-source-caution",
+        "venla-xr-taper-limit--audit-recheck-suspected_serotonin_syndrome-positive--audit-final-source-caution",
+        "venla-xr-taper-limit--audit-recheck-suspected_serotonin_syndrome-unknown--audit-final-source-caution",
+        "venla-xr-taper-limit--audit-recheck-interaction-CYP2D6_inhibitor--audit-final-source-caution",
+        "venla-xr-taper-limit--audit-recheck-interaction-CYP3A4_inhibitor--audit-final-source-caution",
+        "venla-xr-taper-limit--audit-recheck-interaction-QT_prolonging--audit-final-source-caution",
+        "venla-xr-taper-limit--audit-recheck-interaction-CNS_active--audit-final-source-caution",
+        "venla-xr-taper-limit--audit-recheck-interaction-metoprolol--audit-final-source-caution",
+        "venla-xr-taper-limit--audit-recheck-interaction-serotonin_precursor--audit-final-source-caution",
+        "venla-xr-taper-limit--audit-recheck-interaction-weight_loss_agent--audit-final-source-caution",
+        "venla-xr-taper-limit--wrong-release-form--audit-final-known-terminal",
+        "dulox-taper-limit--audit-recheck-persistent_BP_increase-positive--audit-final-source-caution",
+        "dulox-taper-limit--audit-recheck-persistent_BP_increase-unknown--audit-final-source-caution",
+        "dulox-taper-limit--audit-recheck-duplicate-duloxetine-positive--audit-final-source-caution",
+        "dulox-taper-limit--wrong-release-form--audit-final-known-terminal"
+      ],
+      "established": "22 sparse AD taper caution/form/clarification cases omit age but inherit adult_source_population from their dense adult fixture. This differs from correctly not_assessed minimal references; projected records retain the same unsupported population tag.",
+      "primary_rule": "Adult source applicability cannot be confirmed from an omitted patient age. Source-only adult reference must remain conditional; it is not a patient-specific adult plan.",
+      "source_pages": {
+        "RU-DULOX": [
+          2,
+          3,
+          6
+        ],
+        "RU-ESC": [
+          2,
+          3,
+          6
+        ],
+        "RU-FLUVOX": [
+          2
+        ],
+        "RU-SER": [
+          2,
+          3,
+          6
+        ],
+        "RU-VENLA-XR": [
+          2,
+          4,
+          5,
+          11,
+          12
+        ]
+      },
+      "source_provenance": "source_read_registry.json: exact sameSHA actual own primary reading reused; source norms unchanged.",
+      "medical_effect": "No individual dose, taper period/calendar or new clinical permission is returned by these22; source actions have independent own actor-phase evidence. No critical medical dose defect established.",
+      "safe_fix": "Set population_applicability=not_assessed whenever age is absent/unknown/not_assessed; alternatively omit population metadata outside a bounded action/form scope. Keep adult_source_reference_only as a source limitation, not patient assessment.",
+      "closure": "All22 raw and projected metadata corrected; generic assertion permits adult_source_population only with actually supplied known age18+. Isolated fake adult metadata mutation rejected. Other227 medical scope/data unchanged and new SHA verified."
+    }
+  ],
+  "full_research_acceptance": false
+}

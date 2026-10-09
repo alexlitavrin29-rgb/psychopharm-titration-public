@@ -1,0 +1,750 @@
+[
+  {
+    "record_id": "L-C00884",
+    "reason": "No matching representative identified",
+    "claim": "reversible_MAO_A",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C00885",
+    "reason": "No matching representative identified",
+    "claim": "linezolid",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C00886",
+    "reason": "No matching representative identified",
+    "claim": "selective_MAO_B",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C00887",
+    "reason": "No matching representative identified",
+    "claim": "serotonergic",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C00888",
+    "reason": "No matching representative identified",
+    "claim": "CYP2C19_inhibitor",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C00889",
+    "reason": "No matching representative identified",
+    "claim": "cimetidine",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C00890",
+    "reason": "No matching representative identified",
+    "claim": "bleeding",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C01004",
+    "reason": "No matching representative identified",
+    "claim": "reversible_MAO_A",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C01005",
+    "reason": "No matching representative identified",
+    "claim": "linezolid",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C01006",
+    "reason": "No matching representative identified",
+    "claim": "selective_MAO_B",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C01007",
+    "reason": "No matching representative identified",
+    "claim": "serotonergic",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C01008",
+    "reason": "No matching representative identified",
+    "claim": "CYP2C19_inhibitor",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C01009",
+    "reason": "No matching representative identified",
+    "claim": "cimetidine",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C01010",
+    "reason": "No matching representative identified",
+    "claim": "bleeding",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C01126",
+    "reason": "No matching representative identified",
+    "claim": "reversible_MAO_A",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C01127",
+    "reason": "No matching representative identified",
+    "claim": "linezolid",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C01128",
+    "reason": "No matching representative identified",
+    "claim": "selective_MAO_B",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C01129",
+    "reason": "No matching representative identified",
+    "claim": "serotonergic",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C01130",
+    "reason": "No matching representative identified",
+    "claim": "CYP2C19_inhibitor",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C01131",
+    "reason": "No matching representative identified",
+    "claim": "cimetidine",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C01132",
+    "reason": "No matching representative identified",
+    "claim": "bleeding",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C01249",
+    "reason": "No matching representative identified",
+    "claim": "reversible_MAO_A",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C01250",
+    "reason": "No matching representative identified",
+    "claim": "linezolid",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C01251",
+    "reason": "No matching representative identified",
+    "claim": "selective_MAO_B",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C01252",
+    "reason": "No matching representative identified",
+    "claim": "serotonergic",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C01253",
+    "reason": "No matching representative identified",
+    "claim": "CYP2C19_inhibitor",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C01254",
+    "reason": "No matching representative identified",
+    "claim": "cimetidine",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C01255",
+    "reason": "No matching representative identified",
+    "claim": "bleeding",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C01371",
+    "reason": "No matching representative identified",
+    "claim": "reversible_MAO_A",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C01372",
+    "reason": "No matching representative identified",
+    "claim": "linezolid",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C01373",
+    "reason": "No matching representative identified",
+    "claim": "selective_MAO_B",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C01374",
+    "reason": "No matching representative identified",
+    "claim": "serotonergic",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C01375",
+    "reason": "No matching representative identified",
+    "claim": "CYP2C19_inhibitor",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C01376",
+    "reason": "No matching representative identified",
+    "claim": "cimetidine",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C01377",
+    "reason": "No matching representative identified",
+    "claim": "bleeding",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C01496",
+    "reason": "No matching representative identified",
+    "claim": "reversible_MAO_A",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C01497",
+    "reason": "No matching representative identified",
+    "claim": "linezolid",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C01498",
+    "reason": "No matching representative identified",
+    "claim": "selective_MAO_B",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C01499",
+    "reason": "No matching representative identified",
+    "claim": "serotonergic",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C01500",
+    "reason": "No matching representative identified",
+    "claim": "CYP2C19_inhibitor",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C01501",
+    "reason": "No matching representative identified",
+    "claim": "cimetidine",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C01502",
+    "reason": "No matching representative identified",
+    "claim": "bleeding",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C01619",
+    "reason": "No matching representative identified",
+    "claim": "reversible_MAO_A",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C01620",
+    "reason": "No matching representative identified",
+    "claim": "linezolid",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C01621",
+    "reason": "No matching representative identified",
+    "claim": "selective_MAO_B",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C01622",
+    "reason": "No matching representative identified",
+    "claim": "serotonergic",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C01623",
+    "reason": "No matching representative identified",
+    "claim": "CYP2C19_inhibitor",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C01624",
+    "reason": "No matching representative identified",
+    "claim": "cimetidine",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C01625",
+    "reason": "No matching representative identified",
+    "claim": "bleeding",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C01721",
+    "reason": "No matching representative identified",
+    "claim": {
+      "input": "seizure_state",
+      "operator": "equals",
+      "value": "неконтролируемые",
+      "action": "not_applicable standard branch",
+      "source_ref": "RU-ESC",
+      "source_locator": "§4.4 с.4"
+    },
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C01722",
+    "reason": "No matching representative identified",
+    "claim": {
+      "input": "seizure_state",
+      "operator": "equals",
+      "value": "первичные/участившиеся приступы",
+      "action": "stop ESC",
+      "source_ref": "RU-ESC",
+      "source_locator": "§4.4 с.4"
+    },
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C03053",
+    "reason": "No matching representative identified",
+    "claim": {
+      "input": "seizure_state",
+      "operator": "equals",
+      "value": "контролируемые",
+      "action": "clinician_choice",
+      "source_ref": "RU-SER",
+      "source_locator": "§4.4 с.4, судороги: прекращение при развитии приступов"
+    },
+    "source": "RU-SER"
+  },
+  {
+    "record_id": "L-C03054",
+    "reason": "No matching representative identified",
+    "claim": {
+      "input": "seizure_state",
+      "operator": "equals",
+      "value": "неконтролируемые",
+      "action": "not_applicable_standard_branch; avoid unstable epilepsy",
+      "source_ref": "RU-SER",
+      "source_locator": "§4.4 с.4, судороги: прекращение при развитии приступов"
+    },
+    "source": "RU-SER"
+  },
+  {
+    "record_id": "L-C03055",
+    "reason": "No matching representative identified",
+    "claim": {
+      "input": "seizure_state",
+      "operator": "equals",
+      "value": "новые приступы",
+      "action": "stop ongoing source medication",
+      "source_ref": "RU-SER",
+      "source_locator": "§4.4 с.4, судороги: прекращение при развитии приступов"
+    },
+    "source": "RU-SER"
+  },
+  {
+    "record_id": "L-C03058",
+    "reason": "No matching representative identified",
+    "claim": {
+      "input": "seizure_state",
+      "operator": "equals",
+      "value": "новые приступы",
+      "action": "source_stop_action",
+      "stop_medication": "RU-SER",
+      "source_ref": "RU-SER",
+      "source_locator": "§4.4 с.4"
+    },
+    "source": "RU-SER"
+  },
+  {
+    "record_id": "L-C03221",
+    "reason": "No matching representative identified",
+    "claim": "irreversible_maoi",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C03222",
+    "reason": "No matching representative identified",
+    "claim": "pimozide",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C03223",
+    "reason": "No matching representative identified",
+    "claim": "QT_prolonging",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C03224",
+    "reason": "No matching representative identified",
+    "claim": "reversible_MAO_A",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C03225",
+    "reason": "No matching representative identified",
+    "claim": "linezolid",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C03226",
+    "reason": "No matching representative identified",
+    "claim": "selective_MAO_B",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C03227",
+    "reason": "No matching representative identified",
+    "claim": "serotonergic",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C03228",
+    "reason": "No matching representative identified",
+    "claim": "CYP2C19_inhibitor",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C03229",
+    "reason": "No matching representative identified",
+    "claim": "cimetidine",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C03230",
+    "reason": "No matching representative identified",
+    "claim": "bleeding",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C03233",
+    "reason": "No matching representative identified",
+    "claim": "galactose_intolerance",
+    "source": "RU-AGO"
+  },
+  {
+    "record_id": "L-C03234",
+    "reason": "No matching representative identified",
+    "claim": "complete_lactase_deficiency",
+    "source": "RU-AGO"
+  },
+  {
+    "record_id": "L-C03235",
+    "reason": "No matching representative identified",
+    "claim": "glucose_galactose_malabsorption",
+    "source": "RU-AGO"
+  },
+  {
+    "record_id": "L-C03236",
+    "reason": "No matching representative identified",
+    "claim": "pregnancy",
+    "source": "RU-AGO"
+  },
+  {
+    "record_id": "L-C03237",
+    "reason": "No matching representative identified",
+    "claim": "lactation",
+    "source": "RU-AGO"
+  },
+  {
+    "record_id": "L-C03238",
+    "reason": "No matching representative identified",
+    "claim": "mania",
+    "source": "RU-AGO"
+  },
+  {
+    "record_id": "L-C03239",
+    "reason": "No matching representative identified",
+    "claim": "suicide_risk",
+    "source": "RU-AGO"
+  },
+  {
+    "record_id": "L-C03240",
+    "reason": "No matching representative identified",
+    "claim": "overweight_obesity",
+    "source": "RU-AGO"
+  },
+  {
+    "record_id": "L-C03241",
+    "reason": "No matching representative identified",
+    "claim": "fatty_liver",
+    "source": "RU-AGO"
+  },
+  {
+    "record_id": "L-C03242",
+    "reason": "No matching representative identified",
+    "claim": "diabetes",
+    "source": "RU-AGO"
+  },
+  {
+    "record_id": "L-C03243",
+    "reason": "No matching representative identified",
+    "claim": "alcohol_abuse",
+    "source": "RU-AGO"
+  },
+  {
+    "record_id": "L-C03244",
+    "reason": "No matching representative identified",
+    "claim": "alcohol_use",
+    "source": "RU-AGO"
+  },
+  {
+    "record_id": "L-C03245",
+    "reason": "No matching representative identified",
+    "claim": "ect",
+    "source": "RU-AGO"
+  },
+  {
+    "record_id": "L-C03247",
+    "reason": "No matching representative identified",
+    "claim": "moderate_CYP1A2",
+    "source": "RU-AGO"
+  },
+  {
+    "record_id": "L-C03248",
+    "reason": "No matching representative identified",
+    "claim": "hepatotoxic",
+    "source": "RU-AGO"
+  },
+  {
+    "record_id": "L-C03249",
+    "reason": "No matching representative identified",
+    "claim": "liver_injury_signs",
+    "source": "RU-AGO"
+  },
+  {
+    "record_id": "L-C03252",
+    "reason": "No matching representative identified",
+    "claim": {
+      "input": "hepatic",
+      "operator": "category_equals",
+      "value": "hepatic_insufficiency",
+      "action": "not_applicable",
+      "source_ref": "RU-AGO",
+      "source_locator": "§4.3 с.3"
+    },
+    "source": "RU-AGO"
+  },
+  {
+    "record_id": "L-C03253",
+    "reason": "No matching representative identified",
+    "claim": {
+      "input": "hepatic",
+      "operator": "category_equals",
+      "value": "cirrhosis",
+      "action": "not_applicable",
+      "source_ref": "RU-AGO",
+      "source_locator": "§4.3 с.3"
+    },
+    "source": "RU-AGO"
+  },
+  {
+    "record_id": "L-C03254",
+    "reason": "No matching representative identified",
+    "claim": {
+      "input": "hepatic",
+      "operator": "category_equals",
+      "value": "active_liver_disease",
+      "action": "not_applicable",
+      "source_ref": "RU-AGO",
+      "source_locator": "§4.3 с.3"
+    },
+    "source": "RU-AGO"
+  },
+  {
+    "record_id": "L-C03345",
+    "reason": "No matching representative identified",
+    "claim": "irreversible_maoi",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C03346",
+    "reason": "No matching representative identified",
+    "claim": "pimozide",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C03347",
+    "reason": "No matching representative identified",
+    "claim": "QT_prolonging",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C03348",
+    "reason": "No matching representative identified",
+    "claim": "reversible_MAO_A",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C03349",
+    "reason": "No matching representative identified",
+    "claim": "linezolid",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C03350",
+    "reason": "No matching representative identified",
+    "claim": "selective_MAO_B",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C03351",
+    "reason": "No matching representative identified",
+    "claim": "serotonergic",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C03352",
+    "reason": "No matching representative identified",
+    "claim": "CYP2C19_inhibitor",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C03353",
+    "reason": "No matching representative identified",
+    "claim": "cimetidine",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C03354",
+    "reason": "No matching representative identified",
+    "claim": "bleeding",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C03356",
+    "reason": "No matching representative identified",
+    "claim": "maoi",
+    "source": "RU-SER"
+  },
+  {
+    "record_id": "L-C03357",
+    "reason": "No matching representative identified",
+    "claim": "pimozide",
+    "source": "RU-SER"
+  },
+  {
+    "record_id": "L-C03358",
+    "reason": "No matching representative identified",
+    "claim": "serotonergic",
+    "source": "RU-SER"
+  },
+  {
+    "record_id": "L-C03359",
+    "reason": "No matching representative identified",
+    "claim": "QT_prolonging",
+    "source": "RU-SER"
+  },
+  {
+    "record_id": "L-C03360",
+    "reason": "No matching representative identified",
+    "claim": "bleeding",
+    "source": "RU-SER"
+  },
+  {
+    "record_id": "L-C04205",
+    "reason": "No matching representative identified",
+    "claim": "irreversible_maoi",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C04206",
+    "reason": "No matching representative identified",
+    "claim": "pimozide",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C04207",
+    "reason": "No matching representative identified",
+    "claim": "QT_prolonging",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C04208",
+    "reason": "No matching representative identified",
+    "claim": "reversible_MAO_A",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C04209",
+    "reason": "No matching representative identified",
+    "claim": "linezolid",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C04210",
+    "reason": "No matching representative identified",
+    "claim": "selective_MAO_B",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C04211",
+    "reason": "No matching representative identified",
+    "claim": "serotonergic",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C04212",
+    "reason": "No matching representative identified",
+    "claim": "CYP2C19_inhibitor",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C04213",
+    "reason": "No matching representative identified",
+    "claim": "cimetidine",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C04214",
+    "reason": "No matching representative identified",
+    "claim": "bleeding",
+    "source": "RU-ESC"
+  },
+  {
+    "record_id": "L-C04216",
+    "reason": "No matching representative identified",
+    "claim": "maoi",
+    "source": "RU-SER"
+  },
+  {
+    "record_id": "L-C04217",
+    "reason": "No matching representative identified",
+    "claim": "pimozide",
+    "source": "RU-SER"
+  },
+  {
+    "record_id": "L-C04218",
+    "reason": "No matching representative identified",
+    "claim": "serotonergic",
+    "source": "RU-SER"
+  },
+  {
+    "record_id": "L-C04219",
+    "reason": "No matching representative identified",
+    "claim": "QT_prolonging",
+    "source": "RU-SER"
+  },
+  {
+    "record_id": "L-C04220",
+    "reason": "No matching representative identified",
+    "claim": "bleeding",
+    "source": "RU-SER"
+  }
+]

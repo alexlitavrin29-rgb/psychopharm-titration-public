@@ -1,0 +1,167 @@
+[
+  {
+    "source_id": "RU-AGO",
+    "path": "research/remediation_round3/originals/RU-AGO_current.pdf",
+    "sha256": "a98d383832688cee9a09588b1a908555d01ed8b659281cdeee2646c1115ce7c1",
+    "pages": 16,
+    "declared_version": "Официальная ОХЛП реестра: штамп регистрации 2024-12-28; экспертный отчёт 2024-12-23 №28427/0018; получена 08.10.2026",
+    "url": "https://lk.regmed.ru/Register/EAEU_SmPC",
+    "text_pages_read": [],
+    "visual_pages_read": [],
+    "review_status": "not_yet_independently_reviewed"
+  },
+  {
+    "source_id": "RU-DEP",
+    "path": "research/source_snapshots/depression-301_3.pdf",
+    "sha256": "2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd",
+    "pages": 125,
+    "declared_version": "2024; каталог: опубликовано 26.08.2024, применяется",
+    "url": "https://apicr.minzdrav.gov.ru/api.ashx?id=301_3&op=GetClinrecPdf",
+    "text_pages_read": [],
+    "visual_pages_read": [],
+    "review_status": "not_yet_independently_reviewed"
+  },
+  {
+    "source_id": "RU-DULOX",
+    "path": "research/remediation_round3/originals/RU-DULOX_current.pdf",
+    "sha256": "0551a7306ca4a56b552336bb63fa34905cf4e312702ba811a792221892a42ca1",
+    "pages": 26,
+    "declared_version": "Официальная ОХЛП реестра: штамп регистрации 2026-03-24; экспертный отчёт 2026-03-20 №5759/0015; получена 08.10.2026",
+    "url": "https://lk.regmed.ru/Register/EAEU_SmPC",
+    "text_pages_read": [],
+    "visual_pages_read": [],
+    "review_status": "not_yet_independently_reviewed"
+  },
+  {
+    "source_id": "RU-ESC",
+    "path": "research/remediation_round2/Selectra_current_registry.pdf",
+    "sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+    "pages": 17,
+    "declared_version": "РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; экспертный отчёт 31.10.2025 №27320, последовательность 0002; текущая опубликованная ОХЛП реестра получена 08.10.2026",
+    "url": "https://lk.regmed.ru/Register/ViewPDFfromDAToken?Token=[REDACTED]",
+    "text_pages_read": [],
+    "visual_pages_read": [],
+    "review_status": "not_yet_independently_reviewed"
+  },
+  {
+    "source_id": "RU-FLUVOX",
+    "path": "research/remediation_round3/originals/RU-FLUVOX_current.pdf",
+    "sha256": "01b6621adad68dfeaf1fbe00db21935b6df1edee141c67307a9b67ad177893f2",
+    "pages": 19,
+    "declared_version": "Официальная ОХЛП реестра: штамп регистрации 2026-08-19; экспертный отчёт 2026-08-14 №16133/0004; получена 08.10.2026",
+    "url": "https://lk.regmed.ru/Register/EAEU_SmPC",
+    "text_pages_read": [],
+    "visual_pages_read": [],
+    "review_status": "not_yet_independently_reviewed"
+  },
+  {
+    "source_id": "RU-GAD",
+    "path": "research/audit/retrieved/RU-GAD.pdf",
+    "sha256": "c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a",
+    "pages": 121,
+    "declared_version": "2024; каталог: опубликовано 19.09.2024, применяется",
+    "url": "https://apicr.minzdrav.gov.ru/api.ashx?id=457_3&op=GetClinrecPdf",
+    "text_pages_read": [],
+    "visual_pages_read": [],
+    "review_status": "not_yet_independently_reviewed"
+  },
+  {
+    "source_id": "RU-PANIC",
+    "path": "research/audit/retrieved/RU-PANIC.pdf",
+    "sha256": "a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d",
+    "pages": 140,
+    "declared_version": "2024; каталог: опубликовано 19.09.2024, применяется",
+    "url": "https://apicr.minzdrav.gov.ru/api.ashx?id=456_3&op=GetClinrecPdf",
+    "text_pages_read": [],
+    "visual_pages_read": [],
+    "review_status": "not_yet_independently_reviewed"
+  },
+  {
+    "source_id": "RU-PAROX",
+    "path": "research/remediation_round3/originals/RU-PAROX_current.pdf",
+    "sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069",
+    "pages": 26,
+    "declared_version": "Официальная ОХЛП реестра: штамп регистрации 2025-02-14; экспертный отчёт 2025-02-12 №3370/0003; получена 08.10.2026",
+    "url": "https://lk.regmed.ru/Register/EAEU_SmPC",
+    "text_pages_read": [],
+    "visual_pages_read": [],
+    "review_status": "not_yet_independently_reviewed"
+  },
+  {
+    "source_id": "RU-PHEN",
+    "path": "research/remediation_round3/originals/RU-PHEN_current.pdf",
+    "sha256": "850486408d225fc603f8f053765491c1e9fd688c5c3d765cdf80a34dd2b3cf1a",
+    "pages": 10,
+    "declared_version": "Официальная ОХЛП реестра: штамп регистрации 2026-05-07; экспертный отчёт 2026-05-05 №9041/0004; получена 08.10.2026",
+    "url": "https://lk.regmed.ru/Register/EAEU_SmPC",
+    "text_pages_read": [],
+    "visual_pages_read": [],
+    "review_status": "not_yet_independently_reviewed"
+  },
+  {
+    "source_id": "RU-PHOB",
+    "path": "research/audit/retrieved/RU-PHOB.pdf",
+    "sha256": "2a51982fb1919c0ef9115e5231f8ef9d65863306d2d5b95aa0aa7821a6f328b7",
+    "pages": 148,
+    "declared_version": "2024; каталог: опубликовано 21.10.2024, применяется",
+    "url": "https://apicr.minzdrav.gov.ru/api.ashx?id=455_3&op=GetClinrecPdf",
+    "text_pages_read": [],
+    "visual_pages_read": [],
+    "review_status": "not_yet_independently_reviewed"
+  },
+  {
+    "source_id": "RU-PREG",
+    "path": "research/remediation_round3/originals/RU-PREG_current.pdf",
+    "sha256": "b605c8b381c24d59a48bbab9bfa8621eb70f6ec16ad9e3679aa8457f811663e5",
+    "pages": 30,
+    "declared_version": "Официальная ОХЛП реестра: штамп регистрации 2025-08-13; экспертный отчёт 2024-01-26 №1319/0011; получена 08.10.2026",
+    "url": "https://lk.regmed.ru/Register/EAEU_SmPC",
+    "text_pages_read": [],
+    "visual_pages_read": [],
+    "review_status": "not_yet_independently_reviewed"
+  },
+  {
+    "source_id": "RU-PREG-RICHTER",
+    "path": "research/remediation_round3/originals/RU-PREG-RICHTER_current.pdf",
+    "sha256": "8b6240d17e311c9468373c451ad7b4addff096594baf7041097e688ae27ae42f",
+    "pages": 19,
+    "declared_version": "Официальная ОХЛП реестра: штамп регистрации 2026-02-06; экспертный отчёт 2026-02-02 №1678/0014; получена 08.10.2026",
+    "url": "https://lk.regmed.ru/Register/EAEU_SmPC",
+    "text_pages_read": [],
+    "visual_pages_read": [],
+    "review_status": "not_yet_independently_reviewed"
+  },
+  {
+    "source_id": "RU-SER",
+    "path": "research/source_downloads/Золофт — сертралин.pdf",
+    "sha256": "3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba",
+    "pages": 22,
+    "declared_version": "Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является датой содержания",
+    "url": "https://www.viatris.ru/-/media/project/common/viatrisru/pdf/product-catalog/0006_zoloft_smpc-eaeu_24-apr-2025_ru.pdf",
+    "text_pages_read": [],
+    "visual_pages_read": [],
+    "review_status": "not_yet_independently_reviewed"
+  },
+  {
+    "source_id": "RU-VENLA-IR",
+    "path": "research/remediation_round3/originals/RU-VENLA-IR_current.pdf",
+    "sha256": "b1e98ffb209390179385a56aa70b6b94eda4a395831464f347aecf721f8701af",
+    "pages": 23,
+    "declared_version": "Официальная ОХЛП реестра: штамп регистрации 2023-11-21; экспертный отчёт 2025-12-26 №32413/0009; получена 08.10.2026",
+    "url": "https://lk.regmed.ru/Register/EAEU_SmPC",
+    "text_pages_read": [],
+    "visual_pages_read": [],
+    "review_status": "not_yet_independently_reviewed"
+  },
+  {
+    "source_id": "RU-VENLA-XR",
+    "path": "research/remediation_round3/originals/RU-VENLA-XR_current.pdf",
+    "sha256": "a21e90141db69d9be5ca44ac3c8c6059c8c82a880f34bbf15143348c36ef4666",
+    "pages": 30,
+    "declared_version": "Официальная ОХЛП реестра: штамп регистрации 2026-06-25; экспертный отчёт 2026-06-11 №11677/0019; получена 08.10.2026",
+    "url": "https://lk.regmed.ru/Register/EAEU_SmPC",
+    "text_pages_read": [],
+    "visual_pages_read": [],
+    "review_status": "not_yet_independently_reviewed"
+  }
+]

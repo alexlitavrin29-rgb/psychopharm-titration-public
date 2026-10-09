@@ -1,0 +1,231 @@
+schema_version: '1.0'
+country: RU
+scope: professional_dose_calculation_under_stated_conditions
+calculator_implemented: false
+clinical_clearance_claimed: false
+question_count_policy:
+  initial_selections_counted_separately: true
+  independent_subfields_count_separately: true
+  medication_list_is_one_input: true
+  conditionally_unasked_values: not_assessed_by_module
+  unasked_is_normal: false
+  universal_risk_confirmation_checkbox_allowed: false
+  form_selection: Одна опция конкретный продукт+форма+сила; независимые дополнительные сведения о делении считаются
+    отдельно, если не заданы версией источника.
+  medication_timestamps: Список препаратов один вход; дата/время отмены каждого релевантного ИМАО — отдельные
+    условные входы. Они не спрятаны внутри списка.
+flows:
+- flow_id: ser-start-usual
+  rule_id: ser-panic-start
+  initial_questions:
+  - diagnosis
+  - drug
+  - mode
+  clinical_questions:
+  - age
+  - form
+  - hepatic
+  - pregnancy
+  - lactation
+  - medicines
+  - allergy
+  count: 10
+  clinical_output: conditional_source_scheme
+  source_refs:
+  - RU-SER
+  - RU-PANIC
+  source_locators:
+  - ОХЛП §4.1–4.3 с.1–3; §4.5–4.6 с.7–11
+  - КР ПР §3.1 с.25–26
+  conditional_questions:
+  - mania
+  - seizure_state
+  - qt_risk
+  - bleeding_risk
+  - hyponatremia_risk
+  - suicide_risk
+  conditional_trigger: Врач сообщил соответствующее обстоятельство или выявлено применимое взаимодействие;
+    требуется разбор этого обстоятельства по §4.4, а не универсальный повторный осмотр.
+  if_complex: Раскрыть отдельные поля; вывести предел короткого пути и не выдавать безусловную индивидуальную
+    рекомендацию.
+  ordinary_expected:
+    start_mg_per_day: 25
+    administrations_per_day: 1
+    after_first_week_mg_per_day: 50
+    next_step_conditional: true
+    all_patient_safety_checks_completed: false
+- flow_id: esc-start-usual
+  rule_id: esc-gad-start
+  initial_questions:
+  - diagnosis
+  - drug
+  - mode
+  clinical_questions:
+  - age
+  - form
+  - hepatic
+  - pregnancy
+  - lactation
+  - medicines
+  - allergy
+  count: 10
+  clinical_output: conditional_source_scheme
+  source_refs:
+  - RU-ESC
+  - RU-GAD
+  source_locators:
+  - ОХЛП §4.1–4.3 с.2–4; §4.5–4.6 с.7–10
+  - КР ГТР §3.2
+  conditional_questions:
+  - known_cyp2c19
+  - renal
+  - mania
+  - seizure_state
+  - qt_risk
+  - bleeding_risk
+  - hyponatremia_risk
+  - suicide_risk
+  - diabetes
+  - glaucoma
+  conditional_trigger: Уже известный низкий CYP2C19 или известное нарушение почек/релевантное обстоятельство
+    врача; генетическое исследование всем не требуется. Не исследовано сохраняется отдельно от нормы.
+  if_complex: Не комбинировать специальные поправки самостоятельно; КК <=30 даёт осторожность без нового числа.
+    Расширенная ветка имеет отдельный счёт.
+  ordinary_expected:
+    start_mg_per_day: 10
+    administrations_per_day: 1
+    maximum_mg_per_day: 20
+    all_patient_safety_checks_completed: false
+- flow_id: ser-adjust-clinician-action
+  rule_id: ser-adult-adjust
+  initial_questions:
+  - diagnosis
+  - drug
+  - mode
+  clinical_questions:
+  - age
+  - form
+  - hepatic
+  - current_dose
+  - time_at_dose
+  - clinician_action
+  count: 9
+  clinical_output: conditional_numeric_action
+  source_refs:
+  - RU-SER
+  source_locators:
+  - §4.1–4.2 с.1–3
+  conditional_questions:
+  - response
+  - tolerability
+  - adherence
+  - pregnancy
+  - lactation
+  - medicines
+  - allergy
+  - mania
+  - seizure_state
+  - qt_risk
+  - bleeding_risk
+  - hyponatremia_risk
+  - suicide_risk
+  - akathisia
+  conditional_trigger: Врач не выбрал действие или сообщил изменение клинической применимости/нежелательные
+    явления. Выбранное действие не является подтверждением отсутствия перечисленных состояний.
+  if_complex: При неизвестном сроке/дозе/печени запросить конкретное поле; не разрешать повышение. При необходимости
+    клинического выбора раскрыть ответ и переносимость отдельными вопросами.
+  ordinary_expected:
+    given_current_dose_mg_per_day: 50
+    given_time_at_dose_days: 7
+    given_clinician_action: increase
+    next_dose_mg_per_day: 100
+    increment_mg_per_day: 50
+    all_patient_safety_checks_completed: false
+- flow_id: parox-taper-selected-example
+  rule_id: parox-taper-example
+  initial_questions:
+  - diagnosis
+  - drug
+  - mode
+  clinical_questions:
+  - age
+  - form
+  - current_dose
+  - duration
+  - past_withdrawal
+  - withdrawal_severity
+  - example_selected
+  count: 10
+  clinical_output: selected_source_example
+  source_refs:
+  - RU-PAROX
+  - RU-DEP
+  source_locators:
+  - ОХЛП §4.2 с.16–17
+  - КР депрессии Б5 с.105–106
+  conditional_questions: []
+  conditional_trigger: Высокий риск/симптомы отмены требуют иного темпа; исходная доза ниже 20 мг не достраивается
+    этим примером.
+  if_complex: Врач выбирает более медленный план; конкретный новый шаг из источника не извлечён. Пример не
+    выполняется автоматически при симптомах.
+  ordinary_expected:
+    given_current_dose_mg_per_day: 40
+    source_example_doses_mg_per_day:
+    - 30
+    - 20
+    - 0
+    holds_before_next_days:
+    - 7
+    - 7
+    mandatory_for_all: false
+    all_patient_safety_checks_completed: false
+- flow_id: ago-stop-chosen-action
+  rule_id: ago-stop
+  initial_questions:
+  - diagnosis
+  - drug
+  - mode
+  clinical_questions:
+  - current_dose
+  - clinician_action
+  count: 5
+  clinical_output: source_stop_action
+  source_refs:
+  - RU-AGO
+  source_locators:
+  - §4.2 PDF с.2 Прекращение лечения
+  conditional_questions: []
+  conditional_trigger: Это прекращение уже выбранного препарата; время начала следующего B — другая ветка.
+  if_complex: Не превращать отсутствие обязательного снижения A в разрешённый интервал до B.
+  ordinary_expected:
+    given_current_dose_mg_per_day: 50
+    mandatory_taper: false
+    next_drug_start_day: null
+    all_patient_safety_checks_completed: false
+complex_flows:
+- rule_ids:
+  - preg-gad-start
+  - preg-renal-start
+  - preg-gad-adjust
+  reason: CLcr, гемодиализ, формы и выбор кратности/дозы из диапазона требуют самостоятельных значений; полный
+    путь не обещан за 10 вопросов.
+- rule_ids:
+  - switch-ser-ago
+  - switch-esc-ago
+  - switch-parox-ago
+  reason: Проверка A/B, выбранный темп A и две самостоятельные печёночные пробы B дают более 10 значений. Не
+    объединять АЛТ/АСТ/печень в один ответ «норма».
+- rule_ids:
+  - dulox-gad-start
+  - dulox-gad-adjust
+  - ago-gad-start
+  - ago-depression-start
+  - venla-xr-gad-start
+  - venla-xr-social-start
+  - fluvox-depression-start
+  reason: Печень/почки, независимые противопоказания, отдельные АЛТ/АСТ, выбор опубликованных вариантов дают
+    расширенный путь; сокращение до10 не заявлено.
+- rule_ids:
+  - switch-parox-ago-selected-example
+  reason: Выбор источникового примера и обязательные A/B поля дают19 значений:4 начальных+15 входов. Календарь
+    условный, комплексная клиническая ветка.

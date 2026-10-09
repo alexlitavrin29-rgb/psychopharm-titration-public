@@ -1,0 +1,606 @@
+[
+  {
+    "source_id": "RU-GAD",
+    "registration": "457_3",
+    "version": "2024; каталог: опубликовано 19.09.2024, применяется",
+    "local_file": "audit/retrieved/RU-GAD.pdf",
+    "sha256": "c2db38ebb558ba98a8514bb3027f3e71d0cf293c512183f882ac9a94da21271a",
+    "latest_registration_revision_confirmed": false,
+    "own_read_scope": null,
+    "currency_evidence": "remediation_round2/catalog_check.json; 08.10.2026; CodeVersion/ApplyStatusCalculated=1",
+    "unread_content_not_claimed_verified": true
+  },
+  {
+    "source_id": "RU-PANIC",
+    "registration": "456_3",
+    "version": "2024; каталог: опубликовано 19.09.2024, применяется",
+    "local_file": "audit/retrieved/RU-PANIC.pdf",
+    "sha256": "a0f23668c4cf498d08a82d0d5bf67a209c33a113c8c61bd8a0873d5a9139c94d",
+    "latest_registration_revision_confirmed": false,
+    "own_read_scope": null,
+    "currency_evidence": "remediation_round2/catalog_check.json; 08.10.2026; CodeVersion/ApplyStatusCalculated=1",
+    "unread_content_not_claimed_verified": true
+  },
+  {
+    "source_id": "RU-PHOB",
+    "registration": "455_3",
+    "version": "2024; каталог: опубликовано 21.10.2024, применяется",
+    "local_file": "audit/retrieved/RU-PHOB.pdf",
+    "sha256": "2a51982fb1919c0ef9115e5231f8ef9d65863306d2d5b95aa0aa7821a6f328b7",
+    "latest_registration_revision_confirmed": false,
+    "own_read_scope": null,
+    "currency_evidence": "remediation_round2/catalog_check.json; 08.10.2026; CodeVersion/ApplyStatusCalculated=1",
+    "unread_content_not_claimed_verified": true
+  },
+  {
+    "source_id": "RU-DEP",
+    "registration": "301_3",
+    "version": "2024; каталог: опубликовано 26.08.2024, применяется",
+    "local_file": "source_snapshots/depression-301_3.pdf",
+    "sha256": "2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd",
+    "latest_registration_revision_confirmed": false,
+    "own_read_scope": null,
+    "currency_evidence": "remediation_round2/catalog_check.json; 08.10.2026; CodeVersion/ApplyStatusCalculated=1",
+    "unread_content_not_claimed_verified": true
+  },
+  {
+    "source_id": "RU-SER",
+    "registration": "ЛП-№(002851)-(РГ-RU), §8 PDF с.22",
+    "version": "Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является датой содержания",
+    "local_file": "source_downloads/Золофт — сертралин.pdf",
+    "sha256": "3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba",
+    "latest_registration_revision_confirmed": true,
+    "own_read_scope": null,
+    "currency_evidence": {
+      "download_date": "2026-10-08",
+      "human_provided": true,
+      "registry_url": "https://lk.regmed.ru/Register/EAEU_SmPC",
+      "old_local_file": "source_downloads/Золофт — сертралин.pdf",
+      "old_sha256": "3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba",
+      "documents": [
+        {
+          "filename": "1.3.1 Золофт ОХЛП 21.04.26_02002 (1817931491) [0008] штамп МЗ.pdf",
+          "local_file": "remediation_round2/Zoloft_current_registry.pdf",
+          "sha256": "3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba",
+          "pages": 22,
+          "document_type": "SmPC",
+          "byte_identity_to_previously_read_original": true
+        },
+        {
+          "filename": "1.3.1 Золофт ЛВ 22.04.26_02001 (1817931561) [0008] штамп МЗ.pdf",
+          "local_file": "remediation_round2/Zoloft_current_registry_PIL.pdf",
+          "sha256": "eac44c60d0b40687cbe565a03d16679a82671e7ee13593648fc2beebfdcd61bd",
+          "pages": 13,
+          "document_type": "PIL"
+        }
+      ],
+      "confirmation_pending": null,
+      "confirmation": "Downloaded by the user in response to a specific request for the current official registry SmPC; filename and stamp match the previously observed registry edition. Complete bytes equal the read manufacturer original. Page1 visually verified again; initial registry date differs from current document stamp."
+    },
+    "unread_content_not_claimed_verified": true
+  },
+  {
+    "source_id": "RU-ESC",
+    "registration": "ЛП-№(012351)-(РГ-RU)",
+    "version": "РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; экспертный отчёт 31.10.2025 №27320, последовательность 0002; текущая опубликованная ОХЛП реестра получена 08.10.2026",
+    "local_file": "remediation_round2/Selectra_current_registry.pdf",
+    "sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+    "latest_registration_revision_confirmed": true,
+    "own_read_scope": null,
+    "currency_evidence": {
+      "registry_url": "https://lk.regmed.ru/Register/EAEU_SmPC",
+      "observed_on": "2026-10-08",
+      "currently_listed_document": "1.3.1 Selectra_SmPC_30092025 _0002_clean (1747204851) [0002] штамп МЗ.pdf",
+      "currently_listed_documents_count": 1,
+      "comparison": "Human downloaded this listed file after CAPTCHA; local PDF registration/form/strengths and stamp visually match the opened registry PDF. This establishes the currently published official edition; unknown revision/publication dates are not fabricated.",
+      "sha256": "a1717b48ddde3997d8d7d2d3ae226131a99bfd8566e8bdcef9473e5eafe9d6d6",
+      "local_file": "remediation_round2/Selectra_current_registry.pdf"
+    },
+    "unread_content_not_claimed_verified": true
+  },
+  {
+    "source_id": "RU-PREG",
+    "registration": "ЛП-№(004450)-(РГ-RU)",
+    "version": "Официальная ОХЛП реестра: штамп регистрации 2025-08-13; экспертный отчёт 2024-01-26 №1319/0011; получена 08.10.2026",
+    "local_file": "remediation_round3/originals/RU-PREG_current.pdf",
+    "sha256": "b605c8b381c24d59a48bbab9bfa8621eb70f6ec16ad9e3679aa8457f811663e5",
+    "latest_registration_revision_confirmed": true,
+    "own_read_scope": {
+      "text_pages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        30
+      ],
+      "visual_pages": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "remaining_sections_not_claimed_read": true
+    },
+    "currency_evidence": {
+      "record": "remediation_round3/current_registry_documents.json#RU-PREG",
+      "original": "remediation_round3/originals/RU-PREG_current.pdf",
+      "sha256": "b605c8b381c24d59a48bbab9bfa8621eb70f6ec16ad9e3679aa8457f811663e5",
+      "authority_evidence": "Exact RU/form row observed in official registry; user downloaded after CAPTCHA request; matching title/form and stamps visually checked",
+      "comparison_scope": "Listed primary sections and dependency review; no inference of byte identity to historical copies"
+    },
+    "unread_content_not_claimed_verified": true
+  },
+  {
+    "source_id": "EU-PREG",
+    "registration": null,
+    "version": "Текущий PDF получен 08.10.2026; точная дата редакции §10 не указана",
+    "local_file": "audit/retrieved/EU-PREG.pdf",
+    "sha256": "0f82f9dee99e4c6c1ec68a6f67072cf59e9a4dc3997dbe5f30cf806ee2cf3f99",
+    "latest_registration_revision_confirmed": false,
+    "own_read_scope": null,
+    "currency_evidence": null,
+    "unread_content_not_claimed_verified": true
+  },
+  {
+    "source_id": "UK-SPS-SSRI",
+    "registration": null,
+    "version": "17.02.2023; обновлено 11.04.2024; история 31.05.2024 — ссылка",
+    "local_file": null,
+    "sha256": "2d5608f9f61e7a465074b3202e7f16f433542dfa29cb15533fe7019dcfdd7da3",
+    "latest_registration_revision_confirmed": false,
+    "own_read_scope": null,
+    "currency_evidence": null,
+    "unread_content_not_claimed_verified": true
+  },
+  {
+    "source_id": "UK-SPS-AGO",
+    "registration": null,
+    "version": "17.02.2023; обновлено 11.04.2024",
+    "local_file": null,
+    "sha256": "d1db51643b8f3497d95289bf075fe9620ccdbf908822bbd496f3c0e6ff390ee2",
+    "latest_registration_revision_confirmed": false,
+    "own_read_scope": null,
+    "currency_evidence": null,
+    "unread_content_not_claimed_verified": true
+  },
+  {
+    "source_id": "UK-SPS-MOC",
+    "registration": null,
+    "version": "17.02.2023; обновлено 31.05.2024",
+    "local_file": null,
+    "sha256": "836bde6f664dc239bad6e75fd7caa177ca19022fae96cc75174654a2f44e76a8",
+    "latest_registration_revision_confirmed": false,
+    "own_read_scope": null,
+    "currency_evidence": null,
+    "unread_content_not_claimed_verified": true
+  },
+  {
+    "source_id": "UK-NICE222",
+    "registration": null,
+    "version": "Опубликовано 29.06.2022; официальный PDF ©2026, получен 08.10.2026",
+    "local_file": "audit/retrieved/UK-NICE222.pdf",
+    "sha256": "4f59bf752b49734b81244d1251d94a8fc2e984aac34577e295be243582a957de",
+    "latest_registration_revision_confirmed": false,
+    "own_read_scope": null,
+    "currency_evidence": null,
+    "unread_content_not_claimed_verified": true
+  },
+  {
+    "source_id": "UK-PAX",
+    "registration": null,
+    "version": "Текст пересмотрен 04.04.2025; EMC 08.04.2025; продукт Discontinued",
+    "local_file": null,
+    "sha256": "f0f1b396d40ce9d0b4886c54bd9249a14ba6e6d4897db5511507d6eaeed59a32",
+    "latest_registration_revision_confirmed": false,
+    "own_read_scope": null,
+    "currency_evidence": null,
+    "unread_content_not_claimed_verified": true
+  },
+  {
+    "source_id": "US-ASAM",
+    "registration": null,
+    "version": "Final approved version 28.02.2025",
+    "local_file": "audit/retrieved/US-ASAM.pdf",
+    "sha256": "a9937c249d7a08658eb10c5b7805fce9bb6e975e4f4d5ac11507434708c4b5ec",
+    "latest_registration_revision_confirmed": false,
+    "own_read_scope": null,
+    "currency_evidence": null,
+    "unread_content_not_claimed_verified": true
+  },
+  {
+    "source_id": "WHO-F41",
+    "registration": null,
+    "version": "2016",
+    "local_file": "audit/retrieved/WHO-F41.html",
+    "sha256": "28852802c5d4771ce3d780d4c391a9b5f08e68b6937187fa1540606161996caf",
+    "latest_registration_revision_confirmed": false,
+    "own_read_scope": null,
+    "currency_evidence": null,
+    "unread_content_not_claimed_verified": true
+  },
+  {
+    "source_id": "UK-SPS-LACT",
+    "registration": null,
+    "version": "13.01.2023; обновлено 17.11.2023",
+    "local_file": null,
+    "sha256": "8c9a954c7f5b8ca40031ab1995ebe887c2e4e992dafcb57dc040e427ad0ff819",
+    "latest_registration_revision_confirmed": false,
+    "own_read_scope": null,
+    "currency_evidence": null,
+    "unread_content_not_claimed_verified": true
+  },
+  {
+    "source_id": "RU-SER-2023",
+    "registration": null,
+    "version": "Копия производителя: файл 24-jul; штамп экспертного отчёта 20.07.2023",
+    "local_file": "audit/retrieved/RU-SER-2023.pdf",
+    "sha256": "640908909dc7109d614b4f03225d0c31ab2f5f9d6e39b9b8f65046873e9d722c",
+    "latest_registration_revision_confirmed": false,
+    "own_read_scope": null,
+    "currency_evidence": null,
+    "unread_content_not_claimed_verified": true
+  },
+  {
+    "source_id": "RU-PREG-RICHTER",
+    "registration": "ЛП-№(002412)-(РГ-RU)",
+    "version": "Официальная ОХЛП реестра: штамп регистрации 2026-02-06; экспертный отчёт 2026-02-02 №1678/0014; получена 08.10.2026",
+    "local_file": "remediation_round3/originals/RU-PREG-RICHTER_current.pdf",
+    "sha256": "8b6240d17e311c9468373c451ad7b4addff096594baf7041097e688ae27ae42f",
+    "latest_registration_revision_confirmed": true,
+    "own_read_scope": {
+      "text_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        19
+      ],
+      "visual_pages": [
+        1,
+        3
+      ],
+      "remaining_sections_not_claimed_read": true
+    },
+    "currency_evidence": {
+      "record": "remediation_round3/current_registry_documents.json#RU-PREG-RICHTER",
+      "original": "remediation_round3/originals/RU-PREG-RICHTER_current.pdf",
+      "sha256": "8b6240d17e311c9468373c451ad7b4addff096594baf7041097e688ae27ae42f",
+      "authority_evidence": "Exact RU/form row observed in official registry; user downloaded after CAPTCHA request; matching title/form and stamps visually checked",
+      "comparison_scope": "Listed primary sections and dependency review; no inference of byte identity to historical copies"
+    },
+    "unread_content_not_claimed_verified": true
+  },
+  {
+    "source_id": "RU-PAROX",
+    "registration": "ЛП-№(008861)-(РГ-RU)",
+    "version": "Официальная ОХЛП реестра: штамп регистрации 2025-02-14; экспертный отчёт 2025-02-12 №3370/0003; получена 08.10.2026",
+    "local_file": "remediation_round3/originals/RU-PAROX_current.pdf",
+    "sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069",
+    "latest_registration_revision_confirmed": true,
+    "own_read_scope": {
+      "text_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        26
+      ],
+      "visual_pages": [
+        1,
+        3,
+        4
+      ],
+      "remaining_sections_not_claimed_read": true
+    },
+    "currency_evidence": {
+      "record": "remediation_round3/current_registry_documents.json#RU-PAROX",
+      "original": "remediation_round3/originals/RU-PAROX_current.pdf",
+      "sha256": "521295a24dfcdab71fe7835fb7e3cea2b6f6a60522eda4f36859adc081e8f069",
+      "authority_evidence": "Exact RU/form row observed in official registry; user downloaded after CAPTCHA request; matching title/form and stamps visually checked",
+      "comparison_scope": "Listed primary sections and dependency review; no inference of byte identity to historical copies"
+    },
+    "unread_content_not_claimed_verified": true
+  },
+  {
+    "source_id": "RU-AGO",
+    "registration": "ЛП-№(000528)-(РГ-RU)",
+    "version": "Официальная ОХЛП реестра: штамп регистрации 2024-12-28; экспертный отчёт 2024-12-23 №28427/0018; получена 08.10.2026",
+    "local_file": "remediation_round3/originals/RU-AGO_current.pdf",
+    "sha256": "a98d383832688cee9a09588b1a908555d01ed8b659281cdeee2646c1115ce7c1",
+    "latest_registration_revision_confirmed": true,
+    "own_read_scope": {
+      "text_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        16
+      ],
+      "visual_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "remaining_sections_not_claimed_read": true
+    },
+    "currency_evidence": {
+      "record": "remediation_round3/current_registry_documents.json#RU-AGO",
+      "original": "remediation_round3/originals/RU-AGO_current.pdf",
+      "sha256": "a98d383832688cee9a09588b1a908555d01ed8b659281cdeee2646c1115ce7c1",
+      "authority_evidence": "Exact RU/form row observed in official registry; user downloaded after CAPTCHA request; matching title/form and stamps visually checked",
+      "comparison_scope": "Listed primary sections and dependency review; no inference of byte identity to historical copies"
+    },
+    "unread_content_not_claimed_verified": true
+  },
+  {
+    "source_id": "RU-ESC-2025-JAN",
+    "registration": "ЛСР-008205/09 — только страница производителя, не проверенная текущая запись",
+    "version": "Одобрено Минздравом 14.01.2025; файл производителя",
+    "local_file": "source_downloads/Селектра — эсциталопрам.pdf",
+    "sha256": "ea5d007a4026e850b514badeabfdb5d6e0ece163a1a84e6fa5453a8ff0c73497",
+    "latest_registration_revision_confirmed": false,
+    "own_read_scope": null,
+    "currency_evidence": null,
+    "unread_content_not_claimed_verified": true
+  },
+  {
+    "source_id": "RU-PREG-RICHTER-ARCHIVE",
+    "registration": "ЛП-№(002412)-(РГ-RU), PDF с.32",
+    "version": "Первая регистрация 25.05.2023, PDF с.33; поле даты пересмотра пустое; дата получения 08.10.2026",
+    "local_file": "audit/retrieved/RU-PREG-RICHTER-ARCHIVE.pdf",
+    "sha256": "c6c6b41dd339536ad1671193a6cd69a7c111d6a2c04c6db501ae85c3beba1ee1",
+    "latest_registration_revision_confirmed": false,
+    "own_read_scope": null,
+    "currency_evidence": null,
+    "unread_content_not_claimed_verified": true
+  },
+  {
+    "source_id": "RU-DULOX",
+    "registration": "ЛП-№(000186)-(РГ-RU)",
+    "version": "Официальная ОХЛП реестра: штамп регистрации 2026-03-24; экспертный отчёт 2026-03-20 №5759/0015; получена 08.10.2026",
+    "local_file": "remediation_round3/originals/RU-DULOX_current.pdf",
+    "sha256": "0551a7306ca4a56b552336bb63fa34905cf4e312702ba811a792221892a42ca1",
+    "latest_registration_revision_confirmed": true,
+    "own_read_scope": {
+      "text_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        22,
+        26
+      ],
+      "visual_pages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "remaining_sections_not_claimed_read": true
+    },
+    "currency_evidence": {
+      "record": "remediation_round3/current_registry_documents.json#RU-DULOX",
+      "original": "remediation_round3/originals/RU-DULOX_current.pdf",
+      "sha256": "0551a7306ca4a56b552336bb63fa34905cf4e312702ba811a792221892a42ca1",
+      "authority_evidence": "Exact RU/form row observed in official registry; user downloaded after CAPTCHA request; matching title/form and stamps visually checked",
+      "comparison_scope": "Listed primary sections and dependency review; no inference of byte identity to historical copies"
+    },
+    "unread_content_not_claimed_verified": true
+  },
+  {
+    "source_id": "RU-FLUVOX",
+    "registration": "ЛП-№(008757)-(РГ-RU)",
+    "version": "Официальная ОХЛП реестра: штамп регистрации 2026-08-19; экспертный отчёт 2026-08-14 №16133/0004; получена 08.10.2026",
+    "local_file": "remediation_round3/originals/RU-FLUVOX_current.pdf",
+    "sha256": "01b6621adad68dfeaf1fbe00db21935b6df1edee141c67307a9b67ad177893f2",
+    "latest_registration_revision_confirmed": true,
+    "own_read_scope": {
+      "text_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        19
+      ],
+      "visual_pages": [
+        1
+      ],
+      "remaining_sections_not_claimed_read": true
+    },
+    "currency_evidence": {
+      "record": "remediation_round3/current_registry_documents.json#RU-FLUVOX",
+      "original": "remediation_round3/originals/RU-FLUVOX_current.pdf",
+      "sha256": "01b6621adad68dfeaf1fbe00db21935b6df1edee141c67307a9b67ad177893f2",
+      "authority_evidence": "Exact RU/form row observed in official registry; user downloaded after CAPTCHA request; matching title/form and stamps visually checked",
+      "comparison_scope": "Listed primary sections and dependency review; no inference of byte identity to historical copies"
+    },
+    "unread_content_not_claimed_verified": true
+  },
+  {
+    "source_id": "RU-VENLA-XR",
+    "registration": "ЛП-№(002093)-(РГ-RU)",
+    "version": "Официальная ОХЛП реестра: штамп регистрации 2026-06-25; экспертный отчёт 2026-06-11 №11677/0019; получена 08.10.2026",
+    "local_file": "remediation_round3/originals/RU-VENLA-XR_current.pdf",
+    "sha256": "a21e90141db69d9be5ca44ac3c8c6059c8c82a880f34bbf15143348c36ef4666",
+    "latest_registration_revision_confirmed": true,
+    "own_read_scope": {
+      "text_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        29,
+        30
+      ],
+      "visual_pages": [
+        1,
+        4
+      ],
+      "remaining_sections_not_claimed_read": true
+    },
+    "currency_evidence": {
+      "record": "remediation_round3/current_registry_documents.json#RU-VENLA-XR",
+      "original": "remediation_round3/originals/RU-VENLA-XR_current.pdf",
+      "sha256": "a21e90141db69d9be5ca44ac3c8c6059c8c82a880f34bbf15143348c36ef4666",
+      "authority_evidence": "Exact RU/form row observed in official registry; user downloaded after CAPTCHA request; matching title/form and stamps visually checked",
+      "comparison_scope": "Listed primary sections and dependency review; no inference of byte identity to historical copies"
+    },
+    "unread_content_not_claimed_verified": true
+  },
+  {
+    "source_id": "RU-VENLA-IR",
+    "registration": "ЛП-№(002276)-(РГ-RU)",
+    "version": "Официальная ОХЛП реестра: штамп регистрации 2023-11-21; экспертный отчёт 2025-12-26 №32413/0009; получена 08.10.2026",
+    "local_file": "remediation_round3/originals/RU-VENLA-IR_current.pdf",
+    "sha256": "b1e98ffb209390179385a56aa70b6b94eda4a395831464f347aecf721f8701af",
+    "latest_registration_revision_confirmed": true,
+    "own_read_scope": {
+      "text_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        23
+      ],
+      "visual_pages": [
+        1
+      ],
+      "remaining_sections_not_claimed_read": true
+    },
+    "currency_evidence": {
+      "record": "remediation_round3/current_registry_documents.json#RU-VENLA-IR",
+      "original": "remediation_round3/originals/RU-VENLA-IR_current.pdf",
+      "sha256": "b1e98ffb209390179385a56aa70b6b94eda4a395831464f347aecf721f8701af",
+      "authority_evidence": "Exact RU/form row observed in official registry; user downloaded after CAPTCHA request; matching title/form and stamps visually checked",
+      "comparison_scope": "Listed primary sections and dependency review; no inference of byte identity to historical copies"
+    },
+    "unread_content_not_claimed_verified": true
+  },
+  {
+    "source_id": "RU-PHEN",
+    "registration": "ЛП-№(005387)-(РГ-RU)",
+    "version": "Официальная ОХЛП реестра: штамп регистрации 2026-05-07; экспертный отчёт 2026-05-05 №9041/0004; получена 08.10.2026",
+    "local_file": "remediation_round3/originals/RU-PHEN_current.pdf",
+    "sha256": "850486408d225fc603f8f053765491c1e9fd688c5c3d765cdf80a34dd2b3cf1a",
+    "latest_registration_revision_confirmed": true,
+    "own_read_scope": {
+      "text_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        10
+      ],
+      "visual_pages": [
+        1,
+        2
+      ],
+      "remaining_sections_not_claimed_read": true
+    },
+    "currency_evidence": {
+      "record": "remediation_round3/current_registry_documents.json#RU-PHEN",
+      "original": "remediation_round3/originals/RU-PHEN_current.pdf",
+      "sha256": "850486408d225fc603f8f053765491c1e9fd688c5c3d765cdf80a34dd2b3cf1a",
+      "authority_evidence": "Exact RU/form row observed in official registry; user downloaded after CAPTCHA request; matching title/form and stamps visually checked",
+      "comparison_scope": "Listed primary sections and dependency review; no inference of byte identity to historical copies"
+    },
+    "unread_content_not_claimed_verified": true
+  },
+  {
+    "source_id": "RU-CITAL-LV",
+    "registration": "См. оригинал и описание ограничений",
+    "version": "Зафиксированная копия 08.10.2026; актуальность редакции не подтверждена",
+    "local_file": "source_downloads/Циталопрам — Пранафарм.docx",
+    "sha256": "5e10a0452aa6a432390878027d66309a93729250ae6015c2ec225a28be68fe00",
+    "latest_registration_revision_confirmed": false,
+    "own_read_scope": null,
+    "currency_evidence": null,
+    "unread_content_not_claimed_verified": true
+  },
+  {
+    "source_id": "RU-FLUOX-ARCHIVE",
+    "registration": "См. оригинал и описание ограничений",
+    "version": "Зафиксированная копия 08.10.2026; актуальность редакции не подтверждена",
+    "local_file": "source_downloads/Флуоксетин — Озон.pdf",
+    "sha256": "dfcf4a185bb4474bfa7411de1d956be7d309bc9c3e350309f6ca1220fd4e32a3",
+    "latest_registration_revision_confirmed": false,
+    "own_read_scope": null,
+    "currency_evidence": null,
+    "unread_content_not_claimed_verified": true
+  },
+  {
+    "source_id": "RU-CLOMI-IV-ARCHIVE",
+    "registration": "См. оригинал и описание ограничений",
+    "version": "Зафиксированная копия 08.10.2026; актуальность редакции не подтверждена",
+    "local_file": "source_downloads/Кломипрамин — раствор.pdf",
+    "sha256": "81d40c49e7fa50aed75f8719c51f942f40f85a5ad74e1637a45673f0b57f1d33",
+    "latest_registration_revision_confirmed": false,
+    "own_read_scope": null,
+    "currency_evidence": null,
+    "unread_content_not_claimed_verified": true
+  }
+]

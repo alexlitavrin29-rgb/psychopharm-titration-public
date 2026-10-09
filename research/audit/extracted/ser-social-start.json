@@ -1,0 +1,629 @@
+{
+  "schema_version": "1.0",
+  "rule_id": "ser-social-start",
+  "development_status": "extracted_research_not_executable",
+  "language": "ru",
+  "identity": {
+    "title": "Сертралин: старт при социальной фобии",
+    "mode": "start",
+    "drug_inn": "сертралин",
+    "from_drug_inn": null,
+    "to_drug_inn": null,
+    "formulation": "Золофт: таблетки, покрытые плёночной оболочкой; 50/100 мг",
+    "route": "oral",
+    "diagnosis_label_ru": "Социальная фобия",
+    "classification_system": "МКБ-10",
+    "diagnosis_code": "F40.1",
+    "jurisdiction": "RU_versioned_copy"
+  },
+  "applicability": {
+    "population_description": "Взрослые. Только подтверждённые условия этой карточки; другие популяции не получают масштабированную взрослую дозу.",
+    "age_constraints": [
+      {
+        "minimum": 18,
+        "inclusive": true,
+        "unit": "year",
+        "source_ref": "RU-SER",
+        "source_locator": "§4.1, PDF с.1"
+      }
+    ],
+    "pregnancy": "Решение по применимости/пользе и риску отдельно; без опубликованной числовой поправки. Стандартная карточка не выдаёт автоматическую дозу при беременности.",
+    "lactation": "Проверять отдельные ограничения источника. Стандартная карточка не выдаёт автоматическую дозу при кормлении.",
+    "renal_constraints": [
+      "Коррекция при почечной недостаточности не требуется (§4.2, PDF с.2); CLcr не обязательный ввод."
+    ],
+    "hepatic_constraints": [
+      "Нужна меньшая доза/кратность без точного числа; стандартная числовая ветка не применяется. При тяжёлом нарушении не применять (§4.2 с.2)."
+    ],
+    "comorbidity_constraints": [
+      "Мания/гипомания, судороги/неконтролируемая эпилепсия, суицидальный риск, акатизия, риск кровотечения, гипонатремии и удлинения QT: ограничения/наблюдение по инструкции; числовых множителей для них нет."
+    ],
+    "interacting_drugs": [
+      "ИМАО и пимозид: противопоказания/интервалы §4.3–4.5; прочие серотонинергические, влияющие на QT/кровотечения — отдельная проверка."
+    ],
+    "other_conditions": [],
+    "exclusions": [
+      "Гиперчувствительность",
+      "Непроверенные противопоказания/взаимодействия не считать отсутствующими"
+    ],
+    "indication_status_in_russia": "RU_indication_in_read_copy_registry_row_observed_latest_text_identity_not_asserted",
+    "source_refs": [
+      "RU-SER"
+    ]
+  },
+  "inputs": [
+    {
+      "input_id": "age",
+      "question_ru": "Возраст пациента, полных лет?",
+      "data_type": "integer",
+      "unit": "year",
+      "allowed_values": [],
+      "required_when": "для индивидуального результата",
+      "show_when": "при выборе этой карточки",
+      "why_needed": "Возрастная применимость; для эсциталопрама особая пожилая ветка, для прегабалина возраст не заменяет CLcr.",
+      "changes": [
+        "applicability"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать условно.",
+      "source_refs": [
+        "RU-SER"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "form",
+      "question_ru": "Какая конкретная форма и сила дозы используются?",
+      "data_type": "structured_form",
+      "unit": null,
+      "allowed_values": [],
+      "required_when": "для индивидуального результата",
+      "show_when": "при выборе этой карточки",
+      "why_needed": "Исполнимость дозы и запрет произвольного деления форм.",
+      "changes": [
+        "applicability"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать условно.",
+      "source_refs": [
+        "RU-SER"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "pregnancy",
+      "question_ru": "Беременность установлена или возможна?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [
+        "да",
+        "нет",
+        "неизвестно"
+      ],
+      "required_when": "для индивидуального результата",
+      "show_when": "при выборе этой карточки",
+      "why_needed": "Отдельное решение о пользе и риске; числовой коэффициент не опубликован.",
+      "changes": [
+        "applicability"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать условно.",
+      "source_refs": [
+        "RU-SER"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "lactation",
+      "question_ru": "Есть грудное вскармливание?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [
+        "да",
+        "нет",
+        "неизвестно"
+      ],
+      "required_when": "для индивидуального результата",
+      "show_when": "при выборе этой карточки",
+      "why_needed": "Ограничение инструкции, решение врача; не уменьшение дозы по выдуманному коэффициенту.",
+      "changes": [
+        "applicability"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать условно.",
+      "source_refs": [
+        "RU-SER"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "medicines",
+      "question_ru": "Какие лекарства и значимые вещества сейчас принимаются или недавно отменены?",
+      "data_type": "medication_list",
+      "unit": null,
+      "allowed_values": [],
+      "required_when": "для индивидуального результата",
+      "show_when": "при выборе этой карточки",
+      "why_needed": "Выявление взаимодействий и интервалов после ИМАО; пустой список и непроверенный список различаются.",
+      "changes": [
+        "applicability"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать условно.",
+      "source_refs": [
+        "RU-SER"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "allergy",
+      "question_ru": "Есть известная гиперчувствительность к препарату/компонентам?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [
+        "да",
+        "нет",
+        "неизвестно"
+      ],
+      "required_when": "для индивидуального результата",
+      "show_when": "при выборе этой карточки",
+      "why_needed": "Противопоказание.",
+      "changes": [
+        "applicability"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать условно.",
+      "source_refs": [
+        "RU-SER"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "hepatic",
+      "question_ru": "Как врач характеризует функцию печени: нарушения не известны, нарушена, тяжёлое нарушение, неизвестно?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [
+        "нарушения не известны после оценки",
+        "нарушена",
+        "тяжёлое нарушение",
+        "неизвестно"
+      ],
+      "required_when": "для индивидуального результата",
+      "show_when": "при выборе этой карточки",
+      "why_needed": "Выбор отдельного дозового правила; не вычислять степень по одному анализу.",
+      "changes": [
+        "applicability"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать условно.",
+      "source_refs": [
+        "RU-SER"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "mania",
+      "question_ru": "Имеется мания/гипомания или её появление отмечено врачом?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [
+        "да",
+        "нет",
+        "неизвестно"
+      ],
+      "required_when": "при известном соответствующем обстоятельстве/выявленном взаимодействии; для его клинического разбора",
+      "show_when": "врач сообщил обстоятельство или выявлено релевантное взаимодействие",
+      "why_needed": "Ограничение/пересмотр терапии; диагноз врача не перепроверяется.",
+      "changes": [
+        "applicability"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Сохранить not_assessed/неизвестно; не считать отсутствием риска. Дозовый модуль не подтверждает полный клинический допуск. При необходимости разбора — расширенная ветка.",
+      "source_refs": [
+        "RU-SER"
+      ],
+      "input_role": "conditional_clinical_context"
+    },
+    {
+      "input_id": "seizure_state",
+      "question_ru": "Эпилепсия/судороги: отсутствуют по оценке, контролируемые, неконтролируемые, неизвестно?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [
+        "не отмечены",
+        "контролируемые",
+        "неконтролируемые",
+        "неизвестно"
+      ],
+      "required_when": "при известном соответствующем обстоятельстве/выявленном взаимодействии; для его клинического разбора",
+      "show_when": "врач сообщил обстоятельство или выявлено релевантное взаимодействие",
+      "why_needed": "Осторожность/неприменимость короткой ветки.",
+      "changes": [
+        "applicability"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Сохранить not_assessed/неизвестно; не считать отсутствием риска. Дозовый модуль не подтверждает полный клинический допуск. При необходимости разбора — расширенная ветка.",
+      "source_refs": [
+        "RU-SER"
+      ],
+      "input_role": "conditional_clinical_context"
+    },
+    {
+      "input_id": "qt_risk",
+      "question_ru": "Известен врачу риск удлинения QT/аритмии?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [
+        "да",
+        "нет",
+        "неизвестно"
+      ],
+      "required_when": "при известном соответствующем обстоятельстве/выявленном взаимодействии; для его клинического разбора",
+      "show_when": "врач сообщил обстоятельство или выявлено релевантное взаимодействие",
+      "why_needed": "Требует отдельной оценки; нет опубликованного коэффициента дозы.",
+      "changes": [
+        "applicability",
+        "warning"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Сохранить not_assessed/неизвестно; не считать отсутствием риска. Дозовый модуль не подтверждает полный клинический допуск. При необходимости разбора — расширенная ветка.",
+      "source_refs": [
+        "RU-SER"
+      ],
+      "input_role": "conditional_clinical_context"
+    },
+    {
+      "input_id": "bleeding_risk",
+      "question_ru": "Известна склонность к кровотечениям?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [
+        "да",
+        "нет",
+        "неизвестно"
+      ],
+      "required_when": "при известном соответствующем обстоятельстве/выявленном взаимодействии; для его клинического разбора",
+      "show_when": "врач сообщил обстоятельство или выявлено релевантное взаимодействие",
+      "why_needed": "Взаимодействия/наблюдение; не автоматическое уменьшение дозы.",
+      "changes": [
+        "applicability",
+        "warning"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Сохранить not_assessed/неизвестно; не считать отсутствием риска. Дозовый модуль не подтверждает полный клинический допуск. При необходимости разбора — расширенная ветка.",
+      "source_refs": [
+        "RU-SER"
+      ],
+      "input_role": "conditional_clinical_context"
+    },
+    {
+      "input_id": "hyponatremia_risk",
+      "question_ru": "Известны врачу гипонатремия или её повышенный риск?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [
+        "да",
+        "нет",
+        "неизвестно"
+      ],
+      "required_when": "при известном соответствующем обстоятельстве/выявленном взаимодействии; для его клинического разбора",
+      "show_when": "врач сообщил обстоятельство или выявлено релевантное взаимодействие",
+      "why_needed": "Осторожность, особенно при соответствующих препаратах/возрасте; лаборатория не обязательна всем.",
+      "changes": [
+        "applicability",
+        "warning"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Сохранить not_assessed/неизвестно; не считать отсутствием риска. Дозовый модуль не подтверждает полный клинический допуск. При необходимости разбора — расширенная ветка.",
+      "source_refs": [
+        "RU-SER"
+      ],
+      "input_role": "conditional_clinical_context"
+    },
+    {
+      "input_id": "suicide_risk",
+      "question_ru": "Выраженный суицидальный риск отмечен врачом?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [
+        "да",
+        "нет",
+        "неизвестно"
+      ],
+      "required_when": "при известном соответствующем обстоятельстве/выявленном взаимодействии; для его клинического разбора",
+      "show_when": "врач сообщил обстоятельство или выявлено релевантное взаимодействие",
+      "why_needed": "Изменяет необходимое наблюдение и условия ведения, не числовую формулу.",
+      "changes": [
+        "applicability",
+        "warning"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Сохранить not_assessed/неизвестно; не считать отсутствием риска. Дозовый модуль не подтверждает полный клинический допуск. При необходимости разбора — расширенная ветка.",
+      "source_refs": [
+        "RU-SER"
+      ],
+      "input_role": "conditional_clinical_context"
+    }
+  ],
+  "clinical_parameters": [
+    {
+      "parameter_id": "start",
+      "meaning": "Начальная суточная доза",
+      "value": 25,
+      "lower": null,
+      "upper": null,
+      "lower_inclusive": null,
+      "upper_inclusive": null,
+      "unit": "mg/day",
+      "source_ref": "RU-SER",
+      "source_locator": "§4.2, PDF с.2–3",
+      "source_meaning": "предписание",
+      "derivation": null
+    },
+    {
+      "parameter_id": "after_week",
+      "meaning": "Доза после первой недели",
+      "value": 50,
+      "lower": null,
+      "upper": null,
+      "lower_inclusive": null,
+      "upper_inclusive": null,
+      "unit": "mg/day",
+      "source_ref": "RU-SER",
+      "source_locator": "§4.2, PDF с.2–3",
+      "source_meaning": "предписание",
+      "derivation": null
+    },
+    {
+      "parameter_id": "interval",
+      "meaning": "Первый интервал",
+      "value": 1,
+      "lower": null,
+      "upper": null,
+      "lower_inclusive": null,
+      "upper_inclusive": null,
+      "unit": "week",
+      "source_ref": "RU-SER",
+      "source_locator": "§4.2, PDF с.2–3",
+      "source_meaning": "предписание",
+      "derivation": null
+    },
+    {
+      "parameter_id": "frequency",
+      "meaning": "Кратность",
+      "value": 1,
+      "lower": null,
+      "upper": null,
+      "lower_inclusive": null,
+      "upper_inclusive": null,
+      "unit": "administration/day",
+      "source_ref": "RU-SER",
+      "source_locator": "§4.2, PDF с.2–3",
+      "source_meaning": "предписание",
+      "derivation": null
+    },
+    {
+      "parameter_id": "maximum",
+      "meaning": "Максимальная суточная доза; не цель",
+      "value": 200,
+      "lower": null,
+      "upper": null,
+      "lower_inclusive": null,
+      "upper_inclusive": null,
+      "unit": "mg/day",
+      "source_ref": "RU-SER",
+      "source_locator": "§4.2, PDF с.2–3",
+      "source_meaning": "предписание",
+      "derivation": null
+    },
+    {
+      "parameter_id": "adult_minimum",
+      "meaning": "Нижняя возрастная граница этой инструкции",
+      "value": 18,
+      "lower": null,
+      "upper": null,
+      "lower_inclusive": null,
+      "upper_inclusive": null,
+      "unit": "year",
+      "source_ref": "RU-SER",
+      "source_locator": "§4.1, PDF с.1",
+      "source_meaning": "предписание",
+      "derivation": null
+    },
+    {
+      "parameter_id": "source_form_strengths",
+      "meaning": "Силы дозы выбранной формы; не дозовая рекомендация",
+      "value": [
+        50,
+        100
+      ],
+      "lower": null,
+      "upper": null,
+      "lower_inclusive": null,
+      "upper_inclusive": null,
+      "unit": "mg",
+      "source_ref": "RU-SER",
+      "source_locator": "§2–3, PDF с.1; деление таблетки 50 мг §4.2 с.2",
+      "source_meaning": "предписание",
+      "derivation": null
+    }
+  ],
+  "logic": {
+    "representation": "schedule",
+    "conditions": [
+      "Диагноз, препарат и режим выбрал врач. Соответствие популяции/форме и ограничения источника подтверждены."
+    ],
+    "actions": [
+      "Старт start один раз/сут; после interval — after_week. Последующие повышения только по ser-adult-adjust."
+    ],
+    "parameter_refs": [
+      "start",
+      "after_week",
+      "interval",
+      "frequency",
+      "maximum",
+      "adult_minimum",
+      "source_form_strengths"
+    ],
+    "source_refs": [
+      "RU-SER"
+    ],
+    "clinician_choices": [
+      "Применимость при особых состояниях и взаимодействиях",
+      "Необходимость следующего условного шага"
+    ],
+    "missing_data_behaviour": "Назвать обязательные неизвестные поля; результат insufficient_data. Справочные этапы можно показать как условные, без безусловной дозы пациенту.",
+    "unsupported_case_behaviour": "not_applicable для этой карточки; указать конкретную отсутствующую ветку, не запретить всё лечение.",
+    "contraindicated_case_behaviour": "Не выдавать дозовую схему противопоказанного сочетания; отобразить источник и причину.",
+    "conflicts": [],
+    "composite_rule_dependencies": [],
+    "combination_justification": "Самостоятельные поправки не перемножаются. Совпадение числа не подтверждает применимость их сочетания."
+  },
+  "output": {
+    "result_type": "exact",
+    "medication_inn": "сертралин",
+    "dose_per_administration": 25,
+    "administrations_per_day": 1,
+    "total_daily_dose": 25,
+    "unit": "mg",
+    "formulation": "Золофт: таблетки, покрытые плёночной оболочкой; 50/100 мг",
+    "schedule": [
+      {
+        "stage_id": "start",
+        "time_description": "Исходный этап",
+        "minimum_interval": null,
+        "interval_unit": null,
+        "medication_steps": [
+          {
+            "medication_inn": "сертралин",
+            "dose_per_administration": {
+              "total_daily_parameter": "start",
+              "divide_by": 1
+            },
+            "administrations_per_day": 1,
+            "total_daily_dose": {
+              "parameter_ref": "start"
+            },
+            "dose_unit": "mg",
+            "action": "принимать / условно повысить",
+            "source_refs": [
+              "RU-SER"
+            ]
+          }
+        ],
+        "condition_to_proceed": "Врач подтвердил применимость старта",
+        "condition_to_hold": "Достаточный эффект, непереносимость, противопоказание, неизвестные обязательные данные или врач не выбрал увеличение",
+        "source_refs": [
+          "RU-SER"
+        ]
+      },
+      {
+        "stage_id": "first_increase",
+        "time_description": "Не ранее указанного интервала после предыдущего этапа; не дата визита",
+        "minimum_interval": 1,
+        "interval_unit": "week",
+        "medication_steps": [
+          {
+            "medication_inn": "сертралин",
+            "dose_per_administration": {
+              "total_daily_parameter": "after_week",
+              "divide_by": 1
+            },
+            "administrations_per_day": 1,
+            "total_daily_dose": {
+              "parameter_ref": "after_week"
+            },
+            "dose_unit": "mg",
+            "action": "принимать / условно повысить",
+            "source_refs": [
+              "RU-SER"
+            ]
+          }
+        ],
+        "condition_to_proceed": "После первой недели по инструкции; при непереносимости шаг не выполнять автоматически",
+        "condition_to_hold": "Достаточный эффект, непереносимость, противопоказание, неизвестные обязательные данные или врач не выбрал увеличение",
+        "source_refs": [
+          "RU-SER"
+        ]
+      }
+    ],
+    "warnings": [
+      "Условная схема источника, не автономное назначение. Максимум не является целью.",
+      "Подтвердить противопоказания и взаимодействия исходной инструкции.",
+      "Числовой вывод относится к указанным дозовым условиям. Неоценённые модулем клинические обстоятельства не считаются отсутствующими; полный клинический допуск врач оценивает отдельно."
+    ],
+    "mandatory_checks": [
+      "Проверить соответствие источнику, указанное в applicability и inputs."
+    ],
+    "clinician_decisions_remaining": [
+      "Подтверждение применимости",
+      "Решение о переходе к следующему этапу"
+    ],
+    "rounding_or_formulation_rule": "25 мг = равная половина таблетки Золофт 50 мг; разрешено §4.2 с.2. Не переносить делимость на любой дженерик.",
+    "source_refs": [
+      "RU-SER"
+    ]
+  },
+  "verification": {
+    "primary_source_checked": true,
+    "all_clinical_parameters_have_sources": true,
+    "population_and_indication_checked": true,
+    "russian_applicability_checked": false,
+    "formulation_feasibility_checked": true,
+    "combined_rules_justified": false,
+    "source_transfer_check": "extraction_checked; calculator_not_implemented",
+    "clinical_review": "not_performed",
+    "product_clinical_validation": "not_performed",
+    "ready_for_technical_implementation": true,
+    "unresolved_items": [
+      "Последняя регистрационная редакция РФ не сверена; техническое воспроизведение зафиксированной версии не равно разрешению для клинического применения."
+    ]
+  },
+  "test_cases": [
+    {
+      "case_id": "ser-social-start__usual-social",
+      "synthetic": true,
+      "given": {
+        "age": 40,
+        "pregnancy": false,
+        "lactation": false,
+        "hepatic": "нарушения не известны после оценки"
+      },
+      "expected": {
+        "start_mg_per_day": 25,
+        "frequency": 1,
+        "after_first_week_mg_per_day": 50
+      },
+      "source_refs": [
+        "RU-SER"
+      ],
+      "note": "Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены.",
+      "scope": "isolated_source_transfer_expectation_under_card_conditions"
+    },
+    {
+      "case_id": "ser-social-start__hepatic-unknown-social",
+      "synthetic": true,
+      "given": {
+        "hepatic": "неизвестно"
+      },
+      "expected": {
+        "result_type": "insufficient_data",
+        "missing": [
+          "hepatic"
+        ],
+        "unconditional_dose": null
+      },
+      "source_refs": [
+        "RU-SER"
+      ],
+      "note": "Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены."
+    }
+  ],
+  "profile": {
+    "country": "RU",
+    "selection_status": "RU_profile_research",
+    "foreign_fallback_allowed": false
+  },
+  "card_type": "numeric_source_rule"
+}

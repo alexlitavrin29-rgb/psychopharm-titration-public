@@ -1,0 +1,23 @@
+{
+  "status": "pass",
+  "actual_case_count": 5946,
+  "isolated_mutations": [
+    {
+      "mutation": "unrecognized_A_phase",
+      "rejected": true,
+      "evidence": [
+        "phase declaration/value not typed: treatment_phase/ago-depression-start--branch-usual"
+      ]
+    },
+    {
+      "mutation": "unknown_A_missing_from_declared_domain",
+      "rejected": true,
+      "evidence": [
+        "phase declaration/value not typed: treatment_phase/ser-panic-start--audit-recheck-symptomatic_hyponatremia-phase-unknown",
+        "phase declaration/value not typed: treatment_phase/ser-social-start--audit-recheck-symptomatic_hyponatremia-phase-unknown"
+      ]
+    }
+  ],
+  "scope": "Declared context enum and meaningful phase input consistency; no calculator or clinical validation",
+  "errors": []
+}

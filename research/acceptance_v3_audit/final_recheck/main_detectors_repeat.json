@@ -1,0 +1,43 @@
+{
+  "baseline_errors": [],
+  "mutations": [
+    {
+      "mutation": "foreign_parameter",
+      "rejected": true,
+      "matching_errors": [
+        "ser-panic-start: foreign clinical parameter in RU profile"
+      ]
+    },
+    {
+      "mutation": "unsupported_calendar",
+      "rejected": true,
+      "matching_errors": [
+        "switch-ser-esc: incomplete RU switch returned a dose calendar"
+      ]
+    },
+    {
+      "mutation": "hidden_question_count",
+      "rejected": true,
+      "matching_errors": [
+        "hidden/incorrect full question count: ago-depression-start"
+      ]
+    },
+    {
+      "mutation": "changed_anchor",
+      "rejected": true,
+      "matching_errors": [
+        "ser-panic-start/start: differs from manually reviewed source anchor"
+      ]
+    },
+    {
+      "mutation": "mixed_renal_units",
+      "rejected": true,
+      "matching_errors": [
+        "Mixed renal formula version/units"
+      ]
+    }
+  ],
+  "all_rejected": true,
+  "scope": "Actually executed current main structural checks and finite five in-memory mutations; report-writing statements removed, no clinical evaluator or application.",
+  "core_modified": false
+}

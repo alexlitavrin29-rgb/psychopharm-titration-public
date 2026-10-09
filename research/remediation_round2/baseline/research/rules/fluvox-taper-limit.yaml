@@ -1,0 +1,519 @@
+schema_version: '1.0'
+rule_id: fluvox-taper-limit
+development_status: extracted_research_not_executable
+language: ru
+identity:
+  title: 'флувоксамин: ограничения отмены'
+  mode: taper
+  drug_inn: флувоксамин
+  from_drug_inn: null
+  to_drug_inn: null
+  formulation: Феварин, таблетки 50/100 мг, разрешённые половины
+  route: oral
+  diagnosis_label_ru: Депрессия / указанная коморбидность
+  classification_system: МКБ-10
+  diagnosis_code: F32/F33
+  jurisdiction: RU_versioned_sources
+applicability:
+  population_description: Взрослые от 18 лет; показание и клиническое действие выбирает врач.
+  age_constraints:
+  - minimum: 18
+    inclusive: true
+    unit: year
+    source_ref: RU-FLUVOX
+    source_locator: §4.1–4.3 PDF с.1–3; §4.4–4.6 с.4–11; §8–10 с.19
+  pregnancy: Не рекомендуется при беременности, кроме клинической необходимости по решению врача; §4.6 с.10. Числовой
+    поправки нет.
+  lactation: Не должен применяться в период грудного вскармливания; §4.6 с.10. Стандартный старт не выдаётся автоматически.
+  renal_constraints:
+  - При почечной недостаточности начинать с низких доз под строгим врачебным контролем; §4.2 с.3. Точный коэффициент/число
+    не задан.
+  hepatic_constraints:
+  - При печёночной недостаточности начинать с низких доз под строгим врачебным контролем; §4.2 с.3. Не предвыбирать
+    50 как доказанную органную поправку.
+  comorbidity_constraints: []
+  interacting_drugs: []
+  other_conditions: []
+  exclusions: []
+  indication_status_in_russia: RU_indication_in_read_original_latest_registry_text_separate
+  source_refs: &id002
+  - RU-FLUVOX
+  - RU-DEP
+inputs:
+- input_id: age
+  question_ru: Возраст?
+  data_type: integer
+  unit: year
+  allowed_values: []
+  required_when: для выбранного расчёта
+  show_when: для выбранного расчёта
+  why_needed: Взрослая область источника.
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Назвать age; не подставлять норму, без безусловной индивидуальной дозы.
+  source_refs:
+  - RU-FLUVOX
+  input_role: dose_operand_or_applicability_gate
+  source_locator: §4.1–4.3 PDF с.1–3; §4.4–4.6 с.4–11; §8–10 с.19
+  missing_states: &id001
+  - unknown
+  - not_assessed
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+- input_id: form
+  question_ru: Форма и разрешённые дозировки?
+  data_type: structured_form
+  unit: null
+  allowed_values: []
+  required_when: для выбранного расчёта
+  show_when: для выбранного расчёта
+  why_needed: Исполнимость уменьшения дозы.
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Назвать form; не подставлять норму, без безусловной индивидуальной дозы.
+  source_refs:
+  - RU-FLUVOX
+  input_role: dose_operand_or_applicability_gate
+  source_locator: §4.1–4.3 PDF с.1–3; §4.4–4.6 с.4–11; §8–10 с.19
+  missing_states: *id001
+  structure_ref: remediation/input_contracts.yaml#structures/structured_form
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+- input_id: current_dose
+  question_ru: Текущая суточная доза?
+  data_type: number
+  unit: mg/day
+  allowed_values: []
+  required_when: для выбранного расчёта
+  show_when: для выбранного расчёта
+  why_needed: Исходная точка отмены.
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Назвать current_dose; не подставлять норму, без безусловной индивидуальной дозы.
+  source_refs:
+  - RU-FLUVOX
+  input_role: dose_operand_or_applicability_gate
+  source_locator: §4.1–4.3 PDF с.1–3; §4.4–4.6 с.4–11; §8–10 с.19
+  missing_states: *id001
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+- input_id: duration
+  question_ru: Длительность лечения?
+  data_type: number
+  unit: week
+  allowed_values: []
+  required_when: для выбранного расчёта
+  show_when: для выбранного расчёта
+  why_needed: Индивидуализация риска/темпа §4.2 с.2/§4.4 с.7
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Назвать duration; не подставлять норму, без безусловной индивидуальной дозы.
+  source_refs:
+  - RU-FLUVOX
+  input_role: dose_operand_or_applicability_gate
+  source_locator: §4.1–4.3 PDF с.1–3; §4.4–4.6 с.4–11; §8–10 с.19
+  missing_states: *id001
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+  value_aliases:
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+- input_id: withdrawal_severity
+  question_ru: Симптомы отмены по оценке врача?
+  data_type: enum
+  unit: null
+  allowed_values:
+  - нет
+  - лёгкие
+  - умеренные
+  - тяжёлые
+  - непереносимые
+  - выраженные
+  - unknown
+  - not_assessed
+  required_when: для выбранного расчёта
+  show_when: для выбранного расчёта
+  why_needed: Условие удержания/возврата/замедления §4.2 с.2/§4.4 с.7
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Назвать withdrawal_severity; не подставлять норму, без безусловной индивидуальной дозы.
+  source_refs:
+  - RU-FLUVOX
+  input_role: dose_operand_or_applicability_gate
+  source_locator: §4.1–4.3 PDF с.1–3; §4.4–4.6 с.4–11; §8–10 с.19
+  missing_states: *id001
+  value_aliases:
+    нет требующих замедления симптомов: нет
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+- input_id: past_withdrawal
+  question_ru: Были тяжёлые симптомы при прошлой отмене?
+  data_type: boolean
+  unit: null
+  allowed_values:
+  - true
+  - false
+  - unknown
+  - not_assessed
+  required_when: для выбранного расчёта
+  show_when: для выбранного расчёта
+  why_needed: КР депрессии Б5/продуктовая индивидуализация; не строить универсальный срок.
+  changes:
+  - dose_or_action
+  unknown_allowed: true
+  action_if_unknown: Назвать past_withdrawal; не подставлять норму, без безусловной индивидуальной дозы.
+  source_refs:
+  - RU-FLUVOX
+  input_role: dose_operand_or_applicability_gate
+  source_locator: §4.1–4.3 PDF с.1–3; §4.4–4.6 с.4–11; §8–10 с.19
+  missing_states: *id001
+  value_aliases:
+    да: true
+    нет: false
+    неизвестно: unknown
+    не исследовано: not_assessed
+    не помню: unknown
+  required_for_individual_result: true
+  condition_effect: missing -> insufficient_data; confirmed source exclusion -> not_applicable; source caution ->
+    clinician_choice unless an explicit source-specific decision is present
+clinical_parameters:
+- parameter_id: source_minimum
+  meaning: Опубликованная формулировка срока; 2 недели не максимальная общая длительность
+  value:
+  - 1
+  - 2
+  lower: null
+  upper: null
+  lower_inclusive: null
+  upper_inclusive: null
+  unit: week
+  source_ref: RU-FLUVOX
+  source_locator: §4.2 PDF с.2
+  source_meaning: диапазон
+  derivation: null
+  duration_semantics:
+    operator: minimum_choice
+    source_options_weeks:
+    - 1
+    - 2
+    chosen_minimum_weeks: null
+    hard_upper_limit_weeks: null
+    exact_taper_duration_weeks: null
+    slower_if_symptoms: true
+logic:
+  representation: conditional_source_rule
+  conditions:
+  - Применимость к указанному показанию/форме подтверждена в пределах дозового расчёта; это не полный клинический
+    допуск.
+  actions:
+  - Постепенное снижение минимум 1–2 недели. При непереносимых симптомах возможно возобновление прежней дозы, затем
+    медленнее.
+  - Нет точного универсального процента, шагов и последней дозы.
+  - Ни source_options_weeks, ни номинальный срок не ограничивают максимальную длительность; конкретный темп/пауза
+    и возврат к прежней дозе остаются решениями врача по симптомам.
+  parameter_refs:
+  - source_minimum
+  source_refs: *id002
+  clinician_choices:
+  - Необходимость изменения лечения и неоценённые модулем клинические обстоятельства.
+  missing_data_behaviour: insufficient_data с конкретным отсутствующим полем, без безусловной дозы.
+  unsupported_case_behaviour: Назвать неприменимую ветку; не переносить другую форму/показание.
+  contraindicated_case_behaviour: Не выдавать схему противопоказанного сочетания, указать источник.
+  conflicts: []
+  composite_rule_dependencies: []
+  combination_justification: КР определяет клиническую область, инструкция — дозовые параметры; новые коэффициенты
+    не добавлены.
+  result_contract_ref: remediation/result_contracts.yaml#rules/fluvox-taper-limit
+  individual_output_gate: All required typed inputs and applicable conditional inputs must be known; evaluate every
+    source-specific gate in result_contract. A caution has clinician_choice, not an invented coefficient. No blanket
+    clinical clearance.
+output:
+  result_type: branch_selected
+  medication_inn: флувоксамин
+  dose_per_administration: null
+  administrations_per_day: null
+  total_daily_dose: null
+  unit: mg
+  formulation: Феварин, таблетки 50/100 мг, разрешённые половины
+  schedule: []
+  warnings:
+  - Последующие этапы условны; максимум не является целью.
+  - Неоценённое клиническое обстоятельство не считается отсутствующим.
+  - Версия копии зафиксирована; последнее содержание реестрового документа проверяется перед клиническим внедрением.
+  mandatory_checks: []
+  clinician_decisions_remaining: []
+  rounding_or_formulation_rule: Не округлять медицинскую дозу; целые формы/разрешённое деление. Невозможная доза
+    — явный отказ формы.
+  source_refs: *id002
+  duration_constraint:
+    operator: minimum_choice
+    source_options_weeks:
+    - 1
+    - 2
+    chosen_minimum_weeks: null
+    hard_upper_limit_weeks: null
+    exact_taper_duration_weeks: null
+    slower_if_symptoms: true
+    source_ref: RU-FLUVOX
+    source_locator: §4.2 PDF с.2
+  branches:
+  - branch_id: source_limit
+    when: known current dose/form/duration; no urgent stop condition
+    expected_output:
+      result_type: clinician_choice
+      total_daily_dose_mg: null
+      dose_per_administration_mg: null
+      administrations_per_day: null
+      schedule: []
+      missing_fields: []
+      unconditional_future_stages: false
+      duration_constraint:
+        operator: minimum_choice
+        source_options_weeks:
+        - 1
+        - 2
+        chosen_minimum_weeks: null
+        hard_upper_limit_weeks: null
+        exact_taper_duration_weeks: null
+        slower_if_symptoms: true
+        source_ref: RU-FLUVOX
+        source_locator: §4.2 PDF с.2
+      full_taper_calendar: null
+      universal_percentage: null
+    source_basis:
+    - source_id: RU-FLUVOX
+      version: Имя опубликованной копии 07.02.2025/0002; поля §8–10 PDF пустые; РУ от 07.02.2025 подтверждено реестром
+      locator: §4.1–4.3 PDF с.1–3; §4.4–4.6 с.4–11; §8–10 с.19
+      sha256: ee988a504bf0e34d9562a5f606f8800c827214fc51f4994a4ab28de9c31ce1d6
+    - source_id: RU-DEP
+      version: '2024; каталог: опубликовано 26.08.2024, применяется'
+      locator: §3.1–3.4 PDF с.24–40; таблица2 с.95–96; §3.6 с.45; Б5 с.105–106
+      sha256: 2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd
+  - branch_id: withdrawal
+    when: withdrawal symptoms present
+    expected_output:
+      result_type: clinician_choice
+      total_daily_dose_mg: null
+      dose_per_administration_mg: null
+      administrations_per_day: null
+      schedule: []
+      missing_fields: []
+      unconditional_future_stages: false
+      automatic_next_reduction: false
+      slower_step: null
+      prior_dose_resumption: clinician consideration where source permits
+    source_basis:
+    - source_id: RU-FLUVOX
+      version: Имя опубликованной копии 07.02.2025/0002; поля §8–10 PDF пустые; РУ от 07.02.2025 подтверждено реестром
+      locator: §4.1–4.3 PDF с.1–3; §4.4–4.6 с.4–11; §8–10 с.19
+      sha256: ee988a504bf0e34d9562a5f606f8800c827214fc51f4994a4ab28de9c31ce1d6
+    - source_id: RU-DEP
+      version: '2024; каталог: опубликовано 26.08.2024, применяется'
+      locator: §3.1–3.4 PDF с.24–40; таблица2 с.95–96; §3.6 с.45; Б5 с.105–106
+      sha256: 2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd
+  selection_contract:
+  - unavailable_source
+  - known immediate stop/exclusion
+  - invalid/missing applicable field
+  - unresolved source caution/modifier
+  - dose branch
+sources:
+- source_id: RU-FLUVOX
+  title: Феварин, ОХЛП 50/100 мг
+  organization_or_authors: Abbott
+  url: https://s3.k2.cloud/static.abbottpro.ru/iblock/1e1/1e119bb21898172a466b489db3ef4837/Fevarin-SmPC-0002_07.02.2025-_1_.pdf
+  doi_or_registry_id: ЛП-№(008757)-(РГ-RU), запись реестра прочитана 08.10.2026
+  publication_date: null
+  version_or_update_date: Имя опубликованной копии 07.02.2025/0002; поля §8–10 PDF пустые; РУ от 07.02.2025 подтверждено
+    реестром
+  accessed_on: '2026-10-08'
+  source_type: label
+  jurisdiction: RU/EAEU
+  access_status: full
+  exact_locator: §4.1–4.3 PDF с.1–3; §4.4–4.6 с.4–11; §8–10 с.19
+  evidence_status: Инструкция/ОХЛП; не валидированная модель индивидуальной дозы
+  what_was_tested: Не исследовался создаваемый продукт. Содержание и ограничения описаны в evidence_limitations.
+  evidence_limitations: Числовая карточка только взрослая депрессия. Педиатрический ОКР не является детской тревогой.
+    Старт 50 или 100 — выбор, не непрерывный диапазон. Последняя редакция реестрового PDF не сопоставлена побайтово.
+  reuse_license_or_restriction: Собственное извлечение фактических правил и короткие локаторы; лицензия на код/полное
+    руководство не предполагается.
+  document_fingerprint:
+    source_id: RU-FLUVOX
+    url: https://s3.k2.cloud/static.abbottpro.ru/iblock/1e1/1e119bb21898172a466b489db3ef4837/Fevarin-SmPC-0002_07.02.2025-_1_.pdf
+    sha256: ee988a504bf0e34d9562a5f606f8800c827214fc51f4994a4ab28de9c31ce1d6
+    pages: 19
+    accessed_on: '2026-10-08'
+  local_file: source_downloads/Феварин — флувоксамин.pdf
+  registry_observation:
+    registry: https://lk.regmed.ru/Register/EAEU_SmPC
+    query: Феварин
+    registration_number: ЛП-№(008757)-(РГ-RU)
+    registration_date: '2025-02-07'
+    forms: таблетки 50/100 мг
+    accessed_on: '2026-10-08'
+    read_part: Видимая официальная строка результата поиска; наличие ОХЛП/ЛВ. Сам документ этой записи не скачан;
+      идентичность копии не заявлена.
+  document_copies:
+  - source_id: RU-FLUVOX
+    local_file: source_downloads/Феварин — флувоксамин.pdf
+    sha256: ee988a504bf0e34d9562a5f606f8800c827214fc51f4994a4ab28de9c31ce1d6
+    version: Имя опубликованной копии 07.02.2025/0002; поля §8–10 PDF пустые; РУ от 07.02.2025 подтверждено реестром
+    url: https://s3.k2.cloud/static.abbottpro.ru/iblock/1e1/1e119bb21898172a466b489db3ef4837/Fevarin-SmPC-0002_07.02.2025-_1_.pdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: false
+  - source_id: RU-FLUVOX
+    local_file: audit/retrieved/RU-FLUVOX.pdf
+    sha256: ee988a504bf0e34d9562a5f606f8800c827214fc51f4994a4ab28de9c31ce1d6
+    version: Имя опубликованной копии 07.02.2025/0002; поля §8–10 PDF пустые; РУ от 07.02.2025 подтверждено реестром
+    url: https://s3.k2.cloud/static.abbottpro.ru/iblock/1e1/1e119bb21898172a466b489db3ef4837/Fevarin-SmPC-0002_07.02.2025-_1_.pdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: false
+  dates:
+    registration: '2025-02-07'
+    revision: null
+    publication: null
+    download: '2026-10-08'
+  latest_registration_revision_confirmed: false
+- source_id: RU-DEP
+  title: Депрессивный эпизод, Рекуррентное депрессивное расстройство, КР 301_3
+  organization_or_authors: Минздрав РФ; Российское общество психиатров
+  url: https://apicr.minzdrav.gov.ru/api.ashx?id=301_3&op=GetClinrecPdf
+  doi_or_registry_id: '301_3'
+  publication_date: null
+  version_or_update_date: '2024; каталог: опубликовано 26.08.2024, применяется'
+  accessed_on: '2026-10-08'
+  source_type: guideline
+  jurisdiction: RU
+  access_status: full
+  exact_locator: §3.1–3.4 PDF с.24–40; таблица2 с.95–96; §3.6 с.45; Б5 с.105–106
+  evidence_status: Клиническая рекомендация; не валидация калькулятора
+  what_was_tested: Не исследовался создаваемый продукт. Содержание и ограничения описаны в evidence_limitations.
+  evidence_limitations: 'Взрослая депрессия: дополнительно прочитаны терапевтические разделы и таблица доз. Таблица
+    без форм/индивидуальных ограничений не автономный модуль. Концентрация лития с.36 имеет конфликт мкмоль/л против
+    ммоль/л; автоматическое исправление не разрешено.'
+  reuse_license_or_restriction: Открытый доступ не означает разрешение перераспространять полный документ. Сохранены
+    собственное извлечение фактических правил, локаторы и ссылки; код и большие цитаты не копируются.
+  document_fingerprint:
+    source_id: RU-DEP
+    url: https://apicr.minzdrav.gov.ru/api.ashx?id=301_3&op=GetClinrecPdf
+    sha256: 2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd
+    pages: 125
+  local_file: source_snapshots/depression-301_3.pdf
+  document_copies:
+  - source_id: RU-DEP
+    local_file: source_snapshots/depression-301_3.pdf
+    sha256: 2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd
+    version: '2024; каталог: опубликовано 26.08.2024, применяется'
+    url: https://apicr.minzdrav.gov.ru/api.ashx?id=301_3&op=GetClinrecPdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: false
+  - source_id: RU-DEP
+    local_file: audit/retrieved/RU-DEP.pdf
+    sha256: 2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd
+    version: '2024; каталог: опубликовано 26.08.2024, применяется'
+    url: https://apicr.minzdrav.gov.ru/api.ashx?id=301_3&op=GetClinrecPdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: false
+  - source_id: RU-DEP
+    local_file: remediation/retrieved/RU-DEP.pdf
+    sha256: 2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd
+    version: '2024; каталог: опубликовано 26.08.2024, применяется'
+    url: https://apicr.minzdrav.gov.ru/api.ashx?id=301_3&op=GetClinrecPdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: false
+  - source_id: RU-DEP
+    local_file: ../tmp_acceptance/DEP-KR.pdf
+    sha256: 2e8b83978be0e5fa3772e1dc37b44954bc5991fb4f74433ffd1375700ab7b5bd
+    version: '2024; каталог: опубликовано 26.08.2024, применяется'
+    url: https://apicr.minzdrav.gov.ru/api.ashx?id=301_3&op=GetClinrecPdf
+    download_date: '2026-10-08'
+    byte_identity_to_primary_snapshot: true
+    latest_registration_revision_confirmed: false
+  dates:
+    registration: null
+    revision: null
+    publication: null
+    download: '2026-10-08'
+  latest_registration_revision_confirmed: false
+  current_guideline_status_evidence: remediation/catalog_check.json + remediation/current_minzdrav_catalog.json;
+    2026-10-08; CodeVersion/ApplyStatusCalculated=1
+verification:
+  primary_source_checked: true
+  all_clinical_parameters_have_sources: true
+  population_and_indication_checked: true
+  russian_applicability_checked: true
+  formulation_feasibility_checked: false
+  combined_rules_justified: true
+  source_transfer_check: reviewed_available_original_sections_and_contract_consistency; calculator_not_implemented;
+    latest_registration_revision_not_confirmed
+  clinical_review: not_performed
+  product_clinical_validation: not_performed
+  ready_for_technical_implementation: false
+  unresolved_items:
+  - Полный календарь или исполнимость конкретной формы отсутствует; частичный результат не автосхема.
+  transfer_scope: Only explicitly source-bound branch contracts and prepared expectations; medical currency limits
+    in sources.json remain open. No automatic clinical use.
+test_cases:
+- case_id: fluvox-taper-limit__no-invented-tail
+  synthetic: true
+  given:
+    current_dose: null
+  expected:
+    automatic_full_taper_calendar: null
+    uniform_percentage: null
+    duration_upper_limit_weeks: null
+    duration_operator: minimum_choice
+  source_refs:
+  - RU-FLUVOX
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+- case_id: fluvox-taper-limit__symptoms
+  synthetic: true
+  given:
+    withdrawal_severity: выраженные
+  expected:
+    automatic_next_reduction: false
+    clinician_reassessment: true
+    duration_upper_limit_weeks: null
+    duration_operator: minimum_choice
+  source_refs:
+  - RU-FLUVOX
+  note: Ожидаемый перенос источника; приложение не реализовано, клиническая валидация не проведена.
+  case_kind: parameter_or_constraint_fragment
+profile:
+  country: RU
+  selection_status: RU_profile_research
+  foreign_fallback_allowed: false
+card_type: partial_source_constraint
+input_contract_ref: remediation/input_contracts.yaml#fragment_bindings/fluvox-taper-limit

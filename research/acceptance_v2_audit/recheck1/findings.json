@@ -1,0 +1,632 @@
+[
+  {
+    "id": "V2-01",
+    "status": "closed_in_original_scope",
+    "title": "Вложенное основание RU-VENLA-IR получило версию XR и HTML-локатор",
+    "severity": "major",
+    "files": [
+      "result_contracts.yaml#rules/venla-xr-panic-form-limit/branches/0/source_basis/2",
+      "full_scenarios.json:204 IR source_basis; source_version_mismatches.json"
+    ],
+    "source_ref": "RU-VENLA-IR",
+    "primary_locator": "Титул p1, §4.2 p2–3",
+    "primary_version": "Официальная ОХЛП реестра: штамп регистрации 2023-11-21; экспертный отчёт 2025-12-26 №32413/0009; получена 08.10.2026",
+    "primary_file": "research/remediation_round3/originals/RU-VENLA-IR_current.pdf",
+    "executor_claim": "Перенос опубликованных условий / подготовленный полный результат и независимые вопросы",
+    "established_fact": "205 вложенных source_basis (1 contract+204 cases) имеют правильный SHA IR, но строку версии XR и старое HTML-основание. В активной IR дозовой карточке это не исполняется, но зависимость недостижимости формы имеет неверную редакционную связь.",
+    "impact": "Препятствует приёмке затронутого результата в полном заявленном объёме; не доказательство выполненной клинической валидации.",
+    "required_fix": "Привязать владельца IR к текущей IR версии и физическому локатору. Проверять все вложенные версии/SHA/локаторы по source_id, а не общей старой строке.",
+    "reacceptance_condition": "Новый отпечаток; первичное сопоставление исправленного условия, его типов/фазы/владельца, полного expected и положительного/отрицательного/unknown контрпримеров.",
+    "criteria": [
+      9,
+      10,
+      30
+    ],
+    "recheck_evidence": "Все 11076 вложенных source_basis имеют версию и SHA собственного source_id; IR больше не получает XR-версию. Первичное различие IR/XR форм и почечных правил сохранено.",
+    "snapshot": "ff00118c08d144f1434869d25aba164234a443b4732f84fe8d481504622cf6ec"
+  },
+  {
+    "id": "V2-02",
+    "status": "closed_in_original_scope",
+    "title": "Обязательный предлечебный скрининг риска БАР у Рексетина отсутствует",
+    "severity": "major",
+    "files": [
+      "rules/parox-panic-kr.yaml#inputs/mania",
+      "full_scenarios.json:parox-panic-kr--mania-omitted/unknown/not_assessed"
+    ],
+    "source_ref": "RU-PAROX",
+    "primary_locator": "§4.4 p7",
+    "primary_version": "Официальная ОХЛП реестра: штамп регистрации 2025-02-14; экспертный отчёт 2025-02-12 №3370/0003; получена 08.10.2026",
+    "primary_file": "research/remediation_round3/originals/RU-PAROX_current.pdf",
+    "executor_claim": "Перенос опубликованных условий / подготовленный полный результат и независимые вопросы",
+    "established_fact": "Перед началом антидепрессанта источник прямо требует тщательную оценку риска БАР, с психиатрическим и семейным анамнезом. reported_context mania и отрицание клинического допуска не фиксируют выполненную эту предлечебную оценку; при пропуске/unknown остаётся старт10. Речь не о повторной диагностике пациента.",
+    "impact": "Препятствует приёмке затронутого результата в полном заявленном объёме; не доказательство выполненной клинической валидации.",
+    "required_fix": "Ввести узкую источниковую оценку/подтверждение её результата и точный prestart триггер. Сохранять неизвестность; до выполнения необходимой оценки не выдавать индивидуальное исполнение первого приёма. Исполнение уже выбранного действия/keep оценивать отдельно.",
+    "reacceptance_condition": "Новый отпечаток; первичное сопоставление исправленного условия, его типов/фазы/владельца, полного expected и положительного/отрицательного/unknown контрпримеров.",
+    "criteria": [
+      10,
+      17,
+      21
+    ],
+    "recheck_evidence": "PAROX bipolar_risk_screening: узкая предлечебная оценка по физ.7–8, не общий clinical clearance. Положительный/negative/unknown контракт присутствует.",
+    "snapshot": "ff00118c08d144f1434869d25aba164234a443b4732f84fe8d481504622cf6ec"
+  },
+  {
+    "id": "V2-03",
+    "status": "closed_in_original_scope",
+    "title": "Не перенесены прекращение пароксетина и симптоматическая помощь при SS/ЗНС",
+    "severity": "major",
+    "files": [
+      "rules/parox-panic-kr.yaml",
+      "rules/parox-taper-example.yaml",
+      "rules/switch-parox-ago*.yaml",
+      "result_contracts.yaml"
+    ],
+    "source_ref": "RU-PAROX",
+    "primary_locator": "§4.4 p7",
+    "primary_version": "Официальная ОХЛП реестра: штамп регистрации 2025-02-14; экспертный отчёт 2025-02-12 №3370/0003; получена 08.10.2026",
+    "primary_file": "research/remediation_round3/originals/RU-PAROX_current.pdf",
+    "executor_claim": "Перенос опубликованных условий / подготовленный полный результат и независимые вопросы",
+    "established_fact": "Источник требует прекратить лечение при возникновении серотонинового/подобного ЗНС синдрома и начать поддерживающую симптоматическую терапию. Typed входа/полного источникового результата для этого сообщённого факта у указанных PAROX результатов нет.",
+    "impact": "Препятствует приёмке затронутого результата в полном заявленном объёме; не доказательство выполненной клинической валидации.",
+    "required_fix": "Добавить действие по принимаемому PAROX независимо от выбранного дозового режима, с фазой ongoing и правильным владельцем A. При target не начатом не приписывать его приём; не продолжать календарь автоматически.",
+    "reacceptance_condition": "Новый отпечаток; первичное сопоставление исправленного условия, его типов/фазы/владельца, полного expected и положительного/отрицательного/unknown контрпримеров.",
+    "criteria": [
+      10,
+      14,
+      15,
+      17,
+      30
+    ],
+    "recheck_evidence": "PAROX SS/ЗНС: прекращение принимаемого PAROX и поддерживающая симптоматическая помощь по физ.7; четыре исходно затронутых режима имеют полные ожидания.",
+    "snapshot": "ff00118c08d144f1434869d25aba164234a443b4732f84fe8d481504622cf6ec"
+  },
+  {
+    "id": "V2-04",
+    "status": "closed_in_original_scope",
+    "title": "У сертралина не перенесено избегание мощных ингибиторов CYP3A4",
+    "severity": "major",
+    "files": [
+      "result_contracts.yaml#rules/ser-*/source_gates",
+      "rules/ser-*.yaml",
+      "rules/switch-ser-ago.yaml"
+    ],
+    "source_ref": "RU-SER",
+    "primary_locator": "§4.5 p10",
+    "primary_version": "Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является датой содержания",
+    "primary_file": "research/source_downloads/Золофт — сертралин.pdf",
+    "executor_claim": "Перенос опубликованных условий / подготовленный полный результат и независимые вопросы",
+    "established_fact": "ОХЛП прямо указывает избегать мощных CYP3A4 ингибиторов; соответствующего источникового класса/действия нет среди current_medicines_excluded/caution. Наличие некоторых совпадающих QT препаратов не покрывает весь этот класс.",
+    "impact": "Препятствует приёмке затронутого результата в полном заявленном объёме; не доказательство выполненной клинической валидации.",
+    "required_fix": "Сохранить известный класс/лекарство и опубликованное избегание комбинации для применимых результатов. Не превращать фармакокинетический процент в дозовый коэффициент; неизвестная классификация требует данных.",
+    "reacceptance_condition": "Новый отпечаток; первичное сопоставление исправленного условия, его типов/фазы/владельца, полного expected и положительного/отрицательного/unknown контрпримеров.",
+    "criteria": [
+      10,
+      17,
+      30
+    ],
+    "recheck_evidence": "Исходные ser-* и switch-ser-ago получили strong_CYP3A4 avoidance по физ.10. Новые непроверенные ранее два SSRI-перехода выделены в R1-03.",
+    "snapshot": "ff00118c08d144f1434869d25aba164234a443b4732f84fe8d481504622cf6ec"
+  },
+  {
+    "id": "V2-05",
+    "status": "closed_in_original_scope",
+    "title": "Неполный перенос взаимодействий дулоксетина",
+    "severity": "major",
+    "files": [
+      "result_contracts.yaml#rules/dulox-*/source_gates",
+      "rules/dulox-*.yaml"
+    ],
+    "source_ref": "RU-DULOX",
+    "primary_locator": "§4.4 p7; §4.5 p8",
+    "primary_version": "Официальная ОХЛП реестра: штамп регистрации 2026-03-24; экспертный отчёт 2026-03-20 №5759/0015; получена 08.10.2026",
+    "primary_file": "research/remediation_round3/originals/RU-DULOX_current.pdf",
+    "executor_claim": "Перенос опубликованных условий / подготовленный полный результат и независимые вопросы",
+    "established_fact": "В текущих gates не отражены гепатотоксичные лекарства, средства с действием на ЦНС, другие CYP1A2 ингибиторы и узкотерапевтические CYP2D6 субстраты. CYP2D6_inhibitor не означает CYP2D6_substrate. Источник задаёт осторожность/оценку, а не собственный числовой коэффициент.",
+    "impact": "Препятствует приёмке затронутого результата в полном заявленном объёме; не доказательство выполненной клинической валидации.",
+    "required_fix": "Добавить отдельно опубликованные классы и реакцию на известный применимый положительный контекст. Предлечебные противопоказания и известное взаимодействие не заменять предупреждением unknown; для выбранной отмены не навязывать проверки старта.",
+    "reacceptance_condition": "Новый отпечаток; первичное сопоставление исправленного условия, его типов/фазы/владельца, полного expected и положительного/отрицательного/unknown контрпримеров.",
+    "criteria": [
+      10,
+      17,
+      30
+    ],
+    "recheck_evidence": "Исходные четыре недостающих класса DULOX добавлены с различением inhibitor/substrate. Дополнительный известный duplicate product — отдельная R1-04.",
+    "snapshot": "ff00118c08d144f1434869d25aba164234a443b4732f84fe8d481504622cf6ec"
+  },
+  {
+    "id": "V2-06",
+    "status": "closed_in_original_scope",
+    "title": "В отмене FLUVOX/PAROX/XR объявлен приоритет срочных условий без входов и действий",
+    "severity": "major",
+    "files": [
+      "result_contracts.yaml#rules/fluvox-taper-limit",
+      "result_contracts.yaml#rules/parox-taper-example",
+      "result_contracts.yaml#rules/venla-xr-taper-limit"
+    ],
+    "source_ref": "RU-FLUVOX",
+    "primary_locator": "§4.4 p5 (судороги/печень/SS), p7 (мания); также PAROX §4.4 p7/9, XR §4.4 p9/13",
+    "primary_version": "Официальная ОХЛП реестра: штамп регистрации 2026-08-19; экспертный отчёт 2026-08-14 №16133/0004; получена 08.10.2026",
+    "primary_file": "research/remediation_round3/originals/RU-FLUVOX_current.pdf",
+    "executor_claim": "Перенос опубликованных условий / подготовленный полный результат и независимые вопросы",
+    "established_fact": "Контракты утверждают Published immediate cessation conditions take precedence if treatment ongoing, но stop=[], typed_source_conditions=[] и соответствующих входов нет. Известный срочный факт не может получить заявленный приоритет. Числовая отмена сама по себе не ошибочный опубликованный процент.",
+    "impact": "Препятствует приёмке затронутого результата в полном заявленном объёме; не доказательство выполненной клинической валидации.",
+    "required_fix": "Перенести только фактически опубликованные действия прекращения и помощи для ongoing, отдельно от противопоказаний нового старта. Подготовить полные expected для сообщённых фактов во всех затронутых режимах.",
+    "reacceptance_condition": "Новый отпечаток; первичное сопоставление исправленного условия, его типов/фазы/владельца, полного expected и положительного/отрицательного/unknown контрпримеров.",
+    "criteria": [
+      10,
+      15,
+      17,
+      30
+    ],
+    "recheck_evidence": "FLUV/PAROX/XR taper получили исходно перечисленные срочные действия; FLUV печёночное событие в taper сформулировано как повышение ферментов с клиническими признаками. Новые условные события — R1-01.",
+    "snapshot": "ff00118c08d144f1434869d25aba164234a443b4732f84fe8d481504622cf6ec"
+  },
+  {
+    "id": "V2-07",
+    "status": "closed_in_original_scope",
+    "title": "Срочные действия ESC не распространяются на переходы с принимаемым ESC",
+    "severity": "major",
+    "files": [
+      "rules/switch-esc-ago.yaml",
+      "rules/switch-esc-ser.yaml",
+      "rules/switch-ser-esc.yaml",
+      "result_contracts.yaml"
+    ],
+    "source_ref": "RU-ESC",
+    "primary_locator": "§4.4 p4 и p6",
+    "primary_version": "РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; экспертный отчёт 31.10.2025 №27320, последовательность 0002; текущая опубликованная ОХЛП реестра получена 08.10.2026",
+    "primary_file": "research/remediation_round2/Selectra_current_registry.pdf",
+    "executor_claim": "Перенос опубликованных условий / подготовленный полный результат и независимые вопросы",
+    "established_fact": "Обычные ESC карточки содержат arrhythmia→stop+ECG и SS→stop SSRI/серотонинергических+симптоматическое лечение. В переходах с ESC присутствует мания, но нет полного представления этих срочных фактов/действий и ESC новых/учащённых судорог. Владелец A и отдельная фаза B должны сохраняться.",
+    "impact": "Препятствует приёмке затронутого результата в полном заявленном объёме; не доказательство выполненной клинической валидации.",
+    "required_fix": "Сделать действия фазовыми и привязанными к конкретному принимаемому A/B. Известный срочный факт прекращает соответствующий препарат и автоматический календарь; первая доза B и уже принимаемый B не смешиваются.",
+    "reacceptance_condition": "Новый отпечаток; первичное сопоставление исправленного условия, его типов/фазы/владельца, полного expected и положительного/отрицательного/unknown контрпримеров.",
+    "criteria": [
+      10,
+      14,
+      17,
+      30
+    ],
+    "recheck_evidence": "ESC A/B фазы, прекращение принимаемого актора, ECG и симптоматическое лечение в переходах восстановлены; B не объявляется принимаемым из фазы A.",
+    "snapshot": "ff00118c08d144f1434869d25aba164234a443b4732f84fe8d481504622cf6ec"
+  },
+  {
+    "id": "V2-08",
+    "status": "partially_corrected_open",
+    "title": "Устаревшие первичные локаторы и флаги редакционной проверки",
+    "severity": "moderate",
+    "files": [
+      "result_contracts.yaml#rules/parox-panic-kr/typed_source_conditions",
+      "full_scenarios.json:switch-parox-ago-selected-example--branch-selected40/schedule",
+      "rules/phen-taper-limit.yaml#identity",
+      "rules/*#verification"
+    ],
+    "source_ref": "RU-PAROX",
+    "primary_locator": "Печёночная коррекция §4.2 p4; новые судороги §4.4 p9; пример отмены §4.2 pp3–4",
+    "primary_version": "Официальная ОХЛП реестра: штамп регистрации 2025-02-14; экспертный отчёт 2025-02-12 №3370/0003; получена 08.10.2026",
+    "primary_file": "research/remediation_round3/originals/RU-PAROX_current.pdf",
+    "executor_claim": "Перенос опубликованных условий / подготовленный полный результат и независимые вопросы",
+    "established_fact": "PAROX hepatic condition приписан RU-PANIC общему разделу вместо ОХЛП; новые судороги ссылаются наp8 (текст прекращения наp9); стадии выбранного PAROX→AGO примера сохраняютp16–17 вместоp3–4. PHEN identity и verification нескольких новых/ESC/SER карточек ещё говорят latest revision unconfirmed несмотря на новые официальные связи sources.json. Это текстовая рассинхронизация, не доказательство отсутствия полученной редакции.",
+    "impact": "Препятствует приёмке затронутого результата в полном заявленном объёме; не доказательство выполненной клинической валидации.",
+    "required_fix": "Согласовать source_id/физический локатор/версию и readiness-описания с реальным новым основанием. Не выдумывать отдельную дату редакции/публикации из штампа регистрации.",
+    "reacceptance_condition": "Новый отпечаток; первичное сопоставление исправленного условия, его типов/фазы/владельца, полного expected и положительного/отрицательного/unknown контрпримеров.",
+    "criteria": [
+      9,
+      10,
+      30
+    ],
+    "recheck_evidence": "Часть typed predicates/stage/readiness исправлена; input/question/necessity/ledger остаются со старыми PAROX страницами, имеются старые ссылки в вопросах DULOX. См. locator_residuals.json.",
+    "snapshot": "ff00118c08d144f1434869d25aba164234a443b4732f84fe8d481504622cf6ec"
+  },
+  {
+    "id": "V2-09",
+    "status": "closed_in_original_scope",
+    "title": "XR BP>100 представлен примерами, но не явным условием полного контракта",
+    "severity": "moderate",
+    "files": [
+      "result_contracts.yaml#rules/venla-xr-gad-start",
+      "result_contracts.yaml#rules/venla-xr-social-start",
+      "rules/venla-xr-*/logic"
+    ],
+    "source_ref": "RU-VENLA-XR",
+    "primary_locator": "§4.4 p9",
+    "primary_version": "Официальная ОХЛП реестра: штамп регистрации 2026-06-25; экспертный отчёт 2026-06-11 №11677/0019; получена 08.10.2026",
+    "primary_file": "research/remediation_round3/originals/RU-VENLA-XR_current.pdf",
+    "executor_claim": "Перенос опубликованных условий / подготовленный полный результат и независимые вопросы",
+    "established_fact": "Положительные ongoing diastolic-BP-100.01 cases существуют и дают source_stop_action — отсутствие этих примеров не утверждается. Однако typed/urgent предикат сравнения строго>100 отсутствует, параметр/ссылка в logic не определяют действие; source_gates перечня cautions одного hypertension недостаточно для воспроизводимого приоритета.",
+    "impact": "Препятствует приёмке затронутого результата в полном заявленном объёме; не доказательство выполненной клинической валидации.",
+    "required_fix": "Объявить явное сравнение/единицу/фазу/владельца и действие по опубликованному порогу. Проверить100,100.01,missing/unknown и выбранную отмену; не приписывать этот stop первой не принятой дозе.",
+    "reacceptance_condition": "Новый отпечаток; первичное сопоставление исправленного условия, его типов/фазы/владельца, полного expected и положительного/отрицательного/unknown контрпримеров.",
+    "criteria": [
+      10,
+      17,
+      30
+    ],
+    "recheck_evidence": "Явное greater_than100, физ.9, для четырёх XR режимов;100.01 stop/100 не stop; источник не заменён >=100.",
+    "snapshot": "ff00118c08d144f1434869d25aba164234a443b4732f84fe8d481504622cf6ec"
+  },
+  {
+    "id": "V2-10",
+    "status": "partially_corrected_open",
+    "title": "97 графовых проекций содержат неподтверждённые отрицательные ответы",
+    "severity": "major",
+    "files": [
+      "actual_question_paths.json:97 paths",
+      "question_graphs.yaml#graphs/*/paths",
+      "build_graphs.py#projected/expected"
+    ],
+    "source_ref": "RU-AGO",
+    "primary_locator": "§4.4 pp3–5; канонические критерии20/21",
+    "primary_version": "Официальная ОХЛП реестра: штамп регистрации 2024-12-28; экспертный отчёт 2024-12-23 №28427/0018; получена 08.10.2026",
+    "primary_file": "research/remediation_round3/originals/RU-AGO_current.pdf",
+    "executor_claim": "Перенос опубликованных условий / подготовленный полный результат и независимые вопросы",
+    "established_fact": "Пример ago-depression-start/usual: full_projected_given не содержит mania/dementia/alcohol_use/suicide_risk/ect, но expected содержит их в confirmed_negatives; часть одновременно в unassessed_context. Пересчитанные255 count/trace/edges верны, но это не достаточность полного нового пути. Исходный полный case с явно false отличается от проекции без этого ввода.",
+    "impact": "Препятствует приёмке затронутого результата в полном заявленном объёме; не доказательство выполненной клинической валидации.",
+    "required_fix": "Удалять negatives для отсутствующих/неоценённых фактов и пересчитывать unassessed_context из именно проектируемых входов. Отдельно помечать переиспользованный известный факт и полный исходный набор. Валидатор должен ловить оба вида противоречия.",
+    "reacceptance_condition": "Новый отпечаток; первичное сопоставление исправленного условия, его типов/фазы/владельца, полного expected и положительного/отрицательного/unknown контрпримеров.",
+    "criteria": [
+      17,
+      18,
+      20,
+      30
+    ],
+    "recheck_evidence": "97 отсутствующих negatives и76 пересечений устранены: в391 проекции таких ошибок нет. Осталась одна потерянная положительная причина medicines в SER taper; см. additional_checks.json.",
+    "snapshot": "ff00118c08d144f1434869d25aba164234a443b4732f84fe8d481504622cf6ec",
+    "representative_cases": [
+      "ser-taper-limit--audit-v2-interaction-strong_CYP3A4"
+    ]
+  },
+  {
+    "id": "V2-11",
+    "status": "partially_corrected_open",
+    "title": "Действующие Markdown смешивают архивные ограничения с новым снимком",
+    "severity": "moderate",
+    "files": [
+      "research/01_scope_and_sources.md",
+      "research/02_rules.md",
+      "research/04_switch_matrix.md",
+      "research/08_russian_priority_update.md"
+    ],
+    "source_ref": "RU-ESC",
+    "primary_locator": "Текущая официальная ОХЛП §4.2 pp2–3; PAROX pp3–4; PREG-RICHTER p3",
+    "primary_version": "РУ ЛП-№(012351)-(РГ-RU) 05.11.2025; экспертный отчёт 31.10.2025 №27320, последовательность 0002; текущая опубликованная ОХЛП реестра получена 08.10.2026",
+    "primary_file": "research/remediation_round2/Selectra_current_registry.pdf",
+    "executor_claim": "Перенос опубликованных условий / подготовленный полный результат и независимые вопросы",
+    "established_fact": "В прочитанном исходном состоянии основных документов были F01/current ESC unavailable, блокированные особые популяции ESC, PAROXp16–17 и новая Richterp16; добавление внизу указателя наR3 не делает взаимно исключающие утверждения согласованными. Дулоксетин1–2 без пояснения минимума≥2 из§4.4p6 неполно передаёт разрешённый текущий контракт. Root сообщил изменения индексов вне122core в ходе проверки; исходные находки сохраняются.",
+    "impact": "Препятствует приёмке затронутого результата в полном заявленном объёме; не доказательство выполненной клинической валидации.",
+    "required_fix": "Согласовать все активные утверждения с одним текущим снимком; старый текст оформить явно историческим и сохранить. Независимо повторно проверить изменённые ссылки/содержательные заявления.",
+    "reacceptance_condition": "Новый отпечаток; первичное сопоставление исправленного условия, его типов/фазы/владельца, полного expected и положительного/отрицательного/unknown контрпримеров.",
+    "criteria": [
+      9,
+      10,
+      30
+    ],
+    "recheck_evidence": "02/04/08 согласованы в прочитанной части;01_scope_and_sources.md строки33,44,52,60–65 сохраняют текущий ESC unavailable/F01 и противоречат последней строке о полученном оригинале.",
+    "snapshot": "ff00118c08d144f1434869d25aba164234a443b4732f84fe8d481504622cf6ec"
+  },
+  {
+    "id": "V2-12",
+    "status": "partially_corrected_open",
+    "title": "Не доказана необходимость всех полей по каждому ограниченному результату",
+    "severity": "major",
+    "files": [
+      "input_necessity.csv",
+      "necessity_decisions.json",
+      "rules/*/inputs",
+      "necessity_policy.yaml"
+    ],
+    "source_ref": "requirements",
+    "primary_locator": "ACCEPTANCE_V2 №17",
+    "primary_version": "ACCEPTANCE_V2 08.10.2026",
+    "primary_file": "psychopharm_codex_pack/ACCEPTANCE_V2.md",
+    "executor_claim": "Перенос опубликованных условий / подготовленный полный результат и независимые вопросы",
+    "established_fact": "Ledger содержит per-result строки, но часть неизменённых source gates сохранена консервативно, а не доказана неудалимой. Например, current_dose/duration/past withdrawal у справочного ограничения отмены и current_dose у AGO chosen stop требуют отдельной роли: число/план/оценка темпа/выбранное исполнение. Нельзя объявить каждое поле лишним только потому, что оно не меняет число; но автоматической необходимости здесь тоже не установлено. Добавленные обязательные prerequisites и известные действия требуют нового сопоставления.",
+    "impact": "Препятствует приёмке затронутого результата в полном заявленном объёме; не доказательство выполненной клинической валидации.",
+    "required_fix": "Для всех применимых полей указать точный результат, источник необходимости, известный триггер, контрпример изменения и ответ missing/unknown. Для ограничения/справки не требовать поля индивидуального календаря без основания. Сохранить известные противопоказания/urgent действия.",
+    "reacceptance_condition": "Новый отпечаток; первичное сопоставление исправленного условия, его типов/фазы/владельца, полного expected и положительного/отрицательного/unknown контрпримеров.",
+    "criteria": [
+      17,
+      18
+    ],
+    "recheck_evidence": "19 демоций проверены как ограниченные ненумерические результаты. PREG taper три always-поля ещё не обоснованы для source_limit; необходимость всех полей всех результатов не доказана.",
+    "snapshot": "ff00118c08d144f1434869d25aba164234a443b4732f84fe8d481504622cf6ec"
+  },
+  {
+    "id": "V2-13",
+    "status": "partially_corrected_open",
+    "title": "Обычные числовые пути превышают15; отдельная условная ESC ветка16 не отражена в общей фразе",
+    "severity": "major",
+    "files": [
+      "actual_question_paths.json",
+      "ordinary_path_report.json",
+      "path_summary.json"
+    ],
+    "source_ref": "requirements",
+    "primary_locator": "ACCEPTANCE_V2 №18–19",
+    "primary_version": "ACCEPTANCE_V2 08.10.2026",
+    "primary_file": "psychopharm_codex_pack/ACCEPTANCE_V2.md",
+    "executor_claim": "Перенос опубликованных условий / подготовленный полный результат и независимые вопросы",
+    "established_fact": "Пересчёт: AGO20; DULOX-GAD17; PREG17–18. Базовые ESC13, CYP14; CAD+electrolytes дают ESC15, CYP16. Последний автором помечен ordinary; имеется настоящий первичный условный триггер §4.4p6 для отдельной сложной классификации, но нельзя переименовать обычные AGO/DULOX/PREG лишь из-за длины. SER start10, selected correction13/15; DULOX depression15, FLUV/PAROX12, XR12. Нижняя граница/ранний отказ не индивидуальный обычный путь.",
+    "impact": "Препятствует приёмке затронутого результата в полном заявленном объёме; не доказательство выполненной клинической валидации.",
+    "required_fix": "Сохранить реальную длину, доказать содержательное сокращение по№17 либо честно оставить№18частичным. CYP16 классифицировать и обосновать отдельно по реальному CAD/electrolyte триггеру; не удалять эти обязательные действия.",
+    "reacceptance_condition": "Новый отпечаток; первичное сопоставление исправленного условия, его типов/фазы/владельца, полного expected и положительного/отрицательного/unknown контрпримеров.",
+    "criteria": [
+      17,
+      18,
+      19
+    ],
+    "recheck_evidence": "Независимый пересчёт391: обычные AGO20/DULOX-GAD17/PREG17–18 остаются. ESC CAD/electrolyte — реальная источниковая сложная ветка по физ.6 независимо от длины; CYP обычный14/сложный16.",
+    "snapshot": "ff00118c08d144f1434869d25aba164234a443b4732f84fe8d481504622cf6ec"
+  },
+  {
+    "id": "V2-14",
+    "status": "closed_in_original_scope",
+    "title": "Феварин: учащение существовавших судорог не покрыто отдельным опубликованным stop",
+    "severity": "major",
+    "files": [
+      "rules/fluvox-depression-start.yaml#inputs/seizure_state",
+      "result_contracts.yaml#rules/fluvox-depression-start/typed_source_conditions"
+    ],
+    "source_ref": "RU-FLUVOX",
+    "primary_locator": "§4.4 p5",
+    "primary_version": "Официальная ОХЛП реестра: штамп регистрации 2026-08-19; экспертный отчёт 2026-08-14 №16133/0004; получена 08.10.2026",
+    "primary_file": "research/remediation_round3/originals/RU-FLUVOX_current.pdf",
+    "executor_claim": "Перенос опубликованных условий / подготовленный полный результат и независимые вопросы",
+    "established_fact": "Источник требует прекращения и при развитии приступов, и при увеличении их частоты. Enum новые приступы и controlled/uncontrolled не фиксируют самостоятельный случай учащения существовавших приступов. Первую дозу не смешивать с уже принимаемым Феварином.",
+    "impact": "Препятствует приёмке затронутого результата в полном заявленном объёме; не доказательство выполненной клинической валидации.",
+    "required_fix": "Добавить явное источниковое условие increased frequency с прекращением ongoing и полными контрпримерами; согласовать с отменой. Не распространять этот stop по аналогии на продукты, где такого условия нет.",
+    "reacceptance_condition": "Новый отпечаток; первичное сопоставление исправленного условия, его типов/фазы/владельца, полного expected и положительного/отрицательного/unknown контрпримеров.",
+    "criteria": [
+      10,
+      15,
+      17,
+      30
+    ],
+    "recheck_evidence": "FLUV new_or_increased_seizures explicitly ongoing и положительный stop; текст физ.5 требует прекращения при возникновении приступов или учащении. Не создаётся universal XR seizure stop.",
+    "snapshot": "ff00118c08d144f1434869d25aba164234a443b4732f84fe8d481504622cf6ec"
+  },
+  {
+    "id": "R1-01",
+    "status": "open",
+    "title": "Не представлены четыре известные текущие source-defined события",
+    "severity": "major",
+    "source_ref": "RU-SER",
+    "primary_locator": "SER §4.4 физ.6; PREG §4.4 физ.8; DULOX §4.4 физ.4; XR §4.4 физ.8",
+    "primary_file": "research\\source_downloads\\Золофт — сертралин.pdf",
+    "primary_version": "Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является датой содержания",
+    "primary_sha256": "3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba",
+    "files": [
+      "result_contracts.yaml: соответствующие ongoing/adjust/taper/SSRI switches",
+      "full_scenarios.json",
+      "question_graphs.yaml"
+    ],
+    "executor_claim": "Исправленный frozen кандидат; PASS не объявлен исчерпывающей медицинской проверкой",
+    "established_fact": "SER symptomatic hyponatremia: рассмотреть прекращение + соответствующая медицинская помощь. PREG новые суицидальные мысли/поведение: медицинская помощь, наблюдение и рассмотреть прекращение. DULOX стойкое повышение АД на терапии: рассмотреть коррекцию дозы либо постепенную отмену. XR подозрение SS: рассмотреть снижение/прекращение по тяжести. Generic risk и prestart uncontrolled hypertension этих событий не устанавливают; отдельного typed positive/source action/expected нет.",
+    "impact": "Полнота источникового контракта/приёмки не подтверждена; произвольный дозовый коэффициент или числовой экстренный план не требуется.",
+    "required_fix": "Добавить обработку именно сообщённого current event без обязательного универсального negative вопроса. Для known positive и явно ongoing актора — точное consider/action, clinical_clearance=false и отсутствие automatic schedule. SER: A switch-ser-esc/ago; B switch-esc-ser только target_ongoing. У остальных активных switch-карт этих INN нет. При unknown B phase запросить фазу, не выдумывать stop. Не переносить universal SER SS stop из других SSRI.",
+    "reacceptance_condition": "Новый SHA; точные source owner/фаза/локатор, известный положительный факт, отсутствие/unknown без ложного отрицания, полные expected и потреблённые факты/count в графе. Не менять этот проверенный снимок задним числом.",
+    "criteria": [
+      10,
+      14,
+      15,
+      17,
+      30
+    ],
+    "snapshot": "ff00118c08d144f1434869d25aba164234a443b4732f84fe8d481504622cf6ec",
+    "supporting_primary_sources": [
+      {
+        "source_id": "RU-SER",
+        "locator": "§4.4 physical6",
+        "version": "Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является датой содержания",
+        "sha256": "3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba",
+        "path": "research/source_downloads/Золофт — сертралин.pdf"
+      },
+      {
+        "source_id": "RU-PREG",
+        "locator": "§4.4 physical8",
+        "version": "Официальная ОХЛП реестра: штамп регистрации 2025-08-13; экспертный отчёт 2024-01-26 №1319/0011; получена 08.10.2026",
+        "sha256": "b605c8b381c24d59a48bbab9bfa8621eb70f6ec16ad9e3679aa8457f811663e5",
+        "path": "research/remediation_round3/originals/RU-PREG_current.pdf"
+      },
+      {
+        "source_id": "RU-DULOX",
+        "locator": "§4.4 physical4",
+        "version": "Официальная ОХЛП реестра: штамп регистрации 2026-03-24; экспертный отчёт 2026-03-20 №5759/0015; получена 08.10.2026",
+        "sha256": "0551a7306ca4a56b552336bb63fa34905cf4e312702ba811a792221892a42ca1",
+        "path": "research/remediation_round3/originals/RU-DULOX_current.pdf"
+      },
+      {
+        "source_id": "RU-VENLA-XR",
+        "locator": "§4.4 physical8",
+        "version": "Официальная ОХЛП реестра: штамп регистрации 2026-06-25; экспертный отчёт 2026-06-11 №11677/0019; получена 08.10.2026",
+        "sha256": "a21e90141db69d9be5ca44ac3c8c6059c8c82a880f34bbf15143348c36ef4666",
+        "path": "research/remediation_round3/originals/RU-VENLA-XR_current.pdf"
+      }
+    ]
+  },
+  {
+    "id": "R1-02",
+    "status": "open",
+    "title": "XR: остаток взаимодействий и силы avoidance",
+    "severity": "major",
+    "source_ref": "RU-VENLA-XR",
+    "primary_locator": "§4.4 физ.10; §4.5 физ.15–17",
+    "primary_file": "research\\remediation_round3\\originals\\RU-VENLA-XR_current.pdf",
+    "primary_version": "Официальная ОХЛП реестра: штамп регистрации 2026-06-25; экспертный отчёт 2026-06-11 №11677/0019; получена 08.10.2026",
+    "primary_sha256": "a21e90141db69d9be5ca44ac3c8c6059c8c82a880f34bbf15143348c36ef4666",
+    "files": [
+      "result_contracts.yaml#venla-xr-*/source_gates",
+      "full_scenarios.json:venla-xr-gad-start--medicine-RU-VENLA-XR-QT_prolonging"
+    ],
+    "executor_claim": "Исправленный frozen кандидат; PASS не объявлен исчерпывающей медицинской проверкой",
+    "established_fact": "XR cautions CYP2D6 inhibitors/CYP3A4 inhibitors (16), CNS-active drugs (15), metoprolol (17) отсутствуют как source-mapped условия. Weight-loss drugs включая phentermine (10) и serotonin precursors (15) не рекомендуется. QT-prolonging сочетания следует избегать (15–16), но текущий класс назван generic caution; имеющийся clinician_choice уже блокирует числовую ветку и не является contra→allow.",
+    "impact": "Полнота источникового контракта/приёмки не подтверждена; произвольный дозовый коэффициент или числовой экстренный план не требуется.",
+    "required_fix": "Перенести точные classes/actions при known current комбинации, без PK процентов как dose factors. Назвать QT avoid_standard_combination, не формальную противопоказанность. Для qualitative taper не навязывать prestart medicines, но сохранить/посчитать реально потреблённый known факт.",
+    "reacceptance_condition": "Новый SHA; точные source owner/фаза/локатор, известный положительный факт, отсутствие/unknown без ложного отрицания, полные expected и потреблённые факты/count в графе. Не менять этот проверенный снимок задним числом.",
+    "criteria": [
+      10,
+      17,
+      30
+    ],
+    "snapshot": "ff00118c08d144f1434869d25aba164234a443b4732f84fe8d481504622cf6ec"
+  },
+  {
+    "id": "R1-03",
+    "status": "open",
+    "title": "SER взаимодействия не перенесены в оба SSRI-перехода",
+    "severity": "major",
+    "source_ref": "RU-SER",
+    "primary_locator": "§4.3 физ.3; §4.5 физ.7–10 (strong CYP3A4 физ.10)",
+    "primary_file": "research\\source_downloads\\Золофт — сертралин.pdf",
+    "primary_version": "Штамп экспертного отчёта 29.05.2026 №10729, последовательность 0008; имя файла 24-apr-2025 не является датой содержания",
+    "primary_sha256": "3694e05ab6037be4b8648d3e0e7f0169998d62c568880f23c96888f088b170ba",
+    "files": [
+      "result_contracts.yaml#switch-ser-esc/source_gates",
+      "result_contracts.yaml#switch-esc-ser/source_gates"
+    ],
+    "executor_claim": "Исправленный frozen кандидат; PASS не объявлен исчерпывающей медицинской проверкой",
+    "established_fact": "В обоих source_gates имеется только RU-ESC. Strong CYP3A4 avoidance SER не обрабатывается для A=SER либо B=SER. В этих карточках нет ни одного full medicines positive record. Обычный результат — gap/clinician_choice, поэтому это не доказанная разрешённая числовая опасная комбинация; полнота обоих источников не установлена.",
+    "impact": "Полнота источникового контракта/приёмки не подтверждена; произвольный дозовый коэффициент или числовой экстренный план не требуется.",
+    "required_fix": "Добавить собственные SER основания/known examples, сохранив A/B фазы и отсутствие парного российского календаря. Противопоказания B до старта не заменять общим target_applicability.",
+    "reacceptance_condition": "Новый SHA; точные source owner/фаза/локатор, известный положительный факт, отсутствие/unknown без ложного отрицания, полные expected и потреблённые факты/count в графе. Не менять этот проверенный снимок задним числом.",
+    "criteria": [
+      10,
+      14,
+      17,
+      30
+    ],
+    "snapshot": "ff00118c08d144f1434869d25aba164234a443b4732f84fe8d481504622cf6ec"
+  },
+  {
+    "id": "R1-04",
+    "status": "open",
+    "title": "DULOX: дополнительный продукт с тем же МНН",
+    "severity": "major",
+    "source_ref": "RU-DULOX",
+    "primary_locator": "§4.4 физ.7, Лекарственные препараты, содержащие дулоксетин",
+    "primary_file": "research\\remediation_round3\\originals\\RU-DULOX_current.pdf",
+    "primary_version": "Официальная ОХЛП реестра: штамп регистрации 2026-03-24; экспертный отчёт 2026-03-20 №5759/0015; получена 08.10.2026",
+    "primary_sha256": "0551a7306ca4a56b552336bb63fa34905cf4e312702ba811a792221892a42ca1",
+    "files": [
+      "result_contracts.yaml#dulox-*/source_gates",
+      "full_scenarios.json"
+    ],
+    "executor_claim": "Исправленный frozen кандидат; PASS не объявлен исчерпывающей медицинской проверкой",
+    "established_fact": "Источник требует избегать совместного применения нескольких продуктов с дулоксетином. Нет отдельного известного duplicate_duloxetine_product условия/действия. Один current INN дулоксетина при ongoing сам по себе не доказывает дополнительный продукт.",
+    "impact": "Полнота источникового контракта/приёмки не подтверждена; произвольный дозовый коэффициент или числовой экстренный план не требуется.",
+    "required_fix": "Определить именно дополнительный идентифицированный продукт, explicit avoid action/clinician_choice без коэффициента; его отдельный факт/происхождение и count при потреблении. Не объявлять single selected current product дубликатом.",
+    "reacceptance_condition": "Новый SHA; точные source owner/фаза/локатор, известный положительный факт, отсутствие/unknown без ложного отрицания, полные expected и потреблённые факты/count в графе. Не менять этот проверенный снимок задним числом.",
+    "criteria": [
+      10,
+      17,
+      30
+    ],
+    "snapshot": "ff00118c08d144f1434869d25aba164234a443b4732f84fe8d481504622cf6ec"
+  },
+  {
+    "id": "R1-05",
+    "status": "open",
+    "title": "PREG SCAR: неполное условное действие",
+    "severity": "major",
+    "source_ref": "RU-PREG",
+    "primary_locator": "§4.4 физ.6, Тяжёлые кожные нежелательные реакции",
+    "primary_file": "research\\remediation_round3\\originals\\RU-PREG_current.pdf",
+    "primary_version": "Официальная ОХЛП реестра: штамп регистрации 2025-08-13; экспертный отчёт 2024-01-26 №1319/0011; получена 08.10.2026",
+    "primary_sha256": "b605c8b381c24d59a48bbab9bfa8621eb70f6ec16ad9e3679aa8457f811663e5",
+    "files": [
+      "full_scenarios.json:preg-...--stop-RU-PREG-severe_skin_reaction",
+      "result_contracts.yaml#preg-*"
+    ],
+    "executor_claim": "Исправленный frozen кандидат; PASS не объявлен исчерпывающей медицинской проверкой",
+    "established_fact": "Scalar stop_medication сохраняет прекращение PREG; полные ожидания не сохраняют источниковое «рассмотреть альтернативное лечение при необходимости» и явную immediate cessation semantics. Это не запрос выбрать/дозировать альтернативный препарат.",
+    "impact": "Полнота источникового контракта/приёмки не подтверждена; произвольный дозовый коэффициент или числовой экстренный план не требуется.",
+    "required_fix": "Сохранить immediate discontinue PREG + conditional consider alternative treatment if needed с source6, ongoing phase; не выдумывать альтернативу или её дозу.",
+    "reacceptance_condition": "Новый SHA; точные source owner/фаза/локатор, известный положительный факт, отсутствие/unknown без ложного отрицания, полные expected и потреблённые факты/count в графе. Не менять этот проверенный снимок задним числом.",
+    "criteria": [
+      10,
+      15,
+      30
+    ],
+    "snapshot": "ff00118c08d144f1434869d25aba164234a443b4732f84fe8d481504622cf6ec",
+    "representative_cases": [
+      "preg-gad-adjust--stop-RU-PREG-severe_skin_reaction",
+      "preg-gad-start--stop-RU-PREG-severe_skin_reaction",
+      "preg-renal-start--stop-RU-PREG-severe_skin_reaction",
+      "preg-taper-limit--stop-RU-PREG-severe_skin_reaction"
+    ]
+  },
+  {
+    "id": "R1-06",
+    "status": "open",
+    "title": "PREG/PHEN: неустановленное возобновление прежней дозы",
+    "severity": "moderate",
+    "source_ref": "RU-PREG",
+    "primary_locator": "PREG §4.2 физ.4; §4.4 физ.9; PHEN §4.2 физ.3 и §4.4 физ.4",
+    "primary_file": "research\\remediation_round3\\originals\\RU-PREG_current.pdf",
+    "primary_version": "Официальная ОХЛП реестра: штамп регистрации 2025-08-13; экспертный отчёт 2024-01-26 №1319/0011; получена 08.10.2026",
+    "primary_sha256": "b605c8b381c24d59a48bbab9bfa8621eb70f6ec16ad9e3679aa8457f811663e5",
+    "files": [
+      "result_contracts.yaml#preg-taper-limit/withdrawal",
+      "result_contracts.yaml#phen-taper-limit/withdrawal",
+      "full_scenarios.json: соответствующие branch-withdrawal"
+    ],
+    "executor_claim": "Исправленный frozen кандидат; PASS не объявлен исчерпывающей медицинской проверкой",
+    "established_fact": "Ожидания содержат prior_dose_resumption='clinician consideration where source permits'. Самостоятельное чтение этих источников не установило PREG/PHEN разрешение на такое возобновление; AD-оговорка не распространяется на них. Никакая числовая прежняя доза автоматически не выдаётся, но source gap не назван явно.",
+    "impact": "Полнота источникового контракта/приёмки не подтверждена; произвольный дозовый коэффициент или числовой экстренный план не требуется.",
+    "required_fix": "Явно отметить source_specific_resumption_not_established/индивидуальное решение врача без published option. Не удалять постепенность PREG ≥1 недели или симптомы/срочные события.",
+    "reacceptance_condition": "Новый SHA; точные source owner/фаза/локатор, известный положительный факт, отсутствие/unknown без ложного отрицания, полные expected и потреблённые факты/count в графе. Не менять этот проверенный снимок задним числом.",
+    "criteria": [
+      10,
+      15,
+      30
+    ],
+    "snapshot": "ff00118c08d144f1434869d25aba164234a443b4732f84fe8d481504622cf6ec",
+    "supporting_primary_sources": [
+      {
+        "source_id": "RU-PREG",
+        "locator": "§4.2 physical4 / §4.4 physical9",
+        "version": "Официальная ОХЛП реестра: штамп регистрации 2025-08-13; экспертный отчёт 2024-01-26 №1319/0011; получена 08.10.2026",
+        "sha256": "b605c8b381c24d59a48bbab9bfa8621eb70f6ec16ad9e3679aa8457f811663e5",
+        "path": "research/remediation_round3/originals/RU-PREG_current.pdf"
+      },
+      {
+        "source_id": "RU-PHEN",
+        "locator": "§4.2 physical3 / §4.4 physical4",
+        "version": "Официальная ОХЛП реестра: штамп регистрации 2026-05-07; экспертный отчёт 2026-05-05 №9041/0004; получена 08.10.2026",
+        "sha256": "850486408d225fc603f8f053765491c1e9fd688c5c3d765cdf80a34dd2b3cf1a",
+        "path": "research/remediation_round3/originals/RU-PHEN_current.pdf"
+      }
+    ],
+    "representative_cases": [
+      "phen-taper-limit--branch-withdrawal",
+      "preg-taper-limit--branch-withdrawal"
+    ]
+  },
+  {
+    "id": "R1-07",
+    "status": "open",
+    "title": "Пересекающаяся семантика двух XR pregnancy вопросов",
+    "severity": "moderate",
+    "source_ref": "RU-VENLA-XR",
+    "primary_locator": "§4.3 физ.5; канонический №17–18",
+    "primary_file": "research\\remediation_round3\\originals\\RU-VENLA-XR_current.pdf",
+    "primary_version": "Официальная ОХЛП реестра: штамп регистрации 2026-06-25; экспертный отчёт 2026-06-11 №11677/0019; получена 08.10.2026",
+    "primary_sha256": "a21e90141db69d9be5ca44ac3c8c6059c8c82a880f34bbf15143348c36ef4666",
+    "files": [
+      "rules/venla-xr-*.yaml#inputs/pregnancy,pregnancy_suspected",
+      "input_necessity.csv",
+      "actual_question_paths.json"
+    ],
+    "executor_claim": "Исправленный frozen кандидат; PASS не объявлен исчерпывающей медицинской проверкой",
+    "established_fact": "Pregnancy asks «установлена или возможна?»; pregnancy_suspected отдельно always. При этой OR-семантике false первого уже отвергает подозрение, поэтому объявленная независимость/двойной счёт не обоснованы. Источник отдельно запрещает установленную и предполагаемую беременность.",
+    "impact": "Полнота источникового контракта/приёмки не подтверждена; произвольный дозовый коэффициент или числовой экстренный план не требуется.",
+    "required_fix": "Развести точные семантические вопросы/домен либо доказать единую source-defined переменную без скрытого независимого подпункта. Сохранить оба source противопоказанных исхода, не снижать count правкой цифры.",
+    "reacceptance_condition": "Новый SHA; точные source owner/фаза/локатор, известный положительный факт, отсутствие/unknown без ложного отрицания, полные expected и потреблённые факты/count в графе. Не менять этот проверенный снимок задним числом.",
+    "criteria": [
+      17,
+      18
+    ],
+    "snapshot": "ff00118c08d144f1434869d25aba164234a443b4732f84fe8d481504622cf6ec"
+  }
+]

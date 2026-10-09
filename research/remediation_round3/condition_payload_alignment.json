@@ -1,0 +1,81 @@
+{
+  "changes": [
+    {
+      "case_id": "switch-esc-ago--audit-final-primary-RU-AGO-hepatic-hepatic_insufficiency-unknown",
+      "change": "Name unknown nested hepatic operands"
+    },
+    {
+      "case_id": "switch-esc-ago--audit-final-primary-RU-AGO-hepatic-cirrhosis-unknown",
+      "change": "Name unknown nested hepatic operands"
+    },
+    {
+      "case_id": "switch-esc-ago--audit-final-primary-RU-AGO-hepatic-active_liver_disease-unknown",
+      "change": "Name unknown nested hepatic operands"
+    },
+    {
+      "case_id": "ser-taper-limit--audit-final-primary-RU-SER-seizure_state-контролируемые-unknown",
+      "change": "Reuse independently reviewed identical unknown medical result, retaining bounded source reference and adding explicit unassessed/provenance metadata"
+    },
+    {
+      "case_id": "ser-taper-limit--audit-final-primary-RU-SER-seizure_state-неконтролируемые-unknown",
+      "change": "Reuse independently reviewed identical unknown medical result, retaining bounded source reference and adding explicit unassessed/provenance metadata"
+    },
+    {
+      "case_id": "esc-taper-limit--audit-final-primary-RU-ESC-seizure_state-неконтролируемые-unknown",
+      "change": "Reuse independently reviewed identical unknown medical result, retaining bounded source reference and adding explicit unassessed/provenance metadata"
+    },
+    {
+      "case_id": "switch-esc-ago--audit-final-primary-RU-AGO-pregnancy-unknown",
+      "change": "Reuse independently reviewed identical unknown medical result, retaining bounded source reference and adding explicit unassessed/provenance metadata"
+    },
+    {
+      "case_id": "switch-esc-ago--audit-final-primary-RU-AGO-lactation-unknown",
+      "change": "Reuse independently reviewed identical unknown medical result, retaining bounded source reference and adding explicit unassessed/provenance metadata"
+    },
+    {
+      "case_id": "switch-esc-ago--audit-final-primary-RU-AGO-galactose_intolerance-unknown",
+      "change": "Reuse independently reviewed identical unknown medical result, retaining bounded source reference and adding explicit unassessed/provenance metadata"
+    },
+    {
+      "case_id": "switch-esc-ago--audit-final-primary-RU-AGO-complete_lactase_deficiency-unknown",
+      "change": "Reuse independently reviewed identical unknown medical result, retaining bounded source reference and adding explicit unassessed/provenance metadata"
+    },
+    {
+      "case_id": "switch-esc-ago--audit-final-primary-RU-AGO-glucose_galactose_malabsorption-unknown",
+      "change": "Reuse independently reviewed identical unknown medical result, retaining bounded source reference and adding explicit unassessed/provenance metadata"
+    },
+    {
+      "case_id": "switch-esc-ago--audit-final-primary-RU-AGO-overweight_obesity-unknown",
+      "change": "Reuse independently reviewed identical unknown medical result, retaining bounded source reference and adding explicit unassessed/provenance metadata"
+    },
+    {
+      "case_id": "switch-esc-ago--audit-final-primary-RU-AGO-fatty_liver-unknown",
+      "change": "Reuse independently reviewed identical unknown medical result, retaining bounded source reference and adding explicit unassessed/provenance metadata"
+    },
+    {
+      "case_id": "switch-esc-ago--audit-final-primary-RU-AGO-diabetes-unknown",
+      "change": "Reuse independently reviewed identical unknown medical result, retaining bounded source reference and adding explicit unassessed/provenance metadata"
+    },
+    {
+      "case_id": "switch-esc-ago--audit-final-primary-RU-AGO-alcohol_abuse-unknown",
+      "change": "Reuse independently reviewed identical unknown medical result, retaining bounded source reference and adding explicit unassessed/provenance metadata"
+    },
+    {
+      "case_id": "switch-esc-ago--audit-final-primary-RU-AGO-alcohol_use-unknown",
+      "change": "Reuse independently reviewed identical unknown medical result, retaining bounded source reference and adding explicit unassessed/provenance metadata"
+    },
+    {
+      "case_id": "switch-esc-ago--audit-final-primary-RU-AGO-mania-unknown",
+      "change": "Reuse independently reviewed identical unknown medical result, retaining bounded source reference and adding explicit unassessed/provenance metadata"
+    },
+    {
+      "case_id": "switch-esc-ago--audit-final-primary-RU-AGO-suicide_risk-unknown",
+      "change": "Reuse independently reviewed identical unknown medical result, retaining bounded source reference and adding explicit unassessed/provenance metadata"
+    },
+    {
+      "case_id": "switch-esc-ago--audit-final-primary-RU-AGO-ect-unknown",
+      "change": "Reuse independently reviewed identical unknown medical result, retaining bounded source reference and adding explicit unassessed/provenance metadata"
+    }
+  ],
+  "numerical_dose_or_medical_action_changed": false
+}

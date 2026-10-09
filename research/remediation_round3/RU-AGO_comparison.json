@@ -1,0 +1,151 @@
+{
+  "source_id": "RU-AGO",
+  "human_provided_path": "C:\\Users\\Alex\\Downloads\\1.3.1. Valdoxan_SmPC_0009_RU (1831387371) [0009] штамп МЗ.pdf",
+  "current_file": "originals/RU-AGO_current.pdf",
+  "previous_file": "research\\source_downloads\\Вальдоксан — агомелатин.pdf",
+  "current_sha256": "a98d383832688cee9a09588b1a908555d01ed8b659281cdeee2646c1115ce7c1",
+  "previous_sha256": "1cf8e71b5c27891e17b5b7ab4dd7c8c02697a1d44bb287a57a1ee9de0fb85bd6",
+  "byte_identical": false,
+  "clinical_content_review": "pending",
+  "dates_not_assigned_from_filename": true,
+  "pages_previous": 16,
+  "pages_current": 16,
+  "text_comparison_by_page": [
+    {
+      "physical_page": 1,
+      "equal": true
+    },
+    {
+      "physical_page": 2,
+      "equal": true
+    },
+    {
+      "physical_page": 3,
+      "equal": true
+    },
+    {
+      "physical_page": 4,
+      "equal": true
+    },
+    {
+      "physical_page": 5,
+      "equal": true
+    },
+    {
+      "physical_page": 6,
+      "equal": true
+    },
+    {
+      "physical_page": 7,
+      "equal": true
+    },
+    {
+      "physical_page": 8,
+      "equal": true
+    },
+    {
+      "physical_page": 9,
+      "equal": true
+    },
+    {
+      "physical_page": 10,
+      "equal": true
+    },
+    {
+      "physical_page": 11,
+      "equal": true
+    },
+    {
+      "physical_page": 12,
+      "equal": true
+    },
+    {
+      "physical_page": 13,
+      "equal": true
+    },
+    {
+      "physical_page": 14,
+      "equal": true
+    },
+    {
+      "physical_page": 15,
+      "equal": false
+    },
+    {
+      "physical_page": 16,
+      "equal": true
+    }
+  ],
+  "render_comparison_by_page": [
+    {
+      "physical_page": 1,
+      "equal": false
+    },
+    {
+      "physical_page": 2,
+      "equal": false
+    },
+    {
+      "physical_page": 3,
+      "equal": false
+    },
+    {
+      "physical_page": 4,
+      "equal": false
+    },
+    {
+      "physical_page": 5,
+      "equal": false
+    },
+    {
+      "physical_page": 6,
+      "equal": false
+    },
+    {
+      "physical_page": 7,
+      "equal": false
+    },
+    {
+      "physical_page": 8,
+      "equal": false
+    },
+    {
+      "physical_page": 9,
+      "equal": false
+    },
+    {
+      "physical_page": 10,
+      "equal": false
+    },
+    {
+      "physical_page": 11,
+      "equal": false
+    },
+    {
+      "physical_page": 12,
+      "equal": false
+    },
+    {
+      "physical_page": 13,
+      "equal": false
+    },
+    {
+      "physical_page": 14,
+      "equal": false
+    },
+    {
+      "physical_page": 15,
+      "equal": false
+    },
+    {
+      "physical_page": 16,
+      "equal": false
+    }
+  ],
+  "visual_page1_review": {
+    "registration_date": "2024-12-28",
+    "registration": "ЛП-№(000528)-(РГ-RU)",
+    "expert_stamp": "23.12.2024 №28427, последовательность0018",
+    "filename_sequence_not_assumed_expert_sequence": "filename0009 vs stamp0018"
+  }
+}

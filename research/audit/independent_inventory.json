@@ -1,0 +1,54 @@
+{
+  "rule_cards": 38,
+  "ready_flags": 26,
+  "parameter_anchors": 195,
+  "parameters_independently_reviewed": 195,
+  "primary_expectations": 124,
+  "rule_expectations": 124,
+  "sources": 30,
+  "coverage_rows": 48,
+  "search_log_rows": 131,
+  "depression_table_rows": 18,
+  "finding_cards": 3,
+  "reference_cards": 11,
+  "estimator_expectations": 4,
+  "cases_with_unmapped_keys": 29,
+  "cases_with_absent_unconditionally_declared_inputs": 119,
+  "parameters_with_unavailable_primary": 54,
+  "flows": [
+    {
+      "id": "ser-start-usual",
+      "listed": 10,
+      "declared": 10
+    },
+    {
+      "id": "esc-start-usual",
+      "listed": 10,
+      "declared": 10
+    },
+    {
+      "id": "ser-adjust-clinician-action",
+      "listed": 9,
+      "declared": 9
+    },
+    {
+      "id": "parox-taper-selected-example",
+      "listed": 10,
+      "declared": 10
+    },
+    {
+      "id": "ago-stop-chosen-action",
+      "listed": 5,
+      "declared": 5
+    }
+  ],
+  "finding_expectations": 5,
+  "reference_expectations": 15,
+  "switch_matrix_keys": [
+    "country",
+    "foreign_fallback_allowed",
+    "selected_conditional_example",
+    "directions"
+  ],
+  "switch_directions": 12
+}

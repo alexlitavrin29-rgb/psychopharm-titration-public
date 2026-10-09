@@ -1,0 +1,3380 @@
+[
+  {
+    "location": "raw",
+    "case_id": "dulox-taper-limit--branch-source_limit",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "dulox-taper-limit--branch-withdrawal",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "dulox-taper-limit--age-omitted",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "raw",
+    "case_id": "dulox-taper-limit--age-unknown",
+    "age": "unknown",
+    "population": "not_assessed"
+  },
+  {
+    "location": "raw",
+    "case_id": "dulox-taper-limit--age-not_assessed",
+    "age": "not_assessed",
+    "population": "not_assessed"
+  },
+  {
+    "location": "raw",
+    "case_id": "dulox-taper-limit--form-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "dulox-taper-limit--form-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "dulox-taper-limit--form-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "dulox-taper-limit--current_dose-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "dulox-taper-limit--current_dose-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "dulox-taper-limit--current_dose-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "dulox-taper-limit--duration-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "dulox-taper-limit--duration-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "dulox-taper-limit--duration-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "dulox-taper-limit--withdrawal_severity-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "dulox-taper-limit--withdrawal_severity-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "dulox-taper-limit--withdrawal_severity-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "dulox-taper-limit--past_withdrawal-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "dulox-taper-limit--past_withdrawal-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "dulox-taper-limit--past_withdrawal-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "dulox-taper-limit--confirmed-negative-fields",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "dulox-taper-limit--nested-form-product-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "dulox-taper-limit--nested-form-product-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "dulox-taper-limit--nested-form-product-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "dulox-taper-limit--nested-form-registration_number-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "dulox-taper-limit--nested-form-registration_number-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "dulox-taper-limit--nested-form-registration_number-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "dulox-taper-limit--nested-form-source_id-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "dulox-taper-limit--nested-form-source_id-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "dulox-taper-limit--nested-form-source_id-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "dulox-taper-limit--nested-form-dosage_form-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "dulox-taper-limit--nested-form-dosage_form-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "dulox-taper-limit--nested-form-dosage_form-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "dulox-taper-limit--nested-form-strengths_mg-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "dulox-taper-limit--nested-form-strengths_mg-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "dulox-taper-limit--nested-form-strengths_mg-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "dulox-taper-limit--nested-form-release-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "dulox-taper-limit--nested-form-release-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "dulox-taper-limit--nested-form-release-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "dulox-taper-limit--nested-form-route-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "dulox-taper-limit--nested-form-route-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "dulox-taper-limit--nested-form-route-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "dulox-taper-limit--nested-form-source_version-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "dulox-taper-limit--nested-form-source_version-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "dulox-taper-limit--nested-form-source_version-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "dulox-taper-limit--wrong-release-form",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--branch-source_limit",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--branch-withdrawal",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--age-omitted",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--age-unknown",
+    "age": "unknown",
+    "population": "not_assessed"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--age-not_assessed",
+    "age": "not_assessed",
+    "population": "not_assessed"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--form-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--form-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--form-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--current_dose-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--current_dose-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--current_dose-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--duration-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--duration-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--duration-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--withdrawal_severity-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--withdrawal_severity-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--withdrawal_severity-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--past_withdrawal-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--past_withdrawal-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--past_withdrawal-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--confirmed-negative-fields",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--nested-form-product-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--nested-form-product-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--nested-form-product-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--nested-form-registration_number-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--nested-form-registration_number-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--nested-form-registration_number-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--nested-form-source_id-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--nested-form-source_id-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--nested-form-source_id-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--nested-form-dosage_form-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--nested-form-dosage_form-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--nested-form-dosage_form-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--nested-form-strengths_mg-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--nested-form-strengths_mg-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--nested-form-strengths_mg-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--nested-form-release-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--nested-form-release-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--nested-form-release-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--nested-form-route-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--nested-form-route-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--nested-form-route-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--nested-form-source_version-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--nested-form-source_version-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--nested-form-source_version-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--wrong-release-form",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--branch-source_limit",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--branch-withdrawal",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--age-omitted",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--age-unknown",
+    "age": "unknown",
+    "population": "not_assessed"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--age-not_assessed",
+    "age": "not_assessed",
+    "population": "not_assessed"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--form-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--form-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--form-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--pregnancy-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--pregnancy-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--pregnancy-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--lactation-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--lactation-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--lactation-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--medicines-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--medicines-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--medicines-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--allergy-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--allergy-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--allergy-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--hepatic-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--hepatic-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--hepatic-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--mania-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--mania-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--mania-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--seizure_state-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--seizure_state-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--seizure_state-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--current_dose-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--current_dose-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--current_dose-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--duration_of_use-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--duration_of_use-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--duration_of_use-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--prior_withdrawal-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--prior_withdrawal-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--prior_withdrawal-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--current_withdrawal-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--current_withdrawal-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--current_withdrawal-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--qt_risk-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--qt_risk-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--qt_risk-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--bleeding_risk-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--bleeding_risk-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--bleeding_risk-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--hyponatremia_risk-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--hyponatremia_risk-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--hyponatremia_risk-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--suicide_risk-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--suicide_risk-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--suicide_risk-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--confirmed-negative-fields",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--medicine-class-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--nested-form-product-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--nested-form-product-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--nested-form-product-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--nested-form-registration_number-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--nested-form-registration_number-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--nested-form-registration_number-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--nested-form-source_id-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--nested-form-source_id-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--nested-form-source_id-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--nested-form-dosage_form-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--nested-form-dosage_form-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--nested-form-dosage_form-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--nested-form-strengths_mg-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--nested-form-strengths_mg-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--nested-form-strengths_mg-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--nested-form-release-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--nested-form-release-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--nested-form-release-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--nested-form-route-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--nested-form-route-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--nested-form-route-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--nested-form-source_version-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--nested-form-source_version-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--nested-form-source_version-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--wrong-release-form",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--nested-hepatic-category-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--nested-hepatic-category-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--nested-hepatic-category-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--nested-hepatic-assessment-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--nested-hepatic-assessment-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--nested-hepatic-assessment-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--nested-hepatic-classification-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--nested-hepatic-classification-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--nested-hepatic-classification-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--nested-hepatic-evidence-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--nested-hepatic-evidence-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--nested-hepatic-evidence-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--branch-source_limit",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--branch-withdrawal",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--age-omitted",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--age-unknown",
+    "age": "unknown",
+    "population": "not_assessed"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--age-not_assessed",
+    "age": "not_assessed",
+    "population": "not_assessed"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--form-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--form-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--form-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--current_dose-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--current_dose-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--current_dose-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--duration-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--duration-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--duration-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--withdrawal_severity-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--withdrawal_severity-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--withdrawal_severity-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--past_withdrawal-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--past_withdrawal-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--past_withdrawal-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--confirmed-negative-fields",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--nested-form-product-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--nested-form-product-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--nested-form-product-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--nested-form-registration_number-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--nested-form-registration_number-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--nested-form-registration_number-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--nested-form-source_id-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--nested-form-source_id-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--nested-form-source_id-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--nested-form-dosage_form-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--nested-form-dosage_form-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--nested-form-dosage_form-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--nested-form-strengths_mg-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--nested-form-strengths_mg-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--nested-form-strengths_mg-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--nested-form-release-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--nested-form-release-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--nested-form-release-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--nested-form-route-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--nested-form-route-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--nested-form-route-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--nested-form-source_version-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--nested-form-source_version-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--nested-form-source_version-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--wrong-release-form",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--round2-mania-symptoms-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--round2-mania-symptoms-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--round2-mania-symptoms-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--round2-active-mania-stop",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--current-branch-source_limit",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--current-unassessed-monitoring-context",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--current-age-omitted",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--current-age-unknown",
+    "age": "unknown",
+    "population": "not_assessed"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--current-age-not_assessed",
+    "age": "not_assessed",
+    "population": "not_assessed"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--current-form-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--current-form-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--current-form-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--current-seizure_state-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--current-seizure_state-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--current-seizure_state-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--current-current_dose-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--current-current_dose-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--current-current_dose-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--current-duration_of_use-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--current-duration_of_use-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--current-duration_of_use-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--current-prior_withdrawal-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--current-prior_withdrawal-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--current-prior_withdrawal-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--current-current_withdrawal-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--current-current_withdrawal-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--current-current_withdrawal-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--current-mania_symptoms-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--current-mania_symptoms-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--current-mania_symptoms-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--current-arrhythmia_signs-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--current-arrhythmia_signs-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--current-arrhythmia_signs-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--current-serotonin_syndrome_signs-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--current-serotonin_syndrome_signs-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--current-serotonin_syndrome_signs-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--current-mania_symptoms-stop",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--current-arrhythmia_signs-stop",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--current-serotonin_syndrome_signs-stop",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--round2-nested-form-product-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--round2-nested-form-product-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--round2-nested-form-product-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--round2-nested-form-registration_number-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--round2-nested-form-registration_number-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--round2-nested-form-registration_number-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--round2-nested-form-source_id-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--round2-nested-form-source_id-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--round2-nested-form-source_id-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--round2-nested-form-dosage_form-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--round2-nested-form-dosage_form-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--round2-nested-form-dosage_form-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--round2-nested-form-strengths_mg-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--round2-nested-form-strengths_mg-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--round2-nested-form-strengths_mg-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--round2-nested-form-release-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--round2-nested-form-release-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--round2-nested-form-release-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--round2-nested-form-route-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--round2-nested-form-route-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--round2-nested-form-route-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--round2-nested-form-source_version-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--round2-nested-form-source_version-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--round2-nested-form-source_version-not_assessed",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--audit-v2-serotonin_syndrome_signs-positive",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--audit-v2-serotonin_syndrome_signs-negative",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--audit-v2-serotonin_syndrome_signs-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--audit-v2-serotonin_syndrome_signs-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--audit-v2-new_or_increased_seizures-positive",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--audit-v2-new_or_increased_seizures-negative",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--audit-v2-new_or_increased_seizures-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--audit-v2-new_or_increased_seizures-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--audit-v2-liver_injury_signs-positive",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--audit-v2-liver_injury_signs-negative",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--audit-v2-liver_injury_signs-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--audit-v2-liver_injury_signs-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--audit-v2-mania_symptoms-positive",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--audit-v2-mania_symptoms-negative",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--audit-v2-mania_symptoms-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--audit-v2-mania_symptoms-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--audit-v2-diastolic_BP-positive",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--audit-v2-diastolic_BP-negative",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--audit-v2-diastolic_BP-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--audit-v2-diastolic_BP-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--audit-v2-current_allergic_reaction-positive",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--audit-v2-current_allergic_reaction-negative",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--audit-v2-current_allergic_reaction-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--audit-v2-current_allergic_reaction-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--audit-v2-interaction-strong_CYP3A4",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--audit-recheck-symptomatic_hyponatremia-positive",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--audit-recheck-symptomatic_hyponatremia-negative",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--audit-recheck-symptomatic_hyponatremia-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--audit-recheck-symptomatic_hyponatremia-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "dulox-taper-limit--audit-recheck-persistent_BP_increase-positive",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "dulox-taper-limit--audit-recheck-persistent_BP_increase-negative",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "dulox-taper-limit--audit-recheck-persistent_BP_increase-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "dulox-taper-limit--audit-recheck-persistent_BP_increase-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--audit-recheck-suspected_serotonin_syndrome-positive",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--audit-recheck-suspected_serotonin_syndrome-negative",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--audit-recheck-suspected_serotonin_syndrome-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--audit-recheck-suspected_serotonin_syndrome-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--audit-recheck-interaction-CYP2D6_inhibitor",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--audit-recheck-interaction-CYP3A4_inhibitor",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--audit-recheck-interaction-QT_prolonging",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--audit-recheck-interaction-CNS_active",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--audit-recheck-interaction-metoprolol",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--audit-recheck-interaction-serotonin_precursor",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--audit-recheck-interaction-weight_loss_agent",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "dulox-taper-limit--audit-recheck-duplicate-duloxetine-positive",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "dulox-taper-limit--audit-recheck-duplicate-duloxetine-selected_product_only",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "dulox-taper-limit--audit-recheck-duplicate-duloxetine-unknown_additional_product",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--round2-active-mania-stop--audit-final-A-phase-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--round2-active-mania-stop--audit-final-A-phase-not_started",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--current-mania_symptoms-stop--audit-final-A-phase-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--current-mania_symptoms-stop--audit-final-A-phase-not_started",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--current-arrhythmia_signs-stop--audit-final-A-phase-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--current-arrhythmia_signs-stop--audit-final-A-phase-not_started",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--current-serotonin_syndrome_signs-stop--audit-final-A-phase-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--current-serotonin_syndrome_signs-stop--audit-final-A-phase-not_started",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--audit-v2-serotonin_syndrome_signs-positive--audit-final-A-phase-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--audit-v2-serotonin_syndrome_signs-positive--audit-final-A-phase-not_started",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--audit-v2-new_or_increased_seizures-positive--audit-final-A-phase-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--audit-v2-new_or_increased_seizures-positive--audit-final-A-phase-not_started",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--audit-v2-liver_injury_signs-positive--audit-final-A-phase-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--audit-v2-liver_injury_signs-positive--audit-final-A-phase-not_started",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--audit-v2-mania_symptoms-positive--audit-final-A-phase-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--audit-v2-mania_symptoms-positive--audit-final-A-phase-not_started",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--audit-v2-diastolic_BP-positive--audit-final-A-phase-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--audit-v2-diastolic_BP-positive--audit-final-A-phase-not_started",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--audit-v2-current_allergic_reaction-positive--audit-final-A-phase-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--audit-v2-current_allergic_reaction-positive--audit-final-A-phase-not_started",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--audit-recheck-symptomatic_hyponatremia-positive--audit-final-A-phase-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--audit-recheck-symptomatic_hyponatremia-positive--audit-final-A-phase-not_started",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "dulox-taper-limit--audit-recheck-persistent_BP_increase-positive--audit-final-A-phase-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "dulox-taper-limit--audit-recheck-persistent_BP_increase-positive--audit-final-A-phase-not_started",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--audit-recheck-suspected_serotonin_syndrome-positive--audit-final-A-phase-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--audit-recheck-suspected_serotonin_syndrome-positive--audit-final-A-phase-not_started",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--audit-final-primary-RU-ESC-seizure_state-неконтролируемые-positive",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--audit-final-primary-RU-ESC-seizure_state-неконтролируемые-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--audit-final-primary-RU-ESC-seizure_state-первичные/участившиеся приступы-positive",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--audit-final-primary-RU-ESC-seizure_state-первичные/участившиеся приступы-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--audit-final-primary-RU-ESC-seizure_state-первичные/участившиеся приступы-phase-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--audit-final-primary-RU-ESC-seizure_state-первичные/участившиеся приступы-phase-not_started",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--audit-final-primary-RU-SER-seizure_state-контролируемые-positive",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--audit-final-primary-RU-SER-seizure_state-контролируемые-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--audit-final-primary-RU-SER-seizure_state-неконтролируемые-positive",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--audit-final-primary-RU-SER-seizure_state-неконтролируемые-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--audit-final-primary-RU-SER-seizure_state-новые приступы-positive",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--audit-final-primary-RU-SER-seizure_state-новые приступы-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--audit-final-primary-RU-SER-seizure_state-новые приступы-phase-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--audit-final-primary-RU-SER-seizure_state-новые приступы-phase-not_started",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--round2-active-mania-stop--audit-final-bounded-action",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--current-mania_symptoms-stop--audit-final-bounded-action",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--current-arrhythmia_signs-stop--audit-final-bounded-action",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--current-serotonin_syndrome_signs-stop--audit-final-bounded-action",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--audit-v2-serotonin_syndrome_signs-positive--audit-final-bounded-action",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--audit-v2-new_or_increased_seizures-positive--audit-final-bounded-action",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--audit-v2-liver_injury_signs-positive--audit-final-bounded-action",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--audit-v2-mania_symptoms-positive--audit-final-bounded-action",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--audit-v2-diastolic_BP-positive--audit-final-bounded-action",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--audit-v2-current_allergic_reaction-positive--audit-final-bounded-action",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--audit-final-primary-RU-ESC-seizure_state-первичные/участившиеся приступы-positive--audit-final-bounded-action",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--audit-final-primary-RU-SER-seizure_state-новые приступы-positive--audit-final-bounded-action",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "raw",
+    "case_id": "dulox-taper-limit--audit-final-conditional-adult-reference",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--audit-final-conditional-adult-reference",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--audit-final-conditional-adult-reference",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--audit-final-conditional-adult-reference",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--audit-final-conditional-adult-reference",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--audit-v2-interaction-strong_CYP3A4--audit-final-source-caution",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--audit-recheck-symptomatic_hyponatremia-positive--audit-final-source-caution",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--audit-recheck-symptomatic_hyponatremia-unknown--audit-final-source-caution",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "raw",
+    "case_id": "dulox-taper-limit--audit-recheck-persistent_BP_increase-positive--audit-final-source-caution",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "raw",
+    "case_id": "dulox-taper-limit--audit-recheck-persistent_BP_increase-unknown--audit-final-source-caution",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--audit-recheck-suspected_serotonin_syndrome-positive--audit-final-source-caution",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--audit-recheck-suspected_serotonin_syndrome-unknown--audit-final-source-caution",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--audit-recheck-interaction-CYP2D6_inhibitor--audit-final-source-caution",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--audit-recheck-interaction-CYP3A4_inhibitor--audit-final-source-caution",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--audit-recheck-interaction-QT_prolonging--audit-final-source-caution",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--audit-recheck-interaction-CNS_active--audit-final-source-caution",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--audit-recheck-interaction-metoprolol--audit-final-source-caution",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--audit-recheck-interaction-serotonin_precursor--audit-final-source-caution",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--audit-recheck-interaction-weight_loss_agent--audit-final-source-caution",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "raw",
+    "case_id": "dulox-taper-limit--audit-recheck-duplicate-duloxetine-positive--audit-final-source-caution",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "raw",
+    "case_id": "esc-taper-limit--audit-final-primary-RU-ESC-seizure_state-неконтролируемые-positive--audit-final-source-caution",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--audit-final-primary-RU-SER-seizure_state-контролируемые-positive--audit-final-source-caution",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--audit-final-primary-RU-SER-seizure_state-неконтролируемые-positive--audit-final-source-caution",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "raw",
+    "case_id": "dulox-taper-limit--wrong-release-form--audit-final-known-terminal",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "raw",
+    "case_id": "fluvox-taper-limit--wrong-release-form--audit-final-known-terminal",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "raw",
+    "case_id": "ser-taper-limit--wrong-release-form--audit-final-known-terminal",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "raw",
+    "case_id": "venla-xr-taper-limit--wrong-release-form--audit-final-known-terminal",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "projected",
+    "case_id": "dulox-taper-limit--branch-source_limit",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "dulox-taper-limit--branch-withdrawal",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "dulox-taper-limit--wrong-release-form",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "dulox-taper-limit--audit-recheck-persistent_BP_increase-positive",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "dulox-taper-limit--audit-recheck-persistent_BP_increase-negative",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "dulox-taper-limit--audit-recheck-persistent_BP_increase-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "dulox-taper-limit--audit-recheck-persistent_BP_increase-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "dulox-taper-limit--audit-recheck-duplicate-duloxetine-positive",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "dulox-taper-limit--audit-recheck-duplicate-duloxetine-selected_product_only",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "dulox-taper-limit--audit-recheck-duplicate-duloxetine-unknown_additional_product",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "dulox-taper-limit--audit-recheck-persistent_BP_increase-positive--audit-final-A-phase-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "dulox-taper-limit--audit-recheck-persistent_BP_increase-positive--audit-final-A-phase-not_started",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "dulox-taper-limit--audit-final-conditional-adult-reference",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "projected",
+    "case_id": "dulox-taper-limit--audit-recheck-persistent_BP_increase-positive--audit-final-source-caution",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "projected",
+    "case_id": "dulox-taper-limit--audit-recheck-persistent_BP_increase-unknown--audit-final-source-caution",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "projected",
+    "case_id": "dulox-taper-limit--audit-recheck-duplicate-duloxetine-positive--audit-final-source-caution",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "projected",
+    "case_id": "dulox-taper-limit--wrong-release-form--audit-final-known-terminal",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "projected",
+    "case_id": "esc-taper-limit--current-branch-source_limit",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "esc-taper-limit--current-mania_symptoms-stop",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "esc-taper-limit--current-arrhythmia_signs-stop",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "esc-taper-limit--current-serotonin_syndrome_signs-stop",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "esc-taper-limit--current-mania_symptoms-stop--audit-final-A-phase-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "esc-taper-limit--current-mania_symptoms-stop--audit-final-A-phase-not_started",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "esc-taper-limit--current-arrhythmia_signs-stop--audit-final-A-phase-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "esc-taper-limit--current-arrhythmia_signs-stop--audit-final-A-phase-not_started",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "esc-taper-limit--current-serotonin_syndrome_signs-stop--audit-final-A-phase-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "esc-taper-limit--current-serotonin_syndrome_signs-stop--audit-final-A-phase-not_started",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "esc-taper-limit--audit-final-primary-RU-ESC-seizure_state-неконтролируемые-positive",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "esc-taper-limit--audit-final-primary-RU-ESC-seizure_state-неконтролируемые-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "esc-taper-limit--audit-final-primary-RU-ESC-seizure_state-первичные/участившиеся приступы-positive",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "esc-taper-limit--audit-final-primary-RU-ESC-seizure_state-первичные/участившиеся приступы-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "esc-taper-limit--audit-final-primary-RU-ESC-seizure_state-первичные/участившиеся приступы-phase-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "esc-taper-limit--audit-final-primary-RU-ESC-seizure_state-первичные/участившиеся приступы-phase-not_started",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "esc-taper-limit--current-mania_symptoms-stop--audit-final-bounded-action",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "projected",
+    "case_id": "esc-taper-limit--current-arrhythmia_signs-stop--audit-final-bounded-action",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "projected",
+    "case_id": "esc-taper-limit--current-serotonin_syndrome_signs-stop--audit-final-bounded-action",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "projected",
+    "case_id": "esc-taper-limit--audit-final-primary-RU-ESC-seizure_state-первичные/участившиеся приступы-positive--audit-final-bounded-action",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "projected",
+    "case_id": "esc-taper-limit--audit-final-conditional-adult-reference",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "projected",
+    "case_id": "esc-taper-limit--audit-final-primary-RU-ESC-seizure_state-неконтролируемые-positive--audit-final-source-caution",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "projected",
+    "case_id": "fluvox-taper-limit--branch-source_limit",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "fluvox-taper-limit--branch-withdrawal",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "fluvox-taper-limit--wrong-release-form",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "fluvox-taper-limit--audit-v2-serotonin_syndrome_signs-positive",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "fluvox-taper-limit--audit-v2-serotonin_syndrome_signs-negative",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "fluvox-taper-limit--audit-v2-serotonin_syndrome_signs-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "fluvox-taper-limit--audit-v2-serotonin_syndrome_signs-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "fluvox-taper-limit--audit-v2-new_or_increased_seizures-positive",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "fluvox-taper-limit--audit-v2-new_or_increased_seizures-negative",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "fluvox-taper-limit--audit-v2-new_or_increased_seizures-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "fluvox-taper-limit--audit-v2-new_or_increased_seizures-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "fluvox-taper-limit--audit-v2-liver_injury_signs-positive",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "fluvox-taper-limit--audit-v2-liver_injury_signs-negative",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "fluvox-taper-limit--audit-v2-liver_injury_signs-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "fluvox-taper-limit--audit-v2-liver_injury_signs-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "fluvox-taper-limit--audit-v2-mania_symptoms-positive",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "fluvox-taper-limit--audit-v2-mania_symptoms-negative",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "fluvox-taper-limit--audit-v2-mania_symptoms-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "fluvox-taper-limit--audit-v2-mania_symptoms-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "fluvox-taper-limit--audit-v2-serotonin_syndrome_signs-positive--audit-final-A-phase-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "fluvox-taper-limit--audit-v2-serotonin_syndrome_signs-positive--audit-final-A-phase-not_started",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "fluvox-taper-limit--audit-v2-new_or_increased_seizures-positive--audit-final-A-phase-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "fluvox-taper-limit--audit-v2-new_or_increased_seizures-positive--audit-final-A-phase-not_started",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "fluvox-taper-limit--audit-v2-liver_injury_signs-positive--audit-final-A-phase-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "fluvox-taper-limit--audit-v2-liver_injury_signs-positive--audit-final-A-phase-not_started",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "fluvox-taper-limit--audit-v2-mania_symptoms-positive--audit-final-A-phase-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "fluvox-taper-limit--audit-v2-mania_symptoms-positive--audit-final-A-phase-not_started",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "fluvox-taper-limit--audit-v2-serotonin_syndrome_signs-positive--audit-final-bounded-action",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "projected",
+    "case_id": "fluvox-taper-limit--audit-v2-new_or_increased_seizures-positive--audit-final-bounded-action",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "projected",
+    "case_id": "fluvox-taper-limit--audit-v2-liver_injury_signs-positive--audit-final-bounded-action",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "projected",
+    "case_id": "fluvox-taper-limit--audit-v2-mania_symptoms-positive--audit-final-bounded-action",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "projected",
+    "case_id": "fluvox-taper-limit--audit-final-conditional-adult-reference",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "projected",
+    "case_id": "fluvox-taper-limit--wrong-release-form--audit-final-known-terminal",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "projected",
+    "case_id": "ser-taper-limit--branch-source_limit",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "ser-taper-limit--branch-withdrawal",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "ser-taper-limit--medicines-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "ser-taper-limit--wrong-release-form",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "ser-taper-limit--round2-active-mania-stop",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "ser-taper-limit--audit-v2-interaction-strong_CYP3A4",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "ser-taper-limit--audit-recheck-symptomatic_hyponatremia-positive",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "ser-taper-limit--audit-recheck-symptomatic_hyponatremia-negative",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "ser-taper-limit--audit-recheck-symptomatic_hyponatremia-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "ser-taper-limit--audit-recheck-symptomatic_hyponatremia-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "ser-taper-limit--round2-active-mania-stop--audit-final-A-phase-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "ser-taper-limit--round2-active-mania-stop--audit-final-A-phase-not_started",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "ser-taper-limit--audit-recheck-symptomatic_hyponatremia-positive--audit-final-A-phase-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "ser-taper-limit--audit-recheck-symptomatic_hyponatremia-positive--audit-final-A-phase-not_started",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "ser-taper-limit--audit-final-primary-RU-SER-seizure_state-контролируемые-positive",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "ser-taper-limit--audit-final-primary-RU-SER-seizure_state-контролируемые-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "ser-taper-limit--audit-final-primary-RU-SER-seizure_state-неконтролируемые-positive",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "ser-taper-limit--audit-final-primary-RU-SER-seizure_state-неконтролируемые-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "ser-taper-limit--audit-final-primary-RU-SER-seizure_state-новые приступы-positive",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "ser-taper-limit--audit-final-primary-RU-SER-seizure_state-новые приступы-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "ser-taper-limit--audit-final-primary-RU-SER-seizure_state-новые приступы-phase-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "ser-taper-limit--audit-final-primary-RU-SER-seizure_state-новые приступы-phase-not_started",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "ser-taper-limit--round2-active-mania-stop--audit-final-bounded-action",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "projected",
+    "case_id": "ser-taper-limit--audit-final-primary-RU-SER-seizure_state-новые приступы-positive--audit-final-bounded-action",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "projected",
+    "case_id": "ser-taper-limit--audit-final-conditional-adult-reference",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "projected",
+    "case_id": "ser-taper-limit--audit-v2-interaction-strong_CYP3A4--audit-final-source-caution",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "projected",
+    "case_id": "ser-taper-limit--audit-recheck-symptomatic_hyponatremia-positive--audit-final-source-caution",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "projected",
+    "case_id": "ser-taper-limit--audit-recheck-symptomatic_hyponatremia-unknown--audit-final-source-caution",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "projected",
+    "case_id": "ser-taper-limit--audit-final-primary-RU-SER-seizure_state-контролируемые-positive--audit-final-source-caution",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "projected",
+    "case_id": "ser-taper-limit--audit-final-primary-RU-SER-seizure_state-неконтролируемые-positive--audit-final-source-caution",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "projected",
+    "case_id": "ser-taper-limit--wrong-release-form--audit-final-known-terminal",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "projected",
+    "case_id": "venla-xr-taper-limit--branch-source_limit",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "venla-xr-taper-limit--branch-withdrawal",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "venla-xr-taper-limit--wrong-release-form",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "venla-xr-taper-limit--audit-v2-diastolic_BP-positive",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "venla-xr-taper-limit--audit-v2-diastolic_BP-negative",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "venla-xr-taper-limit--audit-v2-diastolic_BP-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "venla-xr-taper-limit--audit-v2-diastolic_BP-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "venla-xr-taper-limit--audit-v2-current_allergic_reaction-positive",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "venla-xr-taper-limit--audit-v2-current_allergic_reaction-negative",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "venla-xr-taper-limit--audit-v2-current_allergic_reaction-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "venla-xr-taper-limit--audit-v2-current_allergic_reaction-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "venla-xr-taper-limit--audit-recheck-suspected_serotonin_syndrome-positive",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "venla-xr-taper-limit--audit-recheck-suspected_serotonin_syndrome-negative",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "venla-xr-taper-limit--audit-recheck-suspected_serotonin_syndrome-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "venla-xr-taper-limit--audit-recheck-suspected_serotonin_syndrome-omitted",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "venla-xr-taper-limit--audit-recheck-interaction-CYP2D6_inhibitor",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "venla-xr-taper-limit--audit-recheck-interaction-CYP3A4_inhibitor",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "venla-xr-taper-limit--audit-recheck-interaction-QT_prolonging",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "venla-xr-taper-limit--audit-recheck-interaction-CNS_active",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "venla-xr-taper-limit--audit-recheck-interaction-metoprolol",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "venla-xr-taper-limit--audit-recheck-interaction-serotonin_precursor",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "venla-xr-taper-limit--audit-recheck-interaction-weight_loss_agent",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "venla-xr-taper-limit--audit-v2-diastolic_BP-positive--audit-final-A-phase-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "venla-xr-taper-limit--audit-v2-diastolic_BP-positive--audit-final-A-phase-not_started",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "venla-xr-taper-limit--audit-v2-current_allergic_reaction-positive--audit-final-A-phase-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "venla-xr-taper-limit--audit-v2-current_allergic_reaction-positive--audit-final-A-phase-not_started",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "venla-xr-taper-limit--audit-recheck-suspected_serotonin_syndrome-positive--audit-final-A-phase-unknown",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "venla-xr-taper-limit--audit-recheck-suspected_serotonin_syndrome-positive--audit-final-A-phase-not_started",
+    "age": 40,
+    "population": "adult_source_population"
+  },
+  {
+    "location": "projected",
+    "case_id": "venla-xr-taper-limit--audit-v2-diastolic_BP-positive--audit-final-bounded-action",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "projected",
+    "case_id": "venla-xr-taper-limit--audit-v2-current_allergic_reaction-positive--audit-final-bounded-action",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "projected",
+    "case_id": "venla-xr-taper-limit--audit-final-conditional-adult-reference",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "projected",
+    "case_id": "venla-xr-taper-limit--audit-recheck-suspected_serotonin_syndrome-positive--audit-final-source-caution",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "projected",
+    "case_id": "venla-xr-taper-limit--audit-recheck-suspected_serotonin_syndrome-unknown--audit-final-source-caution",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "projected",
+    "case_id": "venla-xr-taper-limit--audit-recheck-interaction-CYP2D6_inhibitor--audit-final-source-caution",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "projected",
+    "case_id": "venla-xr-taper-limit--audit-recheck-interaction-CYP3A4_inhibitor--audit-final-source-caution",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "projected",
+    "case_id": "venla-xr-taper-limit--audit-recheck-interaction-QT_prolonging--audit-final-source-caution",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "projected",
+    "case_id": "venla-xr-taper-limit--audit-recheck-interaction-CNS_active--audit-final-source-caution",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "projected",
+    "case_id": "venla-xr-taper-limit--audit-recheck-interaction-metoprolol--audit-final-source-caution",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "projected",
+    "case_id": "venla-xr-taper-limit--audit-recheck-interaction-serotonin_precursor--audit-final-source-caution",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "projected",
+    "case_id": "venla-xr-taper-limit--audit-recheck-interaction-weight_loss_agent--audit-final-source-caution",
+    "age": null,
+    "population": "not_assessed"
+  },
+  {
+    "location": "projected",
+    "case_id": "venla-xr-taper-limit--wrong-release-form--audit-final-known-terminal",
+    "age": null,
+    "population": "not_assessed"
+  }
+]

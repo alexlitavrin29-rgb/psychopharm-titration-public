@@ -1,0 +1,741 @@
+{
+  "schema_version": "1.0",
+  "rule_id": "preg-renal-start",
+  "development_status": "extracted_research_not_executable",
+  "language": "ru",
+  "identity": {
+    "title": "Прегабалин: начальная доза и предел по CLcr",
+    "mode": "start",
+    "drug_inn": "прегабалин",
+    "from_drug_inn": null,
+    "to_drug_inn": null,
+    "formulation": "Лирика: капсулы; 25/50/75/100/150/200/300 мг",
+    "route": "oral",
+    "diagnosis_label_ru": "Генерализованное тревожное расстройство",
+    "classification_system": "МКБ-10",
+    "diagnosis_code": "F41.1",
+    "jurisdiction": "RU_versioned_copy"
+  },
+  "applicability": {
+    "population_description": "Взрослые. Только подтверждённые условия этой карточки; другие популяции не получают масштабированную взрослую дозу.",
+    "age_constraints": [
+      {
+        "minimum": 18,
+        "inclusive": true,
+        "unit": "year",
+        "source_ref": "RU-PREG",
+        "source_locator": "§4.2 табл.1, PDF с.5"
+      }
+    ],
+    "pregnancy": "Решение по применимости/пользе и риску отдельно; без опубликованной числовой поправки. Стандартная карточка не выдаёт автоматическую дозу при беременности.",
+    "lactation": "Проверять отдельные ограничения источника. Стандартная карточка не выдаёт автоматическую дозу при кормлении.",
+    "renal_constraints": [],
+    "hepatic_constraints": [],
+    "comorbidity_constraints": [],
+    "interacting_drugs": [],
+    "other_conditions": [],
+    "exclusions": [
+      "Гиперчувствительность",
+      "Непроверенные противопоказания/взаимодействия не считать отсутствующими",
+      "Гемодиализ: отдельная дополнительная доза и сложная ветка; полной индивидуальной схемы не извлечено."
+    ],
+    "indication_status_in_russia": "RU_indication_in_read_copy_registry_row_observed_latest_text_identity_not_asserted",
+    "source_refs": [
+      "RU-PREG"
+    ]
+  },
+  "inputs": [
+    {
+      "input_id": "age",
+      "question_ru": "Возраст пациента, полных лет?",
+      "data_type": "integer",
+      "unit": "year",
+      "allowed_values": [],
+      "required_when": "для индивидуального результата",
+      "show_when": "при выборе этой карточки",
+      "why_needed": "Возрастная применимость; для эсциталопрама особая пожилая ветка, для прегабалина возраст не заменяет CLcr.",
+      "changes": [
+        "applicability"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать условно.",
+      "source_refs": [
+        "RU-PREG"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "form",
+      "question_ru": "Какая конкретная форма и сила дозы используются?",
+      "data_type": "structured_form",
+      "unit": null,
+      "allowed_values": [],
+      "required_when": "для индивидуального результата",
+      "show_when": "при выборе этой карточки",
+      "why_needed": "Исполнимость дозы и запрет произвольного деления форм.",
+      "changes": [
+        "applicability"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать условно.",
+      "source_refs": [
+        "RU-PREG"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "pregnancy",
+      "question_ru": "Беременность установлена или возможна?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [
+        "да",
+        "нет",
+        "неизвестно"
+      ],
+      "required_when": "для индивидуального результата",
+      "show_when": "при выборе этой карточки",
+      "why_needed": "Отдельное решение о пользе и риске; числовой коэффициент не опубликован.",
+      "changes": [
+        "applicability"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать условно.",
+      "source_refs": [
+        "RU-PREG"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "lactation",
+      "question_ru": "Есть грудное вскармливание?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [
+        "да",
+        "нет",
+        "неизвестно"
+      ],
+      "required_when": "для индивидуального результата",
+      "show_when": "при выборе этой карточки",
+      "why_needed": "Ограничение инструкции, решение врача; не уменьшение дозы по выдуманному коэффициенту.",
+      "changes": [
+        "applicability"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать условно.",
+      "source_refs": [
+        "RU-PREG"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "medicines",
+      "question_ru": "Какие лекарства и значимые вещества сейчас принимаются или недавно отменены?",
+      "data_type": "medication_list",
+      "unit": null,
+      "allowed_values": [],
+      "required_when": "для индивидуального результата",
+      "show_when": "при выборе этой карточки",
+      "why_needed": "Выявление взаимодействий и интервалов после ИМАО; пустой список и непроверенный список различаются.",
+      "changes": [
+        "applicability"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать условно.",
+      "source_refs": [
+        "RU-PREG"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "allergy",
+      "question_ru": "Есть известная гиперчувствительность к препарату/компонентам?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [
+        "да",
+        "нет",
+        "неизвестно"
+      ],
+      "required_when": "для индивидуального результата",
+      "show_when": "при выборе этой карточки",
+      "why_needed": "Противопоказание.",
+      "changes": [
+        "applicability"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать условно.",
+      "source_refs": [
+        "RU-PREG"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "clcr",
+      "question_ru": "Подтверждённый врачом клиренс креатинина CLcr, мл/мин?",
+      "data_type": "number",
+      "unit": "mL/min",
+      "allowed_values": [],
+      "required_when": "для индивидуального результата",
+      "show_when": "при выборе этой карточки",
+      "why_needed": "Определяет строку почечной таблицы; eGFR с нормированием на площадь тела не подставлять.",
+      "changes": [
+        "applicability"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать условно.",
+      "source_refs": [
+        "RU-PREG"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "dialysis",
+      "question_ru": "Проводится гемодиализ?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [
+        "да",
+        "нет",
+        "неизвестно"
+      ],
+      "required_when": "для индивидуального результата",
+      "show_when": "при выборе этой карточки",
+      "why_needed": "Дополнительная доза после сеанса; сложная ветка вне данного короткого расчёта.",
+      "changes": [
+        "applicability"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать условно.",
+      "source_refs": [
+        "RU-PREG"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "substance_use",
+      "question_ru": "Зависимость/злоупотребление психоактивными веществами отмечены врачом?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [
+        "да",
+        "нет",
+        "неизвестно"
+      ],
+      "required_when": "для индивидуального результата",
+      "show_when": "при выборе этой карточки",
+      "why_needed": "Зависимость и злоупотребление: ограничение КР, не числовая поправка.",
+      "changes": [
+        "applicability"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать условно.",
+      "source_refs": [
+        "RU-PREG",
+        "RU-GAD"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    },
+    {
+      "input_id": "respiratory",
+      "question_ru": "Дыхательная недостаточность/существенное нарушение дыхания отмечены врачом?",
+      "data_type": "enum",
+      "unit": null,
+      "allowed_values": [
+        "да",
+        "нет",
+        "неизвестно"
+      ],
+      "required_when": "для индивидуального результата",
+      "show_when": "при выборе этой карточки",
+      "why_needed": "Риск угнетения дыхания, особенно с депрессантами ЦНС.",
+      "changes": [
+        "applicability"
+      ],
+      "unknown_allowed": true,
+      "action_if_unknown": "Недостаточно данных для безусловной схемы; назвать это поле. Справочное правило можно показать условно.",
+      "source_refs": [
+        "RU-PREG"
+      ],
+      "input_role": "dose_operand_or_applicability_gate"
+    }
+  ],
+  "clinical_parameters": [
+    {
+      "parameter_id": "clcr_cutoffs",
+      "meaning": "Границы таблицы",
+      "value": [
+        15,
+        30,
+        60
+      ],
+      "lower": null,
+      "upper": null,
+      "lower_inclusive": null,
+      "upper_inclusive": null,
+      "unit": "mL/min",
+      "source_ref": "RU-PREG",
+      "source_locator": "табл.1 с.5",
+      "source_meaning": "предписание",
+      "derivation": null
+    },
+    {
+      "parameter_id": "start_ge60",
+      "meaning": "Старт CLcr ≥60",
+      "value": 150,
+      "lower": null,
+      "upper": null,
+      "lower_inclusive": null,
+      "upper_inclusive": null,
+      "unit": "mg/day",
+      "source_ref": "RU-PREG",
+      "source_locator": "табл.1 с.5",
+      "source_meaning": "предписание",
+      "derivation": null
+    },
+    {
+      "parameter_id": "max_ge60",
+      "meaning": "Максимум CLcr ≥60",
+      "value": 600,
+      "lower": null,
+      "upper": null,
+      "lower_inclusive": null,
+      "upper_inclusive": null,
+      "unit": "mg/day",
+      "source_ref": "RU-PREG",
+      "source_locator": "табл.1 с.5",
+      "source_meaning": "предписание",
+      "derivation": null
+    },
+    {
+      "parameter_id": "start_30_60",
+      "meaning": "Старт 30≤CLcr<60",
+      "value": 75,
+      "lower": null,
+      "upper": null,
+      "lower_inclusive": null,
+      "upper_inclusive": null,
+      "unit": "mg/day",
+      "source_ref": "RU-PREG",
+      "source_locator": "табл.1 с.5",
+      "source_meaning": "предписание",
+      "derivation": null
+    },
+    {
+      "parameter_id": "max_30_60",
+      "meaning": "Максимум 30≤CLcr<60",
+      "value": 300,
+      "lower": null,
+      "upper": null,
+      "lower_inclusive": null,
+      "upper_inclusive": null,
+      "unit": "mg/day",
+      "source_ref": "RU-PREG",
+      "source_locator": "табл.1 с.5",
+      "source_meaning": "предписание",
+      "derivation": null
+    },
+    {
+      "parameter_id": "start_15_30",
+      "meaning": "Старт 15≤CLcr<30",
+      "value": null,
+      "lower": 25,
+      "upper": 50,
+      "lower_inclusive": true,
+      "upper_inclusive": true,
+      "unit": "mg/day",
+      "source_ref": "RU-PREG",
+      "source_locator": "табл.1 с.5",
+      "source_meaning": "диапазон",
+      "derivation": null
+    },
+    {
+      "parameter_id": "max_15_30",
+      "meaning": "Максимум 15≤CLcr<30",
+      "value": 150,
+      "lower": null,
+      "upper": null,
+      "lower_inclusive": null,
+      "upper_inclusive": null,
+      "unit": "mg/day",
+      "source_ref": "RU-PREG",
+      "source_locator": "табл.1 с.5",
+      "source_meaning": "предписание",
+      "derivation": null
+    },
+    {
+      "parameter_id": "start_lt15",
+      "meaning": "Старт CLcr<15",
+      "value": 25,
+      "lower": null,
+      "upper": null,
+      "lower_inclusive": null,
+      "upper_inclusive": null,
+      "unit": "mg/day",
+      "source_ref": "RU-PREG",
+      "source_locator": "табл.1 с.5",
+      "source_meaning": "предписание",
+      "derivation": null
+    },
+    {
+      "parameter_id": "max_lt15",
+      "meaning": "Максимум CLcr<15",
+      "value": 75,
+      "lower": null,
+      "upper": null,
+      "lower_inclusive": null,
+      "upper_inclusive": null,
+      "unit": "mg/day",
+      "source_ref": "RU-PREG",
+      "source_locator": "табл.1 с.5",
+      "source_meaning": "предписание",
+      "derivation": null
+    },
+    {
+      "parameter_id": "freq_ge30",
+      "meaning": "Кратность для CLcr≥30",
+      "value": [
+        2,
+        3
+      ],
+      "lower": null,
+      "upper": null,
+      "lower_inclusive": null,
+      "upper_inclusive": null,
+      "unit": "administration/day",
+      "source_ref": "RU-PREG",
+      "source_locator": "табл.1 с.5",
+      "source_meaning": "выбор врача",
+      "derivation": null
+    },
+    {
+      "parameter_id": "freq_15_30",
+      "meaning": "Кратность 15≤CLcr<30",
+      "value": [
+        1,
+        2
+      ],
+      "lower": null,
+      "upper": null,
+      "lower_inclusive": null,
+      "upper_inclusive": null,
+      "unit": "administration/day",
+      "source_ref": "RU-PREG",
+      "source_locator": "табл.1 с.5",
+      "source_meaning": "выбор врача",
+      "derivation": null
+    },
+    {
+      "parameter_id": "freq_lt15",
+      "meaning": "Кратность CLcr<15",
+      "value": 1,
+      "lower": null,
+      "upper": null,
+      "lower_inclusive": null,
+      "upper_inclusive": null,
+      "unit": "administration/day",
+      "source_ref": "RU-PREG",
+      "source_locator": "табл.1 с.5",
+      "source_meaning": "предписание",
+      "derivation": null
+    },
+    {
+      "parameter_id": "adult_minimum",
+      "meaning": "Нижняя возрастная граница этой инструкции",
+      "value": 18,
+      "lower": null,
+      "upper": null,
+      "lower_inclusive": null,
+      "upper_inclusive": null,
+      "unit": "year",
+      "source_ref": "RU-PREG",
+      "source_locator": "§4.1/противопоказания: RU-SER с.2, RU-ESC с.4/7, RU-PREG с.5–6",
+      "source_meaning": "предписание",
+      "derivation": null
+    },
+    {
+      "parameter_id": "source_form_strengths",
+      "meaning": "Силы дозы выбранной формы; не дозовая рекомендация",
+      "value": [
+        25,
+        50,
+        75,
+        100,
+        150,
+        200,
+        300
+      ],
+      "lower": null,
+      "upper": null,
+      "lower_inclusive": null,
+      "upper_inclusive": null,
+      "unit": "mg",
+      "source_ref": "RU-PREG",
+      "source_locator": "Состав/описание: PDF с.1–2",
+      "source_meaning": "предписание",
+      "derivation": null
+    }
+  ],
+  "logic": {
+    "representation": "decision_table",
+    "conditions": [
+      "Диагноз, препарат и режим выбрал врач. Соответствие популяции/форме и ограничения источника подтверждены.",
+      "CLcr ≥0, числовой, подтверждён врачом; нет гемодиализа. Отрицательные значения/ошибки единиц не клиническая строка таблицы."
+    ],
+    "actions": [
+      {
+        "clcr_lower": 60,
+        "lower_inclusive": true,
+        "clcr_upper": null,
+        "start_ref": "start_ge60",
+        "max_ref": "max_ge60",
+        "frequency_ref": "freq_ge30"
+      },
+      {
+        "clcr_lower": 30,
+        "lower_inclusive": true,
+        "clcr_upper": 60,
+        "upper_inclusive": false,
+        "start_ref": "start_30_60",
+        "max_ref": "max_30_60",
+        "frequency_ref": "freq_ge30"
+      },
+      {
+        "clcr_lower": 15,
+        "lower_inclusive": true,
+        "clcr_upper": 30,
+        "upper_inclusive": false,
+        "start_ref": "start_15_30",
+        "max_ref": "max_15_30",
+        "frequency_ref": "freq_15_30"
+      },
+      {
+        "clcr_lower": 0,
+        "lower_inclusive": true,
+        "clcr_upper": 15,
+        "upper_inclusive": false,
+        "start_ref": "start_lt15",
+        "max_ref": "max_lt15",
+        "frequency_ref": "freq_lt15"
+      }
+    ],
+    "parameter_refs": [
+      "clcr_cutoffs",
+      "start_ge60",
+      "max_ge60",
+      "start_30_60",
+      "max_30_60",
+      "start_15_30",
+      "max_15_30",
+      "start_lt15",
+      "max_lt15",
+      "freq_ge30",
+      "freq_15_30",
+      "freq_lt15",
+      "adult_minimum",
+      "source_form_strengths"
+    ],
+    "source_refs": [
+      "RU-PREG"
+    ],
+    "clinician_choices": [
+      "Старт внутри опубликованного диапазона, если он дан",
+      "Кратность из допустимого перечня",
+      "Способ набора/перехода между начальной и максимальной дозой при нарушенной функции почек; точных недельных ступеней таблица не задаёт"
+    ],
+    "missing_data_behaviour": "Назвать обязательные неизвестные поля; результат insufficient_data. Справочные этапы можно показать как условные, без безусловной дозы пациенту.",
+    "unsupported_case_behaviour": "not_applicable для этой карточки; указать конкретную отсутствующую ветку, не запретить всё лечение.",
+    "contraindicated_case_behaviour": "Не выдавать дозовую схему противопоказанного сочетания; отобразить источник и причину.",
+    "conflicts": [
+      "Российская формула с.4 содержит единицы, отличные от EMA. Использовать готовый подтверждённый CLcr; встроенный расчёт по этой формуле исключён."
+    ],
+    "composite_rule_dependencies": [],
+    "combination_justification": "Самостоятельные поправки не перемножаются. Совпадение числа не подтверждает применимость их сочетания."
+  },
+  "output": {
+    "result_type": "clinician_choice",
+    "medication_inn": "прегабалин",
+    "dose_per_administration": null,
+    "administrations_per_day": null,
+    "total_daily_dose": null,
+    "unit": "mg",
+    "formulation": "Лирика: капсулы; 25/50/75/100/150/200/300 мг",
+    "schedule": [],
+    "warnings": [
+      "Условная схема источника, не автономное назначение. Максимум не является целью.",
+      "Подтвердить противопоказания и взаимодействия исходной инструкции.",
+      "Числовой вывод относится к указанным дозовым условиям. Неоценённые модулем клинические обстоятельства не считаются отсутствующими; полный клинический допуск врач оценивает отдельно."
+    ],
+    "mandatory_checks": [
+      "Проверить соответствие источнику, указанное в applicability и inputs."
+    ],
+    "clinician_decisions_remaining": [
+      "Подтверждение применимости",
+      "Решение о переходе к следующему этапу"
+    ],
+    "rounding_or_formulation_rule": "Старт 75 мг/сут делить на 3 приёма по 25 мг можно; равные 2 приёма по 37,5 мг этими капсулами не исполнимы. Для 25–50 мг/сут и кратности 1/2 показать диапазон и проверить выбранный вариант; не подменять диапазон автоматически 25 мг. Не открывать/делить капсулу для округления.",
+    "source_refs": [
+      "RU-PREG"
+    ]
+  },
+  "verification": {
+    "primary_source_checked": true,
+    "all_clinical_parameters_have_sources": true,
+    "population_and_indication_checked": true,
+    "russian_applicability_checked": false,
+    "formulation_feasibility_checked": true,
+    "combined_rules_justified": false,
+    "source_transfer_check": "extraction_checked; calculator_not_implemented",
+    "clinical_review": "not_performed",
+    "product_clinical_validation": "not_performed",
+    "ready_for_technical_implementation": true,
+    "unresolved_items": [
+      "Последняя регистрационная редакция РФ не сверена; техническое воспроизведение зафиксированной версии не равно разрешению для клинического применения."
+    ]
+  },
+  "test_cases": [
+    {
+      "case_id": "preg-renal-start__renal-at30",
+      "synthetic": true,
+      "given": {
+        "clcr": 30,
+        "dialysis": false
+      },
+      "expected": {
+        "start_total_daily_mg": 75,
+        "max_total_daily_mg": 300,
+        "published_frequencies": [
+          2,
+          3
+        ],
+        "whole_capsule_equal_division": {
+          "3_times_mg": 25,
+          "2_times_mg": null
+        }
+      },
+      "source_refs": [
+        "RU-PREG"
+      ],
+      "note": "Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены.",
+      "scope": "isolated_source_transfer_expectation_under_card_conditions"
+    },
+    {
+      "case_id": "preg-renal-start__renal-at15",
+      "synthetic": true,
+      "given": {
+        "clcr": 15,
+        "dialysis": false
+      },
+      "expected": {
+        "start_total_daily_range_mg": [
+          25,
+          50
+        ],
+        "max_total_daily_mg": 150,
+        "published_frequencies": [
+          1,
+          2
+        ],
+        "automatic_choice": null
+      },
+      "source_refs": [
+        "RU-PREG"
+      ],
+      "note": "Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены.",
+      "scope": "isolated_source_transfer_expectation_under_card_conditions"
+    },
+    {
+      "case_id": "preg-renal-start__renal-below15",
+      "synthetic": true,
+      "given": {
+        "clcr": 14,
+        "dialysis": false
+      },
+      "expected": {
+        "start_total_daily_mg": 25,
+        "max_total_daily_mg": 75,
+        "frequency": 1
+      },
+      "source_refs": [
+        "RU-PREG"
+      ],
+      "note": "Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены.",
+      "scope": "isolated_source_transfer_expectation_under_card_conditions"
+    },
+    {
+      "case_id": "preg-renal-start__renal-unit-error",
+      "synthetic": true,
+      "given": {
+        "eGFR": 30,
+        "unit": "mL/min/1.73m2"
+      },
+      "expected": {
+        "result_type": "insufficient_data",
+        "missing": [
+          "confirmed_clcr_mL_per_min"
+        ],
+        "automatic_substitution": false
+      },
+      "source_refs": [
+        "RU-PREG"
+      ],
+      "note": "Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены."
+    },
+    {
+      "case_id": "preg-renal-start__renal-hd",
+      "synthetic": true,
+      "given": {
+        "clcr": 14,
+        "dialysis": true
+      },
+      "expected": {
+        "result_type": "not_applicable",
+        "reason": "Отдельная диализная схема; обычная строка недостаточна"
+      },
+      "source_refs": [
+        "RU-PREG"
+      ],
+      "note": "Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены."
+    },
+    {
+      "case_id": "preg-renal-start__clcr-negative",
+      "synthetic": true,
+      "given": {
+        "clcr": -1,
+        "unit": "mL/min"
+      },
+      "expected": {
+        "result_type": "insufficient_data",
+        "reason": "Недопустимое значение показателя",
+        "renal_row_selected": null
+      },
+      "source_refs": [
+        "RU-PREG"
+      ],
+      "note": "Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены."
+    },
+    {
+      "case_id": "preg-renal-start__clcr-unit-invalid",
+      "synthetic": true,
+      "given": {
+        "clcr": 30,
+        "unit": "mmol/L"
+      },
+      "expected": {
+        "result_type": "insufficient_data",
+        "reason": "Таблица требует CLcr в мл/мин"
+      },
+      "source_refs": [
+        "RU-PREG"
+      ],
+      "note": "Ожидание для проверки переноса; не назначение пациенту. Общие условия применимости должны быть явно подтверждены."
+    }
+  ],
+  "profile": {
+    "country": "RU",
+    "selection_status": "RU_profile_research",
+    "foreign_fallback_allowed": false
+  },
+  "card_type": "numeric_source_rule"
+}

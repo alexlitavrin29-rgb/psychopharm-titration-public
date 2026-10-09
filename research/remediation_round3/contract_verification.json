@@ -1,0 +1,10 @@
+{
+  "status": "pass",
+  "nature": "Static typing, completeness, provenance and specified research-contract rejection checks only",
+  "rule_cards": 38,
+  "full_synthetic_scenarios": 6646,
+  "calculator_tests_executed": false,
+  "medical_currency_proven": false,
+  "clinical_validation": "not_performed",
+  "errors": []
+}

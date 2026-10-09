@@ -1,0 +1,866 @@
+[
+  {
+    "rule_id": "dulox-depression-start",
+    "input_id": "mania",
+    "old_fields": {
+      "question_ru": "Подтверждённое значение mania по §4.4 с.5?",
+      "source_locator": "§4.4 с.4"
+    },
+    "new_fields": {
+      "question_ru": "Есть маниакальные эпизоды или биполярное расстройство в анамнезе?",
+      "source_locator": "§4.4 с.4"
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "dulox-depression-start",
+    "input_id": "suicide_risk",
+    "old_fields": {
+      "question_ru": "Подтверждённое значение suicide_risk по §4.4 с.7–8?",
+      "source_locator": "§4.4 с.5–6"
+    },
+    "new_fields": {
+      "question_ru": "Врач выявил суицидальный риск или клиническое ухудшение?",
+      "source_locator": "§4.4 с.5–6"
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "dulox-depression-start",
+    "input_id": "bleeding_risk",
+    "old_fields": {
+      "question_ru": "Подтверждённое значение bleeding_risk по §4.4 с.8?",
+      "source_locator": "§4.4 с.6"
+    },
+    "new_fields": {
+      "question_ru": "Есть известная склонность к кровотечениям?",
+      "source_locator": "§4.4 с.6"
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "dulox-depression-start",
+    "input_id": "hyponatremia_risk",
+    "old_fields": {
+      "question_ru": "Подтверждённое значение hyponatremia_risk по §4.4 с.8?",
+      "source_locator": "§4.4 с.6"
+    },
+    "new_fields": {
+      "question_ru": "Есть известные факторы риска гипонатриемии?",
+      "source_locator": "§4.4 с.6"
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "dulox-depression-start",
+    "input_id": "diabetes",
+    "old_fields": {
+      "question_ru": "Подтверждённое значение diabetes по §4.4 с.5?",
+      "source_locator": "§4.4 с.4"
+    },
+    "new_fields": {
+      "question_ru": "Есть сахарный диабет, если врач сообщает этот контекст?",
+      "source_locator": "§4.8 с.11, гипергликемия; с.14, данные исследований диабетической нейропатии"
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "dulox-depression-start",
+    "input_id": "seizure_state",
+    "old_fields": {
+      "question_ru": "Подтверждённое значение seizure_state по §4.4 с.5?",
+      "source_locator": "§4.4 с.4"
+    },
+    "new_fields": {
+      "question_ru": "Есть судороги в анамнезе?",
+      "source_locator": "§4.4 с.4"
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "dulox-gad-adjust",
+    "input_id": "mania",
+    "old_fields": {
+      "question_ru": "Подтверждённое значение mania по §4.4 с.5?",
+      "source_locator": "§4.4 с.4"
+    },
+    "new_fields": {
+      "question_ru": "Есть маниакальные эпизоды или биполярное расстройство в анамнезе?",
+      "source_locator": "§4.4 с.4"
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "dulox-gad-adjust",
+    "input_id": "suicide_risk",
+    "old_fields": {
+      "question_ru": "Подтверждённое значение suicide_risk по §4.4 с.7–8?",
+      "source_locator": "§4.4 с.5–6"
+    },
+    "new_fields": {
+      "question_ru": "Врач выявил суицидальный риск или клиническое ухудшение?",
+      "source_locator": "§4.4 с.5–6"
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "dulox-gad-adjust",
+    "input_id": "bleeding_risk",
+    "old_fields": {
+      "question_ru": "Подтверждённое значение bleeding_risk по §4.4 с.8?",
+      "source_locator": "§4.4 с.6"
+    },
+    "new_fields": {
+      "question_ru": "Есть известная склонность к кровотечениям?",
+      "source_locator": "§4.4 с.6"
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "dulox-gad-adjust",
+    "input_id": "hyponatremia_risk",
+    "old_fields": {
+      "question_ru": "Подтверждённое значение hyponatremia_risk по §4.4 с.8?",
+      "source_locator": "§4.4 с.6"
+    },
+    "new_fields": {
+      "question_ru": "Есть известные факторы риска гипонатриемии?",
+      "source_locator": "§4.4 с.6"
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "dulox-gad-adjust",
+    "input_id": "diabetes",
+    "old_fields": {
+      "question_ru": "Подтверждённое значение diabetes по §4.4 с.5?",
+      "source_locator": "§4.4 с.4"
+    },
+    "new_fields": {
+      "question_ru": "Есть сахарный диабет, если врач сообщает этот контекст?",
+      "source_locator": "§4.8 с.11, гипергликемия; с.14, данные исследований диабетической нейропатии"
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "dulox-gad-adjust",
+    "input_id": "seizure_state",
+    "old_fields": {
+      "question_ru": "Подтверждённое значение seizure_state по §4.4 с.5?",
+      "source_locator": "§4.4 с.4"
+    },
+    "new_fields": {
+      "question_ru": "Есть судороги в анамнезе?",
+      "source_locator": "§4.4 с.4"
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "dulox-gad-start",
+    "input_id": "mania",
+    "old_fields": {
+      "question_ru": "Подтверждённое значение mania по §4.4 с.5?",
+      "source_locator": "§4.4 с.4"
+    },
+    "new_fields": {
+      "question_ru": "Есть маниакальные эпизоды или биполярное расстройство в анамнезе?",
+      "source_locator": "§4.4 с.4"
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "dulox-gad-start",
+    "input_id": "suicide_risk",
+    "old_fields": {
+      "question_ru": "Подтверждённое значение suicide_risk по §4.4 с.7–8?",
+      "source_locator": "§4.4 с.5–6"
+    },
+    "new_fields": {
+      "question_ru": "Врач выявил суицидальный риск или клиническое ухудшение?",
+      "source_locator": "§4.4 с.5–6"
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "dulox-gad-start",
+    "input_id": "bleeding_risk",
+    "old_fields": {
+      "question_ru": "Подтверждённое значение bleeding_risk по §4.4 с.8?",
+      "source_locator": "§4.4 с.6"
+    },
+    "new_fields": {
+      "question_ru": "Есть известная склонность к кровотечениям?",
+      "source_locator": "§4.4 с.6"
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "dulox-gad-start",
+    "input_id": "hyponatremia_risk",
+    "old_fields": {
+      "question_ru": "Подтверждённое значение hyponatremia_risk по §4.4 с.8?",
+      "source_locator": "§4.4 с.6"
+    },
+    "new_fields": {
+      "question_ru": "Есть известные факторы риска гипонатриемии?",
+      "source_locator": "§4.4 с.6"
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "dulox-gad-start",
+    "input_id": "diabetes",
+    "old_fields": {
+      "question_ru": "Подтверждённое значение diabetes по §4.4 с.5?",
+      "source_locator": "§4.4 с.4"
+    },
+    "new_fields": {
+      "question_ru": "Есть сахарный диабет, если врач сообщает этот контекст?",
+      "source_locator": "§4.8 с.11, гипергликемия; с.14, данные исследований диабетической нейропатии"
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "dulox-gad-start",
+    "input_id": "seizure_state",
+    "old_fields": {
+      "question_ru": "Подтверждённое значение seizure_state по §4.4 с.5?",
+      "source_locator": "§4.4 с.4"
+    },
+    "new_fields": {
+      "question_ru": "Есть судороги в анамнезе?",
+      "source_locator": "§4.4 с.4"
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "input_id": "form",
+    "old_fields": {
+      "why_needed": "10 мг исполнимы половиной таблетки 20 мг; §4.2 с.17.",
+      "necessity_reason": "10 мг исполнимы половиной таблетки 20 мг; §4.2 с.17."
+    },
+    "new_fields": {
+      "why_needed": "10 мг исполнимы половиной таблетки 20 мг; §4.2 с.4.",
+      "necessity_reason": "10 мг исполнимы половиной таблетки 20 мг; §4.2 с.4."
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "input_id": "hepatic",
+    "old_fields": {
+      "why_needed": "Ограничение диапазона §4.2 с.17.",
+      "necessity_reason": "Ограничение диапазона §4.2 с.17."
+    },
+    "new_fields": {
+      "why_needed": "Ограничение диапазона §4.2 с.4.",
+      "necessity_reason": "Ограничение диапазона §4.2 с.4."
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "input_id": "renal",
+    "old_fields": {
+      "why_needed": "Если есть/неясно, уточнить CLcr в отдельной ветке; §4.2 с.17.",
+      "necessity_reason": "Если есть/неясно, уточнить CLcr в отдельной ветке; §4.2 с.17."
+    },
+    "new_fields": {
+      "why_needed": "Если есть/неясно, уточнить CLcr в отдельной ветке; §4.2 с.4.",
+      "necessity_reason": "Если есть/неясно, уточнить CLcr в отдельной ветке; §4.2 с.4."
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "input_id": "response",
+    "old_fields": {
+      "source_locator": "§4.2 с.16, паническое расстройство: старт и последующее повышение"
+    },
+    "new_fields": {
+      "source_locator": "RU-PAROX §4.2 с.3"
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "input_id": "tolerability",
+    "old_fields": {
+      "source_locator": "§4.2 с.16, паническое расстройство: старт и последующее повышение"
+    },
+    "new_fields": {
+      "source_locator": "RU-PAROX §4.2 с.3"
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "input_id": "current_dose",
+    "old_fields": {
+      "source_locator": "§4.2 с.16, паническое расстройство: старт и последующее повышение"
+    },
+    "new_fields": {
+      "source_locator": "RU-PAROX §4.2 с.3–4"
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "input_id": "time_at_dose",
+    "old_fields": {
+      "source_locator": "§4.2 с.16, паническое расстройство: старт и последующее повышение"
+    },
+    "new_fields": {
+      "source_locator": "RU-PAROX §4.2 с.3"
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "input_id": "maoi_type",
+    "old_fields": {
+      "why_needed": "Изменяет применимость/действие: §4.3 с.17–18."
+    },
+    "new_fields": {
+      "why_needed": "Изменяет применимость/действие: §4.3 с.4–5."
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "input_id": "maoi_stopped_at",
+    "old_fields": {
+      "why_needed": "Изменяет применимость/действие: §4.3 с.17–18."
+    },
+    "new_fields": {
+      "why_needed": "Изменяет применимость/действие: §4.3 с.4–5."
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "input_id": "elderly_population",
+    "old_fields": {
+      "why_needed": "Изменяет применимость/действие: §4.2 с.17; возрастная граница не задана.",
+      "necessity_reason": "Изменяет применимость/действие: §4.2 с.17; возрастная граница не задана."
+    },
+    "new_fields": {
+      "why_needed": "Изменяет применимость/действие: §4.2 с.4; возрастная граница не задана.",
+      "necessity_reason": "Изменяет применимость/действие: §4.2 с.4; возрастная граница не задана."
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "input_id": "mania",
+    "old_fields": {
+      "question_ru": "Подтверждённое значение mania по §4.4 с.20?",
+      "why_needed": "Изменяет допуск/действие по RU-PAROX §4.4 с.20; не общий допуск врача."
+    },
+    "new_fields": {
+      "question_ru": "Есть мания в анамнезе?",
+      "why_needed": "Изменяет допуск/действие по RU-PAROX §4.4 с.7–8; не общий допуск врача."
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "input_id": "suicide_risk",
+    "old_fields": {
+      "question_ru": "Подтверждённое значение suicide_risk по §4.4 с.18–20?",
+      "why_needed": "Изменяет допуск/действие по RU-PAROX §4.4 с.18–20; не общий допуск врача."
+    },
+    "new_fields": {
+      "question_ru": "Врач выявил суицидальный риск или клиническое ухудшение?",
+      "why_needed": "Изменяет допуск/действие по RU-PAROX §4.4 с.5–7; не общий допуск врача."
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "input_id": "akathisia",
+    "old_fields": {
+      "question_ru": "Подтверждённое значение akathisia по §4.4 с.20?",
+      "why_needed": "Изменяет допуск/действие по RU-PAROX §4.4 с.20; не общий допуск врача."
+    },
+    "new_fields": {
+      "question_ru": "Есть акатизия?",
+      "why_needed": "Изменяет допуск/действие по RU-PAROX §4.4 с.7–8; не общий допуск врача."
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "input_id": "diabetes",
+    "old_fields": {
+      "question_ru": "Подтверждённое значение diabetes по §4.4 с.21?",
+      "why_needed": "Изменяет допуск/действие по RU-PAROX §4.4 с.21; не общий допуск врача."
+    },
+    "new_fields": {
+      "question_ru": "Есть сахарный диабет?",
+      "why_needed": "Изменяет допуск/действие по RU-PAROX §4.4 с.8–9; не общий допуск врача."
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "input_id": "glaucoma",
+    "old_fields": {
+      "question_ru": "Подтверждённое значение glaucoma по §4.4 с.22?",
+      "why_needed": "Изменяет допуск/действие по RU-PAROX §4.4 с.22; не общий допуск врача."
+    },
+    "new_fields": {
+      "question_ru": "Есть закрытоугольная глаукома?",
+      "why_needed": "Изменяет допуск/действие по RU-PAROX §4.4 с.9; не общий допуск врача."
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "input_id": "bleeding_risk",
+    "old_fields": {
+      "question_ru": "Подтверждённое значение bleeding_risk по §4.4 с.22?",
+      "why_needed": "Изменяет допуск/действие по RU-PAROX §4.4 с.22; не общий допуск врача."
+    },
+    "new_fields": {
+      "question_ru": "Есть известная склонность к кровотечениям?",
+      "why_needed": "Изменяет допуск/действие по RU-PAROX §4.4 с.9; не общий допуск врача."
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "input_id": "qt_risk",
+    "old_fields": {
+      "question_ru": "Подтверждённое значение qt_risk по §4.4 с.22?",
+      "why_needed": "Изменяет допуск/действие по RU-PAROX §4.4 с.22; не общий допуск врача."
+    },
+    "new_fields": {
+      "question_ru": "Есть известный риск удлинения QT?",
+      "why_needed": "Изменяет допуск/действие по RU-PAROX §4.4 с.9; не общий допуск врача."
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "input_id": "ect",
+    "old_fields": {
+      "question_ru": "Подтверждённое значение ect по §4.4 с.22?",
+      "why_needed": "Изменяет допуск/действие по RU-PAROX §4.4 с.22; не общий допуск врача."
+    },
+    "new_fields": {
+      "question_ru": "Проводится ЭСТ?",
+      "why_needed": "Изменяет допуск/действие по RU-PAROX §4.4 с.9; не общий допуск врача."
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "parox-panic-kr",
+    "input_id": "seizure_state",
+    "old_fields": {
+      "question_ru": "Подтверждённое значение seizure_state по §4.4 с.21?",
+      "why_needed": "Изменяет допуск/действие по RU-PAROX §4.4 с.21; не общий допуск врача.",
+      "necessity_reason": "Изменяет допуск/действие по RU-PAROX §4.4 с.21; не общий допуск врача.",
+      "source_locator": "§4.4 с.8"
+    },
+    "new_fields": {
+      "question_ru": "Каково подтверждённое состояние эпилепсии/приступов, включая возникшие при приёме пароксетина?",
+      "why_needed": "Изменяет допуск/действие по RU-PAROX §4.4 с.8–9; не общий допуск врача.",
+      "necessity_reason": "Изменяет допуск/действие по RU-PAROX §4.4 с.8–9; не общий допуск врача.",
+      "source_locator": "RU-PAROX §4.4 с.8–9"
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "parox-taper-example",
+    "input_id": "age",
+    "old_fields": {
+      "source_locator": "ОХЛП: PDF с.14–18 (§4.1–4.3), с.19–23 (§4.4), с.24–28 (§4.5–4.6), с.39 (§8–10)"
+    },
+    "new_fields": {
+      "source_locator": "RU-PAROX §4.1 с.1–2; §4.2 с.4; §4.3 с.5"
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "parox-taper-example",
+    "input_id": "form",
+    "old_fields": {
+      "source_locator": "ОХЛП: PDF с.14–18 (§4.1–4.3), с.19–23 (§4.4), с.24–28 (§4.5–4.6), с.39 (§8–10)"
+    },
+    "new_fields": {
+      "source_locator": "RU-PAROX §3 с.1; §4.2 с.4"
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "parox-taper-example",
+    "input_id": "current_dose",
+    "old_fields": {
+      "source_locator": "ОХЛП: PDF с.14–18 (§4.1–4.3), с.19–23 (§4.4), с.24–28 (§4.5–4.6), с.39 (§8–10)"
+    },
+    "new_fields": {
+      "source_locator": "RU-PAROX §4.2 с.3–4"
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "parox-taper-example",
+    "input_id": "duration",
+    "old_fields": {
+      "source_locator": "ОХЛП: PDF с.14–18 (§4.1–4.3), с.19–23 (§4.4), с.24–28 (§4.5–4.6), с.39 (§8–10)"
+    },
+    "new_fields": {
+      "source_locator": "RU-PAROX §4.4 с.9–10; RU-DEP Б5 с.105–106, риск синдрома отмены"
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "parox-taper-example",
+    "input_id": "past_withdrawal",
+    "old_fields": {
+      "source_locator": "ОХЛП: PDF с.14–18 (§4.1–4.3), с.19–23 (§4.4), с.24–28 (§4.5–4.6), с.39 (§8–10)"
+    },
+    "new_fields": {
+      "source_locator": "RU-PAROX §4.4 с.9–10; RU-DEP Б5 с.105–106, риск синдрома отмены"
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "parox-taper-example",
+    "input_id": "withdrawal_severity",
+    "old_fields": {
+      "source_locator": "ОХЛП: PDF с.14–18 (§4.1–4.3), с.19–23 (§4.4), с.24–28 (§4.5–4.6), с.39 (§8–10)"
+    },
+    "new_fields": {
+      "source_locator": "RU-PAROX §4.2 с.3–4; §4.4 с.9–10"
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "parox-taper-example",
+    "input_id": "example_selected",
+    "old_fields": {
+      "source_locator": "ОХЛП: PDF с.14–18 (§4.1–4.3), с.19–23 (§4.4), с.24–28 (§4.5–4.6), с.39 (§8–10)"
+    },
+    "new_fields": {
+      "source_locator": "RU-PAROX §4.2 с.3–4"
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "switch-parox-ago-selected-example",
+    "input_id": "age",
+    "old_fields": {
+      "source_locator": "RU-PAROX: §4.2 с.17; §4.4 с.18; RU-AGO: §4.2 с.2, возрастная применимость"
+    },
+    "new_fields": {
+      "source_locator": "RU-PAROX §4.1 с.1–2; §4.2 с.4; §4.3 с.5; RU-AGO §4.2 с.2"
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "switch-parox-ago-selected-example",
+    "input_id": "medicines",
+    "old_fields": {
+      "source_locator": "RU-PAROX: §4.3 с.17–18; §4.5 с.24–26; RU-AGO: §4.3 с.3; §4.5 с.5–6"
+    },
+    "new_fields": {
+      "source_locator": "RU-PAROX §4.3 с.4–5; §4.5 с.11–14; RU-AGO §4.3 с.3; §4.5 с.5–6"
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "switch-parox-ago-selected-example",
+    "input_id": "allergy",
+    "old_fields": {
+      "source_locator": "RU-PAROX: §4.3 с.17; RU-AGO: §4.3 с.3"
+    },
+    "new_fields": {
+      "source_locator": "RU-PAROX §4.3 с.4; RU-AGO §4.3 с.3"
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "switch-parox-ago-selected-example",
+    "input_id": "maoi_type",
+    "old_fields": {
+      "why_needed": "Изменяет применимость/действие: §4.3 с.17–18."
+    },
+    "new_fields": {
+      "why_needed": "Изменяет применимость/действие: §4.3 с.4–5."
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "switch-parox-ago-selected-example",
+    "input_id": "maoi_stopped_at",
+    "old_fields": {
+      "why_needed": "Изменяет применимость/действие: §4.3 с.17–18."
+    },
+    "new_fields": {
+      "why_needed": "Изменяет применимость/действие: §4.3 с.4–5."
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "switch-parox-ago-selected-example",
+    "input_id": "from_renal",
+    "old_fields": {
+      "why_needed": "Изменяет применимость/действие: §4.2 с.17.",
+      "necessity_reason": "Изменяет применимость/действие: §4.2 с.17."
+    },
+    "new_fields": {
+      "why_needed": "Изменяет применимость/действие: §4.2 с.4.",
+      "necessity_reason": "Изменяет применимость/действие: §4.2 с.4."
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "switch-parox-ago-selected-example",
+    "input_id": "from_hepatic",
+    "old_fields": {
+      "why_needed": "Изменяет применимость/действие: §4.2 с.17.",
+      "necessity_reason": "Изменяет применимость/действие: §4.2 с.17."
+    },
+    "new_fields": {
+      "why_needed": "Изменяет применимость/действие: §4.2 с.4.",
+      "necessity_reason": "Изменяет применимость/действие: §4.2 с.4."
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "switch-parox-ago-selected-example",
+    "input_id": "akathisia",
+    "old_fields": {
+      "question_ru": "Подтверждённое значение akathisia по §4.4 с.20?",
+      "why_needed": "Изменяет допуск/действие по RU-PAROX §4.4 с.20; не общий допуск врача.",
+      "necessity_reason": "Изменяет допуск/действие по RU-PAROX §4.4 с.20; не общий допуск врача."
+    },
+    "new_fields": {
+      "question_ru": "Есть акатизия?",
+      "why_needed": "Изменяет допуск/действие по RU-PAROX §4.4 с.7–8; не общий допуск врача.",
+      "necessity_reason": "Изменяет допуск/действие по RU-PAROX §4.4 с.7–8; не общий допуск врача."
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "switch-parox-ago-selected-example",
+    "input_id": "glaucoma",
+    "old_fields": {
+      "question_ru": "Подтверждённое значение glaucoma по §4.4 с.22?",
+      "why_needed": "Изменяет допуск/действие по RU-PAROX §4.4 с.22; не общий допуск врача.",
+      "necessity_reason": "Изменяет допуск/действие по RU-PAROX §4.4 с.22; не общий допуск врача."
+    },
+    "new_fields": {
+      "question_ru": "Есть закрытоугольная глаукома?",
+      "why_needed": "Изменяет допуск/действие по RU-PAROX §4.4 с.9; не общий допуск врача.",
+      "necessity_reason": "Изменяет допуск/действие по RU-PAROX §4.4 с.9; не общий допуск врача."
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "switch-parox-ago-selected-example",
+    "input_id": "bleeding_risk",
+    "old_fields": {
+      "question_ru": "Подтверждённое значение bleeding_risk по §4.4 с.22?",
+      "why_needed": "Изменяет допуск/действие по RU-PAROX §4.4 с.22; не общий допуск врача.",
+      "necessity_reason": "Изменяет допуск/действие по RU-PAROX §4.4 с.22; не общий допуск врача."
+    },
+    "new_fields": {
+      "question_ru": "Есть известная склонность к кровотечениям?",
+      "why_needed": "Изменяет допуск/действие по RU-PAROX §4.4 с.9; не общий допуск врача.",
+      "necessity_reason": "Изменяет допуск/действие по RU-PAROX §4.4 с.9; не общий допуск врача."
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "switch-parox-ago-selected-example",
+    "input_id": "qt_risk",
+    "old_fields": {
+      "question_ru": "Подтверждённое значение qt_risk по §4.4 с.22?",
+      "why_needed": "Изменяет допуск/действие по RU-PAROX §4.4 с.22; не общий допуск врача.",
+      "necessity_reason": "Изменяет допуск/действие по RU-PAROX §4.4 с.22; не общий допуск врача."
+    },
+    "new_fields": {
+      "question_ru": "Есть известный риск удлинения QT?",
+      "why_needed": "Изменяет допуск/действие по RU-PAROX §4.4 с.9; не общий допуск врача.",
+      "necessity_reason": "Изменяет допуск/действие по RU-PAROX §4.4 с.9; не общий допуск врача."
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "switch-parox-ago-selected-example",
+    "input_id": "seizure_state",
+    "old_fields": {
+      "question_ru": "Подтверждённое значение seizure_state по §4.4 с.21?",
+      "why_needed": "Изменяет допуск/действие по RU-PAROX §4.4 с.21; не общий допуск врача.",
+      "necessity_reason": "Изменяет допуск/действие по RU-PAROX §4.4 с.21; не общий допуск врача."
+    },
+    "new_fields": {
+      "question_ru": "Каково подтверждённое состояние эпилепсии/приступов, включая возникшие при приёме пароксетина?",
+      "why_needed": "Изменяет допуск/действие по RU-PAROX §4.4 с.8–9; не общий допуск врача.",
+      "necessity_reason": "Изменяет допуск/действие по RU-PAROX §4.4 с.8–9; не общий допуск врача."
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "switch-parox-ago",
+    "input_id": "age",
+    "old_fields": {
+      "source_locator": "RU-PAROX: §4.2 с.17; §4.4 с.18; RU-AGO: §4.2 с.2, возрастная применимость"
+    },
+    "new_fields": {
+      "source_locator": "RU-PAROX §4.1 с.1–2; §4.2 с.4; §4.3 с.5; RU-AGO §4.2 с.2"
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "switch-parox-ago",
+    "input_id": "medicines",
+    "old_fields": {
+      "source_locator": "RU-PAROX: §4.3 с.17–18; §4.5 с.24–26; RU-AGO: §4.3 с.3; §4.5 с.5–6"
+    },
+    "new_fields": {
+      "source_locator": "RU-PAROX §4.3 с.4–5; §4.5 с.11–14; RU-AGO §4.3 с.3; §4.5 с.5–6"
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "switch-parox-ago",
+    "input_id": "allergy",
+    "old_fields": {
+      "source_locator": "RU-PAROX: §4.3 с.17; RU-AGO: §4.3 с.3"
+    },
+    "new_fields": {
+      "source_locator": "RU-PAROX §4.3 с.4; RU-AGO §4.3 с.3"
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "switch-parox-ago",
+    "input_id": "maoi_type",
+    "old_fields": {
+      "why_needed": "Изменяет применимость/действие: §4.3 с.17–18."
+    },
+    "new_fields": {
+      "why_needed": "Изменяет применимость/действие: §4.3 с.4–5."
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "switch-parox-ago",
+    "input_id": "maoi_stopped_at",
+    "old_fields": {
+      "why_needed": "Изменяет применимость/действие: §4.3 с.17–18."
+    },
+    "new_fields": {
+      "why_needed": "Изменяет применимость/действие: §4.3 с.4–5."
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "switch-parox-ago",
+    "input_id": "from_hepatic",
+    "old_fields": {
+      "question_ru": "Подтверждённое значение from_hepatic по §4.2 с.17?",
+      "why_needed": "Изменяет допуск/действие по RU-PAROX §4.2 с.17; не общий допуск врача.",
+      "necessity_reason": "Изменяет допуск/действие по RU-PAROX §4.2 с.17; не общий допуск врача."
+    },
+    "new_fields": {
+      "question_ru": "Какова подтверждённая функция печени для исходного пароксетина?",
+      "why_needed": "Изменяет допуск/действие по RU-PAROX §4.2 с.4; не общий допуск врача.",
+      "necessity_reason": "Изменяет допуск/действие по RU-PAROX §4.2 с.4; не общий допуск врача."
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "switch-parox-ago",
+    "input_id": "from_renal",
+    "old_fields": {
+      "why_needed": "Изменяет допуск/действие по RU-PAROX §4.2 с.17; не общий допуск врача.",
+      "necessity_reason": "Изменяет допуск/действие по RU-PAROX §4.2 с.17; не общий допуск врача."
+    },
+    "new_fields": {
+      "why_needed": "Изменяет допуск/действие по RU-PAROX §4.2 с.4; не общий допуск врача.",
+      "necessity_reason": "Изменяет допуск/действие по RU-PAROX §4.2 с.4; не общий допуск врача."
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "switch-parox-ago",
+    "input_id": "akathisia",
+    "old_fields": {
+      "question_ru": "Подтверждённое значение akathisia по §4.4 с.20?",
+      "why_needed": "Изменяет допуск/действие по RU-PAROX §4.4 с.20; не общий допуск врача.",
+      "necessity_reason": "Изменяет допуск/действие по RU-PAROX §4.4 с.20; не общий допуск врача."
+    },
+    "new_fields": {
+      "question_ru": "Есть акатизия?",
+      "why_needed": "Изменяет допуск/действие по RU-PAROX §4.4 с.7–8; не общий допуск врача.",
+      "necessity_reason": "Изменяет допуск/действие по RU-PAROX §4.4 с.7–8; не общий допуск врача."
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "switch-parox-ago",
+    "input_id": "glaucoma",
+    "old_fields": {
+      "question_ru": "Подтверждённое значение glaucoma по §4.4 с.22?",
+      "why_needed": "Изменяет допуск/действие по RU-PAROX §4.4 с.22; не общий допуск врача.",
+      "necessity_reason": "Изменяет допуск/действие по RU-PAROX §4.4 с.22; не общий допуск врача."
+    },
+    "new_fields": {
+      "question_ru": "Есть закрытоугольная глаукома?",
+      "why_needed": "Изменяет допуск/действие по RU-PAROX §4.4 с.9; не общий допуск врача.",
+      "necessity_reason": "Изменяет допуск/действие по RU-PAROX §4.4 с.9; не общий допуск врача."
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "switch-parox-ago",
+    "input_id": "bleeding_risk",
+    "old_fields": {
+      "question_ru": "Подтверждённое значение bleeding_risk по §4.4 с.22?",
+      "why_needed": "Изменяет допуск/действие по RU-PAROX §4.4 с.22; не общий допуск врача.",
+      "necessity_reason": "Изменяет допуск/действие по RU-PAROX §4.4 с.22; не общий допуск врача."
+    },
+    "new_fields": {
+      "question_ru": "Есть известная склонность к кровотечениям?",
+      "why_needed": "Изменяет допуск/действие по RU-PAROX §4.4 с.9; не общий допуск врача.",
+      "necessity_reason": "Изменяет допуск/действие по RU-PAROX §4.4 с.9; не общий допуск врача."
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "switch-parox-ago",
+    "input_id": "qt_risk",
+    "old_fields": {
+      "question_ru": "Подтверждённое значение qt_risk по §4.4 с.22?",
+      "why_needed": "Изменяет допуск/действие по RU-PAROX §4.4 с.22; не общий допуск врача.",
+      "necessity_reason": "Изменяет допуск/действие по RU-PAROX §4.4 с.22; не общий допуск врача."
+    },
+    "new_fields": {
+      "question_ru": "Есть известный риск удлинения QT?",
+      "why_needed": "Изменяет допуск/действие по RU-PAROX §4.4 с.9; не общий допуск врача.",
+      "necessity_reason": "Изменяет допуск/действие по RU-PAROX §4.4 с.9; не общий допуск врача."
+    },
+    "changed": true
+  },
+  {
+    "rule_id": "switch-parox-ago",
+    "input_id": "seizure_state",
+    "old_fields": {
+      "question_ru": "Подтверждённое значение seizure_state по §4.4 с.21?",
+      "why_needed": "Изменяет допуск/действие по RU-PAROX §4.4 с.21; не общий допуск врача.",
+      "necessity_reason": "Изменяет допуск/действие по RU-PAROX §4.4 с.21; не общий допуск врача."
+    },
+    "new_fields": {
+      "question_ru": "Каково подтверждённое состояние эпилепсии/приступов, включая возникшие при приёме пароксетина?",
+      "why_needed": "Изменяет допуск/действие по RU-PAROX §4.4 с.8–9; не общий допуск врача.",
+      "necessity_reason": "Изменяет допуск/действие по RU-PAROX §4.4 с.8–9; не общий допуск врача."
+    },
+    "changed": true
+  }
+]

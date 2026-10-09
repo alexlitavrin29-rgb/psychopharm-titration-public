@@ -1,0 +1,55 @@
+{
+  "dimensions": [
+    {
+      "name": "Источники/версии/РФ",
+      "weight": 0.25,
+      "score": 9.0,
+      "reason": "Подтверждены 11 продуктовых оснований данного снимка; 11076 вложенных оснований согласованы по владельцу, версии и SHA. Остались неверные физические локаторы в inputs/ledger и противоречия main01. Повторная загрузка через CAPTCHA не требуется для обнуления уже имеющегося доказательства."
+    },
+    {
+      "name": "Правила/воспроизводимость",
+      "weight": 0.3,
+      "score": 7.5,
+      "reason": "Опубликованные дозовые числа, границы и формы сохранены; исходные срочные условия исправлены. Часть известных текущих событий, взаимодействий и условных действий ещё отсутствует; PREG/PHEN resumption не установлен источником."
+    },
+    {
+      "name": "Входы/пути",
+      "weight": 0.2,
+      "score": 6.6,
+      "reason": "391 путь пересчитан; ложные negatives исправлены, 19 демоций поддерживают ограниченный качественный результат. Остались потерянная положительная причина, пересекающаяся pregnancy-семантика, недоказанный минимум и обычные 20/17/18."
+    },
+    {
+      "name": "Покрытие/приёмка",
+      "weight": 0.15,
+      "score": 7.4,
+      "reason": "Рассмотрены 38 карточек и все 30 критериев; чтение применимых условий расширено. Не доказаны все индивидуальные mappings и necessity по каждому результату. 5086 prepared cases не равны исчерпывающим независимым первичным проверкам."
+    },
+    {
+      "name": "Техника",
+      "weight": 0.1,
+      "score": 8.6,
+      "reason": "Прочитанные validators безопасно повторены. Выполнены отдельные изолированные мутации, технические границы и собственные проверки свойств. Нет ошибок trace/count/branch typing/полного одинакового given; detector пропускает потерянную положительную причину. Приложение отсутствует и на этом этапе не требуется."
+    }
+  ],
+  "weights": [
+    25,
+    30,
+    20,
+    15,
+    10
+  ],
+  "raw_unrounded": 7.79,
+  "raw_one_decimal": 7.8,
+  "cap": 6.0,
+  "cap_basis": [
+    "V2-12/№17: every result-specific input necessity unproved, PREG qualitative taper example",
+    "V2-13/№18: actual ordinaryAGO20/DULOX-GAD17/PREG17–18",
+    "R1-01..05: substantial incomplete source condition/action transfer"
+  ],
+  "critical_cap4_applied": false,
+  "critical_cap4_reason": "В проверенной части не установлены изменённые publisheddose/interval/unit или completeknowncontra→allow. Известныеcritical source conflicts/form gaps корректноblocked; непровереннаячасть не названа безопасной.",
+  "final_one_decimal": 6.0,
+  "snapshot": "ff00118c08d144f1434869d25aba164234a443b4732f84fe8d481504622cf6ec",
+  "own_expert_score": true,
+  "clinical_validation": "not_performed and notrequiredclinicalproducttrial forresearchscore"
+}

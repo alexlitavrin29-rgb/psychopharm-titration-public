@@ -1,0 +1,625 @@
+{
+  "stop_cases": 121,
+  "affected_cases": 22,
+  "rows": [
+    {
+      "case_id": "venla-xr-gad-start--r3-current_allergic_reaction-positive",
+      "rule_id": "venla-xr-gad-start",
+      "source_stop_medication": "RU-VENLA-XR",
+      "unrelated_payload": {
+        "minimum_increase_interval_weeks": 2,
+        "maximum_mg": 225
+      },
+      "source_actions": [
+        {
+          "action": "discontinue_selected_medication",
+          "source_ref": "RU-VENLA-XR",
+          "source_locator": "§4.4 с.13"
+        }
+      ],
+      "source_condition": {
+        "input": "current_allergic_reaction",
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.4 с.13"
+      }
+    },
+    {
+      "case_id": "venla-xr-panic-form-limit--r3-current_allergic_reaction-positive",
+      "rule_id": "venla-xr-panic-form-limit",
+      "source_stop_medication": "RU-VENLA-XR",
+      "unrelated_payload": {
+        "source_initial_mg": 37.5,
+        "initial_days": 7,
+        "source_next_mg": 75
+      },
+      "source_actions": [
+        {
+          "action": "discontinue_selected_medication",
+          "source_ref": "RU-VENLA-XR",
+          "source_locator": "§4.4 с.13"
+        }
+      ],
+      "source_condition": {
+        "input": "current_allergic_reaction",
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.4 с.13"
+      }
+    },
+    {
+      "case_id": "venla-xr-social-start--r3-current_allergic_reaction-positive",
+      "rule_id": "venla-xr-social-start",
+      "source_stop_medication": "RU-VENLA-XR",
+      "unrelated_payload": {
+        "minimum_increase_interval_weeks": 2,
+        "maximum_mg": 225
+      },
+      "source_actions": [
+        {
+          "action": "discontinue_selected_medication",
+          "source_ref": "RU-VENLA-XR",
+          "source_locator": "§4.4 с.13"
+        }
+      ],
+      "source_condition": {
+        "input": "current_allergic_reaction",
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.4 с.13"
+      }
+    },
+    {
+      "case_id": "parox-panic-kr--audit-v2-serotonin_syndrome_signs-positive",
+      "rule_id": "parox-panic-kr",
+      "source_stop_medication": "RU-PAROX",
+      "unrelated_payload": {
+        "recommended_mg": 40,
+        "minimum_interval_weeks": 1,
+        "maximum_mg": 60,
+        "optional_increment_mg": 10,
+        "beyond_recommended_requires": "inadequate response after several weeks, no fabricated exact interval"
+      },
+      "source_actions": [
+        {
+          "action": "discontinue_selected_medication",
+          "source_ref": "RU-PAROX",
+          "source_locator": "§4.4 с.7"
+        },
+        {
+          "action": "start_supportive_symptomatic_treatment_by_clinician",
+          "source_ref": "RU-PAROX",
+          "source_locator": "§4.4 с.7"
+        }
+      ],
+      "source_condition": {
+        "input": "serotonin_syndrome_signs",
+        "source_ref": "RU-PAROX",
+        "source_locator": "§4.4 с.7"
+      }
+    },
+    {
+      "case_id": "parox-taper-example--audit-v2-serotonin_syndrome_signs-positive",
+      "rule_id": "parox-taper-example",
+      "source_stop_medication": "RU-PAROX",
+      "unrelated_payload": {
+        "hold_if": "withdrawal symptoms; clinician reassessment/prior-dose resumption then slower, unspecified steps"
+      },
+      "source_actions": [
+        {
+          "action": "discontinue_selected_medication",
+          "source_ref": "RU-PAROX",
+          "source_locator": "§4.4 с.7"
+        },
+        {
+          "action": "start_supportive_symptomatic_treatment_by_clinician",
+          "source_ref": "RU-PAROX",
+          "source_locator": "§4.4 с.7"
+        }
+      ],
+      "source_condition": {
+        "input": "serotonin_syndrome_signs",
+        "source_ref": "RU-PAROX",
+        "source_locator": "§4.4 с.7"
+      }
+    },
+    {
+      "case_id": "switch-parox-ago--audit-v2-serotonin_syndrome_signs-positive",
+      "rule_id": "switch-parox-ago",
+      "source_stop_medication": "RU-PAROX",
+      "unrelated_payload": {
+        "overlap_allowed_on_first_day_of_A_reduction": true,
+        "target_source_start_mg": 25,
+        "monitoring": {
+          "before_start": true,
+          "approximate_weeks_parameter": "liver_monitoring_weeks",
+          "restart_same_frequency_after_dose_increase": true,
+          "rising_repeat_hours_parameter": "repeat_liver_tests_hours",
+          "stop_signs_action": "immediate cessation; tests until normal",
+          "source_ref": "RU-AGO",
+          "source_locator": "§4.2 с.1; §4.4 с.3–4"
+        }
+      },
+      "source_actions": [
+        {
+          "action": "discontinue_selected_medication",
+          "source_ref": "RU-PAROX",
+          "source_locator": "§4.4 с.7"
+        },
+        {
+          "action": "start_supportive_symptomatic_treatment_by_clinician",
+          "source_ref": "RU-PAROX",
+          "source_locator": "§4.4 с.7"
+        }
+      ],
+      "source_condition": {
+        "input": "serotonin_syndrome_signs",
+        "source_ref": "RU-PAROX",
+        "source_locator": "§4.4 с.7"
+      }
+    },
+    {
+      "case_id": "parox-taper-example--audit-v2-new_seizures-positive",
+      "rule_id": "parox-taper-example",
+      "source_stop_medication": "RU-PAROX",
+      "unrelated_payload": {
+        "hold_if": "withdrawal symptoms; clinician reassessment/prior-dose resumption then slower, unspecified steps"
+      },
+      "source_actions": [
+        {
+          "action": "discontinue_selected_medication",
+          "source_ref": "RU-PAROX",
+          "source_locator": "§4.4 с.9"
+        }
+      ],
+      "source_condition": {
+        "input": "new_seizures",
+        "source_ref": "RU-PAROX",
+        "source_locator": "§4.4 с.9"
+      }
+    },
+    {
+      "case_id": "fluvox-taper-limit--audit-v2-serotonin_syndrome_signs-positive",
+      "rule_id": "fluvox-taper-limit",
+      "source_stop_medication": "RU-FLUVOX",
+      "unrelated_payload": {
+        "duration_constraint": {
+          "operator": "minimum_choice",
+          "source_options_weeks": [
+            1,
+            2
+          ],
+          "chosen_minimum_weeks": null,
+          "hard_upper_limit_weeks": null,
+          "exact_taper_duration_weeks": null,
+          "slower_if_symptoms": true,
+          "source_ref": "RU-FLUVOX",
+          "source_locator": "§4.2 PDF с.2"
+        }
+      },
+      "source_actions": [
+        {
+          "action": "discontinue_selected_medication",
+          "source_ref": "RU-FLUVOX",
+          "source_locator": "§4.4 с.5"
+        },
+        {
+          "action": "start_symptomatic_treatment_by_clinician",
+          "source_ref": "RU-FLUVOX",
+          "source_locator": "§4.4 с.5"
+        }
+      ],
+      "source_condition": {
+        "input": "serotonin_syndrome_signs",
+        "source_ref": "RU-FLUVOX",
+        "source_locator": "§4.4 с.5"
+      }
+    },
+    {
+      "case_id": "fluvox-taper-limit--audit-v2-new_or_increased_seizures-positive",
+      "rule_id": "fluvox-taper-limit",
+      "source_stop_medication": "RU-FLUVOX",
+      "unrelated_payload": {
+        "duration_constraint": {
+          "operator": "minimum_choice",
+          "source_options_weeks": [
+            1,
+            2
+          ],
+          "chosen_minimum_weeks": null,
+          "hard_upper_limit_weeks": null,
+          "exact_taper_duration_weeks": null,
+          "slower_if_symptoms": true,
+          "source_ref": "RU-FLUVOX",
+          "source_locator": "§4.2 PDF с.2"
+        }
+      },
+      "source_actions": [
+        {
+          "action": "discontinue_selected_medication",
+          "source_ref": "RU-FLUVOX",
+          "source_locator": "§4.4 с.5"
+        }
+      ],
+      "source_condition": {
+        "input": "new_or_increased_seizures",
+        "source_ref": "RU-FLUVOX",
+        "source_locator": "§4.4 с.5"
+      }
+    },
+    {
+      "case_id": "fluvox-taper-limit--audit-v2-liver_injury_signs-positive",
+      "rule_id": "fluvox-taper-limit",
+      "source_stop_medication": "RU-FLUVOX",
+      "unrelated_payload": {
+        "duration_constraint": {
+          "operator": "minimum_choice",
+          "source_options_weeks": [
+            1,
+            2
+          ],
+          "chosen_minimum_weeks": null,
+          "hard_upper_limit_weeks": null,
+          "exact_taper_duration_weeks": null,
+          "slower_if_symptoms": true,
+          "source_ref": "RU-FLUVOX",
+          "source_locator": "§4.2 PDF с.2"
+        }
+      },
+      "source_actions": [
+        {
+          "action": "discontinue_selected_medication",
+          "source_ref": "RU-FLUVOX",
+          "source_locator": "§4.4 с.5"
+        }
+      ],
+      "source_condition": {
+        "input": "liver_injury_signs",
+        "source_ref": "RU-FLUVOX",
+        "source_locator": "§4.4 с.5"
+      }
+    },
+    {
+      "case_id": "fluvox-taper-limit--audit-v2-mania_symptoms-positive",
+      "rule_id": "fluvox-taper-limit",
+      "source_stop_medication": "RU-FLUVOX",
+      "unrelated_payload": {
+        "duration_constraint": {
+          "operator": "minimum_choice",
+          "source_options_weeks": [
+            1,
+            2
+          ],
+          "chosen_minimum_weeks": null,
+          "hard_upper_limit_weeks": null,
+          "exact_taper_duration_weeks": null,
+          "slower_if_symptoms": true,
+          "source_ref": "RU-FLUVOX",
+          "source_locator": "§4.2 PDF с.2"
+        }
+      },
+      "source_actions": [
+        {
+          "action": "discontinue_selected_medication",
+          "source_ref": "RU-FLUVOX",
+          "source_locator": "§4.4 с.7"
+        }
+      ],
+      "source_condition": {
+        "input": "mania_symptoms",
+        "source_ref": "RU-FLUVOX",
+        "source_locator": "§4.4 с.7"
+      }
+    },
+    {
+      "case_id": "venla-xr-gad-start--audit-v2-diastolic_BP-positive",
+      "rule_id": "venla-xr-gad-start",
+      "source_stop_medication": "RU-VENLA-XR",
+      "unrelated_payload": {
+        "minimum_increase_interval_weeks": 2,
+        "maximum_mg": 225
+      },
+      "source_actions": [
+        {
+          "action": "discontinue_selected_medication",
+          "source_ref": "RU-VENLA-XR",
+          "source_locator": "§4.4 с.9"
+        }
+      ],
+      "source_condition": {
+        "input": "diastolic_BP",
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.4 с.9"
+      }
+    },
+    {
+      "case_id": "venla-xr-social-start--audit-v2-diastolic_BP-positive",
+      "rule_id": "venla-xr-social-start",
+      "source_stop_medication": "RU-VENLA-XR",
+      "unrelated_payload": {
+        "minimum_increase_interval_weeks": 2,
+        "maximum_mg": 225
+      },
+      "source_actions": [
+        {
+          "action": "discontinue_selected_medication",
+          "source_ref": "RU-VENLA-XR",
+          "source_locator": "§4.4 с.9"
+        }
+      ],
+      "source_condition": {
+        "input": "diastolic_BP",
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.4 с.9"
+      }
+    },
+    {
+      "case_id": "venla-xr-panic-form-limit--audit-v2-diastolic_BP-positive",
+      "rule_id": "venla-xr-panic-form-limit",
+      "source_stop_medication": "RU-VENLA-XR",
+      "unrelated_payload": {
+        "source_initial_mg": 37.5,
+        "initial_days": 7,
+        "source_next_mg": 75
+      },
+      "source_actions": [
+        {
+          "action": "discontinue_selected_medication",
+          "source_ref": "RU-VENLA-XR",
+          "source_locator": "§4.4 с.9"
+        }
+      ],
+      "source_condition": {
+        "input": "diastolic_BP",
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.4 с.9"
+      }
+    },
+    {
+      "case_id": "venla-xr-taper-limit--audit-v2-diastolic_BP-positive",
+      "rule_id": "venla-xr-taper-limit",
+      "source_stop_medication": "RU-VENLA-XR",
+      "unrelated_payload": {
+        "duration_constraint": {
+          "operator": "minimum_choice",
+          "source_options_weeks": [
+            1,
+            2
+          ],
+          "chosen_minimum_weeks": null,
+          "hard_upper_limit_weeks": null,
+          "exact_taper_duration_weeks": null,
+          "slower_if_symptoms": true,
+          "source_ref": "RU-VENLA-XR",
+          "source_locator": "§4.2 с.4–5; §4.4 с.11–12"
+        }
+      },
+      "source_actions": [
+        {
+          "action": "discontinue_selected_medication",
+          "source_ref": "RU-VENLA-XR",
+          "source_locator": "§4.4 с.9"
+        }
+      ],
+      "source_condition": {
+        "input": "diastolic_BP",
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.4 с.9"
+      }
+    },
+    {
+      "case_id": "venla-xr-taper-limit--audit-v2-current_allergic_reaction-positive",
+      "rule_id": "venla-xr-taper-limit",
+      "source_stop_medication": "RU-VENLA-XR",
+      "unrelated_payload": {
+        "duration_constraint": {
+          "operator": "minimum_choice",
+          "source_options_weeks": [
+            1,
+            2
+          ],
+          "chosen_minimum_weeks": null,
+          "hard_upper_limit_weeks": null,
+          "exact_taper_duration_weeks": null,
+          "slower_if_symptoms": true,
+          "source_ref": "RU-VENLA-XR",
+          "source_locator": "§4.2 с.4–5; §4.4 с.11–12"
+        }
+      },
+      "source_actions": [
+        {
+          "action": "discontinue_selected_medication",
+          "source_ref": "RU-VENLA-XR",
+          "source_locator": "§4.4 с.13"
+        }
+      ],
+      "source_condition": {
+        "input": "current_allergic_reaction",
+        "source_ref": "RU-VENLA-XR",
+        "source_locator": "§4.4 с.13"
+      }
+    },
+    {
+      "case_id": "switch-esc-ago--audit-v2-arrhythmia_signs-positive",
+      "rule_id": "switch-esc-ago",
+      "source_stop_medication": "RU-ESC",
+      "unrelated_payload": {
+        "overlap_allowed_on_first_day_of_A_reduction": true,
+        "target_source_start_mg": 25,
+        "monitoring": {
+          "before_start": true,
+          "approximate_weeks_parameter": "liver_monitoring_weeks",
+          "restart_same_frequency_after_dose_increase": true,
+          "rising_repeat_hours_parameter": "repeat_liver_tests_hours",
+          "stop_signs_action": "immediate cessation; tests until normal",
+          "source_ref": "RU-AGO",
+          "source_locator": "§4.2 с.1; §4.4 с.3–4"
+        }
+      },
+      "source_actions": [
+        {
+          "action": "discontinue_selected_medication",
+          "source_ref": "RU-ESC",
+          "source_locator": "§4.4 с.6"
+        },
+        {
+          "action": "obtain_ECG",
+          "source_ref": "RU-ESC",
+          "source_locator": "§4.4 с.6"
+        }
+      ],
+      "source_condition": {
+        "input": "arrhythmia_signs",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.6"
+      }
+    },
+    {
+      "case_id": "switch-esc-ago--audit-v2-serotonin_syndrome_signs-positive",
+      "rule_id": "switch-esc-ago",
+      "source_stop_medication": "RU-ESC",
+      "unrelated_payload": {
+        "overlap_allowed_on_first_day_of_A_reduction": true,
+        "target_source_start_mg": 25,
+        "monitoring": {
+          "before_start": true,
+          "approximate_weeks_parameter": "liver_monitoring_weeks",
+          "restart_same_frequency_after_dose_increase": true,
+          "rising_repeat_hours_parameter": "repeat_liver_tests_hours",
+          "stop_signs_action": "immediate cessation; tests until normal",
+          "source_ref": "RU-AGO",
+          "source_locator": "§4.2 с.1; §4.4 с.3–4"
+        }
+      },
+      "source_actions": [
+        {
+          "action": "immediately_discontinue_SSRI_and_current_serotonergic_drugs",
+          "source_ref": "RU-ESC",
+          "source_locator": "§4.4 с.5–6"
+        },
+        {
+          "action": "start_symptomatic_treatment_by_clinician",
+          "source_ref": "RU-ESC",
+          "source_locator": "§4.4 с.5–6"
+        }
+      ],
+      "source_condition": {
+        "input": "serotonin_syndrome_signs",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.5–6"
+      }
+    },
+    {
+      "case_id": "switch-esc-ago--audit-v2-seizure_state-positive",
+      "rule_id": "switch-esc-ago",
+      "source_stop_medication": "RU-ESC",
+      "unrelated_payload": {
+        "overlap_allowed_on_first_day_of_A_reduction": true,
+        "target_source_start_mg": 25,
+        "monitoring": {
+          "before_start": true,
+          "approximate_weeks_parameter": "liver_monitoring_weeks",
+          "restart_same_frequency_after_dose_increase": true,
+          "rising_repeat_hours_parameter": "repeat_liver_tests_hours",
+          "stop_signs_action": "immediate cessation; tests until normal",
+          "source_ref": "RU-AGO",
+          "source_locator": "§4.2 с.1; §4.4 с.3–4"
+        }
+      },
+      "source_actions": [
+        {
+          "action": "discontinue_selected_medication",
+          "source_ref": "RU-ESC",
+          "source_locator": "§4.4 с.4"
+        }
+      ],
+      "source_condition": {
+        "input": "seizure_state",
+        "source_ref": "RU-ESC",
+        "source_locator": "§4.4 с.4"
+      }
+    },
+    {
+      "case_id": "fluvox-depression-start--r3-serotonin_syndrome_signs-positive",
+      "rule_id": "fluvox-depression-start",
+      "source_stop_medication": "RU-FLUVOX",
+      "unrelated_payload": {
+        "review_period_weeks": [
+          3,
+          4
+        ]
+      },
+      "source_actions": [
+        {
+          "action": "discontinue_selected_medication",
+          "source_ref": "RU-FLUVOX",
+          "source_locator": "§4.4 с.5"
+        },
+        {
+          "action": "start_symptomatic_treatment_by_clinician",
+          "source_ref": "RU-FLUVOX",
+          "source_locator": "§4.4 с.5"
+        }
+      ],
+      "source_condition": {
+        "input": "serotonin_syndrome_signs",
+        "source_ref": "RU-FLUVOX",
+        "source_locator": "§4.4 с.5"
+      }
+    },
+    {
+      "case_id": "fluvox-depression-start--audit-v2-new_or_increased_seizures-positive",
+      "rule_id": "fluvox-depression-start",
+      "source_stop_medication": "RU-FLUVOX",
+      "unrelated_payload": {
+        "review_period_weeks": [
+          3,
+          4
+        ]
+      },
+      "source_actions": [
+        {
+          "action": "discontinue_selected_medication",
+          "source_ref": "RU-FLUVOX",
+          "source_locator": "§4.4 с.5"
+        }
+      ],
+      "source_condition": {
+        "input": "new_or_increased_seizures",
+        "source_ref": "RU-FLUVOX",
+        "source_locator": "§4.4 с.5"
+      }
+    },
+    {
+      "case_id": "switch-parox-ago-selected-example--audit-v2-serotonin_syndrome_signs-positive",
+      "rule_id": "switch-parox-ago-selected-example",
+      "source_stop_medication": "RU-PAROX",
+      "unrelated_payload": {
+        "monitoring": {
+          "before_start": true,
+          "approximate_weeks_parameter": "liver_monitoring_weeks",
+          "restart_same_frequency_after_dose_increase": true,
+          "rising_repeat_hours_parameter": "repeat_liver_tests_hours",
+          "stop_signs_action": "immediate cessation; tests until normal",
+          "source_ref": "RU-AGO",
+          "source_locator": "§4.2 с.1; §4.4 с.3–4"
+        }
+      },
+      "source_actions": [
+        {
+          "action": "discontinue_selected_medication",
+          "source_ref": "RU-PAROX",
+          "source_locator": "§4.4 с.7"
+        },
+        {
+          "action": "start_supportive_symptomatic_treatment_by_clinician",
+          "source_ref": "RU-PAROX",
+          "source_locator": "§4.4 с.7"
+        }
+      ],
+      "source_condition": {
+        "input": "serotonin_syndrome_signs",
+        "source_ref": "RU-PAROX",
+        "source_locator": "§4.4 с.7"
+      }
+    }
+  ],
+  "scope": "Enumerated residual fields found by independent semantic-key inspection of121 copied source_stop results. This finite list is not inferred from author23 count."
+}
